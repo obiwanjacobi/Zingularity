@@ -1,0 +1,1696 @@
+{
+    "tables": {
+        "r": {
+            "A": "111",
+            "B": "000",
+            "C": "001",
+            "D": "010",
+            "E": "011",
+            "H": "100",
+            "L": "101"
+        },
+        "s": {
+            "A": "111",
+            "B": "000",
+            "C": "001",
+            "D": "010",
+            "E": "011",
+            "H": "100",
+            "L": "101"
+        },
+        "p": {
+            "BC": "00",
+            "DE": "01",
+            "HL": "10",
+            "SP": "11"
+        },
+        "q": {
+            "BC": "00",
+            "DE": "01",
+            "HL": "10",
+            "AF": "11"
+        },
+        "ex": {
+            "IX": "DD",
+            "IY": "FD"
+        },
+        "b": {
+            "0": "000",
+            "1": "001",
+            "2": "010",
+            "3": "011",
+            "4": "100",
+            "5": "101",
+            "6": "110",
+            "7": "111"
+        },
+        "c": {
+            "NZ": "000",
+            "Z": "001",
+            "NC": "010",
+            "C": "011",
+            "PO": "100",
+            "PE": "101",
+            "P": "110",
+            "M": "111"
+        },
+        "j": {
+            "NZ": "00",
+            "Z": "01",
+            "NC": "10",
+            "C": "11"
+        },
+        "i": {
+            "00": "000",
+            "08": "001",
+            "10": "010",
+            "18": "011",
+            "20": "100",
+            "28": "101",
+            "30": "110",
+            "38": "111"
+        }
+    },
+    "instructions": [
+
+        //
+        // 8-bit load group
+        //
+        {
+            "mnemonic": "LD r, s",
+            "bytes": [ "01rrrsss" ],
+            "cycles": [ 4 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD r, n",
+            "bytes": [ "00rrr110" ],
+            "cycles": [ 4, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD r, (HL)",
+            "bytes": [ "01rrr110" ],
+            "cycles": [ 4, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD r, (ex+d)",
+            "bytes": [ "ex", "01rrr110", "d" ],
+            "cycles": [ 4, 4, 3, 5, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD (HL), r",
+            "bytes": [ "01110rrr" ],
+            "cycles": [ 4, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD (ex+d), r",
+            "bytes": [ "ex", "01110rrr", "d" ],
+            "cycles": [ 4, 4, 3, 5, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD (HL), n",
+            "bytes": [ "36", "n" ],
+            "cycles": [ 4, 3, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD (ex+d), n",
+            "bytes": [ "ex", "36", "d", "n" ],
+            "cycles": [ 4, 4, 3, 5, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD A, (BC)",
+            "bytes": [ "0A" ],
+            "cycles": [ 4, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD A, (DE)",
+            "bytes": [ "1A" ],
+            "cycles": [ 4, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD A, (nn)",
+            "bytes": [ "3A", "n", "n" ],
+            "cycles": [ 4, 3, 3, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD (BC), A",
+            "bytes": [ "02" ],
+            "cycles": [ 4, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD (DE), A",
+            "bytes": [ "12" ],
+            "cycles": [ 4, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD (nn), A",
+            "bytes": [ "32", "n", "n" ],
+            "cycles": [ 4, 3, 3, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD A, I",
+            "bytes": [ "ED", "57" ],
+            "cycles": [ 4, 5 ],
+            "flags": {
+                "S": "I",
+                "Z": "I",
+                "H": "0",
+                "P": "IFF2",
+                "N": "0"
+            }
+        },
+        {
+            "mnemonic": "LD A, R",
+            "bytes": [ "ED", "5F" ],
+            "cycles": [ 4, 5 ],
+            "flags": {
+                "S": "R",
+                "Z": "R",
+                "H": "0",
+                "P": "IFF2",
+                "N": "0"
+            }
+        },
+        {
+            "mnemonic": "LD I, A",
+            "bytes": [ "ED", "47" ],
+            "cycles": [ 4, 5 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD R, A",
+            "bytes": [ "ED", "4F" ],
+            "cycles": [ 4, 5 ],
+            "flags": {}
+        },
+
+        //
+        // 16 bit load group
+        //
+        {
+            "mnemonic": "LD p, nn",
+            "bytes": [ "00pp0001", "n", "n" ],
+            "cycles": [ 4, 3, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD ex, nn",
+            "bytes": [ "ex", "21", "n", "n" ],
+            "cycles": [ 4, 4, 3, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD HL, (nn)",
+            "bytes": [ "2A", "n", "n" ],
+            "cycles": [ 4, 3, 3, 3, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD p, (nn)",
+            "bytes": [ "ED", "01pp1011", "n", "n" ],
+            "cycles": [ 4, 4, 3, 3, 3, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD ex, (nn)",
+            "bytes": [ "ex", "2A", "n", "n" ],
+            "cycles": [ 4, 4, 3, 3, 3, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD (nn), HL",
+            "bytes": [ "22", "n", "n" ],
+            "cycles": [ 4, 3, 3, 3, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD (nn), dd",
+            "bytes": [ "ED", "01pp0011", "n", "n" ],
+            "cycles": [ 4, 4, 3, 3, 3, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD (nn), ex",
+            "bytes": [ "ex", "22", "n", "n" ],
+            "cycles": [ 4, 4, 3, 3, 3, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD SP, HL",
+            "bytes": [ "F9" ],
+            "cycles": [ 6 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LD SP, ex",
+            "bytes": [ "ex", "F9" ],
+            "cycles": [ 4, 6 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "PUSH q",
+            "bytes": [ "11qq0101" ],
+            "cycles": [ 5, 3, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "PUSH ex",
+            "bytes": [ "ex", "E5" ],
+            "cycles": [ 4, 5, 3, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "POP q",
+            "bytes": [ "11qq0001" ],
+            "cycles": [ 4, 3, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "POP ex",
+            "bytes": [ "ex", "E1" ],
+            "cycles": [ 4, 4, 3, 3 ],
+            "flags": {}
+        },
+
+        //
+        // Exchange, block transfer and search group
+        //
+        {
+            "mnemonic": "EX DE, HL",
+            "bytes": [ "EB" ],
+            "cycles": [ 4 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "EX AF, AF'",
+            "bytes": [ "08" ],
+            "cycles": [ 4 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "EXX",
+            "bytes": [ "D9" ],
+            "cycles": [ 4 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "EX (SP), HL",
+            "bytes": [ "E3" ],
+            "cycles": [ 4, 3, 4, 3, 5 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "EX (SP), ex",
+            "bytes": [ "ex", "E3" ],
+            "cycles": [ 4, 4, 3, 4, 3, 5 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "LDI",
+            "bytes": [ "ED", "A0" ],
+            "cycles": [ 4, 4, 3, 5 ],
+            "flags": {
+                "H": "0",
+                "P": "BC",
+                "N": "0"
+            }
+        },
+        {
+            "mnemonic": "LDIR",
+            "bytes": [ "ED", "B0" ],
+            "cycles": [ 4, 4, 3, 5, 5 ],
+            "altCycles": [ 4, 4, 3, 5 ],
+            "flags": {
+                "H": "0",
+                "P": "0",
+                "N": "0"
+            }
+        },
+        {
+            "mnemonic": "LDD",
+            "bytes": [ "ED", "A8" ],
+            "cycles": [ 4, 4, 3, 5 ],
+            "flags": {
+                "H": "0",
+                "P": "BC",
+                "N": "0"
+            }
+        },
+        {
+            "mnemonic": "LDDR",
+            "bytes": [ "ED", "B8" ],
+            "cycles": [ 4, 4, 3, 5, 5 ],
+            "altCycles": [ 4, 4, 3, 5 ],
+            "flags": {
+                "H": "0",
+                "P": "0",
+                "N": "0"
+            }
+        },
+        {
+            "mnemonic": "CPI",
+            "bytes": [ "ED", "A1" ],
+            "cycles": [ 4, 4, 3, 5 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "P": "BC",
+                "N": "1"
+            }
+        },
+        {
+            "mnemonic": "CPIR",
+            "bytes": [ "ED", "B1" ],
+            "cycles": [ 4, 4, 3, 5, 5 ],
+            "altCycles": [ 4, 4, 3, 5 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "P": "BC",
+                "N": "1"
+            }
+        },
+        {
+            "mnemonic": "CPD",
+            "bytes": [ "ED", "A9" ],
+            "cycles": [ 4, 4, 3, 5 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "P": "BC",
+                "N": "1"
+            }
+        },
+        {
+            "mnemonic": "CPDR",
+            "bytes": [ "ED", "B9" ],
+            "cycles": [ 4, 4, 3, 5, 5 ],
+            "altCycles": [ 4, 4, 3, 5 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "P": "BC",
+                "N": "1"
+            }
+        },
+
+        //
+        // 8 bit arithmetic group
+        //
+        {
+            "mnemonic": "ADD A, r",
+            "bytes": [ "10000rrr" ],
+            "cycles": [ 4 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b3",
+                "V": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "ADD A, n",
+            "bytes": [ "C6", "n" ],
+            "cycles": [ 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b3",
+                "V": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "ADD A, (HL)",
+            "bytes": [ "86" ],
+            "cycles": [ 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b3",
+                "V": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "ADD A, (ex+d)",
+            "bytes": [ "ex", "86", "d" ],
+            "cycles": [ 4, 4, 3, 5, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b3",
+                "V": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "ADD A, r",
+            "bytes": [ "10001rrr" ],
+            "cycles": [ 4 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b3",
+                "V": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "ADD A, n",
+            "bytes": [ "CE", "n" ],
+            "cycles": [ 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b3",
+                "V": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "ADD A, (HL)",
+            "bytes": [ "8E" ],
+            "cycles": [ 4 ],
+            "flags": null,
+            "S": "",
+            "Z": "",
+            "H": "b3",
+            "V": "",
+            "N": "0",
+            "C": "b7"
+        },
+        {
+            "mnemonic": "ADD A, (ex+d)",
+            "bytes": [ "ex", "8E", "d" ],
+            "cycles": [ 4, 4, 3, 5, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b3",
+                "V": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "SUB A, r",
+            "bytes": [ "10010rrr" ],
+            "cycles": [ 4 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "",
+                "N": "1",
+                "C": ""
+            }
+        },
+        {
+            "mnemonic": "SUB A, n",
+            "bytes": [ "8E", "n" ],
+            "cycles": [ 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "",
+                "N": "1",
+                "C": ""
+            }
+        },
+        {
+            "mnemonic": "SUB A, (HL)",
+            "bytes": [ "96" ],
+            "cycles": [ 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "",
+                "N": "1",
+                "C": ""
+            }
+        },
+        {
+            "mnemonic": "SUB A, (ex+d)",
+            "bytes": [ "ex", "96", "d" ],
+            "cycles": [ 4, 4, 3, 5, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "",
+                "N": "1",
+                "C": ""
+            }
+        },
+        {
+            "mnemonic": "SBC A, r",
+            "bytes": [ "10011rrr" ],
+            "cycles": [ 4 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "",
+                "N": "1",
+                "C": ""
+            }
+        },
+        {
+            "mnemonic": "SBC A, n",
+            "bytes": [ "DE", "n" ],
+            "cycles": [ 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "",
+                "N": "1",
+                "C": ""
+            }
+        },
+        {
+            "mnemonic": "SBC A, (HL)",
+            "bytes": [ "9E" ],
+            "cycles": [ 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "",
+                "N": "1",
+                "C": ""
+            }
+        },
+        {
+            "mnemonic": "SBC A, (ex+d)",
+            "bytes": [ "ex", "9E", "d" ],
+            "cycles": [ 4, 4, 3, 5, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "",
+                "N": "1",
+                "C": ""
+            }
+        },
+        {
+            "mnemonic": "AND A, r",
+            "bytes": [ "10100rrr" ],
+            "cycles": [ 4 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "1",
+                "V": "",
+                "N": "0",
+                "C": "0"
+            }
+        },
+        {
+            "mnemonic": "AND A, n",
+            "bytes": [ "E6", "n" ],
+            "cycles": [ 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "1",
+                "V": "",
+                "N": "0",
+                "C": "0"
+            }
+        },
+        {
+            "mnemonic": "AND A, (HL)",
+            "bytes": [ "A6" ],
+            "cycles": [ 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "1",
+                "V": "",
+                "N": "0",
+                "C": "0"
+            }
+        },
+        {
+            "mnemonic": "AND A, (ex+d)",
+            "bytes": [ "ex", "A6", "d" ],
+            "cycles": [ 4, 4, 3, 5, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "1",
+                "V": "",
+                "N": "0",
+                "C": "0"
+            }
+        },
+        {
+            "mnemonic": "OR A, r",
+            "bytes": [ "10110rrr" ],
+            "cycles": [ 4 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "V": "",
+                "N": "0",
+                "C": "0"
+            }
+        },
+        {
+            "mnemonic": "OR A, n",
+            "bytes": [ "F6", "n" ],
+            "cycles": [ 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "V": "",
+                "N": "0",
+                "C": "0"
+            }
+        },
+        {
+            "mnemonic": "OR A, (HL)",
+            "bytes": [ "B6" ],
+            "cycles": [ 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "V": "",
+                "N": "0",
+                "C": "0"
+            }
+        },
+        {
+            "mnemonic": "OR A, (ex+d)",
+            "bytes": [ "ex", "B6", "d" ],
+            "cycles": [ 4, 4, 3, 5, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "V": "",
+                "N": "0",
+                "C": "0"
+            }
+        },
+        {
+            "mnemonic": "XOR A, r",
+            "bytes": [ "10101rrr" ],
+            "cycles": [ 4 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "0"
+            }
+        },
+        {
+            "mnemonic": "XOR A, n",
+            "bytes": [ "EE", "n" ],
+            "cycles": [ 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "0"
+            }
+        },
+        {
+            "mnemonic": "XOR A, (HL)",
+            "bytes": [ "AE" ],
+            "cycles": [ 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "0"
+            }
+        },
+        {
+            "mnemonic": "XOR A, (ex+d)",
+            "bytes": [ "ex", "AE", "d" ],
+            "cycles": [ 4, 4, 3, 5, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "0"
+            }
+        },
+        {
+            "mnemonic": "CP A, r",
+            "bytes": [ "10111rrr" ],
+            "cycles": [ 4 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "",
+                "N": "1",
+                "C": ""
+            }
+        },
+        {
+            "mnemonic": "CP A, n",
+            "bytes": [ "FE", "n" ],
+            "cycles": [ 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "",
+                "N": "1",
+                "C": ""
+            }
+        },
+        {
+            "mnemonic": "CP A, (HL)",
+            "bytes": [ "BE" ],
+            "cycles": [ 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "",
+                "N": "1",
+                "C": ""
+            }
+        },
+        {
+            "mnemonic": "CP A, (ex+d)",
+            "bytes": [ "ex", "BE", "d" ],
+            "cycles": [ 4, 4, 3, 5, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "",
+                "N": "1",
+                "C": ""
+            }
+        },
+        {
+            "mnemonic": "INC r",
+            "bytes": [ "00rrr100" ],
+            "cycles": [ 4 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b3",
+                "V": "7F",
+                "N": "0"
+            }
+        },
+        {
+            "mnemonic": "INC (HL)",
+            "bytes": [ "34" ],
+            "cycles": [ 4, 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b3",
+                "V": "7F",
+                "N": "0"
+            }
+        },
+        {
+            "mnemonic": "INC (ex+d)",
+            "bytes": [ "ex", "34", "d" ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b3",
+                "V": "7F",
+                "N": "0"
+            }
+        },
+        {
+            "mnemonic": "DEC r",
+            "bytes": [ "00rrr101" ],
+            "cycles": [ 4 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "80",
+                "N": "1"
+            }
+        },
+        {
+            "mnemonic": "DEC (HL)",
+            "bytes": [ "35" ],
+            "cycles": [ 4, 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "80",
+                "N": "1"
+            }
+        },
+        {
+            "mnemonic": "DEC (ex+d)",
+            "bytes": [ "ex", "35", "d" ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "80",
+                "N": "1"
+            }
+        },
+
+        //
+        // general purpose arithmetic and cpu control group
+        //
+        {
+            "mnemonic": "DAA",
+            "bytes": [ "27" ],
+            "cycles": [ 4 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "",
+                "P": "",
+                "C": ""
+            }
+        },
+        {
+            "mnemonic": "CPL A",
+            "bytes": [ "2F" ],
+            "cycles": [ 4 ],
+            "flags": {
+                "H": "1",
+                "N": "1"
+            }
+        },
+        {
+            "mnemonic": "NEG",
+            "bytes": [ "ED", "44" ],
+            "cycles": [ 4, 4 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "80",
+                "N": "1",
+                "C": "00"
+            }
+        },
+        {
+            "mnemonic": "CCF",
+            "bytes": [ "3F" ],
+            "cycles": [ 4 ],
+            "flags": {
+                "H": "C",
+                "N": "0",
+                "C": "!C"
+            }
+        },
+        {
+            "mnemonic": "SCF",
+            "bytes": [ "37" ],
+            "cycles": [ 4 ],
+            "flags": {
+                "H": "0",
+                "N": "0",
+                "C": "1"
+            }
+        },
+        {
+            "mnemonic": "NOP",
+            "bytes": [ "00" ],
+            "cycles": [ 4 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "HALT",
+            "bytes": [ "76" ],
+            "cycles": [ 4, -1 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "DI",
+            "bytes": [ "F3" ],
+            "cycles": [ 4 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "EI",
+            "bytes": [ "FB" ],
+            "cycles": [ 4 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "IM0",
+            "bytes": [ "ED", "46" ],
+            "cycles": [ 4, 4 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "IM1",
+            "bytes": [ "ED", "56" ],
+            "cycles": [ 4, 4 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "IM2",
+            "bytes": [ "ED", "5E" ],
+            "cycles": [ 4, 4 ],
+            "flags": {}
+        },
+
+        //
+        // 16 bits arithmetic group
+        //
+        {
+            "mnemonic": "ADD HL, p",
+            "bytes": [ "00pp1001" ],
+            "cycles": [ 4, 4, 3 ],
+            "flags": {
+                "H": "b11",
+                "N": "0",
+                "C": "b15"
+            }
+        },
+        {
+            "mnemonic": "ADD ex, p",
+            "bytes": [ "ex", "00pp1001" ],
+            "cycles": [ 4, 4, 4, 3 ],
+            "flags": {
+                "H": "b11",
+                "N": "0",
+                "C": "b15"
+            }
+        },
+        {
+            "mnemonic": "ADC HL, p",
+            "bytes": [ "ED", "01pp1010" ],
+            "cycles": [ 4, 4, 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b11",
+                "V": "",
+                "N": "0",
+                "C": "b15"
+            }
+        },
+        {
+            "mnemonic": "SBC HL, p",
+            "bytes": [ "ED", "01pp0010" ],
+            "cycles": [ 4, 4, 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b12",
+                "V": "",
+                "N": "1",
+                "C": ""
+            }
+        },
+        {
+            "mnemonic": "INC p",
+            "bytes": [ "00pp0011" ],
+            "cycles": [ 6 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "INC ex",
+            "bytes": [ "ex", "23" ],
+            "cycles": [ 4, 6 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "DEC p",
+            "bytes": [ "00pp1011" ],
+            "cycles": [ 6 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "DEC ex",
+            "bytes": [ "ex", "2B" ],
+            "cycles": [ 4, 6 ],
+            "flags": {}
+        },
+
+        //
+        // rotate and shift group
+        //
+        {
+            "mnemonic": "RLCA",
+            "bytes": [ "07" ],
+            "cycles": [ 4 ],
+            "flags": {
+                "H": "0",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "RLA",
+            "bytes": [ "17" ],
+            "cycles": [ 4 ],
+            "flags": {
+                "H": "0",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "RRCA",
+            "bytes": [ "0F" ],
+            "cycles": [ 4 ],
+            "flags": {
+                "H": "0",
+                "N": "0",
+                "C": "b0"
+            }
+        },
+        {
+            "mnemonic": "RRA",
+            "bytes": [ "1F" ],
+            "cycles": [ 4 ],
+            "flags": {
+                "H": "0",
+                "N": "0",
+                "C": "b0"
+            }
+        },
+        {
+            "mnemonic": "RLC r",
+            "bytes": [ "CB", "00000rrr" ],
+            "cycles": [ 4, 4 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "RLC (HL)",
+            "bytes": [ "CB", "06" ],
+            "cycles": [ 4, 4, 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "RLC (ex+d)",
+            "bytes": [ "ex", "CB", "d", "06" ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "RL r",
+            "bytes": [ "CB", "00010rrr" ],
+            "cycles": [ 4, 4 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "RL (HL)",
+            "bytes": [ "CB", "16" ],
+            "cycles": [ 4, 4, 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "RL (ex+d)",
+            "bytes": [ "ex", "CB", "d", "16" ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "RRC r",
+            "bytes": [ "CB", "00001rrr" ],
+            "cycles": [ 4 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b0"
+            }
+        },
+        {
+            "mnemonic": "RRC (HL)",
+            "bytes": [ "CB", "0E" ],
+            "cycles": [ 4, 4 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b0"
+            }
+        },
+        {
+            "mnemonic": "RRC (ex+d)",
+            "bytes": [ "ex", "CB", "d", "0E" ],
+            "cycles": [ 4, 4 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b0"
+            }
+        },
+        {
+            "mnemonic": "RR r",
+            "bytes": [ "CB", "00011rrr" ],
+            "cycles": [ 4, 4 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b0"
+            }
+        },
+        {
+            "mnemonic": "RR (HL)",
+            "bytes": [ "CB", "1E" ],
+            "cycles": [ 4, 4, 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b0"
+            }
+        },
+        {
+            "mnemonic": "RR (ex+d)",
+            "bytes": [ "ex", "CB", "d", "1E" ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b0"
+            }
+        },
+        {
+            "mnemonic": "SLA r",
+            "bytes": [ "CB", "00100rrr" ],
+            "cycles": [ 4, 4 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "SLA (HL)",
+            "bytes": [ "CB", "26" ],
+            "cycles": [ 4, 4, 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "SLA (ex+d)",
+            "bytes": [ "ex", "CB", "d", "26" ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "SRA r",
+            "bytes": [ "CB", "00101rrr" ],
+            "cycles": [ 4, 4 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b0"
+            }
+        },
+        {
+            "mnemonic": "SRA (HL)",
+            "bytes": [ "CB", "2E" ],
+            "cycles": [ 4, 4, 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b0"
+            }
+        },
+        {
+            "mnemonic": "SRA (ex+d)",
+            "bytes": [ "ex", "CB", "d", "2E" ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b0"
+            }
+        },
+        {
+            "mnemonic": "SRL r",
+            "bytes": [ "CB", "00111rrr" ],
+            "cycles": [ 4, 4 ],
+            "flags": {
+                "S": "0",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b0"
+            }
+        },
+        {
+            "mnemonic": "SRL (HL)",
+            "bytes": [ "CB", "3E" ],
+            "cycles": [ 4, 4, 4, 3 ],
+            "flags": {
+                "S": "0",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b0"
+            }
+        },
+        {
+            "mnemonic": "SRL (ex+d)",
+            "bytes": [ "ex", "CB", "d", "3E" ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "flags": {
+                "S": "0",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b0"
+            }
+        },
+        {
+            "mnemonic": "RLD A",
+            "bytes": [ "ED", "6F" ],
+            "cycles": [ 4, 4, 3, 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0"
+            }
+        },
+        {
+            "mnemonic": "RRD A",
+            "bytes": [ "ED", "67" ],
+            "cycles": [ 4, 4, 3, 4, 3 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0"
+            }
+        },
+
+        //
+        // Bit set, reset and test group
+        //
+        {
+            "mnemonic": "BIT b, r",
+            "bytes": [ "CB", "01bbbrrr" ],
+            "cycles": [ 4, 4 ],
+            "flags": {
+                "Z": "",
+                "H": "1",
+                "N": "0"
+            }
+        },
+        {
+            "mnemonic": "BIT b, (HL)",
+            "bytes": [ "CB", "01bbb110" ],
+            "cycles": [ 4, 4, 4 ],
+            "flags": {
+                "Z": "",
+                "H": "1",
+                "N": "0"
+            }
+        },
+        {
+            "mnemonic": "BIT b, (ex+d)",
+            "bytes": [ "ex", "CB", "d", "01bbb110" ],
+            "cycles": [ 4, 4, 3, 5, 4 ],
+            "flags": {
+                "Z": "",
+                "H": "1",
+                "N": "0"
+            }
+        },
+        {
+            "mnemonic": "SET b, r",
+            "bytes": [ "CB", "11bbbrrr" ],
+            "cycles": [ 4, 4 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "SET b, (HL)",
+            "bytes": [ "CB", "11bbb110" ],
+            "cycles": [ 4, 4, 4, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "SET b, (ex+d)",
+            "bytes": [ "ex", "CB", "d", "11bbb110" ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "RES b, r",
+            "bytes": [ "CB", "10bbbrrr" ],
+            "cycles": [ 4, 4 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "RES b, (HL)",
+            "bytes": [ "CB", "10bbb110" ],
+            "cycles": [ 4, 4, 4, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "RES b, (ex+d)",
+            "bytes": [ "ex", "CB", "d", "10bbb110" ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "flags": {}
+        },
+
+        //
+        // jumps group
+        //
+        {
+            "mnemonic": "JP nn",
+            "bytes": [ "C3", "n", "n" ],
+            "cycles": [ 4, 3, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "JP c, nn",
+            "bytes": [ "11ccc010", "n", "n" ],
+            "cycles": [ 4, 3, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "JR e",
+            "bytes": [ "18", "e" ],
+            "cycles": [ 4, 3, 5 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "JR j, e",
+            "bytes": [ "001jj000", "e" ],
+            "cycles": [ 4, 3, 5 ],
+            "altCycles": [ 4, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "JP HL",
+            "bytes": [ "E9" ],
+            "cycles": [ 4 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "JP ex",
+            "bytes": [ "ex", "E9" ],
+            "cycles": [ 4, 4 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "DJNZ e",
+            "bytes": [ "10", "e" ],
+            "cycles": [ 5, 3, 5 ],
+            "altCycles": [ 5, 3 ],
+            "flags": {}
+        },
+
+        //
+        // call and return group
+        //
+        {
+            "mnemonic": "CALL nn",
+            "bytes": [ "CD", "n", "n" ],
+            "cycles": [ 4, 3, 4, 3, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "CALL c, nn",
+            "bytes": [ "11ccc100", "n", "n" ],
+            "cycles": [ 4, 3, 4, 3, 3 ],
+            "altCycles": [ 4, 3, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "RET",
+            "bytes": [ "C9" ],
+            "cycles": [ 4, 3, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "RET cc",
+            "bytes": [ "11ccc000" ],
+            "cycles": [ 5, 3, 3 ],
+            "altCycles": [ 5 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "RETI",
+            "bytes": [ "ED", "4D" ],
+            "cycles": [ 4, 4, 3, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "RETN",
+            "bytes": [ "ED", "45" ],
+            "cycles": [ 4, 4, 3, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "RST i",
+            "bytes": [ "11ppp111" ],
+            "cycles": [ 5, 3, 3 ],
+            "flags": {}
+        },
+
+        //
+        // input output group
+        //
+        {
+            "mnemonic": "IN A, (n)",
+            "bytes": [ "DB", "n" ],
+            "cycles": [ 4, 3, 4 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "IN r, (C)",
+            "bytes": [ "ED", "01rrr000" ],
+            "cycles": [ 4, 4, 4 ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0"
+            }
+        },
+        {
+            "mnemonic": "INI",
+            "bytes": [ "ED", "A2" ],
+            "cycles": [ 4, 5, 3, 4 ],
+            "flags": {
+                "Z": "",
+                "N": "1"
+            }
+        },
+        {
+            "mnemonic": "INIR",
+            "bytes": [ "ED", "B2" ],
+            "cycles": [ 4, 5, 3, 4, 5 ],
+            "altCycles": [ 4, 5, 3, 4 ],
+            "flags": {
+                "Z": "1",
+                "N": "1"
+            }
+        },
+        {
+            "mnemonic": "IND",
+            "bytes": [ "ED", "AA" ],
+            "cycles": [ 4, 5, 3, 4 ],
+            "flags": {
+                "Z": "",
+                "N": "1"
+            }
+        },
+        {
+            "mnemonic": "INDR",
+            "bytes": [ "ED", "BA" ],
+            "cycles": [ 4, 5, 3, 4, 5 ],
+            "altCycles": [ 4, 5, 3, 4 ],
+            "flags": {
+                "Z": "1",
+                "N": "1"
+            }
+        },
+        {
+            "mnemonic": "OUT (n), A",
+            "bytes": [ "D3", "n" ],
+            "cycles": [ 4, 3, 4 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "OUT (C), r",
+            "bytes": [ "ED", "01rrr001" ],
+            "cycles": [ 4, 4, 4 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "OUTI",
+            "bytes": [ "ED", "A3" ],
+            "cycles": [ 4, 5, 3, 4 ],
+            "flags": {
+                "Z": "",
+                "N": "1"
+            }
+        },
+        {
+            "mnemonic": "OTIR",
+            "bytes": [ "ED", "B3" ],
+            "cycles": [ 4, 5, 3, 4, 5 ],
+            "altCycles": [ 4, 5, 3, 4 ],
+            "flags": {
+                "Z": "1",
+                "N": "1"
+            }
+        },
+        {
+            "mnemonic": "OUTD",
+            "bytes": [ "ED", "A3" ],
+            "cycles": [ 4, 5, 3, 4 ],
+            "flags": {
+                "Z": "",
+                "N": "1"
+            }
+        },
+        {
+            "mnemonic": "OTDR",
+            "bytes": [ "ED", "BB" ],
+            "cycles": [ 4, 5, 3, 4, 5 ],
+            "altCycles": [ 4, 5, 3, 4 ],
+            "flags": {
+                "Z": "1",
+                "N": "1"
+            }
+        }
+    ]
+}

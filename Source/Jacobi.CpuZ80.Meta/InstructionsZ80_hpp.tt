@@ -1,0 +1,25 @@
+﻿<#+
+
+    public sealed class InstructionZ80_hpp : Template
+    {
+        private readonly InstructionSetInfo _setInfo;
+
+        public InstructionZ80_hpp(InstructionSetInfo setInfo)
+        {
+            _setInfo = setInfo;
+        }
+
+        public override string TransformText()
+        {
+            // base.TransformText();
+#>
+// Instructions for the Z80 header file
+struct {
+}
+
+
+<#+
+            return this.GenerationEnvironment.ToString();
+        }
+    }
+#>

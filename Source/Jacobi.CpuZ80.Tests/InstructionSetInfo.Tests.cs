@@ -1,7 +1,5 @@
 using FluentAssertions;
-using Jacobi.CpuZ80.Meta;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.IO;
 
 namespace Jacobi.CpuZ80.Tests
 {
@@ -11,8 +9,7 @@ namespace Jacobi.CpuZ80.Tests
         [TestMethod]
         public void LoadJson()
         {
-            var path = Path.Combine(Directory.GetCurrentDirectory(), @"..\..\..\..\Jacobi.CpuZ80.Meta\InstructionsZ80.json");
-            var setInfo = InstructionSetInfo.FromJsonFile(path);
+            var setInfo = InstructionSetHelper.Load();
 
             setInfo.Tables.Should().HaveCount(9);
             setInfo.Tables.ContainsKey("r").Should().BeTrue();

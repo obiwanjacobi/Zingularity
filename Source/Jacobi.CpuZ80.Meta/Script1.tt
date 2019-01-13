@@ -1,0 +1,23 @@
+<#@ template language="C#" debug="True" hostspecific="True" #>
+<#@ output extension="cpp" #>
+<#@ include file="T4Toolbox.tt" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="System.Runtime" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ assembly name="$(TargetDir)\$(Configuration)\netcoreapp2.1\Jacobi.CpuZ80.Meta.dll" #>
+<#@ import namespace="Jacobi.CpuZ80.Meta" #>
+
+/**
+ *  Generated Code
+ */
+
+<#
+// <copyright file="Script1.tt" company="Jacobi Software">
+//  Copyright © 2018. All Rights Reserved.
+// </copyright>
+
+InstructionSetInfo setInfo = InstructionSetInfo.FromJsonFile("InstructionZ80.json");
+
+#>

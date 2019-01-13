@@ -6,11 +6,19 @@ namespace Jacobi.CpuZ80.Meta
 {
     public sealed class InstructionInfo
     {
+        public InstructionInfo()
+        {
+            Bytes = new List<string>();
+            Cycles = new List<int>();
+            AltCycles = new List<int>();
+            Flags = new Dictionary<string, string>();
+        }
+
         public string Mnemonic { get; set; }
-        public IList<string> Bytes { get; set; }
-        public IList<int> Cycles { get; set; }
-        public IList<int> AltCycles { get; set; }
-        public IDictionary<string, string> Flags { get; set; }
+        public IList<string> Bytes { get; }
+        public IList<int> Cycles { get; }
+        public IList<int> AltCycles { get; }
+        public IDictionary<string, string> Flags { get; }
     }
 
     public sealed class InstructionSetInfo

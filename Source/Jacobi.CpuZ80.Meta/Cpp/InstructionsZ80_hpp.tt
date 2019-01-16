@@ -11,12 +11,21 @@
 
         public override string TransformText()
         {
-            // base.TransformText();
 #>
-// Instructions for the Z80 header file
-struct {
-}
+/**
+ *  Generated Source Code
+ *  Any changes you make will be lost when the code is regenerated.
+ */
 
+// Instructions for the Z80:
+<#+
+            foreach(var instruction in _setInfo.Instructions)
+            {
+#>
+// <#= instruction.Mnemonic #>
+<#+        
+            }
+#>
 
 <#+
             return this.GenerationEnvironment.ToString();

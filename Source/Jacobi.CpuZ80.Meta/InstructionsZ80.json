@@ -84,7 +84,7 @@
         },
         {
             "mnemonic": "LD r, n",
-            "bytes": [ "00rrr110" ],
+            "bytes": [ "00rrr110", "n" ],
             "cycles": [ 4, 3 ],
             "flags": {}
         },
@@ -237,7 +237,7 @@
             "flags": {}
         },
         {
-            "mnemonic": "LD (nn), dd",
+            "mnemonic": "LD (nn), p",
             "bytes": [ "ED", "01pp0011", "n", "n" ],
             "cycles": [ 4, 4, 3, 3, 3, 3 ],
             "flags": {}

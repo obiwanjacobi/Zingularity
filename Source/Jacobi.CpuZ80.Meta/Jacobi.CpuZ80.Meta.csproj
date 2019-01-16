@@ -45,27 +45,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InstructionBuilder.cs" />
-    <Compile Include="InstructionFinder.cs" />
+    <Compile Include="InstructionMeta.cs" />
+    <Compile Include="InstructionNavigator.cs" />
     <Compile Include="InstructionSetInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sample\Sample.cs" />
+    <Compile Include="StringExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="InstructionsZ80.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Script1.cpp">
+    <Content Include="Cpp\Sample\Sample.hpp" />
+    <Content Include="Cpp\Script1.cpp">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Script1.tt</DependentUpon>
     </Content>
-    <Content Include="Script1.tt">
+    <Content Include="Cpp\Script1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Script1.cpp</LastGenOutput>
-      <LastOutputs>.\Sample\Sample.cs</LastOutputs>
+      <LastOutputs>
+.\Sample\Sample.hpp
+.\Script1.cpp
+</LastOutputs>
     </Content>
-    <Content Include="InstructionsZ80_hpp.tt" />
+    <Content Include="Cpp\InstructionsZ80_hpp.tt" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

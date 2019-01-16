@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Jacobi.CpuZ80.Tests
 {
     [TestClass]
-    public class InstructionFinderTests
+    public class InstructionNavigatorTests
     {
         private static InstructionSetInfo _instructionSetInfo;
 
@@ -16,19 +16,19 @@ namespace Jacobi.CpuZ80.Tests
         }
 
         [TestMethod]
-        public void Find_Loads()
+        public void MnemonicStartsWith_Loads()
         {
-            var finder = new InstructionFinder(_instructionSetInfo);
-            var result = finder.Find("ld");
+            var finder = new InstructionNavigator(_instructionSetInfo);
+            var result = finder.MnemonicStartsWith("ld");
 
             result.Should().HaveCount(32);
         }
 
         [TestMethod]
-        public void Find_LoadsOfA()
+        public void MnemonicStartsWith_LoadsOfA()
         {
-            var finder = new InstructionFinder(_instructionSetInfo);
-            var result = finder.Find("ld A");
+            var finder = new InstructionNavigator(_instructionSetInfo);
+            var result = finder.MnemonicStartsWith("ld A");
 
             result.Should().HaveCount(5);
         }

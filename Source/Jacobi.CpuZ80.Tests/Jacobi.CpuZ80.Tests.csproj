@@ -55,7 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InstructionBuilder.Tests.cs" />
-    <Compile Include="InstructionFinder.Tests.cs" />
+    <Compile Include="InstructionNavigator.Tests.cs" />
     <Compile Include="InstructionSetHelper.cs" />
     <Compile Include="InstructionSetInfo.Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

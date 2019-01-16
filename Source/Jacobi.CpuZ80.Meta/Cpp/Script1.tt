@@ -17,7 +17,7 @@ var filePath = Path.Combine(GetSolutionDirectory(), "Jacobi.CpuZ80.Meta", "Instr
 var setInfo = InstructionSetInfo.FromJsonFile(filePath);
 
     var ta = new InstructionZ80_hpp(setInfo);
-    ta.Output.File = string.Format("Sample\\Sample.cs");
+    ta.Output.File = string.Format("Sample\\Sample.hpp");
     // ta.Output.PreserveExistingFile = true;
     // ta.Output.Project = @"..\<Project Folder Path>\<Project File Name>.csproj"; 
     ta.Render();

@@ -7,13 +7,14 @@
 //
 
 void setAddressBus(uint16_t address);
-void setDataBus(uint8_t address);
+void setDataBus(uint8_t data);
 void setBusAck(bool level); // host also floats buses
 void setHalt(bool level);
 void setRd(bool level);
 void setWr(bool level);
 void setMemReq(bool level);
 void setIOReq(bool level);
+void setRefresh(bool level);
 
 // inputs
 

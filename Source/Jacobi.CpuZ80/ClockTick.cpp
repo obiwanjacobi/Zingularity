@@ -15,25 +15,25 @@ Async_Function(Fetch)
 {
 
 }
-Async_EndFn()
+Async_End
 
 Async_Function(Decode)
 {
 
 }
-Async_EndFn()
+Async_End
 
 Async_Function(Execute)
 {
 
 }
-Async_EndFn()
+Async_End
 
 Async_Function(Interrupt)
 {
 
 }
-Async_EndFn()
+Async_End
 
 AsyncThis fetchAsync;
 AsyncThis decodeAsync;
@@ -49,5 +49,5 @@ Async_Function(ClockTick)
     Async_WaitUntil(3, Execute(&executeAsync));
     Async_WaitUntil(4, Interrupt(&interruptAsync));
 }
-Async_EndFn()
+Async_End
 

@@ -7,7 +7,9 @@ namespace Jacobi.CpuZ80.Meta
         public static bool IsLower(this string txt)
         {
             if (String.IsNullOrEmpty(txt))
-                throw new ArgumentNullException(nameof(txt));
+            {
+                return false;
+            }
 
             foreach (var c in txt)
             {

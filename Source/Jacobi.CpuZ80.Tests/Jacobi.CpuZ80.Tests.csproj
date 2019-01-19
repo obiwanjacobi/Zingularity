@@ -59,6 +59,7 @@
     <Compile Include="InstructionSetHelper.cs" />
     <Compile Include="InstructionSetInfo.Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="InstructionExpander.Tests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

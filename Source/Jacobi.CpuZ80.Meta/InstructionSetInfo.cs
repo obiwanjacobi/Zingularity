@@ -15,10 +15,11 @@ namespace Jacobi.CpuZ80.Meta
         }
 
         public string Mnemonic { get; set; }
-        public IList<string> Bytes { get; }
-        public IList<int> Cycles { get; }
-        public IList<int> AltCycles { get; }
-        public IDictionary<string, string> Flags { get; }
+        public List<string> Bytes { get; }
+
+        public IList<int> Cycles { get; internal set; }
+        public IList<int> AltCycles { get; internal set; }
+        public IDictionary<string, string> Flags { get; internal set; }
     }
 
     public sealed class InstructionSetInfo

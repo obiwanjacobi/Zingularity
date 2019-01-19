@@ -51,18 +51,11 @@ extern const uint8_t AsyncThis_size;
         {                       \
         case 0:
 
-///** MACRO: ends an async scope inside a function.
-// */
-//#define Async_End()                        \
-//    }                                      \
-//    async->State = 0;                      \
-//}
-
 
 /** MACRO: Declare the end of the async function.
  *  Exits the async function (true).
  */
-#define Async_EndFn()       \
+#define Async_End           \
     }                       \
     Async_Return()          \
 }

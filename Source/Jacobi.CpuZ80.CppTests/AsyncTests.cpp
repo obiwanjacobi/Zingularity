@@ -4,13 +4,16 @@
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
+static bool NestedDone = false;
+
 Async_Function(AsyncNested)
 {
     Logger::WriteMessage("AsyncNested");
     Async_YieldUntil(1, true);
     Logger::WriteMessage("AsyncNested - done");
+    NestedDone = true;
 }
-Async_EndFn()
+Async_End
 
 AsyncThis asyncNested;
 
@@ -20,7 +23,7 @@ Async_Function(AsyncTest)
     Async_WaitUntil(1, AsyncNested(&asyncNested));
     Logger::WriteMessage("AsyncTest - done");
 }
-Async_EndFn()
+Async_End
 
 namespace JacobiCpuZ80CppTests
 {
@@ -30,6 +33,7 @@ namespace JacobiCpuZ80CppTests
 		
 		TEST_METHOD(Async)
 		{
+            NestedDone = false;
             AsyncThis async;
             bool yielded = false;
 
@@ -40,6 +44,7 @@ namespace JacobiCpuZ80CppTests
             }
 
             Assert::IsTrue(yielded);
+            Assert::IsTrue(NestedDone);
 		}
 	};
 }

@@ -18,5 +18,13 @@ namespace Jacobi.CpuZ80.Meta
         }
 
         public IEnumerable<string> Parameters { get; }
+
+        public bool IsCB => (IsDD || IsFD) ? Info.Bytes[1] == "CB" : Info.Bytes[0] == "CB";
+
+        public bool IsED => (IsDD || IsFD) ? Info.Bytes[1] == "ED" : Info.Bytes[0] == "ED";
+
+        public bool IsDD => Info.Bytes[0] == "DD";
+
+        public bool IsFD => Info.Bytes[0] == "FD";
     }
 }

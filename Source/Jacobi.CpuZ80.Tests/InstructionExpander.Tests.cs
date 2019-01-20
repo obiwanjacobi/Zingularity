@@ -72,5 +72,25 @@ namespace Jacobi.CpuZ80.Tests
             decls[1].Info.Bytes[1].Should().Be("7E");
             decls[1].Info.Bytes[2].Should().Be("d");
         }
+
+
+        [TestMethod]
+        public void Expand_ADDIXm_Mnemonics()
+        {
+            var navigator = new InstructionNavigator(_instructionSetInfo);
+            var expander = new InstructionExpander(navigator.Tables);
+
+            var instruction = navigator.MnemonicStartsWith("ADD IX").First();
+            var decls = expander.Expand(new InstructionMeta(instruction)).ToList();
+
+            decls.Should().HaveCount(4);
+            decls[0].Info.Mnemonic.Should().Be("ADD IX, BC");
+            decls[1].Info.Mnemonic.Should().Be("ADD IX, DE");
+            decls[2].Info.Mnemonic.Should().Be("ADD IX, IX");
+            decls[3].Info.Mnemonic.Should().Be("ADD IX, SP");
+
+            decls[0].Info.Bytes[0].Should().Be("DD");
+            decls[0].Info.Bytes[1].Should().Be("09");
+        }
     }
 }

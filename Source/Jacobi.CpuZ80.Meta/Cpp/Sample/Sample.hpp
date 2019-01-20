@@ -54,8 +54,8 @@
 // LD L, H  -  6C
 // LD L, L  -  6D
 // LD A, n  -  3E, n
-// LD B, n  -  6, n
-// LD C, n  -  E, n
+// LD B, n  -  06, n
+// LD C, n  -  0E, n
 // LD D, n  -  16, n
 // LD E, n  -  1E, n
 // LD H, n  -  26, n
@@ -115,7 +115,7 @@
 // LD A, R  -  ED, 5F
 // LD I, A  -  ED, 47
 // LD R, A  -  ED, 4F
-// LD BC, nn  -  1, n, n
+// LD BC, nn  -  01, n, n
 // LD DE, nn  -  11, n, n
 // LD HL, nn  -  21, n, n
 // LD SP, nn  -  31, n, n
@@ -253,8 +253,8 @@
 // CP A, (IX+d)  -  DD, BE, d
 // CP A, (IY+d)  -  FD, BE, d
 // INC A  -  3C
-// INC B  -  4
-// INC C  -  C
+// INC B  -  04
+// INC C  -  0C
 // INC D  -  14
 // INC E  -  1C
 // INC H  -  24
@@ -263,8 +263,8 @@
 // INC (IX+d)  -  DD, 34, d
 // INC (IY+d)  -  FD, 34, d
 // DEC A  -  3D
-// DEC B  -  5
-// DEC C  -  D
+// DEC B  -  05
+// DEC C  -  0D
 // DEC D  -  15
 // DEC E  -  1D
 // DEC H  -  25
@@ -284,17 +284,17 @@
 // IM0  -  ED, 46
 // IM1  -  ED, 56
 // IM2  -  ED, 5E
-// ADD HL, BC  -  9
+// ADD HL, BC  -  09
 // ADD HL, DE  -  19
 // ADD HL, HL  -  29
 // ADD HL, SP  -  39
-// ADD IX, BC  -  DD, 9
-// ADD IY, BC  -  FD, 9
+// ADD IX, BC  -  DD, 09
 // ADD IX, DE  -  DD, 19
-// ADD IY, DE  -  FD, 19
-// ADD IX, HL  -  DD, 29
-// ADD IY, HL  -  FD, 29
+// ADD IX, IX  -  DD, 29
 // ADD IX, SP  -  DD, 39
+// ADD IY, BC  -  FD, 09
+// ADD IY, DE  -  FD, 19
+// ADD IY, IY  -  FD, 29
 // ADD IY, SP  -  FD, 39
 // ADC HL, BC  -  ED, 4A
 // ADC HL, DE  -  ED, 5A
@@ -304,13 +304,13 @@
 // SBC HL, DE  -  ED, 52
 // SBC HL, HL  -  ED, 62
 // SBC HL, SP  -  ED, 72
-// INC BC  -  3
+// INC BC  -  03
 // INC DE  -  13
 // INC HL  -  23
 // INC SP  -  33
 // INC IX  -  DD, 23
 // INC IY  -  FD, 23
-// DEC BC  -  B
+// DEC BC  -  0B
 // DEC DE  -  1B
 // DEC HL  -  2B
 // DEC SP  -  3B
@@ -320,13 +320,13 @@
 // RLA  -  17
 // RRCA  -  0F
 // RRA  -  1F
-// RLC A  -  CB, 7
-// RLC B  -  CB, 0
-// RLC C  -  CB, 1
-// RLC D  -  CB, 2
-// RLC E  -  CB, 3
-// RLC H  -  CB, 4
-// RLC L  -  CB, 5
+// RLC A  -  CB, 07
+// RLC B  -  CB, 00
+// RLC C  -  CB, 01
+// RLC D  -  CB, 02
+// RLC E  -  CB, 03
+// RLC H  -  CB, 04
+// RLC L  -  CB, 05
 // RLC (HL)  -  CB, 06
 // RLC (IX+d)  -  DD, CB, d, 06
 // RLC (IY+d)  -  FD, CB, d, 06
@@ -340,13 +340,13 @@
 // RL (HL)  -  CB, 16
 // RL (IX+d)  -  DD, CB, d, 16
 // RL (IY+d)  -  FD, CB, d, 16
-// RRC A  -  CB, F
-// RRC B  -  CB, 8
-// RRC C  -  CB, 9
-// RRC D  -  CB, A
-// RRC E  -  CB, B
-// RRC H  -  CB, C
-// RRC L  -  CB, D
+// RRC A  -  CB, 0F
+// RRC B  -  CB, 08
+// RRC C  -  CB, 09
+// RRC D  -  CB, 0A
+// RRC E  -  CB, 0B
+// RRC H  -  CB, 0C
+// RRC L  -  CB, 0D
 // RRC (HL)  -  CB, 0E
 // RRC (IX+d)  -  DD, CB, d, 0E
 // RRC (IY+d)  -  FD, CB, d, 0E

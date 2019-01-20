@@ -16,7 +16,7 @@ namespace Jacobi.CpuZ80.Meta
         {
             try
             {
-                return Convert.ToInt32(binaryStr, 2).ToString("X");
+                return Convert.ToInt32(binaryStr, 2).ToString("X2");
             }
             catch (FormatException fe)
             {
@@ -75,7 +75,12 @@ namespace Jacobi.CpuZ80.Meta
         public static IEnumerable<string> Parse(string mnemonic)
         {
             var parts = mnemonic.Split(' ', '+', ',', '(', ')');
-            return parts.Where(p => p.IsLower()).ToList();
+            return parts.Where(p => IsParameter(p)).ToList();
+        }
+
+        public static bool IsParameter(string name)
+        {
+            return name.IsLower();
         }
     }
 }

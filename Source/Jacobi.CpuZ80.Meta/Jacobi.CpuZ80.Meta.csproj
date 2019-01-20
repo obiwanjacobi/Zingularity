@@ -60,21 +60,22 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Cpp\Generate.cpp">
+    <Content Include="Cpp\InstructionsZ80.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastOutputs>
+..\..\Jacobi.CpuZ80\InstructionZ80.cpp
+..\..\Jacobi.CpuZ80\InstructionZ80.hpp
+.\InstructionsZ80.txt
+</LastOutputs>
+      <LastGenOutput>InstructionsZ80.txt</LastGenOutput>
+    </Content>
+    <Content Include="Cpp\InstructionsZ80.txt">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Generate.tt</DependentUpon>
+      <DependentUpon>InstructionsZ80.tt</DependentUpon>
     </Content>
-    <Content Include="Cpp\Generate.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Generate.cpp</LastGenOutput>
-      <LastOutputs>
-.\Generate.cpp
-.\Sample\Sample.hpp
-</LastOutputs>
-    </Content>
+    <Content Include="Cpp\InstructionsZ80_cpp.tt" />
     <Content Include="Cpp\InstructionsZ80_hpp.tt" />
-    <Content Include="Cpp\Sample\Sample.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

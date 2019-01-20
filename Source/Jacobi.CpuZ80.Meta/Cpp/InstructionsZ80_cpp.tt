@@ -1,10 +1,10 @@
 ﻿<#+
 
-    public sealed class InstructionZ80_hpp : Template
+    public sealed class InstructionZ80_cpp : Template
     {
         private readonly InstructionSetInfo _setInfo;
 
-        public InstructionZ80_hpp(InstructionSetInfo setInfo)
+        public InstructionZ80_cpp(InstructionSetInfo setInfo)
         {
             _setInfo = setInfo;
         }
@@ -17,7 +17,8 @@
  *  Any changes you make will be lost when the code is regenerated.
  */
 
-#include "InstructionInfo.h"
+#include "stdafx.h"
+#include "InstructionZ80.hpp"
 
 // Instructions for the Z80:
 <#+
@@ -29,7 +30,10 @@
                 {
 #>
 // <#= decl.Info.Mnemonic #>  -  <#= String.Join(", ", decl.Info.Bytes) #>
-extern InstructionInfo instructionInfo<#= decl.Name #>;
+InstructionInfo instructionInfo<#= decl.Name #>
+{
+};
+
 
 <#+        
                 }

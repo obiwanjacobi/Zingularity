@@ -72,8 +72,8 @@ extern const uint8_t AsyncThis_size;
  *  The expression is evaluated before the async function is exited (false).
  */
 #define Async_WaitUntil(id, expression)     \
+    assert(async->State + 1 == id);         \
     async->State++; case id:                \
-    assert(async->State == id);             \
     if (!(expression)) {                    \
         return false;                       \
     }
@@ -84,8 +84,8 @@ extern const uint8_t AsyncThis_size;
  */
 #define Async_YieldUntil(id, expression)    \
     _yield_ = true;                         \
+    assert(async->State + 1 == id);         \
     async->State++; case id:                \
-    assert(async->State == id);             \
     if (_yield_ || !(expression)) {         \
         return false;                       \
     }
@@ -96,8 +96,8 @@ extern const uint8_t AsyncThis_size;
  */
 #define Async_Yield(id)             \
     _yield_ = true;                 \
+    assert(async->State + 1 == id); \
     async->State++; case id:        \
-    assert(async->State == id);     \
     if (_yield_) {                  \
         return false;               \
     }

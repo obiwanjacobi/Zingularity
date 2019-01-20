@@ -479,7 +479,7 @@
             }
         },
         {
-            "mnemonic": "ADD A, r",
+            "mnemonic": "ADC A, r",
             "bytes": [ "10001rrr" ],
             "cycles": [ 4 ],
             "flags": {
@@ -492,7 +492,7 @@
             }
         },
         {
-            "mnemonic": "ADD A, n",
+            "mnemonic": "ADC A, n",
             "bytes": [ "CE", "n" ],
             "cycles": [ 4, 3 ],
             "flags": {
@@ -505,7 +505,7 @@
             }
         },
         {
-            "mnemonic": "ADD A, (HL)",
+            "mnemonic": "ADC A, (HL)",
             "bytes": [ "8E" ],
             "cycles": [ 4 ],
             "flags": null,
@@ -517,7 +517,7 @@
             "C": "b7"
         },
         {
-            "mnemonic": "ADD A, (ex+d)",
+            "mnemonic": "ADC A, (ex+d)",
             "bytes": [ "ex", "8E", "d" ],
             "cycles": [ 4, 4, 3, 5, 3 ],
             "flags": {

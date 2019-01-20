@@ -37,7 +37,7 @@ typedef struct
 #define RegisterPairUnion(hl, h, l)  \
     union {                         \
         uint16_t hl;                \
-        struct { uint8_t h; uint8_t l; } struct##hl; \
+        struct { uint8_t h; uint8_t l; } _##hl; \
     }
 
 #define RegisterPair(h, l) \

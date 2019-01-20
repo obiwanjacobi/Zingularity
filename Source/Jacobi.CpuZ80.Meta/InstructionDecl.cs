@@ -6,6 +6,7 @@
         {
             Meta = instructionMeta;
             Info = instructionMeta.Info;
+            Name = Info.Mnemonic.ReplaceAll("_", " ", ",", "(", ")", "+", "'");
         }
 
         public InstructionDecl(InstructionInfo instructionInfo)
@@ -17,5 +18,7 @@
         public InstructionMeta Meta { get; }
 
         public InstructionInfo Info { get; }
+
+        public string Name { get; set; }
     }
 }

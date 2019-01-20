@@ -11,13 +11,14 @@ public:
     CpuZ80TestHost() { SetCpuZ80Host(this); }
     virtual void setAddressBus(uint16_t address) { Address = address; }
     virtual void setDataBus(uint8_t data) { Data = data; }
-    virtual void setBusAck(bool level) { BusAck = level; }
-    virtual void setHalt(bool level) { Halt = level; }
-    virtual void setRd(bool level) { Rd = level; }
-    virtual void setWr(bool level) { Wr = level; }
-    virtual void setMemReq(bool level) { MemReq = level; }
-    virtual void setIOReq(bool level) { IoReq = level; }
-    virtual void setRefresh(bool level) { Refresh = level; }
+    virtual void setBusAck(bool active) { BusAck = active; }
+    virtual void setHalt(bool active) { Halt = active; }
+    virtual void setRd(bool active) { Rd = active; }
+    virtual void setWr(bool active) { Wr = active; }
+    virtual void setMemReq(bool active) { MemReq = active; }
+    virtual void setIOReq(bool active) { IoReq = active; }
+    virtual void setRefresh(bool active) { Refresh = active; }
+    virtual void setM1(bool active) { M1 = active; }
 
     // inputs
 
@@ -42,4 +43,5 @@ public:
     bool Rst;
     bool Wait;
     bool Refresh;
+    bool M1;
 };

@@ -6,15 +6,22 @@
 // decls to be implemented by host
 //
 
+//
+// booleans are logical!
+//  false = inactive (high)
+//  true = active (low)
+//
+
 void setAddressBus(uint16_t address);
 void setDataBus(uint8_t data);
-void setBusAck(bool level); // host also floats buses
-void setHalt(bool level);
-void setRd(bool level);
-void setWr(bool level);
-void setMemReq(bool level);
-void setIOReq(bool level);
-void setRefresh(bool level);
+void setBusAck(bool active); // host also floats buses
+void setHalt(bool active);
+void setRd(bool active);
+void setWr(bool active);
+void setMemReq(bool active);
+void setIOReq(bool active);
+void setRefresh(bool active);
+void setM1(bool active);
 
 // inputs
 

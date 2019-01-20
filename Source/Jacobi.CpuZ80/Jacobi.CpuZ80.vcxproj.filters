@@ -8,9 +8,11 @@
     <ClInclude Include="Async.h" />
     <ClInclude Include="CpuZ80Host.h" />
     <ClInclude Include="CpuZ80.h" />
+    <ClInclude Include="InstructionZ80.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="ClockTick.cpp" />
+    <ClCompile Include="InstructionZ80.cpp" />
   </ItemGroup>
 </Project>

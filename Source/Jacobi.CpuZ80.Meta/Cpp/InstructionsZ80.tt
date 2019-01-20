@@ -1,7 +1,8 @@
 <#@ template language="C#" debug="True" hostspecific="True" #>
-<#@ output extension="cpp" #>
+<#@ output extension="txt" #>
 <#@ include file="T4Toolbox.tt" #>
 <#@ include file="InstructionsZ80_hpp.tt" #>
+<#@ include file="InstructionsZ80_cpp.tt" #>
 <#@ Assembly Name="System.Core" #>
 <#@ import namespace="System.IO" #>
 <#@ import namespace="System.Linq" #>
@@ -11,17 +12,24 @@
 <#@ assembly name="$(TargetDir)\Jacobi.CpuZ80.Meta.dll" #>
 <#@ import namespace="Jacobi.CpuZ80.Meta" #>
 <#
-// Using https://github.com/olegsych/T4Toolbox
+    // Using https://github.com/olegsych/T4Toolbox
 
-var filePath = Path.Combine(GetSolutionDirectory(), "Jacobi.CpuZ80.Meta", "InstructionsZ80.json");
-var setInfo = InstructionSetInfo.FromJsonFile(filePath);
+    const string TargetProjectPath = @"..\..\Jacobi.CpuZ80\Jacobi.CpuZ80.vcxproj";
 
-    var ta = new InstructionZ80_hpp(setInfo);
-    ta.Output.File = string.Format("Sample\\Sample.hpp");
-    // ta.Output.PreserveExistingFile = true;
-    // ta.Output.Project = @"..\<Project Folder Path>\<Project File Name>.csproj"; 
-    ta.Render();
+    var filePath = Path.Combine(GetSolutionDirectory(), "Jacobi.CpuZ80.Meta", "InstructionsZ80.json");
+    var setInfo = InstructionSetInfo.FromJsonFile(filePath);
+
+    var hpp = new InstructionZ80_hpp(setInfo);
+    hpp.Output.File = string.Format("InstructionZ80.hpp");
+    hpp.Output.Project = TargetProjectPath;
+    hpp.Render();
+
+    var cpp = new InstructionZ80_cpp(setInfo);
+    cpp.Output.File = string.Format("InstructionZ80.cpp");
+    cpp.Output.Project = TargetProjectPath;
+    cpp.Render();
 #>
+
 
 <#+
 public string GetSolutionDirectory()

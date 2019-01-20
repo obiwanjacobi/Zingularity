@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Jacobi.CpuZ80.Meta
 {
@@ -17,6 +18,18 @@ namespace Jacobi.CpuZ80.Meta
                     return false;
             }
             return true;
+        }
+
+        public static string ReplaceAll(this string txt, string replacment, params string[] replaceTokens)
+        {
+            var builder = new StringBuilder(txt);
+
+            foreach (var token in replaceTokens)
+            {
+                builder.Replace(token, replacment);
+            }
+
+            return builder.ToString();
         }
     }
 }

@@ -58,6 +58,12 @@ void setIOReq(bool level)
     _host->setIOReq(level);
 }
 
+void setRefresh(bool level)
+{
+    assert(_host != nullptr);
+    _host->setRefresh(level);
+}
+
 // inputs
 
 uint8_t getDataBus()

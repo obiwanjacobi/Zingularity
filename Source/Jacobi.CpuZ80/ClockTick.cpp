@@ -1,9 +1,32 @@
 #include "stdafx.h"
 #include "Async.h"
 #include "CpuState.h"
+#include "CpuZ80.h"
+#include "CpuZ80Host.h"
+#include <assert.h>
 #include <string.h>
 
 extern CpuState _state;
+
+#define AssertClock(m, t, l) \
+    assert(_state.Instruction.Clock.M == (uint8_t)m); \
+    assert(_state.Instruction.Clock.T == (uint8_t)t); \
+    assert(_state.Instruction.Clock.Level == l);
+
+void setAddressPC()
+{
+    setAddressBus(_state.Registers.PC);
+    _state.Registers.PC++;
+}
+
+void setAddressIR()
+{
+    setAddressBus(_state.Registers.IR);
+    if (_state.Registers._IR.R < 127)
+        _state.Registers._IR.R++;
+    else 
+        _state.Registers._IR.R &= 0x7F;
+}
 
 
 void Clear()
@@ -11,15 +34,44 @@ void Clear()
     memset(&_state.Instruction, sizeof(InstructionState), 0);
 }
 
-Async_Function(Fetch)
+Async_Function(FetchDecode)
 {
+    AssertClock(MCycle::M1, TCycle::T1, Level::PosEdge);
+    setRefresh(false);
+    setAddressPC();
+    setM1(true);
+    Async_Yield(1);
 
-}
-Async_End
+    AssertClock(MCycle::M1, TCycle::T1, Level::NegEdge);
+    setMemReq(true);
+    setRd(true);
+    Async_Yield(2);
 
-Async_Function(Decode)
-{
+    AssertClock(MCycle::M1, TCycle::T2, Level::PosEdge);
+    Async_Yield(3);
 
+    AssertClock(MCycle::M1, TCycle::T2, Level::NegEdge);
+    Async_Yield(4);
+
+    AssertClock(MCycle::M1, TCycle::T3, Level::PosEdge);
+    _state.Instruction.Data = getDataBus();
+    setRd(false);
+    setMemReq(false);
+    setM1(false);
+    setAddressIR();
+    setRefresh(true);
+    Async_Yield(5);
+
+    AssertClock(MCycle::M1, TCycle::T3, Level::NegEdge);
+    setMemReq(true);
+    Async_Yield(6);
+
+    AssertClock(MCycle::M1, TCycle::T4, Level::PosEdge);
+    Async_Yield(7);
+
+    AssertClock(MCycle::M1, TCycle::T4, Level::NegEdge);
+    setMemReq(false);
+    Async_Yield(8);
 }
 Async_End
 
@@ -36,7 +88,6 @@ Async_Function(Interrupt)
 Async_End
 
 AsyncThis fetchAsync;
-AsyncThis decodeAsync;
 AsyncThis executeAsync;
 AsyncThis interruptAsync;
 
@@ -44,10 +95,8 @@ Async_Function(ClockTick)
 {
     Clear();
     
-    Async_WaitUntil(1, Fetch(&fetchAsync));
-    Async_WaitUntil(2, Decode(&decodeAsync));
-    Async_WaitUntil(3, Execute(&executeAsync));
-    Async_WaitUntil(4, Interrupt(&interruptAsync));
+    Async_WaitUntil(1, FetchDecode(&fetchAsync));
+    Async_WaitUntil(2, Execute(&executeAsync));
+    Async_WaitUntil(3, Interrupt(&interruptAsync));
 }
 Async_End
-

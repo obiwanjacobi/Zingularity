@@ -60,7 +60,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Cpp\Sample\Sample.hpp" />
     <Content Include="Cpp\Generate.cpp">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -70,11 +69,12 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Generate.cpp</LastGenOutput>
       <LastOutputs>
+.\Generate.cpp
 .\Sample\Sample.hpp
-.\Script1.cpp
 </LastOutputs>
     </Content>
     <Content Include="Cpp\InstructionsZ80_hpp.tt" />
+    <Content Include="Cpp\Sample\Sample.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 
 namespace Jacobi.CpuZ80.Meta
 {
@@ -8,7 +7,7 @@ namespace Jacobi.CpuZ80.Meta
         public InstructionMeta(InstructionInfo info)
         {
             Info = info;
-            Parameters = ParseParameters();
+            Parameters = InstructionParameter.Parse(info.Mnemonic);
         }
 
         public InstructionInfo Info { get; }
@@ -19,11 +18,5 @@ namespace Jacobi.CpuZ80.Meta
         }
 
         public IEnumerable<string> Parameters { get; }
-
-        private IEnumerable<string> ParseParameters()
-        {
-            var parts = Info.Mnemonic.Split(' ', '+', ',');
-            return parts.Where(p => p.IsLower()).ToList();
-        }
     }
 }

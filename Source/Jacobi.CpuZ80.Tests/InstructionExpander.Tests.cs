@@ -17,7 +17,7 @@ namespace Jacobi.CpuZ80.Tests
         }
 
         [TestMethod]
-        public void Expand_LDrs()
+        public void Expand_LDrs_Mnemonics()
         {
             var navigator = new InstructionNavigator(_instructionSetInfo);
             var expander = new InstructionExpander(navigator.Tables);
@@ -31,6 +31,46 @@ namespace Jacobi.CpuZ80.Tests
             decls[7].Info.Mnemonic.Should().Be("LD B, A");
             decls[8].Info.Mnemonic.Should().Be("LD B, B");
             decls[48].Info.Mnemonic.Should().Be("LD L, L");
+
+            decls[0].Info.Bytes[0].Should().Be("7F");
+        }
+
+        [TestMethod]
+        public void Expand_LDIA_Mnemonics()
+        {
+            var navigator = new InstructionNavigator(_instructionSetInfo);
+            var expander = new InstructionExpander(navigator.Tables);
+
+            var instruction = navigator.Mnemonic("LD I, A").First();
+            var decls = expander.Expand(new InstructionMeta(instruction)).ToList();
+
+            decls.Should().HaveCount(1);
+            decls[0].Info.Mnemonic.Should().Be("LD I, A");
+        }
+
+        [TestMethod]
+        public void Expand_LDrexd_Mnemonics()
+        {
+            var navigator = new InstructionNavigator(_instructionSetInfo);
+            var expander = new InstructionExpander(navigator.Tables);
+
+            var instruction = navigator.Mnemonic("LD r, (ex+d)").First();
+            var decls = expander.Expand(new InstructionMeta(instruction)).ToList();
+
+            decls.Should().HaveCount(14);
+            decls[0].Info.Mnemonic.Should().Be("LD A, (IX+d)");
+            decls[1].Info.Mnemonic.Should().Be("LD A, (IY+d)");
+            decls[2].Info.Mnemonic.Should().Be("LD B, (IX+d)");
+            decls[3].Info.Mnemonic.Should().Be("LD B, (IY+d)");
+            decls[13].Info.Mnemonic.Should().Be("LD L, (IY+d)");
+
+            decls[0].Info.Bytes[0].Should().Be("DD");
+            decls[0].Info.Bytes[1].Should().Be("7E");
+            decls[0].Info.Bytes[2].Should().Be("d");
+
+            decls[1].Info.Bytes[0].Should().Be("FD");
+            decls[1].Info.Bytes[1].Should().Be("7E");
+            decls[1].Info.Bytes[2].Should().Be("d");
         }
     }
 }

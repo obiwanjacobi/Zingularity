@@ -1,16 +1,63 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Jacobi.CpuZ80.Meta
 {
     public sealed class InstructionParameter
     {
-        public static void FormatBytes(List<string> bytes, IDictionary<string, string> paramValues)
+        private static bool IsBinary(string byteStr)
         {
-            for (int i = 0; i < bytes.Count; i++)
+            return byteStr.Length == 8;
+        }
+
+        private static string ToHex(string binaryStr)
+        {
+            try
             {
-                bytes[i] = FormatText(bytes[i], paramValues);
+                return Convert.ToInt32(binaryStr, 2).ToString("X");
             }
+            catch (FormatException fe)
+            {
+                throw new ArgumentException(
+                    $"Converting '{binaryStr}' to hex failed.\r\nCheck if tables and variable names match.",
+                    nameof(binaryStr), fe);
+            }
+        }
+
+        public static string ReplaceByte(string byteStr, string key, string value)
+        {
+            if (IsBinary(byteStr))
+            {
+                if (key.Length == 1)
+                {
+                    var find = new String(key[0], value.Length);
+                    return byteStr.Replace(find, value);
+                }
+            }
+
+            return byteStr.Replace(key, value);
+        }
+
+        public static List<string> FormatBytes(List<string> bytes, IEnumerable<KeyValuePair<string, string>> tableValues)
+        {
+            var newBytes = new List<string>(bytes);
+
+            for (int i = 0; i < newBytes.Count; i++)
+            {
+                foreach (var kv in tableValues)
+                {
+                    newBytes[i] = ReplaceByte(newBytes[i], kv.Key, kv.Value);
+                }
+
+                if (IsBinary(newBytes[i]))
+                {
+                    newBytes[i] = ToHex(newBytes[i]);
+                }
+            }
+
+            return newBytes;
         }
 
         public static string FormatText(string text, IDictionary<string, string> paramValues)
@@ -23,6 +70,12 @@ namespace Jacobi.CpuZ80.Meta
             }
 
             return builder.ToString();
+        }
+
+        public static IEnumerable<string> Parse(string mnemonic)
+        {
+            var parts = mnemonic.Split(' ', '+', ',', '(', ')');
+            return parts.Where(p => p.IsLower()).ToList();
         }
     }
 }

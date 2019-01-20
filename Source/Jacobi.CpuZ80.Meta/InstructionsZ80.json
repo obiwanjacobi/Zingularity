@@ -1558,7 +1558,7 @@
             "flags": {}
         },
         {
-            "mnemonic": "RET cc",
+            "mnemonic": "RET c",
             "bytes": [ "11ccc000" ],
             "cycles": [ 5, 3, 3 ],
             "altCycles": [ 5 ],
@@ -1578,7 +1578,7 @@
         },
         {
             "mnemonic": "RST i",
-            "bytes": [ "11ppp111" ],
+            "bytes": [ "11iii111" ],
             "cycles": [ 5, 3, 3 ],
             "flags": {}
         },

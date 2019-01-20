@@ -19,11 +19,16 @@
 
 // Instructions for the Z80:
 <#+
-            foreach(var instruction in _setInfo.Instructions)
+            foreach (var instruction in _setInfo.Instructions)
             {
+                var expander = new InstructionExpander(TableInfo.ToList(_setInfo.Tables));
+                var decls = expander.Expand(new InstructionMeta(instruction));
+                foreach (var decl in decls)
+                {
 #>
-// <#= instruction.Mnemonic #>
+// <#= decl.Info.Mnemonic #>  -  <#= String.Join(", ", decl.Info.Bytes) #>
 <#+        
+                }
             }
 #>
 

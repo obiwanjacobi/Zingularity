@@ -16,7 +16,6 @@ typedef struct
 
 typedef struct
 {
-    ClockState Clock;
     MachineCycleInfo *CurrentMachineCycle;
     InstructionInfo *Instruction;
     uint16_t InstructionAddress;
@@ -76,6 +75,7 @@ typedef struct
 
 typedef struct
 {
+    ClockState Clock;
     InstructionState Instruction;
     Registers Registers;
     InterruptState Interrupt;

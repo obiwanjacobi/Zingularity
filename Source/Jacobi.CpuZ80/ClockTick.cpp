@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "Async.h"
+#include "ClockTick.h"
 #include "CpuState.h"
 #include "CpuZ80.h"
 #include "CpuZ80Host.h"
@@ -9,9 +9,9 @@
 extern CpuState _state;
 
 #define AssertClock(m, t, l) \
-    assert(_state.Instruction.Clock.M == (uint8_t)m); \
-    assert(_state.Instruction.Clock.T == (uint8_t)t); \
-    assert(_state.Instruction.Clock.Level == l);
+    assert(_state.Clock.M == (uint8_t)m); \
+    assert(_state.Clock.T == (uint8_t)t); \
+    assert(_state.Clock.Level == l);
 
 void setAddressPC()
 {
@@ -100,3 +100,30 @@ Async_Function(ClockTick)
     Async_WaitUntil(3, Interrupt(&interruptAsync));
 }
 Async_End
+
+void InitClock()
+{
+    _state.Clock.M = 1;
+    _state.Clock.T = 1;
+    _state.Clock.Level = Level::PosEdge;
+}
+
+void AdvanceClock()
+{
+    if (_state.Clock.Level == Level::PosEdge)
+    {
+        _state.Clock.Level = Level::NegEdge;
+    }
+    else
+    {
+        _state.Clock.Level = Level::PosEdge;
+
+        if (_state.Clock.T == 6)
+        {
+            _state.Clock.M++;
+            _state.Clock.T = 1;
+        }
+        else
+            _state.Clock.T++;
+    }
+}

@@ -10,10 +10,8 @@
         }
 
         public InstructionDecl(InstructionInfo instructionInfo)
-        {
-            Meta = new InstructionMeta(instructionInfo);
-            Info = instructionInfo;
-        }
+            : this(new InstructionMeta(instructionInfo))
+        { }
 
         public InstructionMeta Meta { get; }
 

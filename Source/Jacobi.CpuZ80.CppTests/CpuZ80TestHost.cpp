@@ -64,6 +64,12 @@ void setRefresh(bool level)
     _host->setRefresh(level);
 }
 
+void setM1(bool level)
+{
+    assert(_host != nullptr);
+    _host->setM1(level);
+}
+
 // inputs
 
 uint8_t getDataBus()

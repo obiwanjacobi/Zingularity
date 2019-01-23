@@ -6,7 +6,15 @@
         {
             Meta = instructionMeta;
             Info = instructionMeta.Info;
-            Name = Info.Mnemonic.ReplaceAll("_", " ", ",", "(", ")", "+", "'");
+            Name = Info.Mnemonic
+                .Replace(" ", "")
+                .Replace("'", "2")
+                .ReplaceAll("_", ",", "(", ")", "+");
+
+            Name += "_";
+            if (Meta.IsDD || Meta.IsFD)
+                Name += Info.Bytes[0];
+            Name += Info.Bytes.Count;
         }
 
         public InstructionDecl(InstructionInfo instructionInfo)

@@ -8,12 +8,13 @@
     <ClInclude Include="Async.h" />
     <ClInclude Include="CpuZ80Host.h" />
     <ClInclude Include="CpuZ80.h" />
-    <ClInclude Include="InstructionZ80.hpp" />
     <ClInclude Include="ClockTick.h" />
+    <ClInclude Include="InstructionsZ80.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="ClockTick.cpp" />
-    <ClCompile Include="InstructionZ80.cpp" />
+    <ClCompile Include="InstructionsZ80.cpp" />
+    <ClCompile Include="InstructionTablesZ80.cpp" />
   </ItemGroup>
 </Project>

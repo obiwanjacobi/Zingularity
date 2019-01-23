@@ -63,8 +63,9 @@
     <Content Include="Cpp\InstructionsZ80.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastOutputs>
-..\..\Jacobi.CpuZ80\InstructionZ80.cpp
-..\..\Jacobi.CpuZ80\InstructionZ80.hpp
+..\..\Jacobi.CpuZ80\InstructionsZ80.cpp
+..\..\Jacobi.CpuZ80\InstructionsZ80.hpp
+..\..\Jacobi.CpuZ80\InstructionTablesZ80.cpp
 .\InstructionsZ80.txt
 </LastOutputs>
       <LastGenOutput>InstructionsZ80.txt</LastGenOutput>
@@ -75,6 +76,7 @@
       <DependentUpon>InstructionsZ80.tt</DependentUpon>
     </Content>
     <Content Include="Cpp\InstructionsZ80_cpp.tt" />
+    <Content Include="Cpp\InstructionTablesZ80_cpp.tt" />
     <Content Include="Cpp\InstructionsZ80_hpp.tt" />
   </ItemGroup>
   <ItemGroup>

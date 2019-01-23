@@ -1,0 +1,98 @@
+﻿<#+
+
+    public sealed class InstructionTablesZ80_cpp : Template
+    {
+        private readonly IEnumerable<InstructionDecl> _decls;
+
+        public InstructionTablesZ80_cpp(IEnumerable<InstructionDecl> decls)
+        {
+            _decls = decls;
+        }
+
+        public override string TransformText()
+        {
+            var cbTable = _decls.Where(d => d.Info.Bytes[0] == "CB").OrderBy(d => d.Info.Bytes[1]).ToList();
+            var edTable = _decls.Where(d => d.Info.Bytes[0] == "ED").OrderBy(d => d.Info.Bytes[1]).ToList();
+            var ddTable = _decls.Where(d => d.Info.Bytes[0] == "DD").OrderBy(d => d.Info.Bytes[1]).ToList();
+            var fdTable = _decls.Where(d => d.Info.Bytes[0] == "FD").OrderBy(d => d.Info.Bytes[1]).ToList();
+            var table = _decls.Where(d => d.Info.Bytes[0] != "CB" && d.Info.Bytes[0] != "ED" && d.Info.Bytes[0] != "DD" && d.Info.Bytes[0] != "FD")
+                            .OrderBy(d => d.Info.Bytes[0]).ToList();
+#>
+/**
+ *  Generated Source Code
+ *  Any changes you make will be lost when the code is regenerated.
+ */
+
+#include "InstructionInfo.h"
+#include "InstructionsZ80.hpp"
+
+// non-extension opcodes
+InstructionTableEntry InstructionTable[] = {
+<#+
+            foreach (var decl in table)
+            {
+
+#>
+    { 0x<#= decl.Info.Bytes[0] #>, &instructionInfo<#= decl.Name #> },
+<#+        
+            }
+#>
+};
+
+// non-extension opcodes
+InstructionTableEntry InstructionTableCB[] = {
+<#+
+            foreach (var decl in cbTable)
+            {
+
+#>
+    { 0x<#= decl.Info.Bytes[1] #>, &instructionInfo<#= decl.Name #> },
+<#+        
+            }
+#>
+};
+
+// non-extension opcodes
+InstructionTableEntry InstructionTableDD[] = {
+<#+
+            foreach (var decl in ddTable)
+            {
+
+#>
+    { 0x<#= decl.Info.Bytes[1] #>, &instructionInfo<#= decl.Name #> },
+<#+        
+            }
+#>
+};
+
+// non-extension opcodes
+InstructionTableEntry InstructionTableFD[] = {
+<#+
+            foreach (var decl in fdTable)
+            {
+
+#>
+    { 0x<#= decl.Info.Bytes[1] #>, &instructionInfo<#= decl.Name #> },
+<#+        
+            }
+#>
+};
+
+// non-extension opcodes
+InstructionTableEntry InstructionTableED[] = {
+<#+
+            foreach (var decl in edTable)
+            {
+
+#>
+    { 0x<#= decl.Info.Bytes[1] #>, &instructionInfo<#= decl.Name #> },
+<#+        
+            }
+#>
+};
+
+<#+
+            return this.GenerationEnvironment.ToString();
+        }
+    }
+#>

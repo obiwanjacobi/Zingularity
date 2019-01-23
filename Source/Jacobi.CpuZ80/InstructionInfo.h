@@ -38,3 +38,10 @@ typedef struct
     MachineCycleInfo Cycles[6];
 
 } InstructionInfo;
+
+typedef struct
+{
+    uint8_t OpCode;
+    InstructionInfo* Instruction;
+
+} InstructionTableEntry;

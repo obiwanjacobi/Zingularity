@@ -1,12 +1,12 @@
 ﻿<#+
 
-    public sealed class InstructionZ80_hpp : Template
+    public sealed class InstructionsZ80_hpp : Template
     {
-        private readonly InstructionSetInfo _setInfo;
+        private readonly IEnumerable<InstructionDecl> _decls;
 
-        public InstructionZ80_hpp(InstructionSetInfo setInfo)
+        public InstructionsZ80_hpp(IEnumerable<InstructionDecl> decls)
         {
-            _setInfo = setInfo;
+            _decls = decls;
         }
 
         public override string TransformText()
@@ -21,18 +21,13 @@
 
 // Instructions for the Z80:
 <#+
-            foreach (var instruction in _setInfo.Instructions)
+            foreach (var decl in _decls)
             {
-                var expander = new InstructionExpander(TableInfo.ToList(_setInfo.Tables));
-                var decls = expander.Expand(new InstructionMeta(instruction));
-                foreach (var decl in decls)
-                {
 #>
 // <#= decl.Info.Mnemonic #>  -  <#= String.Join(", ", decl.Info.Bytes) #>
 extern InstructionInfo instructionInfo<#= decl.Name #>;
 
 <#+        
-                }
             }
 #>
 

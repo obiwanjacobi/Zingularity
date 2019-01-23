@@ -8,8 +8,6 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 CpuState _state;
 
-
-
 AsyncThis asyncClockTick;
 
 namespace JacobiCpuZ80CppTests

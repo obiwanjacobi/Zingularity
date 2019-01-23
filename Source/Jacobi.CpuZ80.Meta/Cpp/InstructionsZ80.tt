@@ -3,6 +3,7 @@
 <#@ include file="T4Toolbox.tt" #>
 <#@ include file="InstructionsZ80_hpp.tt" #>
 <#@ include file="InstructionsZ80_cpp.tt" #>
+<#@ include file="InstructionTablesZ80_cpp.tt" #>
 <#@ Assembly Name="System.Core" #>
 <#@ import namespace="System.IO" #>
 <#@ import namespace="System.Linq" #>
@@ -19,15 +20,27 @@
     var filePath = Path.Combine(GetSolutionDirectory(), "Jacobi.CpuZ80.Meta", "InstructionsZ80.json");
     var setInfo = InstructionSetInfo.FromJsonFile(filePath);
 
-    var hpp = new InstructionZ80_hpp(setInfo);
-    hpp.Output.File = string.Format("InstructionZ80.hpp");
+    var decls = new List<InstructionDecl>();
+    foreach (var instruction in setInfo.Instructions)
+    {
+        var expander = new InstructionExpander(TableInfo.ToList(setInfo.Tables));
+        decls.AddRange(expander.Expand(new InstructionMeta(instruction)));
+    }
+
+    var hpp = new InstructionsZ80_hpp(decls);
+    hpp.Output.File = string.Format("InstructionsZ80.hpp");
     hpp.Output.Project = TargetProjectPath;
     hpp.Render();
 
-    var cpp = new InstructionZ80_cpp(setInfo);
-    cpp.Output.File = string.Format("InstructionZ80.cpp");
+    var cpp = new InstructionsZ80_cpp(decls);
+    cpp.Output.File = string.Format("InstructionsZ80.cpp");
     cpp.Output.Project = TargetProjectPath;
     cpp.Render();
+
+    var tables = new InstructionTablesZ80_cpp(decls);
+    tables.Output.File = string.Format("InstructionTablesZ80.cpp");
+    tables.Output.Project = TargetProjectPath;
+    tables.Render();
 #>
 
 

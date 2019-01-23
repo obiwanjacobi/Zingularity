@@ -16,6 +16,7 @@ extern CpuState _state;
 void setAddressPC()
 {
     setAddressBus(_state.Registers.PC);
+    //if (!_state.Halt)
     _state.Registers.PC++;
 }
 

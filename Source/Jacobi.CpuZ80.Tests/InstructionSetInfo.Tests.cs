@@ -11,9 +11,13 @@ namespace Jacobi.CpuZ80.Tests
         {
             var setInfo = InstructionSetHelper.Load();
 
-            setInfo.Tables.Should().HaveCount(11);
+            setInfo.Tables.Should().HaveCount(15);
             setInfo.Tables.ContainsKey("r").Should().BeTrue();
             setInfo.Tables.ContainsKey("s").Should().BeTrue();
+            setInfo.Tables.ContainsKey("t").Should().BeTrue();
+            setInfo.Tables.ContainsKey("u").Should().BeTrue();
+            setInfo.Tables.ContainsKey("v").Should().BeTrue();
+            setInfo.Tables.ContainsKey("w").Should().BeTrue();
             setInfo.Tables.ContainsKey("m").Should().BeTrue();
             setInfo.Tables.ContainsKey("o").Should().BeTrue();
             setInfo.Tables.ContainsKey("p").Should().BeTrue();
@@ -24,7 +28,7 @@ namespace Jacobi.CpuZ80.Tests
             setInfo.Tables.ContainsKey("j").Should().BeTrue();
             setInfo.Tables.ContainsKey("i").Should().BeTrue();
 
-            setInfo.Instructions.Should().HaveCount(166);
+            setInfo.Instructions.Should().HaveCount(170);
         }
     }
 }

@@ -5,6 +5,17 @@
 
 #include "InstructionInfo.h"
 
+extern uint8_t InstructionTable_length;
+extern InstructionTableEntry InstructionTable[];
+extern uint8_t InstructionTableCB_length;
+extern InstructionTableEntry InstructionTableCB[];
+extern uint8_t InstructionTableDD_length;
+extern InstructionTableEntry InstructionTableDD[];
+extern uint8_t InstructionTableFD_length;
+extern InstructionTableEntry InstructionTableFD[];
+extern uint8_t InstructionTableED_length;
+extern InstructionTableEntry InstructionTableED[];
+
 // Instructions for the Z80:
 // LD A, A  -  7F
 extern InstructionInfo instructionInfoLDA_A_1;

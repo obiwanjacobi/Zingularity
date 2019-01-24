@@ -65,11 +65,11 @@ namespace Jacobi.CpuZ80.Tests
             decls[13].Info.Mnemonic.Should().Be("LD L, (IY+d)");
 
             decls[0].Info.Bytes[0].Should().Be("DD");
-            decls[0].Info.Bytes[1].Should().Be("7E");
+            decls[0].Info.Bytes[1].Should().Be("BE");
             decls[0].Info.Bytes[2].Should().Be("d");
 
             decls[1].Info.Bytes[0].Should().Be("FD");
-            decls[1].Info.Bytes[1].Should().Be("7E");
+            decls[1].Info.Bytes[1].Should().Be("BE");
             decls[1].Info.Bytes[2].Should().Be("d");
         }
 

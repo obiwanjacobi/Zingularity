@@ -4,7 +4,7 @@
  */
 
 #include "stdafx.h"
-#include "InstructionZ80.hpp"
+#include "InstructionsZ80.hpp"
 
 // Instructions for the Z80:
 // LD A, A  -  7F

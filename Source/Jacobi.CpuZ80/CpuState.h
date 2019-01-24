@@ -23,6 +23,9 @@ typedef struct
     uint16_t Address;
     uint8_t Data;
 
+    uint8_t ExtIndex;
+    uint8_t Ext[2];
+
     int8_t d;
     int8_t e;
     uint8_t n;

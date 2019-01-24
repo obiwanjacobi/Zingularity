@@ -3,6 +3,7 @@
 #include "CpuState.h"
 #include "CpuZ80.h"
 #include "CpuZ80Host.h"
+#include "InstructionsZ80.hpp"
 #include <assert.h>
 #include <string.h>
 
@@ -29,6 +30,72 @@ void setAddressIR()
         _state.Registers._IR.R &= 0x7F;
 }
 
+InstructionInfo* LookupInstruction()
+{
+    InstructionTableEntry* table = nullptr;
+    uint8_t tableLength = 0;
+
+    if (_state.Instruction.ExtIndex == 0)
+    {
+        table = InstructionTable;
+        tableLength = InstructionTable_length;
+    }
+    else
+    {
+        switch (_state.Instruction.Ext[0])
+        {
+        case 0xCB:
+            table = InstructionTableCB;
+            tableLength = InstructionTableCB_length;
+            break;
+        case 0xDD:
+            table = InstructionTableDD;
+            tableLength = InstructionTableDD_length;
+            break;
+        case 0xFD:
+            table = InstructionTableFD;
+            tableLength = InstructionTableFD_length;
+            break;
+        case 0xED:
+            table = InstructionTableED;
+            tableLength = InstructionTableED_length;
+            break;
+        default:
+            break;
+        }
+    }
+
+    // for now good enough
+    for (uint8_t i = 0; i < tableLength; i++)
+    {
+        if (table[i].OpCode == _state.Instruction.Data)
+            return table[i].Instruction;
+    }
+
+    return nullptr;
+}
+
+void Decode()
+{
+    switch (_state.Instruction.Data)
+    {    
+    case 0xDD:
+    case 0xED:
+    case 0xFD:
+        if (_state.Instruction.ExtIndex != 0) _state.Instruction.ExtIndex = 0;
+        _state.Instruction.Ext[_state.Instruction.ExtIndex] = _state.Instruction.Data;
+        if (_state.Instruction.ExtIndex == 0) _state.Instruction.ExtIndex++;
+        break;
+    case 0xCB:
+        if (_state.Instruction.Ext[0] == 0xED) _state.Instruction.ExtIndex = 0;
+        _state.Instruction.Ext[_state.Instruction.ExtIndex] = _state.Instruction.Data;
+        if (_state.Instruction.ExtIndex == 0) _state.Instruction.ExtIndex++;
+        break;
+    default:
+        _state.Instruction.Instruction = LookupInstruction();
+        break;
+    }
+}
 
 void Clear()
 {
@@ -68,6 +135,7 @@ Async_Function(FetchDecode)
     Async_Yield(6);
 
     AssertClock(MCycle::M1, TCycle::T4, Level::PosEdge);
+    Decode();
     Async_Yield(7);
 
     AssertClock(MCycle::M1, TCycle::T4, Level::NegEdge);

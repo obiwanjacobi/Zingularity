@@ -3,10 +3,12 @@
  *  Any changes you make will be lost when the code is regenerated.
  */
 
+#include "stdafx.h"
 #include "InstructionInfo.h"
 #include "InstructionsZ80.hpp"
 
 // non-extension opcodes
+uint8_t InstructionTable_length = 252;
 InstructionTableEntry InstructionTable[] = {
     { 0x00, &instructionInfoNOP_1 },
     { 0x01, &instructionInfoLDBC_nn_3 },
@@ -263,6 +265,7 @@ InstructionTableEntry InstructionTable[] = {
 };
 
 // non-extension opcodes
+uint8_t InstructionTableCB_length = 248;
 InstructionTableEntry InstructionTableCB[] = {
     { 0x00, &instructionInfoRLCB_2 },
     { 0x01, &instructionInfoRLCC_2 },
@@ -515,6 +518,7 @@ InstructionTableEntry InstructionTableCB[] = {
 };
 
 // non-extension opcodes
+uint8_t InstructionTableDD_length = 126;
 InstructionTableEntry InstructionTableDD[] = {
     { 0x06, &instructionInfoLDB_n_DD3 },
     { 0x09, &instructionInfoADDIX_BC_DD2 },
@@ -645,6 +649,7 @@ InstructionTableEntry InstructionTableDD[] = {
 };
 
 // non-extension opcodes
+uint8_t InstructionTableFD_length = 126;
 InstructionTableEntry InstructionTableFD[] = {
     { 0x06, &instructionInfoLDB_n_FD3 },
     { 0x09, &instructionInfoADDIY_BC_FD2 },
@@ -775,6 +780,7 @@ InstructionTableEntry InstructionTableFD[] = {
 };
 
 // non-extension opcodes
+uint8_t InstructionTableED_length = 58;
 InstructionTableEntry InstructionTableED[] = {
     { 0x40, &instructionInfoINB__C__2 },
     { 0x41, &instructionInfoOUT_C__B_2 },

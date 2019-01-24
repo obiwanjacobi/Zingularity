@@ -23,10 +23,12 @@
  *  Any changes you make will be lost when the code is regenerated.
  */
 
+#include "stdafx.h"
 #include "InstructionInfo.h"
 #include "InstructionsZ80.hpp"
 
 // non-extension opcodes
+uint8_t InstructionTable_length = <#= table.Count #>;
 InstructionTableEntry InstructionTable[] = {
 <#+
             foreach (var decl in table)
@@ -40,6 +42,7 @@ InstructionTableEntry InstructionTable[] = {
 };
 
 // non-extension opcodes
+uint8_t InstructionTableCB_length = <#= cbTable.Count #>;
 InstructionTableEntry InstructionTableCB[] = {
 <#+
             foreach (var decl in cbTable)
@@ -53,6 +56,7 @@ InstructionTableEntry InstructionTableCB[] = {
 };
 
 // non-extension opcodes
+uint8_t InstructionTableDD_length = <#= ddTable.Count #>;
 InstructionTableEntry InstructionTableDD[] = {
 <#+
             foreach (var decl in ddTable)
@@ -66,6 +70,7 @@ InstructionTableEntry InstructionTableDD[] = {
 };
 
 // non-extension opcodes
+uint8_t InstructionTableFD_length = <#= fdTable.Count #>;
 InstructionTableEntry InstructionTableFD[] = {
 <#+
             foreach (var decl in fdTable)
@@ -79,6 +84,7 @@ InstructionTableEntry InstructionTableFD[] = {
 };
 
 // non-extension opcodes
+uint8_t InstructionTableED_length = <#= edTable.Count #>;
 InstructionTableEntry InstructionTableED[] = {
 <#+
             foreach (var decl in edTable)

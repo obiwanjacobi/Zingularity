@@ -18,7 +18,7 @@
  */
 
 #include "stdafx.h"
-#include "InstructionZ80.hpp"
+#include "InstructionsZ80.hpp"
 
 // Instructions for the Z80:
 <#+

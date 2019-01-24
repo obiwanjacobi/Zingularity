@@ -21,7 +21,7 @@ namespace Jacobi.CpuZ80.Tests
             var finder = new InstructionNavigator(_instructionSetInfo);
             var result = finder.MnemonicStartsWith("ld");
 
-            result.Should().HaveCount(32);
+            result.Should().HaveCount(36);
         }
 
         [TestMethod]

@@ -26,8 +26,27 @@
             {
 #>
 // <#= decl.Info.Mnemonic #>  -  <#= String.Join(", ", decl.Info.Bytes) #>
-InstructionInfo instructionInfo<#= decl.Name #>
+InstructionInfo instructionInfo<#= decl.Name #> =
 {
+    {},
+    <#= decl.Info.Cycles.Count-1 #>,
+    <#= decl.Info.AltCycles.Count-1 #>,
+    {
+<#+
+                for(int i = 0; i < 6; i++)
+                {
+                    if (i < decl.Info.Cycles.Count)
+                    {   #>
+        { <#= decl.Info.Cycles[i] #>, nullptr },
+<#+
+                    }
+                    else 
+                    {   #>
+        { 0, nullptr },
+<#+                 }
+                }
+        #>
+    }
 };
 
 

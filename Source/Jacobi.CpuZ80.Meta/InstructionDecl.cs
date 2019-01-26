@@ -21,10 +21,10 @@
             : this(new InstructionMeta(instructionInfo))
         { }
 
+        public string Name { get; }
+
         public InstructionMeta Meta { get; }
 
         public InstructionInfo Info { get; }
-
-        public string Name { get; set; }
     }
 }

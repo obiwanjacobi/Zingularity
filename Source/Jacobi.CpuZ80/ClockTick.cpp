@@ -61,7 +61,7 @@ InstructionInfo* LookupInstruction()
             tableLength = InstructionTableED_length;
             break;
         default:
-            break;
+            return nullptr;
         }
     }
 

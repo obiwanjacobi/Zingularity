@@ -15,6 +15,7 @@ namespace Jacobi.CpuZ80.Meta
                 Cycles = instructionInfo.Cycles,
                 Ops = instructionInfo.Ops,
                 Flags = instructionInfo.Flags,
+                Parent = instructionInfo,
             };
 
             newInstructionInfo.Bytes.AddRange(instructionInfo.Bytes);
@@ -23,7 +24,7 @@ namespace Jacobi.CpuZ80.Meta
             return new InstructionBuilder(newInstructionInfo);
         }
 
-        public InstructionBuilder(InstructionInfo instructionInfo)
+        private InstructionBuilder(InstructionInfo instructionInfo)
         {
             _instructionInfo = instructionInfo;
         }

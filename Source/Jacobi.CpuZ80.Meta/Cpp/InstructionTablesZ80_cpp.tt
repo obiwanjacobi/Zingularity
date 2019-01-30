@@ -2,9 +2,9 @@
 
     public sealed class InstructionTablesZ80_cpp : Template
     {
-        private readonly IEnumerable<InstructionDecl> _decls;
+        private readonly IEnumerable<InstructionMeta> _decls;
 
-        public InstructionTablesZ80_cpp(IEnumerable<InstructionDecl> decls)
+        public InstructionTablesZ80_cpp(IEnumerable<InstructionMeta> decls)
         {
             _decls = decls;
         }
@@ -41,7 +41,7 @@ InstructionTableEntry InstructionTable[] = {
 #>
 };
 
-// non-extension opcodes
+// CB-extension opcodes
 uint8_t InstructionTableCB_length = <#= cbTable.Count #>;
 InstructionTableEntry InstructionTableCB[] = {
 <#+
@@ -55,7 +55,7 @@ InstructionTableEntry InstructionTableCB[] = {
 #>
 };
 
-// non-extension opcodes
+// IX-extension opcodes
 uint8_t InstructionTableDD_length = <#= ddTable.Count #>;
 InstructionTableEntry InstructionTableDD[] = {
 <#+
@@ -69,7 +69,7 @@ InstructionTableEntry InstructionTableDD[] = {
 #>
 };
 
-// non-extension opcodes
+// IY-extension opcodes
 uint8_t InstructionTableFD_length = <#= fdTable.Count #>;
 InstructionTableEntry InstructionTableFD[] = {
 <#+
@@ -83,7 +83,7 @@ InstructionTableEntry InstructionTableFD[] = {
 #>
 };
 
-// non-extension opcodes
+// ED-extension opcodes
 uint8_t InstructionTableED_length = <#= edTable.Count #>;
 InstructionTableEntry InstructionTableED[] = {
 <#+

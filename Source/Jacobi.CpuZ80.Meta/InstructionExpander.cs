@@ -12,28 +12,28 @@ namespace Jacobi.CpuZ80.Meta
             _tables = tables;
         }
 
-        public IEnumerable<InstructionDecl> Expand(InstructionMeta instructionMeta)
+        public IEnumerable<InstructionMeta> Expand(InstructionMeta instructionMeta)
         {
             var tableIterators = _tables
                 .Where(t => instructionMeta.Parameters.Contains(t.Key))
                 .Select(t => new TableIterator(t))
                 .ToList();
 
-            var decls = new List<InstructionDecl>();
+            var decls = new List<InstructionMeta>();
             if (tableIterators.Any())
             {
                 AddInstructionDecls(decls, instructionMeta.Info, tableIterators, 0);
             }
             else
             {
-                decls.Add(new InstructionDecl(instructionMeta));
+                decls.Add(instructionMeta);
             }
 
             return decls;
         }
 
         private void AddInstructionDecls(
-            List<InstructionDecl> instructionDecls, InstructionInfo instructionInfo,
+            List<InstructionMeta> instructionDecls, InstructionInfo instructionInfo,
             List<TableIterator> tables, int currentTableIndex)
         {
             if (currentTableIndex >= tables.Count) return;
@@ -50,7 +50,7 @@ namespace Jacobi.CpuZ80.Meta
                 var builder = InstructionBuilder.Copy(instructionInfo);
                 builder.ReplaceParams(tables.Select(t => t.Table), paramValues);
 
-                instructionDecls.Add(new InstructionDecl(builder.InstructionInfo));
+                instructionDecls.Add(new InstructionMeta(builder.InstructionInfo));
 
                 AddInstructionDecls(instructionDecls, instructionInfo, tables, currentTableIndex + 1);
             }

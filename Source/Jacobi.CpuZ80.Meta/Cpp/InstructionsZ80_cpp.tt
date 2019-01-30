@@ -2,9 +2,9 @@
 
     public sealed class InstructionsZ80_cpp : Template
     {
-        private readonly IEnumerable<InstructionDecl> _decls;
+        private readonly IEnumerable<InstructionMeta> _decls;
 
-        public InstructionsZ80_cpp(IEnumerable<InstructionDecl> decls)
+        public InstructionsZ80_cpp(IEnumerable<InstructionMeta> decls)
         {
             _decls = decls;
         }
@@ -19,36 +19,42 @@
 
 #include "stdafx.h"
 #include "InstructionsZ80.hpp"
+#include "FunctionsZ80.hpp"
 
 // Instructions for the Z80:
 <#+
             foreach (var decl in _decls)
             {
 #>
+
 // <#= decl.Info.Mnemonic #>  -  <#= String.Join(", ", decl.Info.Bytes) #>
 InstructionInfo instructionInfo<#= decl.Name #> =
 {
-    {},
-    <#= decl.Info.Cycles.Count-1 #>,
-    <#= decl.Info.AltCycles.Count-1 #>,
+    <#= decl.Info.Cycles.Count #>,
+    <#= decl.Info.AltCycles.Count #>,
     {
 <#+
-                foreach(var mc in decl.Meta.MachineCycles)
+                foreach(var mc in decl.MachineCycles)
                 {  
                     if (mc.ExtraCycles > 0)
                     {
 #>
-        { <#= mc.TCycles #>, &OnClock_<#= decl.Name #>_<#= mc.Operation #> },
+        { <#= mc.TCycles #>, OnClock_<#= decl.Name #>_<#= mc.Operation #> },
 <#+
                     } 
-                    else 
+                    else if (!mc.IsExt && decl.Root.Parameters.Any())
+                    {
+#>
+        { <#= mc.TCycles #>, OnClock_<#= decl.Root.Name #>_<#= mc.Operation #> },
+<#+                 }
+                    else
                     { 
 #>
-        { <#= mc.TCycles #>, &OnClock_<#= mc.Operation #> },
+        { <#= mc.TCycles #>, OnClock_<#= mc.Operation #> },
 <#+                 }
                 }
                 
-                for(int i = decl.Meta.MachineCycles.Count(); i < 6; i++)
+                for(int i = decl.MachineCycles.Count(); i < 6; i++)
                 {   
 #>
         { 0, nullptr },
@@ -56,8 +62,6 @@ InstructionInfo instructionInfo<#= decl.Name #> =
 #>
     }
 };
-
-
 <#+        
             }
 #>

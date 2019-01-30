@@ -72,7 +72,7 @@ namespace Jacobi.CpuZ80.Meta
             return builder.ToString();
         }
 
-        public static IEnumerable<string> Parse(string mnemonic)
+        public static List<string> Parse(string mnemonic)
         {
             var parts = mnemonic.Split(' ', '+', ',', '(', ')');
             return parts.Where(p => IsParameter(p)).ToList();
@@ -81,6 +81,20 @@ namespace Jacobi.CpuZ80.Meta
         public static bool IsParameter(string name)
         {
             return name.IsLower();
+        }
+
+        public static int IndexOf(string param, IEnumerable<string> bytes)
+        {
+            int index = 0;
+
+            foreach (var b in bytes)
+            {
+                if (b.Contains(param)) return index;
+
+                index++;
+            }
+
+            return -1;
         }
     }
 }

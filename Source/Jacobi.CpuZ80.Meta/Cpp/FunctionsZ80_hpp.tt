@@ -1,0 +1,59 @@
+﻿<#+
+
+    public sealed class FunctionsZ80_hpp : Template
+    {
+        private readonly IEnumerable<InstructionMeta> _decls;
+
+        public FunctionsZ80_hpp(IEnumerable<InstructionMeta> decls)
+        {
+            _decls = decls;
+        }
+
+        public override string TransformText()
+        {
+#>
+/**
+ *  Generated Source Code
+ *  Any changes you make will be lost when the code is regenerated.
+ */
+
+// generic cpu operations
+extern void OnClock_OF();
+extern void OnClock_MR();
+extern void OnClock_MW();
+extern void OnClock_PCd();
+extern void OnClock_SRh();
+extern void OnClock_SRl();
+extern void OnClock_SWh();
+extern void OnClock_SWl();
+extern void OnClock_PR();
+extern void OnClock_PW();
+
+// Functions for the emulating the Z80:
+<#+
+            foreach (var decl in _decls)
+            {
+#>
+
+// <#= decl.Info.Mnemonic #>   -  <#= decl.Name #>  -  <#= String.Join(", ", decl.Info.Bytes) #>
+<#+
+                foreach(var mc in decl.MachineCycles)
+                {  
+                    if (mc.ExtraCycles > 0)
+                    {
+#>
+extern void OnClock_<#= decl.Name #>_<#= mc.Operation #>();
+<#+
+                    } 
+                    else if (!mc.IsExt && decl.Root.Parameters.Any())
+                    {
+#>
+extern void OnClock_<#= decl.Root.Name #>_<#= mc.Operation #>();
+<#+                 }
+                }
+            }
+
+            return this.GenerationEnvironment.ToString();
+        }
+    }
+#>

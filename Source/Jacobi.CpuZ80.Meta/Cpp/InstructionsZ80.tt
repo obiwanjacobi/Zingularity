@@ -1,6 +1,7 @@
 <#@ template language="C#" debug="True" hostspecific="True" #>
 <#@ output extension="txt" #>
 <#@ include file="T4Toolbox.tt" #>
+<#@ include file="FunctionsZ80_hpp.tt" #>
 <#@ include file="InstructionsZ80_hpp.tt" #>
 <#@ include file="InstructionsZ80_cpp.tt" #>
 <#@ include file="InstructionTablesZ80_cpp.tt" #>
@@ -21,7 +22,7 @@
     var filePath = Path.Combine(GetSolutionDirectory(), "Jacobi.CpuZ80.Meta", "InstructionsZ80.json");
     var setInfo = InstructionSetInfo.FromJsonFile(filePath);
 
-    var decls = new List<InstructionDecl>();
+    var decls = new List<InstructionMeta>();
     foreach (var instruction in setInfo.Instructions)
     {
         var expander = new InstructionExpander(TableInfo.ToList(setInfo.Tables));
@@ -42,6 +43,11 @@
     tables.Output.File = "InstructionTablesZ80.cpp";
     tables.Output.Project = TargetProjectPath;
     tables.Render();
+
+    var funcs = new FunctionsZ80_hpp(decls);
+    funcs.Output.File = "FunctionsZ80.hpp";
+    funcs.Output.Project = TargetProjectPath;
+    funcs.Render();
 #>
 
 

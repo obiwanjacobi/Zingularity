@@ -10,6 +10,7 @@
     <ClInclude Include="CpuZ80.h" />
     <ClInclude Include="ClockTick.h" />
     <ClInclude Include="InstructionsZ80.hpp" />
+    <ClInclude Include="FunctionsZ80.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp" />

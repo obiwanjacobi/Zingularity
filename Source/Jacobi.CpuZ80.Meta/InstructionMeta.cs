@@ -32,61 +32,48 @@ namespace Jacobi.CpuZ80.Meta
         public InstructionMeta(InstructionInfo info)
         {
             Info = info;
-            Parameters = InstructionParameter.Parse(info.Mnemonic);
+            _parameters = InstructionParameter.Parse(info.Mnemonic);
             MachineCycles = CreateMachineCycles(info);
+
+            if (info.Parent != null)
+                Parent = new InstructionMeta(info.Parent);
+
+            Name = Info.Mnemonic
+                .Replace(" ", "")
+                .Replace("'", "2")
+                .ReplaceAll("_", ",", "(", ")", "+");
+
+            Name += "_";
+            if (IsExt(Info.Bytes[0]))
+                Name += Info.Bytes[0];
+            Name += Info.Bytes.Count;
         }
+
+        public string Name { get; }
 
         public InstructionInfo Info { get; }
 
-        public string FormatMnemonic(IDictionary<string, string> paramValues)
-        {
-            return InstructionParameter.FormatText(Info.Mnemonic, paramValues);
-        }
+        public InstructionMeta Parent { get; }
 
-        private IEnumerable<MachineCycleInfo> CreateMachineCycles(InstructionInfo info)
-        {
-            var mCycles = new List<MachineCycleInfo>();
+        public InstructionMeta Root => Parent ?? this;
 
-            if (info.Cycles.Count != info.Ops.Count)
-                throw new InvalidOperationException("Error in ops/cycles in InstructionsZ80.json: " + info.Mnemonic);
+        private readonly List<string> _parameters;
 
-            for (int i = 0; i < info.Cycles.Count; i++)
-            {
-                string op = info.Ops[i];
-                int tCycles = info.Cycles[i];
-                int extraCycles = tCycles - (!String.IsNullOrEmpty(op) ? _opCycles[op] : 0);
-
-                if (op == "OF")
-                {
-                    if (IsExt(info.Bytes[i]))
-                        extraCycles = 0;
-                    else if (extraCycles == 0)
-                        extraCycles = 1;
-                }
-
-                mCycles.Add(new MachineCycleInfo
-                {
-                    Operation = op,
-                    TCycles = tCycles,
-                    IsAlt = i < info.AltCycles.Count,
-                    ExtraCycles = extraCycles
-                });
-            }
-
-            return mCycles;
-        }
-
-        public IEnumerable<string> Parameters { get; }
+        public IEnumerable<string> Parameters => _parameters;
 
         public IEnumerable<MachineCycleInfo> MachineCycles { get; }
 
-        public bool IsCB => (IsDD || IsFD) ? IsExtCB(Info.Bytes[1]) : IsExtCB(Info.Bytes[0]);
+        public bool Has_d => _parameters.Contains("d");
+        public bool Has_n => _parameters.Contains("n");
+        public bool Has_nn => _parameters.Contains("nn");
 
-        public bool IsED => (IsDD || IsFD) ? IsExtED(Info.Bytes[1]) : IsExtED(Info.Bytes[0]);
+        public bool HasCB => (HasDD || HasFD) ? IsExtCB(Info.Bytes[1]) : IsExtCB(Info.Bytes[0]);
 
-        public bool IsDD => IsExtDD(Info.Bytes[0]);
+        public bool HasED => (HasDD || HasFD) ? IsExtED(Info.Bytes[1]) : IsExtED(Info.Bytes[0]);
 
-        public bool IsFD => IsExtFD(Info.Bytes[0]);
+        public bool HasDD => IsExtDD(Info.Bytes[0]);
+
+        public bool HasFD => IsExtFD(Info.Bytes[0]);
 
         public static bool IsExtDD(string b)
         {
@@ -110,7 +97,43 @@ namespace Jacobi.CpuZ80.Meta
 
         public static bool IsExt(string b)
         {
-            return IsExtCB(b) || IsExtDD(b) || IsExtED(b) || IsExtFD(b);
+            return IsExtCB(b) || IsExtDD(b) || IsExtED(b) || IsExtFD(b) || b == "ex";
+        }
+
+        private IEnumerable<MachineCycleInfo> CreateMachineCycles(InstructionInfo info)
+        {
+            var mCycles = new List<MachineCycleInfo>();
+
+            if (info.Cycles.Count != info.Ops.Count)
+                throw new InvalidOperationException("Error in ops/cycles in InstructionsZ80.json: " + info.Mnemonic);
+
+            for (int i = 0; i < info.Cycles.Count; i++)
+            {
+                string op = info.Ops[i];
+                int tCycles = info.Cycles[i];
+                int extraCycles = tCycles - (!String.IsNullOrEmpty(op) ? _opCycles[op] : 0);
+                bool isExt = false;
+
+                if (op == "OF")
+                {
+                    isExt = IsExt(info.Bytes[i]);
+                    if (isExt)
+                        extraCycles = 0;
+                    else if (extraCycles == 0)
+                        extraCycles = 1;
+                }
+
+                mCycles.Add(new MachineCycleInfo
+                {
+                    Operation = op,
+                    TCycles = tCycles,
+                    ExtraCycles = extraCycles,
+                    IsAlt = i < info.AltCycles.Count,
+                    IsExt = isExt,
+                });
+            }
+
+            return mCycles;
         }
     }
 
@@ -118,7 +141,8 @@ namespace Jacobi.CpuZ80.Meta
     {
         public string Operation;
         public int TCycles;
-        public bool IsAlt;
         public int ExtraCycles;
+        public bool IsAlt;
+        public bool IsExt;
     }
 }

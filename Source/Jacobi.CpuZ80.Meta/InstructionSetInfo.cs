@@ -22,6 +22,8 @@ namespace Jacobi.CpuZ80.Meta
         public IList<int> AltCycles { get; internal set; }
         public List<string> Ops { get; internal set; }
         public IDictionary<string, string> Flags { get; internal set; }
+
+        public InstructionInfo Parent { get; set; }
     }
 
     public sealed class InstructionSetInfo

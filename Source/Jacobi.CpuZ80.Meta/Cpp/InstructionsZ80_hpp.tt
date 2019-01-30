@@ -2,9 +2,9 @@
 
     public sealed class InstructionsZ80_hpp : Template
     {
-        private readonly IEnumerable<InstructionDecl> _decls;
+        private readonly IEnumerable<InstructionMeta> _decls;
 
-        public InstructionsZ80_hpp(IEnumerable<InstructionDecl> decls)
+        public InstructionsZ80_hpp(IEnumerable<InstructionMeta> decls)
         {
             _decls = decls;
         }

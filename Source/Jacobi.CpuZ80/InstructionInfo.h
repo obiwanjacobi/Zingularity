@@ -32,22 +32,6 @@ enum class RegistersSP16
     SP
 };
 
-enum class RegistersIX16
-{
-    BC,
-    DE,
-    IX,
-    SP
-};
-
-enum class RegistersIY16
-{
-    BC,
-    DE,
-    IY,
-    SP
-};
-
 enum class AluOps
 {
     ADD,
@@ -72,6 +56,59 @@ enum class AluRot
     SRL
 };
 
+enum class Bits8
+{
+    Bit0,
+    Bit1,
+    Bit2,
+    Bit3,
+    Bit4,
+    Bit5,
+    Bit6,
+    Bit7
+};
+
+enum class RstAddress
+{
+    Rst00,
+    Rst08,
+    Rst10,
+    Rst18,
+    Rst20,
+    Rst28,
+    Rst30,
+    Rst38
+};
+
+
+enum class VariableType
+{
+    None,
+    Register8,
+    Register16,
+    RegisterSP16,
+    Bits8,
+    RstAddress,
+    AluOps,
+    AluRot,
+};
+
+
+typedef struct
+{
+    VariableType VariableType;
+    union
+    {
+        Registers8 Register8;
+        Registers16 Register16;
+        RegistersSP16 RegisterSP16;
+        Bits8 Bits8;
+        RstAddress RstAddress;
+        AluOps AluOps;
+        AluRot AluRot;
+    };
+
+} InstructionVariable;
 
 typedef struct
 {
@@ -83,20 +120,22 @@ typedef struct
 
 typedef struct
 {
-    uint8_t Bytes[4];
-    // x, y, z, p and q
-    // bytes
-    // extensions
-    // nn, n, d
+    InstructionVariable Variable1 = { VariableType::None };
+    InstructionVariable Variable2 = { VariableType::None };
+    
+    bool nn = false;
+    bool n = false;
+    bool d = false;
+
 } DecodeInfo;
 
 typedef struct
 {
     // how to decode this instruction
-    DecodeInfo Decode;
+    //DecodeInfo Decode;
 
-    int8_t LastIndex;
-    int8_t LastAltIndex;
+    int8_t Count;
+    int8_t AltCount;
     // max 6 M-cycles per instruction
     MachineCycleInfo Cycles[6];
 

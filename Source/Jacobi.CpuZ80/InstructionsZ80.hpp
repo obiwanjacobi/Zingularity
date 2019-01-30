@@ -675,16 +675,16 @@ extern InstructionInfo instructionInfoLD_DE__A_1;
 extern InstructionInfo instructionInfoLD_nn__A_3;
 
 // LD A, I  -  ED, 57
-extern InstructionInfo instructionInfoLDA_I_2;
+extern InstructionInfo instructionInfoLDA_I_ED2;
 
 // LD A, R  -  ED, 5F
-extern InstructionInfo instructionInfoLDA_R_2;
+extern InstructionInfo instructionInfoLDA_R_ED2;
 
 // LD I, A  -  ED, 47
-extern InstructionInfo instructionInfoLDI_A_2;
+extern InstructionInfo instructionInfoLDI_A_ED2;
 
 // LD R, A  -  ED, 4F
-extern InstructionInfo instructionInfoLDR_A_2;
+extern InstructionInfo instructionInfoLDR_A_ED2;
 
 // LD BC, nn  -  01, n, n
 extern InstructionInfo instructionInfoLDBC_nn_3;
@@ -708,16 +708,16 @@ extern InstructionInfo instructionInfoLDIY_nn_FD4;
 extern InstructionInfo instructionInfoLDHL__nn__3;
 
 // LD BC, (nn)  -  ED, 4B, n, n
-extern InstructionInfo instructionInfoLDBC__nn__4;
+extern InstructionInfo instructionInfoLDBC__nn__ED4;
 
 // LD DE, (nn)  -  ED, 5B, n, n
-extern InstructionInfo instructionInfoLDDE__nn__4;
+extern InstructionInfo instructionInfoLDDE__nn__ED4;
 
 // LD HL, (nn)  -  ED, 6B, n, n
-extern InstructionInfo instructionInfoLDHL__nn__4;
+extern InstructionInfo instructionInfoLDHL__nn__ED4;
 
 // LD SP, (nn)  -  ED, 7B, n, n
-extern InstructionInfo instructionInfoLDSP__nn__4;
+extern InstructionInfo instructionInfoLDSP__nn__ED4;
 
 // LD IX, (nn)  -  DD, 2A, n, n
 extern InstructionInfo instructionInfoLDIX__nn__DD4;
@@ -729,16 +729,16 @@ extern InstructionInfo instructionInfoLDIY__nn__FD4;
 extern InstructionInfo instructionInfoLD_nn__HL_3;
 
 // LD (nn), BC  -  ED, 43, n, n
-extern InstructionInfo instructionInfoLD_nn__BC_4;
+extern InstructionInfo instructionInfoLD_nn__BC_ED4;
 
 // LD (nn), DE  -  ED, 53, n, n
-extern InstructionInfo instructionInfoLD_nn__DE_4;
+extern InstructionInfo instructionInfoLD_nn__DE_ED4;
 
 // LD (nn), HL  -  ED, 63, n, n
-extern InstructionInfo instructionInfoLD_nn__HL_4;
+extern InstructionInfo instructionInfoLD_nn__HL_ED4;
 
 // LD (nn), SP  -  ED, 73, n, n
-extern InstructionInfo instructionInfoLD_nn__SP_4;
+extern InstructionInfo instructionInfoLD_nn__SP_ED4;
 
 // LD (nn), IX  -  DD, 22, n, n
 extern InstructionInfo instructionInfoLD_nn__IX_DD4;
@@ -810,28 +810,28 @@ extern InstructionInfo instructionInfoEX_SP__IX_DD2;
 extern InstructionInfo instructionInfoEX_SP__IY_FD2;
 
 // LDI  -  ED, A0
-extern InstructionInfo instructionInfoLDI_2;
+extern InstructionInfo instructionInfoLDI_ED2;
 
 // LDIR  -  ED, B0
-extern InstructionInfo instructionInfoLDIR_2;
+extern InstructionInfo instructionInfoLDIR_ED2;
 
 // LDD  -  ED, A8
-extern InstructionInfo instructionInfoLDD_2;
+extern InstructionInfo instructionInfoLDD_ED2;
 
 // LDDR  -  ED, B8
-extern InstructionInfo instructionInfoLDDR_2;
+extern InstructionInfo instructionInfoLDDR_ED2;
 
 // CPI  -  ED, A1
-extern InstructionInfo instructionInfoCPI_2;
+extern InstructionInfo instructionInfoCPI_ED2;
 
 // CPIR  -  ED, B1
-extern InstructionInfo instructionInfoCPIR_2;
+extern InstructionInfo instructionInfoCPIR_ED2;
 
 // CPD  -  ED, A9
-extern InstructionInfo instructionInfoCPD_2;
+extern InstructionInfo instructionInfoCPD_ED2;
 
 // CPDR  -  ED, B9
-extern InstructionInfo instructionInfoCPDR_2;
+extern InstructionInfo instructionInfoCPDR_ED2;
 
 // ADD A, A  -  87
 extern InstructionInfo instructionInfoADDA_A_1;
@@ -1164,7 +1164,7 @@ extern InstructionInfo instructionInfoDAA_1;
 extern InstructionInfo instructionInfoCPLA_1;
 
 // NEG  -  ED, 44
-extern InstructionInfo instructionInfoNEG_2;
+extern InstructionInfo instructionInfoNEG_ED2;
 
 // CCF  -  3F
 extern InstructionInfo instructionInfoCCF_1;
@@ -1185,13 +1185,13 @@ extern InstructionInfo instructionInfoDI_1;
 extern InstructionInfo instructionInfoEI_1;
 
 // IM0  -  ED, 46
-extern InstructionInfo instructionInfoIM0_2;
+extern InstructionInfo instructionInfoIM0_ED2;
 
 // IM1  -  ED, 56
-extern InstructionInfo instructionInfoIM1_2;
+extern InstructionInfo instructionInfoIM1_ED2;
 
 // IM2  -  ED, 5E
-extern InstructionInfo instructionInfoIM2_2;
+extern InstructionInfo instructionInfoIM2_ED2;
 
 // ADD HL, BC  -  09
 extern InstructionInfo instructionInfoADDHL_BC_1;
@@ -1230,28 +1230,28 @@ extern InstructionInfo instructionInfoADDIY_IY_FD2;
 extern InstructionInfo instructionInfoADDIY_SP_FD2;
 
 // ADC HL, BC  -  ED, 4A
-extern InstructionInfo instructionInfoADCHL_BC_2;
+extern InstructionInfo instructionInfoADCHL_BC_ED2;
 
 // ADC HL, DE  -  ED, 5A
-extern InstructionInfo instructionInfoADCHL_DE_2;
+extern InstructionInfo instructionInfoADCHL_DE_ED2;
 
 // ADC HL, HL  -  ED, 6A
-extern InstructionInfo instructionInfoADCHL_HL_2;
+extern InstructionInfo instructionInfoADCHL_HL_ED2;
 
 // ADC HL, SP  -  ED, 7A
-extern InstructionInfo instructionInfoADCHL_SP_2;
+extern InstructionInfo instructionInfoADCHL_SP_ED2;
 
 // SBC HL, BC  -  ED, 42
-extern InstructionInfo instructionInfoSBCHL_BC_2;
+extern InstructionInfo instructionInfoSBCHL_BC_ED2;
 
 // SBC HL, DE  -  ED, 52
-extern InstructionInfo instructionInfoSBCHL_DE_2;
+extern InstructionInfo instructionInfoSBCHL_DE_ED2;
 
 // SBC HL, HL  -  ED, 62
-extern InstructionInfo instructionInfoSBCHL_HL_2;
+extern InstructionInfo instructionInfoSBCHL_HL_ED2;
 
 // SBC HL, SP  -  ED, 72
-extern InstructionInfo instructionInfoSBCHL_SP_2;
+extern InstructionInfo instructionInfoSBCHL_SP_ED2;
 
 // INC BC  -  03
 extern InstructionInfo instructionInfoINCBC_1;
@@ -1302,28 +1302,28 @@ extern InstructionInfo instructionInfoRRCA_1;
 extern InstructionInfo instructionInfoRRA_1;
 
 // RLC A  -  CB, 07
-extern InstructionInfo instructionInfoRLCA_2;
+extern InstructionInfo instructionInfoRLCA_CB2;
 
 // RLC B  -  CB, 00
-extern InstructionInfo instructionInfoRLCB_2;
+extern InstructionInfo instructionInfoRLCB_CB2;
 
 // RLC C  -  CB, 01
-extern InstructionInfo instructionInfoRLCC_2;
+extern InstructionInfo instructionInfoRLCC_CB2;
 
 // RLC D  -  CB, 02
-extern InstructionInfo instructionInfoRLCD_2;
+extern InstructionInfo instructionInfoRLCD_CB2;
 
 // RLC E  -  CB, 03
-extern InstructionInfo instructionInfoRLCE_2;
+extern InstructionInfo instructionInfoRLCE_CB2;
 
 // RLC H  -  CB, 04
-extern InstructionInfo instructionInfoRLCH_2;
+extern InstructionInfo instructionInfoRLCH_CB2;
 
 // RLC L  -  CB, 05
-extern InstructionInfo instructionInfoRLCL_2;
+extern InstructionInfo instructionInfoRLCL_CB2;
 
 // RLC (HL)  -  CB, 06
-extern InstructionInfo instructionInfoRLC_HL__2;
+extern InstructionInfo instructionInfoRLC_HL__CB2;
 
 // RLC (IX+d)  -  DD, CB, d, 06
 extern InstructionInfo instructionInfoRLC_IX_d__DD4;
@@ -1332,28 +1332,28 @@ extern InstructionInfo instructionInfoRLC_IX_d__DD4;
 extern InstructionInfo instructionInfoRLC_IY_d__FD4;
 
 // RL A  -  CB, 17
-extern InstructionInfo instructionInfoRLA_2;
+extern InstructionInfo instructionInfoRLA_CB2;
 
 // RL B  -  CB, 10
-extern InstructionInfo instructionInfoRLB_2;
+extern InstructionInfo instructionInfoRLB_CB2;
 
 // RL C  -  CB, 11
-extern InstructionInfo instructionInfoRLC_2;
+extern InstructionInfo instructionInfoRLC_CB2;
 
 // RL D  -  CB, 12
-extern InstructionInfo instructionInfoRLD_2;
+extern InstructionInfo instructionInfoRLD_CB2;
 
 // RL E  -  CB, 13
-extern InstructionInfo instructionInfoRLE_2;
+extern InstructionInfo instructionInfoRLE_CB2;
 
 // RL H  -  CB, 14
-extern InstructionInfo instructionInfoRLH_2;
+extern InstructionInfo instructionInfoRLH_CB2;
 
 // RL L  -  CB, 15
-extern InstructionInfo instructionInfoRLL_2;
+extern InstructionInfo instructionInfoRLL_CB2;
 
 // RL (HL)  -  CB, 16
-extern InstructionInfo instructionInfoRL_HL__2;
+extern InstructionInfo instructionInfoRL_HL__CB2;
 
 // RL (IX+d)  -  DD, CB, d, 16
 extern InstructionInfo instructionInfoRL_IX_d__DD4;
@@ -1362,28 +1362,28 @@ extern InstructionInfo instructionInfoRL_IX_d__DD4;
 extern InstructionInfo instructionInfoRL_IY_d__FD4;
 
 // RRC A  -  CB, 0F
-extern InstructionInfo instructionInfoRRCA_2;
+extern InstructionInfo instructionInfoRRCA_CB2;
 
 // RRC B  -  CB, 08
-extern InstructionInfo instructionInfoRRCB_2;
+extern InstructionInfo instructionInfoRRCB_CB2;
 
 // RRC C  -  CB, 09
-extern InstructionInfo instructionInfoRRCC_2;
+extern InstructionInfo instructionInfoRRCC_CB2;
 
 // RRC D  -  CB, 0A
-extern InstructionInfo instructionInfoRRCD_2;
+extern InstructionInfo instructionInfoRRCD_CB2;
 
 // RRC E  -  CB, 0B
-extern InstructionInfo instructionInfoRRCE_2;
+extern InstructionInfo instructionInfoRRCE_CB2;
 
 // RRC H  -  CB, 0C
-extern InstructionInfo instructionInfoRRCH_2;
+extern InstructionInfo instructionInfoRRCH_CB2;
 
 // RRC L  -  CB, 0D
-extern InstructionInfo instructionInfoRRCL_2;
+extern InstructionInfo instructionInfoRRCL_CB2;
 
 // RRC (HL)  -  CB, 0E
-extern InstructionInfo instructionInfoRRC_HL__2;
+extern InstructionInfo instructionInfoRRC_HL__CB2;
 
 // RRC (IX+d)  -  DD, CB, d, 0E
 extern InstructionInfo instructionInfoRRC_IX_d__DD4;
@@ -1392,28 +1392,28 @@ extern InstructionInfo instructionInfoRRC_IX_d__DD4;
 extern InstructionInfo instructionInfoRRC_IY_d__FD4;
 
 // RR A  -  CB, 1F
-extern InstructionInfo instructionInfoRRA_2;
+extern InstructionInfo instructionInfoRRA_CB2;
 
 // RR B  -  CB, 18
-extern InstructionInfo instructionInfoRRB_2;
+extern InstructionInfo instructionInfoRRB_CB2;
 
 // RR C  -  CB, 19
-extern InstructionInfo instructionInfoRRC_2;
+extern InstructionInfo instructionInfoRRC_CB2;
 
 // RR D  -  CB, 1A
-extern InstructionInfo instructionInfoRRD_2;
+extern InstructionInfo instructionInfoRRD_CB2;
 
 // RR E  -  CB, 1B
-extern InstructionInfo instructionInfoRRE_2;
+extern InstructionInfo instructionInfoRRE_CB2;
 
 // RR H  -  CB, 1C
-extern InstructionInfo instructionInfoRRH_2;
+extern InstructionInfo instructionInfoRRH_CB2;
 
 // RR L  -  CB, 1D
-extern InstructionInfo instructionInfoRRL_2;
+extern InstructionInfo instructionInfoRRL_CB2;
 
 // RR (HL)  -  CB, 1E
-extern InstructionInfo instructionInfoRR_HL__2;
+extern InstructionInfo instructionInfoRR_HL__CB2;
 
 // RR (IX+d)  -  DD, CB, d, 1E
 extern InstructionInfo instructionInfoRR_IX_d__DD4;
@@ -1422,28 +1422,28 @@ extern InstructionInfo instructionInfoRR_IX_d__DD4;
 extern InstructionInfo instructionInfoRR_IY_d__FD4;
 
 // SLA A  -  CB, 27
-extern InstructionInfo instructionInfoSLAA_2;
+extern InstructionInfo instructionInfoSLAA_CB2;
 
 // SLA B  -  CB, 20
-extern InstructionInfo instructionInfoSLAB_2;
+extern InstructionInfo instructionInfoSLAB_CB2;
 
 // SLA C  -  CB, 21
-extern InstructionInfo instructionInfoSLAC_2;
+extern InstructionInfo instructionInfoSLAC_CB2;
 
 // SLA D  -  CB, 22
-extern InstructionInfo instructionInfoSLAD_2;
+extern InstructionInfo instructionInfoSLAD_CB2;
 
 // SLA E  -  CB, 23
-extern InstructionInfo instructionInfoSLAE_2;
+extern InstructionInfo instructionInfoSLAE_CB2;
 
 // SLA H  -  CB, 24
-extern InstructionInfo instructionInfoSLAH_2;
+extern InstructionInfo instructionInfoSLAH_CB2;
 
 // SLA L  -  CB, 25
-extern InstructionInfo instructionInfoSLAL_2;
+extern InstructionInfo instructionInfoSLAL_CB2;
 
 // SLA (HL)  -  CB, 26
-extern InstructionInfo instructionInfoSLA_HL__2;
+extern InstructionInfo instructionInfoSLA_HL__CB2;
 
 // SLA (IX+d)  -  DD, CB, d, 26
 extern InstructionInfo instructionInfoSLA_IX_d__DD4;
@@ -1452,28 +1452,28 @@ extern InstructionInfo instructionInfoSLA_IX_d__DD4;
 extern InstructionInfo instructionInfoSLA_IY_d__FD4;
 
 // SRA A  -  CB, 2F
-extern InstructionInfo instructionInfoSRAA_2;
+extern InstructionInfo instructionInfoSRAA_CB2;
 
 // SRA B  -  CB, 28
-extern InstructionInfo instructionInfoSRAB_2;
+extern InstructionInfo instructionInfoSRAB_CB2;
 
 // SRA C  -  CB, 29
-extern InstructionInfo instructionInfoSRAC_2;
+extern InstructionInfo instructionInfoSRAC_CB2;
 
 // SRA D  -  CB, 2A
-extern InstructionInfo instructionInfoSRAD_2;
+extern InstructionInfo instructionInfoSRAD_CB2;
 
 // SRA E  -  CB, 2B
-extern InstructionInfo instructionInfoSRAE_2;
+extern InstructionInfo instructionInfoSRAE_CB2;
 
 // SRA H  -  CB, 2C
-extern InstructionInfo instructionInfoSRAH_2;
+extern InstructionInfo instructionInfoSRAH_CB2;
 
 // SRA L  -  CB, 2D
-extern InstructionInfo instructionInfoSRAL_2;
+extern InstructionInfo instructionInfoSRAL_CB2;
 
 // SRA (HL)  -  CB, 2E
-extern InstructionInfo instructionInfoSRA_HL__2;
+extern InstructionInfo instructionInfoSRA_HL__CB2;
 
 // SRA (IX+d)  -  DD, CB, d, 2E
 extern InstructionInfo instructionInfoSRA_IX_d__DD4;
@@ -1482,28 +1482,28 @@ extern InstructionInfo instructionInfoSRA_IX_d__DD4;
 extern InstructionInfo instructionInfoSRA_IY_d__FD4;
 
 // SRL A  -  CB, 3F
-extern InstructionInfo instructionInfoSRLA_2;
+extern InstructionInfo instructionInfoSRLA_CB2;
 
 // SRL B  -  CB, 38
-extern InstructionInfo instructionInfoSRLB_2;
+extern InstructionInfo instructionInfoSRLB_CB2;
 
 // SRL C  -  CB, 39
-extern InstructionInfo instructionInfoSRLC_2;
+extern InstructionInfo instructionInfoSRLC_CB2;
 
 // SRL D  -  CB, 3A
-extern InstructionInfo instructionInfoSRLD_2;
+extern InstructionInfo instructionInfoSRLD_CB2;
 
 // SRL E  -  CB, 3B
-extern InstructionInfo instructionInfoSRLE_2;
+extern InstructionInfo instructionInfoSRLE_CB2;
 
 // SRL H  -  CB, 3C
-extern InstructionInfo instructionInfoSRLH_2;
+extern InstructionInfo instructionInfoSRLH_CB2;
 
 // SRL L  -  CB, 3D
-extern InstructionInfo instructionInfoSRLL_2;
+extern InstructionInfo instructionInfoSRLL_CB2;
 
 // SRL (HL)  -  CB, 3E
-extern InstructionInfo instructionInfoSRL_HL__2;
+extern InstructionInfo instructionInfoSRL_HL__CB2;
 
 // SRL (IX+d)  -  DD, CB, d, 3E
 extern InstructionInfo instructionInfoSRL_IX_d__DD4;
@@ -1512,727 +1512,727 @@ extern InstructionInfo instructionInfoSRL_IX_d__DD4;
 extern InstructionInfo instructionInfoSRL_IY_d__FD4;
 
 // RLD A  -  ED, 6F
-extern InstructionInfo instructionInfoRLDA_2;
+extern InstructionInfo instructionInfoRLDA_ED2;
 
 // RRD A  -  ED, 67
-extern InstructionInfo instructionInfoRRDA_2;
+extern InstructionInfo instructionInfoRRDA_ED2;
 
 // BIT 0, A  -  CB, 47
-extern InstructionInfo instructionInfoBIT0_A_2;
+extern InstructionInfo instructionInfoBIT0_A_CB2;
 
 // BIT 1, A  -  CB, 4F
-extern InstructionInfo instructionInfoBIT1_A_2;
+extern InstructionInfo instructionInfoBIT1_A_CB2;
 
 // BIT 2, A  -  CB, 57
-extern InstructionInfo instructionInfoBIT2_A_2;
+extern InstructionInfo instructionInfoBIT2_A_CB2;
 
 // BIT 3, A  -  CB, 5F
-extern InstructionInfo instructionInfoBIT3_A_2;
+extern InstructionInfo instructionInfoBIT3_A_CB2;
 
 // BIT 4, A  -  CB, 67
-extern InstructionInfo instructionInfoBIT4_A_2;
+extern InstructionInfo instructionInfoBIT4_A_CB2;
 
 // BIT 5, A  -  CB, 6F
-extern InstructionInfo instructionInfoBIT5_A_2;
+extern InstructionInfo instructionInfoBIT5_A_CB2;
 
 // BIT 6, A  -  CB, 77
-extern InstructionInfo instructionInfoBIT6_A_2;
+extern InstructionInfo instructionInfoBIT6_A_CB2;
 
 // BIT 7, A  -  CB, 7F
-extern InstructionInfo instructionInfoBIT7_A_2;
+extern InstructionInfo instructionInfoBIT7_A_CB2;
 
 // BIT 0, B  -  CB, 40
-extern InstructionInfo instructionInfoBIT0_B_2;
+extern InstructionInfo instructionInfoBIT0_B_CB2;
 
 // BIT 1, B  -  CB, 48
-extern InstructionInfo instructionInfoBIT1_B_2;
+extern InstructionInfo instructionInfoBIT1_B_CB2;
 
 // BIT 2, B  -  CB, 50
-extern InstructionInfo instructionInfoBIT2_B_2;
+extern InstructionInfo instructionInfoBIT2_B_CB2;
 
 // BIT 3, B  -  CB, 58
-extern InstructionInfo instructionInfoBIT3_B_2;
+extern InstructionInfo instructionInfoBIT3_B_CB2;
 
 // BIT 4, B  -  CB, 60
-extern InstructionInfo instructionInfoBIT4_B_2;
+extern InstructionInfo instructionInfoBIT4_B_CB2;
 
 // BIT 5, B  -  CB, 68
-extern InstructionInfo instructionInfoBIT5_B_2;
+extern InstructionInfo instructionInfoBIT5_B_CB2;
 
 // BIT 6, B  -  CB, 70
-extern InstructionInfo instructionInfoBIT6_B_2;
+extern InstructionInfo instructionInfoBIT6_B_CB2;
 
 // BIT 7, B  -  CB, 78
-extern InstructionInfo instructionInfoBIT7_B_2;
+extern InstructionInfo instructionInfoBIT7_B_CB2;
 
 // BIT 0, C  -  CB, 41
-extern InstructionInfo instructionInfoBIT0_C_2;
+extern InstructionInfo instructionInfoBIT0_C_CB2;
 
 // BIT 1, C  -  CB, 49
-extern InstructionInfo instructionInfoBIT1_C_2;
+extern InstructionInfo instructionInfoBIT1_C_CB2;
 
 // BIT 2, C  -  CB, 51
-extern InstructionInfo instructionInfoBIT2_C_2;
+extern InstructionInfo instructionInfoBIT2_C_CB2;
 
 // BIT 3, C  -  CB, 59
-extern InstructionInfo instructionInfoBIT3_C_2;
+extern InstructionInfo instructionInfoBIT3_C_CB2;
 
 // BIT 4, C  -  CB, 61
-extern InstructionInfo instructionInfoBIT4_C_2;
+extern InstructionInfo instructionInfoBIT4_C_CB2;
 
 // BIT 5, C  -  CB, 69
-extern InstructionInfo instructionInfoBIT5_C_2;
+extern InstructionInfo instructionInfoBIT5_C_CB2;
 
 // BIT 6, C  -  CB, 71
-extern InstructionInfo instructionInfoBIT6_C_2;
+extern InstructionInfo instructionInfoBIT6_C_CB2;
 
 // BIT 7, C  -  CB, 79
-extern InstructionInfo instructionInfoBIT7_C_2;
+extern InstructionInfo instructionInfoBIT7_C_CB2;
 
 // BIT 0, D  -  CB, 42
-extern InstructionInfo instructionInfoBIT0_D_2;
+extern InstructionInfo instructionInfoBIT0_D_CB2;
 
 // BIT 1, D  -  CB, 4A
-extern InstructionInfo instructionInfoBIT1_D_2;
+extern InstructionInfo instructionInfoBIT1_D_CB2;
 
 // BIT 2, D  -  CB, 52
-extern InstructionInfo instructionInfoBIT2_D_2;
+extern InstructionInfo instructionInfoBIT2_D_CB2;
 
 // BIT 3, D  -  CB, 5A
-extern InstructionInfo instructionInfoBIT3_D_2;
+extern InstructionInfo instructionInfoBIT3_D_CB2;
 
 // BIT 4, D  -  CB, 62
-extern InstructionInfo instructionInfoBIT4_D_2;
+extern InstructionInfo instructionInfoBIT4_D_CB2;
 
 // BIT 5, D  -  CB, 6A
-extern InstructionInfo instructionInfoBIT5_D_2;
+extern InstructionInfo instructionInfoBIT5_D_CB2;
 
 // BIT 6, D  -  CB, 72
-extern InstructionInfo instructionInfoBIT6_D_2;
+extern InstructionInfo instructionInfoBIT6_D_CB2;
 
 // BIT 7, D  -  CB, 7A
-extern InstructionInfo instructionInfoBIT7_D_2;
+extern InstructionInfo instructionInfoBIT7_D_CB2;
 
 // BIT 0, E  -  CB, 43
-extern InstructionInfo instructionInfoBIT0_E_2;
+extern InstructionInfo instructionInfoBIT0_E_CB2;
 
 // BIT 1, E  -  CB, 4B
-extern InstructionInfo instructionInfoBIT1_E_2;
+extern InstructionInfo instructionInfoBIT1_E_CB2;
 
 // BIT 2, E  -  CB, 53
-extern InstructionInfo instructionInfoBIT2_E_2;
+extern InstructionInfo instructionInfoBIT2_E_CB2;
 
 // BIT 3, E  -  CB, 5B
-extern InstructionInfo instructionInfoBIT3_E_2;
+extern InstructionInfo instructionInfoBIT3_E_CB2;
 
 // BIT 4, E  -  CB, 63
-extern InstructionInfo instructionInfoBIT4_E_2;
+extern InstructionInfo instructionInfoBIT4_E_CB2;
 
 // BIT 5, E  -  CB, 6B
-extern InstructionInfo instructionInfoBIT5_E_2;
+extern InstructionInfo instructionInfoBIT5_E_CB2;
 
 // BIT 6, E  -  CB, 73
-extern InstructionInfo instructionInfoBIT6_E_2;
+extern InstructionInfo instructionInfoBIT6_E_CB2;
 
 // BIT 7, E  -  CB, 7B
-extern InstructionInfo instructionInfoBIT7_E_2;
+extern InstructionInfo instructionInfoBIT7_E_CB2;
 
 // BIT 0, H  -  CB, 44
-extern InstructionInfo instructionInfoBIT0_H_2;
+extern InstructionInfo instructionInfoBIT0_H_CB2;
 
 // BIT 1, H  -  CB, 4C
-extern InstructionInfo instructionInfoBIT1_H_2;
+extern InstructionInfo instructionInfoBIT1_H_CB2;
 
 // BIT 2, H  -  CB, 54
-extern InstructionInfo instructionInfoBIT2_H_2;
+extern InstructionInfo instructionInfoBIT2_H_CB2;
 
 // BIT 3, H  -  CB, 5C
-extern InstructionInfo instructionInfoBIT3_H_2;
+extern InstructionInfo instructionInfoBIT3_H_CB2;
 
 // BIT 4, H  -  CB, 64
-extern InstructionInfo instructionInfoBIT4_H_2;
+extern InstructionInfo instructionInfoBIT4_H_CB2;
 
 // BIT 5, H  -  CB, 6C
-extern InstructionInfo instructionInfoBIT5_H_2;
+extern InstructionInfo instructionInfoBIT5_H_CB2;
 
 // BIT 6, H  -  CB, 74
-extern InstructionInfo instructionInfoBIT6_H_2;
+extern InstructionInfo instructionInfoBIT6_H_CB2;
 
 // BIT 7, H  -  CB, 7C
-extern InstructionInfo instructionInfoBIT7_H_2;
+extern InstructionInfo instructionInfoBIT7_H_CB2;
 
 // BIT 0, L  -  CB, 45
-extern InstructionInfo instructionInfoBIT0_L_2;
+extern InstructionInfo instructionInfoBIT0_L_CB2;
 
 // BIT 1, L  -  CB, 4D
-extern InstructionInfo instructionInfoBIT1_L_2;
+extern InstructionInfo instructionInfoBIT1_L_CB2;
 
 // BIT 2, L  -  CB, 55
-extern InstructionInfo instructionInfoBIT2_L_2;
+extern InstructionInfo instructionInfoBIT2_L_CB2;
 
 // BIT 3, L  -  CB, 5D
-extern InstructionInfo instructionInfoBIT3_L_2;
+extern InstructionInfo instructionInfoBIT3_L_CB2;
 
 // BIT 4, L  -  CB, 65
-extern InstructionInfo instructionInfoBIT4_L_2;
+extern InstructionInfo instructionInfoBIT4_L_CB2;
 
 // BIT 5, L  -  CB, 6D
-extern InstructionInfo instructionInfoBIT5_L_2;
+extern InstructionInfo instructionInfoBIT5_L_CB2;
 
 // BIT 6, L  -  CB, 75
-extern InstructionInfo instructionInfoBIT6_L_2;
+extern InstructionInfo instructionInfoBIT6_L_CB2;
 
 // BIT 7, L  -  CB, 7D
-extern InstructionInfo instructionInfoBIT7_L_2;
+extern InstructionInfo instructionInfoBIT7_L_CB2;
 
 // BIT 0, (HL)  -  CB, 46
-extern InstructionInfo instructionInfoBIT0__HL__2;
+extern InstructionInfo instructionInfoBIT0__HL__CB2;
 
 // BIT 1, (HL)  -  CB, 4E
-extern InstructionInfo instructionInfoBIT1__HL__2;
+extern InstructionInfo instructionInfoBIT1__HL__CB2;
 
 // BIT 2, (HL)  -  CB, 56
-extern InstructionInfo instructionInfoBIT2__HL__2;
+extern InstructionInfo instructionInfoBIT2__HL__CB2;
 
 // BIT 3, (HL)  -  CB, 5E
-extern InstructionInfo instructionInfoBIT3__HL__2;
+extern InstructionInfo instructionInfoBIT3__HL__CB2;
 
 // BIT 4, (HL)  -  CB, 66
-extern InstructionInfo instructionInfoBIT4__HL__2;
+extern InstructionInfo instructionInfoBIT4__HL__CB2;
 
 // BIT 5, (HL)  -  CB, 6E
-extern InstructionInfo instructionInfoBIT5__HL__2;
+extern InstructionInfo instructionInfoBIT5__HL__CB2;
 
 // BIT 6, (HL)  -  CB, 76
-extern InstructionInfo instructionInfoBIT6__HL__2;
+extern InstructionInfo instructionInfoBIT6__HL__CB2;
 
 // BIT 7, (HL)  -  CB, 7E
-extern InstructionInfo instructionInfoBIT7__HL__2;
+extern InstructionInfo instructionInfoBIT7__HL__CB2;
 
 // BIT 0, (IX+d)  -  DD, CB, d, 46
 extern InstructionInfo instructionInfoBIT0__IX_d__DD4;
 
-// BIT 1, (IX+d)  -  DD, CB, d, 4E
-extern InstructionInfo instructionInfoBIT1__IX_d__DD4;
-
-// BIT 2, (IX+d)  -  DD, CB, d, 56
-extern InstructionInfo instructionInfoBIT2__IX_d__DD4;
-
-// BIT 3, (IX+d)  -  DD, CB, d, 5E
-extern InstructionInfo instructionInfoBIT3__IX_d__DD4;
-
-// BIT 4, (IX+d)  -  DD, CB, d, 66
-extern InstructionInfo instructionInfoBIT4__IX_d__DD4;
-
-// BIT 5, (IX+d)  -  DD, CB, d, 6E
-extern InstructionInfo instructionInfoBIT5__IX_d__DD4;
-
-// BIT 6, (IX+d)  -  DD, CB, d, 76
-extern InstructionInfo instructionInfoBIT6__IX_d__DD4;
-
-// BIT 7, (IX+d)  -  DD, CB, d, 7E
-extern InstructionInfo instructionInfoBIT7__IX_d__DD4;
-
 // BIT 0, (IY+d)  -  FD, CB, d, 46
 extern InstructionInfo instructionInfoBIT0__IY_d__FD4;
+
+// BIT 1, (IX+d)  -  DD, CB, d, 4E
+extern InstructionInfo instructionInfoBIT1__IX_d__DD4;
 
 // BIT 1, (IY+d)  -  FD, CB, d, 4E
 extern InstructionInfo instructionInfoBIT1__IY_d__FD4;
 
+// BIT 2, (IX+d)  -  DD, CB, d, 56
+extern InstructionInfo instructionInfoBIT2__IX_d__DD4;
+
 // BIT 2, (IY+d)  -  FD, CB, d, 56
 extern InstructionInfo instructionInfoBIT2__IY_d__FD4;
+
+// BIT 3, (IX+d)  -  DD, CB, d, 5E
+extern InstructionInfo instructionInfoBIT3__IX_d__DD4;
 
 // BIT 3, (IY+d)  -  FD, CB, d, 5E
 extern InstructionInfo instructionInfoBIT3__IY_d__FD4;
 
+// BIT 4, (IX+d)  -  DD, CB, d, 66
+extern InstructionInfo instructionInfoBIT4__IX_d__DD4;
+
 // BIT 4, (IY+d)  -  FD, CB, d, 66
 extern InstructionInfo instructionInfoBIT4__IY_d__FD4;
+
+// BIT 5, (IX+d)  -  DD, CB, d, 6E
+extern InstructionInfo instructionInfoBIT5__IX_d__DD4;
 
 // BIT 5, (IY+d)  -  FD, CB, d, 6E
 extern InstructionInfo instructionInfoBIT5__IY_d__FD4;
 
+// BIT 6, (IX+d)  -  DD, CB, d, 76
+extern InstructionInfo instructionInfoBIT6__IX_d__DD4;
+
 // BIT 6, (IY+d)  -  FD, CB, d, 76
 extern InstructionInfo instructionInfoBIT6__IY_d__FD4;
+
+// BIT 7, (IX+d)  -  DD, CB, d, 7E
+extern InstructionInfo instructionInfoBIT7__IX_d__DD4;
 
 // BIT 7, (IY+d)  -  FD, CB, d, 7E
 extern InstructionInfo instructionInfoBIT7__IY_d__FD4;
 
 // SET 0, A  -  CB, C7
-extern InstructionInfo instructionInfoSET0_A_2;
+extern InstructionInfo instructionInfoSET0_A_CB2;
 
 // SET 1, A  -  CB, CF
-extern InstructionInfo instructionInfoSET1_A_2;
+extern InstructionInfo instructionInfoSET1_A_CB2;
 
 // SET 2, A  -  CB, D7
-extern InstructionInfo instructionInfoSET2_A_2;
+extern InstructionInfo instructionInfoSET2_A_CB2;
 
 // SET 3, A  -  CB, DF
-extern InstructionInfo instructionInfoSET3_A_2;
+extern InstructionInfo instructionInfoSET3_A_CB2;
 
 // SET 4, A  -  CB, E7
-extern InstructionInfo instructionInfoSET4_A_2;
+extern InstructionInfo instructionInfoSET4_A_CB2;
 
 // SET 5, A  -  CB, EF
-extern InstructionInfo instructionInfoSET5_A_2;
+extern InstructionInfo instructionInfoSET5_A_CB2;
 
 // SET 6, A  -  CB, F7
-extern InstructionInfo instructionInfoSET6_A_2;
+extern InstructionInfo instructionInfoSET6_A_CB2;
 
 // SET 7, A  -  CB, FF
-extern InstructionInfo instructionInfoSET7_A_2;
+extern InstructionInfo instructionInfoSET7_A_CB2;
 
 // SET 0, B  -  CB, C0
-extern InstructionInfo instructionInfoSET0_B_2;
+extern InstructionInfo instructionInfoSET0_B_CB2;
 
 // SET 1, B  -  CB, C8
-extern InstructionInfo instructionInfoSET1_B_2;
+extern InstructionInfo instructionInfoSET1_B_CB2;
 
 // SET 2, B  -  CB, D0
-extern InstructionInfo instructionInfoSET2_B_2;
+extern InstructionInfo instructionInfoSET2_B_CB2;
 
 // SET 3, B  -  CB, D8
-extern InstructionInfo instructionInfoSET3_B_2;
+extern InstructionInfo instructionInfoSET3_B_CB2;
 
 // SET 4, B  -  CB, E0
-extern InstructionInfo instructionInfoSET4_B_2;
+extern InstructionInfo instructionInfoSET4_B_CB2;
 
 // SET 5, B  -  CB, E8
-extern InstructionInfo instructionInfoSET5_B_2;
+extern InstructionInfo instructionInfoSET5_B_CB2;
 
 // SET 6, B  -  CB, F0
-extern InstructionInfo instructionInfoSET6_B_2;
+extern InstructionInfo instructionInfoSET6_B_CB2;
 
 // SET 7, B  -  CB, F8
-extern InstructionInfo instructionInfoSET7_B_2;
+extern InstructionInfo instructionInfoSET7_B_CB2;
 
 // SET 0, C  -  CB, C1
-extern InstructionInfo instructionInfoSET0_C_2;
+extern InstructionInfo instructionInfoSET0_C_CB2;
 
 // SET 1, C  -  CB, C9
-extern InstructionInfo instructionInfoSET1_C_2;
+extern InstructionInfo instructionInfoSET1_C_CB2;
 
 // SET 2, C  -  CB, D1
-extern InstructionInfo instructionInfoSET2_C_2;
+extern InstructionInfo instructionInfoSET2_C_CB2;
 
 // SET 3, C  -  CB, D9
-extern InstructionInfo instructionInfoSET3_C_2;
+extern InstructionInfo instructionInfoSET3_C_CB2;
 
 // SET 4, C  -  CB, E1
-extern InstructionInfo instructionInfoSET4_C_2;
+extern InstructionInfo instructionInfoSET4_C_CB2;
 
 // SET 5, C  -  CB, E9
-extern InstructionInfo instructionInfoSET5_C_2;
+extern InstructionInfo instructionInfoSET5_C_CB2;
 
 // SET 6, C  -  CB, F1
-extern InstructionInfo instructionInfoSET6_C_2;
+extern InstructionInfo instructionInfoSET6_C_CB2;
 
 // SET 7, C  -  CB, F9
-extern InstructionInfo instructionInfoSET7_C_2;
+extern InstructionInfo instructionInfoSET7_C_CB2;
 
 // SET 0, D  -  CB, C2
-extern InstructionInfo instructionInfoSET0_D_2;
+extern InstructionInfo instructionInfoSET0_D_CB2;
 
 // SET 1, D  -  CB, CA
-extern InstructionInfo instructionInfoSET1_D_2;
+extern InstructionInfo instructionInfoSET1_D_CB2;
 
 // SET 2, D  -  CB, D2
-extern InstructionInfo instructionInfoSET2_D_2;
+extern InstructionInfo instructionInfoSET2_D_CB2;
 
 // SET 3, D  -  CB, DA
-extern InstructionInfo instructionInfoSET3_D_2;
+extern InstructionInfo instructionInfoSET3_D_CB2;
 
 // SET 4, D  -  CB, E2
-extern InstructionInfo instructionInfoSET4_D_2;
+extern InstructionInfo instructionInfoSET4_D_CB2;
 
 // SET 5, D  -  CB, EA
-extern InstructionInfo instructionInfoSET5_D_2;
+extern InstructionInfo instructionInfoSET5_D_CB2;
 
 // SET 6, D  -  CB, F2
-extern InstructionInfo instructionInfoSET6_D_2;
+extern InstructionInfo instructionInfoSET6_D_CB2;
 
 // SET 7, D  -  CB, FA
-extern InstructionInfo instructionInfoSET7_D_2;
+extern InstructionInfo instructionInfoSET7_D_CB2;
 
 // SET 0, E  -  CB, C3
-extern InstructionInfo instructionInfoSET0_E_2;
+extern InstructionInfo instructionInfoSET0_E_CB2;
 
 // SET 1, E  -  CB, CB
-extern InstructionInfo instructionInfoSET1_E_2;
+extern InstructionInfo instructionInfoSET1_E_CB2;
 
 // SET 2, E  -  CB, D3
-extern InstructionInfo instructionInfoSET2_E_2;
+extern InstructionInfo instructionInfoSET2_E_CB2;
 
 // SET 3, E  -  CB, DB
-extern InstructionInfo instructionInfoSET3_E_2;
+extern InstructionInfo instructionInfoSET3_E_CB2;
 
 // SET 4, E  -  CB, E3
-extern InstructionInfo instructionInfoSET4_E_2;
+extern InstructionInfo instructionInfoSET4_E_CB2;
 
 // SET 5, E  -  CB, EB
-extern InstructionInfo instructionInfoSET5_E_2;
+extern InstructionInfo instructionInfoSET5_E_CB2;
 
 // SET 6, E  -  CB, F3
-extern InstructionInfo instructionInfoSET6_E_2;
+extern InstructionInfo instructionInfoSET6_E_CB2;
 
 // SET 7, E  -  CB, FB
-extern InstructionInfo instructionInfoSET7_E_2;
+extern InstructionInfo instructionInfoSET7_E_CB2;
 
 // SET 0, H  -  CB, C4
-extern InstructionInfo instructionInfoSET0_H_2;
+extern InstructionInfo instructionInfoSET0_H_CB2;
 
 // SET 1, H  -  CB, CC
-extern InstructionInfo instructionInfoSET1_H_2;
+extern InstructionInfo instructionInfoSET1_H_CB2;
 
 // SET 2, H  -  CB, D4
-extern InstructionInfo instructionInfoSET2_H_2;
+extern InstructionInfo instructionInfoSET2_H_CB2;
 
 // SET 3, H  -  CB, DC
-extern InstructionInfo instructionInfoSET3_H_2;
+extern InstructionInfo instructionInfoSET3_H_CB2;
 
 // SET 4, H  -  CB, E4
-extern InstructionInfo instructionInfoSET4_H_2;
+extern InstructionInfo instructionInfoSET4_H_CB2;
 
 // SET 5, H  -  CB, EC
-extern InstructionInfo instructionInfoSET5_H_2;
+extern InstructionInfo instructionInfoSET5_H_CB2;
 
 // SET 6, H  -  CB, F4
-extern InstructionInfo instructionInfoSET6_H_2;
+extern InstructionInfo instructionInfoSET6_H_CB2;
 
 // SET 7, H  -  CB, FC
-extern InstructionInfo instructionInfoSET7_H_2;
+extern InstructionInfo instructionInfoSET7_H_CB2;
 
 // SET 0, L  -  CB, C5
-extern InstructionInfo instructionInfoSET0_L_2;
+extern InstructionInfo instructionInfoSET0_L_CB2;
 
 // SET 1, L  -  CB, CD
-extern InstructionInfo instructionInfoSET1_L_2;
+extern InstructionInfo instructionInfoSET1_L_CB2;
 
 // SET 2, L  -  CB, D5
-extern InstructionInfo instructionInfoSET2_L_2;
+extern InstructionInfo instructionInfoSET2_L_CB2;
 
 // SET 3, L  -  CB, DD
-extern InstructionInfo instructionInfoSET3_L_2;
+extern InstructionInfo instructionInfoSET3_L_CB2;
 
 // SET 4, L  -  CB, E5
-extern InstructionInfo instructionInfoSET4_L_2;
+extern InstructionInfo instructionInfoSET4_L_CB2;
 
 // SET 5, L  -  CB, ED
-extern InstructionInfo instructionInfoSET5_L_2;
+extern InstructionInfo instructionInfoSET5_L_CB2;
 
 // SET 6, L  -  CB, F5
-extern InstructionInfo instructionInfoSET6_L_2;
+extern InstructionInfo instructionInfoSET6_L_CB2;
 
 // SET 7, L  -  CB, FD
-extern InstructionInfo instructionInfoSET7_L_2;
+extern InstructionInfo instructionInfoSET7_L_CB2;
 
 // SET 0, (HL)  -  CB, C6
-extern InstructionInfo instructionInfoSET0__HL__2;
+extern InstructionInfo instructionInfoSET0__HL__CB2;
 
 // SET 1, (HL)  -  CB, CE
-extern InstructionInfo instructionInfoSET1__HL__2;
+extern InstructionInfo instructionInfoSET1__HL__CB2;
 
 // SET 2, (HL)  -  CB, D6
-extern InstructionInfo instructionInfoSET2__HL__2;
+extern InstructionInfo instructionInfoSET2__HL__CB2;
 
 // SET 3, (HL)  -  CB, DE
-extern InstructionInfo instructionInfoSET3__HL__2;
+extern InstructionInfo instructionInfoSET3__HL__CB2;
 
 // SET 4, (HL)  -  CB, E6
-extern InstructionInfo instructionInfoSET4__HL__2;
+extern InstructionInfo instructionInfoSET4__HL__CB2;
 
 // SET 5, (HL)  -  CB, EE
-extern InstructionInfo instructionInfoSET5__HL__2;
+extern InstructionInfo instructionInfoSET5__HL__CB2;
 
 // SET 6, (HL)  -  CB, F6
-extern InstructionInfo instructionInfoSET6__HL__2;
+extern InstructionInfo instructionInfoSET6__HL__CB2;
 
 // SET 7, (HL)  -  CB, FE
-extern InstructionInfo instructionInfoSET7__HL__2;
+extern InstructionInfo instructionInfoSET7__HL__CB2;
 
 // SET 0, (IX+d)  -  DD, CB, d, C6
 extern InstructionInfo instructionInfoSET0__IX_d__DD4;
 
-// SET 1, (IX+d)  -  DD, CB, d, CE
-extern InstructionInfo instructionInfoSET1__IX_d__DD4;
-
-// SET 2, (IX+d)  -  DD, CB, d, D6
-extern InstructionInfo instructionInfoSET2__IX_d__DD4;
-
-// SET 3, (IX+d)  -  DD, CB, d, DE
-extern InstructionInfo instructionInfoSET3__IX_d__DD4;
-
-// SET 4, (IX+d)  -  DD, CB, d, E6
-extern InstructionInfo instructionInfoSET4__IX_d__DD4;
-
-// SET 5, (IX+d)  -  DD, CB, d, EE
-extern InstructionInfo instructionInfoSET5__IX_d__DD4;
-
-// SET 6, (IX+d)  -  DD, CB, d, F6
-extern InstructionInfo instructionInfoSET6__IX_d__DD4;
-
-// SET 7, (IX+d)  -  DD, CB, d, FE
-extern InstructionInfo instructionInfoSET7__IX_d__DD4;
-
 // SET 0, (IY+d)  -  FD, CB, d, C6
 extern InstructionInfo instructionInfoSET0__IY_d__FD4;
+
+// SET 1, (IX+d)  -  DD, CB, d, CE
+extern InstructionInfo instructionInfoSET1__IX_d__DD4;
 
 // SET 1, (IY+d)  -  FD, CB, d, CE
 extern InstructionInfo instructionInfoSET1__IY_d__FD4;
 
+// SET 2, (IX+d)  -  DD, CB, d, D6
+extern InstructionInfo instructionInfoSET2__IX_d__DD4;
+
 // SET 2, (IY+d)  -  FD, CB, d, D6
 extern InstructionInfo instructionInfoSET2__IY_d__FD4;
+
+// SET 3, (IX+d)  -  DD, CB, d, DE
+extern InstructionInfo instructionInfoSET3__IX_d__DD4;
 
 // SET 3, (IY+d)  -  FD, CB, d, DE
 extern InstructionInfo instructionInfoSET3__IY_d__FD4;
 
+// SET 4, (IX+d)  -  DD, CB, d, E6
+extern InstructionInfo instructionInfoSET4__IX_d__DD4;
+
 // SET 4, (IY+d)  -  FD, CB, d, E6
 extern InstructionInfo instructionInfoSET4__IY_d__FD4;
+
+// SET 5, (IX+d)  -  DD, CB, d, EE
+extern InstructionInfo instructionInfoSET5__IX_d__DD4;
 
 // SET 5, (IY+d)  -  FD, CB, d, EE
 extern InstructionInfo instructionInfoSET5__IY_d__FD4;
 
+// SET 6, (IX+d)  -  DD, CB, d, F6
+extern InstructionInfo instructionInfoSET6__IX_d__DD4;
+
 // SET 6, (IY+d)  -  FD, CB, d, F6
 extern InstructionInfo instructionInfoSET6__IY_d__FD4;
+
+// SET 7, (IX+d)  -  DD, CB, d, FE
+extern InstructionInfo instructionInfoSET7__IX_d__DD4;
 
 // SET 7, (IY+d)  -  FD, CB, d, FE
 extern InstructionInfo instructionInfoSET7__IY_d__FD4;
 
 // RES 0, A  -  CB, 87
-extern InstructionInfo instructionInfoRES0_A_2;
+extern InstructionInfo instructionInfoRES0_A_CB2;
 
 // RES 1, A  -  CB, 8F
-extern InstructionInfo instructionInfoRES1_A_2;
+extern InstructionInfo instructionInfoRES1_A_CB2;
 
 // RES 2, A  -  CB, 97
-extern InstructionInfo instructionInfoRES2_A_2;
+extern InstructionInfo instructionInfoRES2_A_CB2;
 
 // RES 3, A  -  CB, 9F
-extern InstructionInfo instructionInfoRES3_A_2;
+extern InstructionInfo instructionInfoRES3_A_CB2;
 
 // RES 4, A  -  CB, A7
-extern InstructionInfo instructionInfoRES4_A_2;
+extern InstructionInfo instructionInfoRES4_A_CB2;
 
 // RES 5, A  -  CB, AF
-extern InstructionInfo instructionInfoRES5_A_2;
+extern InstructionInfo instructionInfoRES5_A_CB2;
 
 // RES 6, A  -  CB, B7
-extern InstructionInfo instructionInfoRES6_A_2;
+extern InstructionInfo instructionInfoRES6_A_CB2;
 
 // RES 7, A  -  CB, BF
-extern InstructionInfo instructionInfoRES7_A_2;
+extern InstructionInfo instructionInfoRES7_A_CB2;
 
 // RES 0, B  -  CB, 80
-extern InstructionInfo instructionInfoRES0_B_2;
+extern InstructionInfo instructionInfoRES0_B_CB2;
 
 // RES 1, B  -  CB, 88
-extern InstructionInfo instructionInfoRES1_B_2;
+extern InstructionInfo instructionInfoRES1_B_CB2;
 
 // RES 2, B  -  CB, 90
-extern InstructionInfo instructionInfoRES2_B_2;
+extern InstructionInfo instructionInfoRES2_B_CB2;
 
 // RES 3, B  -  CB, 98
-extern InstructionInfo instructionInfoRES3_B_2;
+extern InstructionInfo instructionInfoRES3_B_CB2;
 
 // RES 4, B  -  CB, A0
-extern InstructionInfo instructionInfoRES4_B_2;
+extern InstructionInfo instructionInfoRES4_B_CB2;
 
 // RES 5, B  -  CB, A8
-extern InstructionInfo instructionInfoRES5_B_2;
+extern InstructionInfo instructionInfoRES5_B_CB2;
 
 // RES 6, B  -  CB, B0
-extern InstructionInfo instructionInfoRES6_B_2;
+extern InstructionInfo instructionInfoRES6_B_CB2;
 
 // RES 7, B  -  CB, B8
-extern InstructionInfo instructionInfoRES7_B_2;
+extern InstructionInfo instructionInfoRES7_B_CB2;
 
 // RES 0, C  -  CB, 81
-extern InstructionInfo instructionInfoRES0_C_2;
+extern InstructionInfo instructionInfoRES0_C_CB2;
 
 // RES 1, C  -  CB, 89
-extern InstructionInfo instructionInfoRES1_C_2;
+extern InstructionInfo instructionInfoRES1_C_CB2;
 
 // RES 2, C  -  CB, 91
-extern InstructionInfo instructionInfoRES2_C_2;
+extern InstructionInfo instructionInfoRES2_C_CB2;
 
 // RES 3, C  -  CB, 99
-extern InstructionInfo instructionInfoRES3_C_2;
+extern InstructionInfo instructionInfoRES3_C_CB2;
 
 // RES 4, C  -  CB, A1
-extern InstructionInfo instructionInfoRES4_C_2;
+extern InstructionInfo instructionInfoRES4_C_CB2;
 
 // RES 5, C  -  CB, A9
-extern InstructionInfo instructionInfoRES5_C_2;
+extern InstructionInfo instructionInfoRES5_C_CB2;
 
 // RES 6, C  -  CB, B1
-extern InstructionInfo instructionInfoRES6_C_2;
+extern InstructionInfo instructionInfoRES6_C_CB2;
 
 // RES 7, C  -  CB, B9
-extern InstructionInfo instructionInfoRES7_C_2;
+extern InstructionInfo instructionInfoRES7_C_CB2;
 
 // RES 0, D  -  CB, 82
-extern InstructionInfo instructionInfoRES0_D_2;
+extern InstructionInfo instructionInfoRES0_D_CB2;
 
 // RES 1, D  -  CB, 8A
-extern InstructionInfo instructionInfoRES1_D_2;
+extern InstructionInfo instructionInfoRES1_D_CB2;
 
 // RES 2, D  -  CB, 92
-extern InstructionInfo instructionInfoRES2_D_2;
+extern InstructionInfo instructionInfoRES2_D_CB2;
 
 // RES 3, D  -  CB, 9A
-extern InstructionInfo instructionInfoRES3_D_2;
+extern InstructionInfo instructionInfoRES3_D_CB2;
 
 // RES 4, D  -  CB, A2
-extern InstructionInfo instructionInfoRES4_D_2;
+extern InstructionInfo instructionInfoRES4_D_CB2;
 
 // RES 5, D  -  CB, AA
-extern InstructionInfo instructionInfoRES5_D_2;
+extern InstructionInfo instructionInfoRES5_D_CB2;
 
 // RES 6, D  -  CB, B2
-extern InstructionInfo instructionInfoRES6_D_2;
+extern InstructionInfo instructionInfoRES6_D_CB2;
 
 // RES 7, D  -  CB, BA
-extern InstructionInfo instructionInfoRES7_D_2;
+extern InstructionInfo instructionInfoRES7_D_CB2;
 
 // RES 0, E  -  CB, 83
-extern InstructionInfo instructionInfoRES0_E_2;
+extern InstructionInfo instructionInfoRES0_E_CB2;
 
 // RES 1, E  -  CB, 8B
-extern InstructionInfo instructionInfoRES1_E_2;
+extern InstructionInfo instructionInfoRES1_E_CB2;
 
 // RES 2, E  -  CB, 93
-extern InstructionInfo instructionInfoRES2_E_2;
+extern InstructionInfo instructionInfoRES2_E_CB2;
 
 // RES 3, E  -  CB, 9B
-extern InstructionInfo instructionInfoRES3_E_2;
+extern InstructionInfo instructionInfoRES3_E_CB2;
 
 // RES 4, E  -  CB, A3
-extern InstructionInfo instructionInfoRES4_E_2;
+extern InstructionInfo instructionInfoRES4_E_CB2;
 
 // RES 5, E  -  CB, AB
-extern InstructionInfo instructionInfoRES5_E_2;
+extern InstructionInfo instructionInfoRES5_E_CB2;
 
 // RES 6, E  -  CB, B3
-extern InstructionInfo instructionInfoRES6_E_2;
+extern InstructionInfo instructionInfoRES6_E_CB2;
 
 // RES 7, E  -  CB, BB
-extern InstructionInfo instructionInfoRES7_E_2;
+extern InstructionInfo instructionInfoRES7_E_CB2;
 
 // RES 0, H  -  CB, 84
-extern InstructionInfo instructionInfoRES0_H_2;
+extern InstructionInfo instructionInfoRES0_H_CB2;
 
 // RES 1, H  -  CB, 8C
-extern InstructionInfo instructionInfoRES1_H_2;
+extern InstructionInfo instructionInfoRES1_H_CB2;
 
 // RES 2, H  -  CB, 94
-extern InstructionInfo instructionInfoRES2_H_2;
+extern InstructionInfo instructionInfoRES2_H_CB2;
 
 // RES 3, H  -  CB, 9C
-extern InstructionInfo instructionInfoRES3_H_2;
+extern InstructionInfo instructionInfoRES3_H_CB2;
 
 // RES 4, H  -  CB, A4
-extern InstructionInfo instructionInfoRES4_H_2;
+extern InstructionInfo instructionInfoRES4_H_CB2;
 
 // RES 5, H  -  CB, AC
-extern InstructionInfo instructionInfoRES5_H_2;
+extern InstructionInfo instructionInfoRES5_H_CB2;
 
 // RES 6, H  -  CB, B4
-extern InstructionInfo instructionInfoRES6_H_2;
+extern InstructionInfo instructionInfoRES6_H_CB2;
 
 // RES 7, H  -  CB, BC
-extern InstructionInfo instructionInfoRES7_H_2;
+extern InstructionInfo instructionInfoRES7_H_CB2;
 
 // RES 0, L  -  CB, 85
-extern InstructionInfo instructionInfoRES0_L_2;
+extern InstructionInfo instructionInfoRES0_L_CB2;
 
 // RES 1, L  -  CB, 8D
-extern InstructionInfo instructionInfoRES1_L_2;
+extern InstructionInfo instructionInfoRES1_L_CB2;
 
 // RES 2, L  -  CB, 95
-extern InstructionInfo instructionInfoRES2_L_2;
+extern InstructionInfo instructionInfoRES2_L_CB2;
 
 // RES 3, L  -  CB, 9D
-extern InstructionInfo instructionInfoRES3_L_2;
+extern InstructionInfo instructionInfoRES3_L_CB2;
 
 // RES 4, L  -  CB, A5
-extern InstructionInfo instructionInfoRES4_L_2;
+extern InstructionInfo instructionInfoRES4_L_CB2;
 
 // RES 5, L  -  CB, AD
-extern InstructionInfo instructionInfoRES5_L_2;
+extern InstructionInfo instructionInfoRES5_L_CB2;
 
 // RES 6, L  -  CB, B5
-extern InstructionInfo instructionInfoRES6_L_2;
+extern InstructionInfo instructionInfoRES6_L_CB2;
 
 // RES 7, L  -  CB, BD
-extern InstructionInfo instructionInfoRES7_L_2;
+extern InstructionInfo instructionInfoRES7_L_CB2;
 
 // RES 0, (HL)  -  CB, 86
-extern InstructionInfo instructionInfoRES0__HL__2;
+extern InstructionInfo instructionInfoRES0__HL__CB2;
 
 // RES 1, (HL)  -  CB, 8E
-extern InstructionInfo instructionInfoRES1__HL__2;
+extern InstructionInfo instructionInfoRES1__HL__CB2;
 
 // RES 2, (HL)  -  CB, 96
-extern InstructionInfo instructionInfoRES2__HL__2;
+extern InstructionInfo instructionInfoRES2__HL__CB2;
 
 // RES 3, (HL)  -  CB, 9E
-extern InstructionInfo instructionInfoRES3__HL__2;
+extern InstructionInfo instructionInfoRES3__HL__CB2;
 
 // RES 4, (HL)  -  CB, A6
-extern InstructionInfo instructionInfoRES4__HL__2;
+extern InstructionInfo instructionInfoRES4__HL__CB2;
 
 // RES 5, (HL)  -  CB, AE
-extern InstructionInfo instructionInfoRES5__HL__2;
+extern InstructionInfo instructionInfoRES5__HL__CB2;
 
 // RES 6, (HL)  -  CB, B6
-extern InstructionInfo instructionInfoRES6__HL__2;
+extern InstructionInfo instructionInfoRES6__HL__CB2;
 
 // RES 7, (HL)  -  CB, BE
-extern InstructionInfo instructionInfoRES7__HL__2;
+extern InstructionInfo instructionInfoRES7__HL__CB2;
 
 // RES 0, (IX+d)  -  DD, CB, d, 86
 extern InstructionInfo instructionInfoRES0__IX_d__DD4;
 
-// RES 1, (IX+d)  -  DD, CB, d, 8E
-extern InstructionInfo instructionInfoRES1__IX_d__DD4;
-
-// RES 2, (IX+d)  -  DD, CB, d, 96
-extern InstructionInfo instructionInfoRES2__IX_d__DD4;
-
-// RES 3, (IX+d)  -  DD, CB, d, 9E
-extern InstructionInfo instructionInfoRES3__IX_d__DD4;
-
-// RES 4, (IX+d)  -  DD, CB, d, A6
-extern InstructionInfo instructionInfoRES4__IX_d__DD4;
-
-// RES 5, (IX+d)  -  DD, CB, d, AE
-extern InstructionInfo instructionInfoRES5__IX_d__DD4;
-
-// RES 6, (IX+d)  -  DD, CB, d, B6
-extern InstructionInfo instructionInfoRES6__IX_d__DD4;
-
-// RES 7, (IX+d)  -  DD, CB, d, BE
-extern InstructionInfo instructionInfoRES7__IX_d__DD4;
-
 // RES 0, (IY+d)  -  FD, CB, d, 86
 extern InstructionInfo instructionInfoRES0__IY_d__FD4;
+
+// RES 1, (IX+d)  -  DD, CB, d, 8E
+extern InstructionInfo instructionInfoRES1__IX_d__DD4;
 
 // RES 1, (IY+d)  -  FD, CB, d, 8E
 extern InstructionInfo instructionInfoRES1__IY_d__FD4;
 
+// RES 2, (IX+d)  -  DD, CB, d, 96
+extern InstructionInfo instructionInfoRES2__IX_d__DD4;
+
 // RES 2, (IY+d)  -  FD, CB, d, 96
 extern InstructionInfo instructionInfoRES2__IY_d__FD4;
+
+// RES 3, (IX+d)  -  DD, CB, d, 9E
+extern InstructionInfo instructionInfoRES3__IX_d__DD4;
 
 // RES 3, (IY+d)  -  FD, CB, d, 9E
 extern InstructionInfo instructionInfoRES3__IY_d__FD4;
 
+// RES 4, (IX+d)  -  DD, CB, d, A6
+extern InstructionInfo instructionInfoRES4__IX_d__DD4;
+
 // RES 4, (IY+d)  -  FD, CB, d, A6
 extern InstructionInfo instructionInfoRES4__IY_d__FD4;
+
+// RES 5, (IX+d)  -  DD, CB, d, AE
+extern InstructionInfo instructionInfoRES5__IX_d__DD4;
 
 // RES 5, (IY+d)  -  FD, CB, d, AE
 extern InstructionInfo instructionInfoRES5__IY_d__FD4;
 
+// RES 6, (IX+d)  -  DD, CB, d, B6
+extern InstructionInfo instructionInfoRES6__IX_d__DD4;
+
 // RES 6, (IY+d)  -  FD, CB, d, B6
 extern InstructionInfo instructionInfoRES6__IY_d__FD4;
+
+// RES 7, (IX+d)  -  DD, CB, d, BE
+extern InstructionInfo instructionInfoRES7__IX_d__DD4;
 
 // RES 7, (IY+d)  -  FD, CB, d, BE
 extern InstructionInfo instructionInfoRES7__IY_d__FD4;
@@ -2346,10 +2346,10 @@ extern InstructionInfo instructionInfoRETP_1;
 extern InstructionInfo instructionInfoRETM_1;
 
 // RETI  -  ED, 4D
-extern InstructionInfo instructionInfoRETI_2;
+extern InstructionInfo instructionInfoRETI_ED2;
 
 // RETN  -  ED, 45
-extern InstructionInfo instructionInfoRETN_2;
+extern InstructionInfo instructionInfoRETN_ED2;
 
 // RST 00  -  C7
 extern InstructionInfo instructionInfoRST00_1;
@@ -2379,71 +2379,71 @@ extern InstructionInfo instructionInfoRST38_1;
 extern InstructionInfo instructionInfoINA__n__2;
 
 // IN A, (C)  -  ED, 78
-extern InstructionInfo instructionInfoINA__C__2;
+extern InstructionInfo instructionInfoINA__C__ED2;
 
 // IN B, (C)  -  ED, 40
-extern InstructionInfo instructionInfoINB__C__2;
+extern InstructionInfo instructionInfoINB__C__ED2;
 
 // IN C, (C)  -  ED, 48
-extern InstructionInfo instructionInfoINC__C__2;
+extern InstructionInfo instructionInfoINC__C__ED2;
 
 // IN D, (C)  -  ED, 50
-extern InstructionInfo instructionInfoIND__C__2;
+extern InstructionInfo instructionInfoIND__C__ED2;
 
 // IN E, (C)  -  ED, 58
-extern InstructionInfo instructionInfoINE__C__2;
+extern InstructionInfo instructionInfoINE__C__ED2;
 
 // IN H, (C)  -  ED, 60
-extern InstructionInfo instructionInfoINH__C__2;
+extern InstructionInfo instructionInfoINH__C__ED2;
 
 // IN L, (C)  -  ED, 68
-extern InstructionInfo instructionInfoINL__C__2;
+extern InstructionInfo instructionInfoINL__C__ED2;
 
 // INI  -  ED, A2
-extern InstructionInfo instructionInfoINI_2;
+extern InstructionInfo instructionInfoINI_ED2;
 
 // INIR  -  ED, B2
-extern InstructionInfo instructionInfoINIR_2;
+extern InstructionInfo instructionInfoINIR_ED2;
 
 // IND  -  ED, AA
-extern InstructionInfo instructionInfoIND_2;
+extern InstructionInfo instructionInfoIND_ED2;
 
 // INDR  -  ED, BA
-extern InstructionInfo instructionInfoINDR_2;
+extern InstructionInfo instructionInfoINDR_ED2;
 
 // OUT (n), A  -  D3, n
 extern InstructionInfo instructionInfoOUT_n__A_2;
 
 // OUT (C), A  -  ED, 79
-extern InstructionInfo instructionInfoOUT_C__A_2;
+extern InstructionInfo instructionInfoOUT_C__A_ED2;
 
 // OUT (C), B  -  ED, 41
-extern InstructionInfo instructionInfoOUT_C__B_2;
+extern InstructionInfo instructionInfoOUT_C__B_ED2;
 
 // OUT (C), C  -  ED, 49
-extern InstructionInfo instructionInfoOUT_C__C_2;
+extern InstructionInfo instructionInfoOUT_C__C_ED2;
 
 // OUT (C), D  -  ED, 51
-extern InstructionInfo instructionInfoOUT_C__D_2;
+extern InstructionInfo instructionInfoOUT_C__D_ED2;
 
 // OUT (C), E  -  ED, 59
-extern InstructionInfo instructionInfoOUT_C__E_2;
+extern InstructionInfo instructionInfoOUT_C__E_ED2;
 
 // OUT (C), H  -  ED, 61
-extern InstructionInfo instructionInfoOUT_C__H_2;
+extern InstructionInfo instructionInfoOUT_C__H_ED2;
 
 // OUT (C), L  -  ED, 69
-extern InstructionInfo instructionInfoOUT_C__L_2;
+extern InstructionInfo instructionInfoOUT_C__L_ED2;
 
 // OUTI  -  ED, A3
-extern InstructionInfo instructionInfoOUTI_2;
+extern InstructionInfo instructionInfoOUTI_ED2;
 
 // OTIR  -  ED, B3
-extern InstructionInfo instructionInfoOTIR_2;
+extern InstructionInfo instructionInfoOTIR_ED2;
 
 // OUTD  -  ED, A3
-extern InstructionInfo instructionInfoOUTD_2;
+extern InstructionInfo instructionInfoOUTD_ED2;
 
 // OTDR  -  ED, BB
-extern InstructionInfo instructionInfoOTDR_2;
+extern InstructionInfo instructionInfoOTDR_ED2;
 

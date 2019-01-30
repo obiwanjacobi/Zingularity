@@ -117,6 +117,28 @@
             "28": "101",
             "30": "110",
             "38": "111"
+        },
+        "ops": {
+            "OF": "4", // opcode fetch
+            "OD": "3", // operand data
+            "ODl": "3", // operand data lsb
+            "ODh": "3", // operand data msb
+            "MR": "3", // memory read
+            "MRl": "3", // memory read lsb
+            "MRh": "3", // memory read msb
+            "MW": "3", // memory write
+            "MWl": "3", // memory write lsb
+            "MWh": "3", // memory write msb
+            "SRl": "3", // stack read lsb
+            "SRh": "3", // stack read msb
+            "SWl": "3", // stack write lsb
+            "SWh": "3", // stack write msb
+            "AD": "5", // add IX/IY + d
+            "PCd": "5", // PC = PC - 2
+            "FD": "5", // Opcode Fetch and +d
+            "OP": "0", // internal operation - number of cycles not fixed
+            "PR": "4", // port read
+            "PW": "4" // port write
         }
     },
     "instructions": [
@@ -128,114 +150,133 @@
             "mnemonic": "LD r, s",
             "bytes": [ "01rrrsss" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {}
         },
         {
             "mnemonic": "LD t, u",
             "bytes": [ "DD", "01tttuuu" ],
             "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
             "flags": {}
         },
         {
             "mnemonic": "LD v, w",
             "bytes": [ "FD", "01vvvwww" ],
             "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
             "flags": {}
         },
         {
             "mnemonic": "LD r, n",
             "bytes": [ "00rrr110", "n" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "OD" ],
             "flags": {}
         },
         {
             "mnemonic": "LD t, n",
             "bytes": [ "DD", "00ttt110", "n" ],
             "cycles": [ 4, 4, 3 ],
+            "ops": [ "OF", "OF", "OD" ],
             "flags": {}
         },
         {
             "mnemonic": "LD v, n",
             "bytes": [ "FD", "00vvv110", "n" ],
             "cycles": [ 4, 4, 3 ],
+            "ops": [ "OF", "OF", "OD" ],
             "flags": {}
         },
         {
             "mnemonic": "LD r, (HL)",
             "bytes": [ "01rrr110" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "MR" ],
             "flags": {}
         },
         {
             "mnemonic": "LD r, (ex+d)",
             "bytes": [ "ex", "10rrr110", "d" ],
             "cycles": [ 4, 4, 3, 5, 3 ],
+            "ops": [ "OF", "OF", "OD", "AD", "MR" ],
             "flags": {}
         },
         {
             "mnemonic": "LD (HL), r",
             "bytes": [ "01110rrr" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "MW" ],
             "flags": {}
         },
         {
             "mnemonic": "LD (ex+d), r",
             "bytes": [ "ex", "01110rrr", "d" ],
             "cycles": [ 4, 4, 3, 5, 3 ],
+            "ops": [ "OF", "OF", "OD", "AD", "MW" ],
             "flags": {}
         },
         {
             "mnemonic": "LD (HL), n",
             "bytes": [ "36", "n" ],
             "cycles": [ 4, 3, 3 ],
+            "ops": [ "OF", "OD", "MW" ],
             "flags": {}
         },
         {
             "mnemonic": "LD (ex+d), n",
             "bytes": [ "ex", "36", "d", "n" ],
             "cycles": [ 4, 4, 3, 5, 3 ],
+            "ops": [ "OF", "OF", "OD", "FD", "MW" ],
             "flags": {}
         },
         {
             "mnemonic": "LD A, (BC)",
             "bytes": [ "0A" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "MR" ],
             "flags": {}
         },
         {
             "mnemonic": "LD A, (DE)",
             "bytes": [ "1A" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "MR" ],
             "flags": {}
         },
         {
             "mnemonic": "LD A, (nn)",
             "bytes": [ "3A", "n", "n" ],
             "cycles": [ 4, 3, 3, 3 ],
+            "ops": [ "OF", "ODl", "ODh", "MR" ],
             "flags": {}
         },
         {
             "mnemonic": "LD (BC), A",
             "bytes": [ "02" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "MW" ],
             "flags": {}
         },
         {
             "mnemonic": "LD (DE), A",
             "bytes": [ "12" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "MW" ],
             "flags": {}
         },
         {
             "mnemonic": "LD (nn), A",
             "bytes": [ "32", "n", "n" ],
             "cycles": [ 4, 3, 3, 3 ],
+            "ops": [ "OF", "ODl", "ODh", "MW" ],
             "flags": {}
         },
         {
             "mnemonic": "LD A, I",
             "bytes": [ "ED", "57" ],
             "cycles": [ 4, 5 ],
+            "ops": [ "OF", "OF" ],
             "flags": {
                 "S": "I",
                 "Z": "I",
@@ -248,6 +289,7 @@
             "mnemonic": "LD A, R",
             "bytes": [ "ED", "5F" ],
             "cycles": [ 4, 5 ],
+            "ops": [ "OF", "OF" ],
             "flags": {
                 "S": "R",
                 "Z": "R",
@@ -260,12 +302,14 @@
             "mnemonic": "LD I, A",
             "bytes": [ "ED", "47" ],
             "cycles": [ 4, 5 ],
+            "ops": [ "OF", "OF" ],
             "flags": {}
         },
         {
             "mnemonic": "LD R, A",
             "bytes": [ "ED", "4F" ],
             "cycles": [ 4, 5 ],
+            "ops": [ "OF", "OF" ],
             "flags": {}
         },
 
@@ -276,84 +320,98 @@
             "mnemonic": "LD p, nn",
             "bytes": [ "00pp0001", "n", "n" ],
             "cycles": [ 4, 3, 3 ],
+            "ops": [ "OF", "ODl", "ODh" ],
             "flags": {}
         },
         {
             "mnemonic": "LD ex, nn",
             "bytes": [ "ex", "21", "n", "n" ],
             "cycles": [ 4, 4, 3, 3 ],
+            "ops": [ "OF", "OF", "ODl", "ODh" ],
             "flags": {}
         },
         {
             "mnemonic": "LD HL, (nn)",
             "bytes": [ "2A", "n", "n" ],
             "cycles": [ 4, 3, 3, 3, 3 ],
+            "ops": [ "OF", "ODl", "ODh", "MRl", "MRh" ],
             "flags": {}
         },
         {
             "mnemonic": "LD p, (nn)",
             "bytes": [ "ED", "01pp1011", "n", "n" ],
             "cycles": [ 4, 4, 3, 3, 3, 3 ],
+            "ops": [ "OF", "OF", "ODl", "ODh", "MWl", "MRh" ],
             "flags": {}
         },
         {
             "mnemonic": "LD ex, (nn)",
             "bytes": [ "ex", "2A", "n", "n" ],
             "cycles": [ 4, 4, 3, 3, 3, 3 ],
+            "ops": [ "OF", "OF", "ODl", "ODh", "MRl", "MRh" ],
             "flags": {}
         },
         {
             "mnemonic": "LD (nn), HL",
             "bytes": [ "22", "n", "n" ],
             "cycles": [ 4, 3, 3, 3, 3 ],
+            "ops": [ "OF", "ODl", "ODh", "MWl", "MWh" ],
             "flags": {}
         },
         {
             "mnemonic": "LD (nn), p",
             "bytes": [ "ED", "01pp0011", "n", "n" ],
             "cycles": [ 4, 4, 3, 3, 3, 3 ],
+            "ops": [ "OF", "OF", "ODl", "ODh", "MWl", "MWh" ],
             "flags": {}
         },
         {
             "mnemonic": "LD (nn), ex",
             "bytes": [ "ex", "22", "n", "n" ],
             "cycles": [ 4, 4, 3, 3, 3, 3 ],
+            "ops": [ "OF", "OF", "ODl", "ODh", "MWl", "MWh" ],
             "flags": {}
         },
         {
             "mnemonic": "LD SP, HL",
             "bytes": [ "F9" ],
             "cycles": [ 6 ],
+            "ops": [ "OF" ],
             "flags": {}
         },
         {
             "mnemonic": "LD SP, ex",
             "bytes": [ "ex", "F9" ],
             "cycles": [ 4, 6 ],
+            "ops": [ "OF", "OF" ],
             "flags": {}
         },
         {
             "mnemonic": "PUSH q",
             "bytes": [ "11qq0101" ],
             "cycles": [ 5, 3, 3 ],
+            "ops": [ "OF", "SWh", "SWl" ],
             "flags": {}
         },
         {
             "mnemonic": "PUSH ex",
             "bytes": [ "ex", "E5" ],
             "cycles": [ 4, 5, 3, 3 ],
+            "ops": [ "OF", "OF", "SWh", "SWl" ],
             "flags": {}
         },
         {
             "mnemonic": "POP q",
             "bytes": [ "11qq0001" ],
             "cycles": [ 4, 3, 3 ],
+            "ops": [ "OF", "SRh", "SRl" ],
             "flags": {}
         },
         {
             "mnemonic": "POP ex",
             "bytes": [ "ex", "E1" ],
             "cycles": [ 4, 4, 3, 3 ],
+            "ops": [ "OF", "OF", "SRh", "SRl" ],
             "flags": {}
         },
 
@@ -364,36 +422,42 @@
             "mnemonic": "EX DE, HL",
             "bytes": [ "EB" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {}
         },
         {
             "mnemonic": "EX AF, AF'",
             "bytes": [ "08" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {}
         },
         {
             "mnemonic": "EXX",
             "bytes": [ "D9" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {}
         },
         {
             "mnemonic": "EX (SP), HL",
             "bytes": [ "E3" ],
             "cycles": [ 4, 3, 4, 3, 5 ],
+            "ops": [ "OF", "SRh", "SRl", "SWh", "SWl" ],
             "flags": {}
         },
         {
             "mnemonic": "EX (SP), ex",
             "bytes": [ "ex", "E3" ],
             "cycles": [ 4, 4, 3, 4, 3, 5 ],
+            "ops": [ "OF", "OF", "SRh", "SRl", "SWh", "SWl" ],
             "flags": {}
         },
         {
             "mnemonic": "LDI",
             "bytes": [ "ED", "A0" ],
             "cycles": [ 4, 4, 3, 5 ],
+            "ops": [ "OF", "OF", "MR", "MW" ],
             "flags": {
                 "H": "0",
                 "P": "BC",
@@ -405,6 +469,7 @@
             "bytes": [ "ED", "B0" ],
             "cycles": [ 4, 4, 3, 5, 5 ],
             "altCycles": [ 4, 4, 3, 5 ],
+            "ops": [ "OF", "OF", "MR", "MW", "PCd" ],
             "flags": {
                 "H": "0",
                 "P": "0",
@@ -415,6 +480,7 @@
             "mnemonic": "LDD",
             "bytes": [ "ED", "A8" ],
             "cycles": [ 4, 4, 3, 5 ],
+            "ops": [ "OF", "OF", "MR", "MW" ],
             "flags": {
                 "H": "0",
                 "P": "BC",
@@ -426,6 +492,7 @@
             "bytes": [ "ED", "B8" ],
             "cycles": [ 4, 4, 3, 5, 5 ],
             "altCycles": [ 4, 4, 3, 5 ],
+            "ops": [ "OF", "OF", "MR", "MW", "PCd" ],
             "flags": {
                 "H": "0",
                 "P": "0",
@@ -436,6 +503,7 @@
             "mnemonic": "CPI",
             "bytes": [ "ED", "A1" ],
             "cycles": [ 4, 4, 3, 5 ],
+            "ops": [ "OF", "OF", "MR", "OP" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -449,6 +517,7 @@
             "bytes": [ "ED", "B1" ],
             "cycles": [ 4, 4, 3, 5, 5 ],
             "altCycles": [ 4, 4, 3, 5 ],
+            "ops": [ "OF", "OF", "MR", "OP", "PCd" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -461,6 +530,7 @@
             "mnemonic": "CPD",
             "bytes": [ "ED", "A9" ],
             "cycles": [ 4, 4, 3, 5 ],
+            "ops": [ "OF", "OF", "MR", "OP" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -474,6 +544,7 @@
             "bytes": [ "ED", "B9" ],
             "cycles": [ 4, 4, 3, 5, 5 ],
             "altCycles": [ 4, 4, 3, 5 ],
+            "ops": [ "OF", "OF", "MR", "OP", "PCd" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -490,6 +561,7 @@
             "mnemonic": "ADD A, r",
             "bytes": [ "10000rrr" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -503,6 +575,7 @@
             "mnemonic": "ADD A, n",
             "bytes": [ "C6", "n" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "OD" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -516,6 +589,7 @@
             "mnemonic": "ADD A, (HL)",
             "bytes": [ "86" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "MR" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -529,6 +603,7 @@
             "mnemonic": "ADD A, (ex+d)",
             "bytes": [ "ex", "86", "d" ],
             "cycles": [ 4, 4, 3, 5, 3 ],
+            "ops": [ "OF", "OF", "OD", "AD", "MR" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -542,6 +617,7 @@
             "mnemonic": "ADC A, r",
             "bytes": [ "10001rrr" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -555,6 +631,7 @@
             "mnemonic": "ADC A, n",
             "bytes": [ "CE", "n" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "OD" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -568,18 +645,21 @@
             "mnemonic": "ADC A, (HL)",
             "bytes": [ "8E" ],
             "cycles": [ 4 ],
-            "flags": null,
-            "S": "",
-            "Z": "",
-            "H": "b3",
-            "V": "",
-            "N": "0",
-            "C": "b7"
+            "ops": [ "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b3",
+                "V": "",
+                "N": "0",
+                "C": "b7"
+            }
         },
         {
             "mnemonic": "ADC A, (ex+d)",
             "bytes": [ "ex", "8E", "d" ],
             "cycles": [ 4, 4, 3, 5, 3 ],
+            "ops": [ "OF", "OF", "OD", "AD", "MR" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -593,6 +673,7 @@
             "mnemonic": "SUB A, r",
             "bytes": [ "10010rrr" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -606,6 +687,7 @@
             "mnemonic": "SUB A, n",
             "bytes": [ "8E", "n" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "OD" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -619,6 +701,7 @@
             "mnemonic": "SUB A, (HL)",
             "bytes": [ "96" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "MR" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -632,6 +715,7 @@
             "mnemonic": "SUB A, (ex+d)",
             "bytes": [ "ex", "96", "d" ],
             "cycles": [ 4, 4, 3, 5, 3 ],
+            "ops": [ "OF", "OF", "OD", "AD", "MR" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -645,6 +729,7 @@
             "mnemonic": "SBC A, r",
             "bytes": [ "10011rrr" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -658,6 +743,7 @@
             "mnemonic": "SBC A, n",
             "bytes": [ "DE", "n" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "OD" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -671,6 +757,7 @@
             "mnemonic": "SBC A, (HL)",
             "bytes": [ "9E" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "MR" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -684,6 +771,7 @@
             "mnemonic": "SBC A, (ex+d)",
             "bytes": [ "ex", "9E", "d" ],
             "cycles": [ 4, 4, 3, 5, 3 ],
+            "ops": [ "OF", "OF", "OD", "AD", "MR" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -697,6 +785,7 @@
             "mnemonic": "AND A, r",
             "bytes": [ "10100rrr" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -710,6 +799,7 @@
             "mnemonic": "AND A, n",
             "bytes": [ "E6", "n" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "OD" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -723,6 +813,7 @@
             "mnemonic": "AND A, (HL)",
             "bytes": [ "A6" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "MR" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -736,6 +827,7 @@
             "mnemonic": "AND A, (ex+d)",
             "bytes": [ "ex", "A6", "d" ],
             "cycles": [ 4, 4, 3, 5, 3 ],
+            "ops": [ "OF", "OF", "OD", "AD", "MR" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -749,6 +841,7 @@
             "mnemonic": "OR A, r",
             "bytes": [ "10110rrr" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -762,6 +855,7 @@
             "mnemonic": "OR A, n",
             "bytes": [ "F6", "n" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "OD" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -775,6 +869,7 @@
             "mnemonic": "OR A, (HL)",
             "bytes": [ "B6" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "MR" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -788,6 +883,7 @@
             "mnemonic": "OR A, (ex+d)",
             "bytes": [ "ex", "B6", "d" ],
             "cycles": [ 4, 4, 3, 5, 3 ],
+            "ops": [ "OF", "OF", "OD", "AD", "MR" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -801,6 +897,7 @@
             "mnemonic": "XOR A, r",
             "bytes": [ "10101rrr" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -814,6 +911,7 @@
             "mnemonic": "XOR A, n",
             "bytes": [ "EE", "n" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "OD" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -827,6 +925,7 @@
             "mnemonic": "XOR A, (HL)",
             "bytes": [ "AE" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "MR" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -840,6 +939,7 @@
             "mnemonic": "XOR A, (ex+d)",
             "bytes": [ "ex", "AE", "d" ],
             "cycles": [ 4, 4, 3, 5, 3 ],
+            "ops": [ "OF", "OF", "OD", "AD", "MR" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -853,6 +953,7 @@
             "mnemonic": "CP A, r",
             "bytes": [ "10111rrr" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -866,6 +967,7 @@
             "mnemonic": "CP A, n",
             "bytes": [ "FE", "n" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "OD" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -879,6 +981,7 @@
             "mnemonic": "CP A, (HL)",
             "bytes": [ "BE" ],
             "cycles": [ 4, 3 ],
+            "ops": [ "OF", "MR" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -892,6 +995,7 @@
             "mnemonic": "CP A, (ex+d)",
             "bytes": [ "ex", "BE", "d" ],
             "cycles": [ 4, 4, 3, 5, 3 ],
+            "ops": [ "OF", "OF", "OD", "AD", "MR" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -905,6 +1009,7 @@
             "mnemonic": "INC r",
             "bytes": [ "00rrr100" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -917,6 +1022,7 @@
             "mnemonic": "INC (HL)",
             "bytes": [ "34" ],
             "cycles": [ 4, 4, 3 ],
+            "ops": [ "OF", "MR", "MW" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -929,6 +1035,7 @@
             "mnemonic": "INC (ex+d)",
             "bytes": [ "ex", "34", "d" ],
             "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "ops": [ "OF", "OF", "OD", "AD", "MR", "MW" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -941,6 +1048,7 @@
             "mnemonic": "DEC r",
             "bytes": [ "00rrr101" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -953,6 +1061,7 @@
             "mnemonic": "DEC (HL)",
             "bytes": [ "35" ],
             "cycles": [ 4, 4, 3 ],
+            "ops": [ "OF", "MR", "MW" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -965,6 +1074,7 @@
             "mnemonic": "DEC (ex+d)",
             "bytes": [ "ex", "35", "d" ],
             "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "ops": [ "OF", "OF", "OD", "AD", "MR", "MW" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -981,6 +1091,7 @@
             "mnemonic": "DAA",
             "bytes": [ "27" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -993,6 +1104,7 @@
             "mnemonic": "CPL A",
             "bytes": [ "2F" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {
                 "H": "1",
                 "N": "1"
@@ -1002,6 +1114,7 @@
             "mnemonic": "NEG",
             "bytes": [ "ED", "44" ],
             "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1015,6 +1128,7 @@
             "mnemonic": "CCF",
             "bytes": [ "3F" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {
                 "H": "C",
                 "N": "0",
@@ -1025,6 +1139,7 @@
             "mnemonic": "SCF",
             "bytes": [ "37" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {
                 "H": "0",
                 "N": "0",
@@ -1035,42 +1150,49 @@
             "mnemonic": "NOP",
             "bytes": [ "00" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {}
         },
         {
             "mnemonic": "HALT",
             "bytes": [ "76" ],
             "cycles": [ 4, -1 ],
+            "ops": [ "OF", "" ],
             "flags": {}
         },
         {
             "mnemonic": "DI",
             "bytes": [ "F3" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {}
         },
         {
             "mnemonic": "EI",
             "bytes": [ "FB" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {}
         },
         {
             "mnemonic": "IM0",
             "bytes": [ "ED", "46" ],
             "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
             "flags": {}
         },
         {
             "mnemonic": "IM1",
             "bytes": [ "ED", "56" ],
             "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
             "flags": {}
         },
         {
             "mnemonic": "IM2",
             "bytes": [ "ED", "5E" ],
             "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
             "flags": {}
         },
 
@@ -1081,6 +1203,7 @@
             "mnemonic": "ADD HL, p",
             "bytes": [ "00pp1001" ],
             "cycles": [ 4, 4, 3 ],
+            "ops": [ "OF", "OP", "OP" ],
             "flags": {
                 "H": "b11",
                 "N": "0",
@@ -1091,6 +1214,7 @@
             "mnemonic": "ADD IX, m",
             "bytes": [ "DD", "00mm1001" ],
             "cycles": [ 4, 4, 4, 3 ],
+            "ops": [ "OF", "OF", "OP", "OP" ],
             "flags": {
                 "H": "b11",
                 "N": "0",
@@ -1101,6 +1225,7 @@
             "mnemonic": "ADD IY, o",
             "bytes": [ "FD", "00oo1001" ],
             "cycles": [ 4, 4, 4, 3 ],
+            "ops": [ "OF", "OF", "OP", "OP" ],
             "flags": {
                 "H": "b11",
                 "N": "0",
@@ -1111,6 +1236,7 @@
             "mnemonic": "ADC HL, p",
             "bytes": [ "ED", "01pp1010" ],
             "cycles": [ 4, 4, 4, 3 ],
+            "ops": [ "OF", "OF", "OP", "OP" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1124,6 +1250,7 @@
             "mnemonic": "SBC HL, p",
             "bytes": [ "ED", "01pp0010" ],
             "cycles": [ 4, 4, 4, 3 ],
+            "ops": [ "OF", "OF", "OP", "OP" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1137,24 +1264,28 @@
             "mnemonic": "INC p",
             "bytes": [ "00pp0011" ],
             "cycles": [ 6 ],
+            "ops": [ "OF" ],
             "flags": {}
         },
         {
             "mnemonic": "INC ex",
             "bytes": [ "ex", "23" ],
             "cycles": [ 4, 6 ],
+            "ops": [ "OF", "OF" ],
             "flags": {}
         },
         {
             "mnemonic": "DEC p",
             "bytes": [ "00pp1011" ],
             "cycles": [ 6 ],
+            "ops": [ "OF" ],
             "flags": {}
         },
         {
             "mnemonic": "DEC ex",
             "bytes": [ "ex", "2B" ],
             "cycles": [ 4, 6 ],
+            "ops": [ "OF", "OF" ],
             "flags": {}
         },
 
@@ -1165,6 +1296,7 @@
             "mnemonic": "RLCA",
             "bytes": [ "07" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {
                 "H": "0",
                 "N": "0",
@@ -1175,6 +1307,7 @@
             "mnemonic": "RLA",
             "bytes": [ "17" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {
                 "H": "0",
                 "N": "0",
@@ -1185,6 +1318,7 @@
             "mnemonic": "RRCA",
             "bytes": [ "0F" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {
                 "H": "0",
                 "N": "0",
@@ -1195,6 +1329,7 @@
             "mnemonic": "RRA",
             "bytes": [ "1F" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {
                 "H": "0",
                 "N": "0",
@@ -1205,6 +1340,7 @@
             "mnemonic": "RLC r",
             "bytes": [ "CB", "00000rrr" ],
             "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1218,6 +1354,7 @@
             "mnemonic": "RLC (HL)",
             "bytes": [ "CB", "06" ],
             "cycles": [ 4, 4, 4, 3 ],
+            "ops": [ "OF", "OF", "MR", "MW" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1231,6 +1368,7 @@
             "mnemonic": "RLC (ex+d)",
             "bytes": [ "ex", "CB", "d", "06" ],
             "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1244,6 +1382,7 @@
             "mnemonic": "RL r",
             "bytes": [ "CB", "00010rrr" ],
             "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1257,6 +1396,7 @@
             "mnemonic": "RL (HL)",
             "bytes": [ "CB", "16" ],
             "cycles": [ 4, 4, 4, 3 ],
+            "ops": [ "OF", "OF", "MR", "MW" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1270,6 +1410,7 @@
             "mnemonic": "RL (ex+d)",
             "bytes": [ "ex", "CB", "d", "16" ],
             "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1283,6 +1424,7 @@
             "mnemonic": "RRC r",
             "bytes": [ "CB", "00001rrr" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1295,7 +1437,8 @@
         {
             "mnemonic": "RRC (HL)",
             "bytes": [ "CB", "0E" ],
-            "cycles": [ 4, 4 ],
+            "cycles": [ 4, 4, 4, 3 ],
+            "ops": [ "OF", "OF", "MR", "MW" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1308,7 +1451,8 @@
         {
             "mnemonic": "RRC (ex+d)",
             "bytes": [ "ex", "CB", "d", "0E" ],
-            "cycles": [ 4, 4 ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1322,6 +1466,7 @@
             "mnemonic": "RR r",
             "bytes": [ "CB", "00011rrr" ],
             "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1335,6 +1480,7 @@
             "mnemonic": "RR (HL)",
             "bytes": [ "CB", "1E" ],
             "cycles": [ 4, 4, 4, 3 ],
+            "ops": [ "OF", "OF", "MR", "MW" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1348,6 +1494,7 @@
             "mnemonic": "RR (ex+d)",
             "bytes": [ "ex", "CB", "d", "1E" ],
             "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1361,6 +1508,7 @@
             "mnemonic": "SLA r",
             "bytes": [ "CB", "00100rrr" ],
             "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1374,6 +1522,7 @@
             "mnemonic": "SLA (HL)",
             "bytes": [ "CB", "26" ],
             "cycles": [ 4, 4, 4, 3 ],
+            "ops": [ "OF", "OF", "MR", "MW" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1387,6 +1536,7 @@
             "mnemonic": "SLA (ex+d)",
             "bytes": [ "ex", "CB", "d", "26" ],
             "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1400,6 +1550,7 @@
             "mnemonic": "SRA r",
             "bytes": [ "CB", "00101rrr" ],
             "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1413,6 +1564,7 @@
             "mnemonic": "SRA (HL)",
             "bytes": [ "CB", "2E" ],
             "cycles": [ 4, 4, 4, 3 ],
+            "ops": [ "OF", "OF", "MR", "MW" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1426,6 +1578,7 @@
             "mnemonic": "SRA (ex+d)",
             "bytes": [ "ex", "CB", "d", "2E" ],
             "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1439,6 +1592,7 @@
             "mnemonic": "SRL r",
             "bytes": [ "CB", "00111rrr" ],
             "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
             "flags": {
                 "S": "0",
                 "Z": "",
@@ -1452,6 +1606,7 @@
             "mnemonic": "SRL (HL)",
             "bytes": [ "CB", "3E" ],
             "cycles": [ 4, 4, 4, 3 ],
+            "ops": [ "OF", "OF", "MR", "MW" ],
             "flags": {
                 "S": "0",
                 "Z": "",
@@ -1465,6 +1620,7 @@
             "mnemonic": "SRL (ex+d)",
             "bytes": [ "ex", "CB", "d", "3E" ],
             "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
             "flags": {
                 "S": "0",
                 "Z": "",
@@ -1478,6 +1634,7 @@
             "mnemonic": "RLD A",
             "bytes": [ "ED", "6F" ],
             "cycles": [ 4, 4, 3, 4, 3 ],
+            "ops": [ "OF", "OF", "OP", "OP", "OP" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1490,6 +1647,7 @@
             "mnemonic": "RRD A",
             "bytes": [ "ED", "67" ],
             "cycles": [ 4, 4, 3, 4, 3 ],
+            "ops": [ "OF", "OF", "OP", "OP", "OP" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1506,6 +1664,7 @@
             "mnemonic": "BIT b, r",
             "bytes": [ "CB", "01bbbrrr" ],
             "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
             "flags": {
                 "Z": "",
                 "H": "1",
@@ -1516,6 +1675,7 @@
             "mnemonic": "BIT b, (HL)",
             "bytes": [ "CB", "01bbb110" ],
             "cycles": [ 4, 4, 4 ],
+            "ops": [ "OF", "OF", "MR" ],
             "flags": {
                 "Z": "",
                 "H": "1",
@@ -1526,6 +1686,7 @@
             "mnemonic": "BIT b, (ex+d)",
             "bytes": [ "ex", "CB", "d", "01bbb110" ],
             "cycles": [ 4, 4, 3, 5, 4 ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR" ],
             "flags": {
                 "Z": "",
                 "H": "1",
@@ -1536,23 +1697,27 @@
             "mnemonic": "SET b, r",
             "bytes": [ "CB", "11bbbrrr" ],
             "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
             "flags": {}
         },
         {
             "mnemonic": "SET b, (HL)",
             "bytes": [ "CB", "11bbb110" ],
             "cycles": [ 4, 4, 4, 3 ],
+            "ops": [ "OF", "OF", "MR", "MW" ],
             "flags": {}
         },
         {
             "mnemonic": "SET b, (ex+d)",
             "bytes": [ "ex", "CB", "d", "11bbb110" ],
             "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
             "flags": {}
         },
         {
             "mnemonic": "RES b, r",
             "bytes": [ "CB", "10bbbrrr" ],
+            "ops": [ "OF", "OF" ],
             "cycles": [ 4, 4 ],
             "flags": {}
         },
@@ -1560,11 +1725,13 @@
             "mnemonic": "RES b, (HL)",
             "bytes": [ "CB", "10bbb110" ],
             "cycles": [ 4, 4, 4, 3 ],
+            "ops": [ "OF", "OF", "MR", "MW" ],
             "flags": {}
         },
         {
             "mnemonic": "RES b, (ex+d)",
             "bytes": [ "ex", "CB", "d", "10bbb110" ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
             "cycles": [ 4, 4, 3, 5, 4, 3 ],
             "flags": {}
         },
@@ -1576,18 +1743,21 @@
             "mnemonic": "JP nn",
             "bytes": [ "C3", "n", "n" ],
             "cycles": [ 4, 3, 3 ],
+            "ops": [ "OF", "ODl", "ODh" ],
             "flags": {}
         },
         {
             "mnemonic": "JP c, nn",
             "bytes": [ "11ccc010", "n", "n" ],
             "cycles": [ 4, 3, 3 ],
+            "ops": [ "OF", "ODl", "ODh" ],
             "flags": {}
         },
         {
             "mnemonic": "JR e",
             "bytes": [ "18", "e" ],
             "cycles": [ 4, 3, 5 ],
+            "ops": [ "OF", "OD", "OP" ],
             "flags": {}
         },
         {
@@ -1595,18 +1765,21 @@
             "bytes": [ "001jj000", "e" ],
             "cycles": [ 4, 3, 5 ],
             "altCycles": [ 4, 3 ],
+            "ops": [ "OF", "OD", "OP" ],
             "flags": {}
         },
         {
             "mnemonic": "JP HL",
             "bytes": [ "E9" ],
             "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {}
         },
         {
             "mnemonic": "JP ex",
             "bytes": [ "ex", "E9" ],
             "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
             "flags": {}
         },
         {
@@ -1614,6 +1787,7 @@
             "bytes": [ "10", "e" ],
             "cycles": [ 5, 3, 5 ],
             "altCycles": [ 5, 3 ],
+            "ops": [ "OF", "OD", "OP" ],
             "flags": {}
         },
 
@@ -1624,6 +1798,7 @@
             "mnemonic": "CALL nn",
             "bytes": [ "CD", "n", "n" ],
             "cycles": [ 4, 3, 4, 3, 3 ],
+            "ops": [ "OF", "ODl", "ODh", "SWh", "SWl" ],
             "flags": {}
         },
         {
@@ -1631,12 +1806,14 @@
             "bytes": [ "11ccc100", "n", "n" ],
             "cycles": [ 4, 3, 4, 3, 3 ],
             "altCycles": [ 4, 3, 3 ],
+            "ops": [ "OF", "ODl", "ODh", "SWh", "SWl" ],
             "flags": {}
         },
         {
             "mnemonic": "RET",
             "bytes": [ "C9" ],
             "cycles": [ 4, 3, 3 ],
+            "ops": [ "OF", "SRh", "SRl" ],
             "flags": {}
         },
         {
@@ -1644,24 +1821,28 @@
             "bytes": [ "11ccc000" ],
             "cycles": [ 5, 3, 3 ],
             "altCycles": [ 5 ],
+            "ops": [ "OF", "SRh", "SRl" ],
             "flags": {}
         },
         {
             "mnemonic": "RETI",
             "bytes": [ "ED", "4D" ],
             "cycles": [ 4, 4, 3, 3 ],
+            "ops": [ "OF", "OF", "SRh", "SRl" ],
             "flags": {}
         },
         {
             "mnemonic": "RETN",
             "bytes": [ "ED", "45" ],
             "cycles": [ 4, 4, 3, 3 ],
+            "ops": [ "OF", "OF", "SRh", "SRl" ],
             "flags": {}
         },
         {
             "mnemonic": "RST i",
             "bytes": [ "11iii111" ],
             "cycles": [ 5, 3, 3 ],
+            "ops": [ "OF", "SWh", "SWl" ],
             "flags": {}
         },
 
@@ -1672,12 +1853,14 @@
             "mnemonic": "IN A, (n)",
             "bytes": [ "DB", "n" ],
             "cycles": [ 4, 3, 4 ],
+            "ops": [ "OF", "OD", "PR" ],
             "flags": {}
         },
         {
             "mnemonic": "IN r, (C)",
             "bytes": [ "ED", "01rrr000" ],
             "cycles": [ 4, 4, 4 ],
+            "ops": [ "OF", "OF", "PR" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1690,6 +1873,7 @@
             "mnemonic": "INI",
             "bytes": [ "ED", "A2" ],
             "cycles": [ 4, 5, 3, 4 ],
+            "ops": [ "OF", "OF", "PR", "MW" ],
             "flags": {
                 "Z": "",
                 "N": "1"
@@ -1700,6 +1884,7 @@
             "bytes": [ "ED", "B2" ],
             "cycles": [ 4, 5, 3, 4, 5 ],
             "altCycles": [ 4, 5, 3, 4 ],
+            "ops": [ "OF", "OF", "PR", "MW", "PCd" ],
             "flags": {
                 "Z": "1",
                 "N": "1"
@@ -1709,6 +1894,7 @@
             "mnemonic": "IND",
             "bytes": [ "ED", "AA" ],
             "cycles": [ 4, 5, 3, 4 ],
+            "ops": [ "OF", "OF", "PR", "MW" ],
             "flags": {
                 "Z": "",
                 "N": "1"
@@ -1719,6 +1905,7 @@
             "bytes": [ "ED", "BA" ],
             "cycles": [ 4, 5, 3, 4, 5 ],
             "altCycles": [ 4, 5, 3, 4 ],
+            "ops": [ "OF", "OF", "PR", "MW", "PCd" ],
             "flags": {
                 "Z": "1",
                 "N": "1"
@@ -1728,18 +1915,21 @@
             "mnemonic": "OUT (n), A",
             "bytes": [ "D3", "n" ],
             "cycles": [ 4, 3, 4 ],
+            "ops": [ "OF", "OD", "PW" ],
             "flags": {}
         },
         {
             "mnemonic": "OUT (C), r",
             "bytes": [ "ED", "01rrr001" ],
             "cycles": [ 4, 4, 4 ],
+            "ops": [ "OF", "OF", "PW" ],
             "flags": {}
         },
         {
             "mnemonic": "OUTI",
             "bytes": [ "ED", "A3" ],
             "cycles": [ 4, 5, 3, 4 ],
+            "ops": [ "OF", "OF", "MR", "PW" ],
             "flags": {
                 "Z": "",
                 "N": "1"
@@ -1750,6 +1940,7 @@
             "bytes": [ "ED", "B3" ],
             "cycles": [ 4, 5, 3, 4, 5 ],
             "altCycles": [ 4, 5, 3, 4 ],
+            "ops": [ "OF", "OF", "MR", "PW", "PCd" ],
             "flags": {
                 "Z": "1",
                 "N": "1"
@@ -1759,6 +1950,7 @@
             "mnemonic": "OUTD",
             "bytes": [ "ED", "A3" ],
             "cycles": [ 4, 5, 3, 4 ],
+            "ops": [ "OF", "OF", "MR", "PW" ],
             "flags": {
                 "Z": "",
                 "N": "1"
@@ -1768,6 +1960,7 @@
             "mnemonic": "OTDR",
             "bytes": [ "ED", "BB" ],
             "cycles": [ 4, 5, 3, 4, 5 ],
+            "ops": [ "OF", "OF", "MR", "PW", "PCd" ],
             "altCycles": [ 4, 5, 3, 4 ],
             "flags": {
                 "Z": "1",

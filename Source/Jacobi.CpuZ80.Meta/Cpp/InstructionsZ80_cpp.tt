@@ -33,19 +33,27 @@ InstructionInfo instructionInfo<#= decl.Name #> =
     <#= decl.Info.AltCycles.Count-1 #>,
     {
 <#+
-                for(int i = 0; i < 6; i++)
-                {
-                    if (i < decl.Info.Cycles.Count)
-                    {   #>
-        { <#= decl.Info.Cycles[i] #>, nullptr },
+                foreach(var mc in decl.Meta.MachineCycles)
+                {  
+                    if (mc.ExtraCycles > 0)
+                    {
+#>
+        { <#= mc.TCycles #>, &OnClock_<#= decl.Name #>_<#= mc.Operation #> },
 <#+
-                    }
+                    } 
                     else 
-                    {   #>
-        { 0, nullptr },
+                    { 
+#>
+        { <#= mc.TCycles #>, &OnClock_<#= mc.Operation #> },
 <#+                 }
                 }
-        #>
+                
+                for(int i = decl.Meta.MachineCycles.Count(); i < 6; i++)
+                {   
+#>
+        { 0, nullptr },
+<#+             }
+#>
     }
 };
 

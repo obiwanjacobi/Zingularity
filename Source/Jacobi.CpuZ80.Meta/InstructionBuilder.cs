@@ -13,6 +13,7 @@ namespace Jacobi.CpuZ80.Meta
             {
                 AltCycles = instructionInfo.AltCycles,
                 Cycles = instructionInfo.Cycles,
+                Ops = instructionInfo.Ops,
                 Flags = instructionInfo.Flags,
             };
 

@@ -11,6 +11,7 @@ namespace Jacobi.CpuZ80.Meta
             Bytes = new List<string>();
             Cycles = new List<int>();
             AltCycles = new List<int>();
+            Ops = new List<string>();
             Flags = new Dictionary<string, string>();
         }
 
@@ -19,6 +20,7 @@ namespace Jacobi.CpuZ80.Meta
 
         public IList<int> Cycles { get; internal set; }
         public IList<int> AltCycles { get; internal set; }
+        public List<string> Ops { get; internal set; }
         public IDictionary<string, string> Flags { get; internal set; }
     }
 

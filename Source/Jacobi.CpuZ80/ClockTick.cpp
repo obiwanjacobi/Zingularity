@@ -84,12 +84,12 @@ void Decode()
     case 0xFD:
         if (_state.Instruction.ExtIndex != 0) _state.Instruction.ExtIndex = 0;
         _state.Instruction.Ext[_state.Instruction.ExtIndex] = _state.Instruction.Data;
-        if (_state.Instruction.ExtIndex == 0) _state.Instruction.ExtIndex++;
+        if (_state.Instruction.ExtIndex == 0) _state.Instruction.ExtIndex = 1;
         break;
     case 0xCB:
         if (_state.Instruction.Ext[0] == 0xED) _state.Instruction.ExtIndex = 0;
         _state.Instruction.Ext[_state.Instruction.ExtIndex] = _state.Instruction.Data;
-        if (_state.Instruction.ExtIndex == 0) _state.Instruction.ExtIndex++;
+        if (_state.Instruction.ExtIndex == 0) _state.Instruction.ExtIndex = 1;
         break;
     default:
         _state.Instruction.Instruction = LookupInstruction();
@@ -132,21 +132,27 @@ Async_Function(FetchDecode)
 
     AssertClock(MCycle::M1, TCycle::T3, Level::NegEdge);
     setMemReq(true);
-    Async_Yield(6);
-
-    AssertClock(MCycle::M1, TCycle::T4, Level::PosEdge);
     Decode();
-    Async_Yield(7);
-
-    AssertClock(MCycle::M1, TCycle::T4, Level::NegEdge);
-    setMemReq(false);
-    Async_Yield(8);
+    Async_Yield(6);
 }
 Async_End
 
 Async_Function(Execute)
 {
+    AssertClock(MCycle::M1, TCycle::T4, Level::PosEdge);
+    if (_state.Instruction.Instruction != nullptr)
+    {
 
+    }
+    Async_Yield(1);
+
+    AssertClock(MCycle::M1, TCycle::T4, Level::NegEdge);
+    if (_state.Instruction.Instruction != nullptr)
+    {
+
+    }
+    setMemReq(false);
+    Async_Yield(2);
 }
 Async_End
 

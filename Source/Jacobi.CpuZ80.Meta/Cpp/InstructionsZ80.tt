@@ -14,6 +14,7 @@
 <#@ import namespace="Jacobi.CpuZ80.Meta" #>
 <#
     // Using https://github.com/olegsych/T4Toolbox
+    // https://marketplace.visualstudio.com/items?itemName=OlegVSych.T4ToolboxforVisualStudio2017
 
     const string TargetProjectPath = @"..\..\Jacobi.CpuZ80\Jacobi.CpuZ80.vcxproj";
 
@@ -28,17 +29,17 @@
     }
 
     var hpp = new InstructionsZ80_hpp(decls);
-    hpp.Output.File = string.Format("InstructionsZ80.hpp");
+    hpp.Output.File = "InstructionsZ80.hpp";
     hpp.Output.Project = TargetProjectPath;
     hpp.Render();
 
     var cpp = new InstructionsZ80_cpp(decls);
-    cpp.Output.File = string.Format("InstructionsZ80.cpp");
+    cpp.Output.File = "InstructionsZ80.cpp";
     cpp.Output.Project = TargetProjectPath;
     cpp.Render();
 
     var tables = new InstructionTablesZ80_cpp(decls);
-    tables.Output.File = string.Format("InstructionTablesZ80.cpp");
+    tables.Output.File = "InstructionTablesZ80.cpp";
     tables.Output.Project = TargetProjectPath;
     tables.Render();
 #>

@@ -1156,8 +1156,8 @@
         {
             "mnemonic": "HALT",
             "bytes": [ "76" ],
-            "cycles": [ 4, -1 ],
-            "ops": [ "OF", "" ],
+            "cycles": [ 4 ],
+            "ops": [ "OF" ],
             "flags": {}
         },
         {

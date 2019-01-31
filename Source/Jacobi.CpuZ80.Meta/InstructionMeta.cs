@@ -33,6 +33,7 @@ namespace Jacobi.CpuZ80.Meta
         {
             Info = info;
             _parameters = InstructionParameter.Parse(info.Mnemonic);
+            _variables = InstructionVariable.Parse(info.Mnemonic);
             MachineCycles = CreateMachineCycles(info);
 
             if (info.Parent != null)
@@ -60,6 +61,10 @@ namespace Jacobi.CpuZ80.Meta
         private readonly List<string> _parameters;
 
         public IEnumerable<string> Parameters => _parameters;
+
+        private readonly List<string> _variables;
+
+        public IEnumerable<string> Variables => _variables;
 
         public IEnumerable<MachineCycleInfo> MachineCycles { get; }
 

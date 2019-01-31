@@ -38,9 +38,16 @@ InstructionInfo instructionInfo<#= decl.Name #> =
                 {  
                     if (mc.ExtraCycles > 0)
                     {
+                        if (!mc.IsExt && decl.Root.Variables.Any())
+                        {
+#>
+        { <#= mc.TCycles #>, OnClock_<#= decl.Root.Name #>_<#= mc.Operation #> },
+<#+                     }
+                        else
+                        {
 #>
         { <#= mc.TCycles #>, OnClock_<#= decl.Name #>_<#= mc.Operation #> },
-<#+
+<#+                     }
                     } 
                     else if (!mc.IsExt && decl.Root.Parameters.Any())
                     {

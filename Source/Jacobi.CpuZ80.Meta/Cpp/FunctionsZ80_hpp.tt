@@ -41,9 +41,16 @@ extern void OnClock_PW();
                 {  
                     if (mc.ExtraCycles > 0)
                     {
+                        if (!mc.IsExt && decl.Root.Variables.Any())
+                        {
+#>
+extern void OnClock_<#= decl.Root.Name #>_<#= mc.Operation #>();
+<#+                     }
+                        else
+                        {
 #>
 extern void OnClock_<#= decl.Name #>_<#= mc.Operation #>();
-<#+
+<#+                     }
                     } 
                     else if (!mc.IsExt && decl.Root.Parameters.Any())
                     {

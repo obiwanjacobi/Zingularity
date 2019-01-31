@@ -15,7 +15,7 @@ InstructionInfo instructionInfoLDA_A_1 =
     1,
     0,
     {
-        { 4, OnClock_LDA_A_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -30,7 +30,7 @@ InstructionInfo instructionInfoLDA_B_1 =
     1,
     0,
     {
-        { 4, OnClock_LDA_B_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -45,7 +45,7 @@ InstructionInfo instructionInfoLDA_C_1 =
     1,
     0,
     {
-        { 4, OnClock_LDA_C_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -60,7 +60,7 @@ InstructionInfo instructionInfoLDA_D_1 =
     1,
     0,
     {
-        { 4, OnClock_LDA_D_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -75,7 +75,7 @@ InstructionInfo instructionInfoLDA_E_1 =
     1,
     0,
     {
-        { 4, OnClock_LDA_E_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -90,7 +90,7 @@ InstructionInfo instructionInfoLDA_H_1 =
     1,
     0,
     {
-        { 4, OnClock_LDA_H_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -105,7 +105,7 @@ InstructionInfo instructionInfoLDA_L_1 =
     1,
     0,
     {
-        { 4, OnClock_LDA_L_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -120,7 +120,7 @@ InstructionInfo instructionInfoLDB_A_1 =
     1,
     0,
     {
-        { 4, OnClock_LDB_A_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -135,7 +135,7 @@ InstructionInfo instructionInfoLDB_B_1 =
     1,
     0,
     {
-        { 4, OnClock_LDB_B_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -150,7 +150,7 @@ InstructionInfo instructionInfoLDB_C_1 =
     1,
     0,
     {
-        { 4, OnClock_LDB_C_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -165,7 +165,7 @@ InstructionInfo instructionInfoLDB_D_1 =
     1,
     0,
     {
-        { 4, OnClock_LDB_D_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -180,7 +180,7 @@ InstructionInfo instructionInfoLDB_E_1 =
     1,
     0,
     {
-        { 4, OnClock_LDB_E_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -195,7 +195,7 @@ InstructionInfo instructionInfoLDB_H_1 =
     1,
     0,
     {
-        { 4, OnClock_LDB_H_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -210,7 +210,7 @@ InstructionInfo instructionInfoLDB_L_1 =
     1,
     0,
     {
-        { 4, OnClock_LDB_L_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -225,7 +225,7 @@ InstructionInfo instructionInfoLDC_A_1 =
     1,
     0,
     {
-        { 4, OnClock_LDC_A_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -240,7 +240,7 @@ InstructionInfo instructionInfoLDC_B_1 =
     1,
     0,
     {
-        { 4, OnClock_LDC_B_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -255,7 +255,7 @@ InstructionInfo instructionInfoLDC_C_1 =
     1,
     0,
     {
-        { 4, OnClock_LDC_C_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -270,7 +270,7 @@ InstructionInfo instructionInfoLDC_D_1 =
     1,
     0,
     {
-        { 4, OnClock_LDC_D_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -285,7 +285,7 @@ InstructionInfo instructionInfoLDC_E_1 =
     1,
     0,
     {
-        { 4, OnClock_LDC_E_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -300,7 +300,7 @@ InstructionInfo instructionInfoLDC_H_1 =
     1,
     0,
     {
-        { 4, OnClock_LDC_H_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -315,7 +315,7 @@ InstructionInfo instructionInfoLDC_L_1 =
     1,
     0,
     {
-        { 4, OnClock_LDC_L_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -330,7 +330,7 @@ InstructionInfo instructionInfoLDD_A_1 =
     1,
     0,
     {
-        { 4, OnClock_LDD_A_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -345,7 +345,7 @@ InstructionInfo instructionInfoLDD_B_1 =
     1,
     0,
     {
-        { 4, OnClock_LDD_B_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -360,7 +360,7 @@ InstructionInfo instructionInfoLDD_C_1 =
     1,
     0,
     {
-        { 4, OnClock_LDD_C_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -375,7 +375,7 @@ InstructionInfo instructionInfoLDD_D_1 =
     1,
     0,
     {
-        { 4, OnClock_LDD_D_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -390,7 +390,7 @@ InstructionInfo instructionInfoLDD_E_1 =
     1,
     0,
     {
-        { 4, OnClock_LDD_E_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -405,7 +405,7 @@ InstructionInfo instructionInfoLDD_H_1 =
     1,
     0,
     {
-        { 4, OnClock_LDD_H_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -420,7 +420,7 @@ InstructionInfo instructionInfoLDD_L_1 =
     1,
     0,
     {
-        { 4, OnClock_LDD_L_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -435,7 +435,7 @@ InstructionInfo instructionInfoLDE_A_1 =
     1,
     0,
     {
-        { 4, OnClock_LDE_A_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -450,7 +450,7 @@ InstructionInfo instructionInfoLDE_B_1 =
     1,
     0,
     {
-        { 4, OnClock_LDE_B_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -465,7 +465,7 @@ InstructionInfo instructionInfoLDE_C_1 =
     1,
     0,
     {
-        { 4, OnClock_LDE_C_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -480,7 +480,7 @@ InstructionInfo instructionInfoLDE_D_1 =
     1,
     0,
     {
-        { 4, OnClock_LDE_D_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -495,7 +495,7 @@ InstructionInfo instructionInfoLDE_E_1 =
     1,
     0,
     {
-        { 4, OnClock_LDE_E_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -510,7 +510,7 @@ InstructionInfo instructionInfoLDE_H_1 =
     1,
     0,
     {
-        { 4, OnClock_LDE_H_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -525,7 +525,7 @@ InstructionInfo instructionInfoLDE_L_1 =
     1,
     0,
     {
-        { 4, OnClock_LDE_L_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -540,7 +540,7 @@ InstructionInfo instructionInfoLDH_A_1 =
     1,
     0,
     {
-        { 4, OnClock_LDH_A_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -555,7 +555,7 @@ InstructionInfo instructionInfoLDH_B_1 =
     1,
     0,
     {
-        { 4, OnClock_LDH_B_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -570,7 +570,7 @@ InstructionInfo instructionInfoLDH_C_1 =
     1,
     0,
     {
-        { 4, OnClock_LDH_C_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -585,7 +585,7 @@ InstructionInfo instructionInfoLDH_D_1 =
     1,
     0,
     {
-        { 4, OnClock_LDH_D_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -600,7 +600,7 @@ InstructionInfo instructionInfoLDH_E_1 =
     1,
     0,
     {
-        { 4, OnClock_LDH_E_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -615,7 +615,7 @@ InstructionInfo instructionInfoLDH_H_1 =
     1,
     0,
     {
-        { 4, OnClock_LDH_H_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -630,7 +630,7 @@ InstructionInfo instructionInfoLDH_L_1 =
     1,
     0,
     {
-        { 4, OnClock_LDH_L_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -645,7 +645,7 @@ InstructionInfo instructionInfoLDL_A_1 =
     1,
     0,
     {
-        { 4, OnClock_LDL_A_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -660,7 +660,7 @@ InstructionInfo instructionInfoLDL_B_1 =
     1,
     0,
     {
-        { 4, OnClock_LDL_B_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -675,7 +675,7 @@ InstructionInfo instructionInfoLDL_C_1 =
     1,
     0,
     {
-        { 4, OnClock_LDL_C_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -690,7 +690,7 @@ InstructionInfo instructionInfoLDL_D_1 =
     1,
     0,
     {
-        { 4, OnClock_LDL_D_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -705,7 +705,7 @@ InstructionInfo instructionInfoLDL_E_1 =
     1,
     0,
     {
-        { 4, OnClock_LDL_E_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -720,7 +720,7 @@ InstructionInfo instructionInfoLDL_H_1 =
     1,
     0,
     {
-        { 4, OnClock_LDL_H_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -735,7 +735,7 @@ InstructionInfo instructionInfoLDL_L_1 =
     1,
     0,
     {
-        { 4, OnClock_LDL_L_1_OF },
+        { 4, OnClock_LDr_s_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -751,7 +751,7 @@ InstructionInfo instructionInfoLDA_A_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDA_A_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -766,7 +766,7 @@ InstructionInfo instructionInfoLDA_B_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDA_B_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -781,7 +781,7 @@ InstructionInfo instructionInfoLDA_C_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDA_C_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -796,7 +796,7 @@ InstructionInfo instructionInfoLDA_D_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDA_D_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -811,7 +811,7 @@ InstructionInfo instructionInfoLDA_E_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDA_E_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -826,7 +826,7 @@ InstructionInfo instructionInfoLDA_IXh_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDA_IXh_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -841,7 +841,7 @@ InstructionInfo instructionInfoLDA_IXl_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDA_IXl_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -856,7 +856,7 @@ InstructionInfo instructionInfoLDB_A_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDB_A_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -871,7 +871,7 @@ InstructionInfo instructionInfoLDB_B_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDB_B_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -886,7 +886,7 @@ InstructionInfo instructionInfoLDB_C_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDB_C_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -901,7 +901,7 @@ InstructionInfo instructionInfoLDB_D_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDB_D_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -916,7 +916,7 @@ InstructionInfo instructionInfoLDB_E_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDB_E_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -931,7 +931,7 @@ InstructionInfo instructionInfoLDB_IXh_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDB_IXh_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -946,7 +946,7 @@ InstructionInfo instructionInfoLDB_IXl_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDB_IXl_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -961,7 +961,7 @@ InstructionInfo instructionInfoLDC_A_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDC_A_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -976,7 +976,7 @@ InstructionInfo instructionInfoLDC_B_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDC_B_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -991,7 +991,7 @@ InstructionInfo instructionInfoLDC_C_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDC_C_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1006,7 +1006,7 @@ InstructionInfo instructionInfoLDC_D_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDC_D_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1021,7 +1021,7 @@ InstructionInfo instructionInfoLDC_E_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDC_E_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1036,7 +1036,7 @@ InstructionInfo instructionInfoLDC_IXh_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDC_IXh_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1051,7 +1051,7 @@ InstructionInfo instructionInfoLDC_IXl_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDC_IXl_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1066,7 +1066,7 @@ InstructionInfo instructionInfoLDD_A_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDD_A_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1081,7 +1081,7 @@ InstructionInfo instructionInfoLDD_B_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDD_B_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1096,7 +1096,7 @@ InstructionInfo instructionInfoLDD_C_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDD_C_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1111,7 +1111,7 @@ InstructionInfo instructionInfoLDD_D_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDD_D_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1126,7 +1126,7 @@ InstructionInfo instructionInfoLDD_E_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDD_E_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1141,7 +1141,7 @@ InstructionInfo instructionInfoLDD_IXh_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDD_IXh_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1156,7 +1156,7 @@ InstructionInfo instructionInfoLDD_IXl_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDD_IXl_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1171,7 +1171,7 @@ InstructionInfo instructionInfoLDE_A_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDE_A_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1186,7 +1186,7 @@ InstructionInfo instructionInfoLDE_B_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDE_B_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1201,7 +1201,7 @@ InstructionInfo instructionInfoLDE_C_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDE_C_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1216,7 +1216,7 @@ InstructionInfo instructionInfoLDE_D_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDE_D_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1231,7 +1231,7 @@ InstructionInfo instructionInfoLDE_E_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDE_E_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1246,7 +1246,7 @@ InstructionInfo instructionInfoLDE_IXh_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDE_IXh_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1261,7 +1261,7 @@ InstructionInfo instructionInfoLDE_IXl_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDE_IXl_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1276,7 +1276,7 @@ InstructionInfo instructionInfoLDIXh_A_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIXh_A_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1291,7 +1291,7 @@ InstructionInfo instructionInfoLDIXh_B_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIXh_B_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1306,7 +1306,7 @@ InstructionInfo instructionInfoLDIXh_C_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIXh_C_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1321,7 +1321,7 @@ InstructionInfo instructionInfoLDIXh_D_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIXh_D_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1336,7 +1336,7 @@ InstructionInfo instructionInfoLDIXh_E_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIXh_E_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1351,7 +1351,7 @@ InstructionInfo instructionInfoLDIXh_IXh_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIXh_IXh_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1366,7 +1366,7 @@ InstructionInfo instructionInfoLDIXh_IXl_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIXh_IXl_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1381,7 +1381,7 @@ InstructionInfo instructionInfoLDIXl_A_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIXl_A_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1396,7 +1396,7 @@ InstructionInfo instructionInfoLDIXl_B_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIXl_B_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1411,7 +1411,7 @@ InstructionInfo instructionInfoLDIXl_C_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIXl_C_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1426,7 +1426,7 @@ InstructionInfo instructionInfoLDIXl_D_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIXl_D_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1441,7 +1441,7 @@ InstructionInfo instructionInfoLDIXl_E_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIXl_E_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1456,7 +1456,7 @@ InstructionInfo instructionInfoLDIXl_IXh_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIXl_IXh_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1471,7 +1471,7 @@ InstructionInfo instructionInfoLDIXl_IXl_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIXl_IXl_DD2_OF },
+        { 4, OnClock_LDt_u_DD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1486,7 +1486,7 @@ InstructionInfo instructionInfoLDA_A_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDA_A_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1501,7 +1501,7 @@ InstructionInfo instructionInfoLDA_B_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDA_B_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1516,7 +1516,7 @@ InstructionInfo instructionInfoLDA_C_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDA_C_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1531,7 +1531,7 @@ InstructionInfo instructionInfoLDA_D_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDA_D_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1546,7 +1546,7 @@ InstructionInfo instructionInfoLDA_E_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDA_E_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1561,7 +1561,7 @@ InstructionInfo instructionInfoLDA_IYh_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDA_IYh_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1576,7 +1576,7 @@ InstructionInfo instructionInfoLDA_IYl_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDA_IYl_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1591,7 +1591,7 @@ InstructionInfo instructionInfoLDB_A_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDB_A_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1606,7 +1606,7 @@ InstructionInfo instructionInfoLDB_B_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDB_B_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1621,7 +1621,7 @@ InstructionInfo instructionInfoLDB_C_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDB_C_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1636,7 +1636,7 @@ InstructionInfo instructionInfoLDB_D_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDB_D_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1651,7 +1651,7 @@ InstructionInfo instructionInfoLDB_E_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDB_E_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1666,7 +1666,7 @@ InstructionInfo instructionInfoLDB_IYh_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDB_IYh_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1681,7 +1681,7 @@ InstructionInfo instructionInfoLDB_IYl_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDB_IYl_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1696,7 +1696,7 @@ InstructionInfo instructionInfoLDC_A_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDC_A_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1711,7 +1711,7 @@ InstructionInfo instructionInfoLDC_B_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDC_B_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1726,7 +1726,7 @@ InstructionInfo instructionInfoLDC_C_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDC_C_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1741,7 +1741,7 @@ InstructionInfo instructionInfoLDC_D_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDC_D_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1756,7 +1756,7 @@ InstructionInfo instructionInfoLDC_E_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDC_E_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1771,7 +1771,7 @@ InstructionInfo instructionInfoLDC_IYh_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDC_IYh_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1786,7 +1786,7 @@ InstructionInfo instructionInfoLDC_IYl_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDC_IYl_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1801,7 +1801,7 @@ InstructionInfo instructionInfoLDD_A_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDD_A_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1816,7 +1816,7 @@ InstructionInfo instructionInfoLDD_B_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDD_B_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1831,7 +1831,7 @@ InstructionInfo instructionInfoLDD_C_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDD_C_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1846,7 +1846,7 @@ InstructionInfo instructionInfoLDD_D_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDD_D_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1861,7 +1861,7 @@ InstructionInfo instructionInfoLDD_E_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDD_E_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1876,7 +1876,7 @@ InstructionInfo instructionInfoLDD_IYh_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDD_IYh_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1891,7 +1891,7 @@ InstructionInfo instructionInfoLDD_IYl_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDD_IYl_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1906,7 +1906,7 @@ InstructionInfo instructionInfoLDE_A_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDE_A_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1921,7 +1921,7 @@ InstructionInfo instructionInfoLDE_B_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDE_B_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1936,7 +1936,7 @@ InstructionInfo instructionInfoLDE_C_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDE_C_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1951,7 +1951,7 @@ InstructionInfo instructionInfoLDE_D_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDE_D_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1966,7 +1966,7 @@ InstructionInfo instructionInfoLDE_E_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDE_E_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1981,7 +1981,7 @@ InstructionInfo instructionInfoLDE_IYh_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDE_IYh_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -1996,7 +1996,7 @@ InstructionInfo instructionInfoLDE_IYl_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDE_IYl_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -2011,7 +2011,7 @@ InstructionInfo instructionInfoLDIYh_A_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIYh_A_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -2026,7 +2026,7 @@ InstructionInfo instructionInfoLDIYh_B_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIYh_B_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -2041,7 +2041,7 @@ InstructionInfo instructionInfoLDIYh_C_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIYh_C_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -2056,7 +2056,7 @@ InstructionInfo instructionInfoLDIYh_D_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIYh_D_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -2071,7 +2071,7 @@ InstructionInfo instructionInfoLDIYh_E_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIYh_E_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -2086,7 +2086,7 @@ InstructionInfo instructionInfoLDIYh_IYh_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIYh_IYh_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -2101,7 +2101,7 @@ InstructionInfo instructionInfoLDIYh_IYl_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIYh_IYl_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -2116,7 +2116,7 @@ InstructionInfo instructionInfoLDIYl_A_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIYl_A_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -2131,7 +2131,7 @@ InstructionInfo instructionInfoLDIYl_B_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIYl_B_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -2146,7 +2146,7 @@ InstructionInfo instructionInfoLDIYl_C_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIYl_C_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -2161,7 +2161,7 @@ InstructionInfo instructionInfoLDIYl_D_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIYl_D_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -2176,7 +2176,7 @@ InstructionInfo instructionInfoLDIYl_E_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIYl_E_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -2191,7 +2191,7 @@ InstructionInfo instructionInfoLDIYl_IYh_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIYl_IYh_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -2206,7 +2206,7 @@ InstructionInfo instructionInfoLDIYl_IYl_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIYl_IYl_FD2_OF },
+        { 4, OnClock_LDv_w_FD2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -2220,7 +2220,7 @@ InstructionInfo instructionInfoLDA_n_2 =
     2,
     0,
     {
-        { 4, OnClock_LDA_n_2_OF },
+        { 4, OnClock_LDr_n_2_OF },
         { 3, OnClock_LDr_n_2_OD },
         { 0, nullptr },
         { 0, nullptr },
@@ -2235,7 +2235,7 @@ InstructionInfo instructionInfoLDB_n_2 =
     2,
     0,
     {
-        { 4, OnClock_LDB_n_2_OF },
+        { 4, OnClock_LDr_n_2_OF },
         { 3, OnClock_LDr_n_2_OD },
         { 0, nullptr },
         { 0, nullptr },
@@ -2250,7 +2250,7 @@ InstructionInfo instructionInfoLDC_n_2 =
     2,
     0,
     {
-        { 4, OnClock_LDC_n_2_OF },
+        { 4, OnClock_LDr_n_2_OF },
         { 3, OnClock_LDr_n_2_OD },
         { 0, nullptr },
         { 0, nullptr },
@@ -2265,7 +2265,7 @@ InstructionInfo instructionInfoLDD_n_2 =
     2,
     0,
     {
-        { 4, OnClock_LDD_n_2_OF },
+        { 4, OnClock_LDr_n_2_OF },
         { 3, OnClock_LDr_n_2_OD },
         { 0, nullptr },
         { 0, nullptr },
@@ -2280,7 +2280,7 @@ InstructionInfo instructionInfoLDE_n_2 =
     2,
     0,
     {
-        { 4, OnClock_LDE_n_2_OF },
+        { 4, OnClock_LDr_n_2_OF },
         { 3, OnClock_LDr_n_2_OD },
         { 0, nullptr },
         { 0, nullptr },
@@ -2295,7 +2295,7 @@ InstructionInfo instructionInfoLDH_n_2 =
     2,
     0,
     {
-        { 4, OnClock_LDH_n_2_OF },
+        { 4, OnClock_LDr_n_2_OF },
         { 3, OnClock_LDr_n_2_OD },
         { 0, nullptr },
         { 0, nullptr },
@@ -2310,7 +2310,7 @@ InstructionInfo instructionInfoLDL_n_2 =
     2,
     0,
     {
-        { 4, OnClock_LDL_n_2_OF },
+        { 4, OnClock_LDr_n_2_OF },
         { 3, OnClock_LDr_n_2_OD },
         { 0, nullptr },
         { 0, nullptr },
@@ -2326,7 +2326,7 @@ InstructionInfo instructionInfoLDA_n_DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDA_n_DD3_OF },
+        { 4, OnClock_LDt_n_DD3_OF },
         { 3, OnClock_LDt_n_DD3_OD },
         { 0, nullptr },
         { 0, nullptr },
@@ -2341,7 +2341,7 @@ InstructionInfo instructionInfoLDB_n_DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDB_n_DD3_OF },
+        { 4, OnClock_LDt_n_DD3_OF },
         { 3, OnClock_LDt_n_DD3_OD },
         { 0, nullptr },
         { 0, nullptr },
@@ -2356,7 +2356,7 @@ InstructionInfo instructionInfoLDC_n_DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDC_n_DD3_OF },
+        { 4, OnClock_LDt_n_DD3_OF },
         { 3, OnClock_LDt_n_DD3_OD },
         { 0, nullptr },
         { 0, nullptr },
@@ -2371,7 +2371,7 @@ InstructionInfo instructionInfoLDD_n_DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDD_n_DD3_OF },
+        { 4, OnClock_LDt_n_DD3_OF },
         { 3, OnClock_LDt_n_DD3_OD },
         { 0, nullptr },
         { 0, nullptr },
@@ -2386,7 +2386,7 @@ InstructionInfo instructionInfoLDE_n_DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDE_n_DD3_OF },
+        { 4, OnClock_LDt_n_DD3_OF },
         { 3, OnClock_LDt_n_DD3_OD },
         { 0, nullptr },
         { 0, nullptr },
@@ -2401,7 +2401,7 @@ InstructionInfo instructionInfoLDIXh_n_DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIXh_n_DD3_OF },
+        { 4, OnClock_LDt_n_DD3_OF },
         { 3, OnClock_LDt_n_DD3_OD },
         { 0, nullptr },
         { 0, nullptr },
@@ -2416,7 +2416,7 @@ InstructionInfo instructionInfoLDIXl_n_DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIXl_n_DD3_OF },
+        { 4, OnClock_LDt_n_DD3_OF },
         { 3, OnClock_LDt_n_DD3_OD },
         { 0, nullptr },
         { 0, nullptr },
@@ -2431,7 +2431,7 @@ InstructionInfo instructionInfoLDA_n_FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDA_n_FD3_OF },
+        { 4, OnClock_LDv_n_FD3_OF },
         { 3, OnClock_LDv_n_FD3_OD },
         { 0, nullptr },
         { 0, nullptr },
@@ -2446,7 +2446,7 @@ InstructionInfo instructionInfoLDB_n_FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDB_n_FD3_OF },
+        { 4, OnClock_LDv_n_FD3_OF },
         { 3, OnClock_LDv_n_FD3_OD },
         { 0, nullptr },
         { 0, nullptr },
@@ -2461,7 +2461,7 @@ InstructionInfo instructionInfoLDC_n_FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDC_n_FD3_OF },
+        { 4, OnClock_LDv_n_FD3_OF },
         { 3, OnClock_LDv_n_FD3_OD },
         { 0, nullptr },
         { 0, nullptr },
@@ -2476,7 +2476,7 @@ InstructionInfo instructionInfoLDD_n_FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDD_n_FD3_OF },
+        { 4, OnClock_LDv_n_FD3_OF },
         { 3, OnClock_LDv_n_FD3_OD },
         { 0, nullptr },
         { 0, nullptr },
@@ -2491,7 +2491,7 @@ InstructionInfo instructionInfoLDE_n_FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDE_n_FD3_OF },
+        { 4, OnClock_LDv_n_FD3_OF },
         { 3, OnClock_LDv_n_FD3_OD },
         { 0, nullptr },
         { 0, nullptr },
@@ -2506,7 +2506,7 @@ InstructionInfo instructionInfoLDIYh_n_FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIYh_n_FD3_OF },
+        { 4, OnClock_LDv_n_FD3_OF },
         { 3, OnClock_LDv_n_FD3_OD },
         { 0, nullptr },
         { 0, nullptr },
@@ -2521,7 +2521,7 @@ InstructionInfo instructionInfoLDIYl_n_FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIYl_n_FD3_OF },
+        { 4, OnClock_LDv_n_FD3_OF },
         { 3, OnClock_LDv_n_FD3_OD },
         { 0, nullptr },
         { 0, nullptr },
@@ -2535,7 +2535,7 @@ InstructionInfo instructionInfoLDA__HL__1 =
     2,
     0,
     {
-        { 4, OnClock_LDA__HL__1_OF },
+        { 4, OnClock_LDr__HL__1_OF },
         { 3, OnClock_LDr__HL__1_MR },
         { 0, nullptr },
         { 0, nullptr },
@@ -2550,7 +2550,7 @@ InstructionInfo instructionInfoLDB__HL__1 =
     2,
     0,
     {
-        { 4, OnClock_LDB__HL__1_OF },
+        { 4, OnClock_LDr__HL__1_OF },
         { 3, OnClock_LDr__HL__1_MR },
         { 0, nullptr },
         { 0, nullptr },
@@ -2565,7 +2565,7 @@ InstructionInfo instructionInfoLDC__HL__1 =
     2,
     0,
     {
-        { 4, OnClock_LDC__HL__1_OF },
+        { 4, OnClock_LDr__HL__1_OF },
         { 3, OnClock_LDr__HL__1_MR },
         { 0, nullptr },
         { 0, nullptr },
@@ -2580,7 +2580,7 @@ InstructionInfo instructionInfoLDD__HL__1 =
     2,
     0,
     {
-        { 4, OnClock_LDD__HL__1_OF },
+        { 4, OnClock_LDr__HL__1_OF },
         { 3, OnClock_LDr__HL__1_MR },
         { 0, nullptr },
         { 0, nullptr },
@@ -2595,7 +2595,7 @@ InstructionInfo instructionInfoLDE__HL__1 =
     2,
     0,
     {
-        { 4, OnClock_LDE__HL__1_OF },
+        { 4, OnClock_LDr__HL__1_OF },
         { 3, OnClock_LDr__HL__1_MR },
         { 0, nullptr },
         { 0, nullptr },
@@ -2610,7 +2610,7 @@ InstructionInfo instructionInfoLDH__HL__1 =
     2,
     0,
     {
-        { 4, OnClock_LDH__HL__1_OF },
+        { 4, OnClock_LDr__HL__1_OF },
         { 3, OnClock_LDr__HL__1_MR },
         { 0, nullptr },
         { 0, nullptr },
@@ -2625,7 +2625,7 @@ InstructionInfo instructionInfoLDL__HL__1 =
     2,
     0,
     {
-        { 4, OnClock_LDL__HL__1_OF },
+        { 4, OnClock_LDr__HL__1_OF },
         { 3, OnClock_LDr__HL__1_MR },
         { 0, nullptr },
         { 0, nullptr },
@@ -2641,7 +2641,7 @@ InstructionInfo instructionInfoLDA__IX_d__DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDA__IX_d__DD3_OF },
+        { 4, OnClock_LDr__ex_d__ex3_OF },
         { 3, OnClock_LDr__ex_d__ex3_OD },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
@@ -2656,7 +2656,7 @@ InstructionInfo instructionInfoLDA__IY_d__FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDA__IY_d__FD3_OF },
+        { 4, OnClock_LDr__ex_d__ex3_OF },
         { 3, OnClock_LDr__ex_d__ex3_OD },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
@@ -2671,7 +2671,7 @@ InstructionInfo instructionInfoLDB__IX_d__DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDB__IX_d__DD3_OF },
+        { 4, OnClock_LDr__ex_d__ex3_OF },
         { 3, OnClock_LDr__ex_d__ex3_OD },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
@@ -2686,7 +2686,7 @@ InstructionInfo instructionInfoLDB__IY_d__FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDB__IY_d__FD3_OF },
+        { 4, OnClock_LDr__ex_d__ex3_OF },
         { 3, OnClock_LDr__ex_d__ex3_OD },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
@@ -2701,7 +2701,7 @@ InstructionInfo instructionInfoLDC__IX_d__DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDC__IX_d__DD3_OF },
+        { 4, OnClock_LDr__ex_d__ex3_OF },
         { 3, OnClock_LDr__ex_d__ex3_OD },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
@@ -2716,7 +2716,7 @@ InstructionInfo instructionInfoLDC__IY_d__FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDC__IY_d__FD3_OF },
+        { 4, OnClock_LDr__ex_d__ex3_OF },
         { 3, OnClock_LDr__ex_d__ex3_OD },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
@@ -2731,7 +2731,7 @@ InstructionInfo instructionInfoLDD__IX_d__DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDD__IX_d__DD3_OF },
+        { 4, OnClock_LDr__ex_d__ex3_OF },
         { 3, OnClock_LDr__ex_d__ex3_OD },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
@@ -2746,7 +2746,7 @@ InstructionInfo instructionInfoLDD__IY_d__FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDD__IY_d__FD3_OF },
+        { 4, OnClock_LDr__ex_d__ex3_OF },
         { 3, OnClock_LDr__ex_d__ex3_OD },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
@@ -2761,7 +2761,7 @@ InstructionInfo instructionInfoLDE__IX_d__DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDE__IX_d__DD3_OF },
+        { 4, OnClock_LDr__ex_d__ex3_OF },
         { 3, OnClock_LDr__ex_d__ex3_OD },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
@@ -2776,7 +2776,7 @@ InstructionInfo instructionInfoLDE__IY_d__FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDE__IY_d__FD3_OF },
+        { 4, OnClock_LDr__ex_d__ex3_OF },
         { 3, OnClock_LDr__ex_d__ex3_OD },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
@@ -2791,7 +2791,7 @@ InstructionInfo instructionInfoLDH__IX_d__DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDH__IX_d__DD3_OF },
+        { 4, OnClock_LDr__ex_d__ex3_OF },
         { 3, OnClock_LDr__ex_d__ex3_OD },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
@@ -2806,7 +2806,7 @@ InstructionInfo instructionInfoLDH__IY_d__FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDH__IY_d__FD3_OF },
+        { 4, OnClock_LDr__ex_d__ex3_OF },
         { 3, OnClock_LDr__ex_d__ex3_OD },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
@@ -2821,7 +2821,7 @@ InstructionInfo instructionInfoLDL__IX_d__DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDL__IX_d__DD3_OF },
+        { 4, OnClock_LDr__ex_d__ex3_OF },
         { 3, OnClock_LDr__ex_d__ex3_OD },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
@@ -2836,7 +2836,7 @@ InstructionInfo instructionInfoLDL__IY_d__FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDL__IY_d__FD3_OF },
+        { 4, OnClock_LDr__ex_d__ex3_OF },
         { 3, OnClock_LDr__ex_d__ex3_OD },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
@@ -2850,7 +2850,7 @@ InstructionInfo instructionInfoLD_HL__A_1 =
     2,
     0,
     {
-        { 4, OnClock_LD_HL__A_1_OF },
+        { 4, OnClock_LD_HL__r_1_OF },
         { 3, OnClock_LD_HL__r_1_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -2865,7 +2865,7 @@ InstructionInfo instructionInfoLD_HL__B_1 =
     2,
     0,
     {
-        { 4, OnClock_LD_HL__B_1_OF },
+        { 4, OnClock_LD_HL__r_1_OF },
         { 3, OnClock_LD_HL__r_1_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -2880,7 +2880,7 @@ InstructionInfo instructionInfoLD_HL__C_1 =
     2,
     0,
     {
-        { 4, OnClock_LD_HL__C_1_OF },
+        { 4, OnClock_LD_HL__r_1_OF },
         { 3, OnClock_LD_HL__r_1_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -2895,7 +2895,7 @@ InstructionInfo instructionInfoLD_HL__D_1 =
     2,
     0,
     {
-        { 4, OnClock_LD_HL__D_1_OF },
+        { 4, OnClock_LD_HL__r_1_OF },
         { 3, OnClock_LD_HL__r_1_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -2910,7 +2910,7 @@ InstructionInfo instructionInfoLD_HL__E_1 =
     2,
     0,
     {
-        { 4, OnClock_LD_HL__E_1_OF },
+        { 4, OnClock_LD_HL__r_1_OF },
         { 3, OnClock_LD_HL__r_1_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -2925,7 +2925,7 @@ InstructionInfo instructionInfoLD_HL__H_1 =
     2,
     0,
     {
-        { 4, OnClock_LD_HL__H_1_OF },
+        { 4, OnClock_LD_HL__r_1_OF },
         { 3, OnClock_LD_HL__r_1_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -2940,7 +2940,7 @@ InstructionInfo instructionInfoLD_HL__L_1 =
     2,
     0,
     {
-        { 4, OnClock_LD_HL__L_1_OF },
+        { 4, OnClock_LD_HL__r_1_OF },
         { 3, OnClock_LD_HL__r_1_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -2956,7 +2956,7 @@ InstructionInfo instructionInfoLD_IX_d__A_DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_IX_d__A_DD3_OF },
+        { 4, OnClock_LD_ex_d__r_ex3_OF },
         { 3, OnClock_LD_ex_d__r_ex3_OD },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
@@ -2971,7 +2971,7 @@ InstructionInfo instructionInfoLD_IY_d__A_FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_IY_d__A_FD3_OF },
+        { 4, OnClock_LD_ex_d__r_ex3_OF },
         { 3, OnClock_LD_ex_d__r_ex3_OD },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
@@ -2986,7 +2986,7 @@ InstructionInfo instructionInfoLD_IX_d__B_DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_IX_d__B_DD3_OF },
+        { 4, OnClock_LD_ex_d__r_ex3_OF },
         { 3, OnClock_LD_ex_d__r_ex3_OD },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
@@ -3001,7 +3001,7 @@ InstructionInfo instructionInfoLD_IY_d__B_FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_IY_d__B_FD3_OF },
+        { 4, OnClock_LD_ex_d__r_ex3_OF },
         { 3, OnClock_LD_ex_d__r_ex3_OD },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
@@ -3016,7 +3016,7 @@ InstructionInfo instructionInfoLD_IX_d__C_DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_IX_d__C_DD3_OF },
+        { 4, OnClock_LD_ex_d__r_ex3_OF },
         { 3, OnClock_LD_ex_d__r_ex3_OD },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
@@ -3031,7 +3031,7 @@ InstructionInfo instructionInfoLD_IY_d__C_FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_IY_d__C_FD3_OF },
+        { 4, OnClock_LD_ex_d__r_ex3_OF },
         { 3, OnClock_LD_ex_d__r_ex3_OD },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
@@ -3046,7 +3046,7 @@ InstructionInfo instructionInfoLD_IX_d__D_DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_IX_d__D_DD3_OF },
+        { 4, OnClock_LD_ex_d__r_ex3_OF },
         { 3, OnClock_LD_ex_d__r_ex3_OD },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
@@ -3061,7 +3061,7 @@ InstructionInfo instructionInfoLD_IY_d__D_FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_IY_d__D_FD3_OF },
+        { 4, OnClock_LD_ex_d__r_ex3_OF },
         { 3, OnClock_LD_ex_d__r_ex3_OD },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
@@ -3076,7 +3076,7 @@ InstructionInfo instructionInfoLD_IX_d__E_DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_IX_d__E_DD3_OF },
+        { 4, OnClock_LD_ex_d__r_ex3_OF },
         { 3, OnClock_LD_ex_d__r_ex3_OD },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
@@ -3091,7 +3091,7 @@ InstructionInfo instructionInfoLD_IY_d__E_FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_IY_d__E_FD3_OF },
+        { 4, OnClock_LD_ex_d__r_ex3_OF },
         { 3, OnClock_LD_ex_d__r_ex3_OD },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
@@ -3106,7 +3106,7 @@ InstructionInfo instructionInfoLD_IX_d__H_DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_IX_d__H_DD3_OF },
+        { 4, OnClock_LD_ex_d__r_ex3_OF },
         { 3, OnClock_LD_ex_d__r_ex3_OD },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
@@ -3121,7 +3121,7 @@ InstructionInfo instructionInfoLD_IY_d__H_FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_IY_d__H_FD3_OF },
+        { 4, OnClock_LD_ex_d__r_ex3_OF },
         { 3, OnClock_LD_ex_d__r_ex3_OD },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
@@ -3136,7 +3136,7 @@ InstructionInfo instructionInfoLD_IX_d__L_DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_IX_d__L_DD3_OF },
+        { 4, OnClock_LD_ex_d__r_ex3_OF },
         { 3, OnClock_LD_ex_d__r_ex3_OD },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
@@ -3151,7 +3151,7 @@ InstructionInfo instructionInfoLD_IY_d__L_FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_IY_d__L_FD3_OF },
+        { 4, OnClock_LD_ex_d__r_ex3_OF },
         { 3, OnClock_LD_ex_d__r_ex3_OD },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
@@ -3181,7 +3181,7 @@ InstructionInfo instructionInfoLD_IX_d__n_DD4 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_IX_d__n_DD4_OF },
+        { 4, OnClock_LD_ex_d__n_ex4_OF },
         { 3, OnClock_LD_ex_d__n_ex4_OD },
         { 5, OnClock_LD_ex_d__n_ex4_FD },
         { 3, OnClock_LD_ex_d__n_ex4_MW },
@@ -3196,7 +3196,7 @@ InstructionInfo instructionInfoLD_IY_d__n_FD4 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_IY_d__n_FD4_OF },
+        { 4, OnClock_LD_ex_d__n_ex4_OF },
         { 3, OnClock_LD_ex_d__n_ex4_OD },
         { 5, OnClock_LD_ex_d__n_ex4_FD },
         { 3, OnClock_LD_ex_d__n_ex4_MW },
@@ -3360,7 +3360,7 @@ InstructionInfo instructionInfoLDBC_nn_3 =
     3,
     0,
     {
-        { 4, OnClock_LDBC_nn_3_OF },
+        { 4, OnClock_LDp_nn_3_OF },
         { 3, OnClock_LDp_nn_3_ODl },
         { 3, OnClock_LDp_nn_3_ODh },
         { 0, nullptr },
@@ -3375,7 +3375,7 @@ InstructionInfo instructionInfoLDDE_nn_3 =
     3,
     0,
     {
-        { 4, OnClock_LDDE_nn_3_OF },
+        { 4, OnClock_LDp_nn_3_OF },
         { 3, OnClock_LDp_nn_3_ODl },
         { 3, OnClock_LDp_nn_3_ODh },
         { 0, nullptr },
@@ -3390,7 +3390,7 @@ InstructionInfo instructionInfoLDHL_nn_3 =
     3,
     0,
     {
-        { 4, OnClock_LDHL_nn_3_OF },
+        { 4, OnClock_LDp_nn_3_OF },
         { 3, OnClock_LDp_nn_3_ODl },
         { 3, OnClock_LDp_nn_3_ODh },
         { 0, nullptr },
@@ -3405,7 +3405,7 @@ InstructionInfo instructionInfoLDSP_nn_3 =
     3,
     0,
     {
-        { 4, OnClock_LDSP_nn_3_OF },
+        { 4, OnClock_LDp_nn_3_OF },
         { 3, OnClock_LDp_nn_3_ODl },
         { 3, OnClock_LDp_nn_3_ODh },
         { 0, nullptr },
@@ -3421,7 +3421,7 @@ InstructionInfo instructionInfoLDIX_nn_DD4 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIX_nn_DD4_OF },
+        { 4, OnClock_LDex_nn_ex4_OF },
         { 3, OnClock_LDex_nn_ex4_ODl },
         { 3, OnClock_LDex_nn_ex4_ODh },
         { 0, nullptr },
@@ -3436,7 +3436,7 @@ InstructionInfo instructionInfoLDIY_nn_FD4 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIY_nn_FD4_OF },
+        { 4, OnClock_LDex_nn_ex4_OF },
         { 3, OnClock_LDex_nn_ex4_ODl },
         { 3, OnClock_LDex_nn_ex4_ODh },
         { 0, nullptr },
@@ -3466,7 +3466,7 @@ InstructionInfo instructionInfoLDBC__nn__ED4 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDBC__nn__ED4_OF },
+        { 4, OnClock_LDp__nn__ED4_OF },
         { 3, OnClock_LDp__nn__ED4_ODl },
         { 3, OnClock_LDp__nn__ED4_ODh },
         { 3, OnClock_LDp__nn__ED4_MWl },
@@ -3481,7 +3481,7 @@ InstructionInfo instructionInfoLDDE__nn__ED4 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDDE__nn__ED4_OF },
+        { 4, OnClock_LDp__nn__ED4_OF },
         { 3, OnClock_LDp__nn__ED4_ODl },
         { 3, OnClock_LDp__nn__ED4_ODh },
         { 3, OnClock_LDp__nn__ED4_MWl },
@@ -3496,7 +3496,7 @@ InstructionInfo instructionInfoLDHL__nn__ED4 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDHL__nn__ED4_OF },
+        { 4, OnClock_LDp__nn__ED4_OF },
         { 3, OnClock_LDp__nn__ED4_ODl },
         { 3, OnClock_LDp__nn__ED4_ODh },
         { 3, OnClock_LDp__nn__ED4_MWl },
@@ -3511,7 +3511,7 @@ InstructionInfo instructionInfoLDSP__nn__ED4 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDSP__nn__ED4_OF },
+        { 4, OnClock_LDp__nn__ED4_OF },
         { 3, OnClock_LDp__nn__ED4_ODl },
         { 3, OnClock_LDp__nn__ED4_ODh },
         { 3, OnClock_LDp__nn__ED4_MWl },
@@ -3526,7 +3526,7 @@ InstructionInfo instructionInfoLDIX__nn__DD4 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIX__nn__DD4_OF },
+        { 4, OnClock_LDex__nn__ex4_OF },
         { 3, OnClock_LDex__nn__ex4_ODl },
         { 3, OnClock_LDex__nn__ex4_ODh },
         { 3, OnClock_LDex__nn__ex4_MRl },
@@ -3541,7 +3541,7 @@ InstructionInfo instructionInfoLDIY__nn__FD4 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LDIY__nn__FD4_OF },
+        { 4, OnClock_LDex__nn__ex4_OF },
         { 3, OnClock_LDex__nn__ex4_ODl },
         { 3, OnClock_LDex__nn__ex4_ODh },
         { 3, OnClock_LDex__nn__ex4_MRl },
@@ -3571,7 +3571,7 @@ InstructionInfo instructionInfoLD_nn__BC_ED4 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_nn__BC_ED4_OF },
+        { 4, OnClock_LD_nn__p_ED4_OF },
         { 3, OnClock_LD_nn__p_ED4_ODl },
         { 3, OnClock_LD_nn__p_ED4_ODh },
         { 3, OnClock_LD_nn__p_ED4_MWl },
@@ -3586,7 +3586,7 @@ InstructionInfo instructionInfoLD_nn__DE_ED4 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_nn__DE_ED4_OF },
+        { 4, OnClock_LD_nn__p_ED4_OF },
         { 3, OnClock_LD_nn__p_ED4_ODl },
         { 3, OnClock_LD_nn__p_ED4_ODh },
         { 3, OnClock_LD_nn__p_ED4_MWl },
@@ -3601,7 +3601,7 @@ InstructionInfo instructionInfoLD_nn__HL_ED4 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_nn__HL_ED4_OF },
+        { 4, OnClock_LD_nn__p_ED4_OF },
         { 3, OnClock_LD_nn__p_ED4_ODl },
         { 3, OnClock_LD_nn__p_ED4_ODh },
         { 3, OnClock_LD_nn__p_ED4_MWl },
@@ -3616,7 +3616,7 @@ InstructionInfo instructionInfoLD_nn__SP_ED4 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_nn__SP_ED4_OF },
+        { 4, OnClock_LD_nn__p_ED4_OF },
         { 3, OnClock_LD_nn__p_ED4_ODl },
         { 3, OnClock_LD_nn__p_ED4_ODh },
         { 3, OnClock_LD_nn__p_ED4_MWl },
@@ -3631,7 +3631,7 @@ InstructionInfo instructionInfoLD_nn__IX_DD4 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_nn__IX_DD4_OF },
+        { 4, OnClock_LD_nn__ex_ex4_OF },
         { 3, OnClock_LD_nn__ex_ex4_ODl },
         { 3, OnClock_LD_nn__ex_ex4_ODh },
         { 3, OnClock_LD_nn__ex_ex4_MWl },
@@ -3646,7 +3646,7 @@ InstructionInfo instructionInfoLD_nn__IY_FD4 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_LD_nn__IY_FD4_OF },
+        { 4, OnClock_LD_nn__ex_ex4_OF },
         { 3, OnClock_LD_nn__ex_ex4_ODl },
         { 3, OnClock_LD_nn__ex_ex4_ODh },
         { 3, OnClock_LD_nn__ex_ex4_MWl },
@@ -3676,7 +3676,7 @@ InstructionInfo instructionInfoLDSP_IX_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 6, OnClock_LDSP_IX_DD2_OF },
+        { 6, OnClock_LDSP_ex_ex2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -3691,7 +3691,7 @@ InstructionInfo instructionInfoLDSP_IY_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 6, OnClock_LDSP_IY_FD2_OF },
+        { 6, OnClock_LDSP_ex_ex2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -3705,7 +3705,7 @@ InstructionInfo instructionInfoPUSHBC_1 =
     3,
     0,
     {
-        { 5, OnClock_PUSHBC_1_OF },
+        { 5, OnClock_PUSHq_1_OF },
         { 3, OnClock_PUSHq_1_SWh },
         { 3, OnClock_PUSHq_1_SWl },
         { 0, nullptr },
@@ -3720,7 +3720,7 @@ InstructionInfo instructionInfoPUSHDE_1 =
     3,
     0,
     {
-        { 5, OnClock_PUSHDE_1_OF },
+        { 5, OnClock_PUSHq_1_OF },
         { 3, OnClock_PUSHq_1_SWh },
         { 3, OnClock_PUSHq_1_SWl },
         { 0, nullptr },
@@ -3735,7 +3735,7 @@ InstructionInfo instructionInfoPUSHHL_1 =
     3,
     0,
     {
-        { 5, OnClock_PUSHHL_1_OF },
+        { 5, OnClock_PUSHq_1_OF },
         { 3, OnClock_PUSHq_1_SWh },
         { 3, OnClock_PUSHq_1_SWl },
         { 0, nullptr },
@@ -3750,7 +3750,7 @@ InstructionInfo instructionInfoPUSHAF_1 =
     3,
     0,
     {
-        { 5, OnClock_PUSHAF_1_OF },
+        { 5, OnClock_PUSHq_1_OF },
         { 3, OnClock_PUSHq_1_SWh },
         { 3, OnClock_PUSHq_1_SWl },
         { 0, nullptr },
@@ -3766,7 +3766,7 @@ InstructionInfo instructionInfoPUSHIX_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 5, OnClock_PUSHIX_DD2_OF },
+        { 5, OnClock_PUSHex_ex2_OF },
         { 3, OnClock_PUSHex_ex2_SWh },
         { 3, OnClock_PUSHex_ex2_SWl },
         { 0, nullptr },
@@ -3781,7 +3781,7 @@ InstructionInfo instructionInfoPUSHIY_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 5, OnClock_PUSHIY_FD2_OF },
+        { 5, OnClock_PUSHex_ex2_OF },
         { 3, OnClock_PUSHex_ex2_SWh },
         { 3, OnClock_PUSHex_ex2_SWl },
         { 0, nullptr },
@@ -3795,7 +3795,7 @@ InstructionInfo instructionInfoPOPBC_1 =
     3,
     0,
     {
-        { 4, OnClock_POPBC_1_OF },
+        { 4, OnClock_POPq_1_OF },
         { 3, OnClock_POPq_1_SRh },
         { 3, OnClock_POPq_1_SRl },
         { 0, nullptr },
@@ -3810,7 +3810,7 @@ InstructionInfo instructionInfoPOPDE_1 =
     3,
     0,
     {
-        { 4, OnClock_POPDE_1_OF },
+        { 4, OnClock_POPq_1_OF },
         { 3, OnClock_POPq_1_SRh },
         { 3, OnClock_POPq_1_SRl },
         { 0, nullptr },
@@ -3825,7 +3825,7 @@ InstructionInfo instructionInfoPOPHL_1 =
     3,
     0,
     {
-        { 4, OnClock_POPHL_1_OF },
+        { 4, OnClock_POPq_1_OF },
         { 3, OnClock_POPq_1_SRh },
         { 3, OnClock_POPq_1_SRl },
         { 0, nullptr },
@@ -3840,7 +3840,7 @@ InstructionInfo instructionInfoPOPAF_1 =
     3,
     0,
     {
-        { 4, OnClock_POPAF_1_OF },
+        { 4, OnClock_POPq_1_OF },
         { 3, OnClock_POPq_1_SRh },
         { 3, OnClock_POPq_1_SRl },
         { 0, nullptr },
@@ -3856,7 +3856,7 @@ InstructionInfo instructionInfoPOPIX_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_POPIX_DD2_OF },
+        { 4, OnClock_POPex_ex2_OF },
         { 3, OnClock_POPex_ex2_SRh },
         { 3, OnClock_POPex_ex2_SRl },
         { 0, nullptr },
@@ -3871,7 +3871,7 @@ InstructionInfo instructionInfoPOPIY_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_POPIY_FD2_OF },
+        { 4, OnClock_POPex_ex2_OF },
         { 3, OnClock_POPex_ex2_SRh },
         { 3, OnClock_POPex_ex2_SRl },
         { 0, nullptr },
@@ -3946,11 +3946,11 @@ InstructionInfo instructionInfoEX_SP__IX_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_EX_SP__IX_DD2_OF },
+        { 4, OnClock_EX_SP__ex_ex2_OF },
         { 3, OnClock_EX_SP__ex_ex2_SRh },
-        { 4, OnClock_EX_SP__IX_DD2_SRl },
+        { 4, OnClock_EX_SP__ex_ex2_SRl },
         { 3, OnClock_EX_SP__ex_ex2_SWh },
-        { 5, OnClock_EX_SP__IX_DD2_SWl },
+        { 5, OnClock_EX_SP__ex_ex2_SWl },
     }
 };
 
@@ -3961,11 +3961,11 @@ InstructionInfo instructionInfoEX_SP__IY_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_EX_SP__IY_FD2_OF },
+        { 4, OnClock_EX_SP__ex_ex2_OF },
         { 3, OnClock_EX_SP__ex_ex2_SRh },
-        { 4, OnClock_EX_SP__IY_FD2_SRl },
+        { 4, OnClock_EX_SP__ex_ex2_SRl },
         { 3, OnClock_EX_SP__ex_ex2_SWh },
-        { 5, OnClock_EX_SP__IY_FD2_SWl },
+        { 5, OnClock_EX_SP__ex_ex2_SWl },
     }
 };
 
@@ -4095,7 +4095,7 @@ InstructionInfo instructionInfoADDA_A_1 =
     1,
     0,
     {
-        { 4, OnClock_ADDA_A_1_OF },
+        { 4, OnClock_ADDA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4110,7 +4110,7 @@ InstructionInfo instructionInfoADDA_B_1 =
     1,
     0,
     {
-        { 4, OnClock_ADDA_B_1_OF },
+        { 4, OnClock_ADDA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4125,7 +4125,7 @@ InstructionInfo instructionInfoADDA_C_1 =
     1,
     0,
     {
-        { 4, OnClock_ADDA_C_1_OF },
+        { 4, OnClock_ADDA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4140,7 +4140,7 @@ InstructionInfo instructionInfoADDA_D_1 =
     1,
     0,
     {
-        { 4, OnClock_ADDA_D_1_OF },
+        { 4, OnClock_ADDA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4155,7 +4155,7 @@ InstructionInfo instructionInfoADDA_E_1 =
     1,
     0,
     {
-        { 4, OnClock_ADDA_E_1_OF },
+        { 4, OnClock_ADDA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4170,7 +4170,7 @@ InstructionInfo instructionInfoADDA_H_1 =
     1,
     0,
     {
-        { 4, OnClock_ADDA_H_1_OF },
+        { 4, OnClock_ADDA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4185,7 +4185,7 @@ InstructionInfo instructionInfoADDA_L_1 =
     1,
     0,
     {
-        { 4, OnClock_ADDA_L_1_OF },
+        { 4, OnClock_ADDA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4231,7 +4231,7 @@ InstructionInfo instructionInfoADDA__IX_d__DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_ADDA__IX_d__DD3_OF },
+        { 4, OnClock_ADDA__ex_d__ex3_OF },
         { 3, OnClock_ADDA__ex_d__ex3_OD },
         { 5, OnClock_ADDA__ex_d__ex3_AD },
         { 3, OnClock_ADDA__ex_d__ex3_MR },
@@ -4246,7 +4246,7 @@ InstructionInfo instructionInfoADDA__IY_d__FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_ADDA__IY_d__FD3_OF },
+        { 4, OnClock_ADDA__ex_d__ex3_OF },
         { 3, OnClock_ADDA__ex_d__ex3_OD },
         { 5, OnClock_ADDA__ex_d__ex3_AD },
         { 3, OnClock_ADDA__ex_d__ex3_MR },
@@ -4260,7 +4260,7 @@ InstructionInfo instructionInfoADCA_A_1 =
     1,
     0,
     {
-        { 4, OnClock_ADCA_A_1_OF },
+        { 4, OnClock_ADCA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4275,7 +4275,7 @@ InstructionInfo instructionInfoADCA_B_1 =
     1,
     0,
     {
-        { 4, OnClock_ADCA_B_1_OF },
+        { 4, OnClock_ADCA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4290,7 +4290,7 @@ InstructionInfo instructionInfoADCA_C_1 =
     1,
     0,
     {
-        { 4, OnClock_ADCA_C_1_OF },
+        { 4, OnClock_ADCA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4305,7 +4305,7 @@ InstructionInfo instructionInfoADCA_D_1 =
     1,
     0,
     {
-        { 4, OnClock_ADCA_D_1_OF },
+        { 4, OnClock_ADCA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4320,7 +4320,7 @@ InstructionInfo instructionInfoADCA_E_1 =
     1,
     0,
     {
-        { 4, OnClock_ADCA_E_1_OF },
+        { 4, OnClock_ADCA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4335,7 +4335,7 @@ InstructionInfo instructionInfoADCA_H_1 =
     1,
     0,
     {
-        { 4, OnClock_ADCA_H_1_OF },
+        { 4, OnClock_ADCA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4350,7 +4350,7 @@ InstructionInfo instructionInfoADCA_L_1 =
     1,
     0,
     {
-        { 4, OnClock_ADCA_L_1_OF },
+        { 4, OnClock_ADCA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4396,7 +4396,7 @@ InstructionInfo instructionInfoADCA__IX_d__DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_ADCA__IX_d__DD3_OF },
+        { 4, OnClock_ADCA__ex_d__ex3_OF },
         { 3, OnClock_ADCA__ex_d__ex3_OD },
         { 5, OnClock_ADCA__ex_d__ex3_AD },
         { 3, OnClock_ADCA__ex_d__ex3_MR },
@@ -4411,7 +4411,7 @@ InstructionInfo instructionInfoADCA__IY_d__FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_ADCA__IY_d__FD3_OF },
+        { 4, OnClock_ADCA__ex_d__ex3_OF },
         { 3, OnClock_ADCA__ex_d__ex3_OD },
         { 5, OnClock_ADCA__ex_d__ex3_AD },
         { 3, OnClock_ADCA__ex_d__ex3_MR },
@@ -4425,7 +4425,7 @@ InstructionInfo instructionInfoSUBA_A_1 =
     1,
     0,
     {
-        { 4, OnClock_SUBA_A_1_OF },
+        { 4, OnClock_SUBA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4440,7 +4440,7 @@ InstructionInfo instructionInfoSUBA_B_1 =
     1,
     0,
     {
-        { 4, OnClock_SUBA_B_1_OF },
+        { 4, OnClock_SUBA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4455,7 +4455,7 @@ InstructionInfo instructionInfoSUBA_C_1 =
     1,
     0,
     {
-        { 4, OnClock_SUBA_C_1_OF },
+        { 4, OnClock_SUBA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4470,7 +4470,7 @@ InstructionInfo instructionInfoSUBA_D_1 =
     1,
     0,
     {
-        { 4, OnClock_SUBA_D_1_OF },
+        { 4, OnClock_SUBA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4485,7 +4485,7 @@ InstructionInfo instructionInfoSUBA_E_1 =
     1,
     0,
     {
-        { 4, OnClock_SUBA_E_1_OF },
+        { 4, OnClock_SUBA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4500,7 +4500,7 @@ InstructionInfo instructionInfoSUBA_H_1 =
     1,
     0,
     {
-        { 4, OnClock_SUBA_H_1_OF },
+        { 4, OnClock_SUBA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4515,7 +4515,7 @@ InstructionInfo instructionInfoSUBA_L_1 =
     1,
     0,
     {
-        { 4, OnClock_SUBA_L_1_OF },
+        { 4, OnClock_SUBA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4561,7 +4561,7 @@ InstructionInfo instructionInfoSUBA__IX_d__DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SUBA__IX_d__DD3_OF },
+        { 4, OnClock_SUBA__ex_d__ex3_OF },
         { 3, OnClock_SUBA__ex_d__ex3_OD },
         { 5, OnClock_SUBA__ex_d__ex3_AD },
         { 3, OnClock_SUBA__ex_d__ex3_MR },
@@ -4576,7 +4576,7 @@ InstructionInfo instructionInfoSUBA__IY_d__FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SUBA__IY_d__FD3_OF },
+        { 4, OnClock_SUBA__ex_d__ex3_OF },
         { 3, OnClock_SUBA__ex_d__ex3_OD },
         { 5, OnClock_SUBA__ex_d__ex3_AD },
         { 3, OnClock_SUBA__ex_d__ex3_MR },
@@ -4590,7 +4590,7 @@ InstructionInfo instructionInfoSBCA_A_1 =
     1,
     0,
     {
-        { 4, OnClock_SBCA_A_1_OF },
+        { 4, OnClock_SBCA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4605,7 +4605,7 @@ InstructionInfo instructionInfoSBCA_B_1 =
     1,
     0,
     {
-        { 4, OnClock_SBCA_B_1_OF },
+        { 4, OnClock_SBCA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4620,7 +4620,7 @@ InstructionInfo instructionInfoSBCA_C_1 =
     1,
     0,
     {
-        { 4, OnClock_SBCA_C_1_OF },
+        { 4, OnClock_SBCA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4635,7 +4635,7 @@ InstructionInfo instructionInfoSBCA_D_1 =
     1,
     0,
     {
-        { 4, OnClock_SBCA_D_1_OF },
+        { 4, OnClock_SBCA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4650,7 +4650,7 @@ InstructionInfo instructionInfoSBCA_E_1 =
     1,
     0,
     {
-        { 4, OnClock_SBCA_E_1_OF },
+        { 4, OnClock_SBCA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4665,7 +4665,7 @@ InstructionInfo instructionInfoSBCA_H_1 =
     1,
     0,
     {
-        { 4, OnClock_SBCA_H_1_OF },
+        { 4, OnClock_SBCA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4680,7 +4680,7 @@ InstructionInfo instructionInfoSBCA_L_1 =
     1,
     0,
     {
-        { 4, OnClock_SBCA_L_1_OF },
+        { 4, OnClock_SBCA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4726,7 +4726,7 @@ InstructionInfo instructionInfoSBCA__IX_d__DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SBCA__IX_d__DD3_OF },
+        { 4, OnClock_SBCA__ex_d__ex3_OF },
         { 3, OnClock_SBCA__ex_d__ex3_OD },
         { 5, OnClock_SBCA__ex_d__ex3_AD },
         { 3, OnClock_SBCA__ex_d__ex3_MR },
@@ -4741,7 +4741,7 @@ InstructionInfo instructionInfoSBCA__IY_d__FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SBCA__IY_d__FD3_OF },
+        { 4, OnClock_SBCA__ex_d__ex3_OF },
         { 3, OnClock_SBCA__ex_d__ex3_OD },
         { 5, OnClock_SBCA__ex_d__ex3_AD },
         { 3, OnClock_SBCA__ex_d__ex3_MR },
@@ -4755,7 +4755,7 @@ InstructionInfo instructionInfoANDA_A_1 =
     1,
     0,
     {
-        { 4, OnClock_ANDA_A_1_OF },
+        { 4, OnClock_ANDA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4770,7 +4770,7 @@ InstructionInfo instructionInfoANDA_B_1 =
     1,
     0,
     {
-        { 4, OnClock_ANDA_B_1_OF },
+        { 4, OnClock_ANDA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4785,7 +4785,7 @@ InstructionInfo instructionInfoANDA_C_1 =
     1,
     0,
     {
-        { 4, OnClock_ANDA_C_1_OF },
+        { 4, OnClock_ANDA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4800,7 +4800,7 @@ InstructionInfo instructionInfoANDA_D_1 =
     1,
     0,
     {
-        { 4, OnClock_ANDA_D_1_OF },
+        { 4, OnClock_ANDA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4815,7 +4815,7 @@ InstructionInfo instructionInfoANDA_E_1 =
     1,
     0,
     {
-        { 4, OnClock_ANDA_E_1_OF },
+        { 4, OnClock_ANDA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4830,7 +4830,7 @@ InstructionInfo instructionInfoANDA_H_1 =
     1,
     0,
     {
-        { 4, OnClock_ANDA_H_1_OF },
+        { 4, OnClock_ANDA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4845,7 +4845,7 @@ InstructionInfo instructionInfoANDA_L_1 =
     1,
     0,
     {
-        { 4, OnClock_ANDA_L_1_OF },
+        { 4, OnClock_ANDA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4891,7 +4891,7 @@ InstructionInfo instructionInfoANDA__IX_d__DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_ANDA__IX_d__DD3_OF },
+        { 4, OnClock_ANDA__ex_d__ex3_OF },
         { 3, OnClock_ANDA__ex_d__ex3_OD },
         { 5, OnClock_ANDA__ex_d__ex3_AD },
         { 3, OnClock_ANDA__ex_d__ex3_MR },
@@ -4906,7 +4906,7 @@ InstructionInfo instructionInfoANDA__IY_d__FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_ANDA__IY_d__FD3_OF },
+        { 4, OnClock_ANDA__ex_d__ex3_OF },
         { 3, OnClock_ANDA__ex_d__ex3_OD },
         { 5, OnClock_ANDA__ex_d__ex3_AD },
         { 3, OnClock_ANDA__ex_d__ex3_MR },
@@ -4920,7 +4920,7 @@ InstructionInfo instructionInfoORA_A_1 =
     1,
     0,
     {
-        { 4, OnClock_ORA_A_1_OF },
+        { 4, OnClock_ORA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4935,7 +4935,7 @@ InstructionInfo instructionInfoORA_B_1 =
     1,
     0,
     {
-        { 4, OnClock_ORA_B_1_OF },
+        { 4, OnClock_ORA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4950,7 +4950,7 @@ InstructionInfo instructionInfoORA_C_1 =
     1,
     0,
     {
-        { 4, OnClock_ORA_C_1_OF },
+        { 4, OnClock_ORA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4965,7 +4965,7 @@ InstructionInfo instructionInfoORA_D_1 =
     1,
     0,
     {
-        { 4, OnClock_ORA_D_1_OF },
+        { 4, OnClock_ORA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4980,7 +4980,7 @@ InstructionInfo instructionInfoORA_E_1 =
     1,
     0,
     {
-        { 4, OnClock_ORA_E_1_OF },
+        { 4, OnClock_ORA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4995,7 +4995,7 @@ InstructionInfo instructionInfoORA_H_1 =
     1,
     0,
     {
-        { 4, OnClock_ORA_H_1_OF },
+        { 4, OnClock_ORA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5010,7 +5010,7 @@ InstructionInfo instructionInfoORA_L_1 =
     1,
     0,
     {
-        { 4, OnClock_ORA_L_1_OF },
+        { 4, OnClock_ORA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5056,7 +5056,7 @@ InstructionInfo instructionInfoORA__IX_d__DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_ORA__IX_d__DD3_OF },
+        { 4, OnClock_ORA__ex_d__ex3_OF },
         { 3, OnClock_ORA__ex_d__ex3_OD },
         { 5, OnClock_ORA__ex_d__ex3_AD },
         { 3, OnClock_ORA__ex_d__ex3_MR },
@@ -5071,7 +5071,7 @@ InstructionInfo instructionInfoORA__IY_d__FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_ORA__IY_d__FD3_OF },
+        { 4, OnClock_ORA__ex_d__ex3_OF },
         { 3, OnClock_ORA__ex_d__ex3_OD },
         { 5, OnClock_ORA__ex_d__ex3_AD },
         { 3, OnClock_ORA__ex_d__ex3_MR },
@@ -5085,7 +5085,7 @@ InstructionInfo instructionInfoXORA_A_1 =
     1,
     0,
     {
-        { 4, OnClock_XORA_A_1_OF },
+        { 4, OnClock_XORA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5100,7 +5100,7 @@ InstructionInfo instructionInfoXORA_B_1 =
     1,
     0,
     {
-        { 4, OnClock_XORA_B_1_OF },
+        { 4, OnClock_XORA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5115,7 +5115,7 @@ InstructionInfo instructionInfoXORA_C_1 =
     1,
     0,
     {
-        { 4, OnClock_XORA_C_1_OF },
+        { 4, OnClock_XORA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5130,7 +5130,7 @@ InstructionInfo instructionInfoXORA_D_1 =
     1,
     0,
     {
-        { 4, OnClock_XORA_D_1_OF },
+        { 4, OnClock_XORA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5145,7 +5145,7 @@ InstructionInfo instructionInfoXORA_E_1 =
     1,
     0,
     {
-        { 4, OnClock_XORA_E_1_OF },
+        { 4, OnClock_XORA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5160,7 +5160,7 @@ InstructionInfo instructionInfoXORA_H_1 =
     1,
     0,
     {
-        { 4, OnClock_XORA_H_1_OF },
+        { 4, OnClock_XORA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5175,7 +5175,7 @@ InstructionInfo instructionInfoXORA_L_1 =
     1,
     0,
     {
-        { 4, OnClock_XORA_L_1_OF },
+        { 4, OnClock_XORA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5221,7 +5221,7 @@ InstructionInfo instructionInfoXORA__IX_d__DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_XORA__IX_d__DD3_OF },
+        { 4, OnClock_XORA__ex_d__ex3_OF },
         { 3, OnClock_XORA__ex_d__ex3_OD },
         { 5, OnClock_XORA__ex_d__ex3_AD },
         { 3, OnClock_XORA__ex_d__ex3_MR },
@@ -5236,7 +5236,7 @@ InstructionInfo instructionInfoXORA__IY_d__FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_XORA__IY_d__FD3_OF },
+        { 4, OnClock_XORA__ex_d__ex3_OF },
         { 3, OnClock_XORA__ex_d__ex3_OD },
         { 5, OnClock_XORA__ex_d__ex3_AD },
         { 3, OnClock_XORA__ex_d__ex3_MR },
@@ -5250,7 +5250,7 @@ InstructionInfo instructionInfoCPA_A_1 =
     1,
     0,
     {
-        { 4, OnClock_CPA_A_1_OF },
+        { 4, OnClock_CPA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5265,7 +5265,7 @@ InstructionInfo instructionInfoCPA_B_1 =
     1,
     0,
     {
-        { 4, OnClock_CPA_B_1_OF },
+        { 4, OnClock_CPA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5280,7 +5280,7 @@ InstructionInfo instructionInfoCPA_C_1 =
     1,
     0,
     {
-        { 4, OnClock_CPA_C_1_OF },
+        { 4, OnClock_CPA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5295,7 +5295,7 @@ InstructionInfo instructionInfoCPA_D_1 =
     1,
     0,
     {
-        { 4, OnClock_CPA_D_1_OF },
+        { 4, OnClock_CPA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5310,7 +5310,7 @@ InstructionInfo instructionInfoCPA_E_1 =
     1,
     0,
     {
-        { 4, OnClock_CPA_E_1_OF },
+        { 4, OnClock_CPA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5325,7 +5325,7 @@ InstructionInfo instructionInfoCPA_H_1 =
     1,
     0,
     {
-        { 4, OnClock_CPA_H_1_OF },
+        { 4, OnClock_CPA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5340,7 +5340,7 @@ InstructionInfo instructionInfoCPA_L_1 =
     1,
     0,
     {
-        { 4, OnClock_CPA_L_1_OF },
+        { 4, OnClock_CPA_r_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5386,7 +5386,7 @@ InstructionInfo instructionInfoCPA__IX_d__DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_CPA__IX_d__DD3_OF },
+        { 4, OnClock_CPA__ex_d__ex3_OF },
         { 3, OnClock_CPA__ex_d__ex3_OD },
         { 5, OnClock_CPA__ex_d__ex3_AD },
         { 3, OnClock_CPA__ex_d__ex3_MR },
@@ -5401,7 +5401,7 @@ InstructionInfo instructionInfoCPA__IY_d__FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_CPA__IY_d__FD3_OF },
+        { 4, OnClock_CPA__ex_d__ex3_OF },
         { 3, OnClock_CPA__ex_d__ex3_OD },
         { 5, OnClock_CPA__ex_d__ex3_AD },
         { 3, OnClock_CPA__ex_d__ex3_MR },
@@ -5415,7 +5415,7 @@ InstructionInfo instructionInfoINCA_1 =
     1,
     0,
     {
-        { 4, OnClock_INCA_1_OF },
+        { 4, OnClock_INCr_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5430,7 +5430,7 @@ InstructionInfo instructionInfoINCB_1 =
     1,
     0,
     {
-        { 4, OnClock_INCB_1_OF },
+        { 4, OnClock_INCr_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5445,7 +5445,7 @@ InstructionInfo instructionInfoINCC_1 =
     1,
     0,
     {
-        { 4, OnClock_INCC_1_OF },
+        { 4, OnClock_INCr_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5460,7 +5460,7 @@ InstructionInfo instructionInfoINCD_1 =
     1,
     0,
     {
-        { 4, OnClock_INCD_1_OF },
+        { 4, OnClock_INCr_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5475,7 +5475,7 @@ InstructionInfo instructionInfoINCE_1 =
     1,
     0,
     {
-        { 4, OnClock_INCE_1_OF },
+        { 4, OnClock_INCr_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5490,7 +5490,7 @@ InstructionInfo instructionInfoINCH_1 =
     1,
     0,
     {
-        { 4, OnClock_INCH_1_OF },
+        { 4, OnClock_INCr_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5505,7 +5505,7 @@ InstructionInfo instructionInfoINCL_1 =
     1,
     0,
     {
-        { 4, OnClock_INCL_1_OF },
+        { 4, OnClock_INCr_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5536,10 +5536,10 @@ InstructionInfo instructionInfoINC_IX_d__DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_INC_IX_d__DD3_OF },
+        { 4, OnClock_INC_ex_d__ex3_OF },
         { 3, OnClock_INC_ex_d__ex3_OD },
         { 5, OnClock_INC_ex_d__ex3_AD },
-        { 4, OnClock_INC_IX_d__DD3_MR },
+        { 4, OnClock_INC_ex_d__ex3_MR },
         { 3, OnClock_INC_ex_d__ex3_MW },
     }
 };
@@ -5551,10 +5551,10 @@ InstructionInfo instructionInfoINC_IY_d__FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_INC_IY_d__FD3_OF },
+        { 4, OnClock_INC_ex_d__ex3_OF },
         { 3, OnClock_INC_ex_d__ex3_OD },
         { 5, OnClock_INC_ex_d__ex3_AD },
-        { 4, OnClock_INC_IY_d__FD3_MR },
+        { 4, OnClock_INC_ex_d__ex3_MR },
         { 3, OnClock_INC_ex_d__ex3_MW },
     }
 };
@@ -5565,7 +5565,7 @@ InstructionInfo instructionInfoDECA_1 =
     1,
     0,
     {
-        { 4, OnClock_DECA_1_OF },
+        { 4, OnClock_DECr_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5580,7 +5580,7 @@ InstructionInfo instructionInfoDECB_1 =
     1,
     0,
     {
-        { 4, OnClock_DECB_1_OF },
+        { 4, OnClock_DECr_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5595,7 +5595,7 @@ InstructionInfo instructionInfoDECC_1 =
     1,
     0,
     {
-        { 4, OnClock_DECC_1_OF },
+        { 4, OnClock_DECr_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5610,7 +5610,7 @@ InstructionInfo instructionInfoDECD_1 =
     1,
     0,
     {
-        { 4, OnClock_DECD_1_OF },
+        { 4, OnClock_DECr_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5625,7 +5625,7 @@ InstructionInfo instructionInfoDECE_1 =
     1,
     0,
     {
-        { 4, OnClock_DECE_1_OF },
+        { 4, OnClock_DECr_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5640,7 +5640,7 @@ InstructionInfo instructionInfoDECH_1 =
     1,
     0,
     {
-        { 4, OnClock_DECH_1_OF },
+        { 4, OnClock_DECr_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5655,7 +5655,7 @@ InstructionInfo instructionInfoDECL_1 =
     1,
     0,
     {
-        { 4, OnClock_DECL_1_OF },
+        { 4, OnClock_DECr_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5686,10 +5686,10 @@ InstructionInfo instructionInfoDEC_IX_d__DD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_DEC_IX_d__DD3_OF },
+        { 4, OnClock_DEC_ex_d__ex3_OF },
         { 3, OnClock_DEC_ex_d__ex3_OD },
         { 5, OnClock_DEC_ex_d__ex3_AD },
-        { 4, OnClock_DEC_IX_d__DD3_MR },
+        { 4, OnClock_DEC_ex_d__ex3_MR },
         { 3, OnClock_DEC_ex_d__ex3_MW },
     }
 };
@@ -5701,10 +5701,10 @@ InstructionInfo instructionInfoDEC_IY_d__FD3 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_DEC_IY_d__FD3_OF },
+        { 4, OnClock_DEC_ex_d__ex3_OF },
         { 3, OnClock_DEC_ex_d__ex3_OD },
         { 5, OnClock_DEC_ex_d__ex3_AD },
-        { 4, OnClock_DEC_IY_d__FD3_MR },
+        { 4, OnClock_DEC_ex_d__ex3_MR },
         { 3, OnClock_DEC_ex_d__ex3_MW },
     }
 };
@@ -5802,11 +5802,11 @@ InstructionInfo instructionInfoNOP_1 =
 // HALT  -  76
 InstructionInfo instructionInfoHALT_1 =
 {
-    2,
+    1,
     0,
     {
         { 4, OnClock_HALT_1_OF },
-        { -1, OnClock_ },
+        { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5895,9 +5895,9 @@ InstructionInfo instructionInfoADDHL_BC_1 =
     3,
     0,
     {
-        { 4, OnClock_ADDHL_BC_1_OF },
-        { 4, OnClock_ADDHL_BC_1_OP },
-        { 3, OnClock_ADDHL_BC_1_OP },
+        { 4, OnClock_ADDHL_p_1_OF },
+        { 4, OnClock_ADDHL_p_1_OP },
+        { 3, OnClock_ADDHL_p_1_OP },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5910,9 +5910,9 @@ InstructionInfo instructionInfoADDHL_DE_1 =
     3,
     0,
     {
-        { 4, OnClock_ADDHL_DE_1_OF },
-        { 4, OnClock_ADDHL_DE_1_OP },
-        { 3, OnClock_ADDHL_DE_1_OP },
+        { 4, OnClock_ADDHL_p_1_OF },
+        { 4, OnClock_ADDHL_p_1_OP },
+        { 3, OnClock_ADDHL_p_1_OP },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5925,9 +5925,9 @@ InstructionInfo instructionInfoADDHL_HL_1 =
     3,
     0,
     {
-        { 4, OnClock_ADDHL_HL_1_OF },
-        { 4, OnClock_ADDHL_HL_1_OP },
-        { 3, OnClock_ADDHL_HL_1_OP },
+        { 4, OnClock_ADDHL_p_1_OF },
+        { 4, OnClock_ADDHL_p_1_OP },
+        { 3, OnClock_ADDHL_p_1_OP },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5940,9 +5940,9 @@ InstructionInfo instructionInfoADDHL_SP_1 =
     3,
     0,
     {
-        { 4, OnClock_ADDHL_SP_1_OF },
-        { 4, OnClock_ADDHL_SP_1_OP },
-        { 3, OnClock_ADDHL_SP_1_OP },
+        { 4, OnClock_ADDHL_p_1_OF },
+        { 4, OnClock_ADDHL_p_1_OP },
+        { 3, OnClock_ADDHL_p_1_OP },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5956,9 +5956,9 @@ InstructionInfo instructionInfoADDIX_BC_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_ADDIX_BC_DD2_OF },
-        { 4, OnClock_ADDIX_BC_DD2_OP },
-        { 3, OnClock_ADDIX_BC_DD2_OP },
+        { 4, OnClock_ADDIX_m_DD2_OF },
+        { 4, OnClock_ADDIX_m_DD2_OP },
+        { 3, OnClock_ADDIX_m_DD2_OP },
         { 0, nullptr },
         { 0, nullptr },
     }
@@ -5971,9 +5971,9 @@ InstructionInfo instructionInfoADDIX_DE_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_ADDIX_DE_DD2_OF },
-        { 4, OnClock_ADDIX_DE_DD2_OP },
-        { 3, OnClock_ADDIX_DE_DD2_OP },
+        { 4, OnClock_ADDIX_m_DD2_OF },
+        { 4, OnClock_ADDIX_m_DD2_OP },
+        { 3, OnClock_ADDIX_m_DD2_OP },
         { 0, nullptr },
         { 0, nullptr },
     }
@@ -5986,9 +5986,9 @@ InstructionInfo instructionInfoADDIX_IX_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_ADDIX_IX_DD2_OF },
-        { 4, OnClock_ADDIX_IX_DD2_OP },
-        { 3, OnClock_ADDIX_IX_DD2_OP },
+        { 4, OnClock_ADDIX_m_DD2_OF },
+        { 4, OnClock_ADDIX_m_DD2_OP },
+        { 3, OnClock_ADDIX_m_DD2_OP },
         { 0, nullptr },
         { 0, nullptr },
     }
@@ -6001,9 +6001,9 @@ InstructionInfo instructionInfoADDIX_SP_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_ADDIX_SP_DD2_OF },
-        { 4, OnClock_ADDIX_SP_DD2_OP },
-        { 3, OnClock_ADDIX_SP_DD2_OP },
+        { 4, OnClock_ADDIX_m_DD2_OF },
+        { 4, OnClock_ADDIX_m_DD2_OP },
+        { 3, OnClock_ADDIX_m_DD2_OP },
         { 0, nullptr },
         { 0, nullptr },
     }
@@ -6016,9 +6016,9 @@ InstructionInfo instructionInfoADDIY_BC_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_ADDIY_BC_FD2_OF },
-        { 4, OnClock_ADDIY_BC_FD2_OP },
-        { 3, OnClock_ADDIY_BC_FD2_OP },
+        { 4, OnClock_ADDIY_o_FD2_OF },
+        { 4, OnClock_ADDIY_o_FD2_OP },
+        { 3, OnClock_ADDIY_o_FD2_OP },
         { 0, nullptr },
         { 0, nullptr },
     }
@@ -6031,9 +6031,9 @@ InstructionInfo instructionInfoADDIY_DE_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_ADDIY_DE_FD2_OF },
-        { 4, OnClock_ADDIY_DE_FD2_OP },
-        { 3, OnClock_ADDIY_DE_FD2_OP },
+        { 4, OnClock_ADDIY_o_FD2_OF },
+        { 4, OnClock_ADDIY_o_FD2_OP },
+        { 3, OnClock_ADDIY_o_FD2_OP },
         { 0, nullptr },
         { 0, nullptr },
     }
@@ -6046,9 +6046,9 @@ InstructionInfo instructionInfoADDIY_IY_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_ADDIY_IY_FD2_OF },
-        { 4, OnClock_ADDIY_IY_FD2_OP },
-        { 3, OnClock_ADDIY_IY_FD2_OP },
+        { 4, OnClock_ADDIY_o_FD2_OF },
+        { 4, OnClock_ADDIY_o_FD2_OP },
+        { 3, OnClock_ADDIY_o_FD2_OP },
         { 0, nullptr },
         { 0, nullptr },
     }
@@ -6061,9 +6061,9 @@ InstructionInfo instructionInfoADDIY_SP_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_ADDIY_SP_FD2_OF },
-        { 4, OnClock_ADDIY_SP_FD2_OP },
-        { 3, OnClock_ADDIY_SP_FD2_OP },
+        { 4, OnClock_ADDIY_o_FD2_OF },
+        { 4, OnClock_ADDIY_o_FD2_OP },
+        { 3, OnClock_ADDIY_o_FD2_OP },
         { 0, nullptr },
         { 0, nullptr },
     }
@@ -6076,9 +6076,9 @@ InstructionInfo instructionInfoADCHL_BC_ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_ADCHL_BC_ED2_OF },
-        { 4, OnClock_ADCHL_BC_ED2_OP },
-        { 3, OnClock_ADCHL_BC_ED2_OP },
+        { 4, OnClock_ADCHL_p_ED2_OF },
+        { 4, OnClock_ADCHL_p_ED2_OP },
+        { 3, OnClock_ADCHL_p_ED2_OP },
         { 0, nullptr },
         { 0, nullptr },
     }
@@ -6091,9 +6091,9 @@ InstructionInfo instructionInfoADCHL_DE_ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_ADCHL_DE_ED2_OF },
-        { 4, OnClock_ADCHL_DE_ED2_OP },
-        { 3, OnClock_ADCHL_DE_ED2_OP },
+        { 4, OnClock_ADCHL_p_ED2_OF },
+        { 4, OnClock_ADCHL_p_ED2_OP },
+        { 3, OnClock_ADCHL_p_ED2_OP },
         { 0, nullptr },
         { 0, nullptr },
     }
@@ -6106,9 +6106,9 @@ InstructionInfo instructionInfoADCHL_HL_ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_ADCHL_HL_ED2_OF },
-        { 4, OnClock_ADCHL_HL_ED2_OP },
-        { 3, OnClock_ADCHL_HL_ED2_OP },
+        { 4, OnClock_ADCHL_p_ED2_OF },
+        { 4, OnClock_ADCHL_p_ED2_OP },
+        { 3, OnClock_ADCHL_p_ED2_OP },
         { 0, nullptr },
         { 0, nullptr },
     }
@@ -6121,9 +6121,9 @@ InstructionInfo instructionInfoADCHL_SP_ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_ADCHL_SP_ED2_OF },
-        { 4, OnClock_ADCHL_SP_ED2_OP },
-        { 3, OnClock_ADCHL_SP_ED2_OP },
+        { 4, OnClock_ADCHL_p_ED2_OF },
+        { 4, OnClock_ADCHL_p_ED2_OP },
+        { 3, OnClock_ADCHL_p_ED2_OP },
         { 0, nullptr },
         { 0, nullptr },
     }
@@ -6136,9 +6136,9 @@ InstructionInfo instructionInfoSBCHL_BC_ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SBCHL_BC_ED2_OF },
-        { 4, OnClock_SBCHL_BC_ED2_OP },
-        { 3, OnClock_SBCHL_BC_ED2_OP },
+        { 4, OnClock_SBCHL_p_ED2_OF },
+        { 4, OnClock_SBCHL_p_ED2_OP },
+        { 3, OnClock_SBCHL_p_ED2_OP },
         { 0, nullptr },
         { 0, nullptr },
     }
@@ -6151,9 +6151,9 @@ InstructionInfo instructionInfoSBCHL_DE_ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SBCHL_DE_ED2_OF },
-        { 4, OnClock_SBCHL_DE_ED2_OP },
-        { 3, OnClock_SBCHL_DE_ED2_OP },
+        { 4, OnClock_SBCHL_p_ED2_OF },
+        { 4, OnClock_SBCHL_p_ED2_OP },
+        { 3, OnClock_SBCHL_p_ED2_OP },
         { 0, nullptr },
         { 0, nullptr },
     }
@@ -6166,9 +6166,9 @@ InstructionInfo instructionInfoSBCHL_HL_ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SBCHL_HL_ED2_OF },
-        { 4, OnClock_SBCHL_HL_ED2_OP },
-        { 3, OnClock_SBCHL_HL_ED2_OP },
+        { 4, OnClock_SBCHL_p_ED2_OF },
+        { 4, OnClock_SBCHL_p_ED2_OP },
+        { 3, OnClock_SBCHL_p_ED2_OP },
         { 0, nullptr },
         { 0, nullptr },
     }
@@ -6181,9 +6181,9 @@ InstructionInfo instructionInfoSBCHL_SP_ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SBCHL_SP_ED2_OF },
-        { 4, OnClock_SBCHL_SP_ED2_OP },
-        { 3, OnClock_SBCHL_SP_ED2_OP },
+        { 4, OnClock_SBCHL_p_ED2_OF },
+        { 4, OnClock_SBCHL_p_ED2_OP },
+        { 3, OnClock_SBCHL_p_ED2_OP },
         { 0, nullptr },
         { 0, nullptr },
     }
@@ -6195,7 +6195,7 @@ InstructionInfo instructionInfoINCBC_1 =
     1,
     0,
     {
-        { 6, OnClock_INCBC_1_OF },
+        { 6, OnClock_INCp_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6210,7 +6210,7 @@ InstructionInfo instructionInfoINCDE_1 =
     1,
     0,
     {
-        { 6, OnClock_INCDE_1_OF },
+        { 6, OnClock_INCp_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6225,7 +6225,7 @@ InstructionInfo instructionInfoINCHL_1 =
     1,
     0,
     {
-        { 6, OnClock_INCHL_1_OF },
+        { 6, OnClock_INCp_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6240,7 +6240,7 @@ InstructionInfo instructionInfoINCSP_1 =
     1,
     0,
     {
-        { 6, OnClock_INCSP_1_OF },
+        { 6, OnClock_INCp_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6256,7 +6256,7 @@ InstructionInfo instructionInfoINCIX_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 6, OnClock_INCIX_DD2_OF },
+        { 6, OnClock_INCex_ex2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6271,7 +6271,7 @@ InstructionInfo instructionInfoINCIY_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 6, OnClock_INCIY_FD2_OF },
+        { 6, OnClock_INCex_ex2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6285,7 +6285,7 @@ InstructionInfo instructionInfoDECBC_1 =
     1,
     0,
     {
-        { 6, OnClock_DECBC_1_OF },
+        { 6, OnClock_DECp_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6300,7 +6300,7 @@ InstructionInfo instructionInfoDECDE_1 =
     1,
     0,
     {
-        { 6, OnClock_DECDE_1_OF },
+        { 6, OnClock_DECp_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6315,7 +6315,7 @@ InstructionInfo instructionInfoDECHL_1 =
     1,
     0,
     {
-        { 6, OnClock_DECHL_1_OF },
+        { 6, OnClock_DECp_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6330,7 +6330,7 @@ InstructionInfo instructionInfoDECSP_1 =
     1,
     0,
     {
-        { 6, OnClock_DECSP_1_OF },
+        { 6, OnClock_DECp_1_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6346,7 +6346,7 @@ InstructionInfo instructionInfoDECIX_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 6, OnClock_DECIX_DD2_OF },
+        { 6, OnClock_DECex_ex2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6361,7 +6361,7 @@ InstructionInfo instructionInfoDECIY_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 6, OnClock_DECIY_FD2_OF },
+        { 6, OnClock_DECex_ex2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6436,7 +6436,7 @@ InstructionInfo instructionInfoRLCA_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RLCA_CB2_OF },
+        { 4, OnClock_RLCr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6451,7 +6451,7 @@ InstructionInfo instructionInfoRLCB_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RLCB_CB2_OF },
+        { 4, OnClock_RLCr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6466,7 +6466,7 @@ InstructionInfo instructionInfoRLCC_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RLCC_CB2_OF },
+        { 4, OnClock_RLCr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6481,7 +6481,7 @@ InstructionInfo instructionInfoRLCD_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RLCD_CB2_OF },
+        { 4, OnClock_RLCr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6496,7 +6496,7 @@ InstructionInfo instructionInfoRLCE_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RLCE_CB2_OF },
+        { 4, OnClock_RLCr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6511,7 +6511,7 @@ InstructionInfo instructionInfoRLCH_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RLCH_CB2_OF },
+        { 4, OnClock_RLCr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6526,7 +6526,7 @@ InstructionInfo instructionInfoRLCL_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RLCL_CB2_OF },
+        { 4, OnClock_RLCr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6559,7 +6559,7 @@ InstructionInfo instructionInfoRLC_IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RLC_ex_d__ex4_OD },
         { 5, OnClock_RLC_ex_d__ex4_FD },
-        { 4, OnClock_RLC_IX_d__DD4_MR },
+        { 4, OnClock_RLC_ex_d__ex4_MR },
         { 3, OnClock_RLC_ex_d__ex4_MW },
     }
 };
@@ -6574,7 +6574,7 @@ InstructionInfo instructionInfoRLC_IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RLC_ex_d__ex4_OD },
         { 5, OnClock_RLC_ex_d__ex4_FD },
-        { 4, OnClock_RLC_IY_d__FD4_MR },
+        { 4, OnClock_RLC_ex_d__ex4_MR },
         { 3, OnClock_RLC_ex_d__ex4_MW },
     }
 };
@@ -6586,7 +6586,7 @@ InstructionInfo instructionInfoRLA_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RLA_CB2_OF },
+        { 4, OnClock_RLr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6601,7 +6601,7 @@ InstructionInfo instructionInfoRLB_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RLB_CB2_OF },
+        { 4, OnClock_RLr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6616,7 +6616,7 @@ InstructionInfo instructionInfoRLC_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RLC_CB2_OF },
+        { 4, OnClock_RLr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6631,7 +6631,7 @@ InstructionInfo instructionInfoRLD_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RLD_CB2_OF },
+        { 4, OnClock_RLr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6646,7 +6646,7 @@ InstructionInfo instructionInfoRLE_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RLE_CB2_OF },
+        { 4, OnClock_RLr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6661,7 +6661,7 @@ InstructionInfo instructionInfoRLH_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RLH_CB2_OF },
+        { 4, OnClock_RLr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6676,7 +6676,7 @@ InstructionInfo instructionInfoRLL_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RLL_CB2_OF },
+        { 4, OnClock_RLr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6709,7 +6709,7 @@ InstructionInfo instructionInfoRL_IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RL_ex_d__ex4_OD },
         { 5, OnClock_RL_ex_d__ex4_FD },
-        { 4, OnClock_RL_IX_d__DD4_MR },
+        { 4, OnClock_RL_ex_d__ex4_MR },
         { 3, OnClock_RL_ex_d__ex4_MW },
     }
 };
@@ -6724,7 +6724,7 @@ InstructionInfo instructionInfoRL_IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RL_ex_d__ex4_OD },
         { 5, OnClock_RL_ex_d__ex4_FD },
-        { 4, OnClock_RL_IY_d__FD4_MR },
+        { 4, OnClock_RL_ex_d__ex4_MR },
         { 3, OnClock_RL_ex_d__ex4_MW },
     }
 };
@@ -6859,7 +6859,7 @@ InstructionInfo instructionInfoRRC_IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RRC_ex_d__ex4_OD },
         { 5, OnClock_RRC_ex_d__ex4_FD },
-        { 4, OnClock_RRC_IX_d__DD4_MR },
+        { 4, OnClock_RRC_ex_d__ex4_MR },
         { 3, OnClock_RRC_ex_d__ex4_MW },
     }
 };
@@ -6874,7 +6874,7 @@ InstructionInfo instructionInfoRRC_IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RRC_ex_d__ex4_OD },
         { 5, OnClock_RRC_ex_d__ex4_FD },
-        { 4, OnClock_RRC_IY_d__FD4_MR },
+        { 4, OnClock_RRC_ex_d__ex4_MR },
         { 3, OnClock_RRC_ex_d__ex4_MW },
     }
 };
@@ -6886,7 +6886,7 @@ InstructionInfo instructionInfoRRA_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RRA_CB2_OF },
+        { 4, OnClock_RRr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6901,7 +6901,7 @@ InstructionInfo instructionInfoRRB_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RRB_CB2_OF },
+        { 4, OnClock_RRr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6916,7 +6916,7 @@ InstructionInfo instructionInfoRRC_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RRC_CB2_OF },
+        { 4, OnClock_RRr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6931,7 +6931,7 @@ InstructionInfo instructionInfoRRD_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RRD_CB2_OF },
+        { 4, OnClock_RRr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6946,7 +6946,7 @@ InstructionInfo instructionInfoRRE_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RRE_CB2_OF },
+        { 4, OnClock_RRr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6961,7 +6961,7 @@ InstructionInfo instructionInfoRRH_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RRH_CB2_OF },
+        { 4, OnClock_RRr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6976,7 +6976,7 @@ InstructionInfo instructionInfoRRL_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RRL_CB2_OF },
+        { 4, OnClock_RRr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7009,7 +7009,7 @@ InstructionInfo instructionInfoRR_IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RR_ex_d__ex4_OD },
         { 5, OnClock_RR_ex_d__ex4_FD },
-        { 4, OnClock_RR_IX_d__DD4_MR },
+        { 4, OnClock_RR_ex_d__ex4_MR },
         { 3, OnClock_RR_ex_d__ex4_MW },
     }
 };
@@ -7024,7 +7024,7 @@ InstructionInfo instructionInfoRR_IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RR_ex_d__ex4_OD },
         { 5, OnClock_RR_ex_d__ex4_FD },
-        { 4, OnClock_RR_IY_d__FD4_MR },
+        { 4, OnClock_RR_ex_d__ex4_MR },
         { 3, OnClock_RR_ex_d__ex4_MW },
     }
 };
@@ -7036,7 +7036,7 @@ InstructionInfo instructionInfoSLAA_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SLAA_CB2_OF },
+        { 4, OnClock_SLAr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7051,7 +7051,7 @@ InstructionInfo instructionInfoSLAB_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SLAB_CB2_OF },
+        { 4, OnClock_SLAr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7066,7 +7066,7 @@ InstructionInfo instructionInfoSLAC_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SLAC_CB2_OF },
+        { 4, OnClock_SLAr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7081,7 +7081,7 @@ InstructionInfo instructionInfoSLAD_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SLAD_CB2_OF },
+        { 4, OnClock_SLAr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7096,7 +7096,7 @@ InstructionInfo instructionInfoSLAE_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SLAE_CB2_OF },
+        { 4, OnClock_SLAr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7111,7 +7111,7 @@ InstructionInfo instructionInfoSLAH_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SLAH_CB2_OF },
+        { 4, OnClock_SLAr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7126,7 +7126,7 @@ InstructionInfo instructionInfoSLAL_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SLAL_CB2_OF },
+        { 4, OnClock_SLAr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7159,7 +7159,7 @@ InstructionInfo instructionInfoSLA_IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SLA_ex_d__ex4_OD },
         { 5, OnClock_SLA_ex_d__ex4_FD },
-        { 4, OnClock_SLA_IX_d__DD4_MR },
+        { 4, OnClock_SLA_ex_d__ex4_MR },
         { 3, OnClock_SLA_ex_d__ex4_MW },
     }
 };
@@ -7174,7 +7174,7 @@ InstructionInfo instructionInfoSLA_IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SLA_ex_d__ex4_OD },
         { 5, OnClock_SLA_ex_d__ex4_FD },
-        { 4, OnClock_SLA_IY_d__FD4_MR },
+        { 4, OnClock_SLA_ex_d__ex4_MR },
         { 3, OnClock_SLA_ex_d__ex4_MW },
     }
 };
@@ -7186,7 +7186,7 @@ InstructionInfo instructionInfoSRAA_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SRAA_CB2_OF },
+        { 4, OnClock_SRAr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7201,7 +7201,7 @@ InstructionInfo instructionInfoSRAB_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SRAB_CB2_OF },
+        { 4, OnClock_SRAr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7216,7 +7216,7 @@ InstructionInfo instructionInfoSRAC_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SRAC_CB2_OF },
+        { 4, OnClock_SRAr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7231,7 +7231,7 @@ InstructionInfo instructionInfoSRAD_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SRAD_CB2_OF },
+        { 4, OnClock_SRAr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7246,7 +7246,7 @@ InstructionInfo instructionInfoSRAE_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SRAE_CB2_OF },
+        { 4, OnClock_SRAr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7261,7 +7261,7 @@ InstructionInfo instructionInfoSRAH_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SRAH_CB2_OF },
+        { 4, OnClock_SRAr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7276,7 +7276,7 @@ InstructionInfo instructionInfoSRAL_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SRAL_CB2_OF },
+        { 4, OnClock_SRAr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7309,7 +7309,7 @@ InstructionInfo instructionInfoSRA_IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SRA_ex_d__ex4_OD },
         { 5, OnClock_SRA_ex_d__ex4_FD },
-        { 4, OnClock_SRA_IX_d__DD4_MR },
+        { 4, OnClock_SRA_ex_d__ex4_MR },
         { 3, OnClock_SRA_ex_d__ex4_MW },
     }
 };
@@ -7324,7 +7324,7 @@ InstructionInfo instructionInfoSRA_IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SRA_ex_d__ex4_OD },
         { 5, OnClock_SRA_ex_d__ex4_FD },
-        { 4, OnClock_SRA_IY_d__FD4_MR },
+        { 4, OnClock_SRA_ex_d__ex4_MR },
         { 3, OnClock_SRA_ex_d__ex4_MW },
     }
 };
@@ -7336,7 +7336,7 @@ InstructionInfo instructionInfoSRLA_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SRLA_CB2_OF },
+        { 4, OnClock_SRLr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7351,7 +7351,7 @@ InstructionInfo instructionInfoSRLB_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SRLB_CB2_OF },
+        { 4, OnClock_SRLr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7366,7 +7366,7 @@ InstructionInfo instructionInfoSRLC_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SRLC_CB2_OF },
+        { 4, OnClock_SRLr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7381,7 +7381,7 @@ InstructionInfo instructionInfoSRLD_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SRLD_CB2_OF },
+        { 4, OnClock_SRLr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7396,7 +7396,7 @@ InstructionInfo instructionInfoSRLE_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SRLE_CB2_OF },
+        { 4, OnClock_SRLr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7411,7 +7411,7 @@ InstructionInfo instructionInfoSRLH_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SRLH_CB2_OF },
+        { 4, OnClock_SRLr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7426,7 +7426,7 @@ InstructionInfo instructionInfoSRLL_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SRLL_CB2_OF },
+        { 4, OnClock_SRLr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7459,7 +7459,7 @@ InstructionInfo instructionInfoSRL_IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SRL_ex_d__ex4_OD },
         { 5, OnClock_SRL_ex_d__ex4_FD },
-        { 4, OnClock_SRL_IX_d__DD4_MR },
+        { 4, OnClock_SRL_ex_d__ex4_MR },
         { 3, OnClock_SRL_ex_d__ex4_MW },
     }
 };
@@ -7474,7 +7474,7 @@ InstructionInfo instructionInfoSRL_IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SRL_ex_d__ex4_OD },
         { 5, OnClock_SRL_ex_d__ex4_FD },
-        { 4, OnClock_SRL_IY_d__FD4_MR },
+        { 4, OnClock_SRL_ex_d__ex4_MR },
         { 3, OnClock_SRL_ex_d__ex4_MW },
     }
 };
@@ -7516,7 +7516,7 @@ InstructionInfo instructionInfoBIT0_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT0_A_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7531,7 +7531,7 @@ InstructionInfo instructionInfoBIT1_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT1_A_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7546,7 +7546,7 @@ InstructionInfo instructionInfoBIT2_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT2_A_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7561,7 +7561,7 @@ InstructionInfo instructionInfoBIT3_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT3_A_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7576,7 +7576,7 @@ InstructionInfo instructionInfoBIT4_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT4_A_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7591,7 +7591,7 @@ InstructionInfo instructionInfoBIT5_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT5_A_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7606,7 +7606,7 @@ InstructionInfo instructionInfoBIT6_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT6_A_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7621,7 +7621,7 @@ InstructionInfo instructionInfoBIT7_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT7_A_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7636,7 +7636,7 @@ InstructionInfo instructionInfoBIT0_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT0_B_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7651,7 +7651,7 @@ InstructionInfo instructionInfoBIT1_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT1_B_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7666,7 +7666,7 @@ InstructionInfo instructionInfoBIT2_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT2_B_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7681,7 +7681,7 @@ InstructionInfo instructionInfoBIT3_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT3_B_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7696,7 +7696,7 @@ InstructionInfo instructionInfoBIT4_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT4_B_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7711,7 +7711,7 @@ InstructionInfo instructionInfoBIT5_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT5_B_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7726,7 +7726,7 @@ InstructionInfo instructionInfoBIT6_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT6_B_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7741,7 +7741,7 @@ InstructionInfo instructionInfoBIT7_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT7_B_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7756,7 +7756,7 @@ InstructionInfo instructionInfoBIT0_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT0_C_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7771,7 +7771,7 @@ InstructionInfo instructionInfoBIT1_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT1_C_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7786,7 +7786,7 @@ InstructionInfo instructionInfoBIT2_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT2_C_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7801,7 +7801,7 @@ InstructionInfo instructionInfoBIT3_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT3_C_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7816,7 +7816,7 @@ InstructionInfo instructionInfoBIT4_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT4_C_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7831,7 +7831,7 @@ InstructionInfo instructionInfoBIT5_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT5_C_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7846,7 +7846,7 @@ InstructionInfo instructionInfoBIT6_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT6_C_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7861,7 +7861,7 @@ InstructionInfo instructionInfoBIT7_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT7_C_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7876,7 +7876,7 @@ InstructionInfo instructionInfoBIT0_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT0_D_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7891,7 +7891,7 @@ InstructionInfo instructionInfoBIT1_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT1_D_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7906,7 +7906,7 @@ InstructionInfo instructionInfoBIT2_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT2_D_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7921,7 +7921,7 @@ InstructionInfo instructionInfoBIT3_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT3_D_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7936,7 +7936,7 @@ InstructionInfo instructionInfoBIT4_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT4_D_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7951,7 +7951,7 @@ InstructionInfo instructionInfoBIT5_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT5_D_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7966,7 +7966,7 @@ InstructionInfo instructionInfoBIT6_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT6_D_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7981,7 +7981,7 @@ InstructionInfo instructionInfoBIT7_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT7_D_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7996,7 +7996,7 @@ InstructionInfo instructionInfoBIT0_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT0_E_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8011,7 +8011,7 @@ InstructionInfo instructionInfoBIT1_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT1_E_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8026,7 +8026,7 @@ InstructionInfo instructionInfoBIT2_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT2_E_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8041,7 +8041,7 @@ InstructionInfo instructionInfoBIT3_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT3_E_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8056,7 +8056,7 @@ InstructionInfo instructionInfoBIT4_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT4_E_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8071,7 +8071,7 @@ InstructionInfo instructionInfoBIT5_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT5_E_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8086,7 +8086,7 @@ InstructionInfo instructionInfoBIT6_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT6_E_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8101,7 +8101,7 @@ InstructionInfo instructionInfoBIT7_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT7_E_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8116,7 +8116,7 @@ InstructionInfo instructionInfoBIT0_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT0_H_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8131,7 +8131,7 @@ InstructionInfo instructionInfoBIT1_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT1_H_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8146,7 +8146,7 @@ InstructionInfo instructionInfoBIT2_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT2_H_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8161,7 +8161,7 @@ InstructionInfo instructionInfoBIT3_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT3_H_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8176,7 +8176,7 @@ InstructionInfo instructionInfoBIT4_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT4_H_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8191,7 +8191,7 @@ InstructionInfo instructionInfoBIT5_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT5_H_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8206,7 +8206,7 @@ InstructionInfo instructionInfoBIT6_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT6_H_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8221,7 +8221,7 @@ InstructionInfo instructionInfoBIT7_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT7_H_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8236,7 +8236,7 @@ InstructionInfo instructionInfoBIT0_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT0_L_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8251,7 +8251,7 @@ InstructionInfo instructionInfoBIT1_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT1_L_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8266,7 +8266,7 @@ InstructionInfo instructionInfoBIT2_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT2_L_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8281,7 +8281,7 @@ InstructionInfo instructionInfoBIT3_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT3_L_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8296,7 +8296,7 @@ InstructionInfo instructionInfoBIT4_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT4_L_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8311,7 +8311,7 @@ InstructionInfo instructionInfoBIT5_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT5_L_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8326,7 +8326,7 @@ InstructionInfo instructionInfoBIT6_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT6_L_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8341,7 +8341,7 @@ InstructionInfo instructionInfoBIT7_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT7_L_CB2_OF },
+        { 4, OnClock_BITb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8356,8 +8356,8 @@ InstructionInfo instructionInfoBIT0__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT0__HL__CB2_OF },
-        { 4, OnClock_BIT0__HL__CB2_MR },
+        { 4, OnClock_BITb__HL__CB2_OF },
+        { 4, OnClock_BITb__HL__CB2_MR },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8371,8 +8371,8 @@ InstructionInfo instructionInfoBIT1__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT1__HL__CB2_OF },
-        { 4, OnClock_BIT1__HL__CB2_MR },
+        { 4, OnClock_BITb__HL__CB2_OF },
+        { 4, OnClock_BITb__HL__CB2_MR },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8386,8 +8386,8 @@ InstructionInfo instructionInfoBIT2__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT2__HL__CB2_OF },
-        { 4, OnClock_BIT2__HL__CB2_MR },
+        { 4, OnClock_BITb__HL__CB2_OF },
+        { 4, OnClock_BITb__HL__CB2_MR },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8401,8 +8401,8 @@ InstructionInfo instructionInfoBIT3__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT3__HL__CB2_OF },
-        { 4, OnClock_BIT3__HL__CB2_MR },
+        { 4, OnClock_BITb__HL__CB2_OF },
+        { 4, OnClock_BITb__HL__CB2_MR },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8416,8 +8416,8 @@ InstructionInfo instructionInfoBIT4__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT4__HL__CB2_OF },
-        { 4, OnClock_BIT4__HL__CB2_MR },
+        { 4, OnClock_BITb__HL__CB2_OF },
+        { 4, OnClock_BITb__HL__CB2_MR },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8431,8 +8431,8 @@ InstructionInfo instructionInfoBIT5__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT5__HL__CB2_OF },
-        { 4, OnClock_BIT5__HL__CB2_MR },
+        { 4, OnClock_BITb__HL__CB2_OF },
+        { 4, OnClock_BITb__HL__CB2_MR },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8446,8 +8446,8 @@ InstructionInfo instructionInfoBIT6__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT6__HL__CB2_OF },
-        { 4, OnClock_BIT6__HL__CB2_MR },
+        { 4, OnClock_BITb__HL__CB2_OF },
+        { 4, OnClock_BITb__HL__CB2_MR },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8461,8 +8461,8 @@ InstructionInfo instructionInfoBIT7__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_BIT7__HL__CB2_OF },
-        { 4, OnClock_BIT7__HL__CB2_MR },
+        { 4, OnClock_BITb__HL__CB2_OF },
+        { 4, OnClock_BITb__HL__CB2_MR },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8479,7 +8479,7 @@ InstructionInfo instructionInfoBIT0__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_BITb__ex_d__ex4_OD },
         { 5, OnClock_BITb__ex_d__ex4_FD },
-        { 4, OnClock_BIT0__IX_d__DD4_MR },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
     }
 };
@@ -8494,7 +8494,7 @@ InstructionInfo instructionInfoBIT0__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_BITb__ex_d__ex4_OD },
         { 5, OnClock_BITb__ex_d__ex4_FD },
-        { 4, OnClock_BIT0__IY_d__FD4_MR },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
     }
 };
@@ -8509,7 +8509,7 @@ InstructionInfo instructionInfoBIT1__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_BITb__ex_d__ex4_OD },
         { 5, OnClock_BITb__ex_d__ex4_FD },
-        { 4, OnClock_BIT1__IX_d__DD4_MR },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
     }
 };
@@ -8524,7 +8524,7 @@ InstructionInfo instructionInfoBIT1__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_BITb__ex_d__ex4_OD },
         { 5, OnClock_BITb__ex_d__ex4_FD },
-        { 4, OnClock_BIT1__IY_d__FD4_MR },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
     }
 };
@@ -8539,7 +8539,7 @@ InstructionInfo instructionInfoBIT2__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_BITb__ex_d__ex4_OD },
         { 5, OnClock_BITb__ex_d__ex4_FD },
-        { 4, OnClock_BIT2__IX_d__DD4_MR },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
     }
 };
@@ -8554,7 +8554,7 @@ InstructionInfo instructionInfoBIT2__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_BITb__ex_d__ex4_OD },
         { 5, OnClock_BITb__ex_d__ex4_FD },
-        { 4, OnClock_BIT2__IY_d__FD4_MR },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
     }
 };
@@ -8569,7 +8569,7 @@ InstructionInfo instructionInfoBIT3__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_BITb__ex_d__ex4_OD },
         { 5, OnClock_BITb__ex_d__ex4_FD },
-        { 4, OnClock_BIT3__IX_d__DD4_MR },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
     }
 };
@@ -8584,7 +8584,7 @@ InstructionInfo instructionInfoBIT3__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_BITb__ex_d__ex4_OD },
         { 5, OnClock_BITb__ex_d__ex4_FD },
-        { 4, OnClock_BIT3__IY_d__FD4_MR },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
     }
 };
@@ -8599,7 +8599,7 @@ InstructionInfo instructionInfoBIT4__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_BITb__ex_d__ex4_OD },
         { 5, OnClock_BITb__ex_d__ex4_FD },
-        { 4, OnClock_BIT4__IX_d__DD4_MR },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
     }
 };
@@ -8614,7 +8614,7 @@ InstructionInfo instructionInfoBIT4__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_BITb__ex_d__ex4_OD },
         { 5, OnClock_BITb__ex_d__ex4_FD },
-        { 4, OnClock_BIT4__IY_d__FD4_MR },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
     }
 };
@@ -8629,7 +8629,7 @@ InstructionInfo instructionInfoBIT5__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_BITb__ex_d__ex4_OD },
         { 5, OnClock_BITb__ex_d__ex4_FD },
-        { 4, OnClock_BIT5__IX_d__DD4_MR },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
     }
 };
@@ -8644,7 +8644,7 @@ InstructionInfo instructionInfoBIT5__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_BITb__ex_d__ex4_OD },
         { 5, OnClock_BITb__ex_d__ex4_FD },
-        { 4, OnClock_BIT5__IY_d__FD4_MR },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
     }
 };
@@ -8659,7 +8659,7 @@ InstructionInfo instructionInfoBIT6__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_BITb__ex_d__ex4_OD },
         { 5, OnClock_BITb__ex_d__ex4_FD },
-        { 4, OnClock_BIT6__IX_d__DD4_MR },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
     }
 };
@@ -8674,7 +8674,7 @@ InstructionInfo instructionInfoBIT6__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_BITb__ex_d__ex4_OD },
         { 5, OnClock_BITb__ex_d__ex4_FD },
-        { 4, OnClock_BIT6__IY_d__FD4_MR },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
     }
 };
@@ -8689,7 +8689,7 @@ InstructionInfo instructionInfoBIT7__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_BITb__ex_d__ex4_OD },
         { 5, OnClock_BITb__ex_d__ex4_FD },
-        { 4, OnClock_BIT7__IX_d__DD4_MR },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
     }
 };
@@ -8704,7 +8704,7 @@ InstructionInfo instructionInfoBIT7__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_BITb__ex_d__ex4_OD },
         { 5, OnClock_BITb__ex_d__ex4_FD },
-        { 4, OnClock_BIT7__IY_d__FD4_MR },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
     }
 };
@@ -8716,7 +8716,7 @@ InstructionInfo instructionInfoSET0_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET0_A_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8731,7 +8731,7 @@ InstructionInfo instructionInfoSET1_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET1_A_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8746,7 +8746,7 @@ InstructionInfo instructionInfoSET2_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET2_A_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8761,7 +8761,7 @@ InstructionInfo instructionInfoSET3_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET3_A_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8776,7 +8776,7 @@ InstructionInfo instructionInfoSET4_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET4_A_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8791,7 +8791,7 @@ InstructionInfo instructionInfoSET5_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET5_A_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8806,7 +8806,7 @@ InstructionInfo instructionInfoSET6_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET6_A_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8821,7 +8821,7 @@ InstructionInfo instructionInfoSET7_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET7_A_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8836,7 +8836,7 @@ InstructionInfo instructionInfoSET0_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET0_B_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8851,7 +8851,7 @@ InstructionInfo instructionInfoSET1_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET1_B_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8866,7 +8866,7 @@ InstructionInfo instructionInfoSET2_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET2_B_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8881,7 +8881,7 @@ InstructionInfo instructionInfoSET3_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET3_B_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8896,7 +8896,7 @@ InstructionInfo instructionInfoSET4_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET4_B_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8911,7 +8911,7 @@ InstructionInfo instructionInfoSET5_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET5_B_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8926,7 +8926,7 @@ InstructionInfo instructionInfoSET6_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET6_B_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8941,7 +8941,7 @@ InstructionInfo instructionInfoSET7_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET7_B_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8956,7 +8956,7 @@ InstructionInfo instructionInfoSET0_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET0_C_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8971,7 +8971,7 @@ InstructionInfo instructionInfoSET1_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET1_C_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8986,7 +8986,7 @@ InstructionInfo instructionInfoSET2_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET2_C_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9001,7 +9001,7 @@ InstructionInfo instructionInfoSET3_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET3_C_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9016,7 +9016,7 @@ InstructionInfo instructionInfoSET4_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET4_C_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9031,7 +9031,7 @@ InstructionInfo instructionInfoSET5_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET5_C_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9046,7 +9046,7 @@ InstructionInfo instructionInfoSET6_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET6_C_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9061,7 +9061,7 @@ InstructionInfo instructionInfoSET7_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET7_C_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9076,7 +9076,7 @@ InstructionInfo instructionInfoSET0_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET0_D_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9091,7 +9091,7 @@ InstructionInfo instructionInfoSET1_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET1_D_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9106,7 +9106,7 @@ InstructionInfo instructionInfoSET2_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET2_D_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9121,7 +9121,7 @@ InstructionInfo instructionInfoSET3_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET3_D_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9136,7 +9136,7 @@ InstructionInfo instructionInfoSET4_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET4_D_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9151,7 +9151,7 @@ InstructionInfo instructionInfoSET5_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET5_D_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9166,7 +9166,7 @@ InstructionInfo instructionInfoSET6_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET6_D_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9181,7 +9181,7 @@ InstructionInfo instructionInfoSET7_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET7_D_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9196,7 +9196,7 @@ InstructionInfo instructionInfoSET0_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET0_E_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9226,7 +9226,7 @@ InstructionInfo instructionInfoSET2_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET2_E_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9241,7 +9241,7 @@ InstructionInfo instructionInfoSET3_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET3_E_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9256,7 +9256,7 @@ InstructionInfo instructionInfoSET4_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET4_E_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9271,7 +9271,7 @@ InstructionInfo instructionInfoSET5_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET5_E_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9286,7 +9286,7 @@ InstructionInfo instructionInfoSET6_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET6_E_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9301,7 +9301,7 @@ InstructionInfo instructionInfoSET7_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET7_E_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9316,7 +9316,7 @@ InstructionInfo instructionInfoSET0_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET0_H_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9331,7 +9331,7 @@ InstructionInfo instructionInfoSET1_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET1_H_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9346,7 +9346,7 @@ InstructionInfo instructionInfoSET2_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET2_H_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9361,7 +9361,7 @@ InstructionInfo instructionInfoSET3_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET3_H_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9376,7 +9376,7 @@ InstructionInfo instructionInfoSET4_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET4_H_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9391,7 +9391,7 @@ InstructionInfo instructionInfoSET5_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET5_H_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9406,7 +9406,7 @@ InstructionInfo instructionInfoSET6_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET6_H_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9421,7 +9421,7 @@ InstructionInfo instructionInfoSET7_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET7_H_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9436,7 +9436,7 @@ InstructionInfo instructionInfoSET0_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET0_L_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9451,7 +9451,7 @@ InstructionInfo instructionInfoSET1_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET1_L_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9466,7 +9466,7 @@ InstructionInfo instructionInfoSET2_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET2_L_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9496,7 +9496,7 @@ InstructionInfo instructionInfoSET4_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET4_L_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9526,7 +9526,7 @@ InstructionInfo instructionInfoSET6_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET6_L_CB2_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9556,8 +9556,8 @@ InstructionInfo instructionInfoSET0__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET0__HL__CB2_OF },
-        { 4, OnClock_SET0__HL__CB2_MR },
+        { 4, OnClock_SETb__HL__CB2_OF },
+        { 4, OnClock_SETb__HL__CB2_MR },
         { 3, OnClock_SETb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -9571,8 +9571,8 @@ InstructionInfo instructionInfoSET1__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET1__HL__CB2_OF },
-        { 4, OnClock_SET1__HL__CB2_MR },
+        { 4, OnClock_SETb__HL__CB2_OF },
+        { 4, OnClock_SETb__HL__CB2_MR },
         { 3, OnClock_SETb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -9586,8 +9586,8 @@ InstructionInfo instructionInfoSET2__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET2__HL__CB2_OF },
-        { 4, OnClock_SET2__HL__CB2_MR },
+        { 4, OnClock_SETb__HL__CB2_OF },
+        { 4, OnClock_SETb__HL__CB2_MR },
         { 3, OnClock_SETb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -9601,8 +9601,8 @@ InstructionInfo instructionInfoSET3__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET3__HL__CB2_OF },
-        { 4, OnClock_SET3__HL__CB2_MR },
+        { 4, OnClock_SETb__HL__CB2_OF },
+        { 4, OnClock_SETb__HL__CB2_MR },
         { 3, OnClock_SETb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -9616,8 +9616,8 @@ InstructionInfo instructionInfoSET4__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET4__HL__CB2_OF },
-        { 4, OnClock_SET4__HL__CB2_MR },
+        { 4, OnClock_SETb__HL__CB2_OF },
+        { 4, OnClock_SETb__HL__CB2_MR },
         { 3, OnClock_SETb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -9631,8 +9631,8 @@ InstructionInfo instructionInfoSET5__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET5__HL__CB2_OF },
-        { 4, OnClock_SET5__HL__CB2_MR },
+        { 4, OnClock_SETb__HL__CB2_OF },
+        { 4, OnClock_SETb__HL__CB2_MR },
         { 3, OnClock_SETb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -9646,8 +9646,8 @@ InstructionInfo instructionInfoSET6__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET6__HL__CB2_OF },
-        { 4, OnClock_SET6__HL__CB2_MR },
+        { 4, OnClock_SETb__HL__CB2_OF },
+        { 4, OnClock_SETb__HL__CB2_MR },
         { 3, OnClock_SETb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -9661,8 +9661,8 @@ InstructionInfo instructionInfoSET7__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_SET7__HL__CB2_OF },
-        { 4, OnClock_SET7__HL__CB2_MR },
+        { 4, OnClock_SETb__HL__CB2_OF },
+        { 4, OnClock_SETb__HL__CB2_MR },
         { 3, OnClock_SETb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -9679,7 +9679,7 @@ InstructionInfo instructionInfoSET0__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SETb__ex_d__ex4_OD },
         { 5, OnClock_SETb__ex_d__ex4_FD },
-        { 4, OnClock_SET0__IX_d__DD4_MR },
+        { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
     }
 };
@@ -9694,7 +9694,7 @@ InstructionInfo instructionInfoSET0__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SETb__ex_d__ex4_OD },
         { 5, OnClock_SETb__ex_d__ex4_FD },
-        { 4, OnClock_SET0__IY_d__FD4_MR },
+        { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
     }
 };
@@ -9709,7 +9709,7 @@ InstructionInfo instructionInfoSET1__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SETb__ex_d__ex4_OD },
         { 5, OnClock_SETb__ex_d__ex4_FD },
-        { 4, OnClock_SET1__IX_d__DD4_MR },
+        { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
     }
 };
@@ -9724,7 +9724,7 @@ InstructionInfo instructionInfoSET1__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SETb__ex_d__ex4_OD },
         { 5, OnClock_SETb__ex_d__ex4_FD },
-        { 4, OnClock_SET1__IY_d__FD4_MR },
+        { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
     }
 };
@@ -9739,7 +9739,7 @@ InstructionInfo instructionInfoSET2__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SETb__ex_d__ex4_OD },
         { 5, OnClock_SETb__ex_d__ex4_FD },
-        { 4, OnClock_SET2__IX_d__DD4_MR },
+        { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
     }
 };
@@ -9754,7 +9754,7 @@ InstructionInfo instructionInfoSET2__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SETb__ex_d__ex4_OD },
         { 5, OnClock_SETb__ex_d__ex4_FD },
-        { 4, OnClock_SET2__IY_d__FD4_MR },
+        { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
     }
 };
@@ -9769,7 +9769,7 @@ InstructionInfo instructionInfoSET3__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SETb__ex_d__ex4_OD },
         { 5, OnClock_SETb__ex_d__ex4_FD },
-        { 4, OnClock_SET3__IX_d__DD4_MR },
+        { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
     }
 };
@@ -9784,7 +9784,7 @@ InstructionInfo instructionInfoSET3__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SETb__ex_d__ex4_OD },
         { 5, OnClock_SETb__ex_d__ex4_FD },
-        { 4, OnClock_SET3__IY_d__FD4_MR },
+        { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
     }
 };
@@ -9799,7 +9799,7 @@ InstructionInfo instructionInfoSET4__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SETb__ex_d__ex4_OD },
         { 5, OnClock_SETb__ex_d__ex4_FD },
-        { 4, OnClock_SET4__IX_d__DD4_MR },
+        { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
     }
 };
@@ -9814,7 +9814,7 @@ InstructionInfo instructionInfoSET4__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SETb__ex_d__ex4_OD },
         { 5, OnClock_SETb__ex_d__ex4_FD },
-        { 4, OnClock_SET4__IY_d__FD4_MR },
+        { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
     }
 };
@@ -9829,7 +9829,7 @@ InstructionInfo instructionInfoSET5__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SETb__ex_d__ex4_OD },
         { 5, OnClock_SETb__ex_d__ex4_FD },
-        { 4, OnClock_SET5__IX_d__DD4_MR },
+        { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
     }
 };
@@ -9844,7 +9844,7 @@ InstructionInfo instructionInfoSET5__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SETb__ex_d__ex4_OD },
         { 5, OnClock_SETb__ex_d__ex4_FD },
-        { 4, OnClock_SET5__IY_d__FD4_MR },
+        { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
     }
 };
@@ -9859,7 +9859,7 @@ InstructionInfo instructionInfoSET6__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SETb__ex_d__ex4_OD },
         { 5, OnClock_SETb__ex_d__ex4_FD },
-        { 4, OnClock_SET6__IX_d__DD4_MR },
+        { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
     }
 };
@@ -9874,7 +9874,7 @@ InstructionInfo instructionInfoSET6__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SETb__ex_d__ex4_OD },
         { 5, OnClock_SETb__ex_d__ex4_FD },
-        { 4, OnClock_SET6__IY_d__FD4_MR },
+        { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
     }
 };
@@ -9889,7 +9889,7 @@ InstructionInfo instructionInfoSET7__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SETb__ex_d__ex4_OD },
         { 5, OnClock_SETb__ex_d__ex4_FD },
-        { 4, OnClock_SET7__IX_d__DD4_MR },
+        { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
     }
 };
@@ -9904,7 +9904,7 @@ InstructionInfo instructionInfoSET7__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_SETb__ex_d__ex4_OD },
         { 5, OnClock_SETb__ex_d__ex4_FD },
-        { 4, OnClock_SET7__IY_d__FD4_MR },
+        { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
     }
 };
@@ -9916,7 +9916,7 @@ InstructionInfo instructionInfoRES0_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES0_A_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9931,7 +9931,7 @@ InstructionInfo instructionInfoRES1_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES1_A_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9946,7 +9946,7 @@ InstructionInfo instructionInfoRES2_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES2_A_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9961,7 +9961,7 @@ InstructionInfo instructionInfoRES3_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES3_A_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9976,7 +9976,7 @@ InstructionInfo instructionInfoRES4_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES4_A_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9991,7 +9991,7 @@ InstructionInfo instructionInfoRES5_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES5_A_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10006,7 +10006,7 @@ InstructionInfo instructionInfoRES6_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES6_A_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10021,7 +10021,7 @@ InstructionInfo instructionInfoRES7_A_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES7_A_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10036,7 +10036,7 @@ InstructionInfo instructionInfoRES0_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES0_B_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10051,7 +10051,7 @@ InstructionInfo instructionInfoRES1_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES1_B_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10066,7 +10066,7 @@ InstructionInfo instructionInfoRES2_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES2_B_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10081,7 +10081,7 @@ InstructionInfo instructionInfoRES3_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES3_B_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10096,7 +10096,7 @@ InstructionInfo instructionInfoRES4_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES4_B_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10111,7 +10111,7 @@ InstructionInfo instructionInfoRES5_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES5_B_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10126,7 +10126,7 @@ InstructionInfo instructionInfoRES6_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES6_B_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10141,7 +10141,7 @@ InstructionInfo instructionInfoRES7_B_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES7_B_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10156,7 +10156,7 @@ InstructionInfo instructionInfoRES0_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES0_C_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10171,7 +10171,7 @@ InstructionInfo instructionInfoRES1_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES1_C_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10186,7 +10186,7 @@ InstructionInfo instructionInfoRES2_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES2_C_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10201,7 +10201,7 @@ InstructionInfo instructionInfoRES3_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES3_C_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10216,7 +10216,7 @@ InstructionInfo instructionInfoRES4_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES4_C_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10231,7 +10231,7 @@ InstructionInfo instructionInfoRES5_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES5_C_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10246,7 +10246,7 @@ InstructionInfo instructionInfoRES6_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES6_C_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10261,7 +10261,7 @@ InstructionInfo instructionInfoRES7_C_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES7_C_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10276,7 +10276,7 @@ InstructionInfo instructionInfoRES0_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES0_D_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10291,7 +10291,7 @@ InstructionInfo instructionInfoRES1_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES1_D_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10306,7 +10306,7 @@ InstructionInfo instructionInfoRES2_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES2_D_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10321,7 +10321,7 @@ InstructionInfo instructionInfoRES3_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES3_D_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10336,7 +10336,7 @@ InstructionInfo instructionInfoRES4_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES4_D_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10351,7 +10351,7 @@ InstructionInfo instructionInfoRES5_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES5_D_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10366,7 +10366,7 @@ InstructionInfo instructionInfoRES6_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES6_D_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10381,7 +10381,7 @@ InstructionInfo instructionInfoRES7_D_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES7_D_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10396,7 +10396,7 @@ InstructionInfo instructionInfoRES0_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES0_E_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10411,7 +10411,7 @@ InstructionInfo instructionInfoRES1_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES1_E_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10426,7 +10426,7 @@ InstructionInfo instructionInfoRES2_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES2_E_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10441,7 +10441,7 @@ InstructionInfo instructionInfoRES3_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES3_E_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10456,7 +10456,7 @@ InstructionInfo instructionInfoRES4_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES4_E_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10471,7 +10471,7 @@ InstructionInfo instructionInfoRES5_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES5_E_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10486,7 +10486,7 @@ InstructionInfo instructionInfoRES6_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES6_E_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10501,7 +10501,7 @@ InstructionInfo instructionInfoRES7_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES7_E_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10516,7 +10516,7 @@ InstructionInfo instructionInfoRES0_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES0_H_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10531,7 +10531,7 @@ InstructionInfo instructionInfoRES1_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES1_H_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10546,7 +10546,7 @@ InstructionInfo instructionInfoRES2_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES2_H_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10561,7 +10561,7 @@ InstructionInfo instructionInfoRES3_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES3_H_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10576,7 +10576,7 @@ InstructionInfo instructionInfoRES4_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES4_H_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10591,7 +10591,7 @@ InstructionInfo instructionInfoRES5_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES5_H_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10606,7 +10606,7 @@ InstructionInfo instructionInfoRES6_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES6_H_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10621,7 +10621,7 @@ InstructionInfo instructionInfoRES7_H_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES7_H_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10636,7 +10636,7 @@ InstructionInfo instructionInfoRES0_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES0_L_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10651,7 +10651,7 @@ InstructionInfo instructionInfoRES1_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES1_L_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10666,7 +10666,7 @@ InstructionInfo instructionInfoRES2_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES2_L_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10681,7 +10681,7 @@ InstructionInfo instructionInfoRES3_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES3_L_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10696,7 +10696,7 @@ InstructionInfo instructionInfoRES4_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES4_L_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10711,7 +10711,7 @@ InstructionInfo instructionInfoRES5_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES5_L_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10726,7 +10726,7 @@ InstructionInfo instructionInfoRES6_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES6_L_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10741,7 +10741,7 @@ InstructionInfo instructionInfoRES7_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES7_L_CB2_OF },
+        { 4, OnClock_RESb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10756,8 +10756,8 @@ InstructionInfo instructionInfoRES0__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES0__HL__CB2_OF },
-        { 4, OnClock_RES0__HL__CB2_MR },
+        { 4, OnClock_RESb__HL__CB2_OF },
+        { 4, OnClock_RESb__HL__CB2_MR },
         { 3, OnClock_RESb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -10771,8 +10771,8 @@ InstructionInfo instructionInfoRES1__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES1__HL__CB2_OF },
-        { 4, OnClock_RES1__HL__CB2_MR },
+        { 4, OnClock_RESb__HL__CB2_OF },
+        { 4, OnClock_RESb__HL__CB2_MR },
         { 3, OnClock_RESb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -10786,8 +10786,8 @@ InstructionInfo instructionInfoRES2__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES2__HL__CB2_OF },
-        { 4, OnClock_RES2__HL__CB2_MR },
+        { 4, OnClock_RESb__HL__CB2_OF },
+        { 4, OnClock_RESb__HL__CB2_MR },
         { 3, OnClock_RESb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -10801,8 +10801,8 @@ InstructionInfo instructionInfoRES3__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES3__HL__CB2_OF },
-        { 4, OnClock_RES3__HL__CB2_MR },
+        { 4, OnClock_RESb__HL__CB2_OF },
+        { 4, OnClock_RESb__HL__CB2_MR },
         { 3, OnClock_RESb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -10816,8 +10816,8 @@ InstructionInfo instructionInfoRES4__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES4__HL__CB2_OF },
-        { 4, OnClock_RES4__HL__CB2_MR },
+        { 4, OnClock_RESb__HL__CB2_OF },
+        { 4, OnClock_RESb__HL__CB2_MR },
         { 3, OnClock_RESb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -10831,8 +10831,8 @@ InstructionInfo instructionInfoRES5__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES5__HL__CB2_OF },
-        { 4, OnClock_RES5__HL__CB2_MR },
+        { 4, OnClock_RESb__HL__CB2_OF },
+        { 4, OnClock_RESb__HL__CB2_MR },
         { 3, OnClock_RESb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -10846,8 +10846,8 @@ InstructionInfo instructionInfoRES6__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES6__HL__CB2_OF },
-        { 4, OnClock_RES6__HL__CB2_MR },
+        { 4, OnClock_RESb__HL__CB2_OF },
+        { 4, OnClock_RESb__HL__CB2_MR },
         { 3, OnClock_RESb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -10861,8 +10861,8 @@ InstructionInfo instructionInfoRES7__HL__CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_RES7__HL__CB2_OF },
-        { 4, OnClock_RES7__HL__CB2_MR },
+        { 4, OnClock_RESb__HL__CB2_OF },
+        { 4, OnClock_RESb__HL__CB2_MR },
         { 3, OnClock_RESb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -10879,7 +10879,7 @@ InstructionInfo instructionInfoRES0__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RESb__ex_d__ex4_OD },
         { 5, OnClock_RESb__ex_d__ex4_FD },
-        { 4, OnClock_RES0__IX_d__DD4_MR },
+        { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
     }
 };
@@ -10894,7 +10894,7 @@ InstructionInfo instructionInfoRES0__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RESb__ex_d__ex4_OD },
         { 5, OnClock_RESb__ex_d__ex4_FD },
-        { 4, OnClock_RES0__IY_d__FD4_MR },
+        { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
     }
 };
@@ -10909,7 +10909,7 @@ InstructionInfo instructionInfoRES1__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RESb__ex_d__ex4_OD },
         { 5, OnClock_RESb__ex_d__ex4_FD },
-        { 4, OnClock_RES1__IX_d__DD4_MR },
+        { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
     }
 };
@@ -10924,7 +10924,7 @@ InstructionInfo instructionInfoRES1__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RESb__ex_d__ex4_OD },
         { 5, OnClock_RESb__ex_d__ex4_FD },
-        { 4, OnClock_RES1__IY_d__FD4_MR },
+        { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
     }
 };
@@ -10939,7 +10939,7 @@ InstructionInfo instructionInfoRES2__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RESb__ex_d__ex4_OD },
         { 5, OnClock_RESb__ex_d__ex4_FD },
-        { 4, OnClock_RES2__IX_d__DD4_MR },
+        { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
     }
 };
@@ -10954,7 +10954,7 @@ InstructionInfo instructionInfoRES2__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RESb__ex_d__ex4_OD },
         { 5, OnClock_RESb__ex_d__ex4_FD },
-        { 4, OnClock_RES2__IY_d__FD4_MR },
+        { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
     }
 };
@@ -10969,7 +10969,7 @@ InstructionInfo instructionInfoRES3__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RESb__ex_d__ex4_OD },
         { 5, OnClock_RESb__ex_d__ex4_FD },
-        { 4, OnClock_RES3__IX_d__DD4_MR },
+        { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
     }
 };
@@ -10984,7 +10984,7 @@ InstructionInfo instructionInfoRES3__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RESb__ex_d__ex4_OD },
         { 5, OnClock_RESb__ex_d__ex4_FD },
-        { 4, OnClock_RES3__IY_d__FD4_MR },
+        { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
     }
 };
@@ -10999,7 +10999,7 @@ InstructionInfo instructionInfoRES4__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RESb__ex_d__ex4_OD },
         { 5, OnClock_RESb__ex_d__ex4_FD },
-        { 4, OnClock_RES4__IX_d__DD4_MR },
+        { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
     }
 };
@@ -11014,7 +11014,7 @@ InstructionInfo instructionInfoRES4__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RESb__ex_d__ex4_OD },
         { 5, OnClock_RESb__ex_d__ex4_FD },
-        { 4, OnClock_RES4__IY_d__FD4_MR },
+        { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
     }
 };
@@ -11029,7 +11029,7 @@ InstructionInfo instructionInfoRES5__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RESb__ex_d__ex4_OD },
         { 5, OnClock_RESb__ex_d__ex4_FD },
-        { 4, OnClock_RES5__IX_d__DD4_MR },
+        { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
     }
 };
@@ -11044,7 +11044,7 @@ InstructionInfo instructionInfoRES5__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RESb__ex_d__ex4_OD },
         { 5, OnClock_RESb__ex_d__ex4_FD },
-        { 4, OnClock_RES5__IY_d__FD4_MR },
+        { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
     }
 };
@@ -11059,7 +11059,7 @@ InstructionInfo instructionInfoRES6__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RESb__ex_d__ex4_OD },
         { 5, OnClock_RESb__ex_d__ex4_FD },
-        { 4, OnClock_RES6__IX_d__DD4_MR },
+        { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
     }
 };
@@ -11074,7 +11074,7 @@ InstructionInfo instructionInfoRES6__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RESb__ex_d__ex4_OD },
         { 5, OnClock_RESb__ex_d__ex4_FD },
-        { 4, OnClock_RES6__IY_d__FD4_MR },
+        { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
     }
 };
@@ -11089,7 +11089,7 @@ InstructionInfo instructionInfoRES7__IX_d__DD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RESb__ex_d__ex4_OD },
         { 5, OnClock_RESb__ex_d__ex4_FD },
-        { 4, OnClock_RES7__IX_d__DD4_MR },
+        { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
     }
 };
@@ -11104,7 +11104,7 @@ InstructionInfo instructionInfoRES7__IY_d__FD4 =
         { 4, OnClock_OF },
         { 3, OnClock_RESb__ex_d__ex4_OD },
         { 5, OnClock_RESb__ex_d__ex4_FD },
-        { 4, OnClock_RES7__IY_d__FD4_MR },
+        { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
     }
 };
@@ -11130,7 +11130,7 @@ InstructionInfo instructionInfoJPNZ_nn_3 =
     3,
     0,
     {
-        { 4, OnClock_JPNZ_nn_3_OF },
+        { 4, OnClock_JPc_nn_3_OF },
         { 3, OnClock_JPc_nn_3_ODl },
         { 3, OnClock_JPc_nn_3_ODh },
         { 0, nullptr },
@@ -11145,7 +11145,7 @@ InstructionInfo instructionInfoJPZ_nn_3 =
     3,
     0,
     {
-        { 4, OnClock_JPZ_nn_3_OF },
+        { 4, OnClock_JPc_nn_3_OF },
         { 3, OnClock_JPc_nn_3_ODl },
         { 3, OnClock_JPc_nn_3_ODh },
         { 0, nullptr },
@@ -11160,7 +11160,7 @@ InstructionInfo instructionInfoJPNC_nn_3 =
     3,
     0,
     {
-        { 4, OnClock_JPNC_nn_3_OF },
+        { 4, OnClock_JPc_nn_3_OF },
         { 3, OnClock_JPc_nn_3_ODl },
         { 3, OnClock_JPc_nn_3_ODh },
         { 0, nullptr },
@@ -11175,7 +11175,7 @@ InstructionInfo instructionInfoJPC_nn_3 =
     3,
     0,
     {
-        { 4, OnClock_JPC_nn_3_OF },
+        { 4, OnClock_JPc_nn_3_OF },
         { 3, OnClock_JPc_nn_3_ODl },
         { 3, OnClock_JPc_nn_3_ODh },
         { 0, nullptr },
@@ -11190,7 +11190,7 @@ InstructionInfo instructionInfoJPPO_nn_3 =
     3,
     0,
     {
-        { 4, OnClock_JPPO_nn_3_OF },
+        { 4, OnClock_JPc_nn_3_OF },
         { 3, OnClock_JPc_nn_3_ODl },
         { 3, OnClock_JPc_nn_3_ODh },
         { 0, nullptr },
@@ -11205,7 +11205,7 @@ InstructionInfo instructionInfoJPPE_nn_3 =
     3,
     0,
     {
-        { 4, OnClock_JPPE_nn_3_OF },
+        { 4, OnClock_JPc_nn_3_OF },
         { 3, OnClock_JPc_nn_3_ODl },
         { 3, OnClock_JPc_nn_3_ODh },
         { 0, nullptr },
@@ -11220,7 +11220,7 @@ InstructionInfo instructionInfoJPP_nn_3 =
     3,
     0,
     {
-        { 4, OnClock_JPP_nn_3_OF },
+        { 4, OnClock_JPc_nn_3_OF },
         { 3, OnClock_JPc_nn_3_ODl },
         { 3, OnClock_JPc_nn_3_ODh },
         { 0, nullptr },
@@ -11235,7 +11235,7 @@ InstructionInfo instructionInfoJPM_nn_3 =
     3,
     0,
     {
-        { 4, OnClock_JPM_nn_3_OF },
+        { 4, OnClock_JPc_nn_3_OF },
         { 3, OnClock_JPc_nn_3_ODl },
         { 3, OnClock_JPc_nn_3_ODh },
         { 0, nullptr },
@@ -11265,9 +11265,9 @@ InstructionInfo instructionInfoJRNZ_e_2 =
     3,
     2,
     {
-        { 4, OnClock_JRNZ_e_2_OF },
+        { 4, OnClock_JRj_e_2_OF },
         { 3, OnClock_JRj_e_2_OD },
-        { 5, OnClock_JRNZ_e_2_OP },
+        { 5, OnClock_JRj_e_2_OP },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -11280,9 +11280,9 @@ InstructionInfo instructionInfoJRZ_e_2 =
     3,
     2,
     {
-        { 4, OnClock_JRZ_e_2_OF },
+        { 4, OnClock_JRj_e_2_OF },
         { 3, OnClock_JRj_e_2_OD },
-        { 5, OnClock_JRZ_e_2_OP },
+        { 5, OnClock_JRj_e_2_OP },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -11295,9 +11295,9 @@ InstructionInfo instructionInfoJRNC_e_2 =
     3,
     2,
     {
-        { 4, OnClock_JRNC_e_2_OF },
+        { 4, OnClock_JRj_e_2_OF },
         { 3, OnClock_JRj_e_2_OD },
-        { 5, OnClock_JRNC_e_2_OP },
+        { 5, OnClock_JRj_e_2_OP },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -11310,9 +11310,9 @@ InstructionInfo instructionInfoJRC_e_2 =
     3,
     2,
     {
-        { 4, OnClock_JRC_e_2_OF },
+        { 4, OnClock_JRj_e_2_OF },
         { 3, OnClock_JRj_e_2_OD },
-        { 5, OnClock_JRC_e_2_OP },
+        { 5, OnClock_JRj_e_2_OP },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -11341,7 +11341,7 @@ InstructionInfo instructionInfoJPIX_DD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_JPIX_DD2_OF },
+        { 4, OnClock_JPex_ex2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -11356,7 +11356,7 @@ InstructionInfo instructionInfoJPIY_FD2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_JPIY_FD2_OF },
+        { 4, OnClock_JPex_ex2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -11400,9 +11400,9 @@ InstructionInfo instructionInfoCALLNZ_nn_3 =
     5,
     3,
     {
-        { 4, OnClock_CALLNZ_nn_3_OF },
+        { 4, OnClock_CALLc_nn_3_OF },
         { 3, OnClock_CALLc_nn_3_ODl },
-        { 4, OnClock_CALLNZ_nn_3_ODh },
+        { 4, OnClock_CALLc_nn_3_ODh },
         { 3, OnClock_CALLc_nn_3_SWh },
         { 3, OnClock_CALLc_nn_3_SWl },
         { 0, nullptr },
@@ -11415,9 +11415,9 @@ InstructionInfo instructionInfoCALLZ_nn_3 =
     5,
     3,
     {
-        { 4, OnClock_CALLZ_nn_3_OF },
+        { 4, OnClock_CALLc_nn_3_OF },
         { 3, OnClock_CALLc_nn_3_ODl },
-        { 4, OnClock_CALLZ_nn_3_ODh },
+        { 4, OnClock_CALLc_nn_3_ODh },
         { 3, OnClock_CALLc_nn_3_SWh },
         { 3, OnClock_CALLc_nn_3_SWl },
         { 0, nullptr },
@@ -11430,9 +11430,9 @@ InstructionInfo instructionInfoCALLNC_nn_3 =
     5,
     3,
     {
-        { 4, OnClock_CALLNC_nn_3_OF },
+        { 4, OnClock_CALLc_nn_3_OF },
         { 3, OnClock_CALLc_nn_3_ODl },
-        { 4, OnClock_CALLNC_nn_3_ODh },
+        { 4, OnClock_CALLc_nn_3_ODh },
         { 3, OnClock_CALLc_nn_3_SWh },
         { 3, OnClock_CALLc_nn_3_SWl },
         { 0, nullptr },
@@ -11445,9 +11445,9 @@ InstructionInfo instructionInfoCALLC_nn_3 =
     5,
     3,
     {
-        { 4, OnClock_CALLC_nn_3_OF },
+        { 4, OnClock_CALLc_nn_3_OF },
         { 3, OnClock_CALLc_nn_3_ODl },
-        { 4, OnClock_CALLC_nn_3_ODh },
+        { 4, OnClock_CALLc_nn_3_ODh },
         { 3, OnClock_CALLc_nn_3_SWh },
         { 3, OnClock_CALLc_nn_3_SWl },
         { 0, nullptr },
@@ -11460,9 +11460,9 @@ InstructionInfo instructionInfoCALLPO_nn_3 =
     5,
     3,
     {
-        { 4, OnClock_CALLPO_nn_3_OF },
+        { 4, OnClock_CALLc_nn_3_OF },
         { 3, OnClock_CALLc_nn_3_ODl },
-        { 4, OnClock_CALLPO_nn_3_ODh },
+        { 4, OnClock_CALLc_nn_3_ODh },
         { 3, OnClock_CALLc_nn_3_SWh },
         { 3, OnClock_CALLc_nn_3_SWl },
         { 0, nullptr },
@@ -11475,9 +11475,9 @@ InstructionInfo instructionInfoCALLPE_nn_3 =
     5,
     3,
     {
-        { 4, OnClock_CALLPE_nn_3_OF },
+        { 4, OnClock_CALLc_nn_3_OF },
         { 3, OnClock_CALLc_nn_3_ODl },
-        { 4, OnClock_CALLPE_nn_3_ODh },
+        { 4, OnClock_CALLc_nn_3_ODh },
         { 3, OnClock_CALLc_nn_3_SWh },
         { 3, OnClock_CALLc_nn_3_SWl },
         { 0, nullptr },
@@ -11490,9 +11490,9 @@ InstructionInfo instructionInfoCALLP_nn_3 =
     5,
     3,
     {
-        { 4, OnClock_CALLP_nn_3_OF },
+        { 4, OnClock_CALLc_nn_3_OF },
         { 3, OnClock_CALLc_nn_3_ODl },
-        { 4, OnClock_CALLP_nn_3_ODh },
+        { 4, OnClock_CALLc_nn_3_ODh },
         { 3, OnClock_CALLc_nn_3_SWh },
         { 3, OnClock_CALLc_nn_3_SWl },
         { 0, nullptr },
@@ -11505,9 +11505,9 @@ InstructionInfo instructionInfoCALLM_nn_3 =
     5,
     3,
     {
-        { 4, OnClock_CALLM_nn_3_OF },
+        { 4, OnClock_CALLc_nn_3_OF },
         { 3, OnClock_CALLc_nn_3_ODl },
-        { 4, OnClock_CALLM_nn_3_ODh },
+        { 4, OnClock_CALLc_nn_3_ODh },
         { 3, OnClock_CALLc_nn_3_SWh },
         { 3, OnClock_CALLc_nn_3_SWl },
         { 0, nullptr },
@@ -11535,7 +11535,7 @@ InstructionInfo instructionInfoRETNZ_1 =
     3,
     1,
     {
-        { 5, OnClock_RETNZ_1_OF },
+        { 5, OnClock_RETc_1_OF },
         { 3, OnClock_RETc_1_SRh },
         { 3, OnClock_RETc_1_SRl },
         { 0, nullptr },
@@ -11550,7 +11550,7 @@ InstructionInfo instructionInfoRETZ_1 =
     3,
     1,
     {
-        { 5, OnClock_RETZ_1_OF },
+        { 5, OnClock_RETc_1_OF },
         { 3, OnClock_RETc_1_SRh },
         { 3, OnClock_RETc_1_SRl },
         { 0, nullptr },
@@ -11565,7 +11565,7 @@ InstructionInfo instructionInfoRETNC_1 =
     3,
     1,
     {
-        { 5, OnClock_RETNC_1_OF },
+        { 5, OnClock_RETc_1_OF },
         { 3, OnClock_RETc_1_SRh },
         { 3, OnClock_RETc_1_SRl },
         { 0, nullptr },
@@ -11580,7 +11580,7 @@ InstructionInfo instructionInfoRETC_1 =
     3,
     1,
     {
-        { 5, OnClock_RETC_1_OF },
+        { 5, OnClock_RETc_1_OF },
         { 3, OnClock_RETc_1_SRh },
         { 3, OnClock_RETc_1_SRl },
         { 0, nullptr },
@@ -11595,7 +11595,7 @@ InstructionInfo instructionInfoRETPO_1 =
     3,
     1,
     {
-        { 5, OnClock_RETPO_1_OF },
+        { 5, OnClock_RETc_1_OF },
         { 3, OnClock_RETc_1_SRh },
         { 3, OnClock_RETc_1_SRl },
         { 0, nullptr },
@@ -11610,7 +11610,7 @@ InstructionInfo instructionInfoRETPE_1 =
     3,
     1,
     {
-        { 5, OnClock_RETPE_1_OF },
+        { 5, OnClock_RETc_1_OF },
         { 3, OnClock_RETc_1_SRh },
         { 3, OnClock_RETc_1_SRl },
         { 0, nullptr },
@@ -11625,7 +11625,7 @@ InstructionInfo instructionInfoRETP_1 =
     3,
     1,
     {
-        { 5, OnClock_RETP_1_OF },
+        { 5, OnClock_RETc_1_OF },
         { 3, OnClock_RETc_1_SRh },
         { 3, OnClock_RETc_1_SRl },
         { 0, nullptr },
@@ -11640,7 +11640,7 @@ InstructionInfo instructionInfoRETM_1 =
     3,
     1,
     {
-        { 5, OnClock_RETM_1_OF },
+        { 5, OnClock_RETc_1_OF },
         { 3, OnClock_RETc_1_SRh },
         { 3, OnClock_RETc_1_SRl },
         { 0, nullptr },
@@ -11685,7 +11685,7 @@ InstructionInfo instructionInfoRST00_1 =
     3,
     0,
     {
-        { 5, OnClock_RST00_1_OF },
+        { 5, OnClock_RSTi_1_OF },
         { 3, OnClock_RSTi_1_SWh },
         { 3, OnClock_RSTi_1_SWl },
         { 0, nullptr },
@@ -11700,7 +11700,7 @@ InstructionInfo instructionInfoRST08_1 =
     3,
     0,
     {
-        { 5, OnClock_RST08_1_OF },
+        { 5, OnClock_RSTi_1_OF },
         { 3, OnClock_RSTi_1_SWh },
         { 3, OnClock_RSTi_1_SWl },
         { 0, nullptr },
@@ -11715,7 +11715,7 @@ InstructionInfo instructionInfoRST10_1 =
     3,
     0,
     {
-        { 5, OnClock_RST10_1_OF },
+        { 5, OnClock_RSTi_1_OF },
         { 3, OnClock_RSTi_1_SWh },
         { 3, OnClock_RSTi_1_SWl },
         { 0, nullptr },
@@ -11730,7 +11730,7 @@ InstructionInfo instructionInfoRST18_1 =
     3,
     0,
     {
-        { 5, OnClock_RST18_1_OF },
+        { 5, OnClock_RSTi_1_OF },
         { 3, OnClock_RSTi_1_SWh },
         { 3, OnClock_RSTi_1_SWl },
         { 0, nullptr },
@@ -11745,7 +11745,7 @@ InstructionInfo instructionInfoRST20_1 =
     3,
     0,
     {
-        { 5, OnClock_RST20_1_OF },
+        { 5, OnClock_RSTi_1_OF },
         { 3, OnClock_RSTi_1_SWh },
         { 3, OnClock_RSTi_1_SWl },
         { 0, nullptr },
@@ -11760,7 +11760,7 @@ InstructionInfo instructionInfoRST28_1 =
     3,
     0,
     {
-        { 5, OnClock_RST28_1_OF },
+        { 5, OnClock_RSTi_1_OF },
         { 3, OnClock_RSTi_1_SWh },
         { 3, OnClock_RSTi_1_SWl },
         { 0, nullptr },
@@ -11775,7 +11775,7 @@ InstructionInfo instructionInfoRST30_1 =
     3,
     0,
     {
-        { 5, OnClock_RST30_1_OF },
+        { 5, OnClock_RSTi_1_OF },
         { 3, OnClock_RSTi_1_SWh },
         { 3, OnClock_RSTi_1_SWl },
         { 0, nullptr },
@@ -11790,7 +11790,7 @@ InstructionInfo instructionInfoRST38_1 =
     3,
     0,
     {
-        { 5, OnClock_RST38_1_OF },
+        { 5, OnClock_RSTi_1_OF },
         { 3, OnClock_RSTi_1_SWh },
         { 3, OnClock_RSTi_1_SWl },
         { 0, nullptr },
@@ -11821,7 +11821,7 @@ InstructionInfo instructionInfoINA__C__ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_INA__C__ED2_OF },
+        { 4, OnClock_INr__C__ED2_OF },
         { 4, OnClock_INr__C__ED2_PR },
         { 0, nullptr },
         { 0, nullptr },
@@ -11836,7 +11836,7 @@ InstructionInfo instructionInfoINB__C__ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_INB__C__ED2_OF },
+        { 4, OnClock_INr__C__ED2_OF },
         { 4, OnClock_INr__C__ED2_PR },
         { 0, nullptr },
         { 0, nullptr },
@@ -11851,7 +11851,7 @@ InstructionInfo instructionInfoINC__C__ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_INC__C__ED2_OF },
+        { 4, OnClock_INr__C__ED2_OF },
         { 4, OnClock_INr__C__ED2_PR },
         { 0, nullptr },
         { 0, nullptr },
@@ -11866,7 +11866,7 @@ InstructionInfo instructionInfoIND__C__ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_IND__C__ED2_OF },
+        { 4, OnClock_INr__C__ED2_OF },
         { 4, OnClock_INr__C__ED2_PR },
         { 0, nullptr },
         { 0, nullptr },
@@ -11881,7 +11881,7 @@ InstructionInfo instructionInfoINE__C__ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_INE__C__ED2_OF },
+        { 4, OnClock_INr__C__ED2_OF },
         { 4, OnClock_INr__C__ED2_PR },
         { 0, nullptr },
         { 0, nullptr },
@@ -11896,7 +11896,7 @@ InstructionInfo instructionInfoINH__C__ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_INH__C__ED2_OF },
+        { 4, OnClock_INr__C__ED2_OF },
         { 4, OnClock_INr__C__ED2_PR },
         { 0, nullptr },
         { 0, nullptr },
@@ -11911,7 +11911,7 @@ InstructionInfo instructionInfoINL__C__ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_INL__C__ED2_OF },
+        { 4, OnClock_INr__C__ED2_OF },
         { 4, OnClock_INr__C__ED2_PR },
         { 0, nullptr },
         { 0, nullptr },
@@ -12001,7 +12001,7 @@ InstructionInfo instructionInfoOUT_C__A_ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_OUT_C__A_ED2_OF },
+        { 4, OnClock_OUT_C__r_ED2_OF },
         { 4, OnClock_OUT_C__r_ED2_PW },
         { 0, nullptr },
         { 0, nullptr },
@@ -12016,7 +12016,7 @@ InstructionInfo instructionInfoOUT_C__B_ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_OUT_C__B_ED2_OF },
+        { 4, OnClock_OUT_C__r_ED2_OF },
         { 4, OnClock_OUT_C__r_ED2_PW },
         { 0, nullptr },
         { 0, nullptr },
@@ -12031,7 +12031,7 @@ InstructionInfo instructionInfoOUT_C__C_ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_OUT_C__C_ED2_OF },
+        { 4, OnClock_OUT_C__r_ED2_OF },
         { 4, OnClock_OUT_C__r_ED2_PW },
         { 0, nullptr },
         { 0, nullptr },
@@ -12046,7 +12046,7 @@ InstructionInfo instructionInfoOUT_C__D_ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_OUT_C__D_ED2_OF },
+        { 4, OnClock_OUT_C__r_ED2_OF },
         { 4, OnClock_OUT_C__r_ED2_PW },
         { 0, nullptr },
         { 0, nullptr },
@@ -12061,7 +12061,7 @@ InstructionInfo instructionInfoOUT_C__E_ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_OUT_C__E_ED2_OF },
+        { 4, OnClock_OUT_C__r_ED2_OF },
         { 4, OnClock_OUT_C__r_ED2_PW },
         { 0, nullptr },
         { 0, nullptr },
@@ -12076,7 +12076,7 @@ InstructionInfo instructionInfoOUT_C__H_ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_OUT_C__H_ED2_OF },
+        { 4, OnClock_OUT_C__r_ED2_OF },
         { 4, OnClock_OUT_C__r_ED2_PW },
         { 0, nullptr },
         { 0, nullptr },
@@ -12091,7 +12091,7 @@ InstructionInfo instructionInfoOUT_C__L_ED2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_OUT_C__L_ED2_OF },
+        { 4, OnClock_OUT_C__r_ED2_OF },
         { 4, OnClock_OUT_C__r_ED2_PW },
         { 0, nullptr },
         { 0, nullptr },

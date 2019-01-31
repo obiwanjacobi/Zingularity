@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace Jacobi.CpuZ80.Meta
 {
@@ -7,9 +8,9 @@ namespace Jacobi.CpuZ80.Meta
         private static readonly Dictionary<string, InstructionVariableType> _varTables =
             new Dictionary<string, InstructionVariableType>()
         {
-            { "d", InstructionVariableType.OpcodeByte },
-            { "n", InstructionVariableType.OpcodeByte },
-            { "nn", InstructionVariableType.OpcodeByte },
+            //{ "d", InstructionVariableType.OpcodeByte },
+            //{ "n", InstructionVariableType.OpcodeByte },
+            //{ "nn", InstructionVariableType.OpcodeByte },
             { "ex", InstructionVariableType.OpcodeByte },
 
             { "b", InstructionVariableType.Bits8 },
@@ -48,6 +49,18 @@ namespace Jacobi.CpuZ80.Meta
             }
 
             return vars;
+        }
+
+        public static List<string> Parse(string mnemonic)
+        {
+            var parameters = InstructionParameter.Parse(mnemonic);
+            return parameters.Where(p => IsVariable(p))
+                .ToList();
+        }
+
+        public static bool IsVariable(string var)
+        {
+            return _varTables.ContainsKey(var);
         }
     }
 

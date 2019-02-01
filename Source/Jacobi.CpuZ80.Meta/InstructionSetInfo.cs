@@ -18,10 +18,10 @@ namespace Jacobi.CpuZ80.Meta
         public string Mnemonic { get; set; }
         public List<string> Bytes { get; internal set; }
 
-        public IList<int> Cycles { get; internal set; }
-        public IList<int> AltCycles { get; internal set; }
+        public List<int> Cycles { get; internal set; }
+        public List<int> AltCycles { get; internal set; }
         public List<string> Ops { get; internal set; }
-        public IDictionary<string, string> Flags { get; internal set; }
+        public Dictionary<string, string> Flags { get; internal set; }
 
         public InstructionInfo Parent { get; set; }
     }
@@ -34,7 +34,7 @@ namespace Jacobi.CpuZ80.Meta
             return JsonConvert.DeserializeObject<InstructionSetInfo>(content);
         }
 
-        public IDictionary<string, IDictionary<string, string>> Tables { get; set; }
-        public IList<InstructionInfo> Instructions { get; set; }
+        public Dictionary<string, Dictionary<string, string>> Tables { get; set; }
+        public List<InstructionInfo> Instructions { get; set; }
     }
 }

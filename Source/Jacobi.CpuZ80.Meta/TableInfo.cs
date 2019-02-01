@@ -15,7 +15,7 @@ namespace Jacobi.CpuZ80.Meta
 
         public IDictionary<string, string> Entries { get; }
 
-        public static List<TableInfo> ToList(IDictionary<string, IDictionary<string, string>> tables)
+        public static List<TableInfo> ToList(Dictionary<string, Dictionary<string, string>> tables)
         {
             return new List<TableInfo>(
                 tables.Select(t => new TableInfo(t.Key, t.Value)));

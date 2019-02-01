@@ -32,6 +32,26 @@ enum class RegistersSP16
     SP
 };
 
+enum class Condition8
+{
+    NZ,
+    Z,
+    NC,
+    C,
+    PO,
+    PE,
+    P,
+    M
+};
+
+enum class Condition4
+{
+    NZ,
+    Z,
+    NC,
+    C,
+};
+
 enum class AluOps
 {
     ADD,
@@ -84,9 +104,11 @@ enum class RstAddress
 enum class VariableType
 {
     None,
-    Register8,
-    Register16,
-    RegisterSP16,
+    Registers8,
+    Registers16,
+    RegistersSP16,
+    Condition8,
+    Condition4,
     Bits8,
     RstAddress,
     AluOps,
@@ -99,9 +121,12 @@ typedef struct
     VariableType VariableType;
     union
     {
+        uint8_t value;
         Registers8 Register8;
         Registers16 Register16;
         RegistersSP16 RegisterSP16;
+        Condition8 Condition8;
+        Condition4 Condition4;
         Bits8 Bits8;
         RstAddress RstAddress;
         AluOps AluOps;
@@ -120,24 +145,20 @@ typedef struct
 
 typedef struct
 {
-    InstructionVariable Variable1 = { VariableType::None };
-    InstructionVariable Variable2 = { VariableType::None };
-    
-    bool nn = false;
-    bool n = false;
-    bool d = false;
+    InstructionVariable Variable1;
+    InstructionVariable Variable2;
 
 } DecodeInfo;
 
 typedef struct
 {
-    // how to decode this instruction
-    //DecodeInfo Decode;
-
     int8_t Count;
     int8_t AltCount;
     // max 6 M-cycles per instruction
     MachineCycleInfo Cycles[6];
+
+    // how to decode this instruction
+    DecodeInfo Decode;
 
 } InstructionInfo;
 

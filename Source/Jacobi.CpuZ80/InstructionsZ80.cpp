@@ -21,6 +21,10 @@ InstructionInfo instructionInfoLDA_A_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -36,6 +40,10 @@ InstructionInfo instructionInfoLDA_B_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -51,6 +59,10 @@ InstructionInfo instructionInfoLDA_C_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -66,6 +78,10 @@ InstructionInfo instructionInfoLDA_D_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -81,6 +97,10 @@ InstructionInfo instructionInfoLDA_E_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -96,6 +116,10 @@ InstructionInfo instructionInfoLDA_H_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -111,6 +135,10 @@ InstructionInfo instructionInfoLDA_L_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -126,6 +154,10 @@ InstructionInfo instructionInfoLDB_A_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -141,6 +173,10 @@ InstructionInfo instructionInfoLDB_B_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -156,6 +192,10 @@ InstructionInfo instructionInfoLDB_C_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -171,6 +211,10 @@ InstructionInfo instructionInfoLDB_D_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -186,6 +230,10 @@ InstructionInfo instructionInfoLDB_E_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -201,6 +249,10 @@ InstructionInfo instructionInfoLDB_H_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -216,6 +268,10 @@ InstructionInfo instructionInfoLDB_L_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -231,6 +287,10 @@ InstructionInfo instructionInfoLDC_A_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -246,6 +306,10 @@ InstructionInfo instructionInfoLDC_B_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -261,6 +325,10 @@ InstructionInfo instructionInfoLDC_C_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -276,6 +344,10 @@ InstructionInfo instructionInfoLDC_D_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -291,6 +363,10 @@ InstructionInfo instructionInfoLDC_E_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -306,6 +382,10 @@ InstructionInfo instructionInfoLDC_H_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -321,6 +401,10 @@ InstructionInfo instructionInfoLDC_L_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -336,6 +420,10 @@ InstructionInfo instructionInfoLDD_A_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -351,6 +439,10 @@ InstructionInfo instructionInfoLDD_B_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -366,6 +458,10 @@ InstructionInfo instructionInfoLDD_C_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -381,6 +477,10 @@ InstructionInfo instructionInfoLDD_D_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -396,6 +496,10 @@ InstructionInfo instructionInfoLDD_E_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -411,6 +515,10 @@ InstructionInfo instructionInfoLDD_H_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -426,6 +534,10 @@ InstructionInfo instructionInfoLDD_L_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -441,6 +553,10 @@ InstructionInfo instructionInfoLDE_A_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -456,6 +572,10 @@ InstructionInfo instructionInfoLDE_B_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -471,6 +591,10 @@ InstructionInfo instructionInfoLDE_C_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -486,6 +610,10 @@ InstructionInfo instructionInfoLDE_D_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -501,6 +629,10 @@ InstructionInfo instructionInfoLDE_E_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -516,6 +648,10 @@ InstructionInfo instructionInfoLDE_H_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -531,6 +667,10 @@ InstructionInfo instructionInfoLDE_L_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -546,6 +686,10 @@ InstructionInfo instructionInfoLDH_A_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -561,6 +705,10 @@ InstructionInfo instructionInfoLDH_B_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -576,6 +724,10 @@ InstructionInfo instructionInfoLDH_C_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -591,6 +743,10 @@ InstructionInfo instructionInfoLDH_D_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -606,6 +762,10 @@ InstructionInfo instructionInfoLDH_E_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -621,6 +781,10 @@ InstructionInfo instructionInfoLDH_H_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -636,6 +800,10 @@ InstructionInfo instructionInfoLDH_L_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -651,6 +819,10 @@ InstructionInfo instructionInfoLDL_A_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -666,6 +838,10 @@ InstructionInfo instructionInfoLDL_B_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -681,6 +857,10 @@ InstructionInfo instructionInfoLDL_C_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -696,6 +876,10 @@ InstructionInfo instructionInfoLDL_D_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -711,6 +895,10 @@ InstructionInfo instructionInfoLDL_E_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -726,6 +914,10 @@ InstructionInfo instructionInfoLDL_H_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -741,6 +933,10 @@ InstructionInfo instructionInfoLDL_L_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -756,6 +952,10 @@ InstructionInfo instructionInfoLDA_A_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -771,6 +971,10 @@ InstructionInfo instructionInfoLDA_B_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -786,6 +990,10 @@ InstructionInfo instructionInfoLDA_C_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -801,6 +1009,10 @@ InstructionInfo instructionInfoLDA_D_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -816,6 +1028,10 @@ InstructionInfo instructionInfoLDA_E_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -831,6 +1047,10 @@ InstructionInfo instructionInfoLDA_IXh_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -846,6 +1066,10 @@ InstructionInfo instructionInfoLDA_IXl_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -861,6 +1085,10 @@ InstructionInfo instructionInfoLDB_A_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -876,6 +1104,10 @@ InstructionInfo instructionInfoLDB_B_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -891,6 +1123,10 @@ InstructionInfo instructionInfoLDB_C_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -906,6 +1142,10 @@ InstructionInfo instructionInfoLDB_D_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -921,6 +1161,10 @@ InstructionInfo instructionInfoLDB_E_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -936,6 +1180,10 @@ InstructionInfo instructionInfoLDB_IXh_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -951,6 +1199,10 @@ InstructionInfo instructionInfoLDB_IXl_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -966,6 +1218,10 @@ InstructionInfo instructionInfoLDC_A_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -981,6 +1237,10 @@ InstructionInfo instructionInfoLDC_B_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -996,6 +1256,10 @@ InstructionInfo instructionInfoLDC_C_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -1011,6 +1275,10 @@ InstructionInfo instructionInfoLDC_D_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -1026,6 +1294,10 @@ InstructionInfo instructionInfoLDC_E_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -1041,6 +1313,10 @@ InstructionInfo instructionInfoLDC_IXh_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -1056,6 +1332,10 @@ InstructionInfo instructionInfoLDC_IXl_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -1071,6 +1351,10 @@ InstructionInfo instructionInfoLDD_A_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -1086,6 +1370,10 @@ InstructionInfo instructionInfoLDD_B_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -1101,6 +1389,10 @@ InstructionInfo instructionInfoLDD_C_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -1116,6 +1408,10 @@ InstructionInfo instructionInfoLDD_D_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -1131,6 +1427,10 @@ InstructionInfo instructionInfoLDD_E_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -1146,6 +1446,10 @@ InstructionInfo instructionInfoLDD_IXh_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -1161,6 +1465,10 @@ InstructionInfo instructionInfoLDD_IXl_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -1176,6 +1484,10 @@ InstructionInfo instructionInfoLDE_A_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -1191,6 +1503,10 @@ InstructionInfo instructionInfoLDE_B_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -1206,6 +1522,10 @@ InstructionInfo instructionInfoLDE_C_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -1221,6 +1541,10 @@ InstructionInfo instructionInfoLDE_D_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -1236,6 +1560,10 @@ InstructionInfo instructionInfoLDE_E_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -1251,6 +1579,10 @@ InstructionInfo instructionInfoLDE_IXh_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -1266,6 +1598,10 @@ InstructionInfo instructionInfoLDE_IXl_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -1281,6 +1617,10 @@ InstructionInfo instructionInfoLDIXh_A_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -1296,6 +1636,10 @@ InstructionInfo instructionInfoLDIXh_B_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -1311,6 +1655,10 @@ InstructionInfo instructionInfoLDIXh_C_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -1326,6 +1674,10 @@ InstructionInfo instructionInfoLDIXh_D_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -1341,6 +1693,10 @@ InstructionInfo instructionInfoLDIXh_E_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -1356,6 +1712,10 @@ InstructionInfo instructionInfoLDIXh_IXh_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -1371,6 +1731,10 @@ InstructionInfo instructionInfoLDIXh_IXl_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -1386,6 +1750,10 @@ InstructionInfo instructionInfoLDIXl_A_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -1401,6 +1769,10 @@ InstructionInfo instructionInfoLDIXl_B_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -1416,6 +1788,10 @@ InstructionInfo instructionInfoLDIXl_C_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -1431,6 +1807,10 @@ InstructionInfo instructionInfoLDIXl_D_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -1446,6 +1826,10 @@ InstructionInfo instructionInfoLDIXl_E_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -1461,6 +1845,10 @@ InstructionInfo instructionInfoLDIXl_IXh_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -1476,6 +1864,10 @@ InstructionInfo instructionInfoLDIXl_IXl_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -1491,6 +1883,10 @@ InstructionInfo instructionInfoLDA_A_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -1506,6 +1902,10 @@ InstructionInfo instructionInfoLDA_B_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -1521,6 +1921,10 @@ InstructionInfo instructionInfoLDA_C_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -1536,6 +1940,10 @@ InstructionInfo instructionInfoLDA_D_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -1551,6 +1959,10 @@ InstructionInfo instructionInfoLDA_E_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -1566,6 +1978,10 @@ InstructionInfo instructionInfoLDA_IYh_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -1581,6 +1997,10 @@ InstructionInfo instructionInfoLDA_IYl_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -1596,6 +2016,10 @@ InstructionInfo instructionInfoLDB_A_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -1611,6 +2035,10 @@ InstructionInfo instructionInfoLDB_B_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -1626,6 +2054,10 @@ InstructionInfo instructionInfoLDB_C_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -1641,6 +2073,10 @@ InstructionInfo instructionInfoLDB_D_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -1656,6 +2092,10 @@ InstructionInfo instructionInfoLDB_E_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -1671,6 +2111,10 @@ InstructionInfo instructionInfoLDB_IYh_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -1686,6 +2130,10 @@ InstructionInfo instructionInfoLDB_IYl_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -1701,6 +2149,10 @@ InstructionInfo instructionInfoLDC_A_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -1716,6 +2168,10 @@ InstructionInfo instructionInfoLDC_B_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -1731,6 +2187,10 @@ InstructionInfo instructionInfoLDC_C_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -1746,6 +2206,10 @@ InstructionInfo instructionInfoLDC_D_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -1761,6 +2225,10 @@ InstructionInfo instructionInfoLDC_E_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -1776,6 +2244,10 @@ InstructionInfo instructionInfoLDC_IYh_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -1791,6 +2263,10 @@ InstructionInfo instructionInfoLDC_IYl_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -1806,6 +2282,10 @@ InstructionInfo instructionInfoLDD_A_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -1821,6 +2301,10 @@ InstructionInfo instructionInfoLDD_B_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -1836,6 +2320,10 @@ InstructionInfo instructionInfoLDD_C_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -1851,6 +2339,10 @@ InstructionInfo instructionInfoLDD_D_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -1866,6 +2358,10 @@ InstructionInfo instructionInfoLDD_E_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -1881,6 +2377,10 @@ InstructionInfo instructionInfoLDD_IYh_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -1896,6 +2396,10 @@ InstructionInfo instructionInfoLDD_IYl_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -1911,6 +2415,10 @@ InstructionInfo instructionInfoLDE_A_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -1926,6 +2434,10 @@ InstructionInfo instructionInfoLDE_B_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -1941,6 +2453,10 @@ InstructionInfo instructionInfoLDE_C_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -1956,6 +2472,10 @@ InstructionInfo instructionInfoLDE_D_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -1971,6 +2491,10 @@ InstructionInfo instructionInfoLDE_E_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -1986,6 +2510,10 @@ InstructionInfo instructionInfoLDE_IYh_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -2001,6 +2529,10 @@ InstructionInfo instructionInfoLDE_IYl_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -2016,6 +2548,10 @@ InstructionInfo instructionInfoLDIYh_A_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -2031,6 +2567,10 @@ InstructionInfo instructionInfoLDIYh_B_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -2046,6 +2586,10 @@ InstructionInfo instructionInfoLDIYh_C_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -2061,6 +2605,10 @@ InstructionInfo instructionInfoLDIYh_D_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -2076,6 +2624,10 @@ InstructionInfo instructionInfoLDIYh_E_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -2091,6 +2643,10 @@ InstructionInfo instructionInfoLDIYh_IYh_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -2106,6 +2662,10 @@ InstructionInfo instructionInfoLDIYh_IYl_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -2121,6 +2681,10 @@ InstructionInfo instructionInfoLDIYl_A_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -2136,6 +2700,10 @@ InstructionInfo instructionInfoLDIYl_B_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -2151,6 +2719,10 @@ InstructionInfo instructionInfoLDIYl_C_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -2166,6 +2738,10 @@ InstructionInfo instructionInfoLDIYl_D_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -2181,6 +2757,10 @@ InstructionInfo instructionInfoLDIYl_E_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -2196,6 +2776,10 @@ InstructionInfo instructionInfoLDIYl_IYh_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -2211,6 +2795,10 @@ InstructionInfo instructionInfoLDIYl_IYl_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -2226,6 +2814,10 @@ InstructionInfo instructionInfoLDA_n_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -2241,6 +2833,10 @@ InstructionInfo instructionInfoLDB_n_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -2256,6 +2852,10 @@ InstructionInfo instructionInfoLDC_n_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -2271,6 +2871,10 @@ InstructionInfo instructionInfoLDD_n_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -2286,6 +2890,10 @@ InstructionInfo instructionInfoLDE_n_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -2301,6 +2909,10 @@ InstructionInfo instructionInfoLDH_n_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -2316,6 +2928,10 @@ InstructionInfo instructionInfoLDL_n_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -2331,6 +2947,10 @@ InstructionInfo instructionInfoLDA_n_DD3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -2346,6 +2966,10 @@ InstructionInfo instructionInfoLDB_n_DD3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -2361,6 +2985,10 @@ InstructionInfo instructionInfoLDC_n_DD3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -2376,6 +3004,10 @@ InstructionInfo instructionInfoLDD_n_DD3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -2391,6 +3023,10 @@ InstructionInfo instructionInfoLDE_n_DD3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -2406,6 +3042,10 @@ InstructionInfo instructionInfoLDIXh_n_DD3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -2421,6 +3061,10 @@ InstructionInfo instructionInfoLDIXl_n_DD3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -2436,6 +3080,10 @@ InstructionInfo instructionInfoLDA_n_FD3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -2451,6 +3099,10 @@ InstructionInfo instructionInfoLDB_n_FD3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -2466,6 +3118,10 @@ InstructionInfo instructionInfoLDC_n_FD3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -2481,6 +3137,10 @@ InstructionInfo instructionInfoLDD_n_FD3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -2496,6 +3156,10 @@ InstructionInfo instructionInfoLDE_n_FD3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -2511,6 +3175,10 @@ InstructionInfo instructionInfoLDIYh_n_FD3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -2526,6 +3194,10 @@ InstructionInfo instructionInfoLDIYl_n_FD3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -2541,6 +3213,10 @@ InstructionInfo instructionInfoLDA__HL__1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -2556,6 +3232,10 @@ InstructionInfo instructionInfoLDB__HL__1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -2571,6 +3251,10 @@ InstructionInfo instructionInfoLDC__HL__1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -2586,6 +3270,10 @@ InstructionInfo instructionInfoLDD__HL__1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -2601,6 +3289,10 @@ InstructionInfo instructionInfoLDE__HL__1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -2616,6 +3308,10 @@ InstructionInfo instructionInfoLDH__HL__1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -2631,6 +3327,10 @@ InstructionInfo instructionInfoLDL__HL__1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -2646,6 +3346,10 @@ InstructionInfo instructionInfoLDA__IX_d__DD3 =
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -2661,6 +3365,10 @@ InstructionInfo instructionInfoLDA__IY_d__FD3 =
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -2676,6 +3384,10 @@ InstructionInfo instructionInfoLDB__IX_d__DD3 =
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -2691,6 +3403,10 @@ InstructionInfo instructionInfoLDB__IY_d__FD3 =
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -2706,6 +3422,10 @@ InstructionInfo instructionInfoLDC__IX_d__DD3 =
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -2721,6 +3441,10 @@ InstructionInfo instructionInfoLDC__IY_d__FD3 =
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -2736,6 +3460,10 @@ InstructionInfo instructionInfoLDD__IX_d__DD3 =
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -2751,6 +3479,10 @@ InstructionInfo instructionInfoLDD__IY_d__FD3 =
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -2766,6 +3498,10 @@ InstructionInfo instructionInfoLDE__IX_d__DD3 =
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -2781,6 +3517,10 @@ InstructionInfo instructionInfoLDE__IY_d__FD3 =
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -2796,6 +3536,10 @@ InstructionInfo instructionInfoLDH__IX_d__DD3 =
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -2811,6 +3555,10 @@ InstructionInfo instructionInfoLDH__IY_d__FD3 =
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -2826,6 +3574,10 @@ InstructionInfo instructionInfoLDL__IX_d__DD3 =
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -2841,6 +3593,10 @@ InstructionInfo instructionInfoLDL__IY_d__FD3 =
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -2856,6 +3612,10 @@ InstructionInfo instructionInfoLD_HL__A_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -2871,6 +3631,10 @@ InstructionInfo instructionInfoLD_HL__B_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -2886,6 +3650,10 @@ InstructionInfo instructionInfoLD_HL__C_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -2901,6 +3669,10 @@ InstructionInfo instructionInfoLD_HL__D_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -2916,6 +3688,10 @@ InstructionInfo instructionInfoLD_HL__E_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -2931,6 +3707,10 @@ InstructionInfo instructionInfoLD_HL__H_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -2946,6 +3726,10 @@ InstructionInfo instructionInfoLD_HL__L_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -2961,6 +3745,10 @@ InstructionInfo instructionInfoLD_IX_d__A_DD3 =
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -2976,6 +3764,10 @@ InstructionInfo instructionInfoLD_IY_d__A_FD3 =
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -2991,6 +3783,10 @@ InstructionInfo instructionInfoLD_IX_d__B_DD3 =
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -3006,6 +3802,10 @@ InstructionInfo instructionInfoLD_IY_d__B_FD3 =
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -3021,6 +3821,10 @@ InstructionInfo instructionInfoLD_IX_d__C_DD3 =
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -3036,6 +3840,10 @@ InstructionInfo instructionInfoLD_IY_d__C_FD3 =
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -3051,6 +3859,10 @@ InstructionInfo instructionInfoLD_IX_d__D_DD3 =
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -3066,6 +3878,10 @@ InstructionInfo instructionInfoLD_IY_d__D_FD3 =
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -3081,6 +3897,10 @@ InstructionInfo instructionInfoLD_IX_d__E_DD3 =
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -3096,6 +3916,10 @@ InstructionInfo instructionInfoLD_IY_d__E_FD3 =
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -3111,6 +3935,10 @@ InstructionInfo instructionInfoLD_IX_d__H_DD3 =
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -3126,6 +3954,10 @@ InstructionInfo instructionInfoLD_IY_d__H_FD3 =
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -3141,6 +3973,10 @@ InstructionInfo instructionInfoLD_IX_d__L_DD3 =
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -3156,6 +3992,10 @@ InstructionInfo instructionInfoLD_IY_d__L_FD3 =
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -3171,6 +4011,10 @@ InstructionInfo instructionInfoLD_HL__n_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3186,6 +4030,10 @@ InstructionInfo instructionInfoLD_IX_d__n_DD4 =
         { 5, OnClock_LD_ex_d__n_ex4_FD },
         { 3, OnClock_LD_ex_d__n_ex4_MW },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3201,6 +4049,10 @@ InstructionInfo instructionInfoLD_IY_d__n_FD4 =
         { 5, OnClock_LD_ex_d__n_ex4_FD },
         { 3, OnClock_LD_ex_d__n_ex4_MW },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3216,6 +4068,10 @@ InstructionInfo instructionInfoLDA__BC__1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3231,6 +4087,10 @@ InstructionInfo instructionInfoLDA__DE__1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3246,6 +4106,10 @@ InstructionInfo instructionInfoLDA__nn__3 =
         { 3, OnClock_LDA__nn__3_MR },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3261,6 +4125,10 @@ InstructionInfo instructionInfoLD_BC__A_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3276,6 +4144,10 @@ InstructionInfo instructionInfoLD_DE__A_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3291,6 +4163,10 @@ InstructionInfo instructionInfoLD_nn__A_3 =
         { 3, OnClock_LD_nn__A_3_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3306,6 +4182,10 @@ InstructionInfo instructionInfoLDA_I_ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3321,6 +4201,10 @@ InstructionInfo instructionInfoLDA_R_ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3336,6 +4220,10 @@ InstructionInfo instructionInfoLDI_A_ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3351,6 +4239,10 @@ InstructionInfo instructionInfoLDR_A_ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3366,6 +4258,10 @@ InstructionInfo instructionInfoLDBC_nn_3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 0 },
+        { VariableType::None },
     }
 };
 
@@ -3381,6 +4277,10 @@ InstructionInfo instructionInfoLDDE_nn_3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 1 },
+        { VariableType::None },
     }
 };
 
@@ -3396,6 +4296,10 @@ InstructionInfo instructionInfoLDHL_nn_3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 2 },
+        { VariableType::None },
     }
 };
 
@@ -3411,6 +4315,10 @@ InstructionInfo instructionInfoLDSP_nn_3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 3 },
+        { VariableType::None },
     }
 };
 
@@ -3426,6 +4334,10 @@ InstructionInfo instructionInfoLDIX_nn_DD4 =
         { 3, OnClock_LDex_nn_ex4_ODh },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3441,6 +4353,10 @@ InstructionInfo instructionInfoLDIY_nn_FD4 =
         { 3, OnClock_LDex_nn_ex4_ODh },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3456,6 +4372,10 @@ InstructionInfo instructionInfoLDHL__nn__3 =
         { 3, OnClock_LDHL__nn__3_MRl },
         { 3, OnClock_LDHL__nn__3_MRh },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3471,6 +4391,10 @@ InstructionInfo instructionInfoLDBC__nn__ED4 =
         { 3, OnClock_LDp__nn__ED4_ODh },
         { 3, OnClock_LDp__nn__ED4_MWl },
         { 3, OnClock_LDp__nn__ED4_MRh },
+    },
+    {
+        { VariableType::RegistersSP16, 0 },
+        { VariableType::None },
     }
 };
 
@@ -3486,6 +4410,10 @@ InstructionInfo instructionInfoLDDE__nn__ED4 =
         { 3, OnClock_LDp__nn__ED4_ODh },
         { 3, OnClock_LDp__nn__ED4_MWl },
         { 3, OnClock_LDp__nn__ED4_MRh },
+    },
+    {
+        { VariableType::RegistersSP16, 1 },
+        { VariableType::None },
     }
 };
 
@@ -3501,6 +4429,10 @@ InstructionInfo instructionInfoLDHL__nn__ED4 =
         { 3, OnClock_LDp__nn__ED4_ODh },
         { 3, OnClock_LDp__nn__ED4_MWl },
         { 3, OnClock_LDp__nn__ED4_MRh },
+    },
+    {
+        { VariableType::RegistersSP16, 2 },
+        { VariableType::None },
     }
 };
 
@@ -3516,6 +4448,10 @@ InstructionInfo instructionInfoLDSP__nn__ED4 =
         { 3, OnClock_LDp__nn__ED4_ODh },
         { 3, OnClock_LDp__nn__ED4_MWl },
         { 3, OnClock_LDp__nn__ED4_MRh },
+    },
+    {
+        { VariableType::RegistersSP16, 3 },
+        { VariableType::None },
     }
 };
 
@@ -3531,6 +4467,10 @@ InstructionInfo instructionInfoLDIX__nn__DD4 =
         { 3, OnClock_LDex__nn__ex4_ODh },
         { 3, OnClock_LDex__nn__ex4_MRl },
         { 3, OnClock_LDex__nn__ex4_MRh },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3546,6 +4486,10 @@ InstructionInfo instructionInfoLDIY__nn__FD4 =
         { 3, OnClock_LDex__nn__ex4_ODh },
         { 3, OnClock_LDex__nn__ex4_MRl },
         { 3, OnClock_LDex__nn__ex4_MRh },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3561,6 +4505,10 @@ InstructionInfo instructionInfoLD_nn__HL_3 =
         { 3, OnClock_LD_nn__HL_3_MWl },
         { 3, OnClock_LD_nn__HL_3_MWh },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3576,6 +4524,10 @@ InstructionInfo instructionInfoLD_nn__BC_ED4 =
         { 3, OnClock_LD_nn__p_ED4_ODh },
         { 3, OnClock_LD_nn__p_ED4_MWl },
         { 3, OnClock_LD_nn__p_ED4_MWh },
+    },
+    {
+        { VariableType::RegistersSP16, 0 },
+        { VariableType::None },
     }
 };
 
@@ -3591,6 +4543,10 @@ InstructionInfo instructionInfoLD_nn__DE_ED4 =
         { 3, OnClock_LD_nn__p_ED4_ODh },
         { 3, OnClock_LD_nn__p_ED4_MWl },
         { 3, OnClock_LD_nn__p_ED4_MWh },
+    },
+    {
+        { VariableType::RegistersSP16, 1 },
+        { VariableType::None },
     }
 };
 
@@ -3606,6 +4562,10 @@ InstructionInfo instructionInfoLD_nn__HL_ED4 =
         { 3, OnClock_LD_nn__p_ED4_ODh },
         { 3, OnClock_LD_nn__p_ED4_MWl },
         { 3, OnClock_LD_nn__p_ED4_MWh },
+    },
+    {
+        { VariableType::RegistersSP16, 2 },
+        { VariableType::None },
     }
 };
 
@@ -3621,6 +4581,10 @@ InstructionInfo instructionInfoLD_nn__SP_ED4 =
         { 3, OnClock_LD_nn__p_ED4_ODh },
         { 3, OnClock_LD_nn__p_ED4_MWl },
         { 3, OnClock_LD_nn__p_ED4_MWh },
+    },
+    {
+        { VariableType::RegistersSP16, 3 },
+        { VariableType::None },
     }
 };
 
@@ -3636,6 +4600,10 @@ InstructionInfo instructionInfoLD_nn__IX_DD4 =
         { 3, OnClock_LD_nn__ex_ex4_ODh },
         { 3, OnClock_LD_nn__ex_ex4_MWl },
         { 3, OnClock_LD_nn__ex_ex4_MWh },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3651,6 +4619,10 @@ InstructionInfo instructionInfoLD_nn__IY_FD4 =
         { 3, OnClock_LD_nn__ex_ex4_ODh },
         { 3, OnClock_LD_nn__ex_ex4_MWl },
         { 3, OnClock_LD_nn__ex_ex4_MWh },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3666,6 +4638,10 @@ InstructionInfo instructionInfoLDSP_HL_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3681,6 +4657,10 @@ InstructionInfo instructionInfoLDSP_IX_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3696,6 +4676,10 @@ InstructionInfo instructionInfoLDSP_IY_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3711,6 +4695,10 @@ InstructionInfo instructionInfoPUSHBC_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers16, 0 },
+        { VariableType::None },
     }
 };
 
@@ -3726,6 +4714,10 @@ InstructionInfo instructionInfoPUSHDE_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers16, 1 },
+        { VariableType::None },
     }
 };
 
@@ -3741,6 +4733,10 @@ InstructionInfo instructionInfoPUSHHL_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers16, 2 },
+        { VariableType::None },
     }
 };
 
@@ -3756,6 +4752,10 @@ InstructionInfo instructionInfoPUSHAF_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers16, 3 },
+        { VariableType::None },
     }
 };
 
@@ -3771,6 +4771,10 @@ InstructionInfo instructionInfoPUSHIX_DD2 =
         { 3, OnClock_PUSHex_ex2_SWl },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3786,6 +4790,10 @@ InstructionInfo instructionInfoPUSHIY_FD2 =
         { 3, OnClock_PUSHex_ex2_SWl },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3801,6 +4809,10 @@ InstructionInfo instructionInfoPOPBC_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers16, 0 },
+        { VariableType::None },
     }
 };
 
@@ -3816,6 +4828,10 @@ InstructionInfo instructionInfoPOPDE_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers16, 1 },
+        { VariableType::None },
     }
 };
 
@@ -3831,6 +4847,10 @@ InstructionInfo instructionInfoPOPHL_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers16, 2 },
+        { VariableType::None },
     }
 };
 
@@ -3846,6 +4866,10 @@ InstructionInfo instructionInfoPOPAF_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers16, 3 },
+        { VariableType::None },
     }
 };
 
@@ -3861,6 +4885,10 @@ InstructionInfo instructionInfoPOPIX_DD2 =
         { 3, OnClock_POPex_ex2_SRl },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3876,6 +4904,10 @@ InstructionInfo instructionInfoPOPIY_FD2 =
         { 3, OnClock_POPex_ex2_SRl },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3891,6 +4923,10 @@ InstructionInfo instructionInfoEXDE_HL_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3906,6 +4942,10 @@ InstructionInfo instructionInfoEXAF_AF2_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3921,6 +4961,10 @@ InstructionInfo instructionInfoEXX_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3936,6 +4980,10 @@ InstructionInfo instructionInfoEX_SP__HL_1 =
         { 3, OnClock_SWh },
         { 5, OnClock_EX_SP__HL_1_SWl },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3951,6 +4999,10 @@ InstructionInfo instructionInfoEX_SP__IX_DD2 =
         { 4, OnClock_EX_SP__ex_ex2_SRl },
         { 3, OnClock_EX_SP__ex_ex2_SWh },
         { 5, OnClock_EX_SP__ex_ex2_SWl },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3966,6 +5018,10 @@ InstructionInfo instructionInfoEX_SP__IY_FD2 =
         { 4, OnClock_EX_SP__ex_ex2_SRl },
         { 3, OnClock_EX_SP__ex_ex2_SWh },
         { 5, OnClock_EX_SP__ex_ex2_SWl },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3981,6 +5037,10 @@ InstructionInfo instructionInfoLDI_ED2 =
         { 5, OnClock_LDI_ED2_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -3996,6 +5056,10 @@ InstructionInfo instructionInfoLDIR_ED2 =
         { 5, OnClock_LDIR_ED2_MW },
         { 5, OnClock_PCd },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4011,6 +5075,10 @@ InstructionInfo instructionInfoLDD_ED2 =
         { 5, OnClock_LDD_ED2_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4026,6 +5094,10 @@ InstructionInfo instructionInfoLDDR_ED2 =
         { 5, OnClock_LDDR_ED2_MW },
         { 5, OnClock_PCd },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4041,6 +5113,10 @@ InstructionInfo instructionInfoCPI_ED2 =
         { 5, OnClock_CPI_ED2_OP },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4056,6 +5132,10 @@ InstructionInfo instructionInfoCPIR_ED2 =
         { 5, OnClock_CPIR_ED2_OP },
         { 5, OnClock_PCd },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4071,6 +5151,10 @@ InstructionInfo instructionInfoCPD_ED2 =
         { 5, OnClock_CPD_ED2_OP },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4086,6 +5170,10 @@ InstructionInfo instructionInfoCPDR_ED2 =
         { 5, OnClock_CPDR_ED2_OP },
         { 5, OnClock_PCd },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4101,6 +5189,10 @@ InstructionInfo instructionInfoADDA_A_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -4116,6 +5208,10 @@ InstructionInfo instructionInfoADDA_B_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -4131,6 +5227,10 @@ InstructionInfo instructionInfoADDA_C_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -4146,6 +5246,10 @@ InstructionInfo instructionInfoADDA_D_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -4161,6 +5265,10 @@ InstructionInfo instructionInfoADDA_E_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -4176,6 +5284,10 @@ InstructionInfo instructionInfoADDA_H_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -4191,6 +5303,276 @@ InstructionInfo instructionInfoADDA_L_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// ADD A, A  -  DD, 87
+InstructionInfo instructionInfoADDA_A_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADDA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
+    }
+};
+
+// ADD A, B  -  DD, 80
+InstructionInfo instructionInfoADDA_B_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADDA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
+    }
+};
+
+// ADD A, C  -  DD, 81
+InstructionInfo instructionInfoADDA_C_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADDA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
+    }
+};
+
+// ADD A, D  -  DD, 82
+InstructionInfo instructionInfoADDA_D_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADDA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
+    }
+};
+
+// ADD A, E  -  DD, 83
+InstructionInfo instructionInfoADDA_E_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADDA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
+    }
+};
+
+// ADD A, IXh  -  DD, 84
+InstructionInfo instructionInfoADDA_IXh_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADDA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
+    }
+};
+
+// ADD A, IXl  -  DD, 85
+InstructionInfo instructionInfoADDA_IXl_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADDA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// ADD A, A  -  FD, 87
+InstructionInfo instructionInfoADDA_A_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADDA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
+    }
+};
+
+// ADD A, B  -  FD, 80
+InstructionInfo instructionInfoADDA_B_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADDA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
+    }
+};
+
+// ADD A, C  -  FD, 81
+InstructionInfo instructionInfoADDA_C_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADDA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
+    }
+};
+
+// ADD A, D  -  FD, 82
+InstructionInfo instructionInfoADDA_D_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADDA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
+    }
+};
+
+// ADD A, E  -  FD, 83
+InstructionInfo instructionInfoADDA_E_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADDA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
+    }
+};
+
+// ADD A, IYh  -  FD, 84
+InstructionInfo instructionInfoADDA_IYh_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADDA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
+    }
+};
+
+// ADD A, IYl  -  FD, 85
+InstructionInfo instructionInfoADDA_IYl_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADDA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -4206,6 +5588,10 @@ InstructionInfo instructionInfoADDA_n_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4221,6 +5607,10 @@ InstructionInfo instructionInfoADDA__HL__1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4236,6 +5626,10 @@ InstructionInfo instructionInfoADDA__IX_d__DD3 =
         { 5, OnClock_ADDA__ex_d__ex3_AD },
         { 3, OnClock_ADDA__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4251,6 +5645,10 @@ InstructionInfo instructionInfoADDA__IY_d__FD3 =
         { 5, OnClock_ADDA__ex_d__ex3_AD },
         { 3, OnClock_ADDA__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4266,6 +5664,10 @@ InstructionInfo instructionInfoADCA_A_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -4281,6 +5683,10 @@ InstructionInfo instructionInfoADCA_B_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -4296,6 +5702,10 @@ InstructionInfo instructionInfoADCA_C_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -4311,6 +5721,10 @@ InstructionInfo instructionInfoADCA_D_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -4326,6 +5740,10 @@ InstructionInfo instructionInfoADCA_E_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -4341,6 +5759,10 @@ InstructionInfo instructionInfoADCA_H_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -4356,6 +5778,276 @@ InstructionInfo instructionInfoADCA_L_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// ADC A, A  -  DD, 8F
+InstructionInfo instructionInfoADCA_A_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADCA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
+    }
+};
+
+// ADC A, B  -  DD, 88
+InstructionInfo instructionInfoADCA_B_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADCA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
+    }
+};
+
+// ADC A, C  -  DD, 89
+InstructionInfo instructionInfoADCA_C_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADCA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
+    }
+};
+
+// ADC A, D  -  DD, 8A
+InstructionInfo instructionInfoADCA_D_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADCA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
+    }
+};
+
+// ADC A, E  -  DD, 8B
+InstructionInfo instructionInfoADCA_E_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADCA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
+    }
+};
+
+// ADC A, IXh  -  DD, 8C
+InstructionInfo instructionInfoADCA_IXh_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADCA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
+    }
+};
+
+// ADC A, IXl  -  DD, 8D
+InstructionInfo instructionInfoADCA_IXl_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADCA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// ADC A, A  -  FD, 8F
+InstructionInfo instructionInfoADCA_A_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADCA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
+    }
+};
+
+// ADC A, B  -  FD, 88
+InstructionInfo instructionInfoADCA_B_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADCA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
+    }
+};
+
+// ADC A, C  -  FD, 89
+InstructionInfo instructionInfoADCA_C_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADCA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
+    }
+};
+
+// ADC A, D  -  FD, 8A
+InstructionInfo instructionInfoADCA_D_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADCA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
+    }
+};
+
+// ADC A, E  -  FD, 8B
+InstructionInfo instructionInfoADCA_E_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADCA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
+    }
+};
+
+// ADC A, IYh  -  FD, 8C
+InstructionInfo instructionInfoADCA_IYh_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADCA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
+    }
+};
+
+// ADC A, IYl  -  FD, 8D
+InstructionInfo instructionInfoADCA_IYl_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ADCA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -4371,6 +6063,10 @@ InstructionInfo instructionInfoADCA_n_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4386,6 +6082,10 @@ InstructionInfo instructionInfoADCA__HL__1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4401,6 +6101,10 @@ InstructionInfo instructionInfoADCA__IX_d__DD3 =
         { 5, OnClock_ADCA__ex_d__ex3_AD },
         { 3, OnClock_ADCA__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4416,6 +6120,10 @@ InstructionInfo instructionInfoADCA__IY_d__FD3 =
         { 5, OnClock_ADCA__ex_d__ex3_AD },
         { 3, OnClock_ADCA__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4431,6 +6139,10 @@ InstructionInfo instructionInfoSUBA_A_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -4446,6 +6158,10 @@ InstructionInfo instructionInfoSUBA_B_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -4461,6 +6177,10 @@ InstructionInfo instructionInfoSUBA_C_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -4476,6 +6196,10 @@ InstructionInfo instructionInfoSUBA_D_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -4491,6 +6215,10 @@ InstructionInfo instructionInfoSUBA_E_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -4506,6 +6234,10 @@ InstructionInfo instructionInfoSUBA_H_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -4521,6 +6253,276 @@ InstructionInfo instructionInfoSUBA_L_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// SUB A, A  -  DD, 97
+InstructionInfo instructionInfoSUBA_A_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SUBA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
+    }
+};
+
+// SUB A, B  -  DD, 90
+InstructionInfo instructionInfoSUBA_B_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SUBA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
+    }
+};
+
+// SUB A, C  -  DD, 91
+InstructionInfo instructionInfoSUBA_C_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SUBA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
+    }
+};
+
+// SUB A, D  -  DD, 92
+InstructionInfo instructionInfoSUBA_D_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SUBA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
+    }
+};
+
+// SUB A, E  -  DD, 93
+InstructionInfo instructionInfoSUBA_E_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SUBA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
+    }
+};
+
+// SUB A, IXh  -  DD, 94
+InstructionInfo instructionInfoSUBA_IXh_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SUBA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
+    }
+};
+
+// SUB A, IXl  -  DD, 95
+InstructionInfo instructionInfoSUBA_IXl_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SUBA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// SUB A, A  -  FD, 97
+InstructionInfo instructionInfoSUBA_A_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SUBA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
+    }
+};
+
+// SUB A, B  -  FD, 90
+InstructionInfo instructionInfoSUBA_B_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SUBA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
+    }
+};
+
+// SUB A, C  -  FD, 91
+InstructionInfo instructionInfoSUBA_C_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SUBA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
+    }
+};
+
+// SUB A, D  -  FD, 92
+InstructionInfo instructionInfoSUBA_D_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SUBA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
+    }
+};
+
+// SUB A, E  -  FD, 93
+InstructionInfo instructionInfoSUBA_E_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SUBA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
+    }
+};
+
+// SUB A, IYh  -  FD, 94
+InstructionInfo instructionInfoSUBA_IYh_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SUBA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
+    }
+};
+
+// SUB A, IYl  -  FD, 95
+InstructionInfo instructionInfoSUBA_IYl_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SUBA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -4536,6 +6538,10 @@ InstructionInfo instructionInfoSUBA_n_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4551,6 +6557,10 @@ InstructionInfo instructionInfoSUBA__HL__1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4566,6 +6576,10 @@ InstructionInfo instructionInfoSUBA__IX_d__DD3 =
         { 5, OnClock_SUBA__ex_d__ex3_AD },
         { 3, OnClock_SUBA__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4581,6 +6595,10 @@ InstructionInfo instructionInfoSUBA__IY_d__FD3 =
         { 5, OnClock_SUBA__ex_d__ex3_AD },
         { 3, OnClock_SUBA__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4596,6 +6614,10 @@ InstructionInfo instructionInfoSBCA_A_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -4611,6 +6633,10 @@ InstructionInfo instructionInfoSBCA_B_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -4626,6 +6652,10 @@ InstructionInfo instructionInfoSBCA_C_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -4641,6 +6671,10 @@ InstructionInfo instructionInfoSBCA_D_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -4656,6 +6690,10 @@ InstructionInfo instructionInfoSBCA_E_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -4671,6 +6709,10 @@ InstructionInfo instructionInfoSBCA_H_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -4686,6 +6728,276 @@ InstructionInfo instructionInfoSBCA_L_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// SBC A, A  -  DD, 9F
+InstructionInfo instructionInfoSBCA_A_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SBCA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
+    }
+};
+
+// SBC A, B  -  DD, 98
+InstructionInfo instructionInfoSBCA_B_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SBCA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
+    }
+};
+
+// SBC A, C  -  DD, 99
+InstructionInfo instructionInfoSBCA_C_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SBCA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
+    }
+};
+
+// SBC A, D  -  DD, 9A
+InstructionInfo instructionInfoSBCA_D_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SBCA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
+    }
+};
+
+// SBC A, E  -  DD, 9B
+InstructionInfo instructionInfoSBCA_E_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SBCA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
+    }
+};
+
+// SBC A, IXh  -  DD, 9C
+InstructionInfo instructionInfoSBCA_IXh_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SBCA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
+    }
+};
+
+// SBC A, IXl  -  DD, 9D
+InstructionInfo instructionInfoSBCA_IXl_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SBCA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// SBC A, A  -  FD, 9F
+InstructionInfo instructionInfoSBCA_A_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SBCA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
+    }
+};
+
+// SBC A, B  -  FD, 98
+InstructionInfo instructionInfoSBCA_B_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SBCA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
+    }
+};
+
+// SBC A, C  -  FD, 99
+InstructionInfo instructionInfoSBCA_C_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SBCA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
+    }
+};
+
+// SBC A, D  -  FD, 9A
+InstructionInfo instructionInfoSBCA_D_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SBCA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
+    }
+};
+
+// SBC A, E  -  FD, 9B
+InstructionInfo instructionInfoSBCA_E_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SBCA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
+    }
+};
+
+// SBC A, IYh  -  FD, 9C
+InstructionInfo instructionInfoSBCA_IYh_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SBCA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
+    }
+};
+
+// SBC A, IYl  -  FD, 9D
+InstructionInfo instructionInfoSBCA_IYl_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SBCA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -4701,6 +7013,10 @@ InstructionInfo instructionInfoSBCA_n_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4716,6 +7032,10 @@ InstructionInfo instructionInfoSBCA__HL__1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4731,6 +7051,10 @@ InstructionInfo instructionInfoSBCA__IX_d__DD3 =
         { 5, OnClock_SBCA__ex_d__ex3_AD },
         { 3, OnClock_SBCA__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4746,6 +7070,10 @@ InstructionInfo instructionInfoSBCA__IY_d__FD3 =
         { 5, OnClock_SBCA__ex_d__ex3_AD },
         { 3, OnClock_SBCA__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4761,6 +7089,10 @@ InstructionInfo instructionInfoANDA_A_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -4776,6 +7108,10 @@ InstructionInfo instructionInfoANDA_B_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -4791,6 +7127,10 @@ InstructionInfo instructionInfoANDA_C_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -4806,6 +7146,10 @@ InstructionInfo instructionInfoANDA_D_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -4821,6 +7165,10 @@ InstructionInfo instructionInfoANDA_E_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -4836,6 +7184,10 @@ InstructionInfo instructionInfoANDA_H_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -4851,6 +7203,276 @@ InstructionInfo instructionInfoANDA_L_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// AND A, A  -  DD, A7
+InstructionInfo instructionInfoANDA_A_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ANDA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
+    }
+};
+
+// AND A, B  -  DD, A0
+InstructionInfo instructionInfoANDA_B_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ANDA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
+    }
+};
+
+// AND A, C  -  DD, A1
+InstructionInfo instructionInfoANDA_C_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ANDA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
+    }
+};
+
+// AND A, D  -  DD, A2
+InstructionInfo instructionInfoANDA_D_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ANDA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
+    }
+};
+
+// AND A, E  -  DD, A3
+InstructionInfo instructionInfoANDA_E_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ANDA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
+    }
+};
+
+// AND A, IXh  -  DD, A4
+InstructionInfo instructionInfoANDA_IXh_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ANDA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
+    }
+};
+
+// AND A, IXl  -  DD, A5
+InstructionInfo instructionInfoANDA_IXl_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ANDA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// AND A, A  -  FD, A7
+InstructionInfo instructionInfoANDA_A_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ANDA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
+    }
+};
+
+// AND A, B  -  FD, A0
+InstructionInfo instructionInfoANDA_B_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ANDA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
+    }
+};
+
+// AND A, C  -  FD, A1
+InstructionInfo instructionInfoANDA_C_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ANDA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
+    }
+};
+
+// AND A, D  -  FD, A2
+InstructionInfo instructionInfoANDA_D_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ANDA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
+    }
+};
+
+// AND A, E  -  FD, A3
+InstructionInfo instructionInfoANDA_E_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ANDA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
+    }
+};
+
+// AND A, IYh  -  FD, A4
+InstructionInfo instructionInfoANDA_IYh_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ANDA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
+    }
+};
+
+// AND A, IYl  -  FD, A5
+InstructionInfo instructionInfoANDA_IYl_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ANDA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -4866,6 +7488,10 @@ InstructionInfo instructionInfoANDA_n_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4881,6 +7507,10 @@ InstructionInfo instructionInfoANDA__HL__1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4896,6 +7526,10 @@ InstructionInfo instructionInfoANDA__IX_d__DD3 =
         { 5, OnClock_ANDA__ex_d__ex3_AD },
         { 3, OnClock_ANDA__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4911,6 +7545,10 @@ InstructionInfo instructionInfoANDA__IY_d__FD3 =
         { 5, OnClock_ANDA__ex_d__ex3_AD },
         { 3, OnClock_ANDA__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -4926,6 +7564,10 @@ InstructionInfo instructionInfoORA_A_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -4941,6 +7583,10 @@ InstructionInfo instructionInfoORA_B_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -4956,6 +7602,10 @@ InstructionInfo instructionInfoORA_C_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -4971,6 +7621,10 @@ InstructionInfo instructionInfoORA_D_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -4986,6 +7640,10 @@ InstructionInfo instructionInfoORA_E_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -5001,6 +7659,10 @@ InstructionInfo instructionInfoORA_H_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -5016,6 +7678,276 @@ InstructionInfo instructionInfoORA_L_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// OR A, A  -  DD, B7
+InstructionInfo instructionInfoORA_A_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ORA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
+    }
+};
+
+// OR A, B  -  DD, B0
+InstructionInfo instructionInfoORA_B_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ORA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
+    }
+};
+
+// OR A, C  -  DD, B1
+InstructionInfo instructionInfoORA_C_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ORA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
+    }
+};
+
+// OR A, D  -  DD, B2
+InstructionInfo instructionInfoORA_D_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ORA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
+    }
+};
+
+// OR A, E  -  DD, B3
+InstructionInfo instructionInfoORA_E_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ORA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
+    }
+};
+
+// OR A, IXh  -  DD, B4
+InstructionInfo instructionInfoORA_IXh_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ORA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
+    }
+};
+
+// OR A, IXl  -  DD, B5
+InstructionInfo instructionInfoORA_IXl_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ORA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// OR A, A  -  FD, B7
+InstructionInfo instructionInfoORA_A_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ORA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
+    }
+};
+
+// OR A, B  -  FD, B0
+InstructionInfo instructionInfoORA_B_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ORA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
+    }
+};
+
+// OR A, C  -  FD, B1
+InstructionInfo instructionInfoORA_C_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ORA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
+    }
+};
+
+// OR A, D  -  FD, B2
+InstructionInfo instructionInfoORA_D_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ORA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
+    }
+};
+
+// OR A, E  -  FD, B3
+InstructionInfo instructionInfoORA_E_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ORA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
+    }
+};
+
+// OR A, IYh  -  FD, B4
+InstructionInfo instructionInfoORA_IYh_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ORA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
+    }
+};
+
+// OR A, IYl  -  FD, B5
+InstructionInfo instructionInfoORA_IYl_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_ORA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -5031,6 +7963,10 @@ InstructionInfo instructionInfoORA_n_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5046,6 +7982,10 @@ InstructionInfo instructionInfoORA__HL__1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5061,6 +8001,10 @@ InstructionInfo instructionInfoORA__IX_d__DD3 =
         { 5, OnClock_ORA__ex_d__ex3_AD },
         { 3, OnClock_ORA__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5076,6 +8020,10 @@ InstructionInfo instructionInfoORA__IY_d__FD3 =
         { 5, OnClock_ORA__ex_d__ex3_AD },
         { 3, OnClock_ORA__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5091,6 +8039,10 @@ InstructionInfo instructionInfoXORA_A_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -5106,6 +8058,10 @@ InstructionInfo instructionInfoXORA_B_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -5121,6 +8077,10 @@ InstructionInfo instructionInfoXORA_C_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -5136,6 +8096,10 @@ InstructionInfo instructionInfoXORA_D_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -5151,6 +8115,10 @@ InstructionInfo instructionInfoXORA_E_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -5166,6 +8134,10 @@ InstructionInfo instructionInfoXORA_H_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -5181,6 +8153,276 @@ InstructionInfo instructionInfoXORA_L_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// XOR A, A  -  DD, AF
+InstructionInfo instructionInfoXORA_A_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_XORA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
+    }
+};
+
+// XOR A, B  -  DD, A8
+InstructionInfo instructionInfoXORA_B_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_XORA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
+    }
+};
+
+// XOR A, C  -  DD, A9
+InstructionInfo instructionInfoXORA_C_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_XORA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
+    }
+};
+
+// XOR A, D  -  DD, AA
+InstructionInfo instructionInfoXORA_D_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_XORA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
+    }
+};
+
+// XOR A, E  -  DD, AB
+InstructionInfo instructionInfoXORA_E_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_XORA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
+    }
+};
+
+// XOR A, IXh  -  DD, AC
+InstructionInfo instructionInfoXORA_IXh_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_XORA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
+    }
+};
+
+// XOR A, IXl  -  DD, AD
+InstructionInfo instructionInfoXORA_IXl_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_XORA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// XOR A, A  -  FD, AF
+InstructionInfo instructionInfoXORA_A_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_XORA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
+    }
+};
+
+// XOR A, B  -  FD, A8
+InstructionInfo instructionInfoXORA_B_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_XORA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
+    }
+};
+
+// XOR A, C  -  FD, A9
+InstructionInfo instructionInfoXORA_C_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_XORA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
+    }
+};
+
+// XOR A, D  -  FD, AA
+InstructionInfo instructionInfoXORA_D_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_XORA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
+    }
+};
+
+// XOR A, E  -  FD, AB
+InstructionInfo instructionInfoXORA_E_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_XORA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
+    }
+};
+
+// XOR A, IYh  -  FD, AC
+InstructionInfo instructionInfoXORA_IYh_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_XORA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
+    }
+};
+
+// XOR A, IYl  -  FD, AD
+InstructionInfo instructionInfoXORA_IYl_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_XORA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -5196,6 +8438,10 @@ InstructionInfo instructionInfoXORA_n_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5211,6 +8457,10 @@ InstructionInfo instructionInfoXORA__HL__1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5226,6 +8476,10 @@ InstructionInfo instructionInfoXORA__IX_d__DD3 =
         { 5, OnClock_XORA__ex_d__ex3_AD },
         { 3, OnClock_XORA__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5241,6 +8495,10 @@ InstructionInfo instructionInfoXORA__IY_d__FD3 =
         { 5, OnClock_XORA__ex_d__ex3_AD },
         { 3, OnClock_XORA__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5256,6 +8514,10 @@ InstructionInfo instructionInfoCPA_A_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -5271,6 +8533,10 @@ InstructionInfo instructionInfoCPA_B_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -5286,6 +8552,10 @@ InstructionInfo instructionInfoCPA_C_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -5301,6 +8571,10 @@ InstructionInfo instructionInfoCPA_D_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -5316,6 +8590,10 @@ InstructionInfo instructionInfoCPA_E_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -5331,6 +8609,10 @@ InstructionInfo instructionInfoCPA_H_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -5346,6 +8628,276 @@ InstructionInfo instructionInfoCPA_L_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// CP A, A  -  DD, BF
+InstructionInfo instructionInfoCPA_A_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_CPA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
+    }
+};
+
+// CP A, B  -  DD, B8
+InstructionInfo instructionInfoCPA_B_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_CPA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
+    }
+};
+
+// CP A, C  -  DD, B9
+InstructionInfo instructionInfoCPA_C_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_CPA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
+    }
+};
+
+// CP A, D  -  DD, BA
+InstructionInfo instructionInfoCPA_D_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_CPA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
+    }
+};
+
+// CP A, E  -  DD, BB
+InstructionInfo instructionInfoCPA_E_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_CPA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
+    }
+};
+
+// CP A, IXh  -  DD, BC
+InstructionInfo instructionInfoCPA_IXh_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_CPA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
+    }
+};
+
+// CP A, IXl  -  DD, BD
+InstructionInfo instructionInfoCPA_IXl_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_CPA_t_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// CP A, A  -  FD, BF
+InstructionInfo instructionInfoCPA_A_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_CPA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
+    }
+};
+
+// CP A, B  -  FD, B8
+InstructionInfo instructionInfoCPA_B_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_CPA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
+    }
+};
+
+// CP A, C  -  FD, B9
+InstructionInfo instructionInfoCPA_C_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_CPA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
+    }
+};
+
+// CP A, D  -  FD, BA
+InstructionInfo instructionInfoCPA_D_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_CPA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
+    }
+};
+
+// CP A, E  -  FD, BB
+InstructionInfo instructionInfoCPA_E_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_CPA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
+    }
+};
+
+// CP A, IYh  -  FD, BC
+InstructionInfo instructionInfoCPA_IYh_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_CPA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
+    }
+};
+
+// CP A, IYl  -  FD, BD
+InstructionInfo instructionInfoCPA_IYl_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_CPA_v_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -5361,6 +8913,10 @@ InstructionInfo instructionInfoCPA_n_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5376,6 +8932,10 @@ InstructionInfo instructionInfoCPA__HL__1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5391,6 +8951,10 @@ InstructionInfo instructionInfoCPA__IX_d__DD3 =
         { 5, OnClock_CPA__ex_d__ex3_AD },
         { 3, OnClock_CPA__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5406,6 +8970,10 @@ InstructionInfo instructionInfoCPA__IY_d__FD3 =
         { 5, OnClock_CPA__ex_d__ex3_AD },
         { 3, OnClock_CPA__ex_d__ex3_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5421,6 +8989,10 @@ InstructionInfo instructionInfoINCA_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -5436,6 +9008,10 @@ InstructionInfo instructionInfoINCB_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -5451,6 +9027,10 @@ InstructionInfo instructionInfoINCC_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -5466,6 +9046,10 @@ InstructionInfo instructionInfoINCD_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -5481,6 +9065,10 @@ InstructionInfo instructionInfoINCE_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -5496,6 +9084,10 @@ InstructionInfo instructionInfoINCH_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -5511,6 +9103,276 @@ InstructionInfo instructionInfoINCL_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// INC A  -  DD, 3C
+InstructionInfo instructionInfoINCA_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_INCt_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
+    }
+};
+
+// INC B  -  DD, 04
+InstructionInfo instructionInfoINCB_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_INCt_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
+    }
+};
+
+// INC C  -  DD, 0C
+InstructionInfo instructionInfoINCC_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_INCt_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
+    }
+};
+
+// INC D  -  DD, 14
+InstructionInfo instructionInfoINCD_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_INCt_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
+    }
+};
+
+// INC E  -  DD, 1C
+InstructionInfo instructionInfoINCE_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_INCt_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
+    }
+};
+
+// INC IXh  -  DD, 24
+InstructionInfo instructionInfoINCIXh_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_INCt_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
+    }
+};
+
+// INC IXl  -  DD, 2C
+InstructionInfo instructionInfoINCIXl_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_INCt_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// INC A  -  FD, 3C
+InstructionInfo instructionInfoINCA_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_INCv_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
+    }
+};
+
+// INC B  -  FD, 04
+InstructionInfo instructionInfoINCB_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_INCv_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
+    }
+};
+
+// INC C  -  FD, 0C
+InstructionInfo instructionInfoINCC_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_INCv_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
+    }
+};
+
+// INC D  -  FD, 14
+InstructionInfo instructionInfoINCD_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_INCv_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
+    }
+};
+
+// INC E  -  FD, 1C
+InstructionInfo instructionInfoINCE_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_INCv_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
+    }
+};
+
+// INC IYh  -  FD, 24
+InstructionInfo instructionInfoINCIYh_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_INCv_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
+    }
+};
+
+// INC IYl  -  FD, 2C
+InstructionInfo instructionInfoINCIYl_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_INCv_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -5526,6 +9388,10 @@ InstructionInfo instructionInfoINC_HL__1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5541,6 +9407,10 @@ InstructionInfo instructionInfoINC_IX_d__DD3 =
         { 5, OnClock_INC_ex_d__ex3_AD },
         { 4, OnClock_INC_ex_d__ex3_MR },
         { 3, OnClock_INC_ex_d__ex3_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5556,6 +9426,10 @@ InstructionInfo instructionInfoINC_IY_d__FD3 =
         { 5, OnClock_INC_ex_d__ex3_AD },
         { 4, OnClock_INC_ex_d__ex3_MR },
         { 3, OnClock_INC_ex_d__ex3_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5571,6 +9445,10 @@ InstructionInfo instructionInfoDECA_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -5586,6 +9464,10 @@ InstructionInfo instructionInfoDECB_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -5601,6 +9483,10 @@ InstructionInfo instructionInfoDECC_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -5616,6 +9502,10 @@ InstructionInfo instructionInfoDECD_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -5631,6 +9521,10 @@ InstructionInfo instructionInfoDECE_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -5646,6 +9540,10 @@ InstructionInfo instructionInfoDECH_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -5661,6 +9559,276 @@ InstructionInfo instructionInfoDECL_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// DEC A  -  DD, 3D
+InstructionInfo instructionInfoDECA_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_DECt_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
+    }
+};
+
+// DEC B  -  DD, 05
+InstructionInfo instructionInfoDECB_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_DECt_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
+    }
+};
+
+// DEC C  -  DD, 0D
+InstructionInfo instructionInfoDECC_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_DECt_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
+    }
+};
+
+// DEC D  -  DD, 15
+InstructionInfo instructionInfoDECD_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_DECt_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
+    }
+};
+
+// DEC E  -  DD, 1D
+InstructionInfo instructionInfoDECE_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_DECt_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
+    }
+};
+
+// DEC IXh  -  DD, 25
+InstructionInfo instructionInfoDECIXh_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_DECt_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
+    }
+};
+
+// DEC IXl  -  DD, 2D
+InstructionInfo instructionInfoDECIXl_DD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_DECt_DD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// DEC A  -  FD, 3D
+InstructionInfo instructionInfoDECA_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_DECv_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
+    }
+};
+
+// DEC B  -  FD, 05
+InstructionInfo instructionInfoDECB_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_DECv_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
+    }
+};
+
+// DEC C  -  FD, 0D
+InstructionInfo instructionInfoDECC_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_DECv_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
+    }
+};
+
+// DEC D  -  FD, 15
+InstructionInfo instructionInfoDECD_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_DECv_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
+    }
+};
+
+// DEC E  -  FD, 1D
+InstructionInfo instructionInfoDECE_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_DECv_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
+    }
+};
+
+// DEC IYh  -  FD, 25
+InstructionInfo instructionInfoDECIYh_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_DECv_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
+    }
+};
+
+// DEC IYl  -  FD, 2D
+InstructionInfo instructionInfoDECIYl_FD2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_DECv_FD2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -5676,6 +9844,10 @@ InstructionInfo instructionInfoDEC_HL__1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5691,6 +9863,10 @@ InstructionInfo instructionInfoDEC_IX_d__DD3 =
         { 5, OnClock_DEC_ex_d__ex3_AD },
         { 4, OnClock_DEC_ex_d__ex3_MR },
         { 3, OnClock_DEC_ex_d__ex3_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5706,6 +9882,10 @@ InstructionInfo instructionInfoDEC_IY_d__FD3 =
         { 5, OnClock_DEC_ex_d__ex3_AD },
         { 4, OnClock_DEC_ex_d__ex3_MR },
         { 3, OnClock_DEC_ex_d__ex3_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5721,6 +9901,10 @@ InstructionInfo instructionInfoDAA_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5736,6 +9920,10 @@ InstructionInfo instructionInfoCPLA_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5751,6 +9939,10 @@ InstructionInfo instructionInfoNEG_ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5766,6 +9958,10 @@ InstructionInfo instructionInfoCCF_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5781,6 +9977,10 @@ InstructionInfo instructionInfoSCF_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5796,6 +9996,10 @@ InstructionInfo instructionInfoNOP_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5811,6 +10015,10 @@ InstructionInfo instructionInfoHALT_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5826,6 +10034,10 @@ InstructionInfo instructionInfoDI_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5841,6 +10053,10 @@ InstructionInfo instructionInfoEI_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5856,6 +10072,10 @@ InstructionInfo instructionInfoIM0_ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5871,6 +10091,10 @@ InstructionInfo instructionInfoIM1_ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5886,6 +10110,10 @@ InstructionInfo instructionInfoIM2_ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -5901,6 +10129,10 @@ InstructionInfo instructionInfoADDHL_BC_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 0 },
+        { VariableType::None },
     }
 };
 
@@ -5916,6 +10148,10 @@ InstructionInfo instructionInfoADDHL_DE_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 1 },
+        { VariableType::None },
     }
 };
 
@@ -5931,6 +10167,10 @@ InstructionInfo instructionInfoADDHL_HL_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 2 },
+        { VariableType::None },
     }
 };
 
@@ -5946,6 +10186,10 @@ InstructionInfo instructionInfoADDHL_SP_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 3 },
+        { VariableType::None },
     }
 };
 
@@ -5961,6 +10205,10 @@ InstructionInfo instructionInfoADDIX_BC_DD2 =
         { 3, OnClock_ADDIX_m_DD2_OP },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 0 },
+        { VariableType::None },
     }
 };
 
@@ -5976,6 +10224,10 @@ InstructionInfo instructionInfoADDIX_DE_DD2 =
         { 3, OnClock_ADDIX_m_DD2_OP },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 1 },
+        { VariableType::None },
     }
 };
 
@@ -5991,6 +10243,10 @@ InstructionInfo instructionInfoADDIX_IX_DD2 =
         { 3, OnClock_ADDIX_m_DD2_OP },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 2 },
+        { VariableType::None },
     }
 };
 
@@ -6006,6 +10262,10 @@ InstructionInfo instructionInfoADDIX_SP_DD2 =
         { 3, OnClock_ADDIX_m_DD2_OP },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 3 },
+        { VariableType::None },
     }
 };
 
@@ -6021,6 +10281,10 @@ InstructionInfo instructionInfoADDIY_BC_FD2 =
         { 3, OnClock_ADDIY_o_FD2_OP },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 0 },
+        { VariableType::None },
     }
 };
 
@@ -6036,6 +10300,10 @@ InstructionInfo instructionInfoADDIY_DE_FD2 =
         { 3, OnClock_ADDIY_o_FD2_OP },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 1 },
+        { VariableType::None },
     }
 };
 
@@ -6051,6 +10319,10 @@ InstructionInfo instructionInfoADDIY_IY_FD2 =
         { 3, OnClock_ADDIY_o_FD2_OP },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 2 },
+        { VariableType::None },
     }
 };
 
@@ -6066,6 +10338,10 @@ InstructionInfo instructionInfoADDIY_SP_FD2 =
         { 3, OnClock_ADDIY_o_FD2_OP },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 3 },
+        { VariableType::None },
     }
 };
 
@@ -6081,6 +10357,10 @@ InstructionInfo instructionInfoADCHL_BC_ED2 =
         { 3, OnClock_ADCHL_p_ED2_OP },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 0 },
+        { VariableType::None },
     }
 };
 
@@ -6096,6 +10376,10 @@ InstructionInfo instructionInfoADCHL_DE_ED2 =
         { 3, OnClock_ADCHL_p_ED2_OP },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 1 },
+        { VariableType::None },
     }
 };
 
@@ -6111,6 +10395,10 @@ InstructionInfo instructionInfoADCHL_HL_ED2 =
         { 3, OnClock_ADCHL_p_ED2_OP },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 2 },
+        { VariableType::None },
     }
 };
 
@@ -6126,6 +10414,10 @@ InstructionInfo instructionInfoADCHL_SP_ED2 =
         { 3, OnClock_ADCHL_p_ED2_OP },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 3 },
+        { VariableType::None },
     }
 };
 
@@ -6141,6 +10433,10 @@ InstructionInfo instructionInfoSBCHL_BC_ED2 =
         { 3, OnClock_SBCHL_p_ED2_OP },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 0 },
+        { VariableType::None },
     }
 };
 
@@ -6156,6 +10452,10 @@ InstructionInfo instructionInfoSBCHL_DE_ED2 =
         { 3, OnClock_SBCHL_p_ED2_OP },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 1 },
+        { VariableType::None },
     }
 };
 
@@ -6171,6 +10471,10 @@ InstructionInfo instructionInfoSBCHL_HL_ED2 =
         { 3, OnClock_SBCHL_p_ED2_OP },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 2 },
+        { VariableType::None },
     }
 };
 
@@ -6186,6 +10490,10 @@ InstructionInfo instructionInfoSBCHL_SP_ED2 =
         { 3, OnClock_SBCHL_p_ED2_OP },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 3 },
+        { VariableType::None },
     }
 };
 
@@ -6201,6 +10509,10 @@ InstructionInfo instructionInfoINCBC_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 0 },
+        { VariableType::None },
     }
 };
 
@@ -6216,6 +10528,10 @@ InstructionInfo instructionInfoINCDE_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 1 },
+        { VariableType::None },
     }
 };
 
@@ -6231,6 +10547,10 @@ InstructionInfo instructionInfoINCHL_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 2 },
+        { VariableType::None },
     }
 };
 
@@ -6246,6 +10566,10 @@ InstructionInfo instructionInfoINCSP_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 3 },
+        { VariableType::None },
     }
 };
 
@@ -6261,6 +10585,10 @@ InstructionInfo instructionInfoINCIX_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -6276,6 +10604,10 @@ InstructionInfo instructionInfoINCIY_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -6291,6 +10623,10 @@ InstructionInfo instructionInfoDECBC_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 0 },
+        { VariableType::None },
     }
 };
 
@@ -6306,6 +10642,10 @@ InstructionInfo instructionInfoDECDE_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 1 },
+        { VariableType::None },
     }
 };
 
@@ -6321,6 +10661,10 @@ InstructionInfo instructionInfoDECHL_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 2 },
+        { VariableType::None },
     }
 };
 
@@ -6336,6 +10680,10 @@ InstructionInfo instructionInfoDECSP_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RegistersSP16, 3 },
+        { VariableType::None },
     }
 };
 
@@ -6351,6 +10699,10 @@ InstructionInfo instructionInfoDECIX_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -6366,6 +10718,10 @@ InstructionInfo instructionInfoDECIY_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -6381,6 +10737,10 @@ InstructionInfo instructionInfoRLCA_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -6396,6 +10756,10 @@ InstructionInfo instructionInfoRLA_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -6411,6 +10775,10 @@ InstructionInfo instructionInfoRRCA_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -6426,6 +10794,10 @@ InstructionInfo instructionInfoRRA_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -6441,6 +10813,10 @@ InstructionInfo instructionInfoRLCA_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -6456,6 +10832,10 @@ InstructionInfo instructionInfoRLCB_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -6471,6 +10851,10 @@ InstructionInfo instructionInfoRLCC_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -6486,6 +10870,10 @@ InstructionInfo instructionInfoRLCD_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -6501,6 +10889,10 @@ InstructionInfo instructionInfoRLCE_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -6516,6 +10908,10 @@ InstructionInfo instructionInfoRLCH_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -6531,6 +10927,10 @@ InstructionInfo instructionInfoRLCL_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -6546,6 +10946,10 @@ InstructionInfo instructionInfoRLC_HL__CB2 =
         { 3, OnClock_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -6561,6 +10965,10 @@ InstructionInfo instructionInfoRLC_IX_d__DD4 =
         { 5, OnClock_RLC_ex_d__ex4_FD },
         { 4, OnClock_RLC_ex_d__ex4_MR },
         { 3, OnClock_RLC_ex_d__ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -6576,6 +10984,276 @@ InstructionInfo instructionInfoRLC_IY_d__FD4 =
         { 5, OnClock_RLC_ex_d__ex4_FD },
         { 4, OnClock_RLC_ex_d__ex4_MR },
         { 3, OnClock_RLC_ex_d__ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// RLC (IX+d), A  -  DD, CB, d, 07
+InstructionInfo instructionInfoRLC_IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 5, OnClock_RLC_ex_d__r_ex4_FD },
+        { 4, OnClock_RLC_ex_d__r_ex4_MR },
+        { 3, OnClock_RLC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 7 },
+    }
+};
+
+// RLC (IY+d), A  -  FD, CB, d, 07
+InstructionInfo instructionInfoRLC_IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 5, OnClock_RLC_ex_d__r_ex4_FD },
+        { 4, OnClock_RLC_ex_d__r_ex4_MR },
+        { 3, OnClock_RLC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 7 },
+    }
+};
+
+// RLC (IX+d), B  -  DD, CB, d, 00
+InstructionInfo instructionInfoRLC_IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 5, OnClock_RLC_ex_d__r_ex4_FD },
+        { 4, OnClock_RLC_ex_d__r_ex4_MR },
+        { 3, OnClock_RLC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 0 },
+    }
+};
+
+// RLC (IY+d), B  -  FD, CB, d, 00
+InstructionInfo instructionInfoRLC_IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 5, OnClock_RLC_ex_d__r_ex4_FD },
+        { 4, OnClock_RLC_ex_d__r_ex4_MR },
+        { 3, OnClock_RLC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 0 },
+    }
+};
+
+// RLC (IX+d), C  -  DD, CB, d, 01
+InstructionInfo instructionInfoRLC_IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 5, OnClock_RLC_ex_d__r_ex4_FD },
+        { 4, OnClock_RLC_ex_d__r_ex4_MR },
+        { 3, OnClock_RLC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 1 },
+    }
+};
+
+// RLC (IY+d), C  -  FD, CB, d, 01
+InstructionInfo instructionInfoRLC_IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 5, OnClock_RLC_ex_d__r_ex4_FD },
+        { 4, OnClock_RLC_ex_d__r_ex4_MR },
+        { 3, OnClock_RLC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 1 },
+    }
+};
+
+// RLC (IX+d), D  -  DD, CB, d, 02
+InstructionInfo instructionInfoRLC_IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 5, OnClock_RLC_ex_d__r_ex4_FD },
+        { 4, OnClock_RLC_ex_d__r_ex4_MR },
+        { 3, OnClock_RLC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 2 },
+    }
+};
+
+// RLC (IY+d), D  -  FD, CB, d, 02
+InstructionInfo instructionInfoRLC_IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 5, OnClock_RLC_ex_d__r_ex4_FD },
+        { 4, OnClock_RLC_ex_d__r_ex4_MR },
+        { 3, OnClock_RLC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 2 },
+    }
+};
+
+// RLC (IX+d), E  -  DD, CB, d, 03
+InstructionInfo instructionInfoRLC_IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 5, OnClock_RLC_ex_d__r_ex4_FD },
+        { 4, OnClock_RLC_ex_d__r_ex4_MR },
+        { 3, OnClock_RLC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 3 },
+    }
+};
+
+// RLC (IY+d), E  -  FD, CB, d, 03
+InstructionInfo instructionInfoRLC_IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 5, OnClock_RLC_ex_d__r_ex4_FD },
+        { 4, OnClock_RLC_ex_d__r_ex4_MR },
+        { 3, OnClock_RLC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 3 },
+    }
+};
+
+// RLC (IX+d), H  -  DD, CB, d, 04
+InstructionInfo instructionInfoRLC_IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 5, OnClock_RLC_ex_d__r_ex4_FD },
+        { 4, OnClock_RLC_ex_d__r_ex4_MR },
+        { 3, OnClock_RLC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 4 },
+    }
+};
+
+// RLC (IY+d), H  -  FD, CB, d, 04
+InstructionInfo instructionInfoRLC_IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 5, OnClock_RLC_ex_d__r_ex4_FD },
+        { 4, OnClock_RLC_ex_d__r_ex4_MR },
+        { 3, OnClock_RLC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 4 },
+    }
+};
+
+// RLC (IX+d), L  -  DD, CB, d, 05
+InstructionInfo instructionInfoRLC_IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 5, OnClock_RLC_ex_d__r_ex4_FD },
+        { 4, OnClock_RLC_ex_d__r_ex4_MR },
+        { 3, OnClock_RLC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 5 },
+    }
+};
+
+// RLC (IY+d), L  -  FD, CB, d, 05
+InstructionInfo instructionInfoRLC_IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 5, OnClock_RLC_ex_d__r_ex4_FD },
+        { 4, OnClock_RLC_ex_d__r_ex4_MR },
+        { 3, OnClock_RLC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -6591,6 +11269,10 @@ InstructionInfo instructionInfoRLA_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -6606,6 +11288,10 @@ InstructionInfo instructionInfoRLB_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -6621,6 +11307,10 @@ InstructionInfo instructionInfoRLC_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -6636,6 +11326,10 @@ InstructionInfo instructionInfoRLD_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -6651,6 +11345,10 @@ InstructionInfo instructionInfoRLE_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -6666,6 +11364,10 @@ InstructionInfo instructionInfoRLH_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -6681,6 +11383,10 @@ InstructionInfo instructionInfoRLL_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -6696,6 +11402,10 @@ InstructionInfo instructionInfoRL_HL__CB2 =
         { 3, OnClock_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -6711,6 +11421,10 @@ InstructionInfo instructionInfoRL_IX_d__DD4 =
         { 5, OnClock_RL_ex_d__ex4_FD },
         { 4, OnClock_RL_ex_d__ex4_MR },
         { 3, OnClock_RL_ex_d__ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -6726,6 +11440,276 @@ InstructionInfo instructionInfoRL_IY_d__FD4 =
         { 5, OnClock_RL_ex_d__ex4_FD },
         { 4, OnClock_RL_ex_d__ex4_MR },
         { 3, OnClock_RL_ex_d__ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// RL (IX+d), A  -  DD, CB, d, 17
+InstructionInfo instructionInfoRL_IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 5, OnClock_RL_ex_d__r_ex4_FD },
+        { 4, OnClock_RL_ex_d__r_ex4_MR },
+        { 3, OnClock_RL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 7 },
+    }
+};
+
+// RL (IY+d), A  -  FD, CB, d, 17
+InstructionInfo instructionInfoRL_IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 5, OnClock_RL_ex_d__r_ex4_FD },
+        { 4, OnClock_RL_ex_d__r_ex4_MR },
+        { 3, OnClock_RL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 7 },
+    }
+};
+
+// RL (IX+d), B  -  DD, CB, d, 10
+InstructionInfo instructionInfoRL_IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 5, OnClock_RL_ex_d__r_ex4_FD },
+        { 4, OnClock_RL_ex_d__r_ex4_MR },
+        { 3, OnClock_RL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 0 },
+    }
+};
+
+// RL (IY+d), B  -  FD, CB, d, 10
+InstructionInfo instructionInfoRL_IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 5, OnClock_RL_ex_d__r_ex4_FD },
+        { 4, OnClock_RL_ex_d__r_ex4_MR },
+        { 3, OnClock_RL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 0 },
+    }
+};
+
+// RL (IX+d), C  -  DD, CB, d, 11
+InstructionInfo instructionInfoRL_IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 5, OnClock_RL_ex_d__r_ex4_FD },
+        { 4, OnClock_RL_ex_d__r_ex4_MR },
+        { 3, OnClock_RL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 1 },
+    }
+};
+
+// RL (IY+d), C  -  FD, CB, d, 11
+InstructionInfo instructionInfoRL_IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 5, OnClock_RL_ex_d__r_ex4_FD },
+        { 4, OnClock_RL_ex_d__r_ex4_MR },
+        { 3, OnClock_RL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 1 },
+    }
+};
+
+// RL (IX+d), D  -  DD, CB, d, 12
+InstructionInfo instructionInfoRL_IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 5, OnClock_RL_ex_d__r_ex4_FD },
+        { 4, OnClock_RL_ex_d__r_ex4_MR },
+        { 3, OnClock_RL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 2 },
+    }
+};
+
+// RL (IY+d), D  -  FD, CB, d, 12
+InstructionInfo instructionInfoRL_IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 5, OnClock_RL_ex_d__r_ex4_FD },
+        { 4, OnClock_RL_ex_d__r_ex4_MR },
+        { 3, OnClock_RL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 2 },
+    }
+};
+
+// RL (IX+d), E  -  DD, CB, d, 13
+InstructionInfo instructionInfoRL_IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 5, OnClock_RL_ex_d__r_ex4_FD },
+        { 4, OnClock_RL_ex_d__r_ex4_MR },
+        { 3, OnClock_RL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 3 },
+    }
+};
+
+// RL (IY+d), E  -  FD, CB, d, 13
+InstructionInfo instructionInfoRL_IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 5, OnClock_RL_ex_d__r_ex4_FD },
+        { 4, OnClock_RL_ex_d__r_ex4_MR },
+        { 3, OnClock_RL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 3 },
+    }
+};
+
+// RL (IX+d), H  -  DD, CB, d, 14
+InstructionInfo instructionInfoRL_IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 5, OnClock_RL_ex_d__r_ex4_FD },
+        { 4, OnClock_RL_ex_d__r_ex4_MR },
+        { 3, OnClock_RL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 4 },
+    }
+};
+
+// RL (IY+d), H  -  FD, CB, d, 14
+InstructionInfo instructionInfoRL_IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 5, OnClock_RL_ex_d__r_ex4_FD },
+        { 4, OnClock_RL_ex_d__r_ex4_MR },
+        { 3, OnClock_RL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 4 },
+    }
+};
+
+// RL (IX+d), L  -  DD, CB, d, 15
+InstructionInfo instructionInfoRL_IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 5, OnClock_RL_ex_d__r_ex4_FD },
+        { 4, OnClock_RL_ex_d__r_ex4_MR },
+        { 3, OnClock_RL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 5 },
+    }
+};
+
+// RL (IY+d), L  -  FD, CB, d, 15
+InstructionInfo instructionInfoRL_IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 5, OnClock_RL_ex_d__r_ex4_FD },
+        { 4, OnClock_RL_ex_d__r_ex4_MR },
+        { 3, OnClock_RL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -6741,6 +11725,10 @@ InstructionInfo instructionInfoRRCA_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -6756,6 +11744,10 @@ InstructionInfo instructionInfoRRCB_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -6771,6 +11763,10 @@ InstructionInfo instructionInfoRRCC_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -6786,6 +11782,10 @@ InstructionInfo instructionInfoRRCD_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -6801,6 +11801,10 @@ InstructionInfo instructionInfoRRCE_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -6816,6 +11820,10 @@ InstructionInfo instructionInfoRRCH_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -6831,6 +11839,10 @@ InstructionInfo instructionInfoRRCL_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -6846,6 +11858,10 @@ InstructionInfo instructionInfoRRC_HL__CB2 =
         { 3, OnClock_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -6861,6 +11877,10 @@ InstructionInfo instructionInfoRRC_IX_d__DD4 =
         { 5, OnClock_RRC_ex_d__ex4_FD },
         { 4, OnClock_RRC_ex_d__ex4_MR },
         { 3, OnClock_RRC_ex_d__ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -6876,6 +11896,276 @@ InstructionInfo instructionInfoRRC_IY_d__FD4 =
         { 5, OnClock_RRC_ex_d__ex4_FD },
         { 4, OnClock_RRC_ex_d__ex4_MR },
         { 3, OnClock_RRC_ex_d__ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// RRC (IX+d), A  -  DD, CB, d, 0F
+InstructionInfo instructionInfoRRC_IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 5, OnClock_RRC_ex_d__r_ex4_FD },
+        { 4, OnClock_RRC_ex_d__r_ex4_MR },
+        { 3, OnClock_RRC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 7 },
+    }
+};
+
+// RRC (IY+d), A  -  FD, CB, d, 0F
+InstructionInfo instructionInfoRRC_IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 5, OnClock_RRC_ex_d__r_ex4_FD },
+        { 4, OnClock_RRC_ex_d__r_ex4_MR },
+        { 3, OnClock_RRC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 7 },
+    }
+};
+
+// RRC (IX+d), B  -  DD, CB, d, 08
+InstructionInfo instructionInfoRRC_IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 5, OnClock_RRC_ex_d__r_ex4_FD },
+        { 4, OnClock_RRC_ex_d__r_ex4_MR },
+        { 3, OnClock_RRC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 0 },
+    }
+};
+
+// RRC (IY+d), B  -  FD, CB, d, 08
+InstructionInfo instructionInfoRRC_IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 5, OnClock_RRC_ex_d__r_ex4_FD },
+        { 4, OnClock_RRC_ex_d__r_ex4_MR },
+        { 3, OnClock_RRC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 0 },
+    }
+};
+
+// RRC (IX+d), C  -  DD, CB, d, 09
+InstructionInfo instructionInfoRRC_IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 5, OnClock_RRC_ex_d__r_ex4_FD },
+        { 4, OnClock_RRC_ex_d__r_ex4_MR },
+        { 3, OnClock_RRC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 1 },
+    }
+};
+
+// RRC (IY+d), C  -  FD, CB, d, 09
+InstructionInfo instructionInfoRRC_IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 5, OnClock_RRC_ex_d__r_ex4_FD },
+        { 4, OnClock_RRC_ex_d__r_ex4_MR },
+        { 3, OnClock_RRC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 1 },
+    }
+};
+
+// RRC (IX+d), D  -  DD, CB, d, 0A
+InstructionInfo instructionInfoRRC_IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 5, OnClock_RRC_ex_d__r_ex4_FD },
+        { 4, OnClock_RRC_ex_d__r_ex4_MR },
+        { 3, OnClock_RRC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 2 },
+    }
+};
+
+// RRC (IY+d), D  -  FD, CB, d, 0A
+InstructionInfo instructionInfoRRC_IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 5, OnClock_RRC_ex_d__r_ex4_FD },
+        { 4, OnClock_RRC_ex_d__r_ex4_MR },
+        { 3, OnClock_RRC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 2 },
+    }
+};
+
+// RRC (IX+d), E  -  DD, CB, d, 0B
+InstructionInfo instructionInfoRRC_IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 5, OnClock_RRC_ex_d__r_ex4_FD },
+        { 4, OnClock_RRC_ex_d__r_ex4_MR },
+        { 3, OnClock_RRC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 3 },
+    }
+};
+
+// RRC (IY+d), E  -  FD, CB, d, 0B
+InstructionInfo instructionInfoRRC_IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 5, OnClock_RRC_ex_d__r_ex4_FD },
+        { 4, OnClock_RRC_ex_d__r_ex4_MR },
+        { 3, OnClock_RRC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 3 },
+    }
+};
+
+// RRC (IX+d), H  -  DD, CB, d, 0C
+InstructionInfo instructionInfoRRC_IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 5, OnClock_RRC_ex_d__r_ex4_FD },
+        { 4, OnClock_RRC_ex_d__r_ex4_MR },
+        { 3, OnClock_RRC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 4 },
+    }
+};
+
+// RRC (IY+d), H  -  FD, CB, d, 0C
+InstructionInfo instructionInfoRRC_IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 5, OnClock_RRC_ex_d__r_ex4_FD },
+        { 4, OnClock_RRC_ex_d__r_ex4_MR },
+        { 3, OnClock_RRC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 4 },
+    }
+};
+
+// RRC (IX+d), L  -  DD, CB, d, 0D
+InstructionInfo instructionInfoRRC_IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 5, OnClock_RRC_ex_d__r_ex4_FD },
+        { 4, OnClock_RRC_ex_d__r_ex4_MR },
+        { 3, OnClock_RRC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 5 },
+    }
+};
+
+// RRC (IY+d), L  -  FD, CB, d, 0D
+InstructionInfo instructionInfoRRC_IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 5, OnClock_RRC_ex_d__r_ex4_FD },
+        { 4, OnClock_RRC_ex_d__r_ex4_MR },
+        { 3, OnClock_RRC_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -6891,6 +12181,10 @@ InstructionInfo instructionInfoRRA_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -6906,6 +12200,10 @@ InstructionInfo instructionInfoRRB_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -6921,6 +12219,10 @@ InstructionInfo instructionInfoRRC_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -6936,6 +12238,10 @@ InstructionInfo instructionInfoRRD_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -6951,6 +12257,10 @@ InstructionInfo instructionInfoRRE_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -6966,6 +12276,10 @@ InstructionInfo instructionInfoRRH_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -6981,6 +12295,10 @@ InstructionInfo instructionInfoRRL_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -6996,6 +12314,10 @@ InstructionInfo instructionInfoRR_HL__CB2 =
         { 3, OnClock_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -7011,6 +12333,10 @@ InstructionInfo instructionInfoRR_IX_d__DD4 =
         { 5, OnClock_RR_ex_d__ex4_FD },
         { 4, OnClock_RR_ex_d__ex4_MR },
         { 3, OnClock_RR_ex_d__ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -7026,6 +12352,276 @@ InstructionInfo instructionInfoRR_IY_d__FD4 =
         { 5, OnClock_RR_ex_d__ex4_FD },
         { 4, OnClock_RR_ex_d__ex4_MR },
         { 3, OnClock_RR_ex_d__ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// RR (IX+d), A  -  DD, CB, d, 1F
+InstructionInfo instructionInfoRR_IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 5, OnClock_RR_ex_d__r_ex4_FD },
+        { 4, OnClock_RR_ex_d__r_ex4_MR },
+        { 3, OnClock_RR_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 7 },
+    }
+};
+
+// RR (IY+d), A  -  FD, CB, d, 1F
+InstructionInfo instructionInfoRR_IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 5, OnClock_RR_ex_d__r_ex4_FD },
+        { 4, OnClock_RR_ex_d__r_ex4_MR },
+        { 3, OnClock_RR_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 7 },
+    }
+};
+
+// RR (IX+d), B  -  DD, CB, d, 18
+InstructionInfo instructionInfoRR_IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 5, OnClock_RR_ex_d__r_ex4_FD },
+        { 4, OnClock_RR_ex_d__r_ex4_MR },
+        { 3, OnClock_RR_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 0 },
+    }
+};
+
+// RR (IY+d), B  -  FD, CB, d, 18
+InstructionInfo instructionInfoRR_IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 5, OnClock_RR_ex_d__r_ex4_FD },
+        { 4, OnClock_RR_ex_d__r_ex4_MR },
+        { 3, OnClock_RR_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 0 },
+    }
+};
+
+// RR (IX+d), C  -  DD, CB, d, 19
+InstructionInfo instructionInfoRR_IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 5, OnClock_RR_ex_d__r_ex4_FD },
+        { 4, OnClock_RR_ex_d__r_ex4_MR },
+        { 3, OnClock_RR_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 1 },
+    }
+};
+
+// RR (IY+d), C  -  FD, CB, d, 19
+InstructionInfo instructionInfoRR_IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 5, OnClock_RR_ex_d__r_ex4_FD },
+        { 4, OnClock_RR_ex_d__r_ex4_MR },
+        { 3, OnClock_RR_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 1 },
+    }
+};
+
+// RR (IX+d), D  -  DD, CB, d, 1A
+InstructionInfo instructionInfoRR_IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 5, OnClock_RR_ex_d__r_ex4_FD },
+        { 4, OnClock_RR_ex_d__r_ex4_MR },
+        { 3, OnClock_RR_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 2 },
+    }
+};
+
+// RR (IY+d), D  -  FD, CB, d, 1A
+InstructionInfo instructionInfoRR_IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 5, OnClock_RR_ex_d__r_ex4_FD },
+        { 4, OnClock_RR_ex_d__r_ex4_MR },
+        { 3, OnClock_RR_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 2 },
+    }
+};
+
+// RR (IX+d), E  -  DD, CB, d, 1B
+InstructionInfo instructionInfoRR_IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 5, OnClock_RR_ex_d__r_ex4_FD },
+        { 4, OnClock_RR_ex_d__r_ex4_MR },
+        { 3, OnClock_RR_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 3 },
+    }
+};
+
+// RR (IY+d), E  -  FD, CB, d, 1B
+InstructionInfo instructionInfoRR_IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 5, OnClock_RR_ex_d__r_ex4_FD },
+        { 4, OnClock_RR_ex_d__r_ex4_MR },
+        { 3, OnClock_RR_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 3 },
+    }
+};
+
+// RR (IX+d), H  -  DD, CB, d, 1C
+InstructionInfo instructionInfoRR_IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 5, OnClock_RR_ex_d__r_ex4_FD },
+        { 4, OnClock_RR_ex_d__r_ex4_MR },
+        { 3, OnClock_RR_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 4 },
+    }
+};
+
+// RR (IY+d), H  -  FD, CB, d, 1C
+InstructionInfo instructionInfoRR_IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 5, OnClock_RR_ex_d__r_ex4_FD },
+        { 4, OnClock_RR_ex_d__r_ex4_MR },
+        { 3, OnClock_RR_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 4 },
+    }
+};
+
+// RR (IX+d), L  -  DD, CB, d, 1D
+InstructionInfo instructionInfoRR_IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 5, OnClock_RR_ex_d__r_ex4_FD },
+        { 4, OnClock_RR_ex_d__r_ex4_MR },
+        { 3, OnClock_RR_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 5 },
+    }
+};
+
+// RR (IY+d), L  -  FD, CB, d, 1D
+InstructionInfo instructionInfoRR_IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 5, OnClock_RR_ex_d__r_ex4_FD },
+        { 4, OnClock_RR_ex_d__r_ex4_MR },
+        { 3, OnClock_RR_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -7041,6 +12637,10 @@ InstructionInfo instructionInfoSLAA_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -7056,6 +12656,10 @@ InstructionInfo instructionInfoSLAB_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -7071,6 +12675,10 @@ InstructionInfo instructionInfoSLAC_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -7086,6 +12694,10 @@ InstructionInfo instructionInfoSLAD_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -7101,6 +12713,10 @@ InstructionInfo instructionInfoSLAE_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -7116,6 +12732,10 @@ InstructionInfo instructionInfoSLAH_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -7131,6 +12751,10 @@ InstructionInfo instructionInfoSLAL_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -7146,6 +12770,10 @@ InstructionInfo instructionInfoSLA_HL__CB2 =
         { 3, OnClock_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -7161,6 +12789,10 @@ InstructionInfo instructionInfoSLA_IX_d__DD4 =
         { 5, OnClock_SLA_ex_d__ex4_FD },
         { 4, OnClock_SLA_ex_d__ex4_MR },
         { 3, OnClock_SLA_ex_d__ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -7176,6 +12808,732 @@ InstructionInfo instructionInfoSLA_IY_d__FD4 =
         { 5, OnClock_SLA_ex_d__ex4_FD },
         { 4, OnClock_SLA_ex_d__ex4_MR },
         { 3, OnClock_SLA_ex_d__ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// SLA (IX+d), A  -  DD, CB, d, 27
+InstructionInfo instructionInfoSLA_IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 5, OnClock_SLA_ex_d__r_ex4_FD },
+        { 4, OnClock_SLA_ex_d__r_ex4_MR },
+        { 3, OnClock_SLA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 7 },
+    }
+};
+
+// SLA (IY+d), A  -  FD, CB, d, 27
+InstructionInfo instructionInfoSLA_IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 5, OnClock_SLA_ex_d__r_ex4_FD },
+        { 4, OnClock_SLA_ex_d__r_ex4_MR },
+        { 3, OnClock_SLA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 7 },
+    }
+};
+
+// SLA (IX+d), B  -  DD, CB, d, 20
+InstructionInfo instructionInfoSLA_IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 5, OnClock_SLA_ex_d__r_ex4_FD },
+        { 4, OnClock_SLA_ex_d__r_ex4_MR },
+        { 3, OnClock_SLA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 0 },
+    }
+};
+
+// SLA (IY+d), B  -  FD, CB, d, 20
+InstructionInfo instructionInfoSLA_IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 5, OnClock_SLA_ex_d__r_ex4_FD },
+        { 4, OnClock_SLA_ex_d__r_ex4_MR },
+        { 3, OnClock_SLA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 0 },
+    }
+};
+
+// SLA (IX+d), C  -  DD, CB, d, 21
+InstructionInfo instructionInfoSLA_IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 5, OnClock_SLA_ex_d__r_ex4_FD },
+        { 4, OnClock_SLA_ex_d__r_ex4_MR },
+        { 3, OnClock_SLA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 1 },
+    }
+};
+
+// SLA (IY+d), C  -  FD, CB, d, 21
+InstructionInfo instructionInfoSLA_IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 5, OnClock_SLA_ex_d__r_ex4_FD },
+        { 4, OnClock_SLA_ex_d__r_ex4_MR },
+        { 3, OnClock_SLA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 1 },
+    }
+};
+
+// SLA (IX+d), D  -  DD, CB, d, 22
+InstructionInfo instructionInfoSLA_IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 5, OnClock_SLA_ex_d__r_ex4_FD },
+        { 4, OnClock_SLA_ex_d__r_ex4_MR },
+        { 3, OnClock_SLA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 2 },
+    }
+};
+
+// SLA (IY+d), D  -  FD, CB, d, 22
+InstructionInfo instructionInfoSLA_IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 5, OnClock_SLA_ex_d__r_ex4_FD },
+        { 4, OnClock_SLA_ex_d__r_ex4_MR },
+        { 3, OnClock_SLA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 2 },
+    }
+};
+
+// SLA (IX+d), E  -  DD, CB, d, 23
+InstructionInfo instructionInfoSLA_IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 5, OnClock_SLA_ex_d__r_ex4_FD },
+        { 4, OnClock_SLA_ex_d__r_ex4_MR },
+        { 3, OnClock_SLA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 3 },
+    }
+};
+
+// SLA (IY+d), E  -  FD, CB, d, 23
+InstructionInfo instructionInfoSLA_IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 5, OnClock_SLA_ex_d__r_ex4_FD },
+        { 4, OnClock_SLA_ex_d__r_ex4_MR },
+        { 3, OnClock_SLA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 3 },
+    }
+};
+
+// SLA (IX+d), H  -  DD, CB, d, 24
+InstructionInfo instructionInfoSLA_IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 5, OnClock_SLA_ex_d__r_ex4_FD },
+        { 4, OnClock_SLA_ex_d__r_ex4_MR },
+        { 3, OnClock_SLA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 4 },
+    }
+};
+
+// SLA (IY+d), H  -  FD, CB, d, 24
+InstructionInfo instructionInfoSLA_IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 5, OnClock_SLA_ex_d__r_ex4_FD },
+        { 4, OnClock_SLA_ex_d__r_ex4_MR },
+        { 3, OnClock_SLA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 4 },
+    }
+};
+
+// SLA (IX+d), L  -  DD, CB, d, 25
+InstructionInfo instructionInfoSLA_IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 5, OnClock_SLA_ex_d__r_ex4_FD },
+        { 4, OnClock_SLA_ex_d__r_ex4_MR },
+        { 3, OnClock_SLA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 5 },
+    }
+};
+
+// SLA (IY+d), L  -  FD, CB, d, 25
+InstructionInfo instructionInfoSLA_IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 5, OnClock_SLA_ex_d__r_ex4_FD },
+        { 4, OnClock_SLA_ex_d__r_ex4_MR },
+        { 3, OnClock_SLA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 5 },
+    }
+};
+
+// SLL A  -  CB, 37
+InstructionInfo instructionInfoSLLA_CB2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SLLr_CB2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
+    }
+};
+
+// SLL B  -  CB, 30
+InstructionInfo instructionInfoSLLB_CB2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SLLr_CB2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
+    }
+};
+
+// SLL C  -  CB, 31
+InstructionInfo instructionInfoSLLC_CB2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SLLr_CB2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
+    }
+};
+
+// SLL D  -  CB, 32
+InstructionInfo instructionInfoSLLD_CB2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SLLr_CB2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
+    }
+};
+
+// SLL E  -  CB, 33
+InstructionInfo instructionInfoSLLE_CB2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SLLr_CB2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
+    }
+};
+
+// SLL H  -  CB, 34
+InstructionInfo instructionInfoSLLH_CB2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SLLr_CB2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
+    }
+};
+
+// SLL L  -  CB, 35
+InstructionInfo instructionInfoSLLL_CB2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SLLr_CB2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// SLL (HL)  -  CB, 36
+InstructionInfo instructionInfoSLL_HL__CB2 =
+{
+    4,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_SLL_HL__CB2_OF },
+        { 4, OnClock_SLL_HL__CB2_MR },
+        { 3, OnClock_MW },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// SLL (IX+d)  -  DD, CB, d, 36
+InstructionInfo instructionInfoSLL_IX_d__DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLL_ex_d__ex4_OD },
+        { 5, OnClock_SLL_ex_d__ex4_FD },
+        { 4, OnClock_SLL_ex_d__ex4_MR },
+        { 3, OnClock_SLL_ex_d__ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// SLL (IY+d)  -  FD, CB, d, 36
+InstructionInfo instructionInfoSLL_IY_d__FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLL_ex_d__ex4_OD },
+        { 5, OnClock_SLL_ex_d__ex4_FD },
+        { 4, OnClock_SLL_ex_d__ex4_MR },
+        { 3, OnClock_SLL_ex_d__ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// SLL (IX+d), A  -  DD, CB, d, 37
+InstructionInfo instructionInfoSLL_IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 5, OnClock_SLL_ex_d__r_ex4_FD },
+        { 4, OnClock_SLL_ex_d__r_ex4_MR },
+        { 3, OnClock_SLL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 7 },
+    }
+};
+
+// SLL (IY+d), A  -  FD, CB, d, 37
+InstructionInfo instructionInfoSLL_IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 5, OnClock_SLL_ex_d__r_ex4_FD },
+        { 4, OnClock_SLL_ex_d__r_ex4_MR },
+        { 3, OnClock_SLL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 7 },
+    }
+};
+
+// SLL (IX+d), B  -  DD, CB, d, 30
+InstructionInfo instructionInfoSLL_IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 5, OnClock_SLL_ex_d__r_ex4_FD },
+        { 4, OnClock_SLL_ex_d__r_ex4_MR },
+        { 3, OnClock_SLL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 0 },
+    }
+};
+
+// SLL (IY+d), B  -  FD, CB, d, 30
+InstructionInfo instructionInfoSLL_IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 5, OnClock_SLL_ex_d__r_ex4_FD },
+        { 4, OnClock_SLL_ex_d__r_ex4_MR },
+        { 3, OnClock_SLL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 0 },
+    }
+};
+
+// SLL (IX+d), C  -  DD, CB, d, 31
+InstructionInfo instructionInfoSLL_IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 5, OnClock_SLL_ex_d__r_ex4_FD },
+        { 4, OnClock_SLL_ex_d__r_ex4_MR },
+        { 3, OnClock_SLL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 1 },
+    }
+};
+
+// SLL (IY+d), C  -  FD, CB, d, 31
+InstructionInfo instructionInfoSLL_IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 5, OnClock_SLL_ex_d__r_ex4_FD },
+        { 4, OnClock_SLL_ex_d__r_ex4_MR },
+        { 3, OnClock_SLL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 1 },
+    }
+};
+
+// SLL (IX+d), D  -  DD, CB, d, 32
+InstructionInfo instructionInfoSLL_IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 5, OnClock_SLL_ex_d__r_ex4_FD },
+        { 4, OnClock_SLL_ex_d__r_ex4_MR },
+        { 3, OnClock_SLL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 2 },
+    }
+};
+
+// SLL (IY+d), D  -  FD, CB, d, 32
+InstructionInfo instructionInfoSLL_IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 5, OnClock_SLL_ex_d__r_ex4_FD },
+        { 4, OnClock_SLL_ex_d__r_ex4_MR },
+        { 3, OnClock_SLL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 2 },
+    }
+};
+
+// SLL (IX+d), E  -  DD, CB, d, 33
+InstructionInfo instructionInfoSLL_IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 5, OnClock_SLL_ex_d__r_ex4_FD },
+        { 4, OnClock_SLL_ex_d__r_ex4_MR },
+        { 3, OnClock_SLL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 3 },
+    }
+};
+
+// SLL (IY+d), E  -  FD, CB, d, 33
+InstructionInfo instructionInfoSLL_IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 5, OnClock_SLL_ex_d__r_ex4_FD },
+        { 4, OnClock_SLL_ex_d__r_ex4_MR },
+        { 3, OnClock_SLL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 3 },
+    }
+};
+
+// SLL (IX+d), H  -  DD, CB, d, 34
+InstructionInfo instructionInfoSLL_IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 5, OnClock_SLL_ex_d__r_ex4_FD },
+        { 4, OnClock_SLL_ex_d__r_ex4_MR },
+        { 3, OnClock_SLL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 4 },
+    }
+};
+
+// SLL (IY+d), H  -  FD, CB, d, 34
+InstructionInfo instructionInfoSLL_IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 5, OnClock_SLL_ex_d__r_ex4_FD },
+        { 4, OnClock_SLL_ex_d__r_ex4_MR },
+        { 3, OnClock_SLL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 4 },
+    }
+};
+
+// SLL (IX+d), L  -  DD, CB, d, 35
+InstructionInfo instructionInfoSLL_IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 5, OnClock_SLL_ex_d__r_ex4_FD },
+        { 4, OnClock_SLL_ex_d__r_ex4_MR },
+        { 3, OnClock_SLL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 5 },
+    }
+};
+
+// SLL (IY+d), L  -  FD, CB, d, 35
+InstructionInfo instructionInfoSLL_IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 5, OnClock_SLL_ex_d__r_ex4_FD },
+        { 4, OnClock_SLL_ex_d__r_ex4_MR },
+        { 3, OnClock_SLL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -7191,6 +13549,10 @@ InstructionInfo instructionInfoSRAA_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -7206,6 +13568,10 @@ InstructionInfo instructionInfoSRAB_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -7221,6 +13587,10 @@ InstructionInfo instructionInfoSRAC_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -7236,6 +13606,10 @@ InstructionInfo instructionInfoSRAD_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -7251,6 +13625,10 @@ InstructionInfo instructionInfoSRAE_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -7266,6 +13644,10 @@ InstructionInfo instructionInfoSRAH_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -7281,6 +13663,10 @@ InstructionInfo instructionInfoSRAL_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -7296,6 +13682,10 @@ InstructionInfo instructionInfoSRA_HL__CB2 =
         { 3, OnClock_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -7311,6 +13701,10 @@ InstructionInfo instructionInfoSRA_IX_d__DD4 =
         { 5, OnClock_SRA_ex_d__ex4_FD },
         { 4, OnClock_SRA_ex_d__ex4_MR },
         { 3, OnClock_SRA_ex_d__ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -7326,6 +13720,276 @@ InstructionInfo instructionInfoSRA_IY_d__FD4 =
         { 5, OnClock_SRA_ex_d__ex4_FD },
         { 4, OnClock_SRA_ex_d__ex4_MR },
         { 3, OnClock_SRA_ex_d__ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// SRA (IX+d), A  -  DD, CB, d, 2F
+InstructionInfo instructionInfoSRA_IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 5, OnClock_SRA_ex_d__r_ex4_FD },
+        { 4, OnClock_SRA_ex_d__r_ex4_MR },
+        { 3, OnClock_SRA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 7 },
+    }
+};
+
+// SRA (IY+d), A  -  FD, CB, d, 2F
+InstructionInfo instructionInfoSRA_IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 5, OnClock_SRA_ex_d__r_ex4_FD },
+        { 4, OnClock_SRA_ex_d__r_ex4_MR },
+        { 3, OnClock_SRA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 7 },
+    }
+};
+
+// SRA (IX+d), B  -  DD, CB, d, 28
+InstructionInfo instructionInfoSRA_IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 5, OnClock_SRA_ex_d__r_ex4_FD },
+        { 4, OnClock_SRA_ex_d__r_ex4_MR },
+        { 3, OnClock_SRA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 0 },
+    }
+};
+
+// SRA (IY+d), B  -  FD, CB, d, 28
+InstructionInfo instructionInfoSRA_IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 5, OnClock_SRA_ex_d__r_ex4_FD },
+        { 4, OnClock_SRA_ex_d__r_ex4_MR },
+        { 3, OnClock_SRA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 0 },
+    }
+};
+
+// SRA (IX+d), C  -  DD, CB, d, 29
+InstructionInfo instructionInfoSRA_IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 5, OnClock_SRA_ex_d__r_ex4_FD },
+        { 4, OnClock_SRA_ex_d__r_ex4_MR },
+        { 3, OnClock_SRA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 1 },
+    }
+};
+
+// SRA (IY+d), C  -  FD, CB, d, 29
+InstructionInfo instructionInfoSRA_IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 5, OnClock_SRA_ex_d__r_ex4_FD },
+        { 4, OnClock_SRA_ex_d__r_ex4_MR },
+        { 3, OnClock_SRA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 1 },
+    }
+};
+
+// SRA (IX+d), D  -  DD, CB, d, 2A
+InstructionInfo instructionInfoSRA_IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 5, OnClock_SRA_ex_d__r_ex4_FD },
+        { 4, OnClock_SRA_ex_d__r_ex4_MR },
+        { 3, OnClock_SRA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 2 },
+    }
+};
+
+// SRA (IY+d), D  -  FD, CB, d, 2A
+InstructionInfo instructionInfoSRA_IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 5, OnClock_SRA_ex_d__r_ex4_FD },
+        { 4, OnClock_SRA_ex_d__r_ex4_MR },
+        { 3, OnClock_SRA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 2 },
+    }
+};
+
+// SRA (IX+d), E  -  DD, CB, d, 2B
+InstructionInfo instructionInfoSRA_IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 5, OnClock_SRA_ex_d__r_ex4_FD },
+        { 4, OnClock_SRA_ex_d__r_ex4_MR },
+        { 3, OnClock_SRA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 3 },
+    }
+};
+
+// SRA (IY+d), E  -  FD, CB, d, 2B
+InstructionInfo instructionInfoSRA_IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 5, OnClock_SRA_ex_d__r_ex4_FD },
+        { 4, OnClock_SRA_ex_d__r_ex4_MR },
+        { 3, OnClock_SRA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 3 },
+    }
+};
+
+// SRA (IX+d), H  -  DD, CB, d, 2C
+InstructionInfo instructionInfoSRA_IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 5, OnClock_SRA_ex_d__r_ex4_FD },
+        { 4, OnClock_SRA_ex_d__r_ex4_MR },
+        { 3, OnClock_SRA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 4 },
+    }
+};
+
+// SRA (IY+d), H  -  FD, CB, d, 2C
+InstructionInfo instructionInfoSRA_IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 5, OnClock_SRA_ex_d__r_ex4_FD },
+        { 4, OnClock_SRA_ex_d__r_ex4_MR },
+        { 3, OnClock_SRA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 4 },
+    }
+};
+
+// SRA (IX+d), L  -  DD, CB, d, 2D
+InstructionInfo instructionInfoSRA_IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 5, OnClock_SRA_ex_d__r_ex4_FD },
+        { 4, OnClock_SRA_ex_d__r_ex4_MR },
+        { 3, OnClock_SRA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 5 },
+    }
+};
+
+// SRA (IY+d), L  -  FD, CB, d, 2D
+InstructionInfo instructionInfoSRA_IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 5, OnClock_SRA_ex_d__r_ex4_FD },
+        { 4, OnClock_SRA_ex_d__r_ex4_MR },
+        { 3, OnClock_SRA_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -7341,6 +14005,10 @@ InstructionInfo instructionInfoSRLA_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -7356,6 +14024,10 @@ InstructionInfo instructionInfoSRLB_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -7371,6 +14043,10 @@ InstructionInfo instructionInfoSRLC_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -7386,6 +14062,10 @@ InstructionInfo instructionInfoSRLD_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -7401,6 +14081,10 @@ InstructionInfo instructionInfoSRLE_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -7416,6 +14100,10 @@ InstructionInfo instructionInfoSRLH_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -7431,6 +14119,10 @@ InstructionInfo instructionInfoSRLL_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -7446,6 +14138,10 @@ InstructionInfo instructionInfoSRL_HL__CB2 =
         { 3, OnClock_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -7461,6 +14157,10 @@ InstructionInfo instructionInfoSRL_IX_d__DD4 =
         { 5, OnClock_SRL_ex_d__ex4_FD },
         { 4, OnClock_SRL_ex_d__ex4_MR },
         { 3, OnClock_SRL_ex_d__ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -7476,6 +14176,276 @@ InstructionInfo instructionInfoSRL_IY_d__FD4 =
         { 5, OnClock_SRL_ex_d__ex4_FD },
         { 4, OnClock_SRL_ex_d__ex4_MR },
         { 3, OnClock_SRL_ex_d__ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// SRL (IX+d), A  -  DD, CB, d, 3F
+InstructionInfo instructionInfoSRL_IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 5, OnClock_SRL_ex_d__r_ex4_FD },
+        { 4, OnClock_SRL_ex_d__r_ex4_MR },
+        { 3, OnClock_SRL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 7 },
+    }
+};
+
+// SRL (IY+d), A  -  FD, CB, d, 3F
+InstructionInfo instructionInfoSRL_IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 5, OnClock_SRL_ex_d__r_ex4_FD },
+        { 4, OnClock_SRL_ex_d__r_ex4_MR },
+        { 3, OnClock_SRL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 7 },
+    }
+};
+
+// SRL (IX+d), B  -  DD, CB, d, 38
+InstructionInfo instructionInfoSRL_IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 5, OnClock_SRL_ex_d__r_ex4_FD },
+        { 4, OnClock_SRL_ex_d__r_ex4_MR },
+        { 3, OnClock_SRL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 0 },
+    }
+};
+
+// SRL (IY+d), B  -  FD, CB, d, 38
+InstructionInfo instructionInfoSRL_IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 5, OnClock_SRL_ex_d__r_ex4_FD },
+        { 4, OnClock_SRL_ex_d__r_ex4_MR },
+        { 3, OnClock_SRL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 0 },
+    }
+};
+
+// SRL (IX+d), C  -  DD, CB, d, 39
+InstructionInfo instructionInfoSRL_IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 5, OnClock_SRL_ex_d__r_ex4_FD },
+        { 4, OnClock_SRL_ex_d__r_ex4_MR },
+        { 3, OnClock_SRL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 1 },
+    }
+};
+
+// SRL (IY+d), C  -  FD, CB, d, 39
+InstructionInfo instructionInfoSRL_IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 5, OnClock_SRL_ex_d__r_ex4_FD },
+        { 4, OnClock_SRL_ex_d__r_ex4_MR },
+        { 3, OnClock_SRL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 1 },
+    }
+};
+
+// SRL (IX+d), D  -  DD, CB, d, 3A
+InstructionInfo instructionInfoSRL_IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 5, OnClock_SRL_ex_d__r_ex4_FD },
+        { 4, OnClock_SRL_ex_d__r_ex4_MR },
+        { 3, OnClock_SRL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 2 },
+    }
+};
+
+// SRL (IY+d), D  -  FD, CB, d, 3A
+InstructionInfo instructionInfoSRL_IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 5, OnClock_SRL_ex_d__r_ex4_FD },
+        { 4, OnClock_SRL_ex_d__r_ex4_MR },
+        { 3, OnClock_SRL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 2 },
+    }
+};
+
+// SRL (IX+d), E  -  DD, CB, d, 3B
+InstructionInfo instructionInfoSRL_IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 5, OnClock_SRL_ex_d__r_ex4_FD },
+        { 4, OnClock_SRL_ex_d__r_ex4_MR },
+        { 3, OnClock_SRL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 3 },
+    }
+};
+
+// SRL (IY+d), E  -  FD, CB, d, 3B
+InstructionInfo instructionInfoSRL_IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 5, OnClock_SRL_ex_d__r_ex4_FD },
+        { 4, OnClock_SRL_ex_d__r_ex4_MR },
+        { 3, OnClock_SRL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 3 },
+    }
+};
+
+// SRL (IX+d), H  -  DD, CB, d, 3C
+InstructionInfo instructionInfoSRL_IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 5, OnClock_SRL_ex_d__r_ex4_FD },
+        { 4, OnClock_SRL_ex_d__r_ex4_MR },
+        { 3, OnClock_SRL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 4 },
+    }
+};
+
+// SRL (IY+d), H  -  FD, CB, d, 3C
+InstructionInfo instructionInfoSRL_IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 5, OnClock_SRL_ex_d__r_ex4_FD },
+        { 4, OnClock_SRL_ex_d__r_ex4_MR },
+        { 3, OnClock_SRL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 4 },
+    }
+};
+
+// SRL (IX+d), L  -  DD, CB, d, 3D
+InstructionInfo instructionInfoSRL_IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 5, OnClock_SRL_ex_d__r_ex4_FD },
+        { 4, OnClock_SRL_ex_d__r_ex4_MR },
+        { 3, OnClock_SRL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 5 },
+    }
+};
+
+// SRL (IY+d), L  -  FD, CB, d, 3D
+InstructionInfo instructionInfoSRL_IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 5, OnClock_SRL_ex_d__r_ex4_FD },
+        { 4, OnClock_SRL_ex_d__r_ex4_MR },
+        { 3, OnClock_SRL_ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::None },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -7491,6 +14461,10 @@ InstructionInfo instructionInfoRLDA_ED2 =
         { 4, OnClock_RLDA_ED2_OP },
         { 3, OnClock_RLDA_ED2_OP },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -7506,6 +14480,10 @@ InstructionInfo instructionInfoRRDA_ED2 =
         { 4, OnClock_RRDA_ED2_OP },
         { 3, OnClock_RRDA_ED2_OP },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -7521,6 +14499,10 @@ InstructionInfo instructionInfoBIT0_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -7536,6 +14518,10 @@ InstructionInfo instructionInfoBIT1_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -7551,6 +14537,10 @@ InstructionInfo instructionInfoBIT2_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -7566,6 +14556,10 @@ InstructionInfo instructionInfoBIT3_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -7581,6 +14575,10 @@ InstructionInfo instructionInfoBIT4_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -7596,6 +14594,10 @@ InstructionInfo instructionInfoBIT5_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -7611,6 +14613,10 @@ InstructionInfo instructionInfoBIT6_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -7626,6 +14632,10 @@ InstructionInfo instructionInfoBIT7_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -7641,6 +14651,10 @@ InstructionInfo instructionInfoBIT0_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -7656,6 +14670,10 @@ InstructionInfo instructionInfoBIT1_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -7671,6 +14689,10 @@ InstructionInfo instructionInfoBIT2_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -7686,6 +14708,10 @@ InstructionInfo instructionInfoBIT3_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -7701,6 +14727,10 @@ InstructionInfo instructionInfoBIT4_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -7716,6 +14746,10 @@ InstructionInfo instructionInfoBIT5_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -7731,6 +14765,10 @@ InstructionInfo instructionInfoBIT6_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -7746,6 +14784,10 @@ InstructionInfo instructionInfoBIT7_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -7761,6 +14803,10 @@ InstructionInfo instructionInfoBIT0_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -7776,6 +14822,10 @@ InstructionInfo instructionInfoBIT1_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -7791,6 +14841,10 @@ InstructionInfo instructionInfoBIT2_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -7806,6 +14860,10 @@ InstructionInfo instructionInfoBIT3_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -7821,6 +14879,10 @@ InstructionInfo instructionInfoBIT4_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -7836,6 +14898,10 @@ InstructionInfo instructionInfoBIT5_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -7851,6 +14917,10 @@ InstructionInfo instructionInfoBIT6_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -7866,6 +14936,10 @@ InstructionInfo instructionInfoBIT7_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -7881,6 +14955,10 @@ InstructionInfo instructionInfoBIT0_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -7896,6 +14974,10 @@ InstructionInfo instructionInfoBIT1_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -7911,6 +14993,10 @@ InstructionInfo instructionInfoBIT2_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -7926,6 +15012,10 @@ InstructionInfo instructionInfoBIT3_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -7941,6 +15031,10 @@ InstructionInfo instructionInfoBIT4_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -7956,6 +15050,10 @@ InstructionInfo instructionInfoBIT5_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -7971,6 +15069,10 @@ InstructionInfo instructionInfoBIT6_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -7986,6 +15088,10 @@ InstructionInfo instructionInfoBIT7_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -8001,6 +15107,10 @@ InstructionInfo instructionInfoBIT0_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -8016,6 +15126,10 @@ InstructionInfo instructionInfoBIT1_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -8031,6 +15145,10 @@ InstructionInfo instructionInfoBIT2_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -8046,6 +15164,10 @@ InstructionInfo instructionInfoBIT3_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -8061,6 +15183,10 @@ InstructionInfo instructionInfoBIT4_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -8076,6 +15202,10 @@ InstructionInfo instructionInfoBIT5_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -8091,6 +15221,10 @@ InstructionInfo instructionInfoBIT6_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -8106,6 +15240,10 @@ InstructionInfo instructionInfoBIT7_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -8121,6 +15259,10 @@ InstructionInfo instructionInfoBIT0_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -8136,6 +15278,10 @@ InstructionInfo instructionInfoBIT1_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -8151,6 +15297,10 @@ InstructionInfo instructionInfoBIT2_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -8166,6 +15316,10 @@ InstructionInfo instructionInfoBIT3_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -8181,6 +15335,10 @@ InstructionInfo instructionInfoBIT4_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -8196,6 +15354,10 @@ InstructionInfo instructionInfoBIT5_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -8211,6 +15373,10 @@ InstructionInfo instructionInfoBIT6_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -8226,6 +15392,10 @@ InstructionInfo instructionInfoBIT7_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -8241,6 +15411,10 @@ InstructionInfo instructionInfoBIT0_L_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -8256,6 +15430,10 @@ InstructionInfo instructionInfoBIT1_L_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -8271,6 +15449,10 @@ InstructionInfo instructionInfoBIT2_L_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -8286,6 +15468,10 @@ InstructionInfo instructionInfoBIT3_L_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -8301,6 +15487,10 @@ InstructionInfo instructionInfoBIT4_L_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -8316,6 +15506,10 @@ InstructionInfo instructionInfoBIT5_L_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -8331,6 +15525,10 @@ InstructionInfo instructionInfoBIT6_L_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -8346,6 +15544,10 @@ InstructionInfo instructionInfoBIT7_L_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -8361,6 +15563,10 @@ InstructionInfo instructionInfoBIT0__HL__CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -8376,6 +15582,10 @@ InstructionInfo instructionInfoBIT1__HL__CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -8391,6 +15601,10 @@ InstructionInfo instructionInfoBIT2__HL__CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -8406,6 +15620,10 @@ InstructionInfo instructionInfoBIT3__HL__CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -8421,6 +15639,10 @@ InstructionInfo instructionInfoBIT4__HL__CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -8436,6 +15658,10 @@ InstructionInfo instructionInfoBIT5__HL__CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -8451,6 +15677,10 @@ InstructionInfo instructionInfoBIT6__HL__CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
     }
 };
 
@@ -8466,6 +15696,10 @@ InstructionInfo instructionInfoBIT7__HL__CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -8481,6 +15715,10 @@ InstructionInfo instructionInfoBIT0__IX_d__DD4 =
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -8496,6 +15734,10 @@ InstructionInfo instructionInfoBIT0__IY_d__FD4 =
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -8511,6 +15753,10 @@ InstructionInfo instructionInfoBIT1__IX_d__DD4 =
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -8526,6 +15772,10 @@ InstructionInfo instructionInfoBIT1__IY_d__FD4 =
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -8541,6 +15791,10 @@ InstructionInfo instructionInfoBIT2__IX_d__DD4 =
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -8556,6 +15810,10 @@ InstructionInfo instructionInfoBIT2__IY_d__FD4 =
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -8571,6 +15829,10 @@ InstructionInfo instructionInfoBIT3__IX_d__DD4 =
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -8586,6 +15848,10 @@ InstructionInfo instructionInfoBIT3__IY_d__FD4 =
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -8601,6 +15867,10 @@ InstructionInfo instructionInfoBIT4__IX_d__DD4 =
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -8616,6 +15886,10 @@ InstructionInfo instructionInfoBIT4__IY_d__FD4 =
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -8631,6 +15905,10 @@ InstructionInfo instructionInfoBIT5__IX_d__DD4 =
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -8646,6 +15924,10 @@ InstructionInfo instructionInfoBIT5__IY_d__FD4 =
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -8661,6 +15943,10 @@ InstructionInfo instructionInfoBIT6__IX_d__DD4 =
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
     }
 };
 
@@ -8676,6 +15962,10 @@ InstructionInfo instructionInfoBIT6__IY_d__FD4 =
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
     }
 };
 
@@ -8691,6 +15981,10 @@ InstructionInfo instructionInfoBIT7__IX_d__DD4 =
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -8706,6 +16000,10 @@ InstructionInfo instructionInfoBIT7__IY_d__FD4 =
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -8721,6 +16019,10 @@ InstructionInfo instructionInfoSET0_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -8736,6 +16038,10 @@ InstructionInfo instructionInfoSET1_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -8751,6 +16057,10 @@ InstructionInfo instructionInfoSET2_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -8766,6 +16076,10 @@ InstructionInfo instructionInfoSET3_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -8781,6 +16095,10 @@ InstructionInfo instructionInfoSET4_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -8796,6 +16114,10 @@ InstructionInfo instructionInfoSET5_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -8811,6 +16133,10 @@ InstructionInfo instructionInfoSET6_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -8826,6 +16152,10 @@ InstructionInfo instructionInfoSET7_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -8841,6 +16171,10 @@ InstructionInfo instructionInfoSET0_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -8856,6 +16190,10 @@ InstructionInfo instructionInfoSET1_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -8871,6 +16209,10 @@ InstructionInfo instructionInfoSET2_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -8886,6 +16228,10 @@ InstructionInfo instructionInfoSET3_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -8901,6 +16247,10 @@ InstructionInfo instructionInfoSET4_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -8916,6 +16266,10 @@ InstructionInfo instructionInfoSET5_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -8931,6 +16285,10 @@ InstructionInfo instructionInfoSET6_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -8946,6 +16304,10 @@ InstructionInfo instructionInfoSET7_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -8961,6 +16323,10 @@ InstructionInfo instructionInfoSET0_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -8976,6 +16342,10 @@ InstructionInfo instructionInfoSET1_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -8991,6 +16361,10 @@ InstructionInfo instructionInfoSET2_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -9006,6 +16380,10 @@ InstructionInfo instructionInfoSET3_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -9021,6 +16399,10 @@ InstructionInfo instructionInfoSET4_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -9036,6 +16418,10 @@ InstructionInfo instructionInfoSET5_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -9051,6 +16437,10 @@ InstructionInfo instructionInfoSET6_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -9066,6 +16456,10 @@ InstructionInfo instructionInfoSET7_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -9081,6 +16475,10 @@ InstructionInfo instructionInfoSET0_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -9096,6 +16494,10 @@ InstructionInfo instructionInfoSET1_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -9111,6 +16513,10 @@ InstructionInfo instructionInfoSET2_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -9126,6 +16532,10 @@ InstructionInfo instructionInfoSET3_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -9141,6 +16551,10 @@ InstructionInfo instructionInfoSET4_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -9156,6 +16570,10 @@ InstructionInfo instructionInfoSET5_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -9171,6 +16589,10 @@ InstructionInfo instructionInfoSET6_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -9186,6 +16608,10 @@ InstructionInfo instructionInfoSET7_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -9201,6 +16627,10 @@ InstructionInfo instructionInfoSET0_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -9211,11 +16641,15 @@ InstructionInfo instructionInfoSET1_E_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -9231,6 +16665,10 @@ InstructionInfo instructionInfoSET2_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -9246,6 +16684,10 @@ InstructionInfo instructionInfoSET3_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -9261,6 +16703,10 @@ InstructionInfo instructionInfoSET4_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -9276,6 +16722,10 @@ InstructionInfo instructionInfoSET5_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -9291,6 +16741,10 @@ InstructionInfo instructionInfoSET6_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -9306,6 +16760,10 @@ InstructionInfo instructionInfoSET7_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -9321,6 +16779,10 @@ InstructionInfo instructionInfoSET0_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -9336,6 +16798,10 @@ InstructionInfo instructionInfoSET1_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -9351,6 +16817,10 @@ InstructionInfo instructionInfoSET2_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -9366,6 +16836,10 @@ InstructionInfo instructionInfoSET3_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -9381,6 +16855,10 @@ InstructionInfo instructionInfoSET4_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -9396,6 +16874,10 @@ InstructionInfo instructionInfoSET5_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -9411,6 +16893,10 @@ InstructionInfo instructionInfoSET6_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -9426,6 +16912,10 @@ InstructionInfo instructionInfoSET7_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -9441,6 +16931,10 @@ InstructionInfo instructionInfoSET0_L_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -9456,6 +16950,10 @@ InstructionInfo instructionInfoSET1_L_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -9471,6 +16969,10 @@ InstructionInfo instructionInfoSET2_L_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -9481,11 +16983,15 @@ InstructionInfo instructionInfoSET3_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -9501,6 +17007,10 @@ InstructionInfo instructionInfoSET4_L_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -9511,11 +17021,15 @@ InstructionInfo instructionInfoSET5_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -9531,6 +17045,10 @@ InstructionInfo instructionInfoSET6_L_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -9541,11 +17059,15 @@ InstructionInfo instructionInfoSET7_L_CB2 =
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_OF },
+        { 4, OnClock_SETb_r_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -9561,6 +17083,10 @@ InstructionInfo instructionInfoSET0__HL__CB2 =
         { 3, OnClock_SETb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -9576,6 +17102,10 @@ InstructionInfo instructionInfoSET1__HL__CB2 =
         { 3, OnClock_SETb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -9591,6 +17121,10 @@ InstructionInfo instructionInfoSET2__HL__CB2 =
         { 3, OnClock_SETb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -9606,6 +17140,10 @@ InstructionInfo instructionInfoSET3__HL__CB2 =
         { 3, OnClock_SETb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -9621,6 +17159,10 @@ InstructionInfo instructionInfoSET4__HL__CB2 =
         { 3, OnClock_SETb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -9636,6 +17178,10 @@ InstructionInfo instructionInfoSET5__HL__CB2 =
         { 3, OnClock_SETb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -9651,6 +17197,10 @@ InstructionInfo instructionInfoSET6__HL__CB2 =
         { 3, OnClock_SETb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
     }
 };
 
@@ -9666,6 +17216,10 @@ InstructionInfo instructionInfoSET7__HL__CB2 =
         { 3, OnClock_SETb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -9681,6 +17235,10 @@ InstructionInfo instructionInfoSET0__IX_d__DD4 =
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -9696,6 +17254,10 @@ InstructionInfo instructionInfoSET0__IY_d__FD4 =
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -9711,6 +17273,10 @@ InstructionInfo instructionInfoSET1__IX_d__DD4 =
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -9726,6 +17292,10 @@ InstructionInfo instructionInfoSET1__IY_d__FD4 =
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -9741,6 +17311,10 @@ InstructionInfo instructionInfoSET2__IX_d__DD4 =
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -9756,6 +17330,10 @@ InstructionInfo instructionInfoSET2__IY_d__FD4 =
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -9771,6 +17349,10 @@ InstructionInfo instructionInfoSET3__IX_d__DD4 =
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -9786,6 +17368,10 @@ InstructionInfo instructionInfoSET3__IY_d__FD4 =
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -9801,6 +17387,10 @@ InstructionInfo instructionInfoSET4__IX_d__DD4 =
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -9816,6 +17406,10 @@ InstructionInfo instructionInfoSET4__IY_d__FD4 =
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -9831,6 +17425,10 @@ InstructionInfo instructionInfoSET5__IX_d__DD4 =
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -9846,6 +17444,10 @@ InstructionInfo instructionInfoSET5__IY_d__FD4 =
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -9861,6 +17463,10 @@ InstructionInfo instructionInfoSET6__IX_d__DD4 =
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
     }
 };
 
@@ -9876,6 +17482,10 @@ InstructionInfo instructionInfoSET6__IY_d__FD4 =
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
     }
 };
 
@@ -9891,6 +17501,10 @@ InstructionInfo instructionInfoSET7__IX_d__DD4 =
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -9906,6 +17520,2005 @@ InstructionInfo instructionInfoSET7__IY_d__FD4 =
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// SET 0, (IX+d), A  -  DD, CB, d, C7
+InstructionInfo instructionInfoSET0__IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// SET 1, (IX+d), A  -  DD, CB, d, CF
+InstructionInfo instructionInfoSET1__IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// SET 1, (IY+d), A  -  FD, CB, d, CF
+InstructionInfo instructionInfoSET1__IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// SET 2, (IX+d), A  -  DD, CB, d, D7
+InstructionInfo instructionInfoSET2__IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// SET 2, (IY+d), A  -  FD, CB, d, D7
+InstructionInfo instructionInfoSET2__IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// SET 3, (IX+d), A  -  DD, CB, d, DF
+InstructionInfo instructionInfoSET3__IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// SET 3, (IY+d), A  -  FD, CB, d, DF
+InstructionInfo instructionInfoSET3__IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// SET 4, (IX+d), A  -  DD, CB, d, E7
+InstructionInfo instructionInfoSET4__IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// SET 4, (IY+d), A  -  FD, CB, d, E7
+InstructionInfo instructionInfoSET4__IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// SET 5, (IX+d), A  -  DD, CB, d, EF
+InstructionInfo instructionInfoSET5__IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// SET 5, (IY+d), A  -  FD, CB, d, EF
+InstructionInfo instructionInfoSET5__IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// SET 6, (IX+d), A  -  DD, CB, d, F7
+InstructionInfo instructionInfoSET6__IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// SET 6, (IY+d), A  -  FD, CB, d, F7
+InstructionInfo instructionInfoSET6__IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// SET 7, (IX+d), A  -  DD, CB, d, FF
+InstructionInfo instructionInfoSET7__IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// SET 7, (IY+d), A  -  FD, CB, d, FF
+InstructionInfo instructionInfoSET7__IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// SET 0, (IX+d), B  -  DD, CB, d, C0
+InstructionInfo instructionInfoSET0__IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// SET 1, (IX+d), B  -  DD, CB, d, C8
+InstructionInfo instructionInfoSET1__IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// SET 1, (IY+d), B  -  FD, CB, d, C8
+InstructionInfo instructionInfoSET1__IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// SET 2, (IX+d), B  -  DD, CB, d, D0
+InstructionInfo instructionInfoSET2__IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// SET 2, (IY+d), B  -  FD, CB, d, D0
+InstructionInfo instructionInfoSET2__IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// SET 3, (IX+d), B  -  DD, CB, d, D8
+InstructionInfo instructionInfoSET3__IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// SET 3, (IY+d), B  -  FD, CB, d, D8
+InstructionInfo instructionInfoSET3__IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// SET 4, (IX+d), B  -  DD, CB, d, E0
+InstructionInfo instructionInfoSET4__IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// SET 4, (IY+d), B  -  FD, CB, d, E0
+InstructionInfo instructionInfoSET4__IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// SET 5, (IX+d), B  -  DD, CB, d, E8
+InstructionInfo instructionInfoSET5__IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// SET 5, (IY+d), B  -  FD, CB, d, E8
+InstructionInfo instructionInfoSET5__IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// SET 6, (IX+d), B  -  DD, CB, d, F0
+InstructionInfo instructionInfoSET6__IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// SET 6, (IY+d), B  -  FD, CB, d, F0
+InstructionInfo instructionInfoSET6__IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// SET 7, (IX+d), B  -  DD, CB, d, F8
+InstructionInfo instructionInfoSET7__IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// SET 7, (IY+d), B  -  FD, CB, d, F8
+InstructionInfo instructionInfoSET7__IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// SET 0, (IX+d), C  -  DD, CB, d, C1
+InstructionInfo instructionInfoSET0__IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// SET 1, (IX+d), C  -  DD, CB, d, C9
+InstructionInfo instructionInfoSET1__IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// SET 1, (IY+d), C  -  FD, CB, d, C9
+InstructionInfo instructionInfoSET1__IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// SET 2, (IX+d), C  -  DD, CB, d, D1
+InstructionInfo instructionInfoSET2__IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// SET 2, (IY+d), C  -  FD, CB, d, D1
+InstructionInfo instructionInfoSET2__IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// SET 3, (IX+d), C  -  DD, CB, d, D9
+InstructionInfo instructionInfoSET3__IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// SET 3, (IY+d), C  -  FD, CB, d, D9
+InstructionInfo instructionInfoSET3__IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// SET 4, (IX+d), C  -  DD, CB, d, E1
+InstructionInfo instructionInfoSET4__IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// SET 4, (IY+d), C  -  FD, CB, d, E1
+InstructionInfo instructionInfoSET4__IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// SET 5, (IX+d), C  -  DD, CB, d, E9
+InstructionInfo instructionInfoSET5__IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// SET 5, (IY+d), C  -  FD, CB, d, E9
+InstructionInfo instructionInfoSET5__IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// SET 6, (IX+d), C  -  DD, CB, d, F1
+InstructionInfo instructionInfoSET6__IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// SET 6, (IY+d), C  -  FD, CB, d, F1
+InstructionInfo instructionInfoSET6__IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// SET 7, (IX+d), C  -  DD, CB, d, F9
+InstructionInfo instructionInfoSET7__IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// SET 7, (IY+d), C  -  FD, CB, d, F9
+InstructionInfo instructionInfoSET7__IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// SET 0, (IX+d), D  -  DD, CB, d, C2
+InstructionInfo instructionInfoSET0__IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// SET 1, (IX+d), D  -  DD, CB, d, CA
+InstructionInfo instructionInfoSET1__IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// SET 1, (IY+d), D  -  FD, CB, d, CA
+InstructionInfo instructionInfoSET1__IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// SET 2, (IX+d), D  -  DD, CB, d, D2
+InstructionInfo instructionInfoSET2__IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// SET 2, (IY+d), D  -  FD, CB, d, D2
+InstructionInfo instructionInfoSET2__IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// SET 3, (IX+d), D  -  DD, CB, d, DA
+InstructionInfo instructionInfoSET3__IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// SET 3, (IY+d), D  -  FD, CB, d, DA
+InstructionInfo instructionInfoSET3__IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// SET 4, (IX+d), D  -  DD, CB, d, E2
+InstructionInfo instructionInfoSET4__IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// SET 4, (IY+d), D  -  FD, CB, d, E2
+InstructionInfo instructionInfoSET4__IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// SET 5, (IX+d), D  -  DD, CB, d, EA
+InstructionInfo instructionInfoSET5__IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// SET 5, (IY+d), D  -  FD, CB, d, EA
+InstructionInfo instructionInfoSET5__IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// SET 6, (IX+d), D  -  DD, CB, d, F2
+InstructionInfo instructionInfoSET6__IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// SET 6, (IY+d), D  -  FD, CB, d, F2
+InstructionInfo instructionInfoSET6__IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// SET 7, (IX+d), D  -  DD, CB, d, FA
+InstructionInfo instructionInfoSET7__IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// SET 7, (IY+d), D  -  FD, CB, d, FA
+InstructionInfo instructionInfoSET7__IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// SET 0, (IX+d), E  -  DD, CB, d, C3
+InstructionInfo instructionInfoSET0__IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// SET 1, (IX+d), E  -  DD, CB, d, CB
+InstructionInfo instructionInfoSET1__IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// SET 1, (IY+d), E  -  FD, CB, d, CB
+InstructionInfo instructionInfoSET1__IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// SET 2, (IX+d), E  -  DD, CB, d, D3
+InstructionInfo instructionInfoSET2__IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// SET 2, (IY+d), E  -  FD, CB, d, D3
+InstructionInfo instructionInfoSET2__IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// SET 3, (IX+d), E  -  DD, CB, d, DB
+InstructionInfo instructionInfoSET3__IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// SET 3, (IY+d), E  -  FD, CB, d, DB
+InstructionInfo instructionInfoSET3__IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// SET 4, (IX+d), E  -  DD, CB, d, E3
+InstructionInfo instructionInfoSET4__IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// SET 4, (IY+d), E  -  FD, CB, d, E3
+InstructionInfo instructionInfoSET4__IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// SET 5, (IX+d), E  -  DD, CB, d, EB
+InstructionInfo instructionInfoSET5__IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// SET 5, (IY+d), E  -  FD, CB, d, EB
+InstructionInfo instructionInfoSET5__IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// SET 6, (IX+d), E  -  DD, CB, d, F3
+InstructionInfo instructionInfoSET6__IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// SET 6, (IY+d), E  -  FD, CB, d, F3
+InstructionInfo instructionInfoSET6__IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// SET 7, (IX+d), E  -  DD, CB, d, FB
+InstructionInfo instructionInfoSET7__IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// SET 7, (IY+d), E  -  FD, CB, d, FB
+InstructionInfo instructionInfoSET7__IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// SET 0, (IX+d), H  -  DD, CB, d, C4
+InstructionInfo instructionInfoSET0__IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// SET 1, (IX+d), H  -  DD, CB, d, CC
+InstructionInfo instructionInfoSET1__IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// SET 1, (IY+d), H  -  FD, CB, d, CC
+InstructionInfo instructionInfoSET1__IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// SET 2, (IX+d), H  -  DD, CB, d, D4
+InstructionInfo instructionInfoSET2__IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// SET 2, (IY+d), H  -  FD, CB, d, D4
+InstructionInfo instructionInfoSET2__IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// SET 3, (IX+d), H  -  DD, CB, d, DC
+InstructionInfo instructionInfoSET3__IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// SET 3, (IY+d), H  -  FD, CB, d, DC
+InstructionInfo instructionInfoSET3__IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// SET 4, (IX+d), H  -  DD, CB, d, E4
+InstructionInfo instructionInfoSET4__IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// SET 4, (IY+d), H  -  FD, CB, d, E4
+InstructionInfo instructionInfoSET4__IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// SET 5, (IX+d), H  -  DD, CB, d, EC
+InstructionInfo instructionInfoSET5__IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// SET 5, (IY+d), H  -  FD, CB, d, EC
+InstructionInfo instructionInfoSET5__IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// SET 6, (IX+d), H  -  DD, CB, d, F4
+InstructionInfo instructionInfoSET6__IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// SET 6, (IY+d), H  -  FD, CB, d, F4
+InstructionInfo instructionInfoSET6__IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// SET 7, (IX+d), H  -  DD, CB, d, FC
+InstructionInfo instructionInfoSET7__IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// SET 7, (IY+d), H  -  FD, CB, d, FC
+InstructionInfo instructionInfoSET7__IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// SET 0, (IX+d), L  -  DD, CB, d, C5
+InstructionInfo instructionInfoSET0__IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// SET 1, (IX+d), L  -  DD, CB, d, CD
+InstructionInfo instructionInfoSET1__IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// SET 1, (IY+d), L  -  FD, CB, d, CD
+InstructionInfo instructionInfoSET1__IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// SET 2, (IX+d), L  -  DD, CB, d, D5
+InstructionInfo instructionInfoSET2__IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// SET 2, (IY+d), L  -  FD, CB, d, D5
+InstructionInfo instructionInfoSET2__IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// SET 3, (IX+d), L  -  DD, CB, d, DD
+InstructionInfo instructionInfoSET3__IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// SET 3, (IY+d), L  -  FD, CB, d, DD
+InstructionInfo instructionInfoSET3__IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// SET 4, (IX+d), L  -  DD, CB, d, E5
+InstructionInfo instructionInfoSET4__IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// SET 4, (IY+d), L  -  FD, CB, d, E5
+InstructionInfo instructionInfoSET4__IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// SET 5, (IX+d), L  -  DD, CB, d, ED
+InstructionInfo instructionInfoSET5__IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// SET 5, (IY+d), L  -  FD, CB, d, ED
+InstructionInfo instructionInfoSET5__IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// SET 6, (IX+d), L  -  DD, CB, d, F5
+InstructionInfo instructionInfoSET6__IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// SET 6, (IY+d), L  -  FD, CB, d, F5
+InstructionInfo instructionInfoSET6__IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// SET 7, (IX+d), L  -  DD, CB, d, FD
+InstructionInfo instructionInfoSET7__IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// SET 7, (IY+d), L  -  FD, CB, d, FD
+InstructionInfo instructionInfoSET7__IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 5, OnClock_SETb__ex_d__r_ex4_FD },
+        { 4, OnClock_SETb__ex_d__r_ex4_MR },
+        { 3, OnClock_SETb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -9921,6 +19534,10 @@ InstructionInfo instructionInfoRES0_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -9936,6 +19553,10 @@ InstructionInfo instructionInfoRES1_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -9951,6 +19572,10 @@ InstructionInfo instructionInfoRES2_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -9966,6 +19591,10 @@ InstructionInfo instructionInfoRES3_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -9981,6 +19610,10 @@ InstructionInfo instructionInfoRES4_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -9996,6 +19629,10 @@ InstructionInfo instructionInfoRES5_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -10011,6 +19648,10 @@ InstructionInfo instructionInfoRES6_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -10026,6 +19667,10 @@ InstructionInfo instructionInfoRES7_A_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::Registers8, 7 },
     }
 };
 
@@ -10041,6 +19686,10 @@ InstructionInfo instructionInfoRES0_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -10056,6 +19705,10 @@ InstructionInfo instructionInfoRES1_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -10071,6 +19724,10 @@ InstructionInfo instructionInfoRES2_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -10086,6 +19743,10 @@ InstructionInfo instructionInfoRES3_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -10101,6 +19762,10 @@ InstructionInfo instructionInfoRES4_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -10116,6 +19781,10 @@ InstructionInfo instructionInfoRES5_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -10131,6 +19800,10 @@ InstructionInfo instructionInfoRES6_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -10146,6 +19819,10 @@ InstructionInfo instructionInfoRES7_B_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::Registers8, 0 },
     }
 };
 
@@ -10161,6 +19838,10 @@ InstructionInfo instructionInfoRES0_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -10176,6 +19857,10 @@ InstructionInfo instructionInfoRES1_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -10191,6 +19876,10 @@ InstructionInfo instructionInfoRES2_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -10206,6 +19895,10 @@ InstructionInfo instructionInfoRES3_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -10221,6 +19914,10 @@ InstructionInfo instructionInfoRES4_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -10236,6 +19933,10 @@ InstructionInfo instructionInfoRES5_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -10251,6 +19952,10 @@ InstructionInfo instructionInfoRES6_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -10266,6 +19971,10 @@ InstructionInfo instructionInfoRES7_C_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::Registers8, 1 },
     }
 };
 
@@ -10281,6 +19990,10 @@ InstructionInfo instructionInfoRES0_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -10296,6 +20009,10 @@ InstructionInfo instructionInfoRES1_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -10311,6 +20028,10 @@ InstructionInfo instructionInfoRES2_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -10326,6 +20047,10 @@ InstructionInfo instructionInfoRES3_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -10341,6 +20066,10 @@ InstructionInfo instructionInfoRES4_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -10356,6 +20085,10 @@ InstructionInfo instructionInfoRES5_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -10371,6 +20104,10 @@ InstructionInfo instructionInfoRES6_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -10386,6 +20123,10 @@ InstructionInfo instructionInfoRES7_D_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::Registers8, 2 },
     }
 };
 
@@ -10401,6 +20142,10 @@ InstructionInfo instructionInfoRES0_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -10416,6 +20161,10 @@ InstructionInfo instructionInfoRES1_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -10431,6 +20180,10 @@ InstructionInfo instructionInfoRES2_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -10446,6 +20199,10 @@ InstructionInfo instructionInfoRES3_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -10461,6 +20218,10 @@ InstructionInfo instructionInfoRES4_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -10476,6 +20237,10 @@ InstructionInfo instructionInfoRES5_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -10491,6 +20256,10 @@ InstructionInfo instructionInfoRES6_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -10506,6 +20275,10 @@ InstructionInfo instructionInfoRES7_E_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::Registers8, 3 },
     }
 };
 
@@ -10521,6 +20294,10 @@ InstructionInfo instructionInfoRES0_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -10536,6 +20313,10 @@ InstructionInfo instructionInfoRES1_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -10551,6 +20332,10 @@ InstructionInfo instructionInfoRES2_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -10566,6 +20351,10 @@ InstructionInfo instructionInfoRES3_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -10581,6 +20370,10 @@ InstructionInfo instructionInfoRES4_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -10596,6 +20389,10 @@ InstructionInfo instructionInfoRES5_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -10611,6 +20408,10 @@ InstructionInfo instructionInfoRES6_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -10626,6 +20427,10 @@ InstructionInfo instructionInfoRES7_H_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::Registers8, 4 },
     }
 };
 
@@ -10641,6 +20446,10 @@ InstructionInfo instructionInfoRES0_L_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -10656,6 +20465,10 @@ InstructionInfo instructionInfoRES1_L_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -10671,6 +20484,10 @@ InstructionInfo instructionInfoRES2_L_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -10686,6 +20503,10 @@ InstructionInfo instructionInfoRES3_L_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -10701,6 +20522,10 @@ InstructionInfo instructionInfoRES4_L_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -10716,6 +20541,10 @@ InstructionInfo instructionInfoRES5_L_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -10731,6 +20560,10 @@ InstructionInfo instructionInfoRES6_L_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -10746,6 +20579,10 @@ InstructionInfo instructionInfoRES7_L_CB2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::Registers8, 5 },
     }
 };
 
@@ -10761,6 +20598,10 @@ InstructionInfo instructionInfoRES0__HL__CB2 =
         { 3, OnClock_RESb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -10776,6 +20617,10 @@ InstructionInfo instructionInfoRES1__HL__CB2 =
         { 3, OnClock_RESb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -10791,6 +20636,10 @@ InstructionInfo instructionInfoRES2__HL__CB2 =
         { 3, OnClock_RESb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -10806,6 +20655,10 @@ InstructionInfo instructionInfoRES3__HL__CB2 =
         { 3, OnClock_RESb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -10821,6 +20674,10 @@ InstructionInfo instructionInfoRES4__HL__CB2 =
         { 3, OnClock_RESb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -10836,6 +20693,10 @@ InstructionInfo instructionInfoRES5__HL__CB2 =
         { 3, OnClock_RESb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -10851,6 +20712,10 @@ InstructionInfo instructionInfoRES6__HL__CB2 =
         { 3, OnClock_RESb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
     }
 };
 
@@ -10866,6 +20731,10 @@ InstructionInfo instructionInfoRES7__HL__CB2 =
         { 3, OnClock_RESb__HL__CB2_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -10881,6 +20750,10 @@ InstructionInfo instructionInfoRES0__IX_d__DD4 =
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -10896,6 +20769,10 @@ InstructionInfo instructionInfoRES0__IY_d__FD4 =
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -10911,6 +20788,10 @@ InstructionInfo instructionInfoRES1__IX_d__DD4 =
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -10926,6 +20807,10 @@ InstructionInfo instructionInfoRES1__IY_d__FD4 =
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -10941,6 +20826,10 @@ InstructionInfo instructionInfoRES2__IX_d__DD4 =
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -10956,6 +20845,10 @@ InstructionInfo instructionInfoRES2__IY_d__FD4 =
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -10971,6 +20864,10 @@ InstructionInfo instructionInfoRES3__IX_d__DD4 =
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -10986,6 +20883,10 @@ InstructionInfo instructionInfoRES3__IY_d__FD4 =
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -11001,6 +20902,10 @@ InstructionInfo instructionInfoRES4__IX_d__DD4 =
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -11016,6 +20921,10 @@ InstructionInfo instructionInfoRES4__IY_d__FD4 =
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -11031,6 +20940,10 @@ InstructionInfo instructionInfoRES5__IX_d__DD4 =
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -11046,6 +20959,10 @@ InstructionInfo instructionInfoRES5__IY_d__FD4 =
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -11061,6 +20978,10 @@ InstructionInfo instructionInfoRES6__IX_d__DD4 =
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
     }
 };
 
@@ -11076,6 +20997,10 @@ InstructionInfo instructionInfoRES6__IY_d__FD4 =
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
     }
 };
 
@@ -11091,6 +21016,10 @@ InstructionInfo instructionInfoRES7__IX_d__DD4 =
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -11106,6 +21035,2005 @@ InstructionInfo instructionInfoRES7__IY_d__FD4 =
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// RES 0, (IX+d), A  -  DD, CB, d, 87
+InstructionInfo instructionInfoRES0__IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// RES 1, (IX+d), A  -  DD, CB, d, 8F
+InstructionInfo instructionInfoRES1__IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// RES 1, (IY+d), A  -  FD, CB, d, 8F
+InstructionInfo instructionInfoRES1__IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// RES 2, (IX+d), A  -  DD, CB, d, 97
+InstructionInfo instructionInfoRES2__IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// RES 2, (IY+d), A  -  FD, CB, d, 97
+InstructionInfo instructionInfoRES2__IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// RES 3, (IX+d), A  -  DD, CB, d, 9F
+InstructionInfo instructionInfoRES3__IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// RES 3, (IY+d), A  -  FD, CB, d, 9F
+InstructionInfo instructionInfoRES3__IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// RES 4, (IX+d), A  -  DD, CB, d, A7
+InstructionInfo instructionInfoRES4__IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// RES 4, (IY+d), A  -  FD, CB, d, A7
+InstructionInfo instructionInfoRES4__IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// RES 5, (IX+d), A  -  DD, CB, d, AF
+InstructionInfo instructionInfoRES5__IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// RES 5, (IY+d), A  -  FD, CB, d, AF
+InstructionInfo instructionInfoRES5__IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// RES 6, (IX+d), A  -  DD, CB, d, B7
+InstructionInfo instructionInfoRES6__IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// RES 6, (IY+d), A  -  FD, CB, d, B7
+InstructionInfo instructionInfoRES6__IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// RES 7, (IX+d), A  -  DD, CB, d, BF
+InstructionInfo instructionInfoRES7__IX_d__A_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// RES 7, (IY+d), A  -  FD, CB, d, BF
+InstructionInfo instructionInfoRES7__IY_d__A_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// RES 0, (IX+d), B  -  DD, CB, d, 80
+InstructionInfo instructionInfoRES0__IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// RES 1, (IX+d), B  -  DD, CB, d, 88
+InstructionInfo instructionInfoRES1__IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// RES 1, (IY+d), B  -  FD, CB, d, 88
+InstructionInfo instructionInfoRES1__IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// RES 2, (IX+d), B  -  DD, CB, d, 90
+InstructionInfo instructionInfoRES2__IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// RES 2, (IY+d), B  -  FD, CB, d, 90
+InstructionInfo instructionInfoRES2__IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// RES 3, (IX+d), B  -  DD, CB, d, 98
+InstructionInfo instructionInfoRES3__IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// RES 3, (IY+d), B  -  FD, CB, d, 98
+InstructionInfo instructionInfoRES3__IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// RES 4, (IX+d), B  -  DD, CB, d, A0
+InstructionInfo instructionInfoRES4__IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// RES 4, (IY+d), B  -  FD, CB, d, A0
+InstructionInfo instructionInfoRES4__IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// RES 5, (IX+d), B  -  DD, CB, d, A8
+InstructionInfo instructionInfoRES5__IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// RES 5, (IY+d), B  -  FD, CB, d, A8
+InstructionInfo instructionInfoRES5__IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// RES 6, (IX+d), B  -  DD, CB, d, B0
+InstructionInfo instructionInfoRES6__IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// RES 6, (IY+d), B  -  FD, CB, d, B0
+InstructionInfo instructionInfoRES6__IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// RES 7, (IX+d), B  -  DD, CB, d, B8
+InstructionInfo instructionInfoRES7__IX_d__B_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// RES 7, (IY+d), B  -  FD, CB, d, B8
+InstructionInfo instructionInfoRES7__IY_d__B_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// RES 0, (IX+d), C  -  DD, CB, d, 81
+InstructionInfo instructionInfoRES0__IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// RES 1, (IX+d), C  -  DD, CB, d, 89
+InstructionInfo instructionInfoRES1__IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// RES 1, (IY+d), C  -  FD, CB, d, 89
+InstructionInfo instructionInfoRES1__IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// RES 2, (IX+d), C  -  DD, CB, d, 91
+InstructionInfo instructionInfoRES2__IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// RES 2, (IY+d), C  -  FD, CB, d, 91
+InstructionInfo instructionInfoRES2__IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// RES 3, (IX+d), C  -  DD, CB, d, 99
+InstructionInfo instructionInfoRES3__IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// RES 3, (IY+d), C  -  FD, CB, d, 99
+InstructionInfo instructionInfoRES3__IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// RES 4, (IX+d), C  -  DD, CB, d, A1
+InstructionInfo instructionInfoRES4__IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// RES 4, (IY+d), C  -  FD, CB, d, A1
+InstructionInfo instructionInfoRES4__IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// RES 5, (IX+d), C  -  DD, CB, d, A9
+InstructionInfo instructionInfoRES5__IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// RES 5, (IY+d), C  -  FD, CB, d, A9
+InstructionInfo instructionInfoRES5__IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// RES 6, (IX+d), C  -  DD, CB, d, B1
+InstructionInfo instructionInfoRES6__IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// RES 6, (IY+d), C  -  FD, CB, d, B1
+InstructionInfo instructionInfoRES6__IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// RES 7, (IX+d), C  -  DD, CB, d, B9
+InstructionInfo instructionInfoRES7__IX_d__C_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// RES 7, (IY+d), C  -  FD, CB, d, B9
+InstructionInfo instructionInfoRES7__IY_d__C_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// RES 0, (IX+d), D  -  DD, CB, d, 82
+InstructionInfo instructionInfoRES0__IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// RES 1, (IX+d), D  -  DD, CB, d, 8A
+InstructionInfo instructionInfoRES1__IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// RES 1, (IY+d), D  -  FD, CB, d, 8A
+InstructionInfo instructionInfoRES1__IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// RES 2, (IX+d), D  -  DD, CB, d, 92
+InstructionInfo instructionInfoRES2__IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// RES 2, (IY+d), D  -  FD, CB, d, 92
+InstructionInfo instructionInfoRES2__IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// RES 3, (IX+d), D  -  DD, CB, d, 9A
+InstructionInfo instructionInfoRES3__IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// RES 3, (IY+d), D  -  FD, CB, d, 9A
+InstructionInfo instructionInfoRES3__IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// RES 4, (IX+d), D  -  DD, CB, d, A2
+InstructionInfo instructionInfoRES4__IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// RES 4, (IY+d), D  -  FD, CB, d, A2
+InstructionInfo instructionInfoRES4__IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// RES 5, (IX+d), D  -  DD, CB, d, AA
+InstructionInfo instructionInfoRES5__IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// RES 5, (IY+d), D  -  FD, CB, d, AA
+InstructionInfo instructionInfoRES5__IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// RES 6, (IX+d), D  -  DD, CB, d, B2
+InstructionInfo instructionInfoRES6__IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// RES 6, (IY+d), D  -  FD, CB, d, B2
+InstructionInfo instructionInfoRES6__IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// RES 7, (IX+d), D  -  DD, CB, d, BA
+InstructionInfo instructionInfoRES7__IX_d__D_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// RES 7, (IY+d), D  -  FD, CB, d, BA
+InstructionInfo instructionInfoRES7__IY_d__D_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// RES 0, (IX+d), E  -  DD, CB, d, 83
+InstructionInfo instructionInfoRES0__IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// RES 1, (IX+d), E  -  DD, CB, d, 8B
+InstructionInfo instructionInfoRES1__IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// RES 1, (IY+d), E  -  FD, CB, d, 8B
+InstructionInfo instructionInfoRES1__IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// RES 2, (IX+d), E  -  DD, CB, d, 93
+InstructionInfo instructionInfoRES2__IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// RES 2, (IY+d), E  -  FD, CB, d, 93
+InstructionInfo instructionInfoRES2__IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// RES 3, (IX+d), E  -  DD, CB, d, 9B
+InstructionInfo instructionInfoRES3__IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// RES 3, (IY+d), E  -  FD, CB, d, 9B
+InstructionInfo instructionInfoRES3__IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// RES 4, (IX+d), E  -  DD, CB, d, A3
+InstructionInfo instructionInfoRES4__IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// RES 4, (IY+d), E  -  FD, CB, d, A3
+InstructionInfo instructionInfoRES4__IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// RES 5, (IX+d), E  -  DD, CB, d, AB
+InstructionInfo instructionInfoRES5__IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// RES 5, (IY+d), E  -  FD, CB, d, AB
+InstructionInfo instructionInfoRES5__IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// RES 6, (IX+d), E  -  DD, CB, d, B3
+InstructionInfo instructionInfoRES6__IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// RES 6, (IY+d), E  -  FD, CB, d, B3
+InstructionInfo instructionInfoRES6__IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// RES 7, (IX+d), E  -  DD, CB, d, BB
+InstructionInfo instructionInfoRES7__IX_d__E_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// RES 7, (IY+d), E  -  FD, CB, d, BB
+InstructionInfo instructionInfoRES7__IY_d__E_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// RES 0, (IX+d), H  -  DD, CB, d, 84
+InstructionInfo instructionInfoRES0__IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// RES 1, (IX+d), H  -  DD, CB, d, 8C
+InstructionInfo instructionInfoRES1__IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// RES 1, (IY+d), H  -  FD, CB, d, 8C
+InstructionInfo instructionInfoRES1__IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// RES 2, (IX+d), H  -  DD, CB, d, 94
+InstructionInfo instructionInfoRES2__IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// RES 2, (IY+d), H  -  FD, CB, d, 94
+InstructionInfo instructionInfoRES2__IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// RES 3, (IX+d), H  -  DD, CB, d, 9C
+InstructionInfo instructionInfoRES3__IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// RES 3, (IY+d), H  -  FD, CB, d, 9C
+InstructionInfo instructionInfoRES3__IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// RES 4, (IX+d), H  -  DD, CB, d, A4
+InstructionInfo instructionInfoRES4__IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// RES 4, (IY+d), H  -  FD, CB, d, A4
+InstructionInfo instructionInfoRES4__IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// RES 5, (IX+d), H  -  DD, CB, d, AC
+InstructionInfo instructionInfoRES5__IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// RES 5, (IY+d), H  -  FD, CB, d, AC
+InstructionInfo instructionInfoRES5__IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// RES 6, (IX+d), H  -  DD, CB, d, B4
+InstructionInfo instructionInfoRES6__IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// RES 6, (IY+d), H  -  FD, CB, d, B4
+InstructionInfo instructionInfoRES6__IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// RES 7, (IX+d), H  -  DD, CB, d, BC
+InstructionInfo instructionInfoRES7__IX_d__H_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// RES 7, (IY+d), H  -  FD, CB, d, BC
+InstructionInfo instructionInfoRES7__IY_d__H_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// RES 0, (IX+d), L  -  DD, CB, d, 85
+InstructionInfo instructionInfoRES0__IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// RES 1, (IX+d), L  -  DD, CB, d, 8D
+InstructionInfo instructionInfoRES1__IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// RES 1, (IY+d), L  -  FD, CB, d, 8D
+InstructionInfo instructionInfoRES1__IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// RES 2, (IX+d), L  -  DD, CB, d, 95
+InstructionInfo instructionInfoRES2__IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// RES 2, (IY+d), L  -  FD, CB, d, 95
+InstructionInfo instructionInfoRES2__IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// RES 3, (IX+d), L  -  DD, CB, d, 9D
+InstructionInfo instructionInfoRES3__IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// RES 3, (IY+d), L  -  FD, CB, d, 9D
+InstructionInfo instructionInfoRES3__IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// RES 4, (IX+d), L  -  DD, CB, d, A5
+InstructionInfo instructionInfoRES4__IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// RES 4, (IY+d), L  -  FD, CB, d, A5
+InstructionInfo instructionInfoRES4__IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// RES 5, (IX+d), L  -  DD, CB, d, AD
+InstructionInfo instructionInfoRES5__IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// RES 5, (IY+d), L  -  FD, CB, d, AD
+InstructionInfo instructionInfoRES5__IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// RES 6, (IX+d), L  -  DD, CB, d, B5
+InstructionInfo instructionInfoRES6__IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// RES 6, (IY+d), L  -  FD, CB, d, B5
+InstructionInfo instructionInfoRES6__IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// RES 7, (IX+d), L  -  DD, CB, d, BD
+InstructionInfo instructionInfoRES7__IX_d__L_DD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// RES 7, (IY+d), L  -  FD, CB, d, BD
+InstructionInfo instructionInfoRES7__IY_d__L_FD4 =
+{
+    6,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 5, OnClock_RESb__ex_d__r_ex4_FD },
+        { 4, OnClock_RESb__ex_d__r_ex4_MR },
+        { 3, OnClock_RESb__ex_d__r_ex4_MW },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -11121,6 +23049,10 @@ InstructionInfo instructionInfoJPnn_3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -11136,6 +23068,10 @@ InstructionInfo instructionInfoJPNZ_nn_3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -11151,6 +23087,10 @@ InstructionInfo instructionInfoJPZ_nn_3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -11166,6 +23106,10 @@ InstructionInfo instructionInfoJPNC_nn_3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -11181,6 +23125,10 @@ InstructionInfo instructionInfoJPC_nn_3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -11196,6 +23144,10 @@ InstructionInfo instructionInfoJPPO_nn_3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -11211,6 +23163,10 @@ InstructionInfo instructionInfoJPPE_nn_3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -11226,6 +23182,10 @@ InstructionInfo instructionInfoJPP_nn_3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 6 },
+        { VariableType::None },
     }
 };
 
@@ -11241,6 +23201,10 @@ InstructionInfo instructionInfoJPM_nn_3 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -11256,6 +23220,10 @@ InstructionInfo instructionInfoJRe_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -11271,6 +23239,10 @@ InstructionInfo instructionInfoJRNZ_e_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition4, 0 },
+        { VariableType::None },
     }
 };
 
@@ -11286,6 +23258,10 @@ InstructionInfo instructionInfoJRZ_e_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition4, 1 },
+        { VariableType::None },
     }
 };
 
@@ -11301,6 +23277,10 @@ InstructionInfo instructionInfoJRNC_e_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition4, 2 },
+        { VariableType::None },
     }
 };
 
@@ -11316,6 +23296,10 @@ InstructionInfo instructionInfoJRC_e_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition4, 3 },
+        { VariableType::None },
     }
 };
 
@@ -11331,6 +23315,10 @@ InstructionInfo instructionInfoJPHL_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -11346,6 +23334,10 @@ InstructionInfo instructionInfoJPIX_DD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -11361,6 +23353,10 @@ InstructionInfo instructionInfoJPIY_FD2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -11376,6 +23372,10 @@ InstructionInfo instructionInfoDJNZe_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -11391,6 +23391,10 @@ InstructionInfo instructionInfoCALLnn_3 =
         { 3, OnClock_CALLnn_3_SWh },
         { 3, OnClock_CALLnn_3_SWl },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -11406,6 +23410,10 @@ InstructionInfo instructionInfoCALLNZ_nn_3 =
         { 3, OnClock_CALLc_nn_3_SWh },
         { 3, OnClock_CALLc_nn_3_SWl },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -11421,6 +23429,10 @@ InstructionInfo instructionInfoCALLZ_nn_3 =
         { 3, OnClock_CALLc_nn_3_SWh },
         { 3, OnClock_CALLc_nn_3_SWl },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -11436,6 +23448,10 @@ InstructionInfo instructionInfoCALLNC_nn_3 =
         { 3, OnClock_CALLc_nn_3_SWh },
         { 3, OnClock_CALLc_nn_3_SWl },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -11451,6 +23467,10 @@ InstructionInfo instructionInfoCALLC_nn_3 =
         { 3, OnClock_CALLc_nn_3_SWh },
         { 3, OnClock_CALLc_nn_3_SWl },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -11466,6 +23486,10 @@ InstructionInfo instructionInfoCALLPO_nn_3 =
         { 3, OnClock_CALLc_nn_3_SWh },
         { 3, OnClock_CALLc_nn_3_SWl },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -11481,6 +23505,10 @@ InstructionInfo instructionInfoCALLPE_nn_3 =
         { 3, OnClock_CALLc_nn_3_SWh },
         { 3, OnClock_CALLc_nn_3_SWl },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -11496,6 +23524,10 @@ InstructionInfo instructionInfoCALLP_nn_3 =
         { 3, OnClock_CALLc_nn_3_SWh },
         { 3, OnClock_CALLc_nn_3_SWl },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 6 },
+        { VariableType::None },
     }
 };
 
@@ -11511,6 +23543,10 @@ InstructionInfo instructionInfoCALLM_nn_3 =
         { 3, OnClock_CALLc_nn_3_SWh },
         { 3, OnClock_CALLc_nn_3_SWl },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -11526,6 +23562,10 @@ InstructionInfo instructionInfoRET_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -11541,6 +23581,10 @@ InstructionInfo instructionInfoRETNZ_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -11556,6 +23600,10 @@ InstructionInfo instructionInfoRETZ_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -11571,6 +23619,10 @@ InstructionInfo instructionInfoRETNC_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -11586,6 +23638,10 @@ InstructionInfo instructionInfoRETC_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -11601,6 +23657,10 @@ InstructionInfo instructionInfoRETPO_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -11616,6 +23676,10 @@ InstructionInfo instructionInfoRETPE_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -11631,6 +23695,10 @@ InstructionInfo instructionInfoRETP_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 6 },
+        { VariableType::None },
     }
 };
 
@@ -11646,6 +23714,10 @@ InstructionInfo instructionInfoRETM_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Condition8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -11661,6 +23733,10 @@ InstructionInfo instructionInfoRETI_ED2 =
         { 3, OnClock_SRl },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -11676,6 +23752,10 @@ InstructionInfo instructionInfoRETN_ED2 =
         { 3, OnClock_SRl },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -11691,6 +23771,10 @@ InstructionInfo instructionInfoRST00_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RstAddress, 0 },
+        { VariableType::None },
     }
 };
 
@@ -11706,6 +23790,10 @@ InstructionInfo instructionInfoRST08_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RstAddress, 1 },
+        { VariableType::None },
     }
 };
 
@@ -11721,6 +23809,10 @@ InstructionInfo instructionInfoRST10_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RstAddress, 2 },
+        { VariableType::None },
     }
 };
 
@@ -11736,6 +23828,10 @@ InstructionInfo instructionInfoRST18_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RstAddress, 3 },
+        { VariableType::None },
     }
 };
 
@@ -11751,6 +23847,10 @@ InstructionInfo instructionInfoRST20_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RstAddress, 4 },
+        { VariableType::None },
     }
 };
 
@@ -11766,6 +23866,10 @@ InstructionInfo instructionInfoRST28_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RstAddress, 5 },
+        { VariableType::None },
     }
 };
 
@@ -11781,6 +23885,10 @@ InstructionInfo instructionInfoRST30_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RstAddress, 6 },
+        { VariableType::None },
     }
 };
 
@@ -11796,6 +23904,10 @@ InstructionInfo instructionInfoRST38_1 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::RstAddress, 7 },
+        { VariableType::None },
     }
 };
 
@@ -11811,6 +23923,10 @@ InstructionInfo instructionInfoINA__n__2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -11826,6 +23942,10 @@ InstructionInfo instructionInfoINA__C__ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -11841,6 +23961,10 @@ InstructionInfo instructionInfoINB__C__ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -11856,6 +23980,10 @@ InstructionInfo instructionInfoINC__C__ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -11871,6 +23999,10 @@ InstructionInfo instructionInfoIND__C__ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -11886,6 +24018,10 @@ InstructionInfo instructionInfoINE__C__ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -11901,6 +24037,10 @@ InstructionInfo instructionInfoINH__C__ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -11916,6 +24056,10 @@ InstructionInfo instructionInfoINL__C__ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -11931,6 +24075,10 @@ InstructionInfo instructionInfoINI_ED2 =
         { 4, OnClock_INI_ED2_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -11946,6 +24094,10 @@ InstructionInfo instructionInfoINIR_ED2 =
         { 4, OnClock_INIR_ED2_MW },
         { 5, OnClock_PCd },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -11961,6 +24113,10 @@ InstructionInfo instructionInfoIND_ED2 =
         { 4, OnClock_IND_ED2_MW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -11976,6 +24132,10 @@ InstructionInfo instructionInfoINDR_ED2 =
         { 4, OnClock_INDR_ED2_MW },
         { 5, OnClock_PCd },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -11991,6 +24151,10 @@ InstructionInfo instructionInfoOUT_n__A_2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -12006,6 +24170,10 @@ InstructionInfo instructionInfoOUT_C__A_ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 7 },
+        { VariableType::None },
     }
 };
 
@@ -12021,6 +24189,10 @@ InstructionInfo instructionInfoOUT_C__B_ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 0 },
+        { VariableType::None },
     }
 };
 
@@ -12036,6 +24208,10 @@ InstructionInfo instructionInfoOUT_C__C_ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 1 },
+        { VariableType::None },
     }
 };
 
@@ -12051,6 +24227,10 @@ InstructionInfo instructionInfoOUT_C__D_ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 2 },
+        { VariableType::None },
     }
 };
 
@@ -12066,6 +24246,10 @@ InstructionInfo instructionInfoOUT_C__E_ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 3 },
+        { VariableType::None },
     }
 };
 
@@ -12081,6 +24265,10 @@ InstructionInfo instructionInfoOUT_C__H_ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 4 },
+        { VariableType::None },
     }
 };
 
@@ -12096,6 +24284,10 @@ InstructionInfo instructionInfoOUT_C__L_ED2 =
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::Registers8, 5 },
+        { VariableType::None },
     }
 };
 
@@ -12111,6 +24303,10 @@ InstructionInfo instructionInfoOUTI_ED2 =
         { 4, OnClock_PW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -12126,6 +24322,10 @@ InstructionInfo instructionInfoOTIR_ED2 =
         { 4, OnClock_PW },
         { 5, OnClock_PCd },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -12141,6 +24341,10 @@ InstructionInfo instructionInfoOUTD_ED2 =
         { 4, OnClock_PW },
         { 0, nullptr },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };
 
@@ -12156,5 +24360,9 @@ InstructionInfo instructionInfoOTDR_ED2 =
         { 4, OnClock_PW },
         { 5, OnClock_PCd },
         { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
     }
 };

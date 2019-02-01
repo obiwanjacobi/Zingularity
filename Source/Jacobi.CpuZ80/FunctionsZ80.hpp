@@ -1097,6 +1097,48 @@ extern void OnClock_ADDA_r_1_OF();
 // ADD A, L   -  ADDA_L_1  -  85
 extern void OnClock_ADDA_r_1_OF();
 
+// ADD A, A   -  ADDA_A_DD2  -  DD, 87
+extern void OnClock_ADDA_t_DD2_OF();
+
+// ADD A, B   -  ADDA_B_DD2  -  DD, 80
+extern void OnClock_ADDA_t_DD2_OF();
+
+// ADD A, C   -  ADDA_C_DD2  -  DD, 81
+extern void OnClock_ADDA_t_DD2_OF();
+
+// ADD A, D   -  ADDA_D_DD2  -  DD, 82
+extern void OnClock_ADDA_t_DD2_OF();
+
+// ADD A, E   -  ADDA_E_DD2  -  DD, 83
+extern void OnClock_ADDA_t_DD2_OF();
+
+// ADD A, IXh   -  ADDA_IXh_DD2  -  DD, 84
+extern void OnClock_ADDA_t_DD2_OF();
+
+// ADD A, IXl   -  ADDA_IXl_DD2  -  DD, 85
+extern void OnClock_ADDA_t_DD2_OF();
+
+// ADD A, A   -  ADDA_A_FD2  -  FD, 87
+extern void OnClock_ADDA_v_FD2_OF();
+
+// ADD A, B   -  ADDA_B_FD2  -  FD, 80
+extern void OnClock_ADDA_v_FD2_OF();
+
+// ADD A, C   -  ADDA_C_FD2  -  FD, 81
+extern void OnClock_ADDA_v_FD2_OF();
+
+// ADD A, D   -  ADDA_D_FD2  -  FD, 82
+extern void OnClock_ADDA_v_FD2_OF();
+
+// ADD A, E   -  ADDA_E_FD2  -  FD, 83
+extern void OnClock_ADDA_v_FD2_OF();
+
+// ADD A, IYh   -  ADDA_IYh_FD2  -  FD, 84
+extern void OnClock_ADDA_v_FD2_OF();
+
+// ADD A, IYl   -  ADDA_IYl_FD2  -  FD, 85
+extern void OnClock_ADDA_v_FD2_OF();
+
 // ADD A, n   -  ADDA_n_2  -  C6, n
 extern void OnClock_ADDA_n_2_OF();
 extern void OnClock_ADDA_n_2_OD();
@@ -1136,6 +1178,48 @@ extern void OnClock_ADCA_r_1_OF();
 
 // ADC A, L   -  ADCA_L_1  -  8D
 extern void OnClock_ADCA_r_1_OF();
+
+// ADC A, A   -  ADCA_A_DD2  -  DD, 8F
+extern void OnClock_ADCA_t_DD2_OF();
+
+// ADC A, B   -  ADCA_B_DD2  -  DD, 88
+extern void OnClock_ADCA_t_DD2_OF();
+
+// ADC A, C   -  ADCA_C_DD2  -  DD, 89
+extern void OnClock_ADCA_t_DD2_OF();
+
+// ADC A, D   -  ADCA_D_DD2  -  DD, 8A
+extern void OnClock_ADCA_t_DD2_OF();
+
+// ADC A, E   -  ADCA_E_DD2  -  DD, 8B
+extern void OnClock_ADCA_t_DD2_OF();
+
+// ADC A, IXh   -  ADCA_IXh_DD2  -  DD, 8C
+extern void OnClock_ADCA_t_DD2_OF();
+
+// ADC A, IXl   -  ADCA_IXl_DD2  -  DD, 8D
+extern void OnClock_ADCA_t_DD2_OF();
+
+// ADC A, A   -  ADCA_A_FD2  -  FD, 8F
+extern void OnClock_ADCA_v_FD2_OF();
+
+// ADC A, B   -  ADCA_B_FD2  -  FD, 88
+extern void OnClock_ADCA_v_FD2_OF();
+
+// ADC A, C   -  ADCA_C_FD2  -  FD, 89
+extern void OnClock_ADCA_v_FD2_OF();
+
+// ADC A, D   -  ADCA_D_FD2  -  FD, 8A
+extern void OnClock_ADCA_v_FD2_OF();
+
+// ADC A, E   -  ADCA_E_FD2  -  FD, 8B
+extern void OnClock_ADCA_v_FD2_OF();
+
+// ADC A, IYh   -  ADCA_IYh_FD2  -  FD, 8C
+extern void OnClock_ADCA_v_FD2_OF();
+
+// ADC A, IYl   -  ADCA_IYl_FD2  -  FD, 8D
+extern void OnClock_ADCA_v_FD2_OF();
 
 // ADC A, n   -  ADCA_n_2  -  CE, n
 extern void OnClock_ADCA_n_2_OF();
@@ -1177,6 +1261,48 @@ extern void OnClock_SUBA_r_1_OF();
 // SUB A, L   -  SUBA_L_1  -  95
 extern void OnClock_SUBA_r_1_OF();
 
+// SUB A, A   -  SUBA_A_DD2  -  DD, 97
+extern void OnClock_SUBA_t_DD2_OF();
+
+// SUB A, B   -  SUBA_B_DD2  -  DD, 90
+extern void OnClock_SUBA_t_DD2_OF();
+
+// SUB A, C   -  SUBA_C_DD2  -  DD, 91
+extern void OnClock_SUBA_t_DD2_OF();
+
+// SUB A, D   -  SUBA_D_DD2  -  DD, 92
+extern void OnClock_SUBA_t_DD2_OF();
+
+// SUB A, E   -  SUBA_E_DD2  -  DD, 93
+extern void OnClock_SUBA_t_DD2_OF();
+
+// SUB A, IXh   -  SUBA_IXh_DD2  -  DD, 94
+extern void OnClock_SUBA_t_DD2_OF();
+
+// SUB A, IXl   -  SUBA_IXl_DD2  -  DD, 95
+extern void OnClock_SUBA_t_DD2_OF();
+
+// SUB A, A   -  SUBA_A_FD2  -  FD, 97
+extern void OnClock_SUBA_v_FD2_OF();
+
+// SUB A, B   -  SUBA_B_FD2  -  FD, 90
+extern void OnClock_SUBA_v_FD2_OF();
+
+// SUB A, C   -  SUBA_C_FD2  -  FD, 91
+extern void OnClock_SUBA_v_FD2_OF();
+
+// SUB A, D   -  SUBA_D_FD2  -  FD, 92
+extern void OnClock_SUBA_v_FD2_OF();
+
+// SUB A, E   -  SUBA_E_FD2  -  FD, 93
+extern void OnClock_SUBA_v_FD2_OF();
+
+// SUB A, IYh   -  SUBA_IYh_FD2  -  FD, 94
+extern void OnClock_SUBA_v_FD2_OF();
+
+// SUB A, IYl   -  SUBA_IYl_FD2  -  FD, 95
+extern void OnClock_SUBA_v_FD2_OF();
+
 // SUB A, n   -  SUBA_n_2  -  8E, n
 extern void OnClock_SUBA_n_2_OF();
 extern void OnClock_SUBA_n_2_OD();
@@ -1216,6 +1342,48 @@ extern void OnClock_SBCA_r_1_OF();
 
 // SBC A, L   -  SBCA_L_1  -  9D
 extern void OnClock_SBCA_r_1_OF();
+
+// SBC A, A   -  SBCA_A_DD2  -  DD, 9F
+extern void OnClock_SBCA_t_DD2_OF();
+
+// SBC A, B   -  SBCA_B_DD2  -  DD, 98
+extern void OnClock_SBCA_t_DD2_OF();
+
+// SBC A, C   -  SBCA_C_DD2  -  DD, 99
+extern void OnClock_SBCA_t_DD2_OF();
+
+// SBC A, D   -  SBCA_D_DD2  -  DD, 9A
+extern void OnClock_SBCA_t_DD2_OF();
+
+// SBC A, E   -  SBCA_E_DD2  -  DD, 9B
+extern void OnClock_SBCA_t_DD2_OF();
+
+// SBC A, IXh   -  SBCA_IXh_DD2  -  DD, 9C
+extern void OnClock_SBCA_t_DD2_OF();
+
+// SBC A, IXl   -  SBCA_IXl_DD2  -  DD, 9D
+extern void OnClock_SBCA_t_DD2_OF();
+
+// SBC A, A   -  SBCA_A_FD2  -  FD, 9F
+extern void OnClock_SBCA_v_FD2_OF();
+
+// SBC A, B   -  SBCA_B_FD2  -  FD, 98
+extern void OnClock_SBCA_v_FD2_OF();
+
+// SBC A, C   -  SBCA_C_FD2  -  FD, 99
+extern void OnClock_SBCA_v_FD2_OF();
+
+// SBC A, D   -  SBCA_D_FD2  -  FD, 9A
+extern void OnClock_SBCA_v_FD2_OF();
+
+// SBC A, E   -  SBCA_E_FD2  -  FD, 9B
+extern void OnClock_SBCA_v_FD2_OF();
+
+// SBC A, IYh   -  SBCA_IYh_FD2  -  FD, 9C
+extern void OnClock_SBCA_v_FD2_OF();
+
+// SBC A, IYl   -  SBCA_IYl_FD2  -  FD, 9D
+extern void OnClock_SBCA_v_FD2_OF();
 
 // SBC A, n   -  SBCA_n_2  -  DE, n
 extern void OnClock_SBCA_n_2_OF();
@@ -1257,6 +1425,48 @@ extern void OnClock_ANDA_r_1_OF();
 // AND A, L   -  ANDA_L_1  -  A5
 extern void OnClock_ANDA_r_1_OF();
 
+// AND A, A   -  ANDA_A_DD2  -  DD, A7
+extern void OnClock_ANDA_t_DD2_OF();
+
+// AND A, B   -  ANDA_B_DD2  -  DD, A0
+extern void OnClock_ANDA_t_DD2_OF();
+
+// AND A, C   -  ANDA_C_DD2  -  DD, A1
+extern void OnClock_ANDA_t_DD2_OF();
+
+// AND A, D   -  ANDA_D_DD2  -  DD, A2
+extern void OnClock_ANDA_t_DD2_OF();
+
+// AND A, E   -  ANDA_E_DD2  -  DD, A3
+extern void OnClock_ANDA_t_DD2_OF();
+
+// AND A, IXh   -  ANDA_IXh_DD2  -  DD, A4
+extern void OnClock_ANDA_t_DD2_OF();
+
+// AND A, IXl   -  ANDA_IXl_DD2  -  DD, A5
+extern void OnClock_ANDA_t_DD2_OF();
+
+// AND A, A   -  ANDA_A_FD2  -  FD, A7
+extern void OnClock_ANDA_v_FD2_OF();
+
+// AND A, B   -  ANDA_B_FD2  -  FD, A0
+extern void OnClock_ANDA_v_FD2_OF();
+
+// AND A, C   -  ANDA_C_FD2  -  FD, A1
+extern void OnClock_ANDA_v_FD2_OF();
+
+// AND A, D   -  ANDA_D_FD2  -  FD, A2
+extern void OnClock_ANDA_v_FD2_OF();
+
+// AND A, E   -  ANDA_E_FD2  -  FD, A3
+extern void OnClock_ANDA_v_FD2_OF();
+
+// AND A, IYh   -  ANDA_IYh_FD2  -  FD, A4
+extern void OnClock_ANDA_v_FD2_OF();
+
+// AND A, IYl   -  ANDA_IYl_FD2  -  FD, A5
+extern void OnClock_ANDA_v_FD2_OF();
+
 // AND A, n   -  ANDA_n_2  -  E6, n
 extern void OnClock_ANDA_n_2_OF();
 extern void OnClock_ANDA_n_2_OD();
@@ -1296,6 +1506,48 @@ extern void OnClock_ORA_r_1_OF();
 
 // OR A, L   -  ORA_L_1  -  B5
 extern void OnClock_ORA_r_1_OF();
+
+// OR A, A   -  ORA_A_DD2  -  DD, B7
+extern void OnClock_ORA_t_DD2_OF();
+
+// OR A, B   -  ORA_B_DD2  -  DD, B0
+extern void OnClock_ORA_t_DD2_OF();
+
+// OR A, C   -  ORA_C_DD2  -  DD, B1
+extern void OnClock_ORA_t_DD2_OF();
+
+// OR A, D   -  ORA_D_DD2  -  DD, B2
+extern void OnClock_ORA_t_DD2_OF();
+
+// OR A, E   -  ORA_E_DD2  -  DD, B3
+extern void OnClock_ORA_t_DD2_OF();
+
+// OR A, IXh   -  ORA_IXh_DD2  -  DD, B4
+extern void OnClock_ORA_t_DD2_OF();
+
+// OR A, IXl   -  ORA_IXl_DD2  -  DD, B5
+extern void OnClock_ORA_t_DD2_OF();
+
+// OR A, A   -  ORA_A_FD2  -  FD, B7
+extern void OnClock_ORA_v_FD2_OF();
+
+// OR A, B   -  ORA_B_FD2  -  FD, B0
+extern void OnClock_ORA_v_FD2_OF();
+
+// OR A, C   -  ORA_C_FD2  -  FD, B1
+extern void OnClock_ORA_v_FD2_OF();
+
+// OR A, D   -  ORA_D_FD2  -  FD, B2
+extern void OnClock_ORA_v_FD2_OF();
+
+// OR A, E   -  ORA_E_FD2  -  FD, B3
+extern void OnClock_ORA_v_FD2_OF();
+
+// OR A, IYh   -  ORA_IYh_FD2  -  FD, B4
+extern void OnClock_ORA_v_FD2_OF();
+
+// OR A, IYl   -  ORA_IYl_FD2  -  FD, B5
+extern void OnClock_ORA_v_FD2_OF();
 
 // OR A, n   -  ORA_n_2  -  F6, n
 extern void OnClock_ORA_n_2_OF();
@@ -1337,6 +1589,48 @@ extern void OnClock_XORA_r_1_OF();
 // XOR A, L   -  XORA_L_1  -  AD
 extern void OnClock_XORA_r_1_OF();
 
+// XOR A, A   -  XORA_A_DD2  -  DD, AF
+extern void OnClock_XORA_t_DD2_OF();
+
+// XOR A, B   -  XORA_B_DD2  -  DD, A8
+extern void OnClock_XORA_t_DD2_OF();
+
+// XOR A, C   -  XORA_C_DD2  -  DD, A9
+extern void OnClock_XORA_t_DD2_OF();
+
+// XOR A, D   -  XORA_D_DD2  -  DD, AA
+extern void OnClock_XORA_t_DD2_OF();
+
+// XOR A, E   -  XORA_E_DD2  -  DD, AB
+extern void OnClock_XORA_t_DD2_OF();
+
+// XOR A, IXh   -  XORA_IXh_DD2  -  DD, AC
+extern void OnClock_XORA_t_DD2_OF();
+
+// XOR A, IXl   -  XORA_IXl_DD2  -  DD, AD
+extern void OnClock_XORA_t_DD2_OF();
+
+// XOR A, A   -  XORA_A_FD2  -  FD, AF
+extern void OnClock_XORA_v_FD2_OF();
+
+// XOR A, B   -  XORA_B_FD2  -  FD, A8
+extern void OnClock_XORA_v_FD2_OF();
+
+// XOR A, C   -  XORA_C_FD2  -  FD, A9
+extern void OnClock_XORA_v_FD2_OF();
+
+// XOR A, D   -  XORA_D_FD2  -  FD, AA
+extern void OnClock_XORA_v_FD2_OF();
+
+// XOR A, E   -  XORA_E_FD2  -  FD, AB
+extern void OnClock_XORA_v_FD2_OF();
+
+// XOR A, IYh   -  XORA_IYh_FD2  -  FD, AC
+extern void OnClock_XORA_v_FD2_OF();
+
+// XOR A, IYl   -  XORA_IYl_FD2  -  FD, AD
+extern void OnClock_XORA_v_FD2_OF();
+
 // XOR A, n   -  XORA_n_2  -  EE, n
 extern void OnClock_XORA_n_2_OF();
 extern void OnClock_XORA_n_2_OD();
@@ -1376,6 +1670,48 @@ extern void OnClock_CPA_r_1_OF();
 
 // CP A, L   -  CPA_L_1  -  BD
 extern void OnClock_CPA_r_1_OF();
+
+// CP A, A   -  CPA_A_DD2  -  DD, BF
+extern void OnClock_CPA_t_DD2_OF();
+
+// CP A, B   -  CPA_B_DD2  -  DD, B8
+extern void OnClock_CPA_t_DD2_OF();
+
+// CP A, C   -  CPA_C_DD2  -  DD, B9
+extern void OnClock_CPA_t_DD2_OF();
+
+// CP A, D   -  CPA_D_DD2  -  DD, BA
+extern void OnClock_CPA_t_DD2_OF();
+
+// CP A, E   -  CPA_E_DD2  -  DD, BB
+extern void OnClock_CPA_t_DD2_OF();
+
+// CP A, IXh   -  CPA_IXh_DD2  -  DD, BC
+extern void OnClock_CPA_t_DD2_OF();
+
+// CP A, IXl   -  CPA_IXl_DD2  -  DD, BD
+extern void OnClock_CPA_t_DD2_OF();
+
+// CP A, A   -  CPA_A_FD2  -  FD, BF
+extern void OnClock_CPA_v_FD2_OF();
+
+// CP A, B   -  CPA_B_FD2  -  FD, B8
+extern void OnClock_CPA_v_FD2_OF();
+
+// CP A, C   -  CPA_C_FD2  -  FD, B9
+extern void OnClock_CPA_v_FD2_OF();
+
+// CP A, D   -  CPA_D_FD2  -  FD, BA
+extern void OnClock_CPA_v_FD2_OF();
+
+// CP A, E   -  CPA_E_FD2  -  FD, BB
+extern void OnClock_CPA_v_FD2_OF();
+
+// CP A, IYh   -  CPA_IYh_FD2  -  FD, BC
+extern void OnClock_CPA_v_FD2_OF();
+
+// CP A, IYl   -  CPA_IYl_FD2  -  FD, BD
+extern void OnClock_CPA_v_FD2_OF();
 
 // CP A, n   -  CPA_n_2  -  FE, n
 extern void OnClock_CPA_n_2_OF();
@@ -1417,6 +1753,48 @@ extern void OnClock_INCr_1_OF();
 // INC L   -  INCL_1  -  2C
 extern void OnClock_INCr_1_OF();
 
+// INC A   -  INCA_DD2  -  DD, 3C
+extern void OnClock_INCt_DD2_OF();
+
+// INC B   -  INCB_DD2  -  DD, 04
+extern void OnClock_INCt_DD2_OF();
+
+// INC C   -  INCC_DD2  -  DD, 0C
+extern void OnClock_INCt_DD2_OF();
+
+// INC D   -  INCD_DD2  -  DD, 14
+extern void OnClock_INCt_DD2_OF();
+
+// INC E   -  INCE_DD2  -  DD, 1C
+extern void OnClock_INCt_DD2_OF();
+
+// INC IXh   -  INCIXh_DD2  -  DD, 24
+extern void OnClock_INCt_DD2_OF();
+
+// INC IXl   -  INCIXl_DD2  -  DD, 2C
+extern void OnClock_INCt_DD2_OF();
+
+// INC A   -  INCA_FD2  -  FD, 3C
+extern void OnClock_INCv_FD2_OF();
+
+// INC B   -  INCB_FD2  -  FD, 04
+extern void OnClock_INCv_FD2_OF();
+
+// INC C   -  INCC_FD2  -  FD, 0C
+extern void OnClock_INCv_FD2_OF();
+
+// INC D   -  INCD_FD2  -  FD, 14
+extern void OnClock_INCv_FD2_OF();
+
+// INC E   -  INCE_FD2  -  FD, 1C
+extern void OnClock_INCv_FD2_OF();
+
+// INC IYh   -  INCIYh_FD2  -  FD, 24
+extern void OnClock_INCv_FD2_OF();
+
+// INC IYl   -  INCIYl_FD2  -  FD, 2C
+extern void OnClock_INCv_FD2_OF();
+
 // INC (HL)   -  INC_HL__1  -  34
 extern void OnClock_INC_HL__1_OF();
 extern void OnClock_INC_HL__1_MR();
@@ -1455,6 +1833,48 @@ extern void OnClock_DECr_1_OF();
 
 // DEC L   -  DECL_1  -  2D
 extern void OnClock_DECr_1_OF();
+
+// DEC A   -  DECA_DD2  -  DD, 3D
+extern void OnClock_DECt_DD2_OF();
+
+// DEC B   -  DECB_DD2  -  DD, 05
+extern void OnClock_DECt_DD2_OF();
+
+// DEC C   -  DECC_DD2  -  DD, 0D
+extern void OnClock_DECt_DD2_OF();
+
+// DEC D   -  DECD_DD2  -  DD, 15
+extern void OnClock_DECt_DD2_OF();
+
+// DEC E   -  DECE_DD2  -  DD, 1D
+extern void OnClock_DECt_DD2_OF();
+
+// DEC IXh   -  DECIXh_DD2  -  DD, 25
+extern void OnClock_DECt_DD2_OF();
+
+// DEC IXl   -  DECIXl_DD2  -  DD, 2D
+extern void OnClock_DECt_DD2_OF();
+
+// DEC A   -  DECA_FD2  -  FD, 3D
+extern void OnClock_DECv_FD2_OF();
+
+// DEC B   -  DECB_FD2  -  FD, 05
+extern void OnClock_DECv_FD2_OF();
+
+// DEC C   -  DECC_FD2  -  FD, 0D
+extern void OnClock_DECv_FD2_OF();
+
+// DEC D   -  DECD_FD2  -  FD, 15
+extern void OnClock_DECv_FD2_OF();
+
+// DEC E   -  DECE_FD2  -  FD, 1D
+extern void OnClock_DECv_FD2_OF();
+
+// DEC IYh   -  DECIYh_FD2  -  FD, 25
+extern void OnClock_DECv_FD2_OF();
+
+// DEC IYl   -  DECIYl_FD2  -  FD, 2D
+extern void OnClock_DECv_FD2_OF();
 
 // DEC (HL)   -  DEC_HL__1  -  35
 extern void OnClock_DEC_HL__1_OF();
@@ -1695,6 +2115,90 @@ extern void OnClock_RLC_ex_d__ex4_FD();
 extern void OnClock_RLC_ex_d__ex4_MR();
 extern void OnClock_RLC_ex_d__ex4_MW();
 
+// RLC (IX+d), A   -  RLC_IX_d__A_DD4  -  DD, CB, d, 07
+extern void OnClock_RLC_ex_d__r_ex4_OD();
+extern void OnClock_RLC_ex_d__r_ex4_FD();
+extern void OnClock_RLC_ex_d__r_ex4_MR();
+extern void OnClock_RLC_ex_d__r_ex4_MW();
+
+// RLC (IY+d), A   -  RLC_IY_d__A_FD4  -  FD, CB, d, 07
+extern void OnClock_RLC_ex_d__r_ex4_OD();
+extern void OnClock_RLC_ex_d__r_ex4_FD();
+extern void OnClock_RLC_ex_d__r_ex4_MR();
+extern void OnClock_RLC_ex_d__r_ex4_MW();
+
+// RLC (IX+d), B   -  RLC_IX_d__B_DD4  -  DD, CB, d, 00
+extern void OnClock_RLC_ex_d__r_ex4_OD();
+extern void OnClock_RLC_ex_d__r_ex4_FD();
+extern void OnClock_RLC_ex_d__r_ex4_MR();
+extern void OnClock_RLC_ex_d__r_ex4_MW();
+
+// RLC (IY+d), B   -  RLC_IY_d__B_FD4  -  FD, CB, d, 00
+extern void OnClock_RLC_ex_d__r_ex4_OD();
+extern void OnClock_RLC_ex_d__r_ex4_FD();
+extern void OnClock_RLC_ex_d__r_ex4_MR();
+extern void OnClock_RLC_ex_d__r_ex4_MW();
+
+// RLC (IX+d), C   -  RLC_IX_d__C_DD4  -  DD, CB, d, 01
+extern void OnClock_RLC_ex_d__r_ex4_OD();
+extern void OnClock_RLC_ex_d__r_ex4_FD();
+extern void OnClock_RLC_ex_d__r_ex4_MR();
+extern void OnClock_RLC_ex_d__r_ex4_MW();
+
+// RLC (IY+d), C   -  RLC_IY_d__C_FD4  -  FD, CB, d, 01
+extern void OnClock_RLC_ex_d__r_ex4_OD();
+extern void OnClock_RLC_ex_d__r_ex4_FD();
+extern void OnClock_RLC_ex_d__r_ex4_MR();
+extern void OnClock_RLC_ex_d__r_ex4_MW();
+
+// RLC (IX+d), D   -  RLC_IX_d__D_DD4  -  DD, CB, d, 02
+extern void OnClock_RLC_ex_d__r_ex4_OD();
+extern void OnClock_RLC_ex_d__r_ex4_FD();
+extern void OnClock_RLC_ex_d__r_ex4_MR();
+extern void OnClock_RLC_ex_d__r_ex4_MW();
+
+// RLC (IY+d), D   -  RLC_IY_d__D_FD4  -  FD, CB, d, 02
+extern void OnClock_RLC_ex_d__r_ex4_OD();
+extern void OnClock_RLC_ex_d__r_ex4_FD();
+extern void OnClock_RLC_ex_d__r_ex4_MR();
+extern void OnClock_RLC_ex_d__r_ex4_MW();
+
+// RLC (IX+d), E   -  RLC_IX_d__E_DD4  -  DD, CB, d, 03
+extern void OnClock_RLC_ex_d__r_ex4_OD();
+extern void OnClock_RLC_ex_d__r_ex4_FD();
+extern void OnClock_RLC_ex_d__r_ex4_MR();
+extern void OnClock_RLC_ex_d__r_ex4_MW();
+
+// RLC (IY+d), E   -  RLC_IY_d__E_FD4  -  FD, CB, d, 03
+extern void OnClock_RLC_ex_d__r_ex4_OD();
+extern void OnClock_RLC_ex_d__r_ex4_FD();
+extern void OnClock_RLC_ex_d__r_ex4_MR();
+extern void OnClock_RLC_ex_d__r_ex4_MW();
+
+// RLC (IX+d), H   -  RLC_IX_d__H_DD4  -  DD, CB, d, 04
+extern void OnClock_RLC_ex_d__r_ex4_OD();
+extern void OnClock_RLC_ex_d__r_ex4_FD();
+extern void OnClock_RLC_ex_d__r_ex4_MR();
+extern void OnClock_RLC_ex_d__r_ex4_MW();
+
+// RLC (IY+d), H   -  RLC_IY_d__H_FD4  -  FD, CB, d, 04
+extern void OnClock_RLC_ex_d__r_ex4_OD();
+extern void OnClock_RLC_ex_d__r_ex4_FD();
+extern void OnClock_RLC_ex_d__r_ex4_MR();
+extern void OnClock_RLC_ex_d__r_ex4_MW();
+
+// RLC (IX+d), L   -  RLC_IX_d__L_DD4  -  DD, CB, d, 05
+extern void OnClock_RLC_ex_d__r_ex4_OD();
+extern void OnClock_RLC_ex_d__r_ex4_FD();
+extern void OnClock_RLC_ex_d__r_ex4_MR();
+extern void OnClock_RLC_ex_d__r_ex4_MW();
+
+// RLC (IY+d), L   -  RLC_IY_d__L_FD4  -  FD, CB, d, 05
+extern void OnClock_RLC_ex_d__r_ex4_OD();
+extern void OnClock_RLC_ex_d__r_ex4_FD();
+extern void OnClock_RLC_ex_d__r_ex4_MR();
+extern void OnClock_RLC_ex_d__r_ex4_MW();
+
 // RL A   -  RLA_CB2  -  CB, 17
 extern void OnClock_RLr_CB2_OF();
 
@@ -1732,6 +2236,90 @@ extern void OnClock_RL_ex_d__ex4_FD();
 extern void OnClock_RL_ex_d__ex4_MR();
 extern void OnClock_RL_ex_d__ex4_MW();
 
+// RL (IX+d), A   -  RL_IX_d__A_DD4  -  DD, CB, d, 17
+extern void OnClock_RL_ex_d__r_ex4_OD();
+extern void OnClock_RL_ex_d__r_ex4_FD();
+extern void OnClock_RL_ex_d__r_ex4_MR();
+extern void OnClock_RL_ex_d__r_ex4_MW();
+
+// RL (IY+d), A   -  RL_IY_d__A_FD4  -  FD, CB, d, 17
+extern void OnClock_RL_ex_d__r_ex4_OD();
+extern void OnClock_RL_ex_d__r_ex4_FD();
+extern void OnClock_RL_ex_d__r_ex4_MR();
+extern void OnClock_RL_ex_d__r_ex4_MW();
+
+// RL (IX+d), B   -  RL_IX_d__B_DD4  -  DD, CB, d, 10
+extern void OnClock_RL_ex_d__r_ex4_OD();
+extern void OnClock_RL_ex_d__r_ex4_FD();
+extern void OnClock_RL_ex_d__r_ex4_MR();
+extern void OnClock_RL_ex_d__r_ex4_MW();
+
+// RL (IY+d), B   -  RL_IY_d__B_FD4  -  FD, CB, d, 10
+extern void OnClock_RL_ex_d__r_ex4_OD();
+extern void OnClock_RL_ex_d__r_ex4_FD();
+extern void OnClock_RL_ex_d__r_ex4_MR();
+extern void OnClock_RL_ex_d__r_ex4_MW();
+
+// RL (IX+d), C   -  RL_IX_d__C_DD4  -  DD, CB, d, 11
+extern void OnClock_RL_ex_d__r_ex4_OD();
+extern void OnClock_RL_ex_d__r_ex4_FD();
+extern void OnClock_RL_ex_d__r_ex4_MR();
+extern void OnClock_RL_ex_d__r_ex4_MW();
+
+// RL (IY+d), C   -  RL_IY_d__C_FD4  -  FD, CB, d, 11
+extern void OnClock_RL_ex_d__r_ex4_OD();
+extern void OnClock_RL_ex_d__r_ex4_FD();
+extern void OnClock_RL_ex_d__r_ex4_MR();
+extern void OnClock_RL_ex_d__r_ex4_MW();
+
+// RL (IX+d), D   -  RL_IX_d__D_DD4  -  DD, CB, d, 12
+extern void OnClock_RL_ex_d__r_ex4_OD();
+extern void OnClock_RL_ex_d__r_ex4_FD();
+extern void OnClock_RL_ex_d__r_ex4_MR();
+extern void OnClock_RL_ex_d__r_ex4_MW();
+
+// RL (IY+d), D   -  RL_IY_d__D_FD4  -  FD, CB, d, 12
+extern void OnClock_RL_ex_d__r_ex4_OD();
+extern void OnClock_RL_ex_d__r_ex4_FD();
+extern void OnClock_RL_ex_d__r_ex4_MR();
+extern void OnClock_RL_ex_d__r_ex4_MW();
+
+// RL (IX+d), E   -  RL_IX_d__E_DD4  -  DD, CB, d, 13
+extern void OnClock_RL_ex_d__r_ex4_OD();
+extern void OnClock_RL_ex_d__r_ex4_FD();
+extern void OnClock_RL_ex_d__r_ex4_MR();
+extern void OnClock_RL_ex_d__r_ex4_MW();
+
+// RL (IY+d), E   -  RL_IY_d__E_FD4  -  FD, CB, d, 13
+extern void OnClock_RL_ex_d__r_ex4_OD();
+extern void OnClock_RL_ex_d__r_ex4_FD();
+extern void OnClock_RL_ex_d__r_ex4_MR();
+extern void OnClock_RL_ex_d__r_ex4_MW();
+
+// RL (IX+d), H   -  RL_IX_d__H_DD4  -  DD, CB, d, 14
+extern void OnClock_RL_ex_d__r_ex4_OD();
+extern void OnClock_RL_ex_d__r_ex4_FD();
+extern void OnClock_RL_ex_d__r_ex4_MR();
+extern void OnClock_RL_ex_d__r_ex4_MW();
+
+// RL (IY+d), H   -  RL_IY_d__H_FD4  -  FD, CB, d, 14
+extern void OnClock_RL_ex_d__r_ex4_OD();
+extern void OnClock_RL_ex_d__r_ex4_FD();
+extern void OnClock_RL_ex_d__r_ex4_MR();
+extern void OnClock_RL_ex_d__r_ex4_MW();
+
+// RL (IX+d), L   -  RL_IX_d__L_DD4  -  DD, CB, d, 15
+extern void OnClock_RL_ex_d__r_ex4_OD();
+extern void OnClock_RL_ex_d__r_ex4_FD();
+extern void OnClock_RL_ex_d__r_ex4_MR();
+extern void OnClock_RL_ex_d__r_ex4_MW();
+
+// RL (IY+d), L   -  RL_IY_d__L_FD4  -  FD, CB, d, 15
+extern void OnClock_RL_ex_d__r_ex4_OD();
+extern void OnClock_RL_ex_d__r_ex4_FD();
+extern void OnClock_RL_ex_d__r_ex4_MR();
+extern void OnClock_RL_ex_d__r_ex4_MW();
+
 // RRC A   -  RRCA_CB2  -  CB, 0F
 
 // RRC B   -  RRCB_CB2  -  CB, 08
@@ -1761,6 +2349,90 @@ extern void OnClock_RRC_ex_d__ex4_OD();
 extern void OnClock_RRC_ex_d__ex4_FD();
 extern void OnClock_RRC_ex_d__ex4_MR();
 extern void OnClock_RRC_ex_d__ex4_MW();
+
+// RRC (IX+d), A   -  RRC_IX_d__A_DD4  -  DD, CB, d, 0F
+extern void OnClock_RRC_ex_d__r_ex4_OD();
+extern void OnClock_RRC_ex_d__r_ex4_FD();
+extern void OnClock_RRC_ex_d__r_ex4_MR();
+extern void OnClock_RRC_ex_d__r_ex4_MW();
+
+// RRC (IY+d), A   -  RRC_IY_d__A_FD4  -  FD, CB, d, 0F
+extern void OnClock_RRC_ex_d__r_ex4_OD();
+extern void OnClock_RRC_ex_d__r_ex4_FD();
+extern void OnClock_RRC_ex_d__r_ex4_MR();
+extern void OnClock_RRC_ex_d__r_ex4_MW();
+
+// RRC (IX+d), B   -  RRC_IX_d__B_DD4  -  DD, CB, d, 08
+extern void OnClock_RRC_ex_d__r_ex4_OD();
+extern void OnClock_RRC_ex_d__r_ex4_FD();
+extern void OnClock_RRC_ex_d__r_ex4_MR();
+extern void OnClock_RRC_ex_d__r_ex4_MW();
+
+// RRC (IY+d), B   -  RRC_IY_d__B_FD4  -  FD, CB, d, 08
+extern void OnClock_RRC_ex_d__r_ex4_OD();
+extern void OnClock_RRC_ex_d__r_ex4_FD();
+extern void OnClock_RRC_ex_d__r_ex4_MR();
+extern void OnClock_RRC_ex_d__r_ex4_MW();
+
+// RRC (IX+d), C   -  RRC_IX_d__C_DD4  -  DD, CB, d, 09
+extern void OnClock_RRC_ex_d__r_ex4_OD();
+extern void OnClock_RRC_ex_d__r_ex4_FD();
+extern void OnClock_RRC_ex_d__r_ex4_MR();
+extern void OnClock_RRC_ex_d__r_ex4_MW();
+
+// RRC (IY+d), C   -  RRC_IY_d__C_FD4  -  FD, CB, d, 09
+extern void OnClock_RRC_ex_d__r_ex4_OD();
+extern void OnClock_RRC_ex_d__r_ex4_FD();
+extern void OnClock_RRC_ex_d__r_ex4_MR();
+extern void OnClock_RRC_ex_d__r_ex4_MW();
+
+// RRC (IX+d), D   -  RRC_IX_d__D_DD4  -  DD, CB, d, 0A
+extern void OnClock_RRC_ex_d__r_ex4_OD();
+extern void OnClock_RRC_ex_d__r_ex4_FD();
+extern void OnClock_RRC_ex_d__r_ex4_MR();
+extern void OnClock_RRC_ex_d__r_ex4_MW();
+
+// RRC (IY+d), D   -  RRC_IY_d__D_FD4  -  FD, CB, d, 0A
+extern void OnClock_RRC_ex_d__r_ex4_OD();
+extern void OnClock_RRC_ex_d__r_ex4_FD();
+extern void OnClock_RRC_ex_d__r_ex4_MR();
+extern void OnClock_RRC_ex_d__r_ex4_MW();
+
+// RRC (IX+d), E   -  RRC_IX_d__E_DD4  -  DD, CB, d, 0B
+extern void OnClock_RRC_ex_d__r_ex4_OD();
+extern void OnClock_RRC_ex_d__r_ex4_FD();
+extern void OnClock_RRC_ex_d__r_ex4_MR();
+extern void OnClock_RRC_ex_d__r_ex4_MW();
+
+// RRC (IY+d), E   -  RRC_IY_d__E_FD4  -  FD, CB, d, 0B
+extern void OnClock_RRC_ex_d__r_ex4_OD();
+extern void OnClock_RRC_ex_d__r_ex4_FD();
+extern void OnClock_RRC_ex_d__r_ex4_MR();
+extern void OnClock_RRC_ex_d__r_ex4_MW();
+
+// RRC (IX+d), H   -  RRC_IX_d__H_DD4  -  DD, CB, d, 0C
+extern void OnClock_RRC_ex_d__r_ex4_OD();
+extern void OnClock_RRC_ex_d__r_ex4_FD();
+extern void OnClock_RRC_ex_d__r_ex4_MR();
+extern void OnClock_RRC_ex_d__r_ex4_MW();
+
+// RRC (IY+d), H   -  RRC_IY_d__H_FD4  -  FD, CB, d, 0C
+extern void OnClock_RRC_ex_d__r_ex4_OD();
+extern void OnClock_RRC_ex_d__r_ex4_FD();
+extern void OnClock_RRC_ex_d__r_ex4_MR();
+extern void OnClock_RRC_ex_d__r_ex4_MW();
+
+// RRC (IX+d), L   -  RRC_IX_d__L_DD4  -  DD, CB, d, 0D
+extern void OnClock_RRC_ex_d__r_ex4_OD();
+extern void OnClock_RRC_ex_d__r_ex4_FD();
+extern void OnClock_RRC_ex_d__r_ex4_MR();
+extern void OnClock_RRC_ex_d__r_ex4_MW();
+
+// RRC (IY+d), L   -  RRC_IY_d__L_FD4  -  FD, CB, d, 0D
+extern void OnClock_RRC_ex_d__r_ex4_OD();
+extern void OnClock_RRC_ex_d__r_ex4_FD();
+extern void OnClock_RRC_ex_d__r_ex4_MR();
+extern void OnClock_RRC_ex_d__r_ex4_MW();
 
 // RR A   -  RRA_CB2  -  CB, 1F
 extern void OnClock_RRr_CB2_OF();
@@ -1799,6 +2471,90 @@ extern void OnClock_RR_ex_d__ex4_FD();
 extern void OnClock_RR_ex_d__ex4_MR();
 extern void OnClock_RR_ex_d__ex4_MW();
 
+// RR (IX+d), A   -  RR_IX_d__A_DD4  -  DD, CB, d, 1F
+extern void OnClock_RR_ex_d__r_ex4_OD();
+extern void OnClock_RR_ex_d__r_ex4_FD();
+extern void OnClock_RR_ex_d__r_ex4_MR();
+extern void OnClock_RR_ex_d__r_ex4_MW();
+
+// RR (IY+d), A   -  RR_IY_d__A_FD4  -  FD, CB, d, 1F
+extern void OnClock_RR_ex_d__r_ex4_OD();
+extern void OnClock_RR_ex_d__r_ex4_FD();
+extern void OnClock_RR_ex_d__r_ex4_MR();
+extern void OnClock_RR_ex_d__r_ex4_MW();
+
+// RR (IX+d), B   -  RR_IX_d__B_DD4  -  DD, CB, d, 18
+extern void OnClock_RR_ex_d__r_ex4_OD();
+extern void OnClock_RR_ex_d__r_ex4_FD();
+extern void OnClock_RR_ex_d__r_ex4_MR();
+extern void OnClock_RR_ex_d__r_ex4_MW();
+
+// RR (IY+d), B   -  RR_IY_d__B_FD4  -  FD, CB, d, 18
+extern void OnClock_RR_ex_d__r_ex4_OD();
+extern void OnClock_RR_ex_d__r_ex4_FD();
+extern void OnClock_RR_ex_d__r_ex4_MR();
+extern void OnClock_RR_ex_d__r_ex4_MW();
+
+// RR (IX+d), C   -  RR_IX_d__C_DD4  -  DD, CB, d, 19
+extern void OnClock_RR_ex_d__r_ex4_OD();
+extern void OnClock_RR_ex_d__r_ex4_FD();
+extern void OnClock_RR_ex_d__r_ex4_MR();
+extern void OnClock_RR_ex_d__r_ex4_MW();
+
+// RR (IY+d), C   -  RR_IY_d__C_FD4  -  FD, CB, d, 19
+extern void OnClock_RR_ex_d__r_ex4_OD();
+extern void OnClock_RR_ex_d__r_ex4_FD();
+extern void OnClock_RR_ex_d__r_ex4_MR();
+extern void OnClock_RR_ex_d__r_ex4_MW();
+
+// RR (IX+d), D   -  RR_IX_d__D_DD4  -  DD, CB, d, 1A
+extern void OnClock_RR_ex_d__r_ex4_OD();
+extern void OnClock_RR_ex_d__r_ex4_FD();
+extern void OnClock_RR_ex_d__r_ex4_MR();
+extern void OnClock_RR_ex_d__r_ex4_MW();
+
+// RR (IY+d), D   -  RR_IY_d__D_FD4  -  FD, CB, d, 1A
+extern void OnClock_RR_ex_d__r_ex4_OD();
+extern void OnClock_RR_ex_d__r_ex4_FD();
+extern void OnClock_RR_ex_d__r_ex4_MR();
+extern void OnClock_RR_ex_d__r_ex4_MW();
+
+// RR (IX+d), E   -  RR_IX_d__E_DD4  -  DD, CB, d, 1B
+extern void OnClock_RR_ex_d__r_ex4_OD();
+extern void OnClock_RR_ex_d__r_ex4_FD();
+extern void OnClock_RR_ex_d__r_ex4_MR();
+extern void OnClock_RR_ex_d__r_ex4_MW();
+
+// RR (IY+d), E   -  RR_IY_d__E_FD4  -  FD, CB, d, 1B
+extern void OnClock_RR_ex_d__r_ex4_OD();
+extern void OnClock_RR_ex_d__r_ex4_FD();
+extern void OnClock_RR_ex_d__r_ex4_MR();
+extern void OnClock_RR_ex_d__r_ex4_MW();
+
+// RR (IX+d), H   -  RR_IX_d__H_DD4  -  DD, CB, d, 1C
+extern void OnClock_RR_ex_d__r_ex4_OD();
+extern void OnClock_RR_ex_d__r_ex4_FD();
+extern void OnClock_RR_ex_d__r_ex4_MR();
+extern void OnClock_RR_ex_d__r_ex4_MW();
+
+// RR (IY+d), H   -  RR_IY_d__H_FD4  -  FD, CB, d, 1C
+extern void OnClock_RR_ex_d__r_ex4_OD();
+extern void OnClock_RR_ex_d__r_ex4_FD();
+extern void OnClock_RR_ex_d__r_ex4_MR();
+extern void OnClock_RR_ex_d__r_ex4_MW();
+
+// RR (IX+d), L   -  RR_IX_d__L_DD4  -  DD, CB, d, 1D
+extern void OnClock_RR_ex_d__r_ex4_OD();
+extern void OnClock_RR_ex_d__r_ex4_FD();
+extern void OnClock_RR_ex_d__r_ex4_MR();
+extern void OnClock_RR_ex_d__r_ex4_MW();
+
+// RR (IY+d), L   -  RR_IY_d__L_FD4  -  FD, CB, d, 1D
+extern void OnClock_RR_ex_d__r_ex4_OD();
+extern void OnClock_RR_ex_d__r_ex4_FD();
+extern void OnClock_RR_ex_d__r_ex4_MR();
+extern void OnClock_RR_ex_d__r_ex4_MW();
+
 // SLA A   -  SLAA_CB2  -  CB, 27
 extern void OnClock_SLAr_CB2_OF();
 
@@ -1835,6 +2591,211 @@ extern void OnClock_SLA_ex_d__ex4_OD();
 extern void OnClock_SLA_ex_d__ex4_FD();
 extern void OnClock_SLA_ex_d__ex4_MR();
 extern void OnClock_SLA_ex_d__ex4_MW();
+
+// SLA (IX+d), A   -  SLA_IX_d__A_DD4  -  DD, CB, d, 27
+extern void OnClock_SLA_ex_d__r_ex4_OD();
+extern void OnClock_SLA_ex_d__r_ex4_FD();
+extern void OnClock_SLA_ex_d__r_ex4_MR();
+extern void OnClock_SLA_ex_d__r_ex4_MW();
+
+// SLA (IY+d), A   -  SLA_IY_d__A_FD4  -  FD, CB, d, 27
+extern void OnClock_SLA_ex_d__r_ex4_OD();
+extern void OnClock_SLA_ex_d__r_ex4_FD();
+extern void OnClock_SLA_ex_d__r_ex4_MR();
+extern void OnClock_SLA_ex_d__r_ex4_MW();
+
+// SLA (IX+d), B   -  SLA_IX_d__B_DD4  -  DD, CB, d, 20
+extern void OnClock_SLA_ex_d__r_ex4_OD();
+extern void OnClock_SLA_ex_d__r_ex4_FD();
+extern void OnClock_SLA_ex_d__r_ex4_MR();
+extern void OnClock_SLA_ex_d__r_ex4_MW();
+
+// SLA (IY+d), B   -  SLA_IY_d__B_FD4  -  FD, CB, d, 20
+extern void OnClock_SLA_ex_d__r_ex4_OD();
+extern void OnClock_SLA_ex_d__r_ex4_FD();
+extern void OnClock_SLA_ex_d__r_ex4_MR();
+extern void OnClock_SLA_ex_d__r_ex4_MW();
+
+// SLA (IX+d), C   -  SLA_IX_d__C_DD4  -  DD, CB, d, 21
+extern void OnClock_SLA_ex_d__r_ex4_OD();
+extern void OnClock_SLA_ex_d__r_ex4_FD();
+extern void OnClock_SLA_ex_d__r_ex4_MR();
+extern void OnClock_SLA_ex_d__r_ex4_MW();
+
+// SLA (IY+d), C   -  SLA_IY_d__C_FD4  -  FD, CB, d, 21
+extern void OnClock_SLA_ex_d__r_ex4_OD();
+extern void OnClock_SLA_ex_d__r_ex4_FD();
+extern void OnClock_SLA_ex_d__r_ex4_MR();
+extern void OnClock_SLA_ex_d__r_ex4_MW();
+
+// SLA (IX+d), D   -  SLA_IX_d__D_DD4  -  DD, CB, d, 22
+extern void OnClock_SLA_ex_d__r_ex4_OD();
+extern void OnClock_SLA_ex_d__r_ex4_FD();
+extern void OnClock_SLA_ex_d__r_ex4_MR();
+extern void OnClock_SLA_ex_d__r_ex4_MW();
+
+// SLA (IY+d), D   -  SLA_IY_d__D_FD4  -  FD, CB, d, 22
+extern void OnClock_SLA_ex_d__r_ex4_OD();
+extern void OnClock_SLA_ex_d__r_ex4_FD();
+extern void OnClock_SLA_ex_d__r_ex4_MR();
+extern void OnClock_SLA_ex_d__r_ex4_MW();
+
+// SLA (IX+d), E   -  SLA_IX_d__E_DD4  -  DD, CB, d, 23
+extern void OnClock_SLA_ex_d__r_ex4_OD();
+extern void OnClock_SLA_ex_d__r_ex4_FD();
+extern void OnClock_SLA_ex_d__r_ex4_MR();
+extern void OnClock_SLA_ex_d__r_ex4_MW();
+
+// SLA (IY+d), E   -  SLA_IY_d__E_FD4  -  FD, CB, d, 23
+extern void OnClock_SLA_ex_d__r_ex4_OD();
+extern void OnClock_SLA_ex_d__r_ex4_FD();
+extern void OnClock_SLA_ex_d__r_ex4_MR();
+extern void OnClock_SLA_ex_d__r_ex4_MW();
+
+// SLA (IX+d), H   -  SLA_IX_d__H_DD4  -  DD, CB, d, 24
+extern void OnClock_SLA_ex_d__r_ex4_OD();
+extern void OnClock_SLA_ex_d__r_ex4_FD();
+extern void OnClock_SLA_ex_d__r_ex4_MR();
+extern void OnClock_SLA_ex_d__r_ex4_MW();
+
+// SLA (IY+d), H   -  SLA_IY_d__H_FD4  -  FD, CB, d, 24
+extern void OnClock_SLA_ex_d__r_ex4_OD();
+extern void OnClock_SLA_ex_d__r_ex4_FD();
+extern void OnClock_SLA_ex_d__r_ex4_MR();
+extern void OnClock_SLA_ex_d__r_ex4_MW();
+
+// SLA (IX+d), L   -  SLA_IX_d__L_DD4  -  DD, CB, d, 25
+extern void OnClock_SLA_ex_d__r_ex4_OD();
+extern void OnClock_SLA_ex_d__r_ex4_FD();
+extern void OnClock_SLA_ex_d__r_ex4_MR();
+extern void OnClock_SLA_ex_d__r_ex4_MW();
+
+// SLA (IY+d), L   -  SLA_IY_d__L_FD4  -  FD, CB, d, 25
+extern void OnClock_SLA_ex_d__r_ex4_OD();
+extern void OnClock_SLA_ex_d__r_ex4_FD();
+extern void OnClock_SLA_ex_d__r_ex4_MR();
+extern void OnClock_SLA_ex_d__r_ex4_MW();
+
+// SLL A   -  SLLA_CB2  -  CB, 37
+extern void OnClock_SLLr_CB2_OF();
+
+// SLL B   -  SLLB_CB2  -  CB, 30
+extern void OnClock_SLLr_CB2_OF();
+
+// SLL C   -  SLLC_CB2  -  CB, 31
+extern void OnClock_SLLr_CB2_OF();
+
+// SLL D   -  SLLD_CB2  -  CB, 32
+extern void OnClock_SLLr_CB2_OF();
+
+// SLL E   -  SLLE_CB2  -  CB, 33
+extern void OnClock_SLLr_CB2_OF();
+
+// SLL H   -  SLLH_CB2  -  CB, 34
+extern void OnClock_SLLr_CB2_OF();
+
+// SLL L   -  SLLL_CB2  -  CB, 35
+extern void OnClock_SLLr_CB2_OF();
+
+// SLL (HL)   -  SLL_HL__CB2  -  CB, 36
+extern void OnClock_SLL_HL__CB2_OF();
+extern void OnClock_SLL_HL__CB2_MR();
+
+// SLL (IX+d)   -  SLL_IX_d__DD4  -  DD, CB, d, 36
+extern void OnClock_SLL_ex_d__ex4_OD();
+extern void OnClock_SLL_ex_d__ex4_FD();
+extern void OnClock_SLL_ex_d__ex4_MR();
+extern void OnClock_SLL_ex_d__ex4_MW();
+
+// SLL (IY+d)   -  SLL_IY_d__FD4  -  FD, CB, d, 36
+extern void OnClock_SLL_ex_d__ex4_OD();
+extern void OnClock_SLL_ex_d__ex4_FD();
+extern void OnClock_SLL_ex_d__ex4_MR();
+extern void OnClock_SLL_ex_d__ex4_MW();
+
+// SLL (IX+d), A   -  SLL_IX_d__A_DD4  -  DD, CB, d, 37
+extern void OnClock_SLL_ex_d__r_ex4_OD();
+extern void OnClock_SLL_ex_d__r_ex4_FD();
+extern void OnClock_SLL_ex_d__r_ex4_MR();
+extern void OnClock_SLL_ex_d__r_ex4_MW();
+
+// SLL (IY+d), A   -  SLL_IY_d__A_FD4  -  FD, CB, d, 37
+extern void OnClock_SLL_ex_d__r_ex4_OD();
+extern void OnClock_SLL_ex_d__r_ex4_FD();
+extern void OnClock_SLL_ex_d__r_ex4_MR();
+extern void OnClock_SLL_ex_d__r_ex4_MW();
+
+// SLL (IX+d), B   -  SLL_IX_d__B_DD4  -  DD, CB, d, 30
+extern void OnClock_SLL_ex_d__r_ex4_OD();
+extern void OnClock_SLL_ex_d__r_ex4_FD();
+extern void OnClock_SLL_ex_d__r_ex4_MR();
+extern void OnClock_SLL_ex_d__r_ex4_MW();
+
+// SLL (IY+d), B   -  SLL_IY_d__B_FD4  -  FD, CB, d, 30
+extern void OnClock_SLL_ex_d__r_ex4_OD();
+extern void OnClock_SLL_ex_d__r_ex4_FD();
+extern void OnClock_SLL_ex_d__r_ex4_MR();
+extern void OnClock_SLL_ex_d__r_ex4_MW();
+
+// SLL (IX+d), C   -  SLL_IX_d__C_DD4  -  DD, CB, d, 31
+extern void OnClock_SLL_ex_d__r_ex4_OD();
+extern void OnClock_SLL_ex_d__r_ex4_FD();
+extern void OnClock_SLL_ex_d__r_ex4_MR();
+extern void OnClock_SLL_ex_d__r_ex4_MW();
+
+// SLL (IY+d), C   -  SLL_IY_d__C_FD4  -  FD, CB, d, 31
+extern void OnClock_SLL_ex_d__r_ex4_OD();
+extern void OnClock_SLL_ex_d__r_ex4_FD();
+extern void OnClock_SLL_ex_d__r_ex4_MR();
+extern void OnClock_SLL_ex_d__r_ex4_MW();
+
+// SLL (IX+d), D   -  SLL_IX_d__D_DD4  -  DD, CB, d, 32
+extern void OnClock_SLL_ex_d__r_ex4_OD();
+extern void OnClock_SLL_ex_d__r_ex4_FD();
+extern void OnClock_SLL_ex_d__r_ex4_MR();
+extern void OnClock_SLL_ex_d__r_ex4_MW();
+
+// SLL (IY+d), D   -  SLL_IY_d__D_FD4  -  FD, CB, d, 32
+extern void OnClock_SLL_ex_d__r_ex4_OD();
+extern void OnClock_SLL_ex_d__r_ex4_FD();
+extern void OnClock_SLL_ex_d__r_ex4_MR();
+extern void OnClock_SLL_ex_d__r_ex4_MW();
+
+// SLL (IX+d), E   -  SLL_IX_d__E_DD4  -  DD, CB, d, 33
+extern void OnClock_SLL_ex_d__r_ex4_OD();
+extern void OnClock_SLL_ex_d__r_ex4_FD();
+extern void OnClock_SLL_ex_d__r_ex4_MR();
+extern void OnClock_SLL_ex_d__r_ex4_MW();
+
+// SLL (IY+d), E   -  SLL_IY_d__E_FD4  -  FD, CB, d, 33
+extern void OnClock_SLL_ex_d__r_ex4_OD();
+extern void OnClock_SLL_ex_d__r_ex4_FD();
+extern void OnClock_SLL_ex_d__r_ex4_MR();
+extern void OnClock_SLL_ex_d__r_ex4_MW();
+
+// SLL (IX+d), H   -  SLL_IX_d__H_DD4  -  DD, CB, d, 34
+extern void OnClock_SLL_ex_d__r_ex4_OD();
+extern void OnClock_SLL_ex_d__r_ex4_FD();
+extern void OnClock_SLL_ex_d__r_ex4_MR();
+extern void OnClock_SLL_ex_d__r_ex4_MW();
+
+// SLL (IY+d), H   -  SLL_IY_d__H_FD4  -  FD, CB, d, 34
+extern void OnClock_SLL_ex_d__r_ex4_OD();
+extern void OnClock_SLL_ex_d__r_ex4_FD();
+extern void OnClock_SLL_ex_d__r_ex4_MR();
+extern void OnClock_SLL_ex_d__r_ex4_MW();
+
+// SLL (IX+d), L   -  SLL_IX_d__L_DD4  -  DD, CB, d, 35
+extern void OnClock_SLL_ex_d__r_ex4_OD();
+extern void OnClock_SLL_ex_d__r_ex4_FD();
+extern void OnClock_SLL_ex_d__r_ex4_MR();
+extern void OnClock_SLL_ex_d__r_ex4_MW();
+
+// SLL (IY+d), L   -  SLL_IY_d__L_FD4  -  FD, CB, d, 35
+extern void OnClock_SLL_ex_d__r_ex4_OD();
+extern void OnClock_SLL_ex_d__r_ex4_FD();
+extern void OnClock_SLL_ex_d__r_ex4_MR();
+extern void OnClock_SLL_ex_d__r_ex4_MW();
 
 // SRA A   -  SRAA_CB2  -  CB, 2F
 extern void OnClock_SRAr_CB2_OF();
@@ -1873,6 +2834,90 @@ extern void OnClock_SRA_ex_d__ex4_FD();
 extern void OnClock_SRA_ex_d__ex4_MR();
 extern void OnClock_SRA_ex_d__ex4_MW();
 
+// SRA (IX+d), A   -  SRA_IX_d__A_DD4  -  DD, CB, d, 2F
+extern void OnClock_SRA_ex_d__r_ex4_OD();
+extern void OnClock_SRA_ex_d__r_ex4_FD();
+extern void OnClock_SRA_ex_d__r_ex4_MR();
+extern void OnClock_SRA_ex_d__r_ex4_MW();
+
+// SRA (IY+d), A   -  SRA_IY_d__A_FD4  -  FD, CB, d, 2F
+extern void OnClock_SRA_ex_d__r_ex4_OD();
+extern void OnClock_SRA_ex_d__r_ex4_FD();
+extern void OnClock_SRA_ex_d__r_ex4_MR();
+extern void OnClock_SRA_ex_d__r_ex4_MW();
+
+// SRA (IX+d), B   -  SRA_IX_d__B_DD4  -  DD, CB, d, 28
+extern void OnClock_SRA_ex_d__r_ex4_OD();
+extern void OnClock_SRA_ex_d__r_ex4_FD();
+extern void OnClock_SRA_ex_d__r_ex4_MR();
+extern void OnClock_SRA_ex_d__r_ex4_MW();
+
+// SRA (IY+d), B   -  SRA_IY_d__B_FD4  -  FD, CB, d, 28
+extern void OnClock_SRA_ex_d__r_ex4_OD();
+extern void OnClock_SRA_ex_d__r_ex4_FD();
+extern void OnClock_SRA_ex_d__r_ex4_MR();
+extern void OnClock_SRA_ex_d__r_ex4_MW();
+
+// SRA (IX+d), C   -  SRA_IX_d__C_DD4  -  DD, CB, d, 29
+extern void OnClock_SRA_ex_d__r_ex4_OD();
+extern void OnClock_SRA_ex_d__r_ex4_FD();
+extern void OnClock_SRA_ex_d__r_ex4_MR();
+extern void OnClock_SRA_ex_d__r_ex4_MW();
+
+// SRA (IY+d), C   -  SRA_IY_d__C_FD4  -  FD, CB, d, 29
+extern void OnClock_SRA_ex_d__r_ex4_OD();
+extern void OnClock_SRA_ex_d__r_ex4_FD();
+extern void OnClock_SRA_ex_d__r_ex4_MR();
+extern void OnClock_SRA_ex_d__r_ex4_MW();
+
+// SRA (IX+d), D   -  SRA_IX_d__D_DD4  -  DD, CB, d, 2A
+extern void OnClock_SRA_ex_d__r_ex4_OD();
+extern void OnClock_SRA_ex_d__r_ex4_FD();
+extern void OnClock_SRA_ex_d__r_ex4_MR();
+extern void OnClock_SRA_ex_d__r_ex4_MW();
+
+// SRA (IY+d), D   -  SRA_IY_d__D_FD4  -  FD, CB, d, 2A
+extern void OnClock_SRA_ex_d__r_ex4_OD();
+extern void OnClock_SRA_ex_d__r_ex4_FD();
+extern void OnClock_SRA_ex_d__r_ex4_MR();
+extern void OnClock_SRA_ex_d__r_ex4_MW();
+
+// SRA (IX+d), E   -  SRA_IX_d__E_DD4  -  DD, CB, d, 2B
+extern void OnClock_SRA_ex_d__r_ex4_OD();
+extern void OnClock_SRA_ex_d__r_ex4_FD();
+extern void OnClock_SRA_ex_d__r_ex4_MR();
+extern void OnClock_SRA_ex_d__r_ex4_MW();
+
+// SRA (IY+d), E   -  SRA_IY_d__E_FD4  -  FD, CB, d, 2B
+extern void OnClock_SRA_ex_d__r_ex4_OD();
+extern void OnClock_SRA_ex_d__r_ex4_FD();
+extern void OnClock_SRA_ex_d__r_ex4_MR();
+extern void OnClock_SRA_ex_d__r_ex4_MW();
+
+// SRA (IX+d), H   -  SRA_IX_d__H_DD4  -  DD, CB, d, 2C
+extern void OnClock_SRA_ex_d__r_ex4_OD();
+extern void OnClock_SRA_ex_d__r_ex4_FD();
+extern void OnClock_SRA_ex_d__r_ex4_MR();
+extern void OnClock_SRA_ex_d__r_ex4_MW();
+
+// SRA (IY+d), H   -  SRA_IY_d__H_FD4  -  FD, CB, d, 2C
+extern void OnClock_SRA_ex_d__r_ex4_OD();
+extern void OnClock_SRA_ex_d__r_ex4_FD();
+extern void OnClock_SRA_ex_d__r_ex4_MR();
+extern void OnClock_SRA_ex_d__r_ex4_MW();
+
+// SRA (IX+d), L   -  SRA_IX_d__L_DD4  -  DD, CB, d, 2D
+extern void OnClock_SRA_ex_d__r_ex4_OD();
+extern void OnClock_SRA_ex_d__r_ex4_FD();
+extern void OnClock_SRA_ex_d__r_ex4_MR();
+extern void OnClock_SRA_ex_d__r_ex4_MW();
+
+// SRA (IY+d), L   -  SRA_IY_d__L_FD4  -  FD, CB, d, 2D
+extern void OnClock_SRA_ex_d__r_ex4_OD();
+extern void OnClock_SRA_ex_d__r_ex4_FD();
+extern void OnClock_SRA_ex_d__r_ex4_MR();
+extern void OnClock_SRA_ex_d__r_ex4_MW();
+
 // SRL A   -  SRLA_CB2  -  CB, 3F
 extern void OnClock_SRLr_CB2_OF();
 
@@ -1909,6 +2954,90 @@ extern void OnClock_SRL_ex_d__ex4_OD();
 extern void OnClock_SRL_ex_d__ex4_FD();
 extern void OnClock_SRL_ex_d__ex4_MR();
 extern void OnClock_SRL_ex_d__ex4_MW();
+
+// SRL (IX+d), A   -  SRL_IX_d__A_DD4  -  DD, CB, d, 3F
+extern void OnClock_SRL_ex_d__r_ex4_OD();
+extern void OnClock_SRL_ex_d__r_ex4_FD();
+extern void OnClock_SRL_ex_d__r_ex4_MR();
+extern void OnClock_SRL_ex_d__r_ex4_MW();
+
+// SRL (IY+d), A   -  SRL_IY_d__A_FD4  -  FD, CB, d, 3F
+extern void OnClock_SRL_ex_d__r_ex4_OD();
+extern void OnClock_SRL_ex_d__r_ex4_FD();
+extern void OnClock_SRL_ex_d__r_ex4_MR();
+extern void OnClock_SRL_ex_d__r_ex4_MW();
+
+// SRL (IX+d), B   -  SRL_IX_d__B_DD4  -  DD, CB, d, 38
+extern void OnClock_SRL_ex_d__r_ex4_OD();
+extern void OnClock_SRL_ex_d__r_ex4_FD();
+extern void OnClock_SRL_ex_d__r_ex4_MR();
+extern void OnClock_SRL_ex_d__r_ex4_MW();
+
+// SRL (IY+d), B   -  SRL_IY_d__B_FD4  -  FD, CB, d, 38
+extern void OnClock_SRL_ex_d__r_ex4_OD();
+extern void OnClock_SRL_ex_d__r_ex4_FD();
+extern void OnClock_SRL_ex_d__r_ex4_MR();
+extern void OnClock_SRL_ex_d__r_ex4_MW();
+
+// SRL (IX+d), C   -  SRL_IX_d__C_DD4  -  DD, CB, d, 39
+extern void OnClock_SRL_ex_d__r_ex4_OD();
+extern void OnClock_SRL_ex_d__r_ex4_FD();
+extern void OnClock_SRL_ex_d__r_ex4_MR();
+extern void OnClock_SRL_ex_d__r_ex4_MW();
+
+// SRL (IY+d), C   -  SRL_IY_d__C_FD4  -  FD, CB, d, 39
+extern void OnClock_SRL_ex_d__r_ex4_OD();
+extern void OnClock_SRL_ex_d__r_ex4_FD();
+extern void OnClock_SRL_ex_d__r_ex4_MR();
+extern void OnClock_SRL_ex_d__r_ex4_MW();
+
+// SRL (IX+d), D   -  SRL_IX_d__D_DD4  -  DD, CB, d, 3A
+extern void OnClock_SRL_ex_d__r_ex4_OD();
+extern void OnClock_SRL_ex_d__r_ex4_FD();
+extern void OnClock_SRL_ex_d__r_ex4_MR();
+extern void OnClock_SRL_ex_d__r_ex4_MW();
+
+// SRL (IY+d), D   -  SRL_IY_d__D_FD4  -  FD, CB, d, 3A
+extern void OnClock_SRL_ex_d__r_ex4_OD();
+extern void OnClock_SRL_ex_d__r_ex4_FD();
+extern void OnClock_SRL_ex_d__r_ex4_MR();
+extern void OnClock_SRL_ex_d__r_ex4_MW();
+
+// SRL (IX+d), E   -  SRL_IX_d__E_DD4  -  DD, CB, d, 3B
+extern void OnClock_SRL_ex_d__r_ex4_OD();
+extern void OnClock_SRL_ex_d__r_ex4_FD();
+extern void OnClock_SRL_ex_d__r_ex4_MR();
+extern void OnClock_SRL_ex_d__r_ex4_MW();
+
+// SRL (IY+d), E   -  SRL_IY_d__E_FD4  -  FD, CB, d, 3B
+extern void OnClock_SRL_ex_d__r_ex4_OD();
+extern void OnClock_SRL_ex_d__r_ex4_FD();
+extern void OnClock_SRL_ex_d__r_ex4_MR();
+extern void OnClock_SRL_ex_d__r_ex4_MW();
+
+// SRL (IX+d), H   -  SRL_IX_d__H_DD4  -  DD, CB, d, 3C
+extern void OnClock_SRL_ex_d__r_ex4_OD();
+extern void OnClock_SRL_ex_d__r_ex4_FD();
+extern void OnClock_SRL_ex_d__r_ex4_MR();
+extern void OnClock_SRL_ex_d__r_ex4_MW();
+
+// SRL (IY+d), H   -  SRL_IY_d__H_FD4  -  FD, CB, d, 3C
+extern void OnClock_SRL_ex_d__r_ex4_OD();
+extern void OnClock_SRL_ex_d__r_ex4_FD();
+extern void OnClock_SRL_ex_d__r_ex4_MR();
+extern void OnClock_SRL_ex_d__r_ex4_MW();
+
+// SRL (IX+d), L   -  SRL_IX_d__L_DD4  -  DD, CB, d, 3D
+extern void OnClock_SRL_ex_d__r_ex4_OD();
+extern void OnClock_SRL_ex_d__r_ex4_FD();
+extern void OnClock_SRL_ex_d__r_ex4_MR();
+extern void OnClock_SRL_ex_d__r_ex4_MW();
+
+// SRL (IY+d), L   -  SRL_IY_d__L_FD4  -  FD, CB, d, 3D
+extern void OnClock_SRL_ex_d__r_ex4_OD();
+extern void OnClock_SRL_ex_d__r_ex4_FD();
+extern void OnClock_SRL_ex_d__r_ex4_MR();
+extern void OnClock_SRL_ex_d__r_ex4_MW();
 
 // RLD A   -  RLDA_ED2  -  ED, 6F
 extern void OnClock_RLDA_ED2_OF();
@@ -2302,6 +3431,7 @@ extern void OnClock_SETb_r_CB2_OF();
 extern void OnClock_SETb_r_CB2_OF();
 
 // SET 1, E   -  SET1_E_CB2  -  CB, CB
+extern void OnClock_SETb_r_CB2_OF();
 
 // SET 2, E   -  SET2_E_CB2  -  CB, D3
 extern void OnClock_SETb_r_CB2_OF();
@@ -2355,16 +3485,19 @@ extern void OnClock_SETb_r_CB2_OF();
 extern void OnClock_SETb_r_CB2_OF();
 
 // SET 3, L   -  SET3_L_CB2  -  CB, DD
+extern void OnClock_SETb_r_CB2_OF();
 
 // SET 4, L   -  SET4_L_CB2  -  CB, E5
 extern void OnClock_SETb_r_CB2_OF();
 
 // SET 5, L   -  SET5_L_CB2  -  CB, ED
+extern void OnClock_SETb_r_CB2_OF();
 
 // SET 6, L   -  SET6_L_CB2  -  CB, F5
 extern void OnClock_SETb_r_CB2_OF();
 
 // SET 7, L   -  SET7_L_CB2  -  CB, FD
+extern void OnClock_SETb_r_CB2_OF();
 
 // SET 0, (HL)   -  SET0__HL__CB2  -  CB, C6
 extern void OnClock_SETb__HL__CB2_OF();
@@ -2501,6 +3634,636 @@ extern void OnClock_SETb__ex_d__ex4_OD();
 extern void OnClock_SETb__ex_d__ex4_FD();
 extern void OnClock_SETb__ex_d__ex4_MR();
 extern void OnClock_SETb__ex_d__ex4_MW();
+
+// SET 0, (IX+d), A   -  SET0__IX_d__A_DD4  -  DD, CB, d, C7
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 1, (IX+d), A   -  SET1__IX_d__A_DD4  -  DD, CB, d, CF
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 1, (IY+d), A   -  SET1__IY_d__A_FD4  -  FD, CB, d, CF
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 2, (IX+d), A   -  SET2__IX_d__A_DD4  -  DD, CB, d, D7
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 2, (IY+d), A   -  SET2__IY_d__A_FD4  -  FD, CB, d, D7
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 3, (IX+d), A   -  SET3__IX_d__A_DD4  -  DD, CB, d, DF
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 3, (IY+d), A   -  SET3__IY_d__A_FD4  -  FD, CB, d, DF
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 4, (IX+d), A   -  SET4__IX_d__A_DD4  -  DD, CB, d, E7
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 4, (IY+d), A   -  SET4__IY_d__A_FD4  -  FD, CB, d, E7
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 5, (IX+d), A   -  SET5__IX_d__A_DD4  -  DD, CB, d, EF
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 5, (IY+d), A   -  SET5__IY_d__A_FD4  -  FD, CB, d, EF
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 6, (IX+d), A   -  SET6__IX_d__A_DD4  -  DD, CB, d, F7
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 6, (IY+d), A   -  SET6__IY_d__A_FD4  -  FD, CB, d, F7
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 7, (IX+d), A   -  SET7__IX_d__A_DD4  -  DD, CB, d, FF
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 7, (IY+d), A   -  SET7__IY_d__A_FD4  -  FD, CB, d, FF
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 0, (IX+d), B   -  SET0__IX_d__B_DD4  -  DD, CB, d, C0
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 1, (IX+d), B   -  SET1__IX_d__B_DD4  -  DD, CB, d, C8
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 1, (IY+d), B   -  SET1__IY_d__B_FD4  -  FD, CB, d, C8
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 2, (IX+d), B   -  SET2__IX_d__B_DD4  -  DD, CB, d, D0
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 2, (IY+d), B   -  SET2__IY_d__B_FD4  -  FD, CB, d, D0
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 3, (IX+d), B   -  SET3__IX_d__B_DD4  -  DD, CB, d, D8
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 3, (IY+d), B   -  SET3__IY_d__B_FD4  -  FD, CB, d, D8
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 4, (IX+d), B   -  SET4__IX_d__B_DD4  -  DD, CB, d, E0
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 4, (IY+d), B   -  SET4__IY_d__B_FD4  -  FD, CB, d, E0
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 5, (IX+d), B   -  SET5__IX_d__B_DD4  -  DD, CB, d, E8
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 5, (IY+d), B   -  SET5__IY_d__B_FD4  -  FD, CB, d, E8
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 6, (IX+d), B   -  SET6__IX_d__B_DD4  -  DD, CB, d, F0
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 6, (IY+d), B   -  SET6__IY_d__B_FD4  -  FD, CB, d, F0
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 7, (IX+d), B   -  SET7__IX_d__B_DD4  -  DD, CB, d, F8
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 7, (IY+d), B   -  SET7__IY_d__B_FD4  -  FD, CB, d, F8
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 0, (IX+d), C   -  SET0__IX_d__C_DD4  -  DD, CB, d, C1
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 1, (IX+d), C   -  SET1__IX_d__C_DD4  -  DD, CB, d, C9
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 1, (IY+d), C   -  SET1__IY_d__C_FD4  -  FD, CB, d, C9
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 2, (IX+d), C   -  SET2__IX_d__C_DD4  -  DD, CB, d, D1
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 2, (IY+d), C   -  SET2__IY_d__C_FD4  -  FD, CB, d, D1
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 3, (IX+d), C   -  SET3__IX_d__C_DD4  -  DD, CB, d, D9
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 3, (IY+d), C   -  SET3__IY_d__C_FD4  -  FD, CB, d, D9
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 4, (IX+d), C   -  SET4__IX_d__C_DD4  -  DD, CB, d, E1
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 4, (IY+d), C   -  SET4__IY_d__C_FD4  -  FD, CB, d, E1
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 5, (IX+d), C   -  SET5__IX_d__C_DD4  -  DD, CB, d, E9
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 5, (IY+d), C   -  SET5__IY_d__C_FD4  -  FD, CB, d, E9
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 6, (IX+d), C   -  SET6__IX_d__C_DD4  -  DD, CB, d, F1
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 6, (IY+d), C   -  SET6__IY_d__C_FD4  -  FD, CB, d, F1
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 7, (IX+d), C   -  SET7__IX_d__C_DD4  -  DD, CB, d, F9
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 7, (IY+d), C   -  SET7__IY_d__C_FD4  -  FD, CB, d, F9
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 0, (IX+d), D   -  SET0__IX_d__D_DD4  -  DD, CB, d, C2
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 1, (IX+d), D   -  SET1__IX_d__D_DD4  -  DD, CB, d, CA
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 1, (IY+d), D   -  SET1__IY_d__D_FD4  -  FD, CB, d, CA
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 2, (IX+d), D   -  SET2__IX_d__D_DD4  -  DD, CB, d, D2
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 2, (IY+d), D   -  SET2__IY_d__D_FD4  -  FD, CB, d, D2
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 3, (IX+d), D   -  SET3__IX_d__D_DD4  -  DD, CB, d, DA
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 3, (IY+d), D   -  SET3__IY_d__D_FD4  -  FD, CB, d, DA
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 4, (IX+d), D   -  SET4__IX_d__D_DD4  -  DD, CB, d, E2
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 4, (IY+d), D   -  SET4__IY_d__D_FD4  -  FD, CB, d, E2
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 5, (IX+d), D   -  SET5__IX_d__D_DD4  -  DD, CB, d, EA
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 5, (IY+d), D   -  SET5__IY_d__D_FD4  -  FD, CB, d, EA
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 6, (IX+d), D   -  SET6__IX_d__D_DD4  -  DD, CB, d, F2
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 6, (IY+d), D   -  SET6__IY_d__D_FD4  -  FD, CB, d, F2
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 7, (IX+d), D   -  SET7__IX_d__D_DD4  -  DD, CB, d, FA
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 7, (IY+d), D   -  SET7__IY_d__D_FD4  -  FD, CB, d, FA
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 0, (IX+d), E   -  SET0__IX_d__E_DD4  -  DD, CB, d, C3
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 1, (IX+d), E   -  SET1__IX_d__E_DD4  -  DD, CB, d, CB
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 1, (IY+d), E   -  SET1__IY_d__E_FD4  -  FD, CB, d, CB
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 2, (IX+d), E   -  SET2__IX_d__E_DD4  -  DD, CB, d, D3
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 2, (IY+d), E   -  SET2__IY_d__E_FD4  -  FD, CB, d, D3
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 3, (IX+d), E   -  SET3__IX_d__E_DD4  -  DD, CB, d, DB
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 3, (IY+d), E   -  SET3__IY_d__E_FD4  -  FD, CB, d, DB
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 4, (IX+d), E   -  SET4__IX_d__E_DD4  -  DD, CB, d, E3
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 4, (IY+d), E   -  SET4__IY_d__E_FD4  -  FD, CB, d, E3
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 5, (IX+d), E   -  SET5__IX_d__E_DD4  -  DD, CB, d, EB
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 5, (IY+d), E   -  SET5__IY_d__E_FD4  -  FD, CB, d, EB
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 6, (IX+d), E   -  SET6__IX_d__E_DD4  -  DD, CB, d, F3
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 6, (IY+d), E   -  SET6__IY_d__E_FD4  -  FD, CB, d, F3
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 7, (IX+d), E   -  SET7__IX_d__E_DD4  -  DD, CB, d, FB
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 7, (IY+d), E   -  SET7__IY_d__E_FD4  -  FD, CB, d, FB
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 0, (IX+d), H   -  SET0__IX_d__H_DD4  -  DD, CB, d, C4
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 1, (IX+d), H   -  SET1__IX_d__H_DD4  -  DD, CB, d, CC
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 1, (IY+d), H   -  SET1__IY_d__H_FD4  -  FD, CB, d, CC
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 2, (IX+d), H   -  SET2__IX_d__H_DD4  -  DD, CB, d, D4
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 2, (IY+d), H   -  SET2__IY_d__H_FD4  -  FD, CB, d, D4
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 3, (IX+d), H   -  SET3__IX_d__H_DD4  -  DD, CB, d, DC
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 3, (IY+d), H   -  SET3__IY_d__H_FD4  -  FD, CB, d, DC
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 4, (IX+d), H   -  SET4__IX_d__H_DD4  -  DD, CB, d, E4
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 4, (IY+d), H   -  SET4__IY_d__H_FD4  -  FD, CB, d, E4
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 5, (IX+d), H   -  SET5__IX_d__H_DD4  -  DD, CB, d, EC
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 5, (IY+d), H   -  SET5__IY_d__H_FD4  -  FD, CB, d, EC
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 6, (IX+d), H   -  SET6__IX_d__H_DD4  -  DD, CB, d, F4
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 6, (IY+d), H   -  SET6__IY_d__H_FD4  -  FD, CB, d, F4
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 7, (IX+d), H   -  SET7__IX_d__H_DD4  -  DD, CB, d, FC
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 7, (IY+d), H   -  SET7__IY_d__H_FD4  -  FD, CB, d, FC
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 0, (IX+d), L   -  SET0__IX_d__L_DD4  -  DD, CB, d, C5
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 1, (IX+d), L   -  SET1__IX_d__L_DD4  -  DD, CB, d, CD
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 1, (IY+d), L   -  SET1__IY_d__L_FD4  -  FD, CB, d, CD
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 2, (IX+d), L   -  SET2__IX_d__L_DD4  -  DD, CB, d, D5
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 2, (IY+d), L   -  SET2__IY_d__L_FD4  -  FD, CB, d, D5
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 3, (IX+d), L   -  SET3__IX_d__L_DD4  -  DD, CB, d, DD
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 3, (IY+d), L   -  SET3__IY_d__L_FD4  -  FD, CB, d, DD
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 4, (IX+d), L   -  SET4__IX_d__L_DD4  -  DD, CB, d, E5
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 4, (IY+d), L   -  SET4__IY_d__L_FD4  -  FD, CB, d, E5
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 5, (IX+d), L   -  SET5__IX_d__L_DD4  -  DD, CB, d, ED
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 5, (IY+d), L   -  SET5__IY_d__L_FD4  -  FD, CB, d, ED
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 6, (IX+d), L   -  SET6__IX_d__L_DD4  -  DD, CB, d, F5
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 6, (IY+d), L   -  SET6__IY_d__L_FD4  -  FD, CB, d, F5
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 7, (IX+d), L   -  SET7__IX_d__L_DD4  -  DD, CB, d, FD
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
+
+// SET 7, (IY+d), L   -  SET7__IY_d__L_FD4  -  FD, CB, d, FD
+extern void OnClock_SETb__ex_d__r_ex4_OD();
+extern void OnClock_SETb__ex_d__r_ex4_FD();
+extern void OnClock_SETb__ex_d__r_ex4_MR();
+extern void OnClock_SETb__ex_d__r_ex4_MW();
 
 // RES 0, A   -  RES0_A_CB2  -  CB, 87
 extern void OnClock_RESb_r_CB2_OF();
@@ -2805,6 +4568,636 @@ extern void OnClock_RESb__ex_d__ex4_OD();
 extern void OnClock_RESb__ex_d__ex4_FD();
 extern void OnClock_RESb__ex_d__ex4_MR();
 extern void OnClock_RESb__ex_d__ex4_MW();
+
+// RES 0, (IX+d), A   -  RES0__IX_d__A_DD4  -  DD, CB, d, 87
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 1, (IX+d), A   -  RES1__IX_d__A_DD4  -  DD, CB, d, 8F
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 1, (IY+d), A   -  RES1__IY_d__A_FD4  -  FD, CB, d, 8F
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 2, (IX+d), A   -  RES2__IX_d__A_DD4  -  DD, CB, d, 97
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 2, (IY+d), A   -  RES2__IY_d__A_FD4  -  FD, CB, d, 97
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 3, (IX+d), A   -  RES3__IX_d__A_DD4  -  DD, CB, d, 9F
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 3, (IY+d), A   -  RES3__IY_d__A_FD4  -  FD, CB, d, 9F
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 4, (IX+d), A   -  RES4__IX_d__A_DD4  -  DD, CB, d, A7
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 4, (IY+d), A   -  RES4__IY_d__A_FD4  -  FD, CB, d, A7
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 5, (IX+d), A   -  RES5__IX_d__A_DD4  -  DD, CB, d, AF
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 5, (IY+d), A   -  RES5__IY_d__A_FD4  -  FD, CB, d, AF
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 6, (IX+d), A   -  RES6__IX_d__A_DD4  -  DD, CB, d, B7
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 6, (IY+d), A   -  RES6__IY_d__A_FD4  -  FD, CB, d, B7
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 7, (IX+d), A   -  RES7__IX_d__A_DD4  -  DD, CB, d, BF
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 7, (IY+d), A   -  RES7__IY_d__A_FD4  -  FD, CB, d, BF
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 0, (IX+d), B   -  RES0__IX_d__B_DD4  -  DD, CB, d, 80
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 1, (IX+d), B   -  RES1__IX_d__B_DD4  -  DD, CB, d, 88
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 1, (IY+d), B   -  RES1__IY_d__B_FD4  -  FD, CB, d, 88
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 2, (IX+d), B   -  RES2__IX_d__B_DD4  -  DD, CB, d, 90
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 2, (IY+d), B   -  RES2__IY_d__B_FD4  -  FD, CB, d, 90
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 3, (IX+d), B   -  RES3__IX_d__B_DD4  -  DD, CB, d, 98
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 3, (IY+d), B   -  RES3__IY_d__B_FD4  -  FD, CB, d, 98
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 4, (IX+d), B   -  RES4__IX_d__B_DD4  -  DD, CB, d, A0
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 4, (IY+d), B   -  RES4__IY_d__B_FD4  -  FD, CB, d, A0
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 5, (IX+d), B   -  RES5__IX_d__B_DD4  -  DD, CB, d, A8
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 5, (IY+d), B   -  RES5__IY_d__B_FD4  -  FD, CB, d, A8
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 6, (IX+d), B   -  RES6__IX_d__B_DD4  -  DD, CB, d, B0
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 6, (IY+d), B   -  RES6__IY_d__B_FD4  -  FD, CB, d, B0
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 7, (IX+d), B   -  RES7__IX_d__B_DD4  -  DD, CB, d, B8
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 7, (IY+d), B   -  RES7__IY_d__B_FD4  -  FD, CB, d, B8
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 0, (IX+d), C   -  RES0__IX_d__C_DD4  -  DD, CB, d, 81
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 1, (IX+d), C   -  RES1__IX_d__C_DD4  -  DD, CB, d, 89
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 1, (IY+d), C   -  RES1__IY_d__C_FD4  -  FD, CB, d, 89
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 2, (IX+d), C   -  RES2__IX_d__C_DD4  -  DD, CB, d, 91
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 2, (IY+d), C   -  RES2__IY_d__C_FD4  -  FD, CB, d, 91
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 3, (IX+d), C   -  RES3__IX_d__C_DD4  -  DD, CB, d, 99
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 3, (IY+d), C   -  RES3__IY_d__C_FD4  -  FD, CB, d, 99
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 4, (IX+d), C   -  RES4__IX_d__C_DD4  -  DD, CB, d, A1
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 4, (IY+d), C   -  RES4__IY_d__C_FD4  -  FD, CB, d, A1
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 5, (IX+d), C   -  RES5__IX_d__C_DD4  -  DD, CB, d, A9
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 5, (IY+d), C   -  RES5__IY_d__C_FD4  -  FD, CB, d, A9
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 6, (IX+d), C   -  RES6__IX_d__C_DD4  -  DD, CB, d, B1
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 6, (IY+d), C   -  RES6__IY_d__C_FD4  -  FD, CB, d, B1
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 7, (IX+d), C   -  RES7__IX_d__C_DD4  -  DD, CB, d, B9
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 7, (IY+d), C   -  RES7__IY_d__C_FD4  -  FD, CB, d, B9
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 0, (IX+d), D   -  RES0__IX_d__D_DD4  -  DD, CB, d, 82
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 1, (IX+d), D   -  RES1__IX_d__D_DD4  -  DD, CB, d, 8A
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 1, (IY+d), D   -  RES1__IY_d__D_FD4  -  FD, CB, d, 8A
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 2, (IX+d), D   -  RES2__IX_d__D_DD4  -  DD, CB, d, 92
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 2, (IY+d), D   -  RES2__IY_d__D_FD4  -  FD, CB, d, 92
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 3, (IX+d), D   -  RES3__IX_d__D_DD4  -  DD, CB, d, 9A
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 3, (IY+d), D   -  RES3__IY_d__D_FD4  -  FD, CB, d, 9A
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 4, (IX+d), D   -  RES4__IX_d__D_DD4  -  DD, CB, d, A2
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 4, (IY+d), D   -  RES4__IY_d__D_FD4  -  FD, CB, d, A2
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 5, (IX+d), D   -  RES5__IX_d__D_DD4  -  DD, CB, d, AA
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 5, (IY+d), D   -  RES5__IY_d__D_FD4  -  FD, CB, d, AA
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 6, (IX+d), D   -  RES6__IX_d__D_DD4  -  DD, CB, d, B2
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 6, (IY+d), D   -  RES6__IY_d__D_FD4  -  FD, CB, d, B2
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 7, (IX+d), D   -  RES7__IX_d__D_DD4  -  DD, CB, d, BA
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 7, (IY+d), D   -  RES7__IY_d__D_FD4  -  FD, CB, d, BA
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 0, (IX+d), E   -  RES0__IX_d__E_DD4  -  DD, CB, d, 83
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 1, (IX+d), E   -  RES1__IX_d__E_DD4  -  DD, CB, d, 8B
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 1, (IY+d), E   -  RES1__IY_d__E_FD4  -  FD, CB, d, 8B
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 2, (IX+d), E   -  RES2__IX_d__E_DD4  -  DD, CB, d, 93
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 2, (IY+d), E   -  RES2__IY_d__E_FD4  -  FD, CB, d, 93
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 3, (IX+d), E   -  RES3__IX_d__E_DD4  -  DD, CB, d, 9B
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 3, (IY+d), E   -  RES3__IY_d__E_FD4  -  FD, CB, d, 9B
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 4, (IX+d), E   -  RES4__IX_d__E_DD4  -  DD, CB, d, A3
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 4, (IY+d), E   -  RES4__IY_d__E_FD4  -  FD, CB, d, A3
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 5, (IX+d), E   -  RES5__IX_d__E_DD4  -  DD, CB, d, AB
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 5, (IY+d), E   -  RES5__IY_d__E_FD4  -  FD, CB, d, AB
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 6, (IX+d), E   -  RES6__IX_d__E_DD4  -  DD, CB, d, B3
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 6, (IY+d), E   -  RES6__IY_d__E_FD4  -  FD, CB, d, B3
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 7, (IX+d), E   -  RES7__IX_d__E_DD4  -  DD, CB, d, BB
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 7, (IY+d), E   -  RES7__IY_d__E_FD4  -  FD, CB, d, BB
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 0, (IX+d), H   -  RES0__IX_d__H_DD4  -  DD, CB, d, 84
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 1, (IX+d), H   -  RES1__IX_d__H_DD4  -  DD, CB, d, 8C
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 1, (IY+d), H   -  RES1__IY_d__H_FD4  -  FD, CB, d, 8C
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 2, (IX+d), H   -  RES2__IX_d__H_DD4  -  DD, CB, d, 94
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 2, (IY+d), H   -  RES2__IY_d__H_FD4  -  FD, CB, d, 94
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 3, (IX+d), H   -  RES3__IX_d__H_DD4  -  DD, CB, d, 9C
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 3, (IY+d), H   -  RES3__IY_d__H_FD4  -  FD, CB, d, 9C
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 4, (IX+d), H   -  RES4__IX_d__H_DD4  -  DD, CB, d, A4
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 4, (IY+d), H   -  RES4__IY_d__H_FD4  -  FD, CB, d, A4
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 5, (IX+d), H   -  RES5__IX_d__H_DD4  -  DD, CB, d, AC
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 5, (IY+d), H   -  RES5__IY_d__H_FD4  -  FD, CB, d, AC
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 6, (IX+d), H   -  RES6__IX_d__H_DD4  -  DD, CB, d, B4
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 6, (IY+d), H   -  RES6__IY_d__H_FD4  -  FD, CB, d, B4
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 7, (IX+d), H   -  RES7__IX_d__H_DD4  -  DD, CB, d, BC
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 7, (IY+d), H   -  RES7__IY_d__H_FD4  -  FD, CB, d, BC
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 0, (IX+d), L   -  RES0__IX_d__L_DD4  -  DD, CB, d, 85
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 1, (IX+d), L   -  RES1__IX_d__L_DD4  -  DD, CB, d, 8D
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 1, (IY+d), L   -  RES1__IY_d__L_FD4  -  FD, CB, d, 8D
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 2, (IX+d), L   -  RES2__IX_d__L_DD4  -  DD, CB, d, 95
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 2, (IY+d), L   -  RES2__IY_d__L_FD4  -  FD, CB, d, 95
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 3, (IX+d), L   -  RES3__IX_d__L_DD4  -  DD, CB, d, 9D
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 3, (IY+d), L   -  RES3__IY_d__L_FD4  -  FD, CB, d, 9D
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 4, (IX+d), L   -  RES4__IX_d__L_DD4  -  DD, CB, d, A5
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 4, (IY+d), L   -  RES4__IY_d__L_FD4  -  FD, CB, d, A5
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 5, (IX+d), L   -  RES5__IX_d__L_DD4  -  DD, CB, d, AD
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 5, (IY+d), L   -  RES5__IY_d__L_FD4  -  FD, CB, d, AD
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 6, (IX+d), L   -  RES6__IX_d__L_DD4  -  DD, CB, d, B5
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 6, (IY+d), L   -  RES6__IY_d__L_FD4  -  FD, CB, d, B5
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 7, (IX+d), L   -  RES7__IX_d__L_DD4  -  DD, CB, d, BD
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
+
+// RES 7, (IY+d), L   -  RES7__IY_d__L_FD4  -  FD, CB, d, BD
+extern void OnClock_RESb__ex_d__r_ex4_OD();
+extern void OnClock_RESb__ex_d__r_ex4_FD();
+extern void OnClock_RESb__ex_d__r_ex4_MR();
+extern void OnClock_RESb__ex_d__r_ex4_MW();
 
 // JP nn   -  JPnn_3  -  C3, n, n
 extern void OnClock_JPnn_3_OF();

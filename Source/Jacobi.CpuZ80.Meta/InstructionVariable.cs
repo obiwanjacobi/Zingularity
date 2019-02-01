@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 
 namespace Jacobi.CpuZ80.Meta
 {
@@ -15,7 +14,7 @@ namespace Jacobi.CpuZ80.Meta
 
             { "b", InstructionVariableType.Bits8 },
             { "c", InstructionVariableType.Condition8 },
-            { "i", InstructionVariableType.Rst },
+            { "i", InstructionVariableType.RstAddress },
             { "j", InstructionVariableType.Condition4 },
             { "m", InstructionVariableType.RegistersSP16 },
             { "o", InstructionVariableType.RegistersSP16 },
@@ -29,33 +28,25 @@ namespace Jacobi.CpuZ80.Meta
             { "w", InstructionVariableType.Registers8 },
         };
 
+        public string Name { get; set; }
+
         public InstructionVariableType Type { get; set; }
 
         public int Value { get; set; }
 
-        public static IEnumerable<InstructionVariable> Create(InstructionMeta instructionMeta)
+        public static void Create(InstructionMeta instructionMeta)
         {
-            var root = instructionMeta.Root;
-
-            var vars = new List<InstructionVariable>();
+            var root = instructionMeta.Parent ?? instructionMeta;
 
             foreach (var p in root.Parameters)
             {
-                if (_varTables.ContainsKey(p))
+                if (IsVariable(p))
                 {
                     var type = _varTables[p];
-                    var index = InstructionParameter.IndexOf(p, root.Info.Bytes);
+                    //var index = InstructionParameter.IndexOf(p, root.Info.Bytes);
+                    instructionMeta.Variables.Add(new InstructionVariable { Name = p, Type = type });
                 }
             }
-
-            return vars;
-        }
-
-        public static List<string> Parse(string mnemonic)
-        {
-            var parameters = InstructionParameter.Parse(mnemonic);
-            return parameters.Where(p => IsVariable(p))
-                .ToList();
         }
 
         public static bool IsVariable(string var)
@@ -76,6 +67,6 @@ namespace Jacobi.CpuZ80.Meta
         Bits8,
         AluOps,
         AluRot,
-        Rst,
+        RstAddress
     }
 }

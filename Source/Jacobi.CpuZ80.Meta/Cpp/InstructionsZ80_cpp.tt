@@ -67,14 +67,30 @@ InstructionInfo instructionInfo<#= decl.Name #> =
         { 0, nullptr },
 <#+             }
 #>
+    },
+    {
+        <#=  BuildInstructionVariable(decl, 0) #>
+        <#=  BuildInstructionVariable(decl, 1) #>
     }
 };
-<#+        
+<#+
             }
 #>
 
 <#+
             return this.GenerationEnvironment.ToString();
+        }
+
+        private static string BuildInstructionVariable(InstructionMeta decl, int index)
+        {
+            if (decl.Variables.Count > index)
+            {
+                var variable = decl.Variables[index];
+                if (variable.Type != InstructionVariableType.OpcodeByte)
+                    return "{ VariableType::" + variable.Type.ToString() + ", " + variable.Value + " },";
+            }
+
+            return "{ VariableType::None },";
         }
     }
 #>

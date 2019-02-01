@@ -33,24 +33,36 @@ namespace Jacobi.CpuZ80.Meta
         {
             Info = info;
             _parameters = InstructionParameter.Parse(info.Mnemonic);
-            _variables = InstructionVariable.Parse(info.Mnemonic);
             MachineCycles = CreateMachineCycles(info);
 
             if (info.Parent != null)
                 Parent = new InstructionMeta(info.Parent);
 
-            Name = Info.Mnemonic
-                .Replace(" ", "")
-                .Replace("'", "2")
-                .ReplaceAll("_", ",", "(", ")", "+");
-
-            Name += "_";
-            if (IsExt(Info.Bytes[0]))
-                Name += Info.Bytes[0];
-            Name += Info.Bytes.Count;
+            Variables = new List<InstructionVariable>();
+            InstructionVariable.Create(this);
         }
 
-        public string Name { get; }
+        private string _name;
+        public string Name
+        {
+            get
+            {
+                if (_name == null)
+                {
+                    _name = Info.Mnemonic
+                        .Replace(" ", "")
+                        .Replace("'", "2")
+                        .ReplaceAll("_", ",", "(", ")", "+");
+
+                    _name += "_";
+                    if (IsExt(Info.Bytes[0]))
+                        _name += Info.Bytes[0];
+                    _name += Info.Bytes.Count;
+                }
+
+                return _name;
+            }
+        }
 
         public InstructionInfo Info { get; }
 
@@ -62,9 +74,7 @@ namespace Jacobi.CpuZ80.Meta
 
         public IEnumerable<string> Parameters => _parameters;
 
-        private readonly List<string> _variables;
-
-        public IEnumerable<string> Variables => _variables;
+        public List<InstructionVariable> Variables { get; private set; }
 
         public IEnumerable<MachineCycleInfo> MachineCycles { get; }
 

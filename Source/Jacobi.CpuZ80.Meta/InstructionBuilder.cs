@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Jacobi.CpuZ80.Meta
@@ -6,8 +7,9 @@ namespace Jacobi.CpuZ80.Meta
     public sealed class InstructionBuilder
     {
         private readonly InstructionInfo _instructionInfo;
+        private readonly InstructionMeta _instructionMeta;
 
-        public static InstructionBuilder Copy(InstructionInfo instructionInfo)
+        public static InstructionBuilder New(InstructionInfo instructionInfo)
         {
             var newInstructionInfo = new InstructionInfo
             {
@@ -27,16 +29,44 @@ namespace Jacobi.CpuZ80.Meta
         private InstructionBuilder(InstructionInfo instructionInfo)
         {
             _instructionInfo = instructionInfo;
+            _instructionMeta = new InstructionMeta(instructionInfo);
         }
 
         public InstructionInfo InstructionInfo => _instructionInfo;
+        public InstructionMeta InstructionMeta => _instructionMeta;
 
-        public void ReplaceParams(IEnumerable<TableInfo> tables, IDictionary<string, string> paramValues)
+        public void AssignParameterValues(IEnumerable<TableInfo> tables, IDictionary<string, string> paramValues)
         {
             _instructionInfo.Mnemonic = InstructionParameter.FormatText(_instructionInfo.Mnemonic, paramValues);
+            //AssignVariableValues(paramValues.ToList());
 
             var tableValues = ToTableValues(tables, paramValues);
             _instructionInfo.Bytes = InstructionParameter.FormatBytes(_instructionInfo.Bytes, tableValues);
+            AssignVariableValues(tableValues);
+        }
+
+        private void AssignVariableValues(IEnumerable<KeyValuePair<string, string>> variableValues)
+        {
+            string lookupValue(string name)
+            {
+                foreach (var kvp in variableValues)
+                {
+                    if (kvp.Key == name) return kvp.Value;
+                }
+                return null;
+            };
+
+            foreach (var variable in _instructionMeta.Variables)
+            {
+                var val = lookupValue(variable.Name);
+                if (val != null)
+                {
+                    if (variable.Type == InstructionVariableType.OpcodeByte)
+                        variable.Value = Convert.ToInt32(val, 16);  // hex
+                    else
+                        variable.Value = Convert.ToInt32(val, 2);   // binary
+                }
+            }
         }
 
         private static List<KeyValuePair<string, string>> ToTableValues(

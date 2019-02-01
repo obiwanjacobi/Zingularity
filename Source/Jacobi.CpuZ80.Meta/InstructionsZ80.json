@@ -572,6 +572,34 @@
             }
         },
         {
+            "mnemonic": "ADD A, t",
+            "bytes": [ "DD", "10000ttt" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b3",
+                "V": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "ADD A, v",
+            "bytes": [ "FD", "10000vvv" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b3",
+                "V": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
             "mnemonic": "ADD A, n",
             "bytes": [ "C6", "n" ],
             "cycles": [ 4, 3 ],
@@ -618,6 +646,34 @@
             "bytes": [ "10001rrr" ],
             "cycles": [ 4 ],
             "ops": [ "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b3",
+                "V": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "ADC A, t",
+            "bytes": [ "DD", "10001ttt" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b3",
+                "V": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "ADC A, v",
+            "bytes": [ "FD", "10001vvv" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -684,6 +740,34 @@
             }
         },
         {
+            "mnemonic": "SUB A, t",
+            "bytes": [ "DD", "10010ttt" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "",
+                "N": "1",
+                "C": ""
+            }
+        },
+        {
+            "mnemonic": "SUB A, v",
+            "bytes": [ "FD", "10010v" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "",
+                "N": "1",
+                "C": ""
+            }
+        },
+        {
             "mnemonic": "SUB A, n",
             "bytes": [ "8E", "n" ],
             "cycles": [ 4, 3 ],
@@ -730,6 +814,34 @@
             "bytes": [ "10011rrr" ],
             "cycles": [ 4 ],
             "ops": [ "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "",
+                "N": "1",
+                "C": ""
+            }
+        },
+        {
+            "mnemonic": "SBC A, t",
+            "bytes": [ "DD", "10011ttt" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "",
+                "N": "1",
+                "C": ""
+            }
+        },
+        {
+            "mnemonic": "SBC A, v",
+            "bytes": [ "FD", "10011vvv" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -796,6 +908,34 @@
             }
         },
         {
+            "mnemonic": "AND A, t",
+            "bytes": [ "DD", "10100ttt" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "1",
+                "V": "",
+                "N": "0",
+                "C": "0"
+            }
+        },
+        {
+            "mnemonic": "AND A, v",
+            "bytes": [ "FD", "10100vvv" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "1",
+                "V": "",
+                "N": "0",
+                "C": "0"
+            }
+        },
+        {
             "mnemonic": "AND A, n",
             "bytes": [ "E6", "n" ],
             "cycles": [ 4, 3 ],
@@ -842,6 +982,34 @@
             "bytes": [ "10110rrr" ],
             "cycles": [ 4 ],
             "ops": [ "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "V": "",
+                "N": "0",
+                "C": "0"
+            }
+        },
+        {
+            "mnemonic": "OR A, t",
+            "bytes": [ "DD", "10110ttt" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "V": "",
+                "N": "0",
+                "C": "0"
+            }
+        },
+        {
+            "mnemonic": "OR A, v",
+            "bytes": [ "FD", "10110vvv" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -908,6 +1076,34 @@
             }
         },
         {
+            "mnemonic": "XOR A, t",
+            "bytes": [ "DD", "10101ttt" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "0"
+            }
+        },
+        {
+            "mnemonic": "XOR A, v",
+            "bytes": [ "FD", "10101vvv" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "0"
+            }
+        },
+        {
             "mnemonic": "XOR A, n",
             "bytes": [ "EE", "n" ],
             "cycles": [ 4, 3 ],
@@ -954,6 +1150,34 @@
             "bytes": [ "10111rrr" ],
             "cycles": [ 4 ],
             "ops": [ "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "",
+                "N": "1",
+                "C": ""
+            }
+        },
+        {
+            "mnemonic": "CP A, t",
+            "bytes": [ "DD", "10111ttt" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "",
+                "N": "1",
+                "C": ""
+            }
+        },
+        {
+            "mnemonic": "CP A, v",
+            "bytes": [ "FD", "10111vvv" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1019,6 +1243,32 @@
             }
         },
         {
+            "mnemonic": "INC t",
+            "bytes": [ "DD", "00ttt100" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b3",
+                "V": "7F",
+                "N": "0"
+            }
+        },
+        {
+            "mnemonic": "INC v",
+            "bytes": [ "FD", "00vvv100" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b3",
+                "V": "7F",
+                "N": "0"
+            }
+        },
+        {
             "mnemonic": "INC (HL)",
             "bytes": [ "34" ],
             "cycles": [ 4, 4, 3 ],
@@ -1049,6 +1299,32 @@
             "bytes": [ "00rrr101" ],
             "cycles": [ 4 ],
             "ops": [ "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "80",
+                "N": "1"
+            }
+        },
+        {
+            "mnemonic": "DEC t",
+            "bytes": [ "DD", "00ttt101" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "80",
+                "N": "1"
+            }
+        },
+        {
+            "mnemonic": "DEC v",
+            "bytes": [ "FD", "00vvv101" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",
@@ -1379,6 +1655,20 @@
             }
         },
         {
+            "mnemonic": "RLC (ex+d), r",
+            "bytes": [ "ex", "CB", "d", "00000rrr" ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
             "mnemonic": "RL r",
             "bytes": [ "CB", "00010rrr" ],
             "cycles": [ 4, 4 ],
@@ -1409,6 +1699,20 @@
         {
             "mnemonic": "RL (ex+d)",
             "bytes": [ "ex", "CB", "d", "16" ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "RL (ex+d), r",
+            "bytes": [ "ex", "CB", "d", "00010rrr" ],
             "cycles": [ 4, 4, 3, 5, 4, 3 ],
             "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
             "flags": {
@@ -1463,6 +1767,20 @@
             }
         },
         {
+            "mnemonic": "RRC (ex+d), r",
+            "bytes": [ "ex", "CB", "d", "00001rrr" ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b0"
+            }
+        },
+        {
             "mnemonic": "RR r",
             "bytes": [ "CB", "00011rrr" ],
             "cycles": [ 4, 4 ],
@@ -1493,6 +1811,20 @@
         {
             "mnemonic": "RR (ex+d)",
             "bytes": [ "ex", "CB", "d", "1E" ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b0"
+            }
+        },
+        {
+            "mnemonic": "RR (ex+d), r",
+            "bytes": [ "ex", "CB", "d", "00011rrr" ],
             "cycles": [ 4, 4, 3, 5, 4, 3 ],
             "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
             "flags": {
@@ -1547,6 +1879,76 @@
             }
         },
         {
+            "mnemonic": "SLA (ex+d), r",
+            "bytes": [ "ex", "CB", "d", "00100rrr" ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "SLL r",
+            "bytes": [ "CB", "00110rrr" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "SLL (HL)",
+            "bytes": [ "CB", "36" ],
+            "cycles": [ 4, 4, 4, 3 ],
+            "ops": [ "OF", "OF", "MR", "MW" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "SLL (ex+d)",
+            "bytes": [ "ex", "CB", "d", "36" ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
+            "mnemonic": "SLL (ex+d), r",
+            "bytes": [ "ex", "CB", "d", "00110rrr" ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b7"
+            }
+        },
+        {
             "mnemonic": "SRA r",
             "bytes": [ "CB", "00101rrr" ],
             "cycles": [ 4, 4 ],
@@ -1589,6 +1991,20 @@
             }
         },
         {
+            "mnemonic": "SRA (ex+d), r",
+            "bytes": [ "ex", "CB", "d", "00101rrr" ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b0"
+            }
+        },
+        {
             "mnemonic": "SRL r",
             "bytes": [ "CB", "00111rrr" ],
             "cycles": [ 4, 4 ],
@@ -1619,6 +2035,20 @@
         {
             "mnemonic": "SRL (ex+d)",
             "bytes": [ "ex", "CB", "d", "3E" ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
+            "flags": {
+                "S": "0",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0",
+                "C": "b0"
+            }
+        },
+        {
+            "mnemonic": "SRL (ex+d), r",
+            "bytes": [ "ex", "CB", "d", "00111rrr" ],
             "cycles": [ 4, 4, 3, 5, 4, 3 ],
             "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
             "flags": {
@@ -1693,6 +2123,17 @@
                 "N": "0"
             }
         },
+        //{
+        //    "mnemonic": "BIT b, (ex+d)",  // no 'r' - not stored. Current param detection uses mnemonic
+        //    "bytes": [ "ex", "CB", "d", "01bbbrrr" ],
+        //    "cycles": [ 4, 4, 3, 5, 4 ],
+        //    "ops": [ "OF", "OF", "OD", "FD", "MR" ],
+        //    "flags": {
+        //        "Z": "",
+        //        "H": "1",
+        //        "N": "0"
+        //    }
+        //},
         {
             "mnemonic": "SET b, r",
             "bytes": [ "CB", "11bbbrrr" ],
@@ -1715,6 +2156,13 @@
             "flags": {}
         },
         {
+            "mnemonic": "SET b, (ex+d), r",
+            "bytes": [ "ex", "CB", "d", "11bbbrrr" ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
+            "flags": {}
+        },
+        {
             "mnemonic": "RES b, r",
             "bytes": [ "CB", "10bbbrrr" ],
             "ops": [ "OF", "OF" ],
@@ -1731,6 +2179,13 @@
         {
             "mnemonic": "RES b, (ex+d)",
             "bytes": [ "ex", "CB", "d", "10bbb110" ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
+            "cycles": [ 4, 4, 3, 5, 4, 3 ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "RES b, (ex+d), r",
+            "bytes": [ "ex", "CB", "d", "10bbbrrr" ],
             "ops": [ "OF", "OF", "OD", "FD", "MR", "MW" ],
             "cycles": [ 4, 4, 3, 5, 4, 3 ],
             "flags": {}

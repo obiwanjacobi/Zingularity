@@ -47,10 +47,10 @@ namespace Jacobi.CpuZ80.Meta
 
                 var paramValues = tables.ToDictionary(t => t.Table.Key, t => t.Enumerator.Current.Key);
 
-                var builder = InstructionBuilder.Copy(instructionInfo);
-                builder.ReplaceParams(tables.Select(t => t.Table), paramValues);
+                var builder = InstructionBuilder.New(instructionInfo);
+                builder.AssignParameterValues(tables.Select(t => t.Table), paramValues);
 
-                instructionDecls.Add(new InstructionMeta(builder.InstructionInfo));
+                instructionDecls.Add(builder.InstructionMeta);
 
                 AddInstructionDecls(instructionDecls, instructionInfo, tables, currentTableIndex + 1);
             }

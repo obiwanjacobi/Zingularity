@@ -1610,8 +1610,14 @@ extern InstructionInfo instructionInfoIM0_ED2;
 // IM1  -  ED, 56
 extern InstructionInfo instructionInfoIM1_ED2;
 
+// IM1*  -  ED, 76
+extern InstructionInfo instructionInfoIM1x_ED2;
+
 // IM2  -  ED, 5E
 extern InstructionInfo instructionInfoIM2_ED2;
+
+// IM2*  -  ED, 7E
+extern InstructionInfo instructionInfoIM2x_ED2;
 
 // ADD HL, BC  -  09
 extern InstructionInfo instructionInfoADDHL_BC_1;
@@ -3815,6 +3821,9 @@ extern InstructionInfo instructionInfoINH__C__ED2;
 // IN L, (C)  -  ED, 68
 extern InstructionInfo instructionInfoINL__C__ED2;
 
+// IN (C)  -  ED, 70
+extern InstructionInfo instructionInfoIN_C__ED2;
+
 // INI  -  ED, A2
 extern InstructionInfo instructionInfoINI_ED2;
 
@@ -3850,6 +3859,9 @@ extern InstructionInfo instructionInfoOUT_C__H_ED2;
 
 // OUT (C), L  -  ED, 69
 extern InstructionInfo instructionInfoOUT_C__L_ED2;
+
+// OUT (C), 0  -  ED, 71
+extern InstructionInfo instructionInfoOUT_C__0_ED2;
 
 // OUTI  -  ED, A3
 extern InstructionInfo instructionInfoOUTI_ED2;

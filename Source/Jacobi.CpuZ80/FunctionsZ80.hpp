@@ -1927,8 +1927,14 @@ extern void OnClock_IM0_ED2_OF();
 // IM1   -  IM1_ED2  -  ED, 56
 extern void OnClock_IM1_ED2_OF();
 
+// IM1*   -  IM1x_ED2  -  ED, 76
+extern void OnClock_IM1x_ED2_OF();
+
 // IM2   -  IM2_ED2  -  ED, 5E
 extern void OnClock_IM2_ED2_OF();
+
+// IM2*   -  IM2x_ED2  -  ED, 7E
+extern void OnClock_IM2x_ED2_OF();
 
 // ADD HL, BC   -  ADDHL_BC_1  -  09
 extern void OnClock_ADDHL_p_1_OF();
@@ -5468,6 +5474,9 @@ extern void OnClock_INr__C__ED2_PR();
 extern void OnClock_INr__C__ED2_OF();
 extern void OnClock_INr__C__ED2_PR();
 
+// IN (C)   -  IN_C__ED2  -  ED, 70
+extern void OnClock_IN_C__ED2_OF();
+
 // INI   -  INI_ED2  -  ED, A2
 extern void OnClock_INI_ED2_OF();
 extern void OnClock_INI_ED2_MW();
@@ -5516,6 +5525,9 @@ extern void OnClock_OUT_C__r_ED2_PW();
 // OUT (C), L   -  OUT_C__L_ED2  -  ED, 69
 extern void OnClock_OUT_C__r_ED2_OF();
 extern void OnClock_OUT_C__r_ED2_PW();
+
+// OUT (C), 0   -  OUT_C__0_ED2  -  ED, 71
+extern void OnClock_OUT_C__0_ED2_OF();
 
 // OUTI   -  OUTI_ED2  -  ED, A3
 extern void OnClock_OUTI_ED2_OF();

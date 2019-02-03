@@ -1400,6 +1400,20 @@
                 "C": "00"
             }
         },
+        //{
+        //    "mnemonic": "NEG*",
+        //    "bytes": [ "ED", "01***100" ],
+        //    "cycles": [ 4, 4 ],
+        //    "ops": [ "OF", "OF" ],
+        //    "flags": {
+        //        "S": "",
+        //        "Z": "",
+        //        "H": "b4",
+        //        "V": "80",
+        //        "N": "1",
+        //        "C": "00"
+        //    }
+        //},
         {
             "mnemonic": "CCF",
             "bytes": [ "3F" ],
@@ -1457,6 +1471,13 @@
             "ops": [ "OF", "OF" ],
             "flags": {}
         },
+        //{
+        //    "mnemonic": "IM0*",
+        //    "bytes": [ "ED", "01*0*110" ],
+        //    "cycles": [ 4, 4 ],
+        //    "ops": [ "OF", "OF" ],
+        //    "flags": {}
+        //},
         {
             "mnemonic": "IM1",
             "bytes": [ "ED", "56" ],
@@ -1465,8 +1486,22 @@
             "flags": {}
         },
         {
+            "mnemonic": "IM1*",
+            "bytes": [ "ED", "76" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {}
+        },
+        {
             "mnemonic": "IM2",
             "bytes": [ "ED", "5E" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "IM2*",
+            "bytes": [ "ED", "7E" ],
             "cycles": [ 4, 4 ],
             "ops": [ "OF", "OF" ],
             "flags": {}
@@ -2293,6 +2328,13 @@
             "ops": [ "OF", "OF", "SRh", "SRl" ],
             "flags": {}
         },
+        //{
+        //    "mnemonic": "RETN*",
+        //    "bytes": [ "ED", "01***001" ],
+        //    "cycles": [ 4, 4, 3, 3 ],
+        //    "ops": [ "OF", "OF", "SRh", "SRl" ],
+        //    "flags": {}
+        //},
         {
             "mnemonic": "RST i",
             "bytes": [ "11iii111" ],
@@ -2314,6 +2356,19 @@
         {
             "mnemonic": "IN r, (C)",
             "bytes": [ "ED", "01rrr000" ],
+            "cycles": [ 4, 4, 4 ],
+            "ops": [ "OF", "OF", "PR" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "0",
+                "P": "",
+                "N": "0"
+            }
+        },
+        {
+            "mnemonic": "IN (C)",
+            "bytes": [ "ED", "70" ],
             "cycles": [ 4, 4, 4 ],
             "ops": [ "OF", "OF", "PR" ],
             "flags": {
@@ -2376,6 +2431,13 @@
         {
             "mnemonic": "OUT (C), r",
             "bytes": [ "ED", "01rrr001" ],
+            "cycles": [ 4, 4, 4 ],
+            "ops": [ "OF", "OF", "PW" ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "OUT (C), 0",
+            "bytes": [ "ED", "71" ],
             "cycles": [ 4, 4, 4 ],
             "ops": [ "OF", "OF", "PW" ],
             "flags": {}

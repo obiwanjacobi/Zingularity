@@ -10098,6 +10098,25 @@ InstructionInfo instructionInfoIM1_ED2 =
     }
 };
 
+// IM1*  -  ED, 76
+InstructionInfo instructionInfoIM1x_ED2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_IM1x_ED2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
 // IM2  -  ED, 5E
 InstructionInfo instructionInfoIM2_ED2 =
 {
@@ -10106,6 +10125,25 @@ InstructionInfo instructionInfoIM2_ED2 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_IM2_ED2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// IM2*  -  ED, 7E
+InstructionInfo instructionInfoIM2x_ED2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_IM2x_ED2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -24063,6 +24101,25 @@ InstructionInfo instructionInfoINL__C__ED2 =
     }
 };
 
+// IN (C)  -  ED, 70
+InstructionInfo instructionInfoIN_C__ED2 =
+{
+    3,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_IN_C__ED2_OF },
+        { 4, OnClock_PR },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
 // INI  -  ED, A2
 InstructionInfo instructionInfoINI_ED2 =
 {
@@ -24287,6 +24344,25 @@ InstructionInfo instructionInfoOUT_C__L_ED2 =
     },
     {
         { VariableType::Registers8, 5 },
+        { VariableType::None },
+    }
+};
+
+// OUT (C), 0  -  ED, 71
+InstructionInfo instructionInfoOUT_C__0_ED2 =
+{
+    3,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OUT_C__0_ED2_OF },
+        { 4, OnClock_PW },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
         { VariableType::None },
     }
 };

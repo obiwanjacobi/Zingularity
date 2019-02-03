@@ -11,12 +11,13 @@
 
         public override string TransformText()
         {
-            var cbTable = _decls.Where(d => d.Info.Bytes[0] == "CB").OrderBy(d => d.Info.Bytes[1]).ToList();
-            var edTable = _decls.Where(d => d.Info.Bytes[0] == "ED").OrderBy(d => d.Info.Bytes[1]).ToList();
-            var ddTable = _decls.Where(d => d.Info.Bytes[0] == "DD").OrderBy(d => d.Info.Bytes[1]).ToList();
-            var fdTable = _decls.Where(d => d.Info.Bytes[0] == "FD").OrderBy(d => d.Info.Bytes[1]).ToList();
-            var table = _decls.Where(d => d.Info.Bytes[0] != "CB" && d.Info.Bytes[0] != "ED" && d.Info.Bytes[0] != "DD" && d.Info.Bytes[0] != "FD")
-                            .OrderBy(d => d.Info.Bytes[0]).ToList();
+            var cbTable = _decls.Where(d => d.HasCB && !(d.HasDD || d.HasFD)).OrderBy(d => d.Info.Bytes[1]).ToList();
+            var edTable = _decls.Where(d => d.HasED).OrderBy(d => d.Info.Bytes[1]).ToList();
+            var ddTable = _decls.Where(d => d.HasDD && !d.HasCB).OrderBy(d => d.Info.Bytes[1]).ToList();
+            var fdTable = _decls.Where(d => d.HasFD && !d.HasCB).OrderBy(d => d.Info.Bytes[1]).ToList();
+            var ddcbTable = _decls.Where(d => d.HasDD && d.HasCB).OrderBy(d => d.Info.Bytes[3]).ToList();
+            var fdcbTable = _decls.Where(d => d.HasFD && d.HasCB).OrderBy(d => d.Info.Bytes[3]).ToList();
+            var table = _decls.Where(d => !InstructionMeta.IsExt(d.Info.Bytes[0])).ToList();
 #>
 /**
  *  Generated Source Code
@@ -55,6 +56,20 @@ InstructionTableEntry InstructionTableCB[] = {
 #>
 };
 
+// ED-extension opcodes
+uint8_t InstructionTableED_length = <#= edTable.Count #>;
+InstructionTableEntry InstructionTableED[] = {
+<#+
+            foreach (var decl in edTable)
+            {
+
+#>
+    { 0x<#= decl.Info.Bytes[1] #>, &instructionInfo<#= decl.Name #> },
+<#+        
+            }
+#>
+};
+
 // IX-extension opcodes
 uint8_t InstructionTableDD_length = <#= ddTable.Count #>;
 InstructionTableEntry InstructionTableDD[] = {
@@ -64,6 +79,20 @@ InstructionTableEntry InstructionTableDD[] = {
 
 #>
     { 0x<#= decl.Info.Bytes[1] #>, &instructionInfo<#= decl.Name #> },
+<#+        
+            }
+#>
+};
+
+// IX-CB-extension opcodes
+uint8_t InstructionTableDDCB_length = <#= ddcbTable.Count #>;
+InstructionTableEntry InstructionTableDDCB[] = {
+<#+
+            foreach (var decl in ddcbTable)
+            {
+
+#>
+    { 0x<#= decl.Info.Bytes[3] #>, &instructionInfo<#= decl.Name #> },
 <#+        
             }
 #>
@@ -83,15 +112,15 @@ InstructionTableEntry InstructionTableFD[] = {
 #>
 };
 
-// ED-extension opcodes
-uint8_t InstructionTableED_length = <#= edTable.Count #>;
-InstructionTableEntry InstructionTableED[] = {
+// IY-CB-extension opcodes
+uint8_t InstructionTableFDCB_length = <#= fdcbTable.Count #>;
+InstructionTableEntry InstructionTableFDCB[] = {
 <#+
-            foreach (var decl in edTable)
+            foreach (var decl in fdcbTable)
             {
 
 #>
-    { 0x<#= decl.Info.Bytes[1] #>, &instructionInfo<#= decl.Name #> },
+    { 0x<#= decl.Info.Bytes[3] #>, &instructionInfo<#= decl.Name #> },
 <#+        
             }
 #>

@@ -160,9 +160,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ClockTick.cpp" />
+    <ClCompile Include="Instructions.Arithmetic16.cpp" />
+    <ClCompile Include="Instructions.Arithmetic8.cpp" />
+    <ClCompile Include="Instructions.BitSetTest.cpp" />
+    <ClCompile Include="Instructions.CallReturn.cpp" />
+    <ClCompile Include="Instructions.ExchangeBlockTransfer.cpp" />
+    <ClCompile Include="Instructions.GeneralPurposeControl.cpp" />
     <ClCompile Include="Instructions.Generic.cpp" />
+    <ClCompile Include="Instructions.Jump.cpp" />
+    <ClCompile Include="Instructions.Load16.cpp" />
+    <ClCompile Include="Instructions.Load8.cpp" />
+    <ClCompile Include="Instructions.RotateShift.cpp" />
     <ClCompile Include="InstructionsZ80.cpp" />
     <ClCompile Include="InstructionTablesZ80.cpp" />
+    <ClCompile Include="Instructions.InputOutput.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

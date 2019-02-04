@@ -27,7 +27,7 @@
             {
 #>
 
-// <#= decl.Info.Mnemonic #>  -  <#= String.Join(", ", decl.Info.Bytes) #>
+// <#= decl.Info.Mnemonic #>   -  <#= decl.Name #>  -  <#= String.Join(", ", decl.Info.Bytes) #>
 InstructionInfo instructionInfo<#= decl.Name #> =
 {
     <#= decl.Info.Cycles.Count #>,

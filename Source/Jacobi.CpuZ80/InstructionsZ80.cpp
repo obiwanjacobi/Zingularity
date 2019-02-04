@@ -9,7 +9,7 @@
 
 // Instructions for the Z80:
 
-// LD A, A  -  7F
+// LD A, A   -  LDA_A_1  -  7F
 InstructionInfo instructionInfoLDA_A_1 =
 {
     1,
@@ -28,7 +28,7 @@ InstructionInfo instructionInfoLDA_A_1 =
     }
 };
 
-// LD A, B  -  78
+// LD A, B   -  LDA_B_1  -  78
 InstructionInfo instructionInfoLDA_B_1 =
 {
     1,
@@ -47,7 +47,7 @@ InstructionInfo instructionInfoLDA_B_1 =
     }
 };
 
-// LD A, C  -  79
+// LD A, C   -  LDA_C_1  -  79
 InstructionInfo instructionInfoLDA_C_1 =
 {
     1,
@@ -66,7 +66,7 @@ InstructionInfo instructionInfoLDA_C_1 =
     }
 };
 
-// LD A, D  -  7A
+// LD A, D   -  LDA_D_1  -  7A
 InstructionInfo instructionInfoLDA_D_1 =
 {
     1,
@@ -85,7 +85,7 @@ InstructionInfo instructionInfoLDA_D_1 =
     }
 };
 
-// LD A, E  -  7B
+// LD A, E   -  LDA_E_1  -  7B
 InstructionInfo instructionInfoLDA_E_1 =
 {
     1,
@@ -104,7 +104,7 @@ InstructionInfo instructionInfoLDA_E_1 =
     }
 };
 
-// LD A, H  -  7C
+// LD A, H   -  LDA_H_1  -  7C
 InstructionInfo instructionInfoLDA_H_1 =
 {
     1,
@@ -123,7 +123,7 @@ InstructionInfo instructionInfoLDA_H_1 =
     }
 };
 
-// LD A, L  -  7D
+// LD A, L   -  LDA_L_1  -  7D
 InstructionInfo instructionInfoLDA_L_1 =
 {
     1,
@@ -142,7 +142,7 @@ InstructionInfo instructionInfoLDA_L_1 =
     }
 };
 
-// LD B, A  -  47
+// LD B, A   -  LDB_A_1  -  47
 InstructionInfo instructionInfoLDB_A_1 =
 {
     1,
@@ -161,7 +161,7 @@ InstructionInfo instructionInfoLDB_A_1 =
     }
 };
 
-// LD B, B  -  40
+// LD B, B   -  LDB_B_1  -  40
 InstructionInfo instructionInfoLDB_B_1 =
 {
     1,
@@ -180,7 +180,7 @@ InstructionInfo instructionInfoLDB_B_1 =
     }
 };
 
-// LD B, C  -  41
+// LD B, C   -  LDB_C_1  -  41
 InstructionInfo instructionInfoLDB_C_1 =
 {
     1,
@@ -199,7 +199,7 @@ InstructionInfo instructionInfoLDB_C_1 =
     }
 };
 
-// LD B, D  -  42
+// LD B, D   -  LDB_D_1  -  42
 InstructionInfo instructionInfoLDB_D_1 =
 {
     1,
@@ -218,7 +218,7 @@ InstructionInfo instructionInfoLDB_D_1 =
     }
 };
 
-// LD B, E  -  43
+// LD B, E   -  LDB_E_1  -  43
 InstructionInfo instructionInfoLDB_E_1 =
 {
     1,
@@ -237,7 +237,7 @@ InstructionInfo instructionInfoLDB_E_1 =
     }
 };
 
-// LD B, H  -  44
+// LD B, H   -  LDB_H_1  -  44
 InstructionInfo instructionInfoLDB_H_1 =
 {
     1,
@@ -256,7 +256,7 @@ InstructionInfo instructionInfoLDB_H_1 =
     }
 };
 
-// LD B, L  -  45
+// LD B, L   -  LDB_L_1  -  45
 InstructionInfo instructionInfoLDB_L_1 =
 {
     1,
@@ -275,7 +275,7 @@ InstructionInfo instructionInfoLDB_L_1 =
     }
 };
 
-// LD C, A  -  4F
+// LD C, A   -  LDC_A_1  -  4F
 InstructionInfo instructionInfoLDC_A_1 =
 {
     1,
@@ -294,7 +294,7 @@ InstructionInfo instructionInfoLDC_A_1 =
     }
 };
 
-// LD C, B  -  48
+// LD C, B   -  LDC_B_1  -  48
 InstructionInfo instructionInfoLDC_B_1 =
 {
     1,
@@ -313,7 +313,7 @@ InstructionInfo instructionInfoLDC_B_1 =
     }
 };
 
-// LD C, C  -  49
+// LD C, C   -  LDC_C_1  -  49
 InstructionInfo instructionInfoLDC_C_1 =
 {
     1,
@@ -332,7 +332,7 @@ InstructionInfo instructionInfoLDC_C_1 =
     }
 };
 
-// LD C, D  -  4A
+// LD C, D   -  LDC_D_1  -  4A
 InstructionInfo instructionInfoLDC_D_1 =
 {
     1,
@@ -351,7 +351,7 @@ InstructionInfo instructionInfoLDC_D_1 =
     }
 };
 
-// LD C, E  -  4B
+// LD C, E   -  LDC_E_1  -  4B
 InstructionInfo instructionInfoLDC_E_1 =
 {
     1,
@@ -370,7 +370,7 @@ InstructionInfo instructionInfoLDC_E_1 =
     }
 };
 
-// LD C, H  -  4C
+// LD C, H   -  LDC_H_1  -  4C
 InstructionInfo instructionInfoLDC_H_1 =
 {
     1,
@@ -389,7 +389,7 @@ InstructionInfo instructionInfoLDC_H_1 =
     }
 };
 
-// LD C, L  -  4D
+// LD C, L   -  LDC_L_1  -  4D
 InstructionInfo instructionInfoLDC_L_1 =
 {
     1,
@@ -408,7 +408,7 @@ InstructionInfo instructionInfoLDC_L_1 =
     }
 };
 
-// LD D, A  -  57
+// LD D, A   -  LDD_A_1  -  57
 InstructionInfo instructionInfoLDD_A_1 =
 {
     1,
@@ -427,7 +427,7 @@ InstructionInfo instructionInfoLDD_A_1 =
     }
 };
 
-// LD D, B  -  50
+// LD D, B   -  LDD_B_1  -  50
 InstructionInfo instructionInfoLDD_B_1 =
 {
     1,
@@ -446,7 +446,7 @@ InstructionInfo instructionInfoLDD_B_1 =
     }
 };
 
-// LD D, C  -  51
+// LD D, C   -  LDD_C_1  -  51
 InstructionInfo instructionInfoLDD_C_1 =
 {
     1,
@@ -465,7 +465,7 @@ InstructionInfo instructionInfoLDD_C_1 =
     }
 };
 
-// LD D, D  -  52
+// LD D, D   -  LDD_D_1  -  52
 InstructionInfo instructionInfoLDD_D_1 =
 {
     1,
@@ -484,7 +484,7 @@ InstructionInfo instructionInfoLDD_D_1 =
     }
 };
 
-// LD D, E  -  53
+// LD D, E   -  LDD_E_1  -  53
 InstructionInfo instructionInfoLDD_E_1 =
 {
     1,
@@ -503,7 +503,7 @@ InstructionInfo instructionInfoLDD_E_1 =
     }
 };
 
-// LD D, H  -  54
+// LD D, H   -  LDD_H_1  -  54
 InstructionInfo instructionInfoLDD_H_1 =
 {
     1,
@@ -522,7 +522,7 @@ InstructionInfo instructionInfoLDD_H_1 =
     }
 };
 
-// LD D, L  -  55
+// LD D, L   -  LDD_L_1  -  55
 InstructionInfo instructionInfoLDD_L_1 =
 {
     1,
@@ -541,7 +541,7 @@ InstructionInfo instructionInfoLDD_L_1 =
     }
 };
 
-// LD E, A  -  5F
+// LD E, A   -  LDE_A_1  -  5F
 InstructionInfo instructionInfoLDE_A_1 =
 {
     1,
@@ -560,7 +560,7 @@ InstructionInfo instructionInfoLDE_A_1 =
     }
 };
 
-// LD E, B  -  58
+// LD E, B   -  LDE_B_1  -  58
 InstructionInfo instructionInfoLDE_B_1 =
 {
     1,
@@ -579,7 +579,7 @@ InstructionInfo instructionInfoLDE_B_1 =
     }
 };
 
-// LD E, C  -  59
+// LD E, C   -  LDE_C_1  -  59
 InstructionInfo instructionInfoLDE_C_1 =
 {
     1,
@@ -598,7 +598,7 @@ InstructionInfo instructionInfoLDE_C_1 =
     }
 };
 
-// LD E, D  -  5A
+// LD E, D   -  LDE_D_1  -  5A
 InstructionInfo instructionInfoLDE_D_1 =
 {
     1,
@@ -617,7 +617,7 @@ InstructionInfo instructionInfoLDE_D_1 =
     }
 };
 
-// LD E, E  -  5B
+// LD E, E   -  LDE_E_1  -  5B
 InstructionInfo instructionInfoLDE_E_1 =
 {
     1,
@@ -636,7 +636,7 @@ InstructionInfo instructionInfoLDE_E_1 =
     }
 };
 
-// LD E, H  -  5C
+// LD E, H   -  LDE_H_1  -  5C
 InstructionInfo instructionInfoLDE_H_1 =
 {
     1,
@@ -655,7 +655,7 @@ InstructionInfo instructionInfoLDE_H_1 =
     }
 };
 
-// LD E, L  -  5D
+// LD E, L   -  LDE_L_1  -  5D
 InstructionInfo instructionInfoLDE_L_1 =
 {
     1,
@@ -674,7 +674,7 @@ InstructionInfo instructionInfoLDE_L_1 =
     }
 };
 
-// LD H, A  -  67
+// LD H, A   -  LDH_A_1  -  67
 InstructionInfo instructionInfoLDH_A_1 =
 {
     1,
@@ -693,7 +693,7 @@ InstructionInfo instructionInfoLDH_A_1 =
     }
 };
 
-// LD H, B  -  60
+// LD H, B   -  LDH_B_1  -  60
 InstructionInfo instructionInfoLDH_B_1 =
 {
     1,
@@ -712,7 +712,7 @@ InstructionInfo instructionInfoLDH_B_1 =
     }
 };
 
-// LD H, C  -  61
+// LD H, C   -  LDH_C_1  -  61
 InstructionInfo instructionInfoLDH_C_1 =
 {
     1,
@@ -731,7 +731,7 @@ InstructionInfo instructionInfoLDH_C_1 =
     }
 };
 
-// LD H, D  -  62
+// LD H, D   -  LDH_D_1  -  62
 InstructionInfo instructionInfoLDH_D_1 =
 {
     1,
@@ -750,7 +750,7 @@ InstructionInfo instructionInfoLDH_D_1 =
     }
 };
 
-// LD H, E  -  63
+// LD H, E   -  LDH_E_1  -  63
 InstructionInfo instructionInfoLDH_E_1 =
 {
     1,
@@ -769,7 +769,7 @@ InstructionInfo instructionInfoLDH_E_1 =
     }
 };
 
-// LD H, H  -  64
+// LD H, H   -  LDH_H_1  -  64
 InstructionInfo instructionInfoLDH_H_1 =
 {
     1,
@@ -788,7 +788,7 @@ InstructionInfo instructionInfoLDH_H_1 =
     }
 };
 
-// LD H, L  -  65
+// LD H, L   -  LDH_L_1  -  65
 InstructionInfo instructionInfoLDH_L_1 =
 {
     1,
@@ -807,7 +807,7 @@ InstructionInfo instructionInfoLDH_L_1 =
     }
 };
 
-// LD L, A  -  6F
+// LD L, A   -  LDL_A_1  -  6F
 InstructionInfo instructionInfoLDL_A_1 =
 {
     1,
@@ -826,7 +826,7 @@ InstructionInfo instructionInfoLDL_A_1 =
     }
 };
 
-// LD L, B  -  68
+// LD L, B   -  LDL_B_1  -  68
 InstructionInfo instructionInfoLDL_B_1 =
 {
     1,
@@ -845,7 +845,7 @@ InstructionInfo instructionInfoLDL_B_1 =
     }
 };
 
-// LD L, C  -  69
+// LD L, C   -  LDL_C_1  -  69
 InstructionInfo instructionInfoLDL_C_1 =
 {
     1,
@@ -864,7 +864,7 @@ InstructionInfo instructionInfoLDL_C_1 =
     }
 };
 
-// LD L, D  -  6A
+// LD L, D   -  LDL_D_1  -  6A
 InstructionInfo instructionInfoLDL_D_1 =
 {
     1,
@@ -883,7 +883,7 @@ InstructionInfo instructionInfoLDL_D_1 =
     }
 };
 
-// LD L, E  -  6B
+// LD L, E   -  LDL_E_1  -  6B
 InstructionInfo instructionInfoLDL_E_1 =
 {
     1,
@@ -902,7 +902,7 @@ InstructionInfo instructionInfoLDL_E_1 =
     }
 };
 
-// LD L, H  -  6C
+// LD L, H   -  LDL_H_1  -  6C
 InstructionInfo instructionInfoLDL_H_1 =
 {
     1,
@@ -921,7 +921,7 @@ InstructionInfo instructionInfoLDL_H_1 =
     }
 };
 
-// LD L, L  -  6D
+// LD L, L   -  LDL_L_1  -  6D
 InstructionInfo instructionInfoLDL_L_1 =
 {
     1,
@@ -940,7 +940,7 @@ InstructionInfo instructionInfoLDL_L_1 =
     }
 };
 
-// LD A, A  -  DD, 7F
+// LD A, A   -  LDA_A_DD2  -  DD, 7F
 InstructionInfo instructionInfoLDA_A_DD2 =
 {
     2,
@@ -959,7 +959,7 @@ InstructionInfo instructionInfoLDA_A_DD2 =
     }
 };
 
-// LD A, B  -  DD, 78
+// LD A, B   -  LDA_B_DD2  -  DD, 78
 InstructionInfo instructionInfoLDA_B_DD2 =
 {
     2,
@@ -978,7 +978,7 @@ InstructionInfo instructionInfoLDA_B_DD2 =
     }
 };
 
-// LD A, C  -  DD, 79
+// LD A, C   -  LDA_C_DD2  -  DD, 79
 InstructionInfo instructionInfoLDA_C_DD2 =
 {
     2,
@@ -997,7 +997,7 @@ InstructionInfo instructionInfoLDA_C_DD2 =
     }
 };
 
-// LD A, D  -  DD, 7A
+// LD A, D   -  LDA_D_DD2  -  DD, 7A
 InstructionInfo instructionInfoLDA_D_DD2 =
 {
     2,
@@ -1016,7 +1016,7 @@ InstructionInfo instructionInfoLDA_D_DD2 =
     }
 };
 
-// LD A, E  -  DD, 7B
+// LD A, E   -  LDA_E_DD2  -  DD, 7B
 InstructionInfo instructionInfoLDA_E_DD2 =
 {
     2,
@@ -1035,7 +1035,7 @@ InstructionInfo instructionInfoLDA_E_DD2 =
     }
 };
 
-// LD A, IXh  -  DD, 7C
+// LD A, IXh   -  LDA_IXh_DD2  -  DD, 7C
 InstructionInfo instructionInfoLDA_IXh_DD2 =
 {
     2,
@@ -1054,7 +1054,7 @@ InstructionInfo instructionInfoLDA_IXh_DD2 =
     }
 };
 
-// LD A, IXl  -  DD, 7D
+// LD A, IXl   -  LDA_IXl_DD2  -  DD, 7D
 InstructionInfo instructionInfoLDA_IXl_DD2 =
 {
     2,
@@ -1073,7 +1073,7 @@ InstructionInfo instructionInfoLDA_IXl_DD2 =
     }
 };
 
-// LD B, A  -  DD, 47
+// LD B, A   -  LDB_A_DD2  -  DD, 47
 InstructionInfo instructionInfoLDB_A_DD2 =
 {
     2,
@@ -1092,7 +1092,7 @@ InstructionInfo instructionInfoLDB_A_DD2 =
     }
 };
 
-// LD B, B  -  DD, 40
+// LD B, B   -  LDB_B_DD2  -  DD, 40
 InstructionInfo instructionInfoLDB_B_DD2 =
 {
     2,
@@ -1111,7 +1111,7 @@ InstructionInfo instructionInfoLDB_B_DD2 =
     }
 };
 
-// LD B, C  -  DD, 41
+// LD B, C   -  LDB_C_DD2  -  DD, 41
 InstructionInfo instructionInfoLDB_C_DD2 =
 {
     2,
@@ -1130,7 +1130,7 @@ InstructionInfo instructionInfoLDB_C_DD2 =
     }
 };
 
-// LD B, D  -  DD, 42
+// LD B, D   -  LDB_D_DD2  -  DD, 42
 InstructionInfo instructionInfoLDB_D_DD2 =
 {
     2,
@@ -1149,7 +1149,7 @@ InstructionInfo instructionInfoLDB_D_DD2 =
     }
 };
 
-// LD B, E  -  DD, 43
+// LD B, E   -  LDB_E_DD2  -  DD, 43
 InstructionInfo instructionInfoLDB_E_DD2 =
 {
     2,
@@ -1168,7 +1168,7 @@ InstructionInfo instructionInfoLDB_E_DD2 =
     }
 };
 
-// LD B, IXh  -  DD, 44
+// LD B, IXh   -  LDB_IXh_DD2  -  DD, 44
 InstructionInfo instructionInfoLDB_IXh_DD2 =
 {
     2,
@@ -1187,7 +1187,7 @@ InstructionInfo instructionInfoLDB_IXh_DD2 =
     }
 };
 
-// LD B, IXl  -  DD, 45
+// LD B, IXl   -  LDB_IXl_DD2  -  DD, 45
 InstructionInfo instructionInfoLDB_IXl_DD2 =
 {
     2,
@@ -1206,7 +1206,7 @@ InstructionInfo instructionInfoLDB_IXl_DD2 =
     }
 };
 
-// LD C, A  -  DD, 4F
+// LD C, A   -  LDC_A_DD2  -  DD, 4F
 InstructionInfo instructionInfoLDC_A_DD2 =
 {
     2,
@@ -1225,7 +1225,7 @@ InstructionInfo instructionInfoLDC_A_DD2 =
     }
 };
 
-// LD C, B  -  DD, 48
+// LD C, B   -  LDC_B_DD2  -  DD, 48
 InstructionInfo instructionInfoLDC_B_DD2 =
 {
     2,
@@ -1244,7 +1244,7 @@ InstructionInfo instructionInfoLDC_B_DD2 =
     }
 };
 
-// LD C, C  -  DD, 49
+// LD C, C   -  LDC_C_DD2  -  DD, 49
 InstructionInfo instructionInfoLDC_C_DD2 =
 {
     2,
@@ -1263,7 +1263,7 @@ InstructionInfo instructionInfoLDC_C_DD2 =
     }
 };
 
-// LD C, D  -  DD, 4A
+// LD C, D   -  LDC_D_DD2  -  DD, 4A
 InstructionInfo instructionInfoLDC_D_DD2 =
 {
     2,
@@ -1282,7 +1282,7 @@ InstructionInfo instructionInfoLDC_D_DD2 =
     }
 };
 
-// LD C, E  -  DD, 4B
+// LD C, E   -  LDC_E_DD2  -  DD, 4B
 InstructionInfo instructionInfoLDC_E_DD2 =
 {
     2,
@@ -1301,7 +1301,7 @@ InstructionInfo instructionInfoLDC_E_DD2 =
     }
 };
 
-// LD C, IXh  -  DD, 4C
+// LD C, IXh   -  LDC_IXh_DD2  -  DD, 4C
 InstructionInfo instructionInfoLDC_IXh_DD2 =
 {
     2,
@@ -1320,7 +1320,7 @@ InstructionInfo instructionInfoLDC_IXh_DD2 =
     }
 };
 
-// LD C, IXl  -  DD, 4D
+// LD C, IXl   -  LDC_IXl_DD2  -  DD, 4D
 InstructionInfo instructionInfoLDC_IXl_DD2 =
 {
     2,
@@ -1339,7 +1339,7 @@ InstructionInfo instructionInfoLDC_IXl_DD2 =
     }
 };
 
-// LD D, A  -  DD, 57
+// LD D, A   -  LDD_A_DD2  -  DD, 57
 InstructionInfo instructionInfoLDD_A_DD2 =
 {
     2,
@@ -1358,7 +1358,7 @@ InstructionInfo instructionInfoLDD_A_DD2 =
     }
 };
 
-// LD D, B  -  DD, 50
+// LD D, B   -  LDD_B_DD2  -  DD, 50
 InstructionInfo instructionInfoLDD_B_DD2 =
 {
     2,
@@ -1377,7 +1377,7 @@ InstructionInfo instructionInfoLDD_B_DD2 =
     }
 };
 
-// LD D, C  -  DD, 51
+// LD D, C   -  LDD_C_DD2  -  DD, 51
 InstructionInfo instructionInfoLDD_C_DD2 =
 {
     2,
@@ -1396,7 +1396,7 @@ InstructionInfo instructionInfoLDD_C_DD2 =
     }
 };
 
-// LD D, D  -  DD, 52
+// LD D, D   -  LDD_D_DD2  -  DD, 52
 InstructionInfo instructionInfoLDD_D_DD2 =
 {
     2,
@@ -1415,7 +1415,7 @@ InstructionInfo instructionInfoLDD_D_DD2 =
     }
 };
 
-// LD D, E  -  DD, 53
+// LD D, E   -  LDD_E_DD2  -  DD, 53
 InstructionInfo instructionInfoLDD_E_DD2 =
 {
     2,
@@ -1434,7 +1434,7 @@ InstructionInfo instructionInfoLDD_E_DD2 =
     }
 };
 
-// LD D, IXh  -  DD, 54
+// LD D, IXh   -  LDD_IXh_DD2  -  DD, 54
 InstructionInfo instructionInfoLDD_IXh_DD2 =
 {
     2,
@@ -1453,7 +1453,7 @@ InstructionInfo instructionInfoLDD_IXh_DD2 =
     }
 };
 
-// LD D, IXl  -  DD, 55
+// LD D, IXl   -  LDD_IXl_DD2  -  DD, 55
 InstructionInfo instructionInfoLDD_IXl_DD2 =
 {
     2,
@@ -1472,7 +1472,7 @@ InstructionInfo instructionInfoLDD_IXl_DD2 =
     }
 };
 
-// LD E, A  -  DD, 5F
+// LD E, A   -  LDE_A_DD2  -  DD, 5F
 InstructionInfo instructionInfoLDE_A_DD2 =
 {
     2,
@@ -1491,7 +1491,7 @@ InstructionInfo instructionInfoLDE_A_DD2 =
     }
 };
 
-// LD E, B  -  DD, 58
+// LD E, B   -  LDE_B_DD2  -  DD, 58
 InstructionInfo instructionInfoLDE_B_DD2 =
 {
     2,
@@ -1510,7 +1510,7 @@ InstructionInfo instructionInfoLDE_B_DD2 =
     }
 };
 
-// LD E, C  -  DD, 59
+// LD E, C   -  LDE_C_DD2  -  DD, 59
 InstructionInfo instructionInfoLDE_C_DD2 =
 {
     2,
@@ -1529,7 +1529,7 @@ InstructionInfo instructionInfoLDE_C_DD2 =
     }
 };
 
-// LD E, D  -  DD, 5A
+// LD E, D   -  LDE_D_DD2  -  DD, 5A
 InstructionInfo instructionInfoLDE_D_DD2 =
 {
     2,
@@ -1548,7 +1548,7 @@ InstructionInfo instructionInfoLDE_D_DD2 =
     }
 };
 
-// LD E, E  -  DD, 5B
+// LD E, E   -  LDE_E_DD2  -  DD, 5B
 InstructionInfo instructionInfoLDE_E_DD2 =
 {
     2,
@@ -1567,7 +1567,7 @@ InstructionInfo instructionInfoLDE_E_DD2 =
     }
 };
 
-// LD E, IXh  -  DD, 5C
+// LD E, IXh   -  LDE_IXh_DD2  -  DD, 5C
 InstructionInfo instructionInfoLDE_IXh_DD2 =
 {
     2,
@@ -1586,7 +1586,7 @@ InstructionInfo instructionInfoLDE_IXh_DD2 =
     }
 };
 
-// LD E, IXl  -  DD, 5D
+// LD E, IXl   -  LDE_IXl_DD2  -  DD, 5D
 InstructionInfo instructionInfoLDE_IXl_DD2 =
 {
     2,
@@ -1605,7 +1605,7 @@ InstructionInfo instructionInfoLDE_IXl_DD2 =
     }
 };
 
-// LD IXh, A  -  DD, 67
+// LD IXh, A   -  LDIXh_A_DD2  -  DD, 67
 InstructionInfo instructionInfoLDIXh_A_DD2 =
 {
     2,
@@ -1624,7 +1624,7 @@ InstructionInfo instructionInfoLDIXh_A_DD2 =
     }
 };
 
-// LD IXh, B  -  DD, 60
+// LD IXh, B   -  LDIXh_B_DD2  -  DD, 60
 InstructionInfo instructionInfoLDIXh_B_DD2 =
 {
     2,
@@ -1643,7 +1643,7 @@ InstructionInfo instructionInfoLDIXh_B_DD2 =
     }
 };
 
-// LD IXh, C  -  DD, 61
+// LD IXh, C   -  LDIXh_C_DD2  -  DD, 61
 InstructionInfo instructionInfoLDIXh_C_DD2 =
 {
     2,
@@ -1662,7 +1662,7 @@ InstructionInfo instructionInfoLDIXh_C_DD2 =
     }
 };
 
-// LD IXh, D  -  DD, 62
+// LD IXh, D   -  LDIXh_D_DD2  -  DD, 62
 InstructionInfo instructionInfoLDIXh_D_DD2 =
 {
     2,
@@ -1681,7 +1681,7 @@ InstructionInfo instructionInfoLDIXh_D_DD2 =
     }
 };
 
-// LD IXh, E  -  DD, 63
+// LD IXh, E   -  LDIXh_E_DD2  -  DD, 63
 InstructionInfo instructionInfoLDIXh_E_DD2 =
 {
     2,
@@ -1700,7 +1700,7 @@ InstructionInfo instructionInfoLDIXh_E_DD2 =
     }
 };
 
-// LD IXh, IXh  -  DD, 64
+// LD IXh, IXh   -  LDIXh_IXh_DD2  -  DD, 64
 InstructionInfo instructionInfoLDIXh_IXh_DD2 =
 {
     2,
@@ -1719,7 +1719,7 @@ InstructionInfo instructionInfoLDIXh_IXh_DD2 =
     }
 };
 
-// LD IXh, IXl  -  DD, 65
+// LD IXh, IXl   -  LDIXh_IXl_DD2  -  DD, 65
 InstructionInfo instructionInfoLDIXh_IXl_DD2 =
 {
     2,
@@ -1738,7 +1738,7 @@ InstructionInfo instructionInfoLDIXh_IXl_DD2 =
     }
 };
 
-// LD IXl, A  -  DD, 6F
+// LD IXl, A   -  LDIXl_A_DD2  -  DD, 6F
 InstructionInfo instructionInfoLDIXl_A_DD2 =
 {
     2,
@@ -1757,7 +1757,7 @@ InstructionInfo instructionInfoLDIXl_A_DD2 =
     }
 };
 
-// LD IXl, B  -  DD, 68
+// LD IXl, B   -  LDIXl_B_DD2  -  DD, 68
 InstructionInfo instructionInfoLDIXl_B_DD2 =
 {
     2,
@@ -1776,7 +1776,7 @@ InstructionInfo instructionInfoLDIXl_B_DD2 =
     }
 };
 
-// LD IXl, C  -  DD, 69
+// LD IXl, C   -  LDIXl_C_DD2  -  DD, 69
 InstructionInfo instructionInfoLDIXl_C_DD2 =
 {
     2,
@@ -1795,7 +1795,7 @@ InstructionInfo instructionInfoLDIXl_C_DD2 =
     }
 };
 
-// LD IXl, D  -  DD, 6A
+// LD IXl, D   -  LDIXl_D_DD2  -  DD, 6A
 InstructionInfo instructionInfoLDIXl_D_DD2 =
 {
     2,
@@ -1814,7 +1814,7 @@ InstructionInfo instructionInfoLDIXl_D_DD2 =
     }
 };
 
-// LD IXl, E  -  DD, 6B
+// LD IXl, E   -  LDIXl_E_DD2  -  DD, 6B
 InstructionInfo instructionInfoLDIXl_E_DD2 =
 {
     2,
@@ -1833,7 +1833,7 @@ InstructionInfo instructionInfoLDIXl_E_DD2 =
     }
 };
 
-// LD IXl, IXh  -  DD, 6C
+// LD IXl, IXh   -  LDIXl_IXh_DD2  -  DD, 6C
 InstructionInfo instructionInfoLDIXl_IXh_DD2 =
 {
     2,
@@ -1852,7 +1852,7 @@ InstructionInfo instructionInfoLDIXl_IXh_DD2 =
     }
 };
 
-// LD IXl, IXl  -  DD, 6D
+// LD IXl, IXl   -  LDIXl_IXl_DD2  -  DD, 6D
 InstructionInfo instructionInfoLDIXl_IXl_DD2 =
 {
     2,
@@ -1871,7 +1871,7 @@ InstructionInfo instructionInfoLDIXl_IXl_DD2 =
     }
 };
 
-// LD A, A  -  FD, 7F
+// LD A, A   -  LDA_A_FD2  -  FD, 7F
 InstructionInfo instructionInfoLDA_A_FD2 =
 {
     2,
@@ -1890,7 +1890,7 @@ InstructionInfo instructionInfoLDA_A_FD2 =
     }
 };
 
-// LD A, B  -  FD, 78
+// LD A, B   -  LDA_B_FD2  -  FD, 78
 InstructionInfo instructionInfoLDA_B_FD2 =
 {
     2,
@@ -1909,7 +1909,7 @@ InstructionInfo instructionInfoLDA_B_FD2 =
     }
 };
 
-// LD A, C  -  FD, 79
+// LD A, C   -  LDA_C_FD2  -  FD, 79
 InstructionInfo instructionInfoLDA_C_FD2 =
 {
     2,
@@ -1928,7 +1928,7 @@ InstructionInfo instructionInfoLDA_C_FD2 =
     }
 };
 
-// LD A, D  -  FD, 7A
+// LD A, D   -  LDA_D_FD2  -  FD, 7A
 InstructionInfo instructionInfoLDA_D_FD2 =
 {
     2,
@@ -1947,7 +1947,7 @@ InstructionInfo instructionInfoLDA_D_FD2 =
     }
 };
 
-// LD A, E  -  FD, 7B
+// LD A, E   -  LDA_E_FD2  -  FD, 7B
 InstructionInfo instructionInfoLDA_E_FD2 =
 {
     2,
@@ -1966,7 +1966,7 @@ InstructionInfo instructionInfoLDA_E_FD2 =
     }
 };
 
-// LD A, IYh  -  FD, 7C
+// LD A, IYh   -  LDA_IYh_FD2  -  FD, 7C
 InstructionInfo instructionInfoLDA_IYh_FD2 =
 {
     2,
@@ -1985,7 +1985,7 @@ InstructionInfo instructionInfoLDA_IYh_FD2 =
     }
 };
 
-// LD A, IYl  -  FD, 7D
+// LD A, IYl   -  LDA_IYl_FD2  -  FD, 7D
 InstructionInfo instructionInfoLDA_IYl_FD2 =
 {
     2,
@@ -2004,7 +2004,7 @@ InstructionInfo instructionInfoLDA_IYl_FD2 =
     }
 };
 
-// LD B, A  -  FD, 47
+// LD B, A   -  LDB_A_FD2  -  FD, 47
 InstructionInfo instructionInfoLDB_A_FD2 =
 {
     2,
@@ -2023,7 +2023,7 @@ InstructionInfo instructionInfoLDB_A_FD2 =
     }
 };
 
-// LD B, B  -  FD, 40
+// LD B, B   -  LDB_B_FD2  -  FD, 40
 InstructionInfo instructionInfoLDB_B_FD2 =
 {
     2,
@@ -2042,7 +2042,7 @@ InstructionInfo instructionInfoLDB_B_FD2 =
     }
 };
 
-// LD B, C  -  FD, 41
+// LD B, C   -  LDB_C_FD2  -  FD, 41
 InstructionInfo instructionInfoLDB_C_FD2 =
 {
     2,
@@ -2061,7 +2061,7 @@ InstructionInfo instructionInfoLDB_C_FD2 =
     }
 };
 
-// LD B, D  -  FD, 42
+// LD B, D   -  LDB_D_FD2  -  FD, 42
 InstructionInfo instructionInfoLDB_D_FD2 =
 {
     2,
@@ -2080,7 +2080,7 @@ InstructionInfo instructionInfoLDB_D_FD2 =
     }
 };
 
-// LD B, E  -  FD, 43
+// LD B, E   -  LDB_E_FD2  -  FD, 43
 InstructionInfo instructionInfoLDB_E_FD2 =
 {
     2,
@@ -2099,7 +2099,7 @@ InstructionInfo instructionInfoLDB_E_FD2 =
     }
 };
 
-// LD B, IYh  -  FD, 44
+// LD B, IYh   -  LDB_IYh_FD2  -  FD, 44
 InstructionInfo instructionInfoLDB_IYh_FD2 =
 {
     2,
@@ -2118,7 +2118,7 @@ InstructionInfo instructionInfoLDB_IYh_FD2 =
     }
 };
 
-// LD B, IYl  -  FD, 45
+// LD B, IYl   -  LDB_IYl_FD2  -  FD, 45
 InstructionInfo instructionInfoLDB_IYl_FD2 =
 {
     2,
@@ -2137,7 +2137,7 @@ InstructionInfo instructionInfoLDB_IYl_FD2 =
     }
 };
 
-// LD C, A  -  FD, 4F
+// LD C, A   -  LDC_A_FD2  -  FD, 4F
 InstructionInfo instructionInfoLDC_A_FD2 =
 {
     2,
@@ -2156,7 +2156,7 @@ InstructionInfo instructionInfoLDC_A_FD2 =
     }
 };
 
-// LD C, B  -  FD, 48
+// LD C, B   -  LDC_B_FD2  -  FD, 48
 InstructionInfo instructionInfoLDC_B_FD2 =
 {
     2,
@@ -2175,7 +2175,7 @@ InstructionInfo instructionInfoLDC_B_FD2 =
     }
 };
 
-// LD C, C  -  FD, 49
+// LD C, C   -  LDC_C_FD2  -  FD, 49
 InstructionInfo instructionInfoLDC_C_FD2 =
 {
     2,
@@ -2194,7 +2194,7 @@ InstructionInfo instructionInfoLDC_C_FD2 =
     }
 };
 
-// LD C, D  -  FD, 4A
+// LD C, D   -  LDC_D_FD2  -  FD, 4A
 InstructionInfo instructionInfoLDC_D_FD2 =
 {
     2,
@@ -2213,7 +2213,7 @@ InstructionInfo instructionInfoLDC_D_FD2 =
     }
 };
 
-// LD C, E  -  FD, 4B
+// LD C, E   -  LDC_E_FD2  -  FD, 4B
 InstructionInfo instructionInfoLDC_E_FD2 =
 {
     2,
@@ -2232,7 +2232,7 @@ InstructionInfo instructionInfoLDC_E_FD2 =
     }
 };
 
-// LD C, IYh  -  FD, 4C
+// LD C, IYh   -  LDC_IYh_FD2  -  FD, 4C
 InstructionInfo instructionInfoLDC_IYh_FD2 =
 {
     2,
@@ -2251,7 +2251,7 @@ InstructionInfo instructionInfoLDC_IYh_FD2 =
     }
 };
 
-// LD C, IYl  -  FD, 4D
+// LD C, IYl   -  LDC_IYl_FD2  -  FD, 4D
 InstructionInfo instructionInfoLDC_IYl_FD2 =
 {
     2,
@@ -2270,7 +2270,7 @@ InstructionInfo instructionInfoLDC_IYl_FD2 =
     }
 };
 
-// LD D, A  -  FD, 57
+// LD D, A   -  LDD_A_FD2  -  FD, 57
 InstructionInfo instructionInfoLDD_A_FD2 =
 {
     2,
@@ -2289,7 +2289,7 @@ InstructionInfo instructionInfoLDD_A_FD2 =
     }
 };
 
-// LD D, B  -  FD, 50
+// LD D, B   -  LDD_B_FD2  -  FD, 50
 InstructionInfo instructionInfoLDD_B_FD2 =
 {
     2,
@@ -2308,7 +2308,7 @@ InstructionInfo instructionInfoLDD_B_FD2 =
     }
 };
 
-// LD D, C  -  FD, 51
+// LD D, C   -  LDD_C_FD2  -  FD, 51
 InstructionInfo instructionInfoLDD_C_FD2 =
 {
     2,
@@ -2327,7 +2327,7 @@ InstructionInfo instructionInfoLDD_C_FD2 =
     }
 };
 
-// LD D, D  -  FD, 52
+// LD D, D   -  LDD_D_FD2  -  FD, 52
 InstructionInfo instructionInfoLDD_D_FD2 =
 {
     2,
@@ -2346,7 +2346,7 @@ InstructionInfo instructionInfoLDD_D_FD2 =
     }
 };
 
-// LD D, E  -  FD, 53
+// LD D, E   -  LDD_E_FD2  -  FD, 53
 InstructionInfo instructionInfoLDD_E_FD2 =
 {
     2,
@@ -2365,7 +2365,7 @@ InstructionInfo instructionInfoLDD_E_FD2 =
     }
 };
 
-// LD D, IYh  -  FD, 54
+// LD D, IYh   -  LDD_IYh_FD2  -  FD, 54
 InstructionInfo instructionInfoLDD_IYh_FD2 =
 {
     2,
@@ -2384,7 +2384,7 @@ InstructionInfo instructionInfoLDD_IYh_FD2 =
     }
 };
 
-// LD D, IYl  -  FD, 55
+// LD D, IYl   -  LDD_IYl_FD2  -  FD, 55
 InstructionInfo instructionInfoLDD_IYl_FD2 =
 {
     2,
@@ -2403,7 +2403,7 @@ InstructionInfo instructionInfoLDD_IYl_FD2 =
     }
 };
 
-// LD E, A  -  FD, 5F
+// LD E, A   -  LDE_A_FD2  -  FD, 5F
 InstructionInfo instructionInfoLDE_A_FD2 =
 {
     2,
@@ -2422,7 +2422,7 @@ InstructionInfo instructionInfoLDE_A_FD2 =
     }
 };
 
-// LD E, B  -  FD, 58
+// LD E, B   -  LDE_B_FD2  -  FD, 58
 InstructionInfo instructionInfoLDE_B_FD2 =
 {
     2,
@@ -2441,7 +2441,7 @@ InstructionInfo instructionInfoLDE_B_FD2 =
     }
 };
 
-// LD E, C  -  FD, 59
+// LD E, C   -  LDE_C_FD2  -  FD, 59
 InstructionInfo instructionInfoLDE_C_FD2 =
 {
     2,
@@ -2460,7 +2460,7 @@ InstructionInfo instructionInfoLDE_C_FD2 =
     }
 };
 
-// LD E, D  -  FD, 5A
+// LD E, D   -  LDE_D_FD2  -  FD, 5A
 InstructionInfo instructionInfoLDE_D_FD2 =
 {
     2,
@@ -2479,7 +2479,7 @@ InstructionInfo instructionInfoLDE_D_FD2 =
     }
 };
 
-// LD E, E  -  FD, 5B
+// LD E, E   -  LDE_E_FD2  -  FD, 5B
 InstructionInfo instructionInfoLDE_E_FD2 =
 {
     2,
@@ -2498,7 +2498,7 @@ InstructionInfo instructionInfoLDE_E_FD2 =
     }
 };
 
-// LD E, IYh  -  FD, 5C
+// LD E, IYh   -  LDE_IYh_FD2  -  FD, 5C
 InstructionInfo instructionInfoLDE_IYh_FD2 =
 {
     2,
@@ -2517,7 +2517,7 @@ InstructionInfo instructionInfoLDE_IYh_FD2 =
     }
 };
 
-// LD E, IYl  -  FD, 5D
+// LD E, IYl   -  LDE_IYl_FD2  -  FD, 5D
 InstructionInfo instructionInfoLDE_IYl_FD2 =
 {
     2,
@@ -2536,7 +2536,7 @@ InstructionInfo instructionInfoLDE_IYl_FD2 =
     }
 };
 
-// LD IYh, A  -  FD, 67
+// LD IYh, A   -  LDIYh_A_FD2  -  FD, 67
 InstructionInfo instructionInfoLDIYh_A_FD2 =
 {
     2,
@@ -2555,7 +2555,7 @@ InstructionInfo instructionInfoLDIYh_A_FD2 =
     }
 };
 
-// LD IYh, B  -  FD, 60
+// LD IYh, B   -  LDIYh_B_FD2  -  FD, 60
 InstructionInfo instructionInfoLDIYh_B_FD2 =
 {
     2,
@@ -2574,7 +2574,7 @@ InstructionInfo instructionInfoLDIYh_B_FD2 =
     }
 };
 
-// LD IYh, C  -  FD, 61
+// LD IYh, C   -  LDIYh_C_FD2  -  FD, 61
 InstructionInfo instructionInfoLDIYh_C_FD2 =
 {
     2,
@@ -2593,7 +2593,7 @@ InstructionInfo instructionInfoLDIYh_C_FD2 =
     }
 };
 
-// LD IYh, D  -  FD, 62
+// LD IYh, D   -  LDIYh_D_FD2  -  FD, 62
 InstructionInfo instructionInfoLDIYh_D_FD2 =
 {
     2,
@@ -2612,7 +2612,7 @@ InstructionInfo instructionInfoLDIYh_D_FD2 =
     }
 };
 
-// LD IYh, E  -  FD, 63
+// LD IYh, E   -  LDIYh_E_FD2  -  FD, 63
 InstructionInfo instructionInfoLDIYh_E_FD2 =
 {
     2,
@@ -2631,7 +2631,7 @@ InstructionInfo instructionInfoLDIYh_E_FD2 =
     }
 };
 
-// LD IYh, IYh  -  FD, 64
+// LD IYh, IYh   -  LDIYh_IYh_FD2  -  FD, 64
 InstructionInfo instructionInfoLDIYh_IYh_FD2 =
 {
     2,
@@ -2650,7 +2650,7 @@ InstructionInfo instructionInfoLDIYh_IYh_FD2 =
     }
 };
 
-// LD IYh, IYl  -  FD, 65
+// LD IYh, IYl   -  LDIYh_IYl_FD2  -  FD, 65
 InstructionInfo instructionInfoLDIYh_IYl_FD2 =
 {
     2,
@@ -2669,7 +2669,7 @@ InstructionInfo instructionInfoLDIYh_IYl_FD2 =
     }
 };
 
-// LD IYl, A  -  FD, 6F
+// LD IYl, A   -  LDIYl_A_FD2  -  FD, 6F
 InstructionInfo instructionInfoLDIYl_A_FD2 =
 {
     2,
@@ -2688,7 +2688,7 @@ InstructionInfo instructionInfoLDIYl_A_FD2 =
     }
 };
 
-// LD IYl, B  -  FD, 68
+// LD IYl, B   -  LDIYl_B_FD2  -  FD, 68
 InstructionInfo instructionInfoLDIYl_B_FD2 =
 {
     2,
@@ -2707,7 +2707,7 @@ InstructionInfo instructionInfoLDIYl_B_FD2 =
     }
 };
 
-// LD IYl, C  -  FD, 69
+// LD IYl, C   -  LDIYl_C_FD2  -  FD, 69
 InstructionInfo instructionInfoLDIYl_C_FD2 =
 {
     2,
@@ -2726,7 +2726,7 @@ InstructionInfo instructionInfoLDIYl_C_FD2 =
     }
 };
 
-// LD IYl, D  -  FD, 6A
+// LD IYl, D   -  LDIYl_D_FD2  -  FD, 6A
 InstructionInfo instructionInfoLDIYl_D_FD2 =
 {
     2,
@@ -2745,7 +2745,7 @@ InstructionInfo instructionInfoLDIYl_D_FD2 =
     }
 };
 
-// LD IYl, E  -  FD, 6B
+// LD IYl, E   -  LDIYl_E_FD2  -  FD, 6B
 InstructionInfo instructionInfoLDIYl_E_FD2 =
 {
     2,
@@ -2764,7 +2764,7 @@ InstructionInfo instructionInfoLDIYl_E_FD2 =
     }
 };
 
-// LD IYl, IYh  -  FD, 6C
+// LD IYl, IYh   -  LDIYl_IYh_FD2  -  FD, 6C
 InstructionInfo instructionInfoLDIYl_IYh_FD2 =
 {
     2,
@@ -2783,7 +2783,7 @@ InstructionInfo instructionInfoLDIYl_IYh_FD2 =
     }
 };
 
-// LD IYl, IYl  -  FD, 6D
+// LD IYl, IYl   -  LDIYl_IYl_FD2  -  FD, 6D
 InstructionInfo instructionInfoLDIYl_IYl_FD2 =
 {
     2,
@@ -2802,7 +2802,7 @@ InstructionInfo instructionInfoLDIYl_IYl_FD2 =
     }
 };
 
-// LD A, n  -  3E, n
+// LD A, n   -  LDA_n_2  -  3E, n
 InstructionInfo instructionInfoLDA_n_2 =
 {
     2,
@@ -2821,7 +2821,7 @@ InstructionInfo instructionInfoLDA_n_2 =
     }
 };
 
-// LD B, n  -  06, n
+// LD B, n   -  LDB_n_2  -  06, n
 InstructionInfo instructionInfoLDB_n_2 =
 {
     2,
@@ -2840,7 +2840,7 @@ InstructionInfo instructionInfoLDB_n_2 =
     }
 };
 
-// LD C, n  -  0E, n
+// LD C, n   -  LDC_n_2  -  0E, n
 InstructionInfo instructionInfoLDC_n_2 =
 {
     2,
@@ -2859,7 +2859,7 @@ InstructionInfo instructionInfoLDC_n_2 =
     }
 };
 
-// LD D, n  -  16, n
+// LD D, n   -  LDD_n_2  -  16, n
 InstructionInfo instructionInfoLDD_n_2 =
 {
     2,
@@ -2878,7 +2878,7 @@ InstructionInfo instructionInfoLDD_n_2 =
     }
 };
 
-// LD E, n  -  1E, n
+// LD E, n   -  LDE_n_2  -  1E, n
 InstructionInfo instructionInfoLDE_n_2 =
 {
     2,
@@ -2897,7 +2897,7 @@ InstructionInfo instructionInfoLDE_n_2 =
     }
 };
 
-// LD H, n  -  26, n
+// LD H, n   -  LDH_n_2  -  26, n
 InstructionInfo instructionInfoLDH_n_2 =
 {
     2,
@@ -2916,7 +2916,7 @@ InstructionInfo instructionInfoLDH_n_2 =
     }
 };
 
-// LD L, n  -  2E, n
+// LD L, n   -  LDL_n_2  -  2E, n
 InstructionInfo instructionInfoLDL_n_2 =
 {
     2,
@@ -2935,7 +2935,7 @@ InstructionInfo instructionInfoLDL_n_2 =
     }
 };
 
-// LD A, n  -  DD, 3E, n
+// LD A, n   -  LDA_n_DD3  -  DD, 3E, n
 InstructionInfo instructionInfoLDA_n_DD3 =
 {
     3,
@@ -2954,7 +2954,7 @@ InstructionInfo instructionInfoLDA_n_DD3 =
     }
 };
 
-// LD B, n  -  DD, 06, n
+// LD B, n   -  LDB_n_DD3  -  DD, 06, n
 InstructionInfo instructionInfoLDB_n_DD3 =
 {
     3,
@@ -2973,7 +2973,7 @@ InstructionInfo instructionInfoLDB_n_DD3 =
     }
 };
 
-// LD C, n  -  DD, 0E, n
+// LD C, n   -  LDC_n_DD3  -  DD, 0E, n
 InstructionInfo instructionInfoLDC_n_DD3 =
 {
     3,
@@ -2992,7 +2992,7 @@ InstructionInfo instructionInfoLDC_n_DD3 =
     }
 };
 
-// LD D, n  -  DD, 16, n
+// LD D, n   -  LDD_n_DD3  -  DD, 16, n
 InstructionInfo instructionInfoLDD_n_DD3 =
 {
     3,
@@ -3011,7 +3011,7 @@ InstructionInfo instructionInfoLDD_n_DD3 =
     }
 };
 
-// LD E, n  -  DD, 1E, n
+// LD E, n   -  LDE_n_DD3  -  DD, 1E, n
 InstructionInfo instructionInfoLDE_n_DD3 =
 {
     3,
@@ -3030,7 +3030,7 @@ InstructionInfo instructionInfoLDE_n_DD3 =
     }
 };
 
-// LD IXh, n  -  DD, 26, n
+// LD IXh, n   -  LDIXh_n_DD3  -  DD, 26, n
 InstructionInfo instructionInfoLDIXh_n_DD3 =
 {
     3,
@@ -3049,7 +3049,7 @@ InstructionInfo instructionInfoLDIXh_n_DD3 =
     }
 };
 
-// LD IXl, n  -  DD, 2E, n
+// LD IXl, n   -  LDIXl_n_DD3  -  DD, 2E, n
 InstructionInfo instructionInfoLDIXl_n_DD3 =
 {
     3,
@@ -3068,7 +3068,7 @@ InstructionInfo instructionInfoLDIXl_n_DD3 =
     }
 };
 
-// LD A, n  -  FD, 3E, n
+// LD A, n   -  LDA_n_FD3  -  FD, 3E, n
 InstructionInfo instructionInfoLDA_n_FD3 =
 {
     3,
@@ -3087,7 +3087,7 @@ InstructionInfo instructionInfoLDA_n_FD3 =
     }
 };
 
-// LD B, n  -  FD, 06, n
+// LD B, n   -  LDB_n_FD3  -  FD, 06, n
 InstructionInfo instructionInfoLDB_n_FD3 =
 {
     3,
@@ -3106,7 +3106,7 @@ InstructionInfo instructionInfoLDB_n_FD3 =
     }
 };
 
-// LD C, n  -  FD, 0E, n
+// LD C, n   -  LDC_n_FD3  -  FD, 0E, n
 InstructionInfo instructionInfoLDC_n_FD3 =
 {
     3,
@@ -3125,7 +3125,7 @@ InstructionInfo instructionInfoLDC_n_FD3 =
     }
 };
 
-// LD D, n  -  FD, 16, n
+// LD D, n   -  LDD_n_FD3  -  FD, 16, n
 InstructionInfo instructionInfoLDD_n_FD3 =
 {
     3,
@@ -3144,7 +3144,7 @@ InstructionInfo instructionInfoLDD_n_FD3 =
     }
 };
 
-// LD E, n  -  FD, 1E, n
+// LD E, n   -  LDE_n_FD3  -  FD, 1E, n
 InstructionInfo instructionInfoLDE_n_FD3 =
 {
     3,
@@ -3163,7 +3163,7 @@ InstructionInfo instructionInfoLDE_n_FD3 =
     }
 };
 
-// LD IYh, n  -  FD, 26, n
+// LD IYh, n   -  LDIYh_n_FD3  -  FD, 26, n
 InstructionInfo instructionInfoLDIYh_n_FD3 =
 {
     3,
@@ -3182,7 +3182,7 @@ InstructionInfo instructionInfoLDIYh_n_FD3 =
     }
 };
 
-// LD IYl, n  -  FD, 2E, n
+// LD IYl, n   -  LDIYl_n_FD3  -  FD, 2E, n
 InstructionInfo instructionInfoLDIYl_n_FD3 =
 {
     3,
@@ -3201,7 +3201,7 @@ InstructionInfo instructionInfoLDIYl_n_FD3 =
     }
 };
 
-// LD A, (HL)  -  7E
+// LD A, (HL)   -  LDA__HL__1  -  7E
 InstructionInfo instructionInfoLDA__HL__1 =
 {
     2,
@@ -3220,7 +3220,7 @@ InstructionInfo instructionInfoLDA__HL__1 =
     }
 };
 
-// LD B, (HL)  -  46
+// LD B, (HL)   -  LDB__HL__1  -  46
 InstructionInfo instructionInfoLDB__HL__1 =
 {
     2,
@@ -3239,7 +3239,7 @@ InstructionInfo instructionInfoLDB__HL__1 =
     }
 };
 
-// LD C, (HL)  -  4E
+// LD C, (HL)   -  LDC__HL__1  -  4E
 InstructionInfo instructionInfoLDC__HL__1 =
 {
     2,
@@ -3258,7 +3258,7 @@ InstructionInfo instructionInfoLDC__HL__1 =
     }
 };
 
-// LD D, (HL)  -  56
+// LD D, (HL)   -  LDD__HL__1  -  56
 InstructionInfo instructionInfoLDD__HL__1 =
 {
     2,
@@ -3277,7 +3277,7 @@ InstructionInfo instructionInfoLDD__HL__1 =
     }
 };
 
-// LD E, (HL)  -  5E
+// LD E, (HL)   -  LDE__HL__1  -  5E
 InstructionInfo instructionInfoLDE__HL__1 =
 {
     2,
@@ -3296,7 +3296,7 @@ InstructionInfo instructionInfoLDE__HL__1 =
     }
 };
 
-// LD H, (HL)  -  66
+// LD H, (HL)   -  LDH__HL__1  -  66
 InstructionInfo instructionInfoLDH__HL__1 =
 {
     2,
@@ -3315,7 +3315,7 @@ InstructionInfo instructionInfoLDH__HL__1 =
     }
 };
 
-// LD L, (HL)  -  6E
+// LD L, (HL)   -  LDL__HL__1  -  6E
 InstructionInfo instructionInfoLDL__HL__1 =
 {
     2,
@@ -3334,7 +3334,7 @@ InstructionInfo instructionInfoLDL__HL__1 =
     }
 };
 
-// LD A, (IX+d)  -  DD, BE, d
+// LD A, (IX+d)   -  LDA__IX_d__DD3  -  DD, BE, d
 InstructionInfo instructionInfoLDA__IX_d__DD3 =
 {
     5,
@@ -3353,7 +3353,7 @@ InstructionInfo instructionInfoLDA__IX_d__DD3 =
     }
 };
 
-// LD A, (IY+d)  -  FD, BE, d
+// LD A, (IY+d)   -  LDA__IY_d__FD3  -  FD, BE, d
 InstructionInfo instructionInfoLDA__IY_d__FD3 =
 {
     5,
@@ -3372,7 +3372,7 @@ InstructionInfo instructionInfoLDA__IY_d__FD3 =
     }
 };
 
-// LD B, (IX+d)  -  DD, 86, d
+// LD B, (IX+d)   -  LDB__IX_d__DD3  -  DD, 86, d
 InstructionInfo instructionInfoLDB__IX_d__DD3 =
 {
     5,
@@ -3391,7 +3391,7 @@ InstructionInfo instructionInfoLDB__IX_d__DD3 =
     }
 };
 
-// LD B, (IY+d)  -  FD, 86, d
+// LD B, (IY+d)   -  LDB__IY_d__FD3  -  FD, 86, d
 InstructionInfo instructionInfoLDB__IY_d__FD3 =
 {
     5,
@@ -3410,7 +3410,7 @@ InstructionInfo instructionInfoLDB__IY_d__FD3 =
     }
 };
 
-// LD C, (IX+d)  -  DD, 8E, d
+// LD C, (IX+d)   -  LDC__IX_d__DD3  -  DD, 8E, d
 InstructionInfo instructionInfoLDC__IX_d__DD3 =
 {
     5,
@@ -3429,7 +3429,7 @@ InstructionInfo instructionInfoLDC__IX_d__DD3 =
     }
 };
 
-// LD C, (IY+d)  -  FD, 8E, d
+// LD C, (IY+d)   -  LDC__IY_d__FD3  -  FD, 8E, d
 InstructionInfo instructionInfoLDC__IY_d__FD3 =
 {
     5,
@@ -3448,7 +3448,7 @@ InstructionInfo instructionInfoLDC__IY_d__FD3 =
     }
 };
 
-// LD D, (IX+d)  -  DD, 96, d
+// LD D, (IX+d)   -  LDD__IX_d__DD3  -  DD, 96, d
 InstructionInfo instructionInfoLDD__IX_d__DD3 =
 {
     5,
@@ -3467,7 +3467,7 @@ InstructionInfo instructionInfoLDD__IX_d__DD3 =
     }
 };
 
-// LD D, (IY+d)  -  FD, 96, d
+// LD D, (IY+d)   -  LDD__IY_d__FD3  -  FD, 96, d
 InstructionInfo instructionInfoLDD__IY_d__FD3 =
 {
     5,
@@ -3486,7 +3486,7 @@ InstructionInfo instructionInfoLDD__IY_d__FD3 =
     }
 };
 
-// LD E, (IX+d)  -  DD, 9E, d
+// LD E, (IX+d)   -  LDE__IX_d__DD3  -  DD, 9E, d
 InstructionInfo instructionInfoLDE__IX_d__DD3 =
 {
     5,
@@ -3505,7 +3505,7 @@ InstructionInfo instructionInfoLDE__IX_d__DD3 =
     }
 };
 
-// LD E, (IY+d)  -  FD, 9E, d
+// LD E, (IY+d)   -  LDE__IY_d__FD3  -  FD, 9E, d
 InstructionInfo instructionInfoLDE__IY_d__FD3 =
 {
     5,
@@ -3524,7 +3524,7 @@ InstructionInfo instructionInfoLDE__IY_d__FD3 =
     }
 };
 
-// LD H, (IX+d)  -  DD, A6, d
+// LD H, (IX+d)   -  LDH__IX_d__DD3  -  DD, A6, d
 InstructionInfo instructionInfoLDH__IX_d__DD3 =
 {
     5,
@@ -3543,7 +3543,7 @@ InstructionInfo instructionInfoLDH__IX_d__DD3 =
     }
 };
 
-// LD H, (IY+d)  -  FD, A6, d
+// LD H, (IY+d)   -  LDH__IY_d__FD3  -  FD, A6, d
 InstructionInfo instructionInfoLDH__IY_d__FD3 =
 {
     5,
@@ -3562,7 +3562,7 @@ InstructionInfo instructionInfoLDH__IY_d__FD3 =
     }
 };
 
-// LD L, (IX+d)  -  DD, AE, d
+// LD L, (IX+d)   -  LDL__IX_d__DD3  -  DD, AE, d
 InstructionInfo instructionInfoLDL__IX_d__DD3 =
 {
     5,
@@ -3581,7 +3581,7 @@ InstructionInfo instructionInfoLDL__IX_d__DD3 =
     }
 };
 
-// LD L, (IY+d)  -  FD, AE, d
+// LD L, (IY+d)   -  LDL__IY_d__FD3  -  FD, AE, d
 InstructionInfo instructionInfoLDL__IY_d__FD3 =
 {
     5,
@@ -3600,7 +3600,7 @@ InstructionInfo instructionInfoLDL__IY_d__FD3 =
     }
 };
 
-// LD (HL), A  -  77
+// LD (HL), A   -  LD_HL__A_1  -  77
 InstructionInfo instructionInfoLD_HL__A_1 =
 {
     2,
@@ -3619,7 +3619,7 @@ InstructionInfo instructionInfoLD_HL__A_1 =
     }
 };
 
-// LD (HL), B  -  70
+// LD (HL), B   -  LD_HL__B_1  -  70
 InstructionInfo instructionInfoLD_HL__B_1 =
 {
     2,
@@ -3638,7 +3638,7 @@ InstructionInfo instructionInfoLD_HL__B_1 =
     }
 };
 
-// LD (HL), C  -  71
+// LD (HL), C   -  LD_HL__C_1  -  71
 InstructionInfo instructionInfoLD_HL__C_1 =
 {
     2,
@@ -3657,7 +3657,7 @@ InstructionInfo instructionInfoLD_HL__C_1 =
     }
 };
 
-// LD (HL), D  -  72
+// LD (HL), D   -  LD_HL__D_1  -  72
 InstructionInfo instructionInfoLD_HL__D_1 =
 {
     2,
@@ -3676,7 +3676,7 @@ InstructionInfo instructionInfoLD_HL__D_1 =
     }
 };
 
-// LD (HL), E  -  73
+// LD (HL), E   -  LD_HL__E_1  -  73
 InstructionInfo instructionInfoLD_HL__E_1 =
 {
     2,
@@ -3695,7 +3695,7 @@ InstructionInfo instructionInfoLD_HL__E_1 =
     }
 };
 
-// LD (HL), H  -  74
+// LD (HL), H   -  LD_HL__H_1  -  74
 InstructionInfo instructionInfoLD_HL__H_1 =
 {
     2,
@@ -3714,7 +3714,7 @@ InstructionInfo instructionInfoLD_HL__H_1 =
     }
 };
 
-// LD (HL), L  -  75
+// LD (HL), L   -  LD_HL__L_1  -  75
 InstructionInfo instructionInfoLD_HL__L_1 =
 {
     2,
@@ -3733,7 +3733,7 @@ InstructionInfo instructionInfoLD_HL__L_1 =
     }
 };
 
-// LD (IX+d), A  -  DD, 77, d
+// LD (IX+d), A   -  LD_IX_d__A_DD3  -  DD, 77, d
 InstructionInfo instructionInfoLD_IX_d__A_DD3 =
 {
     5,
@@ -3752,7 +3752,7 @@ InstructionInfo instructionInfoLD_IX_d__A_DD3 =
     }
 };
 
-// LD (IY+d), A  -  FD, 77, d
+// LD (IY+d), A   -  LD_IY_d__A_FD3  -  FD, 77, d
 InstructionInfo instructionInfoLD_IY_d__A_FD3 =
 {
     5,
@@ -3771,7 +3771,7 @@ InstructionInfo instructionInfoLD_IY_d__A_FD3 =
     }
 };
 
-// LD (IX+d), B  -  DD, 70, d
+// LD (IX+d), B   -  LD_IX_d__B_DD3  -  DD, 70, d
 InstructionInfo instructionInfoLD_IX_d__B_DD3 =
 {
     5,
@@ -3790,7 +3790,7 @@ InstructionInfo instructionInfoLD_IX_d__B_DD3 =
     }
 };
 
-// LD (IY+d), B  -  FD, 70, d
+// LD (IY+d), B   -  LD_IY_d__B_FD3  -  FD, 70, d
 InstructionInfo instructionInfoLD_IY_d__B_FD3 =
 {
     5,
@@ -3809,7 +3809,7 @@ InstructionInfo instructionInfoLD_IY_d__B_FD3 =
     }
 };
 
-// LD (IX+d), C  -  DD, 71, d
+// LD (IX+d), C   -  LD_IX_d__C_DD3  -  DD, 71, d
 InstructionInfo instructionInfoLD_IX_d__C_DD3 =
 {
     5,
@@ -3828,7 +3828,7 @@ InstructionInfo instructionInfoLD_IX_d__C_DD3 =
     }
 };
 
-// LD (IY+d), C  -  FD, 71, d
+// LD (IY+d), C   -  LD_IY_d__C_FD3  -  FD, 71, d
 InstructionInfo instructionInfoLD_IY_d__C_FD3 =
 {
     5,
@@ -3847,7 +3847,7 @@ InstructionInfo instructionInfoLD_IY_d__C_FD3 =
     }
 };
 
-// LD (IX+d), D  -  DD, 72, d
+// LD (IX+d), D   -  LD_IX_d__D_DD3  -  DD, 72, d
 InstructionInfo instructionInfoLD_IX_d__D_DD3 =
 {
     5,
@@ -3866,7 +3866,7 @@ InstructionInfo instructionInfoLD_IX_d__D_DD3 =
     }
 };
 
-// LD (IY+d), D  -  FD, 72, d
+// LD (IY+d), D   -  LD_IY_d__D_FD3  -  FD, 72, d
 InstructionInfo instructionInfoLD_IY_d__D_FD3 =
 {
     5,
@@ -3885,7 +3885,7 @@ InstructionInfo instructionInfoLD_IY_d__D_FD3 =
     }
 };
 
-// LD (IX+d), E  -  DD, 73, d
+// LD (IX+d), E   -  LD_IX_d__E_DD3  -  DD, 73, d
 InstructionInfo instructionInfoLD_IX_d__E_DD3 =
 {
     5,
@@ -3904,7 +3904,7 @@ InstructionInfo instructionInfoLD_IX_d__E_DD3 =
     }
 };
 
-// LD (IY+d), E  -  FD, 73, d
+// LD (IY+d), E   -  LD_IY_d__E_FD3  -  FD, 73, d
 InstructionInfo instructionInfoLD_IY_d__E_FD3 =
 {
     5,
@@ -3923,7 +3923,7 @@ InstructionInfo instructionInfoLD_IY_d__E_FD3 =
     }
 };
 
-// LD (IX+d), H  -  DD, 74, d
+// LD (IX+d), H   -  LD_IX_d__H_DD3  -  DD, 74, d
 InstructionInfo instructionInfoLD_IX_d__H_DD3 =
 {
     5,
@@ -3942,7 +3942,7 @@ InstructionInfo instructionInfoLD_IX_d__H_DD3 =
     }
 };
 
-// LD (IY+d), H  -  FD, 74, d
+// LD (IY+d), H   -  LD_IY_d__H_FD3  -  FD, 74, d
 InstructionInfo instructionInfoLD_IY_d__H_FD3 =
 {
     5,
@@ -3961,7 +3961,7 @@ InstructionInfo instructionInfoLD_IY_d__H_FD3 =
     }
 };
 
-// LD (IX+d), L  -  DD, 75, d
+// LD (IX+d), L   -  LD_IX_d__L_DD3  -  DD, 75, d
 InstructionInfo instructionInfoLD_IX_d__L_DD3 =
 {
     5,
@@ -3980,7 +3980,7 @@ InstructionInfo instructionInfoLD_IX_d__L_DD3 =
     }
 };
 
-// LD (IY+d), L  -  FD, 75, d
+// LD (IY+d), L   -  LD_IY_d__L_FD3  -  FD, 75, d
 InstructionInfo instructionInfoLD_IY_d__L_FD3 =
 {
     5,
@@ -3999,7 +3999,7 @@ InstructionInfo instructionInfoLD_IY_d__L_FD3 =
     }
 };
 
-// LD (HL), n  -  36, n
+// LD (HL), n   -  LD_HL__n_2  -  36, n
 InstructionInfo instructionInfoLD_HL__n_2 =
 {
     3,
@@ -4018,7 +4018,7 @@ InstructionInfo instructionInfoLD_HL__n_2 =
     }
 };
 
-// LD (IX+d), n  -  DD, 36, d, n
+// LD (IX+d), n   -  LD_IX_d__n_DD4  -  DD, 36, d, n
 InstructionInfo instructionInfoLD_IX_d__n_DD4 =
 {
     5,
@@ -4037,7 +4037,7 @@ InstructionInfo instructionInfoLD_IX_d__n_DD4 =
     }
 };
 
-// LD (IY+d), n  -  FD, 36, d, n
+// LD (IY+d), n   -  LD_IY_d__n_FD4  -  FD, 36, d, n
 InstructionInfo instructionInfoLD_IY_d__n_FD4 =
 {
     5,
@@ -4056,7 +4056,7 @@ InstructionInfo instructionInfoLD_IY_d__n_FD4 =
     }
 };
 
-// LD A, (BC)  -  0A
+// LD A, (BC)   -  LDA__BC__1  -  0A
 InstructionInfo instructionInfoLDA__BC__1 =
 {
     2,
@@ -4075,7 +4075,7 @@ InstructionInfo instructionInfoLDA__BC__1 =
     }
 };
 
-// LD A, (DE)  -  1A
+// LD A, (DE)   -  LDA__DE__1  -  1A
 InstructionInfo instructionInfoLDA__DE__1 =
 {
     2,
@@ -4094,7 +4094,7 @@ InstructionInfo instructionInfoLDA__DE__1 =
     }
 };
 
-// LD A, (nn)  -  3A, n, n
+// LD A, (nn)   -  LDA__nn__3  -  3A, n, n
 InstructionInfo instructionInfoLDA__nn__3 =
 {
     4,
@@ -4113,7 +4113,7 @@ InstructionInfo instructionInfoLDA__nn__3 =
     }
 };
 
-// LD (BC), A  -  02
+// LD (BC), A   -  LD_BC__A_1  -  02
 InstructionInfo instructionInfoLD_BC__A_1 =
 {
     2,
@@ -4132,7 +4132,7 @@ InstructionInfo instructionInfoLD_BC__A_1 =
     }
 };
 
-// LD (DE), A  -  12
+// LD (DE), A   -  LD_DE__A_1  -  12
 InstructionInfo instructionInfoLD_DE__A_1 =
 {
     2,
@@ -4151,7 +4151,7 @@ InstructionInfo instructionInfoLD_DE__A_1 =
     }
 };
 
-// LD (nn), A  -  32, n, n
+// LD (nn), A   -  LD_nn__A_3  -  32, n, n
 InstructionInfo instructionInfoLD_nn__A_3 =
 {
     4,
@@ -4170,7 +4170,7 @@ InstructionInfo instructionInfoLD_nn__A_3 =
     }
 };
 
-// LD A, I  -  ED, 57
+// LD A, I   -  LDA_I_ED2  -  ED, 57
 InstructionInfo instructionInfoLDA_I_ED2 =
 {
     2,
@@ -4189,7 +4189,7 @@ InstructionInfo instructionInfoLDA_I_ED2 =
     }
 };
 
-// LD A, R  -  ED, 5F
+// LD A, R   -  LDA_R_ED2  -  ED, 5F
 InstructionInfo instructionInfoLDA_R_ED2 =
 {
     2,
@@ -4208,7 +4208,7 @@ InstructionInfo instructionInfoLDA_R_ED2 =
     }
 };
 
-// LD I, A  -  ED, 47
+// LD I, A   -  LDI_A_ED2  -  ED, 47
 InstructionInfo instructionInfoLDI_A_ED2 =
 {
     2,
@@ -4227,7 +4227,7 @@ InstructionInfo instructionInfoLDI_A_ED2 =
     }
 };
 
-// LD R, A  -  ED, 4F
+// LD R, A   -  LDR_A_ED2  -  ED, 4F
 InstructionInfo instructionInfoLDR_A_ED2 =
 {
     2,
@@ -4246,7 +4246,7 @@ InstructionInfo instructionInfoLDR_A_ED2 =
     }
 };
 
-// LD BC, nn  -  01, n, n
+// LD BC, nn   -  LDBC_nn_3  -  01, n, n
 InstructionInfo instructionInfoLDBC_nn_3 =
 {
     3,
@@ -4265,7 +4265,7 @@ InstructionInfo instructionInfoLDBC_nn_3 =
     }
 };
 
-// LD DE, nn  -  11, n, n
+// LD DE, nn   -  LDDE_nn_3  -  11, n, n
 InstructionInfo instructionInfoLDDE_nn_3 =
 {
     3,
@@ -4284,7 +4284,7 @@ InstructionInfo instructionInfoLDDE_nn_3 =
     }
 };
 
-// LD HL, nn  -  21, n, n
+// LD HL, nn   -  LDHL_nn_3  -  21, n, n
 InstructionInfo instructionInfoLDHL_nn_3 =
 {
     3,
@@ -4303,7 +4303,7 @@ InstructionInfo instructionInfoLDHL_nn_3 =
     }
 };
 
-// LD SP, nn  -  31, n, n
+// LD SP, nn   -  LDSP_nn_3  -  31, n, n
 InstructionInfo instructionInfoLDSP_nn_3 =
 {
     3,
@@ -4322,7 +4322,7 @@ InstructionInfo instructionInfoLDSP_nn_3 =
     }
 };
 
-// LD IX, nn  -  DD, 21, n, n
+// LD IX, nn   -  LDIX_nn_DD4  -  DD, 21, n, n
 InstructionInfo instructionInfoLDIX_nn_DD4 =
 {
     4,
@@ -4341,7 +4341,7 @@ InstructionInfo instructionInfoLDIX_nn_DD4 =
     }
 };
 
-// LD IY, nn  -  FD, 21, n, n
+// LD IY, nn   -  LDIY_nn_FD4  -  FD, 21, n, n
 InstructionInfo instructionInfoLDIY_nn_FD4 =
 {
     4,
@@ -4360,7 +4360,7 @@ InstructionInfo instructionInfoLDIY_nn_FD4 =
     }
 };
 
-// LD HL, (nn)  -  2A, n, n
+// LD HL, (nn)   -  LDHL__nn__3  -  2A, n, n
 InstructionInfo instructionInfoLDHL__nn__3 =
 {
     5,
@@ -4379,7 +4379,7 @@ InstructionInfo instructionInfoLDHL__nn__3 =
     }
 };
 
-// LD BC, (nn)  -  ED, 4B, n, n
+// LD BC, (nn)   -  LDBC__nn__ED4  -  ED, 4B, n, n
 InstructionInfo instructionInfoLDBC__nn__ED4 =
 {
     6,
@@ -4398,7 +4398,7 @@ InstructionInfo instructionInfoLDBC__nn__ED4 =
     }
 };
 
-// LD DE, (nn)  -  ED, 5B, n, n
+// LD DE, (nn)   -  LDDE__nn__ED4  -  ED, 5B, n, n
 InstructionInfo instructionInfoLDDE__nn__ED4 =
 {
     6,
@@ -4417,7 +4417,7 @@ InstructionInfo instructionInfoLDDE__nn__ED4 =
     }
 };
 
-// LD HL, (nn)  -  ED, 6B, n, n
+// LD HL, (nn)   -  LDHL__nn__ED4  -  ED, 6B, n, n
 InstructionInfo instructionInfoLDHL__nn__ED4 =
 {
     6,
@@ -4436,7 +4436,7 @@ InstructionInfo instructionInfoLDHL__nn__ED4 =
     }
 };
 
-// LD SP, (nn)  -  ED, 7B, n, n
+// LD SP, (nn)   -  LDSP__nn__ED4  -  ED, 7B, n, n
 InstructionInfo instructionInfoLDSP__nn__ED4 =
 {
     6,
@@ -4455,7 +4455,7 @@ InstructionInfo instructionInfoLDSP__nn__ED4 =
     }
 };
 
-// LD IX, (nn)  -  DD, 2A, n, n
+// LD IX, (nn)   -  LDIX__nn__DD4  -  DD, 2A, n, n
 InstructionInfo instructionInfoLDIX__nn__DD4 =
 {
     6,
@@ -4474,7 +4474,7 @@ InstructionInfo instructionInfoLDIX__nn__DD4 =
     }
 };
 
-// LD IY, (nn)  -  FD, 2A, n, n
+// LD IY, (nn)   -  LDIY__nn__FD4  -  FD, 2A, n, n
 InstructionInfo instructionInfoLDIY__nn__FD4 =
 {
     6,
@@ -4493,7 +4493,7 @@ InstructionInfo instructionInfoLDIY__nn__FD4 =
     }
 };
 
-// LD (nn), HL  -  22, n, n
+// LD (nn), HL   -  LD_nn__HL_3  -  22, n, n
 InstructionInfo instructionInfoLD_nn__HL_3 =
 {
     5,
@@ -4512,7 +4512,7 @@ InstructionInfo instructionInfoLD_nn__HL_3 =
     }
 };
 
-// LD (nn), BC  -  ED, 43, n, n
+// LD (nn), BC   -  LD_nn__BC_ED4  -  ED, 43, n, n
 InstructionInfo instructionInfoLD_nn__BC_ED4 =
 {
     6,
@@ -4531,7 +4531,7 @@ InstructionInfo instructionInfoLD_nn__BC_ED4 =
     }
 };
 
-// LD (nn), DE  -  ED, 53, n, n
+// LD (nn), DE   -  LD_nn__DE_ED4  -  ED, 53, n, n
 InstructionInfo instructionInfoLD_nn__DE_ED4 =
 {
     6,
@@ -4550,7 +4550,7 @@ InstructionInfo instructionInfoLD_nn__DE_ED4 =
     }
 };
 
-// LD (nn), HL  -  ED, 63, n, n
+// LD (nn), HL   -  LD_nn__HL_ED4  -  ED, 63, n, n
 InstructionInfo instructionInfoLD_nn__HL_ED4 =
 {
     6,
@@ -4569,7 +4569,7 @@ InstructionInfo instructionInfoLD_nn__HL_ED4 =
     }
 };
 
-// LD (nn), SP  -  ED, 73, n, n
+// LD (nn), SP   -  LD_nn__SP_ED4  -  ED, 73, n, n
 InstructionInfo instructionInfoLD_nn__SP_ED4 =
 {
     6,
@@ -4588,7 +4588,7 @@ InstructionInfo instructionInfoLD_nn__SP_ED4 =
     }
 };
 
-// LD (nn), IX  -  DD, 22, n, n
+// LD (nn), IX   -  LD_nn__IX_DD4  -  DD, 22, n, n
 InstructionInfo instructionInfoLD_nn__IX_DD4 =
 {
     6,
@@ -4607,7 +4607,7 @@ InstructionInfo instructionInfoLD_nn__IX_DD4 =
     }
 };
 
-// LD (nn), IY  -  FD, 22, n, n
+// LD (nn), IY   -  LD_nn__IY_FD4  -  FD, 22, n, n
 InstructionInfo instructionInfoLD_nn__IY_FD4 =
 {
     6,
@@ -4626,7 +4626,7 @@ InstructionInfo instructionInfoLD_nn__IY_FD4 =
     }
 };
 
-// LD SP, HL  -  F9
+// LD SP, HL   -  LDSP_HL_1  -  F9
 InstructionInfo instructionInfoLDSP_HL_1 =
 {
     1,
@@ -4645,7 +4645,7 @@ InstructionInfo instructionInfoLDSP_HL_1 =
     }
 };
 
-// LD SP, IX  -  DD, F9
+// LD SP, IX   -  LDSP_IX_DD2  -  DD, F9
 InstructionInfo instructionInfoLDSP_IX_DD2 =
 {
     2,
@@ -4664,7 +4664,7 @@ InstructionInfo instructionInfoLDSP_IX_DD2 =
     }
 };
 
-// LD SP, IY  -  FD, F9
+// LD SP, IY   -  LDSP_IY_FD2  -  FD, F9
 InstructionInfo instructionInfoLDSP_IY_FD2 =
 {
     2,
@@ -4683,7 +4683,7 @@ InstructionInfo instructionInfoLDSP_IY_FD2 =
     }
 };
 
-// PUSH BC  -  C5
+// PUSH BC   -  PUSHBC_1  -  C5
 InstructionInfo instructionInfoPUSHBC_1 =
 {
     3,
@@ -4702,7 +4702,7 @@ InstructionInfo instructionInfoPUSHBC_1 =
     }
 };
 
-// PUSH DE  -  D5
+// PUSH DE   -  PUSHDE_1  -  D5
 InstructionInfo instructionInfoPUSHDE_1 =
 {
     3,
@@ -4721,7 +4721,7 @@ InstructionInfo instructionInfoPUSHDE_1 =
     }
 };
 
-// PUSH HL  -  E5
+// PUSH HL   -  PUSHHL_1  -  E5
 InstructionInfo instructionInfoPUSHHL_1 =
 {
     3,
@@ -4740,7 +4740,7 @@ InstructionInfo instructionInfoPUSHHL_1 =
     }
 };
 
-// PUSH AF  -  F5
+// PUSH AF   -  PUSHAF_1  -  F5
 InstructionInfo instructionInfoPUSHAF_1 =
 {
     3,
@@ -4759,7 +4759,7 @@ InstructionInfo instructionInfoPUSHAF_1 =
     }
 };
 
-// PUSH IX  -  DD, E5
+// PUSH IX   -  PUSHIX_DD2  -  DD, E5
 InstructionInfo instructionInfoPUSHIX_DD2 =
 {
     4,
@@ -4778,7 +4778,7 @@ InstructionInfo instructionInfoPUSHIX_DD2 =
     }
 };
 
-// PUSH IY  -  FD, E5
+// PUSH IY   -  PUSHIY_FD2  -  FD, E5
 InstructionInfo instructionInfoPUSHIY_FD2 =
 {
     4,
@@ -4797,7 +4797,7 @@ InstructionInfo instructionInfoPUSHIY_FD2 =
     }
 };
 
-// POP BC  -  C1
+// POP BC   -  POPBC_1  -  C1
 InstructionInfo instructionInfoPOPBC_1 =
 {
     3,
@@ -4816,7 +4816,7 @@ InstructionInfo instructionInfoPOPBC_1 =
     }
 };
 
-// POP DE  -  D1
+// POP DE   -  POPDE_1  -  D1
 InstructionInfo instructionInfoPOPDE_1 =
 {
     3,
@@ -4835,7 +4835,7 @@ InstructionInfo instructionInfoPOPDE_1 =
     }
 };
 
-// POP HL  -  E1
+// POP HL   -  POPHL_1  -  E1
 InstructionInfo instructionInfoPOPHL_1 =
 {
     3,
@@ -4854,7 +4854,7 @@ InstructionInfo instructionInfoPOPHL_1 =
     }
 };
 
-// POP AF  -  F1
+// POP AF   -  POPAF_1  -  F1
 InstructionInfo instructionInfoPOPAF_1 =
 {
     3,
@@ -4873,7 +4873,7 @@ InstructionInfo instructionInfoPOPAF_1 =
     }
 };
 
-// POP IX  -  DD, E1
+// POP IX   -  POPIX_DD2  -  DD, E1
 InstructionInfo instructionInfoPOPIX_DD2 =
 {
     4,
@@ -4892,7 +4892,7 @@ InstructionInfo instructionInfoPOPIX_DD2 =
     }
 };
 
-// POP IY  -  FD, E1
+// POP IY   -  POPIY_FD2  -  FD, E1
 InstructionInfo instructionInfoPOPIY_FD2 =
 {
     4,
@@ -4911,7 +4911,7 @@ InstructionInfo instructionInfoPOPIY_FD2 =
     }
 };
 
-// EX DE, HL  -  EB
+// EX DE, HL   -  EXDE_HL_1  -  EB
 InstructionInfo instructionInfoEXDE_HL_1 =
 {
     1,
@@ -4930,7 +4930,7 @@ InstructionInfo instructionInfoEXDE_HL_1 =
     }
 };
 
-// EX AF, AF'  -  08
+// EX AF, AF'   -  EXAF_AF2_1  -  08
 InstructionInfo instructionInfoEXAF_AF2_1 =
 {
     1,
@@ -4949,7 +4949,7 @@ InstructionInfo instructionInfoEXAF_AF2_1 =
     }
 };
 
-// EXX  -  D9
+// EXX   -  EXX_1  -  D9
 InstructionInfo instructionInfoEXX_1 =
 {
     1,
@@ -4968,7 +4968,7 @@ InstructionInfo instructionInfoEXX_1 =
     }
 };
 
-// EX (SP), HL  -  E3
+// EX (SP), HL   -  EX_SP__HL_1  -  E3
 InstructionInfo instructionInfoEX_SP__HL_1 =
 {
     5,
@@ -4987,7 +4987,7 @@ InstructionInfo instructionInfoEX_SP__HL_1 =
     }
 };
 
-// EX (SP), IX  -  DD, E3
+// EX (SP), IX   -  EX_SP__IX_DD2  -  DD, E3
 InstructionInfo instructionInfoEX_SP__IX_DD2 =
 {
     6,
@@ -5006,7 +5006,7 @@ InstructionInfo instructionInfoEX_SP__IX_DD2 =
     }
 };
 
-// EX (SP), IY  -  FD, E3
+// EX (SP), IY   -  EX_SP__IY_FD2  -  FD, E3
 InstructionInfo instructionInfoEX_SP__IY_FD2 =
 {
     6,
@@ -5025,7 +5025,7 @@ InstructionInfo instructionInfoEX_SP__IY_FD2 =
     }
 };
 
-// LDI  -  ED, A0
+// LDI   -  LDI_ED2  -  ED, A0
 InstructionInfo instructionInfoLDI_ED2 =
 {
     4,
@@ -5044,7 +5044,7 @@ InstructionInfo instructionInfoLDI_ED2 =
     }
 };
 
-// LDIR  -  ED, B0
+// LDIR   -  LDIR_ED2  -  ED, B0
 InstructionInfo instructionInfoLDIR_ED2 =
 {
     5,
@@ -5063,7 +5063,7 @@ InstructionInfo instructionInfoLDIR_ED2 =
     }
 };
 
-// LDD  -  ED, A8
+// LDD   -  LDD_ED2  -  ED, A8
 InstructionInfo instructionInfoLDD_ED2 =
 {
     4,
@@ -5082,7 +5082,7 @@ InstructionInfo instructionInfoLDD_ED2 =
     }
 };
 
-// LDDR  -  ED, B8
+// LDDR   -  LDDR_ED2  -  ED, B8
 InstructionInfo instructionInfoLDDR_ED2 =
 {
     5,
@@ -5101,7 +5101,7 @@ InstructionInfo instructionInfoLDDR_ED2 =
     }
 };
 
-// CPI  -  ED, A1
+// CPI   -  CPI_ED2  -  ED, A1
 InstructionInfo instructionInfoCPI_ED2 =
 {
     4,
@@ -5120,7 +5120,7 @@ InstructionInfo instructionInfoCPI_ED2 =
     }
 };
 
-// CPIR  -  ED, B1
+// CPIR   -  CPIR_ED2  -  ED, B1
 InstructionInfo instructionInfoCPIR_ED2 =
 {
     5,
@@ -5139,7 +5139,7 @@ InstructionInfo instructionInfoCPIR_ED2 =
     }
 };
 
-// CPD  -  ED, A9
+// CPD   -  CPD_ED2  -  ED, A9
 InstructionInfo instructionInfoCPD_ED2 =
 {
     4,
@@ -5158,7 +5158,7 @@ InstructionInfo instructionInfoCPD_ED2 =
     }
 };
 
-// CPDR  -  ED, B9
+// CPDR   -  CPDR_ED2  -  ED, B9
 InstructionInfo instructionInfoCPDR_ED2 =
 {
     5,
@@ -5177,7 +5177,7 @@ InstructionInfo instructionInfoCPDR_ED2 =
     }
 };
 
-// ADD A, A  -  87
+// ADD A, A   -  ADDA_A_1  -  87
 InstructionInfo instructionInfoADDA_A_1 =
 {
     1,
@@ -5196,7 +5196,7 @@ InstructionInfo instructionInfoADDA_A_1 =
     }
 };
 
-// ADD A, B  -  80
+// ADD A, B   -  ADDA_B_1  -  80
 InstructionInfo instructionInfoADDA_B_1 =
 {
     1,
@@ -5215,7 +5215,7 @@ InstructionInfo instructionInfoADDA_B_1 =
     }
 };
 
-// ADD A, C  -  81
+// ADD A, C   -  ADDA_C_1  -  81
 InstructionInfo instructionInfoADDA_C_1 =
 {
     1,
@@ -5234,7 +5234,7 @@ InstructionInfo instructionInfoADDA_C_1 =
     }
 };
 
-// ADD A, D  -  82
+// ADD A, D   -  ADDA_D_1  -  82
 InstructionInfo instructionInfoADDA_D_1 =
 {
     1,
@@ -5253,7 +5253,7 @@ InstructionInfo instructionInfoADDA_D_1 =
     }
 };
 
-// ADD A, E  -  83
+// ADD A, E   -  ADDA_E_1  -  83
 InstructionInfo instructionInfoADDA_E_1 =
 {
     1,
@@ -5272,7 +5272,7 @@ InstructionInfo instructionInfoADDA_E_1 =
     }
 };
 
-// ADD A, H  -  84
+// ADD A, H   -  ADDA_H_1  -  84
 InstructionInfo instructionInfoADDA_H_1 =
 {
     1,
@@ -5291,7 +5291,7 @@ InstructionInfo instructionInfoADDA_H_1 =
     }
 };
 
-// ADD A, L  -  85
+// ADD A, L   -  ADDA_L_1  -  85
 InstructionInfo instructionInfoADDA_L_1 =
 {
     1,
@@ -5310,7 +5310,7 @@ InstructionInfo instructionInfoADDA_L_1 =
     }
 };
 
-// ADD A, A  -  DD, 87
+// ADD A, A   -  ADDA_A_DD2  -  DD, 87
 InstructionInfo instructionInfoADDA_A_DD2 =
 {
     2,
@@ -5329,7 +5329,7 @@ InstructionInfo instructionInfoADDA_A_DD2 =
     }
 };
 
-// ADD A, B  -  DD, 80
+// ADD A, B   -  ADDA_B_DD2  -  DD, 80
 InstructionInfo instructionInfoADDA_B_DD2 =
 {
     2,
@@ -5348,7 +5348,7 @@ InstructionInfo instructionInfoADDA_B_DD2 =
     }
 };
 
-// ADD A, C  -  DD, 81
+// ADD A, C   -  ADDA_C_DD2  -  DD, 81
 InstructionInfo instructionInfoADDA_C_DD2 =
 {
     2,
@@ -5367,7 +5367,7 @@ InstructionInfo instructionInfoADDA_C_DD2 =
     }
 };
 
-// ADD A, D  -  DD, 82
+// ADD A, D   -  ADDA_D_DD2  -  DD, 82
 InstructionInfo instructionInfoADDA_D_DD2 =
 {
     2,
@@ -5386,7 +5386,7 @@ InstructionInfo instructionInfoADDA_D_DD2 =
     }
 };
 
-// ADD A, E  -  DD, 83
+// ADD A, E   -  ADDA_E_DD2  -  DD, 83
 InstructionInfo instructionInfoADDA_E_DD2 =
 {
     2,
@@ -5405,7 +5405,7 @@ InstructionInfo instructionInfoADDA_E_DD2 =
     }
 };
 
-// ADD A, IXh  -  DD, 84
+// ADD A, IXh   -  ADDA_IXh_DD2  -  DD, 84
 InstructionInfo instructionInfoADDA_IXh_DD2 =
 {
     2,
@@ -5424,7 +5424,7 @@ InstructionInfo instructionInfoADDA_IXh_DD2 =
     }
 };
 
-// ADD A, IXl  -  DD, 85
+// ADD A, IXl   -  ADDA_IXl_DD2  -  DD, 85
 InstructionInfo instructionInfoADDA_IXl_DD2 =
 {
     2,
@@ -5443,7 +5443,7 @@ InstructionInfo instructionInfoADDA_IXl_DD2 =
     }
 };
 
-// ADD A, A  -  FD, 87
+// ADD A, A   -  ADDA_A_FD2  -  FD, 87
 InstructionInfo instructionInfoADDA_A_FD2 =
 {
     2,
@@ -5462,7 +5462,7 @@ InstructionInfo instructionInfoADDA_A_FD2 =
     }
 };
 
-// ADD A, B  -  FD, 80
+// ADD A, B   -  ADDA_B_FD2  -  FD, 80
 InstructionInfo instructionInfoADDA_B_FD2 =
 {
     2,
@@ -5481,7 +5481,7 @@ InstructionInfo instructionInfoADDA_B_FD2 =
     }
 };
 
-// ADD A, C  -  FD, 81
+// ADD A, C   -  ADDA_C_FD2  -  FD, 81
 InstructionInfo instructionInfoADDA_C_FD2 =
 {
     2,
@@ -5500,7 +5500,7 @@ InstructionInfo instructionInfoADDA_C_FD2 =
     }
 };
 
-// ADD A, D  -  FD, 82
+// ADD A, D   -  ADDA_D_FD2  -  FD, 82
 InstructionInfo instructionInfoADDA_D_FD2 =
 {
     2,
@@ -5519,7 +5519,7 @@ InstructionInfo instructionInfoADDA_D_FD2 =
     }
 };
 
-// ADD A, E  -  FD, 83
+// ADD A, E   -  ADDA_E_FD2  -  FD, 83
 InstructionInfo instructionInfoADDA_E_FD2 =
 {
     2,
@@ -5538,7 +5538,7 @@ InstructionInfo instructionInfoADDA_E_FD2 =
     }
 };
 
-// ADD A, IYh  -  FD, 84
+// ADD A, IYh   -  ADDA_IYh_FD2  -  FD, 84
 InstructionInfo instructionInfoADDA_IYh_FD2 =
 {
     2,
@@ -5557,7 +5557,7 @@ InstructionInfo instructionInfoADDA_IYh_FD2 =
     }
 };
 
-// ADD A, IYl  -  FD, 85
+// ADD A, IYl   -  ADDA_IYl_FD2  -  FD, 85
 InstructionInfo instructionInfoADDA_IYl_FD2 =
 {
     2,
@@ -5576,7 +5576,7 @@ InstructionInfo instructionInfoADDA_IYl_FD2 =
     }
 };
 
-// ADD A, n  -  C6, n
+// ADD A, n   -  ADDA_n_2  -  C6, n
 InstructionInfo instructionInfoADDA_n_2 =
 {
     2,
@@ -5595,7 +5595,7 @@ InstructionInfo instructionInfoADDA_n_2 =
     }
 };
 
-// ADD A, (HL)  -  86
+// ADD A, (HL)   -  ADDA__HL__1  -  86
 InstructionInfo instructionInfoADDA__HL__1 =
 {
     2,
@@ -5614,7 +5614,7 @@ InstructionInfo instructionInfoADDA__HL__1 =
     }
 };
 
-// ADD A, (IX+d)  -  DD, 86, d
+// ADD A, (IX+d)   -  ADDA__IX_d__DD3  -  DD, 86, d
 InstructionInfo instructionInfoADDA__IX_d__DD3 =
 {
     5,
@@ -5633,7 +5633,7 @@ InstructionInfo instructionInfoADDA__IX_d__DD3 =
     }
 };
 
-// ADD A, (IY+d)  -  FD, 86, d
+// ADD A, (IY+d)   -  ADDA__IY_d__FD3  -  FD, 86, d
 InstructionInfo instructionInfoADDA__IY_d__FD3 =
 {
     5,
@@ -5652,7 +5652,7 @@ InstructionInfo instructionInfoADDA__IY_d__FD3 =
     }
 };
 
-// ADC A, A  -  8F
+// ADC A, A   -  ADCA_A_1  -  8F
 InstructionInfo instructionInfoADCA_A_1 =
 {
     1,
@@ -5671,7 +5671,7 @@ InstructionInfo instructionInfoADCA_A_1 =
     }
 };
 
-// ADC A, B  -  88
+// ADC A, B   -  ADCA_B_1  -  88
 InstructionInfo instructionInfoADCA_B_1 =
 {
     1,
@@ -5690,7 +5690,7 @@ InstructionInfo instructionInfoADCA_B_1 =
     }
 };
 
-// ADC A, C  -  89
+// ADC A, C   -  ADCA_C_1  -  89
 InstructionInfo instructionInfoADCA_C_1 =
 {
     1,
@@ -5709,7 +5709,7 @@ InstructionInfo instructionInfoADCA_C_1 =
     }
 };
 
-// ADC A, D  -  8A
+// ADC A, D   -  ADCA_D_1  -  8A
 InstructionInfo instructionInfoADCA_D_1 =
 {
     1,
@@ -5728,7 +5728,7 @@ InstructionInfo instructionInfoADCA_D_1 =
     }
 };
 
-// ADC A, E  -  8B
+// ADC A, E   -  ADCA_E_1  -  8B
 InstructionInfo instructionInfoADCA_E_1 =
 {
     1,
@@ -5747,7 +5747,7 @@ InstructionInfo instructionInfoADCA_E_1 =
     }
 };
 
-// ADC A, H  -  8C
+// ADC A, H   -  ADCA_H_1  -  8C
 InstructionInfo instructionInfoADCA_H_1 =
 {
     1,
@@ -5766,7 +5766,7 @@ InstructionInfo instructionInfoADCA_H_1 =
     }
 };
 
-// ADC A, L  -  8D
+// ADC A, L   -  ADCA_L_1  -  8D
 InstructionInfo instructionInfoADCA_L_1 =
 {
     1,
@@ -5785,7 +5785,7 @@ InstructionInfo instructionInfoADCA_L_1 =
     }
 };
 
-// ADC A, A  -  DD, 8F
+// ADC A, A   -  ADCA_A_DD2  -  DD, 8F
 InstructionInfo instructionInfoADCA_A_DD2 =
 {
     2,
@@ -5804,7 +5804,7 @@ InstructionInfo instructionInfoADCA_A_DD2 =
     }
 };
 
-// ADC A, B  -  DD, 88
+// ADC A, B   -  ADCA_B_DD2  -  DD, 88
 InstructionInfo instructionInfoADCA_B_DD2 =
 {
     2,
@@ -5823,7 +5823,7 @@ InstructionInfo instructionInfoADCA_B_DD2 =
     }
 };
 
-// ADC A, C  -  DD, 89
+// ADC A, C   -  ADCA_C_DD2  -  DD, 89
 InstructionInfo instructionInfoADCA_C_DD2 =
 {
     2,
@@ -5842,7 +5842,7 @@ InstructionInfo instructionInfoADCA_C_DD2 =
     }
 };
 
-// ADC A, D  -  DD, 8A
+// ADC A, D   -  ADCA_D_DD2  -  DD, 8A
 InstructionInfo instructionInfoADCA_D_DD2 =
 {
     2,
@@ -5861,7 +5861,7 @@ InstructionInfo instructionInfoADCA_D_DD2 =
     }
 };
 
-// ADC A, E  -  DD, 8B
+// ADC A, E   -  ADCA_E_DD2  -  DD, 8B
 InstructionInfo instructionInfoADCA_E_DD2 =
 {
     2,
@@ -5880,7 +5880,7 @@ InstructionInfo instructionInfoADCA_E_DD2 =
     }
 };
 
-// ADC A, IXh  -  DD, 8C
+// ADC A, IXh   -  ADCA_IXh_DD2  -  DD, 8C
 InstructionInfo instructionInfoADCA_IXh_DD2 =
 {
     2,
@@ -5899,7 +5899,7 @@ InstructionInfo instructionInfoADCA_IXh_DD2 =
     }
 };
 
-// ADC A, IXl  -  DD, 8D
+// ADC A, IXl   -  ADCA_IXl_DD2  -  DD, 8D
 InstructionInfo instructionInfoADCA_IXl_DD2 =
 {
     2,
@@ -5918,7 +5918,7 @@ InstructionInfo instructionInfoADCA_IXl_DD2 =
     }
 };
 
-// ADC A, A  -  FD, 8F
+// ADC A, A   -  ADCA_A_FD2  -  FD, 8F
 InstructionInfo instructionInfoADCA_A_FD2 =
 {
     2,
@@ -5937,7 +5937,7 @@ InstructionInfo instructionInfoADCA_A_FD2 =
     }
 };
 
-// ADC A, B  -  FD, 88
+// ADC A, B   -  ADCA_B_FD2  -  FD, 88
 InstructionInfo instructionInfoADCA_B_FD2 =
 {
     2,
@@ -5956,7 +5956,7 @@ InstructionInfo instructionInfoADCA_B_FD2 =
     }
 };
 
-// ADC A, C  -  FD, 89
+// ADC A, C   -  ADCA_C_FD2  -  FD, 89
 InstructionInfo instructionInfoADCA_C_FD2 =
 {
     2,
@@ -5975,7 +5975,7 @@ InstructionInfo instructionInfoADCA_C_FD2 =
     }
 };
 
-// ADC A, D  -  FD, 8A
+// ADC A, D   -  ADCA_D_FD2  -  FD, 8A
 InstructionInfo instructionInfoADCA_D_FD2 =
 {
     2,
@@ -5994,7 +5994,7 @@ InstructionInfo instructionInfoADCA_D_FD2 =
     }
 };
 
-// ADC A, E  -  FD, 8B
+// ADC A, E   -  ADCA_E_FD2  -  FD, 8B
 InstructionInfo instructionInfoADCA_E_FD2 =
 {
     2,
@@ -6013,7 +6013,7 @@ InstructionInfo instructionInfoADCA_E_FD2 =
     }
 };
 
-// ADC A, IYh  -  FD, 8C
+// ADC A, IYh   -  ADCA_IYh_FD2  -  FD, 8C
 InstructionInfo instructionInfoADCA_IYh_FD2 =
 {
     2,
@@ -6032,7 +6032,7 @@ InstructionInfo instructionInfoADCA_IYh_FD2 =
     }
 };
 
-// ADC A, IYl  -  FD, 8D
+// ADC A, IYl   -  ADCA_IYl_FD2  -  FD, 8D
 InstructionInfo instructionInfoADCA_IYl_FD2 =
 {
     2,
@@ -6051,7 +6051,7 @@ InstructionInfo instructionInfoADCA_IYl_FD2 =
     }
 };
 
-// ADC A, n  -  CE, n
+// ADC A, n   -  ADCA_n_2  -  CE, n
 InstructionInfo instructionInfoADCA_n_2 =
 {
     2,
@@ -6070,7 +6070,7 @@ InstructionInfo instructionInfoADCA_n_2 =
     }
 };
 
-// ADC A, (HL)  -  8E
+// ADC A, (HL)   -  ADCA__HL__1  -  8E
 InstructionInfo instructionInfoADCA__HL__1 =
 {
     1,
@@ -6089,7 +6089,7 @@ InstructionInfo instructionInfoADCA__HL__1 =
     }
 };
 
-// ADC A, (IX+d)  -  DD, 8E, d
+// ADC A, (IX+d)   -  ADCA__IX_d__DD3  -  DD, 8E, d
 InstructionInfo instructionInfoADCA__IX_d__DD3 =
 {
     5,
@@ -6108,7 +6108,7 @@ InstructionInfo instructionInfoADCA__IX_d__DD3 =
     }
 };
 
-// ADC A, (IY+d)  -  FD, 8E, d
+// ADC A, (IY+d)   -  ADCA__IY_d__FD3  -  FD, 8E, d
 InstructionInfo instructionInfoADCA__IY_d__FD3 =
 {
     5,
@@ -6127,7 +6127,7 @@ InstructionInfo instructionInfoADCA__IY_d__FD3 =
     }
 };
 
-// SUB A, A  -  97
+// SUB A, A   -  SUBA_A_1  -  97
 InstructionInfo instructionInfoSUBA_A_1 =
 {
     1,
@@ -6146,7 +6146,7 @@ InstructionInfo instructionInfoSUBA_A_1 =
     }
 };
 
-// SUB A, B  -  90
+// SUB A, B   -  SUBA_B_1  -  90
 InstructionInfo instructionInfoSUBA_B_1 =
 {
     1,
@@ -6165,7 +6165,7 @@ InstructionInfo instructionInfoSUBA_B_1 =
     }
 };
 
-// SUB A, C  -  91
+// SUB A, C   -  SUBA_C_1  -  91
 InstructionInfo instructionInfoSUBA_C_1 =
 {
     1,
@@ -6184,7 +6184,7 @@ InstructionInfo instructionInfoSUBA_C_1 =
     }
 };
 
-// SUB A, D  -  92
+// SUB A, D   -  SUBA_D_1  -  92
 InstructionInfo instructionInfoSUBA_D_1 =
 {
     1,
@@ -6203,7 +6203,7 @@ InstructionInfo instructionInfoSUBA_D_1 =
     }
 };
 
-// SUB A, E  -  93
+// SUB A, E   -  SUBA_E_1  -  93
 InstructionInfo instructionInfoSUBA_E_1 =
 {
     1,
@@ -6222,7 +6222,7 @@ InstructionInfo instructionInfoSUBA_E_1 =
     }
 };
 
-// SUB A, H  -  94
+// SUB A, H   -  SUBA_H_1  -  94
 InstructionInfo instructionInfoSUBA_H_1 =
 {
     1,
@@ -6241,7 +6241,7 @@ InstructionInfo instructionInfoSUBA_H_1 =
     }
 };
 
-// SUB A, L  -  95
+// SUB A, L   -  SUBA_L_1  -  95
 InstructionInfo instructionInfoSUBA_L_1 =
 {
     1,
@@ -6260,7 +6260,7 @@ InstructionInfo instructionInfoSUBA_L_1 =
     }
 };
 
-// SUB A, A  -  DD, 97
+// SUB A, A   -  SUBA_A_DD2  -  DD, 97
 InstructionInfo instructionInfoSUBA_A_DD2 =
 {
     2,
@@ -6279,7 +6279,7 @@ InstructionInfo instructionInfoSUBA_A_DD2 =
     }
 };
 
-// SUB A, B  -  DD, 90
+// SUB A, B   -  SUBA_B_DD2  -  DD, 90
 InstructionInfo instructionInfoSUBA_B_DD2 =
 {
     2,
@@ -6298,7 +6298,7 @@ InstructionInfo instructionInfoSUBA_B_DD2 =
     }
 };
 
-// SUB A, C  -  DD, 91
+// SUB A, C   -  SUBA_C_DD2  -  DD, 91
 InstructionInfo instructionInfoSUBA_C_DD2 =
 {
     2,
@@ -6317,7 +6317,7 @@ InstructionInfo instructionInfoSUBA_C_DD2 =
     }
 };
 
-// SUB A, D  -  DD, 92
+// SUB A, D   -  SUBA_D_DD2  -  DD, 92
 InstructionInfo instructionInfoSUBA_D_DD2 =
 {
     2,
@@ -6336,7 +6336,7 @@ InstructionInfo instructionInfoSUBA_D_DD2 =
     }
 };
 
-// SUB A, E  -  DD, 93
+// SUB A, E   -  SUBA_E_DD2  -  DD, 93
 InstructionInfo instructionInfoSUBA_E_DD2 =
 {
     2,
@@ -6355,7 +6355,7 @@ InstructionInfo instructionInfoSUBA_E_DD2 =
     }
 };
 
-// SUB A, IXh  -  DD, 94
+// SUB A, IXh   -  SUBA_IXh_DD2  -  DD, 94
 InstructionInfo instructionInfoSUBA_IXh_DD2 =
 {
     2,
@@ -6374,7 +6374,7 @@ InstructionInfo instructionInfoSUBA_IXh_DD2 =
     }
 };
 
-// SUB A, IXl  -  DD, 95
+// SUB A, IXl   -  SUBA_IXl_DD2  -  DD, 95
 InstructionInfo instructionInfoSUBA_IXl_DD2 =
 {
     2,
@@ -6393,7 +6393,7 @@ InstructionInfo instructionInfoSUBA_IXl_DD2 =
     }
 };
 
-// SUB A, A  -  FD, 97
+// SUB A, A   -  SUBA_A_FD2  -  FD, 97
 InstructionInfo instructionInfoSUBA_A_FD2 =
 {
     2,
@@ -6412,7 +6412,7 @@ InstructionInfo instructionInfoSUBA_A_FD2 =
     }
 };
 
-// SUB A, B  -  FD, 90
+// SUB A, B   -  SUBA_B_FD2  -  FD, 90
 InstructionInfo instructionInfoSUBA_B_FD2 =
 {
     2,
@@ -6431,7 +6431,7 @@ InstructionInfo instructionInfoSUBA_B_FD2 =
     }
 };
 
-// SUB A, C  -  FD, 91
+// SUB A, C   -  SUBA_C_FD2  -  FD, 91
 InstructionInfo instructionInfoSUBA_C_FD2 =
 {
     2,
@@ -6450,7 +6450,7 @@ InstructionInfo instructionInfoSUBA_C_FD2 =
     }
 };
 
-// SUB A, D  -  FD, 92
+// SUB A, D   -  SUBA_D_FD2  -  FD, 92
 InstructionInfo instructionInfoSUBA_D_FD2 =
 {
     2,
@@ -6469,7 +6469,7 @@ InstructionInfo instructionInfoSUBA_D_FD2 =
     }
 };
 
-// SUB A, E  -  FD, 93
+// SUB A, E   -  SUBA_E_FD2  -  FD, 93
 InstructionInfo instructionInfoSUBA_E_FD2 =
 {
     2,
@@ -6488,7 +6488,7 @@ InstructionInfo instructionInfoSUBA_E_FD2 =
     }
 };
 
-// SUB A, IYh  -  FD, 94
+// SUB A, IYh   -  SUBA_IYh_FD2  -  FD, 94
 InstructionInfo instructionInfoSUBA_IYh_FD2 =
 {
     2,
@@ -6507,7 +6507,7 @@ InstructionInfo instructionInfoSUBA_IYh_FD2 =
     }
 };
 
-// SUB A, IYl  -  FD, 95
+// SUB A, IYl   -  SUBA_IYl_FD2  -  FD, 95
 InstructionInfo instructionInfoSUBA_IYl_FD2 =
 {
     2,
@@ -6526,7 +6526,7 @@ InstructionInfo instructionInfoSUBA_IYl_FD2 =
     }
 };
 
-// SUB A, n  -  8E, n
+// SUB A, n   -  SUBA_n_2  -  8E, n
 InstructionInfo instructionInfoSUBA_n_2 =
 {
     2,
@@ -6545,7 +6545,7 @@ InstructionInfo instructionInfoSUBA_n_2 =
     }
 };
 
-// SUB A, (HL)  -  96
+// SUB A, (HL)   -  SUBA__HL__1  -  96
 InstructionInfo instructionInfoSUBA__HL__1 =
 {
     2,
@@ -6564,7 +6564,7 @@ InstructionInfo instructionInfoSUBA__HL__1 =
     }
 };
 
-// SUB A, (IX+d)  -  DD, 96, d
+// SUB A, (IX+d)   -  SUBA__IX_d__DD3  -  DD, 96, d
 InstructionInfo instructionInfoSUBA__IX_d__DD3 =
 {
     5,
@@ -6583,7 +6583,7 @@ InstructionInfo instructionInfoSUBA__IX_d__DD3 =
     }
 };
 
-// SUB A, (IY+d)  -  FD, 96, d
+// SUB A, (IY+d)   -  SUBA__IY_d__FD3  -  FD, 96, d
 InstructionInfo instructionInfoSUBA__IY_d__FD3 =
 {
     5,
@@ -6602,7 +6602,7 @@ InstructionInfo instructionInfoSUBA__IY_d__FD3 =
     }
 };
 
-// SBC A, A  -  9F
+// SBC A, A   -  SBCA_A_1  -  9F
 InstructionInfo instructionInfoSBCA_A_1 =
 {
     1,
@@ -6621,7 +6621,7 @@ InstructionInfo instructionInfoSBCA_A_1 =
     }
 };
 
-// SBC A, B  -  98
+// SBC A, B   -  SBCA_B_1  -  98
 InstructionInfo instructionInfoSBCA_B_1 =
 {
     1,
@@ -6640,7 +6640,7 @@ InstructionInfo instructionInfoSBCA_B_1 =
     }
 };
 
-// SBC A, C  -  99
+// SBC A, C   -  SBCA_C_1  -  99
 InstructionInfo instructionInfoSBCA_C_1 =
 {
     1,
@@ -6659,7 +6659,7 @@ InstructionInfo instructionInfoSBCA_C_1 =
     }
 };
 
-// SBC A, D  -  9A
+// SBC A, D   -  SBCA_D_1  -  9A
 InstructionInfo instructionInfoSBCA_D_1 =
 {
     1,
@@ -6678,7 +6678,7 @@ InstructionInfo instructionInfoSBCA_D_1 =
     }
 };
 
-// SBC A, E  -  9B
+// SBC A, E   -  SBCA_E_1  -  9B
 InstructionInfo instructionInfoSBCA_E_1 =
 {
     1,
@@ -6697,7 +6697,7 @@ InstructionInfo instructionInfoSBCA_E_1 =
     }
 };
 
-// SBC A, H  -  9C
+// SBC A, H   -  SBCA_H_1  -  9C
 InstructionInfo instructionInfoSBCA_H_1 =
 {
     1,
@@ -6716,7 +6716,7 @@ InstructionInfo instructionInfoSBCA_H_1 =
     }
 };
 
-// SBC A, L  -  9D
+// SBC A, L   -  SBCA_L_1  -  9D
 InstructionInfo instructionInfoSBCA_L_1 =
 {
     1,
@@ -6735,7 +6735,7 @@ InstructionInfo instructionInfoSBCA_L_1 =
     }
 };
 
-// SBC A, A  -  DD, 9F
+// SBC A, A   -  SBCA_A_DD2  -  DD, 9F
 InstructionInfo instructionInfoSBCA_A_DD2 =
 {
     2,
@@ -6754,7 +6754,7 @@ InstructionInfo instructionInfoSBCA_A_DD2 =
     }
 };
 
-// SBC A, B  -  DD, 98
+// SBC A, B   -  SBCA_B_DD2  -  DD, 98
 InstructionInfo instructionInfoSBCA_B_DD2 =
 {
     2,
@@ -6773,7 +6773,7 @@ InstructionInfo instructionInfoSBCA_B_DD2 =
     }
 };
 
-// SBC A, C  -  DD, 99
+// SBC A, C   -  SBCA_C_DD2  -  DD, 99
 InstructionInfo instructionInfoSBCA_C_DD2 =
 {
     2,
@@ -6792,7 +6792,7 @@ InstructionInfo instructionInfoSBCA_C_DD2 =
     }
 };
 
-// SBC A, D  -  DD, 9A
+// SBC A, D   -  SBCA_D_DD2  -  DD, 9A
 InstructionInfo instructionInfoSBCA_D_DD2 =
 {
     2,
@@ -6811,7 +6811,7 @@ InstructionInfo instructionInfoSBCA_D_DD2 =
     }
 };
 
-// SBC A, E  -  DD, 9B
+// SBC A, E   -  SBCA_E_DD2  -  DD, 9B
 InstructionInfo instructionInfoSBCA_E_DD2 =
 {
     2,
@@ -6830,7 +6830,7 @@ InstructionInfo instructionInfoSBCA_E_DD2 =
     }
 };
 
-// SBC A, IXh  -  DD, 9C
+// SBC A, IXh   -  SBCA_IXh_DD2  -  DD, 9C
 InstructionInfo instructionInfoSBCA_IXh_DD2 =
 {
     2,
@@ -6849,7 +6849,7 @@ InstructionInfo instructionInfoSBCA_IXh_DD2 =
     }
 };
 
-// SBC A, IXl  -  DD, 9D
+// SBC A, IXl   -  SBCA_IXl_DD2  -  DD, 9D
 InstructionInfo instructionInfoSBCA_IXl_DD2 =
 {
     2,
@@ -6868,7 +6868,7 @@ InstructionInfo instructionInfoSBCA_IXl_DD2 =
     }
 };
 
-// SBC A, A  -  FD, 9F
+// SBC A, A   -  SBCA_A_FD2  -  FD, 9F
 InstructionInfo instructionInfoSBCA_A_FD2 =
 {
     2,
@@ -6887,7 +6887,7 @@ InstructionInfo instructionInfoSBCA_A_FD2 =
     }
 };
 
-// SBC A, B  -  FD, 98
+// SBC A, B   -  SBCA_B_FD2  -  FD, 98
 InstructionInfo instructionInfoSBCA_B_FD2 =
 {
     2,
@@ -6906,7 +6906,7 @@ InstructionInfo instructionInfoSBCA_B_FD2 =
     }
 };
 
-// SBC A, C  -  FD, 99
+// SBC A, C   -  SBCA_C_FD2  -  FD, 99
 InstructionInfo instructionInfoSBCA_C_FD2 =
 {
     2,
@@ -6925,7 +6925,7 @@ InstructionInfo instructionInfoSBCA_C_FD2 =
     }
 };
 
-// SBC A, D  -  FD, 9A
+// SBC A, D   -  SBCA_D_FD2  -  FD, 9A
 InstructionInfo instructionInfoSBCA_D_FD2 =
 {
     2,
@@ -6944,7 +6944,7 @@ InstructionInfo instructionInfoSBCA_D_FD2 =
     }
 };
 
-// SBC A, E  -  FD, 9B
+// SBC A, E   -  SBCA_E_FD2  -  FD, 9B
 InstructionInfo instructionInfoSBCA_E_FD2 =
 {
     2,
@@ -6963,7 +6963,7 @@ InstructionInfo instructionInfoSBCA_E_FD2 =
     }
 };
 
-// SBC A, IYh  -  FD, 9C
+// SBC A, IYh   -  SBCA_IYh_FD2  -  FD, 9C
 InstructionInfo instructionInfoSBCA_IYh_FD2 =
 {
     2,
@@ -6982,7 +6982,7 @@ InstructionInfo instructionInfoSBCA_IYh_FD2 =
     }
 };
 
-// SBC A, IYl  -  FD, 9D
+// SBC A, IYl   -  SBCA_IYl_FD2  -  FD, 9D
 InstructionInfo instructionInfoSBCA_IYl_FD2 =
 {
     2,
@@ -7001,7 +7001,7 @@ InstructionInfo instructionInfoSBCA_IYl_FD2 =
     }
 };
 
-// SBC A, n  -  DE, n
+// SBC A, n   -  SBCA_n_2  -  DE, n
 InstructionInfo instructionInfoSBCA_n_2 =
 {
     2,
@@ -7020,7 +7020,7 @@ InstructionInfo instructionInfoSBCA_n_2 =
     }
 };
 
-// SBC A, (HL)  -  9E
+// SBC A, (HL)   -  SBCA__HL__1  -  9E
 InstructionInfo instructionInfoSBCA__HL__1 =
 {
     2,
@@ -7039,7 +7039,7 @@ InstructionInfo instructionInfoSBCA__HL__1 =
     }
 };
 
-// SBC A, (IX+d)  -  DD, 9E, d
+// SBC A, (IX+d)   -  SBCA__IX_d__DD3  -  DD, 9E, d
 InstructionInfo instructionInfoSBCA__IX_d__DD3 =
 {
     5,
@@ -7058,7 +7058,7 @@ InstructionInfo instructionInfoSBCA__IX_d__DD3 =
     }
 };
 
-// SBC A, (IY+d)  -  FD, 9E, d
+// SBC A, (IY+d)   -  SBCA__IY_d__FD3  -  FD, 9E, d
 InstructionInfo instructionInfoSBCA__IY_d__FD3 =
 {
     5,
@@ -7077,7 +7077,7 @@ InstructionInfo instructionInfoSBCA__IY_d__FD3 =
     }
 };
 
-// AND A, A  -  A7
+// AND A, A   -  ANDA_A_1  -  A7
 InstructionInfo instructionInfoANDA_A_1 =
 {
     1,
@@ -7096,7 +7096,7 @@ InstructionInfo instructionInfoANDA_A_1 =
     }
 };
 
-// AND A, B  -  A0
+// AND A, B   -  ANDA_B_1  -  A0
 InstructionInfo instructionInfoANDA_B_1 =
 {
     1,
@@ -7115,7 +7115,7 @@ InstructionInfo instructionInfoANDA_B_1 =
     }
 };
 
-// AND A, C  -  A1
+// AND A, C   -  ANDA_C_1  -  A1
 InstructionInfo instructionInfoANDA_C_1 =
 {
     1,
@@ -7134,7 +7134,7 @@ InstructionInfo instructionInfoANDA_C_1 =
     }
 };
 
-// AND A, D  -  A2
+// AND A, D   -  ANDA_D_1  -  A2
 InstructionInfo instructionInfoANDA_D_1 =
 {
     1,
@@ -7153,7 +7153,7 @@ InstructionInfo instructionInfoANDA_D_1 =
     }
 };
 
-// AND A, E  -  A3
+// AND A, E   -  ANDA_E_1  -  A3
 InstructionInfo instructionInfoANDA_E_1 =
 {
     1,
@@ -7172,7 +7172,7 @@ InstructionInfo instructionInfoANDA_E_1 =
     }
 };
 
-// AND A, H  -  A4
+// AND A, H   -  ANDA_H_1  -  A4
 InstructionInfo instructionInfoANDA_H_1 =
 {
     1,
@@ -7191,7 +7191,7 @@ InstructionInfo instructionInfoANDA_H_1 =
     }
 };
 
-// AND A, L  -  A5
+// AND A, L   -  ANDA_L_1  -  A5
 InstructionInfo instructionInfoANDA_L_1 =
 {
     1,
@@ -7210,7 +7210,7 @@ InstructionInfo instructionInfoANDA_L_1 =
     }
 };
 
-// AND A, A  -  DD, A7
+// AND A, A   -  ANDA_A_DD2  -  DD, A7
 InstructionInfo instructionInfoANDA_A_DD2 =
 {
     2,
@@ -7229,7 +7229,7 @@ InstructionInfo instructionInfoANDA_A_DD2 =
     }
 };
 
-// AND A, B  -  DD, A0
+// AND A, B   -  ANDA_B_DD2  -  DD, A0
 InstructionInfo instructionInfoANDA_B_DD2 =
 {
     2,
@@ -7248,7 +7248,7 @@ InstructionInfo instructionInfoANDA_B_DD2 =
     }
 };
 
-// AND A, C  -  DD, A1
+// AND A, C   -  ANDA_C_DD2  -  DD, A1
 InstructionInfo instructionInfoANDA_C_DD2 =
 {
     2,
@@ -7267,7 +7267,7 @@ InstructionInfo instructionInfoANDA_C_DD2 =
     }
 };
 
-// AND A, D  -  DD, A2
+// AND A, D   -  ANDA_D_DD2  -  DD, A2
 InstructionInfo instructionInfoANDA_D_DD2 =
 {
     2,
@@ -7286,7 +7286,7 @@ InstructionInfo instructionInfoANDA_D_DD2 =
     }
 };
 
-// AND A, E  -  DD, A3
+// AND A, E   -  ANDA_E_DD2  -  DD, A3
 InstructionInfo instructionInfoANDA_E_DD2 =
 {
     2,
@@ -7305,7 +7305,7 @@ InstructionInfo instructionInfoANDA_E_DD2 =
     }
 };
 
-// AND A, IXh  -  DD, A4
+// AND A, IXh   -  ANDA_IXh_DD2  -  DD, A4
 InstructionInfo instructionInfoANDA_IXh_DD2 =
 {
     2,
@@ -7324,7 +7324,7 @@ InstructionInfo instructionInfoANDA_IXh_DD2 =
     }
 };
 
-// AND A, IXl  -  DD, A5
+// AND A, IXl   -  ANDA_IXl_DD2  -  DD, A5
 InstructionInfo instructionInfoANDA_IXl_DD2 =
 {
     2,
@@ -7343,7 +7343,7 @@ InstructionInfo instructionInfoANDA_IXl_DD2 =
     }
 };
 
-// AND A, A  -  FD, A7
+// AND A, A   -  ANDA_A_FD2  -  FD, A7
 InstructionInfo instructionInfoANDA_A_FD2 =
 {
     2,
@@ -7362,7 +7362,7 @@ InstructionInfo instructionInfoANDA_A_FD2 =
     }
 };
 
-// AND A, B  -  FD, A0
+// AND A, B   -  ANDA_B_FD2  -  FD, A0
 InstructionInfo instructionInfoANDA_B_FD2 =
 {
     2,
@@ -7381,7 +7381,7 @@ InstructionInfo instructionInfoANDA_B_FD2 =
     }
 };
 
-// AND A, C  -  FD, A1
+// AND A, C   -  ANDA_C_FD2  -  FD, A1
 InstructionInfo instructionInfoANDA_C_FD2 =
 {
     2,
@@ -7400,7 +7400,7 @@ InstructionInfo instructionInfoANDA_C_FD2 =
     }
 };
 
-// AND A, D  -  FD, A2
+// AND A, D   -  ANDA_D_FD2  -  FD, A2
 InstructionInfo instructionInfoANDA_D_FD2 =
 {
     2,
@@ -7419,7 +7419,7 @@ InstructionInfo instructionInfoANDA_D_FD2 =
     }
 };
 
-// AND A, E  -  FD, A3
+// AND A, E   -  ANDA_E_FD2  -  FD, A3
 InstructionInfo instructionInfoANDA_E_FD2 =
 {
     2,
@@ -7438,7 +7438,7 @@ InstructionInfo instructionInfoANDA_E_FD2 =
     }
 };
 
-// AND A, IYh  -  FD, A4
+// AND A, IYh   -  ANDA_IYh_FD2  -  FD, A4
 InstructionInfo instructionInfoANDA_IYh_FD2 =
 {
     2,
@@ -7457,7 +7457,7 @@ InstructionInfo instructionInfoANDA_IYh_FD2 =
     }
 };
 
-// AND A, IYl  -  FD, A5
+// AND A, IYl   -  ANDA_IYl_FD2  -  FD, A5
 InstructionInfo instructionInfoANDA_IYl_FD2 =
 {
     2,
@@ -7476,7 +7476,7 @@ InstructionInfo instructionInfoANDA_IYl_FD2 =
     }
 };
 
-// AND A, n  -  E6, n
+// AND A, n   -  ANDA_n_2  -  E6, n
 InstructionInfo instructionInfoANDA_n_2 =
 {
     2,
@@ -7495,7 +7495,7 @@ InstructionInfo instructionInfoANDA_n_2 =
     }
 };
 
-// AND A, (HL)  -  A6
+// AND A, (HL)   -  ANDA__HL__1  -  A6
 InstructionInfo instructionInfoANDA__HL__1 =
 {
     2,
@@ -7514,7 +7514,7 @@ InstructionInfo instructionInfoANDA__HL__1 =
     }
 };
 
-// AND A, (IX+d)  -  DD, A6, d
+// AND A, (IX+d)   -  ANDA__IX_d__DD3  -  DD, A6, d
 InstructionInfo instructionInfoANDA__IX_d__DD3 =
 {
     5,
@@ -7533,7 +7533,7 @@ InstructionInfo instructionInfoANDA__IX_d__DD3 =
     }
 };
 
-// AND A, (IY+d)  -  FD, A6, d
+// AND A, (IY+d)   -  ANDA__IY_d__FD3  -  FD, A6, d
 InstructionInfo instructionInfoANDA__IY_d__FD3 =
 {
     5,
@@ -7552,7 +7552,7 @@ InstructionInfo instructionInfoANDA__IY_d__FD3 =
     }
 };
 
-// OR A, A  -  B7
+// OR A, A   -  ORA_A_1  -  B7
 InstructionInfo instructionInfoORA_A_1 =
 {
     1,
@@ -7571,7 +7571,7 @@ InstructionInfo instructionInfoORA_A_1 =
     }
 };
 
-// OR A, B  -  B0
+// OR A, B   -  ORA_B_1  -  B0
 InstructionInfo instructionInfoORA_B_1 =
 {
     1,
@@ -7590,7 +7590,7 @@ InstructionInfo instructionInfoORA_B_1 =
     }
 };
 
-// OR A, C  -  B1
+// OR A, C   -  ORA_C_1  -  B1
 InstructionInfo instructionInfoORA_C_1 =
 {
     1,
@@ -7609,7 +7609,7 @@ InstructionInfo instructionInfoORA_C_1 =
     }
 };
 
-// OR A, D  -  B2
+// OR A, D   -  ORA_D_1  -  B2
 InstructionInfo instructionInfoORA_D_1 =
 {
     1,
@@ -7628,7 +7628,7 @@ InstructionInfo instructionInfoORA_D_1 =
     }
 };
 
-// OR A, E  -  B3
+// OR A, E   -  ORA_E_1  -  B3
 InstructionInfo instructionInfoORA_E_1 =
 {
     1,
@@ -7647,7 +7647,7 @@ InstructionInfo instructionInfoORA_E_1 =
     }
 };
 
-// OR A, H  -  B4
+// OR A, H   -  ORA_H_1  -  B4
 InstructionInfo instructionInfoORA_H_1 =
 {
     1,
@@ -7666,7 +7666,7 @@ InstructionInfo instructionInfoORA_H_1 =
     }
 };
 
-// OR A, L  -  B5
+// OR A, L   -  ORA_L_1  -  B5
 InstructionInfo instructionInfoORA_L_1 =
 {
     1,
@@ -7685,7 +7685,7 @@ InstructionInfo instructionInfoORA_L_1 =
     }
 };
 
-// OR A, A  -  DD, B7
+// OR A, A   -  ORA_A_DD2  -  DD, B7
 InstructionInfo instructionInfoORA_A_DD2 =
 {
     2,
@@ -7704,7 +7704,7 @@ InstructionInfo instructionInfoORA_A_DD2 =
     }
 };
 
-// OR A, B  -  DD, B0
+// OR A, B   -  ORA_B_DD2  -  DD, B0
 InstructionInfo instructionInfoORA_B_DD2 =
 {
     2,
@@ -7723,7 +7723,7 @@ InstructionInfo instructionInfoORA_B_DD2 =
     }
 };
 
-// OR A, C  -  DD, B1
+// OR A, C   -  ORA_C_DD2  -  DD, B1
 InstructionInfo instructionInfoORA_C_DD2 =
 {
     2,
@@ -7742,7 +7742,7 @@ InstructionInfo instructionInfoORA_C_DD2 =
     }
 };
 
-// OR A, D  -  DD, B2
+// OR A, D   -  ORA_D_DD2  -  DD, B2
 InstructionInfo instructionInfoORA_D_DD2 =
 {
     2,
@@ -7761,7 +7761,7 @@ InstructionInfo instructionInfoORA_D_DD2 =
     }
 };
 
-// OR A, E  -  DD, B3
+// OR A, E   -  ORA_E_DD2  -  DD, B3
 InstructionInfo instructionInfoORA_E_DD2 =
 {
     2,
@@ -7780,7 +7780,7 @@ InstructionInfo instructionInfoORA_E_DD2 =
     }
 };
 
-// OR A, IXh  -  DD, B4
+// OR A, IXh   -  ORA_IXh_DD2  -  DD, B4
 InstructionInfo instructionInfoORA_IXh_DD2 =
 {
     2,
@@ -7799,7 +7799,7 @@ InstructionInfo instructionInfoORA_IXh_DD2 =
     }
 };
 
-// OR A, IXl  -  DD, B5
+// OR A, IXl   -  ORA_IXl_DD2  -  DD, B5
 InstructionInfo instructionInfoORA_IXl_DD2 =
 {
     2,
@@ -7818,7 +7818,7 @@ InstructionInfo instructionInfoORA_IXl_DD2 =
     }
 };
 
-// OR A, A  -  FD, B7
+// OR A, A   -  ORA_A_FD2  -  FD, B7
 InstructionInfo instructionInfoORA_A_FD2 =
 {
     2,
@@ -7837,7 +7837,7 @@ InstructionInfo instructionInfoORA_A_FD2 =
     }
 };
 
-// OR A, B  -  FD, B0
+// OR A, B   -  ORA_B_FD2  -  FD, B0
 InstructionInfo instructionInfoORA_B_FD2 =
 {
     2,
@@ -7856,7 +7856,7 @@ InstructionInfo instructionInfoORA_B_FD2 =
     }
 };
 
-// OR A, C  -  FD, B1
+// OR A, C   -  ORA_C_FD2  -  FD, B1
 InstructionInfo instructionInfoORA_C_FD2 =
 {
     2,
@@ -7875,7 +7875,7 @@ InstructionInfo instructionInfoORA_C_FD2 =
     }
 };
 
-// OR A, D  -  FD, B2
+// OR A, D   -  ORA_D_FD2  -  FD, B2
 InstructionInfo instructionInfoORA_D_FD2 =
 {
     2,
@@ -7894,7 +7894,7 @@ InstructionInfo instructionInfoORA_D_FD2 =
     }
 };
 
-// OR A, E  -  FD, B3
+// OR A, E   -  ORA_E_FD2  -  FD, B3
 InstructionInfo instructionInfoORA_E_FD2 =
 {
     2,
@@ -7913,7 +7913,7 @@ InstructionInfo instructionInfoORA_E_FD2 =
     }
 };
 
-// OR A, IYh  -  FD, B4
+// OR A, IYh   -  ORA_IYh_FD2  -  FD, B4
 InstructionInfo instructionInfoORA_IYh_FD2 =
 {
     2,
@@ -7932,7 +7932,7 @@ InstructionInfo instructionInfoORA_IYh_FD2 =
     }
 };
 
-// OR A, IYl  -  FD, B5
+// OR A, IYl   -  ORA_IYl_FD2  -  FD, B5
 InstructionInfo instructionInfoORA_IYl_FD2 =
 {
     2,
@@ -7951,7 +7951,7 @@ InstructionInfo instructionInfoORA_IYl_FD2 =
     }
 };
 
-// OR A, n  -  F6, n
+// OR A, n   -  ORA_n_2  -  F6, n
 InstructionInfo instructionInfoORA_n_2 =
 {
     2,
@@ -7970,7 +7970,7 @@ InstructionInfo instructionInfoORA_n_2 =
     }
 };
 
-// OR A, (HL)  -  B6
+// OR A, (HL)   -  ORA__HL__1  -  B6
 InstructionInfo instructionInfoORA__HL__1 =
 {
     2,
@@ -7989,7 +7989,7 @@ InstructionInfo instructionInfoORA__HL__1 =
     }
 };
 
-// OR A, (IX+d)  -  DD, B6, d
+// OR A, (IX+d)   -  ORA__IX_d__DD3  -  DD, B6, d
 InstructionInfo instructionInfoORA__IX_d__DD3 =
 {
     5,
@@ -8008,7 +8008,7 @@ InstructionInfo instructionInfoORA__IX_d__DD3 =
     }
 };
 
-// OR A, (IY+d)  -  FD, B6, d
+// OR A, (IY+d)   -  ORA__IY_d__FD3  -  FD, B6, d
 InstructionInfo instructionInfoORA__IY_d__FD3 =
 {
     5,
@@ -8027,7 +8027,7 @@ InstructionInfo instructionInfoORA__IY_d__FD3 =
     }
 };
 
-// XOR A, A  -  AF
+// XOR A, A   -  XORA_A_1  -  AF
 InstructionInfo instructionInfoXORA_A_1 =
 {
     1,
@@ -8046,7 +8046,7 @@ InstructionInfo instructionInfoXORA_A_1 =
     }
 };
 
-// XOR A, B  -  A8
+// XOR A, B   -  XORA_B_1  -  A8
 InstructionInfo instructionInfoXORA_B_1 =
 {
     1,
@@ -8065,7 +8065,7 @@ InstructionInfo instructionInfoXORA_B_1 =
     }
 };
 
-// XOR A, C  -  A9
+// XOR A, C   -  XORA_C_1  -  A9
 InstructionInfo instructionInfoXORA_C_1 =
 {
     1,
@@ -8084,7 +8084,7 @@ InstructionInfo instructionInfoXORA_C_1 =
     }
 };
 
-// XOR A, D  -  AA
+// XOR A, D   -  XORA_D_1  -  AA
 InstructionInfo instructionInfoXORA_D_1 =
 {
     1,
@@ -8103,7 +8103,7 @@ InstructionInfo instructionInfoXORA_D_1 =
     }
 };
 
-// XOR A, E  -  AB
+// XOR A, E   -  XORA_E_1  -  AB
 InstructionInfo instructionInfoXORA_E_1 =
 {
     1,
@@ -8122,7 +8122,7 @@ InstructionInfo instructionInfoXORA_E_1 =
     }
 };
 
-// XOR A, H  -  AC
+// XOR A, H   -  XORA_H_1  -  AC
 InstructionInfo instructionInfoXORA_H_1 =
 {
     1,
@@ -8141,7 +8141,7 @@ InstructionInfo instructionInfoXORA_H_1 =
     }
 };
 
-// XOR A, L  -  AD
+// XOR A, L   -  XORA_L_1  -  AD
 InstructionInfo instructionInfoXORA_L_1 =
 {
     1,
@@ -8160,7 +8160,7 @@ InstructionInfo instructionInfoXORA_L_1 =
     }
 };
 
-// XOR A, A  -  DD, AF
+// XOR A, A   -  XORA_A_DD2  -  DD, AF
 InstructionInfo instructionInfoXORA_A_DD2 =
 {
     2,
@@ -8179,7 +8179,7 @@ InstructionInfo instructionInfoXORA_A_DD2 =
     }
 };
 
-// XOR A, B  -  DD, A8
+// XOR A, B   -  XORA_B_DD2  -  DD, A8
 InstructionInfo instructionInfoXORA_B_DD2 =
 {
     2,
@@ -8198,7 +8198,7 @@ InstructionInfo instructionInfoXORA_B_DD2 =
     }
 };
 
-// XOR A, C  -  DD, A9
+// XOR A, C   -  XORA_C_DD2  -  DD, A9
 InstructionInfo instructionInfoXORA_C_DD2 =
 {
     2,
@@ -8217,7 +8217,7 @@ InstructionInfo instructionInfoXORA_C_DD2 =
     }
 };
 
-// XOR A, D  -  DD, AA
+// XOR A, D   -  XORA_D_DD2  -  DD, AA
 InstructionInfo instructionInfoXORA_D_DD2 =
 {
     2,
@@ -8236,7 +8236,7 @@ InstructionInfo instructionInfoXORA_D_DD2 =
     }
 };
 
-// XOR A, E  -  DD, AB
+// XOR A, E   -  XORA_E_DD2  -  DD, AB
 InstructionInfo instructionInfoXORA_E_DD2 =
 {
     2,
@@ -8255,7 +8255,7 @@ InstructionInfo instructionInfoXORA_E_DD2 =
     }
 };
 
-// XOR A, IXh  -  DD, AC
+// XOR A, IXh   -  XORA_IXh_DD2  -  DD, AC
 InstructionInfo instructionInfoXORA_IXh_DD2 =
 {
     2,
@@ -8274,7 +8274,7 @@ InstructionInfo instructionInfoXORA_IXh_DD2 =
     }
 };
 
-// XOR A, IXl  -  DD, AD
+// XOR A, IXl   -  XORA_IXl_DD2  -  DD, AD
 InstructionInfo instructionInfoXORA_IXl_DD2 =
 {
     2,
@@ -8293,7 +8293,7 @@ InstructionInfo instructionInfoXORA_IXl_DD2 =
     }
 };
 
-// XOR A, A  -  FD, AF
+// XOR A, A   -  XORA_A_FD2  -  FD, AF
 InstructionInfo instructionInfoXORA_A_FD2 =
 {
     2,
@@ -8312,7 +8312,7 @@ InstructionInfo instructionInfoXORA_A_FD2 =
     }
 };
 
-// XOR A, B  -  FD, A8
+// XOR A, B   -  XORA_B_FD2  -  FD, A8
 InstructionInfo instructionInfoXORA_B_FD2 =
 {
     2,
@@ -8331,7 +8331,7 @@ InstructionInfo instructionInfoXORA_B_FD2 =
     }
 };
 
-// XOR A, C  -  FD, A9
+// XOR A, C   -  XORA_C_FD2  -  FD, A9
 InstructionInfo instructionInfoXORA_C_FD2 =
 {
     2,
@@ -8350,7 +8350,7 @@ InstructionInfo instructionInfoXORA_C_FD2 =
     }
 };
 
-// XOR A, D  -  FD, AA
+// XOR A, D   -  XORA_D_FD2  -  FD, AA
 InstructionInfo instructionInfoXORA_D_FD2 =
 {
     2,
@@ -8369,7 +8369,7 @@ InstructionInfo instructionInfoXORA_D_FD2 =
     }
 };
 
-// XOR A, E  -  FD, AB
+// XOR A, E   -  XORA_E_FD2  -  FD, AB
 InstructionInfo instructionInfoXORA_E_FD2 =
 {
     2,
@@ -8388,7 +8388,7 @@ InstructionInfo instructionInfoXORA_E_FD2 =
     }
 };
 
-// XOR A, IYh  -  FD, AC
+// XOR A, IYh   -  XORA_IYh_FD2  -  FD, AC
 InstructionInfo instructionInfoXORA_IYh_FD2 =
 {
     2,
@@ -8407,7 +8407,7 @@ InstructionInfo instructionInfoXORA_IYh_FD2 =
     }
 };
 
-// XOR A, IYl  -  FD, AD
+// XOR A, IYl   -  XORA_IYl_FD2  -  FD, AD
 InstructionInfo instructionInfoXORA_IYl_FD2 =
 {
     2,
@@ -8426,7 +8426,7 @@ InstructionInfo instructionInfoXORA_IYl_FD2 =
     }
 };
 
-// XOR A, n  -  EE, n
+// XOR A, n   -  XORA_n_2  -  EE, n
 InstructionInfo instructionInfoXORA_n_2 =
 {
     2,
@@ -8445,7 +8445,7 @@ InstructionInfo instructionInfoXORA_n_2 =
     }
 };
 
-// XOR A, (HL)  -  AE
+// XOR A, (HL)   -  XORA__HL__1  -  AE
 InstructionInfo instructionInfoXORA__HL__1 =
 {
     2,
@@ -8464,7 +8464,7 @@ InstructionInfo instructionInfoXORA__HL__1 =
     }
 };
 
-// XOR A, (IX+d)  -  DD, AE, d
+// XOR A, (IX+d)   -  XORA__IX_d__DD3  -  DD, AE, d
 InstructionInfo instructionInfoXORA__IX_d__DD3 =
 {
     5,
@@ -8483,7 +8483,7 @@ InstructionInfo instructionInfoXORA__IX_d__DD3 =
     }
 };
 
-// XOR A, (IY+d)  -  FD, AE, d
+// XOR A, (IY+d)   -  XORA__IY_d__FD3  -  FD, AE, d
 InstructionInfo instructionInfoXORA__IY_d__FD3 =
 {
     5,
@@ -8502,7 +8502,7 @@ InstructionInfo instructionInfoXORA__IY_d__FD3 =
     }
 };
 
-// CP A, A  -  BF
+// CP A, A   -  CPA_A_1  -  BF
 InstructionInfo instructionInfoCPA_A_1 =
 {
     1,
@@ -8521,7 +8521,7 @@ InstructionInfo instructionInfoCPA_A_1 =
     }
 };
 
-// CP A, B  -  B8
+// CP A, B   -  CPA_B_1  -  B8
 InstructionInfo instructionInfoCPA_B_1 =
 {
     1,
@@ -8540,7 +8540,7 @@ InstructionInfo instructionInfoCPA_B_1 =
     }
 };
 
-// CP A, C  -  B9
+// CP A, C   -  CPA_C_1  -  B9
 InstructionInfo instructionInfoCPA_C_1 =
 {
     1,
@@ -8559,7 +8559,7 @@ InstructionInfo instructionInfoCPA_C_1 =
     }
 };
 
-// CP A, D  -  BA
+// CP A, D   -  CPA_D_1  -  BA
 InstructionInfo instructionInfoCPA_D_1 =
 {
     1,
@@ -8578,7 +8578,7 @@ InstructionInfo instructionInfoCPA_D_1 =
     }
 };
 
-// CP A, E  -  BB
+// CP A, E   -  CPA_E_1  -  BB
 InstructionInfo instructionInfoCPA_E_1 =
 {
     1,
@@ -8597,7 +8597,7 @@ InstructionInfo instructionInfoCPA_E_1 =
     }
 };
 
-// CP A, H  -  BC
+// CP A, H   -  CPA_H_1  -  BC
 InstructionInfo instructionInfoCPA_H_1 =
 {
     1,
@@ -8616,7 +8616,7 @@ InstructionInfo instructionInfoCPA_H_1 =
     }
 };
 
-// CP A, L  -  BD
+// CP A, L   -  CPA_L_1  -  BD
 InstructionInfo instructionInfoCPA_L_1 =
 {
     1,
@@ -8635,7 +8635,7 @@ InstructionInfo instructionInfoCPA_L_1 =
     }
 };
 
-// CP A, A  -  DD, BF
+// CP A, A   -  CPA_A_DD2  -  DD, BF
 InstructionInfo instructionInfoCPA_A_DD2 =
 {
     2,
@@ -8654,7 +8654,7 @@ InstructionInfo instructionInfoCPA_A_DD2 =
     }
 };
 
-// CP A, B  -  DD, B8
+// CP A, B   -  CPA_B_DD2  -  DD, B8
 InstructionInfo instructionInfoCPA_B_DD2 =
 {
     2,
@@ -8673,7 +8673,7 @@ InstructionInfo instructionInfoCPA_B_DD2 =
     }
 };
 
-// CP A, C  -  DD, B9
+// CP A, C   -  CPA_C_DD2  -  DD, B9
 InstructionInfo instructionInfoCPA_C_DD2 =
 {
     2,
@@ -8692,7 +8692,7 @@ InstructionInfo instructionInfoCPA_C_DD2 =
     }
 };
 
-// CP A, D  -  DD, BA
+// CP A, D   -  CPA_D_DD2  -  DD, BA
 InstructionInfo instructionInfoCPA_D_DD2 =
 {
     2,
@@ -8711,7 +8711,7 @@ InstructionInfo instructionInfoCPA_D_DD2 =
     }
 };
 
-// CP A, E  -  DD, BB
+// CP A, E   -  CPA_E_DD2  -  DD, BB
 InstructionInfo instructionInfoCPA_E_DD2 =
 {
     2,
@@ -8730,7 +8730,7 @@ InstructionInfo instructionInfoCPA_E_DD2 =
     }
 };
 
-// CP A, IXh  -  DD, BC
+// CP A, IXh   -  CPA_IXh_DD2  -  DD, BC
 InstructionInfo instructionInfoCPA_IXh_DD2 =
 {
     2,
@@ -8749,7 +8749,7 @@ InstructionInfo instructionInfoCPA_IXh_DD2 =
     }
 };
 
-// CP A, IXl  -  DD, BD
+// CP A, IXl   -  CPA_IXl_DD2  -  DD, BD
 InstructionInfo instructionInfoCPA_IXl_DD2 =
 {
     2,
@@ -8768,7 +8768,7 @@ InstructionInfo instructionInfoCPA_IXl_DD2 =
     }
 };
 
-// CP A, A  -  FD, BF
+// CP A, A   -  CPA_A_FD2  -  FD, BF
 InstructionInfo instructionInfoCPA_A_FD2 =
 {
     2,
@@ -8787,7 +8787,7 @@ InstructionInfo instructionInfoCPA_A_FD2 =
     }
 };
 
-// CP A, B  -  FD, B8
+// CP A, B   -  CPA_B_FD2  -  FD, B8
 InstructionInfo instructionInfoCPA_B_FD2 =
 {
     2,
@@ -8806,7 +8806,7 @@ InstructionInfo instructionInfoCPA_B_FD2 =
     }
 };
 
-// CP A, C  -  FD, B9
+// CP A, C   -  CPA_C_FD2  -  FD, B9
 InstructionInfo instructionInfoCPA_C_FD2 =
 {
     2,
@@ -8825,7 +8825,7 @@ InstructionInfo instructionInfoCPA_C_FD2 =
     }
 };
 
-// CP A, D  -  FD, BA
+// CP A, D   -  CPA_D_FD2  -  FD, BA
 InstructionInfo instructionInfoCPA_D_FD2 =
 {
     2,
@@ -8844,7 +8844,7 @@ InstructionInfo instructionInfoCPA_D_FD2 =
     }
 };
 
-// CP A, E  -  FD, BB
+// CP A, E   -  CPA_E_FD2  -  FD, BB
 InstructionInfo instructionInfoCPA_E_FD2 =
 {
     2,
@@ -8863,7 +8863,7 @@ InstructionInfo instructionInfoCPA_E_FD2 =
     }
 };
 
-// CP A, IYh  -  FD, BC
+// CP A, IYh   -  CPA_IYh_FD2  -  FD, BC
 InstructionInfo instructionInfoCPA_IYh_FD2 =
 {
     2,
@@ -8882,7 +8882,7 @@ InstructionInfo instructionInfoCPA_IYh_FD2 =
     }
 };
 
-// CP A, IYl  -  FD, BD
+// CP A, IYl   -  CPA_IYl_FD2  -  FD, BD
 InstructionInfo instructionInfoCPA_IYl_FD2 =
 {
     2,
@@ -8901,7 +8901,7 @@ InstructionInfo instructionInfoCPA_IYl_FD2 =
     }
 };
 
-// CP A, n  -  FE, n
+// CP A, n   -  CPA_n_2  -  FE, n
 InstructionInfo instructionInfoCPA_n_2 =
 {
     2,
@@ -8920,7 +8920,7 @@ InstructionInfo instructionInfoCPA_n_2 =
     }
 };
 
-// CP A, (HL)  -  BE
+// CP A, (HL)   -  CPA__HL__1  -  BE
 InstructionInfo instructionInfoCPA__HL__1 =
 {
     2,
@@ -8939,7 +8939,7 @@ InstructionInfo instructionInfoCPA__HL__1 =
     }
 };
 
-// CP A, (IX+d)  -  DD, BE, d
+// CP A, (IX+d)   -  CPA__IX_d__DD3  -  DD, BE, d
 InstructionInfo instructionInfoCPA__IX_d__DD3 =
 {
     5,
@@ -8958,7 +8958,7 @@ InstructionInfo instructionInfoCPA__IX_d__DD3 =
     }
 };
 
-// CP A, (IY+d)  -  FD, BE, d
+// CP A, (IY+d)   -  CPA__IY_d__FD3  -  FD, BE, d
 InstructionInfo instructionInfoCPA__IY_d__FD3 =
 {
     5,
@@ -8977,7 +8977,7 @@ InstructionInfo instructionInfoCPA__IY_d__FD3 =
     }
 };
 
-// INC A  -  3C
+// INC A   -  INCA_1  -  3C
 InstructionInfo instructionInfoINCA_1 =
 {
     1,
@@ -8996,7 +8996,7 @@ InstructionInfo instructionInfoINCA_1 =
     }
 };
 
-// INC B  -  04
+// INC B   -  INCB_1  -  04
 InstructionInfo instructionInfoINCB_1 =
 {
     1,
@@ -9015,7 +9015,7 @@ InstructionInfo instructionInfoINCB_1 =
     }
 };
 
-// INC C  -  0C
+// INC C   -  INCC_1  -  0C
 InstructionInfo instructionInfoINCC_1 =
 {
     1,
@@ -9034,7 +9034,7 @@ InstructionInfo instructionInfoINCC_1 =
     }
 };
 
-// INC D  -  14
+// INC D   -  INCD_1  -  14
 InstructionInfo instructionInfoINCD_1 =
 {
     1,
@@ -9053,7 +9053,7 @@ InstructionInfo instructionInfoINCD_1 =
     }
 };
 
-// INC E  -  1C
+// INC E   -  INCE_1  -  1C
 InstructionInfo instructionInfoINCE_1 =
 {
     1,
@@ -9072,7 +9072,7 @@ InstructionInfo instructionInfoINCE_1 =
     }
 };
 
-// INC H  -  24
+// INC H   -  INCH_1  -  24
 InstructionInfo instructionInfoINCH_1 =
 {
     1,
@@ -9091,7 +9091,7 @@ InstructionInfo instructionInfoINCH_1 =
     }
 };
 
-// INC L  -  2C
+// INC L   -  INCL_1  -  2C
 InstructionInfo instructionInfoINCL_1 =
 {
     1,
@@ -9110,7 +9110,7 @@ InstructionInfo instructionInfoINCL_1 =
     }
 };
 
-// INC A  -  DD, 3C
+// INC A   -  INCA_DD2  -  DD, 3C
 InstructionInfo instructionInfoINCA_DD2 =
 {
     2,
@@ -9129,7 +9129,7 @@ InstructionInfo instructionInfoINCA_DD2 =
     }
 };
 
-// INC B  -  DD, 04
+// INC B   -  INCB_DD2  -  DD, 04
 InstructionInfo instructionInfoINCB_DD2 =
 {
     2,
@@ -9148,7 +9148,7 @@ InstructionInfo instructionInfoINCB_DD2 =
     }
 };
 
-// INC C  -  DD, 0C
+// INC C   -  INCC_DD2  -  DD, 0C
 InstructionInfo instructionInfoINCC_DD2 =
 {
     2,
@@ -9167,7 +9167,7 @@ InstructionInfo instructionInfoINCC_DD2 =
     }
 };
 
-// INC D  -  DD, 14
+// INC D   -  INCD_DD2  -  DD, 14
 InstructionInfo instructionInfoINCD_DD2 =
 {
     2,
@@ -9186,7 +9186,7 @@ InstructionInfo instructionInfoINCD_DD2 =
     }
 };
 
-// INC E  -  DD, 1C
+// INC E   -  INCE_DD2  -  DD, 1C
 InstructionInfo instructionInfoINCE_DD2 =
 {
     2,
@@ -9205,7 +9205,7 @@ InstructionInfo instructionInfoINCE_DD2 =
     }
 };
 
-// INC IXh  -  DD, 24
+// INC IXh   -  INCIXh_DD2  -  DD, 24
 InstructionInfo instructionInfoINCIXh_DD2 =
 {
     2,
@@ -9224,7 +9224,7 @@ InstructionInfo instructionInfoINCIXh_DD2 =
     }
 };
 
-// INC IXl  -  DD, 2C
+// INC IXl   -  INCIXl_DD2  -  DD, 2C
 InstructionInfo instructionInfoINCIXl_DD2 =
 {
     2,
@@ -9243,7 +9243,7 @@ InstructionInfo instructionInfoINCIXl_DD2 =
     }
 };
 
-// INC A  -  FD, 3C
+// INC A   -  INCA_FD2  -  FD, 3C
 InstructionInfo instructionInfoINCA_FD2 =
 {
     2,
@@ -9262,7 +9262,7 @@ InstructionInfo instructionInfoINCA_FD2 =
     }
 };
 
-// INC B  -  FD, 04
+// INC B   -  INCB_FD2  -  FD, 04
 InstructionInfo instructionInfoINCB_FD2 =
 {
     2,
@@ -9281,7 +9281,7 @@ InstructionInfo instructionInfoINCB_FD2 =
     }
 };
 
-// INC C  -  FD, 0C
+// INC C   -  INCC_FD2  -  FD, 0C
 InstructionInfo instructionInfoINCC_FD2 =
 {
     2,
@@ -9300,7 +9300,7 @@ InstructionInfo instructionInfoINCC_FD2 =
     }
 };
 
-// INC D  -  FD, 14
+// INC D   -  INCD_FD2  -  FD, 14
 InstructionInfo instructionInfoINCD_FD2 =
 {
     2,
@@ -9319,7 +9319,7 @@ InstructionInfo instructionInfoINCD_FD2 =
     }
 };
 
-// INC E  -  FD, 1C
+// INC E   -  INCE_FD2  -  FD, 1C
 InstructionInfo instructionInfoINCE_FD2 =
 {
     2,
@@ -9338,7 +9338,7 @@ InstructionInfo instructionInfoINCE_FD2 =
     }
 };
 
-// INC IYh  -  FD, 24
+// INC IYh   -  INCIYh_FD2  -  FD, 24
 InstructionInfo instructionInfoINCIYh_FD2 =
 {
     2,
@@ -9357,7 +9357,7 @@ InstructionInfo instructionInfoINCIYh_FD2 =
     }
 };
 
-// INC IYl  -  FD, 2C
+// INC IYl   -  INCIYl_FD2  -  FD, 2C
 InstructionInfo instructionInfoINCIYl_FD2 =
 {
     2,
@@ -9376,7 +9376,7 @@ InstructionInfo instructionInfoINCIYl_FD2 =
     }
 };
 
-// INC (HL)  -  34
+// INC (HL)   -  INC_HL__1  -  34
 InstructionInfo instructionInfoINC_HL__1 =
 {
     3,
@@ -9395,7 +9395,7 @@ InstructionInfo instructionInfoINC_HL__1 =
     }
 };
 
-// INC (IX+d)  -  DD, 34, d
+// INC (IX+d)   -  INC_IX_d__DD3  -  DD, 34, d
 InstructionInfo instructionInfoINC_IX_d__DD3 =
 {
     6,
@@ -9414,7 +9414,7 @@ InstructionInfo instructionInfoINC_IX_d__DD3 =
     }
 };
 
-// INC (IY+d)  -  FD, 34, d
+// INC (IY+d)   -  INC_IY_d__FD3  -  FD, 34, d
 InstructionInfo instructionInfoINC_IY_d__FD3 =
 {
     6,
@@ -9433,7 +9433,7 @@ InstructionInfo instructionInfoINC_IY_d__FD3 =
     }
 };
 
-// DEC A  -  3D
+// DEC A   -  DECA_1  -  3D
 InstructionInfo instructionInfoDECA_1 =
 {
     1,
@@ -9452,7 +9452,7 @@ InstructionInfo instructionInfoDECA_1 =
     }
 };
 
-// DEC B  -  05
+// DEC B   -  DECB_1  -  05
 InstructionInfo instructionInfoDECB_1 =
 {
     1,
@@ -9471,7 +9471,7 @@ InstructionInfo instructionInfoDECB_1 =
     }
 };
 
-// DEC C  -  0D
+// DEC C   -  DECC_1  -  0D
 InstructionInfo instructionInfoDECC_1 =
 {
     1,
@@ -9490,7 +9490,7 @@ InstructionInfo instructionInfoDECC_1 =
     }
 };
 
-// DEC D  -  15
+// DEC D   -  DECD_1  -  15
 InstructionInfo instructionInfoDECD_1 =
 {
     1,
@@ -9509,7 +9509,7 @@ InstructionInfo instructionInfoDECD_1 =
     }
 };
 
-// DEC E  -  1D
+// DEC E   -  DECE_1  -  1D
 InstructionInfo instructionInfoDECE_1 =
 {
     1,
@@ -9528,7 +9528,7 @@ InstructionInfo instructionInfoDECE_1 =
     }
 };
 
-// DEC H  -  25
+// DEC H   -  DECH_1  -  25
 InstructionInfo instructionInfoDECH_1 =
 {
     1,
@@ -9547,7 +9547,7 @@ InstructionInfo instructionInfoDECH_1 =
     }
 };
 
-// DEC L  -  2D
+// DEC L   -  DECL_1  -  2D
 InstructionInfo instructionInfoDECL_1 =
 {
     1,
@@ -9566,7 +9566,7 @@ InstructionInfo instructionInfoDECL_1 =
     }
 };
 
-// DEC A  -  DD, 3D
+// DEC A   -  DECA_DD2  -  DD, 3D
 InstructionInfo instructionInfoDECA_DD2 =
 {
     2,
@@ -9585,7 +9585,7 @@ InstructionInfo instructionInfoDECA_DD2 =
     }
 };
 
-// DEC B  -  DD, 05
+// DEC B   -  DECB_DD2  -  DD, 05
 InstructionInfo instructionInfoDECB_DD2 =
 {
     2,
@@ -9604,7 +9604,7 @@ InstructionInfo instructionInfoDECB_DD2 =
     }
 };
 
-// DEC C  -  DD, 0D
+// DEC C   -  DECC_DD2  -  DD, 0D
 InstructionInfo instructionInfoDECC_DD2 =
 {
     2,
@@ -9623,7 +9623,7 @@ InstructionInfo instructionInfoDECC_DD2 =
     }
 };
 
-// DEC D  -  DD, 15
+// DEC D   -  DECD_DD2  -  DD, 15
 InstructionInfo instructionInfoDECD_DD2 =
 {
     2,
@@ -9642,7 +9642,7 @@ InstructionInfo instructionInfoDECD_DD2 =
     }
 };
 
-// DEC E  -  DD, 1D
+// DEC E   -  DECE_DD2  -  DD, 1D
 InstructionInfo instructionInfoDECE_DD2 =
 {
     2,
@@ -9661,7 +9661,7 @@ InstructionInfo instructionInfoDECE_DD2 =
     }
 };
 
-// DEC IXh  -  DD, 25
+// DEC IXh   -  DECIXh_DD2  -  DD, 25
 InstructionInfo instructionInfoDECIXh_DD2 =
 {
     2,
@@ -9680,7 +9680,7 @@ InstructionInfo instructionInfoDECIXh_DD2 =
     }
 };
 
-// DEC IXl  -  DD, 2D
+// DEC IXl   -  DECIXl_DD2  -  DD, 2D
 InstructionInfo instructionInfoDECIXl_DD2 =
 {
     2,
@@ -9699,7 +9699,7 @@ InstructionInfo instructionInfoDECIXl_DD2 =
     }
 };
 
-// DEC A  -  FD, 3D
+// DEC A   -  DECA_FD2  -  FD, 3D
 InstructionInfo instructionInfoDECA_FD2 =
 {
     2,
@@ -9718,7 +9718,7 @@ InstructionInfo instructionInfoDECA_FD2 =
     }
 };
 
-// DEC B  -  FD, 05
+// DEC B   -  DECB_FD2  -  FD, 05
 InstructionInfo instructionInfoDECB_FD2 =
 {
     2,
@@ -9737,7 +9737,7 @@ InstructionInfo instructionInfoDECB_FD2 =
     }
 };
 
-// DEC C  -  FD, 0D
+// DEC C   -  DECC_FD2  -  FD, 0D
 InstructionInfo instructionInfoDECC_FD2 =
 {
     2,
@@ -9756,7 +9756,7 @@ InstructionInfo instructionInfoDECC_FD2 =
     }
 };
 
-// DEC D  -  FD, 15
+// DEC D   -  DECD_FD2  -  FD, 15
 InstructionInfo instructionInfoDECD_FD2 =
 {
     2,
@@ -9775,7 +9775,7 @@ InstructionInfo instructionInfoDECD_FD2 =
     }
 };
 
-// DEC E  -  FD, 1D
+// DEC E   -  DECE_FD2  -  FD, 1D
 InstructionInfo instructionInfoDECE_FD2 =
 {
     2,
@@ -9794,7 +9794,7 @@ InstructionInfo instructionInfoDECE_FD2 =
     }
 };
 
-// DEC IYh  -  FD, 25
+// DEC IYh   -  DECIYh_FD2  -  FD, 25
 InstructionInfo instructionInfoDECIYh_FD2 =
 {
     2,
@@ -9813,7 +9813,7 @@ InstructionInfo instructionInfoDECIYh_FD2 =
     }
 };
 
-// DEC IYl  -  FD, 2D
+// DEC IYl   -  DECIYl_FD2  -  FD, 2D
 InstructionInfo instructionInfoDECIYl_FD2 =
 {
     2,
@@ -9832,7 +9832,7 @@ InstructionInfo instructionInfoDECIYl_FD2 =
     }
 };
 
-// DEC (HL)  -  35
+// DEC (HL)   -  DEC_HL__1  -  35
 InstructionInfo instructionInfoDEC_HL__1 =
 {
     3,
@@ -9851,7 +9851,7 @@ InstructionInfo instructionInfoDEC_HL__1 =
     }
 };
 
-// DEC (IX+d)  -  DD, 35, d
+// DEC (IX+d)   -  DEC_IX_d__DD3  -  DD, 35, d
 InstructionInfo instructionInfoDEC_IX_d__DD3 =
 {
     6,
@@ -9870,7 +9870,7 @@ InstructionInfo instructionInfoDEC_IX_d__DD3 =
     }
 };
 
-// DEC (IY+d)  -  FD, 35, d
+// DEC (IY+d)   -  DEC_IY_d__FD3  -  FD, 35, d
 InstructionInfo instructionInfoDEC_IY_d__FD3 =
 {
     6,
@@ -9889,7 +9889,7 @@ InstructionInfo instructionInfoDEC_IY_d__FD3 =
     }
 };
 
-// DAA  -  27
+// DAA   -  DAA_1  -  27
 InstructionInfo instructionInfoDAA_1 =
 {
     1,
@@ -9908,7 +9908,7 @@ InstructionInfo instructionInfoDAA_1 =
     }
 };
 
-// CPL A  -  2F
+// CPL A   -  CPLA_1  -  2F
 InstructionInfo instructionInfoCPLA_1 =
 {
     1,
@@ -9927,7 +9927,7 @@ InstructionInfo instructionInfoCPLA_1 =
     }
 };
 
-// NEG  -  ED, 44
+// NEG   -  NEG_ED2  -  ED, 44
 InstructionInfo instructionInfoNEG_ED2 =
 {
     2,
@@ -9946,7 +9946,7 @@ InstructionInfo instructionInfoNEG_ED2 =
     }
 };
 
-// CCF  -  3F
+// CCF   -  CCF_1  -  3F
 InstructionInfo instructionInfoCCF_1 =
 {
     1,
@@ -9965,7 +9965,7 @@ InstructionInfo instructionInfoCCF_1 =
     }
 };
 
-// SCF  -  37
+// SCF   -  SCF_1  -  37
 InstructionInfo instructionInfoSCF_1 =
 {
     1,
@@ -9984,7 +9984,7 @@ InstructionInfo instructionInfoSCF_1 =
     }
 };
 
-// NOP  -  00
+// NOP   -  NOP_1  -  00
 InstructionInfo instructionInfoNOP_1 =
 {
     1,
@@ -10003,7 +10003,7 @@ InstructionInfo instructionInfoNOP_1 =
     }
 };
 
-// HALT  -  76
+// HALT   -  HALT_1  -  76
 InstructionInfo instructionInfoHALT_1 =
 {
     1,
@@ -10022,7 +10022,7 @@ InstructionInfo instructionInfoHALT_1 =
     }
 };
 
-// DI  -  F3
+// DI   -  DI_1  -  F3
 InstructionInfo instructionInfoDI_1 =
 {
     1,
@@ -10041,7 +10041,7 @@ InstructionInfo instructionInfoDI_1 =
     }
 };
 
-// EI  -  FB
+// EI   -  EI_1  -  FB
 InstructionInfo instructionInfoEI_1 =
 {
     1,
@@ -10060,7 +10060,7 @@ InstructionInfo instructionInfoEI_1 =
     }
 };
 
-// IM0  -  ED, 46
+// IM0   -  IM0_ED2  -  ED, 46
 InstructionInfo instructionInfoIM0_ED2 =
 {
     2,
@@ -10079,7 +10079,7 @@ InstructionInfo instructionInfoIM0_ED2 =
     }
 };
 
-// IM1  -  ED, 56
+// IM1   -  IM1_ED2  -  ED, 56
 InstructionInfo instructionInfoIM1_ED2 =
 {
     2,
@@ -10098,7 +10098,7 @@ InstructionInfo instructionInfoIM1_ED2 =
     }
 };
 
-// IM1*  -  ED, 76
+// IM1*   -  IM1x_ED2  -  ED, 76
 InstructionInfo instructionInfoIM1x_ED2 =
 {
     2,
@@ -10117,7 +10117,7 @@ InstructionInfo instructionInfoIM1x_ED2 =
     }
 };
 
-// IM2  -  ED, 5E
+// IM2   -  IM2_ED2  -  ED, 5E
 InstructionInfo instructionInfoIM2_ED2 =
 {
     2,
@@ -10136,7 +10136,7 @@ InstructionInfo instructionInfoIM2_ED2 =
     }
 };
 
-// IM2*  -  ED, 7E
+// IM2*   -  IM2x_ED2  -  ED, 7E
 InstructionInfo instructionInfoIM2x_ED2 =
 {
     2,
@@ -10155,7 +10155,7 @@ InstructionInfo instructionInfoIM2x_ED2 =
     }
 };
 
-// ADD HL, BC  -  09
+// ADD HL, BC   -  ADDHL_BC_1  -  09
 InstructionInfo instructionInfoADDHL_BC_1 =
 {
     3,
@@ -10174,7 +10174,7 @@ InstructionInfo instructionInfoADDHL_BC_1 =
     }
 };
 
-// ADD HL, DE  -  19
+// ADD HL, DE   -  ADDHL_DE_1  -  19
 InstructionInfo instructionInfoADDHL_DE_1 =
 {
     3,
@@ -10193,7 +10193,7 @@ InstructionInfo instructionInfoADDHL_DE_1 =
     }
 };
 
-// ADD HL, HL  -  29
+// ADD HL, HL   -  ADDHL_HL_1  -  29
 InstructionInfo instructionInfoADDHL_HL_1 =
 {
     3,
@@ -10212,7 +10212,7 @@ InstructionInfo instructionInfoADDHL_HL_1 =
     }
 };
 
-// ADD HL, SP  -  39
+// ADD HL, SP   -  ADDHL_SP_1  -  39
 InstructionInfo instructionInfoADDHL_SP_1 =
 {
     3,
@@ -10231,7 +10231,7 @@ InstructionInfo instructionInfoADDHL_SP_1 =
     }
 };
 
-// ADD IX, BC  -  DD, 09
+// ADD IX, BC   -  ADDIX_BC_DD2  -  DD, 09
 InstructionInfo instructionInfoADDIX_BC_DD2 =
 {
     4,
@@ -10250,7 +10250,7 @@ InstructionInfo instructionInfoADDIX_BC_DD2 =
     }
 };
 
-// ADD IX, DE  -  DD, 19
+// ADD IX, DE   -  ADDIX_DE_DD2  -  DD, 19
 InstructionInfo instructionInfoADDIX_DE_DD2 =
 {
     4,
@@ -10269,7 +10269,7 @@ InstructionInfo instructionInfoADDIX_DE_DD2 =
     }
 };
 
-// ADD IX, IX  -  DD, 29
+// ADD IX, IX   -  ADDIX_IX_DD2  -  DD, 29
 InstructionInfo instructionInfoADDIX_IX_DD2 =
 {
     4,
@@ -10288,7 +10288,7 @@ InstructionInfo instructionInfoADDIX_IX_DD2 =
     }
 };
 
-// ADD IX, SP  -  DD, 39
+// ADD IX, SP   -  ADDIX_SP_DD2  -  DD, 39
 InstructionInfo instructionInfoADDIX_SP_DD2 =
 {
     4,
@@ -10307,7 +10307,7 @@ InstructionInfo instructionInfoADDIX_SP_DD2 =
     }
 };
 
-// ADD IY, BC  -  FD, 09
+// ADD IY, BC   -  ADDIY_BC_FD2  -  FD, 09
 InstructionInfo instructionInfoADDIY_BC_FD2 =
 {
     4,
@@ -10326,7 +10326,7 @@ InstructionInfo instructionInfoADDIY_BC_FD2 =
     }
 };
 
-// ADD IY, DE  -  FD, 19
+// ADD IY, DE   -  ADDIY_DE_FD2  -  FD, 19
 InstructionInfo instructionInfoADDIY_DE_FD2 =
 {
     4,
@@ -10345,7 +10345,7 @@ InstructionInfo instructionInfoADDIY_DE_FD2 =
     }
 };
 
-// ADD IY, IY  -  FD, 29
+// ADD IY, IY   -  ADDIY_IY_FD2  -  FD, 29
 InstructionInfo instructionInfoADDIY_IY_FD2 =
 {
     4,
@@ -10364,7 +10364,7 @@ InstructionInfo instructionInfoADDIY_IY_FD2 =
     }
 };
 
-// ADD IY, SP  -  FD, 39
+// ADD IY, SP   -  ADDIY_SP_FD2  -  FD, 39
 InstructionInfo instructionInfoADDIY_SP_FD2 =
 {
     4,
@@ -10383,7 +10383,7 @@ InstructionInfo instructionInfoADDIY_SP_FD2 =
     }
 };
 
-// ADC HL, BC  -  ED, 4A
+// ADC HL, BC   -  ADCHL_BC_ED2  -  ED, 4A
 InstructionInfo instructionInfoADCHL_BC_ED2 =
 {
     4,
@@ -10402,7 +10402,7 @@ InstructionInfo instructionInfoADCHL_BC_ED2 =
     }
 };
 
-// ADC HL, DE  -  ED, 5A
+// ADC HL, DE   -  ADCHL_DE_ED2  -  ED, 5A
 InstructionInfo instructionInfoADCHL_DE_ED2 =
 {
     4,
@@ -10421,7 +10421,7 @@ InstructionInfo instructionInfoADCHL_DE_ED2 =
     }
 };
 
-// ADC HL, HL  -  ED, 6A
+// ADC HL, HL   -  ADCHL_HL_ED2  -  ED, 6A
 InstructionInfo instructionInfoADCHL_HL_ED2 =
 {
     4,
@@ -10440,7 +10440,7 @@ InstructionInfo instructionInfoADCHL_HL_ED2 =
     }
 };
 
-// ADC HL, SP  -  ED, 7A
+// ADC HL, SP   -  ADCHL_SP_ED2  -  ED, 7A
 InstructionInfo instructionInfoADCHL_SP_ED2 =
 {
     4,
@@ -10459,7 +10459,7 @@ InstructionInfo instructionInfoADCHL_SP_ED2 =
     }
 };
 
-// SBC HL, BC  -  ED, 42
+// SBC HL, BC   -  SBCHL_BC_ED2  -  ED, 42
 InstructionInfo instructionInfoSBCHL_BC_ED2 =
 {
     4,
@@ -10478,7 +10478,7 @@ InstructionInfo instructionInfoSBCHL_BC_ED2 =
     }
 };
 
-// SBC HL, DE  -  ED, 52
+// SBC HL, DE   -  SBCHL_DE_ED2  -  ED, 52
 InstructionInfo instructionInfoSBCHL_DE_ED2 =
 {
     4,
@@ -10497,7 +10497,7 @@ InstructionInfo instructionInfoSBCHL_DE_ED2 =
     }
 };
 
-// SBC HL, HL  -  ED, 62
+// SBC HL, HL   -  SBCHL_HL_ED2  -  ED, 62
 InstructionInfo instructionInfoSBCHL_HL_ED2 =
 {
     4,
@@ -10516,7 +10516,7 @@ InstructionInfo instructionInfoSBCHL_HL_ED2 =
     }
 };
 
-// SBC HL, SP  -  ED, 72
+// SBC HL, SP   -  SBCHL_SP_ED2  -  ED, 72
 InstructionInfo instructionInfoSBCHL_SP_ED2 =
 {
     4,
@@ -10535,7 +10535,7 @@ InstructionInfo instructionInfoSBCHL_SP_ED2 =
     }
 };
 
-// INC BC  -  03
+// INC BC   -  INCBC_1  -  03
 InstructionInfo instructionInfoINCBC_1 =
 {
     1,
@@ -10554,7 +10554,7 @@ InstructionInfo instructionInfoINCBC_1 =
     }
 };
 
-// INC DE  -  13
+// INC DE   -  INCDE_1  -  13
 InstructionInfo instructionInfoINCDE_1 =
 {
     1,
@@ -10573,7 +10573,7 @@ InstructionInfo instructionInfoINCDE_1 =
     }
 };
 
-// INC HL  -  23
+// INC HL   -  INCHL_1  -  23
 InstructionInfo instructionInfoINCHL_1 =
 {
     1,
@@ -10592,7 +10592,7 @@ InstructionInfo instructionInfoINCHL_1 =
     }
 };
 
-// INC SP  -  33
+// INC SP   -  INCSP_1  -  33
 InstructionInfo instructionInfoINCSP_1 =
 {
     1,
@@ -10611,7 +10611,7 @@ InstructionInfo instructionInfoINCSP_1 =
     }
 };
 
-// INC IX  -  DD, 23
+// INC IX   -  INCIX_DD2  -  DD, 23
 InstructionInfo instructionInfoINCIX_DD2 =
 {
     2,
@@ -10630,7 +10630,7 @@ InstructionInfo instructionInfoINCIX_DD2 =
     }
 };
 
-// INC IY  -  FD, 23
+// INC IY   -  INCIY_FD2  -  FD, 23
 InstructionInfo instructionInfoINCIY_FD2 =
 {
     2,
@@ -10649,7 +10649,7 @@ InstructionInfo instructionInfoINCIY_FD2 =
     }
 };
 
-// DEC BC  -  0B
+// DEC BC   -  DECBC_1  -  0B
 InstructionInfo instructionInfoDECBC_1 =
 {
     1,
@@ -10668,7 +10668,7 @@ InstructionInfo instructionInfoDECBC_1 =
     }
 };
 
-// DEC DE  -  1B
+// DEC DE   -  DECDE_1  -  1B
 InstructionInfo instructionInfoDECDE_1 =
 {
     1,
@@ -10687,7 +10687,7 @@ InstructionInfo instructionInfoDECDE_1 =
     }
 };
 
-// DEC HL  -  2B
+// DEC HL   -  DECHL_1  -  2B
 InstructionInfo instructionInfoDECHL_1 =
 {
     1,
@@ -10706,7 +10706,7 @@ InstructionInfo instructionInfoDECHL_1 =
     }
 };
 
-// DEC SP  -  3B
+// DEC SP   -  DECSP_1  -  3B
 InstructionInfo instructionInfoDECSP_1 =
 {
     1,
@@ -10725,7 +10725,7 @@ InstructionInfo instructionInfoDECSP_1 =
     }
 };
 
-// DEC IX  -  DD, 2B
+// DEC IX   -  DECIX_DD2  -  DD, 2B
 InstructionInfo instructionInfoDECIX_DD2 =
 {
     2,
@@ -10744,7 +10744,7 @@ InstructionInfo instructionInfoDECIX_DD2 =
     }
 };
 
-// DEC IY  -  FD, 2B
+// DEC IY   -  DECIY_FD2  -  FD, 2B
 InstructionInfo instructionInfoDECIY_FD2 =
 {
     2,
@@ -10763,7 +10763,7 @@ InstructionInfo instructionInfoDECIY_FD2 =
     }
 };
 
-// RLCA  -  07
+// RLCA   -  RLCA_1  -  07
 InstructionInfo instructionInfoRLCA_1 =
 {
     1,
@@ -10782,7 +10782,7 @@ InstructionInfo instructionInfoRLCA_1 =
     }
 };
 
-// RLA  -  17
+// RLA   -  RLA_1  -  17
 InstructionInfo instructionInfoRLA_1 =
 {
     1,
@@ -10801,7 +10801,7 @@ InstructionInfo instructionInfoRLA_1 =
     }
 };
 
-// RRCA  -  0F
+// RRCA   -  RRCA_1  -  0F
 InstructionInfo instructionInfoRRCA_1 =
 {
     1,
@@ -10820,7 +10820,7 @@ InstructionInfo instructionInfoRRCA_1 =
     }
 };
 
-// RRA  -  1F
+// RRA   -  RRA_1  -  1F
 InstructionInfo instructionInfoRRA_1 =
 {
     1,
@@ -10839,7 +10839,7 @@ InstructionInfo instructionInfoRRA_1 =
     }
 };
 
-// RLC A  -  CB, 07
+// RLC A   -  RLCA_CB2  -  CB, 07
 InstructionInfo instructionInfoRLCA_CB2 =
 {
     2,
@@ -10858,7 +10858,7 @@ InstructionInfo instructionInfoRLCA_CB2 =
     }
 };
 
-// RLC B  -  CB, 00
+// RLC B   -  RLCB_CB2  -  CB, 00
 InstructionInfo instructionInfoRLCB_CB2 =
 {
     2,
@@ -10877,7 +10877,7 @@ InstructionInfo instructionInfoRLCB_CB2 =
     }
 };
 
-// RLC C  -  CB, 01
+// RLC C   -  RLCC_CB2  -  CB, 01
 InstructionInfo instructionInfoRLCC_CB2 =
 {
     2,
@@ -10896,7 +10896,7 @@ InstructionInfo instructionInfoRLCC_CB2 =
     }
 };
 
-// RLC D  -  CB, 02
+// RLC D   -  RLCD_CB2  -  CB, 02
 InstructionInfo instructionInfoRLCD_CB2 =
 {
     2,
@@ -10915,7 +10915,7 @@ InstructionInfo instructionInfoRLCD_CB2 =
     }
 };
 
-// RLC E  -  CB, 03
+// RLC E   -  RLCE_CB2  -  CB, 03
 InstructionInfo instructionInfoRLCE_CB2 =
 {
     2,
@@ -10934,7 +10934,7 @@ InstructionInfo instructionInfoRLCE_CB2 =
     }
 };
 
-// RLC H  -  CB, 04
+// RLC H   -  RLCH_CB2  -  CB, 04
 InstructionInfo instructionInfoRLCH_CB2 =
 {
     2,
@@ -10953,7 +10953,7 @@ InstructionInfo instructionInfoRLCH_CB2 =
     }
 };
 
-// RLC L  -  CB, 05
+// RLC L   -  RLCL_CB2  -  CB, 05
 InstructionInfo instructionInfoRLCL_CB2 =
 {
     2,
@@ -10972,7 +10972,7 @@ InstructionInfo instructionInfoRLCL_CB2 =
     }
 };
 
-// RLC (HL)  -  CB, 06
+// RLC (HL)   -  RLC_HL__CB2  -  CB, 06
 InstructionInfo instructionInfoRLC_HL__CB2 =
 {
     4,
@@ -10991,7 +10991,7 @@ InstructionInfo instructionInfoRLC_HL__CB2 =
     }
 };
 
-// RLC (IX+d)  -  DD, CB, d, 06
+// RLC (IX+d)   -  RLC_IX_d__DD4  -  DD, CB, d, 06
 InstructionInfo instructionInfoRLC_IX_d__DD4 =
 {
     6,
@@ -11010,7 +11010,7 @@ InstructionInfo instructionInfoRLC_IX_d__DD4 =
     }
 };
 
-// RLC (IY+d)  -  FD, CB, d, 06
+// RLC (IY+d)   -  RLC_IY_d__FD4  -  FD, CB, d, 06
 InstructionInfo instructionInfoRLC_IY_d__FD4 =
 {
     6,
@@ -11029,7 +11029,7 @@ InstructionInfo instructionInfoRLC_IY_d__FD4 =
     }
 };
 
-// RLC (IX+d), A  -  DD, CB, d, 07
+// RLC (IX+d), A   -  RLC_IX_d__A_DD4  -  DD, CB, d, 07
 InstructionInfo instructionInfoRLC_IX_d__A_DD4 =
 {
     6,
@@ -11048,7 +11048,7 @@ InstructionInfo instructionInfoRLC_IX_d__A_DD4 =
     }
 };
 
-// RLC (IY+d), A  -  FD, CB, d, 07
+// RLC (IY+d), A   -  RLC_IY_d__A_FD4  -  FD, CB, d, 07
 InstructionInfo instructionInfoRLC_IY_d__A_FD4 =
 {
     6,
@@ -11067,7 +11067,7 @@ InstructionInfo instructionInfoRLC_IY_d__A_FD4 =
     }
 };
 
-// RLC (IX+d), B  -  DD, CB, d, 00
+// RLC (IX+d), B   -  RLC_IX_d__B_DD4  -  DD, CB, d, 00
 InstructionInfo instructionInfoRLC_IX_d__B_DD4 =
 {
     6,
@@ -11086,7 +11086,7 @@ InstructionInfo instructionInfoRLC_IX_d__B_DD4 =
     }
 };
 
-// RLC (IY+d), B  -  FD, CB, d, 00
+// RLC (IY+d), B   -  RLC_IY_d__B_FD4  -  FD, CB, d, 00
 InstructionInfo instructionInfoRLC_IY_d__B_FD4 =
 {
     6,
@@ -11105,7 +11105,7 @@ InstructionInfo instructionInfoRLC_IY_d__B_FD4 =
     }
 };
 
-// RLC (IX+d), C  -  DD, CB, d, 01
+// RLC (IX+d), C   -  RLC_IX_d__C_DD4  -  DD, CB, d, 01
 InstructionInfo instructionInfoRLC_IX_d__C_DD4 =
 {
     6,
@@ -11124,7 +11124,7 @@ InstructionInfo instructionInfoRLC_IX_d__C_DD4 =
     }
 };
 
-// RLC (IY+d), C  -  FD, CB, d, 01
+// RLC (IY+d), C   -  RLC_IY_d__C_FD4  -  FD, CB, d, 01
 InstructionInfo instructionInfoRLC_IY_d__C_FD4 =
 {
     6,
@@ -11143,7 +11143,7 @@ InstructionInfo instructionInfoRLC_IY_d__C_FD4 =
     }
 };
 
-// RLC (IX+d), D  -  DD, CB, d, 02
+// RLC (IX+d), D   -  RLC_IX_d__D_DD4  -  DD, CB, d, 02
 InstructionInfo instructionInfoRLC_IX_d__D_DD4 =
 {
     6,
@@ -11162,7 +11162,7 @@ InstructionInfo instructionInfoRLC_IX_d__D_DD4 =
     }
 };
 
-// RLC (IY+d), D  -  FD, CB, d, 02
+// RLC (IY+d), D   -  RLC_IY_d__D_FD4  -  FD, CB, d, 02
 InstructionInfo instructionInfoRLC_IY_d__D_FD4 =
 {
     6,
@@ -11181,7 +11181,7 @@ InstructionInfo instructionInfoRLC_IY_d__D_FD4 =
     }
 };
 
-// RLC (IX+d), E  -  DD, CB, d, 03
+// RLC (IX+d), E   -  RLC_IX_d__E_DD4  -  DD, CB, d, 03
 InstructionInfo instructionInfoRLC_IX_d__E_DD4 =
 {
     6,
@@ -11200,7 +11200,7 @@ InstructionInfo instructionInfoRLC_IX_d__E_DD4 =
     }
 };
 
-// RLC (IY+d), E  -  FD, CB, d, 03
+// RLC (IY+d), E   -  RLC_IY_d__E_FD4  -  FD, CB, d, 03
 InstructionInfo instructionInfoRLC_IY_d__E_FD4 =
 {
     6,
@@ -11219,7 +11219,7 @@ InstructionInfo instructionInfoRLC_IY_d__E_FD4 =
     }
 };
 
-// RLC (IX+d), H  -  DD, CB, d, 04
+// RLC (IX+d), H   -  RLC_IX_d__H_DD4  -  DD, CB, d, 04
 InstructionInfo instructionInfoRLC_IX_d__H_DD4 =
 {
     6,
@@ -11238,7 +11238,7 @@ InstructionInfo instructionInfoRLC_IX_d__H_DD4 =
     }
 };
 
-// RLC (IY+d), H  -  FD, CB, d, 04
+// RLC (IY+d), H   -  RLC_IY_d__H_FD4  -  FD, CB, d, 04
 InstructionInfo instructionInfoRLC_IY_d__H_FD4 =
 {
     6,
@@ -11257,7 +11257,7 @@ InstructionInfo instructionInfoRLC_IY_d__H_FD4 =
     }
 };
 
-// RLC (IX+d), L  -  DD, CB, d, 05
+// RLC (IX+d), L   -  RLC_IX_d__L_DD4  -  DD, CB, d, 05
 InstructionInfo instructionInfoRLC_IX_d__L_DD4 =
 {
     6,
@@ -11276,7 +11276,7 @@ InstructionInfo instructionInfoRLC_IX_d__L_DD4 =
     }
 };
 
-// RLC (IY+d), L  -  FD, CB, d, 05
+// RLC (IY+d), L   -  RLC_IY_d__L_FD4  -  FD, CB, d, 05
 InstructionInfo instructionInfoRLC_IY_d__L_FD4 =
 {
     6,
@@ -11295,7 +11295,7 @@ InstructionInfo instructionInfoRLC_IY_d__L_FD4 =
     }
 };
 
-// RL A  -  CB, 17
+// RL A   -  RLA_CB2  -  CB, 17
 InstructionInfo instructionInfoRLA_CB2 =
 {
     2,
@@ -11314,7 +11314,7 @@ InstructionInfo instructionInfoRLA_CB2 =
     }
 };
 
-// RL B  -  CB, 10
+// RL B   -  RLB_CB2  -  CB, 10
 InstructionInfo instructionInfoRLB_CB2 =
 {
     2,
@@ -11333,7 +11333,7 @@ InstructionInfo instructionInfoRLB_CB2 =
     }
 };
 
-// RL C  -  CB, 11
+// RL C   -  RLC_CB2  -  CB, 11
 InstructionInfo instructionInfoRLC_CB2 =
 {
     2,
@@ -11352,7 +11352,7 @@ InstructionInfo instructionInfoRLC_CB2 =
     }
 };
 
-// RL D  -  CB, 12
+// RL D   -  RLD_CB2  -  CB, 12
 InstructionInfo instructionInfoRLD_CB2 =
 {
     2,
@@ -11371,7 +11371,7 @@ InstructionInfo instructionInfoRLD_CB2 =
     }
 };
 
-// RL E  -  CB, 13
+// RL E   -  RLE_CB2  -  CB, 13
 InstructionInfo instructionInfoRLE_CB2 =
 {
     2,
@@ -11390,7 +11390,7 @@ InstructionInfo instructionInfoRLE_CB2 =
     }
 };
 
-// RL H  -  CB, 14
+// RL H   -  RLH_CB2  -  CB, 14
 InstructionInfo instructionInfoRLH_CB2 =
 {
     2,
@@ -11409,7 +11409,7 @@ InstructionInfo instructionInfoRLH_CB2 =
     }
 };
 
-// RL L  -  CB, 15
+// RL L   -  RLL_CB2  -  CB, 15
 InstructionInfo instructionInfoRLL_CB2 =
 {
     2,
@@ -11428,7 +11428,7 @@ InstructionInfo instructionInfoRLL_CB2 =
     }
 };
 
-// RL (HL)  -  CB, 16
+// RL (HL)   -  RL_HL__CB2  -  CB, 16
 InstructionInfo instructionInfoRL_HL__CB2 =
 {
     4,
@@ -11447,7 +11447,7 @@ InstructionInfo instructionInfoRL_HL__CB2 =
     }
 };
 
-// RL (IX+d)  -  DD, CB, d, 16
+// RL (IX+d)   -  RL_IX_d__DD4  -  DD, CB, d, 16
 InstructionInfo instructionInfoRL_IX_d__DD4 =
 {
     6,
@@ -11466,7 +11466,7 @@ InstructionInfo instructionInfoRL_IX_d__DD4 =
     }
 };
 
-// RL (IY+d)  -  FD, CB, d, 16
+// RL (IY+d)   -  RL_IY_d__FD4  -  FD, CB, d, 16
 InstructionInfo instructionInfoRL_IY_d__FD4 =
 {
     6,
@@ -11485,7 +11485,7 @@ InstructionInfo instructionInfoRL_IY_d__FD4 =
     }
 };
 
-// RL (IX+d), A  -  DD, CB, d, 17
+// RL (IX+d), A   -  RL_IX_d__A_DD4  -  DD, CB, d, 17
 InstructionInfo instructionInfoRL_IX_d__A_DD4 =
 {
     6,
@@ -11504,7 +11504,7 @@ InstructionInfo instructionInfoRL_IX_d__A_DD4 =
     }
 };
 
-// RL (IY+d), A  -  FD, CB, d, 17
+// RL (IY+d), A   -  RL_IY_d__A_FD4  -  FD, CB, d, 17
 InstructionInfo instructionInfoRL_IY_d__A_FD4 =
 {
     6,
@@ -11523,7 +11523,7 @@ InstructionInfo instructionInfoRL_IY_d__A_FD4 =
     }
 };
 
-// RL (IX+d), B  -  DD, CB, d, 10
+// RL (IX+d), B   -  RL_IX_d__B_DD4  -  DD, CB, d, 10
 InstructionInfo instructionInfoRL_IX_d__B_DD4 =
 {
     6,
@@ -11542,7 +11542,7 @@ InstructionInfo instructionInfoRL_IX_d__B_DD4 =
     }
 };
 
-// RL (IY+d), B  -  FD, CB, d, 10
+// RL (IY+d), B   -  RL_IY_d__B_FD4  -  FD, CB, d, 10
 InstructionInfo instructionInfoRL_IY_d__B_FD4 =
 {
     6,
@@ -11561,7 +11561,7 @@ InstructionInfo instructionInfoRL_IY_d__B_FD4 =
     }
 };
 
-// RL (IX+d), C  -  DD, CB, d, 11
+// RL (IX+d), C   -  RL_IX_d__C_DD4  -  DD, CB, d, 11
 InstructionInfo instructionInfoRL_IX_d__C_DD4 =
 {
     6,
@@ -11580,7 +11580,7 @@ InstructionInfo instructionInfoRL_IX_d__C_DD4 =
     }
 };
 
-// RL (IY+d), C  -  FD, CB, d, 11
+// RL (IY+d), C   -  RL_IY_d__C_FD4  -  FD, CB, d, 11
 InstructionInfo instructionInfoRL_IY_d__C_FD4 =
 {
     6,
@@ -11599,7 +11599,7 @@ InstructionInfo instructionInfoRL_IY_d__C_FD4 =
     }
 };
 
-// RL (IX+d), D  -  DD, CB, d, 12
+// RL (IX+d), D   -  RL_IX_d__D_DD4  -  DD, CB, d, 12
 InstructionInfo instructionInfoRL_IX_d__D_DD4 =
 {
     6,
@@ -11618,7 +11618,7 @@ InstructionInfo instructionInfoRL_IX_d__D_DD4 =
     }
 };
 
-// RL (IY+d), D  -  FD, CB, d, 12
+// RL (IY+d), D   -  RL_IY_d__D_FD4  -  FD, CB, d, 12
 InstructionInfo instructionInfoRL_IY_d__D_FD4 =
 {
     6,
@@ -11637,7 +11637,7 @@ InstructionInfo instructionInfoRL_IY_d__D_FD4 =
     }
 };
 
-// RL (IX+d), E  -  DD, CB, d, 13
+// RL (IX+d), E   -  RL_IX_d__E_DD4  -  DD, CB, d, 13
 InstructionInfo instructionInfoRL_IX_d__E_DD4 =
 {
     6,
@@ -11656,7 +11656,7 @@ InstructionInfo instructionInfoRL_IX_d__E_DD4 =
     }
 };
 
-// RL (IY+d), E  -  FD, CB, d, 13
+// RL (IY+d), E   -  RL_IY_d__E_FD4  -  FD, CB, d, 13
 InstructionInfo instructionInfoRL_IY_d__E_FD4 =
 {
     6,
@@ -11675,7 +11675,7 @@ InstructionInfo instructionInfoRL_IY_d__E_FD4 =
     }
 };
 
-// RL (IX+d), H  -  DD, CB, d, 14
+// RL (IX+d), H   -  RL_IX_d__H_DD4  -  DD, CB, d, 14
 InstructionInfo instructionInfoRL_IX_d__H_DD4 =
 {
     6,
@@ -11694,7 +11694,7 @@ InstructionInfo instructionInfoRL_IX_d__H_DD4 =
     }
 };
 
-// RL (IY+d), H  -  FD, CB, d, 14
+// RL (IY+d), H   -  RL_IY_d__H_FD4  -  FD, CB, d, 14
 InstructionInfo instructionInfoRL_IY_d__H_FD4 =
 {
     6,
@@ -11713,7 +11713,7 @@ InstructionInfo instructionInfoRL_IY_d__H_FD4 =
     }
 };
 
-// RL (IX+d), L  -  DD, CB, d, 15
+// RL (IX+d), L   -  RL_IX_d__L_DD4  -  DD, CB, d, 15
 InstructionInfo instructionInfoRL_IX_d__L_DD4 =
 {
     6,
@@ -11732,7 +11732,7 @@ InstructionInfo instructionInfoRL_IX_d__L_DD4 =
     }
 };
 
-// RL (IY+d), L  -  FD, CB, d, 15
+// RL (IY+d), L   -  RL_IY_d__L_FD4  -  FD, CB, d, 15
 InstructionInfo instructionInfoRL_IY_d__L_FD4 =
 {
     6,
@@ -11751,14 +11751,14 @@ InstructionInfo instructionInfoRL_IY_d__L_FD4 =
     }
 };
 
-// RRC A  -  CB, 0F
+// RRC A   -  RRCA_CB2  -  CB, 0F
 InstructionInfo instructionInfoRRCA_CB2 =
 {
-    1,
+    2,
     0,
     {
         { 4, OnClock_OF },
-        { 0, nullptr },
+        { 4, OnClock_RRCr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -11770,14 +11770,14 @@ InstructionInfo instructionInfoRRCA_CB2 =
     }
 };
 
-// RRC B  -  CB, 08
+// RRC B   -  RRCB_CB2  -  CB, 08
 InstructionInfo instructionInfoRRCB_CB2 =
 {
-    1,
+    2,
     0,
     {
         { 4, OnClock_OF },
-        { 0, nullptr },
+        { 4, OnClock_RRCr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -11789,14 +11789,14 @@ InstructionInfo instructionInfoRRCB_CB2 =
     }
 };
 
-// RRC C  -  CB, 09
+// RRC C   -  RRCC_CB2  -  CB, 09
 InstructionInfo instructionInfoRRCC_CB2 =
 {
-    1,
+    2,
     0,
     {
         { 4, OnClock_OF },
-        { 0, nullptr },
+        { 4, OnClock_RRCr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -11808,14 +11808,14 @@ InstructionInfo instructionInfoRRCC_CB2 =
     }
 };
 
-// RRC D  -  CB, 0A
+// RRC D   -  RRCD_CB2  -  CB, 0A
 InstructionInfo instructionInfoRRCD_CB2 =
 {
-    1,
+    2,
     0,
     {
         { 4, OnClock_OF },
-        { 0, nullptr },
+        { 4, OnClock_RRCr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -11827,14 +11827,14 @@ InstructionInfo instructionInfoRRCD_CB2 =
     }
 };
 
-// RRC E  -  CB, 0B
+// RRC E   -  RRCE_CB2  -  CB, 0B
 InstructionInfo instructionInfoRRCE_CB2 =
 {
-    1,
+    2,
     0,
     {
         { 4, OnClock_OF },
-        { 0, nullptr },
+        { 4, OnClock_RRCr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -11846,14 +11846,14 @@ InstructionInfo instructionInfoRRCE_CB2 =
     }
 };
 
-// RRC H  -  CB, 0C
+// RRC H   -  RRCH_CB2  -  CB, 0C
 InstructionInfo instructionInfoRRCH_CB2 =
 {
-    1,
+    2,
     0,
     {
         { 4, OnClock_OF },
-        { 0, nullptr },
+        { 4, OnClock_RRCr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -11865,14 +11865,14 @@ InstructionInfo instructionInfoRRCH_CB2 =
     }
 };
 
-// RRC L  -  CB, 0D
+// RRC L   -  RRCL_CB2  -  CB, 0D
 InstructionInfo instructionInfoRRCL_CB2 =
 {
-    1,
+    2,
     0,
     {
         { 4, OnClock_OF },
-        { 0, nullptr },
+        { 4, OnClock_RRCr_CB2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -11884,7 +11884,7 @@ InstructionInfo instructionInfoRRCL_CB2 =
     }
 };
 
-// RRC (HL)  -  CB, 0E
+// RRC (HL)   -  RRC_HL__CB2  -  CB, 0E
 InstructionInfo instructionInfoRRC_HL__CB2 =
 {
     4,
@@ -11903,7 +11903,7 @@ InstructionInfo instructionInfoRRC_HL__CB2 =
     }
 };
 
-// RRC (IX+d)  -  DD, CB, d, 0E
+// RRC (IX+d)   -  RRC_IX_d__DD4  -  DD, CB, d, 0E
 InstructionInfo instructionInfoRRC_IX_d__DD4 =
 {
     6,
@@ -11922,7 +11922,7 @@ InstructionInfo instructionInfoRRC_IX_d__DD4 =
     }
 };
 
-// RRC (IY+d)  -  FD, CB, d, 0E
+// RRC (IY+d)   -  RRC_IY_d__FD4  -  FD, CB, d, 0E
 InstructionInfo instructionInfoRRC_IY_d__FD4 =
 {
     6,
@@ -11941,7 +11941,7 @@ InstructionInfo instructionInfoRRC_IY_d__FD4 =
     }
 };
 
-// RRC (IX+d), A  -  DD, CB, d, 0F
+// RRC (IX+d), A   -  RRC_IX_d__A_DD4  -  DD, CB, d, 0F
 InstructionInfo instructionInfoRRC_IX_d__A_DD4 =
 {
     6,
@@ -11960,7 +11960,7 @@ InstructionInfo instructionInfoRRC_IX_d__A_DD4 =
     }
 };
 
-// RRC (IY+d), A  -  FD, CB, d, 0F
+// RRC (IY+d), A   -  RRC_IY_d__A_FD4  -  FD, CB, d, 0F
 InstructionInfo instructionInfoRRC_IY_d__A_FD4 =
 {
     6,
@@ -11979,7 +11979,7 @@ InstructionInfo instructionInfoRRC_IY_d__A_FD4 =
     }
 };
 
-// RRC (IX+d), B  -  DD, CB, d, 08
+// RRC (IX+d), B   -  RRC_IX_d__B_DD4  -  DD, CB, d, 08
 InstructionInfo instructionInfoRRC_IX_d__B_DD4 =
 {
     6,
@@ -11998,7 +11998,7 @@ InstructionInfo instructionInfoRRC_IX_d__B_DD4 =
     }
 };
 
-// RRC (IY+d), B  -  FD, CB, d, 08
+// RRC (IY+d), B   -  RRC_IY_d__B_FD4  -  FD, CB, d, 08
 InstructionInfo instructionInfoRRC_IY_d__B_FD4 =
 {
     6,
@@ -12017,7 +12017,7 @@ InstructionInfo instructionInfoRRC_IY_d__B_FD4 =
     }
 };
 
-// RRC (IX+d), C  -  DD, CB, d, 09
+// RRC (IX+d), C   -  RRC_IX_d__C_DD4  -  DD, CB, d, 09
 InstructionInfo instructionInfoRRC_IX_d__C_DD4 =
 {
     6,
@@ -12036,7 +12036,7 @@ InstructionInfo instructionInfoRRC_IX_d__C_DD4 =
     }
 };
 
-// RRC (IY+d), C  -  FD, CB, d, 09
+// RRC (IY+d), C   -  RRC_IY_d__C_FD4  -  FD, CB, d, 09
 InstructionInfo instructionInfoRRC_IY_d__C_FD4 =
 {
     6,
@@ -12055,7 +12055,7 @@ InstructionInfo instructionInfoRRC_IY_d__C_FD4 =
     }
 };
 
-// RRC (IX+d), D  -  DD, CB, d, 0A
+// RRC (IX+d), D   -  RRC_IX_d__D_DD4  -  DD, CB, d, 0A
 InstructionInfo instructionInfoRRC_IX_d__D_DD4 =
 {
     6,
@@ -12074,7 +12074,7 @@ InstructionInfo instructionInfoRRC_IX_d__D_DD4 =
     }
 };
 
-// RRC (IY+d), D  -  FD, CB, d, 0A
+// RRC (IY+d), D   -  RRC_IY_d__D_FD4  -  FD, CB, d, 0A
 InstructionInfo instructionInfoRRC_IY_d__D_FD4 =
 {
     6,
@@ -12093,7 +12093,7 @@ InstructionInfo instructionInfoRRC_IY_d__D_FD4 =
     }
 };
 
-// RRC (IX+d), E  -  DD, CB, d, 0B
+// RRC (IX+d), E   -  RRC_IX_d__E_DD4  -  DD, CB, d, 0B
 InstructionInfo instructionInfoRRC_IX_d__E_DD4 =
 {
     6,
@@ -12112,7 +12112,7 @@ InstructionInfo instructionInfoRRC_IX_d__E_DD4 =
     }
 };
 
-// RRC (IY+d), E  -  FD, CB, d, 0B
+// RRC (IY+d), E   -  RRC_IY_d__E_FD4  -  FD, CB, d, 0B
 InstructionInfo instructionInfoRRC_IY_d__E_FD4 =
 {
     6,
@@ -12131,7 +12131,7 @@ InstructionInfo instructionInfoRRC_IY_d__E_FD4 =
     }
 };
 
-// RRC (IX+d), H  -  DD, CB, d, 0C
+// RRC (IX+d), H   -  RRC_IX_d__H_DD4  -  DD, CB, d, 0C
 InstructionInfo instructionInfoRRC_IX_d__H_DD4 =
 {
     6,
@@ -12150,7 +12150,7 @@ InstructionInfo instructionInfoRRC_IX_d__H_DD4 =
     }
 };
 
-// RRC (IY+d), H  -  FD, CB, d, 0C
+// RRC (IY+d), H   -  RRC_IY_d__H_FD4  -  FD, CB, d, 0C
 InstructionInfo instructionInfoRRC_IY_d__H_FD4 =
 {
     6,
@@ -12169,7 +12169,7 @@ InstructionInfo instructionInfoRRC_IY_d__H_FD4 =
     }
 };
 
-// RRC (IX+d), L  -  DD, CB, d, 0D
+// RRC (IX+d), L   -  RRC_IX_d__L_DD4  -  DD, CB, d, 0D
 InstructionInfo instructionInfoRRC_IX_d__L_DD4 =
 {
     6,
@@ -12188,7 +12188,7 @@ InstructionInfo instructionInfoRRC_IX_d__L_DD4 =
     }
 };
 
-// RRC (IY+d), L  -  FD, CB, d, 0D
+// RRC (IY+d), L   -  RRC_IY_d__L_FD4  -  FD, CB, d, 0D
 InstructionInfo instructionInfoRRC_IY_d__L_FD4 =
 {
     6,
@@ -12207,7 +12207,7 @@ InstructionInfo instructionInfoRRC_IY_d__L_FD4 =
     }
 };
 
-// RR A  -  CB, 1F
+// RR A   -  RRA_CB2  -  CB, 1F
 InstructionInfo instructionInfoRRA_CB2 =
 {
     2,
@@ -12226,7 +12226,7 @@ InstructionInfo instructionInfoRRA_CB2 =
     }
 };
 
-// RR B  -  CB, 18
+// RR B   -  RRB_CB2  -  CB, 18
 InstructionInfo instructionInfoRRB_CB2 =
 {
     2,
@@ -12245,7 +12245,7 @@ InstructionInfo instructionInfoRRB_CB2 =
     }
 };
 
-// RR C  -  CB, 19
+// RR C   -  RRC_CB2  -  CB, 19
 InstructionInfo instructionInfoRRC_CB2 =
 {
     2,
@@ -12264,7 +12264,7 @@ InstructionInfo instructionInfoRRC_CB2 =
     }
 };
 
-// RR D  -  CB, 1A
+// RR D   -  RRD_CB2  -  CB, 1A
 InstructionInfo instructionInfoRRD_CB2 =
 {
     2,
@@ -12283,7 +12283,7 @@ InstructionInfo instructionInfoRRD_CB2 =
     }
 };
 
-// RR E  -  CB, 1B
+// RR E   -  RRE_CB2  -  CB, 1B
 InstructionInfo instructionInfoRRE_CB2 =
 {
     2,
@@ -12302,7 +12302,7 @@ InstructionInfo instructionInfoRRE_CB2 =
     }
 };
 
-// RR H  -  CB, 1C
+// RR H   -  RRH_CB2  -  CB, 1C
 InstructionInfo instructionInfoRRH_CB2 =
 {
     2,
@@ -12321,7 +12321,7 @@ InstructionInfo instructionInfoRRH_CB2 =
     }
 };
 
-// RR L  -  CB, 1D
+// RR L   -  RRL_CB2  -  CB, 1D
 InstructionInfo instructionInfoRRL_CB2 =
 {
     2,
@@ -12340,7 +12340,7 @@ InstructionInfo instructionInfoRRL_CB2 =
     }
 };
 
-// RR (HL)  -  CB, 1E
+// RR (HL)   -  RR_HL__CB2  -  CB, 1E
 InstructionInfo instructionInfoRR_HL__CB2 =
 {
     4,
@@ -12359,7 +12359,7 @@ InstructionInfo instructionInfoRR_HL__CB2 =
     }
 };
 
-// RR (IX+d)  -  DD, CB, d, 1E
+// RR (IX+d)   -  RR_IX_d__DD4  -  DD, CB, d, 1E
 InstructionInfo instructionInfoRR_IX_d__DD4 =
 {
     6,
@@ -12378,7 +12378,7 @@ InstructionInfo instructionInfoRR_IX_d__DD4 =
     }
 };
 
-// RR (IY+d)  -  FD, CB, d, 1E
+// RR (IY+d)   -  RR_IY_d__FD4  -  FD, CB, d, 1E
 InstructionInfo instructionInfoRR_IY_d__FD4 =
 {
     6,
@@ -12397,7 +12397,7 @@ InstructionInfo instructionInfoRR_IY_d__FD4 =
     }
 };
 
-// RR (IX+d), A  -  DD, CB, d, 1F
+// RR (IX+d), A   -  RR_IX_d__A_DD4  -  DD, CB, d, 1F
 InstructionInfo instructionInfoRR_IX_d__A_DD4 =
 {
     6,
@@ -12416,7 +12416,7 @@ InstructionInfo instructionInfoRR_IX_d__A_DD4 =
     }
 };
 
-// RR (IY+d), A  -  FD, CB, d, 1F
+// RR (IY+d), A   -  RR_IY_d__A_FD4  -  FD, CB, d, 1F
 InstructionInfo instructionInfoRR_IY_d__A_FD4 =
 {
     6,
@@ -12435,7 +12435,7 @@ InstructionInfo instructionInfoRR_IY_d__A_FD4 =
     }
 };
 
-// RR (IX+d), B  -  DD, CB, d, 18
+// RR (IX+d), B   -  RR_IX_d__B_DD4  -  DD, CB, d, 18
 InstructionInfo instructionInfoRR_IX_d__B_DD4 =
 {
     6,
@@ -12454,7 +12454,7 @@ InstructionInfo instructionInfoRR_IX_d__B_DD4 =
     }
 };
 
-// RR (IY+d), B  -  FD, CB, d, 18
+// RR (IY+d), B   -  RR_IY_d__B_FD4  -  FD, CB, d, 18
 InstructionInfo instructionInfoRR_IY_d__B_FD4 =
 {
     6,
@@ -12473,7 +12473,7 @@ InstructionInfo instructionInfoRR_IY_d__B_FD4 =
     }
 };
 
-// RR (IX+d), C  -  DD, CB, d, 19
+// RR (IX+d), C   -  RR_IX_d__C_DD4  -  DD, CB, d, 19
 InstructionInfo instructionInfoRR_IX_d__C_DD4 =
 {
     6,
@@ -12492,7 +12492,7 @@ InstructionInfo instructionInfoRR_IX_d__C_DD4 =
     }
 };
 
-// RR (IY+d), C  -  FD, CB, d, 19
+// RR (IY+d), C   -  RR_IY_d__C_FD4  -  FD, CB, d, 19
 InstructionInfo instructionInfoRR_IY_d__C_FD4 =
 {
     6,
@@ -12511,7 +12511,7 @@ InstructionInfo instructionInfoRR_IY_d__C_FD4 =
     }
 };
 
-// RR (IX+d), D  -  DD, CB, d, 1A
+// RR (IX+d), D   -  RR_IX_d__D_DD4  -  DD, CB, d, 1A
 InstructionInfo instructionInfoRR_IX_d__D_DD4 =
 {
     6,
@@ -12530,7 +12530,7 @@ InstructionInfo instructionInfoRR_IX_d__D_DD4 =
     }
 };
 
-// RR (IY+d), D  -  FD, CB, d, 1A
+// RR (IY+d), D   -  RR_IY_d__D_FD4  -  FD, CB, d, 1A
 InstructionInfo instructionInfoRR_IY_d__D_FD4 =
 {
     6,
@@ -12549,7 +12549,7 @@ InstructionInfo instructionInfoRR_IY_d__D_FD4 =
     }
 };
 
-// RR (IX+d), E  -  DD, CB, d, 1B
+// RR (IX+d), E   -  RR_IX_d__E_DD4  -  DD, CB, d, 1B
 InstructionInfo instructionInfoRR_IX_d__E_DD4 =
 {
     6,
@@ -12568,7 +12568,7 @@ InstructionInfo instructionInfoRR_IX_d__E_DD4 =
     }
 };
 
-// RR (IY+d), E  -  FD, CB, d, 1B
+// RR (IY+d), E   -  RR_IY_d__E_FD4  -  FD, CB, d, 1B
 InstructionInfo instructionInfoRR_IY_d__E_FD4 =
 {
     6,
@@ -12587,7 +12587,7 @@ InstructionInfo instructionInfoRR_IY_d__E_FD4 =
     }
 };
 
-// RR (IX+d), H  -  DD, CB, d, 1C
+// RR (IX+d), H   -  RR_IX_d__H_DD4  -  DD, CB, d, 1C
 InstructionInfo instructionInfoRR_IX_d__H_DD4 =
 {
     6,
@@ -12606,7 +12606,7 @@ InstructionInfo instructionInfoRR_IX_d__H_DD4 =
     }
 };
 
-// RR (IY+d), H  -  FD, CB, d, 1C
+// RR (IY+d), H   -  RR_IY_d__H_FD4  -  FD, CB, d, 1C
 InstructionInfo instructionInfoRR_IY_d__H_FD4 =
 {
     6,
@@ -12625,7 +12625,7 @@ InstructionInfo instructionInfoRR_IY_d__H_FD4 =
     }
 };
 
-// RR (IX+d), L  -  DD, CB, d, 1D
+// RR (IX+d), L   -  RR_IX_d__L_DD4  -  DD, CB, d, 1D
 InstructionInfo instructionInfoRR_IX_d__L_DD4 =
 {
     6,
@@ -12644,7 +12644,7 @@ InstructionInfo instructionInfoRR_IX_d__L_DD4 =
     }
 };
 
-// RR (IY+d), L  -  FD, CB, d, 1D
+// RR (IY+d), L   -  RR_IY_d__L_FD4  -  FD, CB, d, 1D
 InstructionInfo instructionInfoRR_IY_d__L_FD4 =
 {
     6,
@@ -12663,7 +12663,7 @@ InstructionInfo instructionInfoRR_IY_d__L_FD4 =
     }
 };
 
-// SLA A  -  CB, 27
+// SLA A   -  SLAA_CB2  -  CB, 27
 InstructionInfo instructionInfoSLAA_CB2 =
 {
     2,
@@ -12682,7 +12682,7 @@ InstructionInfo instructionInfoSLAA_CB2 =
     }
 };
 
-// SLA B  -  CB, 20
+// SLA B   -  SLAB_CB2  -  CB, 20
 InstructionInfo instructionInfoSLAB_CB2 =
 {
     2,
@@ -12701,7 +12701,7 @@ InstructionInfo instructionInfoSLAB_CB2 =
     }
 };
 
-// SLA C  -  CB, 21
+// SLA C   -  SLAC_CB2  -  CB, 21
 InstructionInfo instructionInfoSLAC_CB2 =
 {
     2,
@@ -12720,7 +12720,7 @@ InstructionInfo instructionInfoSLAC_CB2 =
     }
 };
 
-// SLA D  -  CB, 22
+// SLA D   -  SLAD_CB2  -  CB, 22
 InstructionInfo instructionInfoSLAD_CB2 =
 {
     2,
@@ -12739,7 +12739,7 @@ InstructionInfo instructionInfoSLAD_CB2 =
     }
 };
 
-// SLA E  -  CB, 23
+// SLA E   -  SLAE_CB2  -  CB, 23
 InstructionInfo instructionInfoSLAE_CB2 =
 {
     2,
@@ -12758,7 +12758,7 @@ InstructionInfo instructionInfoSLAE_CB2 =
     }
 };
 
-// SLA H  -  CB, 24
+// SLA H   -  SLAH_CB2  -  CB, 24
 InstructionInfo instructionInfoSLAH_CB2 =
 {
     2,
@@ -12777,7 +12777,7 @@ InstructionInfo instructionInfoSLAH_CB2 =
     }
 };
 
-// SLA L  -  CB, 25
+// SLA L   -  SLAL_CB2  -  CB, 25
 InstructionInfo instructionInfoSLAL_CB2 =
 {
     2,
@@ -12796,7 +12796,7 @@ InstructionInfo instructionInfoSLAL_CB2 =
     }
 };
 
-// SLA (HL)  -  CB, 26
+// SLA (HL)   -  SLA_HL__CB2  -  CB, 26
 InstructionInfo instructionInfoSLA_HL__CB2 =
 {
     4,
@@ -12815,7 +12815,7 @@ InstructionInfo instructionInfoSLA_HL__CB2 =
     }
 };
 
-// SLA (IX+d)  -  DD, CB, d, 26
+// SLA (IX+d)   -  SLA_IX_d__DD4  -  DD, CB, d, 26
 InstructionInfo instructionInfoSLA_IX_d__DD4 =
 {
     6,
@@ -12834,7 +12834,7 @@ InstructionInfo instructionInfoSLA_IX_d__DD4 =
     }
 };
 
-// SLA (IY+d)  -  FD, CB, d, 26
+// SLA (IY+d)   -  SLA_IY_d__FD4  -  FD, CB, d, 26
 InstructionInfo instructionInfoSLA_IY_d__FD4 =
 {
     6,
@@ -12853,7 +12853,7 @@ InstructionInfo instructionInfoSLA_IY_d__FD4 =
     }
 };
 
-// SLA (IX+d), A  -  DD, CB, d, 27
+// SLA (IX+d), A   -  SLA_IX_d__A_DD4  -  DD, CB, d, 27
 InstructionInfo instructionInfoSLA_IX_d__A_DD4 =
 {
     6,
@@ -12872,7 +12872,7 @@ InstructionInfo instructionInfoSLA_IX_d__A_DD4 =
     }
 };
 
-// SLA (IY+d), A  -  FD, CB, d, 27
+// SLA (IY+d), A   -  SLA_IY_d__A_FD4  -  FD, CB, d, 27
 InstructionInfo instructionInfoSLA_IY_d__A_FD4 =
 {
     6,
@@ -12891,7 +12891,7 @@ InstructionInfo instructionInfoSLA_IY_d__A_FD4 =
     }
 };
 
-// SLA (IX+d), B  -  DD, CB, d, 20
+// SLA (IX+d), B   -  SLA_IX_d__B_DD4  -  DD, CB, d, 20
 InstructionInfo instructionInfoSLA_IX_d__B_DD4 =
 {
     6,
@@ -12910,7 +12910,7 @@ InstructionInfo instructionInfoSLA_IX_d__B_DD4 =
     }
 };
 
-// SLA (IY+d), B  -  FD, CB, d, 20
+// SLA (IY+d), B   -  SLA_IY_d__B_FD4  -  FD, CB, d, 20
 InstructionInfo instructionInfoSLA_IY_d__B_FD4 =
 {
     6,
@@ -12929,7 +12929,7 @@ InstructionInfo instructionInfoSLA_IY_d__B_FD4 =
     }
 };
 
-// SLA (IX+d), C  -  DD, CB, d, 21
+// SLA (IX+d), C   -  SLA_IX_d__C_DD4  -  DD, CB, d, 21
 InstructionInfo instructionInfoSLA_IX_d__C_DD4 =
 {
     6,
@@ -12948,7 +12948,7 @@ InstructionInfo instructionInfoSLA_IX_d__C_DD4 =
     }
 };
 
-// SLA (IY+d), C  -  FD, CB, d, 21
+// SLA (IY+d), C   -  SLA_IY_d__C_FD4  -  FD, CB, d, 21
 InstructionInfo instructionInfoSLA_IY_d__C_FD4 =
 {
     6,
@@ -12967,7 +12967,7 @@ InstructionInfo instructionInfoSLA_IY_d__C_FD4 =
     }
 };
 
-// SLA (IX+d), D  -  DD, CB, d, 22
+// SLA (IX+d), D   -  SLA_IX_d__D_DD4  -  DD, CB, d, 22
 InstructionInfo instructionInfoSLA_IX_d__D_DD4 =
 {
     6,
@@ -12986,7 +12986,7 @@ InstructionInfo instructionInfoSLA_IX_d__D_DD4 =
     }
 };
 
-// SLA (IY+d), D  -  FD, CB, d, 22
+// SLA (IY+d), D   -  SLA_IY_d__D_FD4  -  FD, CB, d, 22
 InstructionInfo instructionInfoSLA_IY_d__D_FD4 =
 {
     6,
@@ -13005,7 +13005,7 @@ InstructionInfo instructionInfoSLA_IY_d__D_FD4 =
     }
 };
 
-// SLA (IX+d), E  -  DD, CB, d, 23
+// SLA (IX+d), E   -  SLA_IX_d__E_DD4  -  DD, CB, d, 23
 InstructionInfo instructionInfoSLA_IX_d__E_DD4 =
 {
     6,
@@ -13024,7 +13024,7 @@ InstructionInfo instructionInfoSLA_IX_d__E_DD4 =
     }
 };
 
-// SLA (IY+d), E  -  FD, CB, d, 23
+// SLA (IY+d), E   -  SLA_IY_d__E_FD4  -  FD, CB, d, 23
 InstructionInfo instructionInfoSLA_IY_d__E_FD4 =
 {
     6,
@@ -13043,7 +13043,7 @@ InstructionInfo instructionInfoSLA_IY_d__E_FD4 =
     }
 };
 
-// SLA (IX+d), H  -  DD, CB, d, 24
+// SLA (IX+d), H   -  SLA_IX_d__H_DD4  -  DD, CB, d, 24
 InstructionInfo instructionInfoSLA_IX_d__H_DD4 =
 {
     6,
@@ -13062,7 +13062,7 @@ InstructionInfo instructionInfoSLA_IX_d__H_DD4 =
     }
 };
 
-// SLA (IY+d), H  -  FD, CB, d, 24
+// SLA (IY+d), H   -  SLA_IY_d__H_FD4  -  FD, CB, d, 24
 InstructionInfo instructionInfoSLA_IY_d__H_FD4 =
 {
     6,
@@ -13081,7 +13081,7 @@ InstructionInfo instructionInfoSLA_IY_d__H_FD4 =
     }
 };
 
-// SLA (IX+d), L  -  DD, CB, d, 25
+// SLA (IX+d), L   -  SLA_IX_d__L_DD4  -  DD, CB, d, 25
 InstructionInfo instructionInfoSLA_IX_d__L_DD4 =
 {
     6,
@@ -13100,7 +13100,7 @@ InstructionInfo instructionInfoSLA_IX_d__L_DD4 =
     }
 };
 
-// SLA (IY+d), L  -  FD, CB, d, 25
+// SLA (IY+d), L   -  SLA_IY_d__L_FD4  -  FD, CB, d, 25
 InstructionInfo instructionInfoSLA_IY_d__L_FD4 =
 {
     6,
@@ -13119,7 +13119,7 @@ InstructionInfo instructionInfoSLA_IY_d__L_FD4 =
     }
 };
 
-// SLL A  -  CB, 37
+// SLL A   -  SLLA_CB2  -  CB, 37
 InstructionInfo instructionInfoSLLA_CB2 =
 {
     2,
@@ -13138,7 +13138,7 @@ InstructionInfo instructionInfoSLLA_CB2 =
     }
 };
 
-// SLL B  -  CB, 30
+// SLL B   -  SLLB_CB2  -  CB, 30
 InstructionInfo instructionInfoSLLB_CB2 =
 {
     2,
@@ -13157,7 +13157,7 @@ InstructionInfo instructionInfoSLLB_CB2 =
     }
 };
 
-// SLL C  -  CB, 31
+// SLL C   -  SLLC_CB2  -  CB, 31
 InstructionInfo instructionInfoSLLC_CB2 =
 {
     2,
@@ -13176,7 +13176,7 @@ InstructionInfo instructionInfoSLLC_CB2 =
     }
 };
 
-// SLL D  -  CB, 32
+// SLL D   -  SLLD_CB2  -  CB, 32
 InstructionInfo instructionInfoSLLD_CB2 =
 {
     2,
@@ -13195,7 +13195,7 @@ InstructionInfo instructionInfoSLLD_CB2 =
     }
 };
 
-// SLL E  -  CB, 33
+// SLL E   -  SLLE_CB2  -  CB, 33
 InstructionInfo instructionInfoSLLE_CB2 =
 {
     2,
@@ -13214,7 +13214,7 @@ InstructionInfo instructionInfoSLLE_CB2 =
     }
 };
 
-// SLL H  -  CB, 34
+// SLL H   -  SLLH_CB2  -  CB, 34
 InstructionInfo instructionInfoSLLH_CB2 =
 {
     2,
@@ -13233,7 +13233,7 @@ InstructionInfo instructionInfoSLLH_CB2 =
     }
 };
 
-// SLL L  -  CB, 35
+// SLL L   -  SLLL_CB2  -  CB, 35
 InstructionInfo instructionInfoSLLL_CB2 =
 {
     2,
@@ -13252,7 +13252,7 @@ InstructionInfo instructionInfoSLLL_CB2 =
     }
 };
 
-// SLL (HL)  -  CB, 36
+// SLL (HL)   -  SLL_HL__CB2  -  CB, 36
 InstructionInfo instructionInfoSLL_HL__CB2 =
 {
     4,
@@ -13271,7 +13271,7 @@ InstructionInfo instructionInfoSLL_HL__CB2 =
     }
 };
 
-// SLL (IX+d)  -  DD, CB, d, 36
+// SLL (IX+d)   -  SLL_IX_d__DD4  -  DD, CB, d, 36
 InstructionInfo instructionInfoSLL_IX_d__DD4 =
 {
     6,
@@ -13290,7 +13290,7 @@ InstructionInfo instructionInfoSLL_IX_d__DD4 =
     }
 };
 
-// SLL (IY+d)  -  FD, CB, d, 36
+// SLL (IY+d)   -  SLL_IY_d__FD4  -  FD, CB, d, 36
 InstructionInfo instructionInfoSLL_IY_d__FD4 =
 {
     6,
@@ -13309,7 +13309,7 @@ InstructionInfo instructionInfoSLL_IY_d__FD4 =
     }
 };
 
-// SLL (IX+d), A  -  DD, CB, d, 37
+// SLL (IX+d), A   -  SLL_IX_d__A_DD4  -  DD, CB, d, 37
 InstructionInfo instructionInfoSLL_IX_d__A_DD4 =
 {
     6,
@@ -13328,7 +13328,7 @@ InstructionInfo instructionInfoSLL_IX_d__A_DD4 =
     }
 };
 
-// SLL (IY+d), A  -  FD, CB, d, 37
+// SLL (IY+d), A   -  SLL_IY_d__A_FD4  -  FD, CB, d, 37
 InstructionInfo instructionInfoSLL_IY_d__A_FD4 =
 {
     6,
@@ -13347,7 +13347,7 @@ InstructionInfo instructionInfoSLL_IY_d__A_FD4 =
     }
 };
 
-// SLL (IX+d), B  -  DD, CB, d, 30
+// SLL (IX+d), B   -  SLL_IX_d__B_DD4  -  DD, CB, d, 30
 InstructionInfo instructionInfoSLL_IX_d__B_DD4 =
 {
     6,
@@ -13366,7 +13366,7 @@ InstructionInfo instructionInfoSLL_IX_d__B_DD4 =
     }
 };
 
-// SLL (IY+d), B  -  FD, CB, d, 30
+// SLL (IY+d), B   -  SLL_IY_d__B_FD4  -  FD, CB, d, 30
 InstructionInfo instructionInfoSLL_IY_d__B_FD4 =
 {
     6,
@@ -13385,7 +13385,7 @@ InstructionInfo instructionInfoSLL_IY_d__B_FD4 =
     }
 };
 
-// SLL (IX+d), C  -  DD, CB, d, 31
+// SLL (IX+d), C   -  SLL_IX_d__C_DD4  -  DD, CB, d, 31
 InstructionInfo instructionInfoSLL_IX_d__C_DD4 =
 {
     6,
@@ -13404,7 +13404,7 @@ InstructionInfo instructionInfoSLL_IX_d__C_DD4 =
     }
 };
 
-// SLL (IY+d), C  -  FD, CB, d, 31
+// SLL (IY+d), C   -  SLL_IY_d__C_FD4  -  FD, CB, d, 31
 InstructionInfo instructionInfoSLL_IY_d__C_FD4 =
 {
     6,
@@ -13423,7 +13423,7 @@ InstructionInfo instructionInfoSLL_IY_d__C_FD4 =
     }
 };
 
-// SLL (IX+d), D  -  DD, CB, d, 32
+// SLL (IX+d), D   -  SLL_IX_d__D_DD4  -  DD, CB, d, 32
 InstructionInfo instructionInfoSLL_IX_d__D_DD4 =
 {
     6,
@@ -13442,7 +13442,7 @@ InstructionInfo instructionInfoSLL_IX_d__D_DD4 =
     }
 };
 
-// SLL (IY+d), D  -  FD, CB, d, 32
+// SLL (IY+d), D   -  SLL_IY_d__D_FD4  -  FD, CB, d, 32
 InstructionInfo instructionInfoSLL_IY_d__D_FD4 =
 {
     6,
@@ -13461,7 +13461,7 @@ InstructionInfo instructionInfoSLL_IY_d__D_FD4 =
     }
 };
 
-// SLL (IX+d), E  -  DD, CB, d, 33
+// SLL (IX+d), E   -  SLL_IX_d__E_DD4  -  DD, CB, d, 33
 InstructionInfo instructionInfoSLL_IX_d__E_DD4 =
 {
     6,
@@ -13480,7 +13480,7 @@ InstructionInfo instructionInfoSLL_IX_d__E_DD4 =
     }
 };
 
-// SLL (IY+d), E  -  FD, CB, d, 33
+// SLL (IY+d), E   -  SLL_IY_d__E_FD4  -  FD, CB, d, 33
 InstructionInfo instructionInfoSLL_IY_d__E_FD4 =
 {
     6,
@@ -13499,7 +13499,7 @@ InstructionInfo instructionInfoSLL_IY_d__E_FD4 =
     }
 };
 
-// SLL (IX+d), H  -  DD, CB, d, 34
+// SLL (IX+d), H   -  SLL_IX_d__H_DD4  -  DD, CB, d, 34
 InstructionInfo instructionInfoSLL_IX_d__H_DD4 =
 {
     6,
@@ -13518,7 +13518,7 @@ InstructionInfo instructionInfoSLL_IX_d__H_DD4 =
     }
 };
 
-// SLL (IY+d), H  -  FD, CB, d, 34
+// SLL (IY+d), H   -  SLL_IY_d__H_FD4  -  FD, CB, d, 34
 InstructionInfo instructionInfoSLL_IY_d__H_FD4 =
 {
     6,
@@ -13537,7 +13537,7 @@ InstructionInfo instructionInfoSLL_IY_d__H_FD4 =
     }
 };
 
-// SLL (IX+d), L  -  DD, CB, d, 35
+// SLL (IX+d), L   -  SLL_IX_d__L_DD4  -  DD, CB, d, 35
 InstructionInfo instructionInfoSLL_IX_d__L_DD4 =
 {
     6,
@@ -13556,7 +13556,7 @@ InstructionInfo instructionInfoSLL_IX_d__L_DD4 =
     }
 };
 
-// SLL (IY+d), L  -  FD, CB, d, 35
+// SLL (IY+d), L   -  SLL_IY_d__L_FD4  -  FD, CB, d, 35
 InstructionInfo instructionInfoSLL_IY_d__L_FD4 =
 {
     6,
@@ -13575,7 +13575,7 @@ InstructionInfo instructionInfoSLL_IY_d__L_FD4 =
     }
 };
 
-// SRA A  -  CB, 2F
+// SRA A   -  SRAA_CB2  -  CB, 2F
 InstructionInfo instructionInfoSRAA_CB2 =
 {
     2,
@@ -13594,7 +13594,7 @@ InstructionInfo instructionInfoSRAA_CB2 =
     }
 };
 
-// SRA B  -  CB, 28
+// SRA B   -  SRAB_CB2  -  CB, 28
 InstructionInfo instructionInfoSRAB_CB2 =
 {
     2,
@@ -13613,7 +13613,7 @@ InstructionInfo instructionInfoSRAB_CB2 =
     }
 };
 
-// SRA C  -  CB, 29
+// SRA C   -  SRAC_CB2  -  CB, 29
 InstructionInfo instructionInfoSRAC_CB2 =
 {
     2,
@@ -13632,7 +13632,7 @@ InstructionInfo instructionInfoSRAC_CB2 =
     }
 };
 
-// SRA D  -  CB, 2A
+// SRA D   -  SRAD_CB2  -  CB, 2A
 InstructionInfo instructionInfoSRAD_CB2 =
 {
     2,
@@ -13651,7 +13651,7 @@ InstructionInfo instructionInfoSRAD_CB2 =
     }
 };
 
-// SRA E  -  CB, 2B
+// SRA E   -  SRAE_CB2  -  CB, 2B
 InstructionInfo instructionInfoSRAE_CB2 =
 {
     2,
@@ -13670,7 +13670,7 @@ InstructionInfo instructionInfoSRAE_CB2 =
     }
 };
 
-// SRA H  -  CB, 2C
+// SRA H   -  SRAH_CB2  -  CB, 2C
 InstructionInfo instructionInfoSRAH_CB2 =
 {
     2,
@@ -13689,7 +13689,7 @@ InstructionInfo instructionInfoSRAH_CB2 =
     }
 };
 
-// SRA L  -  CB, 2D
+// SRA L   -  SRAL_CB2  -  CB, 2D
 InstructionInfo instructionInfoSRAL_CB2 =
 {
     2,
@@ -13708,7 +13708,7 @@ InstructionInfo instructionInfoSRAL_CB2 =
     }
 };
 
-// SRA (HL)  -  CB, 2E
+// SRA (HL)   -  SRA_HL__CB2  -  CB, 2E
 InstructionInfo instructionInfoSRA_HL__CB2 =
 {
     4,
@@ -13727,7 +13727,7 @@ InstructionInfo instructionInfoSRA_HL__CB2 =
     }
 };
 
-// SRA (IX+d)  -  DD, CB, d, 2E
+// SRA (IX+d)   -  SRA_IX_d__DD4  -  DD, CB, d, 2E
 InstructionInfo instructionInfoSRA_IX_d__DD4 =
 {
     6,
@@ -13746,7 +13746,7 @@ InstructionInfo instructionInfoSRA_IX_d__DD4 =
     }
 };
 
-// SRA (IY+d)  -  FD, CB, d, 2E
+// SRA (IY+d)   -  SRA_IY_d__FD4  -  FD, CB, d, 2E
 InstructionInfo instructionInfoSRA_IY_d__FD4 =
 {
     6,
@@ -13765,7 +13765,7 @@ InstructionInfo instructionInfoSRA_IY_d__FD4 =
     }
 };
 
-// SRA (IX+d), A  -  DD, CB, d, 2F
+// SRA (IX+d), A   -  SRA_IX_d__A_DD4  -  DD, CB, d, 2F
 InstructionInfo instructionInfoSRA_IX_d__A_DD4 =
 {
     6,
@@ -13784,7 +13784,7 @@ InstructionInfo instructionInfoSRA_IX_d__A_DD4 =
     }
 };
 
-// SRA (IY+d), A  -  FD, CB, d, 2F
+// SRA (IY+d), A   -  SRA_IY_d__A_FD4  -  FD, CB, d, 2F
 InstructionInfo instructionInfoSRA_IY_d__A_FD4 =
 {
     6,
@@ -13803,7 +13803,7 @@ InstructionInfo instructionInfoSRA_IY_d__A_FD4 =
     }
 };
 
-// SRA (IX+d), B  -  DD, CB, d, 28
+// SRA (IX+d), B   -  SRA_IX_d__B_DD4  -  DD, CB, d, 28
 InstructionInfo instructionInfoSRA_IX_d__B_DD4 =
 {
     6,
@@ -13822,7 +13822,7 @@ InstructionInfo instructionInfoSRA_IX_d__B_DD4 =
     }
 };
 
-// SRA (IY+d), B  -  FD, CB, d, 28
+// SRA (IY+d), B   -  SRA_IY_d__B_FD4  -  FD, CB, d, 28
 InstructionInfo instructionInfoSRA_IY_d__B_FD4 =
 {
     6,
@@ -13841,7 +13841,7 @@ InstructionInfo instructionInfoSRA_IY_d__B_FD4 =
     }
 };
 
-// SRA (IX+d), C  -  DD, CB, d, 29
+// SRA (IX+d), C   -  SRA_IX_d__C_DD4  -  DD, CB, d, 29
 InstructionInfo instructionInfoSRA_IX_d__C_DD4 =
 {
     6,
@@ -13860,7 +13860,7 @@ InstructionInfo instructionInfoSRA_IX_d__C_DD4 =
     }
 };
 
-// SRA (IY+d), C  -  FD, CB, d, 29
+// SRA (IY+d), C   -  SRA_IY_d__C_FD4  -  FD, CB, d, 29
 InstructionInfo instructionInfoSRA_IY_d__C_FD4 =
 {
     6,
@@ -13879,7 +13879,7 @@ InstructionInfo instructionInfoSRA_IY_d__C_FD4 =
     }
 };
 
-// SRA (IX+d), D  -  DD, CB, d, 2A
+// SRA (IX+d), D   -  SRA_IX_d__D_DD4  -  DD, CB, d, 2A
 InstructionInfo instructionInfoSRA_IX_d__D_DD4 =
 {
     6,
@@ -13898,7 +13898,7 @@ InstructionInfo instructionInfoSRA_IX_d__D_DD4 =
     }
 };
 
-// SRA (IY+d), D  -  FD, CB, d, 2A
+// SRA (IY+d), D   -  SRA_IY_d__D_FD4  -  FD, CB, d, 2A
 InstructionInfo instructionInfoSRA_IY_d__D_FD4 =
 {
     6,
@@ -13917,7 +13917,7 @@ InstructionInfo instructionInfoSRA_IY_d__D_FD4 =
     }
 };
 
-// SRA (IX+d), E  -  DD, CB, d, 2B
+// SRA (IX+d), E   -  SRA_IX_d__E_DD4  -  DD, CB, d, 2B
 InstructionInfo instructionInfoSRA_IX_d__E_DD4 =
 {
     6,
@@ -13936,7 +13936,7 @@ InstructionInfo instructionInfoSRA_IX_d__E_DD4 =
     }
 };
 
-// SRA (IY+d), E  -  FD, CB, d, 2B
+// SRA (IY+d), E   -  SRA_IY_d__E_FD4  -  FD, CB, d, 2B
 InstructionInfo instructionInfoSRA_IY_d__E_FD4 =
 {
     6,
@@ -13955,7 +13955,7 @@ InstructionInfo instructionInfoSRA_IY_d__E_FD4 =
     }
 };
 
-// SRA (IX+d), H  -  DD, CB, d, 2C
+// SRA (IX+d), H   -  SRA_IX_d__H_DD4  -  DD, CB, d, 2C
 InstructionInfo instructionInfoSRA_IX_d__H_DD4 =
 {
     6,
@@ -13974,7 +13974,7 @@ InstructionInfo instructionInfoSRA_IX_d__H_DD4 =
     }
 };
 
-// SRA (IY+d), H  -  FD, CB, d, 2C
+// SRA (IY+d), H   -  SRA_IY_d__H_FD4  -  FD, CB, d, 2C
 InstructionInfo instructionInfoSRA_IY_d__H_FD4 =
 {
     6,
@@ -13993,7 +13993,7 @@ InstructionInfo instructionInfoSRA_IY_d__H_FD4 =
     }
 };
 
-// SRA (IX+d), L  -  DD, CB, d, 2D
+// SRA (IX+d), L   -  SRA_IX_d__L_DD4  -  DD, CB, d, 2D
 InstructionInfo instructionInfoSRA_IX_d__L_DD4 =
 {
     6,
@@ -14012,7 +14012,7 @@ InstructionInfo instructionInfoSRA_IX_d__L_DD4 =
     }
 };
 
-// SRA (IY+d), L  -  FD, CB, d, 2D
+// SRA (IY+d), L   -  SRA_IY_d__L_FD4  -  FD, CB, d, 2D
 InstructionInfo instructionInfoSRA_IY_d__L_FD4 =
 {
     6,
@@ -14031,7 +14031,7 @@ InstructionInfo instructionInfoSRA_IY_d__L_FD4 =
     }
 };
 
-// SRL A  -  CB, 3F
+// SRL A   -  SRLA_CB2  -  CB, 3F
 InstructionInfo instructionInfoSRLA_CB2 =
 {
     2,
@@ -14050,7 +14050,7 @@ InstructionInfo instructionInfoSRLA_CB2 =
     }
 };
 
-// SRL B  -  CB, 38
+// SRL B   -  SRLB_CB2  -  CB, 38
 InstructionInfo instructionInfoSRLB_CB2 =
 {
     2,
@@ -14069,7 +14069,7 @@ InstructionInfo instructionInfoSRLB_CB2 =
     }
 };
 
-// SRL C  -  CB, 39
+// SRL C   -  SRLC_CB2  -  CB, 39
 InstructionInfo instructionInfoSRLC_CB2 =
 {
     2,
@@ -14088,7 +14088,7 @@ InstructionInfo instructionInfoSRLC_CB2 =
     }
 };
 
-// SRL D  -  CB, 3A
+// SRL D   -  SRLD_CB2  -  CB, 3A
 InstructionInfo instructionInfoSRLD_CB2 =
 {
     2,
@@ -14107,7 +14107,7 @@ InstructionInfo instructionInfoSRLD_CB2 =
     }
 };
 
-// SRL E  -  CB, 3B
+// SRL E   -  SRLE_CB2  -  CB, 3B
 InstructionInfo instructionInfoSRLE_CB2 =
 {
     2,
@@ -14126,7 +14126,7 @@ InstructionInfo instructionInfoSRLE_CB2 =
     }
 };
 
-// SRL H  -  CB, 3C
+// SRL H   -  SRLH_CB2  -  CB, 3C
 InstructionInfo instructionInfoSRLH_CB2 =
 {
     2,
@@ -14145,7 +14145,7 @@ InstructionInfo instructionInfoSRLH_CB2 =
     }
 };
 
-// SRL L  -  CB, 3D
+// SRL L   -  SRLL_CB2  -  CB, 3D
 InstructionInfo instructionInfoSRLL_CB2 =
 {
     2,
@@ -14164,7 +14164,7 @@ InstructionInfo instructionInfoSRLL_CB2 =
     }
 };
 
-// SRL (HL)  -  CB, 3E
+// SRL (HL)   -  SRL_HL__CB2  -  CB, 3E
 InstructionInfo instructionInfoSRL_HL__CB2 =
 {
     4,
@@ -14183,7 +14183,7 @@ InstructionInfo instructionInfoSRL_HL__CB2 =
     }
 };
 
-// SRL (IX+d)  -  DD, CB, d, 3E
+// SRL (IX+d)   -  SRL_IX_d__DD4  -  DD, CB, d, 3E
 InstructionInfo instructionInfoSRL_IX_d__DD4 =
 {
     6,
@@ -14202,7 +14202,7 @@ InstructionInfo instructionInfoSRL_IX_d__DD4 =
     }
 };
 
-// SRL (IY+d)  -  FD, CB, d, 3E
+// SRL (IY+d)   -  SRL_IY_d__FD4  -  FD, CB, d, 3E
 InstructionInfo instructionInfoSRL_IY_d__FD4 =
 {
     6,
@@ -14221,7 +14221,7 @@ InstructionInfo instructionInfoSRL_IY_d__FD4 =
     }
 };
 
-// SRL (IX+d), A  -  DD, CB, d, 3F
+// SRL (IX+d), A   -  SRL_IX_d__A_DD4  -  DD, CB, d, 3F
 InstructionInfo instructionInfoSRL_IX_d__A_DD4 =
 {
     6,
@@ -14240,7 +14240,7 @@ InstructionInfo instructionInfoSRL_IX_d__A_DD4 =
     }
 };
 
-// SRL (IY+d), A  -  FD, CB, d, 3F
+// SRL (IY+d), A   -  SRL_IY_d__A_FD4  -  FD, CB, d, 3F
 InstructionInfo instructionInfoSRL_IY_d__A_FD4 =
 {
     6,
@@ -14259,7 +14259,7 @@ InstructionInfo instructionInfoSRL_IY_d__A_FD4 =
     }
 };
 
-// SRL (IX+d), B  -  DD, CB, d, 38
+// SRL (IX+d), B   -  SRL_IX_d__B_DD4  -  DD, CB, d, 38
 InstructionInfo instructionInfoSRL_IX_d__B_DD4 =
 {
     6,
@@ -14278,7 +14278,7 @@ InstructionInfo instructionInfoSRL_IX_d__B_DD4 =
     }
 };
 
-// SRL (IY+d), B  -  FD, CB, d, 38
+// SRL (IY+d), B   -  SRL_IY_d__B_FD4  -  FD, CB, d, 38
 InstructionInfo instructionInfoSRL_IY_d__B_FD4 =
 {
     6,
@@ -14297,7 +14297,7 @@ InstructionInfo instructionInfoSRL_IY_d__B_FD4 =
     }
 };
 
-// SRL (IX+d), C  -  DD, CB, d, 39
+// SRL (IX+d), C   -  SRL_IX_d__C_DD4  -  DD, CB, d, 39
 InstructionInfo instructionInfoSRL_IX_d__C_DD4 =
 {
     6,
@@ -14316,7 +14316,7 @@ InstructionInfo instructionInfoSRL_IX_d__C_DD4 =
     }
 };
 
-// SRL (IY+d), C  -  FD, CB, d, 39
+// SRL (IY+d), C   -  SRL_IY_d__C_FD4  -  FD, CB, d, 39
 InstructionInfo instructionInfoSRL_IY_d__C_FD4 =
 {
     6,
@@ -14335,7 +14335,7 @@ InstructionInfo instructionInfoSRL_IY_d__C_FD4 =
     }
 };
 
-// SRL (IX+d), D  -  DD, CB, d, 3A
+// SRL (IX+d), D   -  SRL_IX_d__D_DD4  -  DD, CB, d, 3A
 InstructionInfo instructionInfoSRL_IX_d__D_DD4 =
 {
     6,
@@ -14354,7 +14354,7 @@ InstructionInfo instructionInfoSRL_IX_d__D_DD4 =
     }
 };
 
-// SRL (IY+d), D  -  FD, CB, d, 3A
+// SRL (IY+d), D   -  SRL_IY_d__D_FD4  -  FD, CB, d, 3A
 InstructionInfo instructionInfoSRL_IY_d__D_FD4 =
 {
     6,
@@ -14373,7 +14373,7 @@ InstructionInfo instructionInfoSRL_IY_d__D_FD4 =
     }
 };
 
-// SRL (IX+d), E  -  DD, CB, d, 3B
+// SRL (IX+d), E   -  SRL_IX_d__E_DD4  -  DD, CB, d, 3B
 InstructionInfo instructionInfoSRL_IX_d__E_DD4 =
 {
     6,
@@ -14392,7 +14392,7 @@ InstructionInfo instructionInfoSRL_IX_d__E_DD4 =
     }
 };
 
-// SRL (IY+d), E  -  FD, CB, d, 3B
+// SRL (IY+d), E   -  SRL_IY_d__E_FD4  -  FD, CB, d, 3B
 InstructionInfo instructionInfoSRL_IY_d__E_FD4 =
 {
     6,
@@ -14411,7 +14411,7 @@ InstructionInfo instructionInfoSRL_IY_d__E_FD4 =
     }
 };
 
-// SRL (IX+d), H  -  DD, CB, d, 3C
+// SRL (IX+d), H   -  SRL_IX_d__H_DD4  -  DD, CB, d, 3C
 InstructionInfo instructionInfoSRL_IX_d__H_DD4 =
 {
     6,
@@ -14430,7 +14430,7 @@ InstructionInfo instructionInfoSRL_IX_d__H_DD4 =
     }
 };
 
-// SRL (IY+d), H  -  FD, CB, d, 3C
+// SRL (IY+d), H   -  SRL_IY_d__H_FD4  -  FD, CB, d, 3C
 InstructionInfo instructionInfoSRL_IY_d__H_FD4 =
 {
     6,
@@ -14449,7 +14449,7 @@ InstructionInfo instructionInfoSRL_IY_d__H_FD4 =
     }
 };
 
-// SRL (IX+d), L  -  DD, CB, d, 3D
+// SRL (IX+d), L   -  SRL_IX_d__L_DD4  -  DD, CB, d, 3D
 InstructionInfo instructionInfoSRL_IX_d__L_DD4 =
 {
     6,
@@ -14468,7 +14468,7 @@ InstructionInfo instructionInfoSRL_IX_d__L_DD4 =
     }
 };
 
-// SRL (IY+d), L  -  FD, CB, d, 3D
+// SRL (IY+d), L   -  SRL_IY_d__L_FD4  -  FD, CB, d, 3D
 InstructionInfo instructionInfoSRL_IY_d__L_FD4 =
 {
     6,
@@ -14487,7 +14487,7 @@ InstructionInfo instructionInfoSRL_IY_d__L_FD4 =
     }
 };
 
-// RLD A  -  ED, 6F
+// RLD A   -  RLDA_ED2  -  ED, 6F
 InstructionInfo instructionInfoRLDA_ED2 =
 {
     5,
@@ -14506,7 +14506,7 @@ InstructionInfo instructionInfoRLDA_ED2 =
     }
 };
 
-// RRD A  -  ED, 67
+// RRD A   -  RRDA_ED2  -  ED, 67
 InstructionInfo instructionInfoRRDA_ED2 =
 {
     5,
@@ -14525,7 +14525,7 @@ InstructionInfo instructionInfoRRDA_ED2 =
     }
 };
 
-// BIT 0, A  -  CB, 47
+// BIT 0, A   -  BIT0_A_CB2  -  CB, 47
 InstructionInfo instructionInfoBIT0_A_CB2 =
 {
     2,
@@ -14544,7 +14544,7 @@ InstructionInfo instructionInfoBIT0_A_CB2 =
     }
 };
 
-// BIT 1, A  -  CB, 4F
+// BIT 1, A   -  BIT1_A_CB2  -  CB, 4F
 InstructionInfo instructionInfoBIT1_A_CB2 =
 {
     2,
@@ -14563,7 +14563,7 @@ InstructionInfo instructionInfoBIT1_A_CB2 =
     }
 };
 
-// BIT 2, A  -  CB, 57
+// BIT 2, A   -  BIT2_A_CB2  -  CB, 57
 InstructionInfo instructionInfoBIT2_A_CB2 =
 {
     2,
@@ -14582,7 +14582,7 @@ InstructionInfo instructionInfoBIT2_A_CB2 =
     }
 };
 
-// BIT 3, A  -  CB, 5F
+// BIT 3, A   -  BIT3_A_CB2  -  CB, 5F
 InstructionInfo instructionInfoBIT3_A_CB2 =
 {
     2,
@@ -14601,7 +14601,7 @@ InstructionInfo instructionInfoBIT3_A_CB2 =
     }
 };
 
-// BIT 4, A  -  CB, 67
+// BIT 4, A   -  BIT4_A_CB2  -  CB, 67
 InstructionInfo instructionInfoBIT4_A_CB2 =
 {
     2,
@@ -14620,7 +14620,7 @@ InstructionInfo instructionInfoBIT4_A_CB2 =
     }
 };
 
-// BIT 5, A  -  CB, 6F
+// BIT 5, A   -  BIT5_A_CB2  -  CB, 6F
 InstructionInfo instructionInfoBIT5_A_CB2 =
 {
     2,
@@ -14639,7 +14639,7 @@ InstructionInfo instructionInfoBIT5_A_CB2 =
     }
 };
 
-// BIT 6, A  -  CB, 77
+// BIT 6, A   -  BIT6_A_CB2  -  CB, 77
 InstructionInfo instructionInfoBIT6_A_CB2 =
 {
     2,
@@ -14658,7 +14658,7 @@ InstructionInfo instructionInfoBIT6_A_CB2 =
     }
 };
 
-// BIT 7, A  -  CB, 7F
+// BIT 7, A   -  BIT7_A_CB2  -  CB, 7F
 InstructionInfo instructionInfoBIT7_A_CB2 =
 {
     2,
@@ -14677,7 +14677,7 @@ InstructionInfo instructionInfoBIT7_A_CB2 =
     }
 };
 
-// BIT 0, B  -  CB, 40
+// BIT 0, B   -  BIT0_B_CB2  -  CB, 40
 InstructionInfo instructionInfoBIT0_B_CB2 =
 {
     2,
@@ -14696,7 +14696,7 @@ InstructionInfo instructionInfoBIT0_B_CB2 =
     }
 };
 
-// BIT 1, B  -  CB, 48
+// BIT 1, B   -  BIT1_B_CB2  -  CB, 48
 InstructionInfo instructionInfoBIT1_B_CB2 =
 {
     2,
@@ -14715,7 +14715,7 @@ InstructionInfo instructionInfoBIT1_B_CB2 =
     }
 };
 
-// BIT 2, B  -  CB, 50
+// BIT 2, B   -  BIT2_B_CB2  -  CB, 50
 InstructionInfo instructionInfoBIT2_B_CB2 =
 {
     2,
@@ -14734,7 +14734,7 @@ InstructionInfo instructionInfoBIT2_B_CB2 =
     }
 };
 
-// BIT 3, B  -  CB, 58
+// BIT 3, B   -  BIT3_B_CB2  -  CB, 58
 InstructionInfo instructionInfoBIT3_B_CB2 =
 {
     2,
@@ -14753,7 +14753,7 @@ InstructionInfo instructionInfoBIT3_B_CB2 =
     }
 };
 
-// BIT 4, B  -  CB, 60
+// BIT 4, B   -  BIT4_B_CB2  -  CB, 60
 InstructionInfo instructionInfoBIT4_B_CB2 =
 {
     2,
@@ -14772,7 +14772,7 @@ InstructionInfo instructionInfoBIT4_B_CB2 =
     }
 };
 
-// BIT 5, B  -  CB, 68
+// BIT 5, B   -  BIT5_B_CB2  -  CB, 68
 InstructionInfo instructionInfoBIT5_B_CB2 =
 {
     2,
@@ -14791,7 +14791,7 @@ InstructionInfo instructionInfoBIT5_B_CB2 =
     }
 };
 
-// BIT 6, B  -  CB, 70
+// BIT 6, B   -  BIT6_B_CB2  -  CB, 70
 InstructionInfo instructionInfoBIT6_B_CB2 =
 {
     2,
@@ -14810,7 +14810,7 @@ InstructionInfo instructionInfoBIT6_B_CB2 =
     }
 };
 
-// BIT 7, B  -  CB, 78
+// BIT 7, B   -  BIT7_B_CB2  -  CB, 78
 InstructionInfo instructionInfoBIT7_B_CB2 =
 {
     2,
@@ -14829,7 +14829,7 @@ InstructionInfo instructionInfoBIT7_B_CB2 =
     }
 };
 
-// BIT 0, C  -  CB, 41
+// BIT 0, C   -  BIT0_C_CB2  -  CB, 41
 InstructionInfo instructionInfoBIT0_C_CB2 =
 {
     2,
@@ -14848,7 +14848,7 @@ InstructionInfo instructionInfoBIT0_C_CB2 =
     }
 };
 
-// BIT 1, C  -  CB, 49
+// BIT 1, C   -  BIT1_C_CB2  -  CB, 49
 InstructionInfo instructionInfoBIT1_C_CB2 =
 {
     2,
@@ -14867,7 +14867,7 @@ InstructionInfo instructionInfoBIT1_C_CB2 =
     }
 };
 
-// BIT 2, C  -  CB, 51
+// BIT 2, C   -  BIT2_C_CB2  -  CB, 51
 InstructionInfo instructionInfoBIT2_C_CB2 =
 {
     2,
@@ -14886,7 +14886,7 @@ InstructionInfo instructionInfoBIT2_C_CB2 =
     }
 };
 
-// BIT 3, C  -  CB, 59
+// BIT 3, C   -  BIT3_C_CB2  -  CB, 59
 InstructionInfo instructionInfoBIT3_C_CB2 =
 {
     2,
@@ -14905,7 +14905,7 @@ InstructionInfo instructionInfoBIT3_C_CB2 =
     }
 };
 
-// BIT 4, C  -  CB, 61
+// BIT 4, C   -  BIT4_C_CB2  -  CB, 61
 InstructionInfo instructionInfoBIT4_C_CB2 =
 {
     2,
@@ -14924,7 +14924,7 @@ InstructionInfo instructionInfoBIT4_C_CB2 =
     }
 };
 
-// BIT 5, C  -  CB, 69
+// BIT 5, C   -  BIT5_C_CB2  -  CB, 69
 InstructionInfo instructionInfoBIT5_C_CB2 =
 {
     2,
@@ -14943,7 +14943,7 @@ InstructionInfo instructionInfoBIT5_C_CB2 =
     }
 };
 
-// BIT 6, C  -  CB, 71
+// BIT 6, C   -  BIT6_C_CB2  -  CB, 71
 InstructionInfo instructionInfoBIT6_C_CB2 =
 {
     2,
@@ -14962,7 +14962,7 @@ InstructionInfo instructionInfoBIT6_C_CB2 =
     }
 };
 
-// BIT 7, C  -  CB, 79
+// BIT 7, C   -  BIT7_C_CB2  -  CB, 79
 InstructionInfo instructionInfoBIT7_C_CB2 =
 {
     2,
@@ -14981,7 +14981,7 @@ InstructionInfo instructionInfoBIT7_C_CB2 =
     }
 };
 
-// BIT 0, D  -  CB, 42
+// BIT 0, D   -  BIT0_D_CB2  -  CB, 42
 InstructionInfo instructionInfoBIT0_D_CB2 =
 {
     2,
@@ -15000,7 +15000,7 @@ InstructionInfo instructionInfoBIT0_D_CB2 =
     }
 };
 
-// BIT 1, D  -  CB, 4A
+// BIT 1, D   -  BIT1_D_CB2  -  CB, 4A
 InstructionInfo instructionInfoBIT1_D_CB2 =
 {
     2,
@@ -15019,7 +15019,7 @@ InstructionInfo instructionInfoBIT1_D_CB2 =
     }
 };
 
-// BIT 2, D  -  CB, 52
+// BIT 2, D   -  BIT2_D_CB2  -  CB, 52
 InstructionInfo instructionInfoBIT2_D_CB2 =
 {
     2,
@@ -15038,7 +15038,7 @@ InstructionInfo instructionInfoBIT2_D_CB2 =
     }
 };
 
-// BIT 3, D  -  CB, 5A
+// BIT 3, D   -  BIT3_D_CB2  -  CB, 5A
 InstructionInfo instructionInfoBIT3_D_CB2 =
 {
     2,
@@ -15057,7 +15057,7 @@ InstructionInfo instructionInfoBIT3_D_CB2 =
     }
 };
 
-// BIT 4, D  -  CB, 62
+// BIT 4, D   -  BIT4_D_CB2  -  CB, 62
 InstructionInfo instructionInfoBIT4_D_CB2 =
 {
     2,
@@ -15076,7 +15076,7 @@ InstructionInfo instructionInfoBIT4_D_CB2 =
     }
 };
 
-// BIT 5, D  -  CB, 6A
+// BIT 5, D   -  BIT5_D_CB2  -  CB, 6A
 InstructionInfo instructionInfoBIT5_D_CB2 =
 {
     2,
@@ -15095,7 +15095,7 @@ InstructionInfo instructionInfoBIT5_D_CB2 =
     }
 };
 
-// BIT 6, D  -  CB, 72
+// BIT 6, D   -  BIT6_D_CB2  -  CB, 72
 InstructionInfo instructionInfoBIT6_D_CB2 =
 {
     2,
@@ -15114,7 +15114,7 @@ InstructionInfo instructionInfoBIT6_D_CB2 =
     }
 };
 
-// BIT 7, D  -  CB, 7A
+// BIT 7, D   -  BIT7_D_CB2  -  CB, 7A
 InstructionInfo instructionInfoBIT7_D_CB2 =
 {
     2,
@@ -15133,7 +15133,7 @@ InstructionInfo instructionInfoBIT7_D_CB2 =
     }
 };
 
-// BIT 0, E  -  CB, 43
+// BIT 0, E   -  BIT0_E_CB2  -  CB, 43
 InstructionInfo instructionInfoBIT0_E_CB2 =
 {
     2,
@@ -15152,7 +15152,7 @@ InstructionInfo instructionInfoBIT0_E_CB2 =
     }
 };
 
-// BIT 1, E  -  CB, 4B
+// BIT 1, E   -  BIT1_E_CB2  -  CB, 4B
 InstructionInfo instructionInfoBIT1_E_CB2 =
 {
     2,
@@ -15171,7 +15171,7 @@ InstructionInfo instructionInfoBIT1_E_CB2 =
     }
 };
 
-// BIT 2, E  -  CB, 53
+// BIT 2, E   -  BIT2_E_CB2  -  CB, 53
 InstructionInfo instructionInfoBIT2_E_CB2 =
 {
     2,
@@ -15190,7 +15190,7 @@ InstructionInfo instructionInfoBIT2_E_CB2 =
     }
 };
 
-// BIT 3, E  -  CB, 5B
+// BIT 3, E   -  BIT3_E_CB2  -  CB, 5B
 InstructionInfo instructionInfoBIT3_E_CB2 =
 {
     2,
@@ -15209,7 +15209,7 @@ InstructionInfo instructionInfoBIT3_E_CB2 =
     }
 };
 
-// BIT 4, E  -  CB, 63
+// BIT 4, E   -  BIT4_E_CB2  -  CB, 63
 InstructionInfo instructionInfoBIT4_E_CB2 =
 {
     2,
@@ -15228,7 +15228,7 @@ InstructionInfo instructionInfoBIT4_E_CB2 =
     }
 };
 
-// BIT 5, E  -  CB, 6B
+// BIT 5, E   -  BIT5_E_CB2  -  CB, 6B
 InstructionInfo instructionInfoBIT5_E_CB2 =
 {
     2,
@@ -15247,7 +15247,7 @@ InstructionInfo instructionInfoBIT5_E_CB2 =
     }
 };
 
-// BIT 6, E  -  CB, 73
+// BIT 6, E   -  BIT6_E_CB2  -  CB, 73
 InstructionInfo instructionInfoBIT6_E_CB2 =
 {
     2,
@@ -15266,7 +15266,7 @@ InstructionInfo instructionInfoBIT6_E_CB2 =
     }
 };
 
-// BIT 7, E  -  CB, 7B
+// BIT 7, E   -  BIT7_E_CB2  -  CB, 7B
 InstructionInfo instructionInfoBIT7_E_CB2 =
 {
     2,
@@ -15285,7 +15285,7 @@ InstructionInfo instructionInfoBIT7_E_CB2 =
     }
 };
 
-// BIT 0, H  -  CB, 44
+// BIT 0, H   -  BIT0_H_CB2  -  CB, 44
 InstructionInfo instructionInfoBIT0_H_CB2 =
 {
     2,
@@ -15304,7 +15304,7 @@ InstructionInfo instructionInfoBIT0_H_CB2 =
     }
 };
 
-// BIT 1, H  -  CB, 4C
+// BIT 1, H   -  BIT1_H_CB2  -  CB, 4C
 InstructionInfo instructionInfoBIT1_H_CB2 =
 {
     2,
@@ -15323,7 +15323,7 @@ InstructionInfo instructionInfoBIT1_H_CB2 =
     }
 };
 
-// BIT 2, H  -  CB, 54
+// BIT 2, H   -  BIT2_H_CB2  -  CB, 54
 InstructionInfo instructionInfoBIT2_H_CB2 =
 {
     2,
@@ -15342,7 +15342,7 @@ InstructionInfo instructionInfoBIT2_H_CB2 =
     }
 };
 
-// BIT 3, H  -  CB, 5C
+// BIT 3, H   -  BIT3_H_CB2  -  CB, 5C
 InstructionInfo instructionInfoBIT3_H_CB2 =
 {
     2,
@@ -15361,7 +15361,7 @@ InstructionInfo instructionInfoBIT3_H_CB2 =
     }
 };
 
-// BIT 4, H  -  CB, 64
+// BIT 4, H   -  BIT4_H_CB2  -  CB, 64
 InstructionInfo instructionInfoBIT4_H_CB2 =
 {
     2,
@@ -15380,7 +15380,7 @@ InstructionInfo instructionInfoBIT4_H_CB2 =
     }
 };
 
-// BIT 5, H  -  CB, 6C
+// BIT 5, H   -  BIT5_H_CB2  -  CB, 6C
 InstructionInfo instructionInfoBIT5_H_CB2 =
 {
     2,
@@ -15399,7 +15399,7 @@ InstructionInfo instructionInfoBIT5_H_CB2 =
     }
 };
 
-// BIT 6, H  -  CB, 74
+// BIT 6, H   -  BIT6_H_CB2  -  CB, 74
 InstructionInfo instructionInfoBIT6_H_CB2 =
 {
     2,
@@ -15418,7 +15418,7 @@ InstructionInfo instructionInfoBIT6_H_CB2 =
     }
 };
 
-// BIT 7, H  -  CB, 7C
+// BIT 7, H   -  BIT7_H_CB2  -  CB, 7C
 InstructionInfo instructionInfoBIT7_H_CB2 =
 {
     2,
@@ -15437,7 +15437,7 @@ InstructionInfo instructionInfoBIT7_H_CB2 =
     }
 };
 
-// BIT 0, L  -  CB, 45
+// BIT 0, L   -  BIT0_L_CB2  -  CB, 45
 InstructionInfo instructionInfoBIT0_L_CB2 =
 {
     2,
@@ -15456,7 +15456,7 @@ InstructionInfo instructionInfoBIT0_L_CB2 =
     }
 };
 
-// BIT 1, L  -  CB, 4D
+// BIT 1, L   -  BIT1_L_CB2  -  CB, 4D
 InstructionInfo instructionInfoBIT1_L_CB2 =
 {
     2,
@@ -15475,7 +15475,7 @@ InstructionInfo instructionInfoBIT1_L_CB2 =
     }
 };
 
-// BIT 2, L  -  CB, 55
+// BIT 2, L   -  BIT2_L_CB2  -  CB, 55
 InstructionInfo instructionInfoBIT2_L_CB2 =
 {
     2,
@@ -15494,7 +15494,7 @@ InstructionInfo instructionInfoBIT2_L_CB2 =
     }
 };
 
-// BIT 3, L  -  CB, 5D
+// BIT 3, L   -  BIT3_L_CB2  -  CB, 5D
 InstructionInfo instructionInfoBIT3_L_CB2 =
 {
     2,
@@ -15513,7 +15513,7 @@ InstructionInfo instructionInfoBIT3_L_CB2 =
     }
 };
 
-// BIT 4, L  -  CB, 65
+// BIT 4, L   -  BIT4_L_CB2  -  CB, 65
 InstructionInfo instructionInfoBIT4_L_CB2 =
 {
     2,
@@ -15532,7 +15532,7 @@ InstructionInfo instructionInfoBIT4_L_CB2 =
     }
 };
 
-// BIT 5, L  -  CB, 6D
+// BIT 5, L   -  BIT5_L_CB2  -  CB, 6D
 InstructionInfo instructionInfoBIT5_L_CB2 =
 {
     2,
@@ -15551,7 +15551,7 @@ InstructionInfo instructionInfoBIT5_L_CB2 =
     }
 };
 
-// BIT 6, L  -  CB, 75
+// BIT 6, L   -  BIT6_L_CB2  -  CB, 75
 InstructionInfo instructionInfoBIT6_L_CB2 =
 {
     2,
@@ -15570,7 +15570,7 @@ InstructionInfo instructionInfoBIT6_L_CB2 =
     }
 };
 
-// BIT 7, L  -  CB, 7D
+// BIT 7, L   -  BIT7_L_CB2  -  CB, 7D
 InstructionInfo instructionInfoBIT7_L_CB2 =
 {
     2,
@@ -15589,7 +15589,7 @@ InstructionInfo instructionInfoBIT7_L_CB2 =
     }
 };
 
-// BIT 0, (HL)  -  CB, 46
+// BIT 0, (HL)   -  BIT0__HL__CB2  -  CB, 46
 InstructionInfo instructionInfoBIT0__HL__CB2 =
 {
     3,
@@ -15608,7 +15608,7 @@ InstructionInfo instructionInfoBIT0__HL__CB2 =
     }
 };
 
-// BIT 1, (HL)  -  CB, 4E
+// BIT 1, (HL)   -  BIT1__HL__CB2  -  CB, 4E
 InstructionInfo instructionInfoBIT1__HL__CB2 =
 {
     3,
@@ -15627,7 +15627,7 @@ InstructionInfo instructionInfoBIT1__HL__CB2 =
     }
 };
 
-// BIT 2, (HL)  -  CB, 56
+// BIT 2, (HL)   -  BIT2__HL__CB2  -  CB, 56
 InstructionInfo instructionInfoBIT2__HL__CB2 =
 {
     3,
@@ -15646,7 +15646,7 @@ InstructionInfo instructionInfoBIT2__HL__CB2 =
     }
 };
 
-// BIT 3, (HL)  -  CB, 5E
+// BIT 3, (HL)   -  BIT3__HL__CB2  -  CB, 5E
 InstructionInfo instructionInfoBIT3__HL__CB2 =
 {
     3,
@@ -15665,7 +15665,7 @@ InstructionInfo instructionInfoBIT3__HL__CB2 =
     }
 };
 
-// BIT 4, (HL)  -  CB, 66
+// BIT 4, (HL)   -  BIT4__HL__CB2  -  CB, 66
 InstructionInfo instructionInfoBIT4__HL__CB2 =
 {
     3,
@@ -15684,7 +15684,7 @@ InstructionInfo instructionInfoBIT4__HL__CB2 =
     }
 };
 
-// BIT 5, (HL)  -  CB, 6E
+// BIT 5, (HL)   -  BIT5__HL__CB2  -  CB, 6E
 InstructionInfo instructionInfoBIT5__HL__CB2 =
 {
     3,
@@ -15703,7 +15703,7 @@ InstructionInfo instructionInfoBIT5__HL__CB2 =
     }
 };
 
-// BIT 6, (HL)  -  CB, 76
+// BIT 6, (HL)   -  BIT6__HL__CB2  -  CB, 76
 InstructionInfo instructionInfoBIT6__HL__CB2 =
 {
     3,
@@ -15722,7 +15722,7 @@ InstructionInfo instructionInfoBIT6__HL__CB2 =
     }
 };
 
-// BIT 7, (HL)  -  CB, 7E
+// BIT 7, (HL)   -  BIT7__HL__CB2  -  CB, 7E
 InstructionInfo instructionInfoBIT7__HL__CB2 =
 {
     3,
@@ -15741,7 +15741,7 @@ InstructionInfo instructionInfoBIT7__HL__CB2 =
     }
 };
 
-// BIT 0, (IX+d)  -  DD, CB, d, 46
+// BIT 0, (IX+d)   -  BIT0__IX_d__DD4  -  DD, CB, d, 46
 InstructionInfo instructionInfoBIT0__IX_d__DD4 =
 {
     5,
@@ -15760,7 +15760,7 @@ InstructionInfo instructionInfoBIT0__IX_d__DD4 =
     }
 };
 
-// BIT 0, (IY+d)  -  FD, CB, d, 46
+// BIT 0, (IY+d)   -  BIT0__IY_d__FD4  -  FD, CB, d, 46
 InstructionInfo instructionInfoBIT0__IY_d__FD4 =
 {
     5,
@@ -15779,7 +15779,7 @@ InstructionInfo instructionInfoBIT0__IY_d__FD4 =
     }
 };
 
-// BIT 1, (IX+d)  -  DD, CB, d, 4E
+// BIT 1, (IX+d)   -  BIT1__IX_d__DD4  -  DD, CB, d, 4E
 InstructionInfo instructionInfoBIT1__IX_d__DD4 =
 {
     5,
@@ -15798,7 +15798,7 @@ InstructionInfo instructionInfoBIT1__IX_d__DD4 =
     }
 };
 
-// BIT 1, (IY+d)  -  FD, CB, d, 4E
+// BIT 1, (IY+d)   -  BIT1__IY_d__FD4  -  FD, CB, d, 4E
 InstructionInfo instructionInfoBIT1__IY_d__FD4 =
 {
     5,
@@ -15817,7 +15817,7 @@ InstructionInfo instructionInfoBIT1__IY_d__FD4 =
     }
 };
 
-// BIT 2, (IX+d)  -  DD, CB, d, 56
+// BIT 2, (IX+d)   -  BIT2__IX_d__DD4  -  DD, CB, d, 56
 InstructionInfo instructionInfoBIT2__IX_d__DD4 =
 {
     5,
@@ -15836,7 +15836,7 @@ InstructionInfo instructionInfoBIT2__IX_d__DD4 =
     }
 };
 
-// BIT 2, (IY+d)  -  FD, CB, d, 56
+// BIT 2, (IY+d)   -  BIT2__IY_d__FD4  -  FD, CB, d, 56
 InstructionInfo instructionInfoBIT2__IY_d__FD4 =
 {
     5,
@@ -15855,7 +15855,7 @@ InstructionInfo instructionInfoBIT2__IY_d__FD4 =
     }
 };
 
-// BIT 3, (IX+d)  -  DD, CB, d, 5E
+// BIT 3, (IX+d)   -  BIT3__IX_d__DD4  -  DD, CB, d, 5E
 InstructionInfo instructionInfoBIT3__IX_d__DD4 =
 {
     5,
@@ -15874,7 +15874,7 @@ InstructionInfo instructionInfoBIT3__IX_d__DD4 =
     }
 };
 
-// BIT 3, (IY+d)  -  FD, CB, d, 5E
+// BIT 3, (IY+d)   -  BIT3__IY_d__FD4  -  FD, CB, d, 5E
 InstructionInfo instructionInfoBIT3__IY_d__FD4 =
 {
     5,
@@ -15893,7 +15893,7 @@ InstructionInfo instructionInfoBIT3__IY_d__FD4 =
     }
 };
 
-// BIT 4, (IX+d)  -  DD, CB, d, 66
+// BIT 4, (IX+d)   -  BIT4__IX_d__DD4  -  DD, CB, d, 66
 InstructionInfo instructionInfoBIT4__IX_d__DD4 =
 {
     5,
@@ -15912,7 +15912,7 @@ InstructionInfo instructionInfoBIT4__IX_d__DD4 =
     }
 };
 
-// BIT 4, (IY+d)  -  FD, CB, d, 66
+// BIT 4, (IY+d)   -  BIT4__IY_d__FD4  -  FD, CB, d, 66
 InstructionInfo instructionInfoBIT4__IY_d__FD4 =
 {
     5,
@@ -15931,7 +15931,7 @@ InstructionInfo instructionInfoBIT4__IY_d__FD4 =
     }
 };
 
-// BIT 5, (IX+d)  -  DD, CB, d, 6E
+// BIT 5, (IX+d)   -  BIT5__IX_d__DD4  -  DD, CB, d, 6E
 InstructionInfo instructionInfoBIT5__IX_d__DD4 =
 {
     5,
@@ -15950,7 +15950,7 @@ InstructionInfo instructionInfoBIT5__IX_d__DD4 =
     }
 };
 
-// BIT 5, (IY+d)  -  FD, CB, d, 6E
+// BIT 5, (IY+d)   -  BIT5__IY_d__FD4  -  FD, CB, d, 6E
 InstructionInfo instructionInfoBIT5__IY_d__FD4 =
 {
     5,
@@ -15969,7 +15969,7 @@ InstructionInfo instructionInfoBIT5__IY_d__FD4 =
     }
 };
 
-// BIT 6, (IX+d)  -  DD, CB, d, 76
+// BIT 6, (IX+d)   -  BIT6__IX_d__DD4  -  DD, CB, d, 76
 InstructionInfo instructionInfoBIT6__IX_d__DD4 =
 {
     5,
@@ -15988,7 +15988,7 @@ InstructionInfo instructionInfoBIT6__IX_d__DD4 =
     }
 };
 
-// BIT 6, (IY+d)  -  FD, CB, d, 76
+// BIT 6, (IY+d)   -  BIT6__IY_d__FD4  -  FD, CB, d, 76
 InstructionInfo instructionInfoBIT6__IY_d__FD4 =
 {
     5,
@@ -16007,7 +16007,7 @@ InstructionInfo instructionInfoBIT6__IY_d__FD4 =
     }
 };
 
-// BIT 7, (IX+d)  -  DD, CB, d, 7E
+// BIT 7, (IX+d)   -  BIT7__IX_d__DD4  -  DD, CB, d, 7E
 InstructionInfo instructionInfoBIT7__IX_d__DD4 =
 {
     5,
@@ -16026,7 +16026,7 @@ InstructionInfo instructionInfoBIT7__IX_d__DD4 =
     }
 };
 
-// BIT 7, (IY+d)  -  FD, CB, d, 7E
+// BIT 7, (IY+d)   -  BIT7__IY_d__FD4  -  FD, CB, d, 7E
 InstructionInfo instructionInfoBIT7__IY_d__FD4 =
 {
     5,
@@ -16045,7 +16045,7 @@ InstructionInfo instructionInfoBIT7__IY_d__FD4 =
     }
 };
 
-// SET 0, A  -  CB, C7
+// SET 0, A   -  SET0_A_CB2  -  CB, C7
 InstructionInfo instructionInfoSET0_A_CB2 =
 {
     2,
@@ -16064,7 +16064,7 @@ InstructionInfo instructionInfoSET0_A_CB2 =
     }
 };
 
-// SET 1, A  -  CB, CF
+// SET 1, A   -  SET1_A_CB2  -  CB, CF
 InstructionInfo instructionInfoSET1_A_CB2 =
 {
     2,
@@ -16083,7 +16083,7 @@ InstructionInfo instructionInfoSET1_A_CB2 =
     }
 };
 
-// SET 2, A  -  CB, D7
+// SET 2, A   -  SET2_A_CB2  -  CB, D7
 InstructionInfo instructionInfoSET2_A_CB2 =
 {
     2,
@@ -16102,7 +16102,7 @@ InstructionInfo instructionInfoSET2_A_CB2 =
     }
 };
 
-// SET 3, A  -  CB, DF
+// SET 3, A   -  SET3_A_CB2  -  CB, DF
 InstructionInfo instructionInfoSET3_A_CB2 =
 {
     2,
@@ -16121,7 +16121,7 @@ InstructionInfo instructionInfoSET3_A_CB2 =
     }
 };
 
-// SET 4, A  -  CB, E7
+// SET 4, A   -  SET4_A_CB2  -  CB, E7
 InstructionInfo instructionInfoSET4_A_CB2 =
 {
     2,
@@ -16140,7 +16140,7 @@ InstructionInfo instructionInfoSET4_A_CB2 =
     }
 };
 
-// SET 5, A  -  CB, EF
+// SET 5, A   -  SET5_A_CB2  -  CB, EF
 InstructionInfo instructionInfoSET5_A_CB2 =
 {
     2,
@@ -16159,7 +16159,7 @@ InstructionInfo instructionInfoSET5_A_CB2 =
     }
 };
 
-// SET 6, A  -  CB, F7
+// SET 6, A   -  SET6_A_CB2  -  CB, F7
 InstructionInfo instructionInfoSET6_A_CB2 =
 {
     2,
@@ -16178,7 +16178,7 @@ InstructionInfo instructionInfoSET6_A_CB2 =
     }
 };
 
-// SET 7, A  -  CB, FF
+// SET 7, A   -  SET7_A_CB2  -  CB, FF
 InstructionInfo instructionInfoSET7_A_CB2 =
 {
     2,
@@ -16197,7 +16197,7 @@ InstructionInfo instructionInfoSET7_A_CB2 =
     }
 };
 
-// SET 0, B  -  CB, C0
+// SET 0, B   -  SET0_B_CB2  -  CB, C0
 InstructionInfo instructionInfoSET0_B_CB2 =
 {
     2,
@@ -16216,7 +16216,7 @@ InstructionInfo instructionInfoSET0_B_CB2 =
     }
 };
 
-// SET 1, B  -  CB, C8
+// SET 1, B   -  SET1_B_CB2  -  CB, C8
 InstructionInfo instructionInfoSET1_B_CB2 =
 {
     2,
@@ -16235,7 +16235,7 @@ InstructionInfo instructionInfoSET1_B_CB2 =
     }
 };
 
-// SET 2, B  -  CB, D0
+// SET 2, B   -  SET2_B_CB2  -  CB, D0
 InstructionInfo instructionInfoSET2_B_CB2 =
 {
     2,
@@ -16254,7 +16254,7 @@ InstructionInfo instructionInfoSET2_B_CB2 =
     }
 };
 
-// SET 3, B  -  CB, D8
+// SET 3, B   -  SET3_B_CB2  -  CB, D8
 InstructionInfo instructionInfoSET3_B_CB2 =
 {
     2,
@@ -16273,7 +16273,7 @@ InstructionInfo instructionInfoSET3_B_CB2 =
     }
 };
 
-// SET 4, B  -  CB, E0
+// SET 4, B   -  SET4_B_CB2  -  CB, E0
 InstructionInfo instructionInfoSET4_B_CB2 =
 {
     2,
@@ -16292,7 +16292,7 @@ InstructionInfo instructionInfoSET4_B_CB2 =
     }
 };
 
-// SET 5, B  -  CB, E8
+// SET 5, B   -  SET5_B_CB2  -  CB, E8
 InstructionInfo instructionInfoSET5_B_CB2 =
 {
     2,
@@ -16311,7 +16311,7 @@ InstructionInfo instructionInfoSET5_B_CB2 =
     }
 };
 
-// SET 6, B  -  CB, F0
+// SET 6, B   -  SET6_B_CB2  -  CB, F0
 InstructionInfo instructionInfoSET6_B_CB2 =
 {
     2,
@@ -16330,7 +16330,7 @@ InstructionInfo instructionInfoSET6_B_CB2 =
     }
 };
 
-// SET 7, B  -  CB, F8
+// SET 7, B   -  SET7_B_CB2  -  CB, F8
 InstructionInfo instructionInfoSET7_B_CB2 =
 {
     2,
@@ -16349,7 +16349,7 @@ InstructionInfo instructionInfoSET7_B_CB2 =
     }
 };
 
-// SET 0, C  -  CB, C1
+// SET 0, C   -  SET0_C_CB2  -  CB, C1
 InstructionInfo instructionInfoSET0_C_CB2 =
 {
     2,
@@ -16368,7 +16368,7 @@ InstructionInfo instructionInfoSET0_C_CB2 =
     }
 };
 
-// SET 1, C  -  CB, C9
+// SET 1, C   -  SET1_C_CB2  -  CB, C9
 InstructionInfo instructionInfoSET1_C_CB2 =
 {
     2,
@@ -16387,7 +16387,7 @@ InstructionInfo instructionInfoSET1_C_CB2 =
     }
 };
 
-// SET 2, C  -  CB, D1
+// SET 2, C   -  SET2_C_CB2  -  CB, D1
 InstructionInfo instructionInfoSET2_C_CB2 =
 {
     2,
@@ -16406,7 +16406,7 @@ InstructionInfo instructionInfoSET2_C_CB2 =
     }
 };
 
-// SET 3, C  -  CB, D9
+// SET 3, C   -  SET3_C_CB2  -  CB, D9
 InstructionInfo instructionInfoSET3_C_CB2 =
 {
     2,
@@ -16425,7 +16425,7 @@ InstructionInfo instructionInfoSET3_C_CB2 =
     }
 };
 
-// SET 4, C  -  CB, E1
+// SET 4, C   -  SET4_C_CB2  -  CB, E1
 InstructionInfo instructionInfoSET4_C_CB2 =
 {
     2,
@@ -16444,7 +16444,7 @@ InstructionInfo instructionInfoSET4_C_CB2 =
     }
 };
 
-// SET 5, C  -  CB, E9
+// SET 5, C   -  SET5_C_CB2  -  CB, E9
 InstructionInfo instructionInfoSET5_C_CB2 =
 {
     2,
@@ -16463,7 +16463,7 @@ InstructionInfo instructionInfoSET5_C_CB2 =
     }
 };
 
-// SET 6, C  -  CB, F1
+// SET 6, C   -  SET6_C_CB2  -  CB, F1
 InstructionInfo instructionInfoSET6_C_CB2 =
 {
     2,
@@ -16482,7 +16482,7 @@ InstructionInfo instructionInfoSET6_C_CB2 =
     }
 };
 
-// SET 7, C  -  CB, F9
+// SET 7, C   -  SET7_C_CB2  -  CB, F9
 InstructionInfo instructionInfoSET7_C_CB2 =
 {
     2,
@@ -16501,7 +16501,7 @@ InstructionInfo instructionInfoSET7_C_CB2 =
     }
 };
 
-// SET 0, D  -  CB, C2
+// SET 0, D   -  SET0_D_CB2  -  CB, C2
 InstructionInfo instructionInfoSET0_D_CB2 =
 {
     2,
@@ -16520,7 +16520,7 @@ InstructionInfo instructionInfoSET0_D_CB2 =
     }
 };
 
-// SET 1, D  -  CB, CA
+// SET 1, D   -  SET1_D_CB2  -  CB, CA
 InstructionInfo instructionInfoSET1_D_CB2 =
 {
     2,
@@ -16539,7 +16539,7 @@ InstructionInfo instructionInfoSET1_D_CB2 =
     }
 };
 
-// SET 2, D  -  CB, D2
+// SET 2, D   -  SET2_D_CB2  -  CB, D2
 InstructionInfo instructionInfoSET2_D_CB2 =
 {
     2,
@@ -16558,7 +16558,7 @@ InstructionInfo instructionInfoSET2_D_CB2 =
     }
 };
 
-// SET 3, D  -  CB, DA
+// SET 3, D   -  SET3_D_CB2  -  CB, DA
 InstructionInfo instructionInfoSET3_D_CB2 =
 {
     2,
@@ -16577,7 +16577,7 @@ InstructionInfo instructionInfoSET3_D_CB2 =
     }
 };
 
-// SET 4, D  -  CB, E2
+// SET 4, D   -  SET4_D_CB2  -  CB, E2
 InstructionInfo instructionInfoSET4_D_CB2 =
 {
     2,
@@ -16596,7 +16596,7 @@ InstructionInfo instructionInfoSET4_D_CB2 =
     }
 };
 
-// SET 5, D  -  CB, EA
+// SET 5, D   -  SET5_D_CB2  -  CB, EA
 InstructionInfo instructionInfoSET5_D_CB2 =
 {
     2,
@@ -16615,7 +16615,7 @@ InstructionInfo instructionInfoSET5_D_CB2 =
     }
 };
 
-// SET 6, D  -  CB, F2
+// SET 6, D   -  SET6_D_CB2  -  CB, F2
 InstructionInfo instructionInfoSET6_D_CB2 =
 {
     2,
@@ -16634,7 +16634,7 @@ InstructionInfo instructionInfoSET6_D_CB2 =
     }
 };
 
-// SET 7, D  -  CB, FA
+// SET 7, D   -  SET7_D_CB2  -  CB, FA
 InstructionInfo instructionInfoSET7_D_CB2 =
 {
     2,
@@ -16653,7 +16653,7 @@ InstructionInfo instructionInfoSET7_D_CB2 =
     }
 };
 
-// SET 0, E  -  CB, C3
+// SET 0, E   -  SET0_E_CB2  -  CB, C3
 InstructionInfo instructionInfoSET0_E_CB2 =
 {
     2,
@@ -16672,7 +16672,7 @@ InstructionInfo instructionInfoSET0_E_CB2 =
     }
 };
 
-// SET 1, E  -  CB, CB
+// SET 1, E   -  SET1_E_CB2  -  CB, CB
 InstructionInfo instructionInfoSET1_E_CB2 =
 {
     2,
@@ -16691,7 +16691,7 @@ InstructionInfo instructionInfoSET1_E_CB2 =
     }
 };
 
-// SET 2, E  -  CB, D3
+// SET 2, E   -  SET2_E_CB2  -  CB, D3
 InstructionInfo instructionInfoSET2_E_CB2 =
 {
     2,
@@ -16710,7 +16710,7 @@ InstructionInfo instructionInfoSET2_E_CB2 =
     }
 };
 
-// SET 3, E  -  CB, DB
+// SET 3, E   -  SET3_E_CB2  -  CB, DB
 InstructionInfo instructionInfoSET3_E_CB2 =
 {
     2,
@@ -16729,7 +16729,7 @@ InstructionInfo instructionInfoSET3_E_CB2 =
     }
 };
 
-// SET 4, E  -  CB, E3
+// SET 4, E   -  SET4_E_CB2  -  CB, E3
 InstructionInfo instructionInfoSET4_E_CB2 =
 {
     2,
@@ -16748,7 +16748,7 @@ InstructionInfo instructionInfoSET4_E_CB2 =
     }
 };
 
-// SET 5, E  -  CB, EB
+// SET 5, E   -  SET5_E_CB2  -  CB, EB
 InstructionInfo instructionInfoSET5_E_CB2 =
 {
     2,
@@ -16767,7 +16767,7 @@ InstructionInfo instructionInfoSET5_E_CB2 =
     }
 };
 
-// SET 6, E  -  CB, F3
+// SET 6, E   -  SET6_E_CB2  -  CB, F3
 InstructionInfo instructionInfoSET6_E_CB2 =
 {
     2,
@@ -16786,7 +16786,7 @@ InstructionInfo instructionInfoSET6_E_CB2 =
     }
 };
 
-// SET 7, E  -  CB, FB
+// SET 7, E   -  SET7_E_CB2  -  CB, FB
 InstructionInfo instructionInfoSET7_E_CB2 =
 {
     2,
@@ -16805,7 +16805,7 @@ InstructionInfo instructionInfoSET7_E_CB2 =
     }
 };
 
-// SET 0, H  -  CB, C4
+// SET 0, H   -  SET0_H_CB2  -  CB, C4
 InstructionInfo instructionInfoSET0_H_CB2 =
 {
     2,
@@ -16824,7 +16824,7 @@ InstructionInfo instructionInfoSET0_H_CB2 =
     }
 };
 
-// SET 1, H  -  CB, CC
+// SET 1, H   -  SET1_H_CB2  -  CB, CC
 InstructionInfo instructionInfoSET1_H_CB2 =
 {
     2,
@@ -16843,7 +16843,7 @@ InstructionInfo instructionInfoSET1_H_CB2 =
     }
 };
 
-// SET 2, H  -  CB, D4
+// SET 2, H   -  SET2_H_CB2  -  CB, D4
 InstructionInfo instructionInfoSET2_H_CB2 =
 {
     2,
@@ -16862,7 +16862,7 @@ InstructionInfo instructionInfoSET2_H_CB2 =
     }
 };
 
-// SET 3, H  -  CB, DC
+// SET 3, H   -  SET3_H_CB2  -  CB, DC
 InstructionInfo instructionInfoSET3_H_CB2 =
 {
     2,
@@ -16881,7 +16881,7 @@ InstructionInfo instructionInfoSET3_H_CB2 =
     }
 };
 
-// SET 4, H  -  CB, E4
+// SET 4, H   -  SET4_H_CB2  -  CB, E4
 InstructionInfo instructionInfoSET4_H_CB2 =
 {
     2,
@@ -16900,7 +16900,7 @@ InstructionInfo instructionInfoSET4_H_CB2 =
     }
 };
 
-// SET 5, H  -  CB, EC
+// SET 5, H   -  SET5_H_CB2  -  CB, EC
 InstructionInfo instructionInfoSET5_H_CB2 =
 {
     2,
@@ -16919,7 +16919,7 @@ InstructionInfo instructionInfoSET5_H_CB2 =
     }
 };
 
-// SET 6, H  -  CB, F4
+// SET 6, H   -  SET6_H_CB2  -  CB, F4
 InstructionInfo instructionInfoSET6_H_CB2 =
 {
     2,
@@ -16938,7 +16938,7 @@ InstructionInfo instructionInfoSET6_H_CB2 =
     }
 };
 
-// SET 7, H  -  CB, FC
+// SET 7, H   -  SET7_H_CB2  -  CB, FC
 InstructionInfo instructionInfoSET7_H_CB2 =
 {
     2,
@@ -16957,7 +16957,7 @@ InstructionInfo instructionInfoSET7_H_CB2 =
     }
 };
 
-// SET 0, L  -  CB, C5
+// SET 0, L   -  SET0_L_CB2  -  CB, C5
 InstructionInfo instructionInfoSET0_L_CB2 =
 {
     2,
@@ -16976,7 +16976,7 @@ InstructionInfo instructionInfoSET0_L_CB2 =
     }
 };
 
-// SET 1, L  -  CB, CD
+// SET 1, L   -  SET1_L_CB2  -  CB, CD
 InstructionInfo instructionInfoSET1_L_CB2 =
 {
     2,
@@ -16995,7 +16995,7 @@ InstructionInfo instructionInfoSET1_L_CB2 =
     }
 };
 
-// SET 2, L  -  CB, D5
+// SET 2, L   -  SET2_L_CB2  -  CB, D5
 InstructionInfo instructionInfoSET2_L_CB2 =
 {
     2,
@@ -17014,7 +17014,7 @@ InstructionInfo instructionInfoSET2_L_CB2 =
     }
 };
 
-// SET 3, L  -  CB, DD
+// SET 3, L   -  SET3_L_CB2  -  CB, DD
 InstructionInfo instructionInfoSET3_L_CB2 =
 {
     2,
@@ -17033,7 +17033,7 @@ InstructionInfo instructionInfoSET3_L_CB2 =
     }
 };
 
-// SET 4, L  -  CB, E5
+// SET 4, L   -  SET4_L_CB2  -  CB, E5
 InstructionInfo instructionInfoSET4_L_CB2 =
 {
     2,
@@ -17052,7 +17052,7 @@ InstructionInfo instructionInfoSET4_L_CB2 =
     }
 };
 
-// SET 5, L  -  CB, ED
+// SET 5, L   -  SET5_L_CB2  -  CB, ED
 InstructionInfo instructionInfoSET5_L_CB2 =
 {
     2,
@@ -17071,7 +17071,7 @@ InstructionInfo instructionInfoSET5_L_CB2 =
     }
 };
 
-// SET 6, L  -  CB, F5
+// SET 6, L   -  SET6_L_CB2  -  CB, F5
 InstructionInfo instructionInfoSET6_L_CB2 =
 {
     2,
@@ -17090,7 +17090,7 @@ InstructionInfo instructionInfoSET6_L_CB2 =
     }
 };
 
-// SET 7, L  -  CB, FD
+// SET 7, L   -  SET7_L_CB2  -  CB, FD
 InstructionInfo instructionInfoSET7_L_CB2 =
 {
     2,
@@ -17109,7 +17109,7 @@ InstructionInfo instructionInfoSET7_L_CB2 =
     }
 };
 
-// SET 0, (HL)  -  CB, C6
+// SET 0, (HL)   -  SET0__HL__CB2  -  CB, C6
 InstructionInfo instructionInfoSET0__HL__CB2 =
 {
     4,
@@ -17128,7 +17128,7 @@ InstructionInfo instructionInfoSET0__HL__CB2 =
     }
 };
 
-// SET 1, (HL)  -  CB, CE
+// SET 1, (HL)   -  SET1__HL__CB2  -  CB, CE
 InstructionInfo instructionInfoSET1__HL__CB2 =
 {
     4,
@@ -17147,7 +17147,7 @@ InstructionInfo instructionInfoSET1__HL__CB2 =
     }
 };
 
-// SET 2, (HL)  -  CB, D6
+// SET 2, (HL)   -  SET2__HL__CB2  -  CB, D6
 InstructionInfo instructionInfoSET2__HL__CB2 =
 {
     4,
@@ -17166,7 +17166,7 @@ InstructionInfo instructionInfoSET2__HL__CB2 =
     }
 };
 
-// SET 3, (HL)  -  CB, DE
+// SET 3, (HL)   -  SET3__HL__CB2  -  CB, DE
 InstructionInfo instructionInfoSET3__HL__CB2 =
 {
     4,
@@ -17185,7 +17185,7 @@ InstructionInfo instructionInfoSET3__HL__CB2 =
     }
 };
 
-// SET 4, (HL)  -  CB, E6
+// SET 4, (HL)   -  SET4__HL__CB2  -  CB, E6
 InstructionInfo instructionInfoSET4__HL__CB2 =
 {
     4,
@@ -17204,7 +17204,7 @@ InstructionInfo instructionInfoSET4__HL__CB2 =
     }
 };
 
-// SET 5, (HL)  -  CB, EE
+// SET 5, (HL)   -  SET5__HL__CB2  -  CB, EE
 InstructionInfo instructionInfoSET5__HL__CB2 =
 {
     4,
@@ -17223,7 +17223,7 @@ InstructionInfo instructionInfoSET5__HL__CB2 =
     }
 };
 
-// SET 6, (HL)  -  CB, F6
+// SET 6, (HL)   -  SET6__HL__CB2  -  CB, F6
 InstructionInfo instructionInfoSET6__HL__CB2 =
 {
     4,
@@ -17242,7 +17242,7 @@ InstructionInfo instructionInfoSET6__HL__CB2 =
     }
 };
 
-// SET 7, (HL)  -  CB, FE
+// SET 7, (HL)   -  SET7__HL__CB2  -  CB, FE
 InstructionInfo instructionInfoSET7__HL__CB2 =
 {
     4,
@@ -17261,7 +17261,7 @@ InstructionInfo instructionInfoSET7__HL__CB2 =
     }
 };
 
-// SET 0, (IX+d)  -  DD, CB, d, C6
+// SET 0, (IX+d)   -  SET0__IX_d__DD4  -  DD, CB, d, C6
 InstructionInfo instructionInfoSET0__IX_d__DD4 =
 {
     6,
@@ -17280,7 +17280,7 @@ InstructionInfo instructionInfoSET0__IX_d__DD4 =
     }
 };
 
-// SET 0, (IY+d)  -  FD, CB, d, C6
+// SET 0, (IY+d)   -  SET0__IY_d__FD4  -  FD, CB, d, C6
 InstructionInfo instructionInfoSET0__IY_d__FD4 =
 {
     6,
@@ -17299,7 +17299,7 @@ InstructionInfo instructionInfoSET0__IY_d__FD4 =
     }
 };
 
-// SET 1, (IX+d)  -  DD, CB, d, CE
+// SET 1, (IX+d)   -  SET1__IX_d__DD4  -  DD, CB, d, CE
 InstructionInfo instructionInfoSET1__IX_d__DD4 =
 {
     6,
@@ -17318,7 +17318,7 @@ InstructionInfo instructionInfoSET1__IX_d__DD4 =
     }
 };
 
-// SET 1, (IY+d)  -  FD, CB, d, CE
+// SET 1, (IY+d)   -  SET1__IY_d__FD4  -  FD, CB, d, CE
 InstructionInfo instructionInfoSET1__IY_d__FD4 =
 {
     6,
@@ -17337,7 +17337,7 @@ InstructionInfo instructionInfoSET1__IY_d__FD4 =
     }
 };
 
-// SET 2, (IX+d)  -  DD, CB, d, D6
+// SET 2, (IX+d)   -  SET2__IX_d__DD4  -  DD, CB, d, D6
 InstructionInfo instructionInfoSET2__IX_d__DD4 =
 {
     6,
@@ -17356,7 +17356,7 @@ InstructionInfo instructionInfoSET2__IX_d__DD4 =
     }
 };
 
-// SET 2, (IY+d)  -  FD, CB, d, D6
+// SET 2, (IY+d)   -  SET2__IY_d__FD4  -  FD, CB, d, D6
 InstructionInfo instructionInfoSET2__IY_d__FD4 =
 {
     6,
@@ -17375,7 +17375,7 @@ InstructionInfo instructionInfoSET2__IY_d__FD4 =
     }
 };
 
-// SET 3, (IX+d)  -  DD, CB, d, DE
+// SET 3, (IX+d)   -  SET3__IX_d__DD4  -  DD, CB, d, DE
 InstructionInfo instructionInfoSET3__IX_d__DD4 =
 {
     6,
@@ -17394,7 +17394,7 @@ InstructionInfo instructionInfoSET3__IX_d__DD4 =
     }
 };
 
-// SET 3, (IY+d)  -  FD, CB, d, DE
+// SET 3, (IY+d)   -  SET3__IY_d__FD4  -  FD, CB, d, DE
 InstructionInfo instructionInfoSET3__IY_d__FD4 =
 {
     6,
@@ -17413,7 +17413,7 @@ InstructionInfo instructionInfoSET3__IY_d__FD4 =
     }
 };
 
-// SET 4, (IX+d)  -  DD, CB, d, E6
+// SET 4, (IX+d)   -  SET4__IX_d__DD4  -  DD, CB, d, E6
 InstructionInfo instructionInfoSET4__IX_d__DD4 =
 {
     6,
@@ -17432,7 +17432,7 @@ InstructionInfo instructionInfoSET4__IX_d__DD4 =
     }
 };
 
-// SET 4, (IY+d)  -  FD, CB, d, E6
+// SET 4, (IY+d)   -  SET4__IY_d__FD4  -  FD, CB, d, E6
 InstructionInfo instructionInfoSET4__IY_d__FD4 =
 {
     6,
@@ -17451,7 +17451,7 @@ InstructionInfo instructionInfoSET4__IY_d__FD4 =
     }
 };
 
-// SET 5, (IX+d)  -  DD, CB, d, EE
+// SET 5, (IX+d)   -  SET5__IX_d__DD4  -  DD, CB, d, EE
 InstructionInfo instructionInfoSET5__IX_d__DD4 =
 {
     6,
@@ -17470,7 +17470,7 @@ InstructionInfo instructionInfoSET5__IX_d__DD4 =
     }
 };
 
-// SET 5, (IY+d)  -  FD, CB, d, EE
+// SET 5, (IY+d)   -  SET5__IY_d__FD4  -  FD, CB, d, EE
 InstructionInfo instructionInfoSET5__IY_d__FD4 =
 {
     6,
@@ -17489,7 +17489,7 @@ InstructionInfo instructionInfoSET5__IY_d__FD4 =
     }
 };
 
-// SET 6, (IX+d)  -  DD, CB, d, F6
+// SET 6, (IX+d)   -  SET6__IX_d__DD4  -  DD, CB, d, F6
 InstructionInfo instructionInfoSET6__IX_d__DD4 =
 {
     6,
@@ -17508,7 +17508,7 @@ InstructionInfo instructionInfoSET6__IX_d__DD4 =
     }
 };
 
-// SET 6, (IY+d)  -  FD, CB, d, F6
+// SET 6, (IY+d)   -  SET6__IY_d__FD4  -  FD, CB, d, F6
 InstructionInfo instructionInfoSET6__IY_d__FD4 =
 {
     6,
@@ -17527,7 +17527,7 @@ InstructionInfo instructionInfoSET6__IY_d__FD4 =
     }
 };
 
-// SET 7, (IX+d)  -  DD, CB, d, FE
+// SET 7, (IX+d)   -  SET7__IX_d__DD4  -  DD, CB, d, FE
 InstructionInfo instructionInfoSET7__IX_d__DD4 =
 {
     6,
@@ -17546,7 +17546,7 @@ InstructionInfo instructionInfoSET7__IX_d__DD4 =
     }
 };
 
-// SET 7, (IY+d)  -  FD, CB, d, FE
+// SET 7, (IY+d)   -  SET7__IY_d__FD4  -  FD, CB, d, FE
 InstructionInfo instructionInfoSET7__IY_d__FD4 =
 {
     6,
@@ -17565,7 +17565,7 @@ InstructionInfo instructionInfoSET7__IY_d__FD4 =
     }
 };
 
-// SET 0, (IX+d), A  -  DD, CB, d, C7
+// SET 0, (IX+d), A   -  SET0__IX_d__A_DD4  -  DD, CB, d, C7
 InstructionInfo instructionInfoSET0__IX_d__A_DD4 =
 {
     6,
@@ -17584,7 +17584,7 @@ InstructionInfo instructionInfoSET0__IX_d__A_DD4 =
     }
 };
 
-// SET 1, (IX+d), A  -  DD, CB, d, CF
+// SET 1, (IX+d), A   -  SET1__IX_d__A_DD4  -  DD, CB, d, CF
 InstructionInfo instructionInfoSET1__IX_d__A_DD4 =
 {
     6,
@@ -17603,7 +17603,7 @@ InstructionInfo instructionInfoSET1__IX_d__A_DD4 =
     }
 };
 
-// SET 1, (IY+d), A  -  FD, CB, d, CF
+// SET 1, (IY+d), A   -  SET1__IY_d__A_FD4  -  FD, CB, d, CF
 InstructionInfo instructionInfoSET1__IY_d__A_FD4 =
 {
     6,
@@ -17622,7 +17622,7 @@ InstructionInfo instructionInfoSET1__IY_d__A_FD4 =
     }
 };
 
-// SET 2, (IX+d), A  -  DD, CB, d, D7
+// SET 2, (IX+d), A   -  SET2__IX_d__A_DD4  -  DD, CB, d, D7
 InstructionInfo instructionInfoSET2__IX_d__A_DD4 =
 {
     6,
@@ -17641,7 +17641,7 @@ InstructionInfo instructionInfoSET2__IX_d__A_DD4 =
     }
 };
 
-// SET 2, (IY+d), A  -  FD, CB, d, D7
+// SET 2, (IY+d), A   -  SET2__IY_d__A_FD4  -  FD, CB, d, D7
 InstructionInfo instructionInfoSET2__IY_d__A_FD4 =
 {
     6,
@@ -17660,7 +17660,7 @@ InstructionInfo instructionInfoSET2__IY_d__A_FD4 =
     }
 };
 
-// SET 3, (IX+d), A  -  DD, CB, d, DF
+// SET 3, (IX+d), A   -  SET3__IX_d__A_DD4  -  DD, CB, d, DF
 InstructionInfo instructionInfoSET3__IX_d__A_DD4 =
 {
     6,
@@ -17679,7 +17679,7 @@ InstructionInfo instructionInfoSET3__IX_d__A_DD4 =
     }
 };
 
-// SET 3, (IY+d), A  -  FD, CB, d, DF
+// SET 3, (IY+d), A   -  SET3__IY_d__A_FD4  -  FD, CB, d, DF
 InstructionInfo instructionInfoSET3__IY_d__A_FD4 =
 {
     6,
@@ -17698,7 +17698,7 @@ InstructionInfo instructionInfoSET3__IY_d__A_FD4 =
     }
 };
 
-// SET 4, (IX+d), A  -  DD, CB, d, E7
+// SET 4, (IX+d), A   -  SET4__IX_d__A_DD4  -  DD, CB, d, E7
 InstructionInfo instructionInfoSET4__IX_d__A_DD4 =
 {
     6,
@@ -17717,7 +17717,7 @@ InstructionInfo instructionInfoSET4__IX_d__A_DD4 =
     }
 };
 
-// SET 4, (IY+d), A  -  FD, CB, d, E7
+// SET 4, (IY+d), A   -  SET4__IY_d__A_FD4  -  FD, CB, d, E7
 InstructionInfo instructionInfoSET4__IY_d__A_FD4 =
 {
     6,
@@ -17736,7 +17736,7 @@ InstructionInfo instructionInfoSET4__IY_d__A_FD4 =
     }
 };
 
-// SET 5, (IX+d), A  -  DD, CB, d, EF
+// SET 5, (IX+d), A   -  SET5__IX_d__A_DD4  -  DD, CB, d, EF
 InstructionInfo instructionInfoSET5__IX_d__A_DD4 =
 {
     6,
@@ -17755,7 +17755,7 @@ InstructionInfo instructionInfoSET5__IX_d__A_DD4 =
     }
 };
 
-// SET 5, (IY+d), A  -  FD, CB, d, EF
+// SET 5, (IY+d), A   -  SET5__IY_d__A_FD4  -  FD, CB, d, EF
 InstructionInfo instructionInfoSET5__IY_d__A_FD4 =
 {
     6,
@@ -17774,7 +17774,7 @@ InstructionInfo instructionInfoSET5__IY_d__A_FD4 =
     }
 };
 
-// SET 6, (IX+d), A  -  DD, CB, d, F7
+// SET 6, (IX+d), A   -  SET6__IX_d__A_DD4  -  DD, CB, d, F7
 InstructionInfo instructionInfoSET6__IX_d__A_DD4 =
 {
     6,
@@ -17793,7 +17793,7 @@ InstructionInfo instructionInfoSET6__IX_d__A_DD4 =
     }
 };
 
-// SET 6, (IY+d), A  -  FD, CB, d, F7
+// SET 6, (IY+d), A   -  SET6__IY_d__A_FD4  -  FD, CB, d, F7
 InstructionInfo instructionInfoSET6__IY_d__A_FD4 =
 {
     6,
@@ -17812,7 +17812,7 @@ InstructionInfo instructionInfoSET6__IY_d__A_FD4 =
     }
 };
 
-// SET 7, (IX+d), A  -  DD, CB, d, FF
+// SET 7, (IX+d), A   -  SET7__IX_d__A_DD4  -  DD, CB, d, FF
 InstructionInfo instructionInfoSET7__IX_d__A_DD4 =
 {
     6,
@@ -17831,7 +17831,7 @@ InstructionInfo instructionInfoSET7__IX_d__A_DD4 =
     }
 };
 
-// SET 7, (IY+d), A  -  FD, CB, d, FF
+// SET 7, (IY+d), A   -  SET7__IY_d__A_FD4  -  FD, CB, d, FF
 InstructionInfo instructionInfoSET7__IY_d__A_FD4 =
 {
     6,
@@ -17850,7 +17850,7 @@ InstructionInfo instructionInfoSET7__IY_d__A_FD4 =
     }
 };
 
-// SET 0, (IX+d), B  -  DD, CB, d, C0
+// SET 0, (IX+d), B   -  SET0__IX_d__B_DD4  -  DD, CB, d, C0
 InstructionInfo instructionInfoSET0__IX_d__B_DD4 =
 {
     6,
@@ -17869,7 +17869,7 @@ InstructionInfo instructionInfoSET0__IX_d__B_DD4 =
     }
 };
 
-// SET 1, (IX+d), B  -  DD, CB, d, C8
+// SET 1, (IX+d), B   -  SET1__IX_d__B_DD4  -  DD, CB, d, C8
 InstructionInfo instructionInfoSET1__IX_d__B_DD4 =
 {
     6,
@@ -17888,7 +17888,7 @@ InstructionInfo instructionInfoSET1__IX_d__B_DD4 =
     }
 };
 
-// SET 1, (IY+d), B  -  FD, CB, d, C8
+// SET 1, (IY+d), B   -  SET1__IY_d__B_FD4  -  FD, CB, d, C8
 InstructionInfo instructionInfoSET1__IY_d__B_FD4 =
 {
     6,
@@ -17907,7 +17907,7 @@ InstructionInfo instructionInfoSET1__IY_d__B_FD4 =
     }
 };
 
-// SET 2, (IX+d), B  -  DD, CB, d, D0
+// SET 2, (IX+d), B   -  SET2__IX_d__B_DD4  -  DD, CB, d, D0
 InstructionInfo instructionInfoSET2__IX_d__B_DD4 =
 {
     6,
@@ -17926,7 +17926,7 @@ InstructionInfo instructionInfoSET2__IX_d__B_DD4 =
     }
 };
 
-// SET 2, (IY+d), B  -  FD, CB, d, D0
+// SET 2, (IY+d), B   -  SET2__IY_d__B_FD4  -  FD, CB, d, D0
 InstructionInfo instructionInfoSET2__IY_d__B_FD4 =
 {
     6,
@@ -17945,7 +17945,7 @@ InstructionInfo instructionInfoSET2__IY_d__B_FD4 =
     }
 };
 
-// SET 3, (IX+d), B  -  DD, CB, d, D8
+// SET 3, (IX+d), B   -  SET3__IX_d__B_DD4  -  DD, CB, d, D8
 InstructionInfo instructionInfoSET3__IX_d__B_DD4 =
 {
     6,
@@ -17964,7 +17964,7 @@ InstructionInfo instructionInfoSET3__IX_d__B_DD4 =
     }
 };
 
-// SET 3, (IY+d), B  -  FD, CB, d, D8
+// SET 3, (IY+d), B   -  SET3__IY_d__B_FD4  -  FD, CB, d, D8
 InstructionInfo instructionInfoSET3__IY_d__B_FD4 =
 {
     6,
@@ -17983,7 +17983,7 @@ InstructionInfo instructionInfoSET3__IY_d__B_FD4 =
     }
 };
 
-// SET 4, (IX+d), B  -  DD, CB, d, E0
+// SET 4, (IX+d), B   -  SET4__IX_d__B_DD4  -  DD, CB, d, E0
 InstructionInfo instructionInfoSET4__IX_d__B_DD4 =
 {
     6,
@@ -18002,7 +18002,7 @@ InstructionInfo instructionInfoSET4__IX_d__B_DD4 =
     }
 };
 
-// SET 4, (IY+d), B  -  FD, CB, d, E0
+// SET 4, (IY+d), B   -  SET4__IY_d__B_FD4  -  FD, CB, d, E0
 InstructionInfo instructionInfoSET4__IY_d__B_FD4 =
 {
     6,
@@ -18021,7 +18021,7 @@ InstructionInfo instructionInfoSET4__IY_d__B_FD4 =
     }
 };
 
-// SET 5, (IX+d), B  -  DD, CB, d, E8
+// SET 5, (IX+d), B   -  SET5__IX_d__B_DD4  -  DD, CB, d, E8
 InstructionInfo instructionInfoSET5__IX_d__B_DD4 =
 {
     6,
@@ -18040,7 +18040,7 @@ InstructionInfo instructionInfoSET5__IX_d__B_DD4 =
     }
 };
 
-// SET 5, (IY+d), B  -  FD, CB, d, E8
+// SET 5, (IY+d), B   -  SET5__IY_d__B_FD4  -  FD, CB, d, E8
 InstructionInfo instructionInfoSET5__IY_d__B_FD4 =
 {
     6,
@@ -18059,7 +18059,7 @@ InstructionInfo instructionInfoSET5__IY_d__B_FD4 =
     }
 };
 
-// SET 6, (IX+d), B  -  DD, CB, d, F0
+// SET 6, (IX+d), B   -  SET6__IX_d__B_DD4  -  DD, CB, d, F0
 InstructionInfo instructionInfoSET6__IX_d__B_DD4 =
 {
     6,
@@ -18078,7 +18078,7 @@ InstructionInfo instructionInfoSET6__IX_d__B_DD4 =
     }
 };
 
-// SET 6, (IY+d), B  -  FD, CB, d, F0
+// SET 6, (IY+d), B   -  SET6__IY_d__B_FD4  -  FD, CB, d, F0
 InstructionInfo instructionInfoSET6__IY_d__B_FD4 =
 {
     6,
@@ -18097,7 +18097,7 @@ InstructionInfo instructionInfoSET6__IY_d__B_FD4 =
     }
 };
 
-// SET 7, (IX+d), B  -  DD, CB, d, F8
+// SET 7, (IX+d), B   -  SET7__IX_d__B_DD4  -  DD, CB, d, F8
 InstructionInfo instructionInfoSET7__IX_d__B_DD4 =
 {
     6,
@@ -18116,7 +18116,7 @@ InstructionInfo instructionInfoSET7__IX_d__B_DD4 =
     }
 };
 
-// SET 7, (IY+d), B  -  FD, CB, d, F8
+// SET 7, (IY+d), B   -  SET7__IY_d__B_FD4  -  FD, CB, d, F8
 InstructionInfo instructionInfoSET7__IY_d__B_FD4 =
 {
     6,
@@ -18135,7 +18135,7 @@ InstructionInfo instructionInfoSET7__IY_d__B_FD4 =
     }
 };
 
-// SET 0, (IX+d), C  -  DD, CB, d, C1
+// SET 0, (IX+d), C   -  SET0__IX_d__C_DD4  -  DD, CB, d, C1
 InstructionInfo instructionInfoSET0__IX_d__C_DD4 =
 {
     6,
@@ -18154,7 +18154,7 @@ InstructionInfo instructionInfoSET0__IX_d__C_DD4 =
     }
 };
 
-// SET 1, (IX+d), C  -  DD, CB, d, C9
+// SET 1, (IX+d), C   -  SET1__IX_d__C_DD4  -  DD, CB, d, C9
 InstructionInfo instructionInfoSET1__IX_d__C_DD4 =
 {
     6,
@@ -18173,7 +18173,7 @@ InstructionInfo instructionInfoSET1__IX_d__C_DD4 =
     }
 };
 
-// SET 1, (IY+d), C  -  FD, CB, d, C9
+// SET 1, (IY+d), C   -  SET1__IY_d__C_FD4  -  FD, CB, d, C9
 InstructionInfo instructionInfoSET1__IY_d__C_FD4 =
 {
     6,
@@ -18192,7 +18192,7 @@ InstructionInfo instructionInfoSET1__IY_d__C_FD4 =
     }
 };
 
-// SET 2, (IX+d), C  -  DD, CB, d, D1
+// SET 2, (IX+d), C   -  SET2__IX_d__C_DD4  -  DD, CB, d, D1
 InstructionInfo instructionInfoSET2__IX_d__C_DD4 =
 {
     6,
@@ -18211,7 +18211,7 @@ InstructionInfo instructionInfoSET2__IX_d__C_DD4 =
     }
 };
 
-// SET 2, (IY+d), C  -  FD, CB, d, D1
+// SET 2, (IY+d), C   -  SET2__IY_d__C_FD4  -  FD, CB, d, D1
 InstructionInfo instructionInfoSET2__IY_d__C_FD4 =
 {
     6,
@@ -18230,7 +18230,7 @@ InstructionInfo instructionInfoSET2__IY_d__C_FD4 =
     }
 };
 
-// SET 3, (IX+d), C  -  DD, CB, d, D9
+// SET 3, (IX+d), C   -  SET3__IX_d__C_DD4  -  DD, CB, d, D9
 InstructionInfo instructionInfoSET3__IX_d__C_DD4 =
 {
     6,
@@ -18249,7 +18249,7 @@ InstructionInfo instructionInfoSET3__IX_d__C_DD4 =
     }
 };
 
-// SET 3, (IY+d), C  -  FD, CB, d, D9
+// SET 3, (IY+d), C   -  SET3__IY_d__C_FD4  -  FD, CB, d, D9
 InstructionInfo instructionInfoSET3__IY_d__C_FD4 =
 {
     6,
@@ -18268,7 +18268,7 @@ InstructionInfo instructionInfoSET3__IY_d__C_FD4 =
     }
 };
 
-// SET 4, (IX+d), C  -  DD, CB, d, E1
+// SET 4, (IX+d), C   -  SET4__IX_d__C_DD4  -  DD, CB, d, E1
 InstructionInfo instructionInfoSET4__IX_d__C_DD4 =
 {
     6,
@@ -18287,7 +18287,7 @@ InstructionInfo instructionInfoSET4__IX_d__C_DD4 =
     }
 };
 
-// SET 4, (IY+d), C  -  FD, CB, d, E1
+// SET 4, (IY+d), C   -  SET4__IY_d__C_FD4  -  FD, CB, d, E1
 InstructionInfo instructionInfoSET4__IY_d__C_FD4 =
 {
     6,
@@ -18306,7 +18306,7 @@ InstructionInfo instructionInfoSET4__IY_d__C_FD4 =
     }
 };
 
-// SET 5, (IX+d), C  -  DD, CB, d, E9
+// SET 5, (IX+d), C   -  SET5__IX_d__C_DD4  -  DD, CB, d, E9
 InstructionInfo instructionInfoSET5__IX_d__C_DD4 =
 {
     6,
@@ -18325,7 +18325,7 @@ InstructionInfo instructionInfoSET5__IX_d__C_DD4 =
     }
 };
 
-// SET 5, (IY+d), C  -  FD, CB, d, E9
+// SET 5, (IY+d), C   -  SET5__IY_d__C_FD4  -  FD, CB, d, E9
 InstructionInfo instructionInfoSET5__IY_d__C_FD4 =
 {
     6,
@@ -18344,7 +18344,7 @@ InstructionInfo instructionInfoSET5__IY_d__C_FD4 =
     }
 };
 
-// SET 6, (IX+d), C  -  DD, CB, d, F1
+// SET 6, (IX+d), C   -  SET6__IX_d__C_DD4  -  DD, CB, d, F1
 InstructionInfo instructionInfoSET6__IX_d__C_DD4 =
 {
     6,
@@ -18363,7 +18363,7 @@ InstructionInfo instructionInfoSET6__IX_d__C_DD4 =
     }
 };
 
-// SET 6, (IY+d), C  -  FD, CB, d, F1
+// SET 6, (IY+d), C   -  SET6__IY_d__C_FD4  -  FD, CB, d, F1
 InstructionInfo instructionInfoSET6__IY_d__C_FD4 =
 {
     6,
@@ -18382,7 +18382,7 @@ InstructionInfo instructionInfoSET6__IY_d__C_FD4 =
     }
 };
 
-// SET 7, (IX+d), C  -  DD, CB, d, F9
+// SET 7, (IX+d), C   -  SET7__IX_d__C_DD4  -  DD, CB, d, F9
 InstructionInfo instructionInfoSET7__IX_d__C_DD4 =
 {
     6,
@@ -18401,7 +18401,7 @@ InstructionInfo instructionInfoSET7__IX_d__C_DD4 =
     }
 };
 
-// SET 7, (IY+d), C  -  FD, CB, d, F9
+// SET 7, (IY+d), C   -  SET7__IY_d__C_FD4  -  FD, CB, d, F9
 InstructionInfo instructionInfoSET7__IY_d__C_FD4 =
 {
     6,
@@ -18420,7 +18420,7 @@ InstructionInfo instructionInfoSET7__IY_d__C_FD4 =
     }
 };
 
-// SET 0, (IX+d), D  -  DD, CB, d, C2
+// SET 0, (IX+d), D   -  SET0__IX_d__D_DD4  -  DD, CB, d, C2
 InstructionInfo instructionInfoSET0__IX_d__D_DD4 =
 {
     6,
@@ -18439,7 +18439,7 @@ InstructionInfo instructionInfoSET0__IX_d__D_DD4 =
     }
 };
 
-// SET 1, (IX+d), D  -  DD, CB, d, CA
+// SET 1, (IX+d), D   -  SET1__IX_d__D_DD4  -  DD, CB, d, CA
 InstructionInfo instructionInfoSET1__IX_d__D_DD4 =
 {
     6,
@@ -18458,7 +18458,7 @@ InstructionInfo instructionInfoSET1__IX_d__D_DD4 =
     }
 };
 
-// SET 1, (IY+d), D  -  FD, CB, d, CA
+// SET 1, (IY+d), D   -  SET1__IY_d__D_FD4  -  FD, CB, d, CA
 InstructionInfo instructionInfoSET1__IY_d__D_FD4 =
 {
     6,
@@ -18477,7 +18477,7 @@ InstructionInfo instructionInfoSET1__IY_d__D_FD4 =
     }
 };
 
-// SET 2, (IX+d), D  -  DD, CB, d, D2
+// SET 2, (IX+d), D   -  SET2__IX_d__D_DD4  -  DD, CB, d, D2
 InstructionInfo instructionInfoSET2__IX_d__D_DD4 =
 {
     6,
@@ -18496,7 +18496,7 @@ InstructionInfo instructionInfoSET2__IX_d__D_DD4 =
     }
 };
 
-// SET 2, (IY+d), D  -  FD, CB, d, D2
+// SET 2, (IY+d), D   -  SET2__IY_d__D_FD4  -  FD, CB, d, D2
 InstructionInfo instructionInfoSET2__IY_d__D_FD4 =
 {
     6,
@@ -18515,7 +18515,7 @@ InstructionInfo instructionInfoSET2__IY_d__D_FD4 =
     }
 };
 
-// SET 3, (IX+d), D  -  DD, CB, d, DA
+// SET 3, (IX+d), D   -  SET3__IX_d__D_DD4  -  DD, CB, d, DA
 InstructionInfo instructionInfoSET3__IX_d__D_DD4 =
 {
     6,
@@ -18534,7 +18534,7 @@ InstructionInfo instructionInfoSET3__IX_d__D_DD4 =
     }
 };
 
-// SET 3, (IY+d), D  -  FD, CB, d, DA
+// SET 3, (IY+d), D   -  SET3__IY_d__D_FD4  -  FD, CB, d, DA
 InstructionInfo instructionInfoSET3__IY_d__D_FD4 =
 {
     6,
@@ -18553,7 +18553,7 @@ InstructionInfo instructionInfoSET3__IY_d__D_FD4 =
     }
 };
 
-// SET 4, (IX+d), D  -  DD, CB, d, E2
+// SET 4, (IX+d), D   -  SET4__IX_d__D_DD4  -  DD, CB, d, E2
 InstructionInfo instructionInfoSET4__IX_d__D_DD4 =
 {
     6,
@@ -18572,7 +18572,7 @@ InstructionInfo instructionInfoSET4__IX_d__D_DD4 =
     }
 };
 
-// SET 4, (IY+d), D  -  FD, CB, d, E2
+// SET 4, (IY+d), D   -  SET4__IY_d__D_FD4  -  FD, CB, d, E2
 InstructionInfo instructionInfoSET4__IY_d__D_FD4 =
 {
     6,
@@ -18591,7 +18591,7 @@ InstructionInfo instructionInfoSET4__IY_d__D_FD4 =
     }
 };
 
-// SET 5, (IX+d), D  -  DD, CB, d, EA
+// SET 5, (IX+d), D   -  SET5__IX_d__D_DD4  -  DD, CB, d, EA
 InstructionInfo instructionInfoSET5__IX_d__D_DD4 =
 {
     6,
@@ -18610,7 +18610,7 @@ InstructionInfo instructionInfoSET5__IX_d__D_DD4 =
     }
 };
 
-// SET 5, (IY+d), D  -  FD, CB, d, EA
+// SET 5, (IY+d), D   -  SET5__IY_d__D_FD4  -  FD, CB, d, EA
 InstructionInfo instructionInfoSET5__IY_d__D_FD4 =
 {
     6,
@@ -18629,7 +18629,7 @@ InstructionInfo instructionInfoSET5__IY_d__D_FD4 =
     }
 };
 
-// SET 6, (IX+d), D  -  DD, CB, d, F2
+// SET 6, (IX+d), D   -  SET6__IX_d__D_DD4  -  DD, CB, d, F2
 InstructionInfo instructionInfoSET6__IX_d__D_DD4 =
 {
     6,
@@ -18648,7 +18648,7 @@ InstructionInfo instructionInfoSET6__IX_d__D_DD4 =
     }
 };
 
-// SET 6, (IY+d), D  -  FD, CB, d, F2
+// SET 6, (IY+d), D   -  SET6__IY_d__D_FD4  -  FD, CB, d, F2
 InstructionInfo instructionInfoSET6__IY_d__D_FD4 =
 {
     6,
@@ -18667,7 +18667,7 @@ InstructionInfo instructionInfoSET6__IY_d__D_FD4 =
     }
 };
 
-// SET 7, (IX+d), D  -  DD, CB, d, FA
+// SET 7, (IX+d), D   -  SET7__IX_d__D_DD4  -  DD, CB, d, FA
 InstructionInfo instructionInfoSET7__IX_d__D_DD4 =
 {
     6,
@@ -18686,7 +18686,7 @@ InstructionInfo instructionInfoSET7__IX_d__D_DD4 =
     }
 };
 
-// SET 7, (IY+d), D  -  FD, CB, d, FA
+// SET 7, (IY+d), D   -  SET7__IY_d__D_FD4  -  FD, CB, d, FA
 InstructionInfo instructionInfoSET7__IY_d__D_FD4 =
 {
     6,
@@ -18705,7 +18705,7 @@ InstructionInfo instructionInfoSET7__IY_d__D_FD4 =
     }
 };
 
-// SET 0, (IX+d), E  -  DD, CB, d, C3
+// SET 0, (IX+d), E   -  SET0__IX_d__E_DD4  -  DD, CB, d, C3
 InstructionInfo instructionInfoSET0__IX_d__E_DD4 =
 {
     6,
@@ -18724,7 +18724,7 @@ InstructionInfo instructionInfoSET0__IX_d__E_DD4 =
     }
 };
 
-// SET 1, (IX+d), E  -  DD, CB, d, CB
+// SET 1, (IX+d), E   -  SET1__IX_d__E_DD4  -  DD, CB, d, CB
 InstructionInfo instructionInfoSET1__IX_d__E_DD4 =
 {
     6,
@@ -18743,7 +18743,7 @@ InstructionInfo instructionInfoSET1__IX_d__E_DD4 =
     }
 };
 
-// SET 1, (IY+d), E  -  FD, CB, d, CB
+// SET 1, (IY+d), E   -  SET1__IY_d__E_FD4  -  FD, CB, d, CB
 InstructionInfo instructionInfoSET1__IY_d__E_FD4 =
 {
     6,
@@ -18762,7 +18762,7 @@ InstructionInfo instructionInfoSET1__IY_d__E_FD4 =
     }
 };
 
-// SET 2, (IX+d), E  -  DD, CB, d, D3
+// SET 2, (IX+d), E   -  SET2__IX_d__E_DD4  -  DD, CB, d, D3
 InstructionInfo instructionInfoSET2__IX_d__E_DD4 =
 {
     6,
@@ -18781,7 +18781,7 @@ InstructionInfo instructionInfoSET2__IX_d__E_DD4 =
     }
 };
 
-// SET 2, (IY+d), E  -  FD, CB, d, D3
+// SET 2, (IY+d), E   -  SET2__IY_d__E_FD4  -  FD, CB, d, D3
 InstructionInfo instructionInfoSET2__IY_d__E_FD4 =
 {
     6,
@@ -18800,7 +18800,7 @@ InstructionInfo instructionInfoSET2__IY_d__E_FD4 =
     }
 };
 
-// SET 3, (IX+d), E  -  DD, CB, d, DB
+// SET 3, (IX+d), E   -  SET3__IX_d__E_DD4  -  DD, CB, d, DB
 InstructionInfo instructionInfoSET3__IX_d__E_DD4 =
 {
     6,
@@ -18819,7 +18819,7 @@ InstructionInfo instructionInfoSET3__IX_d__E_DD4 =
     }
 };
 
-// SET 3, (IY+d), E  -  FD, CB, d, DB
+// SET 3, (IY+d), E   -  SET3__IY_d__E_FD4  -  FD, CB, d, DB
 InstructionInfo instructionInfoSET3__IY_d__E_FD4 =
 {
     6,
@@ -18838,7 +18838,7 @@ InstructionInfo instructionInfoSET3__IY_d__E_FD4 =
     }
 };
 
-// SET 4, (IX+d), E  -  DD, CB, d, E3
+// SET 4, (IX+d), E   -  SET4__IX_d__E_DD4  -  DD, CB, d, E3
 InstructionInfo instructionInfoSET4__IX_d__E_DD4 =
 {
     6,
@@ -18857,7 +18857,7 @@ InstructionInfo instructionInfoSET4__IX_d__E_DD4 =
     }
 };
 
-// SET 4, (IY+d), E  -  FD, CB, d, E3
+// SET 4, (IY+d), E   -  SET4__IY_d__E_FD4  -  FD, CB, d, E3
 InstructionInfo instructionInfoSET4__IY_d__E_FD4 =
 {
     6,
@@ -18876,7 +18876,7 @@ InstructionInfo instructionInfoSET4__IY_d__E_FD4 =
     }
 };
 
-// SET 5, (IX+d), E  -  DD, CB, d, EB
+// SET 5, (IX+d), E   -  SET5__IX_d__E_DD4  -  DD, CB, d, EB
 InstructionInfo instructionInfoSET5__IX_d__E_DD4 =
 {
     6,
@@ -18895,7 +18895,7 @@ InstructionInfo instructionInfoSET5__IX_d__E_DD4 =
     }
 };
 
-// SET 5, (IY+d), E  -  FD, CB, d, EB
+// SET 5, (IY+d), E   -  SET5__IY_d__E_FD4  -  FD, CB, d, EB
 InstructionInfo instructionInfoSET5__IY_d__E_FD4 =
 {
     6,
@@ -18914,7 +18914,7 @@ InstructionInfo instructionInfoSET5__IY_d__E_FD4 =
     }
 };
 
-// SET 6, (IX+d), E  -  DD, CB, d, F3
+// SET 6, (IX+d), E   -  SET6__IX_d__E_DD4  -  DD, CB, d, F3
 InstructionInfo instructionInfoSET6__IX_d__E_DD4 =
 {
     6,
@@ -18933,7 +18933,7 @@ InstructionInfo instructionInfoSET6__IX_d__E_DD4 =
     }
 };
 
-// SET 6, (IY+d), E  -  FD, CB, d, F3
+// SET 6, (IY+d), E   -  SET6__IY_d__E_FD4  -  FD, CB, d, F3
 InstructionInfo instructionInfoSET6__IY_d__E_FD4 =
 {
     6,
@@ -18952,7 +18952,7 @@ InstructionInfo instructionInfoSET6__IY_d__E_FD4 =
     }
 };
 
-// SET 7, (IX+d), E  -  DD, CB, d, FB
+// SET 7, (IX+d), E   -  SET7__IX_d__E_DD4  -  DD, CB, d, FB
 InstructionInfo instructionInfoSET7__IX_d__E_DD4 =
 {
     6,
@@ -18971,7 +18971,7 @@ InstructionInfo instructionInfoSET7__IX_d__E_DD4 =
     }
 };
 
-// SET 7, (IY+d), E  -  FD, CB, d, FB
+// SET 7, (IY+d), E   -  SET7__IY_d__E_FD4  -  FD, CB, d, FB
 InstructionInfo instructionInfoSET7__IY_d__E_FD4 =
 {
     6,
@@ -18990,7 +18990,7 @@ InstructionInfo instructionInfoSET7__IY_d__E_FD4 =
     }
 };
 
-// SET 0, (IX+d), H  -  DD, CB, d, C4
+// SET 0, (IX+d), H   -  SET0__IX_d__H_DD4  -  DD, CB, d, C4
 InstructionInfo instructionInfoSET0__IX_d__H_DD4 =
 {
     6,
@@ -19009,7 +19009,7 @@ InstructionInfo instructionInfoSET0__IX_d__H_DD4 =
     }
 };
 
-// SET 1, (IX+d), H  -  DD, CB, d, CC
+// SET 1, (IX+d), H   -  SET1__IX_d__H_DD4  -  DD, CB, d, CC
 InstructionInfo instructionInfoSET1__IX_d__H_DD4 =
 {
     6,
@@ -19028,7 +19028,7 @@ InstructionInfo instructionInfoSET1__IX_d__H_DD4 =
     }
 };
 
-// SET 1, (IY+d), H  -  FD, CB, d, CC
+// SET 1, (IY+d), H   -  SET1__IY_d__H_FD4  -  FD, CB, d, CC
 InstructionInfo instructionInfoSET1__IY_d__H_FD4 =
 {
     6,
@@ -19047,7 +19047,7 @@ InstructionInfo instructionInfoSET1__IY_d__H_FD4 =
     }
 };
 
-// SET 2, (IX+d), H  -  DD, CB, d, D4
+// SET 2, (IX+d), H   -  SET2__IX_d__H_DD4  -  DD, CB, d, D4
 InstructionInfo instructionInfoSET2__IX_d__H_DD4 =
 {
     6,
@@ -19066,7 +19066,7 @@ InstructionInfo instructionInfoSET2__IX_d__H_DD4 =
     }
 };
 
-// SET 2, (IY+d), H  -  FD, CB, d, D4
+// SET 2, (IY+d), H   -  SET2__IY_d__H_FD4  -  FD, CB, d, D4
 InstructionInfo instructionInfoSET2__IY_d__H_FD4 =
 {
     6,
@@ -19085,7 +19085,7 @@ InstructionInfo instructionInfoSET2__IY_d__H_FD4 =
     }
 };
 
-// SET 3, (IX+d), H  -  DD, CB, d, DC
+// SET 3, (IX+d), H   -  SET3__IX_d__H_DD4  -  DD, CB, d, DC
 InstructionInfo instructionInfoSET3__IX_d__H_DD4 =
 {
     6,
@@ -19104,7 +19104,7 @@ InstructionInfo instructionInfoSET3__IX_d__H_DD4 =
     }
 };
 
-// SET 3, (IY+d), H  -  FD, CB, d, DC
+// SET 3, (IY+d), H   -  SET3__IY_d__H_FD4  -  FD, CB, d, DC
 InstructionInfo instructionInfoSET3__IY_d__H_FD4 =
 {
     6,
@@ -19123,7 +19123,7 @@ InstructionInfo instructionInfoSET3__IY_d__H_FD4 =
     }
 };
 
-// SET 4, (IX+d), H  -  DD, CB, d, E4
+// SET 4, (IX+d), H   -  SET4__IX_d__H_DD4  -  DD, CB, d, E4
 InstructionInfo instructionInfoSET4__IX_d__H_DD4 =
 {
     6,
@@ -19142,7 +19142,7 @@ InstructionInfo instructionInfoSET4__IX_d__H_DD4 =
     }
 };
 
-// SET 4, (IY+d), H  -  FD, CB, d, E4
+// SET 4, (IY+d), H   -  SET4__IY_d__H_FD4  -  FD, CB, d, E4
 InstructionInfo instructionInfoSET4__IY_d__H_FD4 =
 {
     6,
@@ -19161,7 +19161,7 @@ InstructionInfo instructionInfoSET4__IY_d__H_FD4 =
     }
 };
 
-// SET 5, (IX+d), H  -  DD, CB, d, EC
+// SET 5, (IX+d), H   -  SET5__IX_d__H_DD4  -  DD, CB, d, EC
 InstructionInfo instructionInfoSET5__IX_d__H_DD4 =
 {
     6,
@@ -19180,7 +19180,7 @@ InstructionInfo instructionInfoSET5__IX_d__H_DD4 =
     }
 };
 
-// SET 5, (IY+d), H  -  FD, CB, d, EC
+// SET 5, (IY+d), H   -  SET5__IY_d__H_FD4  -  FD, CB, d, EC
 InstructionInfo instructionInfoSET5__IY_d__H_FD4 =
 {
     6,
@@ -19199,7 +19199,7 @@ InstructionInfo instructionInfoSET5__IY_d__H_FD4 =
     }
 };
 
-// SET 6, (IX+d), H  -  DD, CB, d, F4
+// SET 6, (IX+d), H   -  SET6__IX_d__H_DD4  -  DD, CB, d, F4
 InstructionInfo instructionInfoSET6__IX_d__H_DD4 =
 {
     6,
@@ -19218,7 +19218,7 @@ InstructionInfo instructionInfoSET6__IX_d__H_DD4 =
     }
 };
 
-// SET 6, (IY+d), H  -  FD, CB, d, F4
+// SET 6, (IY+d), H   -  SET6__IY_d__H_FD4  -  FD, CB, d, F4
 InstructionInfo instructionInfoSET6__IY_d__H_FD4 =
 {
     6,
@@ -19237,7 +19237,7 @@ InstructionInfo instructionInfoSET6__IY_d__H_FD4 =
     }
 };
 
-// SET 7, (IX+d), H  -  DD, CB, d, FC
+// SET 7, (IX+d), H   -  SET7__IX_d__H_DD4  -  DD, CB, d, FC
 InstructionInfo instructionInfoSET7__IX_d__H_DD4 =
 {
     6,
@@ -19256,7 +19256,7 @@ InstructionInfo instructionInfoSET7__IX_d__H_DD4 =
     }
 };
 
-// SET 7, (IY+d), H  -  FD, CB, d, FC
+// SET 7, (IY+d), H   -  SET7__IY_d__H_FD4  -  FD, CB, d, FC
 InstructionInfo instructionInfoSET7__IY_d__H_FD4 =
 {
     6,
@@ -19275,7 +19275,7 @@ InstructionInfo instructionInfoSET7__IY_d__H_FD4 =
     }
 };
 
-// SET 0, (IX+d), L  -  DD, CB, d, C5
+// SET 0, (IX+d), L   -  SET0__IX_d__L_DD4  -  DD, CB, d, C5
 InstructionInfo instructionInfoSET0__IX_d__L_DD4 =
 {
     6,
@@ -19294,7 +19294,7 @@ InstructionInfo instructionInfoSET0__IX_d__L_DD4 =
     }
 };
 
-// SET 1, (IX+d), L  -  DD, CB, d, CD
+// SET 1, (IX+d), L   -  SET1__IX_d__L_DD4  -  DD, CB, d, CD
 InstructionInfo instructionInfoSET1__IX_d__L_DD4 =
 {
     6,
@@ -19313,7 +19313,7 @@ InstructionInfo instructionInfoSET1__IX_d__L_DD4 =
     }
 };
 
-// SET 1, (IY+d), L  -  FD, CB, d, CD
+// SET 1, (IY+d), L   -  SET1__IY_d__L_FD4  -  FD, CB, d, CD
 InstructionInfo instructionInfoSET1__IY_d__L_FD4 =
 {
     6,
@@ -19332,7 +19332,7 @@ InstructionInfo instructionInfoSET1__IY_d__L_FD4 =
     }
 };
 
-// SET 2, (IX+d), L  -  DD, CB, d, D5
+// SET 2, (IX+d), L   -  SET2__IX_d__L_DD4  -  DD, CB, d, D5
 InstructionInfo instructionInfoSET2__IX_d__L_DD4 =
 {
     6,
@@ -19351,7 +19351,7 @@ InstructionInfo instructionInfoSET2__IX_d__L_DD4 =
     }
 };
 
-// SET 2, (IY+d), L  -  FD, CB, d, D5
+// SET 2, (IY+d), L   -  SET2__IY_d__L_FD4  -  FD, CB, d, D5
 InstructionInfo instructionInfoSET2__IY_d__L_FD4 =
 {
     6,
@@ -19370,7 +19370,7 @@ InstructionInfo instructionInfoSET2__IY_d__L_FD4 =
     }
 };
 
-// SET 3, (IX+d), L  -  DD, CB, d, DD
+// SET 3, (IX+d), L   -  SET3__IX_d__L_DD4  -  DD, CB, d, DD
 InstructionInfo instructionInfoSET3__IX_d__L_DD4 =
 {
     6,
@@ -19389,7 +19389,7 @@ InstructionInfo instructionInfoSET3__IX_d__L_DD4 =
     }
 };
 
-// SET 3, (IY+d), L  -  FD, CB, d, DD
+// SET 3, (IY+d), L   -  SET3__IY_d__L_FD4  -  FD, CB, d, DD
 InstructionInfo instructionInfoSET3__IY_d__L_FD4 =
 {
     6,
@@ -19408,7 +19408,7 @@ InstructionInfo instructionInfoSET3__IY_d__L_FD4 =
     }
 };
 
-// SET 4, (IX+d), L  -  DD, CB, d, E5
+// SET 4, (IX+d), L   -  SET4__IX_d__L_DD4  -  DD, CB, d, E5
 InstructionInfo instructionInfoSET4__IX_d__L_DD4 =
 {
     6,
@@ -19427,7 +19427,7 @@ InstructionInfo instructionInfoSET4__IX_d__L_DD4 =
     }
 };
 
-// SET 4, (IY+d), L  -  FD, CB, d, E5
+// SET 4, (IY+d), L   -  SET4__IY_d__L_FD4  -  FD, CB, d, E5
 InstructionInfo instructionInfoSET4__IY_d__L_FD4 =
 {
     6,
@@ -19446,7 +19446,7 @@ InstructionInfo instructionInfoSET4__IY_d__L_FD4 =
     }
 };
 
-// SET 5, (IX+d), L  -  DD, CB, d, ED
+// SET 5, (IX+d), L   -  SET5__IX_d__L_DD4  -  DD, CB, d, ED
 InstructionInfo instructionInfoSET5__IX_d__L_DD4 =
 {
     6,
@@ -19465,7 +19465,7 @@ InstructionInfo instructionInfoSET5__IX_d__L_DD4 =
     }
 };
 
-// SET 5, (IY+d), L  -  FD, CB, d, ED
+// SET 5, (IY+d), L   -  SET5__IY_d__L_FD4  -  FD, CB, d, ED
 InstructionInfo instructionInfoSET5__IY_d__L_FD4 =
 {
     6,
@@ -19484,7 +19484,7 @@ InstructionInfo instructionInfoSET5__IY_d__L_FD4 =
     }
 };
 
-// SET 6, (IX+d), L  -  DD, CB, d, F5
+// SET 6, (IX+d), L   -  SET6__IX_d__L_DD4  -  DD, CB, d, F5
 InstructionInfo instructionInfoSET6__IX_d__L_DD4 =
 {
     6,
@@ -19503,7 +19503,7 @@ InstructionInfo instructionInfoSET6__IX_d__L_DD4 =
     }
 };
 
-// SET 6, (IY+d), L  -  FD, CB, d, F5
+// SET 6, (IY+d), L   -  SET6__IY_d__L_FD4  -  FD, CB, d, F5
 InstructionInfo instructionInfoSET6__IY_d__L_FD4 =
 {
     6,
@@ -19522,7 +19522,7 @@ InstructionInfo instructionInfoSET6__IY_d__L_FD4 =
     }
 };
 
-// SET 7, (IX+d), L  -  DD, CB, d, FD
+// SET 7, (IX+d), L   -  SET7__IX_d__L_DD4  -  DD, CB, d, FD
 InstructionInfo instructionInfoSET7__IX_d__L_DD4 =
 {
     6,
@@ -19541,7 +19541,7 @@ InstructionInfo instructionInfoSET7__IX_d__L_DD4 =
     }
 };
 
-// SET 7, (IY+d), L  -  FD, CB, d, FD
+// SET 7, (IY+d), L   -  SET7__IY_d__L_FD4  -  FD, CB, d, FD
 InstructionInfo instructionInfoSET7__IY_d__L_FD4 =
 {
     6,
@@ -19560,7 +19560,7 @@ InstructionInfo instructionInfoSET7__IY_d__L_FD4 =
     }
 };
 
-// RES 0, A  -  CB, 87
+// RES 0, A   -  RES0_A_CB2  -  CB, 87
 InstructionInfo instructionInfoRES0_A_CB2 =
 {
     2,
@@ -19579,7 +19579,7 @@ InstructionInfo instructionInfoRES0_A_CB2 =
     }
 };
 
-// RES 1, A  -  CB, 8F
+// RES 1, A   -  RES1_A_CB2  -  CB, 8F
 InstructionInfo instructionInfoRES1_A_CB2 =
 {
     2,
@@ -19598,7 +19598,7 @@ InstructionInfo instructionInfoRES1_A_CB2 =
     }
 };
 
-// RES 2, A  -  CB, 97
+// RES 2, A   -  RES2_A_CB2  -  CB, 97
 InstructionInfo instructionInfoRES2_A_CB2 =
 {
     2,
@@ -19617,7 +19617,7 @@ InstructionInfo instructionInfoRES2_A_CB2 =
     }
 };
 
-// RES 3, A  -  CB, 9F
+// RES 3, A   -  RES3_A_CB2  -  CB, 9F
 InstructionInfo instructionInfoRES3_A_CB2 =
 {
     2,
@@ -19636,7 +19636,7 @@ InstructionInfo instructionInfoRES3_A_CB2 =
     }
 };
 
-// RES 4, A  -  CB, A7
+// RES 4, A   -  RES4_A_CB2  -  CB, A7
 InstructionInfo instructionInfoRES4_A_CB2 =
 {
     2,
@@ -19655,7 +19655,7 @@ InstructionInfo instructionInfoRES4_A_CB2 =
     }
 };
 
-// RES 5, A  -  CB, AF
+// RES 5, A   -  RES5_A_CB2  -  CB, AF
 InstructionInfo instructionInfoRES5_A_CB2 =
 {
     2,
@@ -19674,7 +19674,7 @@ InstructionInfo instructionInfoRES5_A_CB2 =
     }
 };
 
-// RES 6, A  -  CB, B7
+// RES 6, A   -  RES6_A_CB2  -  CB, B7
 InstructionInfo instructionInfoRES6_A_CB2 =
 {
     2,
@@ -19693,7 +19693,7 @@ InstructionInfo instructionInfoRES6_A_CB2 =
     }
 };
 
-// RES 7, A  -  CB, BF
+// RES 7, A   -  RES7_A_CB2  -  CB, BF
 InstructionInfo instructionInfoRES7_A_CB2 =
 {
     2,
@@ -19712,7 +19712,7 @@ InstructionInfo instructionInfoRES7_A_CB2 =
     }
 };
 
-// RES 0, B  -  CB, 80
+// RES 0, B   -  RES0_B_CB2  -  CB, 80
 InstructionInfo instructionInfoRES0_B_CB2 =
 {
     2,
@@ -19731,7 +19731,7 @@ InstructionInfo instructionInfoRES0_B_CB2 =
     }
 };
 
-// RES 1, B  -  CB, 88
+// RES 1, B   -  RES1_B_CB2  -  CB, 88
 InstructionInfo instructionInfoRES1_B_CB2 =
 {
     2,
@@ -19750,7 +19750,7 @@ InstructionInfo instructionInfoRES1_B_CB2 =
     }
 };
 
-// RES 2, B  -  CB, 90
+// RES 2, B   -  RES2_B_CB2  -  CB, 90
 InstructionInfo instructionInfoRES2_B_CB2 =
 {
     2,
@@ -19769,7 +19769,7 @@ InstructionInfo instructionInfoRES2_B_CB2 =
     }
 };
 
-// RES 3, B  -  CB, 98
+// RES 3, B   -  RES3_B_CB2  -  CB, 98
 InstructionInfo instructionInfoRES3_B_CB2 =
 {
     2,
@@ -19788,7 +19788,7 @@ InstructionInfo instructionInfoRES3_B_CB2 =
     }
 };
 
-// RES 4, B  -  CB, A0
+// RES 4, B   -  RES4_B_CB2  -  CB, A0
 InstructionInfo instructionInfoRES4_B_CB2 =
 {
     2,
@@ -19807,7 +19807,7 @@ InstructionInfo instructionInfoRES4_B_CB2 =
     }
 };
 
-// RES 5, B  -  CB, A8
+// RES 5, B   -  RES5_B_CB2  -  CB, A8
 InstructionInfo instructionInfoRES5_B_CB2 =
 {
     2,
@@ -19826,7 +19826,7 @@ InstructionInfo instructionInfoRES5_B_CB2 =
     }
 };
 
-// RES 6, B  -  CB, B0
+// RES 6, B   -  RES6_B_CB2  -  CB, B0
 InstructionInfo instructionInfoRES6_B_CB2 =
 {
     2,
@@ -19845,7 +19845,7 @@ InstructionInfo instructionInfoRES6_B_CB2 =
     }
 };
 
-// RES 7, B  -  CB, B8
+// RES 7, B   -  RES7_B_CB2  -  CB, B8
 InstructionInfo instructionInfoRES7_B_CB2 =
 {
     2,
@@ -19864,7 +19864,7 @@ InstructionInfo instructionInfoRES7_B_CB2 =
     }
 };
 
-// RES 0, C  -  CB, 81
+// RES 0, C   -  RES0_C_CB2  -  CB, 81
 InstructionInfo instructionInfoRES0_C_CB2 =
 {
     2,
@@ -19883,7 +19883,7 @@ InstructionInfo instructionInfoRES0_C_CB2 =
     }
 };
 
-// RES 1, C  -  CB, 89
+// RES 1, C   -  RES1_C_CB2  -  CB, 89
 InstructionInfo instructionInfoRES1_C_CB2 =
 {
     2,
@@ -19902,7 +19902,7 @@ InstructionInfo instructionInfoRES1_C_CB2 =
     }
 };
 
-// RES 2, C  -  CB, 91
+// RES 2, C   -  RES2_C_CB2  -  CB, 91
 InstructionInfo instructionInfoRES2_C_CB2 =
 {
     2,
@@ -19921,7 +19921,7 @@ InstructionInfo instructionInfoRES2_C_CB2 =
     }
 };
 
-// RES 3, C  -  CB, 99
+// RES 3, C   -  RES3_C_CB2  -  CB, 99
 InstructionInfo instructionInfoRES3_C_CB2 =
 {
     2,
@@ -19940,7 +19940,7 @@ InstructionInfo instructionInfoRES3_C_CB2 =
     }
 };
 
-// RES 4, C  -  CB, A1
+// RES 4, C   -  RES4_C_CB2  -  CB, A1
 InstructionInfo instructionInfoRES4_C_CB2 =
 {
     2,
@@ -19959,7 +19959,7 @@ InstructionInfo instructionInfoRES4_C_CB2 =
     }
 };
 
-// RES 5, C  -  CB, A9
+// RES 5, C   -  RES5_C_CB2  -  CB, A9
 InstructionInfo instructionInfoRES5_C_CB2 =
 {
     2,
@@ -19978,7 +19978,7 @@ InstructionInfo instructionInfoRES5_C_CB2 =
     }
 };
 
-// RES 6, C  -  CB, B1
+// RES 6, C   -  RES6_C_CB2  -  CB, B1
 InstructionInfo instructionInfoRES6_C_CB2 =
 {
     2,
@@ -19997,7 +19997,7 @@ InstructionInfo instructionInfoRES6_C_CB2 =
     }
 };
 
-// RES 7, C  -  CB, B9
+// RES 7, C   -  RES7_C_CB2  -  CB, B9
 InstructionInfo instructionInfoRES7_C_CB2 =
 {
     2,
@@ -20016,7 +20016,7 @@ InstructionInfo instructionInfoRES7_C_CB2 =
     }
 };
 
-// RES 0, D  -  CB, 82
+// RES 0, D   -  RES0_D_CB2  -  CB, 82
 InstructionInfo instructionInfoRES0_D_CB2 =
 {
     2,
@@ -20035,7 +20035,7 @@ InstructionInfo instructionInfoRES0_D_CB2 =
     }
 };
 
-// RES 1, D  -  CB, 8A
+// RES 1, D   -  RES1_D_CB2  -  CB, 8A
 InstructionInfo instructionInfoRES1_D_CB2 =
 {
     2,
@@ -20054,7 +20054,7 @@ InstructionInfo instructionInfoRES1_D_CB2 =
     }
 };
 
-// RES 2, D  -  CB, 92
+// RES 2, D   -  RES2_D_CB2  -  CB, 92
 InstructionInfo instructionInfoRES2_D_CB2 =
 {
     2,
@@ -20073,7 +20073,7 @@ InstructionInfo instructionInfoRES2_D_CB2 =
     }
 };
 
-// RES 3, D  -  CB, 9A
+// RES 3, D   -  RES3_D_CB2  -  CB, 9A
 InstructionInfo instructionInfoRES3_D_CB2 =
 {
     2,
@@ -20092,7 +20092,7 @@ InstructionInfo instructionInfoRES3_D_CB2 =
     }
 };
 
-// RES 4, D  -  CB, A2
+// RES 4, D   -  RES4_D_CB2  -  CB, A2
 InstructionInfo instructionInfoRES4_D_CB2 =
 {
     2,
@@ -20111,7 +20111,7 @@ InstructionInfo instructionInfoRES4_D_CB2 =
     }
 };
 
-// RES 5, D  -  CB, AA
+// RES 5, D   -  RES5_D_CB2  -  CB, AA
 InstructionInfo instructionInfoRES5_D_CB2 =
 {
     2,
@@ -20130,7 +20130,7 @@ InstructionInfo instructionInfoRES5_D_CB2 =
     }
 };
 
-// RES 6, D  -  CB, B2
+// RES 6, D   -  RES6_D_CB2  -  CB, B2
 InstructionInfo instructionInfoRES6_D_CB2 =
 {
     2,
@@ -20149,7 +20149,7 @@ InstructionInfo instructionInfoRES6_D_CB2 =
     }
 };
 
-// RES 7, D  -  CB, BA
+// RES 7, D   -  RES7_D_CB2  -  CB, BA
 InstructionInfo instructionInfoRES7_D_CB2 =
 {
     2,
@@ -20168,7 +20168,7 @@ InstructionInfo instructionInfoRES7_D_CB2 =
     }
 };
 
-// RES 0, E  -  CB, 83
+// RES 0, E   -  RES0_E_CB2  -  CB, 83
 InstructionInfo instructionInfoRES0_E_CB2 =
 {
     2,
@@ -20187,7 +20187,7 @@ InstructionInfo instructionInfoRES0_E_CB2 =
     }
 };
 
-// RES 1, E  -  CB, 8B
+// RES 1, E   -  RES1_E_CB2  -  CB, 8B
 InstructionInfo instructionInfoRES1_E_CB2 =
 {
     2,
@@ -20206,7 +20206,7 @@ InstructionInfo instructionInfoRES1_E_CB2 =
     }
 };
 
-// RES 2, E  -  CB, 93
+// RES 2, E   -  RES2_E_CB2  -  CB, 93
 InstructionInfo instructionInfoRES2_E_CB2 =
 {
     2,
@@ -20225,7 +20225,7 @@ InstructionInfo instructionInfoRES2_E_CB2 =
     }
 };
 
-// RES 3, E  -  CB, 9B
+// RES 3, E   -  RES3_E_CB2  -  CB, 9B
 InstructionInfo instructionInfoRES3_E_CB2 =
 {
     2,
@@ -20244,7 +20244,7 @@ InstructionInfo instructionInfoRES3_E_CB2 =
     }
 };
 
-// RES 4, E  -  CB, A3
+// RES 4, E   -  RES4_E_CB2  -  CB, A3
 InstructionInfo instructionInfoRES4_E_CB2 =
 {
     2,
@@ -20263,7 +20263,7 @@ InstructionInfo instructionInfoRES4_E_CB2 =
     }
 };
 
-// RES 5, E  -  CB, AB
+// RES 5, E   -  RES5_E_CB2  -  CB, AB
 InstructionInfo instructionInfoRES5_E_CB2 =
 {
     2,
@@ -20282,7 +20282,7 @@ InstructionInfo instructionInfoRES5_E_CB2 =
     }
 };
 
-// RES 6, E  -  CB, B3
+// RES 6, E   -  RES6_E_CB2  -  CB, B3
 InstructionInfo instructionInfoRES6_E_CB2 =
 {
     2,
@@ -20301,7 +20301,7 @@ InstructionInfo instructionInfoRES6_E_CB2 =
     }
 };
 
-// RES 7, E  -  CB, BB
+// RES 7, E   -  RES7_E_CB2  -  CB, BB
 InstructionInfo instructionInfoRES7_E_CB2 =
 {
     2,
@@ -20320,7 +20320,7 @@ InstructionInfo instructionInfoRES7_E_CB2 =
     }
 };
 
-// RES 0, H  -  CB, 84
+// RES 0, H   -  RES0_H_CB2  -  CB, 84
 InstructionInfo instructionInfoRES0_H_CB2 =
 {
     2,
@@ -20339,7 +20339,7 @@ InstructionInfo instructionInfoRES0_H_CB2 =
     }
 };
 
-// RES 1, H  -  CB, 8C
+// RES 1, H   -  RES1_H_CB2  -  CB, 8C
 InstructionInfo instructionInfoRES1_H_CB2 =
 {
     2,
@@ -20358,7 +20358,7 @@ InstructionInfo instructionInfoRES1_H_CB2 =
     }
 };
 
-// RES 2, H  -  CB, 94
+// RES 2, H   -  RES2_H_CB2  -  CB, 94
 InstructionInfo instructionInfoRES2_H_CB2 =
 {
     2,
@@ -20377,7 +20377,7 @@ InstructionInfo instructionInfoRES2_H_CB2 =
     }
 };
 
-// RES 3, H  -  CB, 9C
+// RES 3, H   -  RES3_H_CB2  -  CB, 9C
 InstructionInfo instructionInfoRES3_H_CB2 =
 {
     2,
@@ -20396,7 +20396,7 @@ InstructionInfo instructionInfoRES3_H_CB2 =
     }
 };
 
-// RES 4, H  -  CB, A4
+// RES 4, H   -  RES4_H_CB2  -  CB, A4
 InstructionInfo instructionInfoRES4_H_CB2 =
 {
     2,
@@ -20415,7 +20415,7 @@ InstructionInfo instructionInfoRES4_H_CB2 =
     }
 };
 
-// RES 5, H  -  CB, AC
+// RES 5, H   -  RES5_H_CB2  -  CB, AC
 InstructionInfo instructionInfoRES5_H_CB2 =
 {
     2,
@@ -20434,7 +20434,7 @@ InstructionInfo instructionInfoRES5_H_CB2 =
     }
 };
 
-// RES 6, H  -  CB, B4
+// RES 6, H   -  RES6_H_CB2  -  CB, B4
 InstructionInfo instructionInfoRES6_H_CB2 =
 {
     2,
@@ -20453,7 +20453,7 @@ InstructionInfo instructionInfoRES6_H_CB2 =
     }
 };
 
-// RES 7, H  -  CB, BC
+// RES 7, H   -  RES7_H_CB2  -  CB, BC
 InstructionInfo instructionInfoRES7_H_CB2 =
 {
     2,
@@ -20472,7 +20472,7 @@ InstructionInfo instructionInfoRES7_H_CB2 =
     }
 };
 
-// RES 0, L  -  CB, 85
+// RES 0, L   -  RES0_L_CB2  -  CB, 85
 InstructionInfo instructionInfoRES0_L_CB2 =
 {
     2,
@@ -20491,7 +20491,7 @@ InstructionInfo instructionInfoRES0_L_CB2 =
     }
 };
 
-// RES 1, L  -  CB, 8D
+// RES 1, L   -  RES1_L_CB2  -  CB, 8D
 InstructionInfo instructionInfoRES1_L_CB2 =
 {
     2,
@@ -20510,7 +20510,7 @@ InstructionInfo instructionInfoRES1_L_CB2 =
     }
 };
 
-// RES 2, L  -  CB, 95
+// RES 2, L   -  RES2_L_CB2  -  CB, 95
 InstructionInfo instructionInfoRES2_L_CB2 =
 {
     2,
@@ -20529,7 +20529,7 @@ InstructionInfo instructionInfoRES2_L_CB2 =
     }
 };
 
-// RES 3, L  -  CB, 9D
+// RES 3, L   -  RES3_L_CB2  -  CB, 9D
 InstructionInfo instructionInfoRES3_L_CB2 =
 {
     2,
@@ -20548,7 +20548,7 @@ InstructionInfo instructionInfoRES3_L_CB2 =
     }
 };
 
-// RES 4, L  -  CB, A5
+// RES 4, L   -  RES4_L_CB2  -  CB, A5
 InstructionInfo instructionInfoRES4_L_CB2 =
 {
     2,
@@ -20567,7 +20567,7 @@ InstructionInfo instructionInfoRES4_L_CB2 =
     }
 };
 
-// RES 5, L  -  CB, AD
+// RES 5, L   -  RES5_L_CB2  -  CB, AD
 InstructionInfo instructionInfoRES5_L_CB2 =
 {
     2,
@@ -20586,7 +20586,7 @@ InstructionInfo instructionInfoRES5_L_CB2 =
     }
 };
 
-// RES 6, L  -  CB, B5
+// RES 6, L   -  RES6_L_CB2  -  CB, B5
 InstructionInfo instructionInfoRES6_L_CB2 =
 {
     2,
@@ -20605,7 +20605,7 @@ InstructionInfo instructionInfoRES6_L_CB2 =
     }
 };
 
-// RES 7, L  -  CB, BD
+// RES 7, L   -  RES7_L_CB2  -  CB, BD
 InstructionInfo instructionInfoRES7_L_CB2 =
 {
     2,
@@ -20624,7 +20624,7 @@ InstructionInfo instructionInfoRES7_L_CB2 =
     }
 };
 
-// RES 0, (HL)  -  CB, 86
+// RES 0, (HL)   -  RES0__HL__CB2  -  CB, 86
 InstructionInfo instructionInfoRES0__HL__CB2 =
 {
     4,
@@ -20643,7 +20643,7 @@ InstructionInfo instructionInfoRES0__HL__CB2 =
     }
 };
 
-// RES 1, (HL)  -  CB, 8E
+// RES 1, (HL)   -  RES1__HL__CB2  -  CB, 8E
 InstructionInfo instructionInfoRES1__HL__CB2 =
 {
     4,
@@ -20662,7 +20662,7 @@ InstructionInfo instructionInfoRES1__HL__CB2 =
     }
 };
 
-// RES 2, (HL)  -  CB, 96
+// RES 2, (HL)   -  RES2__HL__CB2  -  CB, 96
 InstructionInfo instructionInfoRES2__HL__CB2 =
 {
     4,
@@ -20681,7 +20681,7 @@ InstructionInfo instructionInfoRES2__HL__CB2 =
     }
 };
 
-// RES 3, (HL)  -  CB, 9E
+// RES 3, (HL)   -  RES3__HL__CB2  -  CB, 9E
 InstructionInfo instructionInfoRES3__HL__CB2 =
 {
     4,
@@ -20700,7 +20700,7 @@ InstructionInfo instructionInfoRES3__HL__CB2 =
     }
 };
 
-// RES 4, (HL)  -  CB, A6
+// RES 4, (HL)   -  RES4__HL__CB2  -  CB, A6
 InstructionInfo instructionInfoRES4__HL__CB2 =
 {
     4,
@@ -20719,7 +20719,7 @@ InstructionInfo instructionInfoRES4__HL__CB2 =
     }
 };
 
-// RES 5, (HL)  -  CB, AE
+// RES 5, (HL)   -  RES5__HL__CB2  -  CB, AE
 InstructionInfo instructionInfoRES5__HL__CB2 =
 {
     4,
@@ -20738,7 +20738,7 @@ InstructionInfo instructionInfoRES5__HL__CB2 =
     }
 };
 
-// RES 6, (HL)  -  CB, B6
+// RES 6, (HL)   -  RES6__HL__CB2  -  CB, B6
 InstructionInfo instructionInfoRES6__HL__CB2 =
 {
     4,
@@ -20757,7 +20757,7 @@ InstructionInfo instructionInfoRES6__HL__CB2 =
     }
 };
 
-// RES 7, (HL)  -  CB, BE
+// RES 7, (HL)   -  RES7__HL__CB2  -  CB, BE
 InstructionInfo instructionInfoRES7__HL__CB2 =
 {
     4,
@@ -20776,7 +20776,7 @@ InstructionInfo instructionInfoRES7__HL__CB2 =
     }
 };
 
-// RES 0, (IX+d)  -  DD, CB, d, 86
+// RES 0, (IX+d)   -  RES0__IX_d__DD4  -  DD, CB, d, 86
 InstructionInfo instructionInfoRES0__IX_d__DD4 =
 {
     6,
@@ -20795,7 +20795,7 @@ InstructionInfo instructionInfoRES0__IX_d__DD4 =
     }
 };
 
-// RES 0, (IY+d)  -  FD, CB, d, 86
+// RES 0, (IY+d)   -  RES0__IY_d__FD4  -  FD, CB, d, 86
 InstructionInfo instructionInfoRES0__IY_d__FD4 =
 {
     6,
@@ -20814,7 +20814,7 @@ InstructionInfo instructionInfoRES0__IY_d__FD4 =
     }
 };
 
-// RES 1, (IX+d)  -  DD, CB, d, 8E
+// RES 1, (IX+d)   -  RES1__IX_d__DD4  -  DD, CB, d, 8E
 InstructionInfo instructionInfoRES1__IX_d__DD4 =
 {
     6,
@@ -20833,7 +20833,7 @@ InstructionInfo instructionInfoRES1__IX_d__DD4 =
     }
 };
 
-// RES 1, (IY+d)  -  FD, CB, d, 8E
+// RES 1, (IY+d)   -  RES1__IY_d__FD4  -  FD, CB, d, 8E
 InstructionInfo instructionInfoRES1__IY_d__FD4 =
 {
     6,
@@ -20852,7 +20852,7 @@ InstructionInfo instructionInfoRES1__IY_d__FD4 =
     }
 };
 
-// RES 2, (IX+d)  -  DD, CB, d, 96
+// RES 2, (IX+d)   -  RES2__IX_d__DD4  -  DD, CB, d, 96
 InstructionInfo instructionInfoRES2__IX_d__DD4 =
 {
     6,
@@ -20871,7 +20871,7 @@ InstructionInfo instructionInfoRES2__IX_d__DD4 =
     }
 };
 
-// RES 2, (IY+d)  -  FD, CB, d, 96
+// RES 2, (IY+d)   -  RES2__IY_d__FD4  -  FD, CB, d, 96
 InstructionInfo instructionInfoRES2__IY_d__FD4 =
 {
     6,
@@ -20890,7 +20890,7 @@ InstructionInfo instructionInfoRES2__IY_d__FD4 =
     }
 };
 
-// RES 3, (IX+d)  -  DD, CB, d, 9E
+// RES 3, (IX+d)   -  RES3__IX_d__DD4  -  DD, CB, d, 9E
 InstructionInfo instructionInfoRES3__IX_d__DD4 =
 {
     6,
@@ -20909,7 +20909,7 @@ InstructionInfo instructionInfoRES3__IX_d__DD4 =
     }
 };
 
-// RES 3, (IY+d)  -  FD, CB, d, 9E
+// RES 3, (IY+d)   -  RES3__IY_d__FD4  -  FD, CB, d, 9E
 InstructionInfo instructionInfoRES3__IY_d__FD4 =
 {
     6,
@@ -20928,7 +20928,7 @@ InstructionInfo instructionInfoRES3__IY_d__FD4 =
     }
 };
 
-// RES 4, (IX+d)  -  DD, CB, d, A6
+// RES 4, (IX+d)   -  RES4__IX_d__DD4  -  DD, CB, d, A6
 InstructionInfo instructionInfoRES4__IX_d__DD4 =
 {
     6,
@@ -20947,7 +20947,7 @@ InstructionInfo instructionInfoRES4__IX_d__DD4 =
     }
 };
 
-// RES 4, (IY+d)  -  FD, CB, d, A6
+// RES 4, (IY+d)   -  RES4__IY_d__FD4  -  FD, CB, d, A6
 InstructionInfo instructionInfoRES4__IY_d__FD4 =
 {
     6,
@@ -20966,7 +20966,7 @@ InstructionInfo instructionInfoRES4__IY_d__FD4 =
     }
 };
 
-// RES 5, (IX+d)  -  DD, CB, d, AE
+// RES 5, (IX+d)   -  RES5__IX_d__DD4  -  DD, CB, d, AE
 InstructionInfo instructionInfoRES5__IX_d__DD4 =
 {
     6,
@@ -20985,7 +20985,7 @@ InstructionInfo instructionInfoRES5__IX_d__DD4 =
     }
 };
 
-// RES 5, (IY+d)  -  FD, CB, d, AE
+// RES 5, (IY+d)   -  RES5__IY_d__FD4  -  FD, CB, d, AE
 InstructionInfo instructionInfoRES5__IY_d__FD4 =
 {
     6,
@@ -21004,7 +21004,7 @@ InstructionInfo instructionInfoRES5__IY_d__FD4 =
     }
 };
 
-// RES 6, (IX+d)  -  DD, CB, d, B6
+// RES 6, (IX+d)   -  RES6__IX_d__DD4  -  DD, CB, d, B6
 InstructionInfo instructionInfoRES6__IX_d__DD4 =
 {
     6,
@@ -21023,7 +21023,7 @@ InstructionInfo instructionInfoRES6__IX_d__DD4 =
     }
 };
 
-// RES 6, (IY+d)  -  FD, CB, d, B6
+// RES 6, (IY+d)   -  RES6__IY_d__FD4  -  FD, CB, d, B6
 InstructionInfo instructionInfoRES6__IY_d__FD4 =
 {
     6,
@@ -21042,7 +21042,7 @@ InstructionInfo instructionInfoRES6__IY_d__FD4 =
     }
 };
 
-// RES 7, (IX+d)  -  DD, CB, d, BE
+// RES 7, (IX+d)   -  RES7__IX_d__DD4  -  DD, CB, d, BE
 InstructionInfo instructionInfoRES7__IX_d__DD4 =
 {
     6,
@@ -21061,7 +21061,7 @@ InstructionInfo instructionInfoRES7__IX_d__DD4 =
     }
 };
 
-// RES 7, (IY+d)  -  FD, CB, d, BE
+// RES 7, (IY+d)   -  RES7__IY_d__FD4  -  FD, CB, d, BE
 InstructionInfo instructionInfoRES7__IY_d__FD4 =
 {
     6,
@@ -21080,7 +21080,7 @@ InstructionInfo instructionInfoRES7__IY_d__FD4 =
     }
 };
 
-// RES 0, (IX+d), A  -  DD, CB, d, 87
+// RES 0, (IX+d), A   -  RES0__IX_d__A_DD4  -  DD, CB, d, 87
 InstructionInfo instructionInfoRES0__IX_d__A_DD4 =
 {
     6,
@@ -21099,7 +21099,7 @@ InstructionInfo instructionInfoRES0__IX_d__A_DD4 =
     }
 };
 
-// RES 1, (IX+d), A  -  DD, CB, d, 8F
+// RES 1, (IX+d), A   -  RES1__IX_d__A_DD4  -  DD, CB, d, 8F
 InstructionInfo instructionInfoRES1__IX_d__A_DD4 =
 {
     6,
@@ -21118,7 +21118,7 @@ InstructionInfo instructionInfoRES1__IX_d__A_DD4 =
     }
 };
 
-// RES 1, (IY+d), A  -  FD, CB, d, 8F
+// RES 1, (IY+d), A   -  RES1__IY_d__A_FD4  -  FD, CB, d, 8F
 InstructionInfo instructionInfoRES1__IY_d__A_FD4 =
 {
     6,
@@ -21137,7 +21137,7 @@ InstructionInfo instructionInfoRES1__IY_d__A_FD4 =
     }
 };
 
-// RES 2, (IX+d), A  -  DD, CB, d, 97
+// RES 2, (IX+d), A   -  RES2__IX_d__A_DD4  -  DD, CB, d, 97
 InstructionInfo instructionInfoRES2__IX_d__A_DD4 =
 {
     6,
@@ -21156,7 +21156,7 @@ InstructionInfo instructionInfoRES2__IX_d__A_DD4 =
     }
 };
 
-// RES 2, (IY+d), A  -  FD, CB, d, 97
+// RES 2, (IY+d), A   -  RES2__IY_d__A_FD4  -  FD, CB, d, 97
 InstructionInfo instructionInfoRES2__IY_d__A_FD4 =
 {
     6,
@@ -21175,7 +21175,7 @@ InstructionInfo instructionInfoRES2__IY_d__A_FD4 =
     }
 };
 
-// RES 3, (IX+d), A  -  DD, CB, d, 9F
+// RES 3, (IX+d), A   -  RES3__IX_d__A_DD4  -  DD, CB, d, 9F
 InstructionInfo instructionInfoRES3__IX_d__A_DD4 =
 {
     6,
@@ -21194,7 +21194,7 @@ InstructionInfo instructionInfoRES3__IX_d__A_DD4 =
     }
 };
 
-// RES 3, (IY+d), A  -  FD, CB, d, 9F
+// RES 3, (IY+d), A   -  RES3__IY_d__A_FD4  -  FD, CB, d, 9F
 InstructionInfo instructionInfoRES3__IY_d__A_FD4 =
 {
     6,
@@ -21213,7 +21213,7 @@ InstructionInfo instructionInfoRES3__IY_d__A_FD4 =
     }
 };
 
-// RES 4, (IX+d), A  -  DD, CB, d, A7
+// RES 4, (IX+d), A   -  RES4__IX_d__A_DD4  -  DD, CB, d, A7
 InstructionInfo instructionInfoRES4__IX_d__A_DD4 =
 {
     6,
@@ -21232,7 +21232,7 @@ InstructionInfo instructionInfoRES4__IX_d__A_DD4 =
     }
 };
 
-// RES 4, (IY+d), A  -  FD, CB, d, A7
+// RES 4, (IY+d), A   -  RES4__IY_d__A_FD4  -  FD, CB, d, A7
 InstructionInfo instructionInfoRES4__IY_d__A_FD4 =
 {
     6,
@@ -21251,7 +21251,7 @@ InstructionInfo instructionInfoRES4__IY_d__A_FD4 =
     }
 };
 
-// RES 5, (IX+d), A  -  DD, CB, d, AF
+// RES 5, (IX+d), A   -  RES5__IX_d__A_DD4  -  DD, CB, d, AF
 InstructionInfo instructionInfoRES5__IX_d__A_DD4 =
 {
     6,
@@ -21270,7 +21270,7 @@ InstructionInfo instructionInfoRES5__IX_d__A_DD4 =
     }
 };
 
-// RES 5, (IY+d), A  -  FD, CB, d, AF
+// RES 5, (IY+d), A   -  RES5__IY_d__A_FD4  -  FD, CB, d, AF
 InstructionInfo instructionInfoRES5__IY_d__A_FD4 =
 {
     6,
@@ -21289,7 +21289,7 @@ InstructionInfo instructionInfoRES5__IY_d__A_FD4 =
     }
 };
 
-// RES 6, (IX+d), A  -  DD, CB, d, B7
+// RES 6, (IX+d), A   -  RES6__IX_d__A_DD4  -  DD, CB, d, B7
 InstructionInfo instructionInfoRES6__IX_d__A_DD4 =
 {
     6,
@@ -21308,7 +21308,7 @@ InstructionInfo instructionInfoRES6__IX_d__A_DD4 =
     }
 };
 
-// RES 6, (IY+d), A  -  FD, CB, d, B7
+// RES 6, (IY+d), A   -  RES6__IY_d__A_FD4  -  FD, CB, d, B7
 InstructionInfo instructionInfoRES6__IY_d__A_FD4 =
 {
     6,
@@ -21327,7 +21327,7 @@ InstructionInfo instructionInfoRES6__IY_d__A_FD4 =
     }
 };
 
-// RES 7, (IX+d), A  -  DD, CB, d, BF
+// RES 7, (IX+d), A   -  RES7__IX_d__A_DD4  -  DD, CB, d, BF
 InstructionInfo instructionInfoRES7__IX_d__A_DD4 =
 {
     6,
@@ -21346,7 +21346,7 @@ InstructionInfo instructionInfoRES7__IX_d__A_DD4 =
     }
 };
 
-// RES 7, (IY+d), A  -  FD, CB, d, BF
+// RES 7, (IY+d), A   -  RES7__IY_d__A_FD4  -  FD, CB, d, BF
 InstructionInfo instructionInfoRES7__IY_d__A_FD4 =
 {
     6,
@@ -21365,7 +21365,7 @@ InstructionInfo instructionInfoRES7__IY_d__A_FD4 =
     }
 };
 
-// RES 0, (IX+d), B  -  DD, CB, d, 80
+// RES 0, (IX+d), B   -  RES0__IX_d__B_DD4  -  DD, CB, d, 80
 InstructionInfo instructionInfoRES0__IX_d__B_DD4 =
 {
     6,
@@ -21384,7 +21384,7 @@ InstructionInfo instructionInfoRES0__IX_d__B_DD4 =
     }
 };
 
-// RES 1, (IX+d), B  -  DD, CB, d, 88
+// RES 1, (IX+d), B   -  RES1__IX_d__B_DD4  -  DD, CB, d, 88
 InstructionInfo instructionInfoRES1__IX_d__B_DD4 =
 {
     6,
@@ -21403,7 +21403,7 @@ InstructionInfo instructionInfoRES1__IX_d__B_DD4 =
     }
 };
 
-// RES 1, (IY+d), B  -  FD, CB, d, 88
+// RES 1, (IY+d), B   -  RES1__IY_d__B_FD4  -  FD, CB, d, 88
 InstructionInfo instructionInfoRES1__IY_d__B_FD4 =
 {
     6,
@@ -21422,7 +21422,7 @@ InstructionInfo instructionInfoRES1__IY_d__B_FD4 =
     }
 };
 
-// RES 2, (IX+d), B  -  DD, CB, d, 90
+// RES 2, (IX+d), B   -  RES2__IX_d__B_DD4  -  DD, CB, d, 90
 InstructionInfo instructionInfoRES2__IX_d__B_DD4 =
 {
     6,
@@ -21441,7 +21441,7 @@ InstructionInfo instructionInfoRES2__IX_d__B_DD4 =
     }
 };
 
-// RES 2, (IY+d), B  -  FD, CB, d, 90
+// RES 2, (IY+d), B   -  RES2__IY_d__B_FD4  -  FD, CB, d, 90
 InstructionInfo instructionInfoRES2__IY_d__B_FD4 =
 {
     6,
@@ -21460,7 +21460,7 @@ InstructionInfo instructionInfoRES2__IY_d__B_FD4 =
     }
 };
 
-// RES 3, (IX+d), B  -  DD, CB, d, 98
+// RES 3, (IX+d), B   -  RES3__IX_d__B_DD4  -  DD, CB, d, 98
 InstructionInfo instructionInfoRES3__IX_d__B_DD4 =
 {
     6,
@@ -21479,7 +21479,7 @@ InstructionInfo instructionInfoRES3__IX_d__B_DD4 =
     }
 };
 
-// RES 3, (IY+d), B  -  FD, CB, d, 98
+// RES 3, (IY+d), B   -  RES3__IY_d__B_FD4  -  FD, CB, d, 98
 InstructionInfo instructionInfoRES3__IY_d__B_FD4 =
 {
     6,
@@ -21498,7 +21498,7 @@ InstructionInfo instructionInfoRES3__IY_d__B_FD4 =
     }
 };
 
-// RES 4, (IX+d), B  -  DD, CB, d, A0
+// RES 4, (IX+d), B   -  RES4__IX_d__B_DD4  -  DD, CB, d, A0
 InstructionInfo instructionInfoRES4__IX_d__B_DD4 =
 {
     6,
@@ -21517,7 +21517,7 @@ InstructionInfo instructionInfoRES4__IX_d__B_DD4 =
     }
 };
 
-// RES 4, (IY+d), B  -  FD, CB, d, A0
+// RES 4, (IY+d), B   -  RES4__IY_d__B_FD4  -  FD, CB, d, A0
 InstructionInfo instructionInfoRES4__IY_d__B_FD4 =
 {
     6,
@@ -21536,7 +21536,7 @@ InstructionInfo instructionInfoRES4__IY_d__B_FD4 =
     }
 };
 
-// RES 5, (IX+d), B  -  DD, CB, d, A8
+// RES 5, (IX+d), B   -  RES5__IX_d__B_DD4  -  DD, CB, d, A8
 InstructionInfo instructionInfoRES5__IX_d__B_DD4 =
 {
     6,
@@ -21555,7 +21555,7 @@ InstructionInfo instructionInfoRES5__IX_d__B_DD4 =
     }
 };
 
-// RES 5, (IY+d), B  -  FD, CB, d, A8
+// RES 5, (IY+d), B   -  RES5__IY_d__B_FD4  -  FD, CB, d, A8
 InstructionInfo instructionInfoRES5__IY_d__B_FD4 =
 {
     6,
@@ -21574,7 +21574,7 @@ InstructionInfo instructionInfoRES5__IY_d__B_FD4 =
     }
 };
 
-// RES 6, (IX+d), B  -  DD, CB, d, B0
+// RES 6, (IX+d), B   -  RES6__IX_d__B_DD4  -  DD, CB, d, B0
 InstructionInfo instructionInfoRES6__IX_d__B_DD4 =
 {
     6,
@@ -21593,7 +21593,7 @@ InstructionInfo instructionInfoRES6__IX_d__B_DD4 =
     }
 };
 
-// RES 6, (IY+d), B  -  FD, CB, d, B0
+// RES 6, (IY+d), B   -  RES6__IY_d__B_FD4  -  FD, CB, d, B0
 InstructionInfo instructionInfoRES6__IY_d__B_FD4 =
 {
     6,
@@ -21612,7 +21612,7 @@ InstructionInfo instructionInfoRES6__IY_d__B_FD4 =
     }
 };
 
-// RES 7, (IX+d), B  -  DD, CB, d, B8
+// RES 7, (IX+d), B   -  RES7__IX_d__B_DD4  -  DD, CB, d, B8
 InstructionInfo instructionInfoRES7__IX_d__B_DD4 =
 {
     6,
@@ -21631,7 +21631,7 @@ InstructionInfo instructionInfoRES7__IX_d__B_DD4 =
     }
 };
 
-// RES 7, (IY+d), B  -  FD, CB, d, B8
+// RES 7, (IY+d), B   -  RES7__IY_d__B_FD4  -  FD, CB, d, B8
 InstructionInfo instructionInfoRES7__IY_d__B_FD4 =
 {
     6,
@@ -21650,7 +21650,7 @@ InstructionInfo instructionInfoRES7__IY_d__B_FD4 =
     }
 };
 
-// RES 0, (IX+d), C  -  DD, CB, d, 81
+// RES 0, (IX+d), C   -  RES0__IX_d__C_DD4  -  DD, CB, d, 81
 InstructionInfo instructionInfoRES0__IX_d__C_DD4 =
 {
     6,
@@ -21669,7 +21669,7 @@ InstructionInfo instructionInfoRES0__IX_d__C_DD4 =
     }
 };
 
-// RES 1, (IX+d), C  -  DD, CB, d, 89
+// RES 1, (IX+d), C   -  RES1__IX_d__C_DD4  -  DD, CB, d, 89
 InstructionInfo instructionInfoRES1__IX_d__C_DD4 =
 {
     6,
@@ -21688,7 +21688,7 @@ InstructionInfo instructionInfoRES1__IX_d__C_DD4 =
     }
 };
 
-// RES 1, (IY+d), C  -  FD, CB, d, 89
+// RES 1, (IY+d), C   -  RES1__IY_d__C_FD4  -  FD, CB, d, 89
 InstructionInfo instructionInfoRES1__IY_d__C_FD4 =
 {
     6,
@@ -21707,7 +21707,7 @@ InstructionInfo instructionInfoRES1__IY_d__C_FD4 =
     }
 };
 
-// RES 2, (IX+d), C  -  DD, CB, d, 91
+// RES 2, (IX+d), C   -  RES2__IX_d__C_DD4  -  DD, CB, d, 91
 InstructionInfo instructionInfoRES2__IX_d__C_DD4 =
 {
     6,
@@ -21726,7 +21726,7 @@ InstructionInfo instructionInfoRES2__IX_d__C_DD4 =
     }
 };
 
-// RES 2, (IY+d), C  -  FD, CB, d, 91
+// RES 2, (IY+d), C   -  RES2__IY_d__C_FD4  -  FD, CB, d, 91
 InstructionInfo instructionInfoRES2__IY_d__C_FD4 =
 {
     6,
@@ -21745,7 +21745,7 @@ InstructionInfo instructionInfoRES2__IY_d__C_FD4 =
     }
 };
 
-// RES 3, (IX+d), C  -  DD, CB, d, 99
+// RES 3, (IX+d), C   -  RES3__IX_d__C_DD4  -  DD, CB, d, 99
 InstructionInfo instructionInfoRES3__IX_d__C_DD4 =
 {
     6,
@@ -21764,7 +21764,7 @@ InstructionInfo instructionInfoRES3__IX_d__C_DD4 =
     }
 };
 
-// RES 3, (IY+d), C  -  FD, CB, d, 99
+// RES 3, (IY+d), C   -  RES3__IY_d__C_FD4  -  FD, CB, d, 99
 InstructionInfo instructionInfoRES3__IY_d__C_FD4 =
 {
     6,
@@ -21783,7 +21783,7 @@ InstructionInfo instructionInfoRES3__IY_d__C_FD4 =
     }
 };
 
-// RES 4, (IX+d), C  -  DD, CB, d, A1
+// RES 4, (IX+d), C   -  RES4__IX_d__C_DD4  -  DD, CB, d, A1
 InstructionInfo instructionInfoRES4__IX_d__C_DD4 =
 {
     6,
@@ -21802,7 +21802,7 @@ InstructionInfo instructionInfoRES4__IX_d__C_DD4 =
     }
 };
 
-// RES 4, (IY+d), C  -  FD, CB, d, A1
+// RES 4, (IY+d), C   -  RES4__IY_d__C_FD4  -  FD, CB, d, A1
 InstructionInfo instructionInfoRES4__IY_d__C_FD4 =
 {
     6,
@@ -21821,7 +21821,7 @@ InstructionInfo instructionInfoRES4__IY_d__C_FD4 =
     }
 };
 
-// RES 5, (IX+d), C  -  DD, CB, d, A9
+// RES 5, (IX+d), C   -  RES5__IX_d__C_DD4  -  DD, CB, d, A9
 InstructionInfo instructionInfoRES5__IX_d__C_DD4 =
 {
     6,
@@ -21840,7 +21840,7 @@ InstructionInfo instructionInfoRES5__IX_d__C_DD4 =
     }
 };
 
-// RES 5, (IY+d), C  -  FD, CB, d, A9
+// RES 5, (IY+d), C   -  RES5__IY_d__C_FD4  -  FD, CB, d, A9
 InstructionInfo instructionInfoRES5__IY_d__C_FD4 =
 {
     6,
@@ -21859,7 +21859,7 @@ InstructionInfo instructionInfoRES5__IY_d__C_FD4 =
     }
 };
 
-// RES 6, (IX+d), C  -  DD, CB, d, B1
+// RES 6, (IX+d), C   -  RES6__IX_d__C_DD4  -  DD, CB, d, B1
 InstructionInfo instructionInfoRES6__IX_d__C_DD4 =
 {
     6,
@@ -21878,7 +21878,7 @@ InstructionInfo instructionInfoRES6__IX_d__C_DD4 =
     }
 };
 
-// RES 6, (IY+d), C  -  FD, CB, d, B1
+// RES 6, (IY+d), C   -  RES6__IY_d__C_FD4  -  FD, CB, d, B1
 InstructionInfo instructionInfoRES6__IY_d__C_FD4 =
 {
     6,
@@ -21897,7 +21897,7 @@ InstructionInfo instructionInfoRES6__IY_d__C_FD4 =
     }
 };
 
-// RES 7, (IX+d), C  -  DD, CB, d, B9
+// RES 7, (IX+d), C   -  RES7__IX_d__C_DD4  -  DD, CB, d, B9
 InstructionInfo instructionInfoRES7__IX_d__C_DD4 =
 {
     6,
@@ -21916,7 +21916,7 @@ InstructionInfo instructionInfoRES7__IX_d__C_DD4 =
     }
 };
 
-// RES 7, (IY+d), C  -  FD, CB, d, B9
+// RES 7, (IY+d), C   -  RES7__IY_d__C_FD4  -  FD, CB, d, B9
 InstructionInfo instructionInfoRES7__IY_d__C_FD4 =
 {
     6,
@@ -21935,7 +21935,7 @@ InstructionInfo instructionInfoRES7__IY_d__C_FD4 =
     }
 };
 
-// RES 0, (IX+d), D  -  DD, CB, d, 82
+// RES 0, (IX+d), D   -  RES0__IX_d__D_DD4  -  DD, CB, d, 82
 InstructionInfo instructionInfoRES0__IX_d__D_DD4 =
 {
     6,
@@ -21954,7 +21954,7 @@ InstructionInfo instructionInfoRES0__IX_d__D_DD4 =
     }
 };
 
-// RES 1, (IX+d), D  -  DD, CB, d, 8A
+// RES 1, (IX+d), D   -  RES1__IX_d__D_DD4  -  DD, CB, d, 8A
 InstructionInfo instructionInfoRES1__IX_d__D_DD4 =
 {
     6,
@@ -21973,7 +21973,7 @@ InstructionInfo instructionInfoRES1__IX_d__D_DD4 =
     }
 };
 
-// RES 1, (IY+d), D  -  FD, CB, d, 8A
+// RES 1, (IY+d), D   -  RES1__IY_d__D_FD4  -  FD, CB, d, 8A
 InstructionInfo instructionInfoRES1__IY_d__D_FD4 =
 {
     6,
@@ -21992,7 +21992,7 @@ InstructionInfo instructionInfoRES1__IY_d__D_FD4 =
     }
 };
 
-// RES 2, (IX+d), D  -  DD, CB, d, 92
+// RES 2, (IX+d), D   -  RES2__IX_d__D_DD4  -  DD, CB, d, 92
 InstructionInfo instructionInfoRES2__IX_d__D_DD4 =
 {
     6,
@@ -22011,7 +22011,7 @@ InstructionInfo instructionInfoRES2__IX_d__D_DD4 =
     }
 };
 
-// RES 2, (IY+d), D  -  FD, CB, d, 92
+// RES 2, (IY+d), D   -  RES2__IY_d__D_FD4  -  FD, CB, d, 92
 InstructionInfo instructionInfoRES2__IY_d__D_FD4 =
 {
     6,
@@ -22030,7 +22030,7 @@ InstructionInfo instructionInfoRES2__IY_d__D_FD4 =
     }
 };
 
-// RES 3, (IX+d), D  -  DD, CB, d, 9A
+// RES 3, (IX+d), D   -  RES3__IX_d__D_DD4  -  DD, CB, d, 9A
 InstructionInfo instructionInfoRES3__IX_d__D_DD4 =
 {
     6,
@@ -22049,7 +22049,7 @@ InstructionInfo instructionInfoRES3__IX_d__D_DD4 =
     }
 };
 
-// RES 3, (IY+d), D  -  FD, CB, d, 9A
+// RES 3, (IY+d), D   -  RES3__IY_d__D_FD4  -  FD, CB, d, 9A
 InstructionInfo instructionInfoRES3__IY_d__D_FD4 =
 {
     6,
@@ -22068,7 +22068,7 @@ InstructionInfo instructionInfoRES3__IY_d__D_FD4 =
     }
 };
 
-// RES 4, (IX+d), D  -  DD, CB, d, A2
+// RES 4, (IX+d), D   -  RES4__IX_d__D_DD4  -  DD, CB, d, A2
 InstructionInfo instructionInfoRES4__IX_d__D_DD4 =
 {
     6,
@@ -22087,7 +22087,7 @@ InstructionInfo instructionInfoRES4__IX_d__D_DD4 =
     }
 };
 
-// RES 4, (IY+d), D  -  FD, CB, d, A2
+// RES 4, (IY+d), D   -  RES4__IY_d__D_FD4  -  FD, CB, d, A2
 InstructionInfo instructionInfoRES4__IY_d__D_FD4 =
 {
     6,
@@ -22106,7 +22106,7 @@ InstructionInfo instructionInfoRES4__IY_d__D_FD4 =
     }
 };
 
-// RES 5, (IX+d), D  -  DD, CB, d, AA
+// RES 5, (IX+d), D   -  RES5__IX_d__D_DD4  -  DD, CB, d, AA
 InstructionInfo instructionInfoRES5__IX_d__D_DD4 =
 {
     6,
@@ -22125,7 +22125,7 @@ InstructionInfo instructionInfoRES5__IX_d__D_DD4 =
     }
 };
 
-// RES 5, (IY+d), D  -  FD, CB, d, AA
+// RES 5, (IY+d), D   -  RES5__IY_d__D_FD4  -  FD, CB, d, AA
 InstructionInfo instructionInfoRES5__IY_d__D_FD4 =
 {
     6,
@@ -22144,7 +22144,7 @@ InstructionInfo instructionInfoRES5__IY_d__D_FD4 =
     }
 };
 
-// RES 6, (IX+d), D  -  DD, CB, d, B2
+// RES 6, (IX+d), D   -  RES6__IX_d__D_DD4  -  DD, CB, d, B2
 InstructionInfo instructionInfoRES6__IX_d__D_DD4 =
 {
     6,
@@ -22163,7 +22163,7 @@ InstructionInfo instructionInfoRES6__IX_d__D_DD4 =
     }
 };
 
-// RES 6, (IY+d), D  -  FD, CB, d, B2
+// RES 6, (IY+d), D   -  RES6__IY_d__D_FD4  -  FD, CB, d, B2
 InstructionInfo instructionInfoRES6__IY_d__D_FD4 =
 {
     6,
@@ -22182,7 +22182,7 @@ InstructionInfo instructionInfoRES6__IY_d__D_FD4 =
     }
 };
 
-// RES 7, (IX+d), D  -  DD, CB, d, BA
+// RES 7, (IX+d), D   -  RES7__IX_d__D_DD4  -  DD, CB, d, BA
 InstructionInfo instructionInfoRES7__IX_d__D_DD4 =
 {
     6,
@@ -22201,7 +22201,7 @@ InstructionInfo instructionInfoRES7__IX_d__D_DD4 =
     }
 };
 
-// RES 7, (IY+d), D  -  FD, CB, d, BA
+// RES 7, (IY+d), D   -  RES7__IY_d__D_FD4  -  FD, CB, d, BA
 InstructionInfo instructionInfoRES7__IY_d__D_FD4 =
 {
     6,
@@ -22220,7 +22220,7 @@ InstructionInfo instructionInfoRES7__IY_d__D_FD4 =
     }
 };
 
-// RES 0, (IX+d), E  -  DD, CB, d, 83
+// RES 0, (IX+d), E   -  RES0__IX_d__E_DD4  -  DD, CB, d, 83
 InstructionInfo instructionInfoRES0__IX_d__E_DD4 =
 {
     6,
@@ -22239,7 +22239,7 @@ InstructionInfo instructionInfoRES0__IX_d__E_DD4 =
     }
 };
 
-// RES 1, (IX+d), E  -  DD, CB, d, 8B
+// RES 1, (IX+d), E   -  RES1__IX_d__E_DD4  -  DD, CB, d, 8B
 InstructionInfo instructionInfoRES1__IX_d__E_DD4 =
 {
     6,
@@ -22258,7 +22258,7 @@ InstructionInfo instructionInfoRES1__IX_d__E_DD4 =
     }
 };
 
-// RES 1, (IY+d), E  -  FD, CB, d, 8B
+// RES 1, (IY+d), E   -  RES1__IY_d__E_FD4  -  FD, CB, d, 8B
 InstructionInfo instructionInfoRES1__IY_d__E_FD4 =
 {
     6,
@@ -22277,7 +22277,7 @@ InstructionInfo instructionInfoRES1__IY_d__E_FD4 =
     }
 };
 
-// RES 2, (IX+d), E  -  DD, CB, d, 93
+// RES 2, (IX+d), E   -  RES2__IX_d__E_DD4  -  DD, CB, d, 93
 InstructionInfo instructionInfoRES2__IX_d__E_DD4 =
 {
     6,
@@ -22296,7 +22296,7 @@ InstructionInfo instructionInfoRES2__IX_d__E_DD4 =
     }
 };
 
-// RES 2, (IY+d), E  -  FD, CB, d, 93
+// RES 2, (IY+d), E   -  RES2__IY_d__E_FD4  -  FD, CB, d, 93
 InstructionInfo instructionInfoRES2__IY_d__E_FD4 =
 {
     6,
@@ -22315,7 +22315,7 @@ InstructionInfo instructionInfoRES2__IY_d__E_FD4 =
     }
 };
 
-// RES 3, (IX+d), E  -  DD, CB, d, 9B
+// RES 3, (IX+d), E   -  RES3__IX_d__E_DD4  -  DD, CB, d, 9B
 InstructionInfo instructionInfoRES3__IX_d__E_DD4 =
 {
     6,
@@ -22334,7 +22334,7 @@ InstructionInfo instructionInfoRES3__IX_d__E_DD4 =
     }
 };
 
-// RES 3, (IY+d), E  -  FD, CB, d, 9B
+// RES 3, (IY+d), E   -  RES3__IY_d__E_FD4  -  FD, CB, d, 9B
 InstructionInfo instructionInfoRES3__IY_d__E_FD4 =
 {
     6,
@@ -22353,7 +22353,7 @@ InstructionInfo instructionInfoRES3__IY_d__E_FD4 =
     }
 };
 
-// RES 4, (IX+d), E  -  DD, CB, d, A3
+// RES 4, (IX+d), E   -  RES4__IX_d__E_DD4  -  DD, CB, d, A3
 InstructionInfo instructionInfoRES4__IX_d__E_DD4 =
 {
     6,
@@ -22372,7 +22372,7 @@ InstructionInfo instructionInfoRES4__IX_d__E_DD4 =
     }
 };
 
-// RES 4, (IY+d), E  -  FD, CB, d, A3
+// RES 4, (IY+d), E   -  RES4__IY_d__E_FD4  -  FD, CB, d, A3
 InstructionInfo instructionInfoRES4__IY_d__E_FD4 =
 {
     6,
@@ -22391,7 +22391,7 @@ InstructionInfo instructionInfoRES4__IY_d__E_FD4 =
     }
 };
 
-// RES 5, (IX+d), E  -  DD, CB, d, AB
+// RES 5, (IX+d), E   -  RES5__IX_d__E_DD4  -  DD, CB, d, AB
 InstructionInfo instructionInfoRES5__IX_d__E_DD4 =
 {
     6,
@@ -22410,7 +22410,7 @@ InstructionInfo instructionInfoRES5__IX_d__E_DD4 =
     }
 };
 
-// RES 5, (IY+d), E  -  FD, CB, d, AB
+// RES 5, (IY+d), E   -  RES5__IY_d__E_FD4  -  FD, CB, d, AB
 InstructionInfo instructionInfoRES5__IY_d__E_FD4 =
 {
     6,
@@ -22429,7 +22429,7 @@ InstructionInfo instructionInfoRES5__IY_d__E_FD4 =
     }
 };
 
-// RES 6, (IX+d), E  -  DD, CB, d, B3
+// RES 6, (IX+d), E   -  RES6__IX_d__E_DD4  -  DD, CB, d, B3
 InstructionInfo instructionInfoRES6__IX_d__E_DD4 =
 {
     6,
@@ -22448,7 +22448,7 @@ InstructionInfo instructionInfoRES6__IX_d__E_DD4 =
     }
 };
 
-// RES 6, (IY+d), E  -  FD, CB, d, B3
+// RES 6, (IY+d), E   -  RES6__IY_d__E_FD4  -  FD, CB, d, B3
 InstructionInfo instructionInfoRES6__IY_d__E_FD4 =
 {
     6,
@@ -22467,7 +22467,7 @@ InstructionInfo instructionInfoRES6__IY_d__E_FD4 =
     }
 };
 
-// RES 7, (IX+d), E  -  DD, CB, d, BB
+// RES 7, (IX+d), E   -  RES7__IX_d__E_DD4  -  DD, CB, d, BB
 InstructionInfo instructionInfoRES7__IX_d__E_DD4 =
 {
     6,
@@ -22486,7 +22486,7 @@ InstructionInfo instructionInfoRES7__IX_d__E_DD4 =
     }
 };
 
-// RES 7, (IY+d), E  -  FD, CB, d, BB
+// RES 7, (IY+d), E   -  RES7__IY_d__E_FD4  -  FD, CB, d, BB
 InstructionInfo instructionInfoRES7__IY_d__E_FD4 =
 {
     6,
@@ -22505,7 +22505,7 @@ InstructionInfo instructionInfoRES7__IY_d__E_FD4 =
     }
 };
 
-// RES 0, (IX+d), H  -  DD, CB, d, 84
+// RES 0, (IX+d), H   -  RES0__IX_d__H_DD4  -  DD, CB, d, 84
 InstructionInfo instructionInfoRES0__IX_d__H_DD4 =
 {
     6,
@@ -22524,7 +22524,7 @@ InstructionInfo instructionInfoRES0__IX_d__H_DD4 =
     }
 };
 
-// RES 1, (IX+d), H  -  DD, CB, d, 8C
+// RES 1, (IX+d), H   -  RES1__IX_d__H_DD4  -  DD, CB, d, 8C
 InstructionInfo instructionInfoRES1__IX_d__H_DD4 =
 {
     6,
@@ -22543,7 +22543,7 @@ InstructionInfo instructionInfoRES1__IX_d__H_DD4 =
     }
 };
 
-// RES 1, (IY+d), H  -  FD, CB, d, 8C
+// RES 1, (IY+d), H   -  RES1__IY_d__H_FD4  -  FD, CB, d, 8C
 InstructionInfo instructionInfoRES1__IY_d__H_FD4 =
 {
     6,
@@ -22562,7 +22562,7 @@ InstructionInfo instructionInfoRES1__IY_d__H_FD4 =
     }
 };
 
-// RES 2, (IX+d), H  -  DD, CB, d, 94
+// RES 2, (IX+d), H   -  RES2__IX_d__H_DD4  -  DD, CB, d, 94
 InstructionInfo instructionInfoRES2__IX_d__H_DD4 =
 {
     6,
@@ -22581,7 +22581,7 @@ InstructionInfo instructionInfoRES2__IX_d__H_DD4 =
     }
 };
 
-// RES 2, (IY+d), H  -  FD, CB, d, 94
+// RES 2, (IY+d), H   -  RES2__IY_d__H_FD4  -  FD, CB, d, 94
 InstructionInfo instructionInfoRES2__IY_d__H_FD4 =
 {
     6,
@@ -22600,7 +22600,7 @@ InstructionInfo instructionInfoRES2__IY_d__H_FD4 =
     }
 };
 
-// RES 3, (IX+d), H  -  DD, CB, d, 9C
+// RES 3, (IX+d), H   -  RES3__IX_d__H_DD4  -  DD, CB, d, 9C
 InstructionInfo instructionInfoRES3__IX_d__H_DD4 =
 {
     6,
@@ -22619,7 +22619,7 @@ InstructionInfo instructionInfoRES3__IX_d__H_DD4 =
     }
 };
 
-// RES 3, (IY+d), H  -  FD, CB, d, 9C
+// RES 3, (IY+d), H   -  RES3__IY_d__H_FD4  -  FD, CB, d, 9C
 InstructionInfo instructionInfoRES3__IY_d__H_FD4 =
 {
     6,
@@ -22638,7 +22638,7 @@ InstructionInfo instructionInfoRES3__IY_d__H_FD4 =
     }
 };
 
-// RES 4, (IX+d), H  -  DD, CB, d, A4
+// RES 4, (IX+d), H   -  RES4__IX_d__H_DD4  -  DD, CB, d, A4
 InstructionInfo instructionInfoRES4__IX_d__H_DD4 =
 {
     6,
@@ -22657,7 +22657,7 @@ InstructionInfo instructionInfoRES4__IX_d__H_DD4 =
     }
 };
 
-// RES 4, (IY+d), H  -  FD, CB, d, A4
+// RES 4, (IY+d), H   -  RES4__IY_d__H_FD4  -  FD, CB, d, A4
 InstructionInfo instructionInfoRES4__IY_d__H_FD4 =
 {
     6,
@@ -22676,7 +22676,7 @@ InstructionInfo instructionInfoRES4__IY_d__H_FD4 =
     }
 };
 
-// RES 5, (IX+d), H  -  DD, CB, d, AC
+// RES 5, (IX+d), H   -  RES5__IX_d__H_DD4  -  DD, CB, d, AC
 InstructionInfo instructionInfoRES5__IX_d__H_DD4 =
 {
     6,
@@ -22695,7 +22695,7 @@ InstructionInfo instructionInfoRES5__IX_d__H_DD4 =
     }
 };
 
-// RES 5, (IY+d), H  -  FD, CB, d, AC
+// RES 5, (IY+d), H   -  RES5__IY_d__H_FD4  -  FD, CB, d, AC
 InstructionInfo instructionInfoRES5__IY_d__H_FD4 =
 {
     6,
@@ -22714,7 +22714,7 @@ InstructionInfo instructionInfoRES5__IY_d__H_FD4 =
     }
 };
 
-// RES 6, (IX+d), H  -  DD, CB, d, B4
+// RES 6, (IX+d), H   -  RES6__IX_d__H_DD4  -  DD, CB, d, B4
 InstructionInfo instructionInfoRES6__IX_d__H_DD4 =
 {
     6,
@@ -22733,7 +22733,7 @@ InstructionInfo instructionInfoRES6__IX_d__H_DD4 =
     }
 };
 
-// RES 6, (IY+d), H  -  FD, CB, d, B4
+// RES 6, (IY+d), H   -  RES6__IY_d__H_FD4  -  FD, CB, d, B4
 InstructionInfo instructionInfoRES6__IY_d__H_FD4 =
 {
     6,
@@ -22752,7 +22752,7 @@ InstructionInfo instructionInfoRES6__IY_d__H_FD4 =
     }
 };
 
-// RES 7, (IX+d), H  -  DD, CB, d, BC
+// RES 7, (IX+d), H   -  RES7__IX_d__H_DD4  -  DD, CB, d, BC
 InstructionInfo instructionInfoRES7__IX_d__H_DD4 =
 {
     6,
@@ -22771,7 +22771,7 @@ InstructionInfo instructionInfoRES7__IX_d__H_DD4 =
     }
 };
 
-// RES 7, (IY+d), H  -  FD, CB, d, BC
+// RES 7, (IY+d), H   -  RES7__IY_d__H_FD4  -  FD, CB, d, BC
 InstructionInfo instructionInfoRES7__IY_d__H_FD4 =
 {
     6,
@@ -22790,7 +22790,7 @@ InstructionInfo instructionInfoRES7__IY_d__H_FD4 =
     }
 };
 
-// RES 0, (IX+d), L  -  DD, CB, d, 85
+// RES 0, (IX+d), L   -  RES0__IX_d__L_DD4  -  DD, CB, d, 85
 InstructionInfo instructionInfoRES0__IX_d__L_DD4 =
 {
     6,
@@ -22809,7 +22809,7 @@ InstructionInfo instructionInfoRES0__IX_d__L_DD4 =
     }
 };
 
-// RES 1, (IX+d), L  -  DD, CB, d, 8D
+// RES 1, (IX+d), L   -  RES1__IX_d__L_DD4  -  DD, CB, d, 8D
 InstructionInfo instructionInfoRES1__IX_d__L_DD4 =
 {
     6,
@@ -22828,7 +22828,7 @@ InstructionInfo instructionInfoRES1__IX_d__L_DD4 =
     }
 };
 
-// RES 1, (IY+d), L  -  FD, CB, d, 8D
+// RES 1, (IY+d), L   -  RES1__IY_d__L_FD4  -  FD, CB, d, 8D
 InstructionInfo instructionInfoRES1__IY_d__L_FD4 =
 {
     6,
@@ -22847,7 +22847,7 @@ InstructionInfo instructionInfoRES1__IY_d__L_FD4 =
     }
 };
 
-// RES 2, (IX+d), L  -  DD, CB, d, 95
+// RES 2, (IX+d), L   -  RES2__IX_d__L_DD4  -  DD, CB, d, 95
 InstructionInfo instructionInfoRES2__IX_d__L_DD4 =
 {
     6,
@@ -22866,7 +22866,7 @@ InstructionInfo instructionInfoRES2__IX_d__L_DD4 =
     }
 };
 
-// RES 2, (IY+d), L  -  FD, CB, d, 95
+// RES 2, (IY+d), L   -  RES2__IY_d__L_FD4  -  FD, CB, d, 95
 InstructionInfo instructionInfoRES2__IY_d__L_FD4 =
 {
     6,
@@ -22885,7 +22885,7 @@ InstructionInfo instructionInfoRES2__IY_d__L_FD4 =
     }
 };
 
-// RES 3, (IX+d), L  -  DD, CB, d, 9D
+// RES 3, (IX+d), L   -  RES3__IX_d__L_DD4  -  DD, CB, d, 9D
 InstructionInfo instructionInfoRES3__IX_d__L_DD4 =
 {
     6,
@@ -22904,7 +22904,7 @@ InstructionInfo instructionInfoRES3__IX_d__L_DD4 =
     }
 };
 
-// RES 3, (IY+d), L  -  FD, CB, d, 9D
+// RES 3, (IY+d), L   -  RES3__IY_d__L_FD4  -  FD, CB, d, 9D
 InstructionInfo instructionInfoRES3__IY_d__L_FD4 =
 {
     6,
@@ -22923,7 +22923,7 @@ InstructionInfo instructionInfoRES3__IY_d__L_FD4 =
     }
 };
 
-// RES 4, (IX+d), L  -  DD, CB, d, A5
+// RES 4, (IX+d), L   -  RES4__IX_d__L_DD4  -  DD, CB, d, A5
 InstructionInfo instructionInfoRES4__IX_d__L_DD4 =
 {
     6,
@@ -22942,7 +22942,7 @@ InstructionInfo instructionInfoRES4__IX_d__L_DD4 =
     }
 };
 
-// RES 4, (IY+d), L  -  FD, CB, d, A5
+// RES 4, (IY+d), L   -  RES4__IY_d__L_FD4  -  FD, CB, d, A5
 InstructionInfo instructionInfoRES4__IY_d__L_FD4 =
 {
     6,
@@ -22961,7 +22961,7 @@ InstructionInfo instructionInfoRES4__IY_d__L_FD4 =
     }
 };
 
-// RES 5, (IX+d), L  -  DD, CB, d, AD
+// RES 5, (IX+d), L   -  RES5__IX_d__L_DD4  -  DD, CB, d, AD
 InstructionInfo instructionInfoRES5__IX_d__L_DD4 =
 {
     6,
@@ -22980,7 +22980,7 @@ InstructionInfo instructionInfoRES5__IX_d__L_DD4 =
     }
 };
 
-// RES 5, (IY+d), L  -  FD, CB, d, AD
+// RES 5, (IY+d), L   -  RES5__IY_d__L_FD4  -  FD, CB, d, AD
 InstructionInfo instructionInfoRES5__IY_d__L_FD4 =
 {
     6,
@@ -22999,7 +22999,7 @@ InstructionInfo instructionInfoRES5__IY_d__L_FD4 =
     }
 };
 
-// RES 6, (IX+d), L  -  DD, CB, d, B5
+// RES 6, (IX+d), L   -  RES6__IX_d__L_DD4  -  DD, CB, d, B5
 InstructionInfo instructionInfoRES6__IX_d__L_DD4 =
 {
     6,
@@ -23018,7 +23018,7 @@ InstructionInfo instructionInfoRES6__IX_d__L_DD4 =
     }
 };
 
-// RES 6, (IY+d), L  -  FD, CB, d, B5
+// RES 6, (IY+d), L   -  RES6__IY_d__L_FD4  -  FD, CB, d, B5
 InstructionInfo instructionInfoRES6__IY_d__L_FD4 =
 {
     6,
@@ -23037,7 +23037,7 @@ InstructionInfo instructionInfoRES6__IY_d__L_FD4 =
     }
 };
 
-// RES 7, (IX+d), L  -  DD, CB, d, BD
+// RES 7, (IX+d), L   -  RES7__IX_d__L_DD4  -  DD, CB, d, BD
 InstructionInfo instructionInfoRES7__IX_d__L_DD4 =
 {
     6,
@@ -23056,7 +23056,7 @@ InstructionInfo instructionInfoRES7__IX_d__L_DD4 =
     }
 };
 
-// RES 7, (IY+d), L  -  FD, CB, d, BD
+// RES 7, (IY+d), L   -  RES7__IY_d__L_FD4  -  FD, CB, d, BD
 InstructionInfo instructionInfoRES7__IY_d__L_FD4 =
 {
     6,
@@ -23075,7 +23075,7 @@ InstructionInfo instructionInfoRES7__IY_d__L_FD4 =
     }
 };
 
-// JP nn  -  C3, n, n
+// JP nn   -  JPnn_3  -  C3, n, n
 InstructionInfo instructionInfoJPnn_3 =
 {
     3,
@@ -23094,7 +23094,7 @@ InstructionInfo instructionInfoJPnn_3 =
     }
 };
 
-// JP NZ, nn  -  C2, n, n
+// JP NZ, nn   -  JPNZ_nn_3  -  C2, n, n
 InstructionInfo instructionInfoJPNZ_nn_3 =
 {
     3,
@@ -23113,7 +23113,7 @@ InstructionInfo instructionInfoJPNZ_nn_3 =
     }
 };
 
-// JP Z, nn  -  CA, n, n
+// JP Z, nn   -  JPZ_nn_3  -  CA, n, n
 InstructionInfo instructionInfoJPZ_nn_3 =
 {
     3,
@@ -23132,7 +23132,7 @@ InstructionInfo instructionInfoJPZ_nn_3 =
     }
 };
 
-// JP NC, nn  -  D2, n, n
+// JP NC, nn   -  JPNC_nn_3  -  D2, n, n
 InstructionInfo instructionInfoJPNC_nn_3 =
 {
     3,
@@ -23151,7 +23151,7 @@ InstructionInfo instructionInfoJPNC_nn_3 =
     }
 };
 
-// JP C, nn  -  DA, n, n
+// JP C, nn   -  JPC_nn_3  -  DA, n, n
 InstructionInfo instructionInfoJPC_nn_3 =
 {
     3,
@@ -23170,7 +23170,7 @@ InstructionInfo instructionInfoJPC_nn_3 =
     }
 };
 
-// JP PO, nn  -  E2, n, n
+// JP PO, nn   -  JPPO_nn_3  -  E2, n, n
 InstructionInfo instructionInfoJPPO_nn_3 =
 {
     3,
@@ -23189,7 +23189,7 @@ InstructionInfo instructionInfoJPPO_nn_3 =
     }
 };
 
-// JP PE, nn  -  EA, n, n
+// JP PE, nn   -  JPPE_nn_3  -  EA, n, n
 InstructionInfo instructionInfoJPPE_nn_3 =
 {
     3,
@@ -23208,7 +23208,7 @@ InstructionInfo instructionInfoJPPE_nn_3 =
     }
 };
 
-// JP P, nn  -  F2, n, n
+// JP P, nn   -  JPP_nn_3  -  F2, n, n
 InstructionInfo instructionInfoJPP_nn_3 =
 {
     3,
@@ -23227,7 +23227,7 @@ InstructionInfo instructionInfoJPP_nn_3 =
     }
 };
 
-// JP M, nn  -  FA, n, n
+// JP M, nn   -  JPM_nn_3  -  FA, n, n
 InstructionInfo instructionInfoJPM_nn_3 =
 {
     3,
@@ -23246,7 +23246,7 @@ InstructionInfo instructionInfoJPM_nn_3 =
     }
 };
 
-// JR e  -  18, e
+// JR e   -  JRe_2  -  18, e
 InstructionInfo instructionInfoJRe_2 =
 {
     3,
@@ -23265,7 +23265,7 @@ InstructionInfo instructionInfoJRe_2 =
     }
 };
 
-// JR NZ, e  -  20, e
+// JR NZ, e   -  JRNZ_e_2  -  20, e
 InstructionInfo instructionInfoJRNZ_e_2 =
 {
     3,
@@ -23284,7 +23284,7 @@ InstructionInfo instructionInfoJRNZ_e_2 =
     }
 };
 
-// JR Z, e  -  28, e
+// JR Z, e   -  JRZ_e_2  -  28, e
 InstructionInfo instructionInfoJRZ_e_2 =
 {
     3,
@@ -23303,7 +23303,7 @@ InstructionInfo instructionInfoJRZ_e_2 =
     }
 };
 
-// JR NC, e  -  30, e
+// JR NC, e   -  JRNC_e_2  -  30, e
 InstructionInfo instructionInfoJRNC_e_2 =
 {
     3,
@@ -23322,7 +23322,7 @@ InstructionInfo instructionInfoJRNC_e_2 =
     }
 };
 
-// JR C, e  -  38, e
+// JR C, e   -  JRC_e_2  -  38, e
 InstructionInfo instructionInfoJRC_e_2 =
 {
     3,
@@ -23341,7 +23341,7 @@ InstructionInfo instructionInfoJRC_e_2 =
     }
 };
 
-// JP HL  -  E9
+// JP HL   -  JPHL_1  -  E9
 InstructionInfo instructionInfoJPHL_1 =
 {
     1,
@@ -23360,7 +23360,7 @@ InstructionInfo instructionInfoJPHL_1 =
     }
 };
 
-// JP IX  -  DD, E9
+// JP IX   -  JPIX_DD2  -  DD, E9
 InstructionInfo instructionInfoJPIX_DD2 =
 {
     2,
@@ -23379,7 +23379,7 @@ InstructionInfo instructionInfoJPIX_DD2 =
     }
 };
 
-// JP IY  -  FD, E9
+// JP IY   -  JPIY_FD2  -  FD, E9
 InstructionInfo instructionInfoJPIY_FD2 =
 {
     2,
@@ -23398,7 +23398,7 @@ InstructionInfo instructionInfoJPIY_FD2 =
     }
 };
 
-// DJNZ e  -  10, e
+// DJNZ e   -  DJNZe_2  -  10, e
 InstructionInfo instructionInfoDJNZe_2 =
 {
     3,
@@ -23417,7 +23417,7 @@ InstructionInfo instructionInfoDJNZe_2 =
     }
 };
 
-// CALL nn  -  CD, n, n
+// CALL nn   -  CALLnn_3  -  CD, n, n
 InstructionInfo instructionInfoCALLnn_3 =
 {
     5,
@@ -23436,7 +23436,7 @@ InstructionInfo instructionInfoCALLnn_3 =
     }
 };
 
-// CALL NZ, nn  -  C4, n, n
+// CALL NZ, nn   -  CALLNZ_nn_3  -  C4, n, n
 InstructionInfo instructionInfoCALLNZ_nn_3 =
 {
     5,
@@ -23455,7 +23455,7 @@ InstructionInfo instructionInfoCALLNZ_nn_3 =
     }
 };
 
-// CALL Z, nn  -  CC, n, n
+// CALL Z, nn   -  CALLZ_nn_3  -  CC, n, n
 InstructionInfo instructionInfoCALLZ_nn_3 =
 {
     5,
@@ -23474,7 +23474,7 @@ InstructionInfo instructionInfoCALLZ_nn_3 =
     }
 };
 
-// CALL NC, nn  -  D4, n, n
+// CALL NC, nn   -  CALLNC_nn_3  -  D4, n, n
 InstructionInfo instructionInfoCALLNC_nn_3 =
 {
     5,
@@ -23493,7 +23493,7 @@ InstructionInfo instructionInfoCALLNC_nn_3 =
     }
 };
 
-// CALL C, nn  -  DC, n, n
+// CALL C, nn   -  CALLC_nn_3  -  DC, n, n
 InstructionInfo instructionInfoCALLC_nn_3 =
 {
     5,
@@ -23512,7 +23512,7 @@ InstructionInfo instructionInfoCALLC_nn_3 =
     }
 };
 
-// CALL PO, nn  -  E4, n, n
+// CALL PO, nn   -  CALLPO_nn_3  -  E4, n, n
 InstructionInfo instructionInfoCALLPO_nn_3 =
 {
     5,
@@ -23531,7 +23531,7 @@ InstructionInfo instructionInfoCALLPO_nn_3 =
     }
 };
 
-// CALL PE, nn  -  EC, n, n
+// CALL PE, nn   -  CALLPE_nn_3  -  EC, n, n
 InstructionInfo instructionInfoCALLPE_nn_3 =
 {
     5,
@@ -23550,7 +23550,7 @@ InstructionInfo instructionInfoCALLPE_nn_3 =
     }
 };
 
-// CALL P, nn  -  F4, n, n
+// CALL P, nn   -  CALLP_nn_3  -  F4, n, n
 InstructionInfo instructionInfoCALLP_nn_3 =
 {
     5,
@@ -23569,7 +23569,7 @@ InstructionInfo instructionInfoCALLP_nn_3 =
     }
 };
 
-// CALL M, nn  -  FC, n, n
+// CALL M, nn   -  CALLM_nn_3  -  FC, n, n
 InstructionInfo instructionInfoCALLM_nn_3 =
 {
     5,
@@ -23588,7 +23588,7 @@ InstructionInfo instructionInfoCALLM_nn_3 =
     }
 };
 
-// RET  -  C9
+// RET   -  RET_1  -  C9
 InstructionInfo instructionInfoRET_1 =
 {
     3,
@@ -23607,7 +23607,7 @@ InstructionInfo instructionInfoRET_1 =
     }
 };
 
-// RET NZ  -  C0
+// RET NZ   -  RETNZ_1  -  C0
 InstructionInfo instructionInfoRETNZ_1 =
 {
     3,
@@ -23626,7 +23626,7 @@ InstructionInfo instructionInfoRETNZ_1 =
     }
 };
 
-// RET Z  -  C8
+// RET Z   -  RETZ_1  -  C8
 InstructionInfo instructionInfoRETZ_1 =
 {
     3,
@@ -23645,7 +23645,7 @@ InstructionInfo instructionInfoRETZ_1 =
     }
 };
 
-// RET NC  -  D0
+// RET NC   -  RETNC_1  -  D0
 InstructionInfo instructionInfoRETNC_1 =
 {
     3,
@@ -23664,7 +23664,7 @@ InstructionInfo instructionInfoRETNC_1 =
     }
 };
 
-// RET C  -  D8
+// RET C   -  RETC_1  -  D8
 InstructionInfo instructionInfoRETC_1 =
 {
     3,
@@ -23683,7 +23683,7 @@ InstructionInfo instructionInfoRETC_1 =
     }
 };
 
-// RET PO  -  E0
+// RET PO   -  RETPO_1  -  E0
 InstructionInfo instructionInfoRETPO_1 =
 {
     3,
@@ -23702,7 +23702,7 @@ InstructionInfo instructionInfoRETPO_1 =
     }
 };
 
-// RET PE  -  E8
+// RET PE   -  RETPE_1  -  E8
 InstructionInfo instructionInfoRETPE_1 =
 {
     3,
@@ -23721,7 +23721,7 @@ InstructionInfo instructionInfoRETPE_1 =
     }
 };
 
-// RET P  -  F0
+// RET P   -  RETP_1  -  F0
 InstructionInfo instructionInfoRETP_1 =
 {
     3,
@@ -23740,7 +23740,7 @@ InstructionInfo instructionInfoRETP_1 =
     }
 };
 
-// RET M  -  F8
+// RET M   -  RETM_1  -  F8
 InstructionInfo instructionInfoRETM_1 =
 {
     3,
@@ -23759,7 +23759,7 @@ InstructionInfo instructionInfoRETM_1 =
     }
 };
 
-// RETI  -  ED, 4D
+// RETI   -  RETI_ED2  -  ED, 4D
 InstructionInfo instructionInfoRETI_ED2 =
 {
     4,
@@ -23778,7 +23778,7 @@ InstructionInfo instructionInfoRETI_ED2 =
     }
 };
 
-// RETN  -  ED, 45
+// RETN   -  RETN_ED2  -  ED, 45
 InstructionInfo instructionInfoRETN_ED2 =
 {
     4,
@@ -23797,7 +23797,7 @@ InstructionInfo instructionInfoRETN_ED2 =
     }
 };
 
-// RST 00  -  C7
+// RST 00   -  RST00_1  -  C7
 InstructionInfo instructionInfoRST00_1 =
 {
     3,
@@ -23816,7 +23816,7 @@ InstructionInfo instructionInfoRST00_1 =
     }
 };
 
-// RST 08  -  CF
+// RST 08   -  RST08_1  -  CF
 InstructionInfo instructionInfoRST08_1 =
 {
     3,
@@ -23835,7 +23835,7 @@ InstructionInfo instructionInfoRST08_1 =
     }
 };
 
-// RST 10  -  D7
+// RST 10   -  RST10_1  -  D7
 InstructionInfo instructionInfoRST10_1 =
 {
     3,
@@ -23854,7 +23854,7 @@ InstructionInfo instructionInfoRST10_1 =
     }
 };
 
-// RST 18  -  DF
+// RST 18   -  RST18_1  -  DF
 InstructionInfo instructionInfoRST18_1 =
 {
     3,
@@ -23873,7 +23873,7 @@ InstructionInfo instructionInfoRST18_1 =
     }
 };
 
-// RST 20  -  E7
+// RST 20   -  RST20_1  -  E7
 InstructionInfo instructionInfoRST20_1 =
 {
     3,
@@ -23892,7 +23892,7 @@ InstructionInfo instructionInfoRST20_1 =
     }
 };
 
-// RST 28  -  EF
+// RST 28   -  RST28_1  -  EF
 InstructionInfo instructionInfoRST28_1 =
 {
     3,
@@ -23911,7 +23911,7 @@ InstructionInfo instructionInfoRST28_1 =
     }
 };
 
-// RST 30  -  F7
+// RST 30   -  RST30_1  -  F7
 InstructionInfo instructionInfoRST30_1 =
 {
     3,
@@ -23930,7 +23930,7 @@ InstructionInfo instructionInfoRST30_1 =
     }
 };
 
-// RST 38  -  FF
+// RST 38   -  RST38_1  -  FF
 InstructionInfo instructionInfoRST38_1 =
 {
     3,
@@ -23949,7 +23949,7 @@ InstructionInfo instructionInfoRST38_1 =
     }
 };
 
-// IN A, (n)  -  DB, n
+// IN A, (n)   -  INA__n__2  -  DB, n
 InstructionInfo instructionInfoINA__n__2 =
 {
     3,
@@ -23968,7 +23968,7 @@ InstructionInfo instructionInfoINA__n__2 =
     }
 };
 
-// IN A, (C)  -  ED, 78
+// IN A, (C)   -  INA__C__ED2  -  ED, 78
 InstructionInfo instructionInfoINA__C__ED2 =
 {
     3,
@@ -23987,7 +23987,7 @@ InstructionInfo instructionInfoINA__C__ED2 =
     }
 };
 
-// IN B, (C)  -  ED, 40
+// IN B, (C)   -  INB__C__ED2  -  ED, 40
 InstructionInfo instructionInfoINB__C__ED2 =
 {
     3,
@@ -24006,7 +24006,7 @@ InstructionInfo instructionInfoINB__C__ED2 =
     }
 };
 
-// IN C, (C)  -  ED, 48
+// IN C, (C)   -  INC__C__ED2  -  ED, 48
 InstructionInfo instructionInfoINC__C__ED2 =
 {
     3,
@@ -24025,7 +24025,7 @@ InstructionInfo instructionInfoINC__C__ED2 =
     }
 };
 
-// IN D, (C)  -  ED, 50
+// IN D, (C)   -  IND__C__ED2  -  ED, 50
 InstructionInfo instructionInfoIND__C__ED2 =
 {
     3,
@@ -24044,7 +24044,7 @@ InstructionInfo instructionInfoIND__C__ED2 =
     }
 };
 
-// IN E, (C)  -  ED, 58
+// IN E, (C)   -  INE__C__ED2  -  ED, 58
 InstructionInfo instructionInfoINE__C__ED2 =
 {
     3,
@@ -24063,7 +24063,7 @@ InstructionInfo instructionInfoINE__C__ED2 =
     }
 };
 
-// IN H, (C)  -  ED, 60
+// IN H, (C)   -  INH__C__ED2  -  ED, 60
 InstructionInfo instructionInfoINH__C__ED2 =
 {
     3,
@@ -24082,7 +24082,7 @@ InstructionInfo instructionInfoINH__C__ED2 =
     }
 };
 
-// IN L, (C)  -  ED, 68
+// IN L, (C)   -  INL__C__ED2  -  ED, 68
 InstructionInfo instructionInfoINL__C__ED2 =
 {
     3,
@@ -24101,7 +24101,7 @@ InstructionInfo instructionInfoINL__C__ED2 =
     }
 };
 
-// IN (C)  -  ED, 70
+// IN (C)   -  IN_C__ED2  -  ED, 70
 InstructionInfo instructionInfoIN_C__ED2 =
 {
     3,
@@ -24120,7 +24120,7 @@ InstructionInfo instructionInfoIN_C__ED2 =
     }
 };
 
-// INI  -  ED, A2
+// INI   -  INI_ED2  -  ED, A2
 InstructionInfo instructionInfoINI_ED2 =
 {
     4,
@@ -24139,7 +24139,7 @@ InstructionInfo instructionInfoINI_ED2 =
     }
 };
 
-// INIR  -  ED, B2
+// INIR   -  INIR_ED2  -  ED, B2
 InstructionInfo instructionInfoINIR_ED2 =
 {
     5,
@@ -24158,7 +24158,7 @@ InstructionInfo instructionInfoINIR_ED2 =
     }
 };
 
-// IND  -  ED, AA
+// IND   -  IND_ED2  -  ED, AA
 InstructionInfo instructionInfoIND_ED2 =
 {
     4,
@@ -24177,7 +24177,7 @@ InstructionInfo instructionInfoIND_ED2 =
     }
 };
 
-// INDR  -  ED, BA
+// INDR   -  INDR_ED2  -  ED, BA
 InstructionInfo instructionInfoINDR_ED2 =
 {
     5,
@@ -24196,7 +24196,7 @@ InstructionInfo instructionInfoINDR_ED2 =
     }
 };
 
-// OUT (n), A  -  D3, n
+// OUT (n), A   -  OUT_n__A_2  -  D3, n
 InstructionInfo instructionInfoOUT_n__A_2 =
 {
     3,
@@ -24215,7 +24215,7 @@ InstructionInfo instructionInfoOUT_n__A_2 =
     }
 };
 
-// OUT (C), A  -  ED, 79
+// OUT (C), A   -  OUT_C__A_ED2  -  ED, 79
 InstructionInfo instructionInfoOUT_C__A_ED2 =
 {
     3,
@@ -24234,7 +24234,7 @@ InstructionInfo instructionInfoOUT_C__A_ED2 =
     }
 };
 
-// OUT (C), B  -  ED, 41
+// OUT (C), B   -  OUT_C__B_ED2  -  ED, 41
 InstructionInfo instructionInfoOUT_C__B_ED2 =
 {
     3,
@@ -24253,7 +24253,7 @@ InstructionInfo instructionInfoOUT_C__B_ED2 =
     }
 };
 
-// OUT (C), C  -  ED, 49
+// OUT (C), C   -  OUT_C__C_ED2  -  ED, 49
 InstructionInfo instructionInfoOUT_C__C_ED2 =
 {
     3,
@@ -24272,7 +24272,7 @@ InstructionInfo instructionInfoOUT_C__C_ED2 =
     }
 };
 
-// OUT (C), D  -  ED, 51
+// OUT (C), D   -  OUT_C__D_ED2  -  ED, 51
 InstructionInfo instructionInfoOUT_C__D_ED2 =
 {
     3,
@@ -24291,7 +24291,7 @@ InstructionInfo instructionInfoOUT_C__D_ED2 =
     }
 };
 
-// OUT (C), E  -  ED, 59
+// OUT (C), E   -  OUT_C__E_ED2  -  ED, 59
 InstructionInfo instructionInfoOUT_C__E_ED2 =
 {
     3,
@@ -24310,7 +24310,7 @@ InstructionInfo instructionInfoOUT_C__E_ED2 =
     }
 };
 
-// OUT (C), H  -  ED, 61
+// OUT (C), H   -  OUT_C__H_ED2  -  ED, 61
 InstructionInfo instructionInfoOUT_C__H_ED2 =
 {
     3,
@@ -24329,7 +24329,7 @@ InstructionInfo instructionInfoOUT_C__H_ED2 =
     }
 };
 
-// OUT (C), L  -  ED, 69
+// OUT (C), L   -  OUT_C__L_ED2  -  ED, 69
 InstructionInfo instructionInfoOUT_C__L_ED2 =
 {
     3,
@@ -24348,7 +24348,7 @@ InstructionInfo instructionInfoOUT_C__L_ED2 =
     }
 };
 
-// OUT (C), 0  -  ED, 71
+// OUT (C), 0   -  OUT_C__0_ED2  -  ED, 71
 InstructionInfo instructionInfoOUT_C__0_ED2 =
 {
     3,
@@ -24367,7 +24367,7 @@ InstructionInfo instructionInfoOUT_C__0_ED2 =
     }
 };
 
-// OUTI  -  ED, A3
+// OUTI   -  OUTI_ED2  -  ED, A3
 InstructionInfo instructionInfoOUTI_ED2 =
 {
     4,
@@ -24386,7 +24386,7 @@ InstructionInfo instructionInfoOUTI_ED2 =
     }
 };
 
-// OTIR  -  ED, B3
+// OTIR   -  OTIR_ED2  -  ED, B3
 InstructionInfo instructionInfoOTIR_ED2 =
 {
     5,
@@ -24405,7 +24405,7 @@ InstructionInfo instructionInfoOTIR_ED2 =
     }
 };
 
-// OUTD  -  ED, A3
+// OUTD   -  OUTD_ED2  -  ED, A3
 InstructionInfo instructionInfoOUTD_ED2 =
 {
     4,
@@ -24424,7 +24424,7 @@ InstructionInfo instructionInfoOUTD_ED2 =
     }
 };
 
-// OTDR  -  ED, BB
+// OTDR   -  OTDR_ED2  -  ED, BB
 InstructionInfo instructionInfoOTDR_ED2 =
 {
     5,

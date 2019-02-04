@@ -1762,8 +1762,8 @@
         {
             "mnemonic": "RRC r",
             "bytes": [ "CB", "00001rrr" ],
-            "cycles": [ 4 ],
-            "ops": [ "OF" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
             "flags": {
                 "S": "",
                 "Z": "",

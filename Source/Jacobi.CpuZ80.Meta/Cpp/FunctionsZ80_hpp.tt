@@ -33,6 +33,8 @@ extern void OnClock_PW(AsyncThis* async);
 
 // Functions for the emulating the Z80:
 <#+
+            var fns = new List<string>();
+
             foreach (var decl in _decls)
             {
 #>
@@ -46,23 +48,40 @@ extern void OnClock_PW(AsyncThis* async);
                         if (!mc.IsExt && decl.Root.Variables.Any())
                         {
 #>
-extern void OnClock_<#= decl.Root.Name #>_<#= mc.Operation #>(AsyncThis* async);
+<#= BuildFunctionDecl(fns, decl.Root.Name, mc.Operation) #>
 <#+                     }
                         else
                         {
 #>
-extern void OnClock_<#= decl.Name #>_<#= mc.Operation #>(AsyncThis* async);
+<#= BuildFunctionDecl(fns, decl.Name, mc.Operation) #>
 <#+                     }
                     } 
                     else if (!mc.IsExt && decl.Root.Parameters.Any())
                     {
 #>
-extern void OnClock_<#= decl.Root.Name #>_<#= mc.Operation #>(AsyncThis* async);
+<#= BuildFunctionDecl(fns, decl.Root.Name, mc.Operation) #>
 <#+                 }
+                    else 
+                    {
+                        //??
+                    }
                 }
             }
 
             return this.GenerationEnvironment.ToString();
         }
+    }
+#>
+
+<#+
+    private static string BuildFunctionDecl(List<string> fns, string part1, string part2)
+    {
+        var fn = "extern void OnClock_" + part1 + "_" + part2 + "(AsyncThis* async);";
+
+        if (fns.Contains(part1+part2))
+            return "// " + fn;
+
+        fns.Add(part1+part2);
+        return fn;
     }
 #>

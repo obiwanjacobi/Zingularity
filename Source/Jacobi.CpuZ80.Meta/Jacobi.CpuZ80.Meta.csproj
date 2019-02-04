@@ -71,12 +71,12 @@
 </LastOutputs>
       <LastGenOutput>InstructionsZ80.txt</LastGenOutput>
     </Content>
+    <Content Include="Cpp\FunctionsZ80_hpp.tt" />
     <Content Include="Cpp\InstructionsZ80.txt">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>InstructionsZ80.tt</DependentUpon>
     </Content>
-    <Content Include="Cpp\FunctionsZ80_hpp.tt" />
     <Content Include="Cpp\InstructionsZ80_cpp.tt" />
     <Content Include="Cpp\InstructionTablesZ80_cpp.tt" />
     <Content Include="Cpp\InstructionsZ80_hpp.tt" />

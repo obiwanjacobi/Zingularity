@@ -1,8 +1,9 @@
 #pragma once
 
+#include "Async.h"
 #include <stdint.h>
 
-typedef void(*fnOnClock)();
+typedef void(*fnOnClock)(AsyncThis* async);
 
 enum class Registers8
 {

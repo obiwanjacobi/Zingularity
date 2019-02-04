@@ -17,5 +17,6 @@
     <ClCompile Include="ClockTick.cpp" />
     <ClCompile Include="InstructionsZ80.cpp" />
     <ClCompile Include="InstructionTablesZ80.cpp" />
+    <ClCompile Include="Instructions.Generic.cpp" />
   </ItemGroup>
 </Project>

@@ -1,2 +1,16 @@
-﻿
+﻿Generating code for 1286 Z80 instructions.
+
+Generating 'InstructionsZ80.hpp'...
+Done.
+
+Generating 'InstructionsZ80.cpp'...
+Done.
+
+Generating 'InstructionTablesZ80.cpp'...
+Done.
+
+Generating 'FunctionsZ80.cpp'...
+Done.
+
+All Finished.
 

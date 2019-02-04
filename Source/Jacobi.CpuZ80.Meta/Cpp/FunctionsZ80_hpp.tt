@@ -17,17 +17,19 @@
  *  Any changes you make will be lost when the code is regenerated.
  */
 
+#include "Async.h"
+
 // generic cpu operations
-extern void OnClock_OF();
-extern void OnClock_MR();
-extern void OnClock_MW();
-extern void OnClock_PCd();
-extern void OnClock_SRh();
-extern void OnClock_SRl();
-extern void OnClock_SWh();
-extern void OnClock_SWl();
-extern void OnClock_PR();
-extern void OnClock_PW();
+extern void OnClock_OF(AsyncThis* async);
+extern void OnClock_MR(AsyncThis* async);
+extern void OnClock_MW(AsyncThis* async);
+extern void OnClock_PCd(AsyncThis* async);
+extern void OnClock_SRh(AsyncThis* async);
+extern void OnClock_SRl(AsyncThis* async);
+extern void OnClock_SWh(AsyncThis* async);
+extern void OnClock_SWl(AsyncThis* async);
+extern void OnClock_PR(AsyncThis* async);
+extern void OnClock_PW(AsyncThis* async);
 
 // Functions for the emulating the Z80:
 <#+
@@ -44,18 +46,18 @@ extern void OnClock_PW();
                         if (!mc.IsExt && decl.Root.Variables.Any())
                         {
 #>
-extern void OnClock_<#= decl.Root.Name #>_<#= mc.Operation #>();
+extern void OnClock_<#= decl.Root.Name #>_<#= mc.Operation #>(AsyncThis* async);
 <#+                     }
                         else
                         {
 #>
-extern void OnClock_<#= decl.Name #>_<#= mc.Operation #>();
+extern void OnClock_<#= decl.Name #>_<#= mc.Operation #>(AsyncThis* async);
 <#+                     }
                     } 
                     else if (!mc.IsExt && decl.Root.Parameters.Any())
                     {
 #>
-extern void OnClock_<#= decl.Root.Name #>_<#= mc.Operation #>();
+extern void OnClock_<#= decl.Root.Name #>_<#= mc.Operation #>(AsyncThis* async);
 <#+                 }
                 }
             }

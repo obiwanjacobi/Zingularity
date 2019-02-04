@@ -34,6 +34,8 @@ typedef struct
     bool IsCompleted;
     bool Alternate;
 
+    AsyncThis Async;
+
 } InstructionState;
 
 #define RegisterPairUnion(hl, h, l)  \

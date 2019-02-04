@@ -33,7 +33,7 @@ void setAddressIR()
 InstructionInfo* LookupInstruction()
 {
     InstructionTableEntry* table = nullptr;
-    uint8_t tableLength = 0;
+    uint16_t tableLength = 0;
 
     if (_state.Instruction.ExtIndex == 0)
     {
@@ -82,17 +82,18 @@ void Decode()
     case 0xDD:
     case 0xED:
     case 0xFD:
-        if (_state.Instruction.ExtIndex != 0) _state.Instruction.ExtIndex = 0;
-        _state.Instruction.Ext[_state.Instruction.ExtIndex] = _state.Instruction.Data;
-        if (_state.Instruction.ExtIndex == 0) _state.Instruction.ExtIndex = 1;
+        _state.Instruction.Ext[0] = _state.Instruction.Data;
+        _state.Instruction.ExtIndex = 1;
         break;
     case 0xCB:
         if (_state.Instruction.Ext[0] == 0xED) _state.Instruction.ExtIndex = 0;
         _state.Instruction.Ext[_state.Instruction.ExtIndex] = _state.Instruction.Data;
-        if (_state.Instruction.ExtIndex == 0) _state.Instruction.ExtIndex = 1;
+        _state.Instruction.ExtIndex++;
         break;
     default:
         _state.Instruction.Instruction = LookupInstruction();
+        _state.Instruction.CurrentMachineCycle = 
+            &_state.Instruction.Instruction->Cycles[0];
         break;
     }
 }
@@ -116,6 +117,8 @@ Async_Function(FetchDecode)
     Async_Yield(2);
 
     AssertClock(MCycle::M1, TCycle::T2, Level::PosEdge);
+    // time for some book keeping
+    if (_state.Instruction.InstructionAddress == 0) _state.Instruction.InstructionAddress = _state.Registers.PC - 1;
     Async_Yield(3);
 
     AssertClock(MCycle::M1, TCycle::T2, Level::NegEdge);
@@ -133,26 +136,28 @@ Async_Function(FetchDecode)
     AssertClock(MCycle::M1, TCycle::T3, Level::NegEdge);
     setMemReq(true);
     Decode();
-    Async_Yield(6);
+    //Async_Yield(6);
 }
 Async_End
 
 Async_Function(Execute)
 {
+    _state.Instruction.Async.State = 0;
+
     AssertClock(MCycle::M1, TCycle::T4, Level::PosEdge);
     if (_state.Instruction.Instruction != nullptr)
     {
-
+        _state.Instruction.Instruction->Cycles[1].OnClock(&_state.Instruction.Async);
     }
     Async_Yield(1);
 
     AssertClock(MCycle::M1, TCycle::T4, Level::NegEdge);
     if (_state.Instruction.Instruction != nullptr)
     {
-
+        _state.Instruction.Instruction->Cycles[1].OnClock(&_state.Instruction.Async);
     }
     setMemReq(false);
-    Async_Yield(2);
+    //Async_Yield(2);
 }
 Async_End
 

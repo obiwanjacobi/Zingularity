@@ -29,27 +29,54 @@
         decls.AddRange(expander.Expand(new InstructionMeta(instruction)));
     }
 
+#>
+Generating code for <#= decls.Count #> Z80 instructions.
+
+Generating 'InstructionsZ80.hpp'...
+<#
+
     var hpp = new InstructionsZ80_hpp(decls);
     hpp.Output.File = "InstructionsZ80.hpp";
     hpp.Output.Project = TargetProjectPath;
     hpp.Render();
+
+#>
+Done.
+
+Generating 'InstructionsZ80.cpp'...
+<#
 
     var cpp = new InstructionsZ80_cpp(decls);
     cpp.Output.File = "InstructionsZ80.cpp";
     cpp.Output.Project = TargetProjectPath;
     cpp.Render();
 
+#>
+Done.
+
+Generating 'InstructionTablesZ80.cpp'...
+<#
+
     var tables = new InstructionTablesZ80_cpp(decls);
     tables.Output.File = "InstructionTablesZ80.cpp";
     tables.Output.Project = TargetProjectPath;
     tables.Render();
 
+#>
+Done.
+
+Generating 'FunctionsZ80.cpp'...
+<#
+
     var funcs = new FunctionsZ80_hpp(decls);
     funcs.Output.File = "FunctionsZ80.hpp";
     funcs.Output.Project = TargetProjectPath;
     funcs.Render();
-#>
 
+#>
+Done.
+
+All Finished.
 
 <#+
 public string GetSolutionDirectory()

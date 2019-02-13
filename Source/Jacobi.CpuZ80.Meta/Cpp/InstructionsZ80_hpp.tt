@@ -23,12 +23,16 @@ extern uint16_t InstructionTable_length;
 extern InstructionTableEntry InstructionTable[];
 extern uint16_t InstructionTableCB_length;
 extern InstructionTableEntry InstructionTableCB[];
-extern uint16_t InstructionTableDD_length;
-extern InstructionTableEntry InstructionTableDD[];
-extern uint16_t InstructionTableFD_length;
-extern InstructionTableEntry InstructionTableFD[];
 extern uint16_t InstructionTableED_length;
 extern InstructionTableEntry InstructionTableED[];
+extern uint16_t InstructionTableDD_length;
+extern InstructionTableEntry InstructionTableDD[];
+extern uint16_t InstructionTableDDCB_length;
+extern InstructionTableEntry InstructionTableDDCB[];
+extern uint16_t InstructionTableFD_length;
+extern InstructionTableEntry InstructionTableFD[];
+extern uint16_t InstructionTableFDCB_length;
+extern InstructionTableEntry InstructionTableFDCB[];
 
 // Instructions for the Z80:
 <#+

@@ -29,7 +29,7 @@ namespace Jacobi.CpuZ80.Tests
             setInfo.Tables.ContainsKey("i").Should().BeTrue();
             setInfo.Tables.ContainsKey("ops").Should().BeTrue();
 
-            setInfo.Instructions.Should().HaveCount(203);
+            setInfo.Instructions.Should().HaveCount(207);
         }
     }
 }

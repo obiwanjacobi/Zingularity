@@ -2159,8 +2159,8 @@
             }
         },
         //{
-        //    "mnemonic": "BIT b, (ex+d)",  // no 'r' - not stored. Current param detection uses mnemonic
-        //    "bytes": [ "ex", "CB", "d", "01bbbrrr" ],
+        //    "mnemonic": "BIT b, (ex+d)*",  // no 'r' - not stored. Current param detection uses mnemonic
+        //    "bytes": [ "ex", "CB", "d", "01bbb***" ],
         //    "cycles": [ 4, 4, 3, 5, 4 ],
         //    "ops": [ "OF", "OF", "OD", "FD", "MR" ],
         //    "flags": {

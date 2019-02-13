@@ -16,7 +16,7 @@ typedef struct
 
 typedef struct
 {
-    MachineCycleInfo *CurrentMachineCycle;
+    uint8_t MCycleIndex;
     InstructionInfo *Instruction;
     uint16_t InstructionAddress;
 

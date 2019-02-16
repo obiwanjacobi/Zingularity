@@ -70,6 +70,7 @@ void OnClock_ADDA_n_2_OD(AsyncThis* async) {}
 
 // ADD A, (HL)   -  ADDA__HL__1  -  86
 void OnClock_ADDA__HL__1_OF(AsyncThis* async) {}
+void OnClock_ADDA__HL__1_MR(AsyncThis* async) {}
 
 // ADD A, (IX+d)   -  ADDA__IX_d__DD3  -  DD, 86, d
 void OnClock_ADDA__ex_d__ex3_OF(AsyncThis* async) {}
@@ -234,6 +235,7 @@ void OnClock_SUBA_n_2_OD(AsyncThis* async) {}
 
 // SUB A, (HL)   -  SUBA__HL__1  -  96
 void OnClock_SUBA__HL__1_OF(AsyncThis* async) {}
+void OnClock_SUBA__HL__1_MR(AsyncThis* async) {}
 
 // SUB A, (IX+d)   -  SUBA__IX_d__DD3  -  DD, 96, d
 void OnClock_SUBA__ex_d__ex3_OF(AsyncThis* async) {}
@@ -316,6 +318,7 @@ void OnClock_SBCA_n_2_OD(AsyncThis* async) {}
 
 // SBC A, (HL)   -  SBCA__HL__1  -  9E
 void OnClock_SBCA__HL__1_OF(AsyncThis* async) {}
+void OnClock_SBCA__HL__1_MR(AsyncThis* async) {}
 
 // SBC A, (IX+d)   -  SBCA__IX_d__DD3  -  DD, 9E, d
 void OnClock_SBCA__ex_d__ex3_OF(AsyncThis* async) {}
@@ -398,6 +401,7 @@ void OnClock_ANDA_n_2_OD(AsyncThis* async) {}
 
 // AND A, (HL)   -  ANDA__HL__1  -  A6
 void OnClock_ANDA__HL__1_OF(AsyncThis* async) {}
+void OnClock_ANDA__HL__1_MR(AsyncThis* async) {}
 
 // AND A, (IX+d)   -  ANDA__IX_d__DD3  -  DD, A6, d
 void OnClock_ANDA__ex_d__ex3_OF(AsyncThis* async) {}
@@ -480,6 +484,7 @@ void OnClock_ORA_n_2_OD(AsyncThis* async) {}
 
 // OR A, (HL)   -  ORA__HL__1  -  B6
 void OnClock_ORA__HL__1_OF(AsyncThis* async) {}
+void OnClock_ORA__HL__1_MR(AsyncThis* async) {}
 
 // OR A, (IX+d)   -  ORA__IX_d__DD3  -  DD, B6, d
 void OnClock_ORA__ex_d__ex3_OF(AsyncThis* async) {}
@@ -562,6 +567,7 @@ void OnClock_XORA_n_2_OD(AsyncThis* async) {}
 
 // XOR A, (HL)   -  XORA__HL__1  -  AE
 void OnClock_XORA__HL__1_OF(AsyncThis* async) {}
+void OnClock_XORA__HL__1_MR(AsyncThis* async) {}
 
 // XOR A, (IX+d)   -  XORA__IX_d__DD3  -  DD, AE, d
 void OnClock_XORA__ex_d__ex3_OF(AsyncThis* async) {}
@@ -644,6 +650,7 @@ void OnClock_CPA_n_2_OD(AsyncThis* async) {}
 
 // CP A, (HL)   -  CPA__HL__1  -  BE
 void OnClock_CPA__HL__1_OF(AsyncThis* async) {}
+void OnClock_CPA__HL__1_MR(AsyncThis* async) {}
 
 // CP A, (IX+d)   -  CPA__IX_d__DD3  -  DD, BE, d
 void OnClock_CPA__ex_d__ex3_OF(AsyncThis* async) {}
@@ -723,6 +730,7 @@ void OnClock_INCv_FD2_OF(AsyncThis* async) {}
 // INC (HL)   -  INC_HL__1  -  34
 void OnClock_INC_HL__1_OF(AsyncThis* async) {}
 void OnClock_INC_HL__1_MR(AsyncThis* async) {}
+void OnClock_INC_HL__1_MW(AsyncThis* async) {}
 
 // INC (IX+d)   -  INC_IX_d__DD3  -  DD, 34, d
 void OnClock_INC_ex_d__ex3_OF(AsyncThis* async) {}
@@ -804,6 +812,7 @@ void OnClock_DECv_FD2_OF(AsyncThis* async) {}
 // DEC (HL)   -  DEC_HL__1  -  35
 void OnClock_DEC_HL__1_OF(AsyncThis* async) {}
 void OnClock_DEC_HL__1_MR(AsyncThis* async) {}
+void OnClock_DEC_HL__1_MW(AsyncThis* async) {}
 
 // DEC (IX+d)   -  DEC_IX_d__DD3  -  DD, 35, d
 void OnClock_DEC_ex_d__ex3_OF(AsyncThis* async) {}

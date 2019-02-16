@@ -769,9 +769,11 @@ void OnClock_LD_ex_d__n_ex4_MW(AsyncThis* async) {}
 
 // LD A, (BC)   -  LDA__BC__1  -  0A
 void OnClock_LDA__BC__1_OF(AsyncThis* async) {}
+void OnClock_LDA__BC__1_MR(AsyncThis* async) {}
 
 // LD A, (DE)   -  LDA__DE__1  -  1A
 void OnClock_LDA__DE__1_OF(AsyncThis* async) {}
+void OnClock_LDA__DE__1_MR(AsyncThis* async) {}
 
 // LD A, (nn)   -  LDA__nn__3  -  3A, n, n
 void OnClock_LDA__nn__3_OF(AsyncThis* async) {}
@@ -781,9 +783,11 @@ void OnClock_LDA__nn__3_MR(AsyncThis* async) {}
 
 // LD (BC), A   -  LD_BC__A_1  -  02
 void OnClock_LD_BC__A_1_OF(AsyncThis* async) {}
+void OnClock_LD_BC__A_1_MW(AsyncThis* async) {}
 
 // LD (DE), A   -  LD_DE__A_1  -  12
 void OnClock_LD_DE__A_1_OF(AsyncThis* async) {}
+void OnClock_LD_DE__A_1_MW(AsyncThis* async) {}
 
 // LD (nn), A   -  LD_nn__A_3  -  32, n, n
 void OnClock_LD_nn__A_3_OF(AsyncThis* async) {}

@@ -37,6 +37,7 @@ void OnClock_RLCr_CB2_OF(AsyncThis* async) {}
 // RLC (HL)   -  RLC_HL__CB2  -  CB, 06
 void OnClock_RLC_HL__CB2_OF(AsyncThis* async) {}
 void OnClock_RLC_HL__CB2_MR(AsyncThis* async) {}
+void OnClock_RLC_HL__CB2_MW(AsyncThis* async) {}
 
 // RLC (IX+d)   -  RLC_IX_d__DD4  -  DD, CB, d, 06
 void OnClock_RLC_ex_d__ex4_OD(AsyncThis* async) {}
@@ -158,6 +159,7 @@ void OnClock_RLr_CB2_OF(AsyncThis* async) {}
 // RL (HL)   -  RL_HL__CB2  -  CB, 16
 void OnClock_RL_HL__CB2_OF(AsyncThis* async) {}
 void OnClock_RL_HL__CB2_MR(AsyncThis* async) {}
+void OnClock_RL_HL__CB2_MW(AsyncThis* async) {}
 
 // RL (IX+d)   -  RL_IX_d__DD4  -  DD, CB, d, 16
 void OnClock_RL_ex_d__ex4_OD(AsyncThis* async) {}
@@ -279,6 +281,7 @@ void OnClock_RRCr_CB2_OF(AsyncThis* async) {}
 // RRC (HL)   -  RRC_HL__CB2  -  CB, 0E
 void OnClock_RRC_HL__CB2_OF(AsyncThis* async) {}
 void OnClock_RRC_HL__CB2_MR(AsyncThis* async) {}
+void OnClock_RRC_HL__CB2_MW(AsyncThis* async) {}
 
 // RRC (IX+d)   -  RRC_IX_d__DD4  -  DD, CB, d, 0E
 void OnClock_RRC_ex_d__ex4_OD(AsyncThis* async) {}
@@ -400,6 +403,7 @@ void OnClock_RRr_CB2_OF(AsyncThis* async) {}
 // RR (HL)   -  RR_HL__CB2  -  CB, 1E
 void OnClock_RR_HL__CB2_OF(AsyncThis* async) {}
 void OnClock_RR_HL__CB2_MR(AsyncThis* async) {}
+void OnClock_RR_HL__CB2_MW(AsyncThis* async) {}
 
 // RR (IX+d)   -  RR_IX_d__DD4  -  DD, CB, d, 1E
 void OnClock_RR_ex_d__ex4_OD(AsyncThis* async) {}
@@ -521,6 +525,7 @@ void OnClock_SLAr_CB2_OF(AsyncThis* async) {}
 // SLA (HL)   -  SLA_HL__CB2  -  CB, 26
 void OnClock_SLA_HL__CB2_OF(AsyncThis* async) {}
 void OnClock_SLA_HL__CB2_MR(AsyncThis* async) {}
+void OnClock_SLA_HL__CB2_MW(AsyncThis* async) {}
 
 // SLA (IX+d)   -  SLA_IX_d__DD4  -  DD, CB, d, 26
 void OnClock_SLA_ex_d__ex4_OD(AsyncThis* async) {}
@@ -642,6 +647,7 @@ void OnClock_SLLr_CB2_OF(AsyncThis* async) {}
 // SLL (HL)   -  SLL_HL__CB2  -  CB, 36
 void OnClock_SLL_HL__CB2_OF(AsyncThis* async) {}
 void OnClock_SLL_HL__CB2_MR(AsyncThis* async) {}
+void OnClock_SLL_HL__CB2_MW(AsyncThis* async) {}
 
 // SLL (IX+d)   -  SLL_IX_d__DD4  -  DD, CB, d, 36
 void OnClock_SLL_ex_d__ex4_OD(AsyncThis* async) {}
@@ -763,6 +769,7 @@ void OnClock_SRAr_CB2_OF(AsyncThis* async) {}
 // SRA (HL)   -  SRA_HL__CB2  -  CB, 2E
 void OnClock_SRA_HL__CB2_OF(AsyncThis* async) {}
 void OnClock_SRA_HL__CB2_MR(AsyncThis* async) {}
+void OnClock_SRA_HL__CB2_MW(AsyncThis* async) {}
 
 // SRA (IX+d)   -  SRA_IX_d__DD4  -  DD, CB, d, 2E
 void OnClock_SRA_ex_d__ex4_OD(AsyncThis* async) {}
@@ -884,6 +891,7 @@ void OnClock_SRLr_CB2_OF(AsyncThis* async) {}
 // SRL (HL)   -  SRL_HL__CB2  -  CB, 3E
 void OnClock_SRL_HL__CB2_OF(AsyncThis* async) {}
 void OnClock_SRL_HL__CB2_MR(AsyncThis* async) {}
+void OnClock_SRL_HL__CB2_MW(AsyncThis* async) {}
 
 // SRL (IX+d)   -  SRL_IX_d__DD4  -  DD, CB, d, 3E
 void OnClock_SRL_ex_d__ex4_OD(AsyncThis* async) {}

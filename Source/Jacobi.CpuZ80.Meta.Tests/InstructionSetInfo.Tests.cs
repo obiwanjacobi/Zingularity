@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Jacobi.CpuZ80.Tests
+namespace Jacobi.CpuZ80.Meta.Tests
 {
     [TestClass]
     public class InstructionSetInfoTests

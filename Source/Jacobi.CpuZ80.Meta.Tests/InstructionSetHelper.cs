@@ -1,7 +1,6 @@
-﻿using Jacobi.CpuZ80.Meta;
-using System.IO;
+﻿using System.IO;
 
-namespace Jacobi.CpuZ80.Tests
+namespace Jacobi.CpuZ80.Meta.Tests
 {
     internal static class InstructionSetHelper
     {

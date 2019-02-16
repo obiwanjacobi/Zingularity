@@ -7,14 +7,14 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Jacobi.CpuZ80", "Jacobi.Cpu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jacobi.CpuZ80.Meta", "Jacobi.CpuZ80.Meta\Jacobi.CpuZ80.Meta.csproj", "{F8716737-5D19-49DC-B5B8-81A0AC7F9ED4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jacobi.CpuZ80.Tests", "Jacobi.CpuZ80.Tests\Jacobi.CpuZ80.Tests.csproj", "{EF075CDA-A734-40E0-99D5-02F45281D19A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A166A632-EF53-4A34-9D03-C0312E72AA9F}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Jacobi.CpuZ80.CppTests", "Jacobi.CpuZ80.CppTests\Jacobi.CpuZ80.CppTests.vcxproj", "{A7457F14-20D4-4298-BC69-9B24716E2F8D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jacobi.CpuZ80.Meta.Tests", "Jacobi.CpuZ80.Meta.Tests\Jacobi.CpuZ80.Meta.Tests.csproj", "{EF075CDA-A734-40E0-99D5-02F45281D19A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Jacobi.CpuZ80.Tests", "Jacobi.CpuZ80.Tests\Jacobi.CpuZ80.Tests.vcxproj", "{A7457F14-20D4-4298-BC69-9B24716E2F8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,13 +63,11 @@ Global
 		{EF075CDA-A734-40E0-99D5-02F45281D19A}.Release|x86.ActiveCfg = Release|Any CPU
 		{EF075CDA-A734-40E0-99D5-02F45281D19A}.Release|x86.Build.0 = Release|Any CPU
 		{A7457F14-20D4-4298-BC69-9B24716E2F8D}.Debug|Any CPU.ActiveCfg = Debug|Win32
-		{A7457F14-20D4-4298-BC69-9B24716E2F8D}.Debug|Any CPU.Build.0 = Debug|Win32
 		{A7457F14-20D4-4298-BC69-9B24716E2F8D}.Debug|x64.ActiveCfg = Debug|x64
 		{A7457F14-20D4-4298-BC69-9B24716E2F8D}.Debug|x64.Build.0 = Debug|x64
 		{A7457F14-20D4-4298-BC69-9B24716E2F8D}.Debug|x86.ActiveCfg = Debug|Win32
 		{A7457F14-20D4-4298-BC69-9B24716E2F8D}.Debug|x86.Build.0 = Debug|Win32
 		{A7457F14-20D4-4298-BC69-9B24716E2F8D}.Release|Any CPU.ActiveCfg = Release|Win32
-		{A7457F14-20D4-4298-BC69-9B24716E2F8D}.Release|Any CPU.Build.0 = Release|Win32
 		{A7457F14-20D4-4298-BC69-9B24716E2F8D}.Release|x64.ActiveCfg = Release|x64
 		{A7457F14-20D4-4298-BC69-9B24716E2F8D}.Release|x64.Build.0 = Release|x64
 		{A7457F14-20D4-4298-BC69-9B24716E2F8D}.Release|x86.ActiveCfg = Release|Win32

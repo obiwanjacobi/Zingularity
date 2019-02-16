@@ -2,7 +2,7 @@ using FluentAssertions;
 using Jacobi.CpuZ80.Meta;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Jacobi.CpuZ80.Tests
+namespace Jacobi.CpuZ80.Meta.Tests
 {
     [TestClass]
     public class InstructionBuilderTests

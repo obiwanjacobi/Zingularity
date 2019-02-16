@@ -1,10 +1,9 @@
 ﻿using FluentAssertions;
-using Jacobi.CpuZ80.Meta;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Linq;
 
-namespace Jacobi.CpuZ80.Tests
+namespace Jacobi.CpuZ80.Meta.Tests
 {
     [TestClass]
     public class InstructionExpanderTests

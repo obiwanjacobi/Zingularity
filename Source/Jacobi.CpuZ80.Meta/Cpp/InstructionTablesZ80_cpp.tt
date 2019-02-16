@@ -29,8 +29,8 @@
 #include "InstructionsZ80.hpp"
 
 // non-extension opcodes
-uint16_t InstructionTable_length = <#= table.Count #>;
-InstructionTableEntry InstructionTable[] = {
+const uint16_t InstructionTable_length = <#= table.Count #>;
+const InstructionTableEntry InstructionTable[] = {
 <#+
             foreach (var decl in table)
             {
@@ -43,8 +43,8 @@ InstructionTableEntry InstructionTable[] = {
 };
 
 // CB-extension opcodes
-uint16_t InstructionTableCB_length = <#= cbTable.Count #>;
-InstructionTableEntry InstructionTableCB[] = {
+const uint16_t InstructionTableCB_length = <#= cbTable.Count #>;
+const InstructionTableEntry InstructionTableCB[] = {
 <#+
             foreach (var decl in cbTable)
             {
@@ -57,8 +57,8 @@ InstructionTableEntry InstructionTableCB[] = {
 };
 
 // ED-extension opcodes
-uint16_t InstructionTableED_length = <#= edTable.Count #>;
-InstructionTableEntry InstructionTableED[] = {
+const uint16_t InstructionTableED_length = <#= edTable.Count #>;
+const InstructionTableEntry InstructionTableED[] = {
 <#+
             foreach (var decl in edTable)
             {
@@ -71,8 +71,8 @@ InstructionTableEntry InstructionTableED[] = {
 };
 
 // IX-extension opcodes
-uint16_t InstructionTableDD_length = <#= ddTable.Count #>;
-InstructionTableEntry InstructionTableDD[] = {
+const uint16_t InstructionTableDD_length = <#= ddTable.Count #>;
+const InstructionTableEntry InstructionTableDD[] = {
 <#+
             foreach (var decl in ddTable)
             {
@@ -85,8 +85,8 @@ InstructionTableEntry InstructionTableDD[] = {
 };
 
 // IX-CB-extension opcodes
-uint16_t InstructionTableDDCB_length = <#= ddcbTable.Count #>;
-InstructionTableEntry InstructionTableDDCB[] = {
+const uint16_t InstructionTableDDCB_length = <#= ddcbTable.Count #>;
+const InstructionTableEntry InstructionTableDDCB[] = {
 <#+
             foreach (var decl in ddcbTable)
             {
@@ -99,8 +99,8 @@ InstructionTableEntry InstructionTableDDCB[] = {
 };
 
 // IY-extension opcodes
-uint16_t InstructionTableFD_length = <#= fdTable.Count #>;
-InstructionTableEntry InstructionTableFD[] = {
+const uint16_t InstructionTableFD_length = <#= fdTable.Count #>;
+const InstructionTableEntry InstructionTableFD[] = {
 <#+
             foreach (var decl in fdTable)
             {
@@ -113,8 +113,8 @@ InstructionTableEntry InstructionTableFD[] = {
 };
 
 // IY-CB-extension opcodes
-uint16_t InstructionTableFDCB_length = <#= fdcbTable.Count #>;
-InstructionTableEntry InstructionTableFDCB[] = {
+const uint16_t InstructionTableFDCB_length = <#= fdcbTable.Count #>;
+const InstructionTableEntry InstructionTableFDCB[] = {
 <#+
             foreach (var decl in fdcbTable)
             {

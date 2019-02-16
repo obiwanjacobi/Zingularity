@@ -8,8 +8,8 @@
 #include "InstructionsZ80.hpp"
 
 // non-extension opcodes
-uint16_t InstructionTable_length = 252;
-InstructionTableEntry InstructionTable[] = {
+const uint16_t InstructionTable_length = 252;
+const InstructionTableEntry InstructionTable[] = {
     { 0x00, &instructionInfoNOP_1 },
     { 0x01, &instructionInfoLDBC_nn_3 },
     { 0x02, &instructionInfoLD_BC__A_1 },
@@ -265,8 +265,8 @@ InstructionTableEntry InstructionTable[] = {
 };
 
 // CB-extension opcodes
-uint16_t InstructionTableCB_length = 256;
-InstructionTableEntry InstructionTableCB[] = {
+const uint16_t InstructionTableCB_length = 256;
+const InstructionTableEntry InstructionTableCB[] = {
     { 0x00, &instructionInfoRLCB_CB2 },
     { 0x01, &instructionInfoRLCC_CB2 },
     { 0x02, &instructionInfoRLCD_CB2 },
@@ -526,8 +526,8 @@ InstructionTableEntry InstructionTableCB[] = {
 };
 
 // ED-extension opcodes
-uint16_t InstructionTableED_length = 62;
-InstructionTableEntry InstructionTableED[] = {
+const uint16_t InstructionTableED_length = 62;
+const InstructionTableEntry InstructionTableED[] = {
     { 0x40, &instructionInfoINB__C__ED2 },
     { 0x41, &instructionInfoOUT_C__B_ED2 },
     { 0x42, &instructionInfoSBCHL_BC_ED2 },
@@ -593,8 +593,8 @@ InstructionTableEntry InstructionTableED[] = {
 };
 
 // IX-extension opcodes
-uint16_t InstructionTableDD_length = 165;
-InstructionTableEntry InstructionTableDD[] = {
+const uint16_t InstructionTableDD_length = 165;
+const InstructionTableEntry InstructionTableDD[] = {
     { 0x04, &instructionInfoINCB_DD2 },
     { 0x05, &instructionInfoDECB_DD2 },
     { 0x06, &instructionInfoLDB_n_DD3 },
@@ -763,8 +763,8 @@ InstructionTableEntry InstructionTableDD[] = {
 };
 
 // IX-CB-extension opcodes
-uint16_t InstructionTableDDCB_length = 200;
-InstructionTableEntry InstructionTableDDCB[] = {
+const uint16_t InstructionTableDDCB_length = 200;
+const InstructionTableEntry InstructionTableDDCB[] = {
     { 0x00, &instructionInfoRLC_IX_d__B_DD4 },
     { 0x01, &instructionInfoRLC_IX_d__C_DD4 },
     { 0x02, &instructionInfoRLC_IX_d__D_DD4 },
@@ -968,8 +968,8 @@ InstructionTableEntry InstructionTableDDCB[] = {
 };
 
 // IY-extension opcodes
-uint16_t InstructionTableFD_length = 165;
-InstructionTableEntry InstructionTableFD[] = {
+const uint16_t InstructionTableFD_length = 165;
+const InstructionTableEntry InstructionTableFD[] = {
     { 0x04, &instructionInfoINCB_FD2 },
     { 0x05, &instructionInfoDECB_FD2 },
     { 0x06, &instructionInfoLDB_n_FD3 },
@@ -1138,8 +1138,8 @@ InstructionTableEntry InstructionTableFD[] = {
 };
 
 // IY-CB-extension opcodes
-uint16_t InstructionTableFDCB_length = 186;
-InstructionTableEntry InstructionTableFDCB[] = {
+const uint16_t InstructionTableFDCB_length = 200;
+const InstructionTableEntry InstructionTableFDCB[] = {
     { 0x00, &instructionInfoRLC_IY_d__B_FD4 },
     { 0x01, &instructionInfoRLC_IY_d__C_FD4 },
     { 0x02, &instructionInfoRLC_IY_d__D_FD4 },
@@ -1212,7 +1212,14 @@ InstructionTableEntry InstructionTableFDCB[] = {
     { 0x6E, &instructionInfoBIT5__IY_d__FD4 },
     { 0x76, &instructionInfoBIT6__IY_d__FD4 },
     { 0x7E, &instructionInfoBIT7__IY_d__FD4 },
+    { 0x80, &instructionInfoRES0__IY_d__B_FD4 },
+    { 0x81, &instructionInfoRES0__IY_d__C_FD4 },
+    { 0x82, &instructionInfoRES0__IY_d__D_FD4 },
+    { 0x83, &instructionInfoRES0__IY_d__E_FD4 },
+    { 0x84, &instructionInfoRES0__IY_d__H_FD4 },
+    { 0x85, &instructionInfoRES0__IY_d__L_FD4 },
     { 0x86, &instructionInfoRES0__IY_d__FD4 },
+    { 0x87, &instructionInfoRES0__IY_d__A_FD4 },
     { 0x88, &instructionInfoRES1__IY_d__B_FD4 },
     { 0x89, &instructionInfoRES1__IY_d__C_FD4 },
     { 0x8A, &instructionInfoRES1__IY_d__D_FD4 },
@@ -1269,7 +1276,14 @@ InstructionTableEntry InstructionTableFDCB[] = {
     { 0xBD, &instructionInfoRES7__IY_d__L_FD4 },
     { 0xBE, &instructionInfoRES7__IY_d__FD4 },
     { 0xBF, &instructionInfoRES7__IY_d__A_FD4 },
+    { 0xC0, &instructionInfoSET0__IY_d__B_FD4 },
+    { 0xC1, &instructionInfoSET0__IY_d__C_FD4 },
+    { 0xC2, &instructionInfoSET0__IY_d__D_FD4 },
+    { 0xC3, &instructionInfoSET0__IY_d__E_FD4 },
+    { 0xC4, &instructionInfoSET0__IY_d__H_FD4 },
+    { 0xC5, &instructionInfoSET0__IY_d__L_FD4 },
     { 0xC6, &instructionInfoSET0__IY_d__FD4 },
+    { 0xC7, &instructionInfoSET0__IY_d__A_FD4 },
     { 0xC8, &instructionInfoSET1__IY_d__B_FD4 },
     { 0xC9, &instructionInfoSET1__IY_d__C_FD4 },
     { 0xCA, &instructionInfoSET1__IY_d__D_FD4 },

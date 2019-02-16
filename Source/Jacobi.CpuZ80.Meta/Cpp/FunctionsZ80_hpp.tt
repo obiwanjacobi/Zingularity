@@ -56,7 +56,7 @@ extern void OnClock_PW(AsyncThis* async);
 <#= BuildFunctionDecl(fns, decl.Name, mc.Operation) #>
 <#+                     }
                     } 
-                    else if (!mc.IsExt && decl.Root.Parameters.Any())
+                    else if (!mc.IsExt /*&& decl.Root.Parameters.Any()*/)
                     {
 #>
 <#= BuildFunctionDecl(fns, decl.Root.Name, mc.Operation) #>

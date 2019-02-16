@@ -28,7 +28,7 @@
 #>
 
 // <#= decl.Info.Mnemonic #>   -  <#= decl.Name #>  -  <#= String.Join(", ", decl.Info.Bytes) #>
-InstructionInfo instructionInfo<#= decl.Name #> =
+const InstructionInfo instructionInfo<#= decl.Name #> =
 {
     <#= decl.Info.Cycles.Count #>,
     <#= decl.Info.AltCycles.Count #>,
@@ -49,7 +49,7 @@ InstructionInfo instructionInfo<#= decl.Name #> =
         { <#= mc.TCycles #>, OnClock_<#= decl.Name #>_<#= mc.Operation #> },
 <#+                     }
                     } 
-                    else if (!mc.IsExt && decl.Root.Parameters.Any())
+                    else if (!mc.IsExt /*&& decl.Root.Parameters.Any()*/)
                     {
 #>
         { <#= mc.TCycles #>, OnClock_<#= decl.Root.Name #>_<#= mc.Operation #> },

@@ -17,7 +17,7 @@ typedef struct
 typedef struct
 {
     uint8_t MCycleIndex;
-    InstructionInfo *Instruction;
+    const InstructionInfo *Instruction;
     uint16_t InstructionAddress;
 
     uint16_t Address;

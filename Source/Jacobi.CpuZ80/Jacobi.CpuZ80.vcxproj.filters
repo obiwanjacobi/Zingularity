@@ -29,5 +29,6 @@
     <ClCompile Include="Instructions.Load8.cpp" />
     <ClCompile Include="Instructions.Load16.cpp" />
     <ClCompile Include="Instructions.InputOutput.cpp" />
+    <ClCompile Include="CpuZ80.cpp" />
   </ItemGroup>
 </Project>

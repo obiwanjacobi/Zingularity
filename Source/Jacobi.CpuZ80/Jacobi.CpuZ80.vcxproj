@@ -160,6 +160,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ClockTick.cpp" />
+    <ClCompile Include="CpuZ80.cpp" />
     <ClCompile Include="Instructions.Arithmetic16.cpp" />
     <ClCompile Include="Instructions.Arithmetic8.cpp" />
     <ClCompile Include="Instructions.BitSetTest.cpp" />

@@ -32,28 +32,28 @@ namespace Jacobi.CpuZ80.Meta
             return decls;
         }
 
-        private void AddInstructionDecls(
+        private bool AddInstructionDecls(
             List<InstructionMeta> instructionDecls, InstructionInfo instructionInfo,
             List<TableIterator> tables, int currentTableIndex)
         {
-            if (currentTableIndex >= tables.Count) return;
+            if (currentTableIndex >= tables.Count) return false;
             var currentTable = tables[currentTableIndex];
 
-            while (currentTable.Enumerator.MoveNext())
+            currentTable.Reset();
+            while (currentTable.MoveNext())
             {
-                // reset all child iterators to first item
-                for (var i = currentTableIndex + 1; i < tables.Count; i++)
-                { tables[i].Reset(); }
+                if (!AddInstructionDecls(
+                        instructionDecls, instructionInfo, tables, currentTableIndex + 1))
+                {
+                    var paramValues = tables.ToDictionary(t => t.Table.Key, t => t.CurrentKey);
 
-                var paramValues = tables.ToDictionary(t => t.Table.Key, t => t.Enumerator.Current.Key);
+                    var builder = InstructionBuilder.New(instructionInfo);
+                    builder.AssignParameterValues(tables.Select(t => t.Table), paramValues);
 
-                var builder = InstructionBuilder.New(instructionInfo);
-                builder.AssignParameterValues(tables.Select(t => t.Table), paramValues);
-
-                instructionDecls.Add(builder.InstructionMeta);
-
-                AddInstructionDecls(instructionDecls, instructionInfo, tables, currentTableIndex + 1);
+                    instructionDecls.Add(builder.InstructionMeta);
+                }
             }
+            return true;
         }
 
         private class TableIterator
@@ -68,10 +68,24 @@ namespace Jacobi.CpuZ80.Meta
 
             public IEnumerator<KeyValuePair<string, string>> Enumerator { get; }
 
+            public string CurrentKey
+            {
+                get { return Enumerator.Current.Key; }
+            }
+
             public void Reset()
             {
                 Enumerator.Reset();
-                Enumerator.MoveNext();
+            }
+
+            public bool MoveNext()
+            {
+                return Enumerator.MoveNext();
+            }
+
+            public override string ToString()
+            {
+                return $"{Table.Key}: {Enumerator.Current.ToString()}";
             }
         }
     }

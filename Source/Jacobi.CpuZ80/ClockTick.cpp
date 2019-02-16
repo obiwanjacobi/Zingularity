@@ -30,9 +30,9 @@ void setAddressIR()
         _state.Registers._IR.R &= 0x7F;
 }
 
-InstructionInfo* LookupInstruction()
+const InstructionInfo* LookupInstruction()
 {
-    InstructionTableEntry* table = nullptr;
+    const InstructionTableEntry* table = nullptr;
     uint16_t tableLength = 0;
 
     if (_state.Instruction.ExtIndex == 0)

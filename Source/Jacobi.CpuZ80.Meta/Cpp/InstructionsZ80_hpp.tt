@@ -19,20 +19,20 @@
 
 #include "InstructionInfo.h"
 
-extern uint16_t InstructionTable_length;
-extern InstructionTableEntry InstructionTable[];
-extern uint16_t InstructionTableCB_length;
-extern InstructionTableEntry InstructionTableCB[];
-extern uint16_t InstructionTableED_length;
-extern InstructionTableEntry InstructionTableED[];
-extern uint16_t InstructionTableDD_length;
-extern InstructionTableEntry InstructionTableDD[];
-extern uint16_t InstructionTableDDCB_length;
-extern InstructionTableEntry InstructionTableDDCB[];
-extern uint16_t InstructionTableFD_length;
-extern InstructionTableEntry InstructionTableFD[];
-extern uint16_t InstructionTableFDCB_length;
-extern InstructionTableEntry InstructionTableFDCB[];
+extern const uint16_t InstructionTable_length;
+extern const InstructionTableEntry InstructionTable[];
+extern const uint16_t InstructionTableCB_length;
+extern const InstructionTableEntry InstructionTableCB[];
+extern const uint16_t InstructionTableED_length;
+extern const InstructionTableEntry InstructionTableED[];
+extern const uint16_t InstructionTableDD_length;
+extern const InstructionTableEntry InstructionTableDD[];
+extern const uint16_t InstructionTableDDCB_length;
+extern const InstructionTableEntry InstructionTableDDCB[];
+extern const uint16_t InstructionTableFD_length;
+extern const InstructionTableEntry InstructionTableFD[];
+extern const uint16_t InstructionTableFDCB_length;
+extern const InstructionTableEntry InstructionTableFDCB[];
 
 // Instructions for the Z80:
 <#+
@@ -40,7 +40,7 @@ extern InstructionTableEntry InstructionTableFDCB[];
             {
 #>
 // <#= decl.Info.Mnemonic #>  -  <#= String.Join(", ", decl.Info.Bytes) #>
-extern InstructionInfo instructionInfo<#= decl.Name #>;
+extern const InstructionInfo instructionInfo<#= decl.Name #>;
 
 <#+        
             }

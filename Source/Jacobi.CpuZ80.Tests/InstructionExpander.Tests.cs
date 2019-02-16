@@ -1,6 +1,7 @@
 ﻿using FluentAssertions;
 using Jacobi.CpuZ80.Meta;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Linq;
 
 namespace Jacobi.CpuZ80.Tests
@@ -91,6 +92,20 @@ namespace Jacobi.CpuZ80.Tests
 
             decls[0].Info.Bytes[0].Should().Be("DD");
             decls[0].Info.Bytes[1].Should().Be("09");
+        }
+
+        [TestMethod]
+        public void Expand_RES_b_ex_r_Mnemonics()
+        {
+            var navigator = new InstructionNavigator(_instructionSetInfo);
+            var expander = new InstructionExpander(navigator.Tables);
+
+            var instruction = navigator.Mnemonic("RES b, (ex+d), r").First();
+            var decls = expander.Expand(new InstructionMeta(instruction)).ToList();
+
+            decls.ForEach(d => Console.WriteLine(d.Name));
+
+            decls.Should().HaveCount(112);
         }
     }
 }

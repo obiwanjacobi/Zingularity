@@ -11,7 +11,7 @@ namespace Jacobi.CpuZ80.Meta.Tests
         {
             var setInfo = InstructionSetHelper.Load();
 
-            setInfo.Tables.Should().HaveCount(16);
+            setInfo.Tables.Should().HaveCount(17);
             setInfo.Tables.ContainsKey("r").Should().BeTrue();
             setInfo.Tables.ContainsKey("s").Should().BeTrue();
             setInfo.Tables.ContainsKey("t").Should().BeTrue();
@@ -27,9 +27,10 @@ namespace Jacobi.CpuZ80.Meta.Tests
             setInfo.Tables.ContainsKey("c").Should().BeTrue();
             setInfo.Tables.ContainsKey("j").Should().BeTrue();
             setInfo.Tables.ContainsKey("i").Should().BeTrue();
+            setInfo.Tables.ContainsKey("*").Should().BeTrue();
             setInfo.Tables.ContainsKey("ops").Should().BeTrue();
 
-            setInfo.Instructions.Should().HaveCount(207);
+            setInfo.Instructions.Should().HaveCount(213);
         }
     }
 }

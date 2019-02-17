@@ -35,10 +35,10 @@ void OnClock_IM0_ED2_OF(AsyncThis* async) {}
 void OnClock_IM1_ED2_OF(AsyncThis* async) {}
 
 // IM1*   -  IM1x_ED2  -  ED, 76
-void OnClock_IM1x_ED2_OF(AsyncThis* async) {}
+void OnClock_IM1x_ED2_OF(AsyncThis* async) { OnClock_IM1_ED2_OF(async); }
 
 // IM2   -  IM2_ED2  -  ED, 5E
 void OnClock_IM2_ED2_OF(AsyncThis* async) {}
 
 // IM2*   -  IM2x_ED2  -  ED, 7E
-void OnClock_IM2x_ED2_OF(AsyncThis* async) {}
+void OnClock_IM2x_ED2_OF(AsyncThis* async) { OnClock_IM2_ED2_OF(async); }

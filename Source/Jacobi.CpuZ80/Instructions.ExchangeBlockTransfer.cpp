@@ -24,13 +24,6 @@ void OnClock_EX_SP__ex_ex2_SRl(AsyncThis* async) {}
 void OnClock_EX_SP__ex_ex2_SWh(AsyncThis* async) {}
 void OnClock_EX_SP__ex_ex2_SWl(AsyncThis* async) {}
 
-// EX (SP), IY   -  EX_SP__IY_FD2  -  FD, E3
-// void OnClock_EX_SP__ex_ex2_OF(AsyncThis* async) {}
-// void OnClock_EX_SP__ex_ex2_SRh(AsyncThis* async) {}
-// void OnClock_EX_SP__ex_ex2_SRl(AsyncThis* async) {}
-// void OnClock_EX_SP__ex_ex2_SWh(AsyncThis* async) {}
-// void OnClock_EX_SP__ex_ex2_SWl(AsyncThis* async) {}
-
 // LDI   -  LDI_ED2  -  ED, A0
 void OnClock_LDI_ED2_OF(AsyncThis* async) {}
 void OnClock_LDI_ED2_MR(AsyncThis* async) {}

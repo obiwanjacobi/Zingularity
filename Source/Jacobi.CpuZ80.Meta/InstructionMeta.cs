@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Jacobi.CpuZ80.Meta
 {
@@ -78,6 +79,18 @@ namespace Jacobi.CpuZ80.Meta
         public List<InstructionVariable> Variables { get; private set; }
 
         public IEnumerable<MachineCycleInfo> MachineCycles { get; }
+
+        public byte IdentifyingByte
+        {
+            get
+            {
+                return byte.Parse(HasDD || HasFD
+                    ? (HasCB ? Info.Bytes[3] : Info.Bytes[1])
+                    : (HasCB || HasED ? Info.Bytes[1] : Info.Bytes[0]));
+            }
+        }
+
+        public bool IsAlt => Variables.Where(v => v.Name == "*").Any();
 
         public bool Has_d => _parameters.Contains("d");
         public bool Has_n => _parameters.Contains("n");

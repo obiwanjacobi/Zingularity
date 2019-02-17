@@ -1,4 +1,4 @@
-﻿Generating code for 1447 Z80 instructions.
+﻿Generating code for 1428 Z80 instructions.
 
 Generating 'InstructionsZ80.hpp'...
 Done.

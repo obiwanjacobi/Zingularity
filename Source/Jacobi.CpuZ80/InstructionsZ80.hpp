@@ -1590,9 +1590,6 @@ extern const InstructionInfo instructionInfoCPLA_1;
 // NEG  -  ED, 44
 extern const InstructionInfo instructionInfoNEG_ED2;
 
-// NEG *  -  ED, 44
-extern const InstructionInfo instructionInfoNEG_ED2;
-
 // NEG *  -  ED, 4C
 extern const InstructionInfo instructionInfoNEG_ED2;
 
@@ -2622,12 +2619,6 @@ extern const InstructionInfo instructionInfoBIT0__IX_d__DD4;
 // BIT 0, (IY+d) *  -  FD, CB, d, 45
 extern const InstructionInfo instructionInfoBIT0__IY_d__FD4;
 
-// BIT 0, (IX+d) *  -  DD, CB, d, 46
-extern const InstructionInfo instructionInfoBIT0__IX_d__DD4;
-
-// BIT 0, (IY+d) *  -  FD, CB, d, 46
-extern const InstructionInfo instructionInfoBIT0__IY_d__FD4;
-
 // BIT 0, (IX+d) *  -  DD, CB, d, 47
 extern const InstructionInfo instructionInfoBIT0__IX_d__DD4;
 
@@ -2668,12 +2659,6 @@ extern const InstructionInfo instructionInfoBIT1__IY_d__FD4;
 extern const InstructionInfo instructionInfoBIT1__IX_d__DD4;
 
 // BIT 1, (IY+d) *  -  FD, CB, d, 4D
-extern const InstructionInfo instructionInfoBIT1__IY_d__FD4;
-
-// BIT 1, (IX+d) *  -  DD, CB, d, 4E
-extern const InstructionInfo instructionInfoBIT1__IX_d__DD4;
-
-// BIT 1, (IY+d) *  -  FD, CB, d, 4E
 extern const InstructionInfo instructionInfoBIT1__IY_d__FD4;
 
 // BIT 1, (IX+d) *  -  DD, CB, d, 4F
@@ -2718,12 +2703,6 @@ extern const InstructionInfo instructionInfoBIT2__IX_d__DD4;
 // BIT 2, (IY+d) *  -  FD, CB, d, 55
 extern const InstructionInfo instructionInfoBIT2__IY_d__FD4;
 
-// BIT 2, (IX+d) *  -  DD, CB, d, 56
-extern const InstructionInfo instructionInfoBIT2__IX_d__DD4;
-
-// BIT 2, (IY+d) *  -  FD, CB, d, 56
-extern const InstructionInfo instructionInfoBIT2__IY_d__FD4;
-
 // BIT 2, (IX+d) *  -  DD, CB, d, 57
 extern const InstructionInfo instructionInfoBIT2__IX_d__DD4;
 
@@ -2764,12 +2743,6 @@ extern const InstructionInfo instructionInfoBIT3__IY_d__FD4;
 extern const InstructionInfo instructionInfoBIT3__IX_d__DD4;
 
 // BIT 3, (IY+d) *  -  FD, CB, d, 5D
-extern const InstructionInfo instructionInfoBIT3__IY_d__FD4;
-
-// BIT 3, (IX+d) *  -  DD, CB, d, 5E
-extern const InstructionInfo instructionInfoBIT3__IX_d__DD4;
-
-// BIT 3, (IY+d) *  -  FD, CB, d, 5E
 extern const InstructionInfo instructionInfoBIT3__IY_d__FD4;
 
 // BIT 3, (IX+d) *  -  DD, CB, d, 5F
@@ -2814,12 +2787,6 @@ extern const InstructionInfo instructionInfoBIT4__IX_d__DD4;
 // BIT 4, (IY+d) *  -  FD, CB, d, 65
 extern const InstructionInfo instructionInfoBIT4__IY_d__FD4;
 
-// BIT 4, (IX+d) *  -  DD, CB, d, 66
-extern const InstructionInfo instructionInfoBIT4__IX_d__DD4;
-
-// BIT 4, (IY+d) *  -  FD, CB, d, 66
-extern const InstructionInfo instructionInfoBIT4__IY_d__FD4;
-
 // BIT 4, (IX+d) *  -  DD, CB, d, 67
 extern const InstructionInfo instructionInfoBIT4__IX_d__DD4;
 
@@ -2860,12 +2827,6 @@ extern const InstructionInfo instructionInfoBIT5__IY_d__FD4;
 extern const InstructionInfo instructionInfoBIT5__IX_d__DD4;
 
 // BIT 5, (IY+d) *  -  FD, CB, d, 6D
-extern const InstructionInfo instructionInfoBIT5__IY_d__FD4;
-
-// BIT 5, (IX+d) *  -  DD, CB, d, 6E
-extern const InstructionInfo instructionInfoBIT5__IX_d__DD4;
-
-// BIT 5, (IY+d) *  -  FD, CB, d, 6E
 extern const InstructionInfo instructionInfoBIT5__IY_d__FD4;
 
 // BIT 5, (IX+d) *  -  DD, CB, d, 6F
@@ -2910,12 +2871,6 @@ extern const InstructionInfo instructionInfoBIT6__IX_d__DD4;
 // BIT 6, (IY+d) *  -  FD, CB, d, 75
 extern const InstructionInfo instructionInfoBIT6__IY_d__FD4;
 
-// BIT 6, (IX+d) *  -  DD, CB, d, 76
-extern const InstructionInfo instructionInfoBIT6__IX_d__DD4;
-
-// BIT 6, (IY+d) *  -  FD, CB, d, 76
-extern const InstructionInfo instructionInfoBIT6__IY_d__FD4;
-
 // BIT 6, (IX+d) *  -  DD, CB, d, 77
 extern const InstructionInfo instructionInfoBIT6__IX_d__DD4;
 
@@ -2956,12 +2911,6 @@ extern const InstructionInfo instructionInfoBIT7__IY_d__FD4;
 extern const InstructionInfo instructionInfoBIT7__IX_d__DD4;
 
 // BIT 7, (IY+d) *  -  FD, CB, d, 7D
-extern const InstructionInfo instructionInfoBIT7__IY_d__FD4;
-
-// BIT 7, (IX+d) *  -  DD, CB, d, 7E
-extern const InstructionInfo instructionInfoBIT7__IX_d__DD4;
-
-// BIT 7, (IY+d) *  -  FD, CB, d, 7E
 extern const InstructionInfo instructionInfoBIT7__IY_d__FD4;
 
 // BIT 7, (IX+d) *  -  DD, CB, d, 7F
@@ -4236,28 +4185,22 @@ extern const InstructionInfo instructionInfoRETI_ED2;
 // RETN  -  ED, 45
 extern const InstructionInfo instructionInfoRETN_ED2;
 
-// RETN *  -  ED, 41
+// RETN *  -  ED, 55
 extern const InstructionInfo instructionInfoRETN_ED2;
 
-// RETN *  -  ED, 49
+// RETN *  -  ED, 5D
 extern const InstructionInfo instructionInfoRETN_ED2;
 
-// RETN *  -  ED, 51
+// RETN *  -  ED, 65
 extern const InstructionInfo instructionInfoRETN_ED2;
 
-// RETN *  -  ED, 59
+// RETN *  -  ED, 6D
 extern const InstructionInfo instructionInfoRETN_ED2;
 
-// RETN *  -  ED, 61
+// RETN *  -  ED, 75
 extern const InstructionInfo instructionInfoRETN_ED2;
 
-// RETN *  -  ED, 69
-extern const InstructionInfo instructionInfoRETN_ED2;
-
-// RETN *  -  ED, 71
-extern const InstructionInfo instructionInfoRETN_ED2;
-
-// RETN *  -  ED, 79
+// RETN *  -  ED, 7D
 extern const InstructionInfo instructionInfoRETN_ED2;
 
 // RST 00  -  C7

@@ -2354,7 +2354,7 @@
         },
         {
             "mnemonic": "RETN *",
-            "bytes": [ "ED", "01***001" ],
+            "bytes": [ "ED", "01***101" ],
             "cycles": [ 4, 4, 3, 3 ],
             "ops": [ "OF", "OF", "SRh", "SRl" ],
             "flags": {}

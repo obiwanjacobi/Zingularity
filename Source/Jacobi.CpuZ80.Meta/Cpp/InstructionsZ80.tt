@@ -23,10 +23,10 @@
     var setInfo = InstructionSetInfo.FromJsonFile(filePath);
 
     var decls = new List<InstructionMeta>();
+    var expander = new InstructionExpander(TableInfo.ToList(setInfo.Tables));
     foreach (var instruction in setInfo.Instructions)
     {
-        var expander = new InstructionExpander(TableInfo.ToList(setInfo.Tables));
-        decls.AddRange(expander.Expand(new InstructionMeta(instruction)));
+        expander.Expand(decls, new InstructionMeta(instruction));
     }
 
 #>

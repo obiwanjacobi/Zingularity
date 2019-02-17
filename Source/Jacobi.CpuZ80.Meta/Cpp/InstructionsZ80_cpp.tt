@@ -23,8 +23,11 @@
 
 // Instructions for the Z80:
 <#+
+            var names = new List<string>();
             foreach (var decl in _decls)
             {
+                if (names.Contains(decl.Name)) { continue; }
+                names.Add(decl.Name);
 #>
 
 // <#= decl.Info.Mnemonic #>   -  <#= decl.Name #>  -  <#= String.Join(", ", decl.Info.Bytes) #>
@@ -35,7 +38,7 @@ const InstructionInfo instructionInfo<#= decl.Name #> =
     {
 <#+
                 foreach(var mc in decl.MachineCycles)
-                {  
+                {
                     if (mc.ExtraCycles > 0)
                     {
                         if (!mc.IsExt && decl.Root.Variables.Any())

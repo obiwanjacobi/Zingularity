@@ -1,6 +1,7 @@
 ﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Jacobi.CpuZ80.Meta.Tests
@@ -123,6 +124,25 @@ namespace Jacobi.CpuZ80.Meta.Tests
 
             var instruction = navigator.Mnemonic("NEG *").First();
             var decls = expander.Expand(new InstructionMeta(instruction)).ToList();
+
+            decls.ForEach(d => Console.WriteLine(d.Name));
+
+            decls.Should().HaveCount(8);
+        }
+
+        [TestMethod]
+        public void Expand_NEG_Mnemonics()
+        {
+            var navigator = new InstructionNavigator(_instructionSetInfo);
+            var expander = new InstructionExpander(navigator.Tables);
+
+            var instructions = navigator.MnemonicStartsWith("NEG");
+            var decls = new List<InstructionMeta>();
+
+            foreach (var instruction in instructions)
+            {
+                expander.Expand(decls, new InstructionMeta(instruction));
+            }
 
             decls.ForEach(d => Console.WriteLine(d.Name));
 

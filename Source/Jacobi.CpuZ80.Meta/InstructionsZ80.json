@@ -114,6 +114,16 @@
             "30": "110",
             "38": "111"
         },
+        "*": {
+            "*0": "000",
+            "*1": "001",
+            "*2": "010",
+            "*3": "011",
+            "*4": "100",
+            "*5": "101",
+            "*6": "110",
+            "*7": "111"
+        },
         "ex": {
             "IX": "DD",
             "IY": "FD"
@@ -1400,20 +1410,20 @@
                 "C": "00"
             }
         },
-        //{
-        //    "mnemonic": "NEG*",
-        //    "bytes": [ "ED", "01***100" ],
-        //    "cycles": [ 4, 4 ],
-        //    "ops": [ "OF", "OF" ],
-        //    "flags": {
-        //        "S": "",
-        //        "Z": "",
-        //        "H": "b4",
-        //        "V": "80",
-        //        "N": "1",
-        //        "C": "00"
-        //    }
-        //},
+        {
+            "mnemonic": "NEG *",
+            "bytes": [ "ED", "01***100" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {
+                "S": "",
+                "Z": "",
+                "H": "b4",
+                "V": "80",
+                "N": "1",
+                "C": "00"
+            }
+        },
         {
             "mnemonic": "CCF",
             "bytes": [ "3F" ],
@@ -1471,13 +1481,27 @@
             "ops": [ "OF", "OF" ],
             "flags": {}
         },
-        //{
-        //    "mnemonic": "IM0*",
-        //    "bytes": [ "ED", "01*0*110" ],
-        //    "cycles": [ 4, 4 ],
-        //    "ops": [ "OF", "OF" ],
-        //    "flags": {}
-        //},
+        {
+            "mnemonic": "IM0*",
+            "bytes": [ "ED", "4E" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "IM0*",
+            "bytes": [ "ED", "66" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {}
+        },
+        {
+            "mnemonic": "IM0*",
+            "bytes": [ "ED", "6E" ],
+            "cycles": [ 4, 4 ],
+            "ops": [ "OF", "OF" ],
+            "flags": {}
+        },
         {
             "mnemonic": "IM1",
             "bytes": [ "ED", "56" ],
@@ -2158,17 +2182,17 @@
                 "N": "0"
             }
         },
-        //{
-        //    "mnemonic": "BIT b, (ex+d)*",  // no 'r' - not stored. Current param detection uses mnemonic
-        //    "bytes": [ "ex", "CB", "d", "01bbb***" ],
-        //    "cycles": [ 4, 4, 3, 5, 4 ],
-        //    "ops": [ "OF", "OF", "OD", "FD", "MR" ],
-        //    "flags": {
-        //        "Z": "",
-        //        "H": "1",
-        //        "N": "0"
-        //    }
-        //},
+        {
+            "mnemonic": "BIT b, (ex+d) *",  // no 'r' - not stored.
+            "bytes": [ "ex", "CB", "d", "01bbb***" ],
+            "cycles": [ 4, 4, 3, 5, 4 ],
+            "ops": [ "OF", "OF", "OD", "FD", "MR" ],
+            "flags": {
+                "Z": "",
+                "H": "1",
+                "N": "0"
+            }
+        },
         {
             "mnemonic": "SET b, r",
             "bytes": [ "CB", "11bbbrrr" ],
@@ -2328,13 +2352,13 @@
             "ops": [ "OF", "OF", "SRh", "SRl" ],
             "flags": {}
         },
-        //{
-        //    "mnemonic": "RETN*",
-        //    "bytes": [ "ED", "01***001" ],
-        //    "cycles": [ 4, 4, 3, 3 ],
-        //    "ops": [ "OF", "OF", "SRh", "SRl" ],
-        //    "flags": {}
-        //},
+        {
+            "mnemonic": "RETN *",
+            "bytes": [ "ED", "01***001" ],
+            "cycles": [ 4, 4, 3, 3 ],
+            "ops": [ "OF", "OF", "SRh", "SRl" ],
+            "flags": {}
+        },
         {
             "mnemonic": "RST i",
             "bytes": [ "11iii111" ],

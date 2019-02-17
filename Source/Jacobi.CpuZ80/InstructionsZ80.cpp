@@ -9946,6 +9946,158 @@ const InstructionInfo instructionInfoNEG_ED2 =
     }
 };
 
+// NEG *   -  NEG_ED2  -  ED, 44
+const InstructionInfo instructionInfoNEG_ED2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_NEG_ED2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// NEG *   -  NEG_ED2  -  ED, 4C
+const InstructionInfo instructionInfoNEG_ED2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_NEG_ED2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// NEG *   -  NEG_ED2  -  ED, 54
+const InstructionInfo instructionInfoNEG_ED2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_NEG_ED2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// NEG *   -  NEG_ED2  -  ED, 5C
+const InstructionInfo instructionInfoNEG_ED2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_NEG_ED2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// NEG *   -  NEG_ED2  -  ED, 64
+const InstructionInfo instructionInfoNEG_ED2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_NEG_ED2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// NEG *   -  NEG_ED2  -  ED, 6C
+const InstructionInfo instructionInfoNEG_ED2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_NEG_ED2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// NEG *   -  NEG_ED2  -  ED, 74
+const InstructionInfo instructionInfoNEG_ED2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_NEG_ED2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// NEG *   -  NEG_ED2  -  ED, 7C
+const InstructionInfo instructionInfoNEG_ED2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_NEG_ED2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
 // CCF   -  CCF_1  -  3F
 const InstructionInfo instructionInfoCCF_1 =
 {
@@ -10079,6 +10231,63 @@ const InstructionInfo instructionInfoIM0_ED2 =
     }
 };
 
+// IM0*   -  IM0_ED2  -  ED, 4E
+const InstructionInfo instructionInfoIM0_ED2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_IM0_ED2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// IM0*   -  IM0_ED2  -  ED, 66
+const InstructionInfo instructionInfoIM0_ED2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_IM0_ED2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// IM0*   -  IM0_ED2  -  ED, 6E
+const InstructionInfo instructionInfoIM0_ED2 =
+{
+    2,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_IM0_ED2_OF },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
 // IM1   -  IM1_ED2  -  ED, 56
 const InstructionInfo instructionInfoIM1_ED2 =
 {
@@ -10098,14 +10307,14 @@ const InstructionInfo instructionInfoIM1_ED2 =
     }
 };
 
-// IM1*   -  IM1x_ED2  -  ED, 76
-const InstructionInfo instructionInfoIM1x_ED2 =
+// IM1*   -  IM1_ED2  -  ED, 76
+const InstructionInfo instructionInfoIM1_ED2 =
 {
     2,
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_IM1x_ED2_OF },
+        { 4, OnClock_IM1_ED2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -10136,14 +10345,14 @@ const InstructionInfo instructionInfoIM2_ED2 =
     }
 };
 
-// IM2*   -  IM2x_ED2  -  ED, 7E
-const InstructionInfo instructionInfoIM2x_ED2 =
+// IM2*   -  IM2_ED2  -  ED, 7E
+const InstructionInfo instructionInfoIM2_ED2 =
 {
     2,
     0,
     {
         { 4, OnClock_OF },
-        { 4, OnClock_IM2x_ED2_OF },
+        { 4, OnClock_IM2_ED2_OF },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -16027,6 +16236,2438 @@ const InstructionInfo instructionInfoBIT7__IX_d__DD4 =
 };
 
 // BIT 7, (IY+d)   -  BIT7__IY_d__FD4  -  FD, CB, d, 7E
+const InstructionInfo instructionInfoBIT7__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 40
+const InstructionInfo instructionInfoBIT0__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 40
+const InstructionInfo instructionInfoBIT0__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 41
+const InstructionInfo instructionInfoBIT0__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 41
+const InstructionInfo instructionInfoBIT0__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 42
+const InstructionInfo instructionInfoBIT0__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 42
+const InstructionInfo instructionInfoBIT0__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 43
+const InstructionInfo instructionInfoBIT0__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 43
+const InstructionInfo instructionInfoBIT0__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 44
+const InstructionInfo instructionInfoBIT0__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 44
+const InstructionInfo instructionInfoBIT0__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 45
+const InstructionInfo instructionInfoBIT0__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 45
+const InstructionInfo instructionInfoBIT0__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 46
+const InstructionInfo instructionInfoBIT0__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 46
+const InstructionInfo instructionInfoBIT0__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 47
+const InstructionInfo instructionInfoBIT0__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 47
+const InstructionInfo instructionInfoBIT0__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 0 },
+        { VariableType::None },
+    }
+};
+
+// BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 48
+const InstructionInfo instructionInfoBIT1__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 48
+const InstructionInfo instructionInfoBIT1__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 49
+const InstructionInfo instructionInfoBIT1__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 49
+const InstructionInfo instructionInfoBIT1__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 4A
+const InstructionInfo instructionInfoBIT1__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 4A
+const InstructionInfo instructionInfoBIT1__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 4B
+const InstructionInfo instructionInfoBIT1__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 4B
+const InstructionInfo instructionInfoBIT1__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 4C
+const InstructionInfo instructionInfoBIT1__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 4C
+const InstructionInfo instructionInfoBIT1__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 4D
+const InstructionInfo instructionInfoBIT1__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 4D
+const InstructionInfo instructionInfoBIT1__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 4E
+const InstructionInfo instructionInfoBIT1__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 4E
+const InstructionInfo instructionInfoBIT1__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 4F
+const InstructionInfo instructionInfoBIT1__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 4F
+const InstructionInfo instructionInfoBIT1__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 1 },
+        { VariableType::None },
+    }
+};
+
+// BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 50
+const InstructionInfo instructionInfoBIT2__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 50
+const InstructionInfo instructionInfoBIT2__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 51
+const InstructionInfo instructionInfoBIT2__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 51
+const InstructionInfo instructionInfoBIT2__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 52
+const InstructionInfo instructionInfoBIT2__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 52
+const InstructionInfo instructionInfoBIT2__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 53
+const InstructionInfo instructionInfoBIT2__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 53
+const InstructionInfo instructionInfoBIT2__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 54
+const InstructionInfo instructionInfoBIT2__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 54
+const InstructionInfo instructionInfoBIT2__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 55
+const InstructionInfo instructionInfoBIT2__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 55
+const InstructionInfo instructionInfoBIT2__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 56
+const InstructionInfo instructionInfoBIT2__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 56
+const InstructionInfo instructionInfoBIT2__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 57
+const InstructionInfo instructionInfoBIT2__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 57
+const InstructionInfo instructionInfoBIT2__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 2 },
+        { VariableType::None },
+    }
+};
+
+// BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 58
+const InstructionInfo instructionInfoBIT3__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 58
+const InstructionInfo instructionInfoBIT3__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 59
+const InstructionInfo instructionInfoBIT3__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 59
+const InstructionInfo instructionInfoBIT3__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 5A
+const InstructionInfo instructionInfoBIT3__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 5A
+const InstructionInfo instructionInfoBIT3__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 5B
+const InstructionInfo instructionInfoBIT3__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 5B
+const InstructionInfo instructionInfoBIT3__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 5C
+const InstructionInfo instructionInfoBIT3__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 5C
+const InstructionInfo instructionInfoBIT3__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 5D
+const InstructionInfo instructionInfoBIT3__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 5D
+const InstructionInfo instructionInfoBIT3__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 5E
+const InstructionInfo instructionInfoBIT3__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 5E
+const InstructionInfo instructionInfoBIT3__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 5F
+const InstructionInfo instructionInfoBIT3__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 5F
+const InstructionInfo instructionInfoBIT3__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 3 },
+        { VariableType::None },
+    }
+};
+
+// BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 60
+const InstructionInfo instructionInfoBIT4__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 60
+const InstructionInfo instructionInfoBIT4__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 61
+const InstructionInfo instructionInfoBIT4__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 61
+const InstructionInfo instructionInfoBIT4__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 62
+const InstructionInfo instructionInfoBIT4__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 62
+const InstructionInfo instructionInfoBIT4__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 63
+const InstructionInfo instructionInfoBIT4__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 63
+const InstructionInfo instructionInfoBIT4__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 64
+const InstructionInfo instructionInfoBIT4__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 64
+const InstructionInfo instructionInfoBIT4__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 65
+const InstructionInfo instructionInfoBIT4__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 65
+const InstructionInfo instructionInfoBIT4__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 66
+const InstructionInfo instructionInfoBIT4__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 66
+const InstructionInfo instructionInfoBIT4__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 67
+const InstructionInfo instructionInfoBIT4__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 67
+const InstructionInfo instructionInfoBIT4__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 4 },
+        { VariableType::None },
+    }
+};
+
+// BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 68
+const InstructionInfo instructionInfoBIT5__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 68
+const InstructionInfo instructionInfoBIT5__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 69
+const InstructionInfo instructionInfoBIT5__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 69
+const InstructionInfo instructionInfoBIT5__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 6A
+const InstructionInfo instructionInfoBIT5__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 6A
+const InstructionInfo instructionInfoBIT5__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 6B
+const InstructionInfo instructionInfoBIT5__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 6B
+const InstructionInfo instructionInfoBIT5__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 6C
+const InstructionInfo instructionInfoBIT5__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 6C
+const InstructionInfo instructionInfoBIT5__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 6D
+const InstructionInfo instructionInfoBIT5__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 6D
+const InstructionInfo instructionInfoBIT5__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 6E
+const InstructionInfo instructionInfoBIT5__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 6E
+const InstructionInfo instructionInfoBIT5__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 6F
+const InstructionInfo instructionInfoBIT5__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 6F
+const InstructionInfo instructionInfoBIT5__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 5 },
+        { VariableType::None },
+    }
+};
+
+// BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 70
+const InstructionInfo instructionInfoBIT6__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 70
+const InstructionInfo instructionInfoBIT6__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 71
+const InstructionInfo instructionInfoBIT6__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 71
+const InstructionInfo instructionInfoBIT6__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 72
+const InstructionInfo instructionInfoBIT6__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 72
+const InstructionInfo instructionInfoBIT6__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 73
+const InstructionInfo instructionInfoBIT6__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 73
+const InstructionInfo instructionInfoBIT6__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 74
+const InstructionInfo instructionInfoBIT6__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 74
+const InstructionInfo instructionInfoBIT6__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 75
+const InstructionInfo instructionInfoBIT6__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 75
+const InstructionInfo instructionInfoBIT6__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 76
+const InstructionInfo instructionInfoBIT6__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 76
+const InstructionInfo instructionInfoBIT6__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 77
+const InstructionInfo instructionInfoBIT6__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 77
+const InstructionInfo instructionInfoBIT6__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 6 },
+        { VariableType::None },
+    }
+};
+
+// BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 78
+const InstructionInfo instructionInfoBIT7__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 78
+const InstructionInfo instructionInfoBIT7__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 79
+const InstructionInfo instructionInfoBIT7__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 79
+const InstructionInfo instructionInfoBIT7__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 7A
+const InstructionInfo instructionInfoBIT7__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 7A
+const InstructionInfo instructionInfoBIT7__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 7B
+const InstructionInfo instructionInfoBIT7__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 7B
+const InstructionInfo instructionInfoBIT7__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 7C
+const InstructionInfo instructionInfoBIT7__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 7C
+const InstructionInfo instructionInfoBIT7__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 7D
+const InstructionInfo instructionInfoBIT7__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 7D
+const InstructionInfo instructionInfoBIT7__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 7E
+const InstructionInfo instructionInfoBIT7__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 7E
+const InstructionInfo instructionInfoBIT7__IY_d__FD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 7F
+const InstructionInfo instructionInfoBIT7__IX_d__DD4 =
+{
+    5,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 5, OnClock_BITb__ex_d__ex4_FD },
+        { 4, OnClock_BITb__ex_d__ex4_MR },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::Bits8, 7 },
+        { VariableType::None },
+    }
+};
+
+// BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 7F
 const InstructionInfo instructionInfoBIT7__IY_d__FD4 =
 {
     5,
@@ -24045,6 +26686,158 @@ const InstructionInfo instructionInfoRETI_ED2 =
 };
 
 // RETN   -  RETN_ED2  -  ED, 45
+const InstructionInfo instructionInfoRETN_ED2 =
+{
+    4,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_RETN_ED2_OF },
+        { 3, OnClock_RETN_ED2_SRh },
+        { 3, OnClock_RETN_ED2_SRl },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// RETN *   -  RETN_ED2  -  ED, 41
+const InstructionInfo instructionInfoRETN_ED2 =
+{
+    4,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_RETN_ED2_OF },
+        { 3, OnClock_RETN_ED2_SRh },
+        { 3, OnClock_RETN_ED2_SRl },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// RETN *   -  RETN_ED2  -  ED, 49
+const InstructionInfo instructionInfoRETN_ED2 =
+{
+    4,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_RETN_ED2_OF },
+        { 3, OnClock_RETN_ED2_SRh },
+        { 3, OnClock_RETN_ED2_SRl },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// RETN *   -  RETN_ED2  -  ED, 51
+const InstructionInfo instructionInfoRETN_ED2 =
+{
+    4,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_RETN_ED2_OF },
+        { 3, OnClock_RETN_ED2_SRh },
+        { 3, OnClock_RETN_ED2_SRl },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// RETN *   -  RETN_ED2  -  ED, 59
+const InstructionInfo instructionInfoRETN_ED2 =
+{
+    4,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_RETN_ED2_OF },
+        { 3, OnClock_RETN_ED2_SRh },
+        { 3, OnClock_RETN_ED2_SRl },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// RETN *   -  RETN_ED2  -  ED, 61
+const InstructionInfo instructionInfoRETN_ED2 =
+{
+    4,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_RETN_ED2_OF },
+        { 3, OnClock_RETN_ED2_SRh },
+        { 3, OnClock_RETN_ED2_SRl },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// RETN *   -  RETN_ED2  -  ED, 69
+const InstructionInfo instructionInfoRETN_ED2 =
+{
+    4,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_RETN_ED2_OF },
+        { 3, OnClock_RETN_ED2_SRh },
+        { 3, OnClock_RETN_ED2_SRl },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// RETN *   -  RETN_ED2  -  ED, 71
+const InstructionInfo instructionInfoRETN_ED2 =
+{
+    4,
+    0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_RETN_ED2_OF },
+        { 3, OnClock_RETN_ED2_SRh },
+        { 3, OnClock_RETN_ED2_SRl },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None },
+    }
+};
+
+// RETN *   -  RETN_ED2  -  ED, 79
 const InstructionInfo instructionInfoRETN_ED2 =
 {
     4,

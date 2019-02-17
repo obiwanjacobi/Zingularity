@@ -86,8 +86,10 @@ const InstructionInfo instructionInfo<#= decl.Name #> =
             if (decl.Variables.Count > index)
             {
                 var variable = decl.Variables[index];
-                if (variable.Type != InstructionVariableType.OpcodeByte)
+                if (variable.Type != InstructionVariableType.OpcodeByte && variable.Type != InstructionVariableType.None)
+                {
                     return "{ VariableType::" + variable.Type.ToString() + ", " + variable.Value + " },";
+                }
             }
 
             return "{ VariableType::None },";

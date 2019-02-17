@@ -25,6 +25,8 @@ namespace Jacobi.CpuZ80.Meta.Tests
             var instruction = navigator.Mnemonic("LD r, s").First();
             var decls = expander.Expand(new InstructionMeta(instruction)).ToList();
 
+            decls.ForEach(d => Console.WriteLine(d.Name));
+
             decls.Should().HaveCount(49);
             decls[0].Info.Mnemonic.Should().Be("LD A, A");
             decls[1].Info.Mnemonic.Should().Be("LD A, B");
@@ -44,6 +46,8 @@ namespace Jacobi.CpuZ80.Meta.Tests
             var instruction = navigator.Mnemonic("LD I, A").First();
             var decls = expander.Expand(new InstructionMeta(instruction)).ToList();
 
+            decls.ForEach(d => Console.WriteLine(d.Name));
+
             decls.Should().HaveCount(1);
             decls[0].Info.Mnemonic.Should().Be("LD I, A");
         }
@@ -56,6 +60,8 @@ namespace Jacobi.CpuZ80.Meta.Tests
 
             var instruction = navigator.Mnemonic("LD r, (ex+d)").First();
             var decls = expander.Expand(new InstructionMeta(instruction)).ToList();
+
+            decls.ForEach(d => Console.WriteLine(d.Name));
 
             decls.Should().HaveCount(14);
             decls[0].Info.Mnemonic.Should().Be("LD A, (IX+d)");
@@ -83,6 +89,8 @@ namespace Jacobi.CpuZ80.Meta.Tests
             var instruction = navigator.MnemonicStartsWith("ADD IX").First();
             var decls = expander.Expand(new InstructionMeta(instruction)).ToList();
 
+            decls.ForEach(d => Console.WriteLine(d.Name));
+
             decls.Should().HaveCount(4);
             decls[0].Info.Mnemonic.Should().Be("ADD IX, BC");
             decls[1].Info.Mnemonic.Should().Be("ADD IX, DE");
@@ -105,6 +113,20 @@ namespace Jacobi.CpuZ80.Meta.Tests
             decls.ForEach(d => Console.WriteLine(d.Name));
 
             decls.Should().HaveCount(112);
+        }
+
+        [TestMethod]
+        public void Expand_NEG_x_Mnemonics()
+        {
+            var navigator = new InstructionNavigator(_instructionSetInfo);
+            var expander = new InstructionExpander(navigator.Tables);
+
+            var instruction = navigator.Mnemonic("NEG *").First();
+            var decls = expander.Expand(new InstructionMeta(instruction)).ToList();
+
+            decls.ForEach(d => Console.WriteLine(d.Name));
+
+            decls.Should().HaveCount(8);
         }
     }
 }

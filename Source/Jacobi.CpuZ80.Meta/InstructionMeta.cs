@@ -52,7 +52,7 @@ namespace Jacobi.CpuZ80.Meta
                     _name = Info.Mnemonic
                         .Replace(" ", "")
                         .Replace("'", "2")
-                        .Replace("*", "x")
+                        .Replace("*", "")
                         .ReplaceAll("_", ",", "(", ")", "+");
 
                     _name += "_";

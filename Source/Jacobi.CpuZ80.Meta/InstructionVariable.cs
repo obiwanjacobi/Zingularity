@@ -7,11 +7,7 @@ namespace Jacobi.CpuZ80.Meta
         private static readonly Dictionary<string, InstructionVariableType> _varTables =
             new Dictionary<string, InstructionVariableType>()
         {
-            //{ "d", InstructionVariableType.OpcodeByte },
-            //{ "n", InstructionVariableType.OpcodeByte },
-            //{ "nn", InstructionVariableType.OpcodeByte },
             { "ex", InstructionVariableType.OpcodeByte },
-
             { "b", InstructionVariableType.Bits8 },
             { "c", InstructionVariableType.Condition8 },
             { "i", InstructionVariableType.RstAddress },
@@ -26,6 +22,7 @@ namespace Jacobi.CpuZ80.Meta
             { "u", InstructionVariableType.Registers8 },
             { "v", InstructionVariableType.Registers8 },
             { "w", InstructionVariableType.Registers8 },
+            { "*", InstructionVariableType.None },
         };
 
         public string Name { get; set; }
@@ -43,7 +40,6 @@ namespace Jacobi.CpuZ80.Meta
                 if (IsVariable(p))
                 {
                     var type = _varTables[p];
-                    //var index = InstructionParameter.IndexOf(p, root.Info.Bytes);
                     instructionMeta.Variables.Add(new InstructionVariable { Name = p, Type = type });
                 }
             }
@@ -67,6 +63,7 @@ namespace Jacobi.CpuZ80.Meta
         Bits8,
         AluOps,
         AluRot,
-        RstAddress
+        RstAddress,
+        Ignore
     }
 }

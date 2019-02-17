@@ -66,7 +66,10 @@ namespace Jacobi.CpuZ80.Meta
 
             foreach (var paramVal in paramValues)
             {
-                builder.Replace(paramVal.Key, paramVal.Value);
+                if (paramVal.Key != "*")
+                {
+                    builder.Replace(paramVal.Key, paramVal.Value);
+                }
             }
 
             return builder.ToString();
@@ -80,7 +83,7 @@ namespace Jacobi.CpuZ80.Meta
 
         public static bool IsParameter(string name)
         {
-            return name.IsLower();
+            return name.IsLower() || name == "*";
         }
 
         public static int IndexOf(string param, IEnumerable<string> bytes)

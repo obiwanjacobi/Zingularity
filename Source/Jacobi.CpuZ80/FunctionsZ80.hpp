@@ -1932,6 +1932,30 @@ extern void OnClock_CPLA_1_OF(AsyncThis* async);
 // NEG   -  NEG_ED2  -  ED, 44
 extern void OnClock_NEG_ED2_OF(AsyncThis* async);
 
+// NEG *   -  NEG_ED2  -  ED, 44
+// extern void OnClock_NEG_ED2_OF(AsyncThis* async);
+
+// NEG *   -  NEG_ED2  -  ED, 4C
+// extern void OnClock_NEG_ED2_OF(AsyncThis* async);
+
+// NEG *   -  NEG_ED2  -  ED, 54
+// extern void OnClock_NEG_ED2_OF(AsyncThis* async);
+
+// NEG *   -  NEG_ED2  -  ED, 5C
+// extern void OnClock_NEG_ED2_OF(AsyncThis* async);
+
+// NEG *   -  NEG_ED2  -  ED, 64
+// extern void OnClock_NEG_ED2_OF(AsyncThis* async);
+
+// NEG *   -  NEG_ED2  -  ED, 6C
+// extern void OnClock_NEG_ED2_OF(AsyncThis* async);
+
+// NEG *   -  NEG_ED2  -  ED, 74
+// extern void OnClock_NEG_ED2_OF(AsyncThis* async);
+
+// NEG *   -  NEG_ED2  -  ED, 7C
+// extern void OnClock_NEG_ED2_OF(AsyncThis* async);
+
 // CCF   -  CCF_1  -  3F
 extern void OnClock_CCF_1_OF(AsyncThis* async);
 
@@ -1953,17 +1977,26 @@ extern void OnClock_EI_1_OF(AsyncThis* async);
 // IM0   -  IM0_ED2  -  ED, 46
 extern void OnClock_IM0_ED2_OF(AsyncThis* async);
 
+// IM0*   -  IM0_ED2  -  ED, 4E
+// extern void OnClock_IM0_ED2_OF(AsyncThis* async);
+
+// IM0*   -  IM0_ED2  -  ED, 66
+// extern void OnClock_IM0_ED2_OF(AsyncThis* async);
+
+// IM0*   -  IM0_ED2  -  ED, 6E
+// extern void OnClock_IM0_ED2_OF(AsyncThis* async);
+
 // IM1   -  IM1_ED2  -  ED, 56
 extern void OnClock_IM1_ED2_OF(AsyncThis* async);
 
-// IM1*   -  IM1x_ED2  -  ED, 76
-extern void OnClock_IM1x_ED2_OF(AsyncThis* async);
+// IM1*   -  IM1_ED2  -  ED, 76
+// extern void OnClock_IM1_ED2_OF(AsyncThis* async);
 
 // IM2   -  IM2_ED2  -  ED, 5E
 extern void OnClock_IM2_ED2_OF(AsyncThis* async);
 
-// IM2*   -  IM2x_ED2  -  ED, 7E
-extern void OnClock_IM2x_ED2_OF(AsyncThis* async);
+// IM2*   -  IM2_ED2  -  ED, 7E
+// extern void OnClock_IM2_ED2_OF(AsyncThis* async);
 
 // ADD HL, BC   -  ADDHL_BC_1  -  09
 extern void OnClock_ADDHL_p_1_OF(AsyncThis* async);
@@ -3377,6 +3410,646 @@ extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 7, (IY+d)   -  BIT7__IY_d__FD4  -  FD, CB, d, 7E
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 40
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 40
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 41
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 41
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 42
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 42
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 43
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 43
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 44
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 44
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 45
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 45
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 46
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 46
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 47
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 47
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 48
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 48
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 49
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 49
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 4A
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 4A
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 4B
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 4B
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 4C
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 4C
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 4D
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 4D
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 4E
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 4E
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 4F
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 4F
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 50
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 50
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 51
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 51
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 52
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 52
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 53
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 53
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 54
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 54
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 55
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 55
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 56
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 56
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 57
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 57
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 58
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 58
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 59
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 59
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 5A
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 5A
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 5B
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 5B
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 5C
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 5C
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 5D
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 5D
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 5E
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 5E
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 5F
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 5F
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 60
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 60
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 61
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 61
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 62
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 62
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 63
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 63
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 64
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 64
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 65
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 65
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 66
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 66
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 67
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 67
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 68
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 68
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 69
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 69
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 6A
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 6A
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 6B
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 6B
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 6C
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 6C
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 6D
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 6D
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 6E
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 6E
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 6F
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 6F
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 70
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 70
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 71
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 71
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 72
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 72
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 73
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 73
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 74
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 74
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 75
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 75
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 76
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 76
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 77
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 77
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 78
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 78
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 79
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 79
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 7A
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 7A
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 7B
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 7B
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 7C
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 7C
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 7D
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 7D
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 7E
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 7E
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 7F
+// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
+// extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
+
+// BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 7F
 // extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
@@ -5534,6 +6207,46 @@ extern void OnClock_RETI_ED2_SRl(AsyncThis* async);
 extern void OnClock_RETN_ED2_OF(AsyncThis* async);
 extern void OnClock_RETN_ED2_SRh(AsyncThis* async);
 extern void OnClock_RETN_ED2_SRl(AsyncThis* async);
+
+// RETN *   -  RETN_ED2  -  ED, 41
+// extern void OnClock_RETN_ED2_OF(AsyncThis* async);
+// extern void OnClock_RETN_ED2_SRh(AsyncThis* async);
+// extern void OnClock_RETN_ED2_SRl(AsyncThis* async);
+
+// RETN *   -  RETN_ED2  -  ED, 49
+// extern void OnClock_RETN_ED2_OF(AsyncThis* async);
+// extern void OnClock_RETN_ED2_SRh(AsyncThis* async);
+// extern void OnClock_RETN_ED2_SRl(AsyncThis* async);
+
+// RETN *   -  RETN_ED2  -  ED, 51
+// extern void OnClock_RETN_ED2_OF(AsyncThis* async);
+// extern void OnClock_RETN_ED2_SRh(AsyncThis* async);
+// extern void OnClock_RETN_ED2_SRl(AsyncThis* async);
+
+// RETN *   -  RETN_ED2  -  ED, 59
+// extern void OnClock_RETN_ED2_OF(AsyncThis* async);
+// extern void OnClock_RETN_ED2_SRh(AsyncThis* async);
+// extern void OnClock_RETN_ED2_SRl(AsyncThis* async);
+
+// RETN *   -  RETN_ED2  -  ED, 61
+// extern void OnClock_RETN_ED2_OF(AsyncThis* async);
+// extern void OnClock_RETN_ED2_SRh(AsyncThis* async);
+// extern void OnClock_RETN_ED2_SRl(AsyncThis* async);
+
+// RETN *   -  RETN_ED2  -  ED, 69
+// extern void OnClock_RETN_ED2_OF(AsyncThis* async);
+// extern void OnClock_RETN_ED2_SRh(AsyncThis* async);
+// extern void OnClock_RETN_ED2_SRl(AsyncThis* async);
+
+// RETN *   -  RETN_ED2  -  ED, 71
+// extern void OnClock_RETN_ED2_OF(AsyncThis* async);
+// extern void OnClock_RETN_ED2_SRh(AsyncThis* async);
+// extern void OnClock_RETN_ED2_SRl(AsyncThis* async);
+
+// RETN *   -  RETN_ED2  -  ED, 79
+// extern void OnClock_RETN_ED2_OF(AsyncThis* async);
+// extern void OnClock_RETN_ED2_SRh(AsyncThis* async);
+// extern void OnClock_RETN_ED2_SRl(AsyncThis* async);
 
 // RST 00   -  RST00_1  -  C7
 extern void OnClock_RSTi_1_OF(AsyncThis* async);

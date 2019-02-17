@@ -25,7 +25,7 @@ Async_Function(AsyncTest)
 }
 Async_End
 
-namespace JacobiCpuZ80CppTests
+namespace JacobiCpuZ80Tests
 {
 	TEST_CLASS(AsyncTests)
 	{

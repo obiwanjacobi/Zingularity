@@ -10,7 +10,7 @@ CpuState _state;
 
 AsyncThis asyncClockTick;
 
-namespace JacobiCpuZ80CppTests
+namespace JacobiCpuZ80Tests
 {
     TEST_CLASS(ClockTickTests)
     {

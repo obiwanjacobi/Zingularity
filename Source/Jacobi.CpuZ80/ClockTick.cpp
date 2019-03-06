@@ -4,30 +4,69 @@
 #include "CpuZ80.h"
 #include "CpuZ80Host.h"
 #include "InstructionsZ80.hpp"
+#include "FunctionsZ80.hpp"
 #include <assert.h>
 #include <string.h>
 
 extern CpuState _state;
 
-#define AssertClock(m, t, l) \
-    assert(_state.Clock.M == (uint8_t)m); \
-    assert(_state.Clock.T == (uint8_t)t); \
-    assert(_state.Clock.Level == l);
+AsyncThis fetchAsync;
+AsyncThis instructionAsync;
+AsyncThis executeAsync;
+AsyncThis interruptAsync;
 
-void setAddressPC()
+void InitClock()
 {
-    setAddressBus(_state.Registers.PC);
-    //if (!_state.Halt)
-    _state.Registers.PC++;
+    _state.Clock.M = 1;
+    _state.Clock.T = 1;
+    _state.Clock.Level = Level::PosEdge;
+    _state.Clock.TL = 1;
 }
 
-void setAddressIR()
+void NextMCycle()
 {
-    setAddressBus(_state.Registers.IR);
-    if (_state.Registers._IR.R < 127)
-        _state.Registers._IR.R++;
-    else 
-        _state.Registers._IR.R &= 0x7F;
+    _state.Instruction.MCycleIndex++;
+    _state.Clock.M++;
+    _state.Clock.T = 1;
+    _state.Clock.TL = 1;
+}
+
+void AdvanceClock()
+{
+    if (_state.Clock.Level == Level::PosEdge)
+    {
+        _state.Clock.Level = Level::NegEdge;
+        _state.Clock.TL++;
+    }
+    else
+    {
+        _state.Clock.Level = Level::PosEdge;
+
+        if (_state.Instruction.Instruction != nullptr)
+        {
+            if (_state.Clock.T == _state.Instruction.Instruction->Cycles[_state.Instruction.MCycleIndex].clocks)
+            {
+                NextMCycle();
+            }
+            else
+            {
+                _state.Clock.T++;
+                _state.Clock.TL++;
+            }
+        }
+        else
+        {
+            if (_state.Clock.T == 4)
+            {
+                NextMCycle();
+            }
+            else
+            {
+                _state.Clock.T++;
+                _state.Clock.TL++;
+            }
+        }
+    }
 }
 
 const InstructionInfo* LookupInstruction()
@@ -83,27 +122,34 @@ const InstructionInfo* LookupInstruction()
         }
     }
 
-    // We could switch algorithms based on the value because tables are pretty full.
-    // We could also switch algortihms based on the table -not all tables have the same length.
-    // We could optimize the binary search by calculating the position
-    //  to start searching and the step size based on the data value
-    //  assuming an almost full table:
-    //      start: data-(256-tableLength)
-    //      first step: 256-tableLength / 2
-    //  continue searching in a binary fashion.
-    for (uint8_t i = 0; i < tableLength; i++)
+    // easy optimization
+    if (tableLength == 256)
     {
-        if (table[i].OpCode == _state.Instruction.Data)
-            return table[i].Instruction;
+        return table[_state.Instruction.Data].Instruction;
     }
-
+    else
+    {
+        // We could switch algorithms based on the value because tables are pretty full.
+        // We could also switch algortihms based on the table -not all tables have the same length.
+        // We could optimize the binary search by calculating the position
+        //  to start searching and the step size based on the data value
+        //  assuming an almost full table:
+        //      start: data-(256-tableLength)
+        //      first step: 256-tableLength / 2
+        //  continue searching in a binary fashion.
+        for (uint8_t i = 0; i < tableLength; i++)
+        {
+            if (table[i].OpCode == _state.Instruction.Data)
+                return table[i].Instruction;
+        }
+    }
     return nullptr;
 }
 
 void Decode()
 {
     switch (_state.Instruction.Data)
-    {    
+    {
     case 0xDD:
     case 0xED:
     case 0xFD:
@@ -111,21 +157,15 @@ void Decode()
         _state.Instruction.ExtIndex = 1;
         break;
     case 0xCB:
-        if (_state.Instruction.ExtIndex == 1 && _state.Instruction.Ext[0] == 0xED) 
+        if (_state.Instruction.ExtIndex == 1 && _state.Instruction.Ext[0] == 0xED)
             _state.Instruction.ExtIndex = 0;
-        _state.Instruction.Ext[_state.Instruction.ExtIndex] = _state.Instruction.Data;
+        _state.Instruction.Ext[_state.Instruction.ExtIndex] = 0xCB;
         _state.Instruction.ExtIndex++;
         break;
     default:
         _state.Instruction.Instruction = LookupInstruction();
-        _state.Instruction.MCycleIndex = _state.Instruction.ExtIndex;
         break;
     }
-}
-
-void ClearInstruction()
-{
-    memset(&_state.Instruction, sizeof(InstructionState), 0);
 }
 
 Async_Function(FetchDecode)
@@ -143,7 +183,7 @@ Async_Function(FetchDecode)
 
     AssertClock(MCycle::M1, TCycle::T2, Level::PosEdge);
     // time for some book keeping
-    if (_state.Instruction.InstructionAddress == 0) 
+    if (_state.Instruction.InstructionAddress == 0)
         _state.Instruction.InstructionAddress = _state.Registers.PC - 1;
     Async_Yield(3);
 
@@ -166,6 +206,56 @@ Async_Function(FetchDecode)
 }
 Async_End
 
+void OnClock_InstructionLoad(AsyncThis* async)
+{
+    switch (_state.Clock.TL)
+    {
+    case 6:
+        OnClock_MR(async);
+        _state.Instruction.Instruction = LookupInstruction();
+        assert(_state.Instruction.Instruction != nullptr);
+        break;
+    default:
+        OnClock_MR(async);
+        break;
+    }
+}
+
+const InstructionInfo ExtendedReverseOpcodeFetch =
+{
+    4, 0,
+    {
+        { 4, OnClock_OF },
+        { 4, OnClock_OF },
+        { 3, OnClock_ODd },
+        { 4, OnClock_InstructionLoad },
+        { 0, nullptr },
+        { 0, nullptr },
+    },
+    {
+        { VariableType::None },
+        { VariableType::None }
+    }
+};
+
+void ClearInstruction()
+{
+    memset(&_state.Instruction, sizeof(InstructionState), 0);
+}
+
+
+Async_Function(ExecuteInstructionPart)
+{
+    Async_Reset(&_state.Instruction.Async);
+
+    while (_state.Clock.T <= _state.Instruction.Instruction->Cycles[_state.Instruction.MCycleIndex].clocks)
+    {
+        _state.Instruction.Instruction->Cycles[_state.Instruction.MCycleIndex].OnClock(&_state.Instruction.Async);
+        Async_Yield(1);
+    }
+}
+Async_End
+
 Async_Function(Execute)
 {
     _state.Instruction.Async.State = 0;
@@ -175,6 +265,10 @@ Async_Function(Execute)
     {
         _state.Instruction.Instruction->Cycles[1].OnClock(&_state.Instruction.Async);
     }
+    else
+    {
+        assert(_state.Instruction.ExtIndex > 0);
+    }
     Async_Yield(1);
 
     AssertClock(MCycle::M1, TCycle::T4, Level::NegEdge);
@@ -182,8 +276,27 @@ Async_Function(Execute)
     {
         _state.Instruction.Instruction->Cycles[1].OnClock(&_state.Instruction.Async);
     }
+    else if (_state.Instruction.ExtIndex == 2)
+    {
+        // assign a temp instruction to read the reversed d - opcode
+        _state.Instruction.Instruction = &ExtendedReverseOpcodeFetch;
+    }
     setMemReq(false);
     Async_Yield(2);
+
+    if (_state.Instruction.Instruction != nullptr)
+    {
+        while (_state.Instruction.MCycleIndex < 6 &&
+            _state.Instruction.Instruction->Cycles[_state.Instruction.MCycleIndex].clocks != 0)
+        {
+            Async_WaitUntil(3, ExecuteInstructionPart(&instructionAsync));
+        }
+    }
+    else
+    {
+        // more M1 cycles
+        InitClock();
+    }
 }
 Async_End
 
@@ -193,10 +306,6 @@ Async_Function(Interrupt)
 }
 Async_End
 
-AsyncThis fetchAsync;
-AsyncThis executeAsync;
-AsyncThis interruptAsync;
-
 Async_Function(ClockTick)
 {
     Async_WaitUntil(1, FetchDecode(&fetchAsync));
@@ -204,30 +313,3 @@ Async_Function(ClockTick)
     Async_WaitUntil(3, Interrupt(&interruptAsync));
 }
 Async_End
-
-void InitClock()
-{
-    _state.Clock.M = 1;
-    _state.Clock.T = 1;
-    _state.Clock.Level = Level::PosEdge;
-}
-
-void AdvanceClock()
-{
-    if (_state.Clock.Level == Level::PosEdge)
-    {
-        _state.Clock.Level = Level::NegEdge;
-    }
-    else
-    {
-        _state.Clock.Level = Level::PosEdge;
-
-        if (_state.Clock.T == 6)
-        {
-            _state.Clock.M++;
-            _state.Clock.T = 1;
-        }
-        else
-            _state.Clock.T++;
-    }
-}

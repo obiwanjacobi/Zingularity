@@ -13,7 +13,7 @@ public:
         _length = length;
     }
 
-    void ClockTick();
+    bool ClockTick();
 
 private:
     CpuZ80TestHost* _host;

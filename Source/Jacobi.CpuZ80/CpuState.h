@@ -11,6 +11,7 @@ typedef struct
     uint8_t M;
     uint8_t T;
     Level Level;
+    uint8_t TL;     // increments on every level and T change
 
 } ClockState;
 

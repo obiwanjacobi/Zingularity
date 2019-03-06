@@ -23,19 +23,19 @@ enum class VariableType
 
 typedef struct
 {
-    VariableType VariableType;
+    const VariableType VariableType;
     union
     {
-        uint8_t value;
-        Registers8 Register8;
-        Registers16 Register16;
-        RegistersSP16 RegisterSP16;
-        Condition8 Condition8;
-        Condition4 Condition4;
-        Bits8 Bits8;
-        RstAddress RstAddress;
-        AluOps AluOps;
-        AluRot AluRot;
+        const uint8_t value;
+        const Registers8 Register8;
+        const Registers16 Register16;
+        const RegistersSP16 RegisterSP16;
+        const Condition8 Condition8;
+        const Condition4 Condition4;
+        const Bits8 Bits8;
+        const RstAddress RstAddress;
+        const AluOps AluOps;
+        const AluRot AluRot;
     };
 
 } InstructionVariable;
@@ -43,27 +43,27 @@ typedef struct
 typedef struct
 {
     // how many clock pulses for this mcycle
-    uint8_t clocks;
-    fnOnClock OnClock;
+    const uint8_t clocks;
+    const fnOnClock OnClock;
 
 } MachineCycleInfo;
 
 typedef struct
 {
-    InstructionVariable Variable1;
-    InstructionVariable Variable2;
+    const InstructionVariable Variable1;
+    const InstructionVariable Variable2;
 
 } DecodeInfo;
 
 typedef struct
 {
-    int8_t Count;
-    int8_t AltCount;
+    const int8_t Count;
+    const int8_t AltCount;
     // max 6 M-cycles per instruction
-    MachineCycleInfo Cycles[6];
+    const MachineCycleInfo Cycles[6];
 
     // how to decode this instruction
-    DecodeInfo Decode;
+    const DecodeInfo Decode;
 
 } InstructionInfo;
 

@@ -52,7 +52,7 @@ const InstructionInfo instructionInfo<#= decl.Name #> =
         { <#= mc.TCycles #>, OnClock_<#= decl.Name #>_<#= mc.Operation #> },
 <#+                     }
                     } 
-                    else if (!mc.IsExt /*&& decl.Root.Parameters.Any()*/)
+                    else if (!mc.IsExt && decl.Root.Parameters.Any() && mc.Operation != "ODd")
                     {
 #>
         { <#= mc.TCycles #>, OnClock_<#= decl.Root.Name #>_<#= mc.Operation #> },

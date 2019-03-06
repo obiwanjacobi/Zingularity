@@ -7,6 +7,8 @@
 
 // generic cpu operations
 extern void OnClock_OF(AsyncThis* async);
+extern void OnClock_OD(AsyncThis* async);
+extern void OnClock_ODd(AsyncThis* async);
 extern void OnClock_MR(AsyncThis* async);
 extern void OnClock_MW(AsyncThis* async);
 extern void OnClock_PCd(AsyncThis* async);
@@ -574,85 +576,71 @@ extern void OnClock_LDr__HL__1_MR(AsyncThis* async);
 
 // LD A, (IX+d)   -  LDA__IX_d__DD3  -  DD, BE, d
 extern void OnClock_LDr__ex_d__ex3_OF(AsyncThis* async);
-extern void OnClock_LDr__ex_d__ex3_OD(AsyncThis* async);
 extern void OnClock_LDr__ex_d__ex3_AD(AsyncThis* async);
 extern void OnClock_LDr__ex_d__ex3_MR(AsyncThis* async);
 
 // LD A, (IY+d)   -  LDA__IY_d__FD3  -  FD, BE, d
 // extern void OnClock_LDr__ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_LDr__ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_MR(AsyncThis* async);
 
 // LD B, (IX+d)   -  LDB__IX_d__DD3  -  DD, 86, d
 // extern void OnClock_LDr__ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_LDr__ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_MR(AsyncThis* async);
 
 // LD B, (IY+d)   -  LDB__IY_d__FD3  -  FD, 86, d
 // extern void OnClock_LDr__ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_LDr__ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_MR(AsyncThis* async);
 
 // LD C, (IX+d)   -  LDC__IX_d__DD3  -  DD, 8E, d
 // extern void OnClock_LDr__ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_LDr__ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_MR(AsyncThis* async);
 
 // LD C, (IY+d)   -  LDC__IY_d__FD3  -  FD, 8E, d
 // extern void OnClock_LDr__ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_LDr__ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_MR(AsyncThis* async);
 
 // LD D, (IX+d)   -  LDD__IX_d__DD3  -  DD, 96, d
 // extern void OnClock_LDr__ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_LDr__ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_MR(AsyncThis* async);
 
 // LD D, (IY+d)   -  LDD__IY_d__FD3  -  FD, 96, d
 // extern void OnClock_LDr__ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_LDr__ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_MR(AsyncThis* async);
 
 // LD E, (IX+d)   -  LDE__IX_d__DD3  -  DD, 9E, d
 // extern void OnClock_LDr__ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_LDr__ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_MR(AsyncThis* async);
 
 // LD E, (IY+d)   -  LDE__IY_d__FD3  -  FD, 9E, d
 // extern void OnClock_LDr__ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_LDr__ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_MR(AsyncThis* async);
 
 // LD H, (IX+d)   -  LDH__IX_d__DD3  -  DD, A6, d
 // extern void OnClock_LDr__ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_LDr__ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_MR(AsyncThis* async);
 
 // LD H, (IY+d)   -  LDH__IY_d__FD3  -  FD, A6, d
 // extern void OnClock_LDr__ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_LDr__ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_MR(AsyncThis* async);
 
 // LD L, (IX+d)   -  LDL__IX_d__DD3  -  DD, AE, d
 // extern void OnClock_LDr__ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_LDr__ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_MR(AsyncThis* async);
 
 // LD L, (IY+d)   -  LDL__IY_d__FD3  -  FD, AE, d
 // extern void OnClock_LDr__ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_LDr__ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_LDr__ex_d__ex3_MR(AsyncThis* async);
 
@@ -686,85 +674,71 @@ extern void OnClock_LD_HL__r_1_MW(AsyncThis* async);
 
 // LD (IX+d), A   -  LD_IX_d__A_DD3  -  DD, 77, d
 extern void OnClock_LD_ex_d__r_ex3_OF(AsyncThis* async);
-extern void OnClock_LD_ex_d__r_ex3_OD(AsyncThis* async);
 extern void OnClock_LD_ex_d__r_ex3_AD(AsyncThis* async);
 extern void OnClock_LD_ex_d__r_ex3_MW(AsyncThis* async);
 
 // LD (IY+d), A   -  LD_IY_d__A_FD3  -  FD, 77, d
 // extern void OnClock_LD_ex_d__r_ex3_OF(AsyncThis* async);
-// extern void OnClock_LD_ex_d__r_ex3_OD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_AD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_MW(AsyncThis* async);
 
 // LD (IX+d), B   -  LD_IX_d__B_DD3  -  DD, 70, d
 // extern void OnClock_LD_ex_d__r_ex3_OF(AsyncThis* async);
-// extern void OnClock_LD_ex_d__r_ex3_OD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_AD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_MW(AsyncThis* async);
 
 // LD (IY+d), B   -  LD_IY_d__B_FD3  -  FD, 70, d
 // extern void OnClock_LD_ex_d__r_ex3_OF(AsyncThis* async);
-// extern void OnClock_LD_ex_d__r_ex3_OD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_AD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_MW(AsyncThis* async);
 
 // LD (IX+d), C   -  LD_IX_d__C_DD3  -  DD, 71, d
 // extern void OnClock_LD_ex_d__r_ex3_OF(AsyncThis* async);
-// extern void OnClock_LD_ex_d__r_ex3_OD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_AD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_MW(AsyncThis* async);
 
 // LD (IY+d), C   -  LD_IY_d__C_FD3  -  FD, 71, d
 // extern void OnClock_LD_ex_d__r_ex3_OF(AsyncThis* async);
-// extern void OnClock_LD_ex_d__r_ex3_OD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_AD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_MW(AsyncThis* async);
 
 // LD (IX+d), D   -  LD_IX_d__D_DD3  -  DD, 72, d
 // extern void OnClock_LD_ex_d__r_ex3_OF(AsyncThis* async);
-// extern void OnClock_LD_ex_d__r_ex3_OD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_AD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_MW(AsyncThis* async);
 
 // LD (IY+d), D   -  LD_IY_d__D_FD3  -  FD, 72, d
 // extern void OnClock_LD_ex_d__r_ex3_OF(AsyncThis* async);
-// extern void OnClock_LD_ex_d__r_ex3_OD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_AD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_MW(AsyncThis* async);
 
 // LD (IX+d), E   -  LD_IX_d__E_DD3  -  DD, 73, d
 // extern void OnClock_LD_ex_d__r_ex3_OF(AsyncThis* async);
-// extern void OnClock_LD_ex_d__r_ex3_OD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_AD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_MW(AsyncThis* async);
 
 // LD (IY+d), E   -  LD_IY_d__E_FD3  -  FD, 73, d
 // extern void OnClock_LD_ex_d__r_ex3_OF(AsyncThis* async);
-// extern void OnClock_LD_ex_d__r_ex3_OD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_AD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_MW(AsyncThis* async);
 
 // LD (IX+d), H   -  LD_IX_d__H_DD3  -  DD, 74, d
 // extern void OnClock_LD_ex_d__r_ex3_OF(AsyncThis* async);
-// extern void OnClock_LD_ex_d__r_ex3_OD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_AD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_MW(AsyncThis* async);
 
 // LD (IY+d), H   -  LD_IY_d__H_FD3  -  FD, 74, d
 // extern void OnClock_LD_ex_d__r_ex3_OF(AsyncThis* async);
-// extern void OnClock_LD_ex_d__r_ex3_OD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_AD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_MW(AsyncThis* async);
 
 // LD (IX+d), L   -  LD_IX_d__L_DD3  -  DD, 75, d
 // extern void OnClock_LD_ex_d__r_ex3_OF(AsyncThis* async);
-// extern void OnClock_LD_ex_d__r_ex3_OD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_AD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_MW(AsyncThis* async);
 
 // LD (IY+d), L   -  LD_IY_d__L_FD3  -  FD, 75, d
 // extern void OnClock_LD_ex_d__r_ex3_OF(AsyncThis* async);
-// extern void OnClock_LD_ex_d__r_ex3_OD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_AD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__r_ex3_MW(AsyncThis* async);
 
@@ -775,23 +749,19 @@ extern void OnClock_LD_HL__n_2_MW(AsyncThis* async);
 
 // LD (IX+d), n   -  LD_IX_d__n_DD4  -  DD, 36, d, n
 extern void OnClock_LD_ex_d__n_ex4_OF(AsyncThis* async);
-extern void OnClock_LD_ex_d__n_ex4_OD(AsyncThis* async);
 extern void OnClock_LD_ex_d__n_ex4_FD(AsyncThis* async);
 extern void OnClock_LD_ex_d__n_ex4_MW(AsyncThis* async);
 
 // LD (IY+d), n   -  LD_IY_d__n_FD4  -  FD, 36, d, n
 // extern void OnClock_LD_ex_d__n_ex4_OF(AsyncThis* async);
-// extern void OnClock_LD_ex_d__n_ex4_OD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__n_ex4_FD(AsyncThis* async);
 // extern void OnClock_LD_ex_d__n_ex4_MW(AsyncThis* async);
 
 // LD A, (BC)   -  LDA__BC__1  -  0A
 extern void OnClock_LDA__BC__1_OF(AsyncThis* async);
-extern void OnClock_LDA__BC__1_MR(AsyncThis* async);
 
 // LD A, (DE)   -  LDA__DE__1  -  1A
 extern void OnClock_LDA__DE__1_OF(AsyncThis* async);
-extern void OnClock_LDA__DE__1_MR(AsyncThis* async);
 
 // LD A, (nn)   -  LDA__nn__3  -  3A, n, n
 extern void OnClock_LDA__nn__3_OF(AsyncThis* async);
@@ -801,11 +771,9 @@ extern void OnClock_LDA__nn__3_MR(AsyncThis* async);
 
 // LD (BC), A   -  LD_BC__A_1  -  02
 extern void OnClock_LD_BC__A_1_OF(AsyncThis* async);
-extern void OnClock_LD_BC__A_1_MW(AsyncThis* async);
 
 // LD (DE), A   -  LD_DE__A_1  -  12
 extern void OnClock_LD_DE__A_1_OF(AsyncThis* async);
-extern void OnClock_LD_DE__A_1_MW(AsyncThis* async);
 
 // LD (nn), A   -  LD_nn__A_3  -  32, n, n
 extern void OnClock_LD_nn__A_3_OF(AsyncThis* async);
@@ -1033,9 +1001,7 @@ extern void OnClock_EXX_1_OF(AsyncThis* async);
 
 // EX (SP), HL   -  EX_SP__HL_1  -  E3
 extern void OnClock_EX_SP__HL_1_OF(AsyncThis* async);
-extern void OnClock_EX_SP__HL_1_SRh(AsyncThis* async);
 extern void OnClock_EX_SP__HL_1_SRl(AsyncThis* async);
-extern void OnClock_EX_SP__HL_1_SWh(AsyncThis* async);
 extern void OnClock_EX_SP__HL_1_SWl(AsyncThis* async);
 
 // EX (SP), IX   -  EX_SP__IX_DD2  -  DD, E3
@@ -1054,47 +1020,35 @@ extern void OnClock_EX_SP__ex_ex2_SWl(AsyncThis* async);
 
 // LDI   -  LDI_ED2  -  ED, A0
 extern void OnClock_LDI_ED2_OF(AsyncThis* async);
-extern void OnClock_LDI_ED2_MR(AsyncThis* async);
 extern void OnClock_LDI_ED2_MW(AsyncThis* async);
 
 // LDIR   -  LDIR_ED2  -  ED, B0
 extern void OnClock_LDIR_ED2_OF(AsyncThis* async);
-extern void OnClock_LDIR_ED2_MR(AsyncThis* async);
 extern void OnClock_LDIR_ED2_MW(AsyncThis* async);
-extern void OnClock_LDIR_ED2_PCd(AsyncThis* async);
 
 // LDD   -  LDD_ED2  -  ED, A8
 extern void OnClock_LDD_ED2_OF(AsyncThis* async);
-extern void OnClock_LDD_ED2_MR(AsyncThis* async);
 extern void OnClock_LDD_ED2_MW(AsyncThis* async);
 
 // LDDR   -  LDDR_ED2  -  ED, B8
 extern void OnClock_LDDR_ED2_OF(AsyncThis* async);
-extern void OnClock_LDDR_ED2_MR(AsyncThis* async);
 extern void OnClock_LDDR_ED2_MW(AsyncThis* async);
-extern void OnClock_LDDR_ED2_PCd(AsyncThis* async);
 
 // CPI   -  CPI_ED2  -  ED, A1
 extern void OnClock_CPI_ED2_OF(AsyncThis* async);
-extern void OnClock_CPI_ED2_MR(AsyncThis* async);
 extern void OnClock_CPI_ED2_OP(AsyncThis* async);
 
 // CPIR   -  CPIR_ED2  -  ED, B1
 extern void OnClock_CPIR_ED2_OF(AsyncThis* async);
-extern void OnClock_CPIR_ED2_MR(AsyncThis* async);
 extern void OnClock_CPIR_ED2_OP(AsyncThis* async);
-extern void OnClock_CPIR_ED2_PCd(AsyncThis* async);
 
 // CPD   -  CPD_ED2  -  ED, A9
 extern void OnClock_CPD_ED2_OF(AsyncThis* async);
-extern void OnClock_CPD_ED2_MR(AsyncThis* async);
 extern void OnClock_CPD_ED2_OP(AsyncThis* async);
 
 // CPDR   -  CPDR_ED2  -  ED, B9
 extern void OnClock_CPDR_ED2_OF(AsyncThis* async);
-extern void OnClock_CPDR_ED2_MR(AsyncThis* async);
 extern void OnClock_CPDR_ED2_OP(AsyncThis* async);
-extern void OnClock_CPDR_ED2_PCd(AsyncThis* async);
 
 // ADD A, A   -  ADDA_A_1  -  87
 extern void OnClock_ADDA_r_1_OF(AsyncThis* async);
@@ -1165,17 +1119,14 @@ extern void OnClock_ADDA_n_2_OD(AsyncThis* async);
 
 // ADD A, (HL)   -  ADDA__HL__1  -  86
 extern void OnClock_ADDA__HL__1_OF(AsyncThis* async);
-extern void OnClock_ADDA__HL__1_MR(AsyncThis* async);
 
 // ADD A, (IX+d)   -  ADDA__IX_d__DD3  -  DD, 86, d
 extern void OnClock_ADDA__ex_d__ex3_OF(AsyncThis* async);
-extern void OnClock_ADDA__ex_d__ex3_OD(AsyncThis* async);
 extern void OnClock_ADDA__ex_d__ex3_AD(AsyncThis* async);
 extern void OnClock_ADDA__ex_d__ex3_MR(AsyncThis* async);
 
 // ADD A, (IY+d)   -  ADDA__IY_d__FD3  -  FD, 86, d
 // extern void OnClock_ADDA__ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_ADDA__ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_ADDA__ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_ADDA__ex_d__ex3_MR(AsyncThis* async);
 
@@ -1251,13 +1202,11 @@ extern void OnClock_ADCA__HL__1_OF(AsyncThis* async);
 
 // ADC A, (IX+d)   -  ADCA__IX_d__DD3  -  DD, 8E, d
 extern void OnClock_ADCA__ex_d__ex3_OF(AsyncThis* async);
-extern void OnClock_ADCA__ex_d__ex3_OD(AsyncThis* async);
 extern void OnClock_ADCA__ex_d__ex3_AD(AsyncThis* async);
 extern void OnClock_ADCA__ex_d__ex3_MR(AsyncThis* async);
 
 // ADC A, (IY+d)   -  ADCA__IY_d__FD3  -  FD, 8E, d
 // extern void OnClock_ADCA__ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_ADCA__ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_ADCA__ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_ADCA__ex_d__ex3_MR(AsyncThis* async);
 
@@ -1330,17 +1279,14 @@ extern void OnClock_SUBA_n_2_OD(AsyncThis* async);
 
 // SUB A, (HL)   -  SUBA__HL__1  -  96
 extern void OnClock_SUBA__HL__1_OF(AsyncThis* async);
-extern void OnClock_SUBA__HL__1_MR(AsyncThis* async);
 
 // SUB A, (IX+d)   -  SUBA__IX_d__DD3  -  DD, 96, d
 extern void OnClock_SUBA__ex_d__ex3_OF(AsyncThis* async);
-extern void OnClock_SUBA__ex_d__ex3_OD(AsyncThis* async);
 extern void OnClock_SUBA__ex_d__ex3_AD(AsyncThis* async);
 extern void OnClock_SUBA__ex_d__ex3_MR(AsyncThis* async);
 
 // SUB A, (IY+d)   -  SUBA__IY_d__FD3  -  FD, 96, d
 // extern void OnClock_SUBA__ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_SUBA__ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_SUBA__ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_SUBA__ex_d__ex3_MR(AsyncThis* async);
 
@@ -1413,17 +1359,14 @@ extern void OnClock_SBCA_n_2_OD(AsyncThis* async);
 
 // SBC A, (HL)   -  SBCA__HL__1  -  9E
 extern void OnClock_SBCA__HL__1_OF(AsyncThis* async);
-extern void OnClock_SBCA__HL__1_MR(AsyncThis* async);
 
 // SBC A, (IX+d)   -  SBCA__IX_d__DD3  -  DD, 9E, d
 extern void OnClock_SBCA__ex_d__ex3_OF(AsyncThis* async);
-extern void OnClock_SBCA__ex_d__ex3_OD(AsyncThis* async);
 extern void OnClock_SBCA__ex_d__ex3_AD(AsyncThis* async);
 extern void OnClock_SBCA__ex_d__ex3_MR(AsyncThis* async);
 
 // SBC A, (IY+d)   -  SBCA__IY_d__FD3  -  FD, 9E, d
 // extern void OnClock_SBCA__ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_SBCA__ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_SBCA__ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_SBCA__ex_d__ex3_MR(AsyncThis* async);
 
@@ -1496,17 +1439,14 @@ extern void OnClock_ANDA_n_2_OD(AsyncThis* async);
 
 // AND A, (HL)   -  ANDA__HL__1  -  A6
 extern void OnClock_ANDA__HL__1_OF(AsyncThis* async);
-extern void OnClock_ANDA__HL__1_MR(AsyncThis* async);
 
 // AND A, (IX+d)   -  ANDA__IX_d__DD3  -  DD, A6, d
 extern void OnClock_ANDA__ex_d__ex3_OF(AsyncThis* async);
-extern void OnClock_ANDA__ex_d__ex3_OD(AsyncThis* async);
 extern void OnClock_ANDA__ex_d__ex3_AD(AsyncThis* async);
 extern void OnClock_ANDA__ex_d__ex3_MR(AsyncThis* async);
 
 // AND A, (IY+d)   -  ANDA__IY_d__FD3  -  FD, A6, d
 // extern void OnClock_ANDA__ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_ANDA__ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_ANDA__ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_ANDA__ex_d__ex3_MR(AsyncThis* async);
 
@@ -1579,17 +1519,14 @@ extern void OnClock_ORA_n_2_OD(AsyncThis* async);
 
 // OR A, (HL)   -  ORA__HL__1  -  B6
 extern void OnClock_ORA__HL__1_OF(AsyncThis* async);
-extern void OnClock_ORA__HL__1_MR(AsyncThis* async);
 
 // OR A, (IX+d)   -  ORA__IX_d__DD3  -  DD, B6, d
 extern void OnClock_ORA__ex_d__ex3_OF(AsyncThis* async);
-extern void OnClock_ORA__ex_d__ex3_OD(AsyncThis* async);
 extern void OnClock_ORA__ex_d__ex3_AD(AsyncThis* async);
 extern void OnClock_ORA__ex_d__ex3_MR(AsyncThis* async);
 
 // OR A, (IY+d)   -  ORA__IY_d__FD3  -  FD, B6, d
 // extern void OnClock_ORA__ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_ORA__ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_ORA__ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_ORA__ex_d__ex3_MR(AsyncThis* async);
 
@@ -1662,17 +1599,14 @@ extern void OnClock_XORA_n_2_OD(AsyncThis* async);
 
 // XOR A, (HL)   -  XORA__HL__1  -  AE
 extern void OnClock_XORA__HL__1_OF(AsyncThis* async);
-extern void OnClock_XORA__HL__1_MR(AsyncThis* async);
 
 // XOR A, (IX+d)   -  XORA__IX_d__DD3  -  DD, AE, d
 extern void OnClock_XORA__ex_d__ex3_OF(AsyncThis* async);
-extern void OnClock_XORA__ex_d__ex3_OD(AsyncThis* async);
 extern void OnClock_XORA__ex_d__ex3_AD(AsyncThis* async);
 extern void OnClock_XORA__ex_d__ex3_MR(AsyncThis* async);
 
 // XOR A, (IY+d)   -  XORA__IY_d__FD3  -  FD, AE, d
 // extern void OnClock_XORA__ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_XORA__ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_XORA__ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_XORA__ex_d__ex3_MR(AsyncThis* async);
 
@@ -1745,17 +1679,14 @@ extern void OnClock_CPA_n_2_OD(AsyncThis* async);
 
 // CP A, (HL)   -  CPA__HL__1  -  BE
 extern void OnClock_CPA__HL__1_OF(AsyncThis* async);
-extern void OnClock_CPA__HL__1_MR(AsyncThis* async);
 
 // CP A, (IX+d)   -  CPA__IX_d__DD3  -  DD, BE, d
 extern void OnClock_CPA__ex_d__ex3_OF(AsyncThis* async);
-extern void OnClock_CPA__ex_d__ex3_OD(AsyncThis* async);
 extern void OnClock_CPA__ex_d__ex3_AD(AsyncThis* async);
 extern void OnClock_CPA__ex_d__ex3_MR(AsyncThis* async);
 
 // CP A, (IY+d)   -  CPA__IY_d__FD3  -  FD, BE, d
 // extern void OnClock_CPA__ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_CPA__ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_CPA__ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_CPA__ex_d__ex3_MR(AsyncThis* async);
 
@@ -1825,18 +1756,15 @@ extern void OnClock_INCv_FD2_OF(AsyncThis* async);
 // INC (HL)   -  INC_HL__1  -  34
 extern void OnClock_INC_HL__1_OF(AsyncThis* async);
 extern void OnClock_INC_HL__1_MR(AsyncThis* async);
-extern void OnClock_INC_HL__1_MW(AsyncThis* async);
 
 // INC (IX+d)   -  INC_IX_d__DD3  -  DD, 34, d
 extern void OnClock_INC_ex_d__ex3_OF(AsyncThis* async);
-extern void OnClock_INC_ex_d__ex3_OD(AsyncThis* async);
 extern void OnClock_INC_ex_d__ex3_AD(AsyncThis* async);
 extern void OnClock_INC_ex_d__ex3_MR(AsyncThis* async);
 extern void OnClock_INC_ex_d__ex3_MW(AsyncThis* async);
 
 // INC (IY+d)   -  INC_IY_d__FD3  -  FD, 34, d
 // extern void OnClock_INC_ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_INC_ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_INC_ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_INC_ex_d__ex3_MR(AsyncThis* async);
 // extern void OnClock_INC_ex_d__ex3_MW(AsyncThis* async);
@@ -1907,18 +1835,15 @@ extern void OnClock_DECv_FD2_OF(AsyncThis* async);
 // DEC (HL)   -  DEC_HL__1  -  35
 extern void OnClock_DEC_HL__1_OF(AsyncThis* async);
 extern void OnClock_DEC_HL__1_MR(AsyncThis* async);
-extern void OnClock_DEC_HL__1_MW(AsyncThis* async);
 
 // DEC (IX+d)   -  DEC_IX_d__DD3  -  DD, 35, d
 extern void OnClock_DEC_ex_d__ex3_OF(AsyncThis* async);
-extern void OnClock_DEC_ex_d__ex3_OD(AsyncThis* async);
 extern void OnClock_DEC_ex_d__ex3_AD(AsyncThis* async);
 extern void OnClock_DEC_ex_d__ex3_MR(AsyncThis* async);
 extern void OnClock_DEC_ex_d__ex3_MW(AsyncThis* async);
 
 // DEC (IY+d)   -  DEC_IY_d__FD3  -  FD, 35, d
 // extern void OnClock_DEC_ex_d__ex3_OF(AsyncThis* async);
-// extern void OnClock_DEC_ex_d__ex3_OD(AsyncThis* async);
 // extern void OnClock_DEC_ex_d__ex3_AD(AsyncThis* async);
 // extern void OnClock_DEC_ex_d__ex3_MR(AsyncThis* async);
 // extern void OnClock_DEC_ex_d__ex3_MW(AsyncThis* async);
@@ -2167,100 +2092,83 @@ extern void OnClock_RLCr_CB2_OF(AsyncThis* async);
 // RLC (HL)   -  RLC_HL__CB2  -  CB, 06
 extern void OnClock_RLC_HL__CB2_OF(AsyncThis* async);
 extern void OnClock_RLC_HL__CB2_MR(AsyncThis* async);
-extern void OnClock_RLC_HL__CB2_MW(AsyncThis* async);
 
 // RLC (IX+d)   -  RLC_IX_d__DD4  -  DD, CB, d, 06
-extern void OnClock_RLC_ex_d__ex4_OD(AsyncThis* async);
 extern void OnClock_RLC_ex_d__ex4_FD(AsyncThis* async);
 extern void OnClock_RLC_ex_d__ex4_MR(AsyncThis* async);
 extern void OnClock_RLC_ex_d__ex4_MW(AsyncThis* async);
 
 // RLC (IY+d)   -  RLC_IY_d__FD4  -  FD, CB, d, 06
-// extern void OnClock_RLC_ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__ex4_MW(AsyncThis* async);
 
 // RLC (IX+d), A   -  RLC_IX_d__A_DD4  -  DD, CB, d, 07
-extern void OnClock_RLC_ex_d__r_ex4_OD(AsyncThis* async);
 extern void OnClock_RLC_ex_d__r_ex4_FD(AsyncThis* async);
 extern void OnClock_RLC_ex_d__r_ex4_MR(AsyncThis* async);
 extern void OnClock_RLC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RLC (IY+d), A   -  RLC_IY_d__A_FD4  -  FD, CB, d, 07
-// extern void OnClock_RLC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RLC (IX+d), B   -  RLC_IX_d__B_DD4  -  DD, CB, d, 00
-// extern void OnClock_RLC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RLC (IY+d), B   -  RLC_IY_d__B_FD4  -  FD, CB, d, 00
-// extern void OnClock_RLC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RLC (IX+d), C   -  RLC_IX_d__C_DD4  -  DD, CB, d, 01
-// extern void OnClock_RLC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RLC (IY+d), C   -  RLC_IY_d__C_FD4  -  FD, CB, d, 01
-// extern void OnClock_RLC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RLC (IX+d), D   -  RLC_IX_d__D_DD4  -  DD, CB, d, 02
-// extern void OnClock_RLC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RLC (IY+d), D   -  RLC_IY_d__D_FD4  -  FD, CB, d, 02
-// extern void OnClock_RLC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RLC (IX+d), E   -  RLC_IX_d__E_DD4  -  DD, CB, d, 03
-// extern void OnClock_RLC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RLC (IY+d), E   -  RLC_IY_d__E_FD4  -  FD, CB, d, 03
-// extern void OnClock_RLC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RLC (IX+d), H   -  RLC_IX_d__H_DD4  -  DD, CB, d, 04
-// extern void OnClock_RLC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RLC (IY+d), H   -  RLC_IY_d__H_FD4  -  FD, CB, d, 04
-// extern void OnClock_RLC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RLC (IX+d), L   -  RLC_IX_d__L_DD4  -  DD, CB, d, 05
-// extern void OnClock_RLC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RLC (IY+d), L   -  RLC_IY_d__L_FD4  -  FD, CB, d, 05
-// extern void OnClock_RLC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RLC_ex_d__r_ex4_MW(AsyncThis* async);
@@ -2289,100 +2197,83 @@ extern void OnClock_RLr_CB2_OF(AsyncThis* async);
 // RL (HL)   -  RL_HL__CB2  -  CB, 16
 extern void OnClock_RL_HL__CB2_OF(AsyncThis* async);
 extern void OnClock_RL_HL__CB2_MR(AsyncThis* async);
-extern void OnClock_RL_HL__CB2_MW(AsyncThis* async);
 
 // RL (IX+d)   -  RL_IX_d__DD4  -  DD, CB, d, 16
-extern void OnClock_RL_ex_d__ex4_OD(AsyncThis* async);
 extern void OnClock_RL_ex_d__ex4_FD(AsyncThis* async);
 extern void OnClock_RL_ex_d__ex4_MR(AsyncThis* async);
 extern void OnClock_RL_ex_d__ex4_MW(AsyncThis* async);
 
 // RL (IY+d)   -  RL_IY_d__FD4  -  FD, CB, d, 16
-// extern void OnClock_RL_ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_RL_ex_d__ex4_MW(AsyncThis* async);
 
 // RL (IX+d), A   -  RL_IX_d__A_DD4  -  DD, CB, d, 17
-extern void OnClock_RL_ex_d__r_ex4_OD(AsyncThis* async);
 extern void OnClock_RL_ex_d__r_ex4_FD(AsyncThis* async);
 extern void OnClock_RL_ex_d__r_ex4_MR(AsyncThis* async);
 extern void OnClock_RL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RL (IY+d), A   -  RL_IY_d__A_FD4  -  FD, CB, d, 17
-// extern void OnClock_RL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RL (IX+d), B   -  RL_IX_d__B_DD4  -  DD, CB, d, 10
-// extern void OnClock_RL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RL (IY+d), B   -  RL_IY_d__B_FD4  -  FD, CB, d, 10
-// extern void OnClock_RL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RL (IX+d), C   -  RL_IX_d__C_DD4  -  DD, CB, d, 11
-// extern void OnClock_RL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RL (IY+d), C   -  RL_IY_d__C_FD4  -  FD, CB, d, 11
-// extern void OnClock_RL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RL (IX+d), D   -  RL_IX_d__D_DD4  -  DD, CB, d, 12
-// extern void OnClock_RL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RL (IY+d), D   -  RL_IY_d__D_FD4  -  FD, CB, d, 12
-// extern void OnClock_RL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RL (IX+d), E   -  RL_IX_d__E_DD4  -  DD, CB, d, 13
-// extern void OnClock_RL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RL (IY+d), E   -  RL_IY_d__E_FD4  -  FD, CB, d, 13
-// extern void OnClock_RL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RL (IX+d), H   -  RL_IX_d__H_DD4  -  DD, CB, d, 14
-// extern void OnClock_RL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RL (IY+d), H   -  RL_IY_d__H_FD4  -  FD, CB, d, 14
-// extern void OnClock_RL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RL (IX+d), L   -  RL_IX_d__L_DD4  -  DD, CB, d, 15
-// extern void OnClock_RL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RL (IY+d), L   -  RL_IY_d__L_FD4  -  FD, CB, d, 15
-// extern void OnClock_RL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RL_ex_d__r_ex4_MW(AsyncThis* async);
@@ -2411,100 +2302,83 @@ extern void OnClock_RRCr_CB2_OF(AsyncThis* async);
 // RRC (HL)   -  RRC_HL__CB2  -  CB, 0E
 extern void OnClock_RRC_HL__CB2_OF(AsyncThis* async);
 extern void OnClock_RRC_HL__CB2_MR(AsyncThis* async);
-extern void OnClock_RRC_HL__CB2_MW(AsyncThis* async);
 
 // RRC (IX+d)   -  RRC_IX_d__DD4  -  DD, CB, d, 0E
-extern void OnClock_RRC_ex_d__ex4_OD(AsyncThis* async);
 extern void OnClock_RRC_ex_d__ex4_FD(AsyncThis* async);
 extern void OnClock_RRC_ex_d__ex4_MR(AsyncThis* async);
 extern void OnClock_RRC_ex_d__ex4_MW(AsyncThis* async);
 
 // RRC (IY+d)   -  RRC_IY_d__FD4  -  FD, CB, d, 0E
-// extern void OnClock_RRC_ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__ex4_MW(AsyncThis* async);
 
 // RRC (IX+d), A   -  RRC_IX_d__A_DD4  -  DD, CB, d, 0F
-extern void OnClock_RRC_ex_d__r_ex4_OD(AsyncThis* async);
 extern void OnClock_RRC_ex_d__r_ex4_FD(AsyncThis* async);
 extern void OnClock_RRC_ex_d__r_ex4_MR(AsyncThis* async);
 extern void OnClock_RRC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RRC (IY+d), A   -  RRC_IY_d__A_FD4  -  FD, CB, d, 0F
-// extern void OnClock_RRC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RRC (IX+d), B   -  RRC_IX_d__B_DD4  -  DD, CB, d, 08
-// extern void OnClock_RRC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RRC (IY+d), B   -  RRC_IY_d__B_FD4  -  FD, CB, d, 08
-// extern void OnClock_RRC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RRC (IX+d), C   -  RRC_IX_d__C_DD4  -  DD, CB, d, 09
-// extern void OnClock_RRC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RRC (IY+d), C   -  RRC_IY_d__C_FD4  -  FD, CB, d, 09
-// extern void OnClock_RRC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RRC (IX+d), D   -  RRC_IX_d__D_DD4  -  DD, CB, d, 0A
-// extern void OnClock_RRC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RRC (IY+d), D   -  RRC_IY_d__D_FD4  -  FD, CB, d, 0A
-// extern void OnClock_RRC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RRC (IX+d), E   -  RRC_IX_d__E_DD4  -  DD, CB, d, 0B
-// extern void OnClock_RRC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RRC (IY+d), E   -  RRC_IY_d__E_FD4  -  FD, CB, d, 0B
-// extern void OnClock_RRC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RRC (IX+d), H   -  RRC_IX_d__H_DD4  -  DD, CB, d, 0C
-// extern void OnClock_RRC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RRC (IY+d), H   -  RRC_IY_d__H_FD4  -  FD, CB, d, 0C
-// extern void OnClock_RRC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RRC (IX+d), L   -  RRC_IX_d__L_DD4  -  DD, CB, d, 0D
-// extern void OnClock_RRC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RRC (IY+d), L   -  RRC_IY_d__L_FD4  -  FD, CB, d, 0D
-// extern void OnClock_RRC_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RRC_ex_d__r_ex4_MW(AsyncThis* async);
@@ -2533,100 +2407,83 @@ extern void OnClock_RRr_CB2_OF(AsyncThis* async);
 // RR (HL)   -  RR_HL__CB2  -  CB, 1E
 extern void OnClock_RR_HL__CB2_OF(AsyncThis* async);
 extern void OnClock_RR_HL__CB2_MR(AsyncThis* async);
-extern void OnClock_RR_HL__CB2_MW(AsyncThis* async);
 
 // RR (IX+d)   -  RR_IX_d__DD4  -  DD, CB, d, 1E
-extern void OnClock_RR_ex_d__ex4_OD(AsyncThis* async);
 extern void OnClock_RR_ex_d__ex4_FD(AsyncThis* async);
 extern void OnClock_RR_ex_d__ex4_MR(AsyncThis* async);
 extern void OnClock_RR_ex_d__ex4_MW(AsyncThis* async);
 
 // RR (IY+d)   -  RR_IY_d__FD4  -  FD, CB, d, 1E
-// extern void OnClock_RR_ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_RR_ex_d__ex4_MW(AsyncThis* async);
 
 // RR (IX+d), A   -  RR_IX_d__A_DD4  -  DD, CB, d, 1F
-extern void OnClock_RR_ex_d__r_ex4_OD(AsyncThis* async);
 extern void OnClock_RR_ex_d__r_ex4_FD(AsyncThis* async);
 extern void OnClock_RR_ex_d__r_ex4_MR(AsyncThis* async);
 extern void OnClock_RR_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RR (IY+d), A   -  RR_IY_d__A_FD4  -  FD, CB, d, 1F
-// extern void OnClock_RR_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RR (IX+d), B   -  RR_IX_d__B_DD4  -  DD, CB, d, 18
-// extern void OnClock_RR_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RR (IY+d), B   -  RR_IY_d__B_FD4  -  FD, CB, d, 18
-// extern void OnClock_RR_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RR (IX+d), C   -  RR_IX_d__C_DD4  -  DD, CB, d, 19
-// extern void OnClock_RR_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RR (IY+d), C   -  RR_IY_d__C_FD4  -  FD, CB, d, 19
-// extern void OnClock_RR_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RR (IX+d), D   -  RR_IX_d__D_DD4  -  DD, CB, d, 1A
-// extern void OnClock_RR_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RR (IY+d), D   -  RR_IY_d__D_FD4  -  FD, CB, d, 1A
-// extern void OnClock_RR_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RR (IX+d), E   -  RR_IX_d__E_DD4  -  DD, CB, d, 1B
-// extern void OnClock_RR_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RR (IY+d), E   -  RR_IY_d__E_FD4  -  FD, CB, d, 1B
-// extern void OnClock_RR_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RR (IX+d), H   -  RR_IX_d__H_DD4  -  DD, CB, d, 1C
-// extern void OnClock_RR_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RR (IY+d), H   -  RR_IY_d__H_FD4  -  FD, CB, d, 1C
-// extern void OnClock_RR_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RR (IX+d), L   -  RR_IX_d__L_DD4  -  DD, CB, d, 1D
-// extern void OnClock_RR_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MW(AsyncThis* async);
 
 // RR (IY+d), L   -  RR_IY_d__L_FD4  -  FD, CB, d, 1D
-// extern void OnClock_RR_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RR_ex_d__r_ex4_MW(AsyncThis* async);
@@ -2655,100 +2512,83 @@ extern void OnClock_SLAr_CB2_OF(AsyncThis* async);
 // SLA (HL)   -  SLA_HL__CB2  -  CB, 26
 extern void OnClock_SLA_HL__CB2_OF(AsyncThis* async);
 extern void OnClock_SLA_HL__CB2_MR(AsyncThis* async);
-extern void OnClock_SLA_HL__CB2_MW(AsyncThis* async);
 
 // SLA (IX+d)   -  SLA_IX_d__DD4  -  DD, CB, d, 26
-extern void OnClock_SLA_ex_d__ex4_OD(AsyncThis* async);
 extern void OnClock_SLA_ex_d__ex4_FD(AsyncThis* async);
 extern void OnClock_SLA_ex_d__ex4_MR(AsyncThis* async);
 extern void OnClock_SLA_ex_d__ex4_MW(AsyncThis* async);
 
 // SLA (IY+d)   -  SLA_IY_d__FD4  -  FD, CB, d, 26
-// extern void OnClock_SLA_ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__ex4_MW(AsyncThis* async);
 
 // SLA (IX+d), A   -  SLA_IX_d__A_DD4  -  DD, CB, d, 27
-extern void OnClock_SLA_ex_d__r_ex4_OD(AsyncThis* async);
 extern void OnClock_SLA_ex_d__r_ex4_FD(AsyncThis* async);
 extern void OnClock_SLA_ex_d__r_ex4_MR(AsyncThis* async);
 extern void OnClock_SLA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLA (IY+d), A   -  SLA_IY_d__A_FD4  -  FD, CB, d, 27
-// extern void OnClock_SLA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLA (IX+d), B   -  SLA_IX_d__B_DD4  -  DD, CB, d, 20
-// extern void OnClock_SLA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLA (IY+d), B   -  SLA_IY_d__B_FD4  -  FD, CB, d, 20
-// extern void OnClock_SLA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLA (IX+d), C   -  SLA_IX_d__C_DD4  -  DD, CB, d, 21
-// extern void OnClock_SLA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLA (IY+d), C   -  SLA_IY_d__C_FD4  -  FD, CB, d, 21
-// extern void OnClock_SLA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLA (IX+d), D   -  SLA_IX_d__D_DD4  -  DD, CB, d, 22
-// extern void OnClock_SLA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLA (IY+d), D   -  SLA_IY_d__D_FD4  -  FD, CB, d, 22
-// extern void OnClock_SLA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLA (IX+d), E   -  SLA_IX_d__E_DD4  -  DD, CB, d, 23
-// extern void OnClock_SLA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLA (IY+d), E   -  SLA_IY_d__E_FD4  -  FD, CB, d, 23
-// extern void OnClock_SLA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLA (IX+d), H   -  SLA_IX_d__H_DD4  -  DD, CB, d, 24
-// extern void OnClock_SLA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLA (IY+d), H   -  SLA_IY_d__H_FD4  -  FD, CB, d, 24
-// extern void OnClock_SLA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLA (IX+d), L   -  SLA_IX_d__L_DD4  -  DD, CB, d, 25
-// extern void OnClock_SLA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLA (IY+d), L   -  SLA_IY_d__L_FD4  -  FD, CB, d, 25
-// extern void OnClock_SLA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLA_ex_d__r_ex4_MW(AsyncThis* async);
@@ -2777,100 +2617,83 @@ extern void OnClock_SLLr_CB2_OF(AsyncThis* async);
 // SLL (HL)   -  SLL_HL__CB2  -  CB, 36
 extern void OnClock_SLL_HL__CB2_OF(AsyncThis* async);
 extern void OnClock_SLL_HL__CB2_MR(AsyncThis* async);
-extern void OnClock_SLL_HL__CB2_MW(AsyncThis* async);
 
 // SLL (IX+d)   -  SLL_IX_d__DD4  -  DD, CB, d, 36
-extern void OnClock_SLL_ex_d__ex4_OD(AsyncThis* async);
 extern void OnClock_SLL_ex_d__ex4_FD(AsyncThis* async);
 extern void OnClock_SLL_ex_d__ex4_MR(AsyncThis* async);
 extern void OnClock_SLL_ex_d__ex4_MW(AsyncThis* async);
 
 // SLL (IY+d)   -  SLL_IY_d__FD4  -  FD, CB, d, 36
-// extern void OnClock_SLL_ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__ex4_MW(AsyncThis* async);
 
 // SLL (IX+d), A   -  SLL_IX_d__A_DD4  -  DD, CB, d, 37
-extern void OnClock_SLL_ex_d__r_ex4_OD(AsyncThis* async);
 extern void OnClock_SLL_ex_d__r_ex4_FD(AsyncThis* async);
 extern void OnClock_SLL_ex_d__r_ex4_MR(AsyncThis* async);
 extern void OnClock_SLL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLL (IY+d), A   -  SLL_IY_d__A_FD4  -  FD, CB, d, 37
-// extern void OnClock_SLL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLL (IX+d), B   -  SLL_IX_d__B_DD4  -  DD, CB, d, 30
-// extern void OnClock_SLL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLL (IY+d), B   -  SLL_IY_d__B_FD4  -  FD, CB, d, 30
-// extern void OnClock_SLL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLL (IX+d), C   -  SLL_IX_d__C_DD4  -  DD, CB, d, 31
-// extern void OnClock_SLL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLL (IY+d), C   -  SLL_IY_d__C_FD4  -  FD, CB, d, 31
-// extern void OnClock_SLL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLL (IX+d), D   -  SLL_IX_d__D_DD4  -  DD, CB, d, 32
-// extern void OnClock_SLL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLL (IY+d), D   -  SLL_IY_d__D_FD4  -  FD, CB, d, 32
-// extern void OnClock_SLL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLL (IX+d), E   -  SLL_IX_d__E_DD4  -  DD, CB, d, 33
-// extern void OnClock_SLL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLL (IY+d), E   -  SLL_IY_d__E_FD4  -  FD, CB, d, 33
-// extern void OnClock_SLL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLL (IX+d), H   -  SLL_IX_d__H_DD4  -  DD, CB, d, 34
-// extern void OnClock_SLL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLL (IY+d), H   -  SLL_IY_d__H_FD4  -  FD, CB, d, 34
-// extern void OnClock_SLL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLL (IX+d), L   -  SLL_IX_d__L_DD4  -  DD, CB, d, 35
-// extern void OnClock_SLL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SLL (IY+d), L   -  SLL_IY_d__L_FD4  -  FD, CB, d, 35
-// extern void OnClock_SLL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SLL_ex_d__r_ex4_MW(AsyncThis* async);
@@ -2899,100 +2722,83 @@ extern void OnClock_SRAr_CB2_OF(AsyncThis* async);
 // SRA (HL)   -  SRA_HL__CB2  -  CB, 2E
 extern void OnClock_SRA_HL__CB2_OF(AsyncThis* async);
 extern void OnClock_SRA_HL__CB2_MR(AsyncThis* async);
-extern void OnClock_SRA_HL__CB2_MW(AsyncThis* async);
 
 // SRA (IX+d)   -  SRA_IX_d__DD4  -  DD, CB, d, 2E
-extern void OnClock_SRA_ex_d__ex4_OD(AsyncThis* async);
 extern void OnClock_SRA_ex_d__ex4_FD(AsyncThis* async);
 extern void OnClock_SRA_ex_d__ex4_MR(AsyncThis* async);
 extern void OnClock_SRA_ex_d__ex4_MW(AsyncThis* async);
 
 // SRA (IY+d)   -  SRA_IY_d__FD4  -  FD, CB, d, 2E
-// extern void OnClock_SRA_ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__ex4_MW(AsyncThis* async);
 
 // SRA (IX+d), A   -  SRA_IX_d__A_DD4  -  DD, CB, d, 2F
-extern void OnClock_SRA_ex_d__r_ex4_OD(AsyncThis* async);
 extern void OnClock_SRA_ex_d__r_ex4_FD(AsyncThis* async);
 extern void OnClock_SRA_ex_d__r_ex4_MR(AsyncThis* async);
 extern void OnClock_SRA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRA (IY+d), A   -  SRA_IY_d__A_FD4  -  FD, CB, d, 2F
-// extern void OnClock_SRA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRA (IX+d), B   -  SRA_IX_d__B_DD4  -  DD, CB, d, 28
-// extern void OnClock_SRA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRA (IY+d), B   -  SRA_IY_d__B_FD4  -  FD, CB, d, 28
-// extern void OnClock_SRA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRA (IX+d), C   -  SRA_IX_d__C_DD4  -  DD, CB, d, 29
-// extern void OnClock_SRA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRA (IY+d), C   -  SRA_IY_d__C_FD4  -  FD, CB, d, 29
-// extern void OnClock_SRA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRA (IX+d), D   -  SRA_IX_d__D_DD4  -  DD, CB, d, 2A
-// extern void OnClock_SRA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRA (IY+d), D   -  SRA_IY_d__D_FD4  -  FD, CB, d, 2A
-// extern void OnClock_SRA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRA (IX+d), E   -  SRA_IX_d__E_DD4  -  DD, CB, d, 2B
-// extern void OnClock_SRA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRA (IY+d), E   -  SRA_IY_d__E_FD4  -  FD, CB, d, 2B
-// extern void OnClock_SRA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRA (IX+d), H   -  SRA_IX_d__H_DD4  -  DD, CB, d, 2C
-// extern void OnClock_SRA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRA (IY+d), H   -  SRA_IY_d__H_FD4  -  FD, CB, d, 2C
-// extern void OnClock_SRA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRA (IX+d), L   -  SRA_IX_d__L_DD4  -  DD, CB, d, 2D
-// extern void OnClock_SRA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRA (IY+d), L   -  SRA_IY_d__L_FD4  -  FD, CB, d, 2D
-// extern void OnClock_SRA_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRA_ex_d__r_ex4_MW(AsyncThis* async);
@@ -3021,100 +2827,83 @@ extern void OnClock_SRLr_CB2_OF(AsyncThis* async);
 // SRL (HL)   -  SRL_HL__CB2  -  CB, 3E
 extern void OnClock_SRL_HL__CB2_OF(AsyncThis* async);
 extern void OnClock_SRL_HL__CB2_MR(AsyncThis* async);
-extern void OnClock_SRL_HL__CB2_MW(AsyncThis* async);
 
 // SRL (IX+d)   -  SRL_IX_d__DD4  -  DD, CB, d, 3E
-extern void OnClock_SRL_ex_d__ex4_OD(AsyncThis* async);
 extern void OnClock_SRL_ex_d__ex4_FD(AsyncThis* async);
 extern void OnClock_SRL_ex_d__ex4_MR(AsyncThis* async);
 extern void OnClock_SRL_ex_d__ex4_MW(AsyncThis* async);
 
 // SRL (IY+d)   -  SRL_IY_d__FD4  -  FD, CB, d, 3E
-// extern void OnClock_SRL_ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__ex4_MW(AsyncThis* async);
 
 // SRL (IX+d), A   -  SRL_IX_d__A_DD4  -  DD, CB, d, 3F
-extern void OnClock_SRL_ex_d__r_ex4_OD(AsyncThis* async);
 extern void OnClock_SRL_ex_d__r_ex4_FD(AsyncThis* async);
 extern void OnClock_SRL_ex_d__r_ex4_MR(AsyncThis* async);
 extern void OnClock_SRL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRL (IY+d), A   -  SRL_IY_d__A_FD4  -  FD, CB, d, 3F
-// extern void OnClock_SRL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRL (IX+d), B   -  SRL_IX_d__B_DD4  -  DD, CB, d, 38
-// extern void OnClock_SRL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRL (IY+d), B   -  SRL_IY_d__B_FD4  -  FD, CB, d, 38
-// extern void OnClock_SRL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRL (IX+d), C   -  SRL_IX_d__C_DD4  -  DD, CB, d, 39
-// extern void OnClock_SRL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRL (IY+d), C   -  SRL_IY_d__C_FD4  -  FD, CB, d, 39
-// extern void OnClock_SRL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRL (IX+d), D   -  SRL_IX_d__D_DD4  -  DD, CB, d, 3A
-// extern void OnClock_SRL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRL (IY+d), D   -  SRL_IY_d__D_FD4  -  FD, CB, d, 3A
-// extern void OnClock_SRL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRL (IX+d), E   -  SRL_IX_d__E_DD4  -  DD, CB, d, 3B
-// extern void OnClock_SRL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRL (IY+d), E   -  SRL_IY_d__E_FD4  -  FD, CB, d, 3B
-// extern void OnClock_SRL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRL (IX+d), H   -  SRL_IX_d__H_DD4  -  DD, CB, d, 3C
-// extern void OnClock_SRL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRL (IY+d), H   -  SRL_IY_d__H_FD4  -  FD, CB, d, 3C
-// extern void OnClock_SRL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRL (IX+d), L   -  SRL_IX_d__L_DD4  -  DD, CB, d, 3D
-// extern void OnClock_SRL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MW(AsyncThis* async);
 
 // SRL (IY+d), L   -  SRL_IY_d__L_FD4  -  FD, CB, d, 3D
-// extern void OnClock_SRL_ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SRL_ex_d__r_ex4_MW(AsyncThis* async);
@@ -3332,642 +3121,514 @@ extern void OnClock_BITb__HL__CB2_MR(AsyncThis* async);
 // extern void OnClock_BITb__HL__CB2_MR(AsyncThis* async);
 
 // BIT 0, (IX+d)   -  BIT0__IX_d__DD4  -  DD, CB, d, 46
-extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 0, (IY+d)   -  BIT0__IY_d__FD4  -  FD, CB, d, 46
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 1, (IX+d)   -  BIT1__IX_d__DD4  -  DD, CB, d, 4E
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 1, (IY+d)   -  BIT1__IY_d__FD4  -  FD, CB, d, 4E
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 2, (IX+d)   -  BIT2__IX_d__DD4  -  DD, CB, d, 56
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 2, (IY+d)   -  BIT2__IY_d__FD4  -  FD, CB, d, 56
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 3, (IX+d)   -  BIT3__IX_d__DD4  -  DD, CB, d, 5E
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 3, (IY+d)   -  BIT3__IY_d__FD4  -  FD, CB, d, 5E
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 4, (IX+d)   -  BIT4__IX_d__DD4  -  DD, CB, d, 66
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 4, (IY+d)   -  BIT4__IY_d__FD4  -  FD, CB, d, 66
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 5, (IX+d)   -  BIT5__IX_d__DD4  -  DD, CB, d, 6E
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 5, (IY+d)   -  BIT5__IY_d__FD4  -  FD, CB, d, 6E
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 6, (IX+d)   -  BIT6__IX_d__DD4  -  DD, CB, d, 76
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 6, (IY+d)   -  BIT6__IY_d__FD4  -  FD, CB, d, 76
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 7, (IX+d)   -  BIT7__IX_d__DD4  -  DD, CB, d, 7E
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 7, (IY+d)   -  BIT7__IY_d__FD4  -  FD, CB, d, 7E
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 40
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 40
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 41
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 41
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 42
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 42
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 43
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 43
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 44
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 44
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 45
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 45
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 0, (IX+d) *   -  BIT0__IX_d__DD4  -  DD, CB, d, 47
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 0, (IY+d) *   -  BIT0__IY_d__FD4  -  FD, CB, d, 47
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 48
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 48
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 49
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 49
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 4A
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 4A
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 4B
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 4B
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 4C
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 4C
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 4D
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 4D
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 1, (IX+d) *   -  BIT1__IX_d__DD4  -  DD, CB, d, 4F
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 1, (IY+d) *   -  BIT1__IY_d__FD4  -  FD, CB, d, 4F
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 50
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 50
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 51
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 51
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 52
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 52
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 53
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 53
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 54
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 54
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 55
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 55
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 2, (IX+d) *   -  BIT2__IX_d__DD4  -  DD, CB, d, 57
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 2, (IY+d) *   -  BIT2__IY_d__FD4  -  FD, CB, d, 57
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 58
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 58
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 59
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 59
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 5A
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 5A
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 5B
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 5B
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 5C
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 5C
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 5D
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 5D
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 3, (IX+d) *   -  BIT3__IX_d__DD4  -  DD, CB, d, 5F
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 3, (IY+d) *   -  BIT3__IY_d__FD4  -  FD, CB, d, 5F
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 60
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 60
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 61
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 61
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 62
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 62
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 63
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 63
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 64
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 64
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 65
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 65
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 4, (IX+d) *   -  BIT4__IX_d__DD4  -  DD, CB, d, 67
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 4, (IY+d) *   -  BIT4__IY_d__FD4  -  FD, CB, d, 67
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 68
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 68
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 69
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 69
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 6A
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 6A
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 6B
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 6B
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 6C
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 6C
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 6D
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 6D
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 5, (IX+d) *   -  BIT5__IX_d__DD4  -  DD, CB, d, 6F
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 5, (IY+d) *   -  BIT5__IY_d__FD4  -  FD, CB, d, 6F
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 70
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 70
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 71
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 71
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 72
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 72
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 73
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 73
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 74
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 74
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 75
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 75
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 6, (IX+d) *   -  BIT6__IX_d__DD4  -  DD, CB, d, 77
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 6, (IY+d) *   -  BIT6__IY_d__FD4  -  FD, CB, d, 77
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 78
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 78
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 79
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 79
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 7A
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 7A
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 7B
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 7B
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 7C
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 7C
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 7D
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 7D
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 7, (IX+d) *   -  BIT7__IX_d__DD4  -  DD, CB, d, 7F
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
 // BIT 7, (IY+d) *   -  BIT7__IY_d__FD4  -  FD, CB, d, 7F
-// extern void OnClock_BITb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_BITb__ex_d__ex4_MR(AsyncThis* async);
 
@@ -4180,769 +3841,641 @@ extern void OnClock_SETb__HL__CB2_MW(AsyncThis* async);
 // extern void OnClock_SETb__HL__CB2_MW(AsyncThis* async);
 
 // SET 0, (IX+d)   -  SET0__IX_d__DD4  -  DD, CB, d, C6
-extern void OnClock_SETb__ex_d__ex4_OD(AsyncThis* async);
 extern void OnClock_SETb__ex_d__ex4_FD(AsyncThis* async);
 extern void OnClock_SETb__ex_d__ex4_MR(AsyncThis* async);
 extern void OnClock_SETb__ex_d__ex4_MW(AsyncThis* async);
 
 // SET 0, (IY+d)   -  SET0__IY_d__FD4  -  FD, CB, d, C6
-// extern void OnClock_SETb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MW(AsyncThis* async);
 
 // SET 1, (IX+d)   -  SET1__IX_d__DD4  -  DD, CB, d, CE
-// extern void OnClock_SETb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MW(AsyncThis* async);
 
 // SET 1, (IY+d)   -  SET1__IY_d__FD4  -  FD, CB, d, CE
-// extern void OnClock_SETb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MW(AsyncThis* async);
 
 // SET 2, (IX+d)   -  SET2__IX_d__DD4  -  DD, CB, d, D6
-// extern void OnClock_SETb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MW(AsyncThis* async);
 
 // SET 2, (IY+d)   -  SET2__IY_d__FD4  -  FD, CB, d, D6
-// extern void OnClock_SETb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MW(AsyncThis* async);
 
 // SET 3, (IX+d)   -  SET3__IX_d__DD4  -  DD, CB, d, DE
-// extern void OnClock_SETb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MW(AsyncThis* async);
 
 // SET 3, (IY+d)   -  SET3__IY_d__FD4  -  FD, CB, d, DE
-// extern void OnClock_SETb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MW(AsyncThis* async);
 
 // SET 4, (IX+d)   -  SET4__IX_d__DD4  -  DD, CB, d, E6
-// extern void OnClock_SETb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MW(AsyncThis* async);
 
 // SET 4, (IY+d)   -  SET4__IY_d__FD4  -  FD, CB, d, E6
-// extern void OnClock_SETb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MW(AsyncThis* async);
 
 // SET 5, (IX+d)   -  SET5__IX_d__DD4  -  DD, CB, d, EE
-// extern void OnClock_SETb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MW(AsyncThis* async);
 
 // SET 5, (IY+d)   -  SET5__IY_d__FD4  -  FD, CB, d, EE
-// extern void OnClock_SETb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MW(AsyncThis* async);
 
 // SET 6, (IX+d)   -  SET6__IX_d__DD4  -  DD, CB, d, F6
-// extern void OnClock_SETb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MW(AsyncThis* async);
 
 // SET 6, (IY+d)   -  SET6__IY_d__FD4  -  FD, CB, d, F6
-// extern void OnClock_SETb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MW(AsyncThis* async);
 
 // SET 7, (IX+d)   -  SET7__IX_d__DD4  -  DD, CB, d, FE
-// extern void OnClock_SETb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MW(AsyncThis* async);
 
 // SET 7, (IY+d)   -  SET7__IY_d__FD4  -  FD, CB, d, FE
-// extern void OnClock_SETb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__ex4_MW(AsyncThis* async);
 
 // SET 0, (IX+d), A   -  SET0__IX_d__A_DD4  -  DD, CB, d, C7
-extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 0, (IY+d), A   -  SET0__IY_d__A_FD4  -  FD, CB, d, C7
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 1, (IX+d), A   -  SET1__IX_d__A_DD4  -  DD, CB, d, CF
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 1, (IY+d), A   -  SET1__IY_d__A_FD4  -  FD, CB, d, CF
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 2, (IX+d), A   -  SET2__IX_d__A_DD4  -  DD, CB, d, D7
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 2, (IY+d), A   -  SET2__IY_d__A_FD4  -  FD, CB, d, D7
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 3, (IX+d), A   -  SET3__IX_d__A_DD4  -  DD, CB, d, DF
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 3, (IY+d), A   -  SET3__IY_d__A_FD4  -  FD, CB, d, DF
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 4, (IX+d), A   -  SET4__IX_d__A_DD4  -  DD, CB, d, E7
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 4, (IY+d), A   -  SET4__IY_d__A_FD4  -  FD, CB, d, E7
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 5, (IX+d), A   -  SET5__IX_d__A_DD4  -  DD, CB, d, EF
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 5, (IY+d), A   -  SET5__IY_d__A_FD4  -  FD, CB, d, EF
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 6, (IX+d), A   -  SET6__IX_d__A_DD4  -  DD, CB, d, F7
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 6, (IY+d), A   -  SET6__IY_d__A_FD4  -  FD, CB, d, F7
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 7, (IX+d), A   -  SET7__IX_d__A_DD4  -  DD, CB, d, FF
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 7, (IY+d), A   -  SET7__IY_d__A_FD4  -  FD, CB, d, FF
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 0, (IX+d), B   -  SET0__IX_d__B_DD4  -  DD, CB, d, C0
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 0, (IY+d), B   -  SET0__IY_d__B_FD4  -  FD, CB, d, C0
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 1, (IX+d), B   -  SET1__IX_d__B_DD4  -  DD, CB, d, C8
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 1, (IY+d), B   -  SET1__IY_d__B_FD4  -  FD, CB, d, C8
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 2, (IX+d), B   -  SET2__IX_d__B_DD4  -  DD, CB, d, D0
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 2, (IY+d), B   -  SET2__IY_d__B_FD4  -  FD, CB, d, D0
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 3, (IX+d), B   -  SET3__IX_d__B_DD4  -  DD, CB, d, D8
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 3, (IY+d), B   -  SET3__IY_d__B_FD4  -  FD, CB, d, D8
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 4, (IX+d), B   -  SET4__IX_d__B_DD4  -  DD, CB, d, E0
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 4, (IY+d), B   -  SET4__IY_d__B_FD4  -  FD, CB, d, E0
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 5, (IX+d), B   -  SET5__IX_d__B_DD4  -  DD, CB, d, E8
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 5, (IY+d), B   -  SET5__IY_d__B_FD4  -  FD, CB, d, E8
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 6, (IX+d), B   -  SET6__IX_d__B_DD4  -  DD, CB, d, F0
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 6, (IY+d), B   -  SET6__IY_d__B_FD4  -  FD, CB, d, F0
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 7, (IX+d), B   -  SET7__IX_d__B_DD4  -  DD, CB, d, F8
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 7, (IY+d), B   -  SET7__IY_d__B_FD4  -  FD, CB, d, F8
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 0, (IX+d), C   -  SET0__IX_d__C_DD4  -  DD, CB, d, C1
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 0, (IY+d), C   -  SET0__IY_d__C_FD4  -  FD, CB, d, C1
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 1, (IX+d), C   -  SET1__IX_d__C_DD4  -  DD, CB, d, C9
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 1, (IY+d), C   -  SET1__IY_d__C_FD4  -  FD, CB, d, C9
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 2, (IX+d), C   -  SET2__IX_d__C_DD4  -  DD, CB, d, D1
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 2, (IY+d), C   -  SET2__IY_d__C_FD4  -  FD, CB, d, D1
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 3, (IX+d), C   -  SET3__IX_d__C_DD4  -  DD, CB, d, D9
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 3, (IY+d), C   -  SET3__IY_d__C_FD4  -  FD, CB, d, D9
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 4, (IX+d), C   -  SET4__IX_d__C_DD4  -  DD, CB, d, E1
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 4, (IY+d), C   -  SET4__IY_d__C_FD4  -  FD, CB, d, E1
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 5, (IX+d), C   -  SET5__IX_d__C_DD4  -  DD, CB, d, E9
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 5, (IY+d), C   -  SET5__IY_d__C_FD4  -  FD, CB, d, E9
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 6, (IX+d), C   -  SET6__IX_d__C_DD4  -  DD, CB, d, F1
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 6, (IY+d), C   -  SET6__IY_d__C_FD4  -  FD, CB, d, F1
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 7, (IX+d), C   -  SET7__IX_d__C_DD4  -  DD, CB, d, F9
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 7, (IY+d), C   -  SET7__IY_d__C_FD4  -  FD, CB, d, F9
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 0, (IX+d), D   -  SET0__IX_d__D_DD4  -  DD, CB, d, C2
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 0, (IY+d), D   -  SET0__IY_d__D_FD4  -  FD, CB, d, C2
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 1, (IX+d), D   -  SET1__IX_d__D_DD4  -  DD, CB, d, CA
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 1, (IY+d), D   -  SET1__IY_d__D_FD4  -  FD, CB, d, CA
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 2, (IX+d), D   -  SET2__IX_d__D_DD4  -  DD, CB, d, D2
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 2, (IY+d), D   -  SET2__IY_d__D_FD4  -  FD, CB, d, D2
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 3, (IX+d), D   -  SET3__IX_d__D_DD4  -  DD, CB, d, DA
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 3, (IY+d), D   -  SET3__IY_d__D_FD4  -  FD, CB, d, DA
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 4, (IX+d), D   -  SET4__IX_d__D_DD4  -  DD, CB, d, E2
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 4, (IY+d), D   -  SET4__IY_d__D_FD4  -  FD, CB, d, E2
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 5, (IX+d), D   -  SET5__IX_d__D_DD4  -  DD, CB, d, EA
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 5, (IY+d), D   -  SET5__IY_d__D_FD4  -  FD, CB, d, EA
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 6, (IX+d), D   -  SET6__IX_d__D_DD4  -  DD, CB, d, F2
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 6, (IY+d), D   -  SET6__IY_d__D_FD4  -  FD, CB, d, F2
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 7, (IX+d), D   -  SET7__IX_d__D_DD4  -  DD, CB, d, FA
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 7, (IY+d), D   -  SET7__IY_d__D_FD4  -  FD, CB, d, FA
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 0, (IX+d), E   -  SET0__IX_d__E_DD4  -  DD, CB, d, C3
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 0, (IY+d), E   -  SET0__IY_d__E_FD4  -  FD, CB, d, C3
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 1, (IX+d), E   -  SET1__IX_d__E_DD4  -  DD, CB, d, CB
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 1, (IY+d), E   -  SET1__IY_d__E_FD4  -  FD, CB, d, CB
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 2, (IX+d), E   -  SET2__IX_d__E_DD4  -  DD, CB, d, D3
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 2, (IY+d), E   -  SET2__IY_d__E_FD4  -  FD, CB, d, D3
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 3, (IX+d), E   -  SET3__IX_d__E_DD4  -  DD, CB, d, DB
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 3, (IY+d), E   -  SET3__IY_d__E_FD4  -  FD, CB, d, DB
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 4, (IX+d), E   -  SET4__IX_d__E_DD4  -  DD, CB, d, E3
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 4, (IY+d), E   -  SET4__IY_d__E_FD4  -  FD, CB, d, E3
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 5, (IX+d), E   -  SET5__IX_d__E_DD4  -  DD, CB, d, EB
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 5, (IY+d), E   -  SET5__IY_d__E_FD4  -  FD, CB, d, EB
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 6, (IX+d), E   -  SET6__IX_d__E_DD4  -  DD, CB, d, F3
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 6, (IY+d), E   -  SET6__IY_d__E_FD4  -  FD, CB, d, F3
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 7, (IX+d), E   -  SET7__IX_d__E_DD4  -  DD, CB, d, FB
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 7, (IY+d), E   -  SET7__IY_d__E_FD4  -  FD, CB, d, FB
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 0, (IX+d), H   -  SET0__IX_d__H_DD4  -  DD, CB, d, C4
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 0, (IY+d), H   -  SET0__IY_d__H_FD4  -  FD, CB, d, C4
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 1, (IX+d), H   -  SET1__IX_d__H_DD4  -  DD, CB, d, CC
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 1, (IY+d), H   -  SET1__IY_d__H_FD4  -  FD, CB, d, CC
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 2, (IX+d), H   -  SET2__IX_d__H_DD4  -  DD, CB, d, D4
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 2, (IY+d), H   -  SET2__IY_d__H_FD4  -  FD, CB, d, D4
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 3, (IX+d), H   -  SET3__IX_d__H_DD4  -  DD, CB, d, DC
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 3, (IY+d), H   -  SET3__IY_d__H_FD4  -  FD, CB, d, DC
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 4, (IX+d), H   -  SET4__IX_d__H_DD4  -  DD, CB, d, E4
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 4, (IY+d), H   -  SET4__IY_d__H_FD4  -  FD, CB, d, E4
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 5, (IX+d), H   -  SET5__IX_d__H_DD4  -  DD, CB, d, EC
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 5, (IY+d), H   -  SET5__IY_d__H_FD4  -  FD, CB, d, EC
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 6, (IX+d), H   -  SET6__IX_d__H_DD4  -  DD, CB, d, F4
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 6, (IY+d), H   -  SET6__IY_d__H_FD4  -  FD, CB, d, F4
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 7, (IX+d), H   -  SET7__IX_d__H_DD4  -  DD, CB, d, FC
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 7, (IY+d), H   -  SET7__IY_d__H_FD4  -  FD, CB, d, FC
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 0, (IX+d), L   -  SET0__IX_d__L_DD4  -  DD, CB, d, C5
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 0, (IY+d), L   -  SET0__IY_d__L_FD4  -  FD, CB, d, C5
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 1, (IX+d), L   -  SET1__IX_d__L_DD4  -  DD, CB, d, CD
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 1, (IY+d), L   -  SET1__IY_d__L_FD4  -  FD, CB, d, CD
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 2, (IX+d), L   -  SET2__IX_d__L_DD4  -  DD, CB, d, D5
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 2, (IY+d), L   -  SET2__IY_d__L_FD4  -  FD, CB, d, D5
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 3, (IX+d), L   -  SET3__IX_d__L_DD4  -  DD, CB, d, DD
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 3, (IY+d), L   -  SET3__IY_d__L_FD4  -  FD, CB, d, DD
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 4, (IX+d), L   -  SET4__IX_d__L_DD4  -  DD, CB, d, E5
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 4, (IY+d), L   -  SET4__IY_d__L_FD4  -  FD, CB, d, E5
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 5, (IX+d), L   -  SET5__IX_d__L_DD4  -  DD, CB, d, ED
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 5, (IY+d), L   -  SET5__IY_d__L_FD4  -  FD, CB, d, ED
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 6, (IX+d), L   -  SET6__IX_d__L_DD4  -  DD, CB, d, F5
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 6, (IY+d), L   -  SET6__IY_d__L_FD4  -  FD, CB, d, F5
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 7, (IX+d), L   -  SET7__IX_d__L_DD4  -  DD, CB, d, FD
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // SET 7, (IY+d), L   -  SET7__IY_d__L_FD4  -  FD, CB, d, FD
-// extern void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async);
@@ -5156,769 +4689,641 @@ extern void OnClock_RESb__HL__CB2_MW(AsyncThis* async);
 // extern void OnClock_RESb__HL__CB2_MW(AsyncThis* async);
 
 // RES 0, (IX+d)   -  RES0__IX_d__DD4  -  DD, CB, d, 86
-extern void OnClock_RESb__ex_d__ex4_OD(AsyncThis* async);
 extern void OnClock_RESb__ex_d__ex4_FD(AsyncThis* async);
 extern void OnClock_RESb__ex_d__ex4_MR(AsyncThis* async);
 extern void OnClock_RESb__ex_d__ex4_MW(AsyncThis* async);
 
 // RES 0, (IY+d)   -  RES0__IY_d__FD4  -  FD, CB, d, 86
-// extern void OnClock_RESb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MW(AsyncThis* async);
 
 // RES 1, (IX+d)   -  RES1__IX_d__DD4  -  DD, CB, d, 8E
-// extern void OnClock_RESb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MW(AsyncThis* async);
 
 // RES 1, (IY+d)   -  RES1__IY_d__FD4  -  FD, CB, d, 8E
-// extern void OnClock_RESb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MW(AsyncThis* async);
 
 // RES 2, (IX+d)   -  RES2__IX_d__DD4  -  DD, CB, d, 96
-// extern void OnClock_RESb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MW(AsyncThis* async);
 
 // RES 2, (IY+d)   -  RES2__IY_d__FD4  -  FD, CB, d, 96
-// extern void OnClock_RESb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MW(AsyncThis* async);
 
 // RES 3, (IX+d)   -  RES3__IX_d__DD4  -  DD, CB, d, 9E
-// extern void OnClock_RESb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MW(AsyncThis* async);
 
 // RES 3, (IY+d)   -  RES3__IY_d__FD4  -  FD, CB, d, 9E
-// extern void OnClock_RESb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MW(AsyncThis* async);
 
 // RES 4, (IX+d)   -  RES4__IX_d__DD4  -  DD, CB, d, A6
-// extern void OnClock_RESb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MW(AsyncThis* async);
 
 // RES 4, (IY+d)   -  RES4__IY_d__FD4  -  FD, CB, d, A6
-// extern void OnClock_RESb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MW(AsyncThis* async);
 
 // RES 5, (IX+d)   -  RES5__IX_d__DD4  -  DD, CB, d, AE
-// extern void OnClock_RESb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MW(AsyncThis* async);
 
 // RES 5, (IY+d)   -  RES5__IY_d__FD4  -  FD, CB, d, AE
-// extern void OnClock_RESb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MW(AsyncThis* async);
 
 // RES 6, (IX+d)   -  RES6__IX_d__DD4  -  DD, CB, d, B6
-// extern void OnClock_RESb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MW(AsyncThis* async);
 
 // RES 6, (IY+d)   -  RES6__IY_d__FD4  -  FD, CB, d, B6
-// extern void OnClock_RESb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MW(AsyncThis* async);
 
 // RES 7, (IX+d)   -  RES7__IX_d__DD4  -  DD, CB, d, BE
-// extern void OnClock_RESb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MW(AsyncThis* async);
 
 // RES 7, (IY+d)   -  RES7__IY_d__FD4  -  FD, CB, d, BE
-// extern void OnClock_RESb__ex_d__ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__ex4_MW(AsyncThis* async);
 
 // RES 0, (IX+d), A   -  RES0__IX_d__A_DD4  -  DD, CB, d, 87
-extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 0, (IY+d), A   -  RES0__IY_d__A_FD4  -  FD, CB, d, 87
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 1, (IX+d), A   -  RES1__IX_d__A_DD4  -  DD, CB, d, 8F
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 1, (IY+d), A   -  RES1__IY_d__A_FD4  -  FD, CB, d, 8F
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 2, (IX+d), A   -  RES2__IX_d__A_DD4  -  DD, CB, d, 97
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 2, (IY+d), A   -  RES2__IY_d__A_FD4  -  FD, CB, d, 97
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 3, (IX+d), A   -  RES3__IX_d__A_DD4  -  DD, CB, d, 9F
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 3, (IY+d), A   -  RES3__IY_d__A_FD4  -  FD, CB, d, 9F
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 4, (IX+d), A   -  RES4__IX_d__A_DD4  -  DD, CB, d, A7
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 4, (IY+d), A   -  RES4__IY_d__A_FD4  -  FD, CB, d, A7
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 5, (IX+d), A   -  RES5__IX_d__A_DD4  -  DD, CB, d, AF
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 5, (IY+d), A   -  RES5__IY_d__A_FD4  -  FD, CB, d, AF
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 6, (IX+d), A   -  RES6__IX_d__A_DD4  -  DD, CB, d, B7
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 6, (IY+d), A   -  RES6__IY_d__A_FD4  -  FD, CB, d, B7
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 7, (IX+d), A   -  RES7__IX_d__A_DD4  -  DD, CB, d, BF
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 7, (IY+d), A   -  RES7__IY_d__A_FD4  -  FD, CB, d, BF
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 0, (IX+d), B   -  RES0__IX_d__B_DD4  -  DD, CB, d, 80
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 0, (IY+d), B   -  RES0__IY_d__B_FD4  -  FD, CB, d, 80
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 1, (IX+d), B   -  RES1__IX_d__B_DD4  -  DD, CB, d, 88
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 1, (IY+d), B   -  RES1__IY_d__B_FD4  -  FD, CB, d, 88
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 2, (IX+d), B   -  RES2__IX_d__B_DD4  -  DD, CB, d, 90
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 2, (IY+d), B   -  RES2__IY_d__B_FD4  -  FD, CB, d, 90
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 3, (IX+d), B   -  RES3__IX_d__B_DD4  -  DD, CB, d, 98
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 3, (IY+d), B   -  RES3__IY_d__B_FD4  -  FD, CB, d, 98
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 4, (IX+d), B   -  RES4__IX_d__B_DD4  -  DD, CB, d, A0
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 4, (IY+d), B   -  RES4__IY_d__B_FD4  -  FD, CB, d, A0
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 5, (IX+d), B   -  RES5__IX_d__B_DD4  -  DD, CB, d, A8
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 5, (IY+d), B   -  RES5__IY_d__B_FD4  -  FD, CB, d, A8
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 6, (IX+d), B   -  RES6__IX_d__B_DD4  -  DD, CB, d, B0
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 6, (IY+d), B   -  RES6__IY_d__B_FD4  -  FD, CB, d, B0
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 7, (IX+d), B   -  RES7__IX_d__B_DD4  -  DD, CB, d, B8
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 7, (IY+d), B   -  RES7__IY_d__B_FD4  -  FD, CB, d, B8
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 0, (IX+d), C   -  RES0__IX_d__C_DD4  -  DD, CB, d, 81
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 0, (IY+d), C   -  RES0__IY_d__C_FD4  -  FD, CB, d, 81
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 1, (IX+d), C   -  RES1__IX_d__C_DD4  -  DD, CB, d, 89
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 1, (IY+d), C   -  RES1__IY_d__C_FD4  -  FD, CB, d, 89
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 2, (IX+d), C   -  RES2__IX_d__C_DD4  -  DD, CB, d, 91
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 2, (IY+d), C   -  RES2__IY_d__C_FD4  -  FD, CB, d, 91
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 3, (IX+d), C   -  RES3__IX_d__C_DD4  -  DD, CB, d, 99
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 3, (IY+d), C   -  RES3__IY_d__C_FD4  -  FD, CB, d, 99
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 4, (IX+d), C   -  RES4__IX_d__C_DD4  -  DD, CB, d, A1
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 4, (IY+d), C   -  RES4__IY_d__C_FD4  -  FD, CB, d, A1
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 5, (IX+d), C   -  RES5__IX_d__C_DD4  -  DD, CB, d, A9
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 5, (IY+d), C   -  RES5__IY_d__C_FD4  -  FD, CB, d, A9
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 6, (IX+d), C   -  RES6__IX_d__C_DD4  -  DD, CB, d, B1
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 6, (IY+d), C   -  RES6__IY_d__C_FD4  -  FD, CB, d, B1
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 7, (IX+d), C   -  RES7__IX_d__C_DD4  -  DD, CB, d, B9
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 7, (IY+d), C   -  RES7__IY_d__C_FD4  -  FD, CB, d, B9
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 0, (IX+d), D   -  RES0__IX_d__D_DD4  -  DD, CB, d, 82
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 0, (IY+d), D   -  RES0__IY_d__D_FD4  -  FD, CB, d, 82
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 1, (IX+d), D   -  RES1__IX_d__D_DD4  -  DD, CB, d, 8A
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 1, (IY+d), D   -  RES1__IY_d__D_FD4  -  FD, CB, d, 8A
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 2, (IX+d), D   -  RES2__IX_d__D_DD4  -  DD, CB, d, 92
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 2, (IY+d), D   -  RES2__IY_d__D_FD4  -  FD, CB, d, 92
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 3, (IX+d), D   -  RES3__IX_d__D_DD4  -  DD, CB, d, 9A
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 3, (IY+d), D   -  RES3__IY_d__D_FD4  -  FD, CB, d, 9A
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 4, (IX+d), D   -  RES4__IX_d__D_DD4  -  DD, CB, d, A2
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 4, (IY+d), D   -  RES4__IY_d__D_FD4  -  FD, CB, d, A2
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 5, (IX+d), D   -  RES5__IX_d__D_DD4  -  DD, CB, d, AA
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 5, (IY+d), D   -  RES5__IY_d__D_FD4  -  FD, CB, d, AA
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 6, (IX+d), D   -  RES6__IX_d__D_DD4  -  DD, CB, d, B2
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 6, (IY+d), D   -  RES6__IY_d__D_FD4  -  FD, CB, d, B2
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 7, (IX+d), D   -  RES7__IX_d__D_DD4  -  DD, CB, d, BA
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 7, (IY+d), D   -  RES7__IY_d__D_FD4  -  FD, CB, d, BA
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 0, (IX+d), E   -  RES0__IX_d__E_DD4  -  DD, CB, d, 83
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 0, (IY+d), E   -  RES0__IY_d__E_FD4  -  FD, CB, d, 83
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 1, (IX+d), E   -  RES1__IX_d__E_DD4  -  DD, CB, d, 8B
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 1, (IY+d), E   -  RES1__IY_d__E_FD4  -  FD, CB, d, 8B
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 2, (IX+d), E   -  RES2__IX_d__E_DD4  -  DD, CB, d, 93
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 2, (IY+d), E   -  RES2__IY_d__E_FD4  -  FD, CB, d, 93
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 3, (IX+d), E   -  RES3__IX_d__E_DD4  -  DD, CB, d, 9B
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 3, (IY+d), E   -  RES3__IY_d__E_FD4  -  FD, CB, d, 9B
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 4, (IX+d), E   -  RES4__IX_d__E_DD4  -  DD, CB, d, A3
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 4, (IY+d), E   -  RES4__IY_d__E_FD4  -  FD, CB, d, A3
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 5, (IX+d), E   -  RES5__IX_d__E_DD4  -  DD, CB, d, AB
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 5, (IY+d), E   -  RES5__IY_d__E_FD4  -  FD, CB, d, AB
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 6, (IX+d), E   -  RES6__IX_d__E_DD4  -  DD, CB, d, B3
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 6, (IY+d), E   -  RES6__IY_d__E_FD4  -  FD, CB, d, B3
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 7, (IX+d), E   -  RES7__IX_d__E_DD4  -  DD, CB, d, BB
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 7, (IY+d), E   -  RES7__IY_d__E_FD4  -  FD, CB, d, BB
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 0, (IX+d), H   -  RES0__IX_d__H_DD4  -  DD, CB, d, 84
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 0, (IY+d), H   -  RES0__IY_d__H_FD4  -  FD, CB, d, 84
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 1, (IX+d), H   -  RES1__IX_d__H_DD4  -  DD, CB, d, 8C
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 1, (IY+d), H   -  RES1__IY_d__H_FD4  -  FD, CB, d, 8C
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 2, (IX+d), H   -  RES2__IX_d__H_DD4  -  DD, CB, d, 94
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 2, (IY+d), H   -  RES2__IY_d__H_FD4  -  FD, CB, d, 94
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 3, (IX+d), H   -  RES3__IX_d__H_DD4  -  DD, CB, d, 9C
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 3, (IY+d), H   -  RES3__IY_d__H_FD4  -  FD, CB, d, 9C
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 4, (IX+d), H   -  RES4__IX_d__H_DD4  -  DD, CB, d, A4
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 4, (IY+d), H   -  RES4__IY_d__H_FD4  -  FD, CB, d, A4
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 5, (IX+d), H   -  RES5__IX_d__H_DD4  -  DD, CB, d, AC
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 5, (IY+d), H   -  RES5__IY_d__H_FD4  -  FD, CB, d, AC
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 6, (IX+d), H   -  RES6__IX_d__H_DD4  -  DD, CB, d, B4
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 6, (IY+d), H   -  RES6__IY_d__H_FD4  -  FD, CB, d, B4
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 7, (IX+d), H   -  RES7__IX_d__H_DD4  -  DD, CB, d, BC
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 7, (IY+d), H   -  RES7__IY_d__H_FD4  -  FD, CB, d, BC
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 0, (IX+d), L   -  RES0__IX_d__L_DD4  -  DD, CB, d, 85
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 0, (IY+d), L   -  RES0__IY_d__L_FD4  -  FD, CB, d, 85
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 1, (IX+d), L   -  RES1__IX_d__L_DD4  -  DD, CB, d, 8D
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 1, (IY+d), L   -  RES1__IY_d__L_FD4  -  FD, CB, d, 8D
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 2, (IX+d), L   -  RES2__IX_d__L_DD4  -  DD, CB, d, 95
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 2, (IY+d), L   -  RES2__IY_d__L_FD4  -  FD, CB, d, 95
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 3, (IX+d), L   -  RES3__IX_d__L_DD4  -  DD, CB, d, 9D
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 3, (IY+d), L   -  RES3__IY_d__L_FD4  -  FD, CB, d, 9D
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 4, (IX+d), L   -  RES4__IX_d__L_DD4  -  DD, CB, d, A5
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 4, (IY+d), L   -  RES4__IY_d__L_FD4  -  FD, CB, d, A5
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 5, (IX+d), L   -  RES5__IX_d__L_DD4  -  DD, CB, d, AD
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 5, (IY+d), L   -  RES5__IY_d__L_FD4  -  FD, CB, d, AD
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 6, (IX+d), L   -  RES6__IX_d__L_DD4  -  DD, CB, d, B5
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 6, (IY+d), L   -  RES6__IY_d__L_FD4  -  FD, CB, d, B5
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 7, (IX+d), L   -  RES7__IX_d__L_DD4  -  DD, CB, d, BD
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
 
 // RES 7, (IY+d), L   -  RES7__IY_d__L_FD4  -  FD, CB, d, BD
-// extern void OnClock_RESb__ex_d__r_ex4_OD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_FD(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MR(AsyncThis* async);
 // extern void OnClock_RESb__ex_d__r_ex4_MW(AsyncThis* async);
@@ -6072,8 +5477,6 @@ extern void OnClock_CALLc_nn_3_SWl(AsyncThis* async);
 
 // RET   -  RET_1  -  C9
 extern void OnClock_RET_1_OF(AsyncThis* async);
-extern void OnClock_RET_1_SRh(AsyncThis* async);
-extern void OnClock_RET_1_SRl(AsyncThis* async);
 
 // RET NZ   -  RETNZ_1  -  C0
 extern void OnClock_RETc_1_OF(AsyncThis* async);
@@ -6117,18 +5520,14 @@ extern void OnClock_RETc_1_SRl(AsyncThis* async);
 
 // RETI   -  RETI_ED2  -  ED, 4D
 extern void OnClock_RETI_ED2_OF(AsyncThis* async);
-extern void OnClock_RETI_ED2_SRh(AsyncThis* async);
-extern void OnClock_RETI_ED2_SRl(AsyncThis* async);
 
 // RETN   -  RETN_ED2  -  ED, 45
 extern void OnClock_RETN_ED2_OF(AsyncThis* async);
-extern void OnClock_RETN_ED2_SRh(AsyncThis* async);
-extern void OnClock_RETN_ED2_SRl(AsyncThis* async);
 
 // RETN *   -  RETN_ED2  -  ED, 55
 // extern void OnClock_RETN_ED2_OF(AsyncThis* async);
-// extern void OnClock_RETN_ED2_SRh(AsyncThis* async);
-// extern void OnClock_RETN_ED2_SRl(AsyncThis* async);
+extern void OnClock_RETN_ED2_SRh(AsyncThis* async);
+extern void OnClock_RETN_ED2_SRl(AsyncThis* async);
 
 // RETN *   -  RETN_ED2  -  ED, 5D
 // extern void OnClock_RETN_ED2_OF(AsyncThis* async);
@@ -6230,29 +5629,22 @@ extern void OnClock_INr__C__ED2_PR(AsyncThis* async);
 
 // IN (C)   -  IN_C__ED2  -  ED, 70
 extern void OnClock_IN_C__ED2_OF(AsyncThis* async);
-extern void OnClock_IN_C__ED2_PR(AsyncThis* async);
 
 // INI   -  INI_ED2  -  ED, A2
 extern void OnClock_INI_ED2_OF(AsyncThis* async);
-extern void OnClock_INI_ED2_PR(AsyncThis* async);
 extern void OnClock_INI_ED2_MW(AsyncThis* async);
 
 // INIR   -  INIR_ED2  -  ED, B2
 extern void OnClock_INIR_ED2_OF(AsyncThis* async);
-extern void OnClock_INIR_ED2_PR(AsyncThis* async);
 extern void OnClock_INIR_ED2_MW(AsyncThis* async);
-extern void OnClock_INIR_ED2_PCd(AsyncThis* async);
 
 // IND   -  IND_ED2  -  ED, AA
 extern void OnClock_IND_ED2_OF(AsyncThis* async);
-extern void OnClock_IND_ED2_PR(AsyncThis* async);
 extern void OnClock_IND_ED2_MW(AsyncThis* async);
 
 // INDR   -  INDR_ED2  -  ED, BA
 extern void OnClock_INDR_ED2_OF(AsyncThis* async);
-extern void OnClock_INDR_ED2_PR(AsyncThis* async);
 extern void OnClock_INDR_ED2_MW(AsyncThis* async);
-extern void OnClock_INDR_ED2_PCd(AsyncThis* async);
 
 // OUT (n), A   -  OUT_n__A_2  -  D3, n
 extern void OnClock_OUT_n__A_2_OF(AsyncThis* async);
@@ -6289,26 +5681,15 @@ extern void OnClock_OUT_C__r_ED2_PW(AsyncThis* async);
 
 // OUT (C), 0   -  OUT_C__0_ED2  -  ED, 71
 extern void OnClock_OUT_C__0_ED2_OF(AsyncThis* async);
-extern void OnClock_OUT_C__0_ED2_PW(AsyncThis* async);
 
 // OUTI   -  OUTI_ED2  -  ED, A3
 extern void OnClock_OUTI_ED2_OF(AsyncThis* async);
-extern void OnClock_OUTI_ED2_MR(AsyncThis* async);
-extern void OnClock_OUTI_ED2_PW(AsyncThis* async);
 
 // OTIR   -  OTIR_ED2  -  ED, B3
 extern void OnClock_OTIR_ED2_OF(AsyncThis* async);
-extern void OnClock_OTIR_ED2_MR(AsyncThis* async);
-extern void OnClock_OTIR_ED2_PW(AsyncThis* async);
-extern void OnClock_OTIR_ED2_PCd(AsyncThis* async);
 
 // OUTD   -  OUTD_ED2  -  ED, A3
 extern void OnClock_OUTD_ED2_OF(AsyncThis* async);
-extern void OnClock_OUTD_ED2_MR(AsyncThis* async);
-extern void OnClock_OUTD_ED2_PW(AsyncThis* async);
 
 // OTDR   -  OTDR_ED2  -  ED, BB
 extern void OnClock_OTDR_ED2_OF(AsyncThis* async);
-extern void OnClock_OTDR_ED2_MR(AsyncThis* async);
-extern void OnClock_OTDR_ED2_PW(AsyncThis* async);
-extern void OnClock_OTDR_ED2_PCd(AsyncThis* async);

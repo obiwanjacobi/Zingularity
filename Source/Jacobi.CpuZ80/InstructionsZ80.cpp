@@ -3342,7 +3342,7 @@ const InstructionInfo instructionInfoLDA__IX_d__DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LDr__ex_d__ex3_OF },
-        { 3, OnClock_LDr__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
@@ -3361,7 +3361,7 @@ const InstructionInfo instructionInfoLDA__IY_d__FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LDr__ex_d__ex3_OF },
-        { 3, OnClock_LDr__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
@@ -3380,7 +3380,7 @@ const InstructionInfo instructionInfoLDB__IX_d__DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LDr__ex_d__ex3_OF },
-        { 3, OnClock_LDr__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
@@ -3399,7 +3399,7 @@ const InstructionInfo instructionInfoLDB__IY_d__FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LDr__ex_d__ex3_OF },
-        { 3, OnClock_LDr__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
@@ -3418,7 +3418,7 @@ const InstructionInfo instructionInfoLDC__IX_d__DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LDr__ex_d__ex3_OF },
-        { 3, OnClock_LDr__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
@@ -3437,7 +3437,7 @@ const InstructionInfo instructionInfoLDC__IY_d__FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LDr__ex_d__ex3_OF },
-        { 3, OnClock_LDr__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
@@ -3456,7 +3456,7 @@ const InstructionInfo instructionInfoLDD__IX_d__DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LDr__ex_d__ex3_OF },
-        { 3, OnClock_LDr__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
@@ -3475,7 +3475,7 @@ const InstructionInfo instructionInfoLDD__IY_d__FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LDr__ex_d__ex3_OF },
-        { 3, OnClock_LDr__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
@@ -3494,7 +3494,7 @@ const InstructionInfo instructionInfoLDE__IX_d__DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LDr__ex_d__ex3_OF },
-        { 3, OnClock_LDr__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
@@ -3513,7 +3513,7 @@ const InstructionInfo instructionInfoLDE__IY_d__FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LDr__ex_d__ex3_OF },
-        { 3, OnClock_LDr__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
@@ -3532,7 +3532,7 @@ const InstructionInfo instructionInfoLDH__IX_d__DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LDr__ex_d__ex3_OF },
-        { 3, OnClock_LDr__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
@@ -3551,7 +3551,7 @@ const InstructionInfo instructionInfoLDH__IY_d__FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LDr__ex_d__ex3_OF },
-        { 3, OnClock_LDr__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
@@ -3570,7 +3570,7 @@ const InstructionInfo instructionInfoLDL__IX_d__DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LDr__ex_d__ex3_OF },
-        { 3, OnClock_LDr__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
@@ -3589,7 +3589,7 @@ const InstructionInfo instructionInfoLDL__IY_d__FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LDr__ex_d__ex3_OF },
-        { 3, OnClock_LDr__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LDr__ex_d__ex3_AD },
         { 3, OnClock_LDr__ex_d__ex3_MR },
         { 0, nullptr },
@@ -3741,7 +3741,7 @@ const InstructionInfo instructionInfoLD_IX_d__A_DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LD_ex_d__r_ex3_OF },
-        { 3, OnClock_LD_ex_d__r_ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
@@ -3760,7 +3760,7 @@ const InstructionInfo instructionInfoLD_IY_d__A_FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LD_ex_d__r_ex3_OF },
-        { 3, OnClock_LD_ex_d__r_ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
@@ -3779,7 +3779,7 @@ const InstructionInfo instructionInfoLD_IX_d__B_DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LD_ex_d__r_ex3_OF },
-        { 3, OnClock_LD_ex_d__r_ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
@@ -3798,7 +3798,7 @@ const InstructionInfo instructionInfoLD_IY_d__B_FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LD_ex_d__r_ex3_OF },
-        { 3, OnClock_LD_ex_d__r_ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
@@ -3817,7 +3817,7 @@ const InstructionInfo instructionInfoLD_IX_d__C_DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LD_ex_d__r_ex3_OF },
-        { 3, OnClock_LD_ex_d__r_ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
@@ -3836,7 +3836,7 @@ const InstructionInfo instructionInfoLD_IY_d__C_FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LD_ex_d__r_ex3_OF },
-        { 3, OnClock_LD_ex_d__r_ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
@@ -3855,7 +3855,7 @@ const InstructionInfo instructionInfoLD_IX_d__D_DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LD_ex_d__r_ex3_OF },
-        { 3, OnClock_LD_ex_d__r_ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
@@ -3874,7 +3874,7 @@ const InstructionInfo instructionInfoLD_IY_d__D_FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LD_ex_d__r_ex3_OF },
-        { 3, OnClock_LD_ex_d__r_ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
@@ -3893,7 +3893,7 @@ const InstructionInfo instructionInfoLD_IX_d__E_DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LD_ex_d__r_ex3_OF },
-        { 3, OnClock_LD_ex_d__r_ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
@@ -3912,7 +3912,7 @@ const InstructionInfo instructionInfoLD_IY_d__E_FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LD_ex_d__r_ex3_OF },
-        { 3, OnClock_LD_ex_d__r_ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
@@ -3931,7 +3931,7 @@ const InstructionInfo instructionInfoLD_IX_d__H_DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LD_ex_d__r_ex3_OF },
-        { 3, OnClock_LD_ex_d__r_ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
@@ -3950,7 +3950,7 @@ const InstructionInfo instructionInfoLD_IY_d__H_FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LD_ex_d__r_ex3_OF },
-        { 3, OnClock_LD_ex_d__r_ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
@@ -3969,7 +3969,7 @@ const InstructionInfo instructionInfoLD_IX_d__L_DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LD_ex_d__r_ex3_OF },
-        { 3, OnClock_LD_ex_d__r_ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
@@ -3988,7 +3988,7 @@ const InstructionInfo instructionInfoLD_IY_d__L_FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LD_ex_d__r_ex3_OF },
-        { 3, OnClock_LD_ex_d__r_ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LD_ex_d__r_ex3_AD },
         { 3, OnClock_LD_ex_d__r_ex3_MW },
         { 0, nullptr },
@@ -4026,7 +4026,7 @@ const InstructionInfo instructionInfoLD_IX_d__n_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LD_ex_d__n_ex4_OF },
-        { 3, OnClock_LD_ex_d__n_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LD_ex_d__n_ex4_FD },
         { 3, OnClock_LD_ex_d__n_ex4_MW },
         { 0, nullptr },
@@ -4045,7 +4045,7 @@ const InstructionInfo instructionInfoLD_IY_d__n_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LD_ex_d__n_ex4_OF },
-        { 3, OnClock_LD_ex_d__n_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_LD_ex_d__n_ex4_FD },
         { 3, OnClock_LD_ex_d__n_ex4_MW },
         { 0, nullptr },
@@ -4063,7 +4063,7 @@ const InstructionInfo instructionInfoLDA__BC__1 =
     0,
     {
         { 4, OnClock_LDA__BC__1_OF },
-        { 3, OnClock_LDA__BC__1_MR },
+        { 3, OnClock_MR },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4082,7 +4082,7 @@ const InstructionInfo instructionInfoLDA__DE__1 =
     0,
     {
         { 4, OnClock_LDA__DE__1_OF },
-        { 3, OnClock_LDA__DE__1_MR },
+        { 3, OnClock_MR },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4120,7 +4120,7 @@ const InstructionInfo instructionInfoLD_BC__A_1 =
     0,
     {
         { 4, OnClock_LD_BC__A_1_OF },
-        { 3, OnClock_LD_BC__A_1_MW },
+        { 3, OnClock_MW },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4139,7 +4139,7 @@ const InstructionInfo instructionInfoLD_DE__A_1 =
     0,
     {
         { 4, OnClock_LD_DE__A_1_OF },
-        { 3, OnClock_LD_DE__A_1_MW },
+        { 3, OnClock_MW },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -4975,9 +4975,9 @@ const InstructionInfo instructionInfoEX_SP__HL_1 =
     0,
     {
         { 4, OnClock_EX_SP__HL_1_OF },
-        { 3, OnClock_EX_SP__HL_1_SRh },
+        { 3, OnClock_SRh },
         { 4, OnClock_EX_SP__HL_1_SRl },
-        { 3, OnClock_EX_SP__HL_1_SWh },
+        { 3, OnClock_SWh },
         { 5, OnClock_EX_SP__HL_1_SWl },
         { 0, nullptr },
     },
@@ -5033,7 +5033,7 @@ const InstructionInfo instructionInfoLDI_ED2 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LDI_ED2_OF },
-        { 3, OnClock_LDI_ED2_MR },
+        { 3, OnClock_MR },
         { 5, OnClock_LDI_ED2_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -5052,9 +5052,9 @@ const InstructionInfo instructionInfoLDIR_ED2 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LDIR_ED2_OF },
-        { 3, OnClock_LDIR_ED2_MR },
+        { 3, OnClock_MR },
         { 5, OnClock_LDIR_ED2_MW },
-        { 5, OnClock_LDIR_ED2_PCd },
+        { 5, OnClock_PCd },
         { 0, nullptr },
     },
     {
@@ -5071,7 +5071,7 @@ const InstructionInfo instructionInfoLDD_ED2 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LDD_ED2_OF },
-        { 3, OnClock_LDD_ED2_MR },
+        { 3, OnClock_MR },
         { 5, OnClock_LDD_ED2_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -5090,9 +5090,9 @@ const InstructionInfo instructionInfoLDDR_ED2 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_LDDR_ED2_OF },
-        { 3, OnClock_LDDR_ED2_MR },
+        { 3, OnClock_MR },
         { 5, OnClock_LDDR_ED2_MW },
-        { 5, OnClock_LDDR_ED2_PCd },
+        { 5, OnClock_PCd },
         { 0, nullptr },
     },
     {
@@ -5109,7 +5109,7 @@ const InstructionInfo instructionInfoCPI_ED2 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_CPI_ED2_OF },
-        { 3, OnClock_CPI_ED2_MR },
+        { 3, OnClock_MR },
         { 5, OnClock_CPI_ED2_OP },
         { 0, nullptr },
         { 0, nullptr },
@@ -5128,9 +5128,9 @@ const InstructionInfo instructionInfoCPIR_ED2 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_CPIR_ED2_OF },
-        { 3, OnClock_CPIR_ED2_MR },
+        { 3, OnClock_MR },
         { 5, OnClock_CPIR_ED2_OP },
-        { 5, OnClock_CPIR_ED2_PCd },
+        { 5, OnClock_PCd },
         { 0, nullptr },
     },
     {
@@ -5147,7 +5147,7 @@ const InstructionInfo instructionInfoCPD_ED2 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_CPD_ED2_OF },
-        { 3, OnClock_CPD_ED2_MR },
+        { 3, OnClock_MR },
         { 5, OnClock_CPD_ED2_OP },
         { 0, nullptr },
         { 0, nullptr },
@@ -5166,9 +5166,9 @@ const InstructionInfo instructionInfoCPDR_ED2 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_CPDR_ED2_OF },
-        { 3, OnClock_CPDR_ED2_MR },
+        { 3, OnClock_MR },
         { 5, OnClock_CPDR_ED2_OP },
-        { 5, OnClock_CPDR_ED2_PCd },
+        { 5, OnClock_PCd },
         { 0, nullptr },
     },
     {
@@ -5602,7 +5602,7 @@ const InstructionInfo instructionInfoADDA__HL__1 =
     0,
     {
         { 4, OnClock_ADDA__HL__1_OF },
-        { 3, OnClock_ADDA__HL__1_MR },
+        { 3, OnClock_MR },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -5622,7 +5622,7 @@ const InstructionInfo instructionInfoADDA__IX_d__DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_ADDA__ex_d__ex3_OF },
-        { 3, OnClock_ADDA__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_ADDA__ex_d__ex3_AD },
         { 3, OnClock_ADDA__ex_d__ex3_MR },
         { 0, nullptr },
@@ -5641,7 +5641,7 @@ const InstructionInfo instructionInfoADDA__IY_d__FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_ADDA__ex_d__ex3_OF },
-        { 3, OnClock_ADDA__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_ADDA__ex_d__ex3_AD },
         { 3, OnClock_ADDA__ex_d__ex3_MR },
         { 0, nullptr },
@@ -6097,7 +6097,7 @@ const InstructionInfo instructionInfoADCA__IX_d__DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_ADCA__ex_d__ex3_OF },
-        { 3, OnClock_ADCA__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_ADCA__ex_d__ex3_AD },
         { 3, OnClock_ADCA__ex_d__ex3_MR },
         { 0, nullptr },
@@ -6116,7 +6116,7 @@ const InstructionInfo instructionInfoADCA__IY_d__FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_ADCA__ex_d__ex3_OF },
-        { 3, OnClock_ADCA__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_ADCA__ex_d__ex3_AD },
         { 3, OnClock_ADCA__ex_d__ex3_MR },
         { 0, nullptr },
@@ -6552,7 +6552,7 @@ const InstructionInfo instructionInfoSUBA__HL__1 =
     0,
     {
         { 4, OnClock_SUBA__HL__1_OF },
-        { 3, OnClock_SUBA__HL__1_MR },
+        { 3, OnClock_MR },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -6572,7 +6572,7 @@ const InstructionInfo instructionInfoSUBA__IX_d__DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_SUBA__ex_d__ex3_OF },
-        { 3, OnClock_SUBA__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SUBA__ex_d__ex3_AD },
         { 3, OnClock_SUBA__ex_d__ex3_MR },
         { 0, nullptr },
@@ -6591,7 +6591,7 @@ const InstructionInfo instructionInfoSUBA__IY_d__FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_SUBA__ex_d__ex3_OF },
-        { 3, OnClock_SUBA__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SUBA__ex_d__ex3_AD },
         { 3, OnClock_SUBA__ex_d__ex3_MR },
         { 0, nullptr },
@@ -7027,7 +7027,7 @@ const InstructionInfo instructionInfoSBCA__HL__1 =
     0,
     {
         { 4, OnClock_SBCA__HL__1_OF },
-        { 3, OnClock_SBCA__HL__1_MR },
+        { 3, OnClock_MR },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7047,7 +7047,7 @@ const InstructionInfo instructionInfoSBCA__IX_d__DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_SBCA__ex_d__ex3_OF },
-        { 3, OnClock_SBCA__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SBCA__ex_d__ex3_AD },
         { 3, OnClock_SBCA__ex_d__ex3_MR },
         { 0, nullptr },
@@ -7066,7 +7066,7 @@ const InstructionInfo instructionInfoSBCA__IY_d__FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_SBCA__ex_d__ex3_OF },
-        { 3, OnClock_SBCA__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SBCA__ex_d__ex3_AD },
         { 3, OnClock_SBCA__ex_d__ex3_MR },
         { 0, nullptr },
@@ -7502,7 +7502,7 @@ const InstructionInfo instructionInfoANDA__HL__1 =
     0,
     {
         { 4, OnClock_ANDA__HL__1_OF },
-        { 3, OnClock_ANDA__HL__1_MR },
+        { 3, OnClock_MR },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7522,7 +7522,7 @@ const InstructionInfo instructionInfoANDA__IX_d__DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_ANDA__ex_d__ex3_OF },
-        { 3, OnClock_ANDA__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_ANDA__ex_d__ex3_AD },
         { 3, OnClock_ANDA__ex_d__ex3_MR },
         { 0, nullptr },
@@ -7541,7 +7541,7 @@ const InstructionInfo instructionInfoANDA__IY_d__FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_ANDA__ex_d__ex3_OF },
-        { 3, OnClock_ANDA__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_ANDA__ex_d__ex3_AD },
         { 3, OnClock_ANDA__ex_d__ex3_MR },
         { 0, nullptr },
@@ -7977,7 +7977,7 @@ const InstructionInfo instructionInfoORA__HL__1 =
     0,
     {
         { 4, OnClock_ORA__HL__1_OF },
-        { 3, OnClock_ORA__HL__1_MR },
+        { 3, OnClock_MR },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -7997,7 +7997,7 @@ const InstructionInfo instructionInfoORA__IX_d__DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_ORA__ex_d__ex3_OF },
-        { 3, OnClock_ORA__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_ORA__ex_d__ex3_AD },
         { 3, OnClock_ORA__ex_d__ex3_MR },
         { 0, nullptr },
@@ -8016,7 +8016,7 @@ const InstructionInfo instructionInfoORA__IY_d__FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_ORA__ex_d__ex3_OF },
-        { 3, OnClock_ORA__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_ORA__ex_d__ex3_AD },
         { 3, OnClock_ORA__ex_d__ex3_MR },
         { 0, nullptr },
@@ -8452,7 +8452,7 @@ const InstructionInfo instructionInfoXORA__HL__1 =
     0,
     {
         { 4, OnClock_XORA__HL__1_OF },
-        { 3, OnClock_XORA__HL__1_MR },
+        { 3, OnClock_MR },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8472,7 +8472,7 @@ const InstructionInfo instructionInfoXORA__IX_d__DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_XORA__ex_d__ex3_OF },
-        { 3, OnClock_XORA__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_XORA__ex_d__ex3_AD },
         { 3, OnClock_XORA__ex_d__ex3_MR },
         { 0, nullptr },
@@ -8491,7 +8491,7 @@ const InstructionInfo instructionInfoXORA__IY_d__FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_XORA__ex_d__ex3_OF },
-        { 3, OnClock_XORA__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_XORA__ex_d__ex3_AD },
         { 3, OnClock_XORA__ex_d__ex3_MR },
         { 0, nullptr },
@@ -8927,7 +8927,7 @@ const InstructionInfo instructionInfoCPA__HL__1 =
     0,
     {
         { 4, OnClock_CPA__HL__1_OF },
-        { 3, OnClock_CPA__HL__1_MR },
+        { 3, OnClock_MR },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -8947,7 +8947,7 @@ const InstructionInfo instructionInfoCPA__IX_d__DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_CPA__ex_d__ex3_OF },
-        { 3, OnClock_CPA__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_CPA__ex_d__ex3_AD },
         { 3, OnClock_CPA__ex_d__ex3_MR },
         { 0, nullptr },
@@ -8966,7 +8966,7 @@ const InstructionInfo instructionInfoCPA__IY_d__FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_CPA__ex_d__ex3_OF },
-        { 3, OnClock_CPA__ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_CPA__ex_d__ex3_AD },
         { 3, OnClock_CPA__ex_d__ex3_MR },
         { 0, nullptr },
@@ -9384,7 +9384,7 @@ const InstructionInfo instructionInfoINC_HL__1 =
     {
         { 4, OnClock_INC_HL__1_OF },
         { 4, OnClock_INC_HL__1_MR },
-        { 3, OnClock_INC_HL__1_MW },
+        { 3, OnClock_MW },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9403,7 +9403,7 @@ const InstructionInfo instructionInfoINC_IX_d__DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_INC_ex_d__ex3_OF },
-        { 3, OnClock_INC_ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_INC_ex_d__ex3_AD },
         { 4, OnClock_INC_ex_d__ex3_MR },
         { 3, OnClock_INC_ex_d__ex3_MW },
@@ -9422,7 +9422,7 @@ const InstructionInfo instructionInfoINC_IY_d__FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_INC_ex_d__ex3_OF },
-        { 3, OnClock_INC_ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_INC_ex_d__ex3_AD },
         { 4, OnClock_INC_ex_d__ex3_MR },
         { 3, OnClock_INC_ex_d__ex3_MW },
@@ -9840,7 +9840,7 @@ const InstructionInfo instructionInfoDEC_HL__1 =
     {
         { 4, OnClock_DEC_HL__1_OF },
         { 4, OnClock_DEC_HL__1_MR },
-        { 3, OnClock_DEC_HL__1_MW },
+        { 3, OnClock_MW },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -9859,7 +9859,7 @@ const InstructionInfo instructionInfoDEC_IX_d__DD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_DEC_ex_d__ex3_OF },
-        { 3, OnClock_DEC_ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_DEC_ex_d__ex3_AD },
         { 4, OnClock_DEC_ex_d__ex3_MR },
         { 3, OnClock_DEC_ex_d__ex3_MW },
@@ -9878,7 +9878,7 @@ const InstructionInfo instructionInfoDEC_IY_d__FD3 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_DEC_ex_d__ex3_OF },
-        { 3, OnClock_DEC_ex_d__ex3_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_DEC_ex_d__ex3_AD },
         { 4, OnClock_DEC_ex_d__ex3_MR },
         { 3, OnClock_DEC_ex_d__ex3_MW },
@@ -10943,7 +10943,7 @@ const InstructionInfo instructionInfoRLC_HL__CB2 =
         { 4, OnClock_OF },
         { 4, OnClock_RLC_HL__CB2_OF },
         { 4, OnClock_RLC_HL__CB2_MR },
-        { 3, OnClock_RLC_HL__CB2_MW },
+        { 3, OnClock_MW },
         { 0, nullptr },
         { 0, nullptr },
     },
@@ -10961,7 +10961,7 @@ const InstructionInfo instructionInfoRLC_IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RLC_ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RLC_ex_d__ex4_FD },
         { 4, OnClock_RLC_ex_d__ex4_MR },
         { 3, OnClock_RLC_ex_d__ex4_MW },
@@ -10980,7 +10980,7 @@ const InstructionInfo instructionInfoRLC_IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RLC_ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RLC_ex_d__ex4_FD },
         { 4, OnClock_RLC_ex_d__ex4_MR },
         { 3, OnClock_RLC_ex_d__ex4_MW },
@@ -10999,7 +10999,7 @@ const InstructionInfo instructionInfoRLC_IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RLC_ex_d__r_ex4_FD },
         { 4, OnClock_RLC_ex_d__r_ex4_MR },
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
@@ -11018,7 +11018,7 @@ const InstructionInfo instructionInfoRLC_IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RLC_ex_d__r_ex4_FD },
         { 4, OnClock_RLC_ex_d__r_ex4_MR },
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
@@ -11037,7 +11037,7 @@ const InstructionInfo instructionInfoRLC_IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RLC_ex_d__r_ex4_FD },
         { 4, OnClock_RLC_ex_d__r_ex4_MR },
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
@@ -11056,7 +11056,7 @@ const InstructionInfo instructionInfoRLC_IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RLC_ex_d__r_ex4_FD },
         { 4, OnClock_RLC_ex_d__r_ex4_MR },
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
@@ -11075,7 +11075,7 @@ const InstructionInfo instructionInfoRLC_IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RLC_ex_d__r_ex4_FD },
         { 4, OnClock_RLC_ex_d__r_ex4_MR },
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
@@ -11094,7 +11094,7 @@ const InstructionInfo instructionInfoRLC_IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RLC_ex_d__r_ex4_FD },
         { 4, OnClock_RLC_ex_d__r_ex4_MR },
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
@@ -11113,7 +11113,7 @@ const InstructionInfo instructionInfoRLC_IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RLC_ex_d__r_ex4_FD },
         { 4, OnClock_RLC_ex_d__r_ex4_MR },
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
@@ -11132,7 +11132,7 @@ const InstructionInfo instructionInfoRLC_IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RLC_ex_d__r_ex4_FD },
         { 4, OnClock_RLC_ex_d__r_ex4_MR },
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
@@ -11151,7 +11151,7 @@ const InstructionInfo instructionInfoRLC_IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RLC_ex_d__r_ex4_FD },
         { 4, OnClock_RLC_ex_d__r_ex4_MR },
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
@@ -11170,7 +11170,7 @@ const InstructionInfo instructionInfoRLC_IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RLC_ex_d__r_ex4_FD },
         { 4, OnClock_RLC_ex_d__r_ex4_MR },
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
@@ -11189,7 +11189,7 @@ const InstructionInfo instructionInfoRLC_IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RLC_ex_d__r_ex4_FD },
         { 4, OnClock_RLC_ex_d__r_ex4_MR },
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
@@ -11208,7 +11208,7 @@ const InstructionInfo instructionInfoRLC_IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RLC_ex_d__r_ex4_FD },
         { 4, OnClock_RLC_ex_d__r_ex4_MR },
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
@@ -11227,7 +11227,7 @@ const InstructionInfo instructionInfoRLC_IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RLC_ex_d__r_ex4_FD },
         { 4, OnClock_RLC_ex_d__r_ex4_MR },
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
@@ -11246,7 +11246,7 @@ const InstructionInfo instructionInfoRLC_IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RLC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RLC_ex_d__r_ex4_FD },
         { 4, OnClock_RLC_ex_d__r_ex4_MR },
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
@@ -11399,7 +11399,7 @@ const InstructionInfo instructionInfoRL_HL__CB2 =
         { 4, OnClock_OF },
         { 4, OnClock_RL_HL__CB2_OF },
         { 4, OnClock_RL_HL__CB2_MR },
-        { 3, OnClock_RL_HL__CB2_MW },
+        { 3, OnClock_MW },
         { 0, nullptr },
         { 0, nullptr },
     },
@@ -11417,7 +11417,7 @@ const InstructionInfo instructionInfoRL_IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RL_ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RL_ex_d__ex4_FD },
         { 4, OnClock_RL_ex_d__ex4_MR },
         { 3, OnClock_RL_ex_d__ex4_MW },
@@ -11436,7 +11436,7 @@ const InstructionInfo instructionInfoRL_IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RL_ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RL_ex_d__ex4_FD },
         { 4, OnClock_RL_ex_d__ex4_MR },
         { 3, OnClock_RL_ex_d__ex4_MW },
@@ -11455,7 +11455,7 @@ const InstructionInfo instructionInfoRL_IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RL_ex_d__r_ex4_FD },
         { 4, OnClock_RL_ex_d__r_ex4_MR },
         { 3, OnClock_RL_ex_d__r_ex4_MW },
@@ -11474,7 +11474,7 @@ const InstructionInfo instructionInfoRL_IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RL_ex_d__r_ex4_FD },
         { 4, OnClock_RL_ex_d__r_ex4_MR },
         { 3, OnClock_RL_ex_d__r_ex4_MW },
@@ -11493,7 +11493,7 @@ const InstructionInfo instructionInfoRL_IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RL_ex_d__r_ex4_FD },
         { 4, OnClock_RL_ex_d__r_ex4_MR },
         { 3, OnClock_RL_ex_d__r_ex4_MW },
@@ -11512,7 +11512,7 @@ const InstructionInfo instructionInfoRL_IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RL_ex_d__r_ex4_FD },
         { 4, OnClock_RL_ex_d__r_ex4_MR },
         { 3, OnClock_RL_ex_d__r_ex4_MW },
@@ -11531,7 +11531,7 @@ const InstructionInfo instructionInfoRL_IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RL_ex_d__r_ex4_FD },
         { 4, OnClock_RL_ex_d__r_ex4_MR },
         { 3, OnClock_RL_ex_d__r_ex4_MW },
@@ -11550,7 +11550,7 @@ const InstructionInfo instructionInfoRL_IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RL_ex_d__r_ex4_FD },
         { 4, OnClock_RL_ex_d__r_ex4_MR },
         { 3, OnClock_RL_ex_d__r_ex4_MW },
@@ -11569,7 +11569,7 @@ const InstructionInfo instructionInfoRL_IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RL_ex_d__r_ex4_FD },
         { 4, OnClock_RL_ex_d__r_ex4_MR },
         { 3, OnClock_RL_ex_d__r_ex4_MW },
@@ -11588,7 +11588,7 @@ const InstructionInfo instructionInfoRL_IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RL_ex_d__r_ex4_FD },
         { 4, OnClock_RL_ex_d__r_ex4_MR },
         { 3, OnClock_RL_ex_d__r_ex4_MW },
@@ -11607,7 +11607,7 @@ const InstructionInfo instructionInfoRL_IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RL_ex_d__r_ex4_FD },
         { 4, OnClock_RL_ex_d__r_ex4_MR },
         { 3, OnClock_RL_ex_d__r_ex4_MW },
@@ -11626,7 +11626,7 @@ const InstructionInfo instructionInfoRL_IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RL_ex_d__r_ex4_FD },
         { 4, OnClock_RL_ex_d__r_ex4_MR },
         { 3, OnClock_RL_ex_d__r_ex4_MW },
@@ -11645,7 +11645,7 @@ const InstructionInfo instructionInfoRL_IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RL_ex_d__r_ex4_FD },
         { 4, OnClock_RL_ex_d__r_ex4_MR },
         { 3, OnClock_RL_ex_d__r_ex4_MW },
@@ -11664,7 +11664,7 @@ const InstructionInfo instructionInfoRL_IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RL_ex_d__r_ex4_FD },
         { 4, OnClock_RL_ex_d__r_ex4_MR },
         { 3, OnClock_RL_ex_d__r_ex4_MW },
@@ -11683,7 +11683,7 @@ const InstructionInfo instructionInfoRL_IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RL_ex_d__r_ex4_FD },
         { 4, OnClock_RL_ex_d__r_ex4_MR },
         { 3, OnClock_RL_ex_d__r_ex4_MW },
@@ -11702,7 +11702,7 @@ const InstructionInfo instructionInfoRL_IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RL_ex_d__r_ex4_FD },
         { 4, OnClock_RL_ex_d__r_ex4_MR },
         { 3, OnClock_RL_ex_d__r_ex4_MW },
@@ -11855,7 +11855,7 @@ const InstructionInfo instructionInfoRRC_HL__CB2 =
         { 4, OnClock_OF },
         { 4, OnClock_RRC_HL__CB2_OF },
         { 4, OnClock_RRC_HL__CB2_MR },
-        { 3, OnClock_RRC_HL__CB2_MW },
+        { 3, OnClock_MW },
         { 0, nullptr },
         { 0, nullptr },
     },
@@ -11873,7 +11873,7 @@ const InstructionInfo instructionInfoRRC_IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RRC_ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RRC_ex_d__ex4_FD },
         { 4, OnClock_RRC_ex_d__ex4_MR },
         { 3, OnClock_RRC_ex_d__ex4_MW },
@@ -11892,7 +11892,7 @@ const InstructionInfo instructionInfoRRC_IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RRC_ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RRC_ex_d__ex4_FD },
         { 4, OnClock_RRC_ex_d__ex4_MR },
         { 3, OnClock_RRC_ex_d__ex4_MW },
@@ -11911,7 +11911,7 @@ const InstructionInfo instructionInfoRRC_IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RRC_ex_d__r_ex4_FD },
         { 4, OnClock_RRC_ex_d__r_ex4_MR },
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
@@ -11930,7 +11930,7 @@ const InstructionInfo instructionInfoRRC_IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RRC_ex_d__r_ex4_FD },
         { 4, OnClock_RRC_ex_d__r_ex4_MR },
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
@@ -11949,7 +11949,7 @@ const InstructionInfo instructionInfoRRC_IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RRC_ex_d__r_ex4_FD },
         { 4, OnClock_RRC_ex_d__r_ex4_MR },
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
@@ -11968,7 +11968,7 @@ const InstructionInfo instructionInfoRRC_IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RRC_ex_d__r_ex4_FD },
         { 4, OnClock_RRC_ex_d__r_ex4_MR },
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
@@ -11987,7 +11987,7 @@ const InstructionInfo instructionInfoRRC_IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RRC_ex_d__r_ex4_FD },
         { 4, OnClock_RRC_ex_d__r_ex4_MR },
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
@@ -12006,7 +12006,7 @@ const InstructionInfo instructionInfoRRC_IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RRC_ex_d__r_ex4_FD },
         { 4, OnClock_RRC_ex_d__r_ex4_MR },
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
@@ -12025,7 +12025,7 @@ const InstructionInfo instructionInfoRRC_IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RRC_ex_d__r_ex4_FD },
         { 4, OnClock_RRC_ex_d__r_ex4_MR },
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
@@ -12044,7 +12044,7 @@ const InstructionInfo instructionInfoRRC_IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RRC_ex_d__r_ex4_FD },
         { 4, OnClock_RRC_ex_d__r_ex4_MR },
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
@@ -12063,7 +12063,7 @@ const InstructionInfo instructionInfoRRC_IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RRC_ex_d__r_ex4_FD },
         { 4, OnClock_RRC_ex_d__r_ex4_MR },
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
@@ -12082,7 +12082,7 @@ const InstructionInfo instructionInfoRRC_IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RRC_ex_d__r_ex4_FD },
         { 4, OnClock_RRC_ex_d__r_ex4_MR },
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
@@ -12101,7 +12101,7 @@ const InstructionInfo instructionInfoRRC_IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RRC_ex_d__r_ex4_FD },
         { 4, OnClock_RRC_ex_d__r_ex4_MR },
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
@@ -12120,7 +12120,7 @@ const InstructionInfo instructionInfoRRC_IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RRC_ex_d__r_ex4_FD },
         { 4, OnClock_RRC_ex_d__r_ex4_MR },
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
@@ -12139,7 +12139,7 @@ const InstructionInfo instructionInfoRRC_IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RRC_ex_d__r_ex4_FD },
         { 4, OnClock_RRC_ex_d__r_ex4_MR },
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
@@ -12158,7 +12158,7 @@ const InstructionInfo instructionInfoRRC_IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RRC_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RRC_ex_d__r_ex4_FD },
         { 4, OnClock_RRC_ex_d__r_ex4_MR },
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
@@ -12311,7 +12311,7 @@ const InstructionInfo instructionInfoRR_HL__CB2 =
         { 4, OnClock_OF },
         { 4, OnClock_RR_HL__CB2_OF },
         { 4, OnClock_RR_HL__CB2_MR },
-        { 3, OnClock_RR_HL__CB2_MW },
+        { 3, OnClock_MW },
         { 0, nullptr },
         { 0, nullptr },
     },
@@ -12329,7 +12329,7 @@ const InstructionInfo instructionInfoRR_IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RR_ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RR_ex_d__ex4_FD },
         { 4, OnClock_RR_ex_d__ex4_MR },
         { 3, OnClock_RR_ex_d__ex4_MW },
@@ -12348,7 +12348,7 @@ const InstructionInfo instructionInfoRR_IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RR_ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RR_ex_d__ex4_FD },
         { 4, OnClock_RR_ex_d__ex4_MR },
         { 3, OnClock_RR_ex_d__ex4_MW },
@@ -12367,7 +12367,7 @@ const InstructionInfo instructionInfoRR_IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RR_ex_d__r_ex4_FD },
         { 4, OnClock_RR_ex_d__r_ex4_MR },
         { 3, OnClock_RR_ex_d__r_ex4_MW },
@@ -12386,7 +12386,7 @@ const InstructionInfo instructionInfoRR_IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RR_ex_d__r_ex4_FD },
         { 4, OnClock_RR_ex_d__r_ex4_MR },
         { 3, OnClock_RR_ex_d__r_ex4_MW },
@@ -12405,7 +12405,7 @@ const InstructionInfo instructionInfoRR_IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RR_ex_d__r_ex4_FD },
         { 4, OnClock_RR_ex_d__r_ex4_MR },
         { 3, OnClock_RR_ex_d__r_ex4_MW },
@@ -12424,7 +12424,7 @@ const InstructionInfo instructionInfoRR_IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RR_ex_d__r_ex4_FD },
         { 4, OnClock_RR_ex_d__r_ex4_MR },
         { 3, OnClock_RR_ex_d__r_ex4_MW },
@@ -12443,7 +12443,7 @@ const InstructionInfo instructionInfoRR_IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RR_ex_d__r_ex4_FD },
         { 4, OnClock_RR_ex_d__r_ex4_MR },
         { 3, OnClock_RR_ex_d__r_ex4_MW },
@@ -12462,7 +12462,7 @@ const InstructionInfo instructionInfoRR_IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RR_ex_d__r_ex4_FD },
         { 4, OnClock_RR_ex_d__r_ex4_MR },
         { 3, OnClock_RR_ex_d__r_ex4_MW },
@@ -12481,7 +12481,7 @@ const InstructionInfo instructionInfoRR_IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RR_ex_d__r_ex4_FD },
         { 4, OnClock_RR_ex_d__r_ex4_MR },
         { 3, OnClock_RR_ex_d__r_ex4_MW },
@@ -12500,7 +12500,7 @@ const InstructionInfo instructionInfoRR_IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RR_ex_d__r_ex4_FD },
         { 4, OnClock_RR_ex_d__r_ex4_MR },
         { 3, OnClock_RR_ex_d__r_ex4_MW },
@@ -12519,7 +12519,7 @@ const InstructionInfo instructionInfoRR_IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RR_ex_d__r_ex4_FD },
         { 4, OnClock_RR_ex_d__r_ex4_MR },
         { 3, OnClock_RR_ex_d__r_ex4_MW },
@@ -12538,7 +12538,7 @@ const InstructionInfo instructionInfoRR_IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RR_ex_d__r_ex4_FD },
         { 4, OnClock_RR_ex_d__r_ex4_MR },
         { 3, OnClock_RR_ex_d__r_ex4_MW },
@@ -12557,7 +12557,7 @@ const InstructionInfo instructionInfoRR_IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RR_ex_d__r_ex4_FD },
         { 4, OnClock_RR_ex_d__r_ex4_MR },
         { 3, OnClock_RR_ex_d__r_ex4_MW },
@@ -12576,7 +12576,7 @@ const InstructionInfo instructionInfoRR_IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RR_ex_d__r_ex4_FD },
         { 4, OnClock_RR_ex_d__r_ex4_MR },
         { 3, OnClock_RR_ex_d__r_ex4_MW },
@@ -12595,7 +12595,7 @@ const InstructionInfo instructionInfoRR_IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RR_ex_d__r_ex4_FD },
         { 4, OnClock_RR_ex_d__r_ex4_MR },
         { 3, OnClock_RR_ex_d__r_ex4_MW },
@@ -12614,7 +12614,7 @@ const InstructionInfo instructionInfoRR_IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RR_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RR_ex_d__r_ex4_FD },
         { 4, OnClock_RR_ex_d__r_ex4_MR },
         { 3, OnClock_RR_ex_d__r_ex4_MW },
@@ -12767,7 +12767,7 @@ const InstructionInfo instructionInfoSLA_HL__CB2 =
         { 4, OnClock_OF },
         { 4, OnClock_SLA_HL__CB2_OF },
         { 4, OnClock_SLA_HL__CB2_MR },
-        { 3, OnClock_SLA_HL__CB2_MW },
+        { 3, OnClock_MW },
         { 0, nullptr },
         { 0, nullptr },
     },
@@ -12785,7 +12785,7 @@ const InstructionInfo instructionInfoSLA_IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLA_ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLA_ex_d__ex4_FD },
         { 4, OnClock_SLA_ex_d__ex4_MR },
         { 3, OnClock_SLA_ex_d__ex4_MW },
@@ -12804,7 +12804,7 @@ const InstructionInfo instructionInfoSLA_IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLA_ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLA_ex_d__ex4_FD },
         { 4, OnClock_SLA_ex_d__ex4_MR },
         { 3, OnClock_SLA_ex_d__ex4_MW },
@@ -12823,7 +12823,7 @@ const InstructionInfo instructionInfoSLA_IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLA_ex_d__r_ex4_FD },
         { 4, OnClock_SLA_ex_d__r_ex4_MR },
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
@@ -12842,7 +12842,7 @@ const InstructionInfo instructionInfoSLA_IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLA_ex_d__r_ex4_FD },
         { 4, OnClock_SLA_ex_d__r_ex4_MR },
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
@@ -12861,7 +12861,7 @@ const InstructionInfo instructionInfoSLA_IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLA_ex_d__r_ex4_FD },
         { 4, OnClock_SLA_ex_d__r_ex4_MR },
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
@@ -12880,7 +12880,7 @@ const InstructionInfo instructionInfoSLA_IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLA_ex_d__r_ex4_FD },
         { 4, OnClock_SLA_ex_d__r_ex4_MR },
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
@@ -12899,7 +12899,7 @@ const InstructionInfo instructionInfoSLA_IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLA_ex_d__r_ex4_FD },
         { 4, OnClock_SLA_ex_d__r_ex4_MR },
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
@@ -12918,7 +12918,7 @@ const InstructionInfo instructionInfoSLA_IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLA_ex_d__r_ex4_FD },
         { 4, OnClock_SLA_ex_d__r_ex4_MR },
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
@@ -12937,7 +12937,7 @@ const InstructionInfo instructionInfoSLA_IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLA_ex_d__r_ex4_FD },
         { 4, OnClock_SLA_ex_d__r_ex4_MR },
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
@@ -12956,7 +12956,7 @@ const InstructionInfo instructionInfoSLA_IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLA_ex_d__r_ex4_FD },
         { 4, OnClock_SLA_ex_d__r_ex4_MR },
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
@@ -12975,7 +12975,7 @@ const InstructionInfo instructionInfoSLA_IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLA_ex_d__r_ex4_FD },
         { 4, OnClock_SLA_ex_d__r_ex4_MR },
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
@@ -12994,7 +12994,7 @@ const InstructionInfo instructionInfoSLA_IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLA_ex_d__r_ex4_FD },
         { 4, OnClock_SLA_ex_d__r_ex4_MR },
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
@@ -13013,7 +13013,7 @@ const InstructionInfo instructionInfoSLA_IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLA_ex_d__r_ex4_FD },
         { 4, OnClock_SLA_ex_d__r_ex4_MR },
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
@@ -13032,7 +13032,7 @@ const InstructionInfo instructionInfoSLA_IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLA_ex_d__r_ex4_FD },
         { 4, OnClock_SLA_ex_d__r_ex4_MR },
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
@@ -13051,7 +13051,7 @@ const InstructionInfo instructionInfoSLA_IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLA_ex_d__r_ex4_FD },
         { 4, OnClock_SLA_ex_d__r_ex4_MR },
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
@@ -13070,7 +13070,7 @@ const InstructionInfo instructionInfoSLA_IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLA_ex_d__r_ex4_FD },
         { 4, OnClock_SLA_ex_d__r_ex4_MR },
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
@@ -13223,7 +13223,7 @@ const InstructionInfo instructionInfoSLL_HL__CB2 =
         { 4, OnClock_OF },
         { 4, OnClock_SLL_HL__CB2_OF },
         { 4, OnClock_SLL_HL__CB2_MR },
-        { 3, OnClock_SLL_HL__CB2_MW },
+        { 3, OnClock_MW },
         { 0, nullptr },
         { 0, nullptr },
     },
@@ -13241,7 +13241,7 @@ const InstructionInfo instructionInfoSLL_IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLL_ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLL_ex_d__ex4_FD },
         { 4, OnClock_SLL_ex_d__ex4_MR },
         { 3, OnClock_SLL_ex_d__ex4_MW },
@@ -13260,7 +13260,7 @@ const InstructionInfo instructionInfoSLL_IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLL_ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLL_ex_d__ex4_FD },
         { 4, OnClock_SLL_ex_d__ex4_MR },
         { 3, OnClock_SLL_ex_d__ex4_MW },
@@ -13279,7 +13279,7 @@ const InstructionInfo instructionInfoSLL_IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLL_ex_d__r_ex4_FD },
         { 4, OnClock_SLL_ex_d__r_ex4_MR },
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
@@ -13298,7 +13298,7 @@ const InstructionInfo instructionInfoSLL_IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLL_ex_d__r_ex4_FD },
         { 4, OnClock_SLL_ex_d__r_ex4_MR },
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
@@ -13317,7 +13317,7 @@ const InstructionInfo instructionInfoSLL_IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLL_ex_d__r_ex4_FD },
         { 4, OnClock_SLL_ex_d__r_ex4_MR },
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
@@ -13336,7 +13336,7 @@ const InstructionInfo instructionInfoSLL_IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLL_ex_d__r_ex4_FD },
         { 4, OnClock_SLL_ex_d__r_ex4_MR },
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
@@ -13355,7 +13355,7 @@ const InstructionInfo instructionInfoSLL_IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLL_ex_d__r_ex4_FD },
         { 4, OnClock_SLL_ex_d__r_ex4_MR },
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
@@ -13374,7 +13374,7 @@ const InstructionInfo instructionInfoSLL_IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLL_ex_d__r_ex4_FD },
         { 4, OnClock_SLL_ex_d__r_ex4_MR },
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
@@ -13393,7 +13393,7 @@ const InstructionInfo instructionInfoSLL_IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLL_ex_d__r_ex4_FD },
         { 4, OnClock_SLL_ex_d__r_ex4_MR },
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
@@ -13412,7 +13412,7 @@ const InstructionInfo instructionInfoSLL_IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLL_ex_d__r_ex4_FD },
         { 4, OnClock_SLL_ex_d__r_ex4_MR },
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
@@ -13431,7 +13431,7 @@ const InstructionInfo instructionInfoSLL_IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLL_ex_d__r_ex4_FD },
         { 4, OnClock_SLL_ex_d__r_ex4_MR },
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
@@ -13450,7 +13450,7 @@ const InstructionInfo instructionInfoSLL_IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLL_ex_d__r_ex4_FD },
         { 4, OnClock_SLL_ex_d__r_ex4_MR },
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
@@ -13469,7 +13469,7 @@ const InstructionInfo instructionInfoSLL_IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLL_ex_d__r_ex4_FD },
         { 4, OnClock_SLL_ex_d__r_ex4_MR },
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
@@ -13488,7 +13488,7 @@ const InstructionInfo instructionInfoSLL_IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLL_ex_d__r_ex4_FD },
         { 4, OnClock_SLL_ex_d__r_ex4_MR },
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
@@ -13507,7 +13507,7 @@ const InstructionInfo instructionInfoSLL_IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLL_ex_d__r_ex4_FD },
         { 4, OnClock_SLL_ex_d__r_ex4_MR },
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
@@ -13526,7 +13526,7 @@ const InstructionInfo instructionInfoSLL_IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SLL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SLL_ex_d__r_ex4_FD },
         { 4, OnClock_SLL_ex_d__r_ex4_MR },
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
@@ -13679,7 +13679,7 @@ const InstructionInfo instructionInfoSRA_HL__CB2 =
         { 4, OnClock_OF },
         { 4, OnClock_SRA_HL__CB2_OF },
         { 4, OnClock_SRA_HL__CB2_MR },
-        { 3, OnClock_SRA_HL__CB2_MW },
+        { 3, OnClock_MW },
         { 0, nullptr },
         { 0, nullptr },
     },
@@ -13697,7 +13697,7 @@ const InstructionInfo instructionInfoSRA_IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRA_ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRA_ex_d__ex4_FD },
         { 4, OnClock_SRA_ex_d__ex4_MR },
         { 3, OnClock_SRA_ex_d__ex4_MW },
@@ -13716,7 +13716,7 @@ const InstructionInfo instructionInfoSRA_IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRA_ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRA_ex_d__ex4_FD },
         { 4, OnClock_SRA_ex_d__ex4_MR },
         { 3, OnClock_SRA_ex_d__ex4_MW },
@@ -13735,7 +13735,7 @@ const InstructionInfo instructionInfoSRA_IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRA_ex_d__r_ex4_FD },
         { 4, OnClock_SRA_ex_d__r_ex4_MR },
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
@@ -13754,7 +13754,7 @@ const InstructionInfo instructionInfoSRA_IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRA_ex_d__r_ex4_FD },
         { 4, OnClock_SRA_ex_d__r_ex4_MR },
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
@@ -13773,7 +13773,7 @@ const InstructionInfo instructionInfoSRA_IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRA_ex_d__r_ex4_FD },
         { 4, OnClock_SRA_ex_d__r_ex4_MR },
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
@@ -13792,7 +13792,7 @@ const InstructionInfo instructionInfoSRA_IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRA_ex_d__r_ex4_FD },
         { 4, OnClock_SRA_ex_d__r_ex4_MR },
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
@@ -13811,7 +13811,7 @@ const InstructionInfo instructionInfoSRA_IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRA_ex_d__r_ex4_FD },
         { 4, OnClock_SRA_ex_d__r_ex4_MR },
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
@@ -13830,7 +13830,7 @@ const InstructionInfo instructionInfoSRA_IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRA_ex_d__r_ex4_FD },
         { 4, OnClock_SRA_ex_d__r_ex4_MR },
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
@@ -13849,7 +13849,7 @@ const InstructionInfo instructionInfoSRA_IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRA_ex_d__r_ex4_FD },
         { 4, OnClock_SRA_ex_d__r_ex4_MR },
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
@@ -13868,7 +13868,7 @@ const InstructionInfo instructionInfoSRA_IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRA_ex_d__r_ex4_FD },
         { 4, OnClock_SRA_ex_d__r_ex4_MR },
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
@@ -13887,7 +13887,7 @@ const InstructionInfo instructionInfoSRA_IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRA_ex_d__r_ex4_FD },
         { 4, OnClock_SRA_ex_d__r_ex4_MR },
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
@@ -13906,7 +13906,7 @@ const InstructionInfo instructionInfoSRA_IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRA_ex_d__r_ex4_FD },
         { 4, OnClock_SRA_ex_d__r_ex4_MR },
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
@@ -13925,7 +13925,7 @@ const InstructionInfo instructionInfoSRA_IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRA_ex_d__r_ex4_FD },
         { 4, OnClock_SRA_ex_d__r_ex4_MR },
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
@@ -13944,7 +13944,7 @@ const InstructionInfo instructionInfoSRA_IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRA_ex_d__r_ex4_FD },
         { 4, OnClock_SRA_ex_d__r_ex4_MR },
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
@@ -13963,7 +13963,7 @@ const InstructionInfo instructionInfoSRA_IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRA_ex_d__r_ex4_FD },
         { 4, OnClock_SRA_ex_d__r_ex4_MR },
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
@@ -13982,7 +13982,7 @@ const InstructionInfo instructionInfoSRA_IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRA_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRA_ex_d__r_ex4_FD },
         { 4, OnClock_SRA_ex_d__r_ex4_MR },
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
@@ -14135,7 +14135,7 @@ const InstructionInfo instructionInfoSRL_HL__CB2 =
         { 4, OnClock_OF },
         { 4, OnClock_SRL_HL__CB2_OF },
         { 4, OnClock_SRL_HL__CB2_MR },
-        { 3, OnClock_SRL_HL__CB2_MW },
+        { 3, OnClock_MW },
         { 0, nullptr },
         { 0, nullptr },
     },
@@ -14153,7 +14153,7 @@ const InstructionInfo instructionInfoSRL_IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRL_ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRL_ex_d__ex4_FD },
         { 4, OnClock_SRL_ex_d__ex4_MR },
         { 3, OnClock_SRL_ex_d__ex4_MW },
@@ -14172,7 +14172,7 @@ const InstructionInfo instructionInfoSRL_IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRL_ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRL_ex_d__ex4_FD },
         { 4, OnClock_SRL_ex_d__ex4_MR },
         { 3, OnClock_SRL_ex_d__ex4_MW },
@@ -14191,7 +14191,7 @@ const InstructionInfo instructionInfoSRL_IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRL_ex_d__r_ex4_FD },
         { 4, OnClock_SRL_ex_d__r_ex4_MR },
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
@@ -14210,7 +14210,7 @@ const InstructionInfo instructionInfoSRL_IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRL_ex_d__r_ex4_FD },
         { 4, OnClock_SRL_ex_d__r_ex4_MR },
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
@@ -14229,7 +14229,7 @@ const InstructionInfo instructionInfoSRL_IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRL_ex_d__r_ex4_FD },
         { 4, OnClock_SRL_ex_d__r_ex4_MR },
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
@@ -14248,7 +14248,7 @@ const InstructionInfo instructionInfoSRL_IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRL_ex_d__r_ex4_FD },
         { 4, OnClock_SRL_ex_d__r_ex4_MR },
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
@@ -14267,7 +14267,7 @@ const InstructionInfo instructionInfoSRL_IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRL_ex_d__r_ex4_FD },
         { 4, OnClock_SRL_ex_d__r_ex4_MR },
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
@@ -14286,7 +14286,7 @@ const InstructionInfo instructionInfoSRL_IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRL_ex_d__r_ex4_FD },
         { 4, OnClock_SRL_ex_d__r_ex4_MR },
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
@@ -14305,7 +14305,7 @@ const InstructionInfo instructionInfoSRL_IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRL_ex_d__r_ex4_FD },
         { 4, OnClock_SRL_ex_d__r_ex4_MR },
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
@@ -14324,7 +14324,7 @@ const InstructionInfo instructionInfoSRL_IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRL_ex_d__r_ex4_FD },
         { 4, OnClock_SRL_ex_d__r_ex4_MR },
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
@@ -14343,7 +14343,7 @@ const InstructionInfo instructionInfoSRL_IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRL_ex_d__r_ex4_FD },
         { 4, OnClock_SRL_ex_d__r_ex4_MR },
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
@@ -14362,7 +14362,7 @@ const InstructionInfo instructionInfoSRL_IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRL_ex_d__r_ex4_FD },
         { 4, OnClock_SRL_ex_d__r_ex4_MR },
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
@@ -14381,7 +14381,7 @@ const InstructionInfo instructionInfoSRL_IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRL_ex_d__r_ex4_FD },
         { 4, OnClock_SRL_ex_d__r_ex4_MR },
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
@@ -14400,7 +14400,7 @@ const InstructionInfo instructionInfoSRL_IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRL_ex_d__r_ex4_FD },
         { 4, OnClock_SRL_ex_d__r_ex4_MR },
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
@@ -14419,7 +14419,7 @@ const InstructionInfo instructionInfoSRL_IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRL_ex_d__r_ex4_FD },
         { 4, OnClock_SRL_ex_d__r_ex4_MR },
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
@@ -14438,7 +14438,7 @@ const InstructionInfo instructionInfoSRL_IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SRL_ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SRL_ex_d__r_ex4_FD },
         { 4, OnClock_SRL_ex_d__r_ex4_MR },
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
@@ -15711,7 +15711,7 @@ const InstructionInfo instructionInfoBIT0__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
@@ -15730,7 +15730,7 @@ const InstructionInfo instructionInfoBIT0__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
@@ -15749,7 +15749,7 @@ const InstructionInfo instructionInfoBIT1__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
@@ -15768,7 +15768,7 @@ const InstructionInfo instructionInfoBIT1__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
@@ -15787,7 +15787,7 @@ const InstructionInfo instructionInfoBIT2__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
@@ -15806,7 +15806,7 @@ const InstructionInfo instructionInfoBIT2__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
@@ -15825,7 +15825,7 @@ const InstructionInfo instructionInfoBIT3__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
@@ -15844,7 +15844,7 @@ const InstructionInfo instructionInfoBIT3__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
@@ -15863,7 +15863,7 @@ const InstructionInfo instructionInfoBIT4__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
@@ -15882,7 +15882,7 @@ const InstructionInfo instructionInfoBIT4__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
@@ -15901,7 +15901,7 @@ const InstructionInfo instructionInfoBIT5__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
@@ -15920,7 +15920,7 @@ const InstructionInfo instructionInfoBIT5__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
@@ -15939,7 +15939,7 @@ const InstructionInfo instructionInfoBIT6__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
@@ -15958,7 +15958,7 @@ const InstructionInfo instructionInfoBIT6__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
@@ -15977,7 +15977,7 @@ const InstructionInfo instructionInfoBIT7__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
@@ -15996,7 +15996,7 @@ const InstructionInfo instructionInfoBIT7__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_BITb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_BITb__ex_d__ex4_FD },
         { 4, OnClock_BITb__ex_d__ex4_MR },
         { 0, nullptr },
@@ -17231,7 +17231,7 @@ const InstructionInfo instructionInfoSET0__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
@@ -17250,7 +17250,7 @@ const InstructionInfo instructionInfoSET0__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
@@ -17269,7 +17269,7 @@ const InstructionInfo instructionInfoSET1__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
@@ -17288,7 +17288,7 @@ const InstructionInfo instructionInfoSET1__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
@@ -17307,7 +17307,7 @@ const InstructionInfo instructionInfoSET2__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
@@ -17326,7 +17326,7 @@ const InstructionInfo instructionInfoSET2__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
@@ -17345,7 +17345,7 @@ const InstructionInfo instructionInfoSET3__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
@@ -17364,7 +17364,7 @@ const InstructionInfo instructionInfoSET3__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
@@ -17383,7 +17383,7 @@ const InstructionInfo instructionInfoSET4__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
@@ -17402,7 +17402,7 @@ const InstructionInfo instructionInfoSET4__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
@@ -17421,7 +17421,7 @@ const InstructionInfo instructionInfoSET5__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
@@ -17440,7 +17440,7 @@ const InstructionInfo instructionInfoSET5__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
@@ -17459,7 +17459,7 @@ const InstructionInfo instructionInfoSET6__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
@@ -17478,7 +17478,7 @@ const InstructionInfo instructionInfoSET6__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
@@ -17497,7 +17497,7 @@ const InstructionInfo instructionInfoSET7__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
@@ -17516,7 +17516,7 @@ const InstructionInfo instructionInfoSET7__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__ex4_FD },
         { 4, OnClock_SETb__ex_d__ex4_MR },
         { 3, OnClock_SETb__ex_d__ex4_MW },
@@ -17535,7 +17535,7 @@ const InstructionInfo instructionInfoSET0__IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17554,7 +17554,7 @@ const InstructionInfo instructionInfoSET0__IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17573,7 +17573,7 @@ const InstructionInfo instructionInfoSET1__IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17592,7 +17592,7 @@ const InstructionInfo instructionInfoSET1__IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17611,7 +17611,7 @@ const InstructionInfo instructionInfoSET2__IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17630,7 +17630,7 @@ const InstructionInfo instructionInfoSET2__IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17649,7 +17649,7 @@ const InstructionInfo instructionInfoSET3__IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17668,7 +17668,7 @@ const InstructionInfo instructionInfoSET3__IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17687,7 +17687,7 @@ const InstructionInfo instructionInfoSET4__IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17706,7 +17706,7 @@ const InstructionInfo instructionInfoSET4__IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17725,7 +17725,7 @@ const InstructionInfo instructionInfoSET5__IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17744,7 +17744,7 @@ const InstructionInfo instructionInfoSET5__IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17763,7 +17763,7 @@ const InstructionInfo instructionInfoSET6__IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17782,7 +17782,7 @@ const InstructionInfo instructionInfoSET6__IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17801,7 +17801,7 @@ const InstructionInfo instructionInfoSET7__IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17820,7 +17820,7 @@ const InstructionInfo instructionInfoSET7__IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17839,7 +17839,7 @@ const InstructionInfo instructionInfoSET0__IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17858,7 +17858,7 @@ const InstructionInfo instructionInfoSET0__IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17877,7 +17877,7 @@ const InstructionInfo instructionInfoSET1__IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17896,7 +17896,7 @@ const InstructionInfo instructionInfoSET1__IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17915,7 +17915,7 @@ const InstructionInfo instructionInfoSET2__IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17934,7 +17934,7 @@ const InstructionInfo instructionInfoSET2__IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17953,7 +17953,7 @@ const InstructionInfo instructionInfoSET3__IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17972,7 +17972,7 @@ const InstructionInfo instructionInfoSET3__IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -17991,7 +17991,7 @@ const InstructionInfo instructionInfoSET4__IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18010,7 +18010,7 @@ const InstructionInfo instructionInfoSET4__IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18029,7 +18029,7 @@ const InstructionInfo instructionInfoSET5__IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18048,7 +18048,7 @@ const InstructionInfo instructionInfoSET5__IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18067,7 +18067,7 @@ const InstructionInfo instructionInfoSET6__IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18086,7 +18086,7 @@ const InstructionInfo instructionInfoSET6__IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18105,7 +18105,7 @@ const InstructionInfo instructionInfoSET7__IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18124,7 +18124,7 @@ const InstructionInfo instructionInfoSET7__IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18143,7 +18143,7 @@ const InstructionInfo instructionInfoSET0__IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18162,7 +18162,7 @@ const InstructionInfo instructionInfoSET0__IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18181,7 +18181,7 @@ const InstructionInfo instructionInfoSET1__IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18200,7 +18200,7 @@ const InstructionInfo instructionInfoSET1__IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18219,7 +18219,7 @@ const InstructionInfo instructionInfoSET2__IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18238,7 +18238,7 @@ const InstructionInfo instructionInfoSET2__IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18257,7 +18257,7 @@ const InstructionInfo instructionInfoSET3__IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18276,7 +18276,7 @@ const InstructionInfo instructionInfoSET3__IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18295,7 +18295,7 @@ const InstructionInfo instructionInfoSET4__IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18314,7 +18314,7 @@ const InstructionInfo instructionInfoSET4__IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18333,7 +18333,7 @@ const InstructionInfo instructionInfoSET5__IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18352,7 +18352,7 @@ const InstructionInfo instructionInfoSET5__IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18371,7 +18371,7 @@ const InstructionInfo instructionInfoSET6__IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18390,7 +18390,7 @@ const InstructionInfo instructionInfoSET6__IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18409,7 +18409,7 @@ const InstructionInfo instructionInfoSET7__IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18428,7 +18428,7 @@ const InstructionInfo instructionInfoSET7__IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18447,7 +18447,7 @@ const InstructionInfo instructionInfoSET0__IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18466,7 +18466,7 @@ const InstructionInfo instructionInfoSET0__IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18485,7 +18485,7 @@ const InstructionInfo instructionInfoSET1__IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18504,7 +18504,7 @@ const InstructionInfo instructionInfoSET1__IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18523,7 +18523,7 @@ const InstructionInfo instructionInfoSET2__IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18542,7 +18542,7 @@ const InstructionInfo instructionInfoSET2__IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18561,7 +18561,7 @@ const InstructionInfo instructionInfoSET3__IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18580,7 +18580,7 @@ const InstructionInfo instructionInfoSET3__IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18599,7 +18599,7 @@ const InstructionInfo instructionInfoSET4__IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18618,7 +18618,7 @@ const InstructionInfo instructionInfoSET4__IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18637,7 +18637,7 @@ const InstructionInfo instructionInfoSET5__IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18656,7 +18656,7 @@ const InstructionInfo instructionInfoSET5__IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18675,7 +18675,7 @@ const InstructionInfo instructionInfoSET6__IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18694,7 +18694,7 @@ const InstructionInfo instructionInfoSET6__IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18713,7 +18713,7 @@ const InstructionInfo instructionInfoSET7__IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18732,7 +18732,7 @@ const InstructionInfo instructionInfoSET7__IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18751,7 +18751,7 @@ const InstructionInfo instructionInfoSET0__IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18770,7 +18770,7 @@ const InstructionInfo instructionInfoSET0__IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18789,7 +18789,7 @@ const InstructionInfo instructionInfoSET1__IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18808,7 +18808,7 @@ const InstructionInfo instructionInfoSET1__IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18827,7 +18827,7 @@ const InstructionInfo instructionInfoSET2__IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18846,7 +18846,7 @@ const InstructionInfo instructionInfoSET2__IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18865,7 +18865,7 @@ const InstructionInfo instructionInfoSET3__IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18884,7 +18884,7 @@ const InstructionInfo instructionInfoSET3__IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18903,7 +18903,7 @@ const InstructionInfo instructionInfoSET4__IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18922,7 +18922,7 @@ const InstructionInfo instructionInfoSET4__IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18941,7 +18941,7 @@ const InstructionInfo instructionInfoSET5__IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18960,7 +18960,7 @@ const InstructionInfo instructionInfoSET5__IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18979,7 +18979,7 @@ const InstructionInfo instructionInfoSET6__IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -18998,7 +18998,7 @@ const InstructionInfo instructionInfoSET6__IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19017,7 +19017,7 @@ const InstructionInfo instructionInfoSET7__IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19036,7 +19036,7 @@ const InstructionInfo instructionInfoSET7__IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19055,7 +19055,7 @@ const InstructionInfo instructionInfoSET0__IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19074,7 +19074,7 @@ const InstructionInfo instructionInfoSET0__IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19093,7 +19093,7 @@ const InstructionInfo instructionInfoSET1__IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19112,7 +19112,7 @@ const InstructionInfo instructionInfoSET1__IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19131,7 +19131,7 @@ const InstructionInfo instructionInfoSET2__IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19150,7 +19150,7 @@ const InstructionInfo instructionInfoSET2__IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19169,7 +19169,7 @@ const InstructionInfo instructionInfoSET3__IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19188,7 +19188,7 @@ const InstructionInfo instructionInfoSET3__IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19207,7 +19207,7 @@ const InstructionInfo instructionInfoSET4__IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19226,7 +19226,7 @@ const InstructionInfo instructionInfoSET4__IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19245,7 +19245,7 @@ const InstructionInfo instructionInfoSET5__IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19264,7 +19264,7 @@ const InstructionInfo instructionInfoSET5__IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19283,7 +19283,7 @@ const InstructionInfo instructionInfoSET6__IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19302,7 +19302,7 @@ const InstructionInfo instructionInfoSET6__IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19321,7 +19321,7 @@ const InstructionInfo instructionInfoSET7__IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19340,7 +19340,7 @@ const InstructionInfo instructionInfoSET7__IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19359,7 +19359,7 @@ const InstructionInfo instructionInfoSET0__IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19378,7 +19378,7 @@ const InstructionInfo instructionInfoSET0__IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19397,7 +19397,7 @@ const InstructionInfo instructionInfoSET1__IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19416,7 +19416,7 @@ const InstructionInfo instructionInfoSET1__IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19435,7 +19435,7 @@ const InstructionInfo instructionInfoSET2__IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19454,7 +19454,7 @@ const InstructionInfo instructionInfoSET2__IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19473,7 +19473,7 @@ const InstructionInfo instructionInfoSET3__IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19492,7 +19492,7 @@ const InstructionInfo instructionInfoSET3__IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19511,7 +19511,7 @@ const InstructionInfo instructionInfoSET4__IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19530,7 +19530,7 @@ const InstructionInfo instructionInfoSET4__IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19549,7 +19549,7 @@ const InstructionInfo instructionInfoSET5__IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19568,7 +19568,7 @@ const InstructionInfo instructionInfoSET5__IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19587,7 +19587,7 @@ const InstructionInfo instructionInfoSET6__IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19606,7 +19606,7 @@ const InstructionInfo instructionInfoSET6__IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19625,7 +19625,7 @@ const InstructionInfo instructionInfoSET7__IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -19644,7 +19644,7 @@ const InstructionInfo instructionInfoSET7__IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_SETb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_SETb__ex_d__r_ex4_FD },
         { 4, OnClock_SETb__ex_d__r_ex4_MR },
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
@@ -20879,7 +20879,7 @@ const InstructionInfo instructionInfoRES0__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
@@ -20898,7 +20898,7 @@ const InstructionInfo instructionInfoRES0__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
@@ -20917,7 +20917,7 @@ const InstructionInfo instructionInfoRES1__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
@@ -20936,7 +20936,7 @@ const InstructionInfo instructionInfoRES1__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
@@ -20955,7 +20955,7 @@ const InstructionInfo instructionInfoRES2__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
@@ -20974,7 +20974,7 @@ const InstructionInfo instructionInfoRES2__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
@@ -20993,7 +20993,7 @@ const InstructionInfo instructionInfoRES3__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
@@ -21012,7 +21012,7 @@ const InstructionInfo instructionInfoRES3__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
@@ -21031,7 +21031,7 @@ const InstructionInfo instructionInfoRES4__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
@@ -21050,7 +21050,7 @@ const InstructionInfo instructionInfoRES4__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
@@ -21069,7 +21069,7 @@ const InstructionInfo instructionInfoRES5__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
@@ -21088,7 +21088,7 @@ const InstructionInfo instructionInfoRES5__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
@@ -21107,7 +21107,7 @@ const InstructionInfo instructionInfoRES6__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
@@ -21126,7 +21126,7 @@ const InstructionInfo instructionInfoRES6__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
@@ -21145,7 +21145,7 @@ const InstructionInfo instructionInfoRES7__IX_d__DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
@@ -21164,7 +21164,7 @@ const InstructionInfo instructionInfoRES7__IY_d__FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__ex4_FD },
         { 4, OnClock_RESb__ex_d__ex4_MR },
         { 3, OnClock_RESb__ex_d__ex4_MW },
@@ -21183,7 +21183,7 @@ const InstructionInfo instructionInfoRES0__IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21202,7 +21202,7 @@ const InstructionInfo instructionInfoRES0__IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21221,7 +21221,7 @@ const InstructionInfo instructionInfoRES1__IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21240,7 +21240,7 @@ const InstructionInfo instructionInfoRES1__IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21259,7 +21259,7 @@ const InstructionInfo instructionInfoRES2__IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21278,7 +21278,7 @@ const InstructionInfo instructionInfoRES2__IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21297,7 +21297,7 @@ const InstructionInfo instructionInfoRES3__IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21316,7 +21316,7 @@ const InstructionInfo instructionInfoRES3__IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21335,7 +21335,7 @@ const InstructionInfo instructionInfoRES4__IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21354,7 +21354,7 @@ const InstructionInfo instructionInfoRES4__IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21373,7 +21373,7 @@ const InstructionInfo instructionInfoRES5__IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21392,7 +21392,7 @@ const InstructionInfo instructionInfoRES5__IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21411,7 +21411,7 @@ const InstructionInfo instructionInfoRES6__IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21430,7 +21430,7 @@ const InstructionInfo instructionInfoRES6__IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21449,7 +21449,7 @@ const InstructionInfo instructionInfoRES7__IX_d__A_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21468,7 +21468,7 @@ const InstructionInfo instructionInfoRES7__IY_d__A_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21487,7 +21487,7 @@ const InstructionInfo instructionInfoRES0__IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21506,7 +21506,7 @@ const InstructionInfo instructionInfoRES0__IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21525,7 +21525,7 @@ const InstructionInfo instructionInfoRES1__IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21544,7 +21544,7 @@ const InstructionInfo instructionInfoRES1__IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21563,7 +21563,7 @@ const InstructionInfo instructionInfoRES2__IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21582,7 +21582,7 @@ const InstructionInfo instructionInfoRES2__IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21601,7 +21601,7 @@ const InstructionInfo instructionInfoRES3__IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21620,7 +21620,7 @@ const InstructionInfo instructionInfoRES3__IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21639,7 +21639,7 @@ const InstructionInfo instructionInfoRES4__IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21658,7 +21658,7 @@ const InstructionInfo instructionInfoRES4__IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21677,7 +21677,7 @@ const InstructionInfo instructionInfoRES5__IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21696,7 +21696,7 @@ const InstructionInfo instructionInfoRES5__IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21715,7 +21715,7 @@ const InstructionInfo instructionInfoRES6__IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21734,7 +21734,7 @@ const InstructionInfo instructionInfoRES6__IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21753,7 +21753,7 @@ const InstructionInfo instructionInfoRES7__IX_d__B_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21772,7 +21772,7 @@ const InstructionInfo instructionInfoRES7__IY_d__B_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21791,7 +21791,7 @@ const InstructionInfo instructionInfoRES0__IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21810,7 +21810,7 @@ const InstructionInfo instructionInfoRES0__IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21829,7 +21829,7 @@ const InstructionInfo instructionInfoRES1__IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21848,7 +21848,7 @@ const InstructionInfo instructionInfoRES1__IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21867,7 +21867,7 @@ const InstructionInfo instructionInfoRES2__IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21886,7 +21886,7 @@ const InstructionInfo instructionInfoRES2__IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21905,7 +21905,7 @@ const InstructionInfo instructionInfoRES3__IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21924,7 +21924,7 @@ const InstructionInfo instructionInfoRES3__IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21943,7 +21943,7 @@ const InstructionInfo instructionInfoRES4__IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21962,7 +21962,7 @@ const InstructionInfo instructionInfoRES4__IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -21981,7 +21981,7 @@ const InstructionInfo instructionInfoRES5__IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22000,7 +22000,7 @@ const InstructionInfo instructionInfoRES5__IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22019,7 +22019,7 @@ const InstructionInfo instructionInfoRES6__IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22038,7 +22038,7 @@ const InstructionInfo instructionInfoRES6__IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22057,7 +22057,7 @@ const InstructionInfo instructionInfoRES7__IX_d__C_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22076,7 +22076,7 @@ const InstructionInfo instructionInfoRES7__IY_d__C_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22095,7 +22095,7 @@ const InstructionInfo instructionInfoRES0__IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22114,7 +22114,7 @@ const InstructionInfo instructionInfoRES0__IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22133,7 +22133,7 @@ const InstructionInfo instructionInfoRES1__IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22152,7 +22152,7 @@ const InstructionInfo instructionInfoRES1__IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22171,7 +22171,7 @@ const InstructionInfo instructionInfoRES2__IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22190,7 +22190,7 @@ const InstructionInfo instructionInfoRES2__IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22209,7 +22209,7 @@ const InstructionInfo instructionInfoRES3__IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22228,7 +22228,7 @@ const InstructionInfo instructionInfoRES3__IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22247,7 +22247,7 @@ const InstructionInfo instructionInfoRES4__IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22266,7 +22266,7 @@ const InstructionInfo instructionInfoRES4__IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22285,7 +22285,7 @@ const InstructionInfo instructionInfoRES5__IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22304,7 +22304,7 @@ const InstructionInfo instructionInfoRES5__IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22323,7 +22323,7 @@ const InstructionInfo instructionInfoRES6__IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22342,7 +22342,7 @@ const InstructionInfo instructionInfoRES6__IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22361,7 +22361,7 @@ const InstructionInfo instructionInfoRES7__IX_d__D_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22380,7 +22380,7 @@ const InstructionInfo instructionInfoRES7__IY_d__D_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22399,7 +22399,7 @@ const InstructionInfo instructionInfoRES0__IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22418,7 +22418,7 @@ const InstructionInfo instructionInfoRES0__IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22437,7 +22437,7 @@ const InstructionInfo instructionInfoRES1__IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22456,7 +22456,7 @@ const InstructionInfo instructionInfoRES1__IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22475,7 +22475,7 @@ const InstructionInfo instructionInfoRES2__IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22494,7 +22494,7 @@ const InstructionInfo instructionInfoRES2__IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22513,7 +22513,7 @@ const InstructionInfo instructionInfoRES3__IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22532,7 +22532,7 @@ const InstructionInfo instructionInfoRES3__IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22551,7 +22551,7 @@ const InstructionInfo instructionInfoRES4__IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22570,7 +22570,7 @@ const InstructionInfo instructionInfoRES4__IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22589,7 +22589,7 @@ const InstructionInfo instructionInfoRES5__IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22608,7 +22608,7 @@ const InstructionInfo instructionInfoRES5__IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22627,7 +22627,7 @@ const InstructionInfo instructionInfoRES6__IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22646,7 +22646,7 @@ const InstructionInfo instructionInfoRES6__IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22665,7 +22665,7 @@ const InstructionInfo instructionInfoRES7__IX_d__E_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22684,7 +22684,7 @@ const InstructionInfo instructionInfoRES7__IY_d__E_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22703,7 +22703,7 @@ const InstructionInfo instructionInfoRES0__IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22722,7 +22722,7 @@ const InstructionInfo instructionInfoRES0__IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22741,7 +22741,7 @@ const InstructionInfo instructionInfoRES1__IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22760,7 +22760,7 @@ const InstructionInfo instructionInfoRES1__IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22779,7 +22779,7 @@ const InstructionInfo instructionInfoRES2__IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22798,7 +22798,7 @@ const InstructionInfo instructionInfoRES2__IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22817,7 +22817,7 @@ const InstructionInfo instructionInfoRES3__IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22836,7 +22836,7 @@ const InstructionInfo instructionInfoRES3__IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22855,7 +22855,7 @@ const InstructionInfo instructionInfoRES4__IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22874,7 +22874,7 @@ const InstructionInfo instructionInfoRES4__IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22893,7 +22893,7 @@ const InstructionInfo instructionInfoRES5__IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22912,7 +22912,7 @@ const InstructionInfo instructionInfoRES5__IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22931,7 +22931,7 @@ const InstructionInfo instructionInfoRES6__IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22950,7 +22950,7 @@ const InstructionInfo instructionInfoRES6__IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22969,7 +22969,7 @@ const InstructionInfo instructionInfoRES7__IX_d__H_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -22988,7 +22988,7 @@ const InstructionInfo instructionInfoRES7__IY_d__H_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -23007,7 +23007,7 @@ const InstructionInfo instructionInfoRES0__IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -23026,7 +23026,7 @@ const InstructionInfo instructionInfoRES0__IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -23045,7 +23045,7 @@ const InstructionInfo instructionInfoRES1__IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -23064,7 +23064,7 @@ const InstructionInfo instructionInfoRES1__IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -23083,7 +23083,7 @@ const InstructionInfo instructionInfoRES2__IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -23102,7 +23102,7 @@ const InstructionInfo instructionInfoRES2__IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -23121,7 +23121,7 @@ const InstructionInfo instructionInfoRES3__IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -23140,7 +23140,7 @@ const InstructionInfo instructionInfoRES3__IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -23159,7 +23159,7 @@ const InstructionInfo instructionInfoRES4__IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -23178,7 +23178,7 @@ const InstructionInfo instructionInfoRES4__IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -23197,7 +23197,7 @@ const InstructionInfo instructionInfoRES5__IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -23216,7 +23216,7 @@ const InstructionInfo instructionInfoRES5__IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -23235,7 +23235,7 @@ const InstructionInfo instructionInfoRES6__IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -23254,7 +23254,7 @@ const InstructionInfo instructionInfoRES6__IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -23273,7 +23273,7 @@ const InstructionInfo instructionInfoRES7__IX_d__L_DD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -23292,7 +23292,7 @@ const InstructionInfo instructionInfoRES7__IY_d__L_FD4 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },
-        { 3, OnClock_RESb__ex_d__r_ex4_OD },
+        { 3, OnClock_ODd },
         { 5, OnClock_RESb__ex_d__r_ex4_FD },
         { 4, OnClock_RESb__ex_d__r_ex4_MR },
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
@@ -23823,8 +23823,8 @@ const InstructionInfo instructionInfoRET_1 =
     0,
     {
         { 4, OnClock_RET_1_OF },
-        { 3, OnClock_RET_1_SRh },
-        { 3, OnClock_RET_1_SRl },
+        { 3, OnClock_SRh },
+        { 3, OnClock_SRl },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -23995,8 +23995,8 @@ const InstructionInfo instructionInfoRETI_ED2 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_RETI_ED2_OF },
-        { 3, OnClock_RETI_ED2_SRh },
-        { 3, OnClock_RETI_ED2_SRl },
+        { 3, OnClock_SRh },
+        { 3, OnClock_SRl },
         { 0, nullptr },
         { 0, nullptr },
     },
@@ -24014,8 +24014,8 @@ const InstructionInfo instructionInfoRETN_ED2 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_RETN_ED2_OF },
-        { 3, OnClock_RETN_ED2_SRh },
-        { 3, OnClock_RETN_ED2_SRl },
+        { 3, OnClock_SRh },
+        { 3, OnClock_SRl },
         { 0, nullptr },
         { 0, nullptr },
     },
@@ -24337,7 +24337,7 @@ const InstructionInfo instructionInfoIN_C__ED2 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_IN_C__ED2_OF },
-        { 4, OnClock_IN_C__ED2_PR },
+        { 4, OnClock_PR },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -24356,7 +24356,7 @@ const InstructionInfo instructionInfoINI_ED2 =
     {
         { 4, OnClock_OF },
         { 5, OnClock_INI_ED2_OF },
-        { 3, OnClock_INI_ED2_PR },
+        { 3, OnClock_PR },
         { 4, OnClock_INI_ED2_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -24375,9 +24375,9 @@ const InstructionInfo instructionInfoINIR_ED2 =
     {
         { 4, OnClock_OF },
         { 5, OnClock_INIR_ED2_OF },
-        { 3, OnClock_INIR_ED2_PR },
+        { 3, OnClock_PR },
         { 4, OnClock_INIR_ED2_MW },
-        { 5, OnClock_INIR_ED2_PCd },
+        { 5, OnClock_PCd },
         { 0, nullptr },
     },
     {
@@ -24394,7 +24394,7 @@ const InstructionInfo instructionInfoIND_ED2 =
     {
         { 4, OnClock_OF },
         { 5, OnClock_IND_ED2_OF },
-        { 3, OnClock_IND_ED2_PR },
+        { 3, OnClock_PR },
         { 4, OnClock_IND_ED2_MW },
         { 0, nullptr },
         { 0, nullptr },
@@ -24413,9 +24413,9 @@ const InstructionInfo instructionInfoINDR_ED2 =
     {
         { 4, OnClock_OF },
         { 5, OnClock_INDR_ED2_OF },
-        { 3, OnClock_INDR_ED2_PR },
+        { 3, OnClock_PR },
         { 4, OnClock_INDR_ED2_MW },
-        { 5, OnClock_INDR_ED2_PCd },
+        { 5, OnClock_PCd },
         { 0, nullptr },
     },
     {
@@ -24584,7 +24584,7 @@ const InstructionInfo instructionInfoOUT_C__0_ED2 =
     {
         { 4, OnClock_OF },
         { 4, OnClock_OUT_C__0_ED2_OF },
-        { 4, OnClock_OUT_C__0_ED2_PW },
+        { 4, OnClock_PW },
         { 0, nullptr },
         { 0, nullptr },
         { 0, nullptr },
@@ -24603,8 +24603,8 @@ const InstructionInfo instructionInfoOUTI_ED2 =
     {
         { 4, OnClock_OF },
         { 5, OnClock_OUTI_ED2_OF },
-        { 3, OnClock_OUTI_ED2_MR },
-        { 4, OnClock_OUTI_ED2_PW },
+        { 3, OnClock_MR },
+        { 4, OnClock_PW },
         { 0, nullptr },
         { 0, nullptr },
     },
@@ -24622,9 +24622,9 @@ const InstructionInfo instructionInfoOTIR_ED2 =
     {
         { 4, OnClock_OF },
         { 5, OnClock_OTIR_ED2_OF },
-        { 3, OnClock_OTIR_ED2_MR },
-        { 4, OnClock_OTIR_ED2_PW },
-        { 5, OnClock_OTIR_ED2_PCd },
+        { 3, OnClock_MR },
+        { 4, OnClock_PW },
+        { 5, OnClock_PCd },
         { 0, nullptr },
     },
     {
@@ -24641,8 +24641,8 @@ const InstructionInfo instructionInfoOUTD_ED2 =
     {
         { 4, OnClock_OF },
         { 5, OnClock_OUTD_ED2_OF },
-        { 3, OnClock_OUTD_ED2_MR },
-        { 4, OnClock_OUTD_ED2_PW },
+        { 3, OnClock_MR },
+        { 4, OnClock_PW },
         { 0, nullptr },
         { 0, nullptr },
     },
@@ -24660,9 +24660,9 @@ const InstructionInfo instructionInfoOTDR_ED2 =
     {
         { 4, OnClock_OF },
         { 5, OnClock_OTDR_ED2_OF },
-        { 3, OnClock_OTDR_ED2_MR },
-        { 4, OnClock_OTDR_ED2_PW },
-        { 5, OnClock_OTDR_ED2_PCd },
+        { 3, OnClock_MR },
+        { 4, OnClock_PW },
+        { 5, OnClock_PCd },
         { 0, nullptr },
     },
     {

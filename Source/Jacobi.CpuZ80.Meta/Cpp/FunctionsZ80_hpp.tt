@@ -21,6 +21,8 @@
 
 // generic cpu operations
 extern void OnClock_OF(AsyncThis* async);
+extern void OnClock_OD(AsyncThis* async);
+extern void OnClock_ODd(AsyncThis* async);
 extern void OnClock_MR(AsyncThis* async);
 extern void OnClock_MW(AsyncThis* async);
 extern void OnClock_PCd(AsyncThis* async);
@@ -56,7 +58,7 @@ extern void OnClock_PW(AsyncThis* async);
 <#= BuildFunctionDecl(fns, decl.Name, mc.Operation) #>
 <#+                     }
                     } 
-                    else if (!mc.IsExt /*&& decl.Root.Parameters.Any()*/)
+                    else if (!mc.IsExt && decl.Root.Parameters.Any() && mc.Operation != "ODd")
                     {
 #>
 <#= BuildFunctionDecl(fns, decl.Root.Name, mc.Operation) #>

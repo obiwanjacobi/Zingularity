@@ -10,6 +10,7 @@ namespace Jacobi.CpuZ80.Meta
         {
             { "OF", 4 }, // opcode fetch
             { "OD", 3 }, // operand data
+            { "ODd", 3 }, // operand displacement
             { "ODl", 3 }, // operand data lsb
             { "ODh", 3 }, // operand data msb
             { "MR", 3 }, // memory read

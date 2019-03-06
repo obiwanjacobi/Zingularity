@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "CpuZ80.h"
 #include "CpuState.h"
+#include "CpuZ80Host.h"
 
 extern CpuState _state;
 
@@ -123,4 +124,20 @@ uint16_t GetRegistersSP16(RegistersSP16 reg)
     }
 
     return 0;
+}
+
+void setAddressPC()
+{
+    setAddressBus(_state.Registers.PC);
+    //if (!_state.Halt)
+    _state.Registers.PC++;
+}
+
+void setAddressIR()
+{
+    setAddressBus(_state.Registers.IR);
+    if (_state.Registers._IR.R < 127)
+        _state.Registers._IR.R++;
+    else
+        _state.Registers._IR.R &= 0x7F;
 }

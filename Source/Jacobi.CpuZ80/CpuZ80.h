@@ -130,3 +130,6 @@ enum class RstAddress
 };
 
 Async_Declaration(ClockTick);
+
+void setAddressPC();
+void setAddressIR();

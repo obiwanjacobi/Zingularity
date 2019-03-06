@@ -8,16 +8,20 @@ Memory::Memory(CpuZ80TestHost* host)
     : _host(host), _length(0), _bytes(nullptr)
 { }
 
-void Memory::ClockTick()
+bool Memory::ClockTick()
 {
-    if (_state.Clock.Level == Level::PosEdge)
+    if (_host->Rd && _host->MemReq)
     {
-        if (_host->Rd && _host->MemReq)
+        if (_host->Address < _length)
         {
-            if (_host->Address < _length)
+            if (_state.Clock.Level == Level::PosEdge)
             {
-                _host->Data =_bytes[_host->Address];
+                _host->Data = _bytes[_host->Address];
             }
         }
+        else
+            return false;
     }
+    
+    return true;
 }

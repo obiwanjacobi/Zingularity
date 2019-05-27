@@ -1,0 +1,206 @@
+﻿<#+
+
+    public sealed class InstructionMap_json : Template
+    {
+        private readonly IEnumerable<InstructionMeta> _decls;
+
+        public InstructionMap_json(IEnumerable<InstructionMeta> decls)
+        {
+            _decls = decls;
+        }
+
+        private class MapDictionary : Dictionary<string, MapDictionary> {}
+
+        public override string TransformText()
+        {
+#>
+
+<#+
+            var names = new List<string>();
+            var map = new MapDictionary();
+
+            foreach (var decl in _decls)
+            {
+                if (names.Contains(decl.Name)) { continue; }
+                names.Add(decl.Name);
+                
+                AddToMap(map, decl);
+            }
+
+            #>
+        {
+<#+
+            RenderMap(map);
+                            #>
+        }
+<#+
+            return this.GenerationEnvironment.ToString();
+        }
+
+        private void RenderMap(MapDictionary map)
+        {
+            if (map.Count == 0) return;
+            int i = 0;
+            foreach(var kvp in map)
+            {
+                i++;
+#>
+        "<#= kvp.Key #>": {
+<#+
+                RenderMap(kvp.Value);
+                if (i == map.Count)
+                {
+                #>
+        }
+<#+
+                } else {
+                #>
+        },
+<#+
+                }
+            }
+        }
+
+        private void AddToMap(MapDictionary map, InstructionMeta meta)
+        {
+            var parts = SplitMnemonic(meta.Info.Mnemonic);
+            var metaMap = AddPartsToMap(map, parts);
+            AddInstructionMeta(metaMap, meta);
+        }
+
+        private MapDictionary AddPartsToMap(MapDictionary map, IEnumerable<string> parts)
+        {
+            var curMap = map;
+
+            foreach (var part in parts)
+            {
+                if (part.Length == 0) continue;
+
+                if (!curMap.ContainsKey(part))
+                {
+                    curMap.Add(part, new MapDictionary());
+                }
+
+                if (part == "_" && curMap[part].Count > 0)
+                {
+                    var altPart = part;
+                    do
+                    {
+                        altPart += "_";
+                    } while(curMap.ContainsKey(altPart));
+
+                    var m = new MapDictionary();
+                    curMap.Add(altPart, m);
+                    curMap = m;
+                } 
+                else
+                {
+                    curMap = curMap[part];
+                }
+            }
+
+            return curMap;
+        }
+
+        private void AddInstructionMeta(MapDictionary map, InstructionMeta meta)
+        {
+            var n = 0;
+            var m = new MapDictionary();
+            foreach (var b in meta.Info.Bytes)
+            {
+                if (b == "n")
+                {
+                    n++;
+                    m[b + n] = new MapDictionary();
+                }
+                else
+                {
+                    m[b] = new MapDictionary();
+                }
+            }
+            map.Add("bytes", m);
+
+            m = new MapDictionary();
+            foreach (var c in meta.Info.Cycles)
+            {
+                m[c.ToString()] = new MapDictionary();
+            }
+            map.Add("cycles", m);
+
+            if (meta.Info.AltCycles.Count > 0)
+            {
+                m = new MapDictionary();
+                foreach (var c in meta.Info.AltCycles)
+                {
+                    m[c.ToString()] = new MapDictionary();
+                }
+                map.Add("altCycles", m);
+            }
+
+            if (meta.Info.Flags.Count > 0)
+            {
+                m = new MapDictionary();
+                foreach (var f in meta.Info.Flags)
+                {
+                    m[f.Key] = new MapDictionary();
+                }
+                map.Add("flags", m);
+            }
+        }
+
+        private IEnumerable<string> SplitMnemonic(string mnemonic)
+        {
+            var parts = new List<string>();
+            var i = 0;
+            var p = 0;
+
+            parts.Add(String.Empty);
+
+            while(i < mnemonic.Length)
+            {
+                var curChar = mnemonic[i];
+
+                if (curChar == ' ' || curChar == '\t')
+                {
+                    if (parts[p].Length > 0)
+                    {
+                        parts.Add(String.Empty);
+                        p++;
+                    }
+                }
+
+                if (Char.IsLetterOrDigit(curChar))
+                {
+                    parts[p] += curChar;
+                }
+
+                TestAndAddCharPart(parts, curChar, '(', ref p);
+                TestAndAddCharPart(parts, curChar, ')', ref p);
+                TestAndAddCharPart(parts, curChar, ',', ref p);
+                TestAndAddCharPart(parts, curChar, '+', ref p);
+
+                i++;
+            }
+
+            // mark end of mnemonic
+            parts.Add("_");
+
+            return parts;
+        }
+        
+        private void TestAndAddCharPart(List<string> parts, char c, char test, ref int p)
+        {
+            if (c == test)
+            {
+                if (parts[p].Length > 0)
+                {
+                    parts.Add(String.Empty);
+                    p++;
+                }
+                parts[p] += c;
+                parts.Add(String.Empty);
+                p++;
+            }
+        }
+    }
+#>

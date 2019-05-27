@@ -57,7 +57,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="InstructionsZ80.json" />
+    <None Include="Language Server\InstructionMap.json">
+      <DependentUpon>InstructionsZ80.tt</DependentUpon>
+    </None>
     <None Include="packages.config" />
+    <None Include="Language Server\InstructionsZ80.log">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InstructionsZ80.tt</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Cpp\InstructionsZ80.tt">
@@ -80,6 +88,15 @@
     <Content Include="Cpp\InstructionsZ80_cpp.tt" />
     <Content Include="Cpp\InstructionTablesZ80_cpp.tt" />
     <Content Include="Cpp\InstructionsZ80_hpp.tt" />
+    <Content Include="Language Server\InstructionsZ80.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastOutputs>
+.\InstructionMap.json
+.\InstructionsZ80.log
+</LastOutputs>
+      <LastGenOutput>InstructionsZ80.log</LastGenOutput>
+    </Content>
+    <Content Include="Language Server\InstructionMap_json.tt" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

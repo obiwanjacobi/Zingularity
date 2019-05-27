@@ -211,12 +211,12 @@ void OnClock_InstructionLoad(AsyncThis* async)
     switch (_state.Clock.TL)
     {
     case 6:
-        OnClock_MR(async);
+        OnClock_OD(async);
         _state.Instruction.Instruction = LookupInstruction();
         assert(_state.Instruction.Instruction != nullptr);
         break;
     default:
-        OnClock_MR(async);
+        OnClock_OD(async);
         break;
     }
 }

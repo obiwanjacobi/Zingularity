@@ -1,0 +1,25 @@
+{
+	"name": "z80-assembler-client",
+	"description": "Z80 Assembler VSCode Language Client.",
+	"author": "Marc Jacobi",
+	"license": "MIT",
+	"version": "0.0.1",
+	"publisher": "Jacobi Software",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/obiwanjacobi/Zingularity"
+	},
+	"engines": {
+		"vscode": "^1.23.0"
+	},
+	"scripts": {
+		"update-vscode": "vscode-install",
+		"postinstall": "vscode-install"
+	},
+	"dependencies": {
+		"vscode-languageclient": "^4.1.4"
+	},
+	"devDependencies": {
+		"vscode": "^1.1.34"
+	}
+}

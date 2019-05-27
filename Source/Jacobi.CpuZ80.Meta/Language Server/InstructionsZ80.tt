@@ -1,0 +1,50 @@
+<#@ template language="C#" debug="True" hostspecific="True" #>
+<#@ output extension="log" #>
+<#@ include file="T4Toolbox.tt" #>
+<#@ include file="InstructionMap_json.tt" #>
+<#@ Assembly Name="System.Core" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ assembly name="EnvDTE" #>
+<#@ assembly name="$(TargetDir)\Jacobi.CpuZ80.Meta.dll" #>
+<#@ import namespace="Jacobi.CpuZ80.Meta" #>
+<#
+    // Using https://github.com/olegsych/T4Toolbox
+    // For VS2019: https://github.com/peterM/T4Toolbox
+    // https://marketplace.visualstudio.com/items?itemName=OlegVSych.T4ToolboxforVisualStudio2017
+
+    //const string TargetProjectPath = @"..\..\Language Server\server\src\z80asm";
+    const string TargetProjectPath = @"";
+
+    var filePath = Path.Combine(GetSolutionDirectory(), "Jacobi.CpuZ80.Meta", "InstructionsZ80.json");
+    var setInfo = InstructionSetInfo.FromJsonFile(filePath);
+
+    var decls = new List<InstructionMeta>();
+    var expander = new InstructionExpander(TableInfo.ToList(setInfo.Tables));
+    foreach (var instruction in setInfo.Instructions)
+    {
+        expander.Expand(decls, new InstructionMeta(instruction));
+    }
+
+#>
+
+
+Generating 'InstructionMap.json'...
+<#
+
+    var json = new InstructionMap_json(decls);
+    json.RenderToFile(Path.Combine(TargetProjectPath, "InstructionMap.json"));
+
+#>
+Done.
+
+<#+
+public string GetSolutionDirectory()
+{
+    var serviceProvider = (IServiceProvider)this.Host;
+    var dte = serviceProvider.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE;
+    return System.IO.Path.GetDirectoryName(dte.Solution.FullName);
+}
+#>

@@ -15,6 +15,7 @@
 <#@ import namespace="Jacobi.CpuZ80.Meta" #>
 <#
     // Using https://github.com/olegsych/T4Toolbox
+    // For VS2019: https://github.com/peterM/T4Toolbox
     // https://marketplace.visualstudio.com/items?itemName=OlegVSych.T4ToolboxforVisualStudio2017
 
     const string TargetProjectPath = @"..\..\Jacobi.CpuZ80\Jacobi.CpuZ80.vcxproj";

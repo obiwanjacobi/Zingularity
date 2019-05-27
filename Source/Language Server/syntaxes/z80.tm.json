@@ -1,0 +1,35 @@
+{
+	"scopeName": "source.z80asm",
+	"name": "Z80 Assembler",
+	"patterns": [
+		{ "include": "#expression" }
+	],
+	"repository": {
+		"expression": {
+			"patterns": [
+				{ "include": "#comment" },
+				{ "include": "#mnemonic-lower" },
+				{ "include": "#mnemonic-upper" },
+				{ "include": "#reg-lower" },
+				{ "include": "#reg-upper" },
+				{ "include": "#directive-lower" },
+				{ "include": "#directive-upper" },
+				{ "include": "#label" },
+				{ "include": "#identifier" },
+				{ "include": "#dec" },
+				{ "include": "#hex" }
+			]
+		},
+		"comment": { "name": "comment.line", "match": ";.*$" },
+		"mnemonic-lower": { "name": "keyword.other.mnemonic", "match": "ld|ldi|ldd|ldh|push|pop|add|adc|sub|sbc|and|or|xor|cp|inc|dec|daa|cpl|rlca|rla|rrca|rra|rlc|rl|rrc|rr|sla|sra|srl|bit|res|set|ccf|scf|nop|halt|di|ei|jp|jr|call|ret|reti|retn|rst" },
+		"mnemonic-upper": { "name": "keyword.other.mnemonic", "match": "LD|LDI|LDD|LDH|PUSH|POP|ADD|ADC|SUB|SBC|AND|OR|XOR|CP|INC|DEC|DAA|CPL|RLCA|RLA|RRCA|RRA|RLC|RL|RRC|RR|SLA|SRA|SRL|BIT|RES|SET|CCF|SCF|NOP|HALT|DI|EI|JP|JR|CALL|RET|RETI|RETN|RST" },
+		"reg-lower": { "name": "support.class.z80", "match": "\\b(a|b|c|d|e|h|af|bc|de|hl|sp)\\b" },
+		"reg-upper": { "name": "support.class.z80", "match": "\\b(A|B|C|D|E|H|AF|BC|DE|HL|SP)\\b" },
+		"directive-lower": { "name": "keyword.control.directive", "match": "\\b(macro|endm|if|endc|rept|endr|db|dw|ds|include|incbin|section|equ)\\b" },
+		"directive-upper": { "name": "keyword.control.directive", "match": "\\b(MACRO|ENDM|IF|ENDC|REPT|ENDR|DB|DW|DS|INCLUDE|INCBIN|SECTION|EQU)\\b" },
+		"label": { "name": "meta.label.z80", "match": "^\\s*(\\.?[a-zA-Z_][a-zA-Z_0-9\\@]*)\\s*(\\:)\\s*$" },
+		"identifier": { "name": "meta.identifier.z80", "match": "\\b([a-zA-Z_][a-zA-Z_0-9\\@]*)\\b" },
+		"dec": { "name": "constant.numeric", "match": "\\b[0-9]+\\b" },
+		"hex": { "name": "constant.numeric.hex", "match": "\\$[0-9a-fA-F]+" }
+	}
+}

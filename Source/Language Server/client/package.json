@@ -1,6 +1,6 @@
 {
-	"name": "z80-assembler-client",
-	"description": "Z80 Assembler VSCode Language Client.",
+	"name": "zingularity-client",
+	"description": "Zingularity VSCode Language Client.",
 	"author": "Marc Jacobi",
 	"license": "MIT",
 	"version": "0.0.1",

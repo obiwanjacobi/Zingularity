@@ -1,3 +1,5 @@
+import { VersionedTextDocumentIdentifier } from "vscode-languageserver";
+
 export enum AssemblyNodeKind {
     Unknown,
     Comment,
@@ -83,7 +85,7 @@ export class Whitespace extends AssemblyNode {
 }
 
 
-export interface AssemblyDocument {
+export interface AssemblyDocument extends VersionedTextDocumentIdentifier {
     nodes: AssemblyNode[];
 }
 

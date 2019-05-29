@@ -7,12 +7,12 @@
 			"request": "launch",
 			"name": "Launch Client",
 			"runtimeExecutable": "${execPath}",
-			"args": ["--extensionDevelopmentPath=${workspaceRoot}"],
+			"args": [
+				"--extensionDevelopmentPath=${workspaceRoot}", 
+				"${workspaceRoot}/client/src/test/testFixture/syntaxTest.z80"
+			],
 			"outFiles": ["${workspaceRoot}/client/out/**/*.js"],
-			"preLaunchTask": {
-				"type": "npm",
-				"script": "watch"
-			}
+			// "preLaunchTask": { "type": "npm", "script": "watch" }
 		},
 		{
 			"type": "node",
@@ -20,6 +20,7 @@
 			"name": "Attach to Server",
 			"port": 6009,
 			"restart": true,
+			"trace": true,
 			"outFiles": ["${workspaceRoot}/server/out/**/*.js"]
 		},
 		{
@@ -30,7 +31,7 @@
 			"args": [
 				"--extensionDevelopmentPath=${workspaceRoot}",
 				"--extensionTestsPath=${workspaceRoot}/client/out/test",
-				"${workspaceRoot}/client/testFixture"
+				"${workspaceRoot}/client/src/test/testFixture"
 			],
 			"outFiles": ["${workspaceRoot}/client/out/test/**/*.js"]
 		},

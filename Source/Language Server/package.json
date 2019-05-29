@@ -1,6 +1,6 @@
 {
-	"name": "z80-assembler",
-	"description": "A Z80 Assembler IDE",
+	"name": "zingularity",
+	"description": "Zingularity, A Z80 Assembler IDE",
 	"author": "Marc Jacobi",
 	"license": "MIT",
 	"version": "0.1.0",
@@ -25,7 +25,10 @@
 			{
 				"id": "z80asm",
 				"extensions": [
-					".z80"
+					".z80",
+					".asm",
+					".inc",
+					".S"
 				]
 			}
 		],
@@ -40,13 +43,13 @@
 			"type": "object",
 			"title": "Example configuration",
 			"properties": {
-				"z80assembler.maxNumberOfProblems": {
+				"zingularity.maxNumberOfProblems": {
 					"scope": "resource",
 					"type": "number",
 					"default": 100,
 					"description": "Controls the maximum number of problems produced by the server."
 				},
-				"z80assembler.trace.server": {
+				"zingularity.trace.server": {
 					"scope": "window",
 					"type": "string",
 					"enum": [
@@ -54,7 +57,7 @@
 						"messages",
 						"verbose"
 					],
-					"default": "off",
+					"default": "messages",
 					"description": "Traces the communication between VS Code and the language server."
 				}
 			}
@@ -65,8 +68,7 @@
 		"compile": "tsc -b",
 		"watch": "tsc -b -w",
 		"postinstall": "cd client && npm install && cd ../server && npm install && cd ..",
-		"test": "jest",
-		"version": "tsc -v"
+		"test": "jest"
 	},
 	"devDependencies": {
 		"@types/jest": "^24.0.13",
@@ -78,7 +80,6 @@
 		"typescript": "^3.4.5",
 		"vscode": "^1.1.34"
 	},
-	"dependencies": {},
 	"jest": {
 		"roots": [
 			"./server/out/test/"

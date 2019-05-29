@@ -1,6 +1,6 @@
 {
-	"name": "z80-assembler-server",
-	"description": "Z80 Assembler VSCode Language Server.",
+	"name": "zingularity-server",
+	"description": "Zingularity VSCode Language Server.",
 	"version": "0.1.0",
 	"author": "Marc Jacobi",
 	"publisher": "Jacobi Software",

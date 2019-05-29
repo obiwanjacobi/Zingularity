@@ -1,0 +1,7 @@
+; comment
+label:      ; inline comment on label
+LD A, 0
+LD HL, $0000
+INC A
+RST 28
+JP 0

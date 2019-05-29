@@ -11,10 +11,10 @@ import {
     CompletionItemKind,
     TextDocumentPositionParams
 } from "vscode-languageserver";
-import { AssemblyModel, AssemblyDocument } from "./z80asm/CodeModel";
+import { AssemblyModel, AssemblyDocument, AssemblyNodeKind } from "./z80asm/CodeModel";
 import { Parser, ParserProfile } from "./z80asm/Parser";
 
-// Create a connection for the server. The connection uses Node"s IPC as a transport.
+// Create a connection for the server. The connection uses Node's IPC as a transport.
 // Also include all preview / proposed LSP features.
 let connection = createConnection(ProposedFeatures.all);
 
@@ -146,6 +146,22 @@ function validateTextDocument(textDocument: TextDocument): void {
     } else {
         codeModel.documents.push(doc);
     }
+
+    const errors = doc.nodes.filter(n => n.kind === AssemblyNodeKind.Error);
+    if (errors.length > 0) {
+        const diags = errors.map(e => {
+            return {
+                severity: DiagnosticSeverity.Error,
+                range: {
+                    start: { line: e.line - 1, character: e.column - 1 },
+                    end: { line: e.line - 1, character: e.column + 4 }
+                },
+                message: e.toString(),
+                source: "Zingularity"
+            };
+        });
+        connection.sendDiagnostics({ uri: textDocument.uri, diagnostics: diags });
+    }
 }
 
 // async function validateTextDocument(textDocument: TextDocument): Promise<void> {
@@ -202,25 +218,18 @@ connection.onDidChangeWatchedFiles(_change => {
 
 // This handler provides the initial list of the completion items.
 connection.onCompletion(
-    (_textDocumentPosition: TextDocumentPositionParams): CompletionItem[] => {
+    (textDocumentPosition: TextDocumentPositionParams): CompletionItem[] => {
         connection.console.log("Zingularity onCompletion");
 
-        // The pass parameter contains the position of the text document in
-        // which code complete got requested. For the example we ignore this
-        // info and always provide the same completion items.
-        return [
-            {
-                label: "TypeScript",
-                kind: CompletionItemKind.Text,
-                data: 1
-            },
-            {
-                label: "JavaScript",
-                kind: CompletionItemKind.Text,
-                data: 2
-            }
-        ];
-    }
+        const doc = codeModel.documents.find(d => d.uri === textDocumentPosition.textDocument.uri);
+        if (doc)
+        {
+            const lineNodes = doc.nodes.filter(n => n.line === textDocumentPosition.position.character);
+
+        }
+
+        return [];
+    }   
 );
 
 // This handler resolves additional information for the item selected in

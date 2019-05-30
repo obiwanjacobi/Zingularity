@@ -14,13 +14,11 @@ export abstract class AssemblyNode {
     readonly kind: AssemblyNodeKind;
     readonly line: number;
     readonly column: number;
-    readonly index: number;
     readonly text: string;
 
-    constructor(kind: AssemblyNodeKind, text: string, index: number, line: number, column: number) {
+    constructor(kind: AssemblyNodeKind, text: string, line: number, column: number) {
         this.kind = kind;
         this.text = text;
-        this.index = index;
         this.line = line;
         this.column = column;
     }
@@ -31,8 +29,8 @@ export abstract class AssemblyNode {
 }
 
 export class AsmError extends AssemblyNode {
-    constructor(text: string, index: number, line: number, column: number) {
-        super(AssemblyNodeKind.Error, text, index, line, column);
+    constructor(text: string, line: number, column: number) {
+        super(AssemblyNodeKind.Error, text, line, column);
     }
 
     toString(): string {
@@ -41,14 +39,14 @@ export class AsmError extends AssemblyNode {
 }
 
 export class Comment extends AssemblyNode {
-    constructor(text: string, index: number, line: number, column: number) {
-        super(AssemblyNodeKind.Comment, text, index, line, column);
+    constructor(text: string, line: number, column: number) {
+        super(AssemblyNodeKind.Comment, text, line, column);
     }
 }
 
 export class Directive extends AssemblyNode {
-    constructor(text: string, index: number, line: number, column: number) {
-        super(AssemblyNodeKind.Directive, text, index, line, column);
+    constructor(text: string, line: number, column: number) {
+        super(AssemblyNodeKind.Directive, text, line, column);
     }
 }
 
@@ -63,22 +61,22 @@ export class Instruction extends AssemblyNode {
     readonly meta: InstructionMeta;
     readonly external: string;
 
-    constructor(meta: InstructionMeta, external: string, text: string, index: number, line: number, column: number) {
-        super(AssemblyNodeKind.Instruction, text, index, line, column);
+    constructor(meta: InstructionMeta, external: string, text: string, line: number, column: number) {
+        super(AssemblyNodeKind.Instruction, text, line, column);
         this.meta = meta;
         this.external = external;
     }
 }
 
 export class Label extends AssemblyNode {
-    constructor(text: string, index: number, line: number, column: number) {
-        super(AssemblyNodeKind.Label, text, index, line, column);
+    constructor(text: string, line: number, column: number) {
+        super(AssemblyNodeKind.Label, text, line, column);
     }
 }
 
 export class Whitespace extends AssemblyNode {
-    constructor(text: string, index: number, line: number, column: number) {
-        super(AssemblyNodeKind.Whitespace, text, index, line, column);
+    constructor(text: string, line: number, column: number) {
+        super(AssemblyNodeKind.Whitespace, text, line, column);
     }
 
     toString(): string {

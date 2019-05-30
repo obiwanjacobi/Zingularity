@@ -5,7 +5,7 @@ import { splitInstruction } from "./InstructionSplitter.js";
 
 
 
-export function buildInstruction(token: string, index: number, line: number, column: number): Instruction | AsmError {
+export function buildInstruction(token: string, line: number, column: number): Instruction | AsmError {
     const parts = splitInstruction(token);
     if (parts.length == 0) throw new Error("No Parts.");
 
@@ -49,7 +49,7 @@ export function buildInstruction(token: string, index: number, line: number, col
 
             if (!map) {
                 let msg = i == 0 ? `Unrecognized text '${part}' in ${token}.` : `Invalid Instruction at '${part}' in ${token}.`;
-                return new AsmError(msg, index, line, column);
+                return new AsmError(msg, line, column);
             }
 
             external = part;
@@ -67,5 +67,5 @@ export function buildInstruction(token: string, index: number, line: number, col
     const alt = meta["altCcyles"] ? Object.keys(meta["altCcyles"]).map(k => Number(k)) : [];
     const flags = meta["flags"] ? Object.keys(meta["flags"]) : [];
 
-    return new Instruction({ bytes: bytes, cycles: cycles, altCycles: alt, flags: flags}, external, token, index, line, column);
+    return new Instruction({ bytes: bytes, cycles: cycles, altCycles: alt, flags: flags}, external, token, line, column);
 }

@@ -69,7 +69,7 @@ export class Parser {
                 case "\n":
                 case "\r":
                     if (state != ParserState.NewLine) {
-                        this.addNode(nodes, state, token, index, line, column);
+                        this.addNode(nodes, state, token, line, column);
 
                         state = ParserState.NewLine;
                         token = "";
@@ -82,7 +82,7 @@ export class Parser {
                 case " ":
                 case "\t":
                     if (state === ParserState.LabelBegin) {
-                        this.addNode(nodes, state, token, index, line, column);
+                        this.addNode(nodes, state, token, line, column);
                         state = ParserState.Pending;
                         token = "";
                     }
@@ -96,7 +96,7 @@ export class Parser {
                 
                 case this.profile.comment:
                     if (!canChangeState()) {
-                        this.addNode(nodes, state, token, index, line, column);
+                        this.addNode(nodes, state, token, line, column);
                         // state = ParserState.Pending;
                         token = "";
                     }
@@ -120,7 +120,7 @@ export class Parser {
                     if (state === ParserState.Pending || state === ParserState.NewLine)
                     {
                         state = ParserState.LabelEnd;
-                        this.addNode(nodes, state, token, index, line, column);
+                        this.addNode(nodes, state, token, line, column);
                         increment();
                         state = ParserState.Pending;
                         token = "";
@@ -131,7 +131,7 @@ export class Parser {
 
                 default:
                     if (state === ParserState.WhiteSpace) {
-                        this.addNode(nodes, state, token, index, line, column);
+                        this.addNode(nodes, state, token, line, column);
                         state = ParserState.Pending;
                         token = "";
                     }
@@ -144,37 +144,37 @@ export class Parser {
             }
         }
 
-        this.addNode(nodes, state, token, index, line, column);
+        this.addNode(nodes, state, token, line, column);
 
         return nodes;
     }
 
-    private addNode(nodes: AssemblyNode[], state: ParserState, token: string, index: number, line: number, col: number) {
+    private addNode(nodes: AssemblyNode[], state: ParserState, token: string, line: number, col: number) {
         let node = undefined;
     
         switch (state) {
             case ParserState.Comment:
-                node = new Comment(token, index, line, col);
+                node = new Comment(token, line, col);
                 break;
     
             case ParserState.Directive:
-                node = new Directive(token, index, line, col);
+                node = new Directive(token, line, col);
                 break;
             
             case ParserState.LabelBegin:
             case ParserState.LabelEnd:
-                node = new Label(token, index, line, col);
+                node = new Label(token, line, col);
                 break;
     
             case ParserState.WhiteSpace:
-                node = new Whitespace(token, index, line, col);
+                node = new Whitespace(token, line, col);
                 break;
     
             default:
                 if (token.length > 0) {
-                    node = this.tryParseDirective(token, index, line, col) || this.tryParseInstruction(token, index, line, col);
+                    node = this.tryParseDirective(token, line, col) || this.tryParseInstruction(token, line, col);
                     if (!node) {
-                        node = new AsmError(`Syntax error: '${token}'`, index, line, col);
+                        node = new AsmError(`Syntax error: '${token}'`, line, col);
                     }
                 }
                 break;
@@ -185,14 +185,14 @@ export class Parser {
         }
     }
 
-    private tryParseDirective(token: string, index: number, line: number, col: number): Directive | null {
+    private tryParseDirective(token: string, line: number, col: number): Directive | null {
         if (this.profile.directives.findIndex(d => d === token) >= 0) {
-            return new Directive(token, index, line, col);
+            return new Directive(token, line, col);
         }
         return null;
     }
 
-    private tryParseInstruction(token: string, index: number, line: number, col: number): Instruction | AsmError {
-        return buildInstruction(token, index, line, col);
+    private tryParseInstruction(token: string, line: number, col: number): Instruction | AsmError {
+        return buildInstruction(token, line, col);
     }
 }

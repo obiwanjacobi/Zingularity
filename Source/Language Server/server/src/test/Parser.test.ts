@@ -21,7 +21,6 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Comment);
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
-        expect(node.index).toBe(0);
         expect(node.text).not.toContain(";");
         expect(node.text).toContain("hello world!");
     });
@@ -34,7 +33,6 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Comment);
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
-        expect(node.index).toBe(0);
         expect(node.text).not.toContain(";");
         expect(node.text).toContain("hello world!");
     });
@@ -47,7 +45,6 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Comment);
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
-        expect(node.index).toBe(0);
         expect(node.text).not.toContain(";");
         expect(node.text).toContain("hello world!");
 
@@ -55,13 +52,11 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Whitespace);
         expect(node.line).toBe(2);
         expect(node.column).toBe(1);
-        expect(node.index).toBe(16);
-
+        
         node = nodes[2];
         expect(node.kind).toBe(AssemblyNodeKind.Comment);
         expect(node.line).toBe(2);
         expect(node.column).toBe(3);
-        expect(node.index).toBe(18);
         expect(node.text).not.toContain(";");
         expect(node.text).toContain("bye bye");
         expect(node.text).toContain("      ");
@@ -75,7 +70,6 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Label);
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
-        expect(node.index).toBe(0);
         expect(node.text).not.toContain(".");
         expect(node.text).toContain("label");
     });
@@ -88,7 +82,6 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Label);
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
-        expect(node.index).toBe(0);
         expect(node.text).not.toContain(".");
         expect(node.text).not.toContain(" ");
         expect(node.text).toContain("label");
@@ -97,7 +90,6 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Whitespace);
         expect(node.line).toBe(1);
         expect(node.column).toBe(7);
-        expect(node.index).toBe(6);
     });
     
     it("label end", () => {
@@ -108,7 +100,6 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Label);
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
-        expect(node.index).toBe(0);
         expect(node.text).not.toContain(":");
         expect(node.text).toContain("label");
     });
@@ -121,7 +112,6 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Label);
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
-        expect(node.index).toBe(0);
         expect(node.text).not.toContain(":");
         expect(node.text).toContain("label");
 
@@ -129,7 +119,6 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Whitespace);
         expect(node.line).toBe(1);
         expect(node.column).toBe(7);
-        expect(node.index).toBe(6);
     });
 
     it("directive - match case", () => {
@@ -140,7 +129,6 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Directive);
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
-        expect(node.index).toBe(0);
         expect(node.text).toContain("SECTION");
     });
 
@@ -164,7 +152,6 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Instruction);
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
-        expect(node.index).toBe(0);
         expect(node.text).toContain("ld hl, $0000");
     });
 
@@ -176,7 +163,6 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Instruction);
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
-        expect(node.index).toBe(0);
         expect(node.text).toContain("JP label");
         expect(node.external).toBe("label");
     });
@@ -189,14 +175,12 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Instruction);
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
-        expect(node.index).toBe(0);
         expect(node.text).toContain("ld hl, $0000");
 
         node = nodes[1];
         expect(node.kind).toBe(AssemblyNodeKind.Comment);
         expect(node.line).toBe(1);
         expect(node.column).toBe(16);
-        expect(node.index).toBe(15);
         expect(node.text).toContain("comment");
     });
 
@@ -208,7 +192,6 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Instruction);
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
-        expect(node.index).toBe(0);
         expect(node.text).toContain("RST 28");
     });
 });

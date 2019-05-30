@@ -95,20 +95,15 @@ export class Parser {
                     break;
                 
                 case this.profile.comment:
-                    if (state === ParserState.WhiteSpace) {
+                    if (!canChangeState()) {
                         this.addNode(nodes, state, token, index, line, column);
-                        state = ParserState.Pending;
+                        // state = ParserState.Pending;
                         token = "";
                     }
-                    if (canChangeState())
-                    {
-                        state = ParserState.Comment;
-                        capture();
-                        increment();
-                    }
-                    else {
-                        nextTokenChar(curChar);
-                    }
+
+                    state = ParserState.Comment;
+                    capture();
+                    increment();
                     break;
 
                 case this.profile.labelBegin:

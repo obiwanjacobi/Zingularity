@@ -1,5 +1,5 @@
 import { Parser, ParserProfile } from "../z80asm/Parser";
-import { AssemblyNode, AssemblyNodeKind } from "../z80asm/CodeModel";
+import { AssemblyNode, AssemblyNodeKind, Instruction } from "../z80asm/CodeModel";
 
 const parserProfile: ParserProfile = { 
     comment: ";", 
@@ -165,7 +165,50 @@ describe("Z80 Assembly Parser", () => {
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
         expect(node.index).toBe(0);
-        expect(node.text).not.toContain(".");
         expect(node.text).toContain("ld hl, $0000");
+    });
+
+    it("instruction /w label", () => {
+        const parser = new Parser(parserProfile);
+        const nodes = parser.parse("JP label");
+        const node = <Instruction> nodes[0];
+
+        expect(node.kind).toBe(AssemblyNodeKind.Instruction);
+        expect(node.line).toBe(1);
+        expect(node.column).toBe(1);
+        expect(node.index).toBe(0);
+        expect(node.text).toContain("JP label");
+        expect(node.external).toBe("label");
+    });
+
+    it("instruction /w comment", () => {
+        const parser = new Parser(parserProfile);
+        const nodes = parser.parse("ld hl, $0000   ; comment");
+        let node = nodes[0];
+
+        expect(node.kind).toBe(AssemblyNodeKind.Instruction);
+        expect(node.line).toBe(1);
+        expect(node.column).toBe(1);
+        expect(node.index).toBe(0);
+        expect(node.text).toContain("ld hl, $0000");
+
+        node = nodes[1];
+        expect(node.kind).toBe(AssemblyNodeKind.Comment);
+        expect(node.line).toBe(1);
+        expect(node.column).toBe(16);
+        expect(node.index).toBe(15);
+        expect(node.text).toContain("comment");
+    });
+
+    it("instruction: RST", () => {
+        const parser = new Parser(parserProfile);
+        const nodes = parser.parse("RST 28");
+        const node = nodes[0];
+
+        expect(node.kind).toBe(AssemblyNodeKind.Instruction);
+        expect(node.line).toBe(1);
+        expect(node.column).toBe(1);
+        expect(node.index).toBe(0);
+        expect(node.text).toContain("RST 28");
     });
 });

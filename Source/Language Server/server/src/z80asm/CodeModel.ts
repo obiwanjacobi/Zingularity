@@ -61,10 +61,12 @@ export interface InstructionMeta {
 
 export class Instruction extends AssemblyNode {
     readonly meta: InstructionMeta;
+    readonly external: string;
 
-    constructor(meta: InstructionMeta, text: string, index: number, line: number, column: number) {
+    constructor(meta: InstructionMeta, external: string, text: string, index: number, line: number, column: number) {
         super(AssemblyNodeKind.Instruction, text, index, line, column);
         this.meta = meta;
+        this.external = external;
     }
 }
 

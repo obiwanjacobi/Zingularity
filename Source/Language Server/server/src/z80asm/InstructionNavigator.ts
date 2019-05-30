@@ -6,27 +6,31 @@ import { splitInstruction } from "./InstructionSplitter.js";
 
 
 export function buildInstruction(token: string, index: number, line: number, column: number): Instruction | AsmError {
-    const parts = splitInstruction(token.toUpperCase());
+    const parts = splitInstruction(token);
     if (parts.length == 0) throw new Error("No Parts.");
 
     let map = instructionMap;
+    let external = "";
+
     for (let i = 0; i < parts.length; i++) {
         const part = parts[i];
 
-        if (part === '$' || part === '#') {
+        if (part === "" || part === "$" || part === "#") {
             continue;
         }
 
-        if (isNaN(Number(part))) {
-            // @ts-ignore: implicit any
-            map = map[part];
-            if (!map) {
-                let msg = i == 0 ? `Unrecognized text '${part}' in ${token}.` : `Invalid Instruction at '${part}' in ${token}.`;
-                return new AsmError(msg, index, line, column);
-            }
-        } else {
+        // @ts-ignore: implicit any
+        if (!map[part.toUpperCase()]) {
             // @ts-ignore: implicit any
             let m = map["d"];
+            if (m) { 
+                external = part;
+                map = m;
+                continue; 
+            }
+
+            // @ts-ignore: implicit any
+            m = map["e"];
             if (m) { 
                 map = m;
                 continue; 
@@ -35,6 +39,7 @@ export function buildInstruction(token: string, index: number, line: number, col
             // @ts-ignore: implicit any
             m = map["n"];
             if (m) { 
+                external = part;
                 map = m;
                 continue; 
             }
@@ -43,9 +48,14 @@ export function buildInstruction(token: string, index: number, line: number, col
             map = map["nn"];
 
             if (!map) {
-                let msg = `Expected a number in ${token}, instead found '${part}'.`;
+                let msg = i == 0 ? `Unrecognized text '${part}' in ${token}.` : `Invalid Instruction at '${part}' in ${token}.`;
                 return new AsmError(msg, index, line, column);
             }
+
+            external = part;
+        } else {
+            // @ts-ignore: implicit any
+            map = map[part.toUpperCase()];
         }
     }
 
@@ -57,5 +67,5 @@ export function buildInstruction(token: string, index: number, line: number, col
     const alt = meta["altCcyles"] ? Object.keys(meta["altCcyles"]).map(k => Number(k)) : [];
     const flags = meta["flags"] ? Object.keys(meta["flags"]) : [];
 
-    return new Instruction({ bytes: bytes, cycles: cycles, altCycles: alt, flags: flags}, token, index, line, column);
+    return new Instruction({ bytes: bytes, cycles: cycles, altCycles: alt, flags: flags}, external, token, index, line, column);
 }

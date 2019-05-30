@@ -30,6 +30,7 @@ export function splitInstruction(token: string): string[] {
         if (curChar === " " || curChar === "\t") {
             if (parts[p].length > 0) {
                 nextPart();
+                continue;
             }
         }
         // A-Z || a-z || 0-9

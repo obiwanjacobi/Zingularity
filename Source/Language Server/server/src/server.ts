@@ -154,7 +154,7 @@ function validateTextDocument(textDocument: TextDocument): void {
                 severity: DiagnosticSeverity.Error,
                 range: {
                     start: { line: e.line - 1, character: e.column - 1 },
-                    end: { line: e.line - 1, character: e.column + 4 }
+                    end: { line: e.line - 1, character: e.column + e.text.length }
                 },
                 message: e.toString(),
                 source: "Zingularity"

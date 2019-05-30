@@ -164,53 +164,6 @@ function validateTextDocument(textDocument: TextDocument): void {
     }
 }
 
-// async function validateTextDocument(textDocument: TextDocument): Promise<void> {
-//     // In this simple example we get the settings for every validate run.
-//     let settings = await getDocumentSettings(textDocument.uri);
-
-//     // The validator creates diagnostics for all uppercase words length 2 and more
-//     let text = textDocument.getText();
-//     let pattern = /\b[A-Z]{2,}\b/g;
-//     let m: RegExpExecArray | null;
-
-//     let problems = 0;
-//     let diagnostics: Diagnostic[] = [];
-//     while ((m = pattern.exec(text)) && problems < settings.maxNumberOfProblems) {
-//         problems++;
-//         let diagnostic: Diagnostic = {
-//             severity: DiagnosticSeverity.Warning,
-//             range: {
-//                 start: textDocument.positionAt(m.index),
-//                 end: textDocument.positionAt(m.index + m[0].length)
-//             },
-//             message: `${m[0]} is all uppercase.`,
-//             source: "ex"
-//         };
-//         if (hasDiagnosticRelatedInformationCapability) {
-//             diagnostic.relatedInformation = [
-//                 {
-//                     location: {
-//                         uri: textDocument.uri,
-//                         range: Object.assign({}, diagnostic.range)
-//                     },
-//                     message: "Spelling matters"
-//                 },
-//                 {
-//                     location: {
-//                         uri: textDocument.uri,
-//                         range: Object.assign({}, diagnostic.range)
-//                     },
-//                     message: "Particularly for names"
-//                 }
-//             ];
-//         }
-//         diagnostics.push(diagnostic);
-//     }
-
-//     // Send the computed diagnostics to VSCode.
-//     // connection.sendDiagnostics({ uri: textDocument.uri, diagnostics });
-// }
-
 connection.onDidChangeWatchedFiles(_change => {
     // Monitored files have change in VSCode
     connection.console.log("Zingularity onDidChangeWatchedFiles");
@@ -248,26 +201,6 @@ connection.onCompletionResolve(
         return item;
     }
 );
-
-/*
-connection.onDidOpenTextDocument((params) => {
-    // A text document got opened in VSCode.
-    // params.uri uniquely identifies the document. For documents store on disk this is a file URI.
-    // params.text the initial full content of the document.
-    connection.console.log(`${params.textDocument.uri} opened.`);
-});
-connection.onDidChangeTextDocument((params) => {
-    // The content of a text document did change in VSCode.
-    // params.uri uniquely identifies the document.
-    // params.contentChanges describe the content changes to the document.
-    connection.console.log(`${params.textDocument.uri} changed: ${JSON.stringify(params.contentChanges)}`);
-});
-connection.onDidCloseTextDocument((params) => {
-    // A text document got closed in VSCode.
-    // params.uri uniquely identifies the document.
-    connection.console.log(`${params.textDocument.uri} closed.`);
-});
-*/
 
 // Make the text document manager listen on the connection
 // for open, change and close text document events

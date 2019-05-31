@@ -1,9 +1,60 @@
 import instructionMap from "./InstructionMap.json";
-import { Instruction, AsmError, InstructionMeta } from "./CodeModel.js";
-import { isNumber } from "util";
+import { Instruction, AsmError } from "./CodeModel.js";
 import { splitInstruction } from "./InstructionSplitter.js";
 
+export function buildCompletionList(token: string): string[] {
+    const parts = splitInstruction(token);
+    if (parts.length == 0) throw new Error("No Parts.");
 
+    let map = instructionMap;
+
+    // not the last part
+    for (let i = 0; i < parts.length - 1; i++) {
+        const part = parts[i];
+
+        if (part === "" || part === "$" || part === "#") {
+            continue;
+        }
+
+        // @ts-ignore: implicit any
+        if (!map[part.toUpperCase()]) {
+            // @ts-ignore: implicit any
+            let m = map["d"];
+            if (m) { 
+                map = m;
+                continue; 
+            }
+
+            // @ts-ignore: implicit any
+            m = map["e"];
+            if (m) { 
+                map = m;
+                continue; 
+            }
+
+            // @ts-ignore: implicit any
+            m = map["n"];
+            if (m) { 
+                map = m;
+                continue; 
+            }
+
+            // @ts-ignore: implicit any
+            map = map["nn"];
+
+        } else {
+            // @ts-ignore: implicit any
+            map = map[part.toUpperCase()];
+        }
+    }
+
+    if (map) {
+        const lastPart = parts[parts.length - 1];
+        return Object.keys(map).filter(k => k.startsWith(lastPart));
+    }
+
+    return [];
+}
 
 export function buildInstruction(token: string, line: number, column: number): Instruction | AsmError {
     const parts = splitInstruction(token);
@@ -32,6 +83,9 @@ export function buildInstruction(token: string, line: number, column: number): I
             // @ts-ignore: implicit any
             m = map["e"];
             if (m) { 
+                if (isNaN(Number(part))) {
+                    external = part;
+                }
                 map = m;
                 continue; 
             }
@@ -52,7 +106,9 @@ export function buildInstruction(token: string, line: number, column: number): I
                 return new AsmError(msg, line, column);
             }
 
-            external = part;
+            if (isNaN(Number(part))) {
+                external = part;
+            }
         } else {
             // @ts-ignore: implicit any
             map = map[part.toUpperCase()];

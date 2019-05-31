@@ -12,6 +12,7 @@ import {
 } from "vscode-languageserver";
 import { AssemblyModel, AssemblyDocument, AssemblyNodeKind } from "./z80asm/CodeModel";
 import { Parser, ParserProfile } from "./z80asm/Parser";
+import { buildCompletionList } from "./z80asm/InstructionNavigator";
 
 // Create a connection for the server. The connection uses Node's IPC as a transport.
 // Also include all preview / proposed LSP features.
@@ -176,8 +177,15 @@ connection.onCompletion(
         const doc = codeModel.documents.find(d => d.uri === textDocumentPosition.textDocument.uri);
         if (doc)
         {
-            const lineNodes = doc.nodes.filter(n => n.line === textDocumentPosition.position.character);
+            const textDoc = documents.get(textDocumentPosition.textDocument.uri);
+            if (textDoc) {
+                const docText = textDoc.getText({
+                    start: { line: textDocumentPosition.position.line, character: 0 },
+                    end: { line: textDocumentPosition.position.line, character: textDocumentPosition.position.character }
+                });
 
+                return buildCompletionList(docText).map(v => <CompletionItem> { label: v, kind: CompletionItemKind.Unit });
+            }
         }
 
         return [];

@@ -158,13 +158,13 @@ describe("Z80 Assembly Parser", () => {
     it("instruction /w label", () => {
         const parser = new Parser(parserProfile);
         const nodes = parser.parse("JP label");
-        const node = <Instruction> nodes[0];
+        const node = nodes[0];
 
         expect(node.kind).toBe(AssemblyNodeKind.Instruction);
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
         expect(node.text).toContain("JP label");
-        expect(node.external).toBe("label");
+        expect((<Instruction> node).external).toBe("label");
     });
 
     it("instruction /w comment", () => {
@@ -176,6 +176,7 @@ describe("Z80 Assembly Parser", () => {
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
         expect(node.text).toContain("ld hl, $0000");
+        expect((<Instruction> node).external).toBe("");
 
         node = nodes[1];
         expect(node.kind).toBe(AssemblyNodeKind.Comment);

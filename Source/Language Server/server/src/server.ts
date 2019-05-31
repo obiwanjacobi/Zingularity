@@ -2,7 +2,6 @@ import {
     createConnection,
     TextDocuments,
     TextDocument,
-    Diagnostic,
     DiagnosticSeverity,
     ProposedFeatures,
     InitializeParams,
@@ -78,25 +77,25 @@ connection.onInitialized(() => {
 });
 
 // The server settings
-interface Z80AssemblerSettings {
+interface ZingularitySettings {
     maxNumberOfProblems: number;
 }
 
 // The global settings, used when the `workspace/configuration` request is not supported by the client.
 // Please note that this is not the case when using this server with the client provided in this example
 // but could happen with other clients.
-const defaultSettings: Z80AssemblerSettings = { maxNumberOfProblems: 100 };
-let globalSettings: Z80AssemblerSettings = defaultSettings;
+const defaultSettings: ZingularitySettings = { maxNumberOfProblems: 100 };
+let globalSettings: ZingularitySettings = defaultSettings;
 
 // Cache the settings of all open documents
-let documentSettings: Map<string, Thenable<Z80AssemblerSettings>> = new Map();
+let documentSettings: Map<string, Thenable<ZingularitySettings>> = new Map();
 
 connection.onDidChangeConfiguration(change => {
     if (hasConfigurationCapability) {
         // Reset all cached document settings
         documentSettings.clear();
     } else {
-        globalSettings = <Z80AssemblerSettings>(
+        globalSettings = <ZingularitySettings>(
             (change.settings.languageServerExample || defaultSettings)
         );
     }
@@ -105,7 +104,7 @@ connection.onDidChangeConfiguration(change => {
     documents.all().forEach(validateTextDocument);
 });
 
-function getDocumentSettings(resource: string): Thenable<Z80AssemblerSettings> {
+function getDocumentSettings(resource: string): Thenable<ZingularitySettings> {
     if (!hasConfigurationCapability) {
         return Promise.resolve(globalSettings);
     }

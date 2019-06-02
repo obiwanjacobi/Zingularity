@@ -10,9 +10,10 @@ import {
     CompletionItemKind,
     TextDocumentPositionParams,
     Diagnostic,
-    Hover
+    Hover,
+    Location
 } from "vscode-languageserver";
-import { AssemblyModel, AssemblyDocument, AssemblyNodeKind, Instruction } from "./z80asm/CodeModel";
+import { AssemblyModel, AssemblyDocument, AssemblyNodeKind, Instruction, AssemblyNode } from "./z80asm/CodeModel";
 import { Parser, ParserProfile } from "./z80asm/Parser";
 import { buildCompletionList, findMap } from "./z80asm/InstructionNavigator";
 import { sum } from "./utils";
@@ -63,7 +64,8 @@ connection.onInitialize((params: InitializeParams) => {
             completionProvider: {
                 resolveProvider: true
             },
-            hoverProvider: true
+            hoverProvider: true,
+            definitionProvider: true,
         }
     };
 });
@@ -137,7 +139,7 @@ documents.onDidChangeContent(change => {
 });
 
 function validateTextDocument(textDocument: TextDocument): void {
-    const parser = new Parser(parserProfile);
+    const parser = (new Parser(parserProfile));
     const doc: AssemblyDocument = { 
         nodes: parser.parse(textDocument.getText()), 
         uri: textDocument.uri, 
@@ -224,6 +226,43 @@ connection.onHover(
         }
 
         return undefined;
+    }
+);
+
+connection.onDefinition(
+    (textDocumentPosition): Location | null => {
+        const doc = codeModel.documents.find(d => d.uri === textDocumentPosition.textDocument.uri);
+        if (doc) {
+            const lineNodes = doc.nodes.filter(n => n.line - 1 === textDocumentPosition.position.line && n.kind === AssemblyNodeKind.Instruction);
+            // @ts-ignore: implicit any
+            if (lineNodes.length > 0 && lineNodes[0].external) {
+                const instruction = <Instruction> lineNodes[0];
+                
+                let label: AssemblyNode | undefined;
+                let targetDoc: AssemblyDocument | undefined;
+
+                for (let i = 0; i < codeModel.documents.length; i++) {
+                    const doc = codeModel.documents[i];
+                    label = doc.nodes.find(n => n.kind === AssemblyNodeKind.Label && n.text === instruction.external);
+                    if (label) {
+                        targetDoc = doc;
+                        break;
+                    }
+                }
+
+                if (label) {
+                    return <Location> {
+                        range: {
+                            start: { line: label.line, character: label.column - 1 },
+                            end: { line: label.line, character: label.column + label.text.length - 1 }
+                        },
+                        uri: targetDoc ? targetDoc.uri : textDocumentPosition.textDocument.uri
+                    };
+                }
+            }
+        }
+
+        return null;
     }
 );
 

@@ -2,10 +2,7 @@ import instructionMap from "./InstructionMap.json";
 import { Instruction, AsmError } from "./CodeModel.js";
 import { splitInstruction } from "./InstructionSplitter.js";
 
-export interface CompletionInfo {
-    label: string;
-    path: string;
-}
+const byteLiteralKeys = ["d", "e", "n", "nn"];
 
 interface OnNavigateMap {
     (parentMap: {}, newMap: {} | undefined, part: string, key: string): void;
@@ -38,10 +35,10 @@ function navigateMap(parts: string[], onNavigate: OnNavigateMap): {} {
         if (part === "") { continue; }
         
         if (!testMap(part.toUpperCase(), part)) {
-            if (testMap("d", part)) { continue; }
-            if (testMap("e", part)) { continue; }
-            if (testMap("n", part)) { continue; }
-            if (testMap("nn", part)) { continue; }
+            if (testMap(byteLiteralKeys[0], part)) { continue; }
+            if (testMap(byteLiteralKeys[1], part)) { continue; }
+            if (testMap(byteLiteralKeys[2], part)) { continue; }
+            if (testMap(byteLiteralKeys[3], part)) { continue; }
         }
     }
 
@@ -60,6 +57,11 @@ export function findMap(path: string): {} {
 
     // @ts-ignore: undefined
     return map;
+}
+
+export interface CompletionInfo {
+    label: string;
+    path: string;
 }
 
 export function buildCompletionList(token: string): CompletionInfo[] {
@@ -103,7 +105,7 @@ export function buildInstruction(token: string, line: number, column: number): I
             err = new AsmError(`Unrecognized text '${part}' (${token})`, token, line, column);
         }
 
-        if (["d", "e", "n", "nn"].indexOf(key) >= 0 && isNaN(Number(part))) {
+        if (byteLiteralKeys.indexOf(key) >= 0 && isNaN(Number(part))) {
             external = part;
         }
     });

@@ -4,5 +4,5 @@ label:      ; inline comment on label
     LD HL, $0000    ; inline comment on instruction
     INC A
     RST 28
-    JP label
+    JP label2
     

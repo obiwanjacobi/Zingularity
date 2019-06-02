@@ -29,12 +29,15 @@ export abstract class AssemblyNode {
 }
 
 export class AsmError extends AssemblyNode {
-    constructor(text: string, line: number, column: number) {
-        super(AssemblyNodeKind.Error, text, line, column);
+    readonly message: string;
+
+    constructor(text: string, token: string, line: number, column: number) {
+        super(AssemblyNodeKind.Error, token, line, column);
+        this.message = text;
     }
 
     toString(): string {
-        return `${this.text.trim()} at ${this.line}, ${this.column}.`;
+        return `${this.message} at line ${this.line}.`;
     }
 }
 

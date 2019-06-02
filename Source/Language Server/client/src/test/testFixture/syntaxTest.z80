@@ -5,4 +5,4 @@ label:      ; inline comment on label
     INC A
     RST 28
     JP label
-
+    

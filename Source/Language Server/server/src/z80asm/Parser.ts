@@ -174,7 +174,7 @@ export class Parser {
                 if (token.length > 0) {
                     node = this.tryParseDirective(token, line, col) || this.tryParseInstruction(token, line, col);
                     if (!node) {
-                        node = new AsmError(`Syntax error: '${token}'`, line, col);
+                        node = new AsmError(`Syntax error: '${token}'`, token, line, col);
                     }
                 }
                 break;

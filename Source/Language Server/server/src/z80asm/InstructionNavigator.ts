@@ -2,19 +2,19 @@ import instructionMap from "./InstructionMap.json";
 import { Instruction, AsmError } from "./CodeModel.js";
 import { splitInstruction } from "./InstructionSplitter.js";
 
-export function buildCompletionList(token: string): string[] {
-    const parts = splitInstruction(token);
+export interface CompletionInfo {
+    label: string;
+    path: string;
+}
+
+export function findMap(path: string): {} {
+    const parts = splitInstruction(path);
     if (parts.length == 0) throw new Error("No Parts.");
 
     let map = instructionMap;
 
-    // not the last part
-    for (let i = 0; i < parts.length - 1; i++) {
+    for (let i = 0; i < parts.length; i++) {
         const part = parts[i];
-
-        if (part === "" || part === "$" || part === "#") {
-            continue;
-        }
 
         // @ts-ignore: implicit any
         if (!map[part.toUpperCase()]) {
@@ -40,17 +40,84 @@ export function buildCompletionList(token: string): string[] {
             }
 
             // @ts-ignore: implicit any
-            map = map["nn"];
-
+            m = map["nn"];
+            if (m) { 
+                map = m;
+                continue; 
+            }
         } else {
             // @ts-ignore: implicit any
             map = map[part.toUpperCase()];
         }
     }
 
+    return map;
+}
+
+export function buildCompletionList(token: string): CompletionInfo[] {
+    const parts = splitInstruction(token);
+    if (parts.length == 0) throw new Error("No Parts.");
+
+    let map = instructionMap;
+    let path: string[] = [];
+
+    // not the last part
+    for (let i = 0; i < parts.length - 1; i++) {
+        const part = parts[i];
+
+        if (part === "" || part === "$" || part === "#") {
+            continue;
+        }
+
+        // @ts-ignore: implicit any
+        if (!map[part.toUpperCase()]) {
+            // @ts-ignore: implicit any
+            let m = map["d"];
+            if (m) {
+                map = m;
+                path.push("d");
+                continue; 
+            }
+
+            // @ts-ignore: implicit any
+            m = map["e"];
+            if (m) { 
+                map = m;
+                path.push("e");
+                continue; 
+            }
+
+            // @ts-ignore: implicit any
+            m = map["n"];
+            if (m) { 
+                map = m;
+                path.push("n");
+                continue; 
+            }
+
+            // @ts-ignore: implicit any
+            m = map["nn"];
+            if (m) {
+                path.push("nn");
+            }
+
+        } else {
+            // @ts-ignore: implicit any
+            map = map[part.toUpperCase()];
+            if (map) {
+                path.push(part);
+            }
+        }
+    }
+
     if (map) {
         const lastPart = parts[parts.length - 1];
-        return Object.keys(map).filter(k => k.startsWith(lastPart));
+        return Object.keys(map)
+            .filter(k => k.startsWith(lastPart))
+            .map(k => <CompletionInfo> { 
+                label: k, 
+                path: path.join()
+            });
     }
 
     return [];
@@ -102,8 +169,8 @@ export function buildInstruction(token: string, line: number, column: number): I
             map = map["nn"];
 
             if (!map) {
-                let msg = i == 0 ? `Unrecognized text '${part}' in ${token}.` : `Invalid Instruction at '${part}' in ${token}.`;
-                return new AsmError(msg, line, column);
+                let msg = i == 0 ? `Unrecognized text '${part}' (${token})` : `Invalid Instruction at '${part}' (${token})`;
+                return new AsmError(msg, token, line, column);
             }
 
             if (isNaN(Number(part))) {

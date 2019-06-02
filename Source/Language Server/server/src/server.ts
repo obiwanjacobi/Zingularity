@@ -8,11 +8,14 @@ import {
     DidChangeConfigurationNotification,
     CompletionItem,
     CompletionItemKind,
-    TextDocumentPositionParams
+    TextDocumentPositionParams,
+    Diagnostic,
+    Hover
 } from "vscode-languageserver";
-import { AssemblyModel, AssemblyDocument, AssemblyNodeKind } from "./z80asm/CodeModel";
+import { AssemblyModel, AssemblyDocument, AssemblyNodeKind, Instruction } from "./z80asm/CodeModel";
 import { Parser, ParserProfile } from "./z80asm/Parser";
-import { buildCompletionList } from "./z80asm/InstructionNavigator";
+import { buildCompletionList, findMap } from "./z80asm/InstructionNavigator";
+import { sum } from "./utils";
 
 // Create a connection for the server. The connection uses Node's IPC as a transport.
 // Also include all preview / proposed LSP features.
@@ -54,12 +57,13 @@ connection.onInitialize((params: InitializeParams) => {
     );
 
     return {
+        // Tell the client what features the server supports
         capabilities: {
             textDocumentSync: documents.syncKind,
-            // Tell the client that the server supports code completion
             completionProvider: {
                 resolveProvider: true
-            }
+            },
+            hoverProvider: true
         }
     };
 });
@@ -150,11 +154,11 @@ function validateTextDocument(textDocument: TextDocument): void {
     const errors = doc.nodes.filter(n => n.kind === AssemblyNodeKind.Error);
     if (errors.length > 0) {
         const diags = errors.map(e => {
-            return {
+            return <Diagnostic> {
                 severity: DiagnosticSeverity.Error,
                 range: {
-                    start: { line: e.line - 1, character: e.column - 1 },
-                    end: { line: e.line - 1, character: e.column + e.text.length }
+                    start: { line: e.line, character: e.column },
+                    end: { line: e.line, character: e.column + e.text.length }
                 },
                 message: e.toString(),
                 source: "Zingularity"
@@ -174,18 +178,14 @@ connection.onCompletion(
     (textDocumentPosition: TextDocumentPositionParams): CompletionItem[] => {
         connection.console.log("Zingularity onCompletion");
 
-        const doc = codeModel.documents.find(d => d.uri === textDocumentPosition.textDocument.uri);
-        if (doc)
-        {
-            const textDoc = documents.get(textDocumentPosition.textDocument.uri);
-            if (textDoc) {
-                const docText = textDoc.getText({
-                    start: { line: textDocumentPosition.position.line, character: 0 },
-                    end: { line: textDocumentPosition.position.line, character: textDocumentPosition.position.character }
-                });
+        const textDoc = documents.get(textDocumentPosition.textDocument.uri);
+        if (textDoc) {
+            const docText = textDoc.getText({
+                start: { line: textDocumentPosition.position.line, character: 0 },
+                end: { line: textDocumentPosition.position.line, character: textDocumentPosition.position.character }
+            });
 
-                return buildCompletionList(docText).map(v => <CompletionItem> { label: v, kind: CompletionItemKind.Unit });
-            }
+            return buildCompletionList(docText).map(v => <CompletionItem> { label: v.label, data: v.path, kind: CompletionItemKind.Unit });
         }
 
         return [];
@@ -198,14 +198,32 @@ connection.onCompletionResolve(
     (item: CompletionItem): CompletionItem => {
         connection.console.log("Zingularity onCompletionResolve");
         
-        if (item.data === 1) {
-            item.detail = "TypeScript details";
-            item.documentation = "TypeScript documentation";
-        } else if (item.data === 2) {
-            item.detail = "JavaScript details";
-            item.documentation = "JavaScript documentation";
-        }
+        // item.data => path to map
+        // item.label => map entry
+        
         return item;
+    }
+);
+
+connection.onHover(
+    (textDocumentPosition): Hover | undefined => {
+        const doc = codeModel.documents.find(d => d.uri === textDocumentPosition.textDocument.uri);
+        if (doc) {
+            const lineNodes = doc.nodes.filter(n => n.line - 1 === textDocumentPosition.position.line && n.kind === AssemblyNodeKind.Instruction);
+            if (lineNodes.length > 0) {
+                const instruction = <Instruction> lineNodes[0];
+                
+                return <Hover> {
+                    contents: `${instruction.text} - cycles: ${sum(instruction.meta.cycles)} - bytes: [${instruction.meta.bytes.join(", ")}]`,
+                    range: { 
+                        start: { line:  instruction.line - 1, character: instruction.column - 1 },
+                        end: { line:  instruction.line - 1, character: instruction.column + instruction.text.length - 1 }
+                    }
+                };
+            }
+        }
+
+        return undefined;
     }
 );
 

@@ -7,50 +7,58 @@ export interface CompletionInfo {
     path: string;
 }
 
-export function findMap(path: string): {} {
+interface OnNavigateMap {
+    (parentMap: {}, newMap: {} | undefined, part: string, key: string): void;
+}
+
+function navigateMapPath(path: string, onNavigate: OnNavigateMap): {} {
     const parts = splitInstruction(path);
     if (parts.length == 0) throw new Error("No Parts.");
 
+    return navigateMap(parts, onNavigate);
+}
+
+function navigateMap(parts: string[], onNavigate: OnNavigateMap): {} {
     let map = instructionMap;
+    let m = undefined;
+
+    const testMap = (key: string, part: string): boolean => {
+        // @ts-ignore: implicit any
+        m = map[key];
+        if (m) {
+            onNavigate(map, m, part, key);
+            map = m;
+        }
+        return !!m;
+    };
 
     for (let i = 0; i < parts.length; i++) {
         const part = parts[i];
 
-        // @ts-ignore: implicit any
-        if (!map[part.toUpperCase()]) {
-            // @ts-ignore: implicit any
-            let m = map["d"];
-            if (m) { 
-                map = m;
-                continue; 
-            }
-
-            // @ts-ignore: implicit any
-            m = map["e"];
-            if (m) { 
-                map = m;
-                continue; 
-            }
-
-            // @ts-ignore: implicit any
-            m = map["n"];
-            if (m) { 
-                map = m;
-                continue; 
-            }
-
-            // @ts-ignore: implicit any
-            m = map["nn"];
-            if (m) { 
-                map = m;
-                continue; 
-            }
-        } else {
-            // @ts-ignore: implicit any
-            map = map[part.toUpperCase()];
+        if (part === "") { continue; }
+        
+        if (!testMap(part.toUpperCase(), part)) {
+            if (testMap("d", part)) { continue; }
+            if (testMap("e", part)) { continue; }
+            if (testMap("n", part)) { continue; }
+            if (testMap("nn", part)) { continue; }
         }
     }
 
+    return map;
+}
+
+export function findMap(path: string): {} {
+    
+    let map = undefined;
+
+    navigateMapPath(path, (_parentMap, newMap, _part:string) => {
+        if (newMap) {
+            map = newMap;
+        }
+    });
+
+    // @ts-ignore: undefined
     return map;
 }
 
@@ -58,57 +66,16 @@ export function buildCompletionList(token: string): CompletionInfo[] {
     const parts = splitInstruction(token);
     if (parts.length == 0) throw new Error("No Parts.");
 
-    let map = instructionMap;
     let path: string[] = [];
 
-    // not the last part
-    for (let i = 0; i < parts.length - 1; i++) {
-        const part = parts[i];
-
-        if (part === "" || part === "$" || part === "#") {
-            continue;
+    const map = navigateMap(parts, (parentMap, newMap, part) => {
+        if (part === "$" || part === "#") {
+            return;
         }
-
-        // @ts-ignore: implicit any
-        if (!map[part.toUpperCase()]) {
-            // @ts-ignore: implicit any
-            let m = map["d"];
-            if (m) {
-                map = m;
-                path.push("d");
-                continue; 
-            }
-
-            // @ts-ignore: implicit any
-            m = map["e"];
-            if (m) { 
-                map = m;
-                path.push("e");
-                continue; 
-            }
-
-            // @ts-ignore: implicit any
-            m = map["n"];
-            if (m) { 
-                map = m;
-                path.push("n");
-                continue; 
-            }
-
-            // @ts-ignore: implicit any
-            m = map["nn"];
-            if (m) {
-                path.push("nn");
-            }
-
-        } else {
-            // @ts-ignore: implicit any
-            map = map[part.toUpperCase()];
-            if (map) {
-                path.push(part);
-            }
+        if (newMap) {
+            path.push(part);
         }
-    }
+    });
 
     if (map) {
         const lastPart = parts[parts.length - 1];
@@ -124,62 +91,25 @@ export function buildCompletionList(token: string): CompletionInfo[] {
 }
 
 export function buildInstruction(token: string, line: number, column: number): Instruction | AsmError {
-    const parts = splitInstruction(token);
-    if (parts.length == 0) throw new Error("No Parts.");
-
-    let map = instructionMap;
     let external = "";
+    let err;
 
-    for (let i = 0; i < parts.length; i++) {
-        const part = parts[i];
-
-        if (part === "" || part === "$" || part === "#") {
-            continue;
+    const map = navigateMapPath(token, (parentMap, newMap, part, key) => {
+        if (part === "$" || part === "#") {
+            return;
         }
 
-        // @ts-ignore: implicit any
-        if (!map[part.toUpperCase()]) {
-            // @ts-ignore: implicit any
-            let m = map["d"];
-            if (m) { 
-                external = part;
-                map = m;
-                continue; 
-            }
-
-            // @ts-ignore: implicit any
-            m = map["e"];
-            if (m) { 
-                if (isNaN(Number(part))) {
-                    external = part;
-                }
-                map = m;
-                continue; 
-            }
-
-            // @ts-ignore: implicit any
-            m = map["n"];
-            if (m) { 
-                external = part;
-                map = m;
-                continue; 
-            }
-
-            // @ts-ignore: implicit any
-            map = map["nn"];
-
-            if (!map) {
-                let msg = i == 0 ? `Unrecognized text '${part}' (${token})` : `Invalid Instruction at '${part}' (${token})`;
-                return new AsmError(msg, token, line, column);
-            }
-
-            if (isNaN(Number(part))) {
-                external = part;
-            }
-        } else {
-            // @ts-ignore: implicit any
-            map = map[part.toUpperCase()];
+        if (!newMap) {
+            err = new AsmError(`Unrecognized text '${part}' (${token})`, token, line, column);
         }
+
+        if (["d", "e", "n", "nn"].indexOf(key) >= 0 && isNaN(Number(part))) {
+            external = part;
+        }
+    });
+
+    if (err) {
+        return err;
     }
 
     // @ts-ignore: implicit any

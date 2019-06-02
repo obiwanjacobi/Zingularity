@@ -1,4 +1,4 @@
-import { buildInstruction, buildCompletionList } from "../z80asm/InstructionNavigator";
+import { buildInstruction, buildCompletionList, findMap } from "../z80asm/InstructionNavigator";
 import { Instruction } from "../z80asm/CodeModel";
 
 describe("Z80 Instruction Navigator", () => {
@@ -14,11 +14,26 @@ describe("Z80 Instruction Navigator", () => {
 
     it("buildCompletionList: L", () => {
         const list = buildCompletionList("L");
+        const labels = list.map(c => c.label);
 
-        expect(list).toContain("LD");
-        expect(list).toContain("LDI");
-        expect(list).toContain("LDIR");
-        expect(list).toContain("LDD");
-        expect(list).toContain("LDDR");
+        expect(labels).toContain("LD");
+        expect(labels).toContain("LDI");
+        expect(labels).toContain("LDIR");
+        expect(labels).toContain("LDD");
+        expect(labels).toContain("LDDR");
+    });
+
+    it("findMap: LD A,", () => {
+        const map = findMap("LD A,");
+        const keys = Object.keys(map);
+
+        expect(keys).toContain("A");
+        expect(keys).toContain("B");
+        expect(keys).toContain("C");
+        expect(keys).toContain("D");
+        expect(keys).toContain("E");
+        expect(keys).toContain("H");
+        expect(keys).toContain("L");
+        expect(keys).toContain("(");
     });
 });

@@ -17,6 +17,7 @@ import { AssemblyModel, AssemblyDocument, AssemblyNodeKind, Instruction, Assembl
 import { Parser, ParserProfile } from "./z80asm/Parser";
 import { buildCompletionList, findMap } from "./z80asm/InstructionNavigator";
 import { sum } from "./utils";
+import { CodeModelManager } from "./z80asm/CodeModelManager";
 
 // Create a connection for the server. The connection uses Node's IPC as a transport.
 // Also include all preview / proposed LSP features.
@@ -25,7 +26,7 @@ let connection = createConnection(ProposedFeatures.all);
 // Create a simple text document manager. The text document manager
 // supports full document sync only
 const documents: TextDocuments = new TextDocuments();
-const codeModel: AssemblyModel = { documents: [] };
+const codeModelMgr: CodeModelManager = new CodeModelManager();
 const parserProfile: ParserProfile = { 
     comment: ";",
     labelBegin: ".",
@@ -145,18 +146,12 @@ function validateTextDocument(textDocument: TextDocument): void {
         uri: textDocument.uri, 
         version: textDocument.version 
     };
-    
-    const i = codeModel.documents.findIndex(d => d.uri === textDocument.uri);
-    if (i >= 0) {
-        codeModel.documents.splice(i, 1, doc);
-    } else {
-        codeModel.documents.push(doc);
-    }
+    codeModelMgr.setDocument(doc);
 
     const errors = doc.nodes.filter(n => n.kind === AssemblyNodeKind.Error);
     if (errors.length > 0) {
         const diags = errors.map(e => {
-            return <Diagnostic> {
+            return {
                 severity: DiagnosticSeverity.Error,
                 range: {
                     start: { line: e.line, character: e.column },
@@ -173,6 +168,7 @@ function validateTextDocument(textDocument: TextDocument): void {
 connection.onDidChangeWatchedFiles(_change => {
     // Monitored files have change in VSCode
     connection.console.log("Zingularity onDidChangeWatchedFiles");
+    //validateTextDocument(_change)
 });
 
 // This handler provides the initial list of the completion items.
@@ -209,20 +205,18 @@ connection.onCompletionResolve(
 
 connection.onHover(
     (textDocumentPosition): Hover | undefined => {
-        const doc = codeModel.documents.find(d => d.uri === textDocumentPosition.textDocument.uri);
-        if (doc) {
-            const lineNodes = doc.nodes.filter(n => n.line - 1 === textDocumentPosition.position.line && n.kind === AssemblyNodeKind.Instruction);
-            if (lineNodes.length > 0) {
-                const instruction = <Instruction> lineNodes[0];
-                
-                return <Hover> {
-                    contents: `${instruction.text} - cycles: ${sum(instruction.meta.cycles)} - bytes: [${instruction.meta.bytes.join(", ")}]`,
-                    range: { 
-                        start: { line:  instruction.line - 1, character: instruction.column - 1 },
-                        end: { line:  instruction.line - 1, character: instruction.column + instruction.text.length - 1 }
-                    }
-                };
-            }
+        const docNode = codeModelMgr.findNode(textDocumentPosition.textDocument.uri, textDocumentPosition.position);
+
+        if (docNode && docNode.node.kind === AssemblyNodeKind.Instruction) {
+            const instruction = <Instruction> docNode.node;
+            
+            return {
+                contents: `${instruction.text} - cycles: ${sum(instruction.meta.cycles)} - bytes: [${instruction.meta.bytes.join(", ")}]`,
+                range: { 
+                    start: { line:  instruction.line - 1, character: instruction.column - 1 },
+                    end: { line:  instruction.line - 1, character: instruction.column + instruction.text.length - 1 }
+                }
+            };
         }
 
         return undefined;
@@ -231,40 +225,43 @@ connection.onHover(
 
 connection.onDefinition(
     (textDocumentPosition): Location | null => {
-        const doc = codeModel.documents.find(d => d.uri === textDocumentPosition.textDocument.uri);
-        if (doc) {
-            const lineNodes = doc.nodes.filter(n => n.line - 1 === textDocumentPosition.position.line && n.kind === AssemblyNodeKind.Instruction);
-            // @ts-ignore: implicit any
-            if (lineNodes.length > 0 && lineNodes[0].external) {
-                const instruction = <Instruction> lineNodes[0];
-                
-                let label: AssemblyNode | undefined;
-                let targetDoc: AssemblyDocument | undefined;
+        const docNode = codeModelMgr.findNode(textDocumentPosition.textDocument.uri, textDocumentPosition.position);
 
-                for (let i = 0; i < codeModel.documents.length; i++) {
-                    const doc = codeModel.documents[i];
-                    label = doc.nodes.find(n => n.kind === AssemblyNodeKind.Label && n.text === instruction.external);
-                    if (label) {
-                        targetDoc = doc;
-                        break;
-                    }
-                }
+        if (docNode && docNode.node.kind === AssemblyNodeKind.Instruction) {
+            const instruction = <Instruction> docNode.node;
+            
+            let label: AssemblyNode | undefined;
+            let targetDoc: AssemblyDocument | undefined;
 
+            for (let i = 0; i < codeModelMgr.codeModel.documents.length; i++) {
+                const doc = codeModelMgr.codeModel.documents[i];
+                label = doc.nodes.find(n => n.kind === AssemblyNodeKind.Label && n.text === instruction.external);
                 if (label) {
-                    return <Location> {
-                        range: {
-                            start: { line: label.line, character: label.column - 1 },
-                            end: { line: label.line, character: label.column + label.text.length - 1 }
-                        },
-                        uri: targetDoc ? targetDoc.uri : textDocumentPosition.textDocument.uri
-                    };
+                    targetDoc = doc;
+                    break;
                 }
+            }
+
+            if (label) {
+                return {
+                    range: {
+                        start: { line: label.line, character: label.column - 1 },
+                        end: { line: label.line, character: label.column + label.text.length - 1 }
+                    },
+                    uri: targetDoc ? targetDoc.uri : textDocumentPosition.textDocument.uri
+                };
             }
         }
 
         return null;
     }
 );
+
+
+// connection.onReferences(ref => {
+//         ref.position
+//     }
+// );
 
 // Make the text document manager listen on the connection
 // for open, change and close text document events

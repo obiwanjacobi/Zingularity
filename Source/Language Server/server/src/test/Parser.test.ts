@@ -195,4 +195,19 @@ describe("Z80 Assembly Parser", () => {
         expect(node.column).toBe(1);
         expect(node.text).toContain("RST 28");
     });
+
+    it("whitespace: multiple lines", () => {
+        const parser = new Parser(parserProfile);
+        const nodes = parser.parse("\r\n    \r\n\r\n    ");
+        
+        let node = nodes[0];
+        expect(node.kind).toBe(AssemblyNodeKind.Whitespace);
+        expect(node.line).toBe(2);
+        expect(node.column).toBe(1);
+        
+        node = nodes[1];
+        expect(node.kind).toBe(AssemblyNodeKind.Whitespace);
+        expect(node.line).toBe(4);
+        expect(node.column).toBe(1);
+    });
 });

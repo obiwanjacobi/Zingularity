@@ -245,8 +245,8 @@ connection.onDefinition(
             if (label) {
                 return {
                     range: {
-                        start: { line: label.line, character: label.column - 1 },
-                        end: { line: label.line, character: label.column + label.text.length - 1 }
+                        start: { line: label.line - 1, character: label.column - 1 },
+                        end: { line: label.line - 1, character: label.column + label.text.length - 1 }
                     },
                     uri: targetDoc ? targetDoc.uri : textDocumentPosition.textDocument.uri
                 };

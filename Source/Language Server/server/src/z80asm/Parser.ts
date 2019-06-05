@@ -75,6 +75,10 @@ export class Parser {
                         token = "";
                         l++;
                         c = 1;
+                        capture();
+                    } else if (line === l && index + 1 < i) {
+                        l++;
+                        capture();
                     }
                     i++;
                     break;

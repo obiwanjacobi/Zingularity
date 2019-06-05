@@ -1,5 +1,5 @@
 import { AssemblyModel, AssemblyDocument, AssemblyNode } from "./CodeModel";
-import { Position } from "vscode-languageserver";
+import { Position, Range } from "vscode-languageserver";
 
 export class CodeModelManager {
     readonly codeModel: AssemblyModel = { documents: [] };
@@ -25,4 +25,15 @@ export class CodeModelManager {
 
         return undefined;
     }
+}
+
+export function toPosition(node: AssemblyNode) : Position {
+    return { line: node.line - 1, character: node.column - 1 };
+}
+
+export function toRange(node: AssemblyNode) : Range {
+    return { 
+        start: toPosition(node),
+        end: { line: node.line -1 , character: node.column + node.text.length - 1 }
+    };
 }

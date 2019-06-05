@@ -3,6 +3,7 @@ import { Instruction, AsmError } from "./CodeModel.js";
 import { splitInstruction } from "./InstructionSplitter.js";
 
 const byteLiteralKeys = ["d", "e", "n", "nn"];
+const hexPrefixes = ["$", "#"];
 
 interface OnNavigateMap {
     (parentMap: {}, newMap: {} | undefined, part: string, key: string): void;
@@ -71,7 +72,7 @@ export function buildCompletionList(token: string): CompletionInfo[] {
     let path: string[] = [];
 
     const map = navigateMap(parts, (parentMap, newMap, part) => {
-        if (part === "$" || part === "#") {
+        if (hexPrefixes.indexOf(part) >= 0) {
             return;
         }
         if (newMap) {
@@ -82,7 +83,7 @@ export function buildCompletionList(token: string): CompletionInfo[] {
     if (map) {
         const lastPart = parts[parts.length - 1];
         return Object.keys(map)
-            .filter(k => k.startsWith(lastPart))
+            .filter(k => k.startsWith(lastPart.toUpperCase()))
             .map(k => <CompletionInfo> { 
                 label: k, 
                 path: path.join()
@@ -96,8 +97,8 @@ export function buildInstruction(token: string, line: number, column: number): I
     let external = "";
     let err;
 
-    const map = navigateMapPath(token, (parentMap, newMap, part, key) => {
-        if (part === "$" || part === "#") {
+    const map = navigateMapPath(token, (_parentMap, newMap, part, key) => {
+        if (hexPrefixes.indexOf(part) >= 0) {
             return;
         }
 
@@ -117,10 +118,14 @@ export function buildInstruction(token: string, line: number, column: number): I
     // @ts-ignore: implicit any
     const meta = map["_"];
 
-    const bytes = Object.keys(meta["bytes"]);
-    const cycles = Object.keys(meta["cycles"]).map(k => Number(k));
-    const alt = meta["altCcyles"] ? Object.keys(meta["altCcyles"]).map(k => Number(k)) : [];
-    const flags = meta["flags"] ? Object.keys(meta["flags"]) : [];
+    if (meta) {
+        const bytes = Object.keys(meta["bytes"]);
+        const cycles = Object.keys(meta["cycles"]).map(k => Number(k));
+        const alt = meta["altCcyles"] ? Object.keys(meta["altCcyles"]).map(k => Number(k)) : [];
+        const flags = meta["flags"] ? Object.keys(meta["flags"]) : [];
 
-    return new Instruction({ bytes: bytes, cycles: cycles, altCycles: alt, flags: flags}, external, token, line, column);
+        return new Instruction({ bytes: bytes, cycles: cycles, altCycles: alt, flags: flags}, external, token, line, column);
+    }
+
+    return new AsmError(`Unrecognized text '${token}'`, token, line, column);
 }

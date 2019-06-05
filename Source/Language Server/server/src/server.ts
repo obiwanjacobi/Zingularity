@@ -17,7 +17,7 @@ import { AssemblyModel, AssemblyDocument, AssemblyNodeKind, Instruction, Assembl
 import { Parser, ParserProfile } from "./z80asm/Parser";
 import { buildCompletionList, findMap } from "./z80asm/InstructionNavigator";
 import { sum } from "./utils";
-import { CodeModelManager } from "./z80asm/CodeModelManager";
+import { CodeModelManager, toRange } from "./z80asm/CodeModelManager";
 
 // Create a connection for the server. The connection uses Node's IPC as a transport.
 // Also include all preview / proposed LSP features.
@@ -148,21 +148,18 @@ function validateTextDocument(textDocument: TextDocument): void {
     };
     codeModelMgr.setDocument(doc);
 
-    const errors = doc.nodes.filter(n => n.kind === AssemblyNodeKind.Error);
-    if (errors.length > 0) {
-        const diags = errors.map(e => {
+    const diags = doc.nodes
+        .filter(n => n.kind === AssemblyNodeKind.Error)
+        .map(e => {
             return {
                 severity: DiagnosticSeverity.Error,
-                range: {
-                    start: { line: e.line, character: e.column },
-                    end: { line: e.line, character: e.column + e.text.length }
-                },
+                range: toRange(e),
                 message: e.toString(),
                 source: "Zingularity"
             };
         });
-        connection.sendDiagnostics({ uri: textDocument.uri, diagnostics: diags });
-    }
+
+    connection.sendDiagnostics({ uri: textDocument.uri, diagnostics: diags });
 }
 
 connection.onDidChangeWatchedFiles(_change => {
@@ -176,14 +173,10 @@ connection.onCompletion(
     (textDocumentPosition: TextDocumentPositionParams): CompletionItem[] => {
         connection.console.log("Zingularity onCompletion");
 
-        const textDoc = documents.get(textDocumentPosition.textDocument.uri);
-        if (textDoc) {
-            const docText = textDoc.getText({
-                start: { line: textDocumentPosition.position.line, character: 0 },
-                end: { line: textDocumentPosition.position.line, character: textDocumentPosition.position.character }
-            });
-
-            return buildCompletionList(docText).map(v => <CompletionItem> { label: v.label, data: v.path, kind: CompletionItemKind.Unit });
+        const docNode = codeModelMgr.findNode(textDocumentPosition.textDocument.uri, textDocumentPosition.position);
+        if (docNode) {
+            return buildCompletionList(docNode.node.text)
+                .map(v => <CompletionItem> { label: v.label, data: v.path, kind: CompletionItemKind.Unit });
         }
 
         return [];
@@ -212,10 +205,7 @@ connection.onHover(
             
             return {
                 contents: `${instruction.text} - cycles: ${sum(instruction.meta.cycles)} - bytes: [${instruction.meta.bytes.join(", ")}]`,
-                range: { 
-                    start: { line:  instruction.line - 1, character: instruction.column - 1 },
-                    end: { line:  instruction.line - 1, character: instruction.column + instruction.text.length - 1 }
-                }
+                range: toRange(instruction)
             };
         }
 
@@ -244,10 +234,7 @@ connection.onDefinition(
 
             if (label) {
                 return {
-                    range: {
-                        start: { line: label.line - 1, character: label.column - 1 },
-                        end: { line: label.line - 1, character: label.column + label.text.length - 1 }
-                    },
+                    range: toRange(label),
                     uri: targetDoc ? targetDoc.uri : textDocumentPosition.textDocument.uri
                 };
             }

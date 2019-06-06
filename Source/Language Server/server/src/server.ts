@@ -13,7 +13,7 @@ import {
     Hover,
     Location
 } from "vscode-languageserver";
-import { AssemblyModel, AssemblyDocument, AssemblyNodeKind, Instruction, AssemblyNode } from "./z80asm/CodeModel";
+import { AssemblyModel, AssemblyDocument, AssemblyNodeKind, Instruction, AssemblyNode, Label } from "./z80asm/CodeModel";
 import { Parser, ParserProfile } from "./z80asm/Parser";
 import { buildCompletionList, findMap } from "./z80asm/InstructionNavigator";
 import { sum } from "./utils";
@@ -67,6 +67,7 @@ connection.onInitialize((params: InitializeParams) => {
             },
             hoverProvider: true,
             definitionProvider: true,
+            referencesProvider: true
         }
     };
 });
@@ -204,7 +205,7 @@ connection.onHover(
             const instruction = <Instruction> docNode.node;
             
             return {
-                contents: `${instruction.text} - cycles: ${sum(instruction.meta.cycles)} - bytes: [${instruction.meta.bytes.join(", ")}]`,
+                contents: `${instruction.text} - cycles: ${sum(instruction.meta.cycles)} - bytes: ${instruction.meta.bytes.join(", ")}`,
                 range: toRange(instruction)
             };
         }
@@ -245,10 +246,39 @@ connection.onDefinition(
 );
 
 
-// connection.onReferences(ref => {
-//         ref.position
-//     }
-// );
+connection.onReferences(ref => {
+    const docNode = codeModelMgr.findNode(ref.textDocument.uri, ref.position);
+    
+    let locations: Location[] = [];
+
+    if (docNode) {
+        let text = "";
+        if (docNode.node.kind === AssemblyNodeKind.Instruction) {
+            const instruction = <Instruction> docNode.node;
+            text = instruction.external;
+        }
+        if (docNode.node.kind === AssemblyNodeKind.Label) {
+            const label = <Label> docNode.node;
+            text = label.toString();
+        }
+
+        if (text.length > 0) {
+            for (let i = 0; i < codeModelMgr.codeModel.documents.length; i++) {
+                const doc = codeModelMgr.codeModel.documents[i];
+                locations.push(...doc.nodes
+                    .filter(n => 
+                        (n.kind === AssemblyNodeKind.Label && n.toString() === text && ref.context.includeDeclaration) || 
+                        (n.kind === AssemblyNodeKind.Instruction && (<Instruction> n).external === text))
+                    .map(n => {
+                        return { uri: doc.uri, range: toRange(n) };
+                    })
+                );
+            }
+        }
+    }
+
+    return locations;
+});
 
 // Make the text document manager listen on the connection
 // for open, change and close text document events

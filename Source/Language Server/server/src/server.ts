@@ -204,8 +204,9 @@ connection.onHover(
         if (docNode && docNode.node.kind === AssemblyNodeKind.Instruction) {
             const instruction = <Instruction> docNode.node;
             
+            const flags = instruction.meta.flags.length === 0 ? "" :  ` - flags: ${instruction.meta.flags.join("|")}`;
             return {
-                contents: `${instruction.text} - cycles: ${sum(instruction.meta.cycles)} - bytes: ${instruction.meta.bytes.join(", ")}`,
+                contents: `${instruction.text} - cycles: ${sum(instruction.meta.cycles)} - bytes: ${instruction.meta.bytes.join(", ")}${flags}`,
                 range: toRange(instruction)
             };
         }

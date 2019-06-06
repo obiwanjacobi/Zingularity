@@ -9,7 +9,7 @@
             _decls = decls;
         }
 
-        private class MapDictionary : Dictionary<string, MapDictionary> {}
+        private class MapDictionary : Dictionary<string, object> {}
 
         public override string TransformText()
         {
@@ -44,20 +44,53 @@
             foreach(var kvp in map)
             {
                 i++;
+                var m = kvp.Value as MapDictionary;
+                if (m != null) 
+                {
 #>
         "<#= kvp.Key #>": {
 <#+
-                RenderMap(kvp.Value);
-                if (i == map.Count)
-                {
+                
+                    RenderMap(m);
+                    if (i == map.Count)
+                    {
                 #>
         }
 <#+
-                } else {
+                    } else {
                 #>
         },
 <#+
+                    }
+                } else {
+                #>
+        "<#= kvp.Key #>": [
+<#+
+                    RenderList((List<string>)kvp.Value);
+                    if (i == map.Count)
+                    {
+                #>
+        ]
+<#+
+                    } else {
+                #>
+        ],
+<#+
+                    }
                 }
+            }
+        }
+
+        private void RenderList(List<string> values)
+        {
+            if (values.Count == 0) return;
+            int i = 0;
+            foreach(var value in values)
+            {
+                i++;
+#>
+        "<#= value #>"<#= i < values.Count ? ", " : "" #>
+<#+
             }
         }
 
@@ -81,7 +114,7 @@
                     curMap.Add(part, new MapDictionary());
                 }
 
-                if (part == "_" && curMap[part].Count > 0)
+                if (part == "_" && ((MapDictionary)curMap[part]).Count > 0)
                 {
                     var altPart = part;
                     do
@@ -95,7 +128,7 @@
                 } 
                 else
                 {
-                    curMap = curMap[part];
+                    curMap = (MapDictionary)curMap[part];
                 }
             }
 
@@ -105,46 +138,31 @@
         private void AddInstructionMeta(MapDictionary map, InstructionMeta meta)
         {
             var n = 0;
-            var m = new MapDictionary();
+            var l = new List<string>();
             foreach (var b in meta.Info.Bytes)
             {
-                if (b == "n")
+                if (b == "n" && meta.Info.Mnemonic.Contains("nn"))
                 {
+                    var ext = n == 0 ? "-lo" : "-hi";
+                    l.Add(b + ext);
                     n++;
-                    m[b + n] = new MapDictionary();
                 }
                 else
                 {
-                    m[b] = new MapDictionary();
+                    l.Add(b);
                 }
             }
-            map.Add("bytes", m);
-
-            m = new MapDictionary();
-            foreach (var c in meta.Info.Cycles)
-            {
-                m[c.ToString()] = new MapDictionary();
-            }
-            map.Add("cycles", m);
+            map.Add("bytes", l);
+            map.Add("cycles", meta.Info.Cycles.Select(c => c.ToString()).ToList());
 
             if (meta.Info.AltCycles.Count > 0)
             {
-                m = new MapDictionary();
-                foreach (var c in meta.Info.AltCycles)
-                {
-                    m[c.ToString()] = new MapDictionary();
-                }
-                map.Add("altCycles", m);
+                map.Add("altCycles", meta.Info.AltCycles.Select(c => c.ToString()).ToList());
             }
 
             if (meta.Info.Flags.Count > 0)
             {
-                m = new MapDictionary();
-                foreach (var f in meta.Info.Flags)
-                {
-                    m[f.Key] = new MapDictionary();
-                }
-                map.Add("flags", m);
+                map.Add("flags", meta.Info.Flags.Select(f => f.Key).ToList());
             }
         }
 

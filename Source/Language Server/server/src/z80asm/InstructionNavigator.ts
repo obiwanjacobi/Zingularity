@@ -119,10 +119,13 @@ export function buildInstruction(token: string, line: number, column: number): I
     const meta = map["_"];
 
     if (meta) {
-        const bytes = Object.keys(meta["bytes"]);
-        const cycles = Object.keys(meta["cycles"]).map(k => Number(k));
-        const alt = meta["altCcyles"] ? Object.keys(meta["altCcyles"]).map(k => Number(k)) : [];
-        const flags = meta["flags"] ? Object.keys(meta["flags"]) : [];
+        const bytes = meta["bytes"];
+        // @ts-ignore: implicit any
+        const cycles = meta["cycles"].map(k => Number(k));
+        // @ts-ignore: implicit any
+        const alt = meta["altCcyles"] ? meta["altCcyles"].map(k => Number(k)) : [];
+        // @ts-ignore: implicit any
+        const flags = meta["flags"] ? meta["flags"] : [];
 
         return new Instruction({ bytes: bytes, cycles: cycles, altCycles: alt, flags: flags}, external, token, line, column);
     }

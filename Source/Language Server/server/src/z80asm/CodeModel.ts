@@ -7,6 +7,7 @@ export enum AssemblyNodeKind {
     Instruction,
     Label,
     Whitespace,
+    Expression,
     Error
 }
 
@@ -48,8 +49,28 @@ export class Comment extends AssemblyNode {
 }
 
 export class Directive extends AssemblyNode {
+    readonly expression: Expression | undefined;
+
     constructor(text: string, line: number, column: number) {
         super(AssemblyNodeKind.Directive, text, line, column);
+    }
+}
+
+export class Expression extends AssemblyNode {
+    readonly left: Expression | undefined;
+    readonly right: Expression | undefined;
+    
+    constructor(left: Expression | undefined, right: Expression | undefined, token: string, line: number, column: number) {
+        super(AssemblyNodeKind.Expression, token, line, column);
+        this.left = left;
+        this.right = right;
+    }
+
+    toString(): string {
+        if (this.left && this.right) {
+            return `${this.left.toString()} ${this.text} ${this.right.toString()}`;    
+        }
+        return this.text;
     }
 }
 

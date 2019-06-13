@@ -32,7 +32,7 @@ const parserProfile: ParserProfile = {
     labelBegin: ".",
     labelEnd: ":",
     directives: ["section", "org"],
-    hex: ["$", "#"],
+    hex: ["$"],
  };
 
 let hasConfigurationCapability: boolean = false;

@@ -1,6 +1,5 @@
 import { AssemblyNode, Comment, Directive, Label, Whitespace, AsmError, Instruction } from "./CodeModel";
 import { buildInstruction } from "./InstructionNavigator";
-import { splitInstruction } from "./InstructionSplitter";
 
 enum ParserState {
     Pending,

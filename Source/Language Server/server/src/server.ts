@@ -32,7 +32,7 @@ const parserProfile: ParserProfile = {
         bin : { prefix: [""], postfix: [""] },
         oct : { prefix: [""], postfix: [""] },
         dec : { prefix: [""], postfix: [""] },
-        hex : { prefix: ["$"], postfix: [""] },
+        hex : { prefix: ["$", "#", "0x"], postfix: ["h", "H"] },
     },
     lineComment: ";",
     blockComment: [""],

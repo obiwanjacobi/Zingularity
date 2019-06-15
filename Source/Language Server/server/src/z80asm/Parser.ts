@@ -14,7 +14,7 @@ enum ParserState {
 
 export interface ParserProfile {
     // parsing chars
-    readonly numericProfile: NumericProfile;
+    readonly numericProfile: NumericProfile;    // pre and postfixes for numerics
     readonly lineComment: string;               // rest of line is comment after this
     readonly blockComment: string[];            // two items: start and end block comments
     readonly labelBegin: string;                // denoting a label
@@ -103,7 +103,6 @@ export class Parser {
                 case this.profile.lineComment:
                     if (!canChangeState()) {
                         this.addNode(nodes, state, token, line, column);
-                        // state = ParserState.Pending;
                         token = "";
                     }
 

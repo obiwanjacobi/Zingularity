@@ -7,7 +7,7 @@ export enum AssemblyNodeKind {
     Instruction,
     Label,
     Whitespace,
-    Number,
+    Numeric,
     Expression,
     Error
 }
@@ -84,7 +84,7 @@ export class Numeric extends AssemblyNode {
     readonly number: number;
 
     constructor(number: number, radix: Radix, bits: Bits, text: string, line: number, column: number) {
-        super(AssemblyNodeKind.Number, text, line, column);
+        super(AssemblyNodeKind.Numeric, text, line, column);
         this.number = number;
         this.radix = radix;
         this.bits = bits;

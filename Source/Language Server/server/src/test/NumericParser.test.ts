@@ -4,7 +4,7 @@ const profile = {
     bin : { prefix: [""], postfix: [""] },
     oct : { prefix: [""], postfix: [""] },
     dec : { prefix: [""], postfix: [""] },
-    hex : { prefix: ["$"], postfix: ["h"] },
+    hex : { prefix: ["$", "0x"], postfix: ["h"] },
 };
 
 describe("Numeric Parser", () => {
@@ -21,6 +21,15 @@ describe("Numeric Parser", () => {
         const numeric = parseNumeric(profile, "$42", 1, 1);
         
         expect(numeric.text).toBe("$42");
+        expect(numeric.number).toBe(66);
+        expect(numeric.bits).toBe(8);
+        expect(numeric.radix).toBe(16);
+    });
+
+    it("0x42", () => {
+        const numeric = parseNumeric(profile, "0x42", 1, 1);
+        
+        expect(numeric.text).toBe("0x42");
         expect(numeric.number).toBe(66);
         expect(numeric.bits).toBe(8);
         expect(numeric.radix).toBe(16);

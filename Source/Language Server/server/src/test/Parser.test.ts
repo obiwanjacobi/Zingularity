@@ -2,14 +2,22 @@ import { Parser, ParserProfile } from "../z80asm/Parser";
 import { AssemblyNode, AssemblyNodeKind, Instruction } from "../z80asm/CodeModel";
 
 const parserProfile: ParserProfile = { 
-    comment: ";", 
+    numericProfile: {
+        bin : { prefix: [""], postfix: [""] },
+        oct : { prefix: [""], postfix: [""] },
+        dec : { prefix: [""], postfix: [""] },
+        hex : { prefix: ["$"], postfix: [""] },
+    },
+    lineComment: ";", 
+    blockComment: [""],
     labelBegin: ".", 
     labelEnd: ":",
     directives: [
-        "EQU", 
+        "EQU",
+        "ORG",
         "SECTION"
     ],
-    hex: ["$"]
+    instructionSeparator: [""]
 };
 
 describe("Z80 Assembly Parser", () => {

@@ -1,10 +1,17 @@
 import { buildInstruction, buildCompletionList, findMap } from "../z80asm/InstructionNavigator";
 import { Instruction } from "../z80asm/CodeModel";
 
+const numericProfile = {
+    bin : { prefix: [""], postfix: [""] },
+    oct : { prefix: [""], postfix: [""] },
+    dec : { prefix: [""], postfix: [""] },
+    hex : { prefix: ["$"], postfix: [""] },
+};
+
 describe("Z80 Instruction Navigator", () => {
 
     it("buildInstruction: LD A, 0", () => {
-        const instr = buildInstruction("LD A, 0", 1, 1);
+        const instr = buildInstruction(numericProfile, "LD A, 0", 1, 1);
         expect(instr).toBeInstanceOf(Instruction);
 
         if (instr instanceof Instruction) {

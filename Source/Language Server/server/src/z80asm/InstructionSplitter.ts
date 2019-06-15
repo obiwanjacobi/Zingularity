@@ -43,6 +43,7 @@ export function splitInstruction(token: string): string[] {
         testAddCharAsPart(curChar, ")");
         testAddCharAsPart(curChar, ",");
         testAddCharAsPart(curChar, "+");
+        // TODO: get these from NumericProfile
         testAddCharAsPart(curChar, "$");
         testAddCharAsPart(curChar, "#");
 

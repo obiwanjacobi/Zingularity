@@ -1,5 +1,6 @@
 import { AssemblyNode, Comment, Directive, Label, Whitespace, AsmError, Instruction } from "./CodeModel";
 import { buildInstruction } from "./InstructionNavigator";
+import { NumericProfile } from "./NumericParser";
 
 enum ParserState {
     Pending,
@@ -13,11 +14,13 @@ enum ParserState {
 
 export interface ParserProfile {
     // parsing chars
-    readonly comment: string;
-    readonly labelBegin: string;
-    readonly labelEnd: string;
-    readonly directives: string[];
-    readonly hex: string[];
+    readonly numericProfile: NumericProfile;
+    readonly lineComment: string;               // rest of line is comment after this
+    readonly blockComment: string[];            // two items: start and end block comments
+    readonly labelBegin: string;                // denoting a label
+    readonly labelEnd: string;                  // ending a label (or with labelBegin)
+    readonly directives: string[];              // assembler directives (will be refctored out)
+    readonly instructionSeparator: string[];    // separator chars that allow multiple instructions on one line
 }
 
 export class Parser {
@@ -97,7 +100,7 @@ export class Parser {
                     nextTokenChar(curChar);
                     break;
                 
-                case this.profile.comment:
+                case this.profile.lineComment:
                     if (!canChangeState()) {
                         this.addNode(nodes, state, token, line, column);
                         // state = ParserState.Pending;
@@ -196,6 +199,6 @@ export class Parser {
     }
 
     private tryParseInstruction(token: string, line: number, col: number): Instruction | AsmError {
-        return buildInstruction(token, line, col);
+        return buildInstruction(this.profile.numericProfile, token, line, col);
     }
 }

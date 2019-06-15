@@ -7,6 +7,7 @@ export enum AssemblyNodeKind {
     Instruction,
     Label,
     Whitespace,
+    Number,
     Expression,
     Error
 }
@@ -74,6 +75,22 @@ export class Expression extends AssemblyNode {
     }
 }
 
+export type Radix = 2 | 8 | 10 | 16;
+export type Bits = 8 | 16;
+
+export class Numeric extends AssemblyNode {
+    readonly radix: Radix;
+    readonly bits: Bits;
+    readonly number: number;
+
+    constructor(number: number, radix: Radix, bits: Bits, text: string, line: number, column: number) {
+        super(AssemblyNodeKind.Number, text, line, column);
+        this.number = number;
+        this.radix = radix;
+        this.bits = bits;
+    }
+}
+
 export interface InstructionMeta {
     bytes: string[];
     cycles: number[];
@@ -84,11 +101,14 @@ export interface InstructionMeta {
 export class Instruction extends AssemblyNode {
     readonly meta: InstructionMeta;
     readonly external: string;
+    readonly numeric: Numeric | undefined;
 
-    constructor(meta: InstructionMeta, external: string, text: string, line: number, column: number) {
+    constructor(meta: InstructionMeta, external: string, numeric: Numeric | undefined, 
+                text: string, line: number, column: number) {
         super(AssemblyNodeKind.Instruction, text, line, column);
         this.meta = meta;
         this.external = external;
+        this.numeric = numeric;
     }
 }
 

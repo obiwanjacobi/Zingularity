@@ -28,11 +28,18 @@ let connection = createConnection(ProposedFeatures.all);
 const documents: TextDocuments = new TextDocuments();
 const codeModelMgr: CodeModelManager = new CodeModelManager();
 const parserProfile: ParserProfile = { 
-    comment: ";",
+    numericProfile: {
+        bin : { prefix: [""], postfix: [""] },
+        oct : { prefix: [""], postfix: [""] },
+        dec : { prefix: [""], postfix: [""] },
+        hex : { prefix: ["$"], postfix: [""] },
+    },
+    lineComment: ";",
+    blockComment: [""],
     labelBegin: ".",
     labelEnd: ":",
     directives: ["section", "org"],
-    hex: ["$"],
+    instructionSeparator: [""]
  };
 
 let hasConfigurationCapability: boolean = false;

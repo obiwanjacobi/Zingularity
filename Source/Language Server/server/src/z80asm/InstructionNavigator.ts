@@ -1,6 +1,7 @@
 import instructionMap from "./InstructionMap.json";
-import { Instruction, AsmError } from "./CodeModel.js";
+import { Instruction, AsmError, Numeric } from "./CodeModel.js";
 import { splitInstruction } from "./InstructionSplitter.js";
+import { parseNumeric, NumericProfile } from "./NumericParser.js";
 
 const byteLiteralKeys = ["d", "e", "n", "nn"];
 const hexPrefixes = ["$", "#"];
@@ -93,7 +94,8 @@ export function buildCompletionList(token: string): CompletionInfo[] {
     return [];
 }
 
-export function buildInstruction(token: string, line: number, column: number): Instruction | AsmError {
+export function buildInstruction(numericProfile: NumericProfile, token: string, line: number, column: number): Instruction | AsmError {
+    let numeric: Numeric | undefined = undefined;
     let external = "";
     let err;
 
@@ -106,8 +108,12 @@ export function buildInstruction(token: string, line: number, column: number): I
             err = new AsmError(`Unrecognized text '${part}' (${token})`, token, line, column);
         }
 
-        if (byteLiteralKeys.indexOf(key) >= 0 && isNaN(Number(part))) {
-            external = part;
+        if (byteLiteralKeys.indexOf(key) >= 0) { 
+            if (isNaN(Number(part))) {
+                external = part;
+            } else {
+                numeric = parseNumeric(numericProfile, part, line, column);
+            }
         }
     });
 
@@ -127,7 +133,18 @@ export function buildInstruction(token: string, line: number, column: number): I
         // @ts-ignore: implicit any
         const flags = meta["flags"] ? meta["flags"] : [];
 
-        return new Instruction({ bytes: bytes, cycles: cycles, altCycles: alt, flags: flags}, external, token, line, column);
+        return new Instruction({
+                bytes: bytes, 
+                cycles: cycles, 
+                altCycles: alt, 
+                flags: flags
+            },
+            external,
+            numeric,
+            token, 
+            line, 
+            column
+        );
     }
 
     return new AsmError(`Unrecognized text '${token}'`, token, line, column);

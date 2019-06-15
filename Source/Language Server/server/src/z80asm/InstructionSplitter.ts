@@ -10,42 +10,38 @@ export function splitInstruction(token: string): string[] {
         parts.push("");
     };
 
-    const testAddCharAsPart = (char: string, test: string) => {
+    const testAddCharAsPart = (char: string, test: string): boolean => {
         if (char === test) {
             if (parts[p].length > 0) {
                 nextPart();
             }
             parts[p] += char;
             nextPart();
+            return true;
         }
+
+        return false;
     };
 
     while (i < token.length) {
         const curChar = token.charAt(i);
-        const curCode = token.charCodeAt(i);
-
-        // A = 65, Z = 90
-        // a = 97, z = 122
 
         if (curChar === " " || curChar === "\t") {
             if (parts[p].length > 0) {
                 nextPart();
-                continue;
+            } else {
+                i++;
             }
+            continue;
         }
-        // A-Z || a-z || 0-9
-        if ((curCode >= 64 && curCode <= 90) ||
-            (curCode >= 97 && curCode <= 122) ||
-            (curCode >= 48 && curCode <= 57)) {
+
+        if (!testAddCharAsPart(curChar, "(") &&
+            !testAddCharAsPart(curChar, ")") &&
+            !testAddCharAsPart(curChar, ",") &&
+            !testAddCharAsPart(curChar, "+")) {
+
             parts[p] += curChar;
         }
-        testAddCharAsPart(curChar, "(");
-        testAddCharAsPart(curChar, ")");
-        testAddCharAsPart(curChar, ",");
-        testAddCharAsPart(curChar, "+");
-        // TODO: get these from NumericProfile
-        testAddCharAsPart(curChar, "$");
-        testAddCharAsPart(curChar, "#");
 
         i++;
     }

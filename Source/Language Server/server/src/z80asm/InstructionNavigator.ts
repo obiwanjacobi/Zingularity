@@ -4,7 +4,6 @@ import { splitInstruction } from "./InstructionSplitter.js";
 import { parseNumeric, NumericProfile } from "./NumericParser.js";
 
 const byteLiteralKeys = ["d", "e", "n", "nn"];
-const hexPrefixes = ["$", "#"];
 
 interface OnNavigateMap {
     (parentMap: {}, newMap: {} | undefined, part: string, key: string): void;
@@ -73,9 +72,6 @@ export function buildCompletionList(token: string): CompletionInfo[] {
     let path: string[] = [];
 
     const map = navigateMap(parts, (parentMap, newMap, part) => {
-        if (hexPrefixes.indexOf(part) >= 0) {
-            return;
-        }
         if (newMap) {
             path.push(part);
         }
@@ -100,19 +96,15 @@ export function buildInstruction(numericProfile: NumericProfile, token: string, 
     let err;
 
     const map = navigateMapPath(token, (_parentMap, newMap, part, key) => {
-        if (hexPrefixes.indexOf(part) >= 0) {
-            return;
-        }
-
         if (!newMap) {
             err = new AsmError(`Unrecognized text '${part}' (${token})`, token, line, column);
         }
 
-        if (byteLiteralKeys.indexOf(key) >= 0) { 
-            if (isNaN(Number(part))) {
+        if (byteLiteralKeys.indexOf(key) >= 0) {
+            numeric = parseNumeric(numericProfile, part, line, column);
+            if (isNaN(numeric.number)) {
                 external = part;
-            } else {
-                numeric = parseNumeric(numericProfile, part, line, column);
+                numeric = undefined;
             }
         }
     });

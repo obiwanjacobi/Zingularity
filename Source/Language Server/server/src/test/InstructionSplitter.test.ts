@@ -16,8 +16,7 @@ describe("Z80 Instruction splitter", () => {
         expect(parts[2]).toBe("HL");
         expect(parts[3]).toBe(")");
         expect(parts[4]).toBe(",");
-        expect(parts[5]).toBe("$");
-        expect(parts[6]).toBe("0000");
+        expect(parts[5]).toBe("$0000");
     });
 
     it("ld (hl), $0000", () => {
@@ -29,8 +28,7 @@ describe("Z80 Instruction splitter", () => {
         expect(parts[4]).toBe("6");
         expect(parts[5]).toBe(")");
         expect(parts[6]).toBe(",");
-        expect(parts[7]).toBe("$");
-        expect(parts[8]).toBe("0000");
+        expect(parts[7]).toBe("$0000");
     });
 
     it("CALL NZ, label", () => {

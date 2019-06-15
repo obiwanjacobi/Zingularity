@@ -89,6 +89,14 @@ export class Numeric extends AssemblyNode {
         this.radix = radix;
         this.bits = bits;
     }
+
+    loString(radix: number): string {
+        return (this.number & 255).toString(radix);
+    }
+
+    hiString(radix: number): string {
+        return (this.number >> 8).toString(radix);
+    }
 }
 
 export interface InstructionMeta {

@@ -4,6 +4,7 @@ import { splitInstruction } from "./InstructionSplitter.js";
 import { parseNumeric, NumericProfile } from "./NumericParser.js";
 
 const byteLiteralKeys = ["d", "e", "n", "nn"];
+const byteReplaceKeys = ["d", "e", "n", "n-lo", "n-hi"];
 
 interface OnNavigateMap {
     (parentMap: {}, newMap: {} | undefined, part: string, key: string): void;
@@ -91,7 +92,7 @@ export function buildCompletionList(token: string): CompletionInfo[] {
 }
 
 export function buildInstruction(numericProfile: NumericProfile, token: string, line: number, column: number): Instruction | AsmError {
-    let numeric: Numeric | undefined = undefined;
+    let numeric: Numeric | undefined;
     let external = "";
     let err;
 
@@ -117,13 +118,24 @@ export function buildInstruction(numericProfile: NumericProfile, token: string, 
     const meta = map["_"];
 
     if (meta) {
-        const bytes = meta["bytes"];
+        let bytes = <string[]> meta["bytes"];
+        if (numeric) {
+            const n = bytes.findIndex(b => byteReplaceKeys.filter(k => k.length == 1).indexOf(b) >= 0);
+            if (n >= 0) {
+                bytes[n] = numeric.loString(16);
+            } else {
+                const lo = bytes.findIndex(b => b === byteReplaceKeys[3]);
+                const hi = bytes.findIndex(b => b === byteReplaceKeys[4]);
+                bytes[lo] = numeric.loString(16);
+                bytes[hi] = numeric.hiString(16);
+            }
+        }
+        
         // @ts-ignore: implicit any
-        const cycles = meta["cycles"].map(k => Number(k));
+        const cycles = <number[]> meta["cycles"].map(k => Number(k));
         // @ts-ignore: implicit any
-        const alt = meta["altCcyles"] ? meta["altCcyles"].map(k => Number(k)) : [];
-        // @ts-ignore: implicit any
-        const flags = meta["flags"] ? meta["flags"] : [];
+        const alt = <numerb[]> meta["altCcyles"] ? meta["altCcyles"].map(k => Number(k)) : [];
+        const flags = <string[]> meta["flags"] ? meta["flags"] : [];
 
         return new Instruction({
                 bytes: bytes, 

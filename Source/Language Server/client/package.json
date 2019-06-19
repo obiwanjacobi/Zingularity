@@ -7,7 +7,7 @@
 	"publisher": "Jacobi Software",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/obiwanjacobi/Zingularity"
+		"url": "https://github.com/obiwanjacobi/Zingularity.git"
 	},
 	"engines": {
 		"vscode": "^1.23.0"

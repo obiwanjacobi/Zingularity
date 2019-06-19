@@ -35,11 +35,9 @@ const parserProfile: ParserProfile = {
         hex : { prefix: ["$", "#", "0x"], postfix: ["h", "H"] },
     },
     lineComment: ";",
-    blockComment: [""],
     labelBegin: ".",
     labelEnd: ":",
-    directives: ["section", "org"],
-    instructionSeparator: [""]
+    directives: ["section", "org", "equ"]
  };
 
 let hasConfigurationCapability: boolean = false;

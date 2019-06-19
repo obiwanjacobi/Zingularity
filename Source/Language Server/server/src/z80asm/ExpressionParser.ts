@@ -127,6 +127,11 @@ function buildExpressionTree(tokens: Token[]): TreeNode {
         root.left = valStack.pop();
         return root;
     }
+    // single value expression
+    root = valStack.pop();
+    if (root) {
+        return root;
+    }
 
     throw Error("Syntax error in expression");
 }

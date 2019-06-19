@@ -1,7 +1,9 @@
+cval: equ $AA
+
 ; comment 2
 label2:
     in a, (c)
     ret
 
-label3:
+.label3
     out (c), a

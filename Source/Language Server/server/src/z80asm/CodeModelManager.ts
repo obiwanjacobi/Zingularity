@@ -15,7 +15,7 @@ export class CodeModelManager {
 
     findNode(uri: string, position: Position): {document: AssemblyDocument, node: AssemblyNode} | undefined {
         const doc = this.codeModel.documents.find(d => d.uri === uri);
-        if (doc) {
+        if (doc && doc.nodes && doc.nodes.length > 0) {
             const node = doc.nodes
                 .filter(n => n.line - 1 === position.line)
                 .reduce((prevNode, thisNode) => thisNode.column - 1 > position.character ? prevNode : thisNode);

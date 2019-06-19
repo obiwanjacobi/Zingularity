@@ -9,15 +9,13 @@ const parserProfile: ParserProfile = {
         hex : { prefix: ["$"], postfix: [""] },
     },
     lineComment: ";", 
-    blockComment: [""],
     labelBegin: ".", 
     labelEnd: ":",
     directives: [
         "EQU",
         "ORG",
         "SECTION"
-    ],
-    instructionSeparator: [""]
+    ]
 };
 
 describe("Z80 Assembly Parser", () => {
@@ -140,17 +138,23 @@ describe("Z80 Assembly Parser", () => {
         expect(node.text).toContain("SECTION");
     });
 
-    // it("directive - mismatch case", () => {
-    //     const parser = new Parser(parserProfile);
-    //     const nodes = parser.parse("section");
-    //     const node = nodes[0];
+    it("directive with param", () => {
+        const parser = new Parser(parserProfile);
+        const nodes = parser.parse(".Label EQU $1000");
+        let node = nodes[0];
 
-    //     expect(node.kind).toBe(AssemblyNodeKind.Error);
-    //     expect(node.line).toBe(1);
-    //     expect(node.column).toBe(1);
-    //     expect(node.index).toBe(0);
-    //     expect(node.text).toContain("section");
-    // });
+        expect(node.kind).toBe(AssemblyNodeKind.Label);
+        expect(node.line).toBe(1);
+        expect(node.column).toBe(1);
+        expect(node.text).toContain("Label");
+        
+        node = nodes[1];
+        expect(node.kind).toBe(AssemblyNodeKind.Whitespace);
+        
+        node = nodes[2];
+        expect(node.kind).toBe(AssemblyNodeKind.Directive);
+        expect(node.text).toContain("EQU $1000");
+    });
 
     it("instruction", () => {
         const parser = new Parser(parserProfile);

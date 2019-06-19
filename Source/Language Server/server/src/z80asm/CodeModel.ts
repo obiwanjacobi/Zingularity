@@ -1,7 +1,7 @@
 import { VersionedTextDocumentIdentifier } from "vscode-languageserver";
 
 export enum AssemblyNodeKind {
-    Unknown,
+    Token,
     Comment,
     Directive,
     Instruction,
@@ -12,7 +12,7 @@ export enum AssemblyNodeKind {
     Error
 }
 
-export abstract class AssemblyNode {
+export class AssemblyNode {
     readonly kind: AssemblyNodeKind;
     readonly line: number;
     readonly column: number;
@@ -52,8 +52,9 @@ export class Comment extends AssemblyNode {
 export class Directive extends AssemblyNode {
     readonly expression: Expression | undefined;
 
-    constructor(text: string, line: number, column: number) {
+    constructor(expression: Expression | undefined, text: string, line: number, column: number) {
         super(AssemblyNodeKind.Directive, text, line, column);
+        this.expression = expression;
     }
 }
 
@@ -90,11 +91,11 @@ export class Numeric extends AssemblyNode {
         this.bits = bits;
     }
 
-    loString(radix: number): string {
+    loString(radix: Radix): string {
         return (this.number & 255).toString(radix);
     }
 
-    hiString(radix: number): string {
+    hiString(radix: Radix): string {
         return (this.number >> 8).toString(radix);
     }
 }

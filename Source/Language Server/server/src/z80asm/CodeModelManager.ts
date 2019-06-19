@@ -7,7 +7,7 @@ export class CodeModelManager {
     setDocument(doc: AssemblyDocument) {
         const i = this.codeModel.documents.findIndex(d => d.uri === doc.uri);
         if (i >= 0) {
-            this.codeModel.documents.splice(i, 1, doc);
+            this.codeModel.documents[i] = doc;
         } else {
             this.codeModel.documents.push(doc);
         }

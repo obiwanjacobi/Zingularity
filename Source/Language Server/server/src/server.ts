@@ -47,7 +47,7 @@ let hasDiagnosticRelatedInformationCapability: boolean = false;
 connection.onInitialize((params: InitializeParams) => {
     connection.console.log("Zingularity Initialize");
 
-    let capabilities = params.capabilities;
+    const capabilities = params.capabilities;
 
     // Does the client support the `workspace/configuration` request?
     // If not, we will fall back using global settings
@@ -68,6 +68,7 @@ connection.onInitialize((params: InitializeParams) => {
         capabilities: {
             textDocumentSync: documents.syncKind,
             completionProvider: {
+                triggerCharacters: ["\t", " ", ",", "("],
                 resolveProvider: true
             },
             hoverProvider: true,

@@ -9,7 +9,7 @@
 			"runtimeExecutable": "${execPath}",
 			"args": [
 				"--extensionDevelopmentPath=${workspaceRoot}", 
-				"${workspaceRoot}/client/src/test/testFixture/syntaxTest.z80"
+				"${workspaceRoot}/client/src/test/testFixture"
 			],
 			"outFiles": ["${workspaceRoot}/client/out/**/*.js"],
 			// "preLaunchTask": { "type": "npm", "script": "watch" }

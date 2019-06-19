@@ -3,7 +3,7 @@
 	"description": "Zingularity VSCode Language Server.",
 	"version": "0.1.0",
 	"author": "Marc Jacobi",
-	"publisher": "Jacobi Software",
+	"publisher": "JacobiSoftware",
 	"license": "MIT",
 	"engines": {
 		"node": "*"

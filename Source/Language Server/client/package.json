@@ -2,8 +2,8 @@
 	"name": "zingularity-client",
 	"description": "Zingularity VSCode Language Client.",
 	"author": "Marc Jacobi",
-	"license": "MIT",
 	"version": "0.0.1",
+	"license": "LGPL-2.1-only",
 	"publisher": "JacobiSoftware",
 	"repository": {
 		"type": "git",

@@ -3,14 +3,14 @@
 	"description": "Zingularity VSCode Language Server.",
 	"version": "0.1.0",
 	"author": "Marc Jacobi",
+	"license": "LGPL-2.1-only",
 	"publisher": "JacobiSoftware",
-	"license": "MIT",
 	"engines": {
 		"node": "*"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/obiwanjacobi/Zingularity"
+		"url": "https://github.com/obiwanjacobi/Zingularity.git"
 	},
 	"dependencies": {
 		"vscode-languageserver": "^4.1.3"

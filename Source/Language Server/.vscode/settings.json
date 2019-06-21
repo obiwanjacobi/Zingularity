@@ -11,5 +11,6 @@
 		"**/.DS_Store": true,
 		"**/node_modules": true,
 		"**/out": true,
+		"**/dist": true,
 	}
 }

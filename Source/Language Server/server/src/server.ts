@@ -11,9 +11,11 @@ import {
     TextDocumentPositionParams,
     Diagnostic,
     Hover,
-    Location
+    Location,
+    SymbolInformation,
+    SymbolKind
 } from "vscode-languageserver";
-import { AssemblyModel, AssemblyDocument, AssemblyNodeKind, Instruction, AssemblyNode, Label } from "./z80asm/CodeModel";
+import { AssemblyDocument, AssemblyNodeKind, Instruction, AssemblyNode, Label } from "./z80asm/CodeModel";
 import { Parser, ParserProfile } from "./z80asm/Parser";
 import { buildCompletionList, findMap } from "./z80asm/InstructionNavigator";
 import { sum } from "./utils";
@@ -73,7 +75,8 @@ connection.onInitialize((params: InitializeParams) => {
             },
             hoverProvider: true,
             definitionProvider: true,
-            referencesProvider: true
+            referencesProvider: true,
+            documentSymbolProvider: true
         }
     };
 });
@@ -247,6 +250,18 @@ connection.onReferences(ref => {
     }
 
     return [];
+});
+
+connection.onDocumentSymbol(docSymbolParams => {
+    const symbols = codeModelMgr.codeModel.symbols.findSymbols(docSymbolParams.textDocument.uri);
+    return symbols.map(s => <SymbolInformation> { 
+        name: s.symbol, 
+        kind: SymbolKind.Constant, 
+        location: { 
+            uri: s.reference.document.uri, 
+            range: toRange(s.reference.node) 
+        } 
+    });
 });
 
 // Make the text document manager listen on the connection

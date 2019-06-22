@@ -158,6 +158,11 @@ export interface SymbolReference {
     document: AssemblyDocument;
 }
 
+export interface DocumentSymbol {
+    symbol: string;
+    reference: SymbolReference;
+}
+
 export class Symbol {
     readonly name: string;
     private readonly _references: Set<SymbolReference>;
@@ -266,6 +271,18 @@ export class SymbolTable {
             return sym.declaration;
         }
         return undefined;
+    }
+
+    findSymbols(docUri: string): DocumentSymbol[] {
+        const symbols = new Array<DocumentSymbol>();
+
+        this.table.forEach(s => {
+            if (s.declaration && s.declaration.document.uri === docUri) {
+                symbols.push({ symbol: s.name, reference: s.declaration });
+            }
+        });
+
+        return symbols;
     }
 
     private toSymbol(node: AssemblyNode): string {

@@ -3,7 +3,7 @@
 	"description": "Zingularity, A Z80 Assembler IDE",
 	"author": "Marc Jacobi",
 	"license": "LGPL-2.1-only",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/obiwanjacobi/Zingularity.git"
@@ -69,7 +69,8 @@
 		"watch": "tsc -b -w",
 		"postinstall": "cd client && npm install && cd ../server && npm install && cd ..",
 		"test": "jest",
-		"package": "git clean -xfd node_modules && npm install && vsce package"
+		"package": "git clean -xfd node_modules && npm install && vsce package",
+		"publish": "vsce publish"
 	},
 	"devDependencies": {
 		"@types/jest": "^24.0.13",

@@ -1,8 +1,13 @@
-import { AssemblyModel, AssemblyDocument, AssemblyNode } from "./CodeModel";
+import { AssemblyModel, AssemblyDocument, AssemblyNode, SymbolTable, SymbolProfile, CasingMatch, CasingRule } from "./CodeModel";
 import { Position, Range } from "vscode-languageserver";
 
+const symbolProfile: SymbolProfile = {
+    matchCasing: CasingMatch.CaseSensitive,
+    nameCasing: CasingRule.Mixed
+};
+
 export class CodeModelManager {
-    readonly codeModel: AssemblyModel = { documents: [] };
+    readonly codeModel: AssemblyModel = { documents: [], symbols: new SymbolTable(symbolProfile) };
 
     setDocument(doc: AssemblyDocument) {
         const i = this.codeModel.documents.findIndex(d => d.uri === doc.uri);
@@ -11,6 +16,8 @@ export class CodeModelManager {
         } else {
             this.codeModel.documents.push(doc);
         }
+
+        this.codeModel.symbols.addDoc(doc);
     }
 
     findNode(uri: string, position: Position): {document: AssemblyDocument, node: AssemblyNode} | undefined {

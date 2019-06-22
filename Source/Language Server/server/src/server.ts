@@ -221,30 +221,13 @@ connection.onHover(
     }
 );
 
-connection.onDefinition(
-    (textDocumentPosition): Location | null => {
+connection.onDefinition((textDocumentPosition): Location | null => {
         const docNode = codeModelMgr.findNode(textDocumentPosition.textDocument.uri, textDocumentPosition.position);
 
-        if (docNode && docNode.node.kind === AssemblyNodeKind.Instruction) {
-            const instruction = <Instruction> docNode.node;
-            
-            let label: AssemblyNode | undefined;
-            let targetDoc: AssemblyDocument | undefined;
-
-            for (let i = 0; i < codeModelMgr.codeModel.documents.length; i++) {
-                const doc = codeModelMgr.codeModel.documents[i];
-                label = doc.nodes.find(n => n.kind === AssemblyNodeKind.Label && n.text === instruction.external);
-                if (label) {
-                    targetDoc = doc;
-                    break;
-                }
-            }
-
-            if (label) {
-                return {
-                    range: toRange(label),
-                    uri: targetDoc ? targetDoc.uri : textDocumentPosition.textDocument.uri
-                };
+        if (docNode) {
+            const decl = codeModelMgr.codeModel.symbols.findDeclaration(docNode.node);
+            if (decl) {
+                return { uri: decl.document.uri, range: toRange(decl.node) };
             }
         }
 
@@ -256,35 +239,14 @@ connection.onDefinition(
 connection.onReferences(ref => {
     const docNode = codeModelMgr.findNode(ref.textDocument.uri, ref.position);
     
-    let locations: Location[] = [];
-
     if (docNode) {
-        let text = "";
-        if (docNode.node.kind === AssemblyNodeKind.Instruction) {
-            const instruction = <Instruction> docNode.node;
-            text = instruction.external;
-        }
-        if (docNode.node.kind === AssemblyNodeKind.Label) {
-            const label = <Label> docNode.node;
-            text = label.toString();
-        }
-
-        if (text.length > 0) {
-            for (let i = 0; i < codeModelMgr.codeModel.documents.length; i++) {
-                const doc = codeModelMgr.codeModel.documents[i];
-                locations.push(...doc.nodes
-                    .filter(n => 
-                        (n.kind === AssemblyNodeKind.Label && n.toString() === text && ref.context.includeDeclaration) || 
-                        (n.kind === AssemblyNodeKind.Instruction && (<Instruction> n).external === text))
-                    .map(n => {
-                        return { uri: doc.uri, range: toRange(n) };
-                    })
-                );
-            }
-        }
+        const refs = codeModelMgr.codeModel.symbols.findReferences(docNode.node);
+        return refs.map(r => { 
+            return {uri: r.document.uri, range: toRange(r.node) };
+        });
     }
 
-    return locations;
+    return [];
 });
 
 // Make the text document manager listen on the connection

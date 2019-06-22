@@ -12,7 +12,8 @@ let client: LanguageClient;
 export function activate(context: ExtensionContext) {
     // The server is implemented in node
     let serverModule = context.asAbsolutePath(
-        path.join("dist", "server.js")
+        // path.join("dist", "server.js")
+        path.join("server", "out", "server.js")
     );
 
     // The debug options for the server

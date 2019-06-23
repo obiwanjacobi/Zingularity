@@ -8,10 +8,14 @@ const ignoreNodes = [
 ];
 
 export interface SerializerProfile {
-    tabSize: number;
-    insertSpaces: boolean;
-    newLine: string;
-    columnTabs: number[];   // 3 columns
+    tabSize: number;        // how many chars does one tab represent?
+    insertSpaces: boolean;  // use spaces instead of tab
+    newLine: string;        // what new-line character(s) to use
+    columnTabs: number[];   // 3 column layout
+
+    // TODO
+    //maxEmptyLines: number;    // max number of consegutive empty lines
+    //emptyLineAfterRet: boolean;   // insert an empty line after each 'ret' operation
 }
 
 export class DocumentSerializer {
@@ -31,13 +35,13 @@ export class DocumentSerializer {
         const lines = toLines(nodes, n => ignoreNodes.indexOf(n.kind) < 0);
         let lastLine = 1;
         let output = "";
-        
+
         lines.forEach(l => {
-            // insignificant whitespace may be skipping lines
-            // while (lastLine < l.line) {
-            //     output += this.profile.newLine;
-            //     lastLine++;
-            // }
+            // nodes may be skipping lines
+            while (lastLine < l.line) {
+                output += this.profile.newLine;
+                lastLine++;
+            }
 
             let line = "";
 
@@ -46,10 +50,10 @@ export class DocumentSerializer {
                 switch(node.kind) {
                     case AssemblyNodeKind.Label:
                     case AssemblyNodeKind.Comment:
-                        line += this.tab(line.length, this.profile.columnTabs[0]);
+                        line += this.tab(0, this.profile.columnTabs[0]);
                         break;
                     default:
-                        line += this.tab(line.length, this.profile.columnTabs[1]);
+                        line += this.tab(0, this.profile.columnTabs[1]);
                         break;
                 }
 
@@ -61,8 +65,11 @@ export class DocumentSerializer {
                 });
             }
 
-            output += line + this.profile.newLine;
+            output += line;
         });
+
+        // always end with an new line
+        output += this.profile.newLine;
 
         return output;
     }
@@ -107,7 +114,7 @@ export class DocumentSerializer {
     }
 
     private serializeComment(comment: Comment): string {
-        return `; ${comment.toString()}`;
+        return comment.toString();
     }
 
     private columnTabs(kind: AssemblyNodeKind): number {

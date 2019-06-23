@@ -6,5 +6,9 @@ label:      ; inline comment on label
     RST 28
     JP label2
     DEC D
-    
-    
+
+
+
+
+    CPL A
+    SCF

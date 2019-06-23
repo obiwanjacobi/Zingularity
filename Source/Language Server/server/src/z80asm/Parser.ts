@@ -102,14 +102,15 @@ export class Parser {
                     break;
                 
                 case this.profile.lineComment:
-                    if (!canChangeState()) {
+                    if (!canChangeState() && state != ParserState.Comment) {
                         this.addNode(nodes, state, token, line, column);
                         token = "";
                     }
-
-                    state = ParserState.Comment;
-                    capture();
-                    increment();
+                    if (state != ParserState.Comment) {
+                        state = ParserState.Comment;
+                        capture();
+                    }
+                    nextTokenChar(curChar);
                     break;
 
                 case this.profile.labelBegin:
@@ -117,17 +118,15 @@ export class Parser {
                     {
                         state = ParserState.LabelBegin;
                         capture();
-                        increment();
-                    } else {
-                        nextTokenChar(curChar);
                     }
+                    nextTokenChar(curChar);
                     break;
                 case this.profile.labelEnd:
                     if (state === ParserState.Pending || state === ParserState.NewLine)
                     {
                         state = ParserState.LabelEnd;
+                        nextTokenChar(curChar);
                         this.addNode(nodes, state, token, line, column);
-                        increment();
                         state = ParserState.Pending;
                         token = "";
                     } else {

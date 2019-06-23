@@ -27,8 +27,7 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Comment);
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
-        expect(node.text).not.toContain(";");
-        expect(node.text).toContain("hello world!");
+        expect(node.text).toContain("; hello world!");
     });
 
     it("single line comment /w newline", () => {
@@ -39,9 +38,21 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Comment);
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
-        expect(node.text).not.toContain(";");
-        expect(node.text).toContain("hello world!");
+        expect(node.text).toContain("; hello world!");
     });
+
+    it("single line comment /w repeated ;", () => {
+        const parser = new Parser(parserProfile);
+        const nodes = parser.parse(";;;;;;;;");
+        expect(nodes.length).toBe(1);
+        const node = nodes[0];
+
+        expect(node.kind).toBe(AssemblyNodeKind.Comment);
+        expect(node.line).toBe(1);
+        expect(node.column).toBe(1);
+        expect(node.text).toContain(";;;;;;;");
+    });
+
 
     it("two single line comment /w newline and whitespace", () => {
         const parser = new Parser(parserProfile);
@@ -51,8 +62,7 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Comment);
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
-        expect(node.text).not.toContain(";");
-        expect(node.text).toContain("hello world!");
+        expect(node.text).toContain("; hello world!");
 
         node = nodes[1];
         expect(node.kind).toBe(AssemblyNodeKind.Whitespace);
@@ -63,8 +73,7 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Comment);
         expect(node.line).toBe(2);
         expect(node.column).toBe(3);
-        expect(node.text).not.toContain(";");
-        expect(node.text).toContain("bye bye");
+        expect(node.text).toContain("; bye bye");
         expect(node.text).toContain("      ");
     });
 
@@ -76,8 +85,7 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Label);
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
-        expect(node.text).not.toContain(".");
-        expect(node.text).toContain("label");
+        expect(node.text).toContain(".label");
     });
 
     it("label begin /w whitespace", () => {
@@ -88,9 +96,8 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Label);
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
-        expect(node.text).not.toContain(".");
         expect(node.text).not.toContain(" ");
-        expect(node.text).toContain("label");
+        expect(node.text).toContain(".label");
 
         node = nodes[1];
         expect(node.kind).toBe(AssemblyNodeKind.Whitespace);
@@ -106,8 +113,7 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Label);
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
-        expect(node.text).not.toContain(":");
-        expect(node.text).toContain("label");
+        expect(node.text).toContain("label:");
     });
 
     it("label end /w whitespace", () => {
@@ -118,8 +124,7 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Label);
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
-        expect(node.text).not.toContain(":");
-        expect(node.text).toContain("label");
+        expect(node.text).toContain("label:");
 
         node = nodes[1];
         expect(node.kind).toBe(AssemblyNodeKind.Whitespace);
@@ -146,7 +151,7 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Label);
         expect(node.line).toBe(1);
         expect(node.column).toBe(1);
-        expect(node.text).toContain("Label");
+        expect(node.text).toContain(".Label");
         
         node = nodes[1];
         expect(node.kind).toBe(AssemblyNodeKind.Whitespace);
@@ -194,7 +199,7 @@ describe("Z80 Assembly Parser", () => {
         expect(node.kind).toBe(AssemblyNodeKind.Comment);
         expect(node.line).toBe(1);
         expect(node.column).toBe(16);
-        expect(node.text).toContain("comment");
+        expect(node.text).toContain("; comment");
     });
 
     it("instruction: RST", () => {

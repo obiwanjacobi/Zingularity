@@ -9,16 +9,14 @@ import {
     CompletionItem,
     CompletionItemKind,
     TextDocumentPositionParams,
-    Diagnostic,
     Hover,
     Location,
     SymbolInformation,
     SymbolKind,
-    TextEdit
 } from "vscode-languageserver";
-import { AssemblyDocument, AssemblyNodeKind, Instruction, AssemblyNode, Label } from "./z80asm/CodeModel";
+import { AssemblyDocument, AssemblyNodeKind, Instruction } from "./z80asm/CodeModel";
 import { Parser, ParserProfile } from "./z80asm/Parser";
-import { buildCompletionList, findMap } from "./z80asm/InstructionNavigator";
+import { buildCompletionList } from "./z80asm/InstructionNavigator";
 import { sum } from "./utils";
 import { CodeModelManager, toRange, rangeFrom } from "./z80asm/CodeModelManager";
 import { DocumentSerializer } from "./z80asm/DocumentSerializer";
@@ -85,7 +83,6 @@ connection.onInitialize((params: InitializeParams) => {
 });
 
 connection.onInitialized(() => {
-    connection.console.log("Zingularity onInitialized");
     if (hasConfigurationCapability) {
         // Register for all configuration changes.
         connection.client.register(DidChangeConfigurationNotification.type, undefined);
@@ -95,6 +92,8 @@ connection.onInitialized(() => {
             connection.console.log("Workspace folder change event received.");
         });
     }
+
+    connection.console.log("Zingularity Initialized");
 });
 
 // The server settings
@@ -109,14 +108,14 @@ const defaultSettings: ZingularitySettings = { maxNumberOfProblems: 100 };
 let globalSettings: ZingularitySettings = defaultSettings;
 
 // Cache the settings of all open documents
-let documentSettings: Map<string, Thenable<ZingularitySettings>> = new Map();
+const documentSettings: Map<string, Thenable<ZingularitySettings>> = new Map();
 
 connection.onDidChangeConfiguration(change => {
     if (hasConfigurationCapability) {
         // Reset all cached document settings
         documentSettings.clear();
     } else {
-        globalSettings = <ZingularitySettings>(
+        globalSettings = <ZingularitySettings> (
             (change.settings.languageServerExample || defaultSettings)
         );
     }
@@ -133,7 +132,7 @@ function getDocumentSettings(resource: string): Thenable<ZingularitySettings> {
     if (!result) {
         result = connection.workspace.getConfiguration({
             scopeUri: resource,
-            section: "z80assembler"
+            section: "zingularity"
         });
         documentSettings.set(resource, result);
     }
@@ -152,7 +151,7 @@ documents.onDidChangeContent(change => {
     validateTextDocument(change.document);
 });
 
-function validateTextDocument(textDocument: TextDocument): void {
+async function validateTextDocument(textDocument: TextDocument): Promise<void> {
     const parser = (new Parser(parserProfile));
     const doc: AssemblyDocument = { 
         nodes: parser.parse(textDocument.getText()), 
@@ -161,8 +160,11 @@ function validateTextDocument(textDocument: TextDocument): void {
     };
     codeModelMgr.setDocument(doc);
 
+    const settings = await getDocumentSettings(textDocument.uri);
+
     const diags = doc.nodes
         .filter(n => n.kind === AssemblyNodeKind.Error)
+        .slice(0, settings.maxNumberOfProblems)
         .map(e => {
             return {
                 severity: DiagnosticSeverity.Error,
@@ -177,9 +179,8 @@ function validateTextDocument(textDocument: TextDocument): void {
 
 connection.onDidChangeWatchedFiles(_change => {
     // Monitored files have change in VSCode
-    connection.console.log("Zingularity onDidChangeWatchedFiles");
-    //validateTextDocument(_change)
-});
+    // validateTextDocument();
+}); 
 
 // This handler provides the initial list of the completion items.
 connection.onCompletion(

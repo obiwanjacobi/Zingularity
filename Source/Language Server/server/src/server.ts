@@ -13,13 +13,15 @@ import {
     Hover,
     Location,
     SymbolInformation,
-    SymbolKind
+    SymbolKind,
+    TextEdit
 } from "vscode-languageserver";
 import { AssemblyDocument, AssemblyNodeKind, Instruction, AssemblyNode, Label } from "./z80asm/CodeModel";
 import { Parser, ParserProfile } from "./z80asm/Parser";
 import { buildCompletionList, findMap } from "./z80asm/InstructionNavigator";
 import { sum } from "./utils";
-import { CodeModelManager, toRange } from "./z80asm/CodeModelManager";
+import { CodeModelManager, toRange, rangeFrom } from "./z80asm/CodeModelManager";
+import { DocumentSerializer } from "./z80asm/DocumentSerializer";
 
 // Create a connection for the server. The connection uses Node's IPC as a transport.
 // Also include all preview / proposed LSP features.
@@ -76,7 +78,8 @@ connection.onInitialize((params: InitializeParams) => {
             hoverProvider: true,
             definitionProvider: true,
             referencesProvider: true,
-            documentSymbolProvider: true
+            documentSymbolProvider: true,
+            documentFormattingProvider: true
         }
     };
 });
@@ -262,6 +265,23 @@ connection.onDocumentSymbol(docSymbolParams => {
             range: toRange(s.reference.node) 
         } 
     });
+});
+
+connection.onDocumentFormatting(docFormat => {
+    const doc = codeModelMgr.codeModel.documents.find(d => d.uri === docFormat.textDocument.uri);
+    if (doc) {
+        const profile = {
+            ...docFormat.options,
+            newLine: "\r\n",
+            columnTabs: [0, 2, 8]
+        };
+        const serializer = new DocumentSerializer(profile);
+
+        return [{
+            range: rangeFrom(doc.nodes),
+            newText: serializer.serialize(doc.nodes)
+        }];
+    }
 });
 
 // Make the text document manager listen on the connection

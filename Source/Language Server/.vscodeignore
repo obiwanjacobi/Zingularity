@@ -12,9 +12,15 @@
 contributing.md
 poll.md
 .travis.yml
+
+client/**
 client/node_modules/**
 !client/node_modules/vscode-jsonrpc/**
 !client/node_modules/vscode-languageclient/**
 !client/node_modules/vscode-languageserver-protocol/**
 !client/node_modules/vscode-languageserver-types/**
-!server/node_modules/**
+!client/out/extension.js
+
+server/node_modules/**
+server/**
+!server/out/server.js

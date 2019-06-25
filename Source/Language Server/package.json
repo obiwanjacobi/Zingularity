@@ -69,13 +69,16 @@
 		"watch": "tsc -b -w",
 		"postinstall": "cd client && npm install && cd ../server && npm install && cd ..",
 		"test": "jest",
+		"webpack": "npm run clean && webpack --mode production --config ./client/webpack.config.js && webpack --mode production --config ./server/webpack.config.js",
 		"package": "git clean -xfd node_modules && npm install && vsce package",
-		"publish": "vsce publish"
+		"publish": "vsce publish",
+		"clean": "rimraf client/out && rimraf server/out"
 	},
 	"devDependencies": {
 		"@types/jest": "^24.0.13",
 		"@types/node": "^8.0.0",
 		"jest": "^24.8.0",
+		"rimraf": "^2.6.3",
 		"ts-jest": "^24.0.2",
 		"ts-loader": "^6.0.4",
 		"ts-node": "^8.1.0",

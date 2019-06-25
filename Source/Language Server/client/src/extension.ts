@@ -12,9 +12,10 @@ let client: LanguageClient;
 export function activate(context: ExtensionContext) {
     // The server is implemented in node
     let serverModule = context.asAbsolutePath(
-        // path.join("dist", "server.js")
         path.join("server", "out", "server.js")
     );
+
+    console.log("Zingularity server: " + serverModule);
 
     // The debug options for the server
     // --inspect=6009: runs the server in Node"s Inspector mode so VS Code can attach to the server for debugging

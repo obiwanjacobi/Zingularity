@@ -23,7 +23,7 @@ export enum CasingMatch {
     CaseSensitive
 }
 
-export abstract class AssemblyNode {
+export class AssemblyNode {
     readonly kind: AssemblyNodeKind;
     readonly line: number;
     readonly column: number;

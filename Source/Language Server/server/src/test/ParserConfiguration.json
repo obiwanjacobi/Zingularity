@@ -1,0 +1,19 @@
+{
+    "rules": [
+        { "exp": "(;.*$)", "kind": "Comment" },
+
+        { "exp": "(^\\s?#.*$)", "kind": "Preprocessor" },
+
+        { "exp": "\\b([a-zA-Z0-9_]*\\b:)", "kind": "Label" },
+        { "exp": "(\\.\\b[a-zA-Z0-9_]*)\\b", "kind": "Label" },
+
+        { "exp": "\\b(section|equ|org|defs|defb|defw|db|dw)\\b", "kind": "Directive" },
+
+        { "exp": "([-]?\\b[01]+[b])\\b", "kind": "Numeric" },
+        { "exp": "([-]?\\b[0-7]+[oq])\\b", "kind": "Numeric" },
+        { "exp": "([-]?\\b[0-9]+[d]?)\\b", "kind": "Numeric" },
+        { "exp": "([-]?[$]\\b[0-9a-f]+)\\b|([-]?\\b[0-9a-f]+[h])\\b", "kind": "Numeric" },
+
+        { "exp": "\\b([a-z0-9]+([+\\-/*][a-z0-9])+)\\b", "kind": "Expression" }
+    ]
+}

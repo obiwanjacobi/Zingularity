@@ -18,7 +18,7 @@ const parserProfile: ParserProfile = {
     ]
 };
 
-describe("Z80 Assembly Parser", () => {
+describe("Parser", () => {
     it("single line comment", () => {
         const parser = new Parser(parserProfile);
         const nodes = parser.parse("; hello world!");

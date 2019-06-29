@@ -1,4 +1,5 @@
-import { AssemblyNodeKind, AssemblyNode, Comment, Directive, Instruction, InstructionMeta, Label } from "./CodeModel";
+import { AssemblyNodeKind, AssemblyNode, Comment, Directive, Instruction, InstructionMeta, Label, Expression } from "./CodeModel";
+import { parseExpression } from "./ExpressionParser";
 
 const _meta: InstructionMeta = {
     altCycles: [],
@@ -9,26 +10,42 @@ const _meta: InstructionMeta = {
 
 const newLine = /\r?\n/gm;
 
+export interface UntypedParserRule {
+    exp: string;
+    kind: string;
+}
+
+export interface UntypedParserConfiguration {
+    rules: UntypedParserRule[];
+}
+
 export interface ParserRule {
-    rule: RegExp | string;
-    target: AssemblyNodeKind | string;
+    exp: RegExp;
+    kind: AssemblyNodeKind;
 }
 
 export interface ParserConfiguration {
     rules: ParserRule[];
 }
 
-// replaces string regex expressions with RegExp objects
-export function createParserConfiguration(json: string) {
-    const config: ParserConfiguration = JSON.parse(json);
+export function readParserConfiguration(json: string): ParserConfiguration {
+    const config: UntypedParserConfiguration = JSON.parse(json);
+    return createParserConfiguration(config);
+}
+
+// replaces string values with objects
+export function createParserConfiguration(config: UntypedParserConfiguration): ParserConfiguration {
+    const typedConfig: ParserConfiguration = { rules: [] };
 
     config.rules.forEach(r => {
-        r.rule = new RegExp(`/${r.rule}/gmi`);
-        // @ts-ignore: implicit any
-        r.target = AssemblyNodeKind[r.target];
+        typedConfig.rules.push({
+            exp: new RegExp(<string> r.exp, "gmi"),
+            // @ts-ignore: implicit any
+            kind: AssemblyNodeKind[r.kind]
+        });
     });
 
-    return config;
+    return typedConfig;
 }
 
 export class ConfigurableParser {
@@ -43,7 +60,7 @@ export class ConfigurableParser {
         const lines = text.split(newLine);
 
         lines.forEach((line, l) => {
-            const lineNodes = this.parseLine(line, l);
+            const lineNodes = this.parseLine(line, l + 1);
             nodes.push(...lineNodes);
         });
 
@@ -54,9 +71,9 @@ export class ConfigurableParser {
         const nodes = new Array<AssemblyNode>();
 
         this.config.rules.forEach(rule => {
-            const matches = this.matchRule(line, <RegExp> rule.rule);
+            const matches = this.matchRule(line, <RegExp> rule.exp);
             matches.forEach(m => {
-                const node = this.createNode(<AssemblyNodeKind> rule.target, m[0], lineNumber, m.index);
+                const node = this.createNode(<AssemblyNodeKind> rule.kind, m[0], lineNumber, m.index + 1);
                 nodes.push(node);
             });
         });
@@ -79,6 +96,8 @@ export class ConfigurableParser {
                     text, line, column);
             case AssemblyNodeKind.Label:
                 return new Label(text, line, column);
+            case AssemblyNodeKind.Expression:
+                return parseExpression(text, line, column);
 
             default:
                 return new AssemblyNode(AssemblyNodeKind.Token, text, line, column);

@@ -132,68 +132,68 @@ describe("Configurable Parser", () => {
         expect(node.text).toContain("SECTION");
     });
 
-    it("directive with param", () => {
-        let nodes = parser.parse(".Label EQU $1000");
-        let node = nodes[0];
+    // it("directive with param", () => {
+    //     let nodes = parser.parse(".Label EQU $1000");
+    //     let node = nodes[0];
 
-        expect(node.kind).toBe(AssemblyNodeKind.Label);
-        expect(node.line).toBe(1);
-        expect(node.column).toBe(1);
-        expect(node.text).toContain(".Label");
+    //     expect(node.kind).toBe(AssemblyNodeKind.Label);
+    //     expect(node.line).toBe(1);
+    //     expect(node.column).toBe(1);
+    //     expect(node.text).toContain(".Label");
         
-        node = nodes[1];
-        expect(node.kind).toBe(AssemblyNodeKind.Whitespace);
+    //     node = nodes[1];
+    //     expect(node.kind).toBe(AssemblyNodeKind.Whitespace);
         
-        node = nodes[2];
-        expect(node.kind).toBe(AssemblyNodeKind.Directive);
-        expect(node.text).toContain("EQU $1000");
-    });
+    //     node = nodes[2];
+    //     expect(node.kind).toBe(AssemblyNodeKind.Directive);
+    //     expect(node.text).toContain("EQU $1000");
+    // });
 
-    it("instruction", () => {
-        let nodes = parser.parse("ld hl, $0000");
-        let node = nodes[0];
+    // it("instruction", () => {
+    //     let nodes = parser.parse("ld hl, $0000");
+    //     let node = nodes[0];
 
-        expect(node.kind).toBe(AssemblyNodeKind.Instruction);
-        expect(node.line).toBe(1);
-        expect(node.column).toBe(1);
-        expect(node.text).toContain("ld hl, $0000");
-    });
+    //     expect(node.kind).toBe(AssemblyNodeKind.Instruction);
+    //     expect(node.line).toBe(1);
+    //     expect(node.column).toBe(1);
+    //     expect(node.text).toContain("ld hl, $0000");
+    // });
 
-    it("instruction /w label", () => {
-        let nodes = parser.parse("JP label");
-        let node = nodes[0];
+    // it("instruction /w label", () => {
+    //     let nodes = parser.parse("JP label");
+    //     let node = nodes[0];
 
-        expect(node.kind).toBe(AssemblyNodeKind.Instruction);
-        expect(node.line).toBe(1);
-        expect(node.column).toBe(1);
-        expect(node.text).toContain("JP label");
-        expect((<Instruction> node).external).toBe("label");
-    });
+    //     expect(node.kind).toBe(AssemblyNodeKind.Instruction);
+    //     expect(node.line).toBe(1);
+    //     expect(node.column).toBe(1);
+    //     expect(node.text).toContain("JP label");
+    //     expect((<Instruction> node).external).toBe("label");
+    // });
 
-    it("instruction /w comment", () => {
-        let nodes = parser.parse("ld hl, $0000   ; comment");
-        let node = nodes[0];
+    // it("instruction /w comment", () => {
+    //     let nodes = parser.parse("ld hl, $0000   ; comment");
+    //     let node = nodes[0];
 
-        expect(node.kind).toBe(AssemblyNodeKind.Instruction);
-        expect(node.line).toBe(1);
-        expect(node.column).toBe(1);
-        expect(node.text).toContain("ld hl, $0000");
-        expect((<Instruction> node).external).toBe("");
+    //     expect(node.kind).toBe(AssemblyNodeKind.Instruction);
+    //     expect(node.line).toBe(1);
+    //     expect(node.column).toBe(1);
+    //     expect(node.text).toContain("ld hl, $0000");
+    //     expect((<Instruction> node).external).toBe("");
 
-        node = nodes[1];
-        expect(node.kind).toBe(AssemblyNodeKind.Comment);
-        expect(node.line).toBe(1);
-        expect(node.column).toBe(16);
-        expect(node.text).toContain("; comment");
-    });
+    //     node = nodes[1];
+    //     expect(node.kind).toBe(AssemblyNodeKind.Comment);
+    //     expect(node.line).toBe(1);
+    //     expect(node.column).toBe(16);
+    //     expect(node.text).toContain("; comment");
+    // });
 
-    it("instruction: RST", () => {
-        let nodes = parser.parse("RST 28");
-        let node = nodes[0];
+    // it("instruction: RST", () => {
+    //     let nodes = parser.parse("RST 28");
+    //     let node = nodes[0];
 
-        expect(node.kind).toBe(AssemblyNodeKind.Instruction);
-        expect(node.line).toBe(1);
-        expect(node.column).toBe(1);
-        expect(node.text).toContain("RST 28");
-    });
+    //     expect(node.kind).toBe(AssemblyNodeKind.Instruction);
+    //     expect(node.line).toBe(1);
+    //     expect(node.column).toBe(1);
+    //     expect(node.text).toContain("RST 28");
+    // });
 });

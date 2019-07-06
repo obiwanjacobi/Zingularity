@@ -1,5 +1,5 @@
-import { SerializerProfile, DocumentSerializer } from "../z80asm/DocumentSerializer";
-import { Comment, Label } from "../z80asm/CodeModel";
+import { SerializerProfile, DocumentSerializer } from "../../z80asm/DocumentSerializer";
+import { Comment, Label } from "../../z80asm/CodeModel";
 
 const profile: SerializerProfile = {
     columnTabs: [0, 2, 4],

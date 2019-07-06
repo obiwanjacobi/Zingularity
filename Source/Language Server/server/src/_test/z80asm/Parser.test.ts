@@ -1,5 +1,5 @@
-import { Parser, ParserProfile } from "../z80asm/Parser";
-import { AssemblyNode, AssemblyNodeKind, Instruction } from "../z80asm/CodeModel";
+import { Parser, ParserProfile } from "../../z80asm/Parser";
+import { AssemblyNode, AssemblyNodeKind, Instruction } from "../../z80asm/CodeModel";
 
 const parserProfile: ParserProfile = { 
     numericProfile: {

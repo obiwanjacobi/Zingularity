@@ -140,7 +140,8 @@ function toExpression(treeNode: TreeNode | undefined, line: number): Expression 
     if (treeNode) {
         return new Expression(
             toExpression(treeNode.left, line), 
-            toExpression(treeNode.right, line), 
+            toExpression(treeNode.right, line),
+            undefined, 
             treeNode.token.text,
             line,
             treeNode.token.column,

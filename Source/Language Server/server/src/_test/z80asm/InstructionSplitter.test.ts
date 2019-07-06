@@ -1,4 +1,4 @@
-import { splitInstruction } from "../z80asm/InstructionSplitter";
+import { splitInstruction } from "../../z80asm/InstructionSplitter";
 
 describe("Z80 Instruction splitter", () => {
     it("ld a, 0", () => {

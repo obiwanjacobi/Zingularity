@@ -9,7 +9,7 @@
 			"runtimeExecutable": "${execPath}",
 			"args": [
 				"--extensionDevelopmentPath=${workspaceRoot}", 
-				"${workspaceRoot}/client/src/test/testFixture"
+				"${workspaceRoot}/client/src/_test/testFixture"
 			],
 			"outFiles": ["${workspaceRoot}/client/out/**/*.js"],
 			// "preLaunchTask": { "type": "npm", "script": "watch" }
@@ -31,7 +31,7 @@
 			"args": [
 				"--extensionDevelopmentPath=${workspaceRoot}",
 				"--extensionTestsPath=${workspaceRoot}/client/out/test",
-				"${workspaceRoot}/client/src/test/testFixture"
+				"${workspaceRoot}/client/src/_test/testFixture"
 			],
 			"outFiles": ["${workspaceRoot}/client/out/test/**/*.js"]
 		},
@@ -51,6 +51,16 @@
 			],
 			//"envFile": "${workspaceRoot}/.env"
 		},
+		{
+            "name": "Antlr Debug",
+            "type": "antlr-debug",
+            "request": "launch",
+            "input": "./server/src/_test/z80asm/antlr.debug.asm",
+            "grammar": "server/src/z80asm/z80asm.g4",
+            "startRule": "directive_defm",
+            "printParseTree": true,
+            "visualParseTree": true
+        }
 	],
 	"compounds": [
 		{

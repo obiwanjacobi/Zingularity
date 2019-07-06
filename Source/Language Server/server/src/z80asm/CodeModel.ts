@@ -72,11 +72,17 @@ export class Directive extends AssemblyNode {
 export class Expression extends AssemblyNode {
     readonly left: Expression | undefined;
     readonly right: Expression | undefined;
-    
-    constructor(left: Expression | undefined, right: Expression | undefined, token: string, line: number, column: number) {
+    readonly number: Numeric | undefined;
+
+    static readonly empty: Expression = new Expression(undefined, undefined, undefined, "", 0, 0);
+
+    constructor(left: Expression | undefined, right: Expression | undefined, number: Numeric | undefined, 
+        token: string, line: number, column: number) {
+
         super(AssemblyNodeKind.Expression, token, line, column);
         this.left = left;
         this.right = right;
+        this.number = number;
     }
 
     toString(): string {
@@ -92,14 +98,14 @@ export type Bits = 8 | 16;
 
 export class Numeric extends AssemblyNode {
     readonly radix: Radix;
-    readonly bits: Bits;
     readonly number: number;
 
-    constructor(number: number, radix: Radix, bits: Bits, text: string, line: number, column: number) {
+    static readonly empty: Numeric = new Numeric(0, 10, "", 0, 0);
+
+    constructor(number: number, radix: Radix, text: string, line: number, column: number) {
         super(AssemblyNodeKind.Numeric, text, line, column);
         this.number = number;
         this.radix = radix;
-        this.bits = bits;
     }
 
     loString(radix: Radix): string {

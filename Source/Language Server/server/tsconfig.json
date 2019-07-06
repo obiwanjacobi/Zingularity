@@ -11,6 +11,6 @@
 		"rootDir": "src",
 		"lib": ["es6"]
 	},
-	"include": ["src", "src/test"],
+	"include": ["src", "src/_test"],
 	"exclude": ["node_modules", ".vscode-test"]
 }

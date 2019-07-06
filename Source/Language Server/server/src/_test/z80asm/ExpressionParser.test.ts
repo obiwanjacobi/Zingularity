@@ -1,5 +1,5 @@
-import { parseExpression } from "../z80asm/ExpressionParser";
-import { AssemblyNodeKind } from "../z80asm/CodeModel";
+import { parseExpression } from "../../z80asm/ExpressionParser";
+import { AssemblyNodeKind } from "../../z80asm/CodeModel";
 
 
 describe("Expression Parser", () => {

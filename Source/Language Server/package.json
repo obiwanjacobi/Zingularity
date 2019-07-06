@@ -72,11 +72,14 @@
 		"webpack": "npm run clean && webpack --mode production --config ./client/webpack.config.js && webpack --mode production --config ./server/webpack.config.js",
 		"package": "git clean -xfd node_modules && npm install && vsce package",
 		"publish": "vsce publish",
-		"clean": "rimraf client/out && rimraf server/out"
+		"clean": "rimraf client/out && rimraf server/out",
+		"antlr:sample": "antlr4ts .\\server\\src\\z80asm\\asmZ80.g4",
+		"antlr": "antlr4ts -visitor .\\server\\src\\z80asm\\z80asm.g4"
 	},
 	"devDependencies": {
 		"@types/jest": "^24.0.13",
 		"@types/node": "^8.0.0",
+		"antlr4ts-cli": "^0.5.0-alpha.3",
 		"jest": "^24.8.0",
 		"rimraf": "^2.6.3",
 		"ts-jest": "^24.0.2",
@@ -90,8 +93,11 @@
 	},
 	"jest": {
 		"roots": [
-			"./server/out/test/"
+			"./server/out/_test/"
 		]
 	},
-	"dependencies": {}
+	"dependencies": {
+		"antlr4": "^4.7.2",
+		"antlr4ts": "^0.5.0-alpha.3"
+	}
 }

@@ -1,5 +1,5 @@
-import { buildInstruction, buildCompletionList, findMap } from "../z80asm/InstructionNavigator";
-import { Instruction } from "../z80asm/CodeModel";
+import { buildInstruction, buildCompletionList, findMap } from "../../z80asm/InstructionNavigator";
+import { Instruction } from "../../z80asm/CodeModel";
 
 const numericProfile = {
     bin : { prefix: [""], postfix: [""] },

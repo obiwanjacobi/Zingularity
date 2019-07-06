@@ -1,5 +1,5 @@
-import { createParserConfiguration, ConfigurableParser } from "../z80asm/ConfigurableParser";
-import { AssemblyNodeKind, Instruction } from "../z80asm/CodeModel";
+import { createParserConfiguration, ConfigurableParser } from "../../z80asm/ConfigurableParser";
+import { AssemblyNodeKind, Instruction } from "../../z80asm/CodeModel";
 import parserConfiguration from "./ParserConfiguration.json";
 
 const config = createParserConfiguration(parserConfiguration);

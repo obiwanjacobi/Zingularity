@@ -94,5 +94,5 @@ export function parseNumeric(profile: NumericProfile, numericToken: string, line
 
     const number = parseInt(token, radix);
 
-    return new Numeric(number, <Radix> radix, number > 255 ? 16 : 8, numericToken, line, column);
+    return new Numeric(number, <Radix> radix, numericToken, line, column);
 }

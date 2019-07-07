@@ -177,7 +177,7 @@ directive_defm
 
 
 defmparam
-   : string | character | expression
+   : string | character | expression8
    ;
 
 
@@ -206,13 +206,8 @@ directive_elseblock
    ;
 
 
-string
-   : STRING
-   ;
-
-
-character
-   : CHARACTER
+directive_phase
+   : DIRECTIVEphase expression16 comment? asm DIRECTIVEunphase
    ;
 
 
@@ -298,13 +293,281 @@ DIRECTIVEendif
    ;
 
 
-instruction
-   : INSTRUCTION
+DIRECTIVEphase
+   : (P H A S E)
    ;
 
 
-INSTRUCTION
-   : (N O P)
+DIRECTIVEunphase
+   : (U N P H A S E)
+   ;
+
+
+instruction
+   : instruction_void
+   | instruction_ld8
+   | instruction_ld16
+   | instruction_stack
+   | instruction_exchange
+   | instruction_arithmetic8
+   | instruction_incdec8
+   | instruction_cpl
+   | instruction_arithemic16
+   | instruction_incdec16
+   | instruction_rotate
+   | instruction_rotatedec
+   | instruction_bit
+   | instruction_jump
+   | instruction_call
+   | instruction_io
+   ;
+
+
+instruction_void
+   : INSTRUCTIONvoid
+   ;
+
+
+instruction_ld8
+   : INSTRUCTIONld (REGISTER8 ',' REGISTER8 | REGISTER8x ',' REGISTER8x | REGISTER8y ',' REGISTER8y)
+   | INSTRUCTIONld (REGISTER8 | REGISTER8x | REGISTER8y) ',' expression8
+   | INSTRUCTIONld REGISTER8 ',' '(' REGISTER16hl ')'
+   | INSTRUCTIONld REGISTER8 ',' '(' REGISTER16ex '+' offset_ex ')'
+   | INSTRUCTIONld '(' REGISTER16hl ')' ',' REGISTER8
+   | INSTRUCTIONld '(' REGISTER16ex '+' offset_ex ')' ',' REGISTER8
+   | INSTRUCTIONld '(' REGISTER16hl ')' ',' expression8
+   | INSTRUCTIONld '(' REGISTER16ex '+' offset_ex ')' ',' expression8
+   | INSTRUCTIONld REGISTER8a ',' '(' (REGISTER16bcde | REGISTER8sys | expression) ')'
+   | INSTRUCTIONld '(' (REGISTER16bcde | REGISTER8sys | expression16) ')' ',' REGISTER8a
+   ;
+
+
+instruction_ld16
+   : INSTRUCTIONld REGISTER16spgroup ',' expression16
+   | INSTRUCTIONld REGISTER16ex ',' '(' expression16 ')'
+   | INSTRUCTIONld '(' expression16 ')' ',' (REGISTER16hl | REGISTER16spgroup | REGISTER16ex)
+   | INSTRUCTIONld REGISTER16sp ',' (REGISTER16hl | REGISTER16ex)
+   ;
+
+
+instruction_stack
+   : INSTRUCTIONstack (REGISTER16afgroup | REGISTER16ex)
+   ;
+
+
+instruction_exchange
+   : INSTRUCTIONexchange REGISTER16de ',' REGISTER16hl
+   | INSTRUCTIONexchange REGISTER16af ',' REGISTER16af '\''?
+   | INSTRUCTIONexchange '(' REGISTER16sp ')' ',' (REGISTER16hl | REGISTER16ex)
+   | INSTRUCTIONexxchange
+   ;
+
+
+instruction_arithmetic8
+   : INSTRUCTIONarithmetic (REGISTER8a ',')? (REGISTER8 | REGISTER8x | REGISTER8y | expression8 )
+   | INSTRUCTIONarithmetic (REGISTER8a ',')? '(' (REGISTER16hl | REGISTER16ex '+' offset_ex) ')'
+   ;
+
+
+instruction_incdec8
+   : INSTRUCTIONincdec (REGISTER8 | REGISTER8x | REGISTER8y)
+   | INSTRUCTIONincdec '(' (REGISTER16hl | REGISTER16ex '+' offset_ex) ')'
+   ;
+
+
+instruction_cpl
+   : INSTRUCTIONcpl REGISTER8a?
+   ;
+
+
+instruction_arithemic16
+   : INSTRUCTIONarithmetic16 REGISTER16hl ',' REGISTER16spgroup
+   | INSTRUCTIONarithmetic16 REGISTER16ix ',' REGISTER16spxgroup
+   | INSTRUCTIONarithmetic16 REGISTER16iy ',' REGISTER16spygroup
+   ;
+
+
+instruction_incdec16
+   : INSTRUCTIONincdec (REGISTER16spgroup | REGISTER16ex)
+   ;
+
+
+instruction_rotate
+   : INSTRUCTIONrotate REGISTER8
+   | INSTRUCTIONrotate '(' (REGISTER16hl | REGISTER16ex '+' offset_ex) ')'
+   | INSTRUCTIONrotate '(' REGISTER16ex '+' offset_ex ')' ',' REGISTER8
+   ;
+
+
+instruction_rotatedec
+   : INSTRUCTIONrotatedec REGISTER8a?
+   ;
+
+
+instruction_bit
+   : INSTRUCTIONbit BIT8 ',' REGISTER8
+   | INSTRUCTIONbit BIT8 ',' '(' (REGISTER16hl | REGISTER16ex '+' offset_ex) ')'
+   | INSTRUCTIONbit BIT8 ',' '(' REGISTER16ex '+' offset_ex ')' ',' REGISTER8
+   ;
+
+
+instruction_jump
+   : INSTRUCTIONjump (REGISTER16hl | REGISTER16ex | expression16)
+   | INSTRUCTIONjump CONDITIONflagsall expression16
+   | INSTRUCTIONjumprel CONDITIONflags? offset_rel
+   | INSTRUCTIONjumpreld offset_rel
+   ;
+
+
+instruction_call
+   : INSTRUCTIONcall CONDITIONflagsall? expression16
+   | INSTRUCTIONret CONDITIONflags?
+   ;
+
+
+instruction_io
+   : INSTRUCTIONin REGISTER8a ',' '(' expression8 ')'
+   | INSTRUCTIONin (REGISTER8 ',')? '(' REGISTER8c ')'
+   | INSTRUCTIONout '(' expression8 ')' ',' REGISTER8a
+   | INSTRUCTIONout '(' REGISTER8c ')' ',' (REGISTER8 | '0')
+   ;
+
+
+// TODO: limit to -128 / +127
+offset_ex
+   : expression
+   ;
+offset_rel
+   : expression
+   ;
+
+
+INSTRUCTIONvoid
+   : (N O P) | (H A L T)
+   | (L D I) | (L D I R) | (L D D) | (L D D R)
+   | (C P I) | (C P I R) | (C P D) | (C P D R)
+   | (D A A) | (N E G) | (S C F) | (C C F)
+   | (R L C A) | (R L A) | (R R C A) | (R R A)
+   | (R E T I) | (R E T N)
+   | (I M [012]) | (D I) | (E I)
+   | (R S T '$'? [0123][08])
+   | (I N I) | (I N I R) | (I N D) | (I N D R) | (O U T I) | (O T I R) | (O U T D) | (O T D R)
+   ;
+
+
+INSTRUCTIONld
+   : (L D)
+   ;
+
+
+INSTRUCTIONstack
+   : (P U S H) | (P O P)
+   ;
+
+
+INSTRUCTIONexchange
+   : (E X)
+   ;
+
+
+INSTRUCTIONexxchange
+   : (E X X)
+   ;
+
+
+INSTRUCTIONarithmetic
+   : (A D D) | (A D C) | (S U B) | (S B C) | (A N D) | (O R) | (X O R) | (C P)
+   ;
+
+
+INSTRUCTIONincdec
+   : (I N C) | (D E C)
+   ;
+
+
+INSTRUCTIONcpl
+   : (C P L)
+   ;
+
+
+INSTRUCTIONarithmetic16
+   : (A D D) | (A D C) | (S B C)
+   ;
+
+
+INSTRUCTIONrotate
+   : (R L C) | (R L) | (R R C) | (R R)
+   | (S L A) | (S L L) | (S R A) | (S R L)
+   ;
+
+
+INSTRUCTIONrotatedec
+   : (R L D) | (R R D)
+   ;
+
+
+INSTRUCTIONbit
+   : (B I T) | (S E T) | (R E S)
+   ;
+
+
+INSTRUCTIONjump
+   : (J P)
+   ;
+
+
+INSTRUCTIONjumprel
+   : (J R)
+   ;
+
+
+INSTRUCTIONjumpreld
+   : (D J N Z)
+   ;
+
+
+INSTRUCTIONcall
+   : (C A L L)
+   ;
+
+
+INSTRUCTIONret
+   : (R E T)
+   ;
+
+
+ INSTRUCTIONin
+   : (I N)
+   ;
+
+
+INSTRUCTIONout
+   : (O U T)
+   ;
+
+
+CONDITIONflagsall
+   : CONDITIONflags
+   | (P O) | (P E) | P | M
+   ;
+
+
+CONDITIONflags
+   : (N? Z) | (N? C)
+   ;
+
+
+BIT8
+   : [0-7]
+   ;
+
+
+REGISTER8a
+   : A
+   ;
+
+REGISTER8c
+   : C
    ;
 
 
@@ -313,8 +576,13 @@ REGISTER8
    ;
 
 
-REGISTER8ex
-   : (I X H) | (I X L) | (I Y H) | (I Y L)
+REGISTER8x
+   : A | B | C | D | E | (I X H) | (I X L)
+   ;
+
+
+REGISTER8y
+   : A | B | C | D | E | (I Y H) | (I Y L)
    ;
 
 
@@ -323,8 +591,63 @@ REGISTER8sys
    ;
 
 
-REGISTER16
-   : (A F) | (B C) | (D E) | (H L) | (S P) | (I X) | (I Y)
+REGISTER16af
+   : (A F)
+   ;
+
+
+REGISTER16hl
+   : (H L)
+   ;
+
+
+REGISTER16de
+   : (D E)
+   ;
+
+
+REGISTER16sp
+   : (S P)
+   ;
+
+
+REGISTER16ix
+   : (I X)
+   ;
+
+
+REGISTER16iy
+   : (I Y)
+   ;
+
+
+REGISTER16bcde
+   : (B C) | (D E)
+   ;
+
+
+REGISTER16ex
+   : (I X) | (I Y)
+   ;
+
+
+REGISTER16afgroup
+   : (A F) | (B C) | (D E) | (H L) 
+   ;
+
+
+REGISTER16spgroup
+   : (S P) | (B C) | (D E) | (H L) 
+   ;
+
+
+REGISTER16spxgroup
+   : (S P) | (B C) | (D E) | (I X) 
+   ;
+
+
+REGISTER16spygroup
+   : (S P) | (B C) | (D E) | (I Y) 
    ;
 
 
@@ -351,6 +674,27 @@ comment
 COMMENT
    : ';' .*? ~[\r\n]+
    ;
+
+
+string
+   : STRING
+   ;
+
+
+character
+   : CHARACTER
+   ;
+
+
+expression8
+    : expression
+    ;
+
+
+expression16
+    : expression
+    ;
+
 
 expression
     : expression operator expression | number | symbol | '(' expression ')'

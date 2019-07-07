@@ -21,12 +21,33 @@ import { Directive_ifdefContext } from "./z80asmParser";
 import { Directive_ifndefContext } from "./z80asmParser";
 import { Directive_ifblockContext } from "./z80asmParser";
 import { Directive_elseblockContext } from "./z80asmParser";
-import { StringContext } from "./z80asmParser";
-import { CharacterContext } from "./z80asmParser";
+import { Directive_phaseContext } from "./z80asmParser";
 import { InstructionContext } from "./z80asmParser";
+import { Instruction_voidContext } from "./z80asmParser";
+import { Instruction_ld8Context } from "./z80asmParser";
+import { Instruction_ld16Context } from "./z80asmParser";
+import { Instruction_stackContext } from "./z80asmParser";
+import { Instruction_exchangeContext } from "./z80asmParser";
+import { Instruction_arithmetic8Context } from "./z80asmParser";
+import { Instruction_incdec8Context } from "./z80asmParser";
+import { Instruction_cplContext } from "./z80asmParser";
+import { Instruction_arithemic16Context } from "./z80asmParser";
+import { Instruction_incdec16Context } from "./z80asmParser";
+import { Instruction_rotateContext } from "./z80asmParser";
+import { Instruction_rotatedecContext } from "./z80asmParser";
+import { Instruction_bitContext } from "./z80asmParser";
+import { Instruction_jumpContext } from "./z80asmParser";
+import { Instruction_callContext } from "./z80asmParser";
+import { Instruction_ioContext } from "./z80asmParser";
+import { Offset_exContext } from "./z80asmParser";
+import { Offset_relContext } from "./z80asmParser";
 import { LabelContext } from "./z80asmParser";
 import { SymbolContext } from "./z80asmParser";
 import { CommentContext } from "./z80asmParser";
+import { StringContext } from "./z80asmParser";
+import { CharacterContext } from "./z80asmParser";
+import { Expression8Context } from "./z80asmParser";
+import { Expression16Context } from "./z80asmParser";
 import { ExpressionContext } from "./z80asmParser";
 import { OperatorContext } from "./z80asmParser";
 import { NumberContext } from "./z80asmParser";
@@ -171,18 +192,11 @@ export interface z80asmVisitor<Result> extends ParseTreeVisitor<Result> {
 	visitDirective_elseblock?: (ctx: Directive_elseblockContext) => Result;
 
 	/**
-	 * Visit a parse tree produced by `z80asmParser.string`.
+	 * Visit a parse tree produced by `z80asmParser.directive_phase`.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	visitString?: (ctx: StringContext) => Result;
-
-	/**
-	 * Visit a parse tree produced by `z80asmParser.character`.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	visitCharacter?: (ctx: CharacterContext) => Result;
+	visitDirective_phase?: (ctx: Directive_phaseContext) => Result;
 
 	/**
 	 * Visit a parse tree produced by `z80asmParser.instruction`.
@@ -190,6 +204,132 @@ export interface z80asmVisitor<Result> extends ParseTreeVisitor<Result> {
 	 * @return the visitor result
 	 */
 	visitInstruction?: (ctx: InstructionContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.instruction_void`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitInstruction_void?: (ctx: Instruction_voidContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.instruction_ld8`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitInstruction_ld8?: (ctx: Instruction_ld8Context) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.instruction_ld16`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitInstruction_ld16?: (ctx: Instruction_ld16Context) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.instruction_stack`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitInstruction_stack?: (ctx: Instruction_stackContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.instruction_exchange`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitInstruction_exchange?: (ctx: Instruction_exchangeContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.instruction_arithmetic8`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitInstruction_arithmetic8?: (ctx: Instruction_arithmetic8Context) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.instruction_incdec8`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitInstruction_incdec8?: (ctx: Instruction_incdec8Context) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.instruction_cpl`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitInstruction_cpl?: (ctx: Instruction_cplContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.instruction_arithemic16`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitInstruction_arithemic16?: (ctx: Instruction_arithemic16Context) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.instruction_incdec16`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitInstruction_incdec16?: (ctx: Instruction_incdec16Context) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.instruction_rotate`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitInstruction_rotate?: (ctx: Instruction_rotateContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.instruction_rotatedec`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitInstruction_rotatedec?: (ctx: Instruction_rotatedecContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.instruction_bit`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitInstruction_bit?: (ctx: Instruction_bitContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.instruction_jump`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitInstruction_jump?: (ctx: Instruction_jumpContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.instruction_call`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitInstruction_call?: (ctx: Instruction_callContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.instruction_io`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitInstruction_io?: (ctx: Instruction_ioContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.offset_ex`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitOffset_ex?: (ctx: Offset_exContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.offset_rel`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitOffset_rel?: (ctx: Offset_relContext) => Result;
 
 	/**
 	 * Visit a parse tree produced by `z80asmParser.label`.
@@ -211,6 +351,34 @@ export interface z80asmVisitor<Result> extends ParseTreeVisitor<Result> {
 	 * @return the visitor result
 	 */
 	visitComment?: (ctx: CommentContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.string`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitString?: (ctx: StringContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.character`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitCharacter?: (ctx: CharacterContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.expression8`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitExpression8?: (ctx: Expression8Context) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.expression16`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitExpression16?: (ctx: Expression16Context) => Result;
 
 	/**
 	 * Visit a parse tree produced by `z80asmParser.expression`.

@@ -94,11 +94,25 @@
             }
         }
 
+        private static string[] _optionalA = new[] 
+        {
+            "ADD", "ADC", "SUB", "SBC", "AND", "OR", "XOR", "CP"
+        };
+
         private void AddToMap(MapDictionary map, InstructionMeta meta)
         {
             var parts = SplitMnemonic(meta.Info.Mnemonic);
             var metaMap = AddPartsToMap(map, parts);
             AddInstructionMeta(metaMap, meta);
+
+            if (Array.IndexOf(_optionalA, parts.First()) >= 0)
+            {
+                var newParts = new List<string>(parts);
+                newParts.RemoveAt(1); // A
+                newParts.RemoveAt(1); // ,
+                metaMap = AddPartsToMap(map, newParts);
+                AddInstructionMeta(metaMap, meta);
+            }
         }
 
         private MapDictionary AddPartsToMap(MapDictionary map, IEnumerable<string> parts)

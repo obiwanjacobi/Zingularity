@@ -41,6 +41,12 @@ import { Instruction_callContext } from "./z80asmParser";
 import { Instruction_ioContext } from "./z80asmParser";
 import { Offset_exContext } from "./z80asmParser";
 import { Offset_relContext } from "./z80asmParser";
+import { Registers8Context } from "./z80asmParser";
+import { Registers8xContext } from "./z80asmParser";
+import { Registers8yContext } from "./z80asmParser";
+import { Register16_grpafContext } from "./z80asmParser";
+import { Register16_grpspContext } from "./z80asmParser";
+import { Register16_exContext } from "./z80asmParser";
 import { LabelContext } from "./z80asmParser";
 import { SymbolContext } from "./z80asmParser";
 import { CommentContext } from "./z80asmParser";
@@ -330,6 +336,48 @@ export interface z80asmVisitor<Result> extends ParseTreeVisitor<Result> {
 	 * @return the visitor result
 	 */
 	visitOffset_rel?: (ctx: Offset_relContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.registers8`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitRegisters8?: (ctx: Registers8Context) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.registers8x`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitRegisters8x?: (ctx: Registers8xContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.registers8y`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitRegisters8y?: (ctx: Registers8yContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.register16_grpaf`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitRegister16_grpaf?: (ctx: Register16_grpafContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.register16_grpsp`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitRegister16_grpsp?: (ctx: Register16_grpspContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.register16_ex`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitRegister16_ex?: (ctx: Register16_exContext) => Result;
 
 	/**
 	 * Visit a parse tree produced by `z80asmParser.label`.

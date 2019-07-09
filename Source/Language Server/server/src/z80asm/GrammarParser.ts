@@ -3,7 +3,7 @@ import * as antlr4 from "antlr4ts";
 import { ParseTreeWalker } from "antlr4ts/tree/ParseTreeWalker";
 import { AbstractParseTreeVisitor } from "antlr4ts/tree/AbstractParseTreeVisitor";
 import { z80asmLexer } from "./z80asmLexer";
-import { z80asmParser, ExpressionContext, Number_binContext, NumberContext, Number_octContext, Number_decContext, Number_hexContext, OperatorContext, AsmContext, DirectiveContext } from "./z80asmParser";
+import { z80asmParser, ExpressionContext, Number_binContext, NumberContext, Number_octContext, Number_decContext, Number_hexContext, OperatorContext, AsmContext, DirectiveContext, InstructionContext } from "./z80asmParser";
 import { z80asmListener } from "./z80asmListener";
 import { z80asmVisitor } from "./z80asmVisitor";
 import { ParserRuleContext } from "antlr4ts";
@@ -139,6 +139,10 @@ class GrammarListener implements z80asmListener {
         if (!ctx.parent) {
             this.nodes.push(new Directive(undefined, ctx.text, ctx.start.line, ctx.start.charPositionInLine));
         }
+    }
+
+    exitInstruction(ctx: InstructionContext) {
+        
     }
 }
 

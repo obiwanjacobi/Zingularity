@@ -152,7 +152,7 @@ directive_symbol
 
 
 directive_symbollist
-   : DIRECTIVEsymbollist symbol (',' symbol)*?
+   : DIRECTIVEsymbollist symbol (COMMA symbol)*?
    ;
 
 
@@ -162,17 +162,17 @@ directive_assign
 
 
 directive_block
-   : DIRECTIVEblock expression (',' expression)*?
+   : DIRECTIVEblock expression (COMMA expression)*?
    ;
 
 
 directive_defs
-   : DIRECTIVEdefs expression (',' expression)?
+   : DIRECTIVEdefs expression (COMMA expression)?
    ;
 
 
 directive_defm
-   : DIRECTIVEdefm defmparam (',' defmparam)*?
+   : DIRECTIVEdefm defmparam (COMMA defmparam)*?
    ;
 
 
@@ -329,93 +329,92 @@ instruction_void
 
 
 instruction_ld8
-   : INSTRUCTIONld (REGISTER8 ',' REGISTER8 | REGISTER8x ',' REGISTER8x | REGISTER8y ',' REGISTER8y)
-   | INSTRUCTIONld (REGISTER8 | REGISTER8x | REGISTER8y) ',' expression8
-   | INSTRUCTIONld REGISTER8 ',' '(' REGISTER16hl ')'
-   | INSTRUCTIONld REGISTER8 ',' '(' REGISTER16ex '+' offset_ex ')'
-   | INSTRUCTIONld '(' REGISTER16hl ')' ',' REGISTER8
-   | INSTRUCTIONld '(' REGISTER16ex '+' offset_ex ')' ',' REGISTER8
-   | INSTRUCTIONld '(' REGISTER16hl ')' ',' expression8
-   | INSTRUCTIONld '(' REGISTER16ex '+' offset_ex ')' ',' expression8
-   | INSTRUCTIONld REGISTER8a ',' '(' (REGISTER16bcde | REGISTER8sys | expression) ')'
-   | INSTRUCTIONld '(' (REGISTER16bcde | REGISTER8sys | expression16) ')' ',' REGISTER8a
+   : (INSTRUCTIONld ((registers8 COMMA registers8) | (registers8x COMMA registers8x) | (registers8y COMMA registers8y)))
+   | (INSTRUCTIONld (registers8 | REG8x | REG8y) COMMA expression8)
+   | (INSTRUCTIONld registers8 COMMA PARopen REG16hl PARclose)
+   | (INSTRUCTIONld registers8 COMMA PARopen register16_ex PLUS offset_ex PARclose)
+   | (INSTRUCTIONld PARopen REG16hl PARclose COMMA registers8)
+   | (INSTRUCTIONld PARopen register16_ex PLUS offset_ex PARclose COMMA registers8)
+   | (INSTRUCTIONld PARopen REG16hl PARclose COMMA expression8)
+   | (INSTRUCTIONld PARopen register16_ex PLUS offset_ex PARclose COMMA expression8)
+   | (INSTRUCTIONld REG8a COMMA PARopen (REG16bc | REG16de | REG8sys | expression) PARclose)
+   | (INSTRUCTIONld PARopen (REG16bc | REG16de | REG8sys | expression16) PARclose COMMA REG8a)
    ;
 
 
 instruction_ld16
-   : INSTRUCTIONld REGISTER16spgroup ',' expression16
-   | INSTRUCTIONld REGISTER16ex ',' '(' expression16 ')'
-   | INSTRUCTIONld '(' expression16 ')' ',' (REGISTER16hl | REGISTER16spgroup | REGISTER16ex)
-   | INSTRUCTIONld REGISTER16sp ',' (REGISTER16hl | REGISTER16ex)
+   : INSTRUCTIONld register16_grpsp COMMA expression16
+   | INSTRUCTIONld register16_ex COMMA PARopen expression16 PARclose
+   | INSTRUCTIONld PARopen expression16 PARclose COMMA (register16_grpsp | register16_ex)
+   | INSTRUCTIONld REG16sp COMMA (REG16hl | register16_ex)
    ;
 
 
 instruction_stack
-   : INSTRUCTIONstack (REGISTER16afgroup | REGISTER16ex)
+   : INSTRUCTIONstack (register16_grpaf | register16_ex)
    ;
 
 
 instruction_exchange
-   : INSTRUCTIONexchange REGISTER16de ',' REGISTER16hl
-   | INSTRUCTIONexchange REGISTER16af ',' REGISTER16af '\''?
-   | INSTRUCTIONexchange '(' REGISTER16sp ')' ',' (REGISTER16hl | REGISTER16ex)
+   : INSTRUCTIONexchange REG16de COMMA REG16hl
+   | INSTRUCTIONexchange REG16af COMMA REG16af '\''?
+   | INSTRUCTIONexchange PARopen REG16sp PARclose COMMA (REG16hl | register16_ex)
    | INSTRUCTIONexxchange
    ;
 
 
 instruction_arithmetic8
-   : INSTRUCTIONarithmetic (REGISTER8a ',')? (REGISTER8 | REGISTER8x | REGISTER8y | expression8 )
-   | INSTRUCTIONarithmetic (REGISTER8a ',')? '(' (REGISTER16hl | REGISTER16ex '+' offset_ex) ')'
+   : INSTRUCTIONarithmetic (REG8a COMMA)? (registers8 | REG8x | REG8y | expression8 )
+   | INSTRUCTIONarithmetic (REG8a COMMA)? PARopen (REG16hl | register16_ex PLUS offset_ex) PARclose
    ;
 
 
 instruction_incdec8
-   : INSTRUCTIONincdec (REGISTER8 | REGISTER8x | REGISTER8y)
-   | INSTRUCTIONincdec '(' (REGISTER16hl | REGISTER16ex '+' offset_ex) ')'
+   : INSTRUCTIONincdec (registers8 | REG8x | REG8y)
+   | INSTRUCTIONincdec PARopen (REG16hl | register16_ex PLUS offset_ex) PARclose
    ;
 
 
 instruction_cpl
-   : INSTRUCTIONcpl REGISTER8a?
+   : INSTRUCTIONcpl REG8a?
    ;
 
 
 instruction_arithemic16
-   : INSTRUCTIONarithmetic16 REGISTER16hl ',' REGISTER16spgroup
-   | INSTRUCTIONarithmetic16 REGISTER16ix ',' REGISTER16spxgroup
-   | INSTRUCTIONarithmetic16 REGISTER16iy ',' REGISTER16spygroup
+   : INSTRUCTIONarithmetic16 REG16hl COMMA register16_grpsp
+   | INSTRUCTIONarithmetic16 REG16ix COMMA register16_ex
    ;
 
 
 instruction_incdec16
-   : INSTRUCTIONincdec (REGISTER16spgroup | REGISTER16ex)
+   : INSTRUCTIONincdec (register16_grpsp | register16_ex)
    ;
 
 
 instruction_rotate
-   : INSTRUCTIONrotate REGISTER8
-   | INSTRUCTIONrotate '(' (REGISTER16hl | REGISTER16ex '+' offset_ex) ')'
-   | INSTRUCTIONrotate '(' REGISTER16ex '+' offset_ex ')' ',' REGISTER8
+   : INSTRUCTIONrotate registers8
+   | INSTRUCTIONrotate PARopen (REG16hl | register16_ex PLUS offset_ex) PARclose
+   | INSTRUCTIONrotate PARopen register16_ex PLUS offset_ex PARclose COMMA registers8
    ;
 
 
 instruction_rotatedec
-   : INSTRUCTIONrotatedec REGISTER8a?
+   : INSTRUCTIONrotatedec REG8a?
    ;
 
 
 instruction_bit
-   : INSTRUCTIONbit BIT8 ',' REGISTER8
-   | INSTRUCTIONbit BIT8 ',' '(' (REGISTER16hl | REGISTER16ex '+' offset_ex) ')'
-   | INSTRUCTIONbit BIT8 ',' '(' REGISTER16ex '+' offset_ex ')' ',' REGISTER8
+   : INSTRUCTIONbit BIT8 COMMA registers8
+   | INSTRUCTIONbit BIT8 COMMA PARopen (REG16hl | register16_ex PLUS offset_ex) PARclose
+   | INSTRUCTIONbit BIT8 COMMA PARopen register16_ex PLUS offset_ex PARclose COMMA registers8
    ;
 
 
 instruction_jump
-   : INSTRUCTIONjump (REGISTER16hl | REGISTER16ex | expression16)
+   : INSTRUCTIONjump (REG16hl | register16_ex | expression16)
    | INSTRUCTIONjump CONDITIONflagsall expression16
    | INSTRUCTIONjumprel CONDITIONflags? offset_rel
-   | INSTRUCTIONjumpreld offset_rel
+   | INSTRUCTIONjumprelnz offset_rel
    ;
 
 
@@ -426,10 +425,10 @@ instruction_call
 
 
 instruction_io
-   : INSTRUCTIONin REGISTER8a ',' '(' expression8 ')'
-   | INSTRUCTIONin (REGISTER8 ',')? '(' REGISTER8c ')'
-   | INSTRUCTIONout '(' expression8 ')' ',' REGISTER8a
-   | INSTRUCTIONout '(' REGISTER8c ')' ',' (REGISTER8 | '0')
+   : INSTRUCTIONin REG8a COMMA PARopen expression8 PARclose
+   | INSTRUCTIONin (registers8 COMMA)? PARopen REG8c PARclose
+   | INSTRUCTIONout PARopen expression8 PARclose COMMA REG8a
+   | INSTRUCTIONout PARopen REG8c PARclose COMMA (registers8 | ZERO)
    ;
 
 
@@ -449,9 +448,10 @@ INSTRUCTIONvoid
    | (D A A) | (N E G) | (S C F) | (C C F)
    | (R L C A) | (R L A) | (R R C A) | (R R A)
    | (R E T I) | (R E T N)
-   | (I M [012]) | (D I) | (E I)
-   | (R S T '$'? [0123][08])
-   | (I N I) | (I N I R) | (I N D) | (I N D R) | (O U T I) | (O T I R) | (O U T D) | (O T D R)
+   | (I M [0-2]) | (D I) | (E I)
+   | (R S T '$'? [0-3][08] ('h'|'H')?)
+   | (I N I) | (I N I R) | (I N D) | (I N D R) 
+   | (O U T I) | (O T I R) | (O U T D) | (O T D R)
    ;
 
 
@@ -521,7 +521,7 @@ INSTRUCTIONjumprel
    ;
 
 
-INSTRUCTIONjumpreld
+INSTRUCTIONjumprelnz
    : (D J N Z)
    ;
 
@@ -557,97 +557,118 @@ CONDITIONflags
    ;
 
 
-BIT8
-   : [0-7]
+registers8
+   : REG8a | REG8b | REG8c | REG8d | REG8e | REG8h | REG8l
    ;
 
 
-REGISTER8a
-   : A
-   ;
-
-REGISTER8c
-   : C
+registers8x
+   : REG8a | REG8b | REG8c | REG8d | REG8e | REG8x
    ;
 
 
-REGISTER8
-   : A | B | C | D | E | H | L
+registers8y
+   : REG8a | REG8b | REG8c | REG8d | REG8e | REG8y
    ;
 
 
-REGISTER8x
-   : A | B | C | D | E | (I X H) | (I X L)
+REG8x
+   : (I X H) | (I X L)
    ;
 
 
-REGISTER8y
-   : A | B | C | D | E | (I Y H) | (I Y L)
+REG8y
+   : (I Y H) | (I Y L)
    ;
 
 
-REGISTER8sys
+REG8sys
    : I | R
    ;
 
 
-REGISTER16af
+REG8a
+   : A
+   ;
+
+
+REG8b
+   : B
+   ;
+
+
+REG8c
+   : C
+   ;
+
+
+REG8d
+   : D
+   ;
+
+
+REG8e
+   : E
+   ;
+
+
+REG8h
+   : H
+   ;
+
+
+REG8l
+   : L
+   ;
+
+
+register16_grpaf
+   : REG16af | REG16bc | REG16de | REG16hl
+   ;
+
+
+register16_grpsp
+   : REG16sp | REG16bc | REG16de | REG16hl
+   ;
+
+
+register16_ex
+   : REG16ix | REG16iy
+   ;
+
+
+REG16af
    : (A F)
    ;
 
 
-REGISTER16hl
-   : (H L)
+REG16bc
+   : (B C)
    ;
 
 
-REGISTER16de
+REG16de
    : (D E)
    ;
 
 
-REGISTER16sp
+REG16hl
+   : (H L)
+   ;
+
+
+REG16sp
    : (S P)
    ;
 
 
-REGISTER16ix
+REG16ix
    : (I X)
    ;
 
 
-REGISTER16iy
+REG16iy
    : (I Y)
-   ;
-
-
-REGISTER16bcde
-   : (B C) | (D E)
-   ;
-
-
-REGISTER16ex
-   : (I X) | (I Y)
-   ;
-
-
-REGISTER16afgroup
-   : (A F) | (B C) | (D E) | (H L) 
-   ;
-
-
-REGISTER16spgroup
-   : (S P) | (B C) | (D E) | (H L) 
-   ;
-
-
-REGISTER16spxgroup
-   : (S P) | (B C) | (D E) | (I X) 
-   ;
-
-
-REGISTER16spygroup
-   : (S P) | (B C) | (D E) | (I Y) 
    ;
 
 
@@ -697,7 +718,10 @@ expression16
 
 
 expression
-    : expression operator expression | number | symbol | '(' expression ')'
+    : expression operator expression
+    | PARopen expression PARclose
+    | number
+    | symbol
     ;
 
 
@@ -707,7 +731,7 @@ operator
 
 
 OPERATORnum
-    : '-' | '+' | '*' | '/' | '%' | '**'
+    : '-' | PLUS | '*' | '/' | '%' | '**'
     ;
 
 
@@ -719,6 +743,11 @@ OPERATORbit
 OPERATORlogic
     : '&&' | '||' | '!' | '=' | '<>' | '>' | '<' | '<=' | '>='
     ;
+
+
+PLUS
+   : '+'
+   ;
 
 
 number
@@ -950,6 +979,17 @@ fragment DIGIT16
     :   [0-9a-zA-Z]
     ;
 
+
+BIT8
+   : [0-7]
+   ;
+
+
+ZERO
+   : [0]
+   ;
+
+
 /**
  *  Tokens
  */
@@ -961,6 +1001,21 @@ CHARACTER
 
 STRING
    : '"' .*? '"'
+   ;
+
+
+PARopen
+   : '('
+   ;
+
+
+PARclose
+   : ')'
+   ;
+
+
+COMMA
+   : ','
    ;
 
 

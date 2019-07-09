@@ -109,4 +109,14 @@ describe("Grammar Parser", () => {
         expect(nodes[0].kind).toBe(AssemblyNodeKind.Directive);
         expect(nodes[0].text).toBe("ifdefsymbol\r\n; comment\r\nelse\r\nendif\r\n");
     });
+
+    it("instruction LD A, n", () => {
+        const parser = GrammarParser.createParser("ld a, 0");
+        const tree = parser.instruction();
+        const nodes = GrammarParser.createAssemblyNodes(tree);
+
+        expect(nodes.length).toBe(1);
+        expect(nodes[0].kind).toBe(AssemblyNodeKind.Instruction);
+        expect(nodes[0].text).toBe("publicname1,name2,name3");
+    });
 });

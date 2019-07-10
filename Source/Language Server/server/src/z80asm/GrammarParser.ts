@@ -7,8 +7,10 @@ import { z80asmParser, ExpressionContext, Number_binContext, NumberContext, Numb
 import { z80asmListener } from "./z80asmListener";
 import { z80asmVisitor } from "./z80asmVisitor";
 import { ParserRuleContext } from "antlr4ts";
-import { expression } from "@babel/template";
 import { ParseTree } from "antlr4ts/tree/ParseTree";
+import { TerminalNode } from "antlr4ts/tree/TerminalNode";
+import { CharStream } from "antlr4ts/CharStream";
+import { Interval } from "antlr4ts/misc/Interval";
 
 const _meta: InstructionMeta = {
     altCycles: [],
@@ -137,12 +139,26 @@ class GrammarListener implements z80asmListener {
 
     exitDirective(ctx: DirectiveContext) {
         if (!ctx.parent) {
-            this.nodes.push(new Directive(undefined, ctx.text, ctx.start.line, ctx.start.charPositionInLine));
+            this.nodes.push(new Directive(undefined, 
+                this.toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
         }
     }
 
     exitInstruction(ctx: InstructionContext) {
-        
+        if (!ctx.parent) {
+            this.nodes.push(new Instruction(_meta, "", undefined, 
+                this.toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
+        }
+    }
+
+    // grabs text from the original text stream
+    private toString(ctx: ParserRuleContext): string {
+        if (ctx.start && ctx.stop && ctx.start.inputStream) {
+            const interval = new Interval(ctx.start.startIndex, ctx.stop.stopIndex);
+            return ctx.start.inputStream.getText(interval);
+        }
+
+        return ctx.text;
     }
 }
 

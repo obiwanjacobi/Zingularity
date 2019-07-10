@@ -67,7 +67,7 @@ describe("Grammar Parser", () => {
 
         expect(nodes.length).toBe(1);
         expect(nodes[0].kind).toBe(AssemblyNodeKind.Directive);
-        expect(nodes[0].text).toBe("DEFM\"Hello\",'.',0");
+        expect(nodes[0].text).toBe("DEFM \"Hello\", '.', 0");
     });
 
     it("directive defb", () => {
@@ -77,7 +77,7 @@ describe("Grammar Parser", () => {
 
         expect(nodes.length).toBe(1);
         expect(nodes[0].kind).toBe(AssemblyNodeKind.Directive);
-        expect(nodes[0].text).toBe("DEFbsymbol,(2+3),0");
+        expect(nodes[0].text).toBe("DEFb symbol, (2+3), 0");
     });
 
     it("directive public", () => {
@@ -87,7 +87,7 @@ describe("Grammar Parser", () => {
 
         expect(nodes.length).toBe(1);
         expect(nodes[0].kind).toBe(AssemblyNodeKind.Directive);
-        expect(nodes[0].text).toBe("publicname1,name2,name3");
+        expect(nodes[0].text).toBe("public name1, name2, name3");
     });
 
     it("directive ifdef", () => {
@@ -97,7 +97,7 @@ describe("Grammar Parser", () => {
 
         expect(nodes.length).toBe(1);
         expect(nodes[0].kind).toBe(AssemblyNodeKind.Directive);
-        expect(nodes[0].text).toBe("ifdefsymbol\r\n; comment\r\nendif\r\n");
+        expect(nodes[0].text).toBe("ifdef symbol\r\n; comment\r\nendif\r\n");
     });
 
     it("directive ifdef else", () => {
@@ -107,7 +107,7 @@ describe("Grammar Parser", () => {
 
         expect(nodes.length).toBe(1);
         expect(nodes[0].kind).toBe(AssemblyNodeKind.Directive);
-        expect(nodes[0].text).toBe("ifdefsymbol\r\n; comment\r\nelse\r\nendif\r\n");
+        expect(nodes[0].text).toBe("ifdef symbol\r\n; comment\r\nelse\r\nendif\r\n");
     });
 
     it("instruction LD A, n", () => {
@@ -117,6 +117,6 @@ describe("Grammar Parser", () => {
 
         expect(nodes.length).toBe(1);
         expect(nodes[0].kind).toBe(AssemblyNodeKind.Instruction);
-        expect(nodes[0].text).toBe("publicname1,name2,name3");
+        expect(nodes[0].text).toBe("ld a, 0");
     });
 });

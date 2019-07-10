@@ -119,4 +119,17 @@ describe("Grammar Parser", () => {
         expect(nodes[0].kind).toBe(AssemblyNodeKind.Instruction);
         expect(nodes[0].text).toBe("ld a, 0");
     });
+
+
+
+
+    it("asm LD A, n", () => {
+        const parser = GrammarParser.createParser("ld a, 0" + newLine);
+        const tree = parser.asm();
+        const nodes = GrammarParser.createAssemblyNodes(tree);
+
+        expect(nodes.length).toBe(1);
+        expect(nodes[0].kind).toBe(AssemblyNodeKind.Instruction);
+        expect(nodes[0].text).toBe("ld a, 0");
+    });
 });

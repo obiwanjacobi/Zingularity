@@ -1,4 +1,4 @@
-import { buildInstruction, buildCompletionList, findMap } from "../../z80asm/InstructionNavigator";
+import { buildInstruction, buildCompletionList, findMapPath } from "../../z80asm/InstructionNavigator";
 import { Instruction } from "../../z80asm/CodeModel";
 
 const numericProfile = {
@@ -31,7 +31,7 @@ describe("Z80 Instruction Navigator", () => {
     });
 
     it("findMap: LD A,", () => {
-        const map = findMap("LD A,");
+        const map = findMapPath("LD A,");
         const keys = Object.keys(map);
 
         expect(keys).toContain("A");

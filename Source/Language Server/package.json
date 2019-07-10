@@ -69,11 +69,11 @@
 		"watch": "tsc -b -w",
 		"postinstall": "cd client && npm install && cd ../server && npm install && cd ..",
 		"test": "jest",
+		"test:w": "jest --watch",
 		"webpack": "npm run clean && webpack --mode production --config ./client/webpack.config.js && webpack --mode production --config ./server/webpack.config.js",
 		"package": "git clean -xfd node_modules && npm install && vsce package",
 		"publish": "vsce publish",
 		"clean": "rimraf client/out && rimraf server/out",
-		"antlr:sample": "antlr4ts .\\server\\src\\z80asm\\asmZ80.g4",
 		"antlr": "antlr4ts -visitor .\\server\\src\\z80asm\\z80asm.g4"
 	},
 	"devDependencies": {

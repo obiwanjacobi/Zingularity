@@ -11,6 +11,7 @@ import { ParseTree } from "antlr4ts/tree/ParseTree";
 import { TerminalNode } from "antlr4ts/tree/TerminalNode";
 import { CharStream } from "antlr4ts/CharStream";
 import { Interval } from "antlr4ts/misc/Interval";
+import { findMap, createMeta } from "./InstructionNavigator";
 
 const _meta: InstructionMeta = {
     altCycles: [],
@@ -122,6 +123,21 @@ class ExpressionBuilder extends AbstractParseTreeVisitor<ExpressionTreeNode> imp
     }
 }
 
+class TextCollector extends AbstractParseTreeVisitor<string[]> {
+    defaultResult(): string[] {
+        return new Array<string>();
+    }
+
+    aggregateResult(aggregate: string[], result: string[]): string[] {
+        return aggregate.concat(result);
+    }
+
+    visitTerminal(node: TerminalNode): string[] {
+        return [ node.text ];
+    }
+}
+
+
 class GrammarListener implements z80asmListener {
     readonly nodes: AssemblyNode[];
 
@@ -138,17 +154,24 @@ class GrammarListener implements z80asmListener {
     }
 
     exitDirective(ctx: DirectiveContext) {
-        if (!ctx.parent) {
-            this.nodes.push(new Directive(undefined, 
-                this.toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
-        }
+        // TODO: detect conditional compilation expression
+        this.nodes.push(new Directive(undefined, 
+            this.toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
     }
 
     exitInstruction(ctx: InstructionContext) {
-        if (!ctx.parent) {
-            this.nodes.push(new Instruction(_meta, "", undefined, 
-                this.toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
-        }
+        // TODO: detect (numeric) expression
+        const numeric = undefined;
+        // TODO: detect (symbol) expression
+        const external = "";
+
+        const collector = new TextCollector();
+        const parts = collector.visit(ctx);
+        const map = findMap(parts);
+        const meta = createMeta(map, numeric);
+
+        this.nodes.push(new Instruction(meta || _meta, external, numeric, 
+            this.toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
     }
 
     // grabs text from the original text stream

@@ -15,11 +15,12 @@ import {
     SymbolKind,
 } from "vscode-languageserver";
 import { AssemblyDocument, AssemblyNodeKind, Instruction } from "./z80asm/CodeModel";
-import { Parser, ParserProfile } from "./z80asm/Parser";
+import { ParserProfile } from "./z80asm/Parser";
 import { buildCompletionList } from "./z80asm/InstructionNavigator";
 import { sum } from "./utils";
 import { CodeModelManager, toRange, rangeFrom } from "./z80asm/CodeModelManager";
 import { DocumentSerializer } from "./z80asm/DocumentSerializer";
+import { GrammarParser } from "./z80asm/GrammarParser";
 
 // Create a connection for the server. The connection uses Node's IPC as a transport.
 // Also include all preview / proposed LSP features.
@@ -152,7 +153,8 @@ documents.onDidChangeContent(change => {
 });
 
 async function validateTextDocument(textDocument: TextDocument): Promise<void> {
-    const parser = (new Parser(parserProfile));
+    //const parser = new Parser(parserProfile);
+    const parser = new GrammarParser();
     const doc: AssemblyDocument = { 
         nodes: parser.parse(textDocument.getText()), 
         uri: textDocument.uri, 

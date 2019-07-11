@@ -162,7 +162,7 @@ directive_symbollist
 
 
 directive_assign
-   : DIRECTIVEassign '=' expression
+   : DIRECTIVEassign symbol '=' expression
    ;
 
 
@@ -320,6 +320,7 @@ instruction
    | instruction_jump
    | instruction_call
    | instruction_rst
+   | instruction_im
    | instruction_io
    ;
 
@@ -338,13 +339,15 @@ instruction_ld8
    | (INSTRUCTIONld PARopen register16_ex PLUS offset_ex PARclose COMMA registers8)
    | (INSTRUCTIONld PARopen REG16hl PARclose COMMA expression8)
    | (INSTRUCTIONld PARopen register16_ex PLUS offset_ex PARclose COMMA expression8)
-   | (INSTRUCTIONld REG8a COMMA PARopen (REG16bc | REG16de | REG8sys | expression) PARclose)
+   | (INSTRUCTIONld REG8a COMMA PARopen (REG16bc | REG16de | expression) PARclose)
+   | (INSTRUCTIONld REG8a COMMA REG8sys)
+   | (INSTRUCTIONld REG8sys COMMA REG8a)
    | (INSTRUCTIONld PARopen (REG16bc | REG16de | REG8sys | expression16) PARclose COMMA REG8a)
    ;
 
 
 instruction_ld16
-   : INSTRUCTIONld register16_grpsp COMMA expression16
+   : INSTRUCTIONld (register16_grpsp | register16_ex) COMMA expression16
    | INSTRUCTIONld register16_ex COMMA PARopen expression16 PARclose
    | INSTRUCTIONld PARopen expression16 PARclose COMMA (register16_grpsp | register16_ex)
    | INSTRUCTIONld REG16sp COMMA (REG16hl | register16_ex)
@@ -365,8 +368,8 @@ instruction_exchange
 
 
 instruction_arithmetic8
-   : INSTRUCTIONarithmetic (REG8a COMMA)? (registers8 | REG8x | REG8y | expression8 )
-   | INSTRUCTIONarithmetic (REG8a COMMA)? PARopen (REG16hl | register16_ex PLUS offset_ex) PARclose
+   : (INSTRUCTIONarithmetic | INSTRUCTIONarithmetic16) (REG8a COMMA)? (registers8 | REG8x | REG8y | expression8 )
+   | (INSTRUCTIONarithmetic | INSTRUCTIONarithmetic16) (REG8a COMMA)? PARopen (REG16hl | register16_ex PLUS offset_ex) PARclose
    ;
 
 
@@ -405,28 +408,48 @@ instruction_rotatedec
 
 
 instruction_bit
-   : INSTRUCTIONbit BIT8 COMMA registers8
-   | INSTRUCTIONbit BIT8 COMMA PARopen (REG16hl | register16_ex PLUS offset_ex) PARclose
-   | INSTRUCTIONbit BIT8 COMMA PARopen register16_ex PLUS offset_ex PARclose COMMA registers8
+   : INSTRUCTIONbit bitindex COMMA registers8
+   | INSTRUCTIONbit bitindex COMMA PARopen (REG16hl | register16_ex PLUS offset_ex) PARclose
+   | INSTRUCTIONbit bitindex COMMA PARopen register16_ex PLUS offset_ex PARclose COMMA registers8
+   ;
+
+
+bitindex
+   : BIT8 | INTERRUPTMODE
    ;
 
 
 instruction_jump
    : INSTRUCTIONjump (REG16hl | register16_ex | expression16)
-   | INSTRUCTIONjump CONDITIONflagsall expression16
-   | INSTRUCTIONjumprel CONDITIONflags? offset_rel
+   | INSTRUCTIONjump instruction_conditionFlagsAll expression16
+   | INSTRUCTIONjumprel instruction_conditionFlags? offset_rel
    | INSTRUCTIONjumprelnz offset_rel
    ;
 
 
 instruction_call
-   : INSTRUCTIONcall CONDITIONflagsall? expression16
-   | INSTRUCTIONret CONDITIONflags?
+   : INSTRUCTIONcall (instruction_conditionFlagsAll COMMA)? expression16
+   | INSTRUCTIONret instruction_conditionFlags?
+   ;
+
+
+instruction_conditionFlagsAll
+   : CONDITIONflagsall | REG8c
+   ;
+
+
+instruction_conditionFlags
+   : CONDITIONflags | REG8c
    ;
 
 
 instruction_rst
-   : INSTRUCTIONrst INSTRUCTIONrstvector
+   : INSTRUCTIONrst (INSTRUCTIONrstvectorhex | INSTRUCTIONrstvector)
+   ;
+
+
+instruction_im
+   : INSTRUCTIONim INTERRUPTMODE
    ;
 
 
@@ -454,7 +477,7 @@ INSTRUCTIONvoid
    | (D A A) | (N E G) | (S C F) | (C C F)
    | (R L C A) | (R L A) | (R R C A) | (R R A)
    | (R E T I) | (R E T N)
-   | (I M [0-2]) | (D I) | (E I)
+   | (D I) | (E I)
    | (I N I) | (I N I R) | (I N D) | (I N D R) 
    | (O U T I) | (O T I R) | (O U T D) | (O T D R)
    ;
@@ -480,6 +503,11 @@ INSTRUCTIONexxchange
    ;
 
 
+INSTRUCTIONarithmetic16
+   : (A D D) | (A D C) | (S B C)
+   ;
+
+
 INSTRUCTIONarithmetic
    : (A D D) | (A D C) | (S U B) | (S B C) | (A N D) | (O R) | (X O R) | (C P)
    ;
@@ -492,11 +520,6 @@ INSTRUCTIONincdec
 
 INSTRUCTIONcpl
    : (C P L)
-   ;
-
-
-INSTRUCTIONarithmetic16
-   : (A D D) | (A D C) | (S B C)
    ;
 
 
@@ -546,24 +569,18 @@ INSTRUCTIONrst
    ;
 
 
- INSTRUCTIONin
+INSTRUCTIONim
+   : (I M)
+   ;
+
+
+INSTRUCTIONin
    : (I N)
    ;
 
 
 INSTRUCTIONout
    : (O U T)
-   ;
-
-
-CONDITIONflagsall
-   : CONDITIONflags
-   | (P O) | (P E) | P | M
-   ;
-
-
-CONDITIONflags
-   : (N? Z) | (N? C)
    ;
 
 
@@ -682,6 +699,17 @@ REG16iy
    ;
 
 
+CONDITIONflagsall
+   : CONDITIONflags
+   | (P O) | (P E) | P | M
+   ;
+
+
+CONDITIONflags
+   : (N? Z) | (N? C)
+   ;
+
+
 label
    : '.' SYMBOL | SYMBOL ':'
    ;
@@ -741,12 +769,37 @@ expression
 
 
 operator
-    : OPERATORnum | OPERATORbit | OPERATORlogic
+    : operator_num | operator_bit | operator_logic
     ;
 
 
+operator_num
+   : OPERATORnum | MINUS | PLUS
+   ;
+
+
+operator_bit
+   : OPERATORbit
+   ;
+
+
+operator_logic
+   : OPERATORlogic
+   ;
+
+
+PLUS
+   : '+'
+   ;
+
+
+MINUS
+   : '-'
+   ;
+
+
 OPERATORnum
-    : '-' | PLUS | '*' | '/' | '%' | '**'
+    : MINUS | PLUS | '*' | '/' | '%' | '**'
     ;
 
 
@@ -760,13 +813,8 @@ OPERATORlogic
     ;
 
 
-PLUS
-   : '+'
-   ;
-
-
 number
-   : number_bin | number_oct | number_dec | number_hex
+   : (PLUS|MINUS)? (number_bin | number_oct | number_dec | number_hex)
    ;
 
 
@@ -781,12 +829,32 @@ number_oct
 
 
 number_dec
-   : NUMBERdec
+   : NUMBERdec | INTERRUPTMODE | BIT8 | INSTRUCTIONrstvector
    ;
 
 
 number_hex
-   : NUMBERhex
+   : NUMBERhex | INSTRUCTIONrstvectorhex
+   ;
+
+
+INTERRUPTMODE
+   : [0-2]
+   ;
+
+
+BIT8
+   : [0-7]
+   ;
+
+
+INSTRUCTIONrstvectorhex
+   : '$' INSTRUCTIONrstvector | INSTRUCTIONrstvector H
+   ;
+
+
+INSTRUCTIONrstvector
+   : [0-3][08]
    ;
 
 
@@ -1038,18 +1106,3 @@ WS
     : [ \t] 
       -> channel(HIDDEN)
     ;
-
-
-//
-// ----------------------------------------------------------------------------
-//
-
-
-BIT8
-   : [0-7]
-   ;
-
-
-INSTRUCTIONrstvector
-   : '$'? [0-3][08] H?
-   ;

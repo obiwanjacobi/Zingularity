@@ -123,7 +123,8 @@ line
 
 directive
    : directive_void 
-   | directive_param 
+   | directive_param16
+   | directive_param32
    | directive_block 
    | directive_symbol 
    | directive_symbollist 
@@ -132,7 +133,6 @@ directive
    | directive_defm
    | directive_if
    | directive_ifdef
-   | directive_ifndef
    ;
 
 
@@ -141,8 +141,13 @@ directive_void
    ;
 
 
-directive_param
-   : DIRECTIVEparam expression
+directive_param16
+   : DIRECTIVEparam16 expression16
+   ;
+
+
+directive_param32
+   : DIRECTIVEparam32 expression32
    ;
 
 
@@ -191,11 +196,6 @@ directive_ifdef
    ;
 
 
-directive_ifndef
-   : DIRECTIVEifndef symbol comment? directive_ifblock
-   ;
-
-
 directive_ifblock
    : asm directive_elseblock? DIRECTIVEendif (EOL | EOF)
    ;
@@ -218,8 +218,13 @@ DIRECTIVEvoid
 
 
 // directives with numeric param
-DIRECTIVEparam
-   : (O R G) | (A L I G N) | (D E F Q)
+DIRECTIVEparam16
+   : (O R G) | (A L I G N)
+   ;
+
+
+DIRECTIVEparam32
+   : (D E F Q)
    ;
 
 
@@ -274,12 +279,7 @@ DIRECTIVEif
 
 
 DIRECTIVEifdef
-   : (I F D E F)
-   ;
-
-
-DIRECTIVEifndef
-   : (I F N D E F)
+   : (I F N? D E F)
    ;
 
 
@@ -319,6 +319,7 @@ instruction
    | instruction_bit
    | instruction_jump
    | instruction_call
+   | instruction_rst
    | instruction_io
    ;
 
@@ -424,6 +425,11 @@ instruction_call
    ;
 
 
+instruction_rst
+   : INSTRUCTIONrst INSTRUCTIONrstvector
+   ;
+
+
 instruction_io
    : INSTRUCTIONin REG8a COMMA PARopen expression8 PARclose
    | INSTRUCTIONin (registers8 COMMA)? PARopen REG8c PARclose
@@ -449,7 +455,6 @@ INSTRUCTIONvoid
    | (R L C A) | (R L A) | (R R C A) | (R R A)
    | (R E T I) | (R E T N)
    | (I M [0-2]) | (D I) | (E I)
-   | (R S T '$'? [0-3][08] H?)
    | (I N I) | (I N I R) | (I N D) | (I N D R) 
    | (O U T I) | (O T I R) | (O U T D) | (O T D R)
    ;
@@ -533,6 +538,11 @@ INSTRUCTIONcall
 
 INSTRUCTIONret
    : (R E T)
+   ;
+
+
+INSTRUCTIONrst
+   : (R S T)
    ;
 
 
@@ -717,6 +727,11 @@ expression16
     ;
 
 
+expression32
+    : expression
+    ;
+
+
 expression
     : expression operator expression
     | PARopen expression PARclose
@@ -800,132 +815,132 @@ NUMBERhex
  */
 
 fragment A
-   : ('a' | 'A')
+   : [aA]
    ;
 
 
 fragment B
-   : ('b' | 'B')
+   : [bB]
    ;
 
 
 fragment C
-   : ('c' | 'C')
+   : [cC]
    ;
 
 
 fragment D
-   : ('d' | 'D')
+   : [dD]
    ;
 
 
 fragment E
-   : ('e' | 'E')
+   : [eE]
    ;
 
 
 fragment F
-   : ('f' | 'F')
+   : [fF]
    ;
 
 
 fragment G
-   : ('g' | 'G')
+   : [gG]
    ;
 
 
 fragment H
-   : ('h' | 'H')
+   : [hH]
    ;
 
 
 fragment I
-   : ('i' | 'I')
+   : [iI]
    ;
 
 
 fragment J
-   : ('j' | 'J')
+   : [jJ]
    ;
 
 
 fragment K
-   : ('k' | 'K')
+   : [kK]
    ;
 
 
 fragment L
-   : ('l' | 'L')
+   : [lL]
    ;
 
 
 fragment M
-   : ('m' | 'M')
+   : [mM]
    ;
 
 
 fragment N
-   : ('n' | 'N')
+   : [nN]
    ;
 
 
 fragment O
-   : ('o' | 'O')
+   : [oO]
    ;
 
 
 fragment P
-   : ('p' | 'P')
+   : [pP]
    ;
 
 
 fragment Q
-   : ('q' | 'Q')
+   : [qQ]
    ;
 
 
 fragment R
-   : ('r' | 'R')
+   : [rR]
    ;
 
 
 fragment S
-   : ('s' | 'S')
+   : [sS]
    ;
 
 
 fragment T
-   : ('t' | 'T')
+   : [tT]
    ;
 
 
 fragment U
-   : ('u' | 'U')
+   : [uU]
    ;
 
 
 fragment V
-   : ('v' | 'V')
+   : [vV]
    ;
 
 
 fragment W
-   : ('w' | 'W')
+   : [wW]
    ;
 
 
 fragment X
-   : ('x' | 'X')
+   : [xX]
    ;
 
 
 fragment Y
-   : ('y' | 'Y')
+   : [yY]
    ;
 
 
 fragment Z
-   : ('z' | 'Z')
+   : [zZ]
    ;
 
 
@@ -980,11 +995,6 @@ fragment DIGIT16
     ;
 
 
-BIT8
-   : [0-7]
-   ;
-
-
 ZERO
    : [0]
    ;
@@ -1025,5 +1035,21 @@ EOL
 
 
 WS
-    : [ \t] -> channel(HIDDEN)
+    : [ \t] 
+      -> channel(HIDDEN)
     ;
+
+
+//
+// ----------------------------------------------------------------------------
+//
+
+
+BIT8
+   : [0-7]
+   ;
+
+
+INSTRUCTIONrstvector
+   : '$'? [0-3][08] H?
+   ;

@@ -161,4 +161,15 @@ describe("Grammar Parser", () => {
         expect((<Instruction> nodes[0]).numeric).toBeUndefined();
         expect((<Instruction> nodes[0]).external).toBe("symbol");
     });
+
+
+    it("asm RST 28", () => {
+        const parser = GrammarParser.createParser("rst 28" + newLine);
+        const tree = parser.asm();
+        const nodes = GrammarParser.createAssemblyNodes(tree);
+
+        expect(nodes.length).toBe(1);
+        expect(nodes[0].kind).toBe(AssemblyNodeKind.Instruction);
+        expect(nodes[0].text).toBe("rst 28");
+    });
 });

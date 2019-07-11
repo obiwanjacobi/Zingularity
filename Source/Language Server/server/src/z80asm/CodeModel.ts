@@ -72,17 +72,20 @@ export class Directive extends AssemblyNode {
 export class Expression extends AssemblyNode {
     readonly left: Expression | undefined;
     readonly right: Expression | undefined;
-    readonly number: Numeric | undefined;
+    readonly numeric: Numeric | undefined;
+    readonly symbol: string | undefined;
 
-    static readonly empty: Expression = new Expression(undefined, undefined, undefined, "", 0, 0);
+    static readonly empty: Expression = new Expression(undefined, undefined, undefined, undefined, "", 0, 0);
 
-    constructor(left: Expression | undefined, right: Expression | undefined, number: Numeric | undefined, 
+    constructor(left: Expression | undefined, right: Expression | undefined, 
+        number: Numeric | undefined, symbol: string | undefined,
         token: string, line: number, column: number) {
 
         super(AssemblyNodeKind.Expression, token, line, column);
         this.left = left;
         this.right = right;
-        this.number = number;
+        this.numeric = number;
+        this.symbol = symbol;
     }
 
     toString(): string {

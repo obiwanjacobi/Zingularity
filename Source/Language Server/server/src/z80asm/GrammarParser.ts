@@ -3,7 +3,7 @@ import * as antlr4 from "antlr4ts";
 import { ParseTreeWalker } from "antlr4ts/tree/ParseTreeWalker";
 import { AbstractParseTreeVisitor } from "antlr4ts/tree/AbstractParseTreeVisitor";
 import { z80asmLexer } from "./z80asmLexer";
-import { z80asmParser, ExpressionContext, Number_binContext, NumberContext, Number_octContext, Number_decContext, Number_hexContext, OperatorContext, AsmContext, DirectiveContext, InstructionContext } from "./z80asmParser";
+import { z80asmParser, ExpressionContext, Number_binContext, NumberContext, Number_octContext, Number_decContext, Number_hexContext, OperatorContext, AsmContext, DirectiveContext, InstructionContext, SymbolContext } from "./z80asmParser";
 import { z80asmListener } from "./z80asmListener";
 import { z80asmVisitor } from "./z80asmVisitor";
 import { ParserRuleContext } from "antlr4ts";
@@ -12,6 +12,7 @@ import { TerminalNode } from "antlr4ts/tree/TerminalNode";
 import { CharStream } from "antlr4ts/CharStream";
 import { Interval } from "antlr4ts/misc/Interval";
 import { findMap, createMeta } from "./InstructionNavigator";
+import { isNumber } from "util";
 
 const _meta: InstructionMeta = {
     altCycles: [],
@@ -19,6 +20,17 @@ const _meta: InstructionMeta = {
     cycles: [],
     flags: []
 };
+
+// grabs text from the original text stream
+function toString(ctx: ParserRuleContext): string {
+    if (ctx.start && ctx.stop && ctx.start.inputStream) {
+        const interval = new Interval(ctx.start.startIndex, ctx.stop.stopIndex);
+        return ctx.start.inputStream.getText(interval);
+    }
+
+    return ctx.text;
+}
+
 
 class NumericBuilder extends AbstractParseTreeVisitor<Numeric> implements z80asmVisitor<Numeric> {
     defaultResult(): Numeric {
@@ -53,42 +65,52 @@ class ExpressionTreeNode {
     left: ExpressionTreeNode | undefined;
     right: ExpressionTreeNode | undefined;
     numeric: Numeric | undefined;
+    symbol: string;
 
     constructor(text: string, line: number, column: number) {
         this.text = text;
         this.line = line;
         this.column = column;
+        this.symbol = "";
     }
+
+    static readonly empty = new ExpressionTreeNode("", 0, 0);
 }
 
 class ExpressionBuilder extends AbstractParseTreeVisitor<ExpressionTreeNode> implements z80asmVisitor<ExpressionTreeNode> {
-    static readonly empty = new ExpressionTreeNode("", 0, 0);
+    
 
     defaultResult(): ExpressionTreeNode {
-        return ExpressionBuilder.empty;
+        return ExpressionTreeNode.empty;
+    }
+
+    visitSymbol(ctx: SymbolContext): ExpressionTreeNode {
+        const treeNode = new ExpressionTreeNode(toString(ctx), ctx.start.line, ctx.start.charPositionInLine);
+        treeNode.symbol = ctx.text;
+        return treeNode;
     }
 
     visitNumber(ctx: NumberContext): ExpressionTreeNode {
         const numericBuilder = new NumericBuilder();
-        const expr = new ExpressionTreeNode(ctx.text, ctx.start.line, ctx.start.charPositionInLine);
+        const expr = new ExpressionTreeNode(toString(ctx), ctx.start.line, ctx.start.charPositionInLine);
         expr.numeric = numericBuilder.visit(ctx);
         return expr;
     }
 
     visitOperator(ctx: OperatorContext): ExpressionTreeNode {
-        return new ExpressionTreeNode(ctx.text, ctx.start.line, ctx.start.charPositionInLine);
+        return new ExpressionTreeNode(toString(ctx), ctx.start.line, ctx.start.charPositionInLine);
     }
 
     visitExpression(ctx: ExpressionContext): ExpressionTreeNode {
         if (ctx.childCount > 0) {
             return super.visitChildren(ctx);
         }
-        return new ExpressionTreeNode(ctx.text, ctx.start.line, ctx.start.charPositionInLine);
+        return new ExpressionTreeNode(toString(ctx), ctx.start.line, ctx.start.charPositionInLine);
     }
 
     aggregateResult(aggregate: ExpressionTreeNode, result: ExpressionTreeNode): ExpressionTreeNode {
-        if (aggregate === ExpressionBuilder.empty) { return result; }
-        if (result === ExpressionBuilder.empty) { return aggregate; }
+        if (aggregate === ExpressionTreeNode.empty) { return result; }
+        if (result === ExpressionTreeNode.empty) { return aggregate; }
         if (aggregate.numeric) {
             if (!result.left) { result.left = aggregate; return result; }
         }
@@ -113,6 +135,7 @@ class ExpressionBuilder extends AbstractParseTreeVisitor<ExpressionTreeNode> imp
                 this.toExpression(treeNode.left), 
                 this.toExpression(treeNode.right),
                 treeNode.numeric, 
+                treeNode.symbol,
                 treeNode.text,
                 treeNode.line,
                 treeNode.column,
@@ -120,6 +143,38 @@ class ExpressionBuilder extends AbstractParseTreeVisitor<ExpressionTreeNode> imp
         }
     
         return undefined;
+    }
+}
+
+class ExpressionExtractor extends AbstractParseTreeVisitor<Expression[]> implements z80asmVisitor<Expression[]>{
+    defaultResult(): Expression[] {
+        return new Array<Expression>();
+    }
+
+    aggregateResult(aggregate: Expression[], result: Expression[]): Expression[] {
+        return aggregate.concat(result);
+    }
+
+    visitExpression(ctx: ExpressionContext): Expression[] {
+        const builder = new ExpressionBuilder();
+        const expression = builder.build(ctx);
+        return [ expression ];
+    }
+
+    findNumeric(expressions: Expression[]): Numeric | undefined {
+        const numerics = expressions
+            .filter(e => e.numeric)
+            .map(e => e.numeric);
+
+        return numerics.length ? numerics[0] : undefined;
+    }
+
+    findSymbol(expressions: Expression[]): string | undefined {
+        const symbols = expressions
+            .filter(e => e.symbol)
+            .map(e => e.symbol);
+
+        return symbols.length ? symbols[0] : undefined;
     }
 }
 
@@ -137,7 +192,6 @@ class TextCollector extends AbstractParseTreeVisitor<string[]> {
     }
 }
 
-
 class GrammarListener implements z80asmListener {
     readonly nodes: AssemblyNode[];
 
@@ -154,34 +208,27 @@ class GrammarListener implements z80asmListener {
     }
 
     exitDirective(ctx: DirectiveContext) {
-        // TODO: detect conditional compilation expression
-        this.nodes.push(new Directive(undefined, 
-            this.toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
+        const extractor = new ExpressionExtractor();
+        const expressions = extractor.visit(ctx);
+        const expression = expressions.length ? expressions[0] : undefined;
+        this.nodes.push(new Directive(expression, 
+            toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
     }
 
     exitInstruction(ctx: InstructionContext) {
-        // TODO: detect (numeric) expression
-        const numeric = undefined;
-        // TODO: detect (symbol) expression
-        const external = "";
+        const extractor = new ExpressionExtractor();
+        const expressions = extractor.visit(ctx);
+
+        const numeric = extractor.findNumeric(expressions);
+        const external = extractor.findSymbol(expressions);
 
         const collector = new TextCollector();
         const parts = collector.visit(ctx);
         const map = findMap(parts);
         const meta = createMeta(map, numeric);
 
-        this.nodes.push(new Instruction(meta || _meta, external, numeric, 
-            this.toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
-    }
-
-    // grabs text from the original text stream
-    private toString(ctx: ParserRuleContext): string {
-        if (ctx.start && ctx.stop && ctx.start.inputStream) {
-            const interval = new Interval(ctx.start.startIndex, ctx.stop.stopIndex);
-            return ctx.start.inputStream.getText(interval);
-        }
-
-        return ctx.text;
+        this.nodes.push(new Instruction(meta || _meta, external || "", numeric, 
+            toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
     }
 }
 

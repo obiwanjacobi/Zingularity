@@ -1,4 +1,4 @@
-import { AssemblyNodeKind, AssemblyNode, Comment, Directive, Instruction, InstructionMeta, Label, Expression } from "./CodeModel";
+import { AssemblyNodeKind, AssemblyNode, Comment, Directive, Instruction, InstructionMeta, Label, Expression } from "../CodeModel";
 import { parseExpression } from "./ExpressionParser";
 
 const _meta: InstructionMeta = {

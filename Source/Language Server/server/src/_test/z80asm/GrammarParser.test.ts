@@ -1,5 +1,5 @@
 import { GrammarParser } from "../../z80asm/GrammarParser";
-import { AssemblyNodeKind, Expression } from "../../z80asm/CodeModel";
+import { AssemblyNodeKind, Expression, Directive, Instruction } from "../../z80asm/CodeModel";
 
 // const parser = new GrammarParser();
 const newLine = "\r\n";
@@ -34,7 +34,7 @@ describe("Grammar Parser", () => {
         expect(nodes.length).toBe(1);
         expect(nodes[0].kind).toBe(AssemblyNodeKind.Expression);
         const node = <Expression> nodes[0];
-        expect(node.number).toBeUndefined();
+        expect(node.numeric).toBeUndefined();
         expect(node.text).toBe("*");
         expect(node.left).not.toBeUndefined();
         expect(node.right).not.toBeUndefined();
@@ -43,19 +43,19 @@ describe("Grammar Parser", () => {
             expect(left.text).toBe("+");
             expect(left.left).not.toBeUndefined();
             expect(left.right).not.toBeUndefined();
-            expect(left.number).toBeUndefined();
+            expect(left.numeric).toBeUndefined();
             if (left.left) {
-                expect(left.left.number).not.toBeUndefined();
+                expect(left.left.numeric).not.toBeUndefined();
                 expect(left.left.text).toBe("8");
             }
             if (left.right) {
-                expect(left.right.number).not.toBeUndefined();
+                expect(left.right.numeric).not.toBeUndefined();
                 expect(left.right.text).toBe("3");
             }
         }
         const right = node.right;
         if (right) {
-            expect(right.number).not.toBeUndefined();
+            expect(right.numeric).not.toBeUndefined();
             expect(right.text).toBe("4");
         }
     });
@@ -90,6 +90,18 @@ describe("Grammar Parser", () => {
         expect(nodes[0].text).toBe("public name1, name2, name3");
     });
 
+    it("directive if", () => {
+        const parser = GrammarParser.createParser("if (100-symbol) > 0\r\n; comment\r\nendif\r\n");
+        const tree = parser.directive();
+        const nodes = GrammarParser.createAssemblyNodes(tree);
+
+        expect(nodes.length).toBe(1);
+        expect(nodes[0].kind).toBe(AssemblyNodeKind.Directive);
+        expect(nodes[0].text).toBe("if (100-symbol) > 0\r\n; comment\r\nendif\r\n");
+
+        expect((<Directive> nodes[0]).expression).not.toBeUndefined();
+    });
+
     it("directive ifdef", () => {
         const parser = GrammarParser.createParser("ifdef symbol\r\n; comment\r\nendif\r\n");
         const tree = parser.directive();
@@ -120,10 +132,11 @@ describe("Grammar Parser", () => {
         expect(nodes[0].text).toBe("ld a, 0");
     });
 
+    //
+    // root parser rule tests
+    //
 
-
-
-    it("asm LD A, n", () => {
+    it("asm LD A, n (numeric)", () => {
         const parser = GrammarParser.createParser("ld a, 0" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
@@ -131,5 +144,21 @@ describe("Grammar Parser", () => {
         expect(nodes.length).toBe(1);
         expect(nodes[0].kind).toBe(AssemblyNodeKind.Instruction);
         expect(nodes[0].text).toBe("ld a, 0");
+
+        expect((<Instruction> nodes[0]).numeric).not.toBeUndefined();
+        expect((<Instruction> nodes[0]).external).toBe("");
+    });
+
+    it("asm LD A, n (symbol)", () => {
+        const parser = GrammarParser.createParser("ld a, symbol" + newLine);
+        const tree = parser.asm();
+        const nodes = GrammarParser.createAssemblyNodes(tree);
+
+        expect(nodes.length).toBe(1);
+        expect(nodes[0].kind).toBe(AssemblyNodeKind.Instruction);
+        expect(nodes[0].text).toBe("ld a, symbol");
+
+        expect((<Instruction> nodes[0]).numeric).toBeUndefined();
+        expect((<Instruction> nodes[0]).external).toBe("symbol");
     });
 });

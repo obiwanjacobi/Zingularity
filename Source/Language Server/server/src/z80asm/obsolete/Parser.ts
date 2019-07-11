@@ -1,4 +1,4 @@
-import { AssemblyNode, Comment, Directive, Label, Whitespace, AsmError, Instruction, AssemblyNodeKind, Expression } from "./CodeModel";
+import { AssemblyNode, Comment, Directive, Label, Whitespace, AsmError, Instruction, AssemblyNodeKind, Expression } from "../CodeModel";
 import { buildInstruction } from "./InstructionNavigator";
 import { NumericProfile } from "./NumericParser";
 import { parseExpression } from "./ExpressionParser";

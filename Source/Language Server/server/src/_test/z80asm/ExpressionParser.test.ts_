@@ -1,4 +1,4 @@
-import { parseExpression } from "../../z80asm/ExpressionParser";
+import { parseExpression } from "../../z80asm/obsolete/ExpressionParser";
 import { AssemblyNodeKind } from "../../z80asm/CodeModel";
 
 

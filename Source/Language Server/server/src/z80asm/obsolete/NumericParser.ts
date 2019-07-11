@@ -1,4 +1,4 @@
-import { Numeric, Radix } from "./CodeModel";
+import { Numeric, Radix } from "../CodeModel";
 
 export interface NumericInfo {
     prefix: string[];

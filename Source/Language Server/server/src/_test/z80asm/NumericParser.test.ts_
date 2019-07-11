@@ -1,4 +1,4 @@
-import { parseNumeric } from "../../z80asm/NumericParser";
+import { parseNumeric } from "../../z80asm/obsolete/NumericParser";
 
 const profile = {
     bin : { prefix: [""], postfix: [""] },

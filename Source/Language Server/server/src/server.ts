@@ -15,12 +15,12 @@ import {
     SymbolKind,
 } from "vscode-languageserver";
 import { AssemblyDocument, AssemblyNodeKind, Instruction } from "./z80asm/CodeModel";
-import { ParserProfile } from "./z80asm/Parser";
 import { buildCompletionList } from "./z80asm/InstructionNavigator";
-import { sum } from "./utils";
 import { CodeModelManager, toRange, rangeFrom } from "./z80asm/CodeModelManager";
 import { DocumentSerializer } from "./z80asm/DocumentSerializer";
 import { GrammarParser } from "./z80asm/GrammarParser";
+import { sum } from "./utils";
+
 
 // Create a connection for the server. The connection uses Node's IPC as a transport.
 // Also include all preview / proposed LSP features.
@@ -29,19 +29,8 @@ let connection = createConnection(ProposedFeatures.all);
 // Create a simple text document manager. The text document manager
 // supports full document sync only
 const documents: TextDocuments = new TextDocuments();
+// manages parsed AssemblyNode documents
 const codeModelMgr: CodeModelManager = new CodeModelManager();
-const parserProfile: ParserProfile = { 
-    numericProfile: {
-        bin : { prefix: [""], postfix: [""] },
-        oct : { prefix: [""], postfix: [""] },
-        dec : { prefix: [""], postfix: [""] },
-        hex : { prefix: ["$", "#", "0x"], postfix: ["h", "H"] },
-    },
-    lineComment: ";",
-    labelBegin: ".",
-    labelEnd: ":",
-    directives: ["section", "org", "equ"]
- };
 
 let hasConfigurationCapability: boolean = false;
 let hasWorkspaceFolderCapability: boolean = false;
@@ -153,7 +142,6 @@ documents.onDidChangeContent(change => {
 });
 
 async function validateTextDocument(textDocument: TextDocument): Promise<void> {
-    //const parser = new Parser(parserProfile);
     const parser = new GrammarParser();
     const doc: AssemblyDocument = { 
         nodes: parser.parse(textDocument.getText()), 

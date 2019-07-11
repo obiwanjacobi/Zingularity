@@ -449,7 +449,7 @@ INSTRUCTIONvoid
    | (R L C A) | (R L A) | (R R C A) | (R R A)
    | (R E T I) | (R E T N)
    | (I M [0-2]) | (D I) | (E I)
-   | (R S T '$'? [0-3][08] ('h'|'H')?)
+   | (R S T '$'? [0-3][08] H?)
    | (I N I) | (I N I R) | (I N D) | (I N D R) 
    | (O U T I) | (O T I R) | (O U T D) | (O T D R)
    ;
@@ -791,7 +791,7 @@ NUMBERdec
 
 
 NUMBERhex
-   : DIGIT16 + 'h' | '$' DIGIT16 +
+   : DIGIT16 + H | '$' DIGIT16 +
    ;
 
 

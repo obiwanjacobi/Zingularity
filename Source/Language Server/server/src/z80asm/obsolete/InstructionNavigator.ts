@@ -1,7 +1,7 @@
-import instructionMap from "./InstructionMap.json";
-import { Instruction, AsmError, Numeric, InstructionMeta } from "./CodeModel";
-import { splitInstruction } from "./InstructionSplitter";
-import { parseNumeric, NumericProfile } from "./obsolete/NumericParser";
+import instructionMap from "../InstructionMap.json";
+import { Instruction, AsmError, Numeric, InstructionMeta } from "../CodeModel";
+import { splitInstruction } from "../InstructionSplitter";
+import { parseNumeric, NumericProfile } from "./NumericParser";
 import { create } from "domain";
 
 const byteLiteralKeys = ["d", "e", "n", "nn"];
@@ -9,6 +9,13 @@ const byteReplaceKeys = ["d", "e", "n", "n-lo", "n-hi"];
 
 interface OnNavigateMap {
     (parentMap: {}, newMap: {} | undefined, part: string, key: string): void;
+}
+
+function navigateMapPath(path: string, onNavigate: OnNavigateMap): {} {
+    const parts = splitInstruction(path);
+    if (parts.length == 0) throw new Error("No Parts.");
+
+    return navigateMap(parts, onNavigate);
 }
 
 function navigateMap(parts: string[], onNavigate: OnNavigateMap): {} {
@@ -46,6 +53,20 @@ export function findMap(parts: string[]): {} {
     let map = undefined;
 
     navigateMap(parts, (_parentMap, newMap, _part:string) => {
+        if (newMap) {
+            map = newMap;
+        }
+    });
+
+    // @ts-ignore: undefined
+    return map;
+}
+
+export function findMapPath(path: string): {} {
+    
+    let map = undefined;
+
+    navigateMapPath(path, (_parentMap, newMap, _part:string) => {
         if (newMap) {
             map = newMap;
         }
@@ -118,4 +139,43 @@ export function createMeta(map: {}, numeric: Numeric | undefined): InstructionMe
     }
 
     return undefined;
+}
+
+export function buildInstruction(numericProfile: NumericProfile, token: string, line: number, column: number): Instruction | AsmError {
+    let numeric: Numeric | undefined;
+    let external = "";
+    let err;
+
+    const map = navigateMapPath(token, (_parentMap, newMap, part, key) => {
+        if (!newMap) {
+            err = new AsmError(`Unrecognized text '${part}' (${token})`, token, line, column);
+        }
+
+        if (byteLiteralKeys.indexOf(key) >= 0) {
+            numeric = parseNumeric(numericProfile, part, line, column);
+            if (isNaN(numeric.number)) {
+                external = part;
+                numeric = undefined;
+            }
+        }
+    });
+
+    if (err) {
+        return err;
+    }
+
+    const meta = createMeta(map, numeric);
+
+    if (meta) {
+        return new Instruction(
+            meta,
+            external,
+            numeric,
+            token, 
+            line, 
+            column
+        );
+    }
+
+    return new AsmError(`Unrecognized text '${token}'`, token, line, column);
 }

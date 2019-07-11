@@ -1,4 +1,4 @@
-import { Expression } from "./CodeModel";
+import { Expression } from "../CodeModel";
 
 // in order of precedence
 const operators = ["*", "/", "&", "|", "-", "+"];
@@ -142,6 +142,7 @@ function toExpression(treeNode: TreeNode | undefined, line: number): Expression 
             toExpression(treeNode.left, line), 
             toExpression(treeNode.right, line),
             undefined, 
+            undefined,
             treeNode.token.text,
             line,
             treeNode.token.column,

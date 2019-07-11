@@ -1,4 +1,4 @@
-import { createParserConfiguration, ConfigurableParser } from "../../z80asm/ConfigurableParser";
+import { createParserConfiguration, ConfigurableParser } from "../../z80asm/obsolete/ConfigurableParser";
 import { AssemblyNodeKind, Instruction } from "../../z80asm/CodeModel";
 import parserConfiguration from "./ParserConfiguration.json";
 

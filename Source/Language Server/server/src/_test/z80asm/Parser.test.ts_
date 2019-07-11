@@ -1,4 +1,4 @@
-import { Parser, ParserProfile } from "../../z80asm/Parser";
+import { Parser, ParserProfile } from "../../z80asm/obsolete/Parser";
 import { AssemblyNode, AssemblyNodeKind, Instruction } from "../../z80asm/CodeModel";
 
 const parserProfile: ParserProfile = { 

@@ -85,37 +85,39 @@ export function buildCompletionList(token: string): CompletionInfo[] {
     return [];
 }
 
-export function createMeta(map: {}, numeric: Numeric | undefined): InstructionMeta | undefined {
-    // @ts-ignore: implicit any
-    const meta = map["_"];
+export function createMeta(map: {} | undefined, numeric: Numeric | undefined): InstructionMeta | undefined {
+    if (map) {
+        // @ts-ignore: implicit any
+        const meta = map["_"];
 
-    if (meta) {
-        let bytes = <string[]> meta["bytes"];
-        if (numeric) {
-            const n = bytes.findIndex(b => byteReplaceKeys.filter(k => k.length == 1).indexOf(b) >= 0);
-            if (n >= 0) {
-                bytes[n] = numeric.loString(16);
-            } else {
-                const lo = bytes.findIndex(b => b === byteReplaceKeys[3]);
-                const hi = bytes.findIndex(b => b === byteReplaceKeys[4]);
-                bytes[lo] = numeric.loString(16);
-                bytes[hi] = numeric.hiString(16);
+        if (meta) {
+            let bytes = <string[]> meta["bytes"];
+            if (numeric) {
+                const n = bytes.findIndex(b => byteReplaceKeys.filter(k => k.length == 1).indexOf(b) >= 0);
+                if (n >= 0) {
+                    bytes[n] = numeric.loString(16);
+                } else {
+                    const lo = bytes.findIndex(b => b === byteReplaceKeys[3]);
+                    const hi = bytes.findIndex(b => b === byteReplaceKeys[4]);
+                    bytes[lo] = numeric.loString(16);
+                    bytes[hi] = numeric.hiString(16);
+                }
             }
+            
+            // @ts-ignore: implicit any
+            const cycles = <number[]> meta["cycles"].map(k => Number(k));
+            // @ts-ignore: implicit any
+            const alt = <numerb[]> meta["altCcyles"] ? meta["altCcyles"].map(k => Number(k)) : [];
+            const flags = <string[]> meta["flags"] ? meta["flags"] : [];
+
+            return {
+                bytes: bytes, 
+                cycles: cycles, 
+                altCycles: alt, 
+                flags: flags
+            };
         }
-        
-        // @ts-ignore: implicit any
-        const cycles = <number[]> meta["cycles"].map(k => Number(k));
-        // @ts-ignore: implicit any
-        const alt = <numerb[]> meta["altCcyles"] ? meta["altCcyles"].map(k => Number(k)) : [];
-        const flags = <string[]> meta["flags"] ? meta["flags"] : [];
-
-        return {
-            bytes: bytes, 
-            cycles: cycles, 
-            altCycles: alt, 
-            flags: flags
-        };
     }
-
+    
     return undefined;
 }

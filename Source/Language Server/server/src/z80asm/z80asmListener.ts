@@ -8,7 +8,8 @@ import { AsmContext } from "./z80asmParser";
 import { LineContext } from "./z80asmParser";
 import { DirectiveContext } from "./z80asmParser";
 import { Directive_voidContext } from "./z80asmParser";
-import { Directive_paramContext } from "./z80asmParser";
+import { Directive_param16Context } from "./z80asmParser";
+import { Directive_param32Context } from "./z80asmParser";
 import { Directive_symbolContext } from "./z80asmParser";
 import { Directive_symbollistContext } from "./z80asmParser";
 import { Directive_assignContext } from "./z80asmParser";
@@ -18,7 +19,6 @@ import { Directive_defmContext } from "./z80asmParser";
 import { DefmparamContext } from "./z80asmParser";
 import { Directive_ifContext } from "./z80asmParser";
 import { Directive_ifdefContext } from "./z80asmParser";
-import { Directive_ifndefContext } from "./z80asmParser";
 import { Directive_ifblockContext } from "./z80asmParser";
 import { Directive_elseblockContext } from "./z80asmParser";
 import { Directive_phaseContext } from "./z80asmParser";
@@ -36,8 +36,13 @@ import { Instruction_incdec16Context } from "./z80asmParser";
 import { Instruction_rotateContext } from "./z80asmParser";
 import { Instruction_rotatedecContext } from "./z80asmParser";
 import { Instruction_bitContext } from "./z80asmParser";
+import { BitindexContext } from "./z80asmParser";
 import { Instruction_jumpContext } from "./z80asmParser";
 import { Instruction_callContext } from "./z80asmParser";
+import { Instruction_conditionFlagsAllContext } from "./z80asmParser";
+import { Instruction_conditionFlagsContext } from "./z80asmParser";
+import { Instruction_rstContext } from "./z80asmParser";
+import { Instruction_imContext } from "./z80asmParser";
 import { Instruction_ioContext } from "./z80asmParser";
 import { Offset_exContext } from "./z80asmParser";
 import { Offset_relContext } from "./z80asmParser";
@@ -46,6 +51,9 @@ import { Registers8xContext } from "./z80asmParser";
 import { Registers8yContext } from "./z80asmParser";
 import { Register16_grpafContext } from "./z80asmParser";
 import { Register16_grpspContext } from "./z80asmParser";
+import { Register16_grpsphlContext } from "./z80asmParser";
+import { Register16_grpspixContext } from "./z80asmParser";
+import { Register16_grpspiyContext } from "./z80asmParser";
 import { Register16_exContext } from "./z80asmParser";
 import { LabelContext } from "./z80asmParser";
 import { SymbolContext } from "./z80asmParser";
@@ -54,8 +62,12 @@ import { StringContext } from "./z80asmParser";
 import { CharacterContext } from "./z80asmParser";
 import { Expression8Context } from "./z80asmParser";
 import { Expression16Context } from "./z80asmParser";
+import { Expression32Context } from "./z80asmParser";
 import { ExpressionContext } from "./z80asmParser";
 import { OperatorContext } from "./z80asmParser";
+import { Operator_numContext } from "./z80asmParser";
+import { Operator_bitContext } from "./z80asmParser";
+import { Operator_logicContext } from "./z80asmParser";
 import { NumberContext } from "./z80asmParser";
 import { Number_binContext } from "./z80asmParser";
 import { Number_octContext } from "./z80asmParser";
@@ -124,15 +136,26 @@ export interface z80asmListener extends ParseTreeListener {
 	exitDirective_void?: (ctx: Directive_voidContext) => void;
 
 	/**
-	 * Enter a parse tree produced by `z80asmParser.directive_param`.
+	 * Enter a parse tree produced by `z80asmParser.directive_param16`.
 	 * @param ctx the parse tree
 	 */
-	enterDirective_param?: (ctx: Directive_paramContext) => void;
+	enterDirective_param16?: (ctx: Directive_param16Context) => void;
 	/**
-	 * Exit a parse tree produced by `z80asmParser.directive_param`.
+	 * Exit a parse tree produced by `z80asmParser.directive_param16`.
 	 * @param ctx the parse tree
 	 */
-	exitDirective_param?: (ctx: Directive_paramContext) => void;
+	exitDirective_param16?: (ctx: Directive_param16Context) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.directive_param32`.
+	 * @param ctx the parse tree
+	 */
+	enterDirective_param32?: (ctx: Directive_param32Context) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.directive_param32`.
+	 * @param ctx the parse tree
+	 */
+	exitDirective_param32?: (ctx: Directive_param32Context) => void;
 
 	/**
 	 * Enter a parse tree produced by `z80asmParser.directive_symbol`.
@@ -232,17 +255,6 @@ export interface z80asmListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	exitDirective_ifdef?: (ctx: Directive_ifdefContext) => void;
-
-	/**
-	 * Enter a parse tree produced by `z80asmParser.directive_ifndef`.
-	 * @param ctx the parse tree
-	 */
-	enterDirective_ifndef?: (ctx: Directive_ifndefContext) => void;
-	/**
-	 * Exit a parse tree produced by `z80asmParser.directive_ifndef`.
-	 * @param ctx the parse tree
-	 */
-	exitDirective_ifndef?: (ctx: Directive_ifndefContext) => void;
 
 	/**
 	 * Enter a parse tree produced by `z80asmParser.directive_ifblock`.
@@ -432,6 +444,17 @@ export interface z80asmListener extends ParseTreeListener {
 	exitInstruction_bit?: (ctx: Instruction_bitContext) => void;
 
 	/**
+	 * Enter a parse tree produced by `z80asmParser.bitindex`.
+	 * @param ctx the parse tree
+	 */
+	enterBitindex?: (ctx: BitindexContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.bitindex`.
+	 * @param ctx the parse tree
+	 */
+	exitBitindex?: (ctx: BitindexContext) => void;
+
+	/**
 	 * Enter a parse tree produced by `z80asmParser.instruction_jump`.
 	 * @param ctx the parse tree
 	 */
@@ -452,6 +475,50 @@ export interface z80asmListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	exitInstruction_call?: (ctx: Instruction_callContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.instruction_conditionFlagsAll`.
+	 * @param ctx the parse tree
+	 */
+	enterInstruction_conditionFlagsAll?: (ctx: Instruction_conditionFlagsAllContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.instruction_conditionFlagsAll`.
+	 * @param ctx the parse tree
+	 */
+	exitInstruction_conditionFlagsAll?: (ctx: Instruction_conditionFlagsAllContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.instruction_conditionFlags`.
+	 * @param ctx the parse tree
+	 */
+	enterInstruction_conditionFlags?: (ctx: Instruction_conditionFlagsContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.instruction_conditionFlags`.
+	 * @param ctx the parse tree
+	 */
+	exitInstruction_conditionFlags?: (ctx: Instruction_conditionFlagsContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.instruction_rst`.
+	 * @param ctx the parse tree
+	 */
+	enterInstruction_rst?: (ctx: Instruction_rstContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.instruction_rst`.
+	 * @param ctx the parse tree
+	 */
+	exitInstruction_rst?: (ctx: Instruction_rstContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.instruction_im`.
+	 * @param ctx the parse tree
+	 */
+	enterInstruction_im?: (ctx: Instruction_imContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.instruction_im`.
+	 * @param ctx the parse tree
+	 */
+	exitInstruction_im?: (ctx: Instruction_imContext) => void;
 
 	/**
 	 * Enter a parse tree produced by `z80asmParser.instruction_io`.
@@ -542,6 +609,39 @@ export interface z80asmListener extends ParseTreeListener {
 	exitRegister16_grpsp?: (ctx: Register16_grpspContext) => void;
 
 	/**
+	 * Enter a parse tree produced by `z80asmParser.register16_grpsphl`.
+	 * @param ctx the parse tree
+	 */
+	enterRegister16_grpsphl?: (ctx: Register16_grpsphlContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.register16_grpsphl`.
+	 * @param ctx the parse tree
+	 */
+	exitRegister16_grpsphl?: (ctx: Register16_grpsphlContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.register16_grpspix`.
+	 * @param ctx the parse tree
+	 */
+	enterRegister16_grpspix?: (ctx: Register16_grpspixContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.register16_grpspix`.
+	 * @param ctx the parse tree
+	 */
+	exitRegister16_grpspix?: (ctx: Register16_grpspixContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.register16_grpspiy`.
+	 * @param ctx the parse tree
+	 */
+	enterRegister16_grpspiy?: (ctx: Register16_grpspiyContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.register16_grpspiy`.
+	 * @param ctx the parse tree
+	 */
+	exitRegister16_grpspiy?: (ctx: Register16_grpspiyContext) => void;
+
+	/**
 	 * Enter a parse tree produced by `z80asmParser.register16_ex`.
 	 * @param ctx the parse tree
 	 */
@@ -630,6 +730,17 @@ export interface z80asmListener extends ParseTreeListener {
 	exitExpression16?: (ctx: Expression16Context) => void;
 
 	/**
+	 * Enter a parse tree produced by `z80asmParser.expression32`.
+	 * @param ctx the parse tree
+	 */
+	enterExpression32?: (ctx: Expression32Context) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.expression32`.
+	 * @param ctx the parse tree
+	 */
+	exitExpression32?: (ctx: Expression32Context) => void;
+
+	/**
 	 * Enter a parse tree produced by `z80asmParser.expression`.
 	 * @param ctx the parse tree
 	 */
@@ -650,6 +761,39 @@ export interface z80asmListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	exitOperator?: (ctx: OperatorContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.operator_num`.
+	 * @param ctx the parse tree
+	 */
+	enterOperator_num?: (ctx: Operator_numContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.operator_num`.
+	 * @param ctx the parse tree
+	 */
+	exitOperator_num?: (ctx: Operator_numContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.operator_bit`.
+	 * @param ctx the parse tree
+	 */
+	enterOperator_bit?: (ctx: Operator_bitContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.operator_bit`.
+	 * @param ctx the parse tree
+	 */
+	exitOperator_bit?: (ctx: Operator_bitContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.operator_logic`.
+	 * @param ctx the parse tree
+	 */
+	enterOperator_logic?: (ctx: Operator_logicContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.operator_logic`.
+	 * @param ctx the parse tree
+	 */
+	exitOperator_logic?: (ctx: Operator_logicContext) => void;
 
 	/**
 	 * Enter a parse tree produced by `z80asmParser.number`.

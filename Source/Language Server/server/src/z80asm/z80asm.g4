@@ -347,9 +347,9 @@ instruction_ld8
 
 
 instruction_ld16
-   : INSTRUCTIONld (register16_grpsp | register16_ex) COMMA expression16
+   : INSTRUCTIONld (register16_grpsphl | register16_ex) COMMA expression16
    | INSTRUCTIONld register16_ex COMMA PARopen expression16 PARclose
-   | INSTRUCTIONld PARopen expression16 PARclose COMMA (register16_grpsp | register16_ex)
+   | INSTRUCTIONld PARopen expression16 PARclose COMMA (register16_grpsphl | register16_ex)
    | INSTRUCTIONld REG16sp COMMA (REG16hl | register16_ex)
    ;
 
@@ -385,13 +385,14 @@ instruction_cpl
 
 
 instruction_arithemic16
-   : INSTRUCTIONarithmetic16 REG16hl COMMA register16_grpsp
-   | INSTRUCTIONarithmetic16 REG16ix COMMA register16_ex
+   : INSTRUCTIONarithmetic16 REG16hl COMMA register16_grpsphl
+   | INSTRUCTIONarithmetic16 REG16ix COMMA register16_grpspix
+   | INSTRUCTIONarithmetic16 REG16iy COMMA register16_grpspiy
    ;
 
 
 instruction_incdec16
-   : INSTRUCTIONincdec (register16_grpsp | register16_ex)
+   : INSTRUCTIONincdec (register16_grpsphl | register16_ex)
    ;
 
 
@@ -421,20 +422,20 @@ bitindex
 
 instruction_jump
    : INSTRUCTIONjump (REG16hl | register16_ex | expression16)
-   | INSTRUCTIONjump instruction_conditionFlagsAll expression16
-   | INSTRUCTIONjumprel instruction_conditionFlags? offset_rel
+   | INSTRUCTIONjump instruction_conditionFlagsAll COMMA expression16
+   | INSTRUCTIONjumprel (instruction_conditionFlags COMMA)? offset_rel
    | INSTRUCTIONjumprelnz offset_rel
    ;
 
 
 instruction_call
    : INSTRUCTIONcall (instruction_conditionFlagsAll COMMA)? expression16
-   | INSTRUCTIONret instruction_conditionFlags?
+   | INSTRUCTIONret instruction_conditionFlagsAll?
    ;
 
 
 instruction_conditionFlagsAll
-   : CONDITIONflagsall | REG8c
+   : CONDITIONflagsex | CONDITIONflags | REG8c
    ;
 
 
@@ -465,6 +466,7 @@ instruction_io
 offset_ex
    : expression
    ;
+
 offset_rel
    : expression
    ;
@@ -655,7 +657,22 @@ register16_grpaf
 
 
 register16_grpsp
-   : REG16sp | REG16bc | REG16de | REG16hl
+   : REG16sp | REG16bc | REG16de
+   ;
+
+
+register16_grpsphl
+   : register16_grpsp | REG16hl
+   ;
+
+
+register16_grpspix
+   : register16_grpsp | REG16ix
+   ;
+
+
+register16_grpspiy
+   : register16_grpsp | REG16iy
    ;
 
 
@@ -699,9 +716,8 @@ REG16iy
    ;
 
 
-CONDITIONflagsall
-   : CONDITIONflags
-   | (P O) | (P E) | P | M
+CONDITIONflagsex
+   : (P O) | (P E) | P | M
    ;
 
 

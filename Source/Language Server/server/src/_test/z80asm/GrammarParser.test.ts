@@ -1,7 +1,6 @@
 import { GrammarParser } from "../../z80asm/GrammarParser";
 import { AssemblyNodeKind, Expression, Directive, Instruction } from "../../z80asm/CodeModel";
 
-// const parser = new GrammarParser();
 const newLine = "\r\n";
 
 describe("Grammar Parser", () => {
@@ -170,6 +169,16 @@ describe("Grammar Parser", () => {
 
         expect(nodes.length).toBe(1);
         expect(nodes[0].kind).toBe(AssemblyNodeKind.Instruction);
+        expect(nodes[0].text).toBe("rst 28");
+    });
+
+    it("error ld (hl), sp", () => {
+        const parser = GrammarParser.createParser("ld (hl), sp" + newLine);
+        const tree = parser.asm();
+        const nodes = GrammarParser.createAssemblyNodes(tree);
+
+        expect(nodes.length).toBe(1);
+        expect(nodes[0].kind).toBe(AssemblyNodeKind.Error);
         expect(nodes[0].text).toBe("rst 28");
     });
 });

@@ -1,19 +1,12 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; $Id: testz80.asm 1.3 1993/08/13 23:42:07 toma Exp $
+; $Id: z80asm.asm 1.3 1993/08/13 23:42:07 toma Exp $
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; TASM  test file
+; z88dk Z80 ASM  test file
 ; Test all instructions and addressing modes.
 ; Processor: Z80
 ;
-; SEPT. 16,1987
-; CARL A. WALL
-;  VE3APY
-;
-;
-;    cpu "z180.tbl"
-;    hof "INT8"
 
 defc n          = 20h
 defc nn         = 0584h

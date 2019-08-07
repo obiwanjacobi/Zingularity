@@ -29,6 +29,9 @@ void NextMCycle()
     _state.Clock.M++;
     _state.Clock.T = 1;
     _state.Clock.TL = 1;
+
+    // incremented past instruction m-cycles.
+    assert(_state.Instruction.Instruction->Count < _state.Instruction.MCycleIndex);
 }
 
 void AdvanceClock()
@@ -44,6 +47,7 @@ void AdvanceClock()
 
         if (_state.Instruction.Instruction != nullptr)
         {
+            assert(_state.Instruction.Instruction->Count < _state.Instruction.MCycleIndex);
             if (_state.Clock.T == _state.Instruction.Instruction->Cycles[_state.Instruction.MCycleIndex].clocks)
             {
                 NextMCycle();
@@ -248,8 +252,10 @@ Async_Function(ExecuteInstructionPart)
 {
     Async_Reset(&_state.Instruction.Async);
 
+    assert(_state.Instruction.Instruction->Count < _state.Instruction.MCycleIndex);
     while (_state.Clock.T <= _state.Instruction.Instruction->Cycles[_state.Instruction.MCycleIndex].clocks)
     {
+        assert(_state.Instruction.Instruction->Count < _state.Instruction.MCycleIndex);
         _state.Instruction.Instruction->Cycles[_state.Instruction.MCycleIndex].OnClock(&_state.Instruction.Async);
         Async_Yield(1);
     }

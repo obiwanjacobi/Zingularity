@@ -1,4 +1,4 @@
-import { AssemblyNode, Comment, Label, Instruction, InstructionMeta, Expression, Numeric, Radix, Directive } from "./CodeModel";
+import { AssemblyNode, Comment, Label, Instruction, InstructionMeta, Expression, Numeric, Radix, Directive, AsmError } from "./CodeModel";
 import * as antlr4 from "antlr4ts";
 import { ParseTreeWalker } from "antlr4ts/tree/ParseTreeWalker";
 import { AbstractParseTreeVisitor } from "antlr4ts/tree/AbstractParseTreeVisitor";
@@ -9,10 +9,8 @@ import { z80asmVisitor } from "./z80asmVisitor";
 import { ParserRuleContext } from "antlr4ts";
 import { ParseTree } from "antlr4ts/tree/ParseTree";
 import { TerminalNode } from "antlr4ts/tree/TerminalNode";
-import { CharStream } from "antlr4ts/CharStream";
 import { Interval } from "antlr4ts/misc/Interval";
 import { findMap, createMeta } from "./InstructionNavigator";
-import { isNumber } from "util";
 
 const _meta: InstructionMeta = {
     altCycles: [],
@@ -31,7 +29,18 @@ function toString(ctx: ParserRuleContext): string {
     return ctx.text;
 }
 
-
+function toErrorMessage(exception: antlr4.RecognitionException): string {
+    const typeName = (<any> exception).constructor.name;
+    switch(typeName) {
+        default:
+        case "FailedPredicateException":
+        case "LexerNoViableAltException":
+        case "InputMismatchException":
+            return "Syntax Error";
+        case "NoViableAltException":
+            return "Illegal Instruction";
+    }
+}
 class NumericBuilder extends AbstractParseTreeVisitor<Numeric> implements z80asmVisitor<Numeric> {
     defaultResult(): Numeric {
         return Numeric.empty;
@@ -200,6 +209,8 @@ class GrammarListener implements z80asmListener {
     }
 
     exitExpression(ctx: ExpressionContext) {
+        if (this.hasException(ctx)) { return; }
+
         if (!ctx.parent) {
             const builder = new ExpressionBuilder();
             const expression = builder.build(ctx);
@@ -208,6 +219,8 @@ class GrammarListener implements z80asmListener {
     }
 
     exitDirective(ctx: DirectiveContext) {
+        if (this.hasException(ctx)) { return; }
+
         const extractor = new ExpressionExtractor();
         const expressions = extractor.visit(ctx);
         const expression = expressions.length ? expressions[0] : undefined;
@@ -216,6 +229,8 @@ class GrammarListener implements z80asmListener {
     }
 
     exitInstruction(ctx: InstructionContext) {
+        if (this.hasException(ctx)) { return; }
+
         const extractor = new ExpressionExtractor();
         const expressions = extractor.visit(ctx);
 
@@ -229,6 +244,29 @@ class GrammarListener implements z80asmListener {
 
         this.nodes.push(new Instruction(meta || _meta, external || "", numeric, 
             toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
+    }
+
+    private hasException(ctx: ParserRuleContext): boolean {
+        const exc = this.getException(ctx);
+        if (exc) {
+            this.nodes.push(new AsmError(toErrorMessage(exc), toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
+            return true;
+        }
+        return false;
+    }
+
+    private getException(ctx: ParserRuleContext): antlr4.RecognitionException | undefined {
+        if (ctx.exception) { return ctx.exception; }
+
+        for (let i = 0; i < ctx.childCount; i++) {
+            const child = ctx.tryGetChild<ParserRuleContext>(i, ParserRuleContext);
+            if (child) {
+                const exc = this.getException(child);
+                if (exc) { return exc; }
+            }
+        }
+
+        return undefined;
     }
 }
 

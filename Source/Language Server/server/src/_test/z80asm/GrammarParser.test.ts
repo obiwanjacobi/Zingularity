@@ -179,6 +179,6 @@ describe("Grammar Parser", () => {
 
         expect(nodes.length).toBe(1);
         expect(nodes[0].kind).toBe(AssemblyNodeKind.Error);
-        expect(nodes[0].text).toBe("rst 28");
+        expect(nodes[0].text).toBe("ld (hl), sp");
     });
 });

@@ -213,7 +213,7 @@ directive_phase
 
 // directives without any params
 DIRECTIVEvoid
-   :  (A S M P C) | (L S T O N) | (L S T O F F)
+   : (L S T O N) | (L S T O F F)
    ;
 
 

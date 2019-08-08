@@ -142,18 +142,11 @@ export class Instruction extends AssemblyNode {
 }
 
 export class Label extends AssemblyNode {
-    constructor(text: string, line: number, column: number) {
+    readonly symbol: string;
+
+    constructor(symbol: string, text: string, line: number, column: number) {
         super(AssemblyNodeKind.Label, text, line, column);
-    }
-}
-
-export class Whitespace extends AssemblyNode {
-    constructor(text: string, line: number, column: number) {
-        super(AssemblyNodeKind.Whitespace, text, line, column);
-    }
-
-    toString(): string {
-        return this.text;
+        this.symbol = symbol;
     }
 }
 

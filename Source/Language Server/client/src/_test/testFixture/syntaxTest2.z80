@@ -1,4 +1,4 @@
-cval: equ $AA
+defc cval =  $AA
 
 ; comment 2
 label2:

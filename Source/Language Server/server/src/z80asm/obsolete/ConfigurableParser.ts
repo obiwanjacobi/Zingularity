@@ -95,7 +95,7 @@ export class ConfigurableParser {
                     meta, external, numeric,
                     text, line, column);
             case AssemblyNodeKind.Label:
-                return new Label(text, line, column);
+                return new Label(text, text, line, column);
             case AssemblyNodeKind.Expression:
                 return parseExpression(text, line, column);
 

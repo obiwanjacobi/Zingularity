@@ -1,4 +1,4 @@
-import { AssemblyNode, Comment, Directive, Label, Whitespace, AsmError, Instruction, AssemblyNodeKind, Expression } from "../CodeModel";
+import { AssemblyNode, Comment, Directive, Label, AsmError, Instruction, AssemblyNodeKind, Expression } from "../CodeModel";
 import { buildInstruction } from "./InstructionNavigator";
 import { NumericProfile } from "./NumericParser";
 import { parseExpression } from "./ExpressionParser";
@@ -168,12 +168,12 @@ export class Parser {
             
             case ParserState.LabelBegin:
             case ParserState.LabelEnd:
-                node = new Label(token, line, col);
+                node = new Label(token, token, line, col);
                 break;
     
-            case ParserState.WhiteSpace:
-                node = new Whitespace(token, line, col);
-                break;
+            // case ParserState.WhiteSpace:
+            //     node = new Whitespace(token, line, col);
+            //     break;
     
             default:
                 if (token.length > 0) {

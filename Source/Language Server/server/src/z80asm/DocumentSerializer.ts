@@ -98,7 +98,7 @@ export class DocumentSerializer {
     }
 
     private serializeLabel(label: Label): string {
-        return `${label.toString()}:`;
+        return label.toString();
     }
 
     private serializeInstruction(instruction: Instruction): string {

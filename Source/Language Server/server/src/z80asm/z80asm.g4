@@ -734,7 +734,7 @@ CONDITIONflags
 
 
 label
-   : '.' SYMBOL | SYMBOL ':'
+   : '.' symbol | symbol ':'
    ;
 
 

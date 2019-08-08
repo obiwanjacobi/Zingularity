@@ -13,8 +13,9 @@ import {
     Location,
     SymbolInformation,
     SymbolKind,
+    HoverRequest,
 } from "vscode-languageserver";
-import { AssemblyDocument, AssemblyNodeKind, Instruction } from "./z80asm/CodeModel";
+import { AssemblyDocument, AssemblyNodeKind, Instruction, Label } from "./z80asm/CodeModel";
 import { buildCompletionList } from "./z80asm/InstructionNavigator";
 import { CodeModelManager, toRange, rangeFrom } from "./z80asm/CodeModelManager";
 import { DocumentSerializer } from "./z80asm/DocumentSerializer";
@@ -204,14 +205,25 @@ connection.onHover(
     (textDocumentPosition): Hover | undefined => {
         const docNode = codeModelMgr.findNode(textDocumentPosition.textDocument.uri, textDocumentPosition.position);
 
-        if (docNode && docNode.node.kind === AssemblyNodeKind.Instruction) {
-            const instruction = <Instruction> docNode.node;
-            
-            const flags = instruction.meta.flags.length === 0 ? "" :  ` - flags: ${instruction.meta.flags.join("|")}`;
-            return {
-                contents: `${instruction.text} - cycles: ${sum(instruction.meta.cycles)} - bytes: ${instruction.meta.bytes.join(", ")}${flags}`,
-                range: toRange(instruction)
-            };
+        if (docNode) {
+            if (docNode.node.kind === AssemblyNodeKind.Instruction) {
+                const instruction = <Instruction> docNode.node;
+                
+                const flags = instruction.meta.flags.length === 0 ? "" :  ` - flags: ${instruction.meta.flags.join(" ")}`;
+                return {
+                    contents: `${instruction.text} - cycles: ${sum(instruction.meta.cycles)} - bytes: ${instruction.meta.bytes.join(", ")}${flags}`,
+                    range: toRange(instruction)
+                };
+            }
+            if (docNode.node.kind === AssemblyNodeKind.Label) {
+                const label = <Label> docNode.node;
+                
+                const refs = codeModelMgr.codeModel.symbols.findReferences(label);
+                return {
+                    contents: `${label.symbol}: ${refs.length - 1} references`,
+                    range: toRange(label)
+                };
+            }
         }
 
         return undefined;
@@ -224,7 +236,7 @@ connection.onDefinition((textDocumentPosition): Location | null => {
         if (docNode) {
             const decl = codeModelMgr.codeModel.symbols.findDeclaration(docNode.node);
             if (decl) {
-                return { uri: decl.document.uri, range: toRange(decl.node) };
+                return Location.create(decl.document.uri, toRange(decl.node));
             }
         }
 
@@ -239,7 +251,7 @@ connection.onReferences(ref => {
     if (docNode) {
         const refs = codeModelMgr.codeModel.symbols.findReferences(docNode.node);
         return refs.map(r => { 
-            return {uri: r.document.uri, range: toRange(r.node) };
+            return Location.create(r.document.uri, toRange(r.node));
         });
     }
 
@@ -251,10 +263,7 @@ connection.onDocumentSymbol(docSymbolParams => {
     return symbols.map(s => <SymbolInformation> { 
         name: s.symbol, 
         kind: SymbolKind.Constant, 
-        location: { 
-            uri: s.reference.document.uri, 
-            range: toRange(s.reference.node) 
-        } 
+        location: Location.create(s.reference.document.uri, toRange(s.reference.node))
     });
 });
 

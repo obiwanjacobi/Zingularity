@@ -292,7 +292,7 @@ export class SymbolTable {
 
         switch (node.kind) {
             case AssemblyNodeKind.Label:
-                symbol = node.text;
+                symbol = (<Label>node).symbol;
                 break;
             case AssemblyNodeKind.Instruction:
                 symbol = (<Instruction>node).external;

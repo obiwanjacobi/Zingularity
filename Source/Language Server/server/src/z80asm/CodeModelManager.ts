@@ -57,13 +57,13 @@ export function toLines(nodes: AssemblyNode[], filter?: (node: AssemblyNode) => 
 }
 
 export function toPosition(node: AssemblyNode) : Position {
-    return { line: node.line - 1, character: node.column - 1 };
+    return { line: node.line - 1, character: node.column };
 }
 
 export function toRange(node: AssemblyNode) : Range {
     return { 
         start: toPosition(node),
-        end: { line: node.line -1 , character: node.column + node.text.length - 1 }
+        end: { line: node.line -1 , character: node.column + node.text.length }
     };
 }
 

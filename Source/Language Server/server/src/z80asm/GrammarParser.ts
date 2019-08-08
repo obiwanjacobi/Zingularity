@@ -3,7 +3,7 @@ import * as antlr4 from "antlr4ts";
 import { ParseTreeWalker } from "antlr4ts/tree/ParseTreeWalker";
 import { AbstractParseTreeVisitor } from "antlr4ts/tree/AbstractParseTreeVisitor";
 import { z80asmLexer } from "./z80asmLexer";
-import { z80asmParser, ExpressionContext, Number_binContext, NumberContext, Number_octContext, Number_decContext, Number_hexContext, OperatorContext, AsmContext, DirectiveContext, InstructionContext, SymbolContext } from "./z80asmParser";
+import { z80asmParser, ExpressionContext, Number_binContext, NumberContext, Number_octContext, Number_decContext, Number_hexContext, OperatorContext, AsmContext, DirectiveContext, InstructionContext, SymbolContext, CommentContext, LabelContext, Directive_elseblockContext, Directive_endifContext } from "./z80asmParser";
 import { z80asmListener } from "./z80asmListener";
 import { z80asmVisitor } from "./z80asmVisitor";
 import { ParserRuleContext } from "antlr4ts";
@@ -203,9 +203,12 @@ class TextCollector extends AbstractParseTreeVisitor<string[]> {
 
 class GrammarListener implements z80asmListener {
     readonly nodes: AssemblyNode[];
+    
+    private skipDirective: boolean;
 
     constructor() {
         this.nodes = new Array<AssemblyNode>();
+        this.skipDirective = false;
     }
 
     exitExpression(ctx: ExpressionContext) {
@@ -220,12 +223,25 @@ class GrammarListener implements z80asmListener {
 
     exitDirective(ctx: DirectiveContext) {
         if (this.hasException(ctx)) { return; }
+        if (this.skipDirective) { this.skipDirective = false; return; }
 
         const extractor = new ExpressionExtractor();
         const expressions = extractor.visit(ctx);
         const expression = expressions.length ? expressions[0] : undefined;
         this.nodes.push(new Directive(expression, 
             toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
+    }
+
+    exitDirective_elseblock(ctx: Directive_elseblockContext) {
+        this.nodes.push(new Directive(undefined, 
+            toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
+        this.skipDirective = true;
+    }
+
+    exitDirective_endif(ctx: Directive_endifContext) {
+        this.nodes.push(new Directive(undefined, 
+            toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
+        this.skipDirective = true;
     }
 
     exitInstruction(ctx: InstructionContext) {
@@ -244,6 +260,16 @@ class GrammarListener implements z80asmListener {
 
         this.nodes.push(new Instruction(meta || _meta, external || "", numeric, 
             toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
+    }
+
+    exitComment(ctx: CommentContext) {
+        if (this.hasException(ctx)) { return; }
+        this.nodes.push(new Comment(toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
+    }
+
+    exitLabel(ctx: LabelContext) {
+        if (this.hasException(ctx)) { return; }
+        this.nodes.push(new Label(toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
     }
 
     private hasException(ctx: ParserRuleContext): boolean {

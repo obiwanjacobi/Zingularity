@@ -133,6 +133,8 @@ directive
    | directive_defm
    | directive_if
    | directive_ifdef
+   | directive_elseblock
+   | directive_endif
    ;
 
 
@@ -187,22 +189,27 @@ defmparam
 
 
 directive_if
-   : DIRECTIVEif expression comment? directive_ifblock
+   : DIRECTIVEif expression comment?
    ;
 
 
 directive_ifdef
-   : DIRECTIVEifdef symbol comment? directive_ifblock
+   : DIRECTIVEifdef symbol comment?
    ;
 
 
 directive_ifblock
-   : asm directive_elseblock? DIRECTIVEendif (EOL | EOF)
+   : directive_elseblock? directive_endif
    ;
 
 
 directive_elseblock
-   : DIRECTIVEelse asm
+   : DIRECTIVEelse
+   ;
+
+
+directive_endif
+   : DIRECTIVEendif
    ;
 
 

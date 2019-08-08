@@ -103,7 +103,7 @@ describe("Grammar Parser", () => {
     // root parser rule tests
     //
 
-    it("directive if", () => {
+    it("asm if", () => {
         const parser = GrammarParser.createParser("if (100-symbol) > 0\r\n; comment\r\nendif\r\n");
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
@@ -123,7 +123,7 @@ describe("Grammar Parser", () => {
         expect(node.text).toBe("endif");
     });
 
-    it("directive ifdef", () => {
+    it("asm ifdef", () => {
         const parser = GrammarParser.createParser("ifdef symbol\r\n; comment\r\nendif\r\n");
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
@@ -142,7 +142,7 @@ describe("Grammar Parser", () => {
         expect(node.text).toBe("endif");
     });
 
-    it("directive ifdef else", () => {
+    it("asm ifdef else", () => {
         const parser = GrammarParser.createParser("ifdef symbol\r\n; comment\r\nelse\r\nendif\r\n");
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
@@ -191,7 +191,6 @@ describe("Grammar Parser", () => {
         expect((<Instruction> nodes[0]).external).toBe("symbol");
     });
 
-
     it("asm RST 28", () => {
         const parser = GrammarParser.createParser("rst 28" + newLine);
         const tree = parser.asm();
@@ -212,7 +211,7 @@ describe("Grammar Parser", () => {
         expect(nodes[0].text).toBe("ld (hl), sp");
     });
 
-    it("comment - parsed", () => {
+    it("asm comment", () => {
         const parser = GrammarParser.createParser("; comment" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
@@ -221,4 +220,48 @@ describe("Grammar Parser", () => {
         expect(nodes[0].text).toBe("; comment");
     });
 
+    it("asm comment /w repeated ;", () => {
+        const parser = GrammarParser.createParser(";;;;;;;" + newLine);
+        const tree = parser.asm();
+        const nodes = GrammarParser.createAssemblyNodes(tree);
+
+        expect(nodes.length).toBe(1);
+        const node = nodes[0];
+
+        expect(node.kind).toBe(AssemblyNodeKind.Comment);
+        expect(node.text).toContain(";;;;;;;");
+    });
+
+    it("asm label begin", () => {
+        const parser = GrammarParser.createParser(".label" + newLine);
+        const tree = parser.asm();
+        const nodes = GrammarParser.createAssemblyNodes(tree);
+
+        const node = nodes[0];
+
+        expect(node.kind).toBe(AssemblyNodeKind.Label);
+        expect(node.text).toContain(".label");
+    });
+
+    it("asm label end", () => {
+        const parser = GrammarParser.createParser("label:" + newLine);
+        const tree = parser.asm();
+        const nodes = GrammarParser.createAssemblyNodes(tree);
+
+        const node = nodes[0];
+
+        expect(node.kind).toBe(AssemblyNodeKind.Label);
+        expect(node.text).toContain("label:");
+    });
+
+    it("asm org + param", () => {
+        const parser = GrammarParser.createParser("org $1000" + newLine);
+        const tree = parser.asm();
+        const nodes = GrammarParser.createAssemblyNodes(tree);
+
+        let node = nodes[0];
+        expect(node.kind).toBe(AssemblyNodeKind.Directive);
+        expect(node.text).toContain("org $1000");
+        expect((<Directive> node).expression).not.toBeUndefined();
+    });
 });

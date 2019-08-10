@@ -3,7 +3,7 @@ import * as antlr4 from "antlr4ts";
 import { ParseTreeWalker } from "antlr4ts/tree/ParseTreeWalker";
 import { AbstractParseTreeVisitor } from "antlr4ts/tree/AbstractParseTreeVisitor";
 import { z80asmLexer } from "./z80asmLexer";
-import { z80asmParser, ExpressionContext, Number_binContext, NumberContext, Number_octContext, Number_decContext, Number_hexContext, OperatorContext, AsmContext, DirectiveContext, InstructionContext, SymbolContext, CommentContext, LabelContext, Directive_elseblockContext, Directive_endifContext } from "./z80asmParser";
+import { z80asmParser, ExpressionContext, Number_binContext, NumberContext, Number_octContext, Number_decContext, Number_hexContext, OperatorContext, AsmContext, DirectiveContext, InstructionContext, SymbolContext, CommentContext, LabelContext, Directive_elseblockContext, Directive_endifContext, PartialContext } from "./z80asmParser";
 import { z80asmListener } from "./z80asmListener";
 import { z80asmVisitor } from "./z80asmVisitor";
 import { ParserRuleContext } from "antlr4ts";
@@ -274,6 +274,10 @@ class GrammarListener implements z80asmListener {
         this.nodes.push(new Label(symbol.text, toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
     }
 
+    exitPartial(ctx: PartialContext) {
+        this.nodes.push(new AsmError("", toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
+    }
+
     private hasException(ctx: ParserRuleContext): boolean {
         const exc = this.getException(ctx);
         if (exc) {
@@ -304,7 +308,7 @@ export class GrammarParser {
 
     parse(text: string): AssemblyNode[] {
         const parser = GrammarParser.createParser(text);
-        const tree = parser.asm();
+        const tree = parser.file();
         return GrammarParser.createAssemblyNodes(tree);
     }
 

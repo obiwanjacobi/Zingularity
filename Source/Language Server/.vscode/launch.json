@@ -57,7 +57,7 @@
             "request": "launch",
             "input": "./server/src/_test/z80asm/antlr.debug.asm",
             "grammar": "server/src/z80asm/z80asm.g4",
-            "startRule": "asm",
+            "startRule": "file",
             "printParseTree": true,
             "visualParseTree": true
         }

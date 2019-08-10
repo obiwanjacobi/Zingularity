@@ -22,12 +22,13 @@ export class CodeModelManager {
 
     findNode(uri: string, position: Position): {document: AssemblyDocument, node: AssemblyNode} | undefined {
         const doc = this.codeModel.documents.find(d => d.uri === uri);
+        
         if (doc && doc.nodes && doc.nodes.length > 0) {
-            const node = doc.nodes
-                .filter(n => n.line - 1 === position.line)
-                .reduce((prevNode, thisNode) => thisNode.column - 1 > position.character ? prevNode : thisNode);
-            
-            return { document: doc, node: node };
+            const nodes = doc.nodes.filter(n => n.line - 1 === position.line);
+            if (nodes.length) {
+                const node = nodes.reduce((prevNode, thisNode) => thisNode.column > position.character ? prevNode : thisNode);
+                return { document: doc, node: node };
+            }
         }
 
         return undefined;
@@ -57,13 +58,13 @@ export function toLines(nodes: AssemblyNode[], filter?: (node: AssemblyNode) => 
 }
 
 export function toPosition(node: AssemblyNode) : Position {
-    return { line: node.line - 1, character: node.column };
+    return Position.create(node.line - 1, node.column);
 }
 
 export function toRange(node: AssemblyNode) : Range {
     return { 
         start: toPosition(node),
-        end: { line: node.line -1 , character: node.column + node.text.length }
+        end: Position.create(node.line -1 , node.column + node.text.length)
     };
 }
 
@@ -76,8 +77,8 @@ export function rangeFrom(nodes: AssemblyNode[]) : Range {
             const maxCol = Math.min(prev.end.character, curr.end.character);
 
             return { 
-                start: { line: minLine, character: minCol },
-                end: { line: maxLine, character: maxCol }
+                start: Position.create(minLine, minCol),
+                end: Position.create(maxLine, maxCol)
             };
         });
 }

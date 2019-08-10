@@ -6,6 +6,7 @@ import { ParseTreeVisitor } from "antlr4ts/tree/ParseTreeVisitor";
 import { FileContext } from "./z80asmParser";
 import { AsmContext } from "./z80asmParser";
 import { LineContext } from "./z80asmParser";
+import { PartialContext } from "./z80asmParser";
 import { DirectiveContext } from "./z80asmParser";
 import { Directive_voidContext } from "./z80asmParser";
 import { Directive_param16Context } from "./z80asmParser";
@@ -104,6 +105,13 @@ export interface z80asmVisitor<Result> extends ParseTreeVisitor<Result> {
 	 * @return the visitor result
 	 */
 	visitLine?: (ctx: LineContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.partial`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitPartial?: (ctx: PartialContext) => Result;
 
 	/**
 	 * Visit a parse tree produced by `z80asmParser.directive`.

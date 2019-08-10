@@ -264,4 +264,14 @@ describe("Grammar Parser", () => {
         expect(node.text).toContain("org $1000");
         expect((<Directive> node).expression).not.toBeUndefined();
     });
+
+    it("asm partial", () => {
+        const parser = GrammarParser.createParser("de" + newLine);
+        const tree = parser.asm();
+        const nodes = GrammarParser.createAssemblyNodes(tree);
+
+        let node = nodes[0];
+        expect(node.kind).toBe(AssemblyNodeKind.Error);
+        expect(node.text).toContain("de");
+    });
 });

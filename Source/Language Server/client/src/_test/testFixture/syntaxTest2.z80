@@ -3,7 +3,7 @@ defc cval =  $AA
 ; comment 2
 label2:
     in a, (c)
-    ret
+    ret z
 
 .label3
     out (c), a

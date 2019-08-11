@@ -1,5 +1,6 @@
 import { AssemblyModel, AssemblyDocument, AssemblyNode, SymbolTable, SymbolProfile, CasingMatch, CasingRule } from "./CodeModel";
 import { Position, Range } from "vscode-languageserver";
+import { Comparable } from "antlr4ts/misc/Stubs";
 
 const symbolProfile: SymbolProfile = {
     matchCasing: CasingMatch.CaseSensitive,
@@ -64,21 +65,28 @@ export function toPosition(node: AssemblyNode) : Position {
 export function toRange(node: AssemblyNode) : Range {
     return { 
         start: toPosition(node),
-        end: Position.create(node.line -1 , node.column + node.text.length)
+        end: Position.create(node.line - 1, node.column + node.text.length)
     };
 }
 
-export function rangeFrom(nodes: AssemblyNode[]) : Range {
-    return nodes.map(n => toRange(n))
-        .reduce((prev, curr) => {
-            const minLine = Math.min(prev.start.line, curr.start.line);
-            const maxLine = Math.max(prev.end.line, curr.end.line);
-            const minCol = Math.min(prev.start.character, curr.start.character);
-            const maxCol = Math.min(prev.end.character, curr.end.character);
+function comparePosition(pos1: Position, pos2: Position): number {
+    const deltaLine = pos1.line - pos2.line;
+    if (deltaLine === 0) {
+        return pos1.character - pos2.character;
+    }
+    return deltaLine;
+}
 
-            return { 
-                start: Position.create(minLine, minCol),
-                end: Position.create(maxLine, maxCol)
-            };
+function unionRange(r1: Range, r2: Range): Range {
+    const minPos = comparePosition(r1.start, r2.start) < 0 ? r1.start: r2.start;
+    const maxPos = comparePosition(r1.end, r2.end) > 0 ? r1.end: r2.end;
+    return Range.create(minPos, maxPos);
+}
+
+export function rangeFrom(nodes: AssemblyNode[]) : Range {
+    return nodes
+        .map(n => toRange(n))
+        .reduce((prev, curr) => {
+            return unionRange(prev, curr);
         });
 }

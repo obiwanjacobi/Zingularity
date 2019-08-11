@@ -49,6 +49,18 @@
 					"default": 999,
 					"description": "Controls the maximum number of problems produced by the server."
 				},
+				"zingularity.newline": {
+					"scope": "resource",
+					"type": "string",
+					"default": "\r\n",
+					"description": "What new-line character(s) to use when reformatting."
+				},
+				"zingularity.columnTabs": {
+					"scope": "resource",
+					"type": "number[]",
+					"default": [0, 2, 8],
+					"description": "Formats the document in a 3-column layout using these number of tabs for each column."
+				},
 				"zingularity.trace.server": {
 					"scope": "window",
 					"type": "string",

@@ -14,11 +14,12 @@ import {
     SymbolInformation,
     SymbolKind,
     HoverRequest,
+    DocumentFormattingParams,
 } from "vscode-languageserver";
 import { AssemblyDocument, AssemblyNodeKind, Instruction, Label } from "./z80asm/CodeModel";
 import { buildCompletionList } from "./z80asm/InstructionNavigator";
 import { CodeModelManager, toRange, rangeFrom } from "./z80asm/CodeModelManager";
-import { DocumentSerializer } from "./z80asm/DocumentSerializer";
+import { DocumentSerializer, SerializerProfile } from "./z80asm/DocumentSerializer";
 import { GrammarParser } from "./z80asm/GrammarParser";
 import { sum } from "./utils";
 
@@ -90,12 +91,18 @@ connection.onInitialized(() => {
 // The server settings
 interface ZingularitySettings {
     maxNumberOfProblems: number;
+    newline: string;
+    columnTabs: number[];
 }
 
 // The global settings, used when the `workspace/configuration` request is not supported by the client.
 // Please note that this is not the case when using this server with the client provided in this example
 // but could happen with other clients.
-const defaultSettings: ZingularitySettings = { maxNumberOfProblems: 100 };
+const defaultSettings: ZingularitySettings = {
+    maxNumberOfProblems: 100, 
+    newline: "\r\n", 
+    columnTabs: [0, 2, 8]
+};
 let globalSettings: ZingularitySettings = defaultSettings;
 
 // Cache the settings of all open documents
@@ -245,8 +252,8 @@ connection.onDefinition((textDocumentPosition): Location | null => {
 );
 
 
-connection.onReferences(ref => {
-    const docNode = codeModelMgr.findNode(ref.textDocument.uri, ref.position);
+connection.onReferences(refParams => {
+    const docNode = codeModelMgr.findNode(refParams.textDocument.uri, refParams.position);
     
     if (docNode) {
         const refs = codeModelMgr.codeModel.symbols.findReferences(docNode.node);
@@ -267,13 +274,14 @@ connection.onDocumentSymbol(docSymbolParams => {
     });
 });
 
-connection.onDocumentFormatting(docFormat => {
+connection.onDocumentFormatting(async (docFormat: DocumentFormattingParams) => {
     const doc = codeModelMgr.codeModel.documents.find(d => d.uri === docFormat.textDocument.uri);
     if (doc) {
+        const settings = await getDocumentSettings(doc.uri);
         const profile = {
             ...docFormat.options,
-            newLine: "\r\n",
-            columnTabs: [0, 2, 8]
+            newLine: settings.newline,
+            columnTabs: settings.columnTabs
         };
         const serializer = new DocumentSerializer(profile);
 

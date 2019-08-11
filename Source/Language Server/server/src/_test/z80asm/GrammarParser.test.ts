@@ -220,6 +220,18 @@ describe("Grammar Parser", () => {
         expect(nodes[0].text).toBe("; comment");
     });
 
+    it("asm comment empty", () => {
+        const parser = GrammarParser.createParser(";" + newLine);
+        const tree = parser.asm();
+        const nodes = GrammarParser.createAssemblyNodes(tree);
+
+        expect(nodes.length).toBe(1);
+        const node = nodes[0];
+
+        expect(node.kind).toBe(AssemblyNodeKind.Comment);
+        expect(node.text).toContain(";");
+    });
+
     it("asm comment /w repeated ;", () => {
         const parser = GrammarParser.createParser(";;;;;;;" + newLine);
         const tree = parser.asm();

@@ -48,12 +48,11 @@ export class DocumentSerializer {
             if (l.nodes.length === 1) {
                 const node = l.nodes[0];
                 switch(node.kind) {
-                    case AssemblyNodeKind.Label:
                     case AssemblyNodeKind.Comment:
                         line += this.tab(0, this.profile.columnTabs[0]);
                         break;
                     default:
-                        line += this.tab(0, this.profile.columnTabs[1]);
+                        line += this.tab(0, this.columnTabs(node.kind));
                         break;
                 }
 
@@ -67,9 +66,6 @@ export class DocumentSerializer {
 
             output += line;
         });
-
-        // always end with an new line
-        output += this.profile.newLine;
 
         return output;
     }
@@ -122,7 +118,6 @@ export class DocumentSerializer {
             case AssemblyNodeKind.Comment:
                 return this.profile.columnTabs[2];
             case AssemblyNodeKind.Instruction:
-            case AssemblyNodeKind.Directive:
                 return this.profile.columnTabs[1];
             default:
                 return this.profile.columnTabs[0];

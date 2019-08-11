@@ -265,9 +265,9 @@ describe("Grammar Parser", () => {
         expect((<Directive> node).expression).not.toBeUndefined();
     });
 
-    it("asm partial", () => {
+    it("file partial", () => {
         const parser = GrammarParser.createParser("de" + newLine);
-        const tree = parser.asm();
+        const tree = parser.file();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
         let node = nodes[0];

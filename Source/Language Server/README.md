@@ -9,4 +9,4 @@ Z80 assembler editor support.
 * Go to definition of a label
 * Find all references of a label
 * Hover info: cycles, bytes and affected flags
-* Format Code
+* Format Code based on settings

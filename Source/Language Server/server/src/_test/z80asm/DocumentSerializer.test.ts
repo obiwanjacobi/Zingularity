@@ -15,14 +15,14 @@ describe("Document Serializer", () => {
         const comment = new Comment("; Hello World", 1, 1);
         const text = serializer.serialize([comment]);
         
-        expect(text).toBe("; Hello World" + profile.newLine);
+        expect(text).toBe("; Hello World");
     });
 
     it("Label", () => {
         const label = new Label("Label", "Label:", 1, 1);
         const text = serializer.serialize([label]);
         
-        expect(text).toBe("Label:" + profile.newLine);
+        expect(text).toBe("Label:");
     });
 
     it("Label + Comment", () => {

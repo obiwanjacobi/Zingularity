@@ -47,15 +47,19 @@ export function activate(context: ExtensionContext) {
 
     // Create the language client and start the client.
     client = new LanguageClient(
-        "JacobiSoftware.zingularity",
+        "JacobiSoftware.Zingularity",
         "Zingularity",
         serverOptions,
         clientOptions,
         false //true
     );
 
+    console.log("Zingularity starting server.");
+
     // Start the client. This will also launch the server
     client.start();
+
+    console.log("Zingularity client started.");
 }
 
 export function deactivate(): Thenable<void> | undefined {

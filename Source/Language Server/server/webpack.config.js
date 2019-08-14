@@ -1,47 +1,43 @@
-//@ts-check
+"use strict";
 
-'use strict';
+const path = require("path");
 
-const path = require('path');
-
-/**@type {import('webpack').Configuration}*/
 const configServer = {
-  mode: 'none',
-  target: 'node',
+  mode: "none",
+  target: "node",
   node: {
     __dirname: false
   },
   resolve: {
-    //mainFields: ['module', 'main'],
-    extensions: ['.ts', '.js']
+    //mainFields: ["module", "main"],
+    extensions: [".ts", ".js"]
   },
   module: {
     rules: [{
       test: /\.ts$/,
       exclude: /node_modules/,
       use: [{
-        loader: 'ts-loader',
+        loader: "ts-loader",
         options: {
           compilerOptions: {
-            "sourceMap": true,
-            "module": "es6" // override `tsconfig.json` so that TypeScript emits native JavaScript modules.
+            "sourceMap": true
           }
         }
       }]
     }]
   },
   externals: {
-    'vscode': 'commonjs vscode',
+    "vscode": "commonjs vscode",
   },
   entry: {
-    extension: './server/src/server.ts',
+    extension: "./server/src/server.ts",
   },
   output: {
-    filename: 'server.js',
-    path: path.join(__dirname, 'out'),
+    filename: "server.js",
+    path: path.join(__dirname, "out"),
     libraryTarget: "commonjs",
   },
-  devtool: 'source-map'
+  devtool: "source-map"
 };
 
 module.exports = configServer;

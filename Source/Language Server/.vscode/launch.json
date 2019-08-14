@@ -8,6 +8,7 @@
 			"name": "Launch Client",
 			"runtimeExecutable": "${execPath}",
 			"args": [
+				"--disable-extensions",
 				"--extensionDevelopmentPath=${workspaceRoot}", 
 				"${workspaceRoot}/client/src/_test/testFixture"
 			],

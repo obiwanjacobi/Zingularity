@@ -3,24 +3,22 @@
 **/*.ts
 **/*.map
 **/node_modules
-**/test/**
+**/_test
 .gitignore
 .vsixmanifest
 **/tslint.json
 **/tsconfig.json
-**/tsconfig.base.json
-contributing.md
-poll.md
+**/*webpack.config.json
+**/*.md
+!readme.md
 .travis.yml
+*.cmd
 
 client/**
-client/node_modules/**
-!client/node_modules/vscode-jsonrpc/**
-!client/node_modules/vscode-languageclient/**
-!client/node_modules/vscode-languageserver-protocol/**
-!client/node_modules/vscode-languageserver-types/**
-!client/out/extension.js
+!client/node_modules/**
+!client/out/**/*.js
 
-server/node_modules/**
 server/**
-!server/out/server.js
+!server/node_modules/**
+!server/out/**/*.js
+!server/out/**/*.json

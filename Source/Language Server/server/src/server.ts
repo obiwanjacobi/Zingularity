@@ -27,6 +27,7 @@ import { sum } from "./utils";
 // Create a connection for the server. The connection uses Node's IPC as a transport.
 // Also include all preview / proposed LSP features.
 let connection = createConnection(ProposedFeatures.all);
+connection.console.log("Zingularity Server Created");
 
 // Create a simple text document manager. The text document manager
 // supports full document sync only
@@ -39,7 +40,7 @@ let hasWorkspaceFolderCapability: boolean = false;
 let hasDiagnosticRelatedInformationCapability: boolean = false;
 
 connection.onInitialize((params: InitializeParams) => {
-    connection.console.log("Zingularity Initialize");
+    connection.console.log("Zingularity Server Initializing...");
 
     const capabilities = params.capabilities;
 

@@ -1,2 +1,2 @@
-code --install-extension zingularity-0.0.4.vsix
+code --install-extension zingularity-0.0.5.vsix
 pause

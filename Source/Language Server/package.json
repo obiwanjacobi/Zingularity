@@ -3,13 +3,16 @@
 	"description": "Zingularity, a Z80 Assembler IDE",
 	"author": "Marc Jacobi",
 	"license": "LGPL-2.1-only",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/obiwanjacobi/Zingularity.git"
 	},
 	"publisher": "JacobiSoftware",
-	"categories": [],
+	"categories": [
+		"Programming Languages",
+		"Formatters"
+	],
 	"keywords": [
 		"multi-root ready"
 	],
@@ -80,17 +83,23 @@
 		}
 	},
 	"scripts": {
-		"vscode:prepublish": "cd client && npm run update-vscode && cd .. && npm run compile",
+		"vscode:prepublish": "cd client && npm run update-vscode && cd ..",
 		"compile": "tsc -b",
 		"watch": "tsc -b -w",
 		"postinstall": "cd client && npm install && cd ../server && npm install && cd ..",
 		"test": "jest",
 		"test:w": "jest --watch",
-		"webpack": "npm run clean && webpack --mode production --config ./client/webpack.config.js && webpack --mode production --config ./server/webpack.config.js",
-		"package": "git clean -xfd node_modules && npm install && vsce package",
+		"webpack": "npm run clean:out && webpack --mode production --config ./client/webpack.config.js && webpack --mode production --config ./server/webpack.config.js",
+		"package": "npm run clean:modules && npm install && vsce package",
 		"publish": "vsce publish",
-		"clean": "rimraf client/out && rimraf server/out",
+		"clean:out": "rimraf client/out && rimraf server/out",
+		"clean:modules": "git clean -xfd node_modules",
 		"antlr": "antlr4ts -visitor .\\server\\src\\z80asm\\z80asm.g4"
+	},
+	"jest": {
+		"roots": [
+			"./server/out/_test/"
+		]
 	},
 	"devDependencies": {
 		"@types/jest": "^24.0.13",
@@ -107,11 +116,6 @@
 		"vscode": "^1.1.34",
 		"webpack": "^4.35.0",
 		"webpack-cli": "^3.3.4"
-	},
-	"jest": {
-		"roots": [
-			"./server/out/_test/"
-		]
 	},
 	"dependencies": {}
 }

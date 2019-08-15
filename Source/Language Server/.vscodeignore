@@ -8,17 +8,14 @@
 .vsixmanifest
 **/tslint.json
 **/tsconfig.json
-**/*webpack.config.json
+**/*.config.json
 **/*.md
 !readme.md
 .travis.yml
 *.cmd
 
 client/**
-!client/node_modules/**
-!client/out/**/*.js
+!client/out/extension.js
 
 server/**
-!server/node_modules/**
-!server/out/**/*.js
-!server/out/**/*.json
+!server/out/server.js

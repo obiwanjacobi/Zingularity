@@ -1,3 +1,4 @@
+console.log("Zingularity: server.js");
 import {
     createConnection,
     TextDocuments,

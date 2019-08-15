@@ -36,6 +36,7 @@ const configServer = {
     filename: "server.js",
     path: path.join(__dirname, "out"),
     libraryTarget: "commonjs",
+    devtoolModuleFilenameTemplate: "../[resource-path]"
   },
   devtool: "source-map"
 };

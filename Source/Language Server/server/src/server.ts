@@ -300,3 +300,4 @@ documents.listen(connection);
 
 // Listen on the connection
 connection.listen();
+console.log("Zingularity: server initialized.");

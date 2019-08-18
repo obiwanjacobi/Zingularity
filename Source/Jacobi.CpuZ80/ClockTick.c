@@ -236,14 +236,14 @@ const InstructionInfo ExtendedReverseOpcodeFetch =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None }
+        { Type_None, {0} },
+        { Type_None, {0} }
     }
 };
 
 void ClearInstruction()
 {
-    memset(&_state.Instruction, sizeof(InstructionState), 0);
+    memset(&_state.Instruction, 0, sizeof(InstructionState));
 }
 
 

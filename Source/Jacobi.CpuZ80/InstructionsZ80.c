@@ -22,8 +22,8 @@ const InstructionInfo instructionInfoLDA_A_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_Registers8, 7 },
+        { Type_Registers8, {7} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -41,8 +41,8 @@ const InstructionInfo instructionInfoLDA_B_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_Registers8, 0 },
+        { Type_Registers8, {7} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -60,8 +60,8 @@ const InstructionInfo instructionInfoLDA_C_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_Registers8, 1 },
+        { Type_Registers8, {7} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -79,8 +79,8 @@ const InstructionInfo instructionInfoLDA_D_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_Registers8, 2 },
+        { Type_Registers8, {7} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -98,8 +98,8 @@ const InstructionInfo instructionInfoLDA_E_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_Registers8, 3 },
+        { Type_Registers8, {7} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -117,8 +117,8 @@ const InstructionInfo instructionInfoLDA_H_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_Registers8, 4 },
+        { Type_Registers8, {7} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -136,8 +136,8 @@ const InstructionInfo instructionInfoLDA_L_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_Registers8, 5 },
+        { Type_Registers8, {7} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -155,8 +155,8 @@ const InstructionInfo instructionInfoLDB_A_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_Registers8, 7 },
+        { Type_Registers8, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -174,8 +174,8 @@ const InstructionInfo instructionInfoLDB_B_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_Registers8, 0 },
+        { Type_Registers8, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -193,8 +193,8 @@ const InstructionInfo instructionInfoLDB_C_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_Registers8, 1 },
+        { Type_Registers8, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -212,8 +212,8 @@ const InstructionInfo instructionInfoLDB_D_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_Registers8, 2 },
+        { Type_Registers8, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -231,8 +231,8 @@ const InstructionInfo instructionInfoLDB_E_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_Registers8, 3 },
+        { Type_Registers8, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -250,8 +250,8 @@ const InstructionInfo instructionInfoLDB_H_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_Registers8, 4 },
+        { Type_Registers8, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -269,8 +269,8 @@ const InstructionInfo instructionInfoLDB_L_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_Registers8, 5 },
+        { Type_Registers8, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -288,8 +288,8 @@ const InstructionInfo instructionInfoLDC_A_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_Registers8, 7 },
+        { Type_Registers8, {1} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -307,8 +307,8 @@ const InstructionInfo instructionInfoLDC_B_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_Registers8, 0 },
+        { Type_Registers8, {1} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -326,8 +326,8 @@ const InstructionInfo instructionInfoLDC_C_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_Registers8, 1 },
+        { Type_Registers8, {1} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -345,8 +345,8 @@ const InstructionInfo instructionInfoLDC_D_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_Registers8, 2 },
+        { Type_Registers8, {1} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -364,8 +364,8 @@ const InstructionInfo instructionInfoLDC_E_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_Registers8, 3 },
+        { Type_Registers8, {1} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -383,8 +383,8 @@ const InstructionInfo instructionInfoLDC_H_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_Registers8, 4 },
+        { Type_Registers8, {1} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -402,8 +402,8 @@ const InstructionInfo instructionInfoLDC_L_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_Registers8, 5 },
+        { Type_Registers8, {1} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -421,8 +421,8 @@ const InstructionInfo instructionInfoLDD_A_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_Registers8, 7 },
+        { Type_Registers8, {2} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -440,8 +440,8 @@ const InstructionInfo instructionInfoLDD_B_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_Registers8, 0 },
+        { Type_Registers8, {2} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -459,8 +459,8 @@ const InstructionInfo instructionInfoLDD_C_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_Registers8, 1 },
+        { Type_Registers8, {2} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -478,8 +478,8 @@ const InstructionInfo instructionInfoLDD_D_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_Registers8, 2 },
+        { Type_Registers8, {2} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -497,8 +497,8 @@ const InstructionInfo instructionInfoLDD_E_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_Registers8, 3 },
+        { Type_Registers8, {2} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -516,8 +516,8 @@ const InstructionInfo instructionInfoLDD_H_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_Registers8, 4 },
+        { Type_Registers8, {2} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -535,8 +535,8 @@ const InstructionInfo instructionInfoLDD_L_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_Registers8, 5 },
+        { Type_Registers8, {2} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -554,8 +554,8 @@ const InstructionInfo instructionInfoLDE_A_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_Registers8, 7 },
+        { Type_Registers8, {3} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -573,8 +573,8 @@ const InstructionInfo instructionInfoLDE_B_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_Registers8, 0 },
+        { Type_Registers8, {3} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -592,8 +592,8 @@ const InstructionInfo instructionInfoLDE_C_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_Registers8, 1 },
+        { Type_Registers8, {3} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -611,8 +611,8 @@ const InstructionInfo instructionInfoLDE_D_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_Registers8, 2 },
+        { Type_Registers8, {3} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -630,8 +630,8 @@ const InstructionInfo instructionInfoLDE_E_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_Registers8, 3 },
+        { Type_Registers8, {3} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -649,8 +649,8 @@ const InstructionInfo instructionInfoLDE_H_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_Registers8, 4 },
+        { Type_Registers8, {3} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -668,8 +668,8 @@ const InstructionInfo instructionInfoLDE_L_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_Registers8, 5 },
+        { Type_Registers8, {3} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -687,8 +687,8 @@ const InstructionInfo instructionInfoLDH_A_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_Registers8, 7 },
+        { Type_Registers8, {4} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -706,8 +706,8 @@ const InstructionInfo instructionInfoLDH_B_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_Registers8, 0 },
+        { Type_Registers8, {4} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -725,8 +725,8 @@ const InstructionInfo instructionInfoLDH_C_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_Registers8, 1 },
+        { Type_Registers8, {4} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -744,8 +744,8 @@ const InstructionInfo instructionInfoLDH_D_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_Registers8, 2 },
+        { Type_Registers8, {4} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -763,8 +763,8 @@ const InstructionInfo instructionInfoLDH_E_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_Registers8, 3 },
+        { Type_Registers8, {4} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -782,8 +782,8 @@ const InstructionInfo instructionInfoLDH_H_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_Registers8, 4 },
+        { Type_Registers8, {4} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -801,8 +801,8 @@ const InstructionInfo instructionInfoLDH_L_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_Registers8, 5 },
+        { Type_Registers8, {4} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -820,8 +820,8 @@ const InstructionInfo instructionInfoLDL_A_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_Registers8, 7 },
+        { Type_Registers8, {5} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -839,8 +839,8 @@ const InstructionInfo instructionInfoLDL_B_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_Registers8, 0 },
+        { Type_Registers8, {5} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -858,8 +858,8 @@ const InstructionInfo instructionInfoLDL_C_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_Registers8, 1 },
+        { Type_Registers8, {5} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -877,8 +877,8 @@ const InstructionInfo instructionInfoLDL_D_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_Registers8, 2 },
+        { Type_Registers8, {5} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -896,8 +896,8 @@ const InstructionInfo instructionInfoLDL_E_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_Registers8, 3 },
+        { Type_Registers8, {5} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -915,8 +915,8 @@ const InstructionInfo instructionInfoLDL_H_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_Registers8, 4 },
+        { Type_Registers8, {5} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -934,8 +934,8 @@ const InstructionInfo instructionInfoLDL_L_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_Registers8, 5 },
+        { Type_Registers8, {5} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -953,8 +953,8 @@ const InstructionInfo instructionInfoLDA_A_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_Registers8, 7 },
+        { Type_Registers8, {7} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -972,8 +972,8 @@ const InstructionInfo instructionInfoLDA_B_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_Registers8, 0 },
+        { Type_Registers8, {7} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -991,8 +991,8 @@ const InstructionInfo instructionInfoLDA_C_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_Registers8, 1 },
+        { Type_Registers8, {7} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -1010,8 +1010,8 @@ const InstructionInfo instructionInfoLDA_D_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_Registers8, 2 },
+        { Type_Registers8, {7} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -1029,8 +1029,8 @@ const InstructionInfo instructionInfoLDA_E_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_Registers8, 3 },
+        { Type_Registers8, {7} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -1048,8 +1048,8 @@ const InstructionInfo instructionInfoLDA_IXh_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_Registers8, 4 },
+        { Type_Registers8, {7} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -1067,8 +1067,8 @@ const InstructionInfo instructionInfoLDA_IXl_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_Registers8, 5 },
+        { Type_Registers8, {7} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -1086,8 +1086,8 @@ const InstructionInfo instructionInfoLDB_A_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_Registers8, 7 },
+        { Type_Registers8, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -1105,8 +1105,8 @@ const InstructionInfo instructionInfoLDB_B_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_Registers8, 0 },
+        { Type_Registers8, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -1124,8 +1124,8 @@ const InstructionInfo instructionInfoLDB_C_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_Registers8, 1 },
+        { Type_Registers8, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -1143,8 +1143,8 @@ const InstructionInfo instructionInfoLDB_D_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_Registers8, 2 },
+        { Type_Registers8, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -1162,8 +1162,8 @@ const InstructionInfo instructionInfoLDB_E_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_Registers8, 3 },
+        { Type_Registers8, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -1181,8 +1181,8 @@ const InstructionInfo instructionInfoLDB_IXh_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_Registers8, 4 },
+        { Type_Registers8, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -1200,8 +1200,8 @@ const InstructionInfo instructionInfoLDB_IXl_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_Registers8, 5 },
+        { Type_Registers8, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -1219,8 +1219,8 @@ const InstructionInfo instructionInfoLDC_A_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_Registers8, 7 },
+        { Type_Registers8, {1} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -1238,8 +1238,8 @@ const InstructionInfo instructionInfoLDC_B_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_Registers8, 0 },
+        { Type_Registers8, {1} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -1257,8 +1257,8 @@ const InstructionInfo instructionInfoLDC_C_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_Registers8, 1 },
+        { Type_Registers8, {1} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -1276,8 +1276,8 @@ const InstructionInfo instructionInfoLDC_D_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_Registers8, 2 },
+        { Type_Registers8, {1} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -1295,8 +1295,8 @@ const InstructionInfo instructionInfoLDC_E_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_Registers8, 3 },
+        { Type_Registers8, {1} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -1314,8 +1314,8 @@ const InstructionInfo instructionInfoLDC_IXh_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_Registers8, 4 },
+        { Type_Registers8, {1} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -1333,8 +1333,8 @@ const InstructionInfo instructionInfoLDC_IXl_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_Registers8, 5 },
+        { Type_Registers8, {1} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -1352,8 +1352,8 @@ const InstructionInfo instructionInfoLDD_A_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_Registers8, 7 },
+        { Type_Registers8, {2} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -1371,8 +1371,8 @@ const InstructionInfo instructionInfoLDD_B_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_Registers8, 0 },
+        { Type_Registers8, {2} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -1390,8 +1390,8 @@ const InstructionInfo instructionInfoLDD_C_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_Registers8, 1 },
+        { Type_Registers8, {2} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -1409,8 +1409,8 @@ const InstructionInfo instructionInfoLDD_D_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_Registers8, 2 },
+        { Type_Registers8, {2} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -1428,8 +1428,8 @@ const InstructionInfo instructionInfoLDD_E_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_Registers8, 3 },
+        { Type_Registers8, {2} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -1447,8 +1447,8 @@ const InstructionInfo instructionInfoLDD_IXh_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_Registers8, 4 },
+        { Type_Registers8, {2} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -1466,8 +1466,8 @@ const InstructionInfo instructionInfoLDD_IXl_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_Registers8, 5 },
+        { Type_Registers8, {2} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -1485,8 +1485,8 @@ const InstructionInfo instructionInfoLDE_A_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_Registers8, 7 },
+        { Type_Registers8, {3} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -1504,8 +1504,8 @@ const InstructionInfo instructionInfoLDE_B_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_Registers8, 0 },
+        { Type_Registers8, {3} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -1523,8 +1523,8 @@ const InstructionInfo instructionInfoLDE_C_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_Registers8, 1 },
+        { Type_Registers8, {3} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -1542,8 +1542,8 @@ const InstructionInfo instructionInfoLDE_D_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_Registers8, 2 },
+        { Type_Registers8, {3} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -1561,8 +1561,8 @@ const InstructionInfo instructionInfoLDE_E_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_Registers8, 3 },
+        { Type_Registers8, {3} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -1580,8 +1580,8 @@ const InstructionInfo instructionInfoLDE_IXh_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_Registers8, 4 },
+        { Type_Registers8, {3} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -1599,8 +1599,8 @@ const InstructionInfo instructionInfoLDE_IXl_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_Registers8, 5 },
+        { Type_Registers8, {3} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -1618,8 +1618,8 @@ const InstructionInfo instructionInfoLDIXh_A_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_Registers8, 7 },
+        { Type_Registers8, {4} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -1637,8 +1637,8 @@ const InstructionInfo instructionInfoLDIXh_B_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_Registers8, 0 },
+        { Type_Registers8, {4} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -1656,8 +1656,8 @@ const InstructionInfo instructionInfoLDIXh_C_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_Registers8, 1 },
+        { Type_Registers8, {4} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -1675,8 +1675,8 @@ const InstructionInfo instructionInfoLDIXh_D_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_Registers8, 2 },
+        { Type_Registers8, {4} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -1694,8 +1694,8 @@ const InstructionInfo instructionInfoLDIXh_E_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_Registers8, 3 },
+        { Type_Registers8, {4} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -1713,8 +1713,8 @@ const InstructionInfo instructionInfoLDIXh_IXh_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_Registers8, 4 },
+        { Type_Registers8, {4} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -1732,8 +1732,8 @@ const InstructionInfo instructionInfoLDIXh_IXl_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_Registers8, 5 },
+        { Type_Registers8, {4} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -1751,8 +1751,8 @@ const InstructionInfo instructionInfoLDIXl_A_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_Registers8, 7 },
+        { Type_Registers8, {5} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -1770,8 +1770,8 @@ const InstructionInfo instructionInfoLDIXl_B_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_Registers8, 0 },
+        { Type_Registers8, {5} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -1789,8 +1789,8 @@ const InstructionInfo instructionInfoLDIXl_C_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_Registers8, 1 },
+        { Type_Registers8, {5} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -1808,8 +1808,8 @@ const InstructionInfo instructionInfoLDIXl_D_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_Registers8, 2 },
+        { Type_Registers8, {5} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -1827,8 +1827,8 @@ const InstructionInfo instructionInfoLDIXl_E_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_Registers8, 3 },
+        { Type_Registers8, {5} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -1846,8 +1846,8 @@ const InstructionInfo instructionInfoLDIXl_IXh_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_Registers8, 4 },
+        { Type_Registers8, {5} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -1865,8 +1865,8 @@ const InstructionInfo instructionInfoLDIXl_IXl_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_Registers8, 5 },
+        { Type_Registers8, {5} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -1884,8 +1884,8 @@ const InstructionInfo instructionInfoLDA_A_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_Registers8, 7 },
+        { Type_Registers8, {7} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -1903,8 +1903,8 @@ const InstructionInfo instructionInfoLDA_B_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_Registers8, 0 },
+        { Type_Registers8, {7} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -1922,8 +1922,8 @@ const InstructionInfo instructionInfoLDA_C_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_Registers8, 1 },
+        { Type_Registers8, {7} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -1941,8 +1941,8 @@ const InstructionInfo instructionInfoLDA_D_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_Registers8, 2 },
+        { Type_Registers8, {7} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -1960,8 +1960,8 @@ const InstructionInfo instructionInfoLDA_E_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_Registers8, 3 },
+        { Type_Registers8, {7} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -1979,8 +1979,8 @@ const InstructionInfo instructionInfoLDA_IYh_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_Registers8, 4 },
+        { Type_Registers8, {7} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -1998,8 +1998,8 @@ const InstructionInfo instructionInfoLDA_IYl_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_Registers8, 5 },
+        { Type_Registers8, {7} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -2017,8 +2017,8 @@ const InstructionInfo instructionInfoLDB_A_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_Registers8, 7 },
+        { Type_Registers8, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -2036,8 +2036,8 @@ const InstructionInfo instructionInfoLDB_B_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_Registers8, 0 },
+        { Type_Registers8, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -2055,8 +2055,8 @@ const InstructionInfo instructionInfoLDB_C_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_Registers8, 1 },
+        { Type_Registers8, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -2074,8 +2074,8 @@ const InstructionInfo instructionInfoLDB_D_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_Registers8, 2 },
+        { Type_Registers8, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -2093,8 +2093,8 @@ const InstructionInfo instructionInfoLDB_E_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_Registers8, 3 },
+        { Type_Registers8, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -2112,8 +2112,8 @@ const InstructionInfo instructionInfoLDB_IYh_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_Registers8, 4 },
+        { Type_Registers8, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -2131,8 +2131,8 @@ const InstructionInfo instructionInfoLDB_IYl_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_Registers8, 5 },
+        { Type_Registers8, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -2150,8 +2150,8 @@ const InstructionInfo instructionInfoLDC_A_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_Registers8, 7 },
+        { Type_Registers8, {1} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -2169,8 +2169,8 @@ const InstructionInfo instructionInfoLDC_B_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_Registers8, 0 },
+        { Type_Registers8, {1} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -2188,8 +2188,8 @@ const InstructionInfo instructionInfoLDC_C_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_Registers8, 1 },
+        { Type_Registers8, {1} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -2207,8 +2207,8 @@ const InstructionInfo instructionInfoLDC_D_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_Registers8, 2 },
+        { Type_Registers8, {1} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -2226,8 +2226,8 @@ const InstructionInfo instructionInfoLDC_E_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_Registers8, 3 },
+        { Type_Registers8, {1} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -2245,8 +2245,8 @@ const InstructionInfo instructionInfoLDC_IYh_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_Registers8, 4 },
+        { Type_Registers8, {1} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -2264,8 +2264,8 @@ const InstructionInfo instructionInfoLDC_IYl_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_Registers8, 5 },
+        { Type_Registers8, {1} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -2283,8 +2283,8 @@ const InstructionInfo instructionInfoLDD_A_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_Registers8, 7 },
+        { Type_Registers8, {2} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -2302,8 +2302,8 @@ const InstructionInfo instructionInfoLDD_B_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_Registers8, 0 },
+        { Type_Registers8, {2} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -2321,8 +2321,8 @@ const InstructionInfo instructionInfoLDD_C_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_Registers8, 1 },
+        { Type_Registers8, {2} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -2340,8 +2340,8 @@ const InstructionInfo instructionInfoLDD_D_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_Registers8, 2 },
+        { Type_Registers8, {2} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -2359,8 +2359,8 @@ const InstructionInfo instructionInfoLDD_E_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_Registers8, 3 },
+        { Type_Registers8, {2} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -2378,8 +2378,8 @@ const InstructionInfo instructionInfoLDD_IYh_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_Registers8, 4 },
+        { Type_Registers8, {2} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -2397,8 +2397,8 @@ const InstructionInfo instructionInfoLDD_IYl_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_Registers8, 5 },
+        { Type_Registers8, {2} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -2416,8 +2416,8 @@ const InstructionInfo instructionInfoLDE_A_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_Registers8, 7 },
+        { Type_Registers8, {3} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -2435,8 +2435,8 @@ const InstructionInfo instructionInfoLDE_B_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_Registers8, 0 },
+        { Type_Registers8, {3} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -2454,8 +2454,8 @@ const InstructionInfo instructionInfoLDE_C_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_Registers8, 1 },
+        { Type_Registers8, {3} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -2473,8 +2473,8 @@ const InstructionInfo instructionInfoLDE_D_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_Registers8, 2 },
+        { Type_Registers8, {3} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -2492,8 +2492,8 @@ const InstructionInfo instructionInfoLDE_E_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_Registers8, 3 },
+        { Type_Registers8, {3} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -2511,8 +2511,8 @@ const InstructionInfo instructionInfoLDE_IYh_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_Registers8, 4 },
+        { Type_Registers8, {3} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -2530,8 +2530,8 @@ const InstructionInfo instructionInfoLDE_IYl_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_Registers8, 5 },
+        { Type_Registers8, {3} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -2549,8 +2549,8 @@ const InstructionInfo instructionInfoLDIYh_A_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_Registers8, 7 },
+        { Type_Registers8, {4} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -2568,8 +2568,8 @@ const InstructionInfo instructionInfoLDIYh_B_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_Registers8, 0 },
+        { Type_Registers8, {4} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -2587,8 +2587,8 @@ const InstructionInfo instructionInfoLDIYh_C_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_Registers8, 1 },
+        { Type_Registers8, {4} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -2606,8 +2606,8 @@ const InstructionInfo instructionInfoLDIYh_D_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_Registers8, 2 },
+        { Type_Registers8, {4} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -2625,8 +2625,8 @@ const InstructionInfo instructionInfoLDIYh_E_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_Registers8, 3 },
+        { Type_Registers8, {4} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -2644,8 +2644,8 @@ const InstructionInfo instructionInfoLDIYh_IYh_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_Registers8, 4 },
+        { Type_Registers8, {4} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -2663,8 +2663,8 @@ const InstructionInfo instructionInfoLDIYh_IYl_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_Registers8, 5 },
+        { Type_Registers8, {4} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -2682,8 +2682,8 @@ const InstructionInfo instructionInfoLDIYl_A_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_Registers8, 7 },
+        { Type_Registers8, {5} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -2701,8 +2701,8 @@ const InstructionInfo instructionInfoLDIYl_B_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_Registers8, 0 },
+        { Type_Registers8, {5} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -2720,8 +2720,8 @@ const InstructionInfo instructionInfoLDIYl_C_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_Registers8, 1 },
+        { Type_Registers8, {5} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -2739,8 +2739,8 @@ const InstructionInfo instructionInfoLDIYl_D_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_Registers8, 2 },
+        { Type_Registers8, {5} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -2758,8 +2758,8 @@ const InstructionInfo instructionInfoLDIYl_E_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_Registers8, 3 },
+        { Type_Registers8, {5} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -2777,8 +2777,8 @@ const InstructionInfo instructionInfoLDIYl_IYh_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_Registers8, 4 },
+        { Type_Registers8, {5} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -2796,8 +2796,8 @@ const InstructionInfo instructionInfoLDIYl_IYl_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_Registers8, 5 },
+        { Type_Registers8, {5} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -2815,8 +2815,8 @@ const InstructionInfo instructionInfoLDA_n_2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -2834,8 +2834,8 @@ const InstructionInfo instructionInfoLDB_n_2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -2853,8 +2853,8 @@ const InstructionInfo instructionInfoLDC_n_2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -2872,8 +2872,8 @@ const InstructionInfo instructionInfoLDD_n_2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -2891,8 +2891,8 @@ const InstructionInfo instructionInfoLDE_n_2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -2910,8 +2910,8 @@ const InstructionInfo instructionInfoLDH_n_2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -2929,8 +2929,8 @@ const InstructionInfo instructionInfoLDL_n_2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -2948,8 +2948,8 @@ const InstructionInfo instructionInfoLDA_n_DD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -2967,8 +2967,8 @@ const InstructionInfo instructionInfoLDB_n_DD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -2986,8 +2986,8 @@ const InstructionInfo instructionInfoLDC_n_DD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -3005,8 +3005,8 @@ const InstructionInfo instructionInfoLDD_n_DD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -3024,8 +3024,8 @@ const InstructionInfo instructionInfoLDE_n_DD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -3043,8 +3043,8 @@ const InstructionInfo instructionInfoLDIXh_n_DD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -3062,8 +3062,8 @@ const InstructionInfo instructionInfoLDIXl_n_DD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -3081,8 +3081,8 @@ const InstructionInfo instructionInfoLDA_n_FD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -3100,8 +3100,8 @@ const InstructionInfo instructionInfoLDB_n_FD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -3119,8 +3119,8 @@ const InstructionInfo instructionInfoLDC_n_FD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -3138,8 +3138,8 @@ const InstructionInfo instructionInfoLDD_n_FD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -3157,8 +3157,8 @@ const InstructionInfo instructionInfoLDE_n_FD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -3176,8 +3176,8 @@ const InstructionInfo instructionInfoLDIYh_n_FD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -3195,8 +3195,8 @@ const InstructionInfo instructionInfoLDIYl_n_FD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -3214,8 +3214,8 @@ const InstructionInfo instructionInfoLDA__HL__1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -3233,8 +3233,8 @@ const InstructionInfo instructionInfoLDB__HL__1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -3252,8 +3252,8 @@ const InstructionInfo instructionInfoLDC__HL__1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -3271,8 +3271,8 @@ const InstructionInfo instructionInfoLDD__HL__1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -3290,8 +3290,8 @@ const InstructionInfo instructionInfoLDE__HL__1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -3309,8 +3309,8 @@ const InstructionInfo instructionInfoLDH__HL__1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -3328,8 +3328,8 @@ const InstructionInfo instructionInfoLDL__HL__1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -3347,8 +3347,8 @@ const InstructionInfo instructionInfoLDA__IX_d__DD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -3366,8 +3366,8 @@ const InstructionInfo instructionInfoLDA__IY_d__FD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -3385,8 +3385,8 @@ const InstructionInfo instructionInfoLDB__IX_d__DD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -3404,8 +3404,8 @@ const InstructionInfo instructionInfoLDB__IY_d__FD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -3423,8 +3423,8 @@ const InstructionInfo instructionInfoLDC__IX_d__DD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -3442,8 +3442,8 @@ const InstructionInfo instructionInfoLDC__IY_d__FD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -3461,8 +3461,8 @@ const InstructionInfo instructionInfoLDD__IX_d__DD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -3480,8 +3480,8 @@ const InstructionInfo instructionInfoLDD__IY_d__FD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -3499,8 +3499,8 @@ const InstructionInfo instructionInfoLDE__IX_d__DD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -3518,8 +3518,8 @@ const InstructionInfo instructionInfoLDE__IY_d__FD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -3537,8 +3537,8 @@ const InstructionInfo instructionInfoLDH__IX_d__DD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -3556,8 +3556,8 @@ const InstructionInfo instructionInfoLDH__IY_d__FD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -3575,8 +3575,8 @@ const InstructionInfo instructionInfoLDL__IX_d__DD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -3594,8 +3594,8 @@ const InstructionInfo instructionInfoLDL__IY_d__FD3 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -3613,8 +3613,8 @@ const InstructionInfo instructionInfoLD_HL__A_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -3632,8 +3632,8 @@ const InstructionInfo instructionInfoLD_HL__B_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -3651,8 +3651,8 @@ const InstructionInfo instructionInfoLD_HL__C_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -3670,8 +3670,8 @@ const InstructionInfo instructionInfoLD_HL__D_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -3689,8 +3689,8 @@ const InstructionInfo instructionInfoLD_HL__E_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -3708,8 +3708,8 @@ const InstructionInfo instructionInfoLD_HL__H_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -3727,8 +3727,8 @@ const InstructionInfo instructionInfoLD_HL__L_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -3746,8 +3746,8 @@ const InstructionInfo instructionInfoLD_IX_d__A_DD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_Registers8, 7 },
+        { Type_None, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -3765,8 +3765,8 @@ const InstructionInfo instructionInfoLD_IY_d__A_FD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_Registers8, 7 },
+        { Type_None, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -3784,8 +3784,8 @@ const InstructionInfo instructionInfoLD_IX_d__B_DD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_Registers8, 0 },
+        { Type_None, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -3803,8 +3803,8 @@ const InstructionInfo instructionInfoLD_IY_d__B_FD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_Registers8, 0 },
+        { Type_None, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -3822,8 +3822,8 @@ const InstructionInfo instructionInfoLD_IX_d__C_DD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_Registers8, 1 },
+        { Type_None, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -3841,8 +3841,8 @@ const InstructionInfo instructionInfoLD_IY_d__C_FD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_Registers8, 1 },
+        { Type_None, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -3860,8 +3860,8 @@ const InstructionInfo instructionInfoLD_IX_d__D_DD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_Registers8, 2 },
+        { Type_None, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -3879,8 +3879,8 @@ const InstructionInfo instructionInfoLD_IY_d__D_FD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_Registers8, 2 },
+        { Type_None, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -3898,8 +3898,8 @@ const InstructionInfo instructionInfoLD_IX_d__E_DD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_Registers8, 3 },
+        { Type_None, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -3917,8 +3917,8 @@ const InstructionInfo instructionInfoLD_IY_d__E_FD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_Registers8, 3 },
+        { Type_None, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -3936,8 +3936,8 @@ const InstructionInfo instructionInfoLD_IX_d__H_DD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_Registers8, 4 },
+        { Type_None, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -3955,8 +3955,8 @@ const InstructionInfo instructionInfoLD_IY_d__H_FD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_Registers8, 4 },
+        { Type_None, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -3974,8 +3974,8 @@ const InstructionInfo instructionInfoLD_IX_d__L_DD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_Registers8, 5 },
+        { Type_None, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -3993,8 +3993,8 @@ const InstructionInfo instructionInfoLD_IY_d__L_FD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_Registers8, 5 },
+        { Type_None, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -4012,8 +4012,8 @@ const InstructionInfo instructionInfoLD_HL__n_2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4031,8 +4031,8 @@ const InstructionInfo instructionInfoLD_IX_d__n_DD4 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4050,8 +4050,8 @@ const InstructionInfo instructionInfoLD_IY_d__n_FD4 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4069,8 +4069,8 @@ const InstructionInfo instructionInfoLDA__BC__1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4088,8 +4088,8 @@ const InstructionInfo instructionInfoLDA__DE__1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4107,8 +4107,8 @@ const InstructionInfo instructionInfoLDA__nn__3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4126,8 +4126,8 @@ const InstructionInfo instructionInfoLD_BC__A_1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4145,8 +4145,8 @@ const InstructionInfo instructionInfoLD_DE__A_1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4164,8 +4164,8 @@ const InstructionInfo instructionInfoLD_nn__A_3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4183,8 +4183,8 @@ const InstructionInfo instructionInfoLDA_I_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4202,8 +4202,8 @@ const InstructionInfo instructionInfoLDA_R_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4221,8 +4221,8 @@ const InstructionInfo instructionInfoLDI_A_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4240,8 +4240,8 @@ const InstructionInfo instructionInfoLDR_A_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4259,8 +4259,8 @@ const InstructionInfo instructionInfoLDBC_nn_3 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 0 },
-        { Type_None },
+        { Type_RegistersSP16, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4278,8 +4278,8 @@ const InstructionInfo instructionInfoLDDE_nn_3 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 1 },
-        { Type_None },
+        { Type_RegistersSP16, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -4297,8 +4297,8 @@ const InstructionInfo instructionInfoLDHL_nn_3 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 2 },
-        { Type_None },
+        { Type_RegistersSP16, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -4316,8 +4316,8 @@ const InstructionInfo instructionInfoLDSP_nn_3 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 3 },
-        { Type_None },
+        { Type_RegistersSP16, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -4335,8 +4335,8 @@ const InstructionInfo instructionInfoLDIX_nn_DD4 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4354,8 +4354,8 @@ const InstructionInfo instructionInfoLDIY_nn_FD4 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4373,8 +4373,8 @@ const InstructionInfo instructionInfoLDHL__nn__3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4392,8 +4392,8 @@ const InstructionInfo instructionInfoLDBC__nn__ED4 =
         { 3, OnClock_LDp__nn__ED4_MRh },
     },
     {
-        { Type_RegistersSP16, 0 },
-        { Type_None },
+        { Type_RegistersSP16, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4411,8 +4411,8 @@ const InstructionInfo instructionInfoLDDE__nn__ED4 =
         { 3, OnClock_LDp__nn__ED4_MRh },
     },
     {
-        { Type_RegistersSP16, 1 },
-        { Type_None },
+        { Type_RegistersSP16, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -4430,8 +4430,8 @@ const InstructionInfo instructionInfoLDHL__nn__ED4 =
         { 3, OnClock_LDp__nn__ED4_MRh },
     },
     {
-        { Type_RegistersSP16, 2 },
-        { Type_None },
+        { Type_RegistersSP16, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -4449,8 +4449,8 @@ const InstructionInfo instructionInfoLDSP__nn__ED4 =
         { 3, OnClock_LDp__nn__ED4_MRh },
     },
     {
-        { Type_RegistersSP16, 3 },
-        { Type_None },
+        { Type_RegistersSP16, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -4468,8 +4468,8 @@ const InstructionInfo instructionInfoLDIX__nn__DD4 =
         { 3, OnClock_LDex__nn__ex4_MRh },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4487,8 +4487,8 @@ const InstructionInfo instructionInfoLDIY__nn__FD4 =
         { 3, OnClock_LDex__nn__ex4_MRh },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4506,8 +4506,8 @@ const InstructionInfo instructionInfoLD_nn__HL_3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4525,8 +4525,8 @@ const InstructionInfo instructionInfoLD_nn__BC_ED4 =
         { 3, OnClock_LD_nn__p_ED4_MWh },
     },
     {
-        { Type_RegistersSP16, 0 },
-        { Type_None },
+        { Type_RegistersSP16, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4544,8 +4544,8 @@ const InstructionInfo instructionInfoLD_nn__DE_ED4 =
         { 3, OnClock_LD_nn__p_ED4_MWh },
     },
     {
-        { Type_RegistersSP16, 1 },
-        { Type_None },
+        { Type_RegistersSP16, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -4563,8 +4563,8 @@ const InstructionInfo instructionInfoLD_nn__HL_ED4 =
         { 3, OnClock_LD_nn__p_ED4_MWh },
     },
     {
-        { Type_RegistersSP16, 2 },
-        { Type_None },
+        { Type_RegistersSP16, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -4582,8 +4582,8 @@ const InstructionInfo instructionInfoLD_nn__SP_ED4 =
         { 3, OnClock_LD_nn__p_ED4_MWh },
     },
     {
-        { Type_RegistersSP16, 3 },
-        { Type_None },
+        { Type_RegistersSP16, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -4601,8 +4601,8 @@ const InstructionInfo instructionInfoLD_nn__IX_DD4 =
         { 3, OnClock_LD_nn__ex_ex4_MWh },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4620,8 +4620,8 @@ const InstructionInfo instructionInfoLD_nn__IY_FD4 =
         { 3, OnClock_LD_nn__ex_ex4_MWh },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4639,8 +4639,8 @@ const InstructionInfo instructionInfoLDSP_HL_1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4658,8 +4658,8 @@ const InstructionInfo instructionInfoLDSP_IX_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4677,8 +4677,8 @@ const InstructionInfo instructionInfoLDSP_IY_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4696,8 +4696,8 @@ const InstructionInfo instructionInfoPUSHBC_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers16, 0 },
-        { Type_None },
+        { Type_Registers16, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4715,8 +4715,8 @@ const InstructionInfo instructionInfoPUSHDE_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers16, 1 },
-        { Type_None },
+        { Type_Registers16, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -4734,8 +4734,8 @@ const InstructionInfo instructionInfoPUSHHL_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers16, 2 },
-        { Type_None },
+        { Type_Registers16, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -4753,8 +4753,8 @@ const InstructionInfo instructionInfoPUSHAF_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers16, 3 },
-        { Type_None },
+        { Type_Registers16, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -4772,8 +4772,8 @@ const InstructionInfo instructionInfoPUSHIX_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4791,8 +4791,8 @@ const InstructionInfo instructionInfoPUSHIY_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4810,8 +4810,8 @@ const InstructionInfo instructionInfoPOPBC_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers16, 0 },
-        { Type_None },
+        { Type_Registers16, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4829,8 +4829,8 @@ const InstructionInfo instructionInfoPOPDE_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers16, 1 },
-        { Type_None },
+        { Type_Registers16, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -4848,8 +4848,8 @@ const InstructionInfo instructionInfoPOPHL_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers16, 2 },
-        { Type_None },
+        { Type_Registers16, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -4867,8 +4867,8 @@ const InstructionInfo instructionInfoPOPAF_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers16, 3 },
-        { Type_None },
+        { Type_Registers16, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -4886,8 +4886,8 @@ const InstructionInfo instructionInfoPOPIX_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4905,8 +4905,8 @@ const InstructionInfo instructionInfoPOPIY_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4924,8 +4924,8 @@ const InstructionInfo instructionInfoEXDE_HL_1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4943,8 +4943,8 @@ const InstructionInfo instructionInfoEXAF_AF2_1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4962,8 +4962,8 @@ const InstructionInfo instructionInfoEXX_1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -4981,8 +4981,8 @@ const InstructionInfo instructionInfoEX_SP__HL_1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -5000,8 +5000,8 @@ const InstructionInfo instructionInfoEX_SP__IX_DD2 =
         { 5, OnClock_EX_SP__ex_ex2_SWl },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -5019,8 +5019,8 @@ const InstructionInfo instructionInfoEX_SP__IY_FD2 =
         { 5, OnClock_EX_SP__ex_ex2_SWl },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -5038,8 +5038,8 @@ const InstructionInfo instructionInfoLDI_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -5057,8 +5057,8 @@ const InstructionInfo instructionInfoLDIR_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -5076,8 +5076,8 @@ const InstructionInfo instructionInfoLDD_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -5095,8 +5095,8 @@ const InstructionInfo instructionInfoLDDR_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -5114,8 +5114,8 @@ const InstructionInfo instructionInfoCPI_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -5133,8 +5133,8 @@ const InstructionInfo instructionInfoCPIR_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -5152,8 +5152,8 @@ const InstructionInfo instructionInfoCPD_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -5171,8 +5171,8 @@ const InstructionInfo instructionInfoCPDR_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -5190,8 +5190,8 @@ const InstructionInfo instructionInfoADDA_A_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -5209,8 +5209,8 @@ const InstructionInfo instructionInfoADDA_B_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -5228,8 +5228,8 @@ const InstructionInfo instructionInfoADDA_C_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -5247,8 +5247,8 @@ const InstructionInfo instructionInfoADDA_D_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -5266,8 +5266,8 @@ const InstructionInfo instructionInfoADDA_E_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -5285,8 +5285,8 @@ const InstructionInfo instructionInfoADDA_H_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -5304,8 +5304,8 @@ const InstructionInfo instructionInfoADDA_L_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -5323,8 +5323,8 @@ const InstructionInfo instructionInfoADDA_A_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -5342,8 +5342,8 @@ const InstructionInfo instructionInfoADDA_B_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -5361,8 +5361,8 @@ const InstructionInfo instructionInfoADDA_C_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -5380,8 +5380,8 @@ const InstructionInfo instructionInfoADDA_D_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -5399,8 +5399,8 @@ const InstructionInfo instructionInfoADDA_E_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -5418,8 +5418,8 @@ const InstructionInfo instructionInfoADDA_IXh_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -5437,8 +5437,8 @@ const InstructionInfo instructionInfoADDA_IXl_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -5456,8 +5456,8 @@ const InstructionInfo instructionInfoADDA_A_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -5475,8 +5475,8 @@ const InstructionInfo instructionInfoADDA_B_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -5494,8 +5494,8 @@ const InstructionInfo instructionInfoADDA_C_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -5513,8 +5513,8 @@ const InstructionInfo instructionInfoADDA_D_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -5532,8 +5532,8 @@ const InstructionInfo instructionInfoADDA_E_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -5551,8 +5551,8 @@ const InstructionInfo instructionInfoADDA_IYh_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -5570,8 +5570,8 @@ const InstructionInfo instructionInfoADDA_IYl_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -5589,8 +5589,8 @@ const InstructionInfo instructionInfoADDA_n_2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -5608,8 +5608,8 @@ const InstructionInfo instructionInfoADDA__HL__1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -5627,8 +5627,8 @@ const InstructionInfo instructionInfoADDA__IX_d__DD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -5646,8 +5646,8 @@ const InstructionInfo instructionInfoADDA__IY_d__FD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -5665,8 +5665,8 @@ const InstructionInfo instructionInfoADCA_A_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -5684,8 +5684,8 @@ const InstructionInfo instructionInfoADCA_B_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -5703,8 +5703,8 @@ const InstructionInfo instructionInfoADCA_C_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -5722,8 +5722,8 @@ const InstructionInfo instructionInfoADCA_D_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -5741,8 +5741,8 @@ const InstructionInfo instructionInfoADCA_E_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -5760,8 +5760,8 @@ const InstructionInfo instructionInfoADCA_H_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -5779,8 +5779,8 @@ const InstructionInfo instructionInfoADCA_L_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -5798,8 +5798,8 @@ const InstructionInfo instructionInfoADCA_A_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -5817,8 +5817,8 @@ const InstructionInfo instructionInfoADCA_B_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -5836,8 +5836,8 @@ const InstructionInfo instructionInfoADCA_C_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -5855,8 +5855,8 @@ const InstructionInfo instructionInfoADCA_D_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -5874,8 +5874,8 @@ const InstructionInfo instructionInfoADCA_E_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -5893,8 +5893,8 @@ const InstructionInfo instructionInfoADCA_IXh_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -5912,8 +5912,8 @@ const InstructionInfo instructionInfoADCA_IXl_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -5931,8 +5931,8 @@ const InstructionInfo instructionInfoADCA_A_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -5950,8 +5950,8 @@ const InstructionInfo instructionInfoADCA_B_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -5969,8 +5969,8 @@ const InstructionInfo instructionInfoADCA_C_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -5988,8 +5988,8 @@ const InstructionInfo instructionInfoADCA_D_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -6007,8 +6007,8 @@ const InstructionInfo instructionInfoADCA_E_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -6026,8 +6026,8 @@ const InstructionInfo instructionInfoADCA_IYh_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -6045,8 +6045,8 @@ const InstructionInfo instructionInfoADCA_IYl_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -6064,8 +6064,8 @@ const InstructionInfo instructionInfoADCA_n_2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -6083,8 +6083,8 @@ const InstructionInfo instructionInfoADCA__HL__1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -6102,8 +6102,8 @@ const InstructionInfo instructionInfoADCA__IX_d__DD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -6121,8 +6121,8 @@ const InstructionInfo instructionInfoADCA__IY_d__FD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -6140,8 +6140,8 @@ const InstructionInfo instructionInfoSUBA_A_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -6159,8 +6159,8 @@ const InstructionInfo instructionInfoSUBA_B_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -6178,8 +6178,8 @@ const InstructionInfo instructionInfoSUBA_C_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -6197,8 +6197,8 @@ const InstructionInfo instructionInfoSUBA_D_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -6216,8 +6216,8 @@ const InstructionInfo instructionInfoSUBA_E_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -6235,8 +6235,8 @@ const InstructionInfo instructionInfoSUBA_H_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -6254,8 +6254,8 @@ const InstructionInfo instructionInfoSUBA_L_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -6273,8 +6273,8 @@ const InstructionInfo instructionInfoSUBA_A_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -6292,8 +6292,8 @@ const InstructionInfo instructionInfoSUBA_B_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -6311,8 +6311,8 @@ const InstructionInfo instructionInfoSUBA_C_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -6330,8 +6330,8 @@ const InstructionInfo instructionInfoSUBA_D_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -6349,8 +6349,8 @@ const InstructionInfo instructionInfoSUBA_E_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -6368,8 +6368,8 @@ const InstructionInfo instructionInfoSUBA_IXh_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -6387,8 +6387,8 @@ const InstructionInfo instructionInfoSUBA_IXl_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -6406,8 +6406,8 @@ const InstructionInfo instructionInfoSUBA_A_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -6425,8 +6425,8 @@ const InstructionInfo instructionInfoSUBA_B_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -6444,8 +6444,8 @@ const InstructionInfo instructionInfoSUBA_C_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -6463,8 +6463,8 @@ const InstructionInfo instructionInfoSUBA_D_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -6482,8 +6482,8 @@ const InstructionInfo instructionInfoSUBA_E_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -6501,8 +6501,8 @@ const InstructionInfo instructionInfoSUBA_IYh_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -6520,8 +6520,8 @@ const InstructionInfo instructionInfoSUBA_IYl_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -6539,8 +6539,8 @@ const InstructionInfo instructionInfoSUBA_n_2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -6558,8 +6558,8 @@ const InstructionInfo instructionInfoSUBA__HL__1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -6577,8 +6577,8 @@ const InstructionInfo instructionInfoSUBA__IX_d__DD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -6596,8 +6596,8 @@ const InstructionInfo instructionInfoSUBA__IY_d__FD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -6615,8 +6615,8 @@ const InstructionInfo instructionInfoSBCA_A_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -6634,8 +6634,8 @@ const InstructionInfo instructionInfoSBCA_B_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -6653,8 +6653,8 @@ const InstructionInfo instructionInfoSBCA_C_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -6672,8 +6672,8 @@ const InstructionInfo instructionInfoSBCA_D_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -6691,8 +6691,8 @@ const InstructionInfo instructionInfoSBCA_E_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -6710,8 +6710,8 @@ const InstructionInfo instructionInfoSBCA_H_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -6729,8 +6729,8 @@ const InstructionInfo instructionInfoSBCA_L_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -6748,8 +6748,8 @@ const InstructionInfo instructionInfoSBCA_A_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -6767,8 +6767,8 @@ const InstructionInfo instructionInfoSBCA_B_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -6786,8 +6786,8 @@ const InstructionInfo instructionInfoSBCA_C_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -6805,8 +6805,8 @@ const InstructionInfo instructionInfoSBCA_D_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -6824,8 +6824,8 @@ const InstructionInfo instructionInfoSBCA_E_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -6843,8 +6843,8 @@ const InstructionInfo instructionInfoSBCA_IXh_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -6862,8 +6862,8 @@ const InstructionInfo instructionInfoSBCA_IXl_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -6881,8 +6881,8 @@ const InstructionInfo instructionInfoSBCA_A_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -6900,8 +6900,8 @@ const InstructionInfo instructionInfoSBCA_B_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -6919,8 +6919,8 @@ const InstructionInfo instructionInfoSBCA_C_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -6938,8 +6938,8 @@ const InstructionInfo instructionInfoSBCA_D_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -6957,8 +6957,8 @@ const InstructionInfo instructionInfoSBCA_E_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -6976,8 +6976,8 @@ const InstructionInfo instructionInfoSBCA_IYh_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -6995,8 +6995,8 @@ const InstructionInfo instructionInfoSBCA_IYl_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -7014,8 +7014,8 @@ const InstructionInfo instructionInfoSBCA_n_2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -7033,8 +7033,8 @@ const InstructionInfo instructionInfoSBCA__HL__1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -7052,8 +7052,8 @@ const InstructionInfo instructionInfoSBCA__IX_d__DD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -7071,8 +7071,8 @@ const InstructionInfo instructionInfoSBCA__IY_d__FD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -7090,8 +7090,8 @@ const InstructionInfo instructionInfoANDA_A_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -7109,8 +7109,8 @@ const InstructionInfo instructionInfoANDA_B_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -7128,8 +7128,8 @@ const InstructionInfo instructionInfoANDA_C_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -7147,8 +7147,8 @@ const InstructionInfo instructionInfoANDA_D_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -7166,8 +7166,8 @@ const InstructionInfo instructionInfoANDA_E_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -7185,8 +7185,8 @@ const InstructionInfo instructionInfoANDA_H_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -7204,8 +7204,8 @@ const InstructionInfo instructionInfoANDA_L_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -7223,8 +7223,8 @@ const InstructionInfo instructionInfoANDA_A_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -7242,8 +7242,8 @@ const InstructionInfo instructionInfoANDA_B_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -7261,8 +7261,8 @@ const InstructionInfo instructionInfoANDA_C_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -7280,8 +7280,8 @@ const InstructionInfo instructionInfoANDA_D_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -7299,8 +7299,8 @@ const InstructionInfo instructionInfoANDA_E_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -7318,8 +7318,8 @@ const InstructionInfo instructionInfoANDA_IXh_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -7337,8 +7337,8 @@ const InstructionInfo instructionInfoANDA_IXl_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -7356,8 +7356,8 @@ const InstructionInfo instructionInfoANDA_A_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -7375,8 +7375,8 @@ const InstructionInfo instructionInfoANDA_B_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -7394,8 +7394,8 @@ const InstructionInfo instructionInfoANDA_C_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -7413,8 +7413,8 @@ const InstructionInfo instructionInfoANDA_D_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -7432,8 +7432,8 @@ const InstructionInfo instructionInfoANDA_E_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -7451,8 +7451,8 @@ const InstructionInfo instructionInfoANDA_IYh_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -7470,8 +7470,8 @@ const InstructionInfo instructionInfoANDA_IYl_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -7489,8 +7489,8 @@ const InstructionInfo instructionInfoANDA_n_2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -7508,8 +7508,8 @@ const InstructionInfo instructionInfoANDA__HL__1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -7527,8 +7527,8 @@ const InstructionInfo instructionInfoANDA__IX_d__DD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -7546,8 +7546,8 @@ const InstructionInfo instructionInfoANDA__IY_d__FD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -7565,8 +7565,8 @@ const InstructionInfo instructionInfoORA_A_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -7584,8 +7584,8 @@ const InstructionInfo instructionInfoORA_B_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -7603,8 +7603,8 @@ const InstructionInfo instructionInfoORA_C_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -7622,8 +7622,8 @@ const InstructionInfo instructionInfoORA_D_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -7641,8 +7641,8 @@ const InstructionInfo instructionInfoORA_E_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -7660,8 +7660,8 @@ const InstructionInfo instructionInfoORA_H_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -7679,8 +7679,8 @@ const InstructionInfo instructionInfoORA_L_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -7698,8 +7698,8 @@ const InstructionInfo instructionInfoORA_A_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -7717,8 +7717,8 @@ const InstructionInfo instructionInfoORA_B_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -7736,8 +7736,8 @@ const InstructionInfo instructionInfoORA_C_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -7755,8 +7755,8 @@ const InstructionInfo instructionInfoORA_D_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -7774,8 +7774,8 @@ const InstructionInfo instructionInfoORA_E_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -7793,8 +7793,8 @@ const InstructionInfo instructionInfoORA_IXh_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -7812,8 +7812,8 @@ const InstructionInfo instructionInfoORA_IXl_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -7831,8 +7831,8 @@ const InstructionInfo instructionInfoORA_A_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -7850,8 +7850,8 @@ const InstructionInfo instructionInfoORA_B_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -7869,8 +7869,8 @@ const InstructionInfo instructionInfoORA_C_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -7888,8 +7888,8 @@ const InstructionInfo instructionInfoORA_D_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -7907,8 +7907,8 @@ const InstructionInfo instructionInfoORA_E_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -7926,8 +7926,8 @@ const InstructionInfo instructionInfoORA_IYh_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -7945,8 +7945,8 @@ const InstructionInfo instructionInfoORA_IYl_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -7964,8 +7964,8 @@ const InstructionInfo instructionInfoORA_n_2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -7983,8 +7983,8 @@ const InstructionInfo instructionInfoORA__HL__1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -8002,8 +8002,8 @@ const InstructionInfo instructionInfoORA__IX_d__DD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -8021,8 +8021,8 @@ const InstructionInfo instructionInfoORA__IY_d__FD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -8040,8 +8040,8 @@ const InstructionInfo instructionInfoXORA_A_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -8059,8 +8059,8 @@ const InstructionInfo instructionInfoXORA_B_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -8078,8 +8078,8 @@ const InstructionInfo instructionInfoXORA_C_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -8097,8 +8097,8 @@ const InstructionInfo instructionInfoXORA_D_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -8116,8 +8116,8 @@ const InstructionInfo instructionInfoXORA_E_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -8135,8 +8135,8 @@ const InstructionInfo instructionInfoXORA_H_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -8154,8 +8154,8 @@ const InstructionInfo instructionInfoXORA_L_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -8173,8 +8173,8 @@ const InstructionInfo instructionInfoXORA_A_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -8192,8 +8192,8 @@ const InstructionInfo instructionInfoXORA_B_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -8211,8 +8211,8 @@ const InstructionInfo instructionInfoXORA_C_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -8230,8 +8230,8 @@ const InstructionInfo instructionInfoXORA_D_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -8249,8 +8249,8 @@ const InstructionInfo instructionInfoXORA_E_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -8268,8 +8268,8 @@ const InstructionInfo instructionInfoXORA_IXh_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -8287,8 +8287,8 @@ const InstructionInfo instructionInfoXORA_IXl_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -8306,8 +8306,8 @@ const InstructionInfo instructionInfoXORA_A_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -8325,8 +8325,8 @@ const InstructionInfo instructionInfoXORA_B_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -8344,8 +8344,8 @@ const InstructionInfo instructionInfoXORA_C_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -8363,8 +8363,8 @@ const InstructionInfo instructionInfoXORA_D_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -8382,8 +8382,8 @@ const InstructionInfo instructionInfoXORA_E_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -8401,8 +8401,8 @@ const InstructionInfo instructionInfoXORA_IYh_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -8420,8 +8420,8 @@ const InstructionInfo instructionInfoXORA_IYl_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -8439,8 +8439,8 @@ const InstructionInfo instructionInfoXORA_n_2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -8458,8 +8458,8 @@ const InstructionInfo instructionInfoXORA__HL__1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -8477,8 +8477,8 @@ const InstructionInfo instructionInfoXORA__IX_d__DD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -8496,8 +8496,8 @@ const InstructionInfo instructionInfoXORA__IY_d__FD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -8515,8 +8515,8 @@ const InstructionInfo instructionInfoCPA_A_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -8534,8 +8534,8 @@ const InstructionInfo instructionInfoCPA_B_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -8553,8 +8553,8 @@ const InstructionInfo instructionInfoCPA_C_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -8572,8 +8572,8 @@ const InstructionInfo instructionInfoCPA_D_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -8591,8 +8591,8 @@ const InstructionInfo instructionInfoCPA_E_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -8610,8 +8610,8 @@ const InstructionInfo instructionInfoCPA_H_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -8629,8 +8629,8 @@ const InstructionInfo instructionInfoCPA_L_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -8648,8 +8648,8 @@ const InstructionInfo instructionInfoCPA_A_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -8667,8 +8667,8 @@ const InstructionInfo instructionInfoCPA_B_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -8686,8 +8686,8 @@ const InstructionInfo instructionInfoCPA_C_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -8705,8 +8705,8 @@ const InstructionInfo instructionInfoCPA_D_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -8724,8 +8724,8 @@ const InstructionInfo instructionInfoCPA_E_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -8743,8 +8743,8 @@ const InstructionInfo instructionInfoCPA_IXh_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -8762,8 +8762,8 @@ const InstructionInfo instructionInfoCPA_IXl_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -8781,8 +8781,8 @@ const InstructionInfo instructionInfoCPA_A_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -8800,8 +8800,8 @@ const InstructionInfo instructionInfoCPA_B_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -8819,8 +8819,8 @@ const InstructionInfo instructionInfoCPA_C_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -8838,8 +8838,8 @@ const InstructionInfo instructionInfoCPA_D_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -8857,8 +8857,8 @@ const InstructionInfo instructionInfoCPA_E_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -8876,8 +8876,8 @@ const InstructionInfo instructionInfoCPA_IYh_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -8895,8 +8895,8 @@ const InstructionInfo instructionInfoCPA_IYl_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -8914,8 +8914,8 @@ const InstructionInfo instructionInfoCPA_n_2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -8933,8 +8933,8 @@ const InstructionInfo instructionInfoCPA__HL__1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -8952,8 +8952,8 @@ const InstructionInfo instructionInfoCPA__IX_d__DD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -8971,8 +8971,8 @@ const InstructionInfo instructionInfoCPA__IY_d__FD3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -8990,8 +8990,8 @@ const InstructionInfo instructionInfoINCA_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -9009,8 +9009,8 @@ const InstructionInfo instructionInfoINCB_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -9028,8 +9028,8 @@ const InstructionInfo instructionInfoINCC_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -9047,8 +9047,8 @@ const InstructionInfo instructionInfoINCD_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -9066,8 +9066,8 @@ const InstructionInfo instructionInfoINCE_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -9085,8 +9085,8 @@ const InstructionInfo instructionInfoINCH_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -9104,8 +9104,8 @@ const InstructionInfo instructionInfoINCL_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -9123,8 +9123,8 @@ const InstructionInfo instructionInfoINCA_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -9142,8 +9142,8 @@ const InstructionInfo instructionInfoINCB_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -9161,8 +9161,8 @@ const InstructionInfo instructionInfoINCC_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -9180,8 +9180,8 @@ const InstructionInfo instructionInfoINCD_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -9199,8 +9199,8 @@ const InstructionInfo instructionInfoINCE_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -9218,8 +9218,8 @@ const InstructionInfo instructionInfoINCIXh_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -9237,8 +9237,8 @@ const InstructionInfo instructionInfoINCIXl_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -9256,8 +9256,8 @@ const InstructionInfo instructionInfoINCA_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -9275,8 +9275,8 @@ const InstructionInfo instructionInfoINCB_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -9294,8 +9294,8 @@ const InstructionInfo instructionInfoINCC_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -9313,8 +9313,8 @@ const InstructionInfo instructionInfoINCD_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -9332,8 +9332,8 @@ const InstructionInfo instructionInfoINCE_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -9351,8 +9351,8 @@ const InstructionInfo instructionInfoINCIYh_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -9370,8 +9370,8 @@ const InstructionInfo instructionInfoINCIYl_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -9389,8 +9389,8 @@ const InstructionInfo instructionInfoINC_HL__1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -9408,8 +9408,8 @@ const InstructionInfo instructionInfoINC_IX_d__DD3 =
         { 3, OnClock_INC_ex_d__ex3_MW },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -9427,8 +9427,8 @@ const InstructionInfo instructionInfoINC_IY_d__FD3 =
         { 3, OnClock_INC_ex_d__ex3_MW },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -9446,8 +9446,8 @@ const InstructionInfo instructionInfoDECA_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -9465,8 +9465,8 @@ const InstructionInfo instructionInfoDECB_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -9484,8 +9484,8 @@ const InstructionInfo instructionInfoDECC_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -9503,8 +9503,8 @@ const InstructionInfo instructionInfoDECD_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -9522,8 +9522,8 @@ const InstructionInfo instructionInfoDECE_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -9541,8 +9541,8 @@ const InstructionInfo instructionInfoDECH_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -9560,8 +9560,8 @@ const InstructionInfo instructionInfoDECL_1 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -9579,8 +9579,8 @@ const InstructionInfo instructionInfoDECA_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -9598,8 +9598,8 @@ const InstructionInfo instructionInfoDECB_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -9617,8 +9617,8 @@ const InstructionInfo instructionInfoDECC_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -9636,8 +9636,8 @@ const InstructionInfo instructionInfoDECD_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -9655,8 +9655,8 @@ const InstructionInfo instructionInfoDECE_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -9674,8 +9674,8 @@ const InstructionInfo instructionInfoDECIXh_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -9693,8 +9693,8 @@ const InstructionInfo instructionInfoDECIXl_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -9712,8 +9712,8 @@ const InstructionInfo instructionInfoDECA_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -9731,8 +9731,8 @@ const InstructionInfo instructionInfoDECB_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -9750,8 +9750,8 @@ const InstructionInfo instructionInfoDECC_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -9769,8 +9769,8 @@ const InstructionInfo instructionInfoDECD_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -9788,8 +9788,8 @@ const InstructionInfo instructionInfoDECE_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -9807,8 +9807,8 @@ const InstructionInfo instructionInfoDECIYh_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -9826,8 +9826,8 @@ const InstructionInfo instructionInfoDECIYl_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -9845,8 +9845,8 @@ const InstructionInfo instructionInfoDEC_HL__1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -9864,8 +9864,8 @@ const InstructionInfo instructionInfoDEC_IX_d__DD3 =
         { 3, OnClock_DEC_ex_d__ex3_MW },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -9883,8 +9883,8 @@ const InstructionInfo instructionInfoDEC_IY_d__FD3 =
         { 3, OnClock_DEC_ex_d__ex3_MW },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -9902,8 +9902,8 @@ const InstructionInfo instructionInfoDAA_1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -9921,8 +9921,8 @@ const InstructionInfo instructionInfoCPLA_1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -9940,8 +9940,8 @@ const InstructionInfo instructionInfoNEG_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -9959,8 +9959,8 @@ const InstructionInfo instructionInfoCCF_1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -9978,8 +9978,8 @@ const InstructionInfo instructionInfoSCF_1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -9997,8 +9997,8 @@ const InstructionInfo instructionInfoNOP_1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10016,8 +10016,8 @@ const InstructionInfo instructionInfoHALT_1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10035,8 +10035,8 @@ const InstructionInfo instructionInfoDI_1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10054,8 +10054,8 @@ const InstructionInfo instructionInfoEI_1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10073,8 +10073,8 @@ const InstructionInfo instructionInfoIM0_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10092,8 +10092,8 @@ const InstructionInfo instructionInfoIM1_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10111,8 +10111,8 @@ const InstructionInfo instructionInfoIM2_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10130,8 +10130,8 @@ const InstructionInfo instructionInfoADDHL_BC_1 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 0 },
-        { Type_None },
+        { Type_RegistersSP16, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10149,8 +10149,8 @@ const InstructionInfo instructionInfoADDHL_DE_1 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 1 },
-        { Type_None },
+        { Type_RegistersSP16, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -10168,8 +10168,8 @@ const InstructionInfo instructionInfoADDHL_HL_1 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 2 },
-        { Type_None },
+        { Type_RegistersSP16, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -10187,8 +10187,8 @@ const InstructionInfo instructionInfoADDHL_SP_1 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 3 },
-        { Type_None },
+        { Type_RegistersSP16, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -10206,8 +10206,8 @@ const InstructionInfo instructionInfoADDIX_BC_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 0 },
-        { Type_None },
+        { Type_RegistersSP16, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10225,8 +10225,8 @@ const InstructionInfo instructionInfoADDIX_DE_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 1 },
-        { Type_None },
+        { Type_RegistersSP16, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -10244,8 +10244,8 @@ const InstructionInfo instructionInfoADDIX_IX_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 2 },
-        { Type_None },
+        { Type_RegistersSP16, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -10263,8 +10263,8 @@ const InstructionInfo instructionInfoADDIX_SP_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 3 },
-        { Type_None },
+        { Type_RegistersSP16, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -10282,8 +10282,8 @@ const InstructionInfo instructionInfoADDIY_BC_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 0 },
-        { Type_None },
+        { Type_RegistersSP16, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10301,8 +10301,8 @@ const InstructionInfo instructionInfoADDIY_DE_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 1 },
-        { Type_None },
+        { Type_RegistersSP16, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -10320,8 +10320,8 @@ const InstructionInfo instructionInfoADDIY_IY_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 2 },
-        { Type_None },
+        { Type_RegistersSP16, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -10339,8 +10339,8 @@ const InstructionInfo instructionInfoADDIY_SP_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 3 },
-        { Type_None },
+        { Type_RegistersSP16, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -10358,8 +10358,8 @@ const InstructionInfo instructionInfoADCHL_BC_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 0 },
-        { Type_None },
+        { Type_RegistersSP16, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10377,8 +10377,8 @@ const InstructionInfo instructionInfoADCHL_DE_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 1 },
-        { Type_None },
+        { Type_RegistersSP16, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -10396,8 +10396,8 @@ const InstructionInfo instructionInfoADCHL_HL_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 2 },
-        { Type_None },
+        { Type_RegistersSP16, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -10415,8 +10415,8 @@ const InstructionInfo instructionInfoADCHL_SP_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 3 },
-        { Type_None },
+        { Type_RegistersSP16, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -10434,8 +10434,8 @@ const InstructionInfo instructionInfoSBCHL_BC_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 0 },
-        { Type_None },
+        { Type_RegistersSP16, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10453,8 +10453,8 @@ const InstructionInfo instructionInfoSBCHL_DE_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 1 },
-        { Type_None },
+        { Type_RegistersSP16, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -10472,8 +10472,8 @@ const InstructionInfo instructionInfoSBCHL_HL_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 2 },
-        { Type_None },
+        { Type_RegistersSP16, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -10491,8 +10491,8 @@ const InstructionInfo instructionInfoSBCHL_SP_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 3 },
-        { Type_None },
+        { Type_RegistersSP16, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -10510,8 +10510,8 @@ const InstructionInfo instructionInfoINCBC_1 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 0 },
-        { Type_None },
+        { Type_RegistersSP16, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10529,8 +10529,8 @@ const InstructionInfo instructionInfoINCDE_1 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 1 },
-        { Type_None },
+        { Type_RegistersSP16, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -10548,8 +10548,8 @@ const InstructionInfo instructionInfoINCHL_1 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 2 },
-        { Type_None },
+        { Type_RegistersSP16, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -10567,8 +10567,8 @@ const InstructionInfo instructionInfoINCSP_1 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 3 },
-        { Type_None },
+        { Type_RegistersSP16, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -10586,8 +10586,8 @@ const InstructionInfo instructionInfoINCIX_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10605,8 +10605,8 @@ const InstructionInfo instructionInfoINCIY_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10624,8 +10624,8 @@ const InstructionInfo instructionInfoDECBC_1 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 0 },
-        { Type_None },
+        { Type_RegistersSP16, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10643,8 +10643,8 @@ const InstructionInfo instructionInfoDECDE_1 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 1 },
-        { Type_None },
+        { Type_RegistersSP16, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -10662,8 +10662,8 @@ const InstructionInfo instructionInfoDECHL_1 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 2 },
-        { Type_None },
+        { Type_RegistersSP16, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -10681,8 +10681,8 @@ const InstructionInfo instructionInfoDECSP_1 =
         { 0, nullptr },
     },
     {
-        { Type_RegistersSP16, 3 },
-        { Type_None },
+        { Type_RegistersSP16, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -10700,8 +10700,8 @@ const InstructionInfo instructionInfoDECIX_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10719,8 +10719,8 @@ const InstructionInfo instructionInfoDECIY_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10738,8 +10738,8 @@ const InstructionInfo instructionInfoRLCA_1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10757,8 +10757,8 @@ const InstructionInfo instructionInfoRLA_1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10776,8 +10776,8 @@ const InstructionInfo instructionInfoRRCA_1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10795,8 +10795,8 @@ const InstructionInfo instructionInfoRRA_1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10814,8 +10814,8 @@ const InstructionInfo instructionInfoRLCA_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -10833,8 +10833,8 @@ const InstructionInfo instructionInfoRLCB_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10852,8 +10852,8 @@ const InstructionInfo instructionInfoRLCC_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -10871,8 +10871,8 @@ const InstructionInfo instructionInfoRLCD_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -10890,8 +10890,8 @@ const InstructionInfo instructionInfoRLCE_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -10909,8 +10909,8 @@ const InstructionInfo instructionInfoRLCH_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -10928,8 +10928,8 @@ const InstructionInfo instructionInfoRLCL_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -10947,8 +10947,8 @@ const InstructionInfo instructionInfoRLC_HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10966,8 +10966,8 @@ const InstructionInfo instructionInfoRLC_IX_d__DD4 =
         { 3, OnClock_RLC_ex_d__ex4_MW },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -10985,8 +10985,8 @@ const InstructionInfo instructionInfoRLC_IY_d__FD4 =
         { 3, OnClock_RLC_ex_d__ex4_MW },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -11004,8 +11004,8 @@ const InstructionInfo instructionInfoRLC_IX_d__A_DD4 =
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 7 },
+        { Type_None, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -11023,8 +11023,8 @@ const InstructionInfo instructionInfoRLC_IY_d__A_FD4 =
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 7 },
+        { Type_None, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -11042,8 +11042,8 @@ const InstructionInfo instructionInfoRLC_IX_d__B_DD4 =
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 0 },
+        { Type_None, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -11061,8 +11061,8 @@ const InstructionInfo instructionInfoRLC_IY_d__B_FD4 =
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 0 },
+        { Type_None, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -11080,8 +11080,8 @@ const InstructionInfo instructionInfoRLC_IX_d__C_DD4 =
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 1 },
+        { Type_None, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -11099,8 +11099,8 @@ const InstructionInfo instructionInfoRLC_IY_d__C_FD4 =
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 1 },
+        { Type_None, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -11118,8 +11118,8 @@ const InstructionInfo instructionInfoRLC_IX_d__D_DD4 =
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 2 },
+        { Type_None, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -11137,8 +11137,8 @@ const InstructionInfo instructionInfoRLC_IY_d__D_FD4 =
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 2 },
+        { Type_None, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -11156,8 +11156,8 @@ const InstructionInfo instructionInfoRLC_IX_d__E_DD4 =
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 3 },
+        { Type_None, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -11175,8 +11175,8 @@ const InstructionInfo instructionInfoRLC_IY_d__E_FD4 =
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 3 },
+        { Type_None, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -11194,8 +11194,8 @@ const InstructionInfo instructionInfoRLC_IX_d__H_DD4 =
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 4 },
+        { Type_None, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -11213,8 +11213,8 @@ const InstructionInfo instructionInfoRLC_IY_d__H_FD4 =
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 4 },
+        { Type_None, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -11232,8 +11232,8 @@ const InstructionInfo instructionInfoRLC_IX_d__L_DD4 =
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 5 },
+        { Type_None, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -11251,8 +11251,8 @@ const InstructionInfo instructionInfoRLC_IY_d__L_FD4 =
         { 3, OnClock_RLC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 5 },
+        { Type_None, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -11270,8 +11270,8 @@ const InstructionInfo instructionInfoRLA_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -11289,8 +11289,8 @@ const InstructionInfo instructionInfoRLB_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -11308,8 +11308,8 @@ const InstructionInfo instructionInfoRLC_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -11327,8 +11327,8 @@ const InstructionInfo instructionInfoRLD_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -11346,8 +11346,8 @@ const InstructionInfo instructionInfoRLE_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -11365,8 +11365,8 @@ const InstructionInfo instructionInfoRLH_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -11384,8 +11384,8 @@ const InstructionInfo instructionInfoRLL_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -11403,8 +11403,8 @@ const InstructionInfo instructionInfoRL_HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -11422,8 +11422,8 @@ const InstructionInfo instructionInfoRL_IX_d__DD4 =
         { 3, OnClock_RL_ex_d__ex4_MW },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -11441,8 +11441,8 @@ const InstructionInfo instructionInfoRL_IY_d__FD4 =
         { 3, OnClock_RL_ex_d__ex4_MW },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -11460,8 +11460,8 @@ const InstructionInfo instructionInfoRL_IX_d__A_DD4 =
         { 3, OnClock_RL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 7 },
+        { Type_None, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -11479,8 +11479,8 @@ const InstructionInfo instructionInfoRL_IY_d__A_FD4 =
         { 3, OnClock_RL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 7 },
+        { Type_None, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -11498,8 +11498,8 @@ const InstructionInfo instructionInfoRL_IX_d__B_DD4 =
         { 3, OnClock_RL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 0 },
+        { Type_None, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -11517,8 +11517,8 @@ const InstructionInfo instructionInfoRL_IY_d__B_FD4 =
         { 3, OnClock_RL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 0 },
+        { Type_None, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -11536,8 +11536,8 @@ const InstructionInfo instructionInfoRL_IX_d__C_DD4 =
         { 3, OnClock_RL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 1 },
+        { Type_None, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -11555,8 +11555,8 @@ const InstructionInfo instructionInfoRL_IY_d__C_FD4 =
         { 3, OnClock_RL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 1 },
+        { Type_None, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -11574,8 +11574,8 @@ const InstructionInfo instructionInfoRL_IX_d__D_DD4 =
         { 3, OnClock_RL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 2 },
+        { Type_None, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -11593,8 +11593,8 @@ const InstructionInfo instructionInfoRL_IY_d__D_FD4 =
         { 3, OnClock_RL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 2 },
+        { Type_None, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -11612,8 +11612,8 @@ const InstructionInfo instructionInfoRL_IX_d__E_DD4 =
         { 3, OnClock_RL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 3 },
+        { Type_None, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -11631,8 +11631,8 @@ const InstructionInfo instructionInfoRL_IY_d__E_FD4 =
         { 3, OnClock_RL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 3 },
+        { Type_None, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -11650,8 +11650,8 @@ const InstructionInfo instructionInfoRL_IX_d__H_DD4 =
         { 3, OnClock_RL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 4 },
+        { Type_None, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -11669,8 +11669,8 @@ const InstructionInfo instructionInfoRL_IY_d__H_FD4 =
         { 3, OnClock_RL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 4 },
+        { Type_None, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -11688,8 +11688,8 @@ const InstructionInfo instructionInfoRL_IX_d__L_DD4 =
         { 3, OnClock_RL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 5 },
+        { Type_None, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -11707,8 +11707,8 @@ const InstructionInfo instructionInfoRL_IY_d__L_FD4 =
         { 3, OnClock_RL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 5 },
+        { Type_None, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -11726,8 +11726,8 @@ const InstructionInfo instructionInfoRRCA_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -11745,8 +11745,8 @@ const InstructionInfo instructionInfoRRCB_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -11764,8 +11764,8 @@ const InstructionInfo instructionInfoRRCC_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -11783,8 +11783,8 @@ const InstructionInfo instructionInfoRRCD_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -11802,8 +11802,8 @@ const InstructionInfo instructionInfoRRCE_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -11821,8 +11821,8 @@ const InstructionInfo instructionInfoRRCH_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -11840,8 +11840,8 @@ const InstructionInfo instructionInfoRRCL_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -11859,8 +11859,8 @@ const InstructionInfo instructionInfoRRC_HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -11878,8 +11878,8 @@ const InstructionInfo instructionInfoRRC_IX_d__DD4 =
         { 3, OnClock_RRC_ex_d__ex4_MW },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -11897,8 +11897,8 @@ const InstructionInfo instructionInfoRRC_IY_d__FD4 =
         { 3, OnClock_RRC_ex_d__ex4_MW },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -11916,8 +11916,8 @@ const InstructionInfo instructionInfoRRC_IX_d__A_DD4 =
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 7 },
+        { Type_None, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -11935,8 +11935,8 @@ const InstructionInfo instructionInfoRRC_IY_d__A_FD4 =
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 7 },
+        { Type_None, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -11954,8 +11954,8 @@ const InstructionInfo instructionInfoRRC_IX_d__B_DD4 =
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 0 },
+        { Type_None, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -11973,8 +11973,8 @@ const InstructionInfo instructionInfoRRC_IY_d__B_FD4 =
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 0 },
+        { Type_None, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -11992,8 +11992,8 @@ const InstructionInfo instructionInfoRRC_IX_d__C_DD4 =
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 1 },
+        { Type_None, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -12011,8 +12011,8 @@ const InstructionInfo instructionInfoRRC_IY_d__C_FD4 =
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 1 },
+        { Type_None, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -12030,8 +12030,8 @@ const InstructionInfo instructionInfoRRC_IX_d__D_DD4 =
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 2 },
+        { Type_None, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -12049,8 +12049,8 @@ const InstructionInfo instructionInfoRRC_IY_d__D_FD4 =
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 2 },
+        { Type_None, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -12068,8 +12068,8 @@ const InstructionInfo instructionInfoRRC_IX_d__E_DD4 =
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 3 },
+        { Type_None, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -12087,8 +12087,8 @@ const InstructionInfo instructionInfoRRC_IY_d__E_FD4 =
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 3 },
+        { Type_None, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -12106,8 +12106,8 @@ const InstructionInfo instructionInfoRRC_IX_d__H_DD4 =
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 4 },
+        { Type_None, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -12125,8 +12125,8 @@ const InstructionInfo instructionInfoRRC_IY_d__H_FD4 =
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 4 },
+        { Type_None, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -12144,8 +12144,8 @@ const InstructionInfo instructionInfoRRC_IX_d__L_DD4 =
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 5 },
+        { Type_None, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -12163,8 +12163,8 @@ const InstructionInfo instructionInfoRRC_IY_d__L_FD4 =
         { 3, OnClock_RRC_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 5 },
+        { Type_None, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -12182,8 +12182,8 @@ const InstructionInfo instructionInfoRRA_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -12201,8 +12201,8 @@ const InstructionInfo instructionInfoRRB_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -12220,8 +12220,8 @@ const InstructionInfo instructionInfoRRC_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -12239,8 +12239,8 @@ const InstructionInfo instructionInfoRRD_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -12258,8 +12258,8 @@ const InstructionInfo instructionInfoRRE_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -12277,8 +12277,8 @@ const InstructionInfo instructionInfoRRH_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -12296,8 +12296,8 @@ const InstructionInfo instructionInfoRRL_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -12315,8 +12315,8 @@ const InstructionInfo instructionInfoRR_HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -12334,8 +12334,8 @@ const InstructionInfo instructionInfoRR_IX_d__DD4 =
         { 3, OnClock_RR_ex_d__ex4_MW },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -12353,8 +12353,8 @@ const InstructionInfo instructionInfoRR_IY_d__FD4 =
         { 3, OnClock_RR_ex_d__ex4_MW },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -12372,8 +12372,8 @@ const InstructionInfo instructionInfoRR_IX_d__A_DD4 =
         { 3, OnClock_RR_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 7 },
+        { Type_None, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -12391,8 +12391,8 @@ const InstructionInfo instructionInfoRR_IY_d__A_FD4 =
         { 3, OnClock_RR_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 7 },
+        { Type_None, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -12410,8 +12410,8 @@ const InstructionInfo instructionInfoRR_IX_d__B_DD4 =
         { 3, OnClock_RR_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 0 },
+        { Type_None, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -12429,8 +12429,8 @@ const InstructionInfo instructionInfoRR_IY_d__B_FD4 =
         { 3, OnClock_RR_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 0 },
+        { Type_None, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -12448,8 +12448,8 @@ const InstructionInfo instructionInfoRR_IX_d__C_DD4 =
         { 3, OnClock_RR_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 1 },
+        { Type_None, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -12467,8 +12467,8 @@ const InstructionInfo instructionInfoRR_IY_d__C_FD4 =
         { 3, OnClock_RR_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 1 },
+        { Type_None, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -12486,8 +12486,8 @@ const InstructionInfo instructionInfoRR_IX_d__D_DD4 =
         { 3, OnClock_RR_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 2 },
+        { Type_None, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -12505,8 +12505,8 @@ const InstructionInfo instructionInfoRR_IY_d__D_FD4 =
         { 3, OnClock_RR_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 2 },
+        { Type_None, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -12524,8 +12524,8 @@ const InstructionInfo instructionInfoRR_IX_d__E_DD4 =
         { 3, OnClock_RR_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 3 },
+        { Type_None, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -12543,8 +12543,8 @@ const InstructionInfo instructionInfoRR_IY_d__E_FD4 =
         { 3, OnClock_RR_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 3 },
+        { Type_None, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -12562,8 +12562,8 @@ const InstructionInfo instructionInfoRR_IX_d__H_DD4 =
         { 3, OnClock_RR_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 4 },
+        { Type_None, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -12581,8 +12581,8 @@ const InstructionInfo instructionInfoRR_IY_d__H_FD4 =
         { 3, OnClock_RR_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 4 },
+        { Type_None, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -12600,8 +12600,8 @@ const InstructionInfo instructionInfoRR_IX_d__L_DD4 =
         { 3, OnClock_RR_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 5 },
+        { Type_None, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -12619,8 +12619,8 @@ const InstructionInfo instructionInfoRR_IY_d__L_FD4 =
         { 3, OnClock_RR_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 5 },
+        { Type_None, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -12638,8 +12638,8 @@ const InstructionInfo instructionInfoSLAA_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -12657,8 +12657,8 @@ const InstructionInfo instructionInfoSLAB_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -12676,8 +12676,8 @@ const InstructionInfo instructionInfoSLAC_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -12695,8 +12695,8 @@ const InstructionInfo instructionInfoSLAD_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -12714,8 +12714,8 @@ const InstructionInfo instructionInfoSLAE_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -12733,8 +12733,8 @@ const InstructionInfo instructionInfoSLAH_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -12752,8 +12752,8 @@ const InstructionInfo instructionInfoSLAL_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -12771,8 +12771,8 @@ const InstructionInfo instructionInfoSLA_HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -12790,8 +12790,8 @@ const InstructionInfo instructionInfoSLA_IX_d__DD4 =
         { 3, OnClock_SLA_ex_d__ex4_MW },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -12809,8 +12809,8 @@ const InstructionInfo instructionInfoSLA_IY_d__FD4 =
         { 3, OnClock_SLA_ex_d__ex4_MW },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -12828,8 +12828,8 @@ const InstructionInfo instructionInfoSLA_IX_d__A_DD4 =
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 7 },
+        { Type_None, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -12847,8 +12847,8 @@ const InstructionInfo instructionInfoSLA_IY_d__A_FD4 =
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 7 },
+        { Type_None, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -12866,8 +12866,8 @@ const InstructionInfo instructionInfoSLA_IX_d__B_DD4 =
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 0 },
+        { Type_None, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -12885,8 +12885,8 @@ const InstructionInfo instructionInfoSLA_IY_d__B_FD4 =
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 0 },
+        { Type_None, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -12904,8 +12904,8 @@ const InstructionInfo instructionInfoSLA_IX_d__C_DD4 =
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 1 },
+        { Type_None, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -12923,8 +12923,8 @@ const InstructionInfo instructionInfoSLA_IY_d__C_FD4 =
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 1 },
+        { Type_None, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -12942,8 +12942,8 @@ const InstructionInfo instructionInfoSLA_IX_d__D_DD4 =
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 2 },
+        { Type_None, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -12961,8 +12961,8 @@ const InstructionInfo instructionInfoSLA_IY_d__D_FD4 =
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 2 },
+        { Type_None, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -12980,8 +12980,8 @@ const InstructionInfo instructionInfoSLA_IX_d__E_DD4 =
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 3 },
+        { Type_None, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -12999,8 +12999,8 @@ const InstructionInfo instructionInfoSLA_IY_d__E_FD4 =
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 3 },
+        { Type_None, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -13018,8 +13018,8 @@ const InstructionInfo instructionInfoSLA_IX_d__H_DD4 =
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 4 },
+        { Type_None, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -13037,8 +13037,8 @@ const InstructionInfo instructionInfoSLA_IY_d__H_FD4 =
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 4 },
+        { Type_None, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -13056,8 +13056,8 @@ const InstructionInfo instructionInfoSLA_IX_d__L_DD4 =
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 5 },
+        { Type_None, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -13075,8 +13075,8 @@ const InstructionInfo instructionInfoSLA_IY_d__L_FD4 =
         { 3, OnClock_SLA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 5 },
+        { Type_None, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -13094,8 +13094,8 @@ const InstructionInfo instructionInfoSLLA_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -13113,8 +13113,8 @@ const InstructionInfo instructionInfoSLLB_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -13132,8 +13132,8 @@ const InstructionInfo instructionInfoSLLC_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -13151,8 +13151,8 @@ const InstructionInfo instructionInfoSLLD_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -13170,8 +13170,8 @@ const InstructionInfo instructionInfoSLLE_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -13189,8 +13189,8 @@ const InstructionInfo instructionInfoSLLH_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -13208,8 +13208,8 @@ const InstructionInfo instructionInfoSLLL_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -13227,8 +13227,8 @@ const InstructionInfo instructionInfoSLL_HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -13246,8 +13246,8 @@ const InstructionInfo instructionInfoSLL_IX_d__DD4 =
         { 3, OnClock_SLL_ex_d__ex4_MW },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -13265,8 +13265,8 @@ const InstructionInfo instructionInfoSLL_IY_d__FD4 =
         { 3, OnClock_SLL_ex_d__ex4_MW },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -13284,8 +13284,8 @@ const InstructionInfo instructionInfoSLL_IX_d__A_DD4 =
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 7 },
+        { Type_None, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -13303,8 +13303,8 @@ const InstructionInfo instructionInfoSLL_IY_d__A_FD4 =
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 7 },
+        { Type_None, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -13322,8 +13322,8 @@ const InstructionInfo instructionInfoSLL_IX_d__B_DD4 =
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 0 },
+        { Type_None, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -13341,8 +13341,8 @@ const InstructionInfo instructionInfoSLL_IY_d__B_FD4 =
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 0 },
+        { Type_None, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -13360,8 +13360,8 @@ const InstructionInfo instructionInfoSLL_IX_d__C_DD4 =
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 1 },
+        { Type_None, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -13379,8 +13379,8 @@ const InstructionInfo instructionInfoSLL_IY_d__C_FD4 =
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 1 },
+        { Type_None, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -13398,8 +13398,8 @@ const InstructionInfo instructionInfoSLL_IX_d__D_DD4 =
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 2 },
+        { Type_None, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -13417,8 +13417,8 @@ const InstructionInfo instructionInfoSLL_IY_d__D_FD4 =
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 2 },
+        { Type_None, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -13436,8 +13436,8 @@ const InstructionInfo instructionInfoSLL_IX_d__E_DD4 =
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 3 },
+        { Type_None, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -13455,8 +13455,8 @@ const InstructionInfo instructionInfoSLL_IY_d__E_FD4 =
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 3 },
+        { Type_None, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -13474,8 +13474,8 @@ const InstructionInfo instructionInfoSLL_IX_d__H_DD4 =
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 4 },
+        { Type_None, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -13493,8 +13493,8 @@ const InstructionInfo instructionInfoSLL_IY_d__H_FD4 =
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 4 },
+        { Type_None, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -13512,8 +13512,8 @@ const InstructionInfo instructionInfoSLL_IX_d__L_DD4 =
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 5 },
+        { Type_None, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -13531,8 +13531,8 @@ const InstructionInfo instructionInfoSLL_IY_d__L_FD4 =
         { 3, OnClock_SLL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 5 },
+        { Type_None, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -13550,8 +13550,8 @@ const InstructionInfo instructionInfoSRAA_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -13569,8 +13569,8 @@ const InstructionInfo instructionInfoSRAB_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -13588,8 +13588,8 @@ const InstructionInfo instructionInfoSRAC_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -13607,8 +13607,8 @@ const InstructionInfo instructionInfoSRAD_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -13626,8 +13626,8 @@ const InstructionInfo instructionInfoSRAE_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -13645,8 +13645,8 @@ const InstructionInfo instructionInfoSRAH_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -13664,8 +13664,8 @@ const InstructionInfo instructionInfoSRAL_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -13683,8 +13683,8 @@ const InstructionInfo instructionInfoSRA_HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -13702,8 +13702,8 @@ const InstructionInfo instructionInfoSRA_IX_d__DD4 =
         { 3, OnClock_SRA_ex_d__ex4_MW },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -13721,8 +13721,8 @@ const InstructionInfo instructionInfoSRA_IY_d__FD4 =
         { 3, OnClock_SRA_ex_d__ex4_MW },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -13740,8 +13740,8 @@ const InstructionInfo instructionInfoSRA_IX_d__A_DD4 =
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 7 },
+        { Type_None, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -13759,8 +13759,8 @@ const InstructionInfo instructionInfoSRA_IY_d__A_FD4 =
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 7 },
+        { Type_None, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -13778,8 +13778,8 @@ const InstructionInfo instructionInfoSRA_IX_d__B_DD4 =
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 0 },
+        { Type_None, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -13797,8 +13797,8 @@ const InstructionInfo instructionInfoSRA_IY_d__B_FD4 =
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 0 },
+        { Type_None, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -13816,8 +13816,8 @@ const InstructionInfo instructionInfoSRA_IX_d__C_DD4 =
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 1 },
+        { Type_None, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -13835,8 +13835,8 @@ const InstructionInfo instructionInfoSRA_IY_d__C_FD4 =
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 1 },
+        { Type_None, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -13854,8 +13854,8 @@ const InstructionInfo instructionInfoSRA_IX_d__D_DD4 =
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 2 },
+        { Type_None, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -13873,8 +13873,8 @@ const InstructionInfo instructionInfoSRA_IY_d__D_FD4 =
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 2 },
+        { Type_None, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -13892,8 +13892,8 @@ const InstructionInfo instructionInfoSRA_IX_d__E_DD4 =
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 3 },
+        { Type_None, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -13911,8 +13911,8 @@ const InstructionInfo instructionInfoSRA_IY_d__E_FD4 =
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 3 },
+        { Type_None, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -13930,8 +13930,8 @@ const InstructionInfo instructionInfoSRA_IX_d__H_DD4 =
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 4 },
+        { Type_None, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -13949,8 +13949,8 @@ const InstructionInfo instructionInfoSRA_IY_d__H_FD4 =
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 4 },
+        { Type_None, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -13968,8 +13968,8 @@ const InstructionInfo instructionInfoSRA_IX_d__L_DD4 =
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 5 },
+        { Type_None, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -13987,8 +13987,8 @@ const InstructionInfo instructionInfoSRA_IY_d__L_FD4 =
         { 3, OnClock_SRA_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 5 },
+        { Type_None, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -14006,8 +14006,8 @@ const InstructionInfo instructionInfoSRLA_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -14025,8 +14025,8 @@ const InstructionInfo instructionInfoSRLB_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -14044,8 +14044,8 @@ const InstructionInfo instructionInfoSRLC_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -14063,8 +14063,8 @@ const InstructionInfo instructionInfoSRLD_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -14082,8 +14082,8 @@ const InstructionInfo instructionInfoSRLE_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -14101,8 +14101,8 @@ const InstructionInfo instructionInfoSRLH_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -14120,8 +14120,8 @@ const InstructionInfo instructionInfoSRLL_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -14139,8 +14139,8 @@ const InstructionInfo instructionInfoSRL_HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -14158,8 +14158,8 @@ const InstructionInfo instructionInfoSRL_IX_d__DD4 =
         { 3, OnClock_SRL_ex_d__ex4_MW },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -14177,8 +14177,8 @@ const InstructionInfo instructionInfoSRL_IY_d__FD4 =
         { 3, OnClock_SRL_ex_d__ex4_MW },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -14196,8 +14196,8 @@ const InstructionInfo instructionInfoSRL_IX_d__A_DD4 =
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 7 },
+        { Type_None, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -14215,8 +14215,8 @@ const InstructionInfo instructionInfoSRL_IY_d__A_FD4 =
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 7 },
+        { Type_None, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -14234,8 +14234,8 @@ const InstructionInfo instructionInfoSRL_IX_d__B_DD4 =
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 0 },
+        { Type_None, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -14253,8 +14253,8 @@ const InstructionInfo instructionInfoSRL_IY_d__B_FD4 =
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 0 },
+        { Type_None, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -14272,8 +14272,8 @@ const InstructionInfo instructionInfoSRL_IX_d__C_DD4 =
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 1 },
+        { Type_None, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -14291,8 +14291,8 @@ const InstructionInfo instructionInfoSRL_IY_d__C_FD4 =
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 1 },
+        { Type_None, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -14310,8 +14310,8 @@ const InstructionInfo instructionInfoSRL_IX_d__D_DD4 =
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 2 },
+        { Type_None, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -14329,8 +14329,8 @@ const InstructionInfo instructionInfoSRL_IY_d__D_FD4 =
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 2 },
+        { Type_None, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -14348,8 +14348,8 @@ const InstructionInfo instructionInfoSRL_IX_d__E_DD4 =
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 3 },
+        { Type_None, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -14367,8 +14367,8 @@ const InstructionInfo instructionInfoSRL_IY_d__E_FD4 =
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 3 },
+        { Type_None, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -14386,8 +14386,8 @@ const InstructionInfo instructionInfoSRL_IX_d__H_DD4 =
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 4 },
+        { Type_None, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -14405,8 +14405,8 @@ const InstructionInfo instructionInfoSRL_IY_d__H_FD4 =
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 4 },
+        { Type_None, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -14424,8 +14424,8 @@ const InstructionInfo instructionInfoSRL_IX_d__L_DD4 =
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 5 },
+        { Type_None, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -14443,8 +14443,8 @@ const InstructionInfo instructionInfoSRL_IY_d__L_FD4 =
         { 3, OnClock_SRL_ex_d__r_ex4_MW },
     },
     {
-        { Type_None },
-        { Type_Registers8, 5 },
+        { Type_None, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -14462,8 +14462,8 @@ const InstructionInfo instructionInfoRLDA_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -14481,8 +14481,8 @@ const InstructionInfo instructionInfoRRDA_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -14500,8 +14500,8 @@ const InstructionInfo instructionInfoBIT0_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -14519,8 +14519,8 @@ const InstructionInfo instructionInfoBIT1_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {1} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -14538,8 +14538,8 @@ const InstructionInfo instructionInfoBIT2_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {2} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -14557,8 +14557,8 @@ const InstructionInfo instructionInfoBIT3_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {3} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -14576,8 +14576,8 @@ const InstructionInfo instructionInfoBIT4_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {4} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -14595,8 +14595,8 @@ const InstructionInfo instructionInfoBIT5_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {5} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -14614,8 +14614,8 @@ const InstructionInfo instructionInfoBIT6_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {6} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -14633,8 +14633,8 @@ const InstructionInfo instructionInfoBIT7_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {7} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -14652,8 +14652,8 @@ const InstructionInfo instructionInfoBIT0_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -14671,8 +14671,8 @@ const InstructionInfo instructionInfoBIT1_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {1} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -14690,8 +14690,8 @@ const InstructionInfo instructionInfoBIT2_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {2} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -14709,8 +14709,8 @@ const InstructionInfo instructionInfoBIT3_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {3} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -14728,8 +14728,8 @@ const InstructionInfo instructionInfoBIT4_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {4} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -14747,8 +14747,8 @@ const InstructionInfo instructionInfoBIT5_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {5} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -14766,8 +14766,8 @@ const InstructionInfo instructionInfoBIT6_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {6} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -14785,8 +14785,8 @@ const InstructionInfo instructionInfoBIT7_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {7} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -14804,8 +14804,8 @@ const InstructionInfo instructionInfoBIT0_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -14823,8 +14823,8 @@ const InstructionInfo instructionInfoBIT1_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {1} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -14842,8 +14842,8 @@ const InstructionInfo instructionInfoBIT2_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {2} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -14861,8 +14861,8 @@ const InstructionInfo instructionInfoBIT3_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {3} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -14880,8 +14880,8 @@ const InstructionInfo instructionInfoBIT4_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {4} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -14899,8 +14899,8 @@ const InstructionInfo instructionInfoBIT5_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {5} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -14918,8 +14918,8 @@ const InstructionInfo instructionInfoBIT6_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {6} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -14937,8 +14937,8 @@ const InstructionInfo instructionInfoBIT7_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {7} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -14956,8 +14956,8 @@ const InstructionInfo instructionInfoBIT0_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -14975,8 +14975,8 @@ const InstructionInfo instructionInfoBIT1_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {1} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -14994,8 +14994,8 @@ const InstructionInfo instructionInfoBIT2_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {2} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -15013,8 +15013,8 @@ const InstructionInfo instructionInfoBIT3_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {3} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -15032,8 +15032,8 @@ const InstructionInfo instructionInfoBIT4_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {4} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -15051,8 +15051,8 @@ const InstructionInfo instructionInfoBIT5_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {5} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -15070,8 +15070,8 @@ const InstructionInfo instructionInfoBIT6_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {6} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -15089,8 +15089,8 @@ const InstructionInfo instructionInfoBIT7_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {7} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -15108,8 +15108,8 @@ const InstructionInfo instructionInfoBIT0_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -15127,8 +15127,8 @@ const InstructionInfo instructionInfoBIT1_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {1} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -15146,8 +15146,8 @@ const InstructionInfo instructionInfoBIT2_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {2} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -15165,8 +15165,8 @@ const InstructionInfo instructionInfoBIT3_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {3} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -15184,8 +15184,8 @@ const InstructionInfo instructionInfoBIT4_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {4} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -15203,8 +15203,8 @@ const InstructionInfo instructionInfoBIT5_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {5} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -15222,8 +15222,8 @@ const InstructionInfo instructionInfoBIT6_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {6} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -15241,8 +15241,8 @@ const InstructionInfo instructionInfoBIT7_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {7} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -15260,8 +15260,8 @@ const InstructionInfo instructionInfoBIT0_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -15279,8 +15279,8 @@ const InstructionInfo instructionInfoBIT1_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {1} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -15298,8 +15298,8 @@ const InstructionInfo instructionInfoBIT2_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {2} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -15317,8 +15317,8 @@ const InstructionInfo instructionInfoBIT3_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {3} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -15336,8 +15336,8 @@ const InstructionInfo instructionInfoBIT4_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {4} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -15355,8 +15355,8 @@ const InstructionInfo instructionInfoBIT5_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {5} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -15374,8 +15374,8 @@ const InstructionInfo instructionInfoBIT6_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {6} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -15393,8 +15393,8 @@ const InstructionInfo instructionInfoBIT7_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {7} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -15412,8 +15412,8 @@ const InstructionInfo instructionInfoBIT0_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -15431,8 +15431,8 @@ const InstructionInfo instructionInfoBIT1_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {1} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -15450,8 +15450,8 @@ const InstructionInfo instructionInfoBIT2_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {2} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -15469,8 +15469,8 @@ const InstructionInfo instructionInfoBIT3_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {3} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -15488,8 +15488,8 @@ const InstructionInfo instructionInfoBIT4_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {4} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -15507,8 +15507,8 @@ const InstructionInfo instructionInfoBIT5_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {5} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -15526,8 +15526,8 @@ const InstructionInfo instructionInfoBIT6_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {6} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -15545,8 +15545,8 @@ const InstructionInfo instructionInfoBIT7_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {7} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -15564,8 +15564,8 @@ const InstructionInfo instructionInfoBIT0__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -15583,8 +15583,8 @@ const InstructionInfo instructionInfoBIT1__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -15602,8 +15602,8 @@ const InstructionInfo instructionInfoBIT2__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -15621,8 +15621,8 @@ const InstructionInfo instructionInfoBIT3__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -15640,8 +15640,8 @@ const InstructionInfo instructionInfoBIT4__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -15659,8 +15659,8 @@ const InstructionInfo instructionInfoBIT5__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -15678,8 +15678,8 @@ const InstructionInfo instructionInfoBIT6__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -15697,8 +15697,8 @@ const InstructionInfo instructionInfoBIT7__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -15716,8 +15716,8 @@ const InstructionInfo instructionInfoBIT0__IX_d__DD4 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -15735,8 +15735,8 @@ const InstructionInfo instructionInfoBIT0__IY_d__FD4 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -15754,8 +15754,8 @@ const InstructionInfo instructionInfoBIT1__IX_d__DD4 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -15773,8 +15773,8 @@ const InstructionInfo instructionInfoBIT1__IY_d__FD4 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -15792,8 +15792,8 @@ const InstructionInfo instructionInfoBIT2__IX_d__DD4 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -15811,8 +15811,8 @@ const InstructionInfo instructionInfoBIT2__IY_d__FD4 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -15830,8 +15830,8 @@ const InstructionInfo instructionInfoBIT3__IX_d__DD4 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -15849,8 +15849,8 @@ const InstructionInfo instructionInfoBIT3__IY_d__FD4 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -15868,8 +15868,8 @@ const InstructionInfo instructionInfoBIT4__IX_d__DD4 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -15887,8 +15887,8 @@ const InstructionInfo instructionInfoBIT4__IY_d__FD4 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -15906,8 +15906,8 @@ const InstructionInfo instructionInfoBIT5__IX_d__DD4 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -15925,8 +15925,8 @@ const InstructionInfo instructionInfoBIT5__IY_d__FD4 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -15944,8 +15944,8 @@ const InstructionInfo instructionInfoBIT6__IX_d__DD4 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -15963,8 +15963,8 @@ const InstructionInfo instructionInfoBIT6__IY_d__FD4 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -15982,8 +15982,8 @@ const InstructionInfo instructionInfoBIT7__IX_d__DD4 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -16001,8 +16001,8 @@ const InstructionInfo instructionInfoBIT7__IY_d__FD4 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -16020,8 +16020,8 @@ const InstructionInfo instructionInfoSET0_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -16039,8 +16039,8 @@ const InstructionInfo instructionInfoSET1_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {1} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -16058,8 +16058,8 @@ const InstructionInfo instructionInfoSET2_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {2} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -16077,8 +16077,8 @@ const InstructionInfo instructionInfoSET3_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {3} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -16096,8 +16096,8 @@ const InstructionInfo instructionInfoSET4_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {4} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -16115,8 +16115,8 @@ const InstructionInfo instructionInfoSET5_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {5} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -16134,8 +16134,8 @@ const InstructionInfo instructionInfoSET6_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {6} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -16153,8 +16153,8 @@ const InstructionInfo instructionInfoSET7_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {7} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -16172,8 +16172,8 @@ const InstructionInfo instructionInfoSET0_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -16191,8 +16191,8 @@ const InstructionInfo instructionInfoSET1_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {1} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -16210,8 +16210,8 @@ const InstructionInfo instructionInfoSET2_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {2} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -16229,8 +16229,8 @@ const InstructionInfo instructionInfoSET3_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {3} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -16248,8 +16248,8 @@ const InstructionInfo instructionInfoSET4_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {4} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -16267,8 +16267,8 @@ const InstructionInfo instructionInfoSET5_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {5} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -16286,8 +16286,8 @@ const InstructionInfo instructionInfoSET6_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {6} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -16305,8 +16305,8 @@ const InstructionInfo instructionInfoSET7_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {7} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -16324,8 +16324,8 @@ const InstructionInfo instructionInfoSET0_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -16343,8 +16343,8 @@ const InstructionInfo instructionInfoSET1_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {1} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -16362,8 +16362,8 @@ const InstructionInfo instructionInfoSET2_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {2} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -16381,8 +16381,8 @@ const InstructionInfo instructionInfoSET3_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {3} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -16400,8 +16400,8 @@ const InstructionInfo instructionInfoSET4_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {4} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -16419,8 +16419,8 @@ const InstructionInfo instructionInfoSET5_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {5} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -16438,8 +16438,8 @@ const InstructionInfo instructionInfoSET6_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {6} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -16457,8 +16457,8 @@ const InstructionInfo instructionInfoSET7_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {7} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -16476,8 +16476,8 @@ const InstructionInfo instructionInfoSET0_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -16495,8 +16495,8 @@ const InstructionInfo instructionInfoSET1_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {1} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -16514,8 +16514,8 @@ const InstructionInfo instructionInfoSET2_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {2} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -16533,8 +16533,8 @@ const InstructionInfo instructionInfoSET3_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {3} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -16552,8 +16552,8 @@ const InstructionInfo instructionInfoSET4_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {4} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -16571,8 +16571,8 @@ const InstructionInfo instructionInfoSET5_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {5} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -16590,8 +16590,8 @@ const InstructionInfo instructionInfoSET6_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {6} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -16609,8 +16609,8 @@ const InstructionInfo instructionInfoSET7_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {7} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -16628,8 +16628,8 @@ const InstructionInfo instructionInfoSET0_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -16647,8 +16647,8 @@ const InstructionInfo instructionInfoSET1_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {1} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -16666,8 +16666,8 @@ const InstructionInfo instructionInfoSET2_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {2} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -16685,8 +16685,8 @@ const InstructionInfo instructionInfoSET3_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {3} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -16704,8 +16704,8 @@ const InstructionInfo instructionInfoSET4_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {4} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -16723,8 +16723,8 @@ const InstructionInfo instructionInfoSET5_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {5} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -16742,8 +16742,8 @@ const InstructionInfo instructionInfoSET6_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {6} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -16761,8 +16761,8 @@ const InstructionInfo instructionInfoSET7_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {7} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -16780,8 +16780,8 @@ const InstructionInfo instructionInfoSET0_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -16799,8 +16799,8 @@ const InstructionInfo instructionInfoSET1_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {1} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -16818,8 +16818,8 @@ const InstructionInfo instructionInfoSET2_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {2} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -16837,8 +16837,8 @@ const InstructionInfo instructionInfoSET3_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {3} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -16856,8 +16856,8 @@ const InstructionInfo instructionInfoSET4_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {4} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -16875,8 +16875,8 @@ const InstructionInfo instructionInfoSET5_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {5} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -16894,8 +16894,8 @@ const InstructionInfo instructionInfoSET6_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {6} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -16913,8 +16913,8 @@ const InstructionInfo instructionInfoSET7_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {7} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -16932,8 +16932,8 @@ const InstructionInfo instructionInfoSET0_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -16951,8 +16951,8 @@ const InstructionInfo instructionInfoSET1_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {1} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -16970,8 +16970,8 @@ const InstructionInfo instructionInfoSET2_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {2} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -16989,8 +16989,8 @@ const InstructionInfo instructionInfoSET3_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {3} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -17008,8 +17008,8 @@ const InstructionInfo instructionInfoSET4_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {4} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -17027,8 +17027,8 @@ const InstructionInfo instructionInfoSET5_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {5} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -17046,8 +17046,8 @@ const InstructionInfo instructionInfoSET6_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {6} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -17065,8 +17065,8 @@ const InstructionInfo instructionInfoSET7_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {7} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -17084,8 +17084,8 @@ const InstructionInfo instructionInfoSET0__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -17103,8 +17103,8 @@ const InstructionInfo instructionInfoSET1__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -17122,8 +17122,8 @@ const InstructionInfo instructionInfoSET2__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -17141,8 +17141,8 @@ const InstructionInfo instructionInfoSET3__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -17160,8 +17160,8 @@ const InstructionInfo instructionInfoSET4__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -17179,8 +17179,8 @@ const InstructionInfo instructionInfoSET5__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -17198,8 +17198,8 @@ const InstructionInfo instructionInfoSET6__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -17217,8 +17217,8 @@ const InstructionInfo instructionInfoSET7__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -17236,8 +17236,8 @@ const InstructionInfo instructionInfoSET0__IX_d__DD4 =
         { 3, OnClock_SETb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -17255,8 +17255,8 @@ const InstructionInfo instructionInfoSET0__IY_d__FD4 =
         { 3, OnClock_SETb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -17274,8 +17274,8 @@ const InstructionInfo instructionInfoSET1__IX_d__DD4 =
         { 3, OnClock_SETb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -17293,8 +17293,8 @@ const InstructionInfo instructionInfoSET1__IY_d__FD4 =
         { 3, OnClock_SETb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -17312,8 +17312,8 @@ const InstructionInfo instructionInfoSET2__IX_d__DD4 =
         { 3, OnClock_SETb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -17331,8 +17331,8 @@ const InstructionInfo instructionInfoSET2__IY_d__FD4 =
         { 3, OnClock_SETb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -17350,8 +17350,8 @@ const InstructionInfo instructionInfoSET3__IX_d__DD4 =
         { 3, OnClock_SETb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -17369,8 +17369,8 @@ const InstructionInfo instructionInfoSET3__IY_d__FD4 =
         { 3, OnClock_SETb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -17388,8 +17388,8 @@ const InstructionInfo instructionInfoSET4__IX_d__DD4 =
         { 3, OnClock_SETb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -17407,8 +17407,8 @@ const InstructionInfo instructionInfoSET4__IY_d__FD4 =
         { 3, OnClock_SETb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -17426,8 +17426,8 @@ const InstructionInfo instructionInfoSET5__IX_d__DD4 =
         { 3, OnClock_SETb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -17445,8 +17445,8 @@ const InstructionInfo instructionInfoSET5__IY_d__FD4 =
         { 3, OnClock_SETb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -17464,8 +17464,8 @@ const InstructionInfo instructionInfoSET6__IX_d__DD4 =
         { 3, OnClock_SETb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -17483,8 +17483,8 @@ const InstructionInfo instructionInfoSET6__IY_d__FD4 =
         { 3, OnClock_SETb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -17502,8 +17502,8 @@ const InstructionInfo instructionInfoSET7__IX_d__DD4 =
         { 3, OnClock_SETb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -17521,8 +17521,8 @@ const InstructionInfo instructionInfoSET7__IY_d__FD4 =
         { 3, OnClock_SETb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -17540,8 +17540,8 @@ const InstructionInfo instructionInfoSET0__IX_d__A_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -17559,8 +17559,8 @@ const InstructionInfo instructionInfoSET0__IY_d__A_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -17578,8 +17578,8 @@ const InstructionInfo instructionInfoSET1__IX_d__A_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -17597,8 +17597,8 @@ const InstructionInfo instructionInfoSET1__IY_d__A_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -17616,8 +17616,8 @@ const InstructionInfo instructionInfoSET2__IX_d__A_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -17635,8 +17635,8 @@ const InstructionInfo instructionInfoSET2__IY_d__A_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -17654,8 +17654,8 @@ const InstructionInfo instructionInfoSET3__IX_d__A_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -17673,8 +17673,8 @@ const InstructionInfo instructionInfoSET3__IY_d__A_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -17692,8 +17692,8 @@ const InstructionInfo instructionInfoSET4__IX_d__A_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -17711,8 +17711,8 @@ const InstructionInfo instructionInfoSET4__IY_d__A_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -17730,8 +17730,8 @@ const InstructionInfo instructionInfoSET5__IX_d__A_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -17749,8 +17749,8 @@ const InstructionInfo instructionInfoSET5__IY_d__A_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -17768,8 +17768,8 @@ const InstructionInfo instructionInfoSET6__IX_d__A_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -17787,8 +17787,8 @@ const InstructionInfo instructionInfoSET6__IY_d__A_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -17806,8 +17806,8 @@ const InstructionInfo instructionInfoSET7__IX_d__A_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -17825,8 +17825,8 @@ const InstructionInfo instructionInfoSET7__IY_d__A_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -17844,8 +17844,8 @@ const InstructionInfo instructionInfoSET0__IX_d__B_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -17863,8 +17863,8 @@ const InstructionInfo instructionInfoSET0__IY_d__B_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -17882,8 +17882,8 @@ const InstructionInfo instructionInfoSET1__IX_d__B_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -17901,8 +17901,8 @@ const InstructionInfo instructionInfoSET1__IY_d__B_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -17920,8 +17920,8 @@ const InstructionInfo instructionInfoSET2__IX_d__B_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -17939,8 +17939,8 @@ const InstructionInfo instructionInfoSET2__IY_d__B_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -17958,8 +17958,8 @@ const InstructionInfo instructionInfoSET3__IX_d__B_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -17977,8 +17977,8 @@ const InstructionInfo instructionInfoSET3__IY_d__B_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -17996,8 +17996,8 @@ const InstructionInfo instructionInfoSET4__IX_d__B_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -18015,8 +18015,8 @@ const InstructionInfo instructionInfoSET4__IY_d__B_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -18034,8 +18034,8 @@ const InstructionInfo instructionInfoSET5__IX_d__B_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -18053,8 +18053,8 @@ const InstructionInfo instructionInfoSET5__IY_d__B_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -18072,8 +18072,8 @@ const InstructionInfo instructionInfoSET6__IX_d__B_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -18091,8 +18091,8 @@ const InstructionInfo instructionInfoSET6__IY_d__B_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -18110,8 +18110,8 @@ const InstructionInfo instructionInfoSET7__IX_d__B_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -18129,8 +18129,8 @@ const InstructionInfo instructionInfoSET7__IY_d__B_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -18148,8 +18148,8 @@ const InstructionInfo instructionInfoSET0__IX_d__C_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -18167,8 +18167,8 @@ const InstructionInfo instructionInfoSET0__IY_d__C_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -18186,8 +18186,8 @@ const InstructionInfo instructionInfoSET1__IX_d__C_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -18205,8 +18205,8 @@ const InstructionInfo instructionInfoSET1__IY_d__C_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -18224,8 +18224,8 @@ const InstructionInfo instructionInfoSET2__IX_d__C_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -18243,8 +18243,8 @@ const InstructionInfo instructionInfoSET2__IY_d__C_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -18262,8 +18262,8 @@ const InstructionInfo instructionInfoSET3__IX_d__C_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -18281,8 +18281,8 @@ const InstructionInfo instructionInfoSET3__IY_d__C_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -18300,8 +18300,8 @@ const InstructionInfo instructionInfoSET4__IX_d__C_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -18319,8 +18319,8 @@ const InstructionInfo instructionInfoSET4__IY_d__C_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -18338,8 +18338,8 @@ const InstructionInfo instructionInfoSET5__IX_d__C_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -18357,8 +18357,8 @@ const InstructionInfo instructionInfoSET5__IY_d__C_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -18376,8 +18376,8 @@ const InstructionInfo instructionInfoSET6__IX_d__C_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -18395,8 +18395,8 @@ const InstructionInfo instructionInfoSET6__IY_d__C_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -18414,8 +18414,8 @@ const InstructionInfo instructionInfoSET7__IX_d__C_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -18433,8 +18433,8 @@ const InstructionInfo instructionInfoSET7__IY_d__C_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -18452,8 +18452,8 @@ const InstructionInfo instructionInfoSET0__IX_d__D_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -18471,8 +18471,8 @@ const InstructionInfo instructionInfoSET0__IY_d__D_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -18490,8 +18490,8 @@ const InstructionInfo instructionInfoSET1__IX_d__D_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -18509,8 +18509,8 @@ const InstructionInfo instructionInfoSET1__IY_d__D_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -18528,8 +18528,8 @@ const InstructionInfo instructionInfoSET2__IX_d__D_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -18547,8 +18547,8 @@ const InstructionInfo instructionInfoSET2__IY_d__D_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -18566,8 +18566,8 @@ const InstructionInfo instructionInfoSET3__IX_d__D_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -18585,8 +18585,8 @@ const InstructionInfo instructionInfoSET3__IY_d__D_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -18604,8 +18604,8 @@ const InstructionInfo instructionInfoSET4__IX_d__D_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -18623,8 +18623,8 @@ const InstructionInfo instructionInfoSET4__IY_d__D_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -18642,8 +18642,8 @@ const InstructionInfo instructionInfoSET5__IX_d__D_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -18661,8 +18661,8 @@ const InstructionInfo instructionInfoSET5__IY_d__D_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -18680,8 +18680,8 @@ const InstructionInfo instructionInfoSET6__IX_d__D_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -18699,8 +18699,8 @@ const InstructionInfo instructionInfoSET6__IY_d__D_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -18718,8 +18718,8 @@ const InstructionInfo instructionInfoSET7__IX_d__D_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -18737,8 +18737,8 @@ const InstructionInfo instructionInfoSET7__IY_d__D_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -18756,8 +18756,8 @@ const InstructionInfo instructionInfoSET0__IX_d__E_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -18775,8 +18775,8 @@ const InstructionInfo instructionInfoSET0__IY_d__E_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -18794,8 +18794,8 @@ const InstructionInfo instructionInfoSET1__IX_d__E_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -18813,8 +18813,8 @@ const InstructionInfo instructionInfoSET1__IY_d__E_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -18832,8 +18832,8 @@ const InstructionInfo instructionInfoSET2__IX_d__E_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -18851,8 +18851,8 @@ const InstructionInfo instructionInfoSET2__IY_d__E_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -18870,8 +18870,8 @@ const InstructionInfo instructionInfoSET3__IX_d__E_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -18889,8 +18889,8 @@ const InstructionInfo instructionInfoSET3__IY_d__E_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -18908,8 +18908,8 @@ const InstructionInfo instructionInfoSET4__IX_d__E_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -18927,8 +18927,8 @@ const InstructionInfo instructionInfoSET4__IY_d__E_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -18946,8 +18946,8 @@ const InstructionInfo instructionInfoSET5__IX_d__E_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -18965,8 +18965,8 @@ const InstructionInfo instructionInfoSET5__IY_d__E_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -18984,8 +18984,8 @@ const InstructionInfo instructionInfoSET6__IX_d__E_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -19003,8 +19003,8 @@ const InstructionInfo instructionInfoSET6__IY_d__E_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -19022,8 +19022,8 @@ const InstructionInfo instructionInfoSET7__IX_d__E_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -19041,8 +19041,8 @@ const InstructionInfo instructionInfoSET7__IY_d__E_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -19060,8 +19060,8 @@ const InstructionInfo instructionInfoSET0__IX_d__H_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -19079,8 +19079,8 @@ const InstructionInfo instructionInfoSET0__IY_d__H_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -19098,8 +19098,8 @@ const InstructionInfo instructionInfoSET1__IX_d__H_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -19117,8 +19117,8 @@ const InstructionInfo instructionInfoSET1__IY_d__H_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -19136,8 +19136,8 @@ const InstructionInfo instructionInfoSET2__IX_d__H_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -19155,8 +19155,8 @@ const InstructionInfo instructionInfoSET2__IY_d__H_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -19174,8 +19174,8 @@ const InstructionInfo instructionInfoSET3__IX_d__H_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -19193,8 +19193,8 @@ const InstructionInfo instructionInfoSET3__IY_d__H_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -19212,8 +19212,8 @@ const InstructionInfo instructionInfoSET4__IX_d__H_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -19231,8 +19231,8 @@ const InstructionInfo instructionInfoSET4__IY_d__H_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -19250,8 +19250,8 @@ const InstructionInfo instructionInfoSET5__IX_d__H_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -19269,8 +19269,8 @@ const InstructionInfo instructionInfoSET5__IY_d__H_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -19288,8 +19288,8 @@ const InstructionInfo instructionInfoSET6__IX_d__H_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -19307,8 +19307,8 @@ const InstructionInfo instructionInfoSET6__IY_d__H_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -19326,8 +19326,8 @@ const InstructionInfo instructionInfoSET7__IX_d__H_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -19345,8 +19345,8 @@ const InstructionInfo instructionInfoSET7__IY_d__H_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -19364,8 +19364,8 @@ const InstructionInfo instructionInfoSET0__IX_d__L_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -19383,8 +19383,8 @@ const InstructionInfo instructionInfoSET0__IY_d__L_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -19402,8 +19402,8 @@ const InstructionInfo instructionInfoSET1__IX_d__L_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -19421,8 +19421,8 @@ const InstructionInfo instructionInfoSET1__IY_d__L_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -19440,8 +19440,8 @@ const InstructionInfo instructionInfoSET2__IX_d__L_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -19459,8 +19459,8 @@ const InstructionInfo instructionInfoSET2__IY_d__L_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -19478,8 +19478,8 @@ const InstructionInfo instructionInfoSET3__IX_d__L_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -19497,8 +19497,8 @@ const InstructionInfo instructionInfoSET3__IY_d__L_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -19516,8 +19516,8 @@ const InstructionInfo instructionInfoSET4__IX_d__L_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -19535,8 +19535,8 @@ const InstructionInfo instructionInfoSET4__IY_d__L_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -19554,8 +19554,8 @@ const InstructionInfo instructionInfoSET5__IX_d__L_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -19573,8 +19573,8 @@ const InstructionInfo instructionInfoSET5__IY_d__L_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -19592,8 +19592,8 @@ const InstructionInfo instructionInfoSET6__IX_d__L_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -19611,8 +19611,8 @@ const InstructionInfo instructionInfoSET6__IY_d__L_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -19630,8 +19630,8 @@ const InstructionInfo instructionInfoSET7__IX_d__L_DD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -19649,8 +19649,8 @@ const InstructionInfo instructionInfoSET7__IY_d__L_FD4 =
         { 3, OnClock_SETb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -19668,8 +19668,8 @@ const InstructionInfo instructionInfoRES0_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {0} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -19687,8 +19687,8 @@ const InstructionInfo instructionInfoRES1_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {1} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -19706,8 +19706,8 @@ const InstructionInfo instructionInfoRES2_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {2} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -19725,8 +19725,8 @@ const InstructionInfo instructionInfoRES3_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {3} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -19744,8 +19744,8 @@ const InstructionInfo instructionInfoRES4_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {4} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -19763,8 +19763,8 @@ const InstructionInfo instructionInfoRES5_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {5} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -19782,8 +19782,8 @@ const InstructionInfo instructionInfoRES6_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {6} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -19801,8 +19801,8 @@ const InstructionInfo instructionInfoRES7_A_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_Registers8, 7 },
+        { Type_Bits8, {7} },
+        { Type_Registers8, {7} },
     }
 };
 
@@ -19820,8 +19820,8 @@ const InstructionInfo instructionInfoRES0_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {0} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -19839,8 +19839,8 @@ const InstructionInfo instructionInfoRES1_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {1} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -19858,8 +19858,8 @@ const InstructionInfo instructionInfoRES2_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {2} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -19877,8 +19877,8 @@ const InstructionInfo instructionInfoRES3_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {3} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -19896,8 +19896,8 @@ const InstructionInfo instructionInfoRES4_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {4} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -19915,8 +19915,8 @@ const InstructionInfo instructionInfoRES5_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {5} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -19934,8 +19934,8 @@ const InstructionInfo instructionInfoRES6_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {6} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -19953,8 +19953,8 @@ const InstructionInfo instructionInfoRES7_B_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_Registers8, 0 },
+        { Type_Bits8, {7} },
+        { Type_Registers8, {0} },
     }
 };
 
@@ -19972,8 +19972,8 @@ const InstructionInfo instructionInfoRES0_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {0} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -19991,8 +19991,8 @@ const InstructionInfo instructionInfoRES1_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {1} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -20010,8 +20010,8 @@ const InstructionInfo instructionInfoRES2_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {2} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -20029,8 +20029,8 @@ const InstructionInfo instructionInfoRES3_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {3} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -20048,8 +20048,8 @@ const InstructionInfo instructionInfoRES4_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {4} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -20067,8 +20067,8 @@ const InstructionInfo instructionInfoRES5_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {5} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -20086,8 +20086,8 @@ const InstructionInfo instructionInfoRES6_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {6} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -20105,8 +20105,8 @@ const InstructionInfo instructionInfoRES7_C_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_Registers8, 1 },
+        { Type_Bits8, {7} },
+        { Type_Registers8, {1} },
     }
 };
 
@@ -20124,8 +20124,8 @@ const InstructionInfo instructionInfoRES0_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {0} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -20143,8 +20143,8 @@ const InstructionInfo instructionInfoRES1_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {1} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -20162,8 +20162,8 @@ const InstructionInfo instructionInfoRES2_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {2} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -20181,8 +20181,8 @@ const InstructionInfo instructionInfoRES3_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {3} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -20200,8 +20200,8 @@ const InstructionInfo instructionInfoRES4_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {4} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -20219,8 +20219,8 @@ const InstructionInfo instructionInfoRES5_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {5} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -20238,8 +20238,8 @@ const InstructionInfo instructionInfoRES6_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {6} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -20257,8 +20257,8 @@ const InstructionInfo instructionInfoRES7_D_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_Registers8, 2 },
+        { Type_Bits8, {7} },
+        { Type_Registers8, {2} },
     }
 };
 
@@ -20276,8 +20276,8 @@ const InstructionInfo instructionInfoRES0_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {0} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -20295,8 +20295,8 @@ const InstructionInfo instructionInfoRES1_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {1} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -20314,8 +20314,8 @@ const InstructionInfo instructionInfoRES2_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {2} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -20333,8 +20333,8 @@ const InstructionInfo instructionInfoRES3_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {3} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -20352,8 +20352,8 @@ const InstructionInfo instructionInfoRES4_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {4} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -20371,8 +20371,8 @@ const InstructionInfo instructionInfoRES5_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {5} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -20390,8 +20390,8 @@ const InstructionInfo instructionInfoRES6_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {6} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -20409,8 +20409,8 @@ const InstructionInfo instructionInfoRES7_E_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_Registers8, 3 },
+        { Type_Bits8, {7} },
+        { Type_Registers8, {3} },
     }
 };
 
@@ -20428,8 +20428,8 @@ const InstructionInfo instructionInfoRES0_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {0} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -20447,8 +20447,8 @@ const InstructionInfo instructionInfoRES1_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {1} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -20466,8 +20466,8 @@ const InstructionInfo instructionInfoRES2_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {2} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -20485,8 +20485,8 @@ const InstructionInfo instructionInfoRES3_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {3} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -20504,8 +20504,8 @@ const InstructionInfo instructionInfoRES4_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {4} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -20523,8 +20523,8 @@ const InstructionInfo instructionInfoRES5_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {5} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -20542,8 +20542,8 @@ const InstructionInfo instructionInfoRES6_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {6} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -20561,8 +20561,8 @@ const InstructionInfo instructionInfoRES7_H_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_Registers8, 4 },
+        { Type_Bits8, {7} },
+        { Type_Registers8, {4} },
     }
 };
 
@@ -20580,8 +20580,8 @@ const InstructionInfo instructionInfoRES0_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {0} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -20599,8 +20599,8 @@ const InstructionInfo instructionInfoRES1_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {1} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -20618,8 +20618,8 @@ const InstructionInfo instructionInfoRES2_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {2} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -20637,8 +20637,8 @@ const InstructionInfo instructionInfoRES3_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {3} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -20656,8 +20656,8 @@ const InstructionInfo instructionInfoRES4_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {4} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -20675,8 +20675,8 @@ const InstructionInfo instructionInfoRES5_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {5} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -20694,8 +20694,8 @@ const InstructionInfo instructionInfoRES6_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {6} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -20713,8 +20713,8 @@ const InstructionInfo instructionInfoRES7_L_CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_Registers8, 5 },
+        { Type_Bits8, {7} },
+        { Type_Registers8, {5} },
     }
 };
 
@@ -20732,8 +20732,8 @@ const InstructionInfo instructionInfoRES0__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -20751,8 +20751,8 @@ const InstructionInfo instructionInfoRES1__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -20770,8 +20770,8 @@ const InstructionInfo instructionInfoRES2__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -20789,8 +20789,8 @@ const InstructionInfo instructionInfoRES3__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -20808,8 +20808,8 @@ const InstructionInfo instructionInfoRES4__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -20827,8 +20827,8 @@ const InstructionInfo instructionInfoRES5__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -20846,8 +20846,8 @@ const InstructionInfo instructionInfoRES6__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -20865,8 +20865,8 @@ const InstructionInfo instructionInfoRES7__HL__CB2 =
         { 0, nullptr },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -20884,8 +20884,8 @@ const InstructionInfo instructionInfoRES0__IX_d__DD4 =
         { 3, OnClock_RESb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -20903,8 +20903,8 @@ const InstructionInfo instructionInfoRES0__IY_d__FD4 =
         { 3, OnClock_RESb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -20922,8 +20922,8 @@ const InstructionInfo instructionInfoRES1__IX_d__DD4 =
         { 3, OnClock_RESb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -20941,8 +20941,8 @@ const InstructionInfo instructionInfoRES1__IY_d__FD4 =
         { 3, OnClock_RESb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -20960,8 +20960,8 @@ const InstructionInfo instructionInfoRES2__IX_d__DD4 =
         { 3, OnClock_RESb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -20979,8 +20979,8 @@ const InstructionInfo instructionInfoRES2__IY_d__FD4 =
         { 3, OnClock_RESb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -20998,8 +20998,8 @@ const InstructionInfo instructionInfoRES3__IX_d__DD4 =
         { 3, OnClock_RESb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -21017,8 +21017,8 @@ const InstructionInfo instructionInfoRES3__IY_d__FD4 =
         { 3, OnClock_RESb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -21036,8 +21036,8 @@ const InstructionInfo instructionInfoRES4__IX_d__DD4 =
         { 3, OnClock_RESb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -21055,8 +21055,8 @@ const InstructionInfo instructionInfoRES4__IY_d__FD4 =
         { 3, OnClock_RESb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -21074,8 +21074,8 @@ const InstructionInfo instructionInfoRES5__IX_d__DD4 =
         { 3, OnClock_RESb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -21093,8 +21093,8 @@ const InstructionInfo instructionInfoRES5__IY_d__FD4 =
         { 3, OnClock_RESb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -21112,8 +21112,8 @@ const InstructionInfo instructionInfoRES6__IX_d__DD4 =
         { 3, OnClock_RESb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -21131,8 +21131,8 @@ const InstructionInfo instructionInfoRES6__IY_d__FD4 =
         { 3, OnClock_RESb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -21150,8 +21150,8 @@ const InstructionInfo instructionInfoRES7__IX_d__DD4 =
         { 3, OnClock_RESb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -21169,8 +21169,8 @@ const InstructionInfo instructionInfoRES7__IY_d__FD4 =
         { 3, OnClock_RESb__ex_d__ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -21188,8 +21188,8 @@ const InstructionInfo instructionInfoRES0__IX_d__A_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -21207,8 +21207,8 @@ const InstructionInfo instructionInfoRES0__IY_d__A_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -21226,8 +21226,8 @@ const InstructionInfo instructionInfoRES1__IX_d__A_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -21245,8 +21245,8 @@ const InstructionInfo instructionInfoRES1__IY_d__A_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -21264,8 +21264,8 @@ const InstructionInfo instructionInfoRES2__IX_d__A_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -21283,8 +21283,8 @@ const InstructionInfo instructionInfoRES2__IY_d__A_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -21302,8 +21302,8 @@ const InstructionInfo instructionInfoRES3__IX_d__A_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -21321,8 +21321,8 @@ const InstructionInfo instructionInfoRES3__IY_d__A_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -21340,8 +21340,8 @@ const InstructionInfo instructionInfoRES4__IX_d__A_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -21359,8 +21359,8 @@ const InstructionInfo instructionInfoRES4__IY_d__A_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -21378,8 +21378,8 @@ const InstructionInfo instructionInfoRES5__IX_d__A_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -21397,8 +21397,8 @@ const InstructionInfo instructionInfoRES5__IY_d__A_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -21416,8 +21416,8 @@ const InstructionInfo instructionInfoRES6__IX_d__A_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -21435,8 +21435,8 @@ const InstructionInfo instructionInfoRES6__IY_d__A_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -21454,8 +21454,8 @@ const InstructionInfo instructionInfoRES7__IX_d__A_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -21473,8 +21473,8 @@ const InstructionInfo instructionInfoRES7__IY_d__A_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -21492,8 +21492,8 @@ const InstructionInfo instructionInfoRES0__IX_d__B_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -21511,8 +21511,8 @@ const InstructionInfo instructionInfoRES0__IY_d__B_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -21530,8 +21530,8 @@ const InstructionInfo instructionInfoRES1__IX_d__B_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -21549,8 +21549,8 @@ const InstructionInfo instructionInfoRES1__IY_d__B_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -21568,8 +21568,8 @@ const InstructionInfo instructionInfoRES2__IX_d__B_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -21587,8 +21587,8 @@ const InstructionInfo instructionInfoRES2__IY_d__B_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -21606,8 +21606,8 @@ const InstructionInfo instructionInfoRES3__IX_d__B_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -21625,8 +21625,8 @@ const InstructionInfo instructionInfoRES3__IY_d__B_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -21644,8 +21644,8 @@ const InstructionInfo instructionInfoRES4__IX_d__B_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -21663,8 +21663,8 @@ const InstructionInfo instructionInfoRES4__IY_d__B_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -21682,8 +21682,8 @@ const InstructionInfo instructionInfoRES5__IX_d__B_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -21701,8 +21701,8 @@ const InstructionInfo instructionInfoRES5__IY_d__B_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -21720,8 +21720,8 @@ const InstructionInfo instructionInfoRES6__IX_d__B_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -21739,8 +21739,8 @@ const InstructionInfo instructionInfoRES6__IY_d__B_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -21758,8 +21758,8 @@ const InstructionInfo instructionInfoRES7__IX_d__B_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -21777,8 +21777,8 @@ const InstructionInfo instructionInfoRES7__IY_d__B_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -21796,8 +21796,8 @@ const InstructionInfo instructionInfoRES0__IX_d__C_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -21815,8 +21815,8 @@ const InstructionInfo instructionInfoRES0__IY_d__C_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -21834,8 +21834,8 @@ const InstructionInfo instructionInfoRES1__IX_d__C_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -21853,8 +21853,8 @@ const InstructionInfo instructionInfoRES1__IY_d__C_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -21872,8 +21872,8 @@ const InstructionInfo instructionInfoRES2__IX_d__C_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -21891,8 +21891,8 @@ const InstructionInfo instructionInfoRES2__IY_d__C_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -21910,8 +21910,8 @@ const InstructionInfo instructionInfoRES3__IX_d__C_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -21929,8 +21929,8 @@ const InstructionInfo instructionInfoRES3__IY_d__C_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -21948,8 +21948,8 @@ const InstructionInfo instructionInfoRES4__IX_d__C_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -21967,8 +21967,8 @@ const InstructionInfo instructionInfoRES4__IY_d__C_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -21986,8 +21986,8 @@ const InstructionInfo instructionInfoRES5__IX_d__C_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -22005,8 +22005,8 @@ const InstructionInfo instructionInfoRES5__IY_d__C_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -22024,8 +22024,8 @@ const InstructionInfo instructionInfoRES6__IX_d__C_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -22043,8 +22043,8 @@ const InstructionInfo instructionInfoRES6__IY_d__C_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -22062,8 +22062,8 @@ const InstructionInfo instructionInfoRES7__IX_d__C_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -22081,8 +22081,8 @@ const InstructionInfo instructionInfoRES7__IY_d__C_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -22100,8 +22100,8 @@ const InstructionInfo instructionInfoRES0__IX_d__D_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -22119,8 +22119,8 @@ const InstructionInfo instructionInfoRES0__IY_d__D_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -22138,8 +22138,8 @@ const InstructionInfo instructionInfoRES1__IX_d__D_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -22157,8 +22157,8 @@ const InstructionInfo instructionInfoRES1__IY_d__D_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -22176,8 +22176,8 @@ const InstructionInfo instructionInfoRES2__IX_d__D_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -22195,8 +22195,8 @@ const InstructionInfo instructionInfoRES2__IY_d__D_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -22214,8 +22214,8 @@ const InstructionInfo instructionInfoRES3__IX_d__D_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -22233,8 +22233,8 @@ const InstructionInfo instructionInfoRES3__IY_d__D_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -22252,8 +22252,8 @@ const InstructionInfo instructionInfoRES4__IX_d__D_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -22271,8 +22271,8 @@ const InstructionInfo instructionInfoRES4__IY_d__D_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -22290,8 +22290,8 @@ const InstructionInfo instructionInfoRES5__IX_d__D_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -22309,8 +22309,8 @@ const InstructionInfo instructionInfoRES5__IY_d__D_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -22328,8 +22328,8 @@ const InstructionInfo instructionInfoRES6__IX_d__D_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -22347,8 +22347,8 @@ const InstructionInfo instructionInfoRES6__IY_d__D_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -22366,8 +22366,8 @@ const InstructionInfo instructionInfoRES7__IX_d__D_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -22385,8 +22385,8 @@ const InstructionInfo instructionInfoRES7__IY_d__D_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -22404,8 +22404,8 @@ const InstructionInfo instructionInfoRES0__IX_d__E_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -22423,8 +22423,8 @@ const InstructionInfo instructionInfoRES0__IY_d__E_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -22442,8 +22442,8 @@ const InstructionInfo instructionInfoRES1__IX_d__E_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -22461,8 +22461,8 @@ const InstructionInfo instructionInfoRES1__IY_d__E_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -22480,8 +22480,8 @@ const InstructionInfo instructionInfoRES2__IX_d__E_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -22499,8 +22499,8 @@ const InstructionInfo instructionInfoRES2__IY_d__E_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -22518,8 +22518,8 @@ const InstructionInfo instructionInfoRES3__IX_d__E_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -22537,8 +22537,8 @@ const InstructionInfo instructionInfoRES3__IY_d__E_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -22556,8 +22556,8 @@ const InstructionInfo instructionInfoRES4__IX_d__E_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -22575,8 +22575,8 @@ const InstructionInfo instructionInfoRES4__IY_d__E_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -22594,8 +22594,8 @@ const InstructionInfo instructionInfoRES5__IX_d__E_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -22613,8 +22613,8 @@ const InstructionInfo instructionInfoRES5__IY_d__E_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -22632,8 +22632,8 @@ const InstructionInfo instructionInfoRES6__IX_d__E_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -22651,8 +22651,8 @@ const InstructionInfo instructionInfoRES6__IY_d__E_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -22670,8 +22670,8 @@ const InstructionInfo instructionInfoRES7__IX_d__E_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -22689,8 +22689,8 @@ const InstructionInfo instructionInfoRES7__IY_d__E_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -22708,8 +22708,8 @@ const InstructionInfo instructionInfoRES0__IX_d__H_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -22727,8 +22727,8 @@ const InstructionInfo instructionInfoRES0__IY_d__H_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -22746,8 +22746,8 @@ const InstructionInfo instructionInfoRES1__IX_d__H_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -22765,8 +22765,8 @@ const InstructionInfo instructionInfoRES1__IY_d__H_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -22784,8 +22784,8 @@ const InstructionInfo instructionInfoRES2__IX_d__H_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -22803,8 +22803,8 @@ const InstructionInfo instructionInfoRES2__IY_d__H_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -22822,8 +22822,8 @@ const InstructionInfo instructionInfoRES3__IX_d__H_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -22841,8 +22841,8 @@ const InstructionInfo instructionInfoRES3__IY_d__H_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -22860,8 +22860,8 @@ const InstructionInfo instructionInfoRES4__IX_d__H_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -22879,8 +22879,8 @@ const InstructionInfo instructionInfoRES4__IY_d__H_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -22898,8 +22898,8 @@ const InstructionInfo instructionInfoRES5__IX_d__H_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -22917,8 +22917,8 @@ const InstructionInfo instructionInfoRES5__IY_d__H_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -22936,8 +22936,8 @@ const InstructionInfo instructionInfoRES6__IX_d__H_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -22955,8 +22955,8 @@ const InstructionInfo instructionInfoRES6__IY_d__H_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -22974,8 +22974,8 @@ const InstructionInfo instructionInfoRES7__IX_d__H_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -22993,8 +22993,8 @@ const InstructionInfo instructionInfoRES7__IY_d__H_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -23012,8 +23012,8 @@ const InstructionInfo instructionInfoRES0__IX_d__L_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -23031,8 +23031,8 @@ const InstructionInfo instructionInfoRES0__IY_d__L_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 0 },
-        { Type_None },
+        { Type_Bits8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -23050,8 +23050,8 @@ const InstructionInfo instructionInfoRES1__IX_d__L_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -23069,8 +23069,8 @@ const InstructionInfo instructionInfoRES1__IY_d__L_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 1 },
-        { Type_None },
+        { Type_Bits8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -23088,8 +23088,8 @@ const InstructionInfo instructionInfoRES2__IX_d__L_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -23107,8 +23107,8 @@ const InstructionInfo instructionInfoRES2__IY_d__L_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 2 },
-        { Type_None },
+        { Type_Bits8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -23126,8 +23126,8 @@ const InstructionInfo instructionInfoRES3__IX_d__L_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -23145,8 +23145,8 @@ const InstructionInfo instructionInfoRES3__IY_d__L_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 3 },
-        { Type_None },
+        { Type_Bits8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -23164,8 +23164,8 @@ const InstructionInfo instructionInfoRES4__IX_d__L_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -23183,8 +23183,8 @@ const InstructionInfo instructionInfoRES4__IY_d__L_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 4 },
-        { Type_None },
+        { Type_Bits8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -23202,8 +23202,8 @@ const InstructionInfo instructionInfoRES5__IX_d__L_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -23221,8 +23221,8 @@ const InstructionInfo instructionInfoRES5__IY_d__L_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 5 },
-        { Type_None },
+        { Type_Bits8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -23240,8 +23240,8 @@ const InstructionInfo instructionInfoRES6__IX_d__L_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -23259,8 +23259,8 @@ const InstructionInfo instructionInfoRES6__IY_d__L_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 6 },
-        { Type_None },
+        { Type_Bits8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -23278,8 +23278,8 @@ const InstructionInfo instructionInfoRES7__IX_d__L_DD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -23297,8 +23297,8 @@ const InstructionInfo instructionInfoRES7__IY_d__L_FD4 =
         { 3, OnClock_RESb__ex_d__r_ex4_MW },
     },
     {
-        { Type_Bits8, 7 },
-        { Type_None },
+        { Type_Bits8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -23316,8 +23316,8 @@ const InstructionInfo instructionInfoJPnn_3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -23335,8 +23335,8 @@ const InstructionInfo instructionInfoJPNZ_nn_3 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 0 },
-        { Type_None },
+        { Type_Condition8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -23354,8 +23354,8 @@ const InstructionInfo instructionInfoJPZ_nn_3 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 1 },
-        { Type_None },
+        { Type_Condition8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -23373,8 +23373,8 @@ const InstructionInfo instructionInfoJPNC_nn_3 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 2 },
-        { Type_None },
+        { Type_Condition8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -23392,8 +23392,8 @@ const InstructionInfo instructionInfoJPC_nn_3 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 3 },
-        { Type_None },
+        { Type_Condition8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -23411,8 +23411,8 @@ const InstructionInfo instructionInfoJPPO_nn_3 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 4 },
-        { Type_None },
+        { Type_Condition8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -23430,8 +23430,8 @@ const InstructionInfo instructionInfoJPPE_nn_3 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 5 },
-        { Type_None },
+        { Type_Condition8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -23449,8 +23449,8 @@ const InstructionInfo instructionInfoJPP_nn_3 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 6 },
-        { Type_None },
+        { Type_Condition8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -23468,8 +23468,8 @@ const InstructionInfo instructionInfoJPM_nn_3 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 7 },
-        { Type_None },
+        { Type_Condition8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -23487,8 +23487,8 @@ const InstructionInfo instructionInfoJRe_2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -23506,8 +23506,8 @@ const InstructionInfo instructionInfoJRNZ_e_2 =
         { 0, nullptr },
     },
     {
-        { Type_Condition4, 0 },
-        { Type_None },
+        { Type_Condition4, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -23525,8 +23525,8 @@ const InstructionInfo instructionInfoJRZ_e_2 =
         { 0, nullptr },
     },
     {
-        { Type_Condition4, 1 },
-        { Type_None },
+        { Type_Condition4, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -23544,8 +23544,8 @@ const InstructionInfo instructionInfoJRNC_e_2 =
         { 0, nullptr },
     },
     {
-        { Type_Condition4, 2 },
-        { Type_None },
+        { Type_Condition4, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -23563,8 +23563,8 @@ const InstructionInfo instructionInfoJRC_e_2 =
         { 0, nullptr },
     },
     {
-        { Type_Condition4, 3 },
-        { Type_None },
+        { Type_Condition4, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -23582,8 +23582,8 @@ const InstructionInfo instructionInfoJPHL_1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -23601,8 +23601,8 @@ const InstructionInfo instructionInfoJPIX_DD2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -23620,8 +23620,8 @@ const InstructionInfo instructionInfoJPIY_FD2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -23639,8 +23639,8 @@ const InstructionInfo instructionInfoDJNZe_2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -23658,8 +23658,8 @@ const InstructionInfo instructionInfoCALLnn_3 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -23677,8 +23677,8 @@ const InstructionInfo instructionInfoCALLNZ_nn_3 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 0 },
-        { Type_None },
+        { Type_Condition8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -23696,8 +23696,8 @@ const InstructionInfo instructionInfoCALLZ_nn_3 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 1 },
-        { Type_None },
+        { Type_Condition8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -23715,8 +23715,8 @@ const InstructionInfo instructionInfoCALLNC_nn_3 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 2 },
-        { Type_None },
+        { Type_Condition8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -23734,8 +23734,8 @@ const InstructionInfo instructionInfoCALLC_nn_3 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 3 },
-        { Type_None },
+        { Type_Condition8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -23753,8 +23753,8 @@ const InstructionInfo instructionInfoCALLPO_nn_3 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 4 },
-        { Type_None },
+        { Type_Condition8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -23772,8 +23772,8 @@ const InstructionInfo instructionInfoCALLPE_nn_3 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 5 },
-        { Type_None },
+        { Type_Condition8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -23791,8 +23791,8 @@ const InstructionInfo instructionInfoCALLP_nn_3 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 6 },
-        { Type_None },
+        { Type_Condition8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -23810,8 +23810,8 @@ const InstructionInfo instructionInfoCALLM_nn_3 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 7 },
-        { Type_None },
+        { Type_Condition8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -23829,8 +23829,8 @@ const InstructionInfo instructionInfoRET_1 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -23848,8 +23848,8 @@ const InstructionInfo instructionInfoRETNZ_1 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 0 },
-        { Type_None },
+        { Type_Condition8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -23867,8 +23867,8 @@ const InstructionInfo instructionInfoRETZ_1 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 1 },
-        { Type_None },
+        { Type_Condition8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -23886,8 +23886,8 @@ const InstructionInfo instructionInfoRETNC_1 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 2 },
-        { Type_None },
+        { Type_Condition8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -23905,8 +23905,8 @@ const InstructionInfo instructionInfoRETC_1 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 3 },
-        { Type_None },
+        { Type_Condition8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -23924,8 +23924,8 @@ const InstructionInfo instructionInfoRETPO_1 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 4 },
-        { Type_None },
+        { Type_Condition8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -23943,8 +23943,8 @@ const InstructionInfo instructionInfoRETPE_1 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 5 },
-        { Type_None },
+        { Type_Condition8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -23962,8 +23962,8 @@ const InstructionInfo instructionInfoRETP_1 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 6 },
-        { Type_None },
+        { Type_Condition8, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -23981,8 +23981,8 @@ const InstructionInfo instructionInfoRETM_1 =
         { 0, nullptr },
     },
     {
-        { Type_Condition8, 7 },
-        { Type_None },
+        { Type_Condition8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -24000,8 +24000,8 @@ const InstructionInfo instructionInfoRETI_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -24019,8 +24019,8 @@ const InstructionInfo instructionInfoRETN_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -24038,8 +24038,8 @@ const InstructionInfo instructionInfoRST00_1 =
         { 0, nullptr },
     },
     {
-        { Type_RstAddress, 0 },
-        { Type_None },
+        { Type_RstAddress, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -24057,8 +24057,8 @@ const InstructionInfo instructionInfoRST08_1 =
         { 0, nullptr },
     },
     {
-        { Type_RstAddress, 1 },
-        { Type_None },
+        { Type_RstAddress, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -24076,8 +24076,8 @@ const InstructionInfo instructionInfoRST10_1 =
         { 0, nullptr },
     },
     {
-        { Type_RstAddress, 2 },
-        { Type_None },
+        { Type_RstAddress, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -24095,8 +24095,8 @@ const InstructionInfo instructionInfoRST18_1 =
         { 0, nullptr },
     },
     {
-        { Type_RstAddress, 3 },
-        { Type_None },
+        { Type_RstAddress, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -24114,8 +24114,8 @@ const InstructionInfo instructionInfoRST20_1 =
         { 0, nullptr },
     },
     {
-        { Type_RstAddress, 4 },
-        { Type_None },
+        { Type_RstAddress, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -24133,8 +24133,8 @@ const InstructionInfo instructionInfoRST28_1 =
         { 0, nullptr },
     },
     {
-        { Type_RstAddress, 5 },
-        { Type_None },
+        { Type_RstAddress, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -24152,8 +24152,8 @@ const InstructionInfo instructionInfoRST30_1 =
         { 0, nullptr },
     },
     {
-        { Type_RstAddress, 6 },
-        { Type_None },
+        { Type_RstAddress, {6} },
+        { Type_None, {0} },
     }
 };
 
@@ -24171,8 +24171,8 @@ const InstructionInfo instructionInfoRST38_1 =
         { 0, nullptr },
     },
     {
-        { Type_RstAddress, 7 },
-        { Type_None },
+        { Type_RstAddress, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -24190,8 +24190,8 @@ const InstructionInfo instructionInfoINA__n__2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -24209,8 +24209,8 @@ const InstructionInfo instructionInfoINA__C__ED2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -24228,8 +24228,8 @@ const InstructionInfo instructionInfoINB__C__ED2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -24247,8 +24247,8 @@ const InstructionInfo instructionInfoINC__C__ED2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -24266,8 +24266,8 @@ const InstructionInfo instructionInfoIND__C__ED2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -24285,8 +24285,8 @@ const InstructionInfo instructionInfoINE__C__ED2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -24304,8 +24304,8 @@ const InstructionInfo instructionInfoINH__C__ED2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -24323,8 +24323,8 @@ const InstructionInfo instructionInfoINL__C__ED2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -24342,8 +24342,8 @@ const InstructionInfo instructionInfoIN_C__ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -24361,8 +24361,8 @@ const InstructionInfo instructionInfoINI_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -24380,8 +24380,8 @@ const InstructionInfo instructionInfoINIR_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -24399,8 +24399,8 @@ const InstructionInfo instructionInfoIND_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -24418,8 +24418,8 @@ const InstructionInfo instructionInfoINDR_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -24437,8 +24437,8 @@ const InstructionInfo instructionInfoOUT_n__A_2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -24456,8 +24456,8 @@ const InstructionInfo instructionInfoOUT_C__A_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 7 },
-        { Type_None },
+        { Type_Registers8, {7} },
+        { Type_None, {0} },
     }
 };
 
@@ -24475,8 +24475,8 @@ const InstructionInfo instructionInfoOUT_C__B_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 0 },
-        { Type_None },
+        { Type_Registers8, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -24494,8 +24494,8 @@ const InstructionInfo instructionInfoOUT_C__C_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 1 },
-        { Type_None },
+        { Type_Registers8, {1} },
+        { Type_None, {0} },
     }
 };
 
@@ -24513,8 +24513,8 @@ const InstructionInfo instructionInfoOUT_C__D_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 2 },
-        { Type_None },
+        { Type_Registers8, {2} },
+        { Type_None, {0} },
     }
 };
 
@@ -24532,8 +24532,8 @@ const InstructionInfo instructionInfoOUT_C__E_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 3 },
-        { Type_None },
+        { Type_Registers8, {3} },
+        { Type_None, {0} },
     }
 };
 
@@ -24551,8 +24551,8 @@ const InstructionInfo instructionInfoOUT_C__H_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 4 },
-        { Type_None },
+        { Type_Registers8, {4} },
+        { Type_None, {0} },
     }
 };
 
@@ -24570,8 +24570,8 @@ const InstructionInfo instructionInfoOUT_C__L_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_Registers8, 5 },
-        { Type_None },
+        { Type_Registers8, {5} },
+        { Type_None, {0} },
     }
 };
 
@@ -24589,8 +24589,8 @@ const InstructionInfo instructionInfoOUT_C__0_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -24608,8 +24608,8 @@ const InstructionInfo instructionInfoOUTI_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -24627,8 +24627,8 @@ const InstructionInfo instructionInfoOTIR_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -24646,8 +24646,8 @@ const InstructionInfo instructionInfoOUTD_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };
 
@@ -24665,7 +24665,7 @@ const InstructionInfo instructionInfoOTDR_ED2 =
         { 0, nullptr },
     },
     {
-        { Type_None },
-        { Type_None },
+        { Type_None, {0} },
+        { Type_None, {0} },
     }
 };

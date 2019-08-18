@@ -2,6 +2,7 @@
 
 #include "Async.h"
 #include "CpuZ80.h"
+#include "Types.h"
 #include <stdint.h>
 
 #ifdef __cplusplus

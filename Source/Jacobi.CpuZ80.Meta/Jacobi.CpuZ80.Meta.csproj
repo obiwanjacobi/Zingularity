@@ -71,10 +71,10 @@
     <Content Include="Cpp\InstructionsZ80.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastOutputs>
-..\..\Jacobi.CpuZ80\FunctionsZ80.hpp
-..\..\Jacobi.CpuZ80\InstructionsZ80.cpp
-..\..\Jacobi.CpuZ80\InstructionsZ80.hpp
-..\..\Jacobi.CpuZ80\InstructionTablesZ80.cpp
+..\..\Jacobi.CpuZ80\FunctionsZ80.h
+..\..\Jacobi.CpuZ80\InstructionsZ80.c
+..\..\Jacobi.CpuZ80\InstructionsZ80.h
+..\..\Jacobi.CpuZ80\InstructionTablesZ80.c
 .\InstructionsZ80.txt
 </LastOutputs>
       <LastGenOutput>InstructionsZ80.txt</LastGenOutput>

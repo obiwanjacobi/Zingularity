@@ -26,7 +26,7 @@
 
 #include "stdafx.h"
 #include "InstructionInfo.h"
-#include "InstructionsZ80.hpp"
+#include "InstructionsZ80.h"
 
 // non-extension opcodes
 const uint16_t InstructionTable_length = <#= table.Count #>;

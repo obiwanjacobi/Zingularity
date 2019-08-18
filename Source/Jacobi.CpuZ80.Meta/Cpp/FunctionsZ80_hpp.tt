@@ -19,6 +19,10 @@
 
 #include "Async.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 // generic cpu operations
 extern void OnClock_OF(AsyncThis* async);
 extern void OnClock_OD(AsyncThis* async);
@@ -65,7 +69,13 @@ extern void OnClock_PW(AsyncThis* async);
 <#+                 }
                 }
             }
+#>
 
+#ifdef __cplusplus
+}
+#endif
+
+<#+
             return this.GenerationEnvironment.ToString();
         }
     }

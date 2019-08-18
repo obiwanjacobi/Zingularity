@@ -1,7 +1,11 @@
 #pragma once
 
-#include <stdint.h>
+#include "Types.h"
 #include <assert.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 //
 // Async
@@ -9,7 +13,7 @@
 
 typedef struct
 {
-    uint16_t State = 0;
+    uint16_t State;// = 0;
 
 } AsyncThis;
 
@@ -24,29 +28,29 @@ extern const uint8_t AsyncThis_size;
  * Async_EndFn()
  *
  * Async Function delcaration:
- * bool <fn-name>(AsyncThis* async) {}
+ * bool_t <fn-name>(AsyncThis* async) {}
  */
 
-#define Async_Declaration(name) bool name(AsyncThis *async)
+#define Async_Declaration(name) bool_t name(AsyncThis *async)
 
-#define Async_DeclarationWithParameters(name, parameters) bool name(AsyncThis *async, parameters)
+#define Async_DeclarationWithParameters(name, parameters) bool_t name(AsyncThis *async, parameters)
 
 /** MACRO: Declare an async function 'name'.
  *  \return Returns an indication if the task has yielded (false) or simply exited (true).
  */
-#define Async_Function(name) bool name(AsyncThis *async) Async_Scope()
+#define Async_Function(name) bool_t name(AsyncThis *async) Async_Scope()
 
  /** MACRO: Declare an async function 'name' with parameters.
   *  \return Returns an indication if the task has yielded (false) or simply exited (true).
   */
-#define Async_FunctionWithParams(name, parameters) bool name(AsyncThis *async, parameters) Async_Scope()
+#define Async_FunctionWithParams(name, parameters) bool_t name(AsyncThis *async, parameters) Async_Scope()
 
 
 /** MACRO: start an async scope inside a function.
  */
 #define Async_Scope()           \
     {                           \
-        bool _yield_ = false;   \
+        bool_t _yield_ = false;   \
         switch (async->State)   \
         {                       \
         case 0:
@@ -101,3 +105,7 @@ extern const uint8_t AsyncThis_size;
 
 
 inline void Async_Reset(AsyncThis* async) { async->State = 0; }
+
+#ifdef __cplusplus
+}
+#endif

@@ -19,6 +19,10 @@
 
 #include "InstructionInfo.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 extern const uint16_t InstructionTable_length;
 extern const InstructionTableEntry InstructionTable[];
 extern const uint16_t InstructionTableCB_length;
@@ -45,6 +49,10 @@ extern const InstructionInfo instructionInfo<#= decl.Name #>;
 <#+        
             }
 #>
+
+#ifdef __cplusplus
+}
+#endif
 
 <#+
             return this.GenerationEnvironment.ToString();

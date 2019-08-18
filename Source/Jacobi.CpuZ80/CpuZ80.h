@@ -2,86 +2,90 @@
 
 #include "Async.h"
 
-enum class Level
-{
-    Floating,
-    PosEdge,
-    High,
-    NegEdge,
-    Low
-};
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-enum class MCycle
+typedef enum 
 {
-    NotInitialized,
+    Level_Floating,
+    Level_PosEdge,
+    Level_High,
+    Level_NegEdge,
+    Level_Low
+} Level;
+
+typedef enum 
+{
+    MCycle_NotInitialized,
     M1,
     M2,
     M3,
     M4,
     M5,
     M6
-};
+} MCycle;
 
-enum class TCycle
+typedef enum 
 {
-    NotInitialized,
+    TCycle_NotInitialized,
     T1,
     T2,
     T3,
     T4,
     T5,
     T6,
-};
+} TCycle;
 
-enum class Registers8
+typedef enum 
 {
-    B,
-    C,
-    D,
-    E,
-    H,
-    L,
-    HL,
-    A
-};
+    Reg8_B,
+    Reg8_C,
+    Reg8_D,
+    Reg8_E,
+    Reg8_H,
+    Reg8_L,
+    Reg8_HL,
+    Reg8_A
+} Registers8;
 
-enum class Registers16
+typedef enum 
 {
-    BC,
-    DE,
-    HL,
-    AF
-};
+    Reg16_BC,
+    Reg16_DE,
+    Reg16_HL,
+    Reg16_AF
+} Registers16;
 
-enum class RegistersSP16
+typedef enum 
 {
-    BC,
-    DE,
-    HL,
-    SP
-};
+    Reg16sp_BC,
+    Reg16sp_DE,
+    Reg16sp_HL,
+    Reg16sp_SP
+} RegistersSP16;
 
-enum class Condition8
+typedef enum 
 {
-    NZ,
-    Z,
-    NC,
-    C,
-    PO,
-    PE,
-    P,
-    M
-};
+    Cond8_NZ,
+    Cond8_Z,
+    Cond8_NC,
+    Cond8_C,
+    Cond8_PO,
+    Cond8_PE,
+    Cond8_P,
+    Cond8_M
+} Condition8;
 
-enum class Condition4
+typedef enum 
 {
-    NZ,
-    Z,
-    NC,
-    C,
-};
+    Cond4_NZ,
+    Cond4_Z,
+    Cond4_NC,
+    Cond4_C,
+} Condition4;
 
-enum class AluOps
+typedef enum 
 {
     ADD,
     ADC,
@@ -91,9 +95,9 @@ enum class AluOps
     XOR,
     OR,
     CP
-};
+} AluOps;
 
-enum class AluRot
+typedef enum 
 {
     RLC,
     RRC,
@@ -103,9 +107,9 @@ enum class AluRot
     SRA,
     SLL,
     SRL
-};
+} AluRot;
 
-enum class Bits8
+typedef enum 
 {
     Bit0,
     Bit1,
@@ -115,9 +119,9 @@ enum class Bits8
     Bit5,
     Bit6,
     Bit7
-};
+} Bits8;
 
-enum class RstAddress
+typedef enum 
 {
     Rst00,
     Rst08,
@@ -127,9 +131,13 @@ enum class RstAddress
     Rst28,
     Rst30,
     Rst38
-};
+} RstAddress;
 
 Async_Declaration(ClockTick);
 
 void setAddressPC();
 void setAddressIR();
+
+#ifdef __cplusplus
+}
+#endif

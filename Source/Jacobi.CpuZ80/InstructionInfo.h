@@ -4,21 +4,25 @@
 #include "CpuZ80.h"
 #include <stdint.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef void(*fnOnClock)(AsyncThis* async);
 
-enum class VariableType
+typedef enum 
 {
-    None,
-    Registers8,
-    Registers16,
-    RegistersSP16,
-    Condition8,
-    Condition4,
-    Bits8,
-    RstAddress,
-    AluOps,
-    AluRot,
-};
+    Type_None,
+    Type_Registers8,
+    Type_Registers16,
+    Type_RegistersSP16,
+    Type_Condition8,
+    Type_Condition4,
+    Type_Bits8,
+    Type_RstAddress,
+    Type_AluOps,
+    Type_AluRot,
+} VariableType;
 
 
 typedef struct
@@ -73,3 +77,7 @@ typedef struct
     const InstructionInfo* Instruction;
 
 } InstructionTableEntry;
+
+#ifdef __cplusplus
+}
+#endif

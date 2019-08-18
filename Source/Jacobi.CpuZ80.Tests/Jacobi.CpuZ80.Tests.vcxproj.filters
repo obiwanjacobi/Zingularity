@@ -5,17 +5,18 @@
     <ClInclude Include="targetver.h" />
     <ClInclude Include="CpuZ80TestHost.h" />
     <ClInclude Include="Memory.h" />
+    <ClInclude Include="TestGlobals.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="AsyncTests.cpp" />
-    <ClCompile Include="CpuZ80TestHost.cpp" />
     <ClCompile Include="ClockTickTests.cpp" />
     <ClCompile Include="Memory.cpp" />
     <ClCompile Include="BitTests.cpp">
       <Filter>Instructions</Filter>
     </ClCompile>
     <ClCompile Include="TestGlobals.cpp" />
+    <ClCompile Include="CpuZ80TestHost.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Instructions">

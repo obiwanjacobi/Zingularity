@@ -2,12 +2,8 @@
 #include "CppUnitTest.h"
 #include "CpuZ80TestHost.h"
 #include "../Jacobi.CpuZ80/ClockTick.h"
-#include "../Jacobi.CpuZ80/CpuState.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
-
-extern CpuState _state;
-extern AsyncThis asyncClockTick;
 
 namespace JacobiCpuZ80Tests
 {
@@ -21,6 +17,7 @@ namespace JacobiCpuZ80Tests
 
             InitClock();
 
+            Async_Reset(&asyncClockTick);
             while (!ClockTick(&asyncClockTick))
             {
                 AdvanceClock();

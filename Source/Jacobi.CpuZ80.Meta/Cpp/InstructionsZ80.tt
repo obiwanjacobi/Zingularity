@@ -33,44 +33,44 @@
 #>
 Generating code for <#= decls.Count #> Z80 instructions.
 
-Generating 'InstructionsZ80.hpp'...
+Generating 'InstructionsZ80.h'...
 <#
 
     var hpp = new InstructionsZ80_hpp(decls);
-    hpp.Output.File = "InstructionsZ80.hpp";
+    hpp.Output.File = "InstructionsZ80.h";
     hpp.Output.Project = TargetProjectPath;
     hpp.Render();
 
 #>
 Done.
 
-Generating 'InstructionsZ80.cpp'...
+Generating 'InstructionsZ80.c'...
 <#
 
     var cpp = new InstructionsZ80_cpp(decls);
-    cpp.Output.File = "InstructionsZ80.cpp";
+    cpp.Output.File = "InstructionsZ80.c";
     cpp.Output.Project = TargetProjectPath;
     cpp.Render();
 
 #>
 Done.
 
-Generating 'InstructionTablesZ80.cpp'...
+Generating 'InstructionTablesZ80.c'...
 <#
 
     var tables = new InstructionTablesZ80_cpp(decls);
-    tables.Output.File = "InstructionTablesZ80.cpp";
+    tables.Output.File = "InstructionTablesZ80.c";
     tables.Output.Project = TargetProjectPath;
     tables.Render();
 
 #>
 Done.
 
-Generating 'FunctionsZ80.cpp'...
+Generating 'FunctionsZ80.c'...
 <#
 
     var funcs = new FunctionsZ80_hpp(decls);
-    funcs.Output.File = "FunctionsZ80.hpp";
+    funcs.Output.File = "FunctionsZ80.h";
     funcs.Output.Project = TargetProjectPath;
     funcs.Render();
 

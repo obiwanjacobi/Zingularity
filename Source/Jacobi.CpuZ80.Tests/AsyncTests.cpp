@@ -57,16 +57,17 @@ Async_End
 
 namespace JacobiCpuZ80Tests
 {
-	TEST_CLASS(AsyncTests)
-	{
-	public:
-		
-		TEST_METHOD(Async)
-		{
+    TEST_CLASS(AsyncTests)
+    {
+    public:
+        
+        TEST_METHOD(Async)
+        {
             NestedDone = false;
             AsyncThis async;
             bool yielded = false;
 
+            Async_Reset(&async);
             while (!AsyncTest(&async)) 
             {
                 yielded = true;
@@ -75,16 +76,18 @@ namespace JacobiCpuZ80Tests
 
             Assert::IsTrue(yielded);
             Assert::IsTrue(NestedDone);
-		}
+        }
 
         TEST_METHOD(DynamicAsync)
         {
             AsyncThis async;
             Counter = 1;
+
+            Async_Reset(&async);
             while (!DynAsyncTest(&async))
             {
                 Counter++;
             }
         }
-	};
+    };
 }

@@ -3,6 +3,10 @@
 #include "Async.h"
 #include "CpuZ80.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #define AssertClock(m, t, l) \
     assert(_state.Clock.M == (uint8_t)m); \
     assert(_state.Clock.T == (uint8_t)t); \
@@ -12,3 +16,8 @@ Async_Declaration(ClockTick);
 
 void InitClock();
 void AdvanceClock();
+
+
+#ifdef __cplusplus
+}
+#endif

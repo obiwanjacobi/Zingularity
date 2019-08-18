@@ -9,26 +9,27 @@
     <ClInclude Include="CpuZ80Host.h" />
     <ClInclude Include="CpuZ80.h" />
     <ClInclude Include="ClockTick.h" />
-    <ClInclude Include="InstructionsZ80.hpp" />
-    <ClInclude Include="FunctionsZ80.hpp" />
+    <ClInclude Include="InstructionsZ80.h" />
+    <ClInclude Include="FunctionsZ80.h" />
+    <ClInclude Include="Types.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp" />
-    <ClCompile Include="ClockTick.cpp" />
-    <ClCompile Include="Instructions.Generic.cpp" />
-    <ClCompile Include="Instructions.ExchangeBlockTransfer.cpp" />
-    <ClCompile Include="Instructions.Arithmetic8.cpp" />
-    <ClCompile Include="Instructions.GeneralPurposeControl.cpp" />
-    <ClCompile Include="Instructions.Arithmetic16.cpp" />
-    <ClCompile Include="Instructions.RotateShift.cpp" />
-    <ClCompile Include="Instructions.BitSetTest.cpp" />
-    <ClCompile Include="Instructions.Jump.cpp" />
-    <ClCompile Include="Instructions.CallReturn.cpp" />
-    <ClCompile Include="Instructions.Load8.cpp" />
-    <ClCompile Include="Instructions.Load16.cpp" />
-    <ClCompile Include="Instructions.InputOutput.cpp" />
-    <ClCompile Include="CpuZ80.cpp" />
-    <ClCompile Include="InstructionsZ80.cpp" />
-    <ClCompile Include="InstructionTablesZ80.cpp" />
+    <ClCompile Include="InstructionsZ80.c" />
+    <ClCompile Include="InstructionTablesZ80.c" />
+    <ClCompile Include="Instructions.Arithmetic8.c" />
+    <ClCompile Include="Instructions.Arithmetic16.c" />
+    <ClCompile Include="Instructions.BitSetTest.c" />
+    <ClCompile Include="Instructions.CallReturn.c" />
+    <ClCompile Include="Instructions.ExchangeBlockTransfer.c" />
+    <ClCompile Include="Instructions.GeneralPurposeControl.c" />
+    <ClCompile Include="Instructions.Generic.c" />
+    <ClCompile Include="Instructions.InputOutput.c" />
+    <ClCompile Include="Instructions.Jump.c" />
+    <ClCompile Include="Instructions.Load8.c" />
+    <ClCompile Include="Instructions.Load16.c" />
+    <ClCompile Include="Instructions.RotateShift.c" />
+    <ClCompile Include="ClockTick.c" />
+    <ClCompile Include="CpuZ80.c" />
+    <ClCompile Include="stdafx.c" />
   </ItemGroup>
 </Project>

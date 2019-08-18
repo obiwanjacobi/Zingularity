@@ -1,5 +1,6 @@
 #pragma once
 
+#include "TestGlobals.h"
 #include <stdint.h>
 
 class CpuZ80TestHost;
@@ -8,7 +9,10 @@ void SetCpuZ80Host(CpuZ80TestHost* host);
 class CpuZ80TestHost
 {
 public:
-    CpuZ80TestHost() { SetCpuZ80Host(this); }
+    CpuZ80TestHost()
+//        : Address(0), Data(0), BusAck(false), BusReq(false), Halt(false), Rd(false), Wr(false), MemReq(false), IoReq(false)
+//            Nmi(false), Int(false), Rst(false), Wait(false), Refresh(false), M1(false)
+    { SetCpuZ80Host(this); }
     virtual void setAddressBus(uint16_t address) { Address = address; }
     virtual void setDataBus(uint8_t data) { Data = data; }
     virtual void setBusAck(bool active) { BusAck = active; }

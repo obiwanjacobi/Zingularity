@@ -18,8 +18,8 @@
  */
 
 #include "stdafx.h"
-#include "InstructionsZ80.hpp"
-#include "FunctionsZ80.hpp"
+#include "InstructionsZ80.h"
+#include "FunctionsZ80.h"
 
 // Instructions for the Z80:
 <#+
@@ -91,11 +91,11 @@ const InstructionInfo instructionInfo<#= decl.Name #> =
                 var variable = decl.Variables[index];
                 if (variable.Type != InstructionVariableType.OpcodeByte && variable.Type != InstructionVariableType.None)
                 {
-                    return "{ VariableType::" + variable.Type.ToString() + ", " + variable.Value + " },";
+                    return "{ Type_" + variable.Type.ToString() + ", " + variable.Value + " },";
                 }
             }
 
-            return "{ VariableType::None },";
+            return "{ Type_None },";
         }
     }
 #>

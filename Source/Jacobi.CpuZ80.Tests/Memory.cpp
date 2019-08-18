@@ -14,7 +14,7 @@ bool Memory::ClockTick()
     {
         if (_host->Address < _length)
         {
-            if (_state.Clock.Level == Level::PosEdge)
+            if (_state.Clock.Level == Level_PosEdge)
             {
                 _host->Data = _bytes[_host->Address];
             }

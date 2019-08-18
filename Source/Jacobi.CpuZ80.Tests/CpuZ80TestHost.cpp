@@ -22,52 +22,52 @@ void setDataBus(uint8_t data)
     _host->setDataBus(data);
 }
 
-void setBusAck(bool level) // host also floats buses
+void setBusAck(Signal level) // host also floats buses
 {
     assert(_host != nullptr);
-    _host->setBusAck(level);
+    _host->setBusAck(level == Active);
 }
 
-void setHalt(bool level)
+void setHalt(Signal level)
 {
     assert(_host != nullptr);
-    _host->setHalt(level);
+    _host->setHalt(level == Active);
 }
 
-void setRd(bool level)
+void setRd(Signal level)
 {
     assert(_host != nullptr);
-    _host->setRd(level);
+    _host->setRd(level == Active);
 }
 
-void setWr(bool level)
+void setWr(Signal level)
 {
     assert(_host != nullptr);
-    _host->setWr(level);
+    _host->setWr(level == Active);
 }
 
-void setMemReq(bool level)
+void setMemReq(Signal level)
 {
     assert(_host != nullptr);
-    _host->setMemReq(level);
+    _host->setMemReq(level == Active);
 }
 
-void setIOReq(bool level)
+void setIOReq(Signal level)
 {
     assert(_host != nullptr);
-    _host->setIOReq(level);
+    _host->setIOReq(level == Active);
 }
 
-void setRefresh(bool level)
+void setRefresh(Signal level)
 {
     assert(_host != nullptr);
-    _host->setRefresh(level);
+    _host->setRefresh(level == Active);
 }
 
-void setM1(bool level)
+void setM1(Signal level)
 {
     assert(_host != nullptr);
-    _host->setM1(level);
+    _host->setM1(level == Active);
 }
 
 // inputs
@@ -78,32 +78,32 @@ uint8_t getDataBus()
     return _host->getDataBus();
 }
 
-bool getReset()
+Signal getReset()
 {
     assert(_host != nullptr);
-    return _host->getReset();
+    return _host->getReset() ? Active : Inactive;
 }
 
-bool getBusReq()
+Signal getBusReq()
 {
     assert(_host != nullptr);
-    return _host->getBusReq();
+    return _host->getBusReq() ? Active : Inactive;
 }
 
-bool getNmi()
+Signal getNmi()
 {
     assert(_host != nullptr);
-    return _host->getNmi();
+    return _host->getNmi() ? Active : Inactive;
 }
 
-bool getInt()
+Signal getInt()
 {
     assert(_host != nullptr);
-    return _host->getInt();
+    return _host->getInt() ? Active : Inactive;
 }
 
-bool getWait()
+Signal getWait()
 {
     assert(_host != nullptr);
-    return _host->getWait();
+    return _host->getWait() ? Active : Inactive;
 }

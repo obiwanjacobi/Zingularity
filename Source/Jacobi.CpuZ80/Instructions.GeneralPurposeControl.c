@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "FunctionsZ80.h"
 
 // DAA   -  DAA_1  -  27

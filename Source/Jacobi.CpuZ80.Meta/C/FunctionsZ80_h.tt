@@ -1,0 +1,95 @@
+﻿<#+
+
+    public sealed class FunctionsZ80_h : Template
+    {
+        private readonly IEnumerable<InstructionMeta> _decls;
+
+        public FunctionsZ80_h(IEnumerable<InstructionMeta> decls)
+        {
+            _decls = decls;
+        }
+
+        public override string TransformText()
+        {
+#>
+/**
+ *  Generated Source Code
+ *  Any changes you make will be lost when the code is regenerated.
+ */
+
+#include "Async.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+// generic cpu operations
+extern void OnClock_OF(AsyncThis* async);
+extern void OnClock_OD(AsyncThis* async);
+extern void OnClock_ODd(AsyncThis* async);
+extern void OnClock_MR(AsyncThis* async);
+extern void OnClock_MW(AsyncThis* async);
+extern void OnClock_PCd(AsyncThis* async);
+extern void OnClock_SRh(AsyncThis* async);
+extern void OnClock_SRl(AsyncThis* async);
+extern void OnClock_SWh(AsyncThis* async);
+extern void OnClock_SWl(AsyncThis* async);
+extern void OnClock_PR(AsyncThis* async);
+extern void OnClock_PW(AsyncThis* async);
+
+// Functions for the emulating the Z80:
+<#+
+            var fns = new List<string>();
+
+            foreach (var decl in _decls)
+            {
+#>
+
+// <#= decl.Info.Mnemonic #>   -  <#= decl.Name #>  -  <#= String.Join(", ", decl.Info.Bytes) #>
+<#+
+                foreach(var mc in decl.MachineCycles)
+                {  
+                    if (mc.ExtraCycles > 0)
+                    {
+                        if (!mc.IsExt && decl.Root.Variables.Any())
+                        {
+#>
+<#= BuildFunctionDecl(fns, decl.Root.Name, mc.Operation) #>
+<#+                     }
+                        else
+                        {
+#>
+<#= BuildFunctionDecl(fns, decl.Name, mc.Operation) #>
+<#+                     }
+                    } 
+                    else if (!mc.IsExt && decl.Root.Parameters.Any() && mc.Operation != "ODd")
+                    {
+#>
+<#= BuildFunctionDecl(fns, decl.Root.Name, mc.Operation) #>
+<#+                 }
+                }
+            }
+#>
+
+#ifdef __cplusplus
+}
+#endif
+
+<#+
+            return this.GenerationEnvironment.ToString();
+        }
+    }
+#>
+
+<#+
+    private static string BuildFunctionDecl(List<string> fns, string part1, string part2)
+    {
+        var fn = "extern void OnClock_" + part1 + "_" + part2 + "(AsyncThis* async);";
+
+        if (fns.Contains(part1+part2))
+            return "// " + fn;
+
+        fns.Add(part1+part2);
+        return fn;
+    }
+#>

@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "FunctionsZ80.h"
 
 // LD BC, nn   -  LDBC_nn_3  -  01, n, n

@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "FunctionsZ80.h"
 
 // BIT 0, A   -  BIT0_A_CB2  -  CB, 47

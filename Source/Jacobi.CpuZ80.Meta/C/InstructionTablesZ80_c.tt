@@ -1,0 +1,132 @@
+﻿<#+
+
+    public sealed class InstructionTablesZ80_c : Template
+    {
+        private readonly IEnumerable<InstructionMeta> _decls;
+
+        public InstructionTablesZ80_c(IEnumerable<InstructionMeta> decls)
+        {
+            _decls = decls;
+        }
+
+        public override string TransformText()
+        {
+            var cbTable = _decls.Where(d => d.HasCB && !(d.HasDD || d.HasFD)).OrderBy(d => d.Info.Bytes[1]).ToList();
+            var edTable = _decls.Where(d => d.HasED).OrderBy(d => d.Info.Bytes[1]).ToList();
+            var ddTable = _decls.Where(d => d.HasDD && !d.HasCB).OrderBy(d => d.Info.Bytes[1]).ToList();
+            var fdTable = _decls.Where(d => d.HasFD && !d.HasCB).OrderBy(d => d.Info.Bytes[1]).ToList();
+            var ddcbTable = _decls.Where(d => d.HasDD && d.HasCB).OrderBy(d => d.Info.Bytes[3]).ToList();
+            var fdcbTable = _decls.Where(d => d.HasFD && d.HasCB).OrderBy(d => d.Info.Bytes[3]).ToList();
+            var table = _decls.Where(d => !InstructionMeta.IsExt(d.Info.Bytes[0])).OrderBy(d => d.Info.Bytes[0]).ToList();
+#>
+/**
+ *  Generated Source Code
+ *  Any changes you make will be lost when the code is regenerated.
+ */
+
+#include "InstructionInfo.h"
+#include "InstructionsZ80.h"
+
+// non-extension opcodes
+const uint16_t InstructionTable_length = <#= table.Count #>;
+const InstructionTableEntry InstructionTable[] = {
+<#+
+            foreach (var decl in table)
+            {
+
+#>
+    { 0x<#= decl.Info.Bytes[0] #>, &instructionInfo<#= decl.Name #> },
+<#+        
+            }
+#>
+};
+
+// CB-extension opcodes
+const uint16_t InstructionTableCB_length = <#= cbTable.Count #>;
+const InstructionTableEntry InstructionTableCB[] = {
+<#+
+            foreach (var decl in cbTable)
+            {
+
+#>
+    { 0x<#= decl.Info.Bytes[1] #>, &instructionInfo<#= decl.Name #> },
+<#+        
+            }
+#>
+};
+
+// ED-extension opcodes
+const uint16_t InstructionTableED_length = <#= edTable.Count #>;
+const InstructionTableEntry InstructionTableED[] = {
+<#+
+            foreach (var decl in edTable)
+            {
+
+#>
+    { 0x<#= decl.Info.Bytes[1] #>, &instructionInfo<#= decl.Name #> },
+<#+        
+            }
+#>
+};
+
+// IX-extension opcodes
+const uint16_t InstructionTableDD_length = <#= ddTable.Count #>;
+const InstructionTableEntry InstructionTableDD[] = {
+<#+
+            foreach (var decl in ddTable)
+            {
+
+#>
+    { 0x<#= decl.Info.Bytes[1] #>, &instructionInfo<#= decl.Name #> },
+<#+        
+            }
+#>
+};
+
+// IX-CB-extension opcodes
+const uint16_t InstructionTableDDCB_length = <#= ddcbTable.Count #>;
+const InstructionTableEntry InstructionTableDDCB[] = {
+<#+
+            foreach (var decl in ddcbTable)
+            {
+
+#>
+    { 0x<#= decl.Info.Bytes[3] #>, &instructionInfo<#= decl.Name #> },
+<#+        
+            }
+#>
+};
+
+// IY-extension opcodes
+const uint16_t InstructionTableFD_length = <#= fdTable.Count #>;
+const InstructionTableEntry InstructionTableFD[] = {
+<#+
+            foreach (var decl in fdTable)
+            {
+
+#>
+    { 0x<#= decl.Info.Bytes[1] #>, &instructionInfo<#= decl.Name #> },
+<#+        
+            }
+#>
+};
+
+// IY-CB-extension opcodes
+const uint16_t InstructionTableFDCB_length = <#= fdcbTable.Count #>;
+const InstructionTableEntry InstructionTableFDCB[] = {
+<#+
+            foreach (var decl in fdcbTable)
+            {
+
+#>
+    { 0x<#= decl.Info.Bytes[3] #>, &instructionInfo<#= decl.Name #> },
+<#+        
+            }
+#>
+};
+
+<#+
+            return this.GenerationEnvironment.ToString();
+        }
+    }
+#>

@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "FunctionsZ80.h"
 
 // ADD HL, BC   -  ADDHL_BC_1  -  09

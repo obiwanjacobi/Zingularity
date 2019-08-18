@@ -3,7 +3,6 @@
  *  Any changes you make will be lost when the code is regenerated.
  */
 
-#include "stdafx.h"
 #include "InstructionInfo.h"
 #include "InstructionsZ80.h"
 

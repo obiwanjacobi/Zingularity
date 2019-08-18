@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "CpuZ80.h"
 #include "CpuState.h"
 #include "CpuZ80Host.h"

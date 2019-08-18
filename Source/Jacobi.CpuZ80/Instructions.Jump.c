@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "FunctionsZ80.h"
 
 // JP nn   -  JPnn_3  -  C3, n, n

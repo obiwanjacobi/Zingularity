@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "FunctionsZ80.h"
 
 // LD A, A   -  LDA_A_1  -  7F

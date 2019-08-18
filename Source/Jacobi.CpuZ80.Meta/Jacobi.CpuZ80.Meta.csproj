@@ -68,7 +68,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Cpp\InstructionsZ80.tt">
+    <Content Include="C\InstructionsZ80.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastOutputs>
 ..\..\Jacobi.CpuZ80\FunctionsZ80.h
@@ -79,15 +79,15 @@
 </LastOutputs>
       <LastGenOutput>InstructionsZ80.txt</LastGenOutput>
     </Content>
-    <Content Include="Cpp\FunctionsZ80_hpp.tt" />
-    <Content Include="Cpp\InstructionsZ80.txt">
+    <Content Include="C\FunctionsZ80_h.tt" />
+    <Content Include="C\InstructionsZ80.txt">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>InstructionsZ80.tt</DependentUpon>
     </Content>
-    <Content Include="Cpp\InstructionsZ80_cpp.tt" />
-    <Content Include="Cpp\InstructionTablesZ80_cpp.tt" />
-    <Content Include="Cpp\InstructionsZ80_hpp.tt" />
+    <Content Include="C\InstructionsZ80_c.tt" />
+    <Content Include="C\InstructionTablesZ80_c.tt" />
+    <Content Include="C\InstructionsZ80_h.tt" />
     <Content Include="Language Server\InstructionsZ80.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastOutputs>

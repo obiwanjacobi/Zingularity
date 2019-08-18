@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "FunctionsZ80.h"
 
 // ADD A, A   -  ADDA_A_1  -  87

@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "FunctionsZ80.h"
 
 // CALL nn   -  CALLnn_3  -  CD, n, n

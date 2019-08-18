@@ -1,0 +1,61 @@
+﻿<#+
+
+    public sealed class InstructionsZ80_h : Template
+    {
+        private readonly IEnumerable<InstructionMeta> _decls;
+
+        public InstructionsZ80_h(IEnumerable<InstructionMeta> decls)
+        {
+            _decls = decls;
+        }
+
+        public override string TransformText()
+        {
+#>
+/**
+ *  Generated Source Code
+ *  Any changes you make will be lost when the code is regenerated.
+ */
+
+#include "InstructionInfo.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+extern const uint16_t InstructionTable_length;
+extern const InstructionTableEntry InstructionTable[];
+extern const uint16_t InstructionTableCB_length;
+extern const InstructionTableEntry InstructionTableCB[];
+extern const uint16_t InstructionTableED_length;
+extern const InstructionTableEntry InstructionTableED[];
+extern const uint16_t InstructionTableDD_length;
+extern const InstructionTableEntry InstructionTableDD[];
+extern const uint16_t InstructionTableDDCB_length;
+extern const InstructionTableEntry InstructionTableDDCB[];
+extern const uint16_t InstructionTableFD_length;
+extern const InstructionTableEntry InstructionTableFD[];
+extern const uint16_t InstructionTableFDCB_length;
+extern const InstructionTableEntry InstructionTableFDCB[];
+
+// Instructions for the Z80:
+<#+
+            foreach (var decl in _decls)
+            {
+#>
+// <#= decl.Info.Mnemonic #>  -  <#= String.Join(", ", decl.Info.Bytes) #>
+extern const InstructionInfo instructionInfo<#= decl.Name #>;
+
+<#+        
+            }
+#>
+
+#ifdef __cplusplus
+}
+#endif
+
+<#+
+            return this.GenerationEnvironment.ToString();
+        }
+    }
+#>

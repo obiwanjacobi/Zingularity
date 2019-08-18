@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "FunctionsZ80.h"
 
 // IN A, (n)   -  INA__n__2  -  DB, n

@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "FunctionsZ80.h"
 
 // EX DE, HL   -  EXDE_HL_1  -  EB

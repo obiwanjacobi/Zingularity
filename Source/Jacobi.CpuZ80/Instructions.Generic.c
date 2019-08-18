@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "Async.h"
 #include "FunctionsZ80.h"
 #include "CpuState.h"

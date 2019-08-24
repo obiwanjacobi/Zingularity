@@ -32,7 +32,7 @@ namespace JacobiCpuZ80Tests
 
             while (runProgram)
             {
-                ClockTick(&asyncClockTick);
+                ClockTickAsync(&asyncClockTick);
                 ToggleClockLevel();
 
                 runProgram = memory.ClockTick();

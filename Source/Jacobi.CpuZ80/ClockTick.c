@@ -311,7 +311,7 @@ Async_End
 AsyncThis fetchDecodeAsync;
 AsyncThis executeAsync;
 
-Async_Function(ClockTick)
+Async_Function(ClockTickAsync)
 {
     Async_Reset(&fetchDecodeAsync);
     Async_WaitUntil(FetchDecode(&fetchDecodeAsync));
@@ -320,3 +320,9 @@ Async_Function(ClockTick)
     Async_WaitUntil(Execute(&executeAsync));
 }
 Async_End
+
+void ClockTick(AsyncThis *async, Level clockLevel)
+{
+    _state.Clock.Level = clockLevel;
+    ClockTickAsync(async);
+}

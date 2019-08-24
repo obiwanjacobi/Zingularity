@@ -19,9 +19,10 @@ extern "C" {
     assert(_state.Clock.M <= MaxMCycleIndex); \
     assert(_state.Instruction.Info->Count > _state.Instruction.MCycleIndex);
 
-bool_t ClockTick(AsyncThis *async);
 
 void ResetClock();
+void ClockTick(AsyncThis* async, Level clockLevel);
+bool_t ClockTickAsync(AsyncThis* async);
 
 
 #ifdef __cplusplus

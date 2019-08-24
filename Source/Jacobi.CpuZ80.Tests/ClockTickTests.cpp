@@ -20,7 +20,7 @@ namespace JacobiCpuZ80Tests
 
             Async_Reset(&asyncClockTick);
             // executes a NOP
-            while (!ClockTick(&asyncClockTick))
+            while (!ClockTickAsync(&asyncClockTick))
             {
                 ToggleClockLevel();
             }

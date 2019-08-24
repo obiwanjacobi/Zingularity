@@ -22,11 +22,6 @@ void NextTCycle()
 {
     _state.Clock.T++;
     _state.Clock.TL++;
-
-    if (_state.Instruction.Info != nullptr)
-    {
-        assert(_state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].clocks <= _state.Clock.T);
-    }
 }
 
 void NextMCycle()
@@ -172,13 +167,22 @@ void Decode()
         _state.Instruction.ExtIndex = 1;
         break;
     case 0xCB:
+        // CB replaces ED
         if (_state.Instruction.ExtIndex == 1 && _state.Instruction.Ext[0] == 0xED)
+        {
             _state.Instruction.ExtIndex = 0;
+        }
+        
         _state.Instruction.Ext[_state.Instruction.ExtIndex] = 0xCB;
         _state.Instruction.ExtIndex++;
         break;
     default:
+        assert(_state.Instruction.Info == nullptr);
         _state.Instruction.Info = LookupInstruction();
+        if (_state.Instruction.ExtIndex > 0)
+        {
+            _state.Instruction.MCycleIndex = _state.Instruction.ExtIndex - 1;
+        }
         break;
     }
 }
@@ -277,6 +281,13 @@ Async_Function(ExecuteInstructionPart)
         AssertMCycle();
         _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(&_state.Instruction.Async);
         Async_Yield();
+
+        _state.Clock.TL++;
+
+        _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(&_state.Instruction.Async);
+        Async_Yield();
+
+        NextTCycle();
     }
 }
 Async_End
@@ -318,8 +329,11 @@ Async_Function(Execute)
     }
     else if (_state.Instruction.ExtIndex == 2)
     {
+        assert(_state.Instruction.Info == nullptr);
+
         // assign a temp instruction to read the reversed d - opcode
         _state.Instruction.Info = &ExtendedReverseOpcodeFetch;
+        _state.Instruction.MCycleIndex = 1;
     }
     else
     {
@@ -331,6 +345,7 @@ Async_Function(Execute)
 
     if (_state.Instruction.Info != nullptr)
     {
+        NextMCycle();
         while (_state.Instruction.MCycleIndex <= MaxMCycleIndex &&
             _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].clocks != 0)
         {

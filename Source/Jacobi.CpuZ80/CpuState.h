@@ -20,15 +20,20 @@ extern "C" {
 
     typedef struct
     {
+        // current M-Cycle index into the InstructionInfo's Cycles array.
         uint8_t MCycleIndex;
+        // current instruction being executed. Can be null during OF.
         const InstructionInfo* Info;
+        // captured address where instruction starts
         uint16_t InstructionAddress;
 
-        uint16_t Address;
-        uint8_t Data;
-
+        // next index into Ext for storing exension opcodes (CB,DD,ED,FD)
         uint8_t ExtIndex;
         uint8_t Ext[2];
+
+        // running vars of instruction
+        uint16_t Address;
+        uint8_t Data;
 
         int8_t d;
         int8_t e;

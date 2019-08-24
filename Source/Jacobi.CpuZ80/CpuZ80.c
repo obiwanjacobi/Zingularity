@@ -9,25 +9,25 @@ void SetRegisters8(Registers8 reg, uint8_t value)
     switch (reg)
     {
     case Reg8_B:
-        _state.Registers._BC.B = value;
+        _state.Registers.B = value;
         break;
     case Reg8_C:
-        _state.Registers._BC.C = value;
+        _state.Registers.C = value;
         break;
     case Reg8_D:
-        _state.Registers._DE.D = value;
+        _state.Registers.D = value;
         break;
     case Reg8_E:
-        _state.Registers._DE.E = value;
+        _state.Registers.E = value;
         break;
     case Reg8_H:
-        _state.Registers._HL.H = value;
+        _state.Registers.H = value;
         break;
     case Reg8_L:
-        _state.Registers._HL.L = value;
+        _state.Registers.L = value;
         break;
     case Reg8_A:
-        _state.Registers._AF.A = value;
+        _state.Registers.A = value;
         break;
 
     case Reg8_HL:
@@ -41,19 +41,19 @@ uint8_t GetRegisters8(Registers8 reg)
     switch (reg)
     {
     case Reg8_B:
-        return _state.Registers._BC.B;
+        return _state.Registers.B;
     case Reg8_C:
-        return _state.Registers._BC.C;
+        return _state.Registers.C;
     case Reg8_D:
-        return _state.Registers._DE.D;
+        return _state.Registers.D;
     case Reg8_E:
-        return _state.Registers._DE.E;
+        return _state.Registers.E;
     case Reg8_H:
-        return _state.Registers._HL.H;
+        return _state.Registers.H;
     case Reg8_L:
-        return _state.Registers._HL.L;
+        return _state.Registers.L;
     case Reg8_A:
-        return _state.Registers._AF.A;
+        return _state.Registers.A;
 
     case Reg8_HL:
     default:
@@ -135,8 +135,8 @@ void setAddressPC()
 void setAddressIR()
 {
     setAddressBus(_state.Registers.IR);
-    if (_state.Registers._IR.R < 127)
-        _state.Registers._IR.R++;
+    if (_state.Registers.R < 127)
+        _state.Registers.R++;
     else
-        _state.Registers._IR.R &= 0x7F; //??
+        _state.Registers.R &= 0x7F; //??
 }

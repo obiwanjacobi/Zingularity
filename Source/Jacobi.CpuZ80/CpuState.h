@@ -21,7 +21,7 @@ extern "C" {
     typedef struct
     {
         uint8_t MCycleIndex;
-        const InstructionInfo* Instruction;
+        const InstructionInfo* Info;
         uint16_t InstructionAddress;
 
         uint16_t Address;

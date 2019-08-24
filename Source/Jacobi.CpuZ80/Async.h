@@ -7,17 +7,20 @@
 extern "C" {
 #endif
 
+/* 
+    NOTE: For MS Compiler: Do not use the 'edit and continue' Debug Format option. 
+
+ */
+
 //
 // Async
 //
 
 typedef struct
 {
-    uint16_t State;// = 0;
+    uint16_t State;
 
 } AsyncThis;
-
-extern const uint8_t AsyncThis_size;
 
 /**
  * Usage example:
@@ -50,7 +53,7 @@ extern const uint8_t AsyncThis_size;
  */
 #define Async_Scope()           \
     {                           \
-        bool_t _yield_ = false;   \
+        bool_t _yield_ = false; \
         switch (async->State)   \
         {                       \
         case 0:
@@ -61,22 +64,22 @@ extern const uint8_t AsyncThis_size;
  */
 #define Async_End           \
     }                       \
-    Async_Return()          \
+    Async_Return(true)      \
 }
 
 /** MACRO: Exits the async function immediately.
- *  \return Returns true from the async function.
+ *  Next run will start at beginning.
+ *  \return Returns 'b' (true|false) from the async function.
  */
-#define Async_Return()      \
+#define Async_Return(b)     \
     async->State = 0;       \
-    return true;
-
+    return b;
 
 /** Asynchronously waits for the expression to become true.
  *  The expression is evaluated before the async function is exited (false).
  */
-#define Async_WaitUntil(id, expression)     \
-    async->State = id; case id:             \
+#define Async_WaitUntil(expression)         \
+    async->State = __LINE__; case __LINE__: \
     if (!(expression)) {                    \
         return false;                       \
     }
@@ -85,9 +88,9 @@ extern const uint8_t AsyncThis_size;
  *  The async function is yielded (exited) first and on reentry is the expression evaluated.
  *  \return Returns false from the async function.
  */
-#define Async_YieldUntil(id, expression)    \
+#define Async_YieldUntil(expression)        \
     _yield_ = true;                         \
-    async->State = id; case id:             \
+    async->State = __LINE__; case __LINE__: \
     if (_yield_ || !(expression)) {         \
         return false;                       \
     }
@@ -96,11 +99,11 @@ extern const uint8_t AsyncThis_size;
  *  The async function is yielded (exited) first and on reentry is the procedure resumed.
  *  \return Returns false from the async function.
  */
-#define Async_Yield(id)             \
-    _yield_ = true;                 \
-    async->State = id; case id:     \
-    if (_yield_) {                  \
-        return false;               \
+#define Async_Yield()                       \
+    _yield_ = true;                         \
+    async->State = __LINE__; case __LINE__: \
+    if (_yield_) {                          \
+        return false;                       \
     }
 
 

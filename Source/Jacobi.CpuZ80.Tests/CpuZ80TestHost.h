@@ -10,28 +10,33 @@ class CpuZ80TestHost
 {
 public:
     CpuZ80TestHost()
-//        : Address(0), Data(0), BusAck(false), BusReq(false), Halt(false), Rd(false), Wr(false), MemReq(false), IoReq(false)
-//            Nmi(false), Int(false), Rst(false), Wait(false), Refresh(false), M1(false)
+        : Address(0), Data(0), BusAck(false), BusReq(false), Halt(false), Rd(false), Wr(false), MemReq(false), 
+            IoReq(false), Nmi(false), Int(false), Rst(false), Wait(false), Refresh(false), M1(false)
     { SetCpuZ80Host(this); }
-    virtual void setAddressBus(uint16_t address) { Address = address; }
-    virtual void setDataBus(uint8_t data) { Data = data; }
-    virtual void setBusAck(bool active) { BusAck = active; }
-    virtual void setHalt(bool active) { Halt = active; }
-    virtual void setRd(bool active) { Rd = active; }
-    virtual void setWr(bool active) { Wr = active; }
-    virtual void setMemReq(bool active) { MemReq = active; }
-    virtual void setIOReq(bool active) { IoReq = active; }
-    virtual void setRefresh(bool active) { Refresh = active; }
-    virtual void setM1(bool active) { M1 = active; }
+
+    // outputs
+
+    void setAddressBus(uint16_t address) { Address = address; }
+    void setDataBus(uint8_t data) { Data = data; }
+    void setBusAck(bool active) { BusAck = active; }
+    void setHalt(bool active) { Halt = active; }
+    void setRd(bool active) { Rd = active; }
+    void setWr(bool active) { Wr = active; }
+    void setMemReq(bool active) { MemReq = active; }
+    void setIOReq(bool active) { IoReq = active; }
+    void setRefresh(bool active) { Refresh = active; }
+    void setM1(bool active) { M1 = active; }
 
     // inputs
 
-    virtual uint8_t getDataBus() { return Data; }
-    virtual bool getReset() { return Rst; }
-    virtual bool getBusReq() { return BusReq; }
-    virtual bool getNmi() { return Nmi; }
-    virtual bool getInt() { return Int; }
-    virtual bool getWait() { return Wait; }
+    uint8_t getDataBus() { return Data; }
+    bool getReset() { return Rst; }
+    bool getBusReq() { return BusReq; }
+    bool getNmi() { return Nmi; }
+    bool getInt() { return Int; }
+    bool getWait() { return Wait; }
+
+    // state
 
     uint16_t Address;
     uint8_t Data;

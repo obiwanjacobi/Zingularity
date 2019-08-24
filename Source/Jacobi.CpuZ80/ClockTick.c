@@ -9,17 +9,24 @@
 
 extern CpuState _state;
 
-AsyncThis fetchAsync;
-AsyncThis instructionAsync;
-AsyncThis executeAsync;
-AsyncThis interruptAsync;
-
-void InitClock()
+void ResetClock()
 {
+    assert(_state.Instruction.MCycleIndex == 0);
+
     _state.Clock.M = 1;
     _state.Clock.T = 1;
-    _state.Clock.Level = Level_PosEdge;
     _state.Clock.TL = 1;
+}
+
+void NextTCycle()
+{
+    _state.Clock.T++;
+    _state.Clock.TL++;
+
+    if (_state.Instruction.Info != nullptr)
+    {
+        assert(_state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].clocks <= _state.Clock.T);
+    }
 }
 
 void NextMCycle()
@@ -29,9 +36,10 @@ void NextMCycle()
     _state.Clock.T = 1;
     _state.Clock.TL = 1;
 
-    // incremented past instruction m-cycles.
-    assert(_state.Instruction.Instruction->Count < _state.Instruction.MCycleIndex);
+    // Don't incremented past instruction m-cycles.
+    AssertMCycle();
 }
+
 
 void AdvanceClock()
 {
@@ -44,12 +52,16 @@ void AdvanceClock()
     {
         _state.Clock.Level = Level_PosEdge;
 
-        if (_state.Instruction.Instruction != nullptr)
+        if (_state.Instruction.Info != nullptr)
         {
-            assert(_state.Instruction.Instruction->Count < _state.Instruction.MCycleIndex);
-            if (_state.Clock.T == _state.Instruction.Instruction->Cycles[_state.Instruction.MCycleIndex].clocks)
+            AssertMCycle();
+            if (_state.Clock.T == _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].clocks)
             {
-                NextMCycle();
+                if (_state.Instruction.MCycleIndex < MaxMCycleIndex &&
+                    _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex + 1].clocks > 0)
+                {
+                    NextMCycle();
+                }
             }
             else
             {
@@ -61,7 +73,7 @@ void AdvanceClock()
         {
             if (_state.Clock.T == 4)
             {
-                NextMCycle();
+                ResetClock();
             }
             else
             {
@@ -166,46 +178,56 @@ void Decode()
         _state.Instruction.ExtIndex++;
         break;
     default:
-        _state.Instruction.Instruction = LookupInstruction();
+        _state.Instruction.Info = LookupInstruction();
         break;
     }
 }
 
 Async_Function(FetchDecode)
 {
-    AssertClock(M1, T1, Level_PosEdge);
+    AssertClock(M1, T1, Level_PosEdge, 1);
     setRefresh(Inactive);
     setAddressPC();
     setM1(Active);
-    Async_Yield(1);
+    Async_Yield();
 
-    AssertClock(M1, T1, Level_NegEdge);
+    _state.Clock.TL++;
+
+    AssertClock(M1, T1, Level_NegEdge, 2);
     setMemReq(Active);
     setRd(Active);
-    Async_Yield(2);
+    Async_Yield();
+    
+    NextTCycle();
 
-    AssertClock(M1, T2, Level_PosEdge);
+    AssertClock(M1, T2, Level_PosEdge, 3);
     // time for some book keeping
     if (_state.Instruction.InstructionAddress == 0)
         _state.Instruction.InstructionAddress = _state.Registers.PC - 1;
-    Async_Yield(3);
+    Async_Yield();
 
-    AssertClock(M1, T2, Level_NegEdge);
-    Async_Yield(4);
+    _state.Clock.TL++;
 
-    AssertClock(M1, T3, Level_PosEdge);
+    AssertClock(M1, T2, Level_NegEdge, 4);
+    Async_Yield();
+
+    NextTCycle();
+
+    AssertClock(M1, T3, Level_PosEdge, 5);
     _state.Instruction.Data = getDataBus();
     setRd(Inactive);
     setMemReq(Inactive);
     setM1(Inactive);
     setAddressIR();
     setRefresh(Active);
-    Async_Yield(5);
+    Async_Yield();
 
-    AssertClock(M1, T3, Level_NegEdge);
+    _state.Clock.TL++;
+
+    AssertClock(M1, T3, Level_NegEdge, 6);
     setMemReq(Active);
     Decode();
-    Async_Yield(6);
+    Async_Yield();
 }
 Async_End
 
@@ -215,8 +237,8 @@ void OnClock_InstructionLoad(AsyncThis* async)
     {
     case 6:
         OnClock_OD(async);
-        _state.Instruction.Instruction = LookupInstruction();
-        assert(_state.Instruction.Instruction != nullptr);
+        _state.Instruction.Info = LookupInstruction();
+        assert(_state.Instruction.Info != nullptr);
         break;
     default:
         OnClock_OD(async);
@@ -249,72 +271,85 @@ void ClearInstruction()
 
 Async_Function(ExecuteInstructionPart)
 {
-    Async_Reset(&_state.Instruction.Async);
-
-    assert(_state.Instruction.Instruction->Count < _state.Instruction.MCycleIndex);
-    while (_state.Clock.T <= _state.Instruction.Instruction->Cycles[_state.Instruction.MCycleIndex].clocks)
+    AssertMCycle();
+    while (_state.Clock.T <= _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].clocks)
     {
-        assert(_state.Instruction.Instruction->Count < _state.Instruction.MCycleIndex);
-        _state.Instruction.Instruction->Cycles[_state.Instruction.MCycleIndex].OnClock(&_state.Instruction.Async);
-        Async_Yield(1);
+        AssertMCycle();
+        _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(&_state.Instruction.Async);
+        Async_Yield();
     }
 }
 Async_End
 
 Async_Function(Execute)
 {
-    Async_Reset(&_state.Instruction.Async);
+    //Async_Reset(&_state.Instruction.Async);
+    assert(_state.Instruction.Async.State == 0);
 
-    AssertClock(M1, T4, Level_PosEdge);
-    if (_state.Instruction.Instruction != nullptr)
+    NextTCycle();
+
+    AssertClock(M1, T4, Level_PosEdge, 7);
+    if (_state.Instruction.Info != nullptr)
     {
-        _state.Instruction.Instruction->Cycles[1].OnClock(&_state.Instruction.Async);
+        AssertMCycle();
+        _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(&_state.Instruction.Async);
     }
     else
     {
         assert(_state.Instruction.ExtIndex > 0);
     }
-    Async_Yield(1);
+    Async_Yield();
 
-    AssertClock(M1, T4, Level_NegEdge);
-    if (_state.Instruction.Instruction != nullptr)
+    _state.Clock.TL++;
+
+    AssertClock(M1, T4, Level_NegEdge, 8);
+    setMemReq(Inactive);
+    if (_state.Instruction.Info != nullptr)
     {
-        _state.Instruction.Instruction->Cycles[1].OnClock(&_state.Instruction.Async);
+        AssertMCycle();
+        _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(&_state.Instruction.Async);
+
+        // detect end of instruction
+        if (_state.Clock.M == _state.Instruction.Info->Count)
+        {
+            ClearInstruction();
+            ResetClock();
+        }
     }
     else if (_state.Instruction.ExtIndex == 2)
     {
         // assign a temp instruction to read the reversed d - opcode
-        _state.Instruction.Instruction = &ExtendedReverseOpcodeFetch;
-    }
-    setMemReq(Inactive);
-    Async_Yield(2);
-
-    if (_state.Instruction.Instruction != nullptr)
-    {
-        while (_state.Instruction.MCycleIndex < 6 &&
-            _state.Instruction.Instruction->Cycles[_state.Instruction.MCycleIndex].clocks != 0)
-        {
-            Async_WaitUntil(3, ExecuteInstructionPart(&instructionAsync));
-        }
+        _state.Instruction.Info = &ExtendedReverseOpcodeFetch;
     }
     else
     {
         // more M1 cycles
-        InitClock();
+        ResetClock();
+        Async_Return(true);
+    }
+    Async_Yield();
+
+    if (_state.Instruction.Info != nullptr)
+    {
+        while (_state.Instruction.MCycleIndex <= MaxMCycleIndex &&
+            _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].clocks != 0)
+        {
+            Async_WaitUntil(ExecuteInstructionPart(&_state.Instruction.Async));
+            NextMCycle();
+        }
     }
 }
 Async_End
 
-Async_Function(Interrupt)
-{
-
-}
-Async_End
+AsyncThis fetchDecodeAsync;
+AsyncThis executeAsync;
 
 Async_Function(ClockTick)
 {
-    Async_WaitUntil(1, FetchDecode(&fetchAsync));
-    Async_WaitUntil(2, Execute(&executeAsync));
-    Async_WaitUntil(3, Interrupt(&interruptAsync));
+    Async_Reset(&fetchDecodeAsync);
+    Async_WaitUntil(FetchDecode(&fetchDecodeAsync));
+
+    Async_Reset(&executeAsync);
+    Async_WaitUntil(Execute(&executeAsync));
 }
 Async_End

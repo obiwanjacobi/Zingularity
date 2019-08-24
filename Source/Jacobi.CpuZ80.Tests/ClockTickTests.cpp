@@ -15,15 +15,19 @@ namespace JacobiCpuZ80Tests
         {
             CpuZ80TestHost host;
 
-            InitClock();
+            _state.Clock.Level = Level_PosEdge;
+            ResetClock();
 
             Async_Reset(&asyncClockTick);
+            // executes a NOP
             while (!ClockTick(&asyncClockTick))
             {
-                AdvanceClock();
+                ToggleClockLevel();
             }
+
+            // should be reset for next instruction
             Assert::AreEqual(1, (int)_state.Clock.M);
-            Assert::AreEqual(5, (int)_state.Clock.T);
+            Assert::AreEqual(1, (int)_state.Clock.T);
         }
     };
 }

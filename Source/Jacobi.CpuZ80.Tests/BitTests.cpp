@@ -23,21 +23,24 @@ namespace JacobiCpuZ80Tests
             Memory memory(&host);
             memory.Assign(bytes, 4);
 
-            host.Address = 0;
-            asyncClockTick.State = 0;
-            InitClock();
+            Async_Reset(&asyncClockTick);
+
+            _state.Clock.Level = Level_PosEdge;
+            ResetClock();
+
             bool runProgram = memory.ClockTick();
 
             while (runProgram)
             {
-                if (!ClockTick(&asyncClockTick))
-                    AdvanceClock();
+                ClockTick(&asyncClockTick);
+                ToggleClockLevel();
 
                 runProgram = memory.ClockTick();
             }
 
+            // should be reset for next instruction
             Assert::AreEqual(1, (int)_state.Clock.M);
-            Assert::AreEqual(5, (int)_state.Clock.T);
+            Assert::AreEqual(1, (int)_state.Clock.T);
         }
     };
 }

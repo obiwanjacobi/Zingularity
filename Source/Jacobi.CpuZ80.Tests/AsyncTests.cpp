@@ -9,7 +9,7 @@ static bool NestedDone = false;
 Async_Function(AsyncNested)
 {
     Logger::WriteMessage("AsyncNested");
-    Async_YieldUntil(1, true);
+    Async_YieldUntil(true);
     Logger::WriteMessage("AsyncNested - done");
     NestedDone = true;
 }
@@ -20,7 +20,7 @@ AsyncThis asyncNested;
 Async_Function(AsyncTest)
 {
     Logger::WriteMessage("AsyncTest");
-    Async_WaitUntil(1, AsyncNested(&asyncNested));
+    Async_WaitUntil(AsyncNested(&asyncNested));
     Logger::WriteMessage("AsyncTest - done");
 }
 Async_End
@@ -30,27 +30,27 @@ static int8_t Counter;
 Async_Function(DynAsyncTest)
 {
     Logger::WriteMessage("DynAsyncTest1 ");
-    Async_Yield(1);
+    Async_Yield();
     Logger::WriteMessage("=> ");
 
     if (Counter == 1)
     {
         Logger::WriteMessage("DynAsyncTest2 ");
-        Async_Yield(2);
+        Async_Yield();
         Logger::WriteMessage("=> ");
         Logger::WriteMessage("DynAsyncTest2 ");
-        Async_Yield(5);
+        Async_Yield();
         Logger::WriteMessage("=> ");
     }
 
     if (Counter == 2)
     {
         Logger::WriteMessage("DynAsyncTest3 ");
-        Async_Yield(3);
+        Async_Yield();
         Logger::WriteMessage("=> ");
     }
 
-    Async_Yield(4);
+    Async_Yield();
     Logger::WriteMessage("DynAsyncTest - done");
 }
 Async_End

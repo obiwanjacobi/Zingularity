@@ -5,7 +5,7 @@
 extern CpuState _state;
 
 Memory::Memory(CpuZ80TestHost* host)
-    : _host(host), _length(0), _bytes(nullptr)
+    : _host(host), _bytes(nullptr), _length(0)
 { }
 
 bool Memory::ClockTick()

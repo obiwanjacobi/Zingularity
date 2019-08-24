@@ -7,15 +7,22 @@
 extern "C" {
 #endif
 
-#define AssertClock(m, t, l) \
+#define MaxMCycleIndex  5
+
+#define AssertClock(m, t, l, tl) \
     assert(_state.Clock.M == (uint8_t)m); \
     assert(_state.Clock.T == (uint8_t)t); \
-    assert(_state.Clock.Level == l);
+    assert(_state.Clock.Level == l);      \
+    assert(_state.Clock.TL == tl);
 
-Async_Declaration(ClockTick);
+#define AssertMCycle() \
+    assert(_state.Clock.M <= MaxMCycleIndex); \
+    assert(_state.Instruction.Info->Count > _state.Instruction.MCycleIndex);
 
-void InitClock();
-void AdvanceClock();
+bool_t ClockTick(AsyncThis *async);
+
+void ResetClock();
+// void AdvanceClock();
 
 
 #ifdef __cplusplus

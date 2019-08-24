@@ -30,19 +30,14 @@ void OnClock()
     
     _inClock = 1;
 
-    if (_state.Clock.Level == Level_PosEdge)
-    {
-        _state.Clock.Level = Level_NegEdge;
-    }
-    
     // => clock PosEdge
-    AdvanceClock();
+    ClockTick(&asyncClockTick, Level_PosEdge);
     
     // wait for the high clock pulse to end
     while (CLK_Read());
     
     // => clock NegEdge
-    AdvanceClock();
+    ClockTick(&asyncClockTick, Level_NegEdge);
     
     _inClock = 0;
 }
@@ -55,7 +50,8 @@ int main(void)
     
     BusCtrl_Write(0);
     
-    InitClock();
+    Async_Reset(&asyncClockTick);
+    ResetClock();
     
     CyGlobalIntEnable; /* Enable global interrupts. */
 

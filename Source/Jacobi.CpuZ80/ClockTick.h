@@ -22,7 +22,6 @@ extern "C" {
 bool_t ClockTick(AsyncThis *async);
 
 void ResetClock();
-// void AdvanceClock();
 
 
 #ifdef __cplusplus

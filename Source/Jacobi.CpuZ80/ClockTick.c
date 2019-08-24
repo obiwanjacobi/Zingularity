@@ -30,53 +30,6 @@ void NextMCycle()
     _state.Clock.M++;
     _state.Clock.T = 1;
     _state.Clock.TL = 1;
-
-    // Don't incremented past instruction m-cycles.
-    AssertMCycle();
-}
-
-
-void AdvanceClock()
-{
-    if (_state.Clock.Level == Level_PosEdge)
-    {
-        _state.Clock.Level = Level_NegEdge;
-        _state.Clock.TL++;
-    }
-    else
-    {
-        _state.Clock.Level = Level_PosEdge;
-
-        if (_state.Instruction.Info != nullptr)
-        {
-            AssertMCycle();
-            if (_state.Clock.T == _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].clocks)
-            {
-                if (_state.Instruction.MCycleIndex < MaxMCycleIndex &&
-                    _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex + 1].clocks > 0)
-                {
-                    NextMCycle();
-                }
-            }
-            else
-            {
-                _state.Clock.T++;
-                _state.Clock.TL++;
-            }
-        }
-        else
-        {
-            if (_state.Clock.T == 4)
-            {
-                ResetClock();
-            }
-            else
-            {
-                _state.Clock.T++;
-                _state.Clock.TL++;
-            }
-        }
-    }
 }
 
 const InstructionInfo* LookupInstruction()
@@ -294,7 +247,6 @@ Async_End
 
 Async_Function(Execute)
 {
-    //Async_Reset(&_state.Instruction.Async);
     assert(_state.Instruction.Async.State == 0);
 
     NextTCycle();

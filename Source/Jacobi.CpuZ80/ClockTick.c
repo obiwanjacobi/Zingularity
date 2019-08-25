@@ -130,7 +130,11 @@ Async_Function(Execute)
         AssertMCycle();
         _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(&_state.Instruction.Async);
 
-        ClearInstructionIfDone();
+        if (SetIfInstructionIsDone())
+        {
+            ClearInstructionIfDone();
+            Async_Return();
+        }
     }
     else if (_state.Instruction.ExtIndex == 2)
     {

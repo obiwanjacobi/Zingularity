@@ -10,7 +10,9 @@ extern "C" {
 
     const InstructionInfo* LookupInstruction();
     void Decode();
+
     void ClearInstructionIfDone();
+    bool_t SetIfInstructionIsDone();
     bool_t InstructionIsDone();
 
     const InstructionInfo ExtendedReverseOpcodeFetch;

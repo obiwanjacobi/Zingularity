@@ -159,11 +159,20 @@ bool_t InstructionIsDone()
     return _state.Instruction.IsCompleted;
 }
 
+bool_t SetIfInstructionIsDone()
+{
+    _state.Instruction.IsCompleted = (
+        _state.Instruction.Info != nullptr &&
+        _state.Instruction.MCycleIndex == _state.Instruction.Info->Count - 1 &&
+        _state.Clock.T == _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].clocks &&
+        _state.Clock.Level == Level_NegEdge);
+
+    return InstructionIsDone();
+}
+
 void ClearInstructionIfDone()
 {
     // detect end of instruction
-    /*if (_state.Instruction.Info != nullptr &&
-        _state.Clock.M == _state.Instruction.Info->Count)*/
     if (InstructionIsDone())
     {
         ClearInstruction();

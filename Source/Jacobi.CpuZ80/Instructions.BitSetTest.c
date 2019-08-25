@@ -1,4 +1,9 @@
+#include "CpuState.h"
+#include "ClockTick.h"
 #include "FunctionsZ80.h"
+
+extern CpuState _state;
+
 
 // BIT 0, A   -  BIT0_A_CB2  -  CB, 47
 void OnClock_BITb_r_CB2_OF(AsyncThis* async) {}
@@ -28,9 +33,30 @@ void OnClock_SETb__ex_d__ex4_MW(AsyncThis* async) {}
 
 // SET 0, (IX+d), A   -  SET0__IX_d__A_DD4  -  DD, CB, d, C7
 void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async) {}
-void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async) {}
-void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async) {}
-void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async) {}
+void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async)
+{
+    switch (_state.Clock.TL)
+    {
+        case 9:
+            // Not M4 due to double extension opcodes; both read as M1
+            AssertClock(M3, T5, Level_PosEdge, 9);
+            _state.Instruction.Address = GetRegisterEx16() + _state.Instruction.d;
+            break;
+    }
+}
+void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async) 
+{
+}
+void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async) 
+{
+    switch (_state.Clock.TL)
+    {
+        case 6:
+            _state.Instruction.IsCompleted = true;
+        default:
+            break;
+    }
+}
 
 // RES 0, A   -  RES0_A_CB2  -  CB, 87
 void OnClock_RESb_r_CB2_OF(AsyncThis* async) {}

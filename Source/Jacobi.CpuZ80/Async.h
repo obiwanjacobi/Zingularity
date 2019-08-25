@@ -64,16 +64,16 @@ typedef struct
  */
 #define Async_End           \
     }                       \
-    Async_Return(true)      \
+    Async_Return()          \
 }
 
 /** MACRO: Exits the async function immediately.
  *  Next run will start at beginning.
- *  \return Returns 'b' (true|false) from the async function.
+ *  \return Returns true from the async function.
  */
-#define Async_Return(b)     \
+#define Async_Return()      \
     async->State = 0;       \
-    return b;
+    return true;
 
 /** Asynchronously waits for the expression to become true.
  *  The expression is evaluated before the async function is exited (false).

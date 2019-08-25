@@ -133,6 +133,18 @@ typedef enum
     Rst38
 } RstAddress;
 
+void SetRegister8(Registers8 reg, uint8_t value);
+uint8_t GetRegister8(Registers8 reg);
+
+void SetRegister16(Registers16 reg, uint16_t value);
+uint16_t GetRegister16(Registers16 reg);
+
+void SetRegisterSP16(RegistersSP16 reg, uint16_t value);
+uint16_t GetRegisterSP16(RegistersSP16 reg);
+
+// based on extension opcodes
+void SetRegisterEx16(uint16_t reg);
+uint16_t GetRegisterEx16();
 
 void setAddressPC();
 void setAddressIR();

@@ -18,7 +18,7 @@ namespace JacobiCpuZ80Tests
 
         TEST_METHOD(BitSet0_IX0_A)
         {
-            uint8_t bytes[] = { 0xDD, 0xCB, 0, 0b11000000 };
+            uint8_t bytes[] = { 0xDD, 0xCB, 0x11, 0b11000000 };
             CpuZ80TestHost host;
             Memory memory(&host);
             memory.Assign(bytes, 4);

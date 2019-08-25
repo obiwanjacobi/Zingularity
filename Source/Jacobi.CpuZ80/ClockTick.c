@@ -1,13 +1,12 @@
 #include "ClockTick.h"
+#include "ClockInstruction.h"
 #include "CpuState.h"
 #include "CpuZ80.h"
 #include "CpuZ80Host.h"
-#include "InstructionsZ80.h"
-#include "FunctionsZ80.h"
-#include <assert.h>
-#include <string.h>
+
 
 extern CpuState _state;
+
 
 void ResetClock()
 {
@@ -32,113 +31,6 @@ void NextMCycle()
     _state.Clock.TL = 1;
 }
 
-const InstructionInfo* LookupInstruction()
-{
-    const InstructionTableEntry* table = nullptr;
-    uint16_t tableLength = 0;
-
-    if (_state.Instruction.ExtIndex == 0)
-    {
-        table = InstructionTable;
-        tableLength = InstructionTable_length;
-    }
-    else
-    {
-        switch (_state.Instruction.Ext[0])
-        {
-        case 0xCB:
-            table = InstructionTableCB;
-            tableLength = InstructionTableCB_length;
-            break;
-        case 0xDD:
-            if (_state.Instruction.ExtIndex == 2 &&
-                _state.Instruction.Ext[1] == 0xCB)
-            {
-                table = InstructionTableDDCB;
-                tableLength = InstructionTableDDCB_length;
-            }
-            else
-            {
-                table = InstructionTableDD;
-                tableLength = InstructionTableDD_length;
-            }
-            break;
-        case 0xFD:
-            if (_state.Instruction.ExtIndex == 2 &&
-                _state.Instruction.Ext[1] == 0xCB)
-            {
-                table = InstructionTableFDCB;
-                tableLength = InstructionTableFDCB_length;
-            }
-            else
-            {
-                table = InstructionTableFD;
-                tableLength = InstructionTableFD_length;
-            }
-            break;
-        case 0xED:
-            table = InstructionTableED;
-            tableLength = InstructionTableED_length;
-            break;
-        default:
-            return nullptr;
-        }
-    }
-
-    // easy optimization
-    if (tableLength == 256)
-    {
-        return table[_state.Instruction.Data].Instruction;
-    }
-    else
-    {
-        // We could switch algorithms based on the value because tables are pretty full.
-        // We could also switch algortihms based on the table -not all tables have the same length.
-        // We could optimize the binary search by calculating the position
-        //  to start searching and the step size based on the data value
-        //  assuming an almost full table:
-        //      start: data-(256-tableLength)
-        //      first step: 256-tableLength / 2
-        //  continue searching in a binary fashion.
-        for (uint8_t i = 0; i < tableLength; i++)
-        {
-            if (table[i].OpCode == _state.Instruction.Data)
-                return table[i].Instruction;
-        }
-    }
-    return nullptr;
-}
-
-void Decode()
-{
-    switch (_state.Instruction.Data)
-    {
-    case 0xDD:
-    case 0xED:
-    case 0xFD:
-        _state.Instruction.Ext[0] = _state.Instruction.Data;
-        _state.Instruction.ExtIndex = 1;
-        break;
-    case 0xCB:
-        // CB replaces ED
-        if (_state.Instruction.ExtIndex == 1 && _state.Instruction.Ext[0] == 0xED)
-        {
-            _state.Instruction.ExtIndex = 0;
-        }
-        
-        _state.Instruction.Ext[_state.Instruction.ExtIndex] = 0xCB;
-        _state.Instruction.ExtIndex++;
-        break;
-    default:
-        assert(_state.Instruction.Info == nullptr);
-        _state.Instruction.Info = LookupInstruction();
-        if (_state.Instruction.ExtIndex > 0)
-        {
-            _state.Instruction.MCycleIndex = _state.Instruction.ExtIndex - 1;
-        }
-        break;
-    }
-}
 
 Async_Function(FetchDecode)
 {
@@ -188,44 +80,6 @@ Async_Function(FetchDecode)
 }
 Async_End
 
-void OnClock_InstructionLoad(AsyncThis* async)
-{
-    switch (_state.Clock.TL)
-    {
-    case 6:
-        OnClock_OD(async);
-        _state.Instruction.Info = LookupInstruction();
-        assert(_state.Instruction.Info != nullptr);
-        break;
-    default:
-        OnClock_OD(async);
-        break;
-    }
-}
-
-const InstructionInfo ExtendedReverseOpcodeFetch =
-{
-    4, 0,
-    {
-        { 4, OnClock_OF },
-        { 4, OnClock_OF },
-        { 3, OnClock_ODd },
-        { 4, OnClock_InstructionLoad },
-        { 0, nullptr },
-        { 0, nullptr },
-    },
-    {
-        { Type_None, {0} },
-        { Type_None, {0} }
-    }
-};
-
-void ClearInstruction()
-{
-    memset(&_state.Instruction, 0, sizeof(InstructionState));
-}
-
-
 Async_Function(ExecuteInstructionPart)
 {
     AssertMCycle();
@@ -238,9 +92,13 @@ Async_Function(ExecuteInstructionPart)
         _state.Clock.TL++;
 
         _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(&_state.Instruction.Async);
-        Async_Yield();
 
         NextTCycle();
+        
+        if (!_state.Instruction.IsCompleted)
+        {
+            Async_Yield();
+        }
     }
 }
 Async_End
@@ -272,12 +130,7 @@ Async_Function(Execute)
         AssertMCycle();
         _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(&_state.Instruction.Async);
 
-        // detect end of instruction
-        if (_state.Clock.M == _state.Instruction.Info->Count)
-        {
-            ClearInstruction();
-            ResetClock();
-        }
+        ClearInstructionIfDone();
     }
     else if (_state.Instruction.ExtIndex == 2)
     {
@@ -291,22 +144,26 @@ Async_Function(Execute)
     {
         // more M1 cycles
         ResetClock();
-        Async_Return(true);
+        Async_Return();
     }
     Async_Yield();
 
     if (_state.Instruction.Info != nullptr)
     {
         NextMCycle();
+        AssertMCycle();
         while (_state.Instruction.MCycleIndex <= MaxMCycleIndex &&
             _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].clocks != 0)
         {
             Async_WaitUntil(ExecuteInstructionPart(&_state.Instruction.Async));
             NextMCycle();
         }
+
+        ClearInstructionIfDone();
     }
 }
 Async_End
+
 
 AsyncThis fetchDecodeAsync;
 AsyncThis executeAsync;

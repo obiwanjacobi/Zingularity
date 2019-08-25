@@ -10,6 +10,7 @@
     <ClInclude Include="InstructionsZ80.h" />
     <ClInclude Include="FunctionsZ80.h" />
     <ClInclude Include="Types.h" />
+    <ClInclude Include="ClockInstruction.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="InstructionsZ80.c" />
@@ -28,5 +29,6 @@
     <ClCompile Include="Instructions.RotateShift.c" />
     <ClCompile Include="ClockTick.c" />
     <ClCompile Include="CpuZ80.c" />
+    <ClCompile Include="ClockInstruction.c" />
   </ItemGroup>
 </Project>

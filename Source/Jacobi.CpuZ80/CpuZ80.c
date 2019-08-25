@@ -4,7 +4,7 @@
 
 extern CpuState _state;
 
-void SetRegisters8(Registers8 reg, uint8_t value)
+void SetRegister8(Registers8 reg, uint8_t value)
 {
     switch (reg)
     {
@@ -36,7 +36,7 @@ void SetRegisters8(Registers8 reg, uint8_t value)
     }
 }
 
-uint8_t GetRegisters8(Registers8 reg)
+uint8_t GetRegister8(Registers8 reg)
 {
     switch (reg)
     {
@@ -62,7 +62,7 @@ uint8_t GetRegisters8(Registers8 reg)
     return 0;
 }
 
-void SetRegisters16(Registers16 reg, uint16_t value)
+void SetRegister16(Registers16 reg, uint16_t value)
 {
     switch (reg)
     {
@@ -84,7 +84,27 @@ void SetRegisters16(Registers16 reg, uint16_t value)
     }
 }
 
-void SetRegistersSP16(RegistersSP16 reg, uint16_t value)
+uint16_t GetRegister16(Registers16 reg)
+{
+    switch (reg)
+    {
+    case Reg16_BC:
+        return _state.Registers.BC;
+    case Reg16_DE:
+        return _state.Registers.DE;
+    case Reg16_HL:
+        return _state.Registers.HL;
+    case Reg16_AF:
+        return _state.Registers.AF;
+
+    default:
+        assert(false);
+    }
+
+    return 0;
+}
+
+void SetRegisterSP16(RegistersSP16 reg, uint16_t value)
 {
     switch (reg)
     {
@@ -105,7 +125,8 @@ void SetRegistersSP16(RegistersSP16 reg, uint16_t value)
         assert(false);
     }
 }
-uint16_t GetRegistersSP16(RegistersSP16 reg)
+
+uint16_t GetRegisterSP16(RegistersSP16 reg)
 {
     switch (reg)
     {
@@ -123,6 +144,40 @@ uint16_t GetRegistersSP16(RegistersSP16 reg)
     }
 
     return 0;
+}
+
+void SetRegisterEx16(uint16_t reg)
+{
+    if (_state.Instruction.ExtIndex > 0)
+    {
+        switch (_state.Instruction.Ext[0])
+        {
+        case 0xDD:
+            _state.Registers.IX = reg;
+            return;
+        case 0xFD:
+            _state.Registers.IY = reg;
+            return;
+        }
+    }
+
+    _state.Registers.HL = reg;
+}
+
+uint16_t GetRegisterEx16()
+{
+    if (_state.Instruction.ExtIndex > 0)
+    {
+        switch (_state.Instruction.Ext[0])
+        {
+        case 0xDD:
+            return _state.Registers.IX;
+        case 0xFD:
+            return _state.Registers.IY;
+        }
+    }
+
+    return _state.Registers.HL;
 }
 
 void setAddressPC()

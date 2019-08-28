@@ -17,7 +17,7 @@ extern "C" {
 
 #define AssertMCycle() \
     assert(_state.Clock.M <= MaxMCycleIndex); \
-    assert(_state.Instruction.Info->Count > _state.Instruction.MCycleIndex);
+    assert(_state.Instruction.MCycleIndex <= MaxMCycleIndex);
 
 
 void ResetClock();

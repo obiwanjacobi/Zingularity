@@ -84,15 +84,7 @@ void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async)
 }
 void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async) 
 {
-    //OnClock_MW(async);
-    switch (_state.Clock.TL)
-    {
-        case 6:
-            OnClock_MW(async);
-        default:
-            OnClock_MW(async);
-            break;
-    }
+    OnClock_MW(async);
 }
 
 // RES 0, A   -  RES0_A_CB2  -  CB, 87

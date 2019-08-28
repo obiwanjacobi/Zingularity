@@ -32,8 +32,6 @@
 // <#= decl.Info.Mnemonic #>   -  <#= decl.Name #>  -  <#= String.Join(", ", decl.Info.Bytes) #>
 const InstructionInfo instructionInfo<#= decl.Name #> =
 {
-    <#= decl.Info.Cycles.Count #>,
-    <#= decl.Info.AltCycles.Count #>,
     {
 <#+
                 foreach(var mc in decl.MachineCycles)

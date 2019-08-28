@@ -134,7 +134,6 @@ void OnClock_InstructionLoad(AsyncThis* async)
 
 const InstructionInfo ExtendedReverseOpcodeFetch =
 {
-    4, 0,
     {
         { 4, OnClock_OF },
         { 4, OnClock_OF },

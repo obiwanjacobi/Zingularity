@@ -62,8 +62,6 @@ typedef struct
 
 typedef struct
 {
-    const int8_t Count;
-    const int8_t AltCount;
     // max 6 M-cycles per instruction
     const MachineCycleInfo Cycles[6];
 

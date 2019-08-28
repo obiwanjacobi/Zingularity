@@ -159,6 +159,7 @@
     <ClInclude Include="Async.h" />
     <ClInclude Include="ClockInstruction.h" />
     <ClInclude Include="ClockTick.h" />
+    <ClInclude Include="CpuAlu.h" />
     <ClInclude Include="CpuState.h" />
     <ClInclude Include="CpuZ80.h" />
     <ClInclude Include="CpuZ80Host.h" />

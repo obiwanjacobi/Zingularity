@@ -50,7 +50,7 @@ extern "C" {
 #define RegisterPairUnion(hl, h, l)  \
     union {                         \
         uint16_t hl;                \
-        struct { uint8_t h; uint8_t l; }; \
+        struct { uint8_t l; uint8_t h; }; \
     }
 
 #define RegisterPair(h, l) \

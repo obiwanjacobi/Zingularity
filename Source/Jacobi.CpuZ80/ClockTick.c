@@ -93,9 +93,11 @@ Async_Function(ExecuteInstructionPart)
 
         _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(&_state.Instruction.Async);
 
+        SetIfInstructionIsDone();
+
         NextTCycle();
         
-        if (!_state.Instruction.IsCompleted)
+        if (!InstructionIsDone())
         {
             Async_Yield();
         }

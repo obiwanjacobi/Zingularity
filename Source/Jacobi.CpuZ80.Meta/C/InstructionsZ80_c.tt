@@ -85,13 +85,14 @@ const InstructionInfo instructionInfo<#= decl.Name #> =
 
         private static string BuildInstructionVariable(InstructionMeta decl, int index)
         {
-            if (decl.Variables.Count > index)
+            var variable = decl.Variables
+                .Where(v => v.Type != InstructionVariableType.OpcodeByte && v.Type != InstructionVariableType.None)
+                .Skip(index)
+                .FirstOrDefault();
+
+            if (variable != null)
             {
-                var variable = decl.Variables[index];
-                if (variable.Type != InstructionVariableType.OpcodeByte && variable.Type != InstructionVariableType.None)
-                {
-                    return "{ Type_" + variable.Type.ToString() + ", {" + variable.Value + "} },";
-                }
+                return "{ Type_" + variable.Type.ToString() + ", {" + variable.Value + "} },";
             }
 
             return "{ Type_None, {0} },";

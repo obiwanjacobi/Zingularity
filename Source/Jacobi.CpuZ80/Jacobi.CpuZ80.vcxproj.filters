@@ -8,13 +8,11 @@
     <ClInclude Include="CpuZ80.h" />
     <ClInclude Include="ClockTick.h" />
     <ClInclude Include="InstructionsZ80.h" />
-    <ClInclude Include="FunctionsZ80.h" />
     <ClInclude Include="Types.h" />
     <ClInclude Include="ClockInstruction.h" />
+    <ClInclude Include="FunctionsZ80.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="InstructionsZ80.c" />
-    <ClCompile Include="InstructionTablesZ80.c" />
     <ClCompile Include="Instructions.Arithmetic8.c" />
     <ClCompile Include="Instructions.Arithmetic16.c" />
     <ClCompile Include="Instructions.BitSetTest.c" />
@@ -30,5 +28,7 @@
     <ClCompile Include="ClockTick.c" />
     <ClCompile Include="CpuZ80.c" />
     <ClCompile Include="ClockInstruction.c" />
+    <ClCompile Include="InstructionsZ80.c" />
+    <ClCompile Include="InstructionTablesZ80.c" />
   </ItemGroup>
 </Project>

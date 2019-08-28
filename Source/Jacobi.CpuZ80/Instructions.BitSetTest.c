@@ -1,8 +1,27 @@
 #include "CpuState.h"
 #include "ClockTick.h"
+#include "CpuZ80.h"
 #include "FunctionsZ80.h"
 
 extern CpuState _state;
+
+void SetBit(Bits8 bit, Registers8 reg, bool_t setOrClear)
+{
+    uint8_t mask = 1 << bit;
+    uint8_t data = GetRegister8(reg);
+
+    if (setOrClear)
+    {
+        data |= mask;
+    }
+    else
+    {
+        data &= ~mask;
+    }
+
+    SetRegister8(reg, data);
+}
+
 
 
 // BIT 0, A   -  BIT0_A_CB2  -  CB, 47
@@ -32,7 +51,7 @@ void OnClock_SETb__ex_d__ex4_MR(AsyncThis* async) {}
 void OnClock_SETb__ex_d__ex4_MW(AsyncThis* async) {}
 
 // SET 0, (IX+d), A   -  SET0__IX_d__A_DD4  -  DD, CB, d, C7
-void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async) {}
+void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async) { assert(false); }
 void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async)
 {
     switch (_state.Clock.TL)
@@ -46,14 +65,32 @@ void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async)
 }
 void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async) 
 {
+    switch (_state.Clock.TL)
+    {
+    case 7:
+        SetRegister8(_state.Instruction.Info->Decode.Variable2.Register8, _state.Instruction.Data);
+        SetBit(_state.Instruction.Info->Decode.Variable1.Bits8, 
+            _state.Instruction.Info->Decode.Variable2.Register8,
+            true);
+        break;
+    case 8:
+        // prepare write back
+        _state.Instruction.Data = GetRegister8(_state.Instruction.Info->Decode.Variable2.Register8);
+        break;
+    default:
+        OnClock_MR(async);
+        break;
+    }
 }
 void OnClock_SETb__ex_d__r_ex4_MW(AsyncThis* async) 
 {
     switch (_state.Clock.TL)
     {
         case 6:
+            OnClock_MW(async);
             _state.Instruction.IsCompleted = true;
         default:
+            OnClock_MW(async);
             break;
     }
 }

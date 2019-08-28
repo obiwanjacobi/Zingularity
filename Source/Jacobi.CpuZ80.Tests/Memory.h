@@ -15,6 +15,8 @@ public:
 
     bool ClockTick();
 
+    uint8_t operator[](int16_t index) { return _bytes[index]; }
+
 private:
     CpuZ80TestHost* _host;
     uint8_t* _bytes;

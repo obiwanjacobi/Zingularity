@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
-#include "CpuZ80TestHost.h"
+#include "TestCpuState.h"
 #include "../Jacobi.CpuZ80/ClockTick.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -13,17 +13,13 @@ namespace JacobiCpuZ80Tests
 
         TEST_METHOD(ClockTick_Fetch)
         {
-            CpuZ80TestHost host;
+            TestCpuState cpuState;
 
-            _state.Clock.Level = Level_PosEdge;
-            ResetClock();
-
-            Async_Reset(&asyncClockTick);
-            // executes a NOP
-            while (!ClockTickAsync(&asyncClockTick))
+            do 
             {
-                ToggleClockLevel();
-            }
+                cpuState.ToggleClockLevel();
+                // executes a NOP
+            } while (!ClockTickAsync(&cpuState.asyncThis));
 
             // should be reset for next instruction
             Assert::AreEqual(1, (int)_state.Clock.M);

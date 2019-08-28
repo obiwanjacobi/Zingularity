@@ -2,4 +2,3 @@
 #include "TestGlobals.h"
 
 CpuState _state;
-AsyncThis asyncClockTick;

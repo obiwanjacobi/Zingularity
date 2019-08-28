@@ -20,7 +20,9 @@ bool Memory::ClockTick()
             }
         }
         else
+        {
             return false;
+        }
     }
     
     return true;

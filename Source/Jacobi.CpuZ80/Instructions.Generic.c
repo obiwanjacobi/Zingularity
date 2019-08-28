@@ -74,7 +74,29 @@ void OnClock_MR(AsyncThis* async)
 
 void OnClock_MW(AsyncThis* async)
 {
-
+    switch (_state.Clock.TL)
+    {
+    case 1:
+        setRefresh(Inactive);
+        setAddressBus(_state.Instruction.Address);
+        break;
+    case 2:
+        setMemReq(Active);
+        setWr(Active);
+        setDataBus(_state.Instruction.Data);
+        break;
+    case 3:
+    case 4:
+    case 5:
+        break;
+    case 6:
+        setWr(Inactive);
+        setMemReq(Inactive);
+        break;
+    default:
+        assert(false);
+        return;
+    }
 }
 
 void OnClock_PCd(AsyncThis* async)

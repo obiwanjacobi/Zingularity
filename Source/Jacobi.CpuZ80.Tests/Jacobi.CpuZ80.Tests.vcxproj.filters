@@ -6,6 +6,7 @@
     <ClInclude Include="CpuZ80TestHost.h" />
     <ClInclude Include="Memory.h" />
     <ClInclude Include="TestGlobals.h" />
+    <ClInclude Include="TestCpuState.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp" />

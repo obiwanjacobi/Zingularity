@@ -1,14 +1,12 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
-#include "CpuZ80TestHost.h"
-#include "Memory.h"
+#include "TestCpuState.h"
 #include "../Jacobi.CpuZ80/ClockTick.h"
 #include "../Jacobi.CpuZ80/CpuState.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 extern CpuState _state;
-extern AsyncThis asyncClockTick;
 
 namespace JacobiCpuZ80Tests
 {
@@ -16,31 +14,29 @@ namespace JacobiCpuZ80Tests
     {
     public:
 
-        TEST_METHOD(BitSet0_IX0_A)
+        TEST_METHOD(BitSet4_IX04_A)
         {
-            uint8_t bytes[] = { 0xDD, 0xCB, 0x11, 0b11000000 };
-            CpuZ80TestHost host;
-            Memory memory(&host);
-            memory.Assign(bytes, 4);
+            uint8_t bytes[] = { 0x10, 0xDD, 0xCB, 0x02, 0b11000000 };
+            TestCpuState cpuState;
+            cpuState.memory.Assign(bytes, sizeof(bytes));
+            cpuState.AbortAddress = 0x0004;
 
-            Async_Reset(&asyncClockTick);
-
-            _state.Clock.Level = Level_PosEdge;
-            ResetClock();
-
-            bool runProgram = memory.ClockTick();
-
-            while (runProgram)
+            // IX + d => 2+2=4
+            _state.Registers.IX = 0x02;
+            _state.Registers.PC = 0x01;
+            
+            do
             {
-                ClockTickAsync(&asyncClockTick);
-                ToggleClockLevel();
-
-                runProgram = memory.ClockTick();
+                cpuState.ToggleClockLevel();
             }
+            while (cpuState.ClockTick());
+            
 
             // should be reset for next instruction
             Assert::AreEqual(1, (int)_state.Clock.M);
             Assert::AreEqual(1, (int)_state.Clock.T);
+
+            Assert::AreEqual(0x17, (int)cpuState.memory[4]);
         }
     };
 }

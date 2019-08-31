@@ -19,6 +19,7 @@
 
 #include "InstructionsZ80.h"
 #include "FunctionsZ80.h"
+#include "FlagsZ80.h"
 
 // Instructions for the Z80:
 <#+
@@ -71,7 +72,8 @@ const InstructionInfo instructionInfo<#= decl.Name #> =
     {
         <#=  BuildInstructionVariable(decl, 0) #>
         <#=  BuildInstructionVariable(decl, 1) #>
-    }
+    },
+    <#=  BuildFlagOperation(decl) #>
 };
 <#+
             }
@@ -94,6 +96,17 @@ const InstructionInfo instructionInfo<#= decl.Name #> =
             }
 
             return "{ Type_None, {0} },";
+        }
+
+        private static string BuildFlagOperation(InstructionMeta decl)
+        {
+            var builder = new FlagsBuilder();
+            var metaFlag = builder.CreateFlagsFor(decl.Info);
+            if (metaFlag != null)
+            {
+                return "AssignFlags_" + metaFlag.Name;
+            }
+            return "nullptr";
         }
     }
 #>

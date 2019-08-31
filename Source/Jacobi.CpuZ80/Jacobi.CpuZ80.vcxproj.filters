@@ -12,6 +12,7 @@
     <ClInclude Include="ClockInstruction.h" />
     <ClInclude Include="FunctionsZ80.h" />
     <ClInclude Include="CpuAlu.h" />
+    <ClInclude Include="FlagsZ80.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Instructions.Arithmetic8.c" />

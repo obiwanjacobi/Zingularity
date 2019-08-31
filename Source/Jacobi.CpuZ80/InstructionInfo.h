@@ -10,6 +10,7 @@ extern "C" {
 #endif
 
 typedef void(*fnOnClock)(AsyncThis* async);
+typedef void(*fnAssignFlags)();
 
 typedef enum 
 {
@@ -67,6 +68,9 @@ typedef struct
 
     // how to decode this instruction
     const DecodeInfo Decode;
+
+    // set the flags for this instruction
+    const fnAssignFlags AssignFlags;
 
 } InstructionInfo;
 

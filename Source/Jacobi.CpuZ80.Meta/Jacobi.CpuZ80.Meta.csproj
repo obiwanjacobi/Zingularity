@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FlagMeta.cs" />
+    <Compile Include="FlagsBuilder.cs" />
     <Compile Include="InstructionBuilder.cs" />
     <Compile Include="InstructionExpander.cs" />
     <Compile Include="InstructionMeta.cs" />
@@ -71,6 +73,7 @@
     <Content Include="C\InstructionsZ80.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastOutputs>
+..\..\Jacobi.CpuZ80\FlagsZ80.h
 ..\..\Jacobi.CpuZ80\FunctionsZ80.h
 ..\..\Jacobi.CpuZ80\InstructionsZ80.c
 ..\..\Jacobi.CpuZ80\InstructionsZ80.h
@@ -86,6 +89,7 @@
       <DependentUpon>InstructionsZ80.tt</DependentUpon>
     </Content>
     <Content Include="C\InstructionsZ80_c.tt" />
+    <Content Include="C\FlagsZ80_h.tt" />
     <Content Include="C\InstructionTablesZ80_c.tt" />
     <Content Include="C\InstructionsZ80_h.tt" />
     <Content Include="Language Server\InstructionsZ80.tt">

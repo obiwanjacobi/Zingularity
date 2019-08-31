@@ -1,6 +1,7 @@
 <#@ template language="C#" debug="True" hostspecific="True" #>
 <#@ output extension="txt" #>
 <#@ include file="T4Toolbox.tt" #>
+<#@ include file="FlagsZ80_h.tt" #>
 <#@ include file="FunctionsZ80_h.tt" #>
 <#@ include file="InstructionsZ80_h.tt" #>
 <#@ include file="InstructionsZ80_c.tt" #>
@@ -73,6 +74,17 @@ Generating 'FunctionsZ80.h'...
     funcs.Output.File = "FunctionsZ80.h";
     funcs.Output.Project = TargetProjectPath;
     funcs.Render();
+
+#>
+Done.
+
+Generating 'FlagsZ80.h'...
+<#
+
+    var flags = new FlagsZ80_h(decls);
+    flags.Output.File = "FlagsZ80.h";
+    flags.Output.Project = TargetProjectPath;
+    flags.Render();
 
 #>
 Done.

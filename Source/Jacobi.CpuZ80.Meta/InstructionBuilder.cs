@@ -38,7 +38,6 @@ namespace Jacobi.CpuZ80.Meta
         public void AssignParameterValues(IEnumerable<TableInfo> tables, IDictionary<string, string> paramValues)
         {
             _instructionInfo.Mnemonic = InstructionParameter.FormatText(_instructionInfo.Mnemonic, paramValues);
-            //AssignVariableValues(paramValues.ToList());
 
             var tableValues = ToTableValues(tables, paramValues);
             _instructionInfo.Bytes = InstructionParameter.FormatBytes(_instructionInfo.Bytes, tableValues);

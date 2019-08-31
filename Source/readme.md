@@ -44,7 +44,7 @@ After analysis of the Z80 instrcutions I have found these flag operations includ
 | i | Flag is set to the value of IFF2
 | [ABCDEHLIR][b] | Flag set to b'th bit of the register before the instruction is executed.
 | [ABCDEHLIR]z | Flag is set when the register is zero before the instruction is executed.
-| !BC | Flag is set when BC is not zero.
+| BC | Flag is set when BC is not zero.
 | d[b] | Flag is set to the b'th bit of the data being read/written.
 | dz | Flag is set when the data being read/written is zero.
 | [00] | Flag is set if the result matches the hex value specified.

@@ -163,6 +163,7 @@
     <ClInclude Include="CpuState.h" />
     <ClInclude Include="CpuZ80.h" />
     <ClInclude Include="CpuZ80Host.h" />
+    <ClInclude Include="FlagsZ80.h" />
     <ClInclude Include="FunctionsZ80.h" />
     <ClInclude Include="InstructionInfo.h" />
     <ClInclude Include="InstructionsZ80.h" />

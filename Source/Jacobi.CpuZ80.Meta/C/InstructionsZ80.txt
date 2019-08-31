@@ -12,5 +12,8 @@ Done.
 Generating 'FunctionsZ80.h'...
 Done.
 
+Generating 'FlagsZ80.h'...
+Done.
+
 All Finished.
 

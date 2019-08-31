@@ -70,9 +70,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="C\FlagsZ80_c.tt" />
     <Content Include="C\InstructionsZ80.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastOutputs>
+..\..\Jacobi.CpuZ80\FlagsZ80.c
 ..\..\Jacobi.CpuZ80\FlagsZ80.h
 ..\..\Jacobi.CpuZ80\FunctionsZ80.h
 ..\..\Jacobi.CpuZ80\InstructionsZ80.c

@@ -15,5 +15,8 @@ Done.
 Generating 'FlagsZ80.h'...
 Done.
 
+Generating 'FlagsZ80.c'...
+Done.
+
 All Finished.
 

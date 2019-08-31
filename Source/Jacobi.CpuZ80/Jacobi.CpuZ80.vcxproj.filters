@@ -32,5 +32,6 @@
     <ClCompile Include="ClockInstruction.c" />
     <ClCompile Include="InstructionsZ80.c" />
     <ClCompile Include="InstructionTablesZ80.c" />
+    <ClCompile Include="FlagsZ80.c" />
   </ItemGroup>
 </Project>

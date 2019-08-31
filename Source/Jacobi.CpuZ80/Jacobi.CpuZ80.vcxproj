@@ -173,6 +173,7 @@
     <ClCompile Include="ClockInstruction.c" />
     <ClCompile Include="ClockTick.c" />
     <ClCompile Include="CpuZ80.c" />
+    <ClCompile Include="FlagsZ80.c" />
     <ClCompile Include="Instructions.Arithmetic16.c" />
     <ClCompile Include="Instructions.Arithmetic8.c" />
     <ClCompile Include="Instructions.BitSetTest.c" />

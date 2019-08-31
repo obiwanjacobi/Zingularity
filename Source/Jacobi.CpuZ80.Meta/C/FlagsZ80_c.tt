@@ -1,0 +1,59 @@
+﻿<#+
+
+    public sealed class FlagsZ80_c : Template
+    {
+        private readonly IEnumerable<FlagMeta> _flags;
+
+        public FlagsZ80_c(IEnumerable<InstructionMeta> decls)
+        {
+            _flags = ToFlagOperations(decls);
+        }
+
+        public override string TransformText()
+        {
+#>
+/**
+ *  Generated Source Code
+ *  Any changes you make will be lost when the code is regenerated.
+ */
+
+#include "FlagsZ80.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+// Flag operations for the Z80:
+<#+
+            foreach (var flag in _flags)
+            {
+#>
+extern void AssignFlags_<#= flag.Name #>()
+{
+}
+
+<#+        
+            }
+#>
+
+#ifdef __cplusplus
+}
+#endif
+
+<#+
+            return this.GenerationEnvironment.ToString();
+        }
+
+        private IEnumerable<FlagMeta> ToFlagOperations(IEnumerable<InstructionMeta> decls)
+        {
+            var builder = new FlagsBuilder();
+
+            foreach(var decl in decls)
+            {
+                builder.CreateFlagsFor(decl.Info);
+            }
+
+            return builder.GetUniqueFlagSets();
+        }
+    }
+#>

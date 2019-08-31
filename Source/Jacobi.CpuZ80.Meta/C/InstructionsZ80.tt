@@ -2,6 +2,7 @@
 <#@ output extension="txt" #>
 <#@ include file="T4Toolbox.tt" #>
 <#@ include file="FlagsZ80_h.tt" #>
+<#@ include file="FlagsZ80_c.tt" #>
 <#@ include file="FunctionsZ80_h.tt" #>
 <#@ include file="InstructionsZ80_h.tt" #>
 <#@ include file="InstructionsZ80_c.tt" #>
@@ -85,6 +86,17 @@ Generating 'FlagsZ80.h'...
     flags.Output.File = "FlagsZ80.h";
     flags.Output.Project = TargetProjectPath;
     flags.Render();
+
+#>
+Done.
+
+Generating 'FlagsZ80.c'...
+<#
+
+    var flags_c = new FlagsZ80_c(decls);
+    flags_c.Output.File = "FlagsZ80.c";
+    flags_c.Output.Project = TargetProjectPath;
+    flags_c.Render();
 
 #>
 Done.

@@ -1,6 +1,7 @@
 #include "CpuZ80.h"
 #include "CpuState.h"
 #include "CpuZ80Host.h"
+#include "CpuAlu.h"
 
 extern CpuState _state;
 
@@ -194,4 +195,14 @@ void setAddressIR()
         _state.Registers.R++;
     else
         _state.Registers.R &= 0x7F; //??
+}
+
+void SetFlag(Flags flags, bool_t value)
+{
+    SetBit8(&_state.Registers.F, flags, value);
+}
+
+bool_t GetFlag(Flags flags)
+{
+    return GetBit8(_state.Registers.F, flags);
 }

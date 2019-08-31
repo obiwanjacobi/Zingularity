@@ -172,8 +172,11 @@
   <ItemGroup>
     <ClCompile Include="ClockInstruction.c" />
     <ClCompile Include="ClockTick.c" />
+    <ClCompile Include="CpuAlu.c" />
     <ClCompile Include="CpuZ80.c" />
     <ClCompile Include="FlagsZ80.c" />
+    <ClCompile Include="FlagsZ80.Generic.c" />
+    <ClCompile Include="FlagsZ80.Special.c" />
     <ClCompile Include="Instructions.Arithmetic16.c" />
     <ClCompile Include="Instructions.Arithmetic8.c" />
     <ClCompile Include="Instructions.BitSetTest.c" />

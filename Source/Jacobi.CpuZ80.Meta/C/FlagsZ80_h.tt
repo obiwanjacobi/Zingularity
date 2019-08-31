@@ -2,11 +2,11 @@
 
     public sealed class FlagsZ80_h : Template
     {
-        private readonly IEnumerable<string> _flags;
+        private readonly IEnumerable<FlagMeta> _flags;
 
         public FlagsZ80_h(IEnumerable<InstructionMeta> decls)
         {
-            _flags = ToFlagOperations(decls);
+            _flags = ToFlagMeta(decls);
         }
 
         public override string TransformText()
@@ -17,7 +17,8 @@
  *  Any changes you make will be lost when the code is regenerated.
  */
 
-#include "InstructionInfo.h"
+ #include "CpuZ80.h"
+
 
 #ifdef __cplusplus
 extern "C" {
@@ -25,13 +26,24 @@ extern "C" {
 
 // Flag operations for the Z80:
 <#+
-            foreach (var flag in _flags)
+            foreach (var flag in _flags.Select(fm => fm.Name))
             {
 #>
 extern void AssignFlags_<#= flag #>();
 <#+        
             }
 #>
+
+// Operations that fetch flag values:
+<#+
+            foreach (var ops in ToFlagOperations(_flags))
+            {
+#>
+extern bool_t <#= ops #>();
+<#+        
+            }
+#>
+
 
 #ifdef __cplusplus
 }
@@ -41,7 +53,7 @@ extern void AssignFlags_<#= flag #>();
             return this.GenerationEnvironment.ToString();
         }
 
-        private IEnumerable<string> ToFlagOperations(IEnumerable<InstructionMeta> decls)
+        private IEnumerable<FlagMeta> ToFlagMeta(IEnumerable<InstructionMeta> decls)
         {
             var builder = new FlagsBuilder();
 
@@ -50,7 +62,26 @@ extern void AssignFlags_<#= flag #>();
                 builder.CreateFlagsFor(decl.Info);
             }
 
-            return builder.GetUniqueFlagSets().Select(fm => fm.Name);
+            return builder.GetUniqueFlagSets();
+        }
+
+        private IEnumerable<string> ToFlagOperations(IEnumerable<FlagMeta> flags)
+        {
+            var ops = new List<string>();
+
+            foreach(var f in flags)
+            {
+                foreach(var o in f.Operations)
+                {
+                    if (!ops.Contains(o.Value))
+                    {
+                    ops.Add(o.Value);
+                    }
+                }
+            }
+
+            ops.Sort();
+            return ops;
         }
     }
 #>

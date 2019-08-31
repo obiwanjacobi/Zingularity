@@ -9888,7 +9888,7 @@ const InstructionInfo instructionInfoSBCHL_BC_ED2 =
         { Type_RegistersSP16, {0} },
         { Type_None, {0} },
     },
-    AssignFlags_Cb15Hb12N1Sr15VroXr3Yr5Zrz
+    AssignFlags_Cb16Hb12N1Sr15VroXr3Yr5Zrz
 };
 
 // SBC HL, DE   -  SBCHL_DE_ED2  -  ED, 52
@@ -9906,7 +9906,7 @@ const InstructionInfo instructionInfoSBCHL_DE_ED2 =
         { Type_RegistersSP16, {1} },
         { Type_None, {0} },
     },
-    AssignFlags_Cb15Hb12N1Sr15VroXr3Yr5Zrz
+    AssignFlags_Cb16Hb12N1Sr15VroXr3Yr5Zrz
 };
 
 // SBC HL, HL   -  SBCHL_HL_ED2  -  ED, 62
@@ -9924,7 +9924,7 @@ const InstructionInfo instructionInfoSBCHL_HL_ED2 =
         { Type_RegistersSP16, {2} },
         { Type_None, {0} },
     },
-    AssignFlags_Cb15Hb12N1Sr15VroXr3Yr5Zrz
+    AssignFlags_Cb16Hb12N1Sr15VroXr3Yr5Zrz
 };
 
 // SBC HL, SP   -  SBCHL_SP_ED2  -  ED, 72
@@ -9942,7 +9942,7 @@ const InstructionInfo instructionInfoSBCHL_SP_ED2 =
         { Type_RegistersSP16, {3} },
         { Type_None, {0} },
     },
-    AssignFlags_Cb15Hb12N1Sr15VroXr3Yr5Zrz
+    AssignFlags_Cb16Hb12N1Sr15VroXr3Yr5Zrz
 };
 
 // INC BC   -  INCBC_1  -  03
@@ -13740,7 +13740,7 @@ const InstructionInfo instructionInfoBIT0_A_CB2 =
         { Type_Bits8, {0} },
         { Type_Registers8, {7} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 1, A   -  BIT1_A_CB2  -  CB, 4F
@@ -13758,7 +13758,7 @@ const InstructionInfo instructionInfoBIT1_A_CB2 =
         { Type_Bits8, {1} },
         { Type_Registers8, {7} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 2, A   -  BIT2_A_CB2  -  CB, 57
@@ -13776,7 +13776,7 @@ const InstructionInfo instructionInfoBIT2_A_CB2 =
         { Type_Bits8, {2} },
         { Type_Registers8, {7} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 3, A   -  BIT3_A_CB2  -  CB, 5F
@@ -13794,7 +13794,7 @@ const InstructionInfo instructionInfoBIT3_A_CB2 =
         { Type_Bits8, {3} },
         { Type_Registers8, {7} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 4, A   -  BIT4_A_CB2  -  CB, 67
@@ -13812,7 +13812,7 @@ const InstructionInfo instructionInfoBIT4_A_CB2 =
         { Type_Bits8, {4} },
         { Type_Registers8, {7} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 5, A   -  BIT5_A_CB2  -  CB, 6F
@@ -13830,7 +13830,7 @@ const InstructionInfo instructionInfoBIT5_A_CB2 =
         { Type_Bits8, {5} },
         { Type_Registers8, {7} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 6, A   -  BIT6_A_CB2  -  CB, 77
@@ -13848,7 +13848,7 @@ const InstructionInfo instructionInfoBIT6_A_CB2 =
         { Type_Bits8, {6} },
         { Type_Registers8, {7} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 7, A   -  BIT7_A_CB2  -  CB, 7F
@@ -13866,7 +13866,7 @@ const InstructionInfo instructionInfoBIT7_A_CB2 =
         { Type_Bits8, {7} },
         { Type_Registers8, {7} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 0, B   -  BIT0_B_CB2  -  CB, 40
@@ -13884,7 +13884,7 @@ const InstructionInfo instructionInfoBIT0_B_CB2 =
         { Type_Bits8, {0} },
         { Type_Registers8, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 1, B   -  BIT1_B_CB2  -  CB, 48
@@ -13902,7 +13902,7 @@ const InstructionInfo instructionInfoBIT1_B_CB2 =
         { Type_Bits8, {1} },
         { Type_Registers8, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 2, B   -  BIT2_B_CB2  -  CB, 50
@@ -13920,7 +13920,7 @@ const InstructionInfo instructionInfoBIT2_B_CB2 =
         { Type_Bits8, {2} },
         { Type_Registers8, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 3, B   -  BIT3_B_CB2  -  CB, 58
@@ -13938,7 +13938,7 @@ const InstructionInfo instructionInfoBIT3_B_CB2 =
         { Type_Bits8, {3} },
         { Type_Registers8, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 4, B   -  BIT4_B_CB2  -  CB, 60
@@ -13956,7 +13956,7 @@ const InstructionInfo instructionInfoBIT4_B_CB2 =
         { Type_Bits8, {4} },
         { Type_Registers8, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 5, B   -  BIT5_B_CB2  -  CB, 68
@@ -13974,7 +13974,7 @@ const InstructionInfo instructionInfoBIT5_B_CB2 =
         { Type_Bits8, {5} },
         { Type_Registers8, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 6, B   -  BIT6_B_CB2  -  CB, 70
@@ -13992,7 +13992,7 @@ const InstructionInfo instructionInfoBIT6_B_CB2 =
         { Type_Bits8, {6} },
         { Type_Registers8, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 7, B   -  BIT7_B_CB2  -  CB, 78
@@ -14010,7 +14010,7 @@ const InstructionInfo instructionInfoBIT7_B_CB2 =
         { Type_Bits8, {7} },
         { Type_Registers8, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 0, C   -  BIT0_C_CB2  -  CB, 41
@@ -14028,7 +14028,7 @@ const InstructionInfo instructionInfoBIT0_C_CB2 =
         { Type_Bits8, {0} },
         { Type_Registers8, {1} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 1, C   -  BIT1_C_CB2  -  CB, 49
@@ -14046,7 +14046,7 @@ const InstructionInfo instructionInfoBIT1_C_CB2 =
         { Type_Bits8, {1} },
         { Type_Registers8, {1} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 2, C   -  BIT2_C_CB2  -  CB, 51
@@ -14064,7 +14064,7 @@ const InstructionInfo instructionInfoBIT2_C_CB2 =
         { Type_Bits8, {2} },
         { Type_Registers8, {1} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 3, C   -  BIT3_C_CB2  -  CB, 59
@@ -14082,7 +14082,7 @@ const InstructionInfo instructionInfoBIT3_C_CB2 =
         { Type_Bits8, {3} },
         { Type_Registers8, {1} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 4, C   -  BIT4_C_CB2  -  CB, 61
@@ -14100,7 +14100,7 @@ const InstructionInfo instructionInfoBIT4_C_CB2 =
         { Type_Bits8, {4} },
         { Type_Registers8, {1} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 5, C   -  BIT5_C_CB2  -  CB, 69
@@ -14118,7 +14118,7 @@ const InstructionInfo instructionInfoBIT5_C_CB2 =
         { Type_Bits8, {5} },
         { Type_Registers8, {1} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 6, C   -  BIT6_C_CB2  -  CB, 71
@@ -14136,7 +14136,7 @@ const InstructionInfo instructionInfoBIT6_C_CB2 =
         { Type_Bits8, {6} },
         { Type_Registers8, {1} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 7, C   -  BIT7_C_CB2  -  CB, 79
@@ -14154,7 +14154,7 @@ const InstructionInfo instructionInfoBIT7_C_CB2 =
         { Type_Bits8, {7} },
         { Type_Registers8, {1} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 0, D   -  BIT0_D_CB2  -  CB, 42
@@ -14172,7 +14172,7 @@ const InstructionInfo instructionInfoBIT0_D_CB2 =
         { Type_Bits8, {0} },
         { Type_Registers8, {2} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 1, D   -  BIT1_D_CB2  -  CB, 4A
@@ -14190,7 +14190,7 @@ const InstructionInfo instructionInfoBIT1_D_CB2 =
         { Type_Bits8, {1} },
         { Type_Registers8, {2} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 2, D   -  BIT2_D_CB2  -  CB, 52
@@ -14208,7 +14208,7 @@ const InstructionInfo instructionInfoBIT2_D_CB2 =
         { Type_Bits8, {2} },
         { Type_Registers8, {2} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 3, D   -  BIT3_D_CB2  -  CB, 5A
@@ -14226,7 +14226,7 @@ const InstructionInfo instructionInfoBIT3_D_CB2 =
         { Type_Bits8, {3} },
         { Type_Registers8, {2} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 4, D   -  BIT4_D_CB2  -  CB, 62
@@ -14244,7 +14244,7 @@ const InstructionInfo instructionInfoBIT4_D_CB2 =
         { Type_Bits8, {4} },
         { Type_Registers8, {2} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 5, D   -  BIT5_D_CB2  -  CB, 6A
@@ -14262,7 +14262,7 @@ const InstructionInfo instructionInfoBIT5_D_CB2 =
         { Type_Bits8, {5} },
         { Type_Registers8, {2} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 6, D   -  BIT6_D_CB2  -  CB, 72
@@ -14280,7 +14280,7 @@ const InstructionInfo instructionInfoBIT6_D_CB2 =
         { Type_Bits8, {6} },
         { Type_Registers8, {2} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 7, D   -  BIT7_D_CB2  -  CB, 7A
@@ -14298,7 +14298,7 @@ const InstructionInfo instructionInfoBIT7_D_CB2 =
         { Type_Bits8, {7} },
         { Type_Registers8, {2} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 0, E   -  BIT0_E_CB2  -  CB, 43
@@ -14316,7 +14316,7 @@ const InstructionInfo instructionInfoBIT0_E_CB2 =
         { Type_Bits8, {0} },
         { Type_Registers8, {3} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 1, E   -  BIT1_E_CB2  -  CB, 4B
@@ -14334,7 +14334,7 @@ const InstructionInfo instructionInfoBIT1_E_CB2 =
         { Type_Bits8, {1} },
         { Type_Registers8, {3} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 2, E   -  BIT2_E_CB2  -  CB, 53
@@ -14352,7 +14352,7 @@ const InstructionInfo instructionInfoBIT2_E_CB2 =
         { Type_Bits8, {2} },
         { Type_Registers8, {3} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 3, E   -  BIT3_E_CB2  -  CB, 5B
@@ -14370,7 +14370,7 @@ const InstructionInfo instructionInfoBIT3_E_CB2 =
         { Type_Bits8, {3} },
         { Type_Registers8, {3} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 4, E   -  BIT4_E_CB2  -  CB, 63
@@ -14388,7 +14388,7 @@ const InstructionInfo instructionInfoBIT4_E_CB2 =
         { Type_Bits8, {4} },
         { Type_Registers8, {3} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 5, E   -  BIT5_E_CB2  -  CB, 6B
@@ -14406,7 +14406,7 @@ const InstructionInfo instructionInfoBIT5_E_CB2 =
         { Type_Bits8, {5} },
         { Type_Registers8, {3} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 6, E   -  BIT6_E_CB2  -  CB, 73
@@ -14424,7 +14424,7 @@ const InstructionInfo instructionInfoBIT6_E_CB2 =
         { Type_Bits8, {6} },
         { Type_Registers8, {3} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 7, E   -  BIT7_E_CB2  -  CB, 7B
@@ -14442,7 +14442,7 @@ const InstructionInfo instructionInfoBIT7_E_CB2 =
         { Type_Bits8, {7} },
         { Type_Registers8, {3} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 0, H   -  BIT0_H_CB2  -  CB, 44
@@ -14460,7 +14460,7 @@ const InstructionInfo instructionInfoBIT0_H_CB2 =
         { Type_Bits8, {0} },
         { Type_Registers8, {4} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 1, H   -  BIT1_H_CB2  -  CB, 4C
@@ -14478,7 +14478,7 @@ const InstructionInfo instructionInfoBIT1_H_CB2 =
         { Type_Bits8, {1} },
         { Type_Registers8, {4} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 2, H   -  BIT2_H_CB2  -  CB, 54
@@ -14496,7 +14496,7 @@ const InstructionInfo instructionInfoBIT2_H_CB2 =
         { Type_Bits8, {2} },
         { Type_Registers8, {4} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 3, H   -  BIT3_H_CB2  -  CB, 5C
@@ -14514,7 +14514,7 @@ const InstructionInfo instructionInfoBIT3_H_CB2 =
         { Type_Bits8, {3} },
         { Type_Registers8, {4} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 4, H   -  BIT4_H_CB2  -  CB, 64
@@ -14532,7 +14532,7 @@ const InstructionInfo instructionInfoBIT4_H_CB2 =
         { Type_Bits8, {4} },
         { Type_Registers8, {4} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 5, H   -  BIT5_H_CB2  -  CB, 6C
@@ -14550,7 +14550,7 @@ const InstructionInfo instructionInfoBIT5_H_CB2 =
         { Type_Bits8, {5} },
         { Type_Registers8, {4} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 6, H   -  BIT6_H_CB2  -  CB, 74
@@ -14568,7 +14568,7 @@ const InstructionInfo instructionInfoBIT6_H_CB2 =
         { Type_Bits8, {6} },
         { Type_Registers8, {4} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 7, H   -  BIT7_H_CB2  -  CB, 7C
@@ -14586,7 +14586,7 @@ const InstructionInfo instructionInfoBIT7_H_CB2 =
         { Type_Bits8, {7} },
         { Type_Registers8, {4} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 0, L   -  BIT0_L_CB2  -  CB, 45
@@ -14604,7 +14604,7 @@ const InstructionInfo instructionInfoBIT0_L_CB2 =
         { Type_Bits8, {0} },
         { Type_Registers8, {5} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 1, L   -  BIT1_L_CB2  -  CB, 4D
@@ -14622,7 +14622,7 @@ const InstructionInfo instructionInfoBIT1_L_CB2 =
         { Type_Bits8, {1} },
         { Type_Registers8, {5} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 2, L   -  BIT2_L_CB2  -  CB, 55
@@ -14640,7 +14640,7 @@ const InstructionInfo instructionInfoBIT2_L_CB2 =
         { Type_Bits8, {2} },
         { Type_Registers8, {5} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 3, L   -  BIT3_L_CB2  -  CB, 5D
@@ -14658,7 +14658,7 @@ const InstructionInfo instructionInfoBIT3_L_CB2 =
         { Type_Bits8, {3} },
         { Type_Registers8, {5} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 4, L   -  BIT4_L_CB2  -  CB, 65
@@ -14676,7 +14676,7 @@ const InstructionInfo instructionInfoBIT4_L_CB2 =
         { Type_Bits8, {4} },
         { Type_Registers8, {5} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 5, L   -  BIT5_L_CB2  -  CB, 6D
@@ -14694,7 +14694,7 @@ const InstructionInfo instructionInfoBIT5_L_CB2 =
         { Type_Bits8, {5} },
         { Type_Registers8, {5} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 6, L   -  BIT6_L_CB2  -  CB, 75
@@ -14712,7 +14712,7 @@ const InstructionInfo instructionInfoBIT6_L_CB2 =
         { Type_Bits8, {6} },
         { Type_Registers8, {5} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 7, L   -  BIT7_L_CB2  -  CB, 7D
@@ -14730,7 +14730,7 @@ const InstructionInfo instructionInfoBIT7_L_CB2 =
         { Type_Bits8, {7} },
         { Type_Registers8, {5} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 0, (HL)   -  BIT0__HL__CB2  -  CB, 46
@@ -14748,7 +14748,7 @@ const InstructionInfo instructionInfoBIT0__HL__CB2 =
         { Type_Bits8, {0} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 1, (HL)   -  BIT1__HL__CB2  -  CB, 4E
@@ -14766,7 +14766,7 @@ const InstructionInfo instructionInfoBIT1__HL__CB2 =
         { Type_Bits8, {1} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 2, (HL)   -  BIT2__HL__CB2  -  CB, 56
@@ -14784,7 +14784,7 @@ const InstructionInfo instructionInfoBIT2__HL__CB2 =
         { Type_Bits8, {2} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 3, (HL)   -  BIT3__HL__CB2  -  CB, 5E
@@ -14802,7 +14802,7 @@ const InstructionInfo instructionInfoBIT3__HL__CB2 =
         { Type_Bits8, {3} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 4, (HL)   -  BIT4__HL__CB2  -  CB, 66
@@ -14820,7 +14820,7 @@ const InstructionInfo instructionInfoBIT4__HL__CB2 =
         { Type_Bits8, {4} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 5, (HL)   -  BIT5__HL__CB2  -  CB, 6E
@@ -14838,7 +14838,7 @@ const InstructionInfo instructionInfoBIT5__HL__CB2 =
         { Type_Bits8, {5} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 6, (HL)   -  BIT6__HL__CB2  -  CB, 76
@@ -14856,7 +14856,7 @@ const InstructionInfo instructionInfoBIT6__HL__CB2 =
         { Type_Bits8, {6} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 7, (HL)   -  BIT7__HL__CB2  -  CB, 7E
@@ -14874,7 +14874,7 @@ const InstructionInfo instructionInfoBIT7__HL__CB2 =
         { Type_Bits8, {7} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 0, (IX+d)   -  BIT0__IX_d__DD4  -  DD, CB, d, 46
@@ -14892,7 +14892,7 @@ const InstructionInfo instructionInfoBIT0__IX_d__DD4 =
         { Type_Bits8, {0} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 0, (IY+d)   -  BIT0__IY_d__FD4  -  FD, CB, d, 46
@@ -14910,7 +14910,7 @@ const InstructionInfo instructionInfoBIT0__IY_d__FD4 =
         { Type_Bits8, {0} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 1, (IX+d)   -  BIT1__IX_d__DD4  -  DD, CB, d, 4E
@@ -14928,7 +14928,7 @@ const InstructionInfo instructionInfoBIT1__IX_d__DD4 =
         { Type_Bits8, {1} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 1, (IY+d)   -  BIT1__IY_d__FD4  -  FD, CB, d, 4E
@@ -14946,7 +14946,7 @@ const InstructionInfo instructionInfoBIT1__IY_d__FD4 =
         { Type_Bits8, {1} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 2, (IX+d)   -  BIT2__IX_d__DD4  -  DD, CB, d, 56
@@ -14964,7 +14964,7 @@ const InstructionInfo instructionInfoBIT2__IX_d__DD4 =
         { Type_Bits8, {2} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 2, (IY+d)   -  BIT2__IY_d__FD4  -  FD, CB, d, 56
@@ -14982,7 +14982,7 @@ const InstructionInfo instructionInfoBIT2__IY_d__FD4 =
         { Type_Bits8, {2} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 3, (IX+d)   -  BIT3__IX_d__DD4  -  DD, CB, d, 5E
@@ -15000,7 +15000,7 @@ const InstructionInfo instructionInfoBIT3__IX_d__DD4 =
         { Type_Bits8, {3} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 3, (IY+d)   -  BIT3__IY_d__FD4  -  FD, CB, d, 5E
@@ -15018,7 +15018,7 @@ const InstructionInfo instructionInfoBIT3__IY_d__FD4 =
         { Type_Bits8, {3} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 4, (IX+d)   -  BIT4__IX_d__DD4  -  DD, CB, d, 66
@@ -15036,7 +15036,7 @@ const InstructionInfo instructionInfoBIT4__IX_d__DD4 =
         { Type_Bits8, {4} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 4, (IY+d)   -  BIT4__IY_d__FD4  -  FD, CB, d, 66
@@ -15054,7 +15054,7 @@ const InstructionInfo instructionInfoBIT4__IY_d__FD4 =
         { Type_Bits8, {4} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 5, (IX+d)   -  BIT5__IX_d__DD4  -  DD, CB, d, 6E
@@ -15072,7 +15072,7 @@ const InstructionInfo instructionInfoBIT5__IX_d__DD4 =
         { Type_Bits8, {5} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 5, (IY+d)   -  BIT5__IY_d__FD4  -  FD, CB, d, 6E
@@ -15090,7 +15090,7 @@ const InstructionInfo instructionInfoBIT5__IY_d__FD4 =
         { Type_Bits8, {5} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 6, (IX+d)   -  BIT6__IX_d__DD4  -  DD, CB, d, 76
@@ -15108,7 +15108,7 @@ const InstructionInfo instructionInfoBIT6__IX_d__DD4 =
         { Type_Bits8, {6} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 6, (IY+d)   -  BIT6__IY_d__FD4  -  FD, CB, d, 76
@@ -15126,7 +15126,7 @@ const InstructionInfo instructionInfoBIT6__IY_d__FD4 =
         { Type_Bits8, {6} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 7, (IX+d)   -  BIT7__IX_d__DD4  -  DD, CB, d, 7E
@@ -15144,7 +15144,7 @@ const InstructionInfo instructionInfoBIT7__IX_d__DD4 =
         { Type_Bits8, {7} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // BIT 7, (IY+d)   -  BIT7__IY_d__FD4  -  FD, CB, d, 7E
@@ -15162,7 +15162,7 @@ const InstructionInfo instructionInfoBIT7__IY_d__FD4 =
         { Type_Bits8, {7} },
         { Type_None, {0} },
     },
-    AssignFlags_H1N0PrzSBITflagXBITflagYBITflagZrz
+    AssignFlags_H1N0PrzS_BITflagX_BITflagY_BITflagZrz
 };
 
 // SET 0, A   -  SET0_A_CB2  -  CB, C7

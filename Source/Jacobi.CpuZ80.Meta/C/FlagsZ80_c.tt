@@ -19,6 +19,7 @@
 
 #include "FlagsZ80.h"
 
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -30,6 +31,13 @@ extern "C" {
 #>
 extern void AssignFlags_<#= flag.Name #>()
 {
+<#+
+                foreach (var op in flag.Operations)
+                {
+#>
+    SetFlag(Flag_<#= op.Key.ToString() #>, <#= op.Value #>());
+<#+             }
+#>    
 }
 
 <#+        

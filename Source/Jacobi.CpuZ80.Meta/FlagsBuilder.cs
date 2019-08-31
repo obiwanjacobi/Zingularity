@@ -97,6 +97,9 @@ namespace Jacobi.CpuZ80.Meta
                 case "1":
                     fnName = "Set";
                     break;
+                case "r15":
+                    fnName = "Result_Bit15";
+                    break;
                 case "r7":
                     fnName = "Result_Bit7";
                     break;
@@ -128,11 +131,53 @@ namespace Jacobi.CpuZ80.Meta
                 case "c3":
                     fnName = "Carry_Bit3";
                     break;
+                case "c11":
+                    fnName = "Carry_Bit11";
+                    break;
+                case "b16":
+                    fnName = "Borrow_Bit16";
+                    break;
+                case "b12":
+                    fnName = "Borrow_Bit12";
+                    break;
+                case "c15":
+                    fnName = "Carry_Bit15";
+                    break;
                 case "b8":
                     fnName = "Borrow_Bit8";
                     break;
                 case "b4":
                     fnName = "Borrow_Bit4";
+                    break;
+
+                case "c":
+                    fnName = "CarryFlag";
+                    break;
+
+                case "80":
+                    fnName = "Result_IsValue80";
+                    break;
+                case "7F":
+                    fnName = "Result_IsValue7F";
+                    break;
+                case "FF":
+                    fnName = "Result_IsValueFF";
+                    break;
+
+
+                case "i":
+                    fnName = "IFF2_Value";
+                    break;
+
+                case "BC":
+                    fnName = "BC_IsNotZero";
+                    break;
+
+                case "ah3":
+                    fnName = "AddressHi_Bit3";
+                    break;
+                case "ah5":
+                    fnName = "AddressHi_Bit5";
                     break;
 
                 default:

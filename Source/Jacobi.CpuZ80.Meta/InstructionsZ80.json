@@ -1753,7 +1753,7 @@
                 "H": "b12",
                 "V": "ro",
                 "N": "1",
-                "C": "b15",
+                "C": "b16",
                 "X": "r3",
                 "Y": "r5"
             }
@@ -2358,13 +2358,13 @@
             "cycles": [ 4, 4 ],
             "ops": [ "OF", "OF" ],
             "flags": {
-                "S": "BITflag",
+                "S": "_BITflag",
                 "Z": "rz",
                 "H": "1",
                 "P": "rz",
                 "N": "0",
-                "X": "BITflag",
-                "Y": "BITflag"
+                "X": "_BITflag",
+                "Y": "_BITflag"
             }
         },
         {
@@ -2373,13 +2373,13 @@
             "cycles": [ 4, 4, 4 ],
             "ops": [ "OF", "OF", "MR" ],
             "flags": {
-                "S": "BITflag",
+                "S": "_BITflag",
                 "Z": "rz",
                 "H": "1",
                 "P": "rz",
                 "N": "0",
-                "X": "BITflag",
-                "Y": "BITflag"
+                "X": "_BITflag",
+                "Y": "_BITflag"
             }
         },
         {
@@ -2388,13 +2388,13 @@
             "cycles": [ 4, 4, 3, 5, 4 ],
             "ops": [ "OF", "OF", "ODd", "FD", "MR" ],
             "flags": {
-                "S": "BITflag",
+                "S": "_BITflag",
                 "Z": "rz",
                 "H": "1",
                 "P": "rz",
                 "N": "0",
-                "X": "BITflag",
-                "Y": "BITflag"
+                "X": "_BITflag",
+                "Y": "_BITflag"
             }
         },
         {
@@ -2403,13 +2403,13 @@
             "cycles": [ 4, 4, 3, 5, 4 ],
             "ops": [ "OF", "OF", "ODd", "FD", "MR" ],
             "flags": {
-                "S": "BITflag",
+                "S": "_BITflag",
                 "Z": "rz",
                 "H": "1",
                 "P": "rz",
                 "N": "0",
-                "X": "BITflag",
-                "Y": "BITflag"
+                "X": "_BITflag",
+                "Y": "_BITflag"
             }
         },
         {

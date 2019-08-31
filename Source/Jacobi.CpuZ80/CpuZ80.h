@@ -133,6 +133,18 @@ typedef enum
     Rst38
 } RstAddress;
 
+typedef enum
+{
+    Flag_C,
+    Flag_N,
+    Flag_PV,
+    Flag_X,
+    Flag_H,
+    Flag_Y,
+    Flag_Z,
+    Flag_S
+} Flags;
+
 void SetRegister8(Registers8 reg, uint8_t value);
 uint8_t GetRegister8(Registers8 reg);
 
@@ -148,6 +160,10 @@ uint16_t GetRegisterEx16();
 
 void setAddressPC();
 void setAddressIR();
+
+void SetFlag(Flags flags, bool_t value);
+bool_t GetFlag(Flags flags);
+
 
 #ifdef __cplusplus
 }

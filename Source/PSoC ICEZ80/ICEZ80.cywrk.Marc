@@ -33,10 +33,16 @@
 <v>ICEZ80\ICEZ80\CpuZ80\ClockInstruction.h</v>
 <v>ICEZ80\ICEZ80\CpuZ80\ClockTick.c</v>
 <v>ICEZ80\ICEZ80\CpuZ80\ClockTick.h</v>
+<v>ICEZ80\ICEZ80\CpuZ80\CpuAlu.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\CpuAlu.h</v>
 <v>ICEZ80\ICEZ80\CpuZ80\CpuState.h</v>
 <v>ICEZ80\ICEZ80\CpuZ80\CpuZ80.c</v>
 <v>ICEZ80\ICEZ80\CpuZ80\CpuZ80.h</v>
 <v>ICEZ80\ICEZ80\CpuZ80\CpuZ80Host.h</v>
+<v>ICEZ80\ICEZ80\CpuZ80\FlagsZ80.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\FlagsZ80.Generic.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\FlagsZ80.h</v>
+<v>ICEZ80\ICEZ80\CpuZ80\FlagsZ80.Special.c</v>
 <v>ICEZ80\ICEZ80\CpuZ80\FunctionsZ80.h</v>
 <v>ICEZ80\ICEZ80\CpuZ80\InstructionInfo.h</v>
 <v>ICEZ80\ICEZ80\CpuZ80\Instructions.Arithmetic16.c</v>
@@ -72,10 +78,16 @@
 <v>ICEZ80\ICEZ80\CpuZ80\ClockInstruction.h</v>
 <v>ICEZ80\ICEZ80\CpuZ80\ClockTick.c</v>
 <v>ICEZ80\ICEZ80\CpuZ80\ClockTick.h</v>
+<v>ICEZ80\ICEZ80\CpuZ80\CpuAlu.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\CpuAlu.h</v>
 <v>ICEZ80\ICEZ80\CpuZ80\CpuState.h</v>
 <v>ICEZ80\ICEZ80\CpuZ80\CpuZ80.c</v>
 <v>ICEZ80\ICEZ80\CpuZ80\CpuZ80.h</v>
 <v>ICEZ80\ICEZ80\CpuZ80\CpuZ80Host.h</v>
+<v>ICEZ80\ICEZ80\CpuZ80\FlagsZ80.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\FlagsZ80.Generic.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\FlagsZ80.h</v>
+<v>ICEZ80\ICEZ80\CpuZ80\FlagsZ80.Special.c</v>
 <v>ICEZ80\ICEZ80\CpuZ80\FunctionsZ80.h</v>
 <v>ICEZ80\ICEZ80\CpuZ80\InstructionInfo.h</v>
 <v>ICEZ80\ICEZ80\CpuZ80\Instructions.Arithmetic16.c</v>
@@ -98,8 +110,6 @@
 <v>ICEZ80\ICEZ80\Source Files</v>
 <v>ICEZ80\ICEZ80\Source Files\CpuZ80Host.c</v>
 <v>ICEZ80\ICEZ80\Source Files\main.c</v>
-<v>ICEZ80\ICEZ80\Generated_Source</v>
-<v>ICEZ80\ICEZ80\Generated_Source\PSoC5</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -135,6 +145,7 @@
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\ClockInstruction.lst</v>
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\ClockTick.lst</v>
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\CpuAlu.lst</v>
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\CpuZ80.lst</v>
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\CpuZ80Host.lst</v>
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
@@ -148,6 +159,9 @@
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Data.lst</v>
+<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\FlagsZ80.Generic.lst</v>
+<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\FlagsZ80.lst</v>
+<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\FlagsZ80.Special.lst</v>
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\HALT.lst</v>
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.Arithmetic16.lst</v>
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.Arithmetic8.lst</v>
@@ -184,46 +198,6 @@
 <VisibleNodeIds>
 <v>ICEZ80</v>
 <v>ICEZ80\ICEZ80</v>
-<v>ICEZ80\ICEZ80\CortexM3</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\AddressHi.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\AddressLo.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\BUSACK.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\BusCtrl.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\BusCtrl_PM.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\BUSRQ.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\CLK.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\CLK_ISR.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\ClockInstruction.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\ClockTick.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\CpuZ80.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\CpuZ80Host.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Data.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\HALT.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.Arithmetic16.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.Arithmetic8.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.BitSetTest.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.CallReturn.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.ExchangeBlockTransfer.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.GeneralPurposeControl.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.Generic.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.InputOutput.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.Jump.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.Load16.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.Load8.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -278,7 +252,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1157, 808" SelectedTabbedMdiWindow="91f42d3a-0dc6-4697-8ccd-95b5e697e6ee"><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\main.c" Guid="bd754447-5b44-4210-922a-0476b2951a76" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\CpuZ80Host.c" Guid="91f42d3a-0dc6-4697-8ccd-95b5e697e6ee" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="652, 808" SelectedTabbedMdiWindow="91f42d3a-0dc6-4697-8ccd-95b5e697e6ee"><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\main.c" Guid="bd754447-5b44-4210-922a-0476b2951a76" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\CpuZ80Host.c" Guid="91f42d3a-0dc6-4697-8ccd-95b5e697e6ee" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

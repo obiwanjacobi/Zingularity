@@ -92,10 +92,10 @@ namespace Jacobi.CpuZ80.Meta
             switch (flagOp)
             {
                 case "0":
-                    fnName = "Reset";
+                    fnName = "ResetValue";
                     break;
                 case "1":
-                    fnName = "Set";
+                    fnName = "SetValue";
                     break;
                 case "r15":
                     fnName = "Result_Bit15";

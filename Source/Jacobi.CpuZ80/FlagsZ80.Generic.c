@@ -19,6 +19,11 @@ bool_t BC_IsNotZero()
     return (_state.Registers.BC != 0);
 }
 
+bool_t IFF2_Value()
+{
+    return _state.Interrupt.IFF2;
+}
+
 
 bool_t Borrow_Bit16()
 {
@@ -63,20 +68,9 @@ bool_t Data_Bit7()
 {
     return GetBit8(_state.Instruction.Data, Bit7);
 }
-
 bool_t Data_IsZero()
 {
     return (_state.Instruction.Data == 0);
-}
-
-bool_t IFF2_Value()
-{
-    return _state.Interrupt.IFF2;
-}
-
-bool_t Reset()
-{
-    return false;
 }
 
 bool_t Result_Bit15()
@@ -129,7 +123,11 @@ bool_t Result_ParityIsEven()
     return false;
 }
 
-bool_t Set()
+bool_t SetValue()
 {
     return true;
+}
+bool_t ResetValue()
+{
+    return false;
 }

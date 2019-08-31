@@ -27,6 +27,7 @@
 <v>ICEZ80\ICEZ80\ICEZ80.cydwr\Directives</v>
 <v>ICEZ80\ICEZ80\ICEZ80.cydwr\Flash Security</v>
 <v>ICEZ80\ICEZ80\ICEZ80.cydwr\EEPROM</v>
+<v>ICEZ80\ICEZ80\CpuZ80</v>
 <v>ICEZ80\ICEZ80\CpuZ80\Async.h</v>
 <v>ICEZ80\ICEZ80\CpuZ80\ClockInstruction.c</v>
 <v>ICEZ80\ICEZ80\CpuZ80\ClockInstruction.h</v>
@@ -66,6 +67,33 @@
 <v>ICEZ80\ICEZ80\TopDesign</v>
 <v>ICEZ80\ICEZ80\ICEZ80.cydwr</v>
 <v>ICEZ80\ICEZ80\CpuZ80</v>
+<v>ICEZ80\ICEZ80\CpuZ80\Async.h</v>
+<v>ICEZ80\ICEZ80\CpuZ80\ClockInstruction.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\ClockInstruction.h</v>
+<v>ICEZ80\ICEZ80\CpuZ80\ClockTick.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\ClockTick.h</v>
+<v>ICEZ80\ICEZ80\CpuZ80\CpuState.h</v>
+<v>ICEZ80\ICEZ80\CpuZ80\CpuZ80.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\CpuZ80.h</v>
+<v>ICEZ80\ICEZ80\CpuZ80\CpuZ80Host.h</v>
+<v>ICEZ80\ICEZ80\CpuZ80\FunctionsZ80.h</v>
+<v>ICEZ80\ICEZ80\CpuZ80\InstructionInfo.h</v>
+<v>ICEZ80\ICEZ80\CpuZ80\Instructions.Arithmetic16.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\Instructions.Arithmetic8.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\Instructions.BitSetTest.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\Instructions.CallReturn.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\Instructions.ExchangeBlockTransfer.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\Instructions.GeneralPurposeControl.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\Instructions.Generic.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\Instructions.InputOutput.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\Instructions.Jump.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\Instructions.Load16.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\Instructions.Load8.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\Instructions.RotateShift.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\InstructionsZ80.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\InstructionsZ80.h</v>
+<v>ICEZ80\ICEZ80\CpuZ80\InstructionTablesZ80.c</v>
+<v>ICEZ80\ICEZ80\CpuZ80\Types.h</v>
 <v>ICEZ80\ICEZ80\Header Files</v>
 <v>ICEZ80\ICEZ80\Source Files</v>
 <v>ICEZ80\ICEZ80\Source Files\CpuZ80Host.c</v>
@@ -250,7 +278,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1159, 808" SelectedTabbedMdiWindow="91f42d3a-0dc6-4697-8ccd-95b5e697e6ee"><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\main.c" Guid="bd754447-5b44-4210-922a-0476b2951a76" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\CpuZ80Host.c" Guid="91f42d3a-0dc6-4697-8ccd-95b5e697e6ee" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1157, 808" SelectedTabbedMdiWindow="91f42d3a-0dc6-4697-8ccd-95b5e697e6ee"><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\main.c" Guid="bd754447-5b44-4210-922a-0476b2951a76" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\CpuZ80Host.c" Guid="91f42d3a-0dc6-4697-8ccd-95b5e697e6ee" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

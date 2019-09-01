@@ -63,7 +63,7 @@ Async_Function(FetchDecode)
     NextTCycle();
 
     AssertClock(M1, T3, Level_PosEdge, 5);
-    _state.Instruction.Data = getDataBus();
+    _state.Instruction.DataIn = getDataBus();
     setRd(Inactive);
     setMemReq(Inactive);
     setM1(Inactive);
@@ -83,7 +83,8 @@ Async_End
 Async_Function(ExecuteInstructionPart)
 {
     AssertMCycle();
-    while (_state.Clock.T <= _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].clocks)
+    while (!InstructionIsDone() &&
+        _state.Clock.T <= _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].clocks)
     {
         AssertMCycle();
         _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(&_state.Instruction.Async);
@@ -93,13 +94,14 @@ Async_Function(ExecuteInstructionPart)
 
         _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(&_state.Instruction.Async);
 
-        SetIfInstructionIsDone();
-
-        NextTCycle();
-        
-        if (!InstructionIsDone())
+        if (!SetIfInstructionIsDone())
         {
+            NextTCycle();
             Async_Yield();
+        }
+        else if (_state.Instruction.Info->AssignFlags != nullptr)
+        {
+            _state.Instruction.Info->AssignFlags();
         }
     }
 }
@@ -158,7 +160,8 @@ Async_Function(Execute)
     {
         NextMCycle();
         AssertMCycle();
-        while (_state.Instruction.MCycleIndex <= MaxMCycleIndex &&
+        while (!InstructionIsDone() && 
+            _state.Instruction.MCycleIndex <= MaxMCycleIndex &&
             _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].clocks != 0)
         {
             Async_WaitUntil(ExecuteInstructionPart(&_state.Instruction.Async));

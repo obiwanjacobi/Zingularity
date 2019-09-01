@@ -66,11 +66,11 @@ bool_t CarryFlag()
 
 bool_t Data_Bit7()
 {
-    return GetBit8(_state.Instruction.Data, Bit7);
+    return GetBit8(_state.Instruction.DataOutl, Bit7);
 }
 bool_t Data_IsZero()
 {
-    return (_state.Instruction.Data == 0);
+    return (_state.Instruction.DataOut == 0);
 }
 
 bool_t Result_Bit15()
@@ -80,37 +80,37 @@ bool_t Result_Bit15()
 
 bool_t Result_Bit3()
 {
-    return GetBit8(_state.Instruction.Data, Bit3);
+    return GetBit8(_state.Instruction.DataOutl, Bit3);
 }
 
 bool_t Result_Bit5()
 {
-    return GetBit8(_state.Instruction.Data, Bit5);
+    return GetBit8(_state.Instruction.DataOutl, Bit5);
 }
 
 bool_t Result_Bit7()
 {
-    return GetBit8(_state.Instruction.Data, Bit7);
+    return GetBit8(_state.Instruction.DataOutl, Bit7);
 }
 
 bool_t Result_IsValue7F()
 {
-    return _state.Instruction.Data == 0x7F;
+    return _state.Instruction.DataOut == 0x7F;
 }
 
 bool_t Result_IsValue80()
 {
-    return _state.Instruction.Data == 0x80;
+    return _state.Instruction.DataOut == 0x80;
 }
 
 bool_t Result_IsValueFF()
 {
-    return _state.Instruction.Data == 0xFF;
+    return _state.Instruction.DataOut == 0xFF;
 }
 
 bool_t Result_IsZero()
 {
-    return _state.Instruction.Data == 0;
+    return _state.Instruction.DataOut == 0;
 }
 
 bool_t Result_Overflows()

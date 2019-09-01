@@ -63,7 +63,7 @@ const InstructionInfo* LookupInstruction()
     // easy optimization
     if (tableLength == 256)
     {
-        return table[_state.Instruction.Data].Instruction;
+        return table[_state.Instruction.DataIn].Instruction;
     }
     else
     {
@@ -77,7 +77,7 @@ const InstructionInfo* LookupInstruction()
         //  continue searching in a binary fashion.
         for (uint8_t i = 0; i < tableLength; i++)
         {
-            if (table[i].OpCode == _state.Instruction.Data)
+            if (table[i].OpCode == _state.Instruction.DataIn)
                 return table[i].Instruction;
         }
     }
@@ -87,12 +87,12 @@ const InstructionInfo* LookupInstruction()
 
 void Decode()
 {
-    switch (_state.Instruction.Data)
+    switch (_state.Instruction.DataIn)
     {
     case 0xDD:
     case 0xED:
     case 0xFD:
-        _state.Instruction.Ext[0] = _state.Instruction.Data;
+        _state.Instruction.Ext[0] = _state.Instruction.DataInl;
         _state.Instruction.ExtIndex = 1;
         break;
     case 0xCB:

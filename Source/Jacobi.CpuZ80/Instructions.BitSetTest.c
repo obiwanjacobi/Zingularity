@@ -68,14 +68,14 @@ void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async)
     switch (_state.Clock.TL)
     {
     case 7:
-        SetRegister8(_state.Instruction.Info->Decode.Variable2.Register8, _state.Instruction.Data);
+        SetRegister8(_state.Instruction.Info->Decode.Variable2.Register8, _state.Instruction.DataIn);
         SetBit(_state.Instruction.Info->Decode.Variable1.Bits8, 
             _state.Instruction.Info->Decode.Variable2.Register8,
             true);
         break;
     case 8:
         // prepare write back
-        _state.Instruction.Data = GetRegister8(_state.Instruction.Info->Decode.Variable2.Register8);
+        _state.Instruction.DataOut = GetRegister8(_state.Instruction.Info->Decode.Variable2.Register8);
         break;
     default:
         OnClock_MR(async);

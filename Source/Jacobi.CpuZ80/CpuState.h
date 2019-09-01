@@ -8,6 +8,22 @@
 extern "C" {
 #endif
 
+#define RegisterPairUnion(hl, h, l)  \
+    union {                         \
+        uint16_t hl;                \
+        struct { uint8_t l; uint8_t h; }; \
+    }
+
+#define RegisterPair(h, l) \
+RegisterPairUnion(h##l, h, l)
+
+#define RegisterPair2(h, l) \
+RegisterPairUnion(h##l##2, h##2, l##2)
+
+#define RegisterPairEx(ii) \
+RegisterPairUnion(ii, ii##h, ii##l)
+
+
     typedef struct
     {
         // running clock info
@@ -33,7 +49,8 @@ extern "C" {
 
         // running vars of instruction
         uint16_t Address;
-        uint8_t Data;
+        RegisterPairEx(DataIn);
+        RegisterPairEx(DataOut);   // result
 
         int8_t d;
         int8_t e;
@@ -47,20 +64,6 @@ extern "C" {
 
     } InstructionState;
 
-#define RegisterPairUnion(hl, h, l)  \
-    union {                         \
-        uint16_t hl;                \
-        struct { uint8_t l; uint8_t h; }; \
-    }
-
-#define RegisterPair(h, l) \
-RegisterPairUnion(h##l, h, l)
-
-#define RegisterPair2(h, l) \
-RegisterPairUnion(h##l##2, h##2, l##2)
-
-#define RegisterPairEx(ii) \
-RegisterPairUnion(ii, ii##h, ii##l)
 
     typedef struct
     {

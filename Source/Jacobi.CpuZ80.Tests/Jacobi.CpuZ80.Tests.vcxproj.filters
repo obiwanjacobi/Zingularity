@@ -18,6 +18,10 @@
     </ClCompile>
     <ClCompile Include="TestGlobals.cpp" />
     <ClCompile Include="CpuZ80TestHost.cpp" />
+    <ClCompile Include="Arithmetic16Tests.cpp">
+      <Filter>Instructions</Filter>
+    </ClCompile>
+    <ClCompile Include="AluTests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Instructions">

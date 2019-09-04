@@ -36,7 +36,7 @@ void OnClock_ODd(AsyncThis* async)
         break;
     case 6:
         OnClock_MR(async);
-        _state.Instruction.d = _state.Instruction.DataIn;
+        _state.Instruction.d = _state.Instruction.DataInl;
         break;
     default:
         OnClock_MR(async);
@@ -83,7 +83,7 @@ void OnClock_MW(AsyncThis* async)
     case 2:
         setMemReq(Active);
         setWr(Active);
-        setDataBus(_state.Instruction.DataOut);
+        setDataBus(_state.Instruction.DataOutl);
         break;
     case 3:
     case 4:

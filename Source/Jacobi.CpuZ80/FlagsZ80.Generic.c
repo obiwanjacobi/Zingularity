@@ -6,12 +6,12 @@ extern CpuState _state;
 
 bool_t AddressHi_Bit3()
 {
-    return GetBit8(_state.Instruction.Address >> 8, Bit3);
+    return GetBit8(_state.Instruction.Addressh, Bit3);
 }
 
 bool_t AddressHi_Bit5()
 {
-    return GetBit8(_state.Instruction.Address >> 8, Bit5);
+    return GetBit8(_state.Instruction.Addressh, Bit5);
 }
 
 bool_t BC_IsNotZero()
@@ -25,36 +25,36 @@ bool_t IFF2_Value()
 }
 
 
-bool_t Borrow_Bit16()
+bool_t Borrow_Bit4()
 {
-    return false;
+    return HalfBorrow(_state.Instruction.DataInl, _state.Instruction.DataOutl);
+}
+bool_t Borrow_Bit8()
+{
+    return Borrow(_state.Instruction.DataInl, _state.Instruction.DataOut);
 }
 bool_t Borrow_Bit12()
 {
     return false;
 }
-bool_t Borrow_Bit4()
-{
-    return false;
-}
-bool_t Borrow_Bit8()
+bool_t Borrow_Bit16()
 {
     return false;
 }
 
-bool_t Carry_Bit11()
-{
-    return false;
-}
-bool_t Carry_Bit15()
-{
-    return false;
-}
 bool_t Carry_Bit3()
 {
     return false;
 }
 bool_t Carry_Bit7()
+{
+    return false;
+}
+bool_t Carry_Bit11()
+{
+    return false;
+}
+bool_t Carry_Bit15()
 {
     return false;
 }
@@ -73,11 +73,6 @@ bool_t Data_IsZero()
     return (_state.Instruction.DataOut == 0);
 }
 
-bool_t Result_Bit15()
-{
-    return false;
-}
-
 bool_t Result_Bit3()
 {
     return GetBit8(_state.Instruction.DataOutl, Bit3);
@@ -92,17 +87,19 @@ bool_t Result_Bit7()
 {
     return GetBit8(_state.Instruction.DataOutl, Bit7);
 }
+bool_t Result_Bit15()
+{
+    return GetBit8(_state.Instruction.DataOuth, Bit7);
+}
 
 bool_t Result_IsValue7F()
 {
     return _state.Instruction.DataOut == 0x7F;
 }
-
 bool_t Result_IsValue80()
 {
     return _state.Instruction.DataOut == 0x80;
 }
-
 bool_t Result_IsValueFF()
 {
     return _state.Instruction.DataOut == 0xFF;
@@ -110,17 +107,17 @@ bool_t Result_IsValueFF()
 
 bool_t Result_IsZero()
 {
-    return _state.Instruction.DataOut == 0;
+    return IsZero(_state.Instruction.DataOutl);
 }
 
 bool_t Result_Overflows()
 {
-    return false;
+    // TODO: value2?
+    return IsOverflow(_state.Instruction.DataInl, 0, _state.Instruction.DataOut);
 }
-
 bool_t Result_ParityIsEven()
 {
-    return false;
+    return IsParityEven(_state.Instruction.DataOutl);
 }
 
 bool_t SetValue()

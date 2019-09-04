@@ -105,6 +105,48 @@ uint16_t GetRegister16(Registers16 reg)
     return 0;
 }
 
+uint8_t GetRegisterSP16Lsb(RegistersSP16 reg)
+{
+    switch (reg)
+    {
+    case Reg16_BC:
+        return _state.Registers.C;
+    case Reg16_DE:
+        return _state.Registers.E;
+    case Reg16_HL:
+        return _state.Registers.L;
+    case Reg16_AF:
+        return _state.Registers.F;
+
+    default:
+        assert(false);
+        break;
+    }
+        
+    return 0;
+}
+
+uint8_t GetRegisterSP16Msb(RegistersSP16 reg)
+{
+    switch (reg)
+    {
+    case Reg16_BC:
+        return _state.Registers.B;
+    case Reg16_DE:
+        return _state.Registers.D;
+    case Reg16_HL:
+        return _state.Registers.H;
+    case Reg16_AF:
+        return _state.Registers.A;
+
+    default:
+        assert(false);
+        break;
+    }
+
+    return 0;
+}
+
 void SetRegisterSP16(RegistersSP16 reg, uint16_t value)
 {
     switch (reg)
@@ -199,7 +241,7 @@ void setAddressIR()
 
 void SetFlag(Flags flags, bool_t value)
 {
-    SetBit8(&_state.Registers.F, flags, value);
+    _state.Registers.F = SetBit8(_state.Registers.F, flags, value);
 }
 
 bool_t GetFlag(Flags flags)

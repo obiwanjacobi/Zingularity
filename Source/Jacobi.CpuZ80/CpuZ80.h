@@ -145,6 +145,7 @@ typedef enum
     Flag_S
 } Flags;
 
+
 void SetRegister8(Registers8 reg, uint8_t value);
 uint8_t GetRegister8(Registers8 reg);
 
@@ -153,6 +154,8 @@ uint16_t GetRegister16(Registers16 reg);
 
 void SetRegisterSP16(RegistersSP16 reg, uint16_t value);
 uint16_t GetRegisterSP16(RegistersSP16 reg);
+uint8_t GetRegisterSP16Msb(RegistersSP16 reg);
+uint8_t GetRegisterSP16Lsb(RegistersSP16 reg);
 
 // based on extension opcodes
 void SetRegisterEx16(uint16_t reg);

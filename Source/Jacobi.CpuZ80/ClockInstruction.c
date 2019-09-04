@@ -87,7 +87,7 @@ const InstructionInfo* LookupInstruction()
 
 void Decode()
 {
-    switch (_state.Instruction.DataIn)
+    switch (_state.Instruction.DataInl)
     {
     case 0xDD:
     case 0xED:
@@ -110,7 +110,7 @@ void Decode()
         _state.Instruction.Info = LookupInstruction();
         if (_state.Instruction.ExtIndex > 0)
         {
-            _state.Instruction.MCycleIndex = _state.Instruction.ExtIndex - 1;
+            _state.Instruction.MCycleIndex = _state.Instruction.ExtIndex;
         }
         break;
     }

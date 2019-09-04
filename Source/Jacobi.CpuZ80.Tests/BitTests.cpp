@@ -8,7 +8,7 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 extern CpuState _state;
 
-namespace JacobiCpuZ80Tests
+namespace Z80InstructionTests
 {
     TEST_CLASS(BitTests)
     {

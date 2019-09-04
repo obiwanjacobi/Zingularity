@@ -163,6 +163,8 @@
     <ClInclude Include="TestGlobals.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AluTests.cpp" />
+    <ClCompile Include="Arithmetic16Tests.cpp" />
     <ClCompile Include="BitTests.cpp" />
     <ClCompile Include="ClockTickTests.cpp" />
     <ClCompile Include="CpuZ80TestHost.cpp" />

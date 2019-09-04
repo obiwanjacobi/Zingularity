@@ -48,7 +48,7 @@ RegisterPairUnion(ii, ii##h, ii##l)
         uint8_t Ext[2];
 
         // running vars of instruction
-        uint16_t Address;
+        RegisterPairEx(Address);
         RegisterPairEx(DataIn);
         RegisterPairEx(DataOut);   // result
 

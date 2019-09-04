@@ -99,10 +99,11 @@ Async_Function(ExecuteInstructionPart)
             NextTCycle();
             Async_Yield();
         }
-        else if (_state.Instruction.Info->AssignFlags != nullptr)
+        // Unsure about flag implementation
+        /*else if (_state.Instruction.Info->AssignFlags != nullptr)
         {
             _state.Instruction.Info->AssignFlags();
-        }
+        }*/
     }
 }
 Async_End

@@ -27,11 +27,11 @@ bool_t IFF2_Value()
 
 bool_t Borrow_Bit4()
 {
-    return HalfBorrow(_state.Instruction.DataInl, _state.Instruction.DataOutl);
+    return false;
 }
 bool_t Borrow_Bit8()
 {
-    return Borrow(_state.Instruction.DataInl, _state.Instruction.DataOut);
+    return false;
 }
 bool_t Borrow_Bit12()
 {
@@ -107,17 +107,16 @@ bool_t Result_IsValueFF()
 
 bool_t Result_IsZero()
 {
-    return IsZero(_state.Instruction.DataOutl);
+    return _state.Instruction.DataOutl == 0;
 }
 
 bool_t Result_Overflows()
 {
-    // TODO: value2?
-    return IsOverflow(_state.Instruction.DataInl, 0, _state.Instruction.DataOut);
+    return false;
 }
 bool_t Result_ParityIsEven()
 {
-    return IsParityEven(_state.Instruction.DataOutl);
+    return false;
 }
 
 bool_t SetValue()

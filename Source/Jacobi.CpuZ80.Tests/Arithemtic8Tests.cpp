@@ -15,7 +15,7 @@ namespace Z80InstructionTests
     {
     public:
 
-        TEST_METHOD(Add_A_r)
+        TEST_METHOD(Add_A_B)
         {
             uint8_t bytes[] = { 0b10000000, 0x00 };
             TestCpuState cpuState;
@@ -34,6 +34,9 @@ namespace Z80InstructionTests
             Assert::AreEqual(0x11, (int)_state.Registers.B);
             Assert::AreEqual(0x77, (int)_state.Registers.A);
             Assert::AreEqual(0, (int)GetFlag(Flag_C));
+            Assert::AreEqual(0, (int)GetFlag(Flag_S));
+            Assert::AreEqual(0, (int)GetFlag(Flag_N));
+            Assert::AreEqual(0, (int)GetFlag(Flag_Z));
         }
     };
 }

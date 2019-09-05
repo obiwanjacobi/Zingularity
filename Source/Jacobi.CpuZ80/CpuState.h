@@ -30,7 +30,7 @@ RegisterPairUnion(ii, ii##h, ii##l)
         uint8_t M;
         uint8_t T;
         Level Level;
-        uint8_t TL;     // increments on every level and T change
+        TCycleLevel TL;     // increments on every level, reset on new M-Cycle
 
     } ClockState;
 

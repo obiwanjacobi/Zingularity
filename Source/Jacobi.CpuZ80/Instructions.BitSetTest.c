@@ -56,9 +56,9 @@ void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async)
 {
     switch (_state.Clock.TL)
     {
-        case 9:
+        case T5_NegEdge:
             // Not M4 due to double extension opcodes; both read as M1
-            AssertClock(M3, T5, Level_PosEdge, 9);
+            AssertClockM(M3);
             _state.Instruction.Address = GetRegisterEx16() + _state.Instruction.d;
             break;
     }
@@ -67,13 +67,13 @@ void OnClock_SETb__ex_d__r_ex4_MR(AsyncThis* async)
 {
     switch (_state.Clock.TL)
     {
-    case 7:
+    case T4_PosEdge:
         SetRegister8(_state.Instruction.Info->Decode.Variable2.Register8, _state.Instruction.DataInl);
         SetBit(_state.Instruction.Info->Decode.Variable1.Bits8, 
             _state.Instruction.Info->Decode.Variable2.Register8,
             true);
         break;
-    case 8:
+    case T4_NegEdge:
         // prepare write back
         _state.Instruction.DataOut = GetRegister8(_state.Instruction.Info->Decode.Variable2.Register8);
         break;

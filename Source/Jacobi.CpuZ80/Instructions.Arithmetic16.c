@@ -29,10 +29,10 @@ void OnClock_SBCHL_p_ED2_OP_M2()
 {
     switch (_state.Clock.TL)
     {
-    case 3:
+    case T2_PosEdge:
         _state.Instruction.DataIn = _state.Registers.HL;
         break;
-    case 5:
+    case T3_PosEdge:
         _state.Registers.L =
             Sub8(_state.Registers.L,
                 GetRegisterSP16Lsb(_state.Instruction.Info->Decode.Variable1.RegisterSP16),
@@ -47,7 +47,7 @@ void OnClock_SBCHL_p_ED2_OP_M3()
 {
     switch (_state.Clock.TL)
     {
-    case 3:
+    case T2_PosEdge:
         _state.Registers.H =
             Sub8(_state.Registers.H,
                 GetRegisterSP16Msb(_state.Instruction.Info->Decode.Variable1.RegisterSP16),

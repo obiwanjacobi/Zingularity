@@ -37,6 +37,24 @@ typedef enum
     T6,
 } TCycle;
 
+typedef enum
+{
+    TCycleLevel_NotInitialized,
+    T1_PosEdge,
+    T1_NegEdge,
+    T2_PosEdge,
+    T2_NegEdge,
+    T3_PosEdge,
+    T3_NegEdge,
+    T4_PosEdge,
+    T4_NegEdge,
+    T5_PosEdge,
+    T5_NegEdge,
+    T6_PosEdge,
+    T6_NegEdge,
+
+} TCycleLevel;
+
 typedef enum 
 {
     Reg8_B,

@@ -5,6 +5,9 @@
 
 extern CpuState _state;
 
+bool_t IsIX() { return _state.Instruction.ExtIndex > 0 && _state.Instruction.Ext[0] == 0xDD; }
+bool_t IsIY() { return _state.Instruction.ExtIndex > 0 && _state.Instruction.Ext[0] == 0xFD; }
+
 void SetRegister8(Registers8 reg, uint8_t value)
 {
     switch (reg)
@@ -22,9 +25,19 @@ void SetRegister8(Registers8 reg, uint8_t value)
         _state.Registers.E = value;
         break;
     case Reg8_H:
-        _state.Registers.H = value;
+        if (IsIX())
+            _state.Registers.IXh = value;
+        else if (IsIY())
+            _state.Registers.IYh = value;
+        else
+            _state.Registers.H = value;
         break;
     case Reg8_L:
+        if (IsIX())
+            _state.Registers.IXl = value;
+        else if (IsIY())
+            _state.Registers.IYl = value;
+        else
         _state.Registers.L = value;
         break;
     case Reg8_A:
@@ -50,9 +63,19 @@ uint8_t GetRegister8(Registers8 reg)
     case Reg8_E:
         return _state.Registers.E;
     case Reg8_H:
-        return _state.Registers.H;
+        if (IsIX())
+            return _state.Registers.IXh;
+        else if (IsIY())
+            return _state.Registers.IYh;
+        else
+            return _state.Registers.H;
     case Reg8_L:
-        return _state.Registers.L;
+        if (IsIX())
+            return _state.Registers.IXl;
+        else if (IsIY())
+            return _state.Registers.IYl;
+        else
+            return _state.Registers.L;
     case Reg8_A:
         return _state.Registers.A;
 
@@ -191,36 +214,22 @@ uint16_t GetRegisterSP16(RegistersSP16 reg)
 
 void SetRegisterEx16(uint16_t reg)
 {
-    if (_state.Instruction.ExtIndex > 0)
-    {
-        switch (_state.Instruction.Ext[0])
-        {
-        case 0xDD:
-            _state.Registers.IX = reg;
-            return;
-        case 0xFD:
-            _state.Registers.IY = reg;
-            return;
-        }
-    }
-
-    _state.Registers.HL = reg;
+    if (IsIX())
+        _state.Registers.IX = reg;
+    else if (IsIY())
+        _state.Registers.IY = reg;
+    else
+        _state.Registers.HL = reg;
 }
 
 uint16_t GetRegisterEx16()
 {
-    if (_state.Instruction.ExtIndex > 0)
-    {
-        switch (_state.Instruction.Ext[0])
-        {
-        case 0xDD:
-            return _state.Registers.IX;
-        case 0xFD:
-            return _state.Registers.IY;
-        }
-    }
-
-    return _state.Registers.HL;
+    if (IsIX())
+        return _state.Registers.IX;
+    else if (IsIY())
+        return _state.Registers.IY;
+    else
+        return _state.Registers.HL;
 }
 
 void setAddressPC()

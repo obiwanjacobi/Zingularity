@@ -15,7 +15,7 @@ void OnClock_OD(AsyncThis* async)
 {
     switch (_state.Clock.TL)
     {
-    case 1:
+    case T1_PosEdge:
         setRefresh(Inactive);
         setAddressPC();
         break;
@@ -30,11 +30,11 @@ void OnClock_ODd(AsyncThis* async)
 {
     switch (_state.Clock.TL)
     {
-    case 1:
+    case T1_PosEdge:
         setRefresh(Inactive);
         setAddressPC();
         break;
-    case 6:
+    case T3_NegEdge:
         OnClock_MR(async);
         _state.Instruction.d = _state.Instruction.DataInl;
         break;
@@ -49,19 +49,19 @@ void OnClock_MR(AsyncThis* async)
 {
     switch (_state.Clock.TL)
     {
-    case 1:
+    case T1_PosEdge:
         setRefresh(Inactive);
         setAddressBus(_state.Instruction.Address);
         break;
-    case 2:
+    case T1_NegEdge:
         setMemReq(Active);
         setRd(Active);
         break;
-    case 3:
-    case 4:
-    case 5:
+    case T2_PosEdge:
+    case T2_NegEdge:
+    case T3_PosEdge:
         break;
-    case 6:
+    case T3_NegEdge:
         _state.Instruction.DataIn = getDataBus();
         setRd(Inactive);
         setMemReq(Inactive);
@@ -76,20 +76,20 @@ void OnClock_MW(AsyncThis* async)
 {
     switch (_state.Clock.TL)
     {
-    case 1:
+    case T1_PosEdge:
         setRefresh(Inactive);
         setAddressBus(_state.Instruction.Address);
         break;
-    case 2:
+    case T1_NegEdge:
         setMemReq(Active);
         setWr(Active);
         setDataBus(_state.Instruction.DataOutl);
         break;
-    case 3:
-    case 4:
-    case 5:
+    case T2_PosEdge:
+    case T2_NegEdge:
+    case T3_PosEdge:
         break;
-    case 6:
+    case T3_NegEdge:
         setWr(Inactive);
         setMemReq(Inactive);
         break;

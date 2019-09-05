@@ -34,7 +34,7 @@ void NextMCycle()
 
 Async_Function(FetchDecode)
 {
-    AssertClock(M1, T1, Level_PosEdge, 1);
+    AssertClock(M1, T1_PosEdge);
     setRefresh(Inactive);
     setAddressPC();
     setM1(Active);
@@ -42,14 +42,14 @@ Async_Function(FetchDecode)
 
     _state.Clock.TL++;
 
-    AssertClock(M1, T1, Level_NegEdge, 2);
+    AssertClock(M1, T1_NegEdge);
     setMemReq(Active);
     setRd(Active);
     Async_Yield();
     
     NextTCycle();
 
-    AssertClock(M1, T2, Level_PosEdge, 3);
+    AssertClock(M1, T2_PosEdge);
     // time for some book keeping
     if (_state.Instruction.InstructionAddress == 0)
         _state.Instruction.InstructionAddress = _state.Registers.PC - 1;
@@ -57,12 +57,12 @@ Async_Function(FetchDecode)
 
     _state.Clock.TL++;
 
-    AssertClock(M1, T2, Level_NegEdge, 4);
+    AssertClock(M1, T2_NegEdge);
     Async_Yield();
 
     NextTCycle();
 
-    AssertClock(M1, T3, Level_PosEdge, 5);
+    AssertClock(M1, T3_PosEdge);
     _state.Instruction.DataIn = getDataBus();
     setRd(Inactive);
     setMemReq(Inactive);
@@ -73,7 +73,7 @@ Async_Function(FetchDecode)
 
     _state.Clock.TL++;
 
-    AssertClock(M1, T3, Level_NegEdge, 6);
+    AssertClock(M1, T3_NegEdge);
     setMemReq(Active);
     Decode();
     Async_Yield();
@@ -114,7 +114,7 @@ Async_Function(Execute)
 
     NextTCycle();
 
-    AssertClock(M1, T4, Level_PosEdge, 7);
+    AssertClock(M1, T4_PosEdge);
     if (_state.Instruction.Info != nullptr)
     {
         AssertMCycle();
@@ -128,7 +128,7 @@ Async_Function(Execute)
 
     _state.Clock.TL++;
 
-    AssertClock(M1, T4, Level_NegEdge, 8);
+    AssertClock(M1, T4_NegEdge);
     setMemReq(Inactive);
     if (_state.Instruction.Info != nullptr)
     {

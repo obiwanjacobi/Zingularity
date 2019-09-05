@@ -22,6 +22,7 @@
       <Filter>Instructions</Filter>
     </ClCompile>
     <ClCompile Include="AluTests.cpp" />
+    <ClCompile Include="Arithemtic8Tests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Instructions">

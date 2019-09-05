@@ -1,7 +1,22 @@
 #include "FunctionsZ80.h"
+#include "CpuState.h"
+#include "CpuAlu.h"
+
+extern CpuState _state;
 
 // ADD A, A   -  ADDA_A_1  -  87
-void OnClock_ADDA_r_1_OF(AsyncThis* async) {}
+void OnClock_ADDA_r_1_OF(AsyncThis* async) 
+{
+    switch (_state.Clock.TL)
+    {
+    case 7:
+        _state.Instruction.DataIn = GetRegister8(_state.Instruction.Info->Decode.Variable1.Register8);
+        _state.Instruction.DataOut = Add8(GetRegister8(Reg8_A), _state.Instruction.DataInl, Alu_WithoutCarry);
+        SetRegister8(Reg8_A, _state.Instruction.DataOutl);
+    default:
+        break;
+    }
+}
 
 // ADD A, A   -  ADDA_A_DD2  -  DD, 87
 void OnClock_ADDA_t_DD2_OF(AsyncThis* async) {}

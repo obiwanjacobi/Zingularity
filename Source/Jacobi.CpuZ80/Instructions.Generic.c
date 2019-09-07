@@ -1,17 +1,16 @@
-#include "Async.h"
 #include "FunctionsZ80.h"
 #include "CpuState.h"
 #include "CpuZ80Host.h"
 
 extern CpuState _state;
 
-void OnClock_OF(AsyncThis* async)
+void OnClock_OF()
 {
     // do nothing
 }
 
 // like MR but with PC address
-void OnClock_OD(AsyncThis* async)
+void OnClock_OD()
 {
     switch (_state.Clock.TL)
     {
@@ -20,13 +19,13 @@ void OnClock_OD(AsyncThis* async)
         setAddressPC();
         break;
     default:
-        OnClock_MR(async);
+        OnClock_MR();
         break;
     }
 }
 
 // like OD but with assing Data to d
-void OnClock_ODd(AsyncThis* async)
+void OnClock_ODd()
 {
     switch (_state.Clock.TL)
     {
@@ -35,17 +34,17 @@ void OnClock_ODd(AsyncThis* async)
         setAddressPC();
         break;
     case T3_NegEdge:
-        OnClock_MR(async);
+        OnClock_MR();
         _state.Instruction.d = _state.Instruction.DataInl;
         break;
     default:
-        OnClock_MR(async);
+        OnClock_MR();
         break;
     }
 }
 
 
-void OnClock_MR(AsyncThis* async)
+void OnClock_MR()
 {
     switch (_state.Clock.TL)
     {
@@ -58,7 +57,13 @@ void OnClock_MR(AsyncThis* async)
         setRd(Active);
         break;
     case T2_PosEdge:
+        break;
     case T2_NegEdge:
+        if (getWait())
+        {
+            _state.Interrupt.Wait = true;
+        }
+        break;
     case T3_PosEdge:
         break;
     case T3_NegEdge:
@@ -72,7 +77,7 @@ void OnClock_MR(AsyncThis* async)
     }
 }
 
-void OnClock_MW(AsyncThis* async)
+void OnClock_MW()
 {
     switch (_state.Clock.TL)
     {
@@ -86,7 +91,13 @@ void OnClock_MW(AsyncThis* async)
         setDataBus(_state.Instruction.DataOutl);
         break;
     case T2_PosEdge:
+        break;
     case T2_NegEdge:
+        if (getWait())
+        {
+            _state.Interrupt.Wait = true;
+        }
+        break;
     case T3_PosEdge:
         break;
     case T3_NegEdge:
@@ -99,37 +110,37 @@ void OnClock_MW(AsyncThis* async)
     }
 }
 
-void OnClock_PCd(AsyncThis* async)
+void OnClock_PCd()
 {
 
 }
 
-void OnClock_SRh(AsyncThis* async)
+void OnClock_SRh()
 {
 
 }
 
-void OnClock_SRl(AsyncThis* async)
+void OnClock_SRl()
 {
 
 }
 
-void OnClock_SWh(AsyncThis* async)
+void OnClock_SWh()
 {
 
 }
 
-void OnClock_SWl(AsyncThis* async)
+void OnClock_SWl()
 {
 
 }
 
-void OnClock_PR(AsyncThis* async)
+void OnClock_PR()
 {
 
 }
 
-void OnClock_PW(AsyncThis* async)
+void OnClock_PW()
 {
 
 }

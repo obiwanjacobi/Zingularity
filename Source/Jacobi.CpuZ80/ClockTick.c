@@ -30,8 +30,11 @@ void NextTCycleLevel()
 
 void NextMCycle()
 {
-    _state.Instruction.MCycleIndex++;
-    _state.Clock.M++;
+    if (!_state.Interrupt.Wait)
+    {
+        _state.Instruction.MCycleIndex++;
+        _state.Clock.M++;
+    }
     _state.Clock.T = T1;
     _state.Clock.TL = T1_PosEdge;
 }
@@ -69,6 +72,11 @@ Async_Function(FetchDecode)
     NextTCycleLevel();
 
     AssertClock(M1, T2_NegEdge);
+    if (getWait())
+    {
+        _state.Interrupt.Wait = true;
+    }
+
     // time for some book keeping
     if (_state.Instruction.InstructionAddress == 0)
         _state.Instruction.InstructionAddress = _state.Registers.PC - 1;
@@ -111,12 +119,12 @@ Async_Function(ExecuteInstructionPart)
         {
             CheckForInterrupt();
         }
-        _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(&_state.Instruction.Async);
+        _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(nullptr);
         Async_Yield();
 
         NextTCycleLevel();
 
-        _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(&_state.Instruction.Async);
+        _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(nullptr);
 
         if (!SetIfInstructionIsDone())
         {

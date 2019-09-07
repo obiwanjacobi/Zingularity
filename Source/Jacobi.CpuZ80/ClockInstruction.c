@@ -1,5 +1,6 @@
 #include "ClockInstruction.h"
 #include "ClockTick.h"
+#include "CpuZ80Host.h"
 #include "InstructionsZ80.h"
 #include "FunctionsZ80.h"
 #include <assert.h>
@@ -202,5 +203,20 @@ void SetResetState()
 
 void CheckForInterrupt()
 {
+    if (getBusReq())
+    {
+        _state.Interrupt.BusRequest = true;
+    }
 
+    if (getNmi())
+    {
+        _state.Interrupt.NMI = true;
+        _state.Interrupt.Halt = false;
+    }
+
+    if (getInt())
+    {
+        _state.Interrupt.INT = true;
+        _state.Interrupt.Halt = false;
+    }
 }

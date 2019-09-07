@@ -9,7 +9,7 @@
 extern "C" {
 #endif
 
-typedef void(*fnOnClock)(AsyncThis* async);
+typedef void(*fnOnClock)();
 typedef void(*fnAssignFlags)();
 
 typedef enum 

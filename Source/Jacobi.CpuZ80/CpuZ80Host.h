@@ -19,7 +19,9 @@ extern "C" {
 
     void setAddressBus(uint16_t address);
     void setDataBus(uint8_t data);
-    void setBusAck(Signal active); // host also floats buses
+    // host also floats buses:
+    // A0-A15, D0-D7, RD, WR, MEMRQ, IOREQ, RFSH
+    void setBusAck(Signal active);
     void setHalt(Signal active);
     void setRd(Signal active);
     void setWr(Signal active);
@@ -33,7 +35,8 @@ extern "C" {
     uint8_t getDataBus();
     Signal getReset();
     Signal getBusReq();
-    Signal getNmi();    // host detects pulse and resets cached value after this is called.
+    // host detects pulse and resets cached value after this is called.
+    Signal getNmi();
     Signal getInt();
     Signal getWait();
 

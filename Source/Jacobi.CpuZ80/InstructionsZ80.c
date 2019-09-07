@@ -9657,7 +9657,7 @@ const InstructionInfo instructionInfoADDHL_SP_1 =
     AssignFlags_Cc15Hc11N0Xr3Yr5
 };
 
-// ADD IX, BC   -  ADDIX_BC_DD2  -  DD, 09
+// ADD IX, BC   -  ADDIX_BC_DD2  -  DD, 08
 const InstructionInfo instructionInfoADDIX_BC_DD2 =
 {
     {
@@ -9675,7 +9675,7 @@ const InstructionInfo instructionInfoADDIX_BC_DD2 =
     AssignFlags_Cc15Hc11N0Xr3Yr5
 };
 
-// ADD IX, DE   -  ADDIX_DE_DD2  -  DD, 19
+// ADD IX, DE   -  ADDIX_DE_DD2  -  DD, 18
 const InstructionInfo instructionInfoADDIX_DE_DD2 =
 {
     {
@@ -9693,7 +9693,7 @@ const InstructionInfo instructionInfoADDIX_DE_DD2 =
     AssignFlags_Cc15Hc11N0Xr3Yr5
 };
 
-// ADD IX, IX   -  ADDIX_IX_DD2  -  DD, 29
+// ADD IX, IX   -  ADDIX_IX_DD2  -  DD, 28
 const InstructionInfo instructionInfoADDIX_IX_DD2 =
 {
     {
@@ -9711,7 +9711,7 @@ const InstructionInfo instructionInfoADDIX_IX_DD2 =
     AssignFlags_Cc15Hc11N0Xr3Yr5
 };
 
-// ADD IX, SP   -  ADDIX_SP_DD2  -  DD, 39
+// ADD IX, SP   -  ADDIX_SP_DD2  -  DD, 38
 const InstructionInfo instructionInfoADDIX_SP_DD2 =
 {
     {
@@ -9729,7 +9729,7 @@ const InstructionInfo instructionInfoADDIX_SP_DD2 =
     AssignFlags_Cc15Hc11N0Xr3Yr5
 };
 
-// ADD IY, BC   -  ADDIY_BC_FD2  -  FD, 09
+// ADD IY, BC   -  ADDIY_BC_FD2  -  FD, 08
 const InstructionInfo instructionInfoADDIY_BC_FD2 =
 {
     {
@@ -9747,7 +9747,7 @@ const InstructionInfo instructionInfoADDIY_BC_FD2 =
     AssignFlags_Cc15Hc11N0Xr3Yr5
 };
 
-// ADD IY, DE   -  ADDIY_DE_FD2  -  FD, 19
+// ADD IY, DE   -  ADDIY_DE_FD2  -  FD, 18
 const InstructionInfo instructionInfoADDIY_DE_FD2 =
 {
     {
@@ -9765,7 +9765,7 @@ const InstructionInfo instructionInfoADDIY_DE_FD2 =
     AssignFlags_Cc15Hc11N0Xr3Yr5
 };
 
-// ADD IY, IY   -  ADDIY_IY_FD2  -  FD, 29
+// ADD IY, IY   -  ADDIY_IY_FD2  -  FD, 28
 const InstructionInfo instructionInfoADDIY_IY_FD2 =
 {
     {
@@ -9783,7 +9783,7 @@ const InstructionInfo instructionInfoADDIY_IY_FD2 =
     AssignFlags_Cc15Hc11N0Xr3Yr5
 };
 
-// ADD IY, SP   -  ADDIY_SP_FD2  -  FD, 39
+// ADD IY, SP   -  ADDIY_SP_FD2  -  FD, 38
 const InstructionInfo instructionInfoADDIY_SP_FD2 =
 {
     {

@@ -1669,28 +1669,28 @@ extern const InstructionInfo instructionInfoADDHL_HL_1;
 // ADD HL, SP  -  39
 extern const InstructionInfo instructionInfoADDHL_SP_1;
 
-// ADD IX, BC  -  DD, 09
+// ADD IX, BC  -  DD, 08
 extern const InstructionInfo instructionInfoADDIX_BC_DD2;
 
-// ADD IX, DE  -  DD, 19
+// ADD IX, DE  -  DD, 18
 extern const InstructionInfo instructionInfoADDIX_DE_DD2;
 
-// ADD IX, IX  -  DD, 29
+// ADD IX, IX  -  DD, 28
 extern const InstructionInfo instructionInfoADDIX_IX_DD2;
 
-// ADD IX, SP  -  DD, 39
+// ADD IX, SP  -  DD, 38
 extern const InstructionInfo instructionInfoADDIX_SP_DD2;
 
-// ADD IY, BC  -  FD, 09
+// ADD IY, BC  -  FD, 08
 extern const InstructionInfo instructionInfoADDIY_BC_FD2;
 
-// ADD IY, DE  -  FD, 19
+// ADD IY, DE  -  FD, 18
 extern const InstructionInfo instructionInfoADDIY_DE_FD2;
 
-// ADD IY, IY  -  FD, 29
+// ADD IY, IY  -  FD, 28
 extern const InstructionInfo instructionInfoADDIY_IY_FD2;
 
-// ADD IY, SP  -  FD, 39
+// ADD IY, SP  -  FD, 38
 extern const InstructionInfo instructionInfoADDIY_SP_FD2;
 
 // ADC HL, BC  -  ED, 4A

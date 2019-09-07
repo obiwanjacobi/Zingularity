@@ -53,6 +53,9 @@ void OnClock_SBCHL_p_ED2_OP_M3()
                 GetRegisterSP16Msb(_state.Instruction.Info->Decode.Variable1.RegisterSP16),
                 Alu_WithCarry);
         break;
+    case T3_PosEdge:
+        SetFlag(Flag_Z, _state.Registers.HL == 0);
+        break;
     default:
         // no-op
         break;

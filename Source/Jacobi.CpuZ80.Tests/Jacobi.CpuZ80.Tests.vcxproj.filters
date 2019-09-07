@@ -23,6 +23,7 @@
     </ClCompile>
     <ClCompile Include="AluTests.cpp" />
     <ClCompile Include="Arithemtic8Tests.cpp" />
+    <ClCompile Include="WaitTests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Instructions">

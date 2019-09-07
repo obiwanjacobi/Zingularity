@@ -57,30 +57,37 @@ Async_Function(FetchDecode)
     AssertClock(M1, T1_NegEdge);
     setMemReq(Active);
     setRd(Active);
-    Async_Yield();
-
-    NextTCycle();
-
-    AssertClock(M1, T2_PosEdge);
-    // if no previous reset was detected, this could be a special one.
-    if (getReset() && !_state.Interrupt.Reset)
-    {
-        _state.Interrupt.SpecialReset = true;
-    }
-    Async_Yield();
-
-    NextTCycleLevel();
-
-    AssertClock(M1, T2_NegEdge);
-    if (getWait())
-    {
-        _state.Interrupt.Wait = true;
-    }
 
     // time for some book keeping
     if (_state.Instruction.InstructionAddress == 0)
         _state.Instruction.InstructionAddress = _state.Registers.PC - 1;
     Async_Yield();
+
+    NextTCycle();
+
+    do
+    {
+        AssertClock(M1, T2_PosEdge);
+        // if no previous reset was detected, this could be a special one.
+        if (getReset() && !_state.Interrupt.Reset)
+        {
+            _state.Interrupt.SpecialReset = true;
+        }
+        Async_Yield();
+
+        NextTCycleLevel();
+
+        AssertClock(M1, T2_NegEdge);
+        _state.Interrupt.Wait = getWait();
+        Async_Yield();
+
+        if (_state.Interrupt.Wait)
+        {
+            // prepare clock for next wait state
+            _state.Clock.TL = T2_PosEdge;
+        }
+
+    } while (_state.Interrupt.Wait);
 
     NextTCycle();
 

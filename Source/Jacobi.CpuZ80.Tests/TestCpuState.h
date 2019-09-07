@@ -34,6 +34,30 @@ public:
     void ClearInstruction() { memset(&_state.Instruction, 0, sizeof(InstructionState)); }
     void ClearHost() { memset(&host, 0, sizeof(CpuZ80TestHost)); }
 
+    int RunForTCycles(int tCycles)
+    {
+        while (tCycles > 0)
+        {
+            // pos edge
+            ToggleClockLevel();
+            if (!ClockTick())
+            {
+                break;
+            }
+
+            // neg edge
+            ToggleClockLevel();
+            if (!ClockTick())
+            {
+                break;
+            }
+
+            tCycles--;
+        }
+
+        return tCycles;
+    }
+
     bool ClockTick()
     {
         // abort on fetch on abort address

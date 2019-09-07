@@ -178,6 +178,7 @@
     </ClCompile>
     <ClCompile Include="AsyncTests.cpp" />
     <ClCompile Include="TestGlobals.cpp" />
+    <ClCompile Include="WaitTests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Jacobi.CpuZ80\Jacobi.CpuZ80.vcxproj">

@@ -48,7 +48,6 @@ RegisterPairUnion(ii, ii##h, ii##l)
         uint8_t Ext[2];
 
         // running vars of instruction
-        RegisterPairEx(Address);
         RegisterPairEx(DataIn);
         RegisterPairEx(DataOut);   // result
 
@@ -81,12 +80,27 @@ RegisterPairUnion(ii, ii##h, ii##l)
         uint16_t SP;
         uint16_t PC;
 
+        // Address https://gist.github.com/drhelius/8497817
+        RegisterPair(W, S);
+
     } Registers;
 
     typedef struct
     {
         bool_t IFF1;
         bool_t IFF2;
+
+        // http://www.primrosebank.net/computers/z80/z80_special_reset.htm
+        bool_t SpecialReset;
+        bool_t Reset;
+        bool_t BusRequest;
+        bool_t NMI;
+        bool_t INT;
+        
+        InterruptMode InterruptMode;
+
+        bool_t Wait;
+        bool_t Halt;    // set by halt instruction
 
     } InterruptState;
 

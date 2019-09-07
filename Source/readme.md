@@ -51,3 +51,15 @@ After analysis of the Z80 instrcutions I have found these flag operations includ
 
 
 Note: Rotate and Shift instructions set the Carry flag as part of the instruction implementation.
+
+
+## ICE Testing
+
+An idea I had about testing the correctness of the ICE simulator code is to have a hardware ICE host 
+(like the PSoC) implement the Z80Host methods to compare against a real Z80 chip. The ICE host could 
+even drive the Z80 chip -providing it clock signals and memory content- and at the same time compare 
+the output the simulator code generates with the actual Z80 chip results - taking into account that 
+there might be slight delays between clock level changes (pos/neg edge) and the actual activation of
+IO lines (pins like RD, WR, MEMRQ etc).
+The other option is to allow the ICE simulator to run shadow to a real Z80 chip in an actual circuit.
+Any differences can be logged through a serial connection to the PC.

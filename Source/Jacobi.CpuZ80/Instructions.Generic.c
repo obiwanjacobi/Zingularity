@@ -51,7 +51,7 @@ void OnClock_MR(AsyncThis* async)
     {
     case T1_PosEdge:
         setRefresh(Inactive);
-        setAddressBus(_state.Instruction.Address);
+        setAddressBus(_state.Registers.WS);
         break;
     case T1_NegEdge:
         setMemReq(Active);
@@ -67,7 +67,7 @@ void OnClock_MR(AsyncThis* async)
         setMemReq(Inactive);
         break;
     default:
-        assert(false);
+        Assert(false);
         return;
     }
 }
@@ -78,7 +78,7 @@ void OnClock_MW(AsyncThis* async)
     {
     case T1_PosEdge:
         setRefresh(Inactive);
-        setAddressBus(_state.Instruction.Address);
+        setAddressBus(_state.Registers.WS);
         break;
     case T1_NegEdge:
         setMemReq(Active);
@@ -94,7 +94,7 @@ void OnClock_MW(AsyncThis* async)
         setMemReq(Inactive);
         break;
     default:
-        assert(false);
+        Assert(false);
         return;
     }
 }

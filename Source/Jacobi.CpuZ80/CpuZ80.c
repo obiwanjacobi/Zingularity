@@ -46,7 +46,8 @@ void SetRegister8(Registers8 reg, uint8_t value)
 
     case Reg8_HL:
     default:
-        assert(false);
+        Assert(false);
+        break;
     }
 }
 
@@ -81,7 +82,8 @@ uint8_t GetRegister8(Registers8 reg)
 
     case Reg8_HL:
     default:
-        assert(false);
+        Assert(false);
+        break;
     }
     return 0;
 }
@@ -104,7 +106,8 @@ void SetRegister16(Registers16 reg, uint16_t value)
         break;
 
     default:
-        assert(false);
+        Assert(false);
+        break;
     }
 }
 
@@ -122,7 +125,8 @@ uint16_t GetRegister16(Registers16 reg)
         return _state.Registers.AF;
 
     default:
-        assert(false);
+        Assert(false);
+        break;
     }
 
     return 0;
@@ -142,7 +146,7 @@ uint8_t GetRegisterSP16Lsb(RegistersSP16 reg)
         return _state.Registers.F;
 
     default:
-        assert(false);
+        Assert(false);
         break;
     }
         
@@ -163,7 +167,7 @@ uint8_t GetRegisterSP16Msb(RegistersSP16 reg)
         return _state.Registers.A;
 
     default:
-        assert(false);
+        Assert(false);
         break;
     }
 
@@ -188,7 +192,7 @@ void SetRegisterSP16(RegistersSP16 reg, uint16_t value)
         break;
 
     default:
-        assert(false);
+        Assert(false);
     }
 }
 
@@ -206,7 +210,8 @@ uint16_t GetRegisterSP16(RegistersSP16 reg)
         return _state.Registers.SP;
 
     default:
-        assert(false);
+        Assert(false);
+        break;
     }
 
     return 0;
@@ -235,17 +240,26 @@ uint16_t GetRegisterEx16()
 void setAddressPC()
 {
     setAddressBus(_state.Registers.PC);
-    //if (!_state.Halt)
-    _state.Registers.PC++;
+    if (!_state.Interrupt.Halt)
+    {
+        _state.Registers.PC++;
+    }
 }
 
 void setAddressIR()
 {
     setAddressBus(_state.Registers.IR);
     if (_state.Registers.R < 127)
+    {
         _state.Registers.R++;
+    }
     else
-        _state.Registers.R &= 0x7F; //??
+    {
+        // bit7 is not touched during incrementing R
+        uint8_t r = _state.Registers.R + 1;
+        _state.Registers.R &= 0x80;     // save bit7
+        _state.Registers.R |= (r & 0x7F); // add new 7-bit R value
+    }
 }
 
 void SetFlag(Flags flags, bool_t value)

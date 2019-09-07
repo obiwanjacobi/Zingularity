@@ -69,7 +69,7 @@ void OnClock_SBCHL_p_ED2_OP(AsyncThis* async)
         OnClock_SBCHL_p_ED2_OP_M3();
         break;
     default:
-        assert(false);
+        Assert(false);
         break;
     }
 }

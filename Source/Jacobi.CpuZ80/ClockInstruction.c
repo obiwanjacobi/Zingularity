@@ -106,7 +106,7 @@ void Decode()
         _state.Instruction.ExtIndex++;
         break;
     default:
-        assert(_state.Instruction.Info == nullptr);
+        Assert(_state.Instruction.Info == nullptr);
         _state.Instruction.Info = LookupInstruction();
         if (_state.Instruction.ExtIndex > 0)
         {
@@ -121,10 +121,10 @@ void OnClock_InstructionLoad(AsyncThis* async)
 {
     switch (_state.Clock.TL)
     {
-    case 6:
+    case T3_NegEdge:
         OnClock_OD(async);
         _state.Instruction.Info = LookupInstruction();
-        assert(_state.Instruction.Info != nullptr);
+        Assert(_state.Instruction.Info != nullptr);
         break;
     default:
         OnClock_OD(async);
@@ -153,6 +153,18 @@ void ClearInstruction()
     memset(&_state.Instruction, 0, sizeof(InstructionState));
 }
 
+bool_t IsLastInstructionTCycle(Level level)
+{
+    if (_state.Instruction.Info != nullptr)
+    {
+        return (_state.Instruction.MCycleIndex == MaxMCycleIndex ||
+            _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex + 1].clocks == 0) &&
+            _state.Clock.T >= _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].clocks &&
+            _state.Clock.Level == level;
+    }
+    return false;
+}
+
 bool_t InstructionIsDone()
 {
     return _state.Instruction.IsCompleted;
@@ -160,12 +172,7 @@ bool_t InstructionIsDone()
 
 bool_t SetIfInstructionIsDone()
 {
-    _state.Instruction.IsCompleted = (
-        _state.Instruction.Info != nullptr &&
-        (_state.Instruction.MCycleIndex == MaxMCycleIndex ||
-            _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex + 1].clocks == 0) &&
-        _state.Clock.T >= _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].clocks &&
-        _state.Clock.Level == Level_NegEdge);
+    _state.Instruction.IsCompleted = IsLastInstructionTCycle(Level_NegEdge);
 
     return InstructionIsDone();
 }
@@ -178,4 +185,22 @@ void ClearInstructionIfDone()
         ClearInstruction();
         ResetClock();
     }
+}
+
+void PowerOnReset()
+{
+    memset(&_state.Registers, 0xFF, sizeof(Registers));
+    memset(&_state.Interrupt, 0x00, sizeof(InterruptState));
+    _state.Registers.PC = 0x0000;
+    _state.Registers.IR = 0x0000;
+}
+
+void SetResetState()
+{
+
+}
+
+void CheckForInterrupt()
+{
+
 }

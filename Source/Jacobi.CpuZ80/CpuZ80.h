@@ -6,6 +6,8 @@
 extern "C" {
 #endif
 
+#define Assert(exp)  assert(exp)
+
 typedef enum 
 {
     Level_Floating,
@@ -162,6 +164,13 @@ typedef enum
     Flag_Z,
     Flag_S
 } Flags;
+
+typedef enum
+{
+    IM0,
+    IM1,
+    IM2
+} InterruptMode;
 
 
 void SetRegister8(Registers8 reg, uint8_t value);

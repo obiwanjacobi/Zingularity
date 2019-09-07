@@ -10,11 +10,11 @@ extern CpuState _state;
 
 void ResetClock()
 {
-    assert(_state.Instruction.MCycleIndex == 0);
+    Assert(_state.Instruction.MCycleIndex == 0);
 
-    _state.Clock.M = 1;
-    _state.Clock.T = 1;
-    _state.Clock.TL = 1;
+    _state.Clock.M = M1;
+    _state.Clock.T = T1;
+    _state.Clock.TL = T1_PosEdge;
 }
 
 void NextTCycle()
@@ -23,46 +23,66 @@ void NextTCycle()
     _state.Clock.TL++;
 }
 
+void NextTCycleLevel()
+{
+    _state.Clock.TL++;
+}
+
 void NextMCycle()
 {
     _state.Instruction.MCycleIndex++;
     _state.Clock.M++;
-    _state.Clock.T = 1;
-    _state.Clock.TL = 1;
+    _state.Clock.T = T1;
+    _state.Clock.TL = T1_PosEdge;
 }
 
 
 Async_Function(FetchDecode)
 {
     AssertClock(M1, T1_PosEdge);
+    if (getReset())
+    {
+        _state.Interrupt.Reset = true;
+    }
     setRefresh(Inactive);
     setAddressPC();
     setM1(Active);
     Async_Yield();
 
-    _state.Clock.TL++;
+    NextTCycleLevel();
 
     AssertClock(M1, T1_NegEdge);
     setMemReq(Active);
     setRd(Active);
     Async_Yield();
-    
+
     NextTCycle();
 
     AssertClock(M1, T2_PosEdge);
+    // if no previous reset was detected, this could be a special one.
+    if (getReset() && !_state.Interrupt.Reset)
+    {
+        _state.Interrupt.SpecialReset = true;
+    }
+    Async_Yield();
+
+    NextTCycleLevel();
+
+    AssertClock(M1, T2_NegEdge);
     // time for some book keeping
     if (_state.Instruction.InstructionAddress == 0)
         _state.Instruction.InstructionAddress = _state.Registers.PC - 1;
     Async_Yield();
 
-    _state.Clock.TL++;
-
-    AssertClock(M1, T2_NegEdge);
-    Async_Yield();
-
     NextTCycle();
 
     AssertClock(M1, T3_PosEdge);
+    if (getReset())
+    {
+        _state.Interrupt.SpecialReset = false;
+        _state.Interrupt.Reset = true;
+    }
+
     _state.Instruction.DataIn = getDataBus();
     setRd(Inactive);
     setMemReq(Inactive);
@@ -71,7 +91,7 @@ Async_Function(FetchDecode)
     setRefresh(Active);
     Async_Yield();
 
-    _state.Clock.TL++;
+    NextTCycleLevel();
 
     AssertClock(M1, T3_NegEdge);
     setMemReq(Active);
@@ -87,10 +107,14 @@ Async_Function(ExecuteInstructionPart)
         _state.Clock.T <= _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].clocks)
     {
         AssertMCycle();
+        if (IsLastInstructionTCycle(Level_PosEdge))
+        {
+            CheckForInterrupt();
+        }
         _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(&_state.Instruction.Async);
         Async_Yield();
 
-        _state.Clock.TL++;
+        NextTCycleLevel();
 
         _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(&_state.Instruction.Async);
 
@@ -99,7 +123,7 @@ Async_Function(ExecuteInstructionPart)
             NextTCycle();
             Async_Yield();
         }
-        // Unsure about flag implementation
+        // Unsure about this flag implementation
         /*else if (_state.Instruction.Info->AssignFlags != nullptr)
         {
             _state.Instruction.Info->AssignFlags();
@@ -110,23 +134,29 @@ Async_End
 
 Async_Function(Execute)
 {
-    assert(_state.Instruction.Async.State == 0);
+    Assert(_state.Instruction.Async.State == 0);
 
     NextTCycle();
 
     AssertClock(M1, T4_PosEdge);
+    if (getReset())
+    {
+        _state.Interrupt.Reset = true;
+    }
+
     if (_state.Instruction.Info != nullptr)
     {
         AssertMCycle();
+        CheckForInterrupt();
         _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(&_state.Instruction.Async);
     }
     else
     {
-        assert(_state.Instruction.ExtIndex > 0);
+        Assert(_state.Instruction.ExtIndex > 0);
     }
     Async_Yield();
 
-    _state.Clock.TL++;
+    NextTCycleLevel();
 
     AssertClock(M1, T4_NegEdge);
     setMemReq(Inactive);
@@ -143,7 +173,7 @@ Async_Function(Execute)
     }
     else if (_state.Instruction.ExtIndex == 2)
     {
-        assert(_state.Instruction.Info == nullptr);
+        Assert(_state.Instruction.Info == nullptr);
 
         // assign a temp instruction to read the reversed d - opcode
         _state.Instruction.Info = &ExtendedReverseOpcodeFetch;

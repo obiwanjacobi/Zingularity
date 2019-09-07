@@ -99,7 +99,7 @@ namespace Jacobi.CpuZ80.Meta.Tests
             decls[3].Info.Mnemonic.Should().Be("ADD IX, SP");
 
             decls[0].Info.Bytes[0].Should().Be("DD");
-            decls[0].Info.Bytes[1].Should().Be("09");
+            decls[0].Info.Bytes[1].Should().Be("08");
         }
 
         [TestMethod]

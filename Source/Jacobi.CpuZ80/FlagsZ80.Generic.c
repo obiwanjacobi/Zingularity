@@ -6,12 +6,12 @@ extern CpuState _state;
 
 bool_t AddressHi_Bit3()
 {
-    return GetBit8(_state.Instruction.Addressh, Bit3);
+    return GetBit8(_state.Registers.W, Bit3);
 }
 
 bool_t AddressHi_Bit5()
 {
-    return GetBit8(_state.Instruction.Addressh, Bit5);
+    return GetBit8(_state.Registers.W, Bit5);
 }
 
 bool_t BC_IsNotZero()

@@ -51,7 +51,7 @@ void OnClock_SETb__ex_d__ex4_MR(AsyncThis* async) {}
 void OnClock_SETb__ex_d__ex4_MW(AsyncThis* async) {}
 
 // SET 0, (IX+d), A   -  SET0__IX_d__A_DD4  -  DD, CB, d, C7
-void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async) { assert(false); }
+void OnClock_SETb__ex_d__r_ex4_OD(AsyncThis* async) { Assert(false); }
 void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async)
 {
     switch (_state.Clock.TL)
@@ -59,7 +59,7 @@ void OnClock_SETb__ex_d__r_ex4_FD(AsyncThis* async)
         case T5_NegEdge:
             // Not M4 due to double extension opcodes; both read as M1
             AssertClockM(M3);
-            _state.Instruction.Address = GetRegisterEx16() + _state.Instruction.d;
+            _state.Registers.WS = GetRegisterEx16() + _state.Instruction.d;
             break;
     }
 }

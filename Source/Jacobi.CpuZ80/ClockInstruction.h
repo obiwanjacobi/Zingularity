@@ -14,8 +14,11 @@ extern "C" {
     void ClearInstructionIfDone();
     bool_t SetIfInstructionIsDone();
     bool_t InstructionIsDone();
+    bool_t IsLastInstructionTCycle(Level level);
 
     const InstructionInfo ExtendedReverseOpcodeFetch;
+
+    void CheckForInterrupt();
 
 #ifdef __cplusplus
 }

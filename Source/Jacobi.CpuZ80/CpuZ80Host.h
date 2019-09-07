@@ -33,7 +33,7 @@ extern "C" {
     uint8_t getDataBus();
     Signal getReset();
     Signal getBusReq();
-    Signal getNmi();
+    Signal getNmi();    // host detects pulse and resets cached value after this is called.
     Signal getInt();
     Signal getWait();
 

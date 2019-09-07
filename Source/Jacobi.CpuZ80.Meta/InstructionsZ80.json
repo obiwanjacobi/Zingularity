@@ -1702,7 +1702,7 @@
         },
         {
             "mnemonic": "ADD IX, m",
-            "bytes": [ "DD", "00mm1001" ],
+            "bytes": [ "DD", "00mm1000" ],
             "cycles": [ 4, 4, 4, 3 ],
             "ops": [ "OF", "OF", "OP", "OP" ],
             "flags": {
@@ -1715,7 +1715,7 @@
         },
         {
             "mnemonic": "ADD IY, o",
-            "bytes": [ "FD", "00oo1001" ],
+            "bytes": [ "FD", "00oo1000" ],
             "cycles": [ 4, 4, 4, 3 ],
             "ops": [ "OF", "OF", "OP", "OP" ],
             "flags": {

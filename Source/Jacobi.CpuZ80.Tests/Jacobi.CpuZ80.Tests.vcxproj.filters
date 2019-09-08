@@ -24,6 +24,7 @@
     <ClCompile Include="AluTests.cpp" />
     <ClCompile Include="Arithemtic8Tests.cpp" />
     <ClCompile Include="WaitTests.cpp" />
+    <ClCompile Include="Load8Tests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Instructions">

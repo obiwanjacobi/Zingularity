@@ -121,17 +121,28 @@ Async_Function(ExecuteInstructionPart)
     while (!InstructionIsDone() &&
         _state.Clock.T <= _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].clocks)
     {
-        AssertMCycle();
-        if (IsLastInstructionTCycle(Level_PosEdge))
+        do
         {
-            CheckForInterrupt();
-        }
-        _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(nullptr);
-        Async_Yield();
+            AssertMCycle();
+            if (IsLastInstructionTCycle(Level_PosEdge))
+            {
+                CheckForInterrupt();
+            }
+            _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(nullptr);
+            Async_Yield();
 
-        NextTCycleLevel();
+            NextTCycleLevel();
 
-        _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(nullptr);
+            _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(nullptr);
+
+            if (_state.Interrupt.Wait)
+            {
+                // prepare clock for wait cycle
+                _state.Clock.TL--;
+                Async_Yield();
+            }
+
+        } while (_state.Interrupt.Wait);
 
         if (!SetIfInstructionIsDone())
         {

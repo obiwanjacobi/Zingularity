@@ -118,17 +118,17 @@ void Decode()
 }
 
 
-void OnClock_InstructionLoad(AsyncThis* async)
+void OnClock_InstructionLoad()
 {
     switch (_state.Clock.TL)
     {
     case T3_NegEdge:
-        OnClock_OD(async);
+        OnClock_OD();
         _state.Instruction.Info = LookupInstruction();
         Assert(_state.Instruction.Info != nullptr);
         break;
     default:
-        OnClock_OD(async);
+        OnClock_OD();
         break;
     }
 }

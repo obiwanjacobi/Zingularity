@@ -54,13 +54,11 @@ void OnClock_SETb__ex_d__ex4_MW() {}
 void OnClock_SETb__ex_d__r_ex4_OD() { Assert(false); }
 void OnClock_SETb__ex_d__r_ex4_FD()
 {
-    switch (_state.Clock.TL)
+    if (_state.Clock.TL == T5_NegEdge)
     {
-        case T5_NegEdge:
-            // Not M4 due to double extension opcodes; both read as M1
-            AssertClockM(M3);
-            _state.Registers.WS = GetRegisterEx16() + _state.Instruction.d;
-            break;
+        // Not M4 due to double extension opcodes; both read as M1
+        AssertClockM(M3);
+        _state.Registers.WS = GetRegisterEx16() + _state.Instruction.d;
     }
 }
 void OnClock_SETb__ex_d__r_ex4_MR() 
@@ -68,10 +66,10 @@ void OnClock_SETb__ex_d__r_ex4_MR()
     switch (_state.Clock.TL)
     {
     case T4_PosEdge:
-        SetRegister8(_state.Instruction.Info->Decode.Variable2.Register8, _state.Instruction.DataInl);
+        SetRegister8(_state.Instruction.Info->Decode.Variable2.Register8, 
+            _state.Instruction.DataInl);
         SetBit(_state.Instruction.Info->Decode.Variable1.Bits8, 
-            _state.Instruction.Info->Decode.Variable2.Register8,
-            true);
+            _state.Instruction.Info->Decode.Variable2.Register8, true);
         break;
     case T4_NegEdge:
         // prepare write back

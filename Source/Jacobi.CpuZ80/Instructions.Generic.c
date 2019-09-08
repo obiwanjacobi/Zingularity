@@ -9,6 +9,21 @@ void OnClock_OF()
     // do nothing
 }
 
+// like OD but with assing Data to d
+void OnClock_ODd()
+{
+    switch (_state.Clock.TL)
+    {
+    case T3_NegEdge:
+        OnClock_OD();
+        _state.Instruction.d = _state.Instruction.DataInl;
+        break;
+    default:
+        OnClock_OD();
+        break;
+    }
+}
+
 // like MR but with PC address
 void OnClock_OD()
 {
@@ -23,26 +38,6 @@ void OnClock_OD()
         break;
     }
 }
-
-// like OD but with assing Data to d
-void OnClock_ODd()
-{
-    switch (_state.Clock.TL)
-    {
-    case T1_PosEdge:
-        setRefresh(Inactive);
-        setAddressPC();
-        break;
-    case T3_NegEdge:
-        OnClock_MR();
-        _state.Instruction.d = _state.Instruction.DataInl;
-        break;
-    default:
-        OnClock_MR();
-        break;
-    }
-}
-
 
 void OnClock_MR()
 {
@@ -59,10 +54,7 @@ void OnClock_MR()
     case T2_PosEdge:
         break;
     case T2_NegEdge:
-        if (getWait())
-        {
-            _state.Interrupt.Wait = true;
-        }
+        _state.Interrupt.Wait = getWait();
         break;
     case T3_PosEdge:
         break;
@@ -93,10 +85,7 @@ void OnClock_MW()
     case T2_PosEdge:
         break;
     case T2_NegEdge:
-        if (getWait())
-        {
-            _state.Interrupt.Wait = true;
-        }
+        _state.Interrupt.Wait = getWait();
         break;
     case T3_PosEdge:
         break;

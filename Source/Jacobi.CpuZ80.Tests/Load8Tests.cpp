@@ -15,14 +15,29 @@ namespace Z80InstructionTests
     {
     public:
 
-        TEST_METHOD(LD_B_n)
+        TEST_METHOD(LD_r_s)
         {
-            uint8_t bytes[] = { 0b00000110, 0xFF, 0x00 };
+            for (uint8_t r = Reg8_B; r <= Reg8_A; r++)
+            {
+                if (r == Reg8_HL) continue;
+
+                for (uint8_t s = Reg8_B; s <= Reg8_A; s++)
+                {
+                    if (s == Reg8_HL) continue;
+
+                    LDrsTest((Registers8)r, (Registers8)s);
+                }
+            }
+        }
+
+        void LDrsTest(Registers8 r, Registers8 s)
+        {
+            uint8_t bytes[] = { 0b01000000 | r << 3 | s, 0x00 };
             TestCpuState cpuState;
             cpuState.memory.Assign(bytes, sizeof(bytes));
-            cpuState.AbortAddress = 0x0002;
+            cpuState.AbortAddress = 0x0001;
 
-            _state.Registers.B = 0x11;
+            SetRegister8(s, 0xAA);
             SetFlag(Flag_C, true);
 
             do
@@ -30,7 +45,36 @@ namespace Z80InstructionTests
                 cpuState.ToggleClockLevel();
             } while (cpuState.ClockTick());
 
-            Assert::AreEqual(0xFF, (int)_state.Registers.B);
+            Assert::AreEqual(0xAA, (int)GetRegister8(r));
+            Assert::AreEqual(1, (int)GetFlag(Flag_C));
+        }
+
+        TEST_METHOD(LD_r_n)
+        {
+            for (uint8_t r = Reg8_B; r <= Reg8_A; r++)
+            {
+                if (r == Reg8_HL) continue;
+
+                LDrnTest((Registers8)r);
+            }
+        }
+
+        void LDrnTest(Registers8 r)
+        {
+            uint8_t bytes[] = { 0b00000110 | r << 3, 0xFF, 0x00 };
+            TestCpuState cpuState;
+            cpuState.memory.Assign(bytes, sizeof(bytes));
+            cpuState.AbortAddress = 0x0002;
+
+            SetRegister8(r, 0x11);
+            SetFlag(Flag_C, true);
+
+            do
+            {
+                cpuState.ToggleClockLevel();
+            } while (cpuState.ClockTick());
+
+            Assert::AreEqual(0xFF, (int)GetRegister8(r));
             Assert::AreEqual(1, (int)GetFlag(Flag_C));
         }
     };

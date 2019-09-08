@@ -4,13 +4,20 @@
 extern CpuState _state;
 
 // LD A, A   -  LDA_A_1  -  7F
-void OnClock_LDr_s_1_OF() {}
+void OnClock_LDr_s_1_OF()
+{
+    if (_state.Clock.TL == T4_NegEdge)
+    {
+        SetRegister8(_state.Instruction.Info->Decode.Variable1.Register8,
+            GetRegister8(_state.Instruction.Info->Decode.Variable2.Register8));
+    }
+}
 
 // LD A, A   -  LDA_A_DD2  -  DD, 7F
-void OnClock_LDt_u_DD2_OF() {}
+void OnClock_LDt_u_DD2_OF() { OnClock_LDr_s_1_OF(); }
 
 // LD A, A   -  LDA_A_FD2  -  FD, 7F
-void OnClock_LDv_w_FD2_OF() {}
+void OnClock_LDv_w_FD2_OF() { OnClock_LDr_s_1_OF(); }
 
 // LD A, n   -  LDA_n_2  -  3E, n
 void OnClock_LDr_n_2_OF() { /* no-op */ }

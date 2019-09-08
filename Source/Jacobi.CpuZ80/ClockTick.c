@@ -10,8 +10,6 @@ extern CpuState _state;
 
 void ResetClock()
 {
-    Assert(_state.Instruction.MCycleIndex == 0);
-
     _state.Clock.M = M1;
     _state.Clock.T = T1;
     _state.Clock.TL = T1_PosEdge;

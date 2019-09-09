@@ -28,7 +28,7 @@ public:
         ClearHost();
         AbortAddress = 0;
     }
-    void ClearClock() { ResetClock(); }
+    void ClearClock() { ResetClock(); _state.Clock.Level = Level_Floating; }
     void ClearRegisters() { memset(&_state.Registers, 0, sizeof(Registers)); }
     void ClearInterrupt() { memset(&_state.Interrupt, 0, sizeof(InterruptState)); }
     void ClearInstruction() { memset(&_state.Instruction, 0, sizeof(InstructionState)); }

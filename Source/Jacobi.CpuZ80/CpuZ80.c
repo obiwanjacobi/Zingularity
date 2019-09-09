@@ -5,10 +5,10 @@
 
 extern CpuState _state;
 
-bool_t IsIX() { return _state.Instruction.ExtIndex > 0 && _state.Instruction.Ext[0] == 0xDD; }
-bool_t IsIY() { return _state.Instruction.ExtIndex > 0 && _state.Instruction.Ext[0] == 0xFD; }
+bool_t IsIX(uint8_t ex) { return ex == 0xDD; }
+bool_t IsIY(uint8_t ex) { return ex == 0xFD; }
 
-void SetRegister8(Registers8 reg, uint8_t value)
+void SetRegister8Ex(Registers8 reg, uint8_t value, uint8_t ex)
 {
     switch (reg)
     {
@@ -25,17 +25,17 @@ void SetRegister8(Registers8 reg, uint8_t value)
         _state.Registers.E = value;
         break;
     case Reg8_H:
-        if (IsIX())
+        if (IsIX(ex))
             _state.Registers.IXh = value;
-        else if (IsIY())
+        else if (IsIY(ex))
             _state.Registers.IYh = value;
         else
             _state.Registers.H = value;
         break;
     case Reg8_L:
-        if (IsIX())
+        if (IsIX(ex))
             _state.Registers.IXl = value;
-        else if (IsIY())
+        else if (IsIY(ex))
             _state.Registers.IYl = value;
         else
         _state.Registers.L = value;
@@ -51,7 +51,12 @@ void SetRegister8(Registers8 reg, uint8_t value)
     }
 }
 
-uint8_t GetRegister8(Registers8 reg)
+void SetRegister8(Registers8 reg, uint8_t value)
+{
+    SetRegister8Ex(reg, value, _state.Instruction.Ext[0]);
+}
+
+uint8_t GetRegister8Ex(Registers8 reg, uint8_t ex)
 {
     switch (reg)
     {
@@ -64,16 +69,16 @@ uint8_t GetRegister8(Registers8 reg)
     case Reg8_E:
         return _state.Registers.E;
     case Reg8_H:
-        if (IsIX())
+        if (IsIX(ex))
             return _state.Registers.IXh;
-        else if (IsIY())
+        else if (IsIY(ex))
             return _state.Registers.IYh;
         else
             return _state.Registers.H;
     case Reg8_L:
-        if (IsIX())
+        if (IsIX(ex))
             return _state.Registers.IXl;
-        else if (IsIY())
+        else if (IsIY(ex))
             return _state.Registers.IYl;
         else
             return _state.Registers.L;
@@ -86,6 +91,11 @@ uint8_t GetRegister8(Registers8 reg)
         break;
     }
     return 0;
+}
+
+uint8_t GetRegister8(Registers8 reg)
+{
+    return GetRegister8Ex(reg, _state.Instruction.Ext[0]);
 }
 
 void SetRegister16(Registers16 reg, uint16_t value)
@@ -219,9 +229,10 @@ uint16_t GetRegisterSP16(RegistersSP16 reg)
 
 void SetRegisterEx16(uint16_t reg)
 {
-    if (IsIX())
+    uint8_t ex = _state.Instruction.Ext[0];
+    if (IsIX(ex))
         _state.Registers.IX = reg;
-    else if (IsIY())
+    else if (IsIY(ex))
         _state.Registers.IY = reg;
     else
         _state.Registers.HL = reg;
@@ -229,9 +240,10 @@ void SetRegisterEx16(uint16_t reg)
 
 uint16_t GetRegisterEx16()
 {
-    if (IsIX())
+    uint8_t ex = _state.Instruction.Ext[0];
+    if (IsIX(ex))
         return _state.Registers.IX;
-    else if (IsIY())
+    else if (IsIY(ex))
         return _state.Registers.IY;
     else
         return _state.Registers.HL;

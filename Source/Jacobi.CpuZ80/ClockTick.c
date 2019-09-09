@@ -126,12 +126,12 @@ Async_Function(ExecuteInstructionPart)
             {
                 CheckForInterrupt();
             }
-            _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(nullptr);
+            _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock();
             Async_Yield();
 
             NextTCycleLevel();
 
-            _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(nullptr);
+            _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock();
 
             if (_state.Interrupt.Wait)
             {
@@ -172,7 +172,7 @@ Async_Function(Execute)
     {
         AssertMCycle();
         CheckForInterrupt();
-        _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(&_state.Instruction.Async);
+        _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock();
     }
     else
     {
@@ -187,7 +187,7 @@ Async_Function(Execute)
     if (_state.Instruction.Info != nullptr)
     {
         AssertMCycle();
-        _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock(&_state.Instruction.Async);
+        _state.Instruction.Info->Cycles[_state.Instruction.MCycleIndex].OnClock();
 
         if (SetIfInstructionIsDone())
         {

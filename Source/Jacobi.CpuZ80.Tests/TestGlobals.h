@@ -10,6 +10,8 @@ extern "C" {
 
     extern CpuState _state;
 
+    #define RegistersExOpcodesSize 3
+    extern const uint8_t RegistersExOpcodes[];
 
 #ifdef __cplusplus
 }

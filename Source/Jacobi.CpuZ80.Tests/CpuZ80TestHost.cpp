@@ -16,6 +16,12 @@ void setAddressBus(uint16_t address)
     _host->setAddressBus(address);
 }
 
+void floatBus(Signal active)
+{
+    assert(_host != nullptr);
+    _host->floatBus(active);
+}
+
 void setDataBus(uint8_t data)
 {
     assert(_host != nullptr);

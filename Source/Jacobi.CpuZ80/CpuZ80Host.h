@@ -19,8 +19,8 @@ extern "C" {
 
     void setAddressBus(uint16_t address);
     void setDataBus(uint8_t data);
-    // host also floats buses:
     // A0-A15, D0-D7, RD, WR, MEMRQ, IOREQ, RFSH
+    void floatBus(Signal active);
     void setBusAck(Signal active);
     void setHalt(Signal active);
     void setRd(Signal active);

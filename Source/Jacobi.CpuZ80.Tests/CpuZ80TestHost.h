@@ -18,6 +18,7 @@ public:
 
     void setAddressBus(uint16_t address) { Address = address; }
     void setDataBus(uint8_t data) { Data = data; }
+    void floatBus(bool active) { FloatBus = active; }
     void setBusAck(bool active) { BusAck = active; }
     void setHalt(bool active) { Halt = active; }
     void setRd(bool active) { Rd = active; }
@@ -53,4 +54,6 @@ public:
     bool Wait;
     bool Refresh;
     bool M1;
+
+    bool FloatBus;
 };

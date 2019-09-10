@@ -41,6 +41,7 @@ void NextMCycle()
 Async_Function(FetchDecode)
 {
     AssertClock(M1, T1_PosEdge);
+    floatBus(Inactive);
     if (getReset())
     {
         _state.Interrupt.Reset = true;
@@ -228,9 +229,61 @@ Async_Function(Execute)
 }
 Async_End
 
+Async_Function(Interrupt)
+{
+    if (_state.Interrupt.SpecialReset)
+    {
+
+    }
+
+    if (_state.Interrupt.Reset)
+    {
+
+    }
+
+    if (_state.Interrupt.BusRequest)
+    {
+        // wait for the next clock cycle
+        Async_Yield();
+
+        AssertClock(M1, T1_PosEdge);
+        setRefresh(Inactive);
+        setBusAck(Active);
+        floatBus(Active);
+
+        while (true)
+        {
+            Async_Yield();
+            // cannot do a AssertClock because its not being incremented
+            Assert(_state.Clock.Level == Level_NegEdge);
+            if (!_state.Interrupt.BusRequest)
+            {
+                setBusAck(Inactive);
+                // floatBus(Inactive) done at start of FetchDecode
+                Async_Return();
+            }
+
+            Async_Yield();
+            AssertClock(M1, T1_PosEdge);
+            _state.Interrupt.BusRequest = getBusReq();
+        }
+    }
+
+    if (_state.Interrupt.NMI)
+    {
+
+    }
+
+    if (_state.Interrupt.INT)
+    {
+
+    }
+}
+Async_End
 
 AsyncThis fetchDecodeAsync;
 AsyncThis executeAsync;
+AsyncThis interruptAsync;
 
 Async_Function(ClockTickAsync)
 {
@@ -239,6 +292,9 @@ Async_Function(ClockTickAsync)
 
     Async_Reset(&executeAsync);
     Async_WaitUntil(Execute(&executeAsync));
+
+    Async_Reset(&interruptAsync);
+    Async_WaitUntil(Interrupt(&interruptAsync));
 }
 Async_End
 

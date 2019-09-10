@@ -166,6 +166,7 @@
     <ClCompile Include="AluTests.cpp" />
     <ClCompile Include="Arithmetic16Tests.cpp" />
     <ClCompile Include="BitTests.cpp" />
+    <ClCompile Include="BusRequestTests.cpp" />
     <ClCompile Include="ClockTickTests.cpp" />
     <ClCompile Include="CpuZ80TestHost.cpp" />
     <ClCompile Include="Arithemtic8Tests.cpp" />

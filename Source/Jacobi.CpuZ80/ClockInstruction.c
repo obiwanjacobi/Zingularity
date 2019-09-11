@@ -183,6 +183,9 @@ void ClearInstructionIfDone()
     // detect end of instruction
     if (InstructionIsDone())
     {
+        if (_state.Interrupt.EnableIntPendingCount > 0) 
+            _state.Interrupt.EnableIntPendingCount--;
+
         ClearInstruction();
         ResetClock();
     }
@@ -199,24 +202,4 @@ void PowerOnReset()
 void SetResetState()
 {
 
-}
-
-void CheckForInterrupt()
-{
-    if (getBusReq())
-    {
-        _state.Interrupt.BusRequest = true;
-    }
-
-    if (getNmi())
-    {
-        _state.Interrupt.NMI = true;
-        _state.Interrupt.Halt = false;
-    }
-
-    if (getInt())
-    {
-        _state.Interrupt.INT = true;
-        _state.Interrupt.Halt = false;
-    }
 }

@@ -158,6 +158,7 @@
   <ItemGroup>
     <ClInclude Include="Async.h" />
     <ClInclude Include="ClockInstruction.h" />
+    <ClInclude Include="ClockInterrupt.h" />
     <ClInclude Include="ClockTick.h" />
     <ClInclude Include="CpuAlu.h" />
     <ClInclude Include="CpuState.h" />
@@ -171,6 +172,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ClockInstruction.c" />
+    <ClCompile Include="ClockInterrupt.c" />
     <ClCompile Include="ClockTick.c" />
     <ClCompile Include="CpuAlu.c" />
     <ClCompile Include="CpuZ80.c" />

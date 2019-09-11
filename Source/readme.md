@@ -1,5 +1,26 @@
 # Zingularity Source Code
 
+## Resources Used
+
+Zilog Z80 User Manual
+http://z80.info/zip/z80cpu_um.pdf
+
+Interrupt behavior:
+http://z80.info/zip/z80-interrupts_rewritten.pdf
+
+Special Reset:
+http://www.primrosebank.net/computers/z80/z80_special_reset.htm
+
+Hidden W&S (W&Z) Regsisters:
+https://gist.github.com/drhelius/8497817
+
+Undocumented Instructions:
+http://z80.info/zip/z80-documented.pdf
+
+---
+
+## Code Projects
+
 ### Jacobi.CpuZ80
 
 The `C` code that contains the core of the Z80 emulator.
@@ -14,7 +35,7 @@ Unit tests for the Z80 emulator code.
 
 `C#`
 Contains the InstructionsZ80.json file that defines all possible Z80 instruction.
-This is used as a basis to generate source code.
+This is used as a basis to generate `C` source code.
 
 ### Jacobi.CpuZ80.Meta.Tests
 

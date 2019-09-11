@@ -1,5 +1,6 @@
 #include "ClockTick.h"
 #include "ClockInstruction.h"
+#include "ClockInterrupt.h"
 #include "CpuState.h"
 #include "CpuZ80.h"
 #include "CpuZ80Host.h"
@@ -229,6 +230,7 @@ Async_Function(Execute)
 }
 Async_End
 
+// http://z80.info/zip/z80-interrupts_rewritten.pdf
 Async_Function(Interrupt)
 {
     if (_state.Interrupt.SpecialReset)
@@ -254,7 +256,7 @@ Async_Function(Interrupt)
         while (true)
         {
             Async_Yield();
-            // cannot do a AssertClock because its not being incremented
+            // cannot use AssertClock because its not being incremented
             Assert(_state.Clock.Level == Level_NegEdge);
             if (!_state.Interrupt.BusRequest)
             {
@@ -276,7 +278,26 @@ Async_Function(Interrupt)
 
     if (_state.Interrupt.INT)
     {
+        // DI
+        _state.Interrupt.IFF1 = false;
+        _state.Interrupt.IFF2 = false;
 
+        switch (_state.Interrupt.InterruptMode)
+        {
+        case IM0:
+            break;
+
+        case IM1:
+            break;
+
+        case IM2:
+            break;
+
+        
+        default:
+            Assert(false);
+            break;
+        }
     }
 }
 Async_End

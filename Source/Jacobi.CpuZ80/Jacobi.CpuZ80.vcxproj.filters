@@ -13,6 +13,7 @@
     <ClInclude Include="FunctionsZ80.h" />
     <ClInclude Include="CpuAlu.h" />
     <ClInclude Include="FlagsZ80.h" />
+    <ClInclude Include="ClockInterrupt.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Instructions.Arithmetic8.c" />
@@ -36,5 +37,6 @@
     <ClCompile Include="FlagsZ80.Generic.c" />
     <ClCompile Include="FlagsZ80.Special.c" />
     <ClCompile Include="CpuAlu.c" />
+    <ClCompile Include="ClockInterrupt.c" />
   </ItemGroup>
 </Project>

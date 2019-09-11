@@ -97,10 +97,15 @@ RegisterPairUnion(ii, ii##h, ii##l)
         bool_t NMI;
         bool_t INT;
         
+        // set by EI to hold off accepting INTs till after the next instruction
+        // counts 2 instructions (EI and RETI)
+        uint8_t EnableIntPendingCount;
         InterruptMode InterruptMode;
 
+        // WAIT states active
         bool_t Wait;
-        bool_t Halt;    // set by halt instruction
+        // set by halt instruction
+        bool_t Halt;
 
     } InterruptState;
 

@@ -18,8 +18,6 @@ extern "C" {
 
     const InstructionInfo ExtendedReverseOpcodeFetch;
 
-    void CheckForInterrupt();
-
 #ifdef __cplusplus
 }
 #endif

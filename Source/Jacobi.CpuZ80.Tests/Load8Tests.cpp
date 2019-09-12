@@ -61,7 +61,7 @@ namespace Z80InstructionTests
 
                 for (uint8_t ex = 0; ex < RegistersExOpcodesSize; ex++)
                 {
-                    LDrnTest((Registers8)r, ex);
+                    LDrnTest((Registers8)r, RegistersExOpcodes[ex]);
                 }
             }
         }
@@ -82,6 +82,47 @@ namespace Z80InstructionTests
             } while (cpuState.ClockTick());
 
             Assert::AreEqual(0xFF, (int)GetRegister8Ex(r, ex));
+            Assert::AreEqual(1, (int)GetFlag(Flag_C));
+        }
+
+        TEST_METHOD(LD_r_HL)
+        {
+            for (uint8_t r = Reg8_B; r <= Reg8_A; r++)
+            {
+                if (r == Reg8_HL) continue;
+
+                for (uint8_t ex = 0; ex < RegistersExOpcodesSize; ex++)
+                {
+                    LDrHLTest((Registers8)r, RegistersExOpcodes[ex]);
+                }
+            }
+        }
+
+        void LDrHLTest(Registers8 r, uint8_t ex)
+        {
+            uint8_t bytes[] = { 0xAA, ex, 0b01000110 | r << 3, 0xFF, 0x00 };
+            TestCpuState cpuState;
+            cpuState.memory.Assign(bytes, sizeof(bytes));
+            cpuState.AbortAddress = ex > 0 ? 0x0004 : 0x0003;
+
+            _state.Registers.PC = 1;
+
+            SetRegisterEx16Ex(ex ? 1 : 0, ex);
+            // don't set target reg for:
+            // LD h, (HL)
+            // LD l, (HL)
+            if (!(ex == 0 && (r == Reg8_H || r == Reg8_L)))
+            {
+                SetRegister8(r, 0x11);
+            }
+            SetFlag(Flag_C, true);
+
+            do
+            {
+                cpuState.ToggleClockLevel();
+            } while (cpuState.ClockTick());
+
+            Assert::AreEqual(0xAA, (int)GetRegister8Ex(r, ex));
             Assert::AreEqual(1, (int)GetFlag(Flag_C));
         }
     };

@@ -187,7 +187,9 @@ uint8_t GetRegisterSP16Msb(RegistersSP16 reg);
 uint8_t GetRegisterSP16Lsb(RegistersSP16 reg);
 
 // based on extension opcodes
+void SetRegisterEx16Ex(uint16_t value, uint8_t ex);
 void SetRegisterEx16(uint16_t reg);
+uint16_t GetRegisterEx16Ex(uint8_t ex);
 uint16_t GetRegisterEx16();
 
 void setAddressPC();

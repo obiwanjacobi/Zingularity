@@ -227,26 +227,34 @@ uint16_t GetRegisterSP16(RegistersSP16 reg)
     return 0;
 }
 
-void SetRegisterEx16(uint16_t reg)
+void SetRegisterEx16Ex(uint16_t value, uint8_t ex)
 {
-    uint8_t ex = _state.Instruction.Ext[0];
     if (IsIX(ex))
-        _state.Registers.IX = reg;
+        _state.Registers.IX = value;
     else if (IsIY(ex))
-        _state.Registers.IY = reg;
+        _state.Registers.IY = value;
     else
-        _state.Registers.HL = reg;
+        _state.Registers.HL = value;
 }
 
-uint16_t GetRegisterEx16()
+void SetRegisterEx16(uint16_t value)
 {
-    uint8_t ex = _state.Instruction.Ext[0];
+    SetRegisterEx16Ex(_state.Instruction.Ext[0], value);
+}
+
+uint16_t GetRegisterEx16Ex(uint8_t ex)
+{
     if (IsIX(ex))
         return _state.Registers.IX;
     else if (IsIY(ex))
         return _state.Registers.IY;
     else
         return _state.Registers.HL;
+}
+
+uint16_t GetRegisterEx16()
+{
+    return GetRegisterEx16Ex(_state.Instruction.Ext[0]);
 }
 
 void setAddressPC()

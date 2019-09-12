@@ -12,30 +12,24 @@ void OnClock_OF()
 // like OD but with assing Data to d
 void OnClock_ODd()
 {
-    switch (_state.Clock.TL)
+    OnClock_OD();
+    if (_state.Clock.TL == T3_NegEdge)
     {
-    case T3_NegEdge:
-        OnClock_OD();
         _state.Instruction.d = _state.Instruction.DataInl;
-        break;
-    default:
-        OnClock_OD();
-        break;
     }
 }
 
 // like MR but with PC address
 void OnClock_OD()
 {
-    switch (_state.Clock.TL)
+    if (_state.Clock.TL == T1_PosEdge)
     {
-    case T1_PosEdge:
         setRefresh(Inactive);
         setAddressPC();
-        break;
-    default:
+    }
+    else
+    {
         OnClock_MR();
-        break;
     }
 }
 

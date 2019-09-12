@@ -208,7 +208,7 @@
         },
         {
             "mnemonic": "LD r, (ex+d)",
-            "bytes": [ "ex", "10rrr110", "d" ],
+            "bytes": [ "ex", "01rrr110", "d" ],
             "cycles": [ 4, 4, 3, 5, 3 ],
             "ops": [ "OF", "OF", "ODd", "AD", "MR" ],
             "flags": {

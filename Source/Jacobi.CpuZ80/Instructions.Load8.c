@@ -62,11 +62,19 @@ void OnClock_LDr__HL__1_MR()
     }
 }
 
-// LD A, (IX+d)   -  LDA__IX_d__DD3  -  DD, BE, d
+// LD A, (IX+d)   -  LDA__IX_d__DD3  -  DD, 46, d
 void OnClock_LDr__ex_d__ex3_OF() { OnClock_OF(); }
-void OnClock_LDr__ex_d__ex3_OD() {}
-void OnClock_LDr__ex_d__ex3_AD() {}
-void OnClock_LDr__ex_d__ex3_MR() {}
+void OnClock_LDr__ex_d__ex3_AD() 
+{
+    if (_state.Clock.TL == T4_PosEdge)
+    {
+        _state.Registers.WS = GetRegisterEx16() + _state.Instruction.d;
+    }
+}
+void OnClock_LDr__ex_d__ex3_MR() 
+{
+    OnClock_LDr__HL__1_MR();
+}
 
 // LD (HL), A   -  LD_HL__A_1  -  77
 void OnClock_LD_HL__r_1_OF() { OnClock_OF(); }

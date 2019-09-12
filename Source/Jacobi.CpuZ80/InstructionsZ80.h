@@ -550,46 +550,46 @@ extern const InstructionInfo instructionInfoLDH__HL__1;
 // LD L, (HL)  -  6E
 extern const InstructionInfo instructionInfoLDL__HL__1;
 
-// LD A, (IX+d)  -  DD, BE, d
+// LD A, (IX+d)  -  DD, 7E, d
 extern const InstructionInfo instructionInfoLDA__IX_d__DD3;
 
-// LD A, (IY+d)  -  FD, BE, d
+// LD A, (IY+d)  -  FD, 7E, d
 extern const InstructionInfo instructionInfoLDA__IY_d__FD3;
 
-// LD B, (IX+d)  -  DD, 86, d
+// LD B, (IX+d)  -  DD, 46, d
 extern const InstructionInfo instructionInfoLDB__IX_d__DD3;
 
-// LD B, (IY+d)  -  FD, 86, d
+// LD B, (IY+d)  -  FD, 46, d
 extern const InstructionInfo instructionInfoLDB__IY_d__FD3;
 
-// LD C, (IX+d)  -  DD, 8E, d
+// LD C, (IX+d)  -  DD, 4E, d
 extern const InstructionInfo instructionInfoLDC__IX_d__DD3;
 
-// LD C, (IY+d)  -  FD, 8E, d
+// LD C, (IY+d)  -  FD, 4E, d
 extern const InstructionInfo instructionInfoLDC__IY_d__FD3;
 
-// LD D, (IX+d)  -  DD, 96, d
+// LD D, (IX+d)  -  DD, 56, d
 extern const InstructionInfo instructionInfoLDD__IX_d__DD3;
 
-// LD D, (IY+d)  -  FD, 96, d
+// LD D, (IY+d)  -  FD, 56, d
 extern const InstructionInfo instructionInfoLDD__IY_d__FD3;
 
-// LD E, (IX+d)  -  DD, 9E, d
+// LD E, (IX+d)  -  DD, 5E, d
 extern const InstructionInfo instructionInfoLDE__IX_d__DD3;
 
-// LD E, (IY+d)  -  FD, 9E, d
+// LD E, (IY+d)  -  FD, 5E, d
 extern const InstructionInfo instructionInfoLDE__IY_d__FD3;
 
-// LD H, (IX+d)  -  DD, A6, d
+// LD H, (IX+d)  -  DD, 66, d
 extern const InstructionInfo instructionInfoLDH__IX_d__DD3;
 
-// LD H, (IY+d)  -  FD, A6, d
+// LD H, (IY+d)  -  FD, 66, d
 extern const InstructionInfo instructionInfoLDH__IY_d__FD3;
 
-// LD L, (IX+d)  -  DD, AE, d
+// LD L, (IX+d)  -  DD, 6E, d
 extern const InstructionInfo instructionInfoLDL__IX_d__DD3;
 
-// LD L, (IY+d)  -  FD, AE, d
+// LD L, (IY+d)  -  FD, 6E, d
 extern const InstructionInfo instructionInfoLDL__IY_d__FD3;
 
 // LD (HL), A  -  77

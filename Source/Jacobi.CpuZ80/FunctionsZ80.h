@@ -577,72 +577,72 @@ extern void OnClock_LDr__HL__1_MR();
 // extern void OnClock_LDr__HL__1_OF();
 // extern void OnClock_LDr__HL__1_MR();
 
-// LD A, (IX+d)   -  LDA__IX_d__DD3  -  DD, BE, d
+// LD A, (IX+d)   -  LDA__IX_d__DD3  -  DD, 7E, d
 extern void OnClock_LDr__ex_d__ex3_OF();
 extern void OnClock_LDr__ex_d__ex3_AD();
 extern void OnClock_LDr__ex_d__ex3_MR();
 
-// LD A, (IY+d)   -  LDA__IY_d__FD3  -  FD, BE, d
+// LD A, (IY+d)   -  LDA__IY_d__FD3  -  FD, 7E, d
 // extern void OnClock_LDr__ex_d__ex3_OF();
 // extern void OnClock_LDr__ex_d__ex3_AD();
 // extern void OnClock_LDr__ex_d__ex3_MR();
 
-// LD B, (IX+d)   -  LDB__IX_d__DD3  -  DD, 86, d
+// LD B, (IX+d)   -  LDB__IX_d__DD3  -  DD, 46, d
 // extern void OnClock_LDr__ex_d__ex3_OF();
 // extern void OnClock_LDr__ex_d__ex3_AD();
 // extern void OnClock_LDr__ex_d__ex3_MR();
 
-// LD B, (IY+d)   -  LDB__IY_d__FD3  -  FD, 86, d
+// LD B, (IY+d)   -  LDB__IY_d__FD3  -  FD, 46, d
 // extern void OnClock_LDr__ex_d__ex3_OF();
 // extern void OnClock_LDr__ex_d__ex3_AD();
 // extern void OnClock_LDr__ex_d__ex3_MR();
 
-// LD C, (IX+d)   -  LDC__IX_d__DD3  -  DD, 8E, d
+// LD C, (IX+d)   -  LDC__IX_d__DD3  -  DD, 4E, d
 // extern void OnClock_LDr__ex_d__ex3_OF();
 // extern void OnClock_LDr__ex_d__ex3_AD();
 // extern void OnClock_LDr__ex_d__ex3_MR();
 
-// LD C, (IY+d)   -  LDC__IY_d__FD3  -  FD, 8E, d
+// LD C, (IY+d)   -  LDC__IY_d__FD3  -  FD, 4E, d
 // extern void OnClock_LDr__ex_d__ex3_OF();
 // extern void OnClock_LDr__ex_d__ex3_AD();
 // extern void OnClock_LDr__ex_d__ex3_MR();
 
-// LD D, (IX+d)   -  LDD__IX_d__DD3  -  DD, 96, d
+// LD D, (IX+d)   -  LDD__IX_d__DD3  -  DD, 56, d
 // extern void OnClock_LDr__ex_d__ex3_OF();
 // extern void OnClock_LDr__ex_d__ex3_AD();
 // extern void OnClock_LDr__ex_d__ex3_MR();
 
-// LD D, (IY+d)   -  LDD__IY_d__FD3  -  FD, 96, d
+// LD D, (IY+d)   -  LDD__IY_d__FD3  -  FD, 56, d
 // extern void OnClock_LDr__ex_d__ex3_OF();
 // extern void OnClock_LDr__ex_d__ex3_AD();
 // extern void OnClock_LDr__ex_d__ex3_MR();
 
-// LD E, (IX+d)   -  LDE__IX_d__DD3  -  DD, 9E, d
+// LD E, (IX+d)   -  LDE__IX_d__DD3  -  DD, 5E, d
 // extern void OnClock_LDr__ex_d__ex3_OF();
 // extern void OnClock_LDr__ex_d__ex3_AD();
 // extern void OnClock_LDr__ex_d__ex3_MR();
 
-// LD E, (IY+d)   -  LDE__IY_d__FD3  -  FD, 9E, d
+// LD E, (IY+d)   -  LDE__IY_d__FD3  -  FD, 5E, d
 // extern void OnClock_LDr__ex_d__ex3_OF();
 // extern void OnClock_LDr__ex_d__ex3_AD();
 // extern void OnClock_LDr__ex_d__ex3_MR();
 
-// LD H, (IX+d)   -  LDH__IX_d__DD3  -  DD, A6, d
+// LD H, (IX+d)   -  LDH__IX_d__DD3  -  DD, 66, d
 // extern void OnClock_LDr__ex_d__ex3_OF();
 // extern void OnClock_LDr__ex_d__ex3_AD();
 // extern void OnClock_LDr__ex_d__ex3_MR();
 
-// LD H, (IY+d)   -  LDH__IY_d__FD3  -  FD, A6, d
+// LD H, (IY+d)   -  LDH__IY_d__FD3  -  FD, 66, d
 // extern void OnClock_LDr__ex_d__ex3_OF();
 // extern void OnClock_LDr__ex_d__ex3_AD();
 // extern void OnClock_LDr__ex_d__ex3_MR();
 
-// LD L, (IX+d)   -  LDL__IX_d__DD3  -  DD, AE, d
+// LD L, (IX+d)   -  LDL__IX_d__DD3  -  DD, 6E, d
 // extern void OnClock_LDr__ex_d__ex3_OF();
 // extern void OnClock_LDr__ex_d__ex3_AD();
 // extern void OnClock_LDr__ex_d__ex3_MR();
 
-// LD L, (IY+d)   -  LDL__IY_d__FD3  -  FD, AE, d
+// LD L, (IY+d)   -  LDL__IY_d__FD3  -  FD, 6E, d
 // extern void OnClock_LDr__ex_d__ex3_OF();
 // extern void OnClock_LDr__ex_d__ex3_AD();
 // extern void OnClock_LDr__ex_d__ex3_MR();

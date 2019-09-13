@@ -17,6 +17,13 @@ public:
         ClearAll();
     }
 
+    TestCpuState(uint8_t* bytes, uint16_t length)
+        : memory(&host)
+    {
+        ClearAll();
+        memory.Assign(bytes, length);
+    }
+
     void ClearAll()
     {
         Async_Reset(&asyncThis);
@@ -56,6 +63,20 @@ public:
         }
 
         return tCycles;
+    }
+
+    void RunUntil(uint16_t abortAddress)
+    {
+        AbortAddress = abortAddress;
+        Run();
+    }
+
+    void Run()
+    {
+        do
+        {
+            ToggleClockLevel();
+        } while (ClockTick());
     }
 
     bool ClockTick()

@@ -51,9 +51,14 @@ void SetRegister8Ex(Registers8 reg, uint8_t value, uint8_t ex)
     }
 }
 
-void SetRegister8(Registers8 reg, uint8_t value)
+void SetRegister8Rel(Registers8 reg, uint8_t value)
 {
     SetRegister8Ex(reg, value, _state.Instruction.Ext[0]);
+}
+
+void SetRegister8(Registers8 reg, uint8_t value)
+{
+    SetRegister8Ex(reg, value, 0);
 }
 
 uint8_t GetRegister8Ex(Registers8 reg, uint8_t ex)
@@ -93,9 +98,14 @@ uint8_t GetRegister8Ex(Registers8 reg, uint8_t ex)
     return 0;
 }
 
-uint8_t GetRegister8(Registers8 reg)
+uint8_t GetRegister8Rel(Registers8 reg)
 {
     return GetRegister8Ex(reg, _state.Instruction.Ext[0]);
+}
+
+uint8_t GetRegister8(Registers8 reg)
+{
+    return GetRegister8Ex(reg, 0);
 }
 
 void SetRegister16(Registers16 reg, uint16_t value)

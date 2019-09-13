@@ -174,8 +174,10 @@ typedef enum
 
 
 void SetRegister8(Registers8 reg, uint8_t value);
+void SetRegister8Rel(Registers8 reg, uint8_t value);
 void SetRegister8Ex(Registers8 reg, uint8_t value, uint8_t ex);
 uint8_t GetRegister8(Registers8 reg);
+uint8_t GetRegister8Rel(Registers8 reg);
 uint8_t GetRegister8Ex(Registers8 reg, uint8_t ex);
 
 void SetRegister16(Registers16 reg, uint16_t value);

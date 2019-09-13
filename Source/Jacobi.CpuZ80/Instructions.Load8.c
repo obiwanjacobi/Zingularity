@@ -3,14 +3,32 @@
 
 extern CpuState _state;
 
+void OnClock_OF_HL_in_WS()
+{
+    OnClock_OF();
+    if (_state.Clock.TL == T4_NegEdge)
+    {
+        _state.Registers.WS = _state.Registers.HL;
+    }
+}
+
+void OnClock_Ex_d_in_WS()
+{
+    if (_state.Clock.TL == T4_PosEdge)
+    {
+        _state.Registers.WS = GetRegisterEx16() + _state.Instruction.d;
+    }
+}
+
+
 // LD A, A   -  LDA_A_1  -  7F
 void OnClock_LDr_s_1_OF()
 {
     OnClock_OF();
     if (_state.Clock.TL == T4_NegEdge)
     {
-        SetRegister8(_state.Instruction.Info->Decode.Variable1.Register8,
-            GetRegister8(_state.Instruction.Info->Decode.Variable2.Register8));
+        SetRegister8Rel(_state.Instruction.Info->Decode.Variable1.Register8,
+            GetRegister8Rel(_state.Instruction.Info->Decode.Variable2.Register8));
     }
 }
 
@@ -28,7 +46,7 @@ void OnClock_LDr_n_2_OD()
 
     if (_state.Clock.TL == T3_NegEdge)
     {
-        SetRegister8(_state.Instruction.Info->Decode.Variable1.Register8,
+        SetRegister8Rel(_state.Instruction.Info->Decode.Variable1.Register8,
             _state.Instruction.DataInl);
     }
 }
@@ -44,12 +62,7 @@ void OnClock_LDv_n_FD3_OD() { OnClock_LDr_n_2_OD(); }
 // LD A, (HL)   -  LDA__HL__1  -  7E
 void OnClock_LDr__HL__1_OF() 
 { 
-    OnClock_OF();
-
-    if (_state.Clock.TL == T4_NegEdge)
-    {
-        _state.Registers.WS = _state.Registers.HL;
-    }
+    OnClock_OF_HL_in_WS();
 }
 void OnClock_LDr__HL__1_MR() 
 {
@@ -64,38 +77,56 @@ void OnClock_LDr__HL__1_MR()
 
 // LD A, (IX+d)   -  LDA__IX_d__DD3  -  DD, 46, d
 void OnClock_LDr__ex_d__ex3_OF() { OnClock_OF(); }
-void OnClock_LDr__ex_d__ex3_AD() 
-{
-    if (_state.Clock.TL == T4_PosEdge)
-    {
-        _state.Registers.WS = GetRegisterEx16() + _state.Instruction.d;
-    }
-}
-void OnClock_LDr__ex_d__ex3_MR() 
-{
-    OnClock_LDr__HL__1_MR();
-}
+void OnClock_LDr__ex_d__ex3_AD() { OnClock_Ex_d_in_WS(); }
+void OnClock_LDr__ex_d__ex3_MR() { OnClock_LDr__HL__1_MR(); }
 
 // LD (HL), A   -  LD_HL__A_1  -  77
-void OnClock_LD_HL__r_1_OF() { OnClock_OF(); }
-void OnClock_LD_HL__r_1_MW() {}
+void OnClock_LD_HL__r_1_OF()
+{ 
+    OnClock_OF_HL_in_WS();
+    if (_state.Clock.TL == T4_PosEdge)
+    {
+        _state.Instruction.DataOut =
+            GetRegister8(_state.Instruction.Info->Decode.Variable1.Register8);
+    }
+}
+void OnClock_LD_HL__r_1_MW() { OnClock_MW(); }
 
 // LD (IX+d), A   -  LD_IX_d__A_DD3  -  DD, 77, d
-void OnClock_LD_ex_d__r_ex3_OF() { OnClock_OF(); }
-void OnClock_LD_ex_d__r_ex3_OD() {}
-void OnClock_LD_ex_d__r_ex3_AD() {}
-void OnClock_LD_ex_d__r_ex3_MW() {}
+void OnClock_LD_ex_d__r_ex3_OF() { OnClock_LD_HL__r_1_OF(); }
+void OnClock_LD_ex_d__r_ex3_AD() { OnClock_Ex_d_in_WS(); }
+void OnClock_LD_ex_d__r_ex3_MW() { OnClock_MW(); }
 
 // LD (HL), n   -  LD_HL__n_2  -  36, n
-void OnClock_LD_HL__n_2_OF() { OnClock_OF(); }
-void OnClock_LD_HL__n_2_OD() {}
-void OnClock_LD_HL__n_2_MW() {}
+void OnClock_LD_HL__n_2_OF() { OnClock_OF_HL_in_WS(); }
+void OnClock_LD_HL__n_2_OD() 
+{ 
+    OnClock_OD(); 
+    if (_state.Clock.TL == T3_NegEdge)
+    {
+        _state.Instruction.DataOut = _state.Instruction.DataIn;
+    }
+}
+void OnClock_LD_HL__n_2_MW() { OnClock_MW(); }
 
 // LD (IX+d), n   -  LD_IX_d__n_DD4  -  DD, 36, d, n
 void OnClock_LD_ex_d__n_ex4_OF() { OnClock_OF(); }
-void OnClock_LD_ex_d__n_ex4_OD() {}
-void OnClock_LD_ex_d__n_ex4_FD() {}
-void OnClock_LD_ex_d__n_ex4_MW() {}
+void OnClock_LD_ex_d__n_ex4_FD() // 5 cycles
+{
+    switch (_state.Clock.TL)
+    {
+    case T4_PosEdge:
+        OnClock_Ex_d_in_WS();
+    case T4_NegEdge:
+    case T5_PosEdge:
+    case T5_NegEdge:
+        break;
+    default:
+        OnClock_LD_HL__n_2_OD();
+        break;
+    }
+}
+void OnClock_LD_ex_d__n_ex4_MW() { OnClock_MW(); }
 
 // LD A, (BC)   -  LDA__BC__1  -  0A
 void OnClock_LDA__BC__1_OF() { OnClock_OF(); }

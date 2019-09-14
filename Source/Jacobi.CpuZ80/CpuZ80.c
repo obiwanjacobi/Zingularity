@@ -249,7 +249,7 @@ void SetRegisterEx16Ex(uint16_t value, uint8_t ex)
 
 void SetRegisterEx16(uint16_t value)
 {
-    SetRegisterEx16Ex(_state.Instruction.Ext[0], value);
+    SetRegisterEx16Ex(value, _state.Instruction.Ext[0]);
 }
 
 uint16_t GetRegisterEx16Ex(uint8_t ex)

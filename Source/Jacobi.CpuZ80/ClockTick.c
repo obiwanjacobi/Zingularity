@@ -230,6 +230,44 @@ Async_Function(Execute)
 }
 Async_End
 
+Async_Function(AcceptInterrupt)
+{
+    AssertClock(M1, T1_PosEdge);
+    while (!IsLastInterruptTCycle(Level_NegEdge) &&
+        _state.Clock.T <= _state.Interrupt.Info->Cycles[_state.Interrupt.MCycleIndex].clocks)
+    {
+        do
+        {
+            AssertMCycle();
+            if (IsLastInterruptTCycle(Level_PosEdge))
+            {
+                CheckForInterrupt();
+            }
+            _state.Interrupt.Info->Cycles[_state.Interrupt.MCycleIndex].OnClock();
+            Async_Yield();
+
+            NextTCycleLevel();
+
+            _state.Interrupt.Info->Cycles[_state.Interrupt.MCycleIndex].OnClock();
+
+            if (_state.Interrupt.Wait)
+            {
+                // prepare clock for wait cycle
+                _state.Clock.TL--;
+                Async_Yield();
+            }
+
+        } while (_state.Interrupt.Wait);
+
+        if (!IsLastInterruptTCycle(Level_NegEdge))
+        {
+            NextTCycle();
+            Async_Yield();
+        }
+    }
+}
+Async_End
+
 // http://z80.info/zip/z80-interrupts_rewritten.pdf
 Async_Function(Interrupt)
 {
@@ -273,7 +311,10 @@ Async_Function(Interrupt)
 
     if (_state.Interrupt.NMI)
     {
+        _state.Interrupt.IFF1 = false;
+        _state.Interrupt.Info = &NMI;
 
+        Async_WaitUntil(AcceptInterrupt(&_state.Interrupt.Async));
     }
 
     if (_state.Interrupt.INT)
@@ -285,12 +326,15 @@ Async_Function(Interrupt)
         switch (_state.Interrupt.InterruptMode)
         {
         case IM0:
+            _state.Interrupt.Info = &INT_M0;
             break;
 
         case IM1:
+            _state.Interrupt.Info = &INT_M1;
             break;
 
         case IM2:
+            _state.Interrupt.Info = &INT_M2;
             break;
 
         
@@ -298,6 +342,8 @@ Async_Function(Interrupt)
             Assert(false);
             break;
         }
+
+        Async_WaitUntil(AcceptInterrupt(&_state.Interrupt.Async));
     }
 }
 Async_End

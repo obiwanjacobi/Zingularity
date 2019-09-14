@@ -7,8 +7,6 @@
 extern "C" {
 #endif
 
-#define MaxMCycleIndex  5
-
 #define AssertClockM(m) \
     Assert(_state.Clock.M == (uint8_t)m);
 

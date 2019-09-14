@@ -98,14 +98,26 @@ RegisterPairUnion(ii, ii##h, ii##l)
         bool_t INT;
         
         // set by EI to hold off accepting INTs till after the next instruction
-        // counts 2 instructions (EI and RETI)
+        // counts 2 instructions (EI and usually RETI)
         uint8_t EnableIntPendingCount;
         InterruptMode InterruptMode;
 
+        // number of z80 initiated wait states
+        // used in INT and IO
+        uint8_t WaitCount;
         // WAIT states active
         bool_t Wait;
         // set by halt instruction
         bool_t Halt;
+
+        // async state for interrupt logic
+        AsyncThis Async;
+        // current M-Cycle index into the InstructionInfo's Cycles array.
+        uint8_t MCycleIndex;
+        // executing interrupt logic
+        const InstructionInfo* Info;
+        // read interrupt vector
+        uint8_t DataIn;
 
     } InterruptState;
 

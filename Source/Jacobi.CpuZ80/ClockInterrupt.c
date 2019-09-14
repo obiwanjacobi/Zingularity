@@ -1,5 +1,4 @@
 #include "ClockInterrupt.h"
-#include "CpuState.h"
 #include "CpuZ80Host.h"
 
 extern CpuState _state;
@@ -14,7 +13,60 @@ void OnClock_NMI_OP2()
 {}
 
 void OnClock_INT_ACK()
-{}
+{
+    switch (_state.Clock.TL)
+    {
+    case T1_PosEdge:
+        floatBus(Inactive);
+        setRefresh(Inactive);
+        // no increment!
+        setAddressBus(_state.Registers.PC);
+        setM1(Active);
+        break;
+    case T1_NegEdge:
+        _state.Interrupt.WaitCount = 2;
+        _state.Interrupt.Wait = true;
+        break;
+
+    // no-op / wait
+    case T2_PosEdge:
+        break;
+    case T2_NegEdge:
+        if (_state.Interrupt.WaitCount == 2)
+            setIOReq(Active);
+
+        if (!_state.Interrupt.Wait)
+            _state.Interrupt.DataIn = getDataBus();
+        break;
+
+    case T3_PosEdge:
+        setM1(Inactive);
+        setIOReq(Inactive);
+
+        setAddressIR();
+        setRefresh(Active);
+        break;
+    case T3_NegEdge:
+        setMemReq(Active);
+        break;
+
+    case T4_PosEdge:
+        break;
+    case T4_NegEdge:
+        setMemReq(Inactive);
+        break;
+
+    // not sure what to do here - have to test with real Z80
+    case T5_PosEdge:
+        break;
+    case T5_NegEdge:
+        break;
+
+    default:
+        Assert(false);
+        break;
+    }
+}
 
 void OnClock_INT_M0_OP1()
 {}
@@ -108,6 +160,17 @@ const InstructionInfo INT_M2 =
     nullptr
 };
 
+bool_t IsLastInterruptTCycle(Level level)
+{
+    if (_state.Interrupt.Info != nullptr)
+    {
+        return (_state.Interrupt.MCycleIndex == MaxMCycleIndex ||
+            _state.Interrupt.Info->Cycles[_state.Interrupt.MCycleIndex + 1].clocks == 0) &&
+            _state.Clock.T >= _state.Interrupt.Info->Cycles[_state.Interrupt.MCycleIndex].clocks &&
+            _state.Clock.Level == level;
+    }
+    return false;
+}
 
 void CheckForInterrupt()
 {
@@ -119,7 +182,8 @@ void CheckForInterrupt()
         _state.Interrupt.Halt = false;
     }
 
-    if (_state.Interrupt.IFF1 &&
+    if (!_state.Interrupt.BusRequest &&
+        _state.Interrupt.IFF1 &&
         _state.Interrupt.EnableIntPendingCount == 0 &&
         getInt())
     {

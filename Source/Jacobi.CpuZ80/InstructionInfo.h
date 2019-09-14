@@ -9,6 +9,9 @@
 extern "C" {
 #endif
 
+#define MaxMCycleIndex  5
+#define MaxMCycleCount  6
+
 typedef void(*fnOnClock)();
 typedef void(*fnAssignFlags)();
 
@@ -64,7 +67,7 @@ typedef struct
 typedef struct
 {
     // max 6 M-cycles per instruction
-    const MachineCycleInfo Cycles[6];
+    const MachineCycleInfo Cycles[MaxMCycleCount];
 
     // how to decode this instruction
     const DecodeInfo Decode;

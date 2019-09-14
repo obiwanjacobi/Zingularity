@@ -54,7 +54,6 @@ typedef enum
     T5_NegEdge,
     T6_PosEdge,
     T6_NegEdge,
-
 } TCycleLevel;
 
 typedef enum 

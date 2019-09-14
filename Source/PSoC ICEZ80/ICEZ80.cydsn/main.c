@@ -18,10 +18,14 @@
 #include "project.h"
 #include "IceController.h"
 #include "TestController.h"
+#include "DebugConsole.h"
 
+#include <stdio.h>
 
 int main(void)
 {
+    DebugConsole_Init();
+    
     Run();
 }
 

@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="ICEZ80\ICEZ80\ICEZ80.cydwr">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>ICEZ80</v>
 <v>ICEZ80\ICEZ80</v>
@@ -64,12 +64,17 @@
 <v>ICEZ80\ICEZ80\CpuZ80\Types.h</v>
 <v>ICEZ80\ICEZ80\Header Files\cyapicallbacks.h</v>
 <v>ICEZ80\ICEZ80\Source Files</v>
-<v>ICEZ80\ICEZ80\Source Files\IceController.c</v>
-<v>ICEZ80\ICEZ80\Source Files\IceController.h</v>
-<v>ICEZ80\ICEZ80\Source Files\IceCpuZ80Host.c</v>
+<v>ICEZ80\ICEZ80\Source Files\ICE</v>
+<v>ICEZ80\ICEZ80\Source Files\ICE\IceController.c</v>
+<v>ICEZ80\ICEZ80\Source Files\ICE\IceController.h</v>
+<v>ICEZ80\ICEZ80\Source Files\ICE\IceCpuZ80Host.c</v>
+<v>ICEZ80\ICEZ80\Source Files\Test</v>
+<v>ICEZ80\ICEZ80\Source Files\Test\TestController.c</v>
+<v>ICEZ80\ICEZ80\Source Files\Test\TestController.h</v>
+<v>ICEZ80\ICEZ80\Source Files\DebugConsole.c</v>
+<v>ICEZ80\ICEZ80\Source Files\DebugConsole.h</v>
 <v>ICEZ80\ICEZ80\Source Files\main.c</v>
-<v>ICEZ80\ICEZ80\Source Files\TestController.c</v>
-<v>ICEZ80\ICEZ80\Source Files\TestController.h</v>
+<v>ICEZ80\ICEZ80\Generated_Source\PSoC5</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>ICEZ80</v>
@@ -79,12 +84,16 @@
 <v>ICEZ80\ICEZ80\CpuZ80</v>
 <v>ICEZ80\ICEZ80\Header Files</v>
 <v>ICEZ80\ICEZ80\Source Files</v>
-<v>ICEZ80\ICEZ80\Source Files\IceController.c</v>
-<v>ICEZ80\ICEZ80\Source Files\IceController.h</v>
-<v>ICEZ80\ICEZ80\Source Files\IceCpuZ80Host.c</v>
+<v>ICEZ80\ICEZ80\Source Files\ICE</v>
+<v>ICEZ80\ICEZ80\Source Files\ICE\IceController.c</v>
+<v>ICEZ80\ICEZ80\Source Files\ICE\IceController.h</v>
+<v>ICEZ80\ICEZ80\Source Files\ICE\IceCpuZ80Host.c</v>
+<v>ICEZ80\ICEZ80\Source Files\Test</v>
+<v>ICEZ80\ICEZ80\Source Files\Test\TestController.c</v>
+<v>ICEZ80\ICEZ80\Source Files\Test\TestController.h</v>
+<v>ICEZ80\ICEZ80\Source Files\DebugConsole.c</v>
+<v>ICEZ80\ICEZ80\Source Files\DebugConsole.h</v>
 <v>ICEZ80\ICEZ80\Source Files\main.c</v>
-<v>ICEZ80\ICEZ80\Source Files\TestController.c</v>
-<v>ICEZ80\ICEZ80\Source Files\TestController.h</v>
 <v>ICEZ80\ICEZ80\Generated_Source</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
@@ -134,6 +143,12 @@
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Data.lst</v>
+<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\DbgConsole.lst</v>
+<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\DbgConsole_BOOT.lst</v>
+<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\DbgConsole_INT.lst</v>
+<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\DbgConsole_IntClock.lst</v>
+<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\DbgConsole_PM.lst</v>
+<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\DebugConsole.lst</v>
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\FlagsZ80.Generic.lst</v>
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\FlagsZ80.lst</v>
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\FlagsZ80.Special.lst</v>
@@ -194,6 +209,7 @@
 <v>ICEZ80\ICEZ80\cy_pins_v2_20</v>
 <v>ICEZ80\ICEZ80\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>ICEZ80\ICEZ80\CyControlReg_v1_80.pdf</v>
+<v>ICEZ80\ICEZ80\UART_v2_50.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>ICEZ80</v>
@@ -205,6 +221,7 @@
 <v>ICEZ80\ICEZ80\cy_pins_v2_20</v>
 <v>ICEZ80\ICEZ80\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>ICEZ80\ICEZ80\CyControlReg_v1_80.pdf</v>
+<v>ICEZ80\ICEZ80\UART_v2_50.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>

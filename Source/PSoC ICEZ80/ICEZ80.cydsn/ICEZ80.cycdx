@@ -1,25 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <blockRegMap version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cypress.com/xsd/cyblockregmap cyblockregmap.xsd" xmlns="http://cypress.com/xsd/cyblockregmap">
-  <block name="WR" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="RD" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="MEMRQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="CLK" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="IORQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Em_EEPROM_Dynamic" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Data" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="AddressHi" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="AddressLo" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="RD" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="MEMRQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="WR" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Data" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Em_EEPROM_Dynamic" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="UartTx" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="UartRx" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="DbgConsole" BASE="0x0" SIZE="0x0" desc="UART" visible="true" hidden="false">
+    <block name="IntClock" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="VirtualMux_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="BUART" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <register name="RX_DbgConsole_RX_ADDRESS1" address="0x4000652A" bitWidth="8" desc="RX Address1 Register" hidden="false" />
+    <register name="RX_DbgConsole_RX_ADDRESS2" address="0x4000653A" bitWidth="8" desc="RX Address2 Register" hidden="false" />
+    <register name="TX_DbgConsole_TX_DATA" address="0x40006549" bitWidth="8" desc="TX Data Register" hidden="false" />
+    <register name="RX_DbgConsole_RX_DATA" address="0x4000654A" bitWidth="8" desc="RX Data Register" hidden="false" />
+    <register name="RX_DbgConsole_RX_STATUS" address="0x40006568" bitWidth="8" desc="RX status register" hidden="false">
+      <field name="DbgConsole_RX_STS_MRKSPC" from="0" to="0" access="R" resetVal="" desc="" hidden="false" />
+      <field name="DbgConsole_RX_STS_BREAK" from="1" to="1" access="R" resetVal="" desc="" hidden="false" />
+      <field name="DbgConsole_RX_STS_PAR_ERROR" from="2" to="2" access="R" resetVal="" desc="" hidden="false" />
+      <field name="DbgConsole_RX_STS_STOP_ERROR" from="3" to="3" access="R" resetVal="" desc="" hidden="false" />
+      <field name="DbgConsole_RX_STS_OVERRUN" from="4" to="4" access="R" resetVal="" desc="" hidden="false" />
+      <field name="DbgConsole_RX_STS_FIFO_NOTEMPTY" from="5" to="5" access="R" resetVal="" desc="" hidden="false" />
+      <field name="DbgConsole_RX_STS_ADDR_MATCH" from="6" to="6" access="R" resetVal="" desc="" hidden="false" />
+    </register>
+    <register name="TX_DbgConsole_TX_STATUS" address="0x4000656A" bitWidth="8" desc="TX status register" hidden="false">
+      <field name="DbgConsole_TX_STS_COMPLETE" from="0" to="0" access="R" resetVal="" desc="" hidden="false" />
+      <field name="DbgConsole_TX_STS_FIFO_EMPTY" from="1" to="1" access="R" resetVal="" desc="" hidden="false" />
+      <field name="DbgConsole_TX_STS_FIFO_FULL" from="2" to="2" access="R" resetVal="" desc="" hidden="false" />
+      <field name="DbgConsole_TX_STS_FIFO_NOT_FULL" from="3" to="3" access="R" resetVal="" desc="" hidden="false" />
+    </register>
+  </block>
+  <block name="IORQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="NMI" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="WAIT_RQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="INT_RQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="BusCtrl_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
-    <register name="BusCtrl_1_CONTROL_REG" address="0x4000647D" bitWidth="8" desc="" hidden="false" />
+    <register name="BusCtrl_1_CONTROL_REG" address="0x4000657A" bitWidth="8" desc="" hidden="false" />
   </block>
   <block name="RESET" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="RFSH" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="M1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="HALT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="BUSRQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="M1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="CLK" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="RFSH" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="BUSACK" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="HALT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
 </blockRegMap>

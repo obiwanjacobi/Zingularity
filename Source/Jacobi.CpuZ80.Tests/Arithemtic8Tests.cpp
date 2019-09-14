@@ -17,19 +17,14 @@ namespace Z80InstructionTests
 
         TEST_METHOD(Add_A_B)
         {
-            uint8_t bytes[] = { 0b10000000, 0x00 };
-            TestCpuState cpuState;
-            cpuState.memory.Assign(bytes, sizeof(bytes));
-            cpuState.AbortAddress = 0x0001;
+            uint8_t bytes[] = { 0b10000000 };
+            TestCpuState cpuState(bytes, sizeof(bytes));
 
             _state.Registers.A = 0x66;
             _state.Registers.B = 0x11;
             SetFlag(Flag_C, true);
 
-            do
-            {
-                cpuState.ToggleClockLevel();
-            } while (cpuState.ClockTick());
+            cpuState.Run();
 
             Assert::AreEqual(0x11, (int)_state.Registers.B);
             Assert::AreEqual(0x77, (int)_state.Registers.A);

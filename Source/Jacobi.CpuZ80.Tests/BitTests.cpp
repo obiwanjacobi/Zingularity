@@ -16,20 +16,14 @@ namespace Z80InstructionTests
 
         TEST_METHOD(BitSet0_IXFF_B)
         {
-            uint8_t bytes[] = { 0x10, 0xDD, 0xCB, 0xFF, 0b11000000, 0x00 };
-            TestCpuState cpuState;
-            cpuState.memory.Assign(bytes, sizeof(bytes));
-            cpuState.AbortAddress = 0x0005;
+            uint8_t bytes[] = { 0x10, 0xDD, 0xCB, 0xFF, 0b11000000 };
+            TestCpuState cpuState(bytes, sizeof(bytes));
 
             // IX + d => 1-1=0
             _state.Registers.IX = 0x01;
             _state.Registers.PC = 0x01;
             
-            do
-            {
-                cpuState.ToggleClockLevel();
-            }
-            while (cpuState.ClockTick());
+            cpuState.Run();
             
             Assert::AreEqual(0x11, (int)_state.Registers.B);
             Assert::AreEqual(0x11, (int)cpuState.memory[0]);

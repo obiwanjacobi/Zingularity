@@ -191,13 +191,6 @@ namespace Z80InstructionTests
 
         TEST_METHOD(LD_HL_n)
         {
-            LDHLnTest();
-            LDExdnTest(RegistersExOpcodes_IX);
-            LDExdnTest(RegistersExOpcodes_IY);
-        }
-
-        void LDHLnTest()
-        {
             uint8_t bytes[] = { 0x11, 0x36, 0xAA };
             TestCpuState cpuState(bytes, sizeof(bytes));
 
@@ -206,6 +199,12 @@ namespace Z80InstructionTests
             cpuState.Run();
 
             Assert::AreEqual(0xAA, (int)cpuState.memory[0]);
+        }
+
+        TEST_METHOD(LD_Ex_d_n)
+        {
+            LDExdnTest(RegistersExOpcodes_IX);
+            LDExdnTest(RegistersExOpcodes_IY);
         }
 
         void LDExdnTest(uint8_t ex)

@@ -11,130 +11,389 @@
 <CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256 type_name="CyDesigner.Common.ProjMgmt.Model.CyConfigDependencies" version="1">
 <dependency_info name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" xml_contents_version="2">
 <CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
-<file name=".\CortexM3\ARM_GCC_541\Debug\FlagsZ80.Generic.o">
-<dep name="..\..\Jacobi.CpuZ80\Async.h" />
-<dep name="..\..\Jacobi.CpuZ80\CpuAlu.h" />
-<dep name="..\..\Jacobi.CpuZ80\CpuState.h" />
-<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\FlagsZ80.Generic.c" />
-<dep name="..\..\Jacobi.CpuZ80\FlagsZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
-<dep name="..\..\Jacobi.CpuZ80\Types.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\AddressHi.o">
+<dep name=".\Generated_Source\PSoC5\AddressHi.c" />
+<dep name=".\Generated_Source\PSoC5\AddressHi.h" />
+<dep name=".\Generated_Source\PSoC5\AddressHi_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
-<file name="..\..\Jacobi.CpuZ80\Async.h" />
-<file name="..\..\Jacobi.CpuZ80\CpuAlu.h" />
-<file name="..\..\Jacobi.CpuZ80\CpuState.h" />
-<file name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
-<file name="..\..\Jacobi.CpuZ80\FlagsZ80.Generic.c" />
-<file name="..\..\Jacobi.CpuZ80\FlagsZ80.h" />
-<file name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
-<file name="..\..\Jacobi.CpuZ80\Types.h" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\FlagsZ80.Special.o">
-<dep name="..\..\Jacobi.CpuZ80\Async.h" />
-<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\FlagsZ80.Special.c" />
-<dep name="..\..\Jacobi.CpuZ80\FlagsZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\Types.h" />
+<file name=".\Generated_Source\PSoC5\AddressHi.c" />
+<file name=".\Generated_Source\PSoC5\AddressHi.h" />
+<file name=".\Generated_Source\PSoC5\AddressHi_aliases.h" />
+<file name=".\Generated_Source\PSoC5\cydevice.h" />
+<file name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<file name=".\Generated_Source\PSoC5\cyfitter.h" />
+<file name=".\Generated_Source\PSoC5\cypins.h" />
+<file name=".\Generated_Source\PSoC5\cytypes.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\AddressLo.o">
+<dep name=".\Generated_Source\PSoC5\AddressLo.c" />
+<dep name=".\Generated_Source\PSoC5\AddressLo.h" />
+<dep name=".\Generated_Source\PSoC5\AddressLo_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
-<file name="..\..\Jacobi.CpuZ80\FlagsZ80.Special.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\FlagsZ80.o">
-<dep name="..\..\Jacobi.CpuZ80\Async.h" />
-<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\FlagsZ80.c" />
-<dep name="..\..\Jacobi.CpuZ80\FlagsZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\Types.h" />
+<file name=".\Generated_Source\PSoC5\AddressLo.c" />
+<file name=".\Generated_Source\PSoC5\AddressLo.h" />
+<file name=".\Generated_Source\PSoC5\AddressLo_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\BUSACK.o">
+<dep name=".\Generated_Source\PSoC5\BUSACK.c" />
+<dep name=".\Generated_Source\PSoC5\BUSACK.h" />
+<dep name=".\Generated_Source\PSoC5\BUSACK_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
-<file name="..\..\Jacobi.CpuZ80\FlagsZ80.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\InstructionsZ80.o">
-<dep name="..\..\Jacobi.CpuZ80\Async.h" />
-<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\FlagsZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\FunctionsZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
-<dep name="..\..\Jacobi.CpuZ80\InstructionsZ80.c" />
-<dep name="..\..\Jacobi.CpuZ80\InstructionsZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\Types.h" />
+<file name=".\Generated_Source\PSoC5\BUSACK.c" />
+<file name=".\Generated_Source\PSoC5\BUSACK.h" />
+<file name=".\Generated_Source\PSoC5\BUSACK_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\BUSRQ.o">
+<dep name=".\Generated_Source\PSoC5\BUSRQ.c" />
+<dep name=".\Generated_Source\PSoC5\BUSRQ.h" />
+<dep name=".\Generated_Source\PSoC5\BUSRQ_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
-<file name="..\..\Jacobi.CpuZ80\FunctionsZ80.h" />
-<file name="..\..\Jacobi.CpuZ80\InstructionsZ80.c" />
-<file name="..\..\Jacobi.CpuZ80\InstructionsZ80.h" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\ClockInstruction.o">
+<file name=".\Generated_Source\PSoC5\BUSRQ.c" />
+<file name=".\Generated_Source\PSoC5\BUSRQ.h" />
+<file name=".\Generated_Source\PSoC5\BUSRQ_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\BusCtrl_1.o">
+<dep name=".\Generated_Source\PSoC5\BusCtrl_1.c" />
+<dep name=".\Generated_Source\PSoC5\BusCtrl_1.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\BusCtrl_1.c" />
+<file name=".\Generated_Source\PSoC5\BusCtrl_1.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\BusCtrl_1_PM.o">
+<dep name=".\Generated_Source\PSoC5\BusCtrl_1.h" />
+<dep name=".\Generated_Source\PSoC5\BusCtrl_1_PM.c" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\BusCtrl_1_PM.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\CLK.o">
+<dep name=".\Generated_Source\PSoC5\CLK.c" />
+<dep name=".\Generated_Source\PSoC5\CLK.h" />
+<dep name=".\Generated_Source\PSoC5\CLK_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\CLK.c" />
+<file name=".\Generated_Source\PSoC5\CLK.h" />
+<file name=".\Generated_Source\PSoC5\CLK_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\Cm3Start.o">
+<dep name=".\Generated_Source\PSoC5\Cm3Start.c" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\Cm3Start.c" />
+<file name=".\Generated_Source\PSoC5\CyDmac.h" />
+<file name=".\Generated_Source\PSoC5\CyFlash.h" />
+<file name=".\Generated_Source\PSoC5\CyLib.h" />
+<file name=".\Generated_Source\PSoC5\CySpc.h" />
+<file name=".\Generated_Source\PSoC5\cyPm.h" />
+<file name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<file name=".\cyapicallbacks.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\CyDmac.o">
+<dep name=".\Generated_Source\PSoC5\CyDmac.c" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\CyDmac.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\CyFlash.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.c" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\CyFlash.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\CyLib.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.c" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\CyLib.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\CySpc.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.c" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\CySpc.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\Data.o">
+<dep name=".\Generated_Source\PSoC5\Data.c" />
+<dep name=".\Generated_Source\PSoC5\Data.h" />
+<dep name=".\Generated_Source\PSoC5\Data_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\Data.c" />
+<file name=".\Generated_Source\PSoC5\Data.h" />
+<file name=".\Generated_Source\PSoC5\Data_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\HALT.o">
+<dep name=".\Generated_Source\PSoC5\HALT.c" />
+<dep name=".\Generated_Source\PSoC5\HALT.h" />
+<dep name=".\Generated_Source\PSoC5\HALT_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\HALT.c" />
+<file name=".\Generated_Source\PSoC5\HALT.h" />
+<file name=".\Generated_Source\PSoC5\HALT_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\INT_RQ.o">
+<dep name=".\Generated_Source\PSoC5\INT_RQ.c" />
+<dep name=".\Generated_Source\PSoC5\INT_RQ.h" />
+<dep name=".\Generated_Source\PSoC5\INT_RQ_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\INT_RQ.c" />
+<file name=".\Generated_Source\PSoC5\INT_RQ.h" />
+<file name=".\Generated_Source\PSoC5\INT_RQ_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\IORQ.o">
+<dep name=".\Generated_Source\PSoC5\IORQ.c" />
+<dep name=".\Generated_Source\PSoC5\IORQ.h" />
+<dep name=".\Generated_Source\PSoC5\IORQ_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\IORQ.c" />
+<file name=".\Generated_Source\PSoC5\IORQ.h" />
+<file name=".\Generated_Source\PSoC5\IORQ_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\M1.o">
+<dep name=".\Generated_Source\PSoC5\M1.c" />
+<dep name=".\Generated_Source\PSoC5\M1.h" />
+<dep name=".\Generated_Source\PSoC5\M1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\M1.c" />
+<file name=".\Generated_Source\PSoC5\M1.h" />
+<file name=".\Generated_Source\PSoC5\M1_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\MEMRQ.o">
+<dep name=".\Generated_Source\PSoC5\MEMRQ.c" />
+<dep name=".\Generated_Source\PSoC5\MEMRQ.h" />
+<dep name=".\Generated_Source\PSoC5\MEMRQ_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\MEMRQ.c" />
+<file name=".\Generated_Source\PSoC5\MEMRQ.h" />
+<file name=".\Generated_Source\PSoC5\MEMRQ_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\NMI.o">
+<dep name=".\Generated_Source\PSoC5\NMI.c" />
+<dep name=".\Generated_Source\PSoC5\NMI.h" />
+<dep name=".\Generated_Source\PSoC5\NMI_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\NMI.c" />
+<file name=".\Generated_Source\PSoC5\NMI.h" />
+<file name=".\Generated_Source\PSoC5\NMI_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\RD.o">
+<dep name=".\Generated_Source\PSoC5\RD.c" />
+<dep name=".\Generated_Source\PSoC5\RD.h" />
+<dep name=".\Generated_Source\PSoC5\RD_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\RD.c" />
+<file name=".\Generated_Source\PSoC5\RD.h" />
+<file name=".\Generated_Source\PSoC5\RD_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\RESET.o">
+<dep name=".\Generated_Source\PSoC5\RESET.c" />
+<dep name=".\Generated_Source\PSoC5\RESET.h" />
+<dep name=".\Generated_Source\PSoC5\RESET_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\RESET.c" />
+<file name=".\Generated_Source\PSoC5\RESET.h" />
+<file name=".\Generated_Source\PSoC5\RESET_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\RFSH.o">
+<dep name=".\Generated_Source\PSoC5\RFSH.c" />
+<dep name=".\Generated_Source\PSoC5\RFSH.h" />
+<dep name=".\Generated_Source\PSoC5\RFSH_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\RFSH.c" />
+<file name=".\Generated_Source\PSoC5\RFSH.h" />
+<file name=".\Generated_Source\PSoC5\RFSH_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\WAIT_RQ.o">
+<dep name=".\Generated_Source\PSoC5\WAIT_RQ.c" />
+<dep name=".\Generated_Source\PSoC5\WAIT_RQ.h" />
+<dep name=".\Generated_Source\PSoC5\WAIT_RQ_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\WAIT_RQ.c" />
+<file name=".\Generated_Source\PSoC5\WAIT_RQ.h" />
+<file name=".\Generated_Source\PSoC5\WAIT_RQ_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\WR.o">
+<dep name=".\Generated_Source\PSoC5\WR.c" />
+<dep name=".\Generated_Source\PSoC5\WR.h" />
+<dep name=".\Generated_Source\PSoC5\WR_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\WR.c" />
+<file name=".\Generated_Source\PSoC5\WR.h" />
+<file name=".\Generated_Source\PSoC5\WR_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\cyPm.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.c" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\cyPm.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\cy_em_eeprom.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.c" />
+<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\cy_em_eeprom.c" />
+<file name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.c" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\cyfitter_cfg.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\cymetadata.o">
+<dep name=".\Generated_Source\PSoC5\cymetadata.c" />
+</file>
+<file name=".\Generated_Source\PSoC5\cymetadata.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\cyutils.o">
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\cyutils.c" />
+</file>
+<file name=".\Generated_Source\PSoC5\cyutils.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\IceController.o">
 <dep name="..\..\Jacobi.CpuZ80\Async.h" />
-<dep name="..\..\Jacobi.CpuZ80\ClockInstruction.c" />
-<dep name="..\..\Jacobi.CpuZ80\ClockInstruction.h" />
 <dep name="..\..\Jacobi.CpuZ80\ClockTick.h" />
 <dep name="..\..\Jacobi.CpuZ80\CpuState.h" />
 <dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\FunctionsZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
-<dep name="..\..\Jacobi.CpuZ80\InstructionsZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\Types.h" />
-</file>
-<file name="..\..\Jacobi.CpuZ80\ClockInstruction.c" />
-<file name="..\..\Jacobi.CpuZ80\ClockInstruction.h" />
-<file name="..\..\Jacobi.CpuZ80\ClockTick.h" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\ClockTick.o">
-<dep name="..\..\Jacobi.CpuZ80\Async.h" />
-<dep name="..\..\Jacobi.CpuZ80\ClockInstruction.h" />
-<dep name="..\..\Jacobi.CpuZ80\ClockTick.c" />
-<dep name="..\..\Jacobi.CpuZ80\ClockTick.h" />
-<dep name="..\..\Jacobi.CpuZ80\CpuState.h" />
-<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\CpuZ80Host.h" />
 <dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
 <dep name="..\..\Jacobi.CpuZ80\Types.h" />
-</file>
-<file name="..\..\Jacobi.CpuZ80\ClockTick.c" />
-<file name="..\..\Jacobi.CpuZ80\CpuZ80Host.h" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\CpuAlu.o">
-<dep name="..\..\Jacobi.CpuZ80\CpuAlu.c" />
-<dep name="..\..\Jacobi.CpuZ80\CpuAlu.h" />
-<dep name="..\..\Jacobi.CpuZ80\Types.h" />
-</file>
-<file name="..\..\Jacobi.CpuZ80\CpuAlu.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\CpuZ80.o">
-<dep name="..\..\Jacobi.CpuZ80\Async.h" />
-<dep name="..\..\Jacobi.CpuZ80\CpuAlu.h" />
-<dep name="..\..\Jacobi.CpuZ80\CpuState.h" />
-<dep name="..\..\Jacobi.CpuZ80\CpuZ80.c" />
-<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\CpuZ80Host.h" />
-<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
-<dep name="..\..\Jacobi.CpuZ80\Types.h" />
-</file>
-<file name="..\..\Jacobi.CpuZ80\CpuZ80.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\InstructionTablesZ80.o">
-<dep name="..\..\Jacobi.CpuZ80\Async.h" />
-<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
-<dep name="..\..\Jacobi.CpuZ80\InstructionTablesZ80.c" />
-<dep name="..\..\Jacobi.CpuZ80\InstructionsZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\Types.h" />
-</file>
-<file name="..\..\Jacobi.CpuZ80\InstructionTablesZ80.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\Instructions.BitSetTest.o">
-<dep name="..\..\Jacobi.CpuZ80\Async.h" />
-<dep name="..\..\Jacobi.CpuZ80\ClockTick.h" />
-<dep name="..\..\Jacobi.CpuZ80\CpuState.h" />
-<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\FunctionsZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
-<dep name="..\..\Jacobi.CpuZ80\Instructions.BitSetTest.c" />
-<dep name="..\..\Jacobi.CpuZ80\Types.h" />
-</file>
-<file name="..\..\Jacobi.CpuZ80\Instructions.BitSetTest.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\Instructions.Generic.o">
-<dep name="..\..\Jacobi.CpuZ80\Async.h" />
-<dep name="..\..\Jacobi.CpuZ80\CpuState.h" />
-<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\CpuZ80Host.h" />
-<dep name="..\..\Jacobi.CpuZ80\FunctionsZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
-<dep name="..\..\Jacobi.CpuZ80\Instructions.Generic.c" />
-<dep name="..\..\Jacobi.CpuZ80\Types.h" />
-</file>
-<file name="..\..\Jacobi.CpuZ80\Instructions.Generic.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\main.o">
+<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC5\project.h" />
 <dep name=".\Generated_Source\PSoC5\AddressHi.h" />
 <dep name=".\Generated_Source\PSoC5\AddressHi_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\AddressLo.h" />
@@ -143,9 +402,8 @@
 <dep name=".\Generated_Source\PSoC5\BUSACK_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\BUSRQ.h" />
 <dep name=".\Generated_Source\PSoC5\BUSRQ_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\BusCtrl.h" />
+<dep name=".\Generated_Source\PSoC5\BusCtrl_1.h" />
 <dep name=".\Generated_Source\PSoC5\CLK.h" />
-<dep name=".\Generated_Source\PSoC5\CLK_ISR.h" />
 <dep name=".\Generated_Source\PSoC5\CLK_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\CyDmac.h" />
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
@@ -175,155 +433,462 @@
 <dep name=".\Generated_Source\PSoC5\WAIT_RQ_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\WR.h" />
 <dep name=".\Generated_Source\PSoC5\WR_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
-<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
-<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
-<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
-<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
 <dep name=".\Generated_Source\PSoC5\cyPm.h" />
 <dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
 <dep name=".\Generated_Source\PSoC5\cydevice.h" />
 <dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
 <dep name=".\Generated_Source\PSoC5\cyfitter.h" />
 <dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
 <dep name=".\Generated_Source\PSoC5\cypins.h" />
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\project.h" />
-<dep name="..\..\Jacobi.CpuZ80\Async.h" />
-<dep name="..\..\Jacobi.CpuZ80\ClockTick.h" />
-<dep name="..\..\Jacobi.CpuZ80\CpuState.h" />
-<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
-<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
-<dep name="..\..\Jacobi.CpuZ80\Types.h" />
-<dep name=".\main.c" />
+<dep name=".\IceController.c" />
 </file>
-<file name=".\Generated_Source\PSoC5\AddressHi.h" />
-<file name=".\Generated_Source\PSoC5\AddressHi_aliases.h" />
-<file name=".\Generated_Source\PSoC5\AddressLo.h" />
-<file name=".\Generated_Source\PSoC5\AddressLo_aliases.h" />
-<file name=".\Generated_Source\PSoC5\BUSACK.h" />
-<file name=".\Generated_Source\PSoC5\BUSACK_aliases.h" />
-<file name=".\Generated_Source\PSoC5\BUSRQ.h" />
-<file name=".\Generated_Source\PSoC5\BUSRQ_aliases.h" />
-<file name=".\Generated_Source\PSoC5\BusCtrl.h" />
-<file name=".\Generated_Source\PSoC5\CLK.h" />
-<file name=".\Generated_Source\PSoC5\CLK_ISR.h" />
-<file name=".\Generated_Source\PSoC5\CLK_aliases.h" />
-<file name=".\Generated_Source\PSoC5\CyDmac.h" />
-<file name=".\Generated_Source\PSoC5\CyFlash.h" />
-<file name=".\Generated_Source\PSoC5\CyLib.h" />
-<file name=".\Generated_Source\PSoC5\CySpc.h" />
-<file name=".\Generated_Source\PSoC5\Data.h" />
-<file name=".\Generated_Source\PSoC5\Data_aliases.h" />
-<file name=".\Generated_Source\PSoC5\HALT.h" />
-<file name=".\Generated_Source\PSoC5\HALT_aliases.h" />
-<file name=".\Generated_Source\PSoC5\INT_RQ.h" />
-<file name=".\Generated_Source\PSoC5\INT_RQ_aliases.h" />
-<file name=".\Generated_Source\PSoC5\IORQ.h" />
-<file name=".\Generated_Source\PSoC5\IORQ_aliases.h" />
-<file name=".\Generated_Source\PSoC5\M1.h" />
-<file name=".\Generated_Source\PSoC5\M1_aliases.h" />
-<file name=".\Generated_Source\PSoC5\MEMRQ.h" />
-<file name=".\Generated_Source\PSoC5\MEMRQ_aliases.h" />
-<file name=".\Generated_Source\PSoC5\NMI.h" />
-<file name=".\Generated_Source\PSoC5\NMI_aliases.h" />
-<file name=".\Generated_Source\PSoC5\RD.h" />
-<file name=".\Generated_Source\PSoC5\RD_aliases.h" />
-<file name=".\Generated_Source\PSoC5\RESET.h" />
-<file name=".\Generated_Source\PSoC5\RESET_aliases.h" />
-<file name=".\Generated_Source\PSoC5\RFSH.h" />
-<file name=".\Generated_Source\PSoC5\RFSH_aliases.h" />
-<file name=".\Generated_Source\PSoC5\WAIT_RQ.h" />
-<file name=".\Generated_Source\PSoC5\WAIT_RQ_aliases.h" />
-<file name=".\Generated_Source\PSoC5\WR.h" />
-<file name=".\Generated_Source\PSoC5\WR_aliases.h" />
+<file name="..\..\Jacobi.CpuZ80\Async.h" />
+<file name="..\..\Jacobi.CpuZ80\ClockTick.h" />
+<file name="..\..\Jacobi.CpuZ80\CpuState.h" />
+<file name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
+<file name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
+<file name="..\..\Jacobi.CpuZ80\Types.h" />
 <file name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
 <file name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
 <file name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
 <file name=".\Generated_Source\PSoC5\core_cm3.h" />
 <file name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
-<file name=".\Generated_Source\PSoC5\cyPm.h" />
-<file name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
-<file name=".\Generated_Source\PSoC5\cydevice.h" />
-<file name=".\Generated_Source\PSoC5\cydevice_trm.h" />
 <file name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
-<file name=".\Generated_Source\PSoC5\cyfitter.h" />
-<file name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
-<file name=".\Generated_Source\PSoC5\cypins.h" />
-<file name=".\Generated_Source\PSoC5\cytypes.h" />
 <file name=".\Generated_Source\PSoC5\project.h" />
+<file name=".\IceController.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\IceCpuZ80Host.o">
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80Host.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC5\project.h" />
+<dep name=".\Generated_Source\PSoC5\AddressHi.h" />
+<dep name=".\Generated_Source\PSoC5\AddressHi_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\AddressLo.h" />
+<dep name=".\Generated_Source\PSoC5\AddressLo_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\BUSACK.h" />
+<dep name=".\Generated_Source\PSoC5\BUSACK_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\BUSRQ.h" />
+<dep name=".\Generated_Source\PSoC5\BUSRQ_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\BusCtrl_1.h" />
+<dep name=".\Generated_Source\PSoC5\CLK.h" />
+<dep name=".\Generated_Source\PSoC5\CLK_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\Data.h" />
+<dep name=".\Generated_Source\PSoC5\Data_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\HALT.h" />
+<dep name=".\Generated_Source\PSoC5\HALT_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\INT_RQ.h" />
+<dep name=".\Generated_Source\PSoC5\INT_RQ_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\IORQ.h" />
+<dep name=".\Generated_Source\PSoC5\IORQ_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\M1.h" />
+<dep name=".\Generated_Source\PSoC5\M1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MEMRQ.h" />
+<dep name=".\Generated_Source\PSoC5\MEMRQ_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\NMI.h" />
+<dep name=".\Generated_Source\PSoC5\NMI_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RD.h" />
+<dep name=".\Generated_Source\PSoC5\RD_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RESET.h" />
+<dep name=".\Generated_Source\PSoC5\RESET_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RFSH.h" />
+<dep name=".\Generated_Source\PSoC5\RFSH_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\WAIT_RQ.h" />
+<dep name=".\Generated_Source\PSoC5\WAIT_RQ_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\WR.h" />
+<dep name=".\Generated_Source\PSoC5\WR_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\IceCpuZ80Host.c" />
+</file>
+<file name="..\..\Jacobi.CpuZ80\CpuZ80Host.h" />
+<file name=".\IceCpuZ80Host.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\TestController.o">
+<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC5\project.h" />
+<dep name=".\Generated_Source\PSoC5\AddressHi.h" />
+<dep name=".\Generated_Source\PSoC5\AddressHi_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\AddressLo.h" />
+<dep name=".\Generated_Source\PSoC5\AddressLo_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\BUSACK.h" />
+<dep name=".\Generated_Source\PSoC5\BUSACK_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\BUSRQ.h" />
+<dep name=".\Generated_Source\PSoC5\BUSRQ_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\BusCtrl_1.h" />
+<dep name=".\Generated_Source\PSoC5\CLK.h" />
+<dep name=".\Generated_Source\PSoC5\CLK_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\Data.h" />
+<dep name=".\Generated_Source\PSoC5\Data_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\HALT.h" />
+<dep name=".\Generated_Source\PSoC5\HALT_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\INT_RQ.h" />
+<dep name=".\Generated_Source\PSoC5\INT_RQ_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\IORQ.h" />
+<dep name=".\Generated_Source\PSoC5\IORQ_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\M1.h" />
+<dep name=".\Generated_Source\PSoC5\M1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MEMRQ.h" />
+<dep name=".\Generated_Source\PSoC5\MEMRQ_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\NMI.h" />
+<dep name=".\Generated_Source\PSoC5\NMI_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RD.h" />
+<dep name=".\Generated_Source\PSoC5\RD_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RESET.h" />
+<dep name=".\Generated_Source\PSoC5\RESET_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RFSH.h" />
+<dep name=".\Generated_Source\PSoC5\RFSH_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\WAIT_RQ.h" />
+<dep name=".\Generated_Source\PSoC5\WAIT_RQ_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\WR.h" />
+<dep name=".\Generated_Source\PSoC5\WR_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\TestController.c" />
+</file>
+<file name=".\TestController.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\main.o">
+<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC5\project.h" />
+<dep name=".\Generated_Source\PSoC5\AddressHi.h" />
+<dep name=".\Generated_Source\PSoC5\AddressHi_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\AddressLo.h" />
+<dep name=".\Generated_Source\PSoC5\AddressLo_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\BUSACK.h" />
+<dep name=".\Generated_Source\PSoC5\BUSACK_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\BUSRQ.h" />
+<dep name=".\Generated_Source\PSoC5\BUSRQ_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\BusCtrl_1.h" />
+<dep name=".\Generated_Source\PSoC5\CLK.h" />
+<dep name=".\Generated_Source\PSoC5\CLK_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\Data.h" />
+<dep name=".\Generated_Source\PSoC5\Data_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\HALT.h" />
+<dep name=".\Generated_Source\PSoC5\HALT_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\INT_RQ.h" />
+<dep name=".\Generated_Source\PSoC5\INT_RQ_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\IORQ.h" />
+<dep name=".\Generated_Source\PSoC5\IORQ_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\M1.h" />
+<dep name=".\Generated_Source\PSoC5\M1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MEMRQ.h" />
+<dep name=".\Generated_Source\PSoC5\MEMRQ_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\NMI.h" />
+<dep name=".\Generated_Source\PSoC5\NMI_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RD.h" />
+<dep name=".\Generated_Source\PSoC5\RD_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RESET.h" />
+<dep name=".\Generated_Source\PSoC5\RESET_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RFSH.h" />
+<dep name=".\Generated_Source\PSoC5\RFSH_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\WAIT_RQ.h" />
+<dep name=".\Generated_Source\PSoC5\WAIT_RQ_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\WR.h" />
+<dep name=".\Generated_Source\PSoC5\WR_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\IceController.h" />
+<dep name=".\TestController.h" />
+<dep name=".\main.c" />
+</file>
+<file name=".\IceController.h" />
+<file name=".\TestController.h" />
 <file name=".\main.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\CyBootAsmGnu.o">
+<dep name=".\Generated_Source\PSoC5\CyBootAsmGnu.s" />
+<dep name=".\Generated_Source\PSoC5\cydevicegnu.inc" />
+<dep name=".\Generated_Source\PSoC5\cydevicegnu_trm.inc" />
+<dep name=".\Generated_Source\PSoC5\cyfittergnu.inc" />
+</file>
+<file name=".\Generated_Source\PSoC5\CyBootAsmGnu.s" />
+<file name=".\Generated_Source\PSoC5\cydevicegnu.inc" />
+<file name=".\Generated_Source\PSoC5\cydevicegnu_trm.inc" />
+<file name=".\Generated_Source\PSoC5\cyfittergnu.inc" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\ClockInstruction.o">
+<dep name="..\..\Jacobi.CpuZ80\Async.h" />
+<dep name="..\..\Jacobi.CpuZ80\ClockInstruction.c" />
+<dep name="..\..\Jacobi.CpuZ80\ClockInstruction.h" />
+<dep name="..\..\Jacobi.CpuZ80\ClockTick.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuState.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80Host.h" />
+<dep name="..\..\Jacobi.CpuZ80\FunctionsZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
+<dep name="..\..\Jacobi.CpuZ80\InstructionsZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\Types.h" />
+</file>
+<file name="..\..\Jacobi.CpuZ80\ClockInstruction.c" />
+<file name="..\..\Jacobi.CpuZ80\ClockInstruction.h" />
+<file name="..\..\Jacobi.CpuZ80\FunctionsZ80.h" />
+<file name="..\..\Jacobi.CpuZ80\InstructionsZ80.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\ClockInterrupt.o">
+<dep name="..\..\Jacobi.CpuZ80\Async.h" />
+<dep name="..\..\Jacobi.CpuZ80\ClockInterrupt.c" />
+<dep name="..\..\Jacobi.CpuZ80\ClockInterrupt.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuState.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80Host.h" />
+<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
+<dep name="..\..\Jacobi.CpuZ80\Types.h" />
+</file>
+<file name="..\..\Jacobi.CpuZ80\ClockInterrupt.c" />
+<file name="..\..\Jacobi.CpuZ80\ClockInterrupt.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\ClockTick.o">
+<dep name="..\..\Jacobi.CpuZ80\Async.h" />
+<dep name="..\..\Jacobi.CpuZ80\ClockInstruction.h" />
+<dep name="..\..\Jacobi.CpuZ80\ClockInterrupt.h" />
+<dep name="..\..\Jacobi.CpuZ80\ClockTick.c" />
+<dep name="..\..\Jacobi.CpuZ80\ClockTick.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuState.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80Host.h" />
+<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
+<dep name="..\..\Jacobi.CpuZ80\Types.h" />
+</file>
+<file name="..\..\Jacobi.CpuZ80\ClockTick.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\CpuAlu.o">
+<dep name="..\..\Jacobi.CpuZ80\Async.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuAlu.c" />
+<dep name="..\..\Jacobi.CpuZ80\CpuAlu.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuState.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
+<dep name="..\..\Jacobi.CpuZ80\Types.h" />
+</file>
+<file name="..\..\Jacobi.CpuZ80\CpuAlu.c" />
+<file name="..\..\Jacobi.CpuZ80\CpuAlu.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\CpuZ80.o">
+<dep name="..\..\Jacobi.CpuZ80\Async.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuAlu.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuState.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80.c" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80Host.h" />
+<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
+<dep name="..\..\Jacobi.CpuZ80\Types.h" />
+</file>
+<file name="..\..\Jacobi.CpuZ80\CpuZ80.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\FlagsZ80.Generic.o">
+<dep name="..\..\Jacobi.CpuZ80\Async.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuAlu.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuState.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\FlagsZ80.Generic.c" />
+<dep name="..\..\Jacobi.CpuZ80\FlagsZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
+<dep name="..\..\Jacobi.CpuZ80\Types.h" />
+</file>
+<file name="..\..\Jacobi.CpuZ80\FlagsZ80.Generic.c" />
+<file name="..\..\Jacobi.CpuZ80\FlagsZ80.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\FlagsZ80.Special.o">
+<dep name="..\..\Jacobi.CpuZ80\Async.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\FlagsZ80.Special.c" />
+<dep name="..\..\Jacobi.CpuZ80\FlagsZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\Types.h" />
+</file>
+<file name="..\..\Jacobi.CpuZ80\FlagsZ80.Special.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\FlagsZ80.o">
+<dep name="..\..\Jacobi.CpuZ80\Async.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\FlagsZ80.c" />
+<dep name="..\..\Jacobi.CpuZ80\FlagsZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\Types.h" />
+</file>
+<file name="..\..\Jacobi.CpuZ80\FlagsZ80.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\InstructionTablesZ80.o">
+<dep name="..\..\Jacobi.CpuZ80\Async.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
+<dep name="..\..\Jacobi.CpuZ80\InstructionTablesZ80.c" />
+<dep name="..\..\Jacobi.CpuZ80\InstructionsZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\Types.h" />
+</file>
+<file name="..\..\Jacobi.CpuZ80\InstructionTablesZ80.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Instructions.Arithmetic16.o">
 <dep name="..\..\Jacobi.CpuZ80\Async.h" />
+<dep name="..\..\Jacobi.CpuZ80\ClockTick.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuAlu.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuState.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\FlagsZ80.h" />
 <dep name="..\..\Jacobi.CpuZ80\FunctionsZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
 <dep name="..\..\Jacobi.CpuZ80\Instructions.Arithmetic16.c" />
 <dep name="..\..\Jacobi.CpuZ80\Types.h" />
 </file>
 <file name="..\..\Jacobi.CpuZ80\Instructions.Arithmetic16.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Instructions.Arithmetic8.o">
 <dep name="..\..\Jacobi.CpuZ80\Async.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuAlu.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuState.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
 <dep name="..\..\Jacobi.CpuZ80\FunctionsZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
 <dep name="..\..\Jacobi.CpuZ80\Instructions.Arithmetic8.c" />
 <dep name="..\..\Jacobi.CpuZ80\Types.h" />
 </file>
 <file name="..\..\Jacobi.CpuZ80\Instructions.Arithmetic8.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\Instructions.CallReturn.o">
+<file name=".\CortexM3\ARM_GCC_541\Debug\Instructions.BitSetTest.o">
 <dep name="..\..\Jacobi.CpuZ80\Async.h" />
+<dep name="..\..\Jacobi.CpuZ80\ClockTick.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuState.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\FunctionsZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
+<dep name="..\..\Jacobi.CpuZ80\Instructions.BitSetTest.c" />
+<dep name="..\..\Jacobi.CpuZ80\Types.h" />
+</file>
+<file name="..\..\Jacobi.CpuZ80\Instructions.BitSetTest.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\Instructions.CallReturn.o">
 <dep name="..\..\Jacobi.CpuZ80\FunctionsZ80.h" />
 <dep name="..\..\Jacobi.CpuZ80\Instructions.CallReturn.c" />
-<dep name="..\..\Jacobi.CpuZ80\Types.h" />
 </file>
 <file name="..\..\Jacobi.CpuZ80\Instructions.CallReturn.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Instructions.ExchangeBlockTransfer.o">
-<dep name="..\..\Jacobi.CpuZ80\Async.h" />
 <dep name="..\..\Jacobi.CpuZ80\FunctionsZ80.h" />
 <dep name="..\..\Jacobi.CpuZ80\Instructions.ExchangeBlockTransfer.c" />
-<dep name="..\..\Jacobi.CpuZ80\Types.h" />
 </file>
 <file name="..\..\Jacobi.CpuZ80\Instructions.ExchangeBlockTransfer.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Instructions.GeneralPurposeControl.o">
 <dep name="..\..\Jacobi.CpuZ80\Async.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuState.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
 <dep name="..\..\Jacobi.CpuZ80\FunctionsZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
 <dep name="..\..\Jacobi.CpuZ80\Instructions.GeneralPurposeControl.c" />
 <dep name="..\..\Jacobi.CpuZ80\Types.h" />
 </file>
 <file name="..\..\Jacobi.CpuZ80\Instructions.GeneralPurposeControl.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\Instructions.InputOutput.o">
+<file name=".\CortexM3\ARM_GCC_541\Debug\Instructions.Generic.o">
 <dep name="..\..\Jacobi.CpuZ80\Async.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuState.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80Host.h" />
+<dep name="..\..\Jacobi.CpuZ80\FunctionsZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
+<dep name="..\..\Jacobi.CpuZ80\Instructions.Generic.c" />
+<dep name="..\..\Jacobi.CpuZ80\Types.h" />
+</file>
+<file name="..\..\Jacobi.CpuZ80\Instructions.Generic.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\Instructions.InputOutput.o">
 <dep name="..\..\Jacobi.CpuZ80\FunctionsZ80.h" />
 <dep name="..\..\Jacobi.CpuZ80\Instructions.InputOutput.c" />
-<dep name="..\..\Jacobi.CpuZ80\Types.h" />
 </file>
 <file name="..\..\Jacobi.CpuZ80\Instructions.InputOutput.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Instructions.Jump.o">
-<dep name="..\..\Jacobi.CpuZ80\Async.h" />
 <dep name="..\..\Jacobi.CpuZ80\FunctionsZ80.h" />
 <dep name="..\..\Jacobi.CpuZ80\Instructions.Jump.c" />
-<dep name="..\..\Jacobi.CpuZ80\Types.h" />
 </file>
 <file name="..\..\Jacobi.CpuZ80\Instructions.Jump.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Instructions.Load16.o">
-<dep name="..\..\Jacobi.CpuZ80\Async.h" />
 <dep name="..\..\Jacobi.CpuZ80\FunctionsZ80.h" />
 <dep name="..\..\Jacobi.CpuZ80\Instructions.Load16.c" />
-<dep name="..\..\Jacobi.CpuZ80\Types.h" />
 </file>
 <file name="..\..\Jacobi.CpuZ80\Instructions.Load16.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Instructions.Load8.o">
 <dep name="..\..\Jacobi.CpuZ80\Async.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuState.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
 <dep name="..\..\Jacobi.CpuZ80\FunctionsZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
 <dep name="..\..\Jacobi.CpuZ80\Instructions.Load8.c" />
 <dep name="..\..\Jacobi.CpuZ80\Types.h" />
 </file>
 <file name="..\..\Jacobi.CpuZ80\Instructions.Load8.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Instructions.RotateShift.o">
-<dep name="..\..\Jacobi.CpuZ80\Async.h" />
 <dep name="..\..\Jacobi.CpuZ80\FunctionsZ80.h" />
 <dep name="..\..\Jacobi.CpuZ80\Instructions.RotateShift.c" />
-<dep name="..\..\Jacobi.CpuZ80\Types.h" />
 </file>
 <file name="..\..\Jacobi.CpuZ80\Instructions.RotateShift.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\InstructionsZ80.o">
+<dep name="..\..\Jacobi.CpuZ80\Async.h" />
+<dep name="..\..\Jacobi.CpuZ80\CpuZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\FlagsZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\FunctionsZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\InstructionInfo.h" />
+<dep name="..\..\Jacobi.CpuZ80\InstructionsZ80.c" />
+<dep name="..\..\Jacobi.CpuZ80\InstructionsZ80.h" />
+<dep name="..\..\Jacobi.CpuZ80\Types.h" />
+</file>
+<file name="..\..\Jacobi.CpuZ80\InstructionsZ80.c" />
+<file name=".\Generated_Source\PSoC5\BusCtrl.h" />
+<file name=".\Generated_Source\PSoC5\CLK_ISR.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\BusCtrl.o">
+<dep name=".\Generated_Source\PSoC5\BusCtrl.c" />
+<dep name=".\Generated_Source\PSoC5\BusCtrl.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\BusCtrl.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\BusCtrl_PM.o">
+<dep name=".\Generated_Source\PSoC5\BusCtrl.h" />
+<dep name=".\Generated_Source\PSoC5\BusCtrl_PM.c" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\BusCtrl_PM.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\CLK_ISR.o">
+<dep name=".\Generated_Source\PSoC5\CLK_ISR.c" />
+<dep name=".\Generated_Source\PSoC5\CLK_ISR.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\CLK_ISR.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\CpuZ80Host.o">
 <dep name=".\Generated_Source\PSoC5\AddressHi.h" />
 <dep name=".\Generated_Source\PSoC5\AddressHi_aliases.h" />
@@ -384,352 +949,6 @@
 <dep name=".\CpuZ80Host.c" />
 </file>
 <file name=".\CpuZ80Host.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\AddressHi.o">
-<dep name=".\Generated_Source\PSoC5\AddressHi.h" />
-<dep name=".\Generated_Source\PSoC5\AddressHi_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\AddressHi.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\AddressHi.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\AddressLo.o">
-<dep name=".\Generated_Source\PSoC5\AddressLo.h" />
-<dep name=".\Generated_Source\PSoC5\AddressLo_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\AddressLo.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\AddressLo.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\BUSACK.o">
-<dep name=".\Generated_Source\PSoC5\BUSACK.h" />
-<dep name=".\Generated_Source\PSoC5\BUSACK_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\BUSACK.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\BUSACK.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\BUSRQ.o">
-<dep name=".\Generated_Source\PSoC5\BUSRQ.h" />
-<dep name=".\Generated_Source\PSoC5\BUSRQ_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\BUSRQ.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\BUSRQ.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\BusCtrl.o">
-<dep name=".\Generated_Source\PSoC5\BusCtrl.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\BusCtrl.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\BusCtrl.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\BusCtrl_PM.o">
-<dep name=".\Generated_Source\PSoC5\BusCtrl.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\BusCtrl_PM.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\BusCtrl_PM.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\CLK.o">
-<dep name=".\Generated_Source\PSoC5\CLK.h" />
-<dep name=".\Generated_Source\PSoC5\CLK_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\CLK.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\CLK.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\CLK_ISR.o">
-<dep name=".\Generated_Source\PSoC5\CLK_ISR.h" />
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\CLK_ISR.c" />
-<dep name=".\cyapicallbacks.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\CLK_ISR.c" />
-<file name=".\cyapicallbacks.h" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\Cm3Start.o">
-<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\Cm3Start.c" />
-<dep name=".\cyapicallbacks.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\Cm3Start.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\CyDmac.o">
-<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\CyDmac.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\CyDmac.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\CyFlash.o">
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\CyFlash.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\CyFlash.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\CyLib.o">
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\CyLib.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\CySpc.o">
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\CySpc.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\Data.o">
-<dep name=".\Generated_Source\PSoC5\Data.h" />
-<dep name=".\Generated_Source\PSoC5\Data_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\Data.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\Data.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\HALT.o">
-<dep name=".\Generated_Source\PSoC5\HALT.h" />
-<dep name=".\Generated_Source\PSoC5\HALT_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\HALT.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\HALT.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\INT_RQ.o">
-<dep name=".\Generated_Source\PSoC5\INT_RQ.h" />
-<dep name=".\Generated_Source\PSoC5\INT_RQ_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\INT_RQ.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\INT_RQ.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\IORQ.o">
-<dep name=".\Generated_Source\PSoC5\IORQ.h" />
-<dep name=".\Generated_Source\PSoC5\IORQ_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\IORQ.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\IORQ.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\M1.o">
-<dep name=".\Generated_Source\PSoC5\M1.h" />
-<dep name=".\Generated_Source\PSoC5\M1_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\M1.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\M1.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\MEMRQ.o">
-<dep name=".\Generated_Source\PSoC5\MEMRQ.h" />
-<dep name=".\Generated_Source\PSoC5\MEMRQ_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\MEMRQ.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\MEMRQ.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\NMI.o">
-<dep name=".\Generated_Source\PSoC5\NMI.h" />
-<dep name=".\Generated_Source\PSoC5\NMI_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\NMI.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\NMI.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\RD.o">
-<dep name=".\Generated_Source\PSoC5\RD.h" />
-<dep name=".\Generated_Source\PSoC5\RD_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\RD.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\RD.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\RESET.o">
-<dep name=".\Generated_Source\PSoC5\RESET.h" />
-<dep name=".\Generated_Source\PSoC5\RESET_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\RESET.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\RESET.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\RFSH.o">
-<dep name=".\Generated_Source\PSoC5\RFSH.h" />
-<dep name=".\Generated_Source\PSoC5\RFSH_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\RFSH.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\RFSH.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\WAIT_RQ.o">
-<dep name=".\Generated_Source\PSoC5\WAIT_RQ.h" />
-<dep name=".\Generated_Source\PSoC5\WAIT_RQ_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\WAIT_RQ.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\WAIT_RQ.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\WR.o">
-<dep name=".\Generated_Source\PSoC5\WR.h" />
-<dep name=".\Generated_Source\PSoC5\WR_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\WR.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\WR.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\cyPm.o">
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.c" />
-<dep name=".\cyapicallbacks.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\cyPm.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\cy_em_eeprom.o">
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\cy_em_eeprom.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o">
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.c" />
-<dep name=".\cyapicallbacks.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\cyfitter_cfg.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\cymetadata.o">
-<dep name=".\Generated_Source\PSoC5\cymetadata.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\cymetadata.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\cyutils.o">
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\cyutils.c" />
-</file>
-<file name=".\Generated_Source\PSoC5\cyutils.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\CyBootAsmGnu.o">
-<dep name=".\Generated_Source\PSoC5\CyBootAsmGnu.s" />
-<dep name=".\Generated_Source\PSoC5\cydevicegnu.inc" />
-<dep name=".\Generated_Source\PSoC5\cydevicegnu_trm.inc" />
-<dep name=".\Generated_Source\PSoC5\cyfittergnu.inc" />
-</file>
-<file name=".\Generated_Source\PSoC5\CyBootAsmGnu.s" />
-<file name=".\Generated_Source\PSoC5\cydevicegnu.inc" />
-<file name=".\Generated_Source\PSoC5\cydevicegnu_trm.inc" />
-<file name=".\Generated_Source\PSoC5\cyfittergnu.inc" />
 <file name="..\..\..\MyProjects\Zalt\Zingularity\Source\Jacobi.CpuZ80\Async.h" />
 <file name="..\..\..\MyProjects\Zalt\Zingularity\Source\Jacobi.CpuZ80\ClockTick.h" />
 <file name="..\..\..\MyProjects\Zalt\Zingularity\Source\Jacobi.CpuZ80\CpuState.h" />
@@ -791,7 +1010,9 @@
 <CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
 <file name=".\CortexM3\ARM_GCC_541\Debug\ICEZ80.hex">
 <dep name=".\CortexM3\ARM_GCC_541\Debug\main.o" />
-<dep name=".\CortexM3\ARM_GCC_541\Debug\CpuZ80Host.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\IceCpuZ80Host.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\TestController.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\IceController.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\ClockTick.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\CpuZ80.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\Instructions.Arithmetic8.o" />
@@ -813,6 +1034,7 @@
 <dep name=".\CortexM3\ARM_GCC_541\Debug\FlagsZ80.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\FlagsZ80.Generic.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\FlagsZ80.Special.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\ClockInterrupt.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\cymetadata.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\Data.o" />
@@ -832,9 +1054,6 @@
 <dep name=".\CortexM3\ARM_GCC_541\Debug\NMI.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\INT_RQ.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\RESET.o" />
-<dep name=".\CortexM3\ARM_GCC_541\Debug\CLK_ISR.o" />
-<dep name=".\CortexM3\ARM_GCC_541\Debug\BusCtrl.o" />
-<dep name=".\CortexM3\ARM_GCC_541\Debug\BusCtrl_PM.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\cy_em_eeprom.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\Cm3Start.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\CyBootAsmGnu.o" />
@@ -844,6 +1063,8 @@
 <dep name=".\CortexM3\ARM_GCC_541\Debug\cyPm.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\CySpc.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\cyutils.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\BusCtrl_1.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\BusCtrl_1_PM.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\ICEZ80.a" />
 <dep name="${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_541\Debug\CyComponentLibrary.a" />
 </file>
@@ -857,41 +1078,41 @@
 <CyGuid_b0374e30-ce3a-47f2-ad85-821643292c68 type_name="CyDesigner.Common.ProjMgmt.Common.CyCmdLineData" version="2">
 <genericCmdLineData>
 <name v="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3">
-<name_val_pair name="main.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\cyfitter_cfg.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\cymetadata.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\Data.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\AddressLo.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\AddressHi.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\RD.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\WR.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\MEMRQ.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\IORQ.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\CLK.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\M1.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\RFSH.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\HALT.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\BUSACK.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\BUSRQ.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="main.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\cyfitter_cfg.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\cymetadata.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\Data.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\AddressLo.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\AddressHi.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\RD.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\WR.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\MEMRQ.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\IORQ.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\CLK.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\M1.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\RFSH.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\HALT.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\BUSACK.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\BUSRQ.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC5\WAITRQ.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\NMI.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\NMI.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC5\INTRQ.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\RESET.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\CLK_ISR.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\BusCtrl.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\BusCtrl_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\cy_em_eeprom.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\Cm3Start.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\RESET.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\CLK_ISR.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80ICE -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\BusCtrl.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80ICE -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\BusCtrl_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80ICE -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\cy_em_eeprom.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\Cm3Start.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC5\CyBootAsmGnu.s" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -alh=${OutputDir}/${CompileFile}.lst -g -W" />
-<name_val_pair name="Generated_Source\PSoC5\CyDmac.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\CyFlash.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\CyLib.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\cyPm.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\CySpc.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\cyutils.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\CyDmac.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\CyFlash.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\CyLib.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\cyPm.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\CySpc.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\cyutils.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="C:\Users\marc\Documents\PSoC Creator\Z80\Z80Test1.cydsn\CortexM3\ARM_GCC_541\Debug\Z80Test1.hex" v="-mcpu=cortex-m3 -mthumb -L Generated_Source\PSoC5 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name="Generated_Source\PSoC5\WAIT_RQ.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC5\INT_RQ.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\WAIT_RQ.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\INT_RQ.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="..\..\..\MyProjects\Zalt\Zingularity\Source\Jacobi.CpuZ80\ClockTick.c" v="-mcpu=cortex-m3 -mthumb -I..\..\..\MyProjects\Zalt\Zingularity\Source\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="..\..\..\MyProjects\Zalt\Zingularity\Source\Jacobi.CpuZ80\CpuZ80.c" v="-mcpu=cortex-m3 -mthumb -I..\..\..\MyProjects\Zalt\Zingularity\Source\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="..\..\..\MyProjects\Zalt\Zingularity\Source\Jacobi.CpuZ80\Instructions.Arithmetic8.c" v="-mcpu=cortex-m3 -mthumb -I..\..\..\MyProjects\Zalt\Zingularity\Source\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
@@ -910,28 +1131,34 @@
 <name_val_pair name="..\..\..\MyProjects\Zalt\Zingularity\Source\Jacobi.CpuZ80\InstructionTablesZ80.c" v="-mcpu=cortex-m3 -mthumb -I..\..\..\MyProjects\Zalt\Zingularity\Source\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="..\..\..\MyProjects\Zalt\Zingularity\Source\Jacobi.CpuZ80\stdafx.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="CpuZ80Host.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\Jacobi.CpuZ80\ClockTick.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\Jacobi.CpuZ80\CpuZ80.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.Arithmetic8.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.Arithmetic16.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.BitSetTest.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.CallReturn.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.ExchangeBlockTransfer.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.GeneralPurposeControl.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.Generic.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.InputOutput.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.Jump.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.Load8.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.Load16.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.RotateShift.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\Jacobi.CpuZ80\InstructionsZ80.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\Jacobi.CpuZ80\InstructionTablesZ80.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\ClockTick.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\CpuZ80.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.Arithmetic8.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.Arithmetic16.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.BitSetTest.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.CallReturn.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.ExchangeBlockTransfer.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.GeneralPurposeControl.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.Generic.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.InputOutput.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.Jump.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.Load8.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.Load16.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\Instructions.RotateShift.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\InstructionsZ80.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\InstructionTablesZ80.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\CortexM3\ARM_GCC_541\Debug\ICEZ80.hex" v="-mcpu=cortex-m3 -mthumb -L Generated_Source\PSoC5 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name="..\..\Jacobi.CpuZ80\ClockInstruction.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\Jacobi.CpuZ80\CpuAlu.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\Jacobi.CpuZ80\FlagsZ80.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\Jacobi.CpuZ80\FlagsZ80.Generic.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\Jacobi.CpuZ80\FlagsZ80.Special.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\ClockInstruction.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\CpuAlu.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\FlagsZ80.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\FlagsZ80.Generic.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\FlagsZ80.Special.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\Jacobi.CpuZ80\ClockInterrupt.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="IceCpuZ80Host.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="TestController.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="IceController.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\BusCtrl_1.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\BusCtrl_1_PM.c" v="-mcpu=cortex-m3 -mthumb -I..\..\Jacobi.CpuZ80 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D Z80TEST -Wall -ffunction-sections -ffat-lto-objects -Og" />
 </name>
 </genericCmdLineData>
 <codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\marc\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p &quot;C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\ICEZ80.cyprj&quot; -d CY8C5888LTI-LP097 -s &quot;C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\Generated_Source\PSoC5&quot; -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
@@ -1013,6 +1240,23 @@
 <CyGuid_925cc1e1-309e-4e08-b0a1-09a83c35b157 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtProjectPSoCExe+CyCodeGenDepUserInfo" version="1">
 <deps_list>
 <v>.\TopDesign\TopDesign.cysch</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.cysym</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.v</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.cycdx</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.cydmacap</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.pdf</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.cystate</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\version.cypatch</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\API\CyControlReg.h</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\API\CyControlReg.c</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\API\CyControlReg_PM.c</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\Custom\ControlRegParameters.cs</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\Custom\custom.cs</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\Custom\cybitfieldcontrol.cs</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\Custom\cybitfieldcontrol.designer.cs</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\Custom\Resources.Designer.cs</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\Custom\cybitfieldcontrol.resx</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\Custom\Resources.resx</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_pins_v2_20\cy_pins_v2_20.cysym</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_pins_v2_20\cy_pins_v2_20.cystate</v>
@@ -1053,31 +1297,6 @@
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_pins_v2_20\PSoC5\API\aliases.h</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_pins_v2_20\PSoC5\API\pins.c</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_pins_v2_20\PSoC5\API\pins.h</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\cy_isr_v1_70.cysym</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\cy_isr_v1_70.primitive</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\cy_isr_v1_70.cystate</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\version.cypatch</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\Custom\custom.cs</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\PSoC5\API\intc.c</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\PSoC5\API\intc.h</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.cysym</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.v</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.cycdx</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.cydmacap</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.pdf</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.cystate</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\version.cypatch</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\API\CyControlReg.h</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\API\CyControlReg.c</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\API\CyControlReg_PM.c</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\Custom\ControlRegParameters.cs</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\Custom\custom.cs</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\Custom\cybitfieldcontrol.cs</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\Custom\cybitfieldcontrol.designer.cs</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\Custom\Resources.Designer.cs</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\Custom\cybitfieldcontrol.resx</v>
-<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\Custom\Resources.resx</v>
 <v>.\ICEZ80.cydwr</v>
 <v>..\..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\Em_EEPROM_Dynamic_v2_20\API\cy_em_eeprom.c</v>
 <v>..\..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\Em_EEPROM_Dynamic_v2_20\API\cy_em_eeprom.h</v>
@@ -1216,6 +1435,9 @@
 <v>Generated_Source\PSoC5\cycodeshareimport.ld</v>
 <v>Generated_Source\PSoC5\cycodeshareexport.ld</v>
 <v>Generated_Source\PSoC5\cycodeshareimport.scat</v>
+<v>Generated_Source\PSoC5\BusCtrl_1.h</v>
+<v>Generated_Source\PSoC5\BusCtrl_1.c</v>
+<v>Generated_Source\PSoC5\BusCtrl_1_PM.c</v>
 </gen_list>
 <warp_dep>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\ieee\work\stdlogic.vif</v>
@@ -1224,7 +1446,7 @@
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cy_psoc3_inc.v</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 </warp_dep>
-<deps_time v="132111071201948796" />
+<deps_time v="132129297670983036" />
 <top_block v="TopDesign" />
 <last_generation v="0" />
 <pdl_path v="" />
@@ -1234,7 +1456,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="132117261964127710" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="132129297719591758" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>

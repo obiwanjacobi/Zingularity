@@ -1,70 +1,29 @@
-/* ========================================
- *
- * Copyright YOUR COMPANY, THE YEAR
- * All Rights Reserved
- * UNPUBLISHED, LICENSED SOFTWARE.
- *
- * CONFIDENTIAL AND PROPRIETARY INFORMATION
- * WHICH IS THE PROPERTY OF your company.
- *
- * ========================================
-*/
+// only enable ONE (and only one) of the following
+
+// set this in build-settings for In-Circuit Emulator mode
+// Z80ICE
+
+// set this in build-settings for test Emulator mode
+// Z80TEST
+
+// Menu: Project => Buid Settings... (dialog)
+// => Tree: ARM GCC... => Compiler => General => Preprocessor Definitions
+// add define to list - ';' separated
+
+// NOTE: 
+// - Specify only one of the #defines above!
+// - Make sure the correct page in TopDesign is enabled (and all other pages are disabled)!
+// - When switch modes: check the pin assignments!!
+
 #include "project.h"
-#include "Async.h"
-#include "CpuState.h"
-#include "ClockTick.h"
+#include "IceController.h"
+#include "TestController.h"
 
-static volatile uint8_t _inClock;
-static volatile uint8_t _clockTooFast;
-
-
-CpuState _state;
-AsyncThis asyncClockTick;
-
-void OnClock()
-{
-    if (_inClock == 1)
-    {
-        _clockTooFast = 1;
-    }
-    
-    _inClock = 1;
-
-    // => clock PosEdge
-    ClockTick(&asyncClockTick, Level_PosEdge);
-    
-    // wait for the high clock pulse to end
-    while (CLK_Read());
-    
-    // => clock NegEdge
-    ClockTick(&asyncClockTick, Level_NegEdge);
-    
-    _inClock = 0;
-}
 
 int main(void)
 {
-    _inClock = 0;
-    _clockTooFast = 0;
-    CLK_ISR_StartEx(OnClock);
-    
-    BusCtrl_Write(0);
-    
-    Async_Reset(&asyncClockTick);
-    ResetClock();
-    
-    CyGlobalIntEnable; /* Enable global interrupts. */
-
-    /* Place your initialization/startup code here (e.g. MyInst_Start()) */
-
-    for(;;)
-    {
-        /* Place your application code here. */
-        if (_clockTooFast) 
-        {
-            // output error message
-        }    
-    }
+    Run();
 }
+
 
 /* [] END OF FILE */

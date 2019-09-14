@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <blockRegMap version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cypress.com/xsd/cyblockregmap cyblockregmap.xsd" xmlns="http://cypress.com/xsd/cyblockregmap">
-  <block name="NMI" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="INT_RQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="WAIT_RQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="BUSACK" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="BUSRQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="WR" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="RD" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="MEMRQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="CLK" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="IORQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Em_EEPROM_Dynamic" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="BusCtrl" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
-    <register name="BusCtrl_CONTROL_REG" address="0x40006476" bitWidth="8" desc="" hidden="false" />
+  <block name="Data" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="AddressHi" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="AddressLo" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="NMI" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="WAIT_RQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="INT_RQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="BusCtrl_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
+    <register name="BusCtrl_1_CONTROL_REG" address="0x4000647D" bitWidth="8" desc="" hidden="false" />
   </block>
   <block name="RESET" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="CLK_ISR" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="HALT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="RD" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="WR" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="AddressHi" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Data" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="AddressLo" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="M1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="RFSH" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="CLK" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="MEMRQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="IORQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="M1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="HALT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="BUSRQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="BUSACK" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
 </blockRegMap>

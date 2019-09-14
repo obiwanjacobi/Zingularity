@@ -3,6 +3,8 @@
 
 // outputs
 
+#ifdef Z80ICE
+    
 void setAddressBus(uint16_t address)
 {
     AddressHi_Write(address >> 8);
@@ -16,10 +18,13 @@ void setDataBus(uint8_t data)
 
 #define FromSignal(s) s == Active ? 1 : 0
 
-// host also floats buses
-void setBusAck(Signal active)
+void floatBus(Signal active)
 {
     BusCtrl_Write(FromSignal(active));
+}
+
+void setBusAck(Signal active)
+{
     BUSACK_Write(FromSignal(active));
 }
 
@@ -91,5 +96,7 @@ Signal getWait()
 {
     return ToSignal(WAIT_RQ_Read());
 }
+
+#endif
 
 /* [] END OF FILE */

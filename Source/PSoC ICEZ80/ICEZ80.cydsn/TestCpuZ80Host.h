@@ -1,3 +1,5 @@
+#ifdef Z80TEST
+    
 #include "Types.h"
 
 typedef struct
@@ -24,4 +26,5 @@ typedef struct
 
 extern CpuPinState _emuPinState;
 
+#endif
 /* [] END OF FILE */

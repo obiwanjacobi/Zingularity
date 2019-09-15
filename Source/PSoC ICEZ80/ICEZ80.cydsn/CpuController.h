@@ -1,3 +1,5 @@
+#ifdef Z80TEST
+    
 #include "CpuZ80Host.h"
 #include "Types.h"
 #include "Memory.h"
@@ -14,4 +16,5 @@ bool_t ctrl_IO(Memory* memory);
 void ctrl_PrintDiff();
 void ctrl_InitPins();
 
+#endif
 /* [] END OF FILE */

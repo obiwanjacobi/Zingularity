@@ -1,3 +1,5 @@
+#ifdef Z80TEST
+    
 #include "Memory.h"
 
 bool_t Memory_Read(Memory* memory, uint16_t address, uint8_t* storage)
@@ -22,4 +24,5 @@ bool_t Memory_Write(Memory* memory, uint16_t address, uint8_t data)
     return false;
 }
 
+#endif
 /* [] END OF FILE */

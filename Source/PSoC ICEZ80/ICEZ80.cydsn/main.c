@@ -19,14 +19,20 @@
 #include "IceController.h"
 #include "TestController.h"
 #include "DebugConsole.h"
+#include "ClockTick.h"
 
 #include <stdio.h>
 
 int main(void)
 {
+    ResetClock();
     DebugConsole_Init();
     
     Run();
+    
+    DebugConsole_EndLine();
+    DebugConsole_EndLine();
+    DebugConsole_LogInfo("Finished.");
 }
 
 

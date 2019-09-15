@@ -1,4 +1,4 @@
-#include "CpuZ80Host.h"
+#include "Common.h"
 #include "project.h"
 
 // outputs
@@ -15,8 +15,6 @@ void setDataBus(uint8_t data)
 {
     Data_Write(data);
 }
-
-#define FromSignal(s) s == Active ? 1 : 0
 
 void floatBus(Signal active)
 {
@@ -64,8 +62,6 @@ void setM1(Signal active)
 }
 
 // inputs
-
-#define ToSignal(d) d ? Active : Inactive
 
 uint8_t getDataBus()
 {

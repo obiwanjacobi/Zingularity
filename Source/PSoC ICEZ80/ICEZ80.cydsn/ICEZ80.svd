@@ -154,7 +154,7 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>BusCtrl_1</name>
+      <name>BusCtrl</name>
       <description>No description available</description>
       <baseAddress>0x0</baseAddress>
       <addressBlock>
@@ -164,7 +164,7 @@
       </addressBlock>
       <registers>
         <register>
-          <name>BusCtrl_1_CONTROL_REG</name>
+          <name>BusCtrl_CONTROL_REG</name>
           <description>No description available</description>
           <addressOffset>0x4000657A</addressOffset>
           <size>8</size>

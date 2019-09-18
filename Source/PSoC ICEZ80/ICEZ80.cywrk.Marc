@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="ICEZ80\ICEZ80\ICEZ80.cydwr">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="ICEZ80\ICEZ80\Source Files\DebugConsole.h">
 <ExpandedNodeIds>
 <v>ICEZ80</v>
 <v>ICEZ80\ICEZ80</v>
@@ -64,11 +64,9 @@
 <v>ICEZ80\ICEZ80\CpuZ80\Types.h</v>
 <v>ICEZ80\ICEZ80\Header Files\cyapicallbacks.h</v>
 <v>ICEZ80\ICEZ80\Source Files</v>
-<v>ICEZ80\ICEZ80\Source Files\ICE</v>
 <v>ICEZ80\ICEZ80\Source Files\ICE\IceController.c</v>
 <v>ICEZ80\ICEZ80\Source Files\ICE\IceController.h</v>
 <v>ICEZ80\ICEZ80\Source Files\ICE\IceCpuZ80Host.c</v>
-<v>ICEZ80\ICEZ80\Source Files\Test</v>
 <v>ICEZ80\ICEZ80\Source Files\Test\CpuController.c</v>
 <v>ICEZ80\ICEZ80\Source Files\Test\CpuController.h</v>
 <v>ICEZ80\ICEZ80\Source Files\Test\Memory.c</v>
@@ -92,18 +90,7 @@
 <v>ICEZ80\ICEZ80\Header Files</v>
 <v>ICEZ80\ICEZ80\Source Files</v>
 <v>ICEZ80\ICEZ80\Source Files\ICE</v>
-<v>ICEZ80\ICEZ80\Source Files\ICE\IceController.c</v>
-<v>ICEZ80\ICEZ80\Source Files\ICE\IceController.h</v>
-<v>ICEZ80\ICEZ80\Source Files\ICE\IceCpuZ80Host.c</v>
 <v>ICEZ80\ICEZ80\Source Files\Test</v>
-<v>ICEZ80\ICEZ80\Source Files\Test\CpuController.c</v>
-<v>ICEZ80\ICEZ80\Source Files\Test\CpuController.h</v>
-<v>ICEZ80\ICEZ80\Source Files\Test\Memory.c</v>
-<v>ICEZ80\ICEZ80\Source Files\Test\Memory.h</v>
-<v>ICEZ80\ICEZ80\Source Files\Test\TestController.c</v>
-<v>ICEZ80\ICEZ80\Source Files\Test\TestController.h</v>
-<v>ICEZ80\ICEZ80\Source Files\Test\TestCpuZ80Host.c</v>
-<v>ICEZ80\ICEZ80\Source Files\Test\TestCpuZ80Host.h</v>
 <v>ICEZ80\ICEZ80\Source Files\Common.h</v>
 <v>ICEZ80\ICEZ80\Source Files\DebugConsole.c</v>
 <v>ICEZ80\ICEZ80\Source Files\DebugConsole.h</v>
@@ -300,12 +287,7 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\ICEZ80.cydsn\Memory.c" />
-<name v=".\ICEZ80.cydsn\Memory.h" />
-<name v=".\ICEZ80.cydsn\TestController.c" />
-<name v=".\ICEZ80.cydsn\TestController.h" />
-<name v=".\ICEZ80.cydsn\TestCpuZ80Host.c" />
-<name v=".\ICEZ80.cydsn\ICEZ80.cydwr" />
+<name v=".\ICEZ80.cydsn\CpuController.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -313,7 +295,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1552, 732" SelectedTabbedMdiWindow="c1ca3e68-c9db-4def-b912-fbb56fcb153a"><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\Memory.c" Guid="a5974fbe-3e81-4b7d-9cf3-3595efeae1cf" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\Memory.h" Guid="91d1e351-8bfe-4021-ae52-5cd14528070a" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\TestController.c" Guid="bd0789ba-4313-4f78-95da-df5ea553be4c" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\TestController.h" Guid="18c4b646-4acf-4ace-8f15-41065116e2bb" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\TestCpuZ80Host.c" Guid="a311ac1a-c57b-4ce8-930e-a2eb78a90686" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\ICEZ80.cydwr" Guid="c1ca3e68-c9db-4def-b912-fbb56fcb153a" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1298, 732" SelectedTabbedMdiWindow="2e171a68-cff3-4183-aa2b-e047fb7ce81c"><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\CpuController.c" Guid="2e171a68-cff3-4183-aa2b-e047fb7ce81c" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

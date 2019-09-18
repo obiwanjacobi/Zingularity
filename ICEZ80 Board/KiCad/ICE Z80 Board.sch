@@ -25,17 +25,6 @@ F 3 "www.zilog.com/manage_directlink.php?filepath=docs/z80/um0080" H 3050 3250 5
 	1    3050 2850
 	1    0    0    -1  
 $EndComp
-$Comp
-L ICEZ80:ICE-Z80 M1
-U 1 1 5D7E8879
-P 6300 1850
-F 0 "M1" H 6275 2231 50  0000 C CNN
-F 1 "ICE-Z80" H 6275 2140 50  0000 C CNN
-F 2 "" H 6300 1850 50  0001 C CNN
-F 3 "" H 6300 1850 50  0001 C CNN
-	1    6300 1850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5850 1850 5550 1850
 Wire Wire Line
@@ -803,6 +792,19 @@ Wire Bus Line
 Connection ~ 5450 4750
 Wire Bus Line
 	5450 4750 7150 4750
+$Comp
+L ICEZ80:ICE-Z80 M1
+U 1 1 5D837DF8
+P 6300 1850
+F 0 "M1" H 6275 2231 50  0000 C CNN
+F 1 "ICE-Z80" H 6275 2140 50  0000 C CNN
+F 2 "" H 6300 1850 50  0001 C CNN
+F 3 "" H 6300 1850 50  0001 C CNN
+	1    6300 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3550 7050 3550
 Wire Wire Line
 	7900 2800 8950 2800
 Wire Wire Line
@@ -827,4 +829,8 @@ Wire Bus Line
 	5450 1050 5450 3250
 Wire Bus Line
 	4200 1050 4200 3950
+Entry Wire Line
+	7050 3550 7150 3650
+Text Label 6850 3550 0    50   ~ 0
+~M1
 $EndSCHEMATC

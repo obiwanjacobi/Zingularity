@@ -13,7 +13,7 @@
 **/*.md
 *.cmd
 
-!readme.md
+!README.md
 !settings.md
 
 client/**

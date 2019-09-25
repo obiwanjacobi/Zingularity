@@ -1,21 +1,27 @@
 .vscode/**
 .testBin/**
-**/*.ts
-**/*.map
-**/node_modules
-**/_test
 .gitignore
 .vsixmanifest
+
+**/node_modules
+**/_test
+**/*.ts
+**/*.map
 **/tslint.json
 **/tsconfig.json
 **/*.config.json
 **/*.md
-!readme.md
-.travis.yml
 *.cmd
 
+!readme.md
+!settings.md
+
 client/**
-!client/out/extension.js
+!client/node_modules/**
+!client/out/*.js
 
 server/**
-!server/out/server.js
+!server/node_modules/**
+!server/out/*.js
+!server/out/z80asm/*.js
+!server/out/z80asm/*.json

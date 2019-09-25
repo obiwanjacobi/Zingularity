@@ -3,7 +3,7 @@
 	"description": "Zingularity, a Z80 Assembler IDE",
 	"author": "Marc Jacobi",
 	"license": "LGPL-2.1-only",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/obiwanjacobi/Zingularity.git"
@@ -17,7 +17,7 @@
 		"multi-root ready"
 	],
 	"engines": {
-		"vscode": "^1.23.0"
+		"vscode": "^1.33.0"
 	},
 	"activationEvents": [
 		"onLanguage:z80asm"
@@ -90,7 +90,8 @@
 		"test": "jest",
 		"test:w": "jest --watch",
 		"webpack": "npm run clean:out && webpack --mode production --config ./client/webpack.config.js && webpack --mode production --config ./server/webpack.config.js",
-		"package": "npm run clean:modules && npm install && vsce package",
+		"package:prod": "npm run clean:modules && npm install && vsce package",
+		"package": "vsce package",
 		"publish": "vsce publish",
 		"clean:out": "rimraf client/out && rimraf server/out",
 		"clean:modules": "git clean -xfd node_modules",

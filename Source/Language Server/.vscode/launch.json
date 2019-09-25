@@ -30,7 +30,7 @@
 			"args": [
 				"--node-ipc",
 				"--nolazy",
-				"--debug-brk=6009"
+				"--inspect-brk=6009"
 			],
 			"outFiles": ["${workspaceRoot}/server/out/**/*.js"],
 		},

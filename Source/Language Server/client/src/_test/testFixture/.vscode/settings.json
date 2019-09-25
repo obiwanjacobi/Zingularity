@@ -1,3 +1,4 @@
 {
-    "zingularity.maxNumberOfProblems": 100
+    "zingularity.maxNumberOfProblems": 100,
+    "zingularity.trace.server": "verbose"
 }

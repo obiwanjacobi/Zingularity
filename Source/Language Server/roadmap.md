@@ -1,5 +1,7 @@
 # Road Map
 
+Plans and Ideas.
+
 ## Editor integration
 
 * Formating code (in-place)
@@ -9,7 +11,7 @@
 ## Structured Comment Blocks
 
 * Structured comment blocks to document and detect function entry points
-* Follow Doxygen syntax (subset)? (although doxygen will probably not be able to parse it)
+* Follow Doxygen syntax (subset) or JSDoc? (although doxygen will probably not be able to parse it)
 * Generate documentation from structured comment blocks (again doxygen?)
 * Use structured comment blocks as code completion help
 

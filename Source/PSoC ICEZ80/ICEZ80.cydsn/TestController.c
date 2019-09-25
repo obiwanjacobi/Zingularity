@@ -51,6 +51,12 @@ void Run()
 {
     Startup();
     
+    if (ctrl_PrintDiff())
+    {
+        DebugConsole_LogWarning("  Aborting on diff after RESET.");
+        return;
+    }
+    
     bool_t keepGoing = true;
     bool_t clk = false;
     while(keepGoing)
@@ -60,7 +66,10 @@ void Run()
         
         keepGoing = ctrl_IO(&memory);
 
-        ctrl_PrintDiff();
+        if (ctrl_PrintDiff())
+        {
+            DebugConsole_EndLine();
+        }
         
         if (clk)
             DebugConsole_Log(".");

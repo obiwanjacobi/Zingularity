@@ -13,7 +13,7 @@ void ctrl_setWait(Signal active);
 void ctrl_setData(uint8_t data);
 
 bool_t ctrl_IO(Memory* memory);
-void ctrl_PrintDiff();
+bool_t ctrl_PrintDiff();
 void ctrl_InitPins();
 
 #endif

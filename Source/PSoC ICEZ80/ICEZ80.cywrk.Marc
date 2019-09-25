@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="ICEZ80\ICEZ80\Source Files\DebugConsole.h">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="ICEZ80\ICEZ80\Source Files\DebugConsole.c">
 <ExpandedNodeIds>
 <v>ICEZ80</v>
 <v>ICEZ80\ICEZ80</v>
@@ -67,6 +67,7 @@
 <v>ICEZ80\ICEZ80\Source Files\ICE\IceController.c</v>
 <v>ICEZ80\ICEZ80\Source Files\ICE\IceController.h</v>
 <v>ICEZ80\ICEZ80\Source Files\ICE\IceCpuZ80Host.c</v>
+<v>ICEZ80\ICEZ80\Source Files\Test</v>
 <v>ICEZ80\ICEZ80\Source Files\Test\CpuController.c</v>
 <v>ICEZ80\ICEZ80\Source Files\Test\CpuController.h</v>
 <v>ICEZ80\ICEZ80\Source Files\Test\Memory.c</v>
@@ -91,6 +92,14 @@
 <v>ICEZ80\ICEZ80\Source Files</v>
 <v>ICEZ80\ICEZ80\Source Files\ICE</v>
 <v>ICEZ80\ICEZ80\Source Files\Test</v>
+<v>ICEZ80\ICEZ80\Source Files\Test\CpuController.c</v>
+<v>ICEZ80\ICEZ80\Source Files\Test\CpuController.h</v>
+<v>ICEZ80\ICEZ80\Source Files\Test\Memory.c</v>
+<v>ICEZ80\ICEZ80\Source Files\Test\Memory.h</v>
+<v>ICEZ80\ICEZ80\Source Files\Test\TestController.c</v>
+<v>ICEZ80\ICEZ80\Source Files\Test\TestController.h</v>
+<v>ICEZ80\ICEZ80\Source Files\Test\TestCpuZ80Host.c</v>
+<v>ICEZ80\ICEZ80\Source Files\Test\TestCpuZ80Host.h</v>
 <v>ICEZ80\ICEZ80\Source Files\Common.h</v>
 <v>ICEZ80\ICEZ80\Source Files\DebugConsole.c</v>
 <v>ICEZ80\ICEZ80\Source Files\DebugConsole.h</v>
@@ -288,6 +297,9 @@
 <Unloaded />
 <OpenDocs>
 <name v=".\ICEZ80.cydsn\CpuController.c" />
+<name v=".\ICEZ80.cydsn\TestController.c" />
+<name v=".\ICEZ80.cydsn\main.c" />
+<name v=".\ICEZ80.cydsn\CpuController.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -295,7 +307,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1298, 732" SelectedTabbedMdiWindow="2e171a68-cff3-4183-aa2b-e047fb7ce81c"><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\CpuController.c" Guid="2e171a68-cff3-4183-aa2b-e047fb7ce81c" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1287, 732" SelectedTabbedMdiWindow="25bc7911-3324-4936-af2b-4b4a196e9a3e"><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\CpuController.c" Guid="2e171a68-cff3-4183-aa2b-e047fb7ce81c" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\TestController.c" Guid="25bc7911-3324-4936-af2b-4b4a196e9a3e" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\main.c" Guid="ba69591b-8d64-4b80-b692-3473f3c77c7b" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\CpuController.h" Guid="7baa2b9b-eeaa-4e46-9060-b941b58b2ab5" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

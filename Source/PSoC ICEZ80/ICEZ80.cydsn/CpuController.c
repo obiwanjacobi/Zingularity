@@ -118,56 +118,68 @@ bool_t ctrl_IO(Memory* memory)
     return outOfMemoryBounds;
 }
 
-void ctrl_PrintDiff()
+bool_t ctrl_PrintDiff()
 {
+    bool_t diff = false;
+    
     if (_cpuPinState.Address != _emuPinState.Address)
     {
-        DebugConsole_LogWarning("Address differs.");
+        DebugConsole_Log("Address differs.");
+        diff = true;
     }
     
     if (_cpuPinState.BUSACK != _emuPinState.BUSACK)
     {
-        DebugConsole_LogWarning("BUSACK differs.");
+        DebugConsole_Log("BUSACK differs.");
+        diff = true;
     }
     
     if (_cpuPinState.DataOut != _emuPinState.DataOut)
     {
-        DebugConsole_LogWarning("Data differs.");
+        DebugConsole_Log("Data differs.");
+        diff = true;
     }
     
     if (_cpuPinState.HALT != _emuPinState.HALT)
     {
-        DebugConsole_LogWarning("HALT differs.");
+        DebugConsole_Log("HALT differs.");
+        diff = true;
     }
     
     if (_cpuPinState.IOREQ != _emuPinState.IOREQ)
     {
-        DebugConsole_LogWarning("IOREQ differs.");
+        DebugConsole_Log("IOREQ differs.");
+        diff = true;
     }
     
     if (_cpuPinState.M1 != _emuPinState.M1)
     {
-        DebugConsole_LogWarning("M1 differs.");
+        DebugConsole_Log("M1 differs.");
+        diff = true;
     }
     
     if (_cpuPinState.MEMRQ != _emuPinState.MEMRQ)
     {
-        DebugConsole_LogWarning("MEMRQ differs.");
+        DebugConsole_Log("MEMRQ differs.");
+        diff = true;
     }
     
     if (_cpuPinState.RD != _emuPinState.RD)
     {
-        DebugConsole_LogWarning("RD differs.");
+        DebugConsole_Log("RD differs.");
+        diff = true;
     }
     
     if (_cpuPinState.RFSH != _emuPinState.RFSH)
     {
-        DebugConsole_LogWarning("RFSH differs.");
+        DebugConsole_Log("RFSH differs.");
+        diff = true;
     }
     
     if (_cpuPinState.WR != _emuPinState.WR)
     {
-        DebugConsole_LogWarning("WR differs.");
+        DebugConsole_Log("WR differs.");
+        diff = true;
     }
 }
 

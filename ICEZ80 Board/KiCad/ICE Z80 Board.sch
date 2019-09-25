@@ -20,7 +20,7 @@ U 1 1 5D7E48D9
 P 3050 2850
 F 0 "U1" H 3050 4531 50  0000 C CNN
 F 1 "Z80CPU" H 3050 4440 50  0000 C CNN
-F 2 "" H 3050 3250 50  0001 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_LongPads" H 3050 3250 50  0001 C CNN
 F 3 "www.zilog.com/manage_directlink.php?filepath=docs/z80/um0080" H 3050 3250 50  0001 C CNN
 	1    3050 2850
 	1    0    0    -1  
@@ -66,39 +66,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 3850 5550 3850
 Wire Wire Line
-	6700 1850 7050 1850
-Wire Wire Line
-	6700 1950 7050 1950
-Wire Wire Line
-	6700 2050 7050 2050
-Wire Wire Line
-	6700 2150 7050 2150
-Wire Wire Line
-	6700 2250 7050 2250
-Wire Wire Line
-	6700 2350 7050 2350
-Wire Wire Line
-	6700 2450 7050 2450
-Wire Wire Line
-	6700 2550 7050 2550
-Wire Wire Line
-	6700 2750 7050 2750
-Wire Wire Line
-	6700 2850 7050 2850
-Wire Wire Line
-	6700 2950 7050 2950
-Wire Wire Line
-	6700 3050 7050 3050
-Wire Wire Line
-	6700 3150 7050 3150
-Wire Wire Line
-	6700 3350 7050 3350
-Wire Wire Line
 	6700 3450 7050 3450
-Wire Wire Line
-	6700 3650 7050 3650
-Wire Wire Line
-	6700 3850 7050 3850
 Entry Wire Line
 	7050 1850 7150 1750
 Entry Wire Line
@@ -503,7 +471,7 @@ U 1 1 5D800980
 P 9150 2700
 F 0 "J1" H 9200 3817 50  0000 C CNN
 F 1 "IDC2x20" H 9200 3726 50  0000 C CNN
-F 2 "" H 9150 2700 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical" H 9150 2700 50  0001 C CNN
 F 3 "~" H 9150 2700 50  0001 C CNN
 	1    9150 2700
 	1    0    0    -1  
@@ -514,7 +482,7 @@ U 1 1 5D802F76
 P 8250 1250
 F 0 "J2" H 8338 1214 50  0000 L CNN
 F 1 "HDR3" H 8338 1123 50  0000 L CNN
-F 2 "" H 8250 1250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8250 1250 50  0001 C CNN
 F 3 "~" H 8250 1250 50  0001 C CNN
 	1    8250 1250
 	1    0    0    -1  
@@ -792,19 +760,55 @@ Wire Bus Line
 Connection ~ 5450 4750
 Wire Bus Line
 	5450 4750 7150 4750
+Entry Wire Line
+	7050 3550 7150 3650
+Text Label 6850 3550 0    50   ~ 0
+~M1
+Wire Wire Line
+	6700 3350 7050 3350
+Wire Wire Line
+	6700 3150 7050 3150
+Wire Wire Line
+	6700 3050 7050 3050
+Wire Wire Line
+	6700 2950 7050 2950
+Wire Wire Line
+	6700 2850 7050 2850
+Wire Wire Line
+	6700 2750 7050 2750
+Wire Wire Line
+	6700 3650 7050 3650
+Wire Wire Line
+	6700 3550 7050 3550
+Wire Wire Line
+	6700 3850 7050 3850
+Wire Wire Line
+	6700 2550 7050 2550
+Wire Wire Line
+	6700 2450 7050 2450
+Wire Wire Line
+	6700 2350 7050 2350
+Wire Wire Line
+	6700 2250 7050 2250
+Wire Wire Line
+	6700 2150 7050 2150
+Wire Wire Line
+	6700 2050 7050 2050
+Wire Wire Line
+	6700 1950 7050 1950
+Wire Wire Line
+	6700 1850 7050 1850
 $Comp
 L ICEZ80:ICE-Z80 M1
 U 1 1 5D837DF8
 P 6300 1850
 F 0 "M1" H 6275 2231 50  0000 C CNN
 F 1 "ICE-Z80" H 6275 2140 50  0000 C CNN
-F 2 "" H 6300 1850 50  0001 C CNN
+F 2 "ProjectFootprints:DIP-52_485_ELL" H 6300 1850 50  0001 C CNN
 F 3 "" H 6300 1850 50  0001 C CNN
 	1    6300 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6700 3550 7050 3550
 Wire Wire Line
 	7900 2800 8950 2800
 Wire Wire Line
@@ -829,8 +833,4 @@ Wire Bus Line
 	5450 1050 5450 3250
 Wire Bus Line
 	4200 1050 4200 3950
-Entry Wire Line
-	7050 3550 7150 3650
-Text Label 6850 3550 0    50   ~ 0
-~M1
 $EndSCHEMATC

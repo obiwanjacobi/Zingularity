@@ -33,6 +33,8 @@ int main(void)
     DebugConsole_EndLine();
     DebugConsole_EndLine();
     DebugConsole_LogInfo("Finished.");
+    
+    while(true){};
 }
 
 

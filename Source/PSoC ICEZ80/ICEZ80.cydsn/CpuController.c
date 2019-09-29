@@ -181,6 +181,8 @@ bool_t ctrl_PrintDiff()
         DebugConsole_Log("WR differs.");
         diff = true;
     }
+    
+    return diff;
 }
 
 void ctrl_InitPins()

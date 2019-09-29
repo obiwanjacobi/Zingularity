@@ -22,7 +22,7 @@ Memory memory;
 void InitMemory()
 {
     memory.bytes = bytes;
-    memory.length = sizeof(memory.bytes);
+    memory.length = sizeof(bytes);
 }
 
 void ResetCpu()

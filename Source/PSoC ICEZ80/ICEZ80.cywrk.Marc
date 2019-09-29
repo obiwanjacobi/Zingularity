@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="ICEZ80\ICEZ80\Source Files\DebugConsole.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="ICEZ80\ICEZ80\Source Files\main.c">
 <ExpandedNodeIds>
 <v>ICEZ80</v>
 <v>ICEZ80\ICEZ80</v>
@@ -245,12 +245,6 @@
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\HALT.lst</v>
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\IceController.lst</v>
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\IceCpuZ80Host.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.Arithmetic16.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.Arithmetic8.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.BitSetTest.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.CallReturn.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.ExchangeBlockTransfer.lst</v>
-<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.GeneralPurposeControl.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -296,10 +290,11 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\ICEZ80.cydsn\CpuController.c" />
 <name v=".\ICEZ80.cydsn\TestController.c" />
+<name v=".\ICEZ80.cydsn\CpuController.c" />
+<name v=".\ICEZ80.cydsn\Memory.c" />
+<name v=".\ICEZ80.cydsn\TestCpuZ80Host.c" />
 <name v=".\ICEZ80.cydsn\main.c" />
-<name v=".\ICEZ80.cydsn\CpuController.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -307,7 +302,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1287, 732" SelectedTabbedMdiWindow="25bc7911-3324-4936-af2b-4b4a196e9a3e"><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\CpuController.c" Guid="2e171a68-cff3-4183-aa2b-e047fb7ce81c" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\TestController.c" Guid="25bc7911-3324-4936-af2b-4b4a196e9a3e" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\main.c" Guid="ba69591b-8d64-4b80-b692-3473f3c77c7b" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\CpuController.h" Guid="7baa2b9b-eeaa-4e46-9060-b941b58b2ab5" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1112, 616" SelectedTabbedMdiWindow="f0f555aa-d2ae-47d3-b90c-41441cf0b34b"><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\TestController.c" Guid="25bc7911-3324-4936-af2b-4b4a196e9a3e" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\CpuController.c" Guid="2e171a68-cff3-4183-aa2b-e047fb7ce81c" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\Memory.c" Guid="c3666e1b-4cfc-47e0-95c5-fd4e2531dbfd" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\TestCpuZ80Host.c" Guid="9ab845a0-7ff5-480b-bf46-0be250c8f5e4" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\main.c" Guid="f0f555aa-d2ae-47d3-b90c-41441cf0b34b" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

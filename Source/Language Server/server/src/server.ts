@@ -16,6 +16,7 @@ import {
     SymbolKind,
     HoverRequest,
     DocumentFormattingParams,
+    Range,
 } from "vscode-languageserver";
 import { AssemblyDocument, AssemblyNodeKind, Instruction, Label } from "./z80asm/CodeModel";
 import { buildCompletionList } from "./z80asm/InstructionNavigator";
@@ -187,10 +188,28 @@ connection.onCompletion(
     (textDocumentPosition: TextDocumentPositionParams): CompletionItem[] => {
         connection.console.log("Zingularity onCompletion");
 
-        const docNode = codeModelMgr.findNode(textDocumentPosition.textDocument.uri, textDocumentPosition.position);
-        if (docNode) {
-            return buildCompletionList(docNode.node.text)
-                .map(v => <CompletionItem> { label: v.label, data: v.path, kind: CompletionItemKind.Unit });
+        let txt: string = "";
+        const doc = documents.get(textDocumentPosition.textDocument.uri);
+        if (doc) {
+            const rng: Range = { 
+                    start: { line: textDocumentPosition.position.line, character: 0 },
+                    end: textDocumentPosition.position
+                };
+            txt = doc.getText(rng).trimLeft();
+        }
+
+        if (txt.length) {
+            const docNode = codeModelMgr.findNode(textDocumentPosition.textDocument.uri, textDocumentPosition.position);
+            // check we're not inside a comment
+            if (docNode) {
+                if(docNode.node.kind !== AssemblyNodeKind.Comment) {
+                    return buildCompletionList(txt)
+                        .map(v => <CompletionItem> { label: v.label, data: v.path, kind: CompletionItemKind.Unit });
+                }
+            } else {
+                return buildCompletionList(txt)
+                    .map(v => <CompletionItem> { label: v.label, data: v.path, kind: CompletionItemKind.Unit });
+            }
         }
 
         return [];

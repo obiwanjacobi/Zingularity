@@ -117,12 +117,7 @@ asm
 
 
 line
-   : directive comment? | comment | label comment? | label? instruction comment? | partial
-   ;
-
-
-partial
-   : ANY
+   : directive comment? | comment | label comment? | label? instruction comment?
    ;
 
 
@@ -1134,8 +1129,3 @@ WS
     : [ \t] 
       -> channel(HIDDEN)
     ;
-
-
-ANY     
-   : .
-   ;

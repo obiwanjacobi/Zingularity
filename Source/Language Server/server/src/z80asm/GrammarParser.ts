@@ -3,7 +3,7 @@ import * as antlr4 from "antlr4ts";
 import { ParseTreeWalker } from "antlr4ts/tree/ParseTreeWalker";
 import { AbstractParseTreeVisitor } from "antlr4ts/tree/AbstractParseTreeVisitor";
 import { z80asmLexer } from "./z80asmLexer";
-import { z80asmParser, ExpressionContext, Number_binContext, NumberContext, Number_octContext, Number_decContext, Number_hexContext, OperatorContext, AsmContext, DirectiveContext, InstructionContext, SymbolContext, CommentContext, LabelContext, Directive_elseblockContext, Directive_endifContext, PartialContext } from "./z80asmParser";
+import { z80asmParser, ExpressionContext, Number_binContext, NumberContext, Number_octContext, Number_decContext, Number_hexContext, OperatorContext, AsmContext, DirectiveContext, InstructionContext, SymbolContext, CommentContext, LabelContext, Directive_elseblockContext, Directive_endifContext } from "./z80asmParser";
 import { z80asmListener } from "./z80asmListener";
 import { z80asmVisitor } from "./z80asmVisitor";
 import { ParserRuleContext } from "antlr4ts";
@@ -11,6 +11,7 @@ import { ParseTree } from "antlr4ts/tree/ParseTree";
 import { TerminalNode } from "antlr4ts/tree/TerminalNode";
 import { Interval } from "antlr4ts/misc/Interval";
 import { findMap, createMeta } from "./InstructionNavigator";
+import { ErrorNode } from "antlr4ts/tree/ErrorNode";
 
 const _meta: InstructionMeta = {
     altCycles: [],
@@ -274,8 +275,12 @@ class GrammarListener implements z80asmListener {
         this.nodes.push(new Label(symbol.text, toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
     }
 
-    exitPartial(ctx: PartialContext) {
-        this.nodes.push(new AsmError("", toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
+    // exitPartial(ctx: PartialContext) {
+    //     this.nodes.push(new AsmError("", toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
+    // }
+
+    visitErrorNode(error: ErrorNode) {
+        this.nodes.push(new AsmError(error.text, error.text, error.payload.line, error.payload.charPositionInLine));
     }
 
     private hasException(ctx: ParserRuleContext): boolean {

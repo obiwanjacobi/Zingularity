@@ -6,7 +6,6 @@ import { ParseTreeListener } from "antlr4ts/tree/ParseTreeListener";
 import { FileContext } from "./z80asmParser";
 import { AsmContext } from "./z80asmParser";
 import { LineContext } from "./z80asmParser";
-import { PartialContext } from "./z80asmParser";
 import { DirectiveContext } from "./z80asmParser";
 import { Directive_voidContext } from "./z80asmParser";
 import { Directive_param16Context } from "./z80asmParser";
@@ -114,17 +113,6 @@ export interface z80asmListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	exitLine?: (ctx: LineContext) => void;
-
-	/**
-	 * Enter a parse tree produced by `z80asmParser.partial`.
-	 * @param ctx the parse tree
-	 */
-	enterPartial?: (ctx: PartialContext) => void;
-	/**
-	 * Exit a parse tree produced by `z80asmParser.partial`.
-	 * @param ctx the parse tree
-	 */
-	exitPartial?: (ctx: PartialContext) => void;
 
 	/**
 	 * Enter a parse tree produced by `z80asmParser.directive`.

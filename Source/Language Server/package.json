@@ -3,7 +3,13 @@
 	"description": "Zingularity, a Z80 Assembler IDE",
 	"author": "Marc Jacobi",
 	"license": "LGPL-2.1-only",
-	"version": "0.0.6",
+	"version": "0.0.7",
+	"icon": "images/Zingularity.png",
+	"galleryBanner": {
+		"theme": "dark",
+		"color": "#C80000"
+	},
+	"preview": true,
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/obiwanjacobi/Zingularity.git"

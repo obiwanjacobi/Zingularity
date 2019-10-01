@@ -94,8 +94,13 @@ connection.onInitialized(() => {
 // The server settings
 interface ZingularitySettings {
     maxNumberOfProblems: number;
-    newline: string;
-    columnTabs: number[];
+    
+    formatter: {
+        newline: string;
+        columnTabs: number[];
+        printBytes: boolean;
+        printCycles: boolean;
+    };
 }
 
 // The global settings, used when the `workspace/configuration` request is not supported by the client.
@@ -103,8 +108,12 @@ interface ZingularitySettings {
 // but could happen with other clients.
 const defaultSettings: ZingularitySettings = {
     maxNumberOfProblems: 100, 
-    newline: "\r\n", 
-    columnTabs: [0, 2, 8]
+    formatter: {
+        newline: "\r\n", 
+        columnTabs: [0, 2, 8],
+        printBytes: false,
+        printCycles: false
+    }
 };
 let globalSettings: ZingularitySettings = defaultSettings;
 
@@ -299,10 +308,12 @@ connection.onDocumentFormatting(async (docFormat: DocumentFormattingParams) => {
     const doc = codeModelMgr.codeModel.documents.find(d => d.uri === docFormat.textDocument.uri);
     if (doc) {
         const settings = await getDocumentSettings(doc.uri);
-        const profile = {
+        const profile: SerializerProfile = {
             ...docFormat.options,
-            newLine: settings.newline,
-            columnTabs: settings.columnTabs
+            newLine: settings.formatter.newline,
+            columnTabs: settings.formatter.columnTabs,
+            printBytes: settings.formatter.printBytes,
+            printCycles: settings.formatter.printCycles,
         };
         const serializer = new DocumentSerializer(profile);
 

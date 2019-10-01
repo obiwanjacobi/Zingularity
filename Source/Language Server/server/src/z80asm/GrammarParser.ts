@@ -1,4 +1,4 @@
-import { AssemblyNode, Comment, Label, Instruction, InstructionMeta, Expression, Numeric, Radix, Directive, AsmError } from "./CodeModel";
+import { AssemblyNode, Comment, Label, Instruction, InstructionMeta, Expression, Numeric, Radix, Directive, AsmError, AssemblyNodeKind } from "./CodeModel";
 import * as antlr4 from "antlr4ts";
 import { ParseTreeWalker } from "antlr4ts/tree/ParseTreeWalker";
 import { AbstractParseTreeVisitor } from "antlr4ts/tree/AbstractParseTreeVisitor";
@@ -280,12 +280,25 @@ class GrammarListener implements z80asmListener {
     // }
 
     visitErrorNode(error: ErrorNode) {
+        this.removeDuplicateError(error.payload.line);
         this.nodes.push(new AsmError(error.text, error.text, error.payload.line, error.payload.charPositionInLine));
     }
 
+    private removeDuplicateError(line: number) {
+        if (this.nodes.length > 0) {
+            const lastNode = this.nodes[this.nodes.length - 1];
+            if (lastNode.kind === AssemblyNodeKind.Error &&
+                lastNode.line === line) {
+                    // remove last error on same line
+                    this.nodes.pop();
+                }
+        }
+    }
+    
     private hasException(ctx: ParserRuleContext): boolean {
         const exc = this.getException(ctx);
         if (exc) {
+            this.removeDuplicateError(ctx.start.line);
             this.nodes.push(new AsmError(toErrorMessage(exc), toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
             return true;
         }

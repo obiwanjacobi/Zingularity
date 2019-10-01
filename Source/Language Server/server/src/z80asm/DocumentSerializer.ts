@@ -1,5 +1,6 @@
-import { Comment, Label, AssemblyNode, AssemblyNodeKind, Directive, Expression, Instruction, Numeric } from "./CodeModel";
+import { Comment, Label, AssemblyNode, AssemblyNodeKind, Directive, Expression, Instruction, Numeric, InstructionMeta } from "./CodeModel";
 import { toLines } from "./CodeModelManager";
+import { sum } from "../utils";
 
 const ignoreNodes = [
     AssemblyNodeKind.Error,
@@ -12,6 +13,8 @@ export interface SerializerProfile {
     insertSpaces: boolean;  // use spaces instead of tab
     newLine: string;        // what new-line character(s) to use
     columnTabs: number[];   // 3 column layout
+    printCycles: boolean;   // print instruction cycle counts  (comments)
+    printBytes: boolean;    // prints opcode bytes (comments)
 
     // TODO
     //maxEmptyLines: number;    // max number of consegutive empty lines
@@ -20,6 +23,7 @@ export interface SerializerProfile {
 
 export class DocumentSerializer {
     private readonly profile: SerializerProfile;
+    private instructionMeta?: InstructionMeta;
 
     constructor(profile: SerializerProfile) {
         this.profile = profile;
@@ -64,6 +68,10 @@ export class DocumentSerializer {
                 });
             }
 
+            if (this.instructionMeta) {
+                line += this.tab(line.length, this.columnTabs(AssemblyNodeKind.Comment));
+                line += this.serializeMetaComment();
+            }
             output += line;
         });
 
@@ -79,7 +87,10 @@ export class DocumentSerializer {
             case AssemblyNodeKind.Expression:
                 return this.serializeExpression(<Expression> node);
             case AssemblyNodeKind.Instruction:
-                return this.serializeInstruction(<Instruction> node);
+                const instr = <Instruction> node;
+                this.instructionMeta = 
+                    (this.profile.printBytes || this.profile.printCycles) ? instr.meta : undefined;
+                return this.serializeInstruction(instr);
             case AssemblyNodeKind.Label:
                 return this.serializeLabel(<Label> node);
             case AssemblyNodeKind.Numeric:
@@ -110,7 +121,28 @@ export class DocumentSerializer {
     }
 
     private serializeComment(comment: Comment): string {
+        if (this.instructionMeta) {
+            const txt = `${this.serializeMetaComment()}\t${comment.toString().substring(1).trim()}`;
+            this.instructionMeta = undefined;
+            return txt;
+        }
         return comment.toString();
+    }
+
+    private serializeMetaComment(): string {
+        return `; ${this.serializeMeta()}`;
+    }
+    private serializeMeta(): string {
+        if (this.instructionMeta) {
+            if (this.profile.printBytes && this.profile.printCycles) {
+                return `${sum(this.instructionMeta.cycles)}C - ${this.instructionMeta.bytes.length}B`;
+            } else if(this.profile.printBytes) {
+                return `${this.instructionMeta.bytes.length}B`;
+            } else {
+                return `${sum(this.instructionMeta.cycles)}C`;
+            }
+        }
+        return "";
     }
 
     private columnTabs(kind: AssemblyNodeKind): number {

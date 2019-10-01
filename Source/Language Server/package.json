@@ -58,21 +58,29 @@
 					"default": 999,
 					"description": "Controls the maximum number of problems produced by the server."
 				},
-				"zingularity.newline": {
+				"zingularity.formatter.newline": {
 					"scope": "resource",
 					"type": "string",
 					"default": "\r\n",
 					"description": "What new-line character(s) to use when reformatting."
 				},
-				"zingularity.columnTabs": {
+				"zingularity.formatter.columnTabs": {
 					"scope": "resource",
 					"type": "number[]",
-					"default": [
-						0,
-						2,
-						8
-					],
-					"description": "Formats the document in a 3-column layout using these number of tabs for each column."
+					"default": [0, 2, 8],
+					"description": "Uses these number of tabs for each column of a 3-column layout when reformatting."
+				},
+				"zingularity.formatter.printBytes": {
+					"scope": "resource",
+					"type": "boolean",
+					"default": false,
+					"description": "Prints the number of opcode bytes as comment when reformatting."
+				},
+				"zingularity.formatter.printCycles": {
+					"scope": "resource",
+					"type": "boolean",
+					"default": false,
+					"description": "Prints the number of T-Cycles as comment when reformatting."
 				},
 				"zingularity.trace.server": {
 					"scope": "window",

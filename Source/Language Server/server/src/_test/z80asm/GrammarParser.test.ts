@@ -201,7 +201,7 @@ describe("Grammar Parser", () => {
         expect(nodes[0].text).toBe("rst 28");
     });
 
-    it("error ld (hl), sp", () => {
+    it("error ld (hl), sp (instruction does not exist)", () => {
         const parser = GrammarParser.createParser("ld (hl), sp" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);

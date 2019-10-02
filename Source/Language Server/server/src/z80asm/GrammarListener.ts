@@ -170,9 +170,7 @@ export class GrammarListener implements z80asmListener {
 
     exitBlockcomment(ctx: BlockcommentContext) {
         if (this.hasException(ctx)) { return; }
-        const paramName = "";
-        const paramValue = "";
-        const line = new BlockCommentLine(toString(ctx), ctx.start.line, ctx.start.charPositionInLine, paramName, paramValue);
+        const line = new BlockCommentLine(toString(ctx), ctx.start.line, ctx.start.charPositionInLine);
 
         if (this.nodes.length > 0 &&
             this.nodes[this.nodes.length -1].kind === AssemblyNodeKind.BlockComment) {

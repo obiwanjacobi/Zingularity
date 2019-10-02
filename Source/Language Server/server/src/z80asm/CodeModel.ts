@@ -72,11 +72,32 @@ export class BlockComment extends AssemblyNode {
 export class BlockCommentLine extends AssemblyNode {
     readonly paramName: string;
     readonly paramValue: string;
+    readonly doc: string;
 
-    constructor(text: string, line: number, column: number, paramName: string, paramValue: string) {
+    constructor(text: string, line: number, column: number) {
         super(AssemblyNodeKind.Comment, text, line, column);
-        this.paramName = paramName;
-        this.paramValue = paramValue;
+        this.paramName = "";
+        this.paramValue = "";
+        // manual parsing because I can't get the grammar to work :-(
+        const regex = /[ \t]/g;
+        const parts = text.split(regex);
+        let idx = parts.findIndex(v => v.startsWith("@"));
+        if (idx >= 0) {
+            this.paramName = parts[idx].trim();
+            idx++;
+            if (idx < parts.length) {
+                this.paramValue = parts[idx].trim();
+            }
+            idx++;
+        } else {
+            idx = 1;
+        }
+
+        this.doc = parts.reduce((prev: string, curr: string, i: number) => {
+            if (i < idx) { return ""; }
+            if (i === idx) { return curr; }
+            return (prev + " " + curr).trim();
+        });
     }
 }
 

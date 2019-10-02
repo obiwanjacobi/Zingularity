@@ -60,7 +60,6 @@ import { Register16_exContext } from "./z80asmParser";
 import { LabelContext } from "./z80asmParser";
 import { SymbolContext } from "./z80asmParser";
 import { BlockcommentContext } from "./z80asmParser";
-import { Blockcomment_paramContext } from "./z80asmParser";
 import { CommentContext } from "./z80asmParser";
 import { StringContext } from "./z80asmParser";
 import { CharacterContext } from "./z80asmParser";
@@ -710,17 +709,6 @@ export interface z80asmListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	exitBlockcomment?: (ctx: BlockcommentContext) => void;
-
-	/**
-	 * Enter a parse tree produced by `z80asmParser.blockcomment_param`.
-	 * @param ctx the parse tree
-	 */
-	enterBlockcomment_param?: (ctx: Blockcomment_paramContext) => void;
-	/**
-	 * Exit a parse tree produced by `z80asmParser.blockcomment_param`.
-	 * @param ctx the parse tree
-	 */
-	exitBlockcomment_param?: (ctx: Blockcomment_paramContext) => void;
 
 	/**
 	 * Enter a parse tree produced by `z80asmParser.comment`.

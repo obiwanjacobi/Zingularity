@@ -60,7 +60,6 @@ import { Register16_exContext } from "./z80asmParser";
 import { LabelContext } from "./z80asmParser";
 import { SymbolContext } from "./z80asmParser";
 import { BlockcommentContext } from "./z80asmParser";
-import { Blockcomment_paramContext } from "./z80asmParser";
 import { CommentContext } from "./z80asmParser";
 import { StringContext } from "./z80asmParser";
 import { CharacterContext } from "./z80asmParser";
@@ -485,13 +484,6 @@ export interface z80asmVisitor<Result> extends ParseTreeVisitor<Result> {
 	 * @return the visitor result
 	 */
 	visitBlockcomment?: (ctx: BlockcommentContext) => Result;
-
-	/**
-	 * Visit a parse tree produced by `z80asmParser.blockcomment_param`.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	visitBlockcomment_param?: (ctx: Blockcomment_paramContext) => Result;
 
 	/**
 	 * Visit a parse tree produced by `z80asmParser.comment`.

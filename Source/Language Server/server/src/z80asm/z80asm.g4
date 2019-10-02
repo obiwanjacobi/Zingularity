@@ -474,6 +474,7 @@ offset_ex
    : expression
    ;
 
+
 offset_rel
    : expression
    ;
@@ -755,17 +756,13 @@ SYMBOL
 
 
 blockcomment
-   : ';;' (blockcomment_param (registers|expression|symbol))? BLOCKCOMMENTtext
-   ;
-
-
-blockcomment_param
-   : '@param' | '@return' | '@see'
+   : BLOCKCOMMENTtext
    ;
 
 
 BLOCKCOMMENTtext
-   : (.+? | ~[\r\n]+)
+// add the white space to make it distinct from COMMENT
+   : ';;' [ \t]+ .+? | ';;' [ \t]+ ~[\r\n]+
    ;
 
 

@@ -117,7 +117,7 @@ asm
 
 
 line
-   : directive comment? | comment | label comment? | label? instruction comment?
+   : directive comment? | comment | label comment? | label? instruction comment? | blockcomment
    ;
 
 
@@ -593,6 +593,12 @@ INSTRUCTIONout
    ;
 
 
+registers
+   : REG8a | REG8b | REG8c | REG8d | REG8e | REG8h | REG8l | REG8x | REG8y | REG8sys
+   | REG16af | REG16bc | REG16de | REG16hl | REG16ix | REG16iy | REG16sp
+   ;
+
+
 registers8
    : REG8a | REG8b | REG8c | REG8d | REG8e | REG8h | REG8l
    ;
@@ -745,6 +751,21 @@ symbol
 
 SYMBOL
    : ALPHAEX ALPHANUMEX*
+   ;
+
+
+blockcomment
+   : ';;' (blockcomment_param (registers|expression|symbol))? BLOCKCOMMENTtext
+   ;
+
+
+blockcomment_param
+   : '@param' | '@return' | '@see'
+   ;
+
+
+BLOCKCOMMENTtext
+   : (.+? | ~[\r\n]+)
    ;
 
 

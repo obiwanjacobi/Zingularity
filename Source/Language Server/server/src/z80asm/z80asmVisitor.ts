@@ -47,6 +47,7 @@ import { Instruction_imContext } from "./z80asmParser";
 import { Instruction_ioContext } from "./z80asmParser";
 import { Offset_exContext } from "./z80asmParser";
 import { Offset_relContext } from "./z80asmParser";
+import { RegistersContext } from "./z80asmParser";
 import { Registers8Context } from "./z80asmParser";
 import { Registers8xContext } from "./z80asmParser";
 import { Registers8yContext } from "./z80asmParser";
@@ -58,6 +59,8 @@ import { Register16_grpspiyContext } from "./z80asmParser";
 import { Register16_exContext } from "./z80asmParser";
 import { LabelContext } from "./z80asmParser";
 import { SymbolContext } from "./z80asmParser";
+import { BlockcommentContext } from "./z80asmParser";
+import { Blockcomment_paramContext } from "./z80asmParser";
 import { CommentContext } from "./z80asmParser";
 import { StringContext } from "./z80asmParser";
 import { CharacterContext } from "./z80asmParser";
@@ -393,6 +396,13 @@ export interface z80asmVisitor<Result> extends ParseTreeVisitor<Result> {
 	visitOffset_rel?: (ctx: Offset_relContext) => Result;
 
 	/**
+	 * Visit a parse tree produced by `z80asmParser.registers`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitRegisters?: (ctx: RegistersContext) => Result;
+
+	/**
 	 * Visit a parse tree produced by `z80asmParser.registers8`.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -468,6 +478,20 @@ export interface z80asmVisitor<Result> extends ParseTreeVisitor<Result> {
 	 * @return the visitor result
 	 */
 	visitSymbol?: (ctx: SymbolContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.blockcomment`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitBlockcomment?: (ctx: BlockcommentContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.blockcomment_param`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitBlockcomment_param?: (ctx: Blockcomment_paramContext) => Result;
 
 	/**
 	 * Visit a parse tree produced by `z80asmParser.comment`.

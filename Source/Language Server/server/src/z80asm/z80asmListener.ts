@@ -47,6 +47,7 @@ import { Instruction_imContext } from "./z80asmParser";
 import { Instruction_ioContext } from "./z80asmParser";
 import { Offset_exContext } from "./z80asmParser";
 import { Offset_relContext } from "./z80asmParser";
+import { RegistersContext } from "./z80asmParser";
 import { Registers8Context } from "./z80asmParser";
 import { Registers8xContext } from "./z80asmParser";
 import { Registers8yContext } from "./z80asmParser";
@@ -58,6 +59,8 @@ import { Register16_grpspiyContext } from "./z80asmParser";
 import { Register16_exContext } from "./z80asmParser";
 import { LabelContext } from "./z80asmParser";
 import { SymbolContext } from "./z80asmParser";
+import { BlockcommentContext } from "./z80asmParser";
+import { Blockcomment_paramContext } from "./z80asmParser";
 import { CommentContext } from "./z80asmParser";
 import { StringContext } from "./z80asmParser";
 import { CharacterContext } from "./z80asmParser";
@@ -566,6 +569,17 @@ export interface z80asmListener extends ParseTreeListener {
 	exitOffset_rel?: (ctx: Offset_relContext) => void;
 
 	/**
+	 * Enter a parse tree produced by `z80asmParser.registers`.
+	 * @param ctx the parse tree
+	 */
+	enterRegisters?: (ctx: RegistersContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.registers`.
+	 * @param ctx the parse tree
+	 */
+	exitRegisters?: (ctx: RegistersContext) => void;
+
+	/**
 	 * Enter a parse tree produced by `z80asmParser.registers8`.
 	 * @param ctx the parse tree
 	 */
@@ -685,6 +699,28 @@ export interface z80asmListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	exitSymbol?: (ctx: SymbolContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.blockcomment`.
+	 * @param ctx the parse tree
+	 */
+	enterBlockcomment?: (ctx: BlockcommentContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.blockcomment`.
+	 * @param ctx the parse tree
+	 */
+	exitBlockcomment?: (ctx: BlockcommentContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.blockcomment_param`.
+	 * @param ctx the parse tree
+	 */
+	enterBlockcomment_param?: (ctx: Blockcomment_paramContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.blockcomment_param`.
+	 * @param ctx the parse tree
+	 */
+	exitBlockcomment_param?: (ctx: Blockcomment_paramContext) => void;
 
 	/**
 	 * Enter a parse tree produced by `z80asmParser.comment`.

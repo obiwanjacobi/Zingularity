@@ -1,3 +1,3 @@
 ; comment
 ;
-inc a
+; comment

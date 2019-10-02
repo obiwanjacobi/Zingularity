@@ -1,5 +1,5 @@
 import { GrammarParser } from "../../z80asm/GrammarParser";
-import { AssemblyNodeKind, Expression, Directive, Instruction } from "../../z80asm/CodeModel";
+import { AssemblyNodeKind, Expression, Directive, Instruction, BlockCommentLine, BlockComment } from "../../z80asm/CodeModel";
 
 const newLine = "\r\n";
 
@@ -24,6 +24,7 @@ describe("Grammar Parser", () => {
 
         expect(tree.text).toBe("; comment");
     });
+
 
     it("expression", () => {
         const parser = GrammarParser.createParser("(8+3)*4");
@@ -285,5 +286,33 @@ describe("Grammar Parser", () => {
         let node = nodes[0];
         expect(node.kind).toBe(AssemblyNodeKind.Error);
         expect(node.text).toContain("de");
+    });
+
+    it("blockcomment", () => {
+        const parser = GrammarParser.createParser(";; comment" + newLine);
+        const tree = parser.asm();
+        const nodes = GrammarParser.createAssemblyNodes(tree);
+
+        let node = nodes[0];
+        expect(node.kind).toBe(AssemblyNodeKind.BlockComment);
+        expect(node.text).toContain(";; comment");
+
+        const block = <BlockComment> node;
+        expect(block.lines.length).toBe(1);
+    });
+
+    it("blockcomment", () => {
+        const parser = GrammarParser.createParser(";; @param hl comment" + newLine);
+        const tree = parser.asm();
+        const nodes = GrammarParser.createAssemblyNodes(tree);
+
+        let node = nodes[0];
+        expect(node.kind).toBe(AssemblyNodeKind.BlockComment);
+        expect(node.text).toContain(";; @param hl comment");
+        
+        const block = <BlockComment> node;
+        expect(block.lines.length).toBe(1);
+        expect(block.lines[0].paramName).toBe("@param");
+        expect(block.lines[0].paramValue).toBe("hl");
     });
 });

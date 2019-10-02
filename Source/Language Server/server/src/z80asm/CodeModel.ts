@@ -3,6 +3,7 @@ import { VersionedTextDocumentIdentifier } from "vscode-languageserver";
 export enum AssemblyNodeKind {
     Token,
     Comment,
+    BlockComment,
     Directive,
     Instruction,
     Label,
@@ -57,6 +58,25 @@ export class AsmError extends AssemblyNode {
 export class Comment extends AssemblyNode {
     constructor(text: string, line: number, column: number) {
         super(AssemblyNodeKind.Comment, text, line, column);
+    }
+}
+
+export class BlockComment extends AssemblyNode {
+    readonly lines: BlockCommentLine[];
+    constructor(lines: BlockCommentLine[]) {
+        super(AssemblyNodeKind.BlockComment, lines[0].text, lines[0].line, lines[0].column);
+        this.lines = lines;
+    }
+}
+
+export class BlockCommentLine extends AssemblyNode {
+    readonly paramName: string;
+    readonly paramValue: string;
+
+    constructor(text: string, line: number, column: number, paramName: string, paramValue: string) {
+        super(AssemblyNodeKind.Comment, text, line, column);
+        this.paramName = paramName;
+        this.paramValue = paramValue;
     }
 }
 

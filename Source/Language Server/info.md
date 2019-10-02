@@ -8,9 +8,10 @@ https://marketplace.visualstudio.com/items?itemName=JacobiSoftware.zingularity
 ```ascii
 .
 ├── client                      // Language Client
-│   ├── src
-│   │   ├── test                // End to End tests for Language Client / Server
-│   │   └── extension.ts        // Language Client entry point
+│   └── src
+│       ├── test                // End to End tests for Language Client / Server
+│       |   └── *.test.ts       // unit test files
+│       └── extension.ts        // Language Client entry point
 ├── package.json                // The extension manifest.
 ├── server                      // Language Server
 │   └── src

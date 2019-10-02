@@ -67,7 +67,11 @@
 				"zingularity.formatter.columnTabs": {
 					"scope": "resource",
 					"type": "number[]",
-					"default": [0, 2, 8],
+					"default": [
+						0,
+						2,
+						8
+					],
 					"description": "Uses these number of tabs for each column of a 3-column layout when reformatting."
 				},
 				"zingularity.formatter.printBytes": {

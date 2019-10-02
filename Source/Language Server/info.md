@@ -1,5 +1,8 @@
 # Detailed Information
 
+Visual Studio Code Market Place
+https://marketplace.visualstudio.com/items?itemName=JacobiSoftware.zingularity
+
 ## Project Structure
 
 ```ascii

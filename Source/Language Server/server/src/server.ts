@@ -100,6 +100,7 @@ interface ZingularitySettings {
         columnTabs: number[];
         printBytes: boolean;
         printCycles: boolean;
+        emptyLineAfterRet: boolean;
     };
 }
 
@@ -112,7 +113,8 @@ const defaultSettings: ZingularitySettings = {
         newline: "\r\n", 
         columnTabs: [0, 2, 8],
         printBytes: false,
-        printCycles: false
+        printCycles: false,
+        emptyLineAfterRet: false
     }
 };
 let globalSettings: ZingularitySettings = defaultSettings;
@@ -314,6 +316,7 @@ connection.onDocumentFormatting(async (docFormat: DocumentFormattingParams) => {
             columnTabs: settings.formatter.columnTabs,
             printBytes: settings.formatter.printBytes,
             printCycles: settings.formatter.printCycles,
+            emptyLineAfterRet: settings.formatter.emptyLineAfterRet
         };
         const serializer = new DocumentSerializer(profile);
 

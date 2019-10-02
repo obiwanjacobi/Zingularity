@@ -82,6 +82,12 @@
 					"default": false,
 					"description": "Prints the number of T-Cycles as comment when reformatting."
 				},
+				"zingularity.formatter.emptyLineAfterRet": {
+					"scope": "resource",
+					"type": "boolean",
+					"default": false,
+					"description": "Inserts a blank line after each RET instruction when reformatting."
+				},
 				"zingularity.trace.server": {
 					"scope": "window",
 					"type": "string",

@@ -15,18 +15,21 @@ export interface SerializerProfile {
     columnTabs: number[];   // 3 column layout
     printCycles: boolean;   // print instruction cycle counts  (comments)
     printBytes: boolean;    // prints opcode bytes (comments)
+    emptyLineAfterRet: boolean;   // insert an empty line after each 'ret' operation
 
     // TODO
     //maxEmptyLines: number;    // max number of consegutive empty lines
-    //emptyLineAfterRet: boolean;   // insert an empty line after each 'ret' operation
 }
 
 export class DocumentSerializer {
     private readonly profile: SerializerProfile;
     private instructionMeta?: InstructionMeta;
+    private addToEndOfLine: string;
 
     constructor(profile: SerializerProfile) {
         this.profile = profile;
+        this.addToEndOfLine = "";
+
         if (this.profile.tabSize <= 0) {
             this.profile.tabSize = 4;
         }
@@ -72,6 +75,9 @@ export class DocumentSerializer {
                 line += this.tab(line.length, this.columnTabs(AssemblyNodeKind.Comment));
                 line += this.serializeMetaComment();
             }
+            
+            line += this.addToEndOfLine;
+            this.addToEndOfLine = "";
             output += line;
         });
 
@@ -90,6 +96,10 @@ export class DocumentSerializer {
                 const instr = <Instruction> node;
                 this.instructionMeta = 
                     (this.profile.printBytes || this.profile.printCycles) ? instr.meta : undefined;
+                if (this.profile.emptyLineAfterRet && 
+                    instr.meta.bytes[0] == "C9") {
+                    this.addToEndOfLine = this.profile.newLine;
+                }
                 return this.serializeInstruction(instr);
             case AssemblyNodeKind.Label:
                 return this.serializeLabel(<Label> node);

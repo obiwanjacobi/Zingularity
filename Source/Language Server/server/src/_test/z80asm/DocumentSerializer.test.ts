@@ -7,7 +7,8 @@ const profile: SerializerProfile = {
     newLine: "\r\n",
     tabSize: 4,
     printBytes: false,
-    printCycles: false
+    printCycles: false,
+    emptyLineAfterRet: false
 };
 
 const serializer = new DocumentSerializer(profile);

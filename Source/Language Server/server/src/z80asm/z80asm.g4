@@ -341,11 +341,11 @@ instruction_ld8
    : (INSTRUCTIONld ((registers8 COMMA registers8) | (registers8x COMMA registers8x) | (registers8y COMMA registers8y)))
    | (INSTRUCTIONld (registers8 | REG8x | REG8y) COMMA expression8)
    | (INSTRUCTIONld registers8 COMMA PARopen REG16hl PARclose)
-   | (INSTRUCTIONld registers8 COMMA PARopen register16_ex PLUS offset_ex PARclose)
+   | (INSTRUCTIONld registers8 COMMA PARopen register16_ex operator_offset offset_ex PARclose)
    | (INSTRUCTIONld PARopen REG16hl PARclose COMMA registers8)
-   | (INSTRUCTIONld PARopen register16_ex PLUS offset_ex PARclose COMMA registers8)
+   | (INSTRUCTIONld PARopen register16_ex operator_offset offset_ex PARclose COMMA registers8)
    | (INSTRUCTIONld PARopen REG16hl PARclose COMMA expression8)
-   | (INSTRUCTIONld PARopen register16_ex PLUS offset_ex PARclose COMMA expression8)
+   | (INSTRUCTIONld PARopen register16_ex operator_offset offset_ex PARclose COMMA expression8)
    | (INSTRUCTIONld REG8a COMMA PARopen (REG16bc | REG16de | expression) PARclose)
    | (INSTRUCTIONld REG8a COMMA REG8sys)
    | (INSTRUCTIONld REG8sys COMMA REG8a)
@@ -376,13 +376,13 @@ instruction_exchange
 
 instruction_arithmetic8
    : (INSTRUCTIONarithmetic | INSTRUCTIONarithmetic16) (REG8a COMMA)? (registers8 | REG8x | REG8y | expression8 )
-   | (INSTRUCTIONarithmetic | INSTRUCTIONarithmetic16) (REG8a COMMA)? PARopen (REG16hl | register16_ex PLUS offset_ex) PARclose
+   | (INSTRUCTIONarithmetic | INSTRUCTIONarithmetic16) (REG8a COMMA)? PARopen (REG16hl | register16_ex operator_offset offset_ex) PARclose
    ;
 
 
 instruction_incdec8
    : INSTRUCTIONincdec (registers8 | REG8x | REG8y)
-   | INSTRUCTIONincdec PARopen (REG16hl | register16_ex PLUS offset_ex) PARclose
+   | INSTRUCTIONincdec PARopen (REG16hl | register16_ex operator_offset offset_ex) PARclose
    ;
 
 
@@ -405,8 +405,8 @@ instruction_incdec16
 
 instruction_rotate
    : INSTRUCTIONrotate registers8
-   | INSTRUCTIONrotate PARopen (REG16hl | register16_ex PLUS offset_ex) PARclose
-   | INSTRUCTIONrotate PARopen register16_ex PLUS offset_ex PARclose COMMA registers8
+   | INSTRUCTIONrotate PARopen (REG16hl | register16_ex operator_offset offset_ex) PARclose
+   | INSTRUCTIONrotate PARopen register16_ex operator_offset offset_ex PARclose COMMA registers8
    ;
 
 
@@ -417,8 +417,8 @@ instruction_rotatedec
 
 instruction_bit
    : INSTRUCTIONbit bitindex COMMA registers8
-   | INSTRUCTIONbit bitindex COMMA PARopen (REG16hl | register16_ex PLUS offset_ex) PARclose
-   | INSTRUCTIONbit bitindex COMMA PARopen register16_ex PLUS offset_ex PARclose COMMA registers8
+   | INSTRUCTIONbit bitindex COMMA PARopen (REG16hl | register16_ex operator_offset offset_ex) PARclose
+   | INSTRUCTIONbit bitindex COMMA PARopen register16_ex operator_offset offset_ex PARclose COMMA registers8
    ;
 
 
@@ -829,6 +829,11 @@ operator_logic
    ;
 
 
+operator_offset
+   : PLUS | MINUS
+   ;
+
+
 PLUS
    : '+'
    ;
@@ -855,7 +860,7 @@ OPERATORlogic
 
 
 number
-   : (PLUS|MINUS)? (number_bin | number_oct | number_dec | number_hex)
+   : (PLUS|MINUS)? (number_bin | number_oct | number_dec | number_hex | number_char)
    ;
 
 
@@ -876,6 +881,11 @@ number_dec
 
 number_hex
    : NUMBERhex | INSTRUCTIONrstvectorhex
+   ;
+
+
+number_char
+   : CHARACTER
    ;
 
 

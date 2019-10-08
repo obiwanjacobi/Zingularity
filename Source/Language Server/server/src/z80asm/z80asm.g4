@@ -117,7 +117,7 @@ asm
 
 
 line
-   : directive comment? | comment | label comment? | label? instruction comment? | blockcomment
+   : label? directive comment? | comment | label comment? | label? instruction comment? | blockcomment
    ;
 
 
@@ -175,7 +175,7 @@ directive_symbollist
 
 
 directive_assign
-   : DIRECTIVEassign symbol '=' expression
+   : DIRECTIVEassign symbol EQUALS expression
    ;
 
 
@@ -439,7 +439,7 @@ bitindex
 
 
 instruction_jump
-   : INSTRUCTIONjump (REG16hl | register16_ex | expression16)
+   : INSTRUCTIONjump ((REG16hl | register16_ex) | (PARopen (REG16hl | register16_ex) PARclose) | expression16)
    | INSTRUCTIONjump instruction_conditionFlagsAll COMMA expression16
    | INSTRUCTIONjumprel (instruction_conditionFlags COMMA)? offset_rel
    | INSTRUCTIONjumprelnz offset_rel
@@ -826,7 +826,7 @@ operator
 
 
 operator_num
-   : OPERATORnum | MINUS | PLUS
+   : MINUS | PLUS | EQUALS | MUL | DIV | MOD | POWER
    ;
 
 
@@ -845,19 +845,13 @@ operator_offset
    ;
 
 
-PLUS
-   : '+'
-   ;
-
-
-MINUS
-   : '-'
-   ;
-
-
-OPERATORnum
-    : MINUS | PLUS | '*' | '/' | '%' | '**'
-    ;
+EQUALS: '=';
+PLUS: '+';
+MINUS: '-';
+MUL: '*';
+DIV: '/';
+MOD: '%';
+POWER: '**';
 
 
 OPERATORbit
@@ -866,7 +860,7 @@ OPERATORbit
 
 
 OPERATORlogic
-    : '&&' | '||' | '!' | '=' | '!=' | '<>' | '>' | '<' | '<=' | '>='
+    : '&&' | '||' | '!' | EQUALS | '!=' | '<>' | '>' | '<' | '<=' | '>='
     ;
 
 
@@ -921,22 +915,22 @@ INSTRUCTIONrstvector
 
 
 NUMBERbin
-   : DIGIT2 + 'b' | '@' DIGIT2 +
+   : (DIGIT2+ 'b') | ('@' DIGIT2+)
    ;
 
 
 NUMBERoct
-   : DIGIT8 + ('o' | 'q')
+   : DIGIT8+ ('o' | 'q')
    ;
 
 
 NUMBERdec
-   : DIGIT10 + 'd'?
+   : DIGIT10+ 'd'?
    ;
 
 
 NUMBERhex
-   : DIGIT16 + H | '$' DIGIT16 +
+   : (DIGIT16+ H) | ('$' DIGIT16+) | ('0x' DIGIT16+)
    ;
 
 

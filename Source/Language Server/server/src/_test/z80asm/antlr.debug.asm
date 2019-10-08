@@ -1,4 +1,2 @@
-IF (CLIB_OPT_PRINTF = 0)
-
-IF (CLIB_OPT_PRINTF = 0) && ((CLIB_OPT_PRINTF_2 = 0) || __SCCZ80)
-
+jp (hl)
+jp HL

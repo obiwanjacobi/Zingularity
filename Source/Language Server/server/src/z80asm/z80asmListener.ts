@@ -8,6 +8,8 @@ import { AsmContext } from "./z80asmParser";
 import { LineContext } from "./z80asmParser";
 import { DirectiveContext } from "./z80asmParser";
 import { Directive_voidContext } from "./z80asmParser";
+import { Directive_fileContext } from "./z80asmParser";
+import { FilenameContext } from "./z80asmParser";
 import { Directive_param16Context } from "./z80asmParser";
 import { Directive_param32Context } from "./z80asmParser";
 import { Directive_symbolContext } from "./z80asmParser";
@@ -71,11 +73,13 @@ import { OperatorContext } from "./z80asmParser";
 import { Operator_numContext } from "./z80asmParser";
 import { Operator_bitContext } from "./z80asmParser";
 import { Operator_logicContext } from "./z80asmParser";
+import { Operator_offsetContext } from "./z80asmParser";
 import { NumberContext } from "./z80asmParser";
 import { Number_binContext } from "./z80asmParser";
 import { Number_octContext } from "./z80asmParser";
 import { Number_decContext } from "./z80asmParser";
 import { Number_hexContext } from "./z80asmParser";
+import { Number_charContext } from "./z80asmParser";
 
 
 /**
@@ -137,6 +141,28 @@ export interface z80asmListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	exitDirective_void?: (ctx: Directive_voidContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.directive_file`.
+	 * @param ctx the parse tree
+	 */
+	enterDirective_file?: (ctx: Directive_fileContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.directive_file`.
+	 * @param ctx the parse tree
+	 */
+	exitDirective_file?: (ctx: Directive_fileContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.filename`.
+	 * @param ctx the parse tree
+	 */
+	enterFilename?: (ctx: FilenameContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.filename`.
+	 * @param ctx the parse tree
+	 */
+	exitFilename?: (ctx: FilenameContext) => void;
 
 	/**
 	 * Enter a parse tree produced by `z80asmParser.directive_param16`.
@@ -832,6 +858,17 @@ export interface z80asmListener extends ParseTreeListener {
 	exitOperator_logic?: (ctx: Operator_logicContext) => void;
 
 	/**
+	 * Enter a parse tree produced by `z80asmParser.operator_offset`.
+	 * @param ctx the parse tree
+	 */
+	enterOperator_offset?: (ctx: Operator_offsetContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.operator_offset`.
+	 * @param ctx the parse tree
+	 */
+	exitOperator_offset?: (ctx: Operator_offsetContext) => void;
+
+	/**
 	 * Enter a parse tree produced by `z80asmParser.number`.
 	 * @param ctx the parse tree
 	 */
@@ -885,5 +922,16 @@ export interface z80asmListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	exitNumber_hex?: (ctx: Number_hexContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.number_char`.
+	 * @param ctx the parse tree
+	 */
+	enterNumber_char?: (ctx: Number_charContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.number_char`.
+	 * @param ctx the parse tree
+	 */
+	exitNumber_char?: (ctx: Number_charContext) => void;
 }
 

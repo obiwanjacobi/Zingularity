@@ -123,6 +123,7 @@ line
 
 directive
    : directive_void 
+   | directive_file
    | directive_param16
    | directive_param32
    | directive_block 
@@ -140,6 +141,16 @@ directive
 
 directive_void
    :  DIRECTIVEvoid
+   ;
+
+
+directive_file
+   : DIRECTIVEfile filename
+   ;
+
+
+filename
+   : STRING
    ;
 
 
@@ -855,7 +866,7 @@ OPERATORbit
 
 
 OPERATORlogic
-    : '&&' | '||' | '!' | '=' | '<>' | '>' | '<' | '<=' | '>='
+    : '&&' | '||' | '!' | '=' | '!=' | '<>' | '>' | '<' | '<=' | '>='
     ;
 
 

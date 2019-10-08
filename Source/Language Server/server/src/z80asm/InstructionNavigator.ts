@@ -1,8 +1,6 @@
 import instructionMap from "./InstructionMap.json";
-import { Instruction, AsmError, Numeric, InstructionMeta } from "./CodeModel";
+import { Numeric, InstructionMeta } from "./CodeModel";
 import { splitInstruction } from "./InstructionSplitter";
-import { parseNumeric, NumericProfile } from "./obsolete/NumericParser";
-import { create } from "domain";
 
 const byteLiteralKeys = ["d", "e", "n", "nn"];
 const byteReplaceKeys = ["d", "e", "n", "n-lo", "n-hi"];

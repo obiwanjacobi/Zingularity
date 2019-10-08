@@ -118,83 +118,88 @@ export class z80asmParser extends Parser {
 	public static readonly RULE_line = 2;
 	public static readonly RULE_directive = 3;
 	public static readonly RULE_directive_void = 4;
-	public static readonly RULE_directive_param16 = 5;
-	public static readonly RULE_directive_param32 = 6;
-	public static readonly RULE_directive_symbol = 7;
-	public static readonly RULE_directive_symbollist = 8;
-	public static readonly RULE_directive_assign = 9;
-	public static readonly RULE_directive_block = 10;
-	public static readonly RULE_directive_defs = 11;
-	public static readonly RULE_directive_defm = 12;
-	public static readonly RULE_defmparam = 13;
-	public static readonly RULE_directive_if = 14;
-	public static readonly RULE_directive_ifdef = 15;
-	public static readonly RULE_directive_ifblock = 16;
-	public static readonly RULE_directive_elseblock = 17;
-	public static readonly RULE_directive_endif = 18;
-	public static readonly RULE_directive_phase = 19;
-	public static readonly RULE_instruction = 20;
-	public static readonly RULE_instruction_void = 21;
-	public static readonly RULE_instruction_ld8 = 22;
-	public static readonly RULE_instruction_ld16 = 23;
-	public static readonly RULE_instruction_stack = 24;
-	public static readonly RULE_instruction_exchange = 25;
-	public static readonly RULE_instruction_arithmetic8 = 26;
-	public static readonly RULE_instruction_incdec8 = 27;
-	public static readonly RULE_instruction_cpl = 28;
-	public static readonly RULE_instruction_arithemic16 = 29;
-	public static readonly RULE_instruction_incdec16 = 30;
-	public static readonly RULE_instruction_rotate = 31;
-	public static readonly RULE_instruction_rotatedec = 32;
-	public static readonly RULE_instruction_bit = 33;
-	public static readonly RULE_bitindex = 34;
-	public static readonly RULE_instruction_jump = 35;
-	public static readonly RULE_instruction_call = 36;
-	public static readonly RULE_instruction_conditionFlagsAll = 37;
-	public static readonly RULE_instruction_conditionFlags = 38;
-	public static readonly RULE_instruction_rst = 39;
-	public static readonly RULE_instruction_im = 40;
-	public static readonly RULE_instruction_io = 41;
-	public static readonly RULE_offset_ex = 42;
-	public static readonly RULE_offset_rel = 43;
-	public static readonly RULE_registers = 44;
-	public static readonly RULE_registers8 = 45;
-	public static readonly RULE_registers8x = 46;
-	public static readonly RULE_registers8y = 47;
-	public static readonly RULE_register16_grpaf = 48;
-	public static readonly RULE_register16_grpsp = 49;
-	public static readonly RULE_register16_grpsphl = 50;
-	public static readonly RULE_register16_grpspix = 51;
-	public static readonly RULE_register16_grpspiy = 52;
-	public static readonly RULE_register16_ex = 53;
-	public static readonly RULE_label = 54;
-	public static readonly RULE_symbol = 55;
-	public static readonly RULE_blockcomment = 56;
-	public static readonly RULE_comment = 57;
-	public static readonly RULE_string = 58;
-	public static readonly RULE_character = 59;
-	public static readonly RULE_expression8 = 60;
-	public static readonly RULE_expression16 = 61;
-	public static readonly RULE_expression32 = 62;
-	public static readonly RULE_expression = 63;
-	public static readonly RULE_operator = 64;
-	public static readonly RULE_operator_num = 65;
-	public static readonly RULE_operator_bit = 66;
-	public static readonly RULE_operator_logic = 67;
-	public static readonly RULE_number = 68;
-	public static readonly RULE_number_bin = 69;
-	public static readonly RULE_number_oct = 70;
-	public static readonly RULE_number_dec = 71;
-	public static readonly RULE_number_hex = 72;
+	public static readonly RULE_directive_file = 5;
+	public static readonly RULE_filename = 6;
+	public static readonly RULE_directive_param16 = 7;
+	public static readonly RULE_directive_param32 = 8;
+	public static readonly RULE_directive_symbol = 9;
+	public static readonly RULE_directive_symbollist = 10;
+	public static readonly RULE_directive_assign = 11;
+	public static readonly RULE_directive_block = 12;
+	public static readonly RULE_directive_defs = 13;
+	public static readonly RULE_directive_defm = 14;
+	public static readonly RULE_defmparam = 15;
+	public static readonly RULE_directive_if = 16;
+	public static readonly RULE_directive_ifdef = 17;
+	public static readonly RULE_directive_ifblock = 18;
+	public static readonly RULE_directive_elseblock = 19;
+	public static readonly RULE_directive_endif = 20;
+	public static readonly RULE_directive_phase = 21;
+	public static readonly RULE_instruction = 22;
+	public static readonly RULE_instruction_void = 23;
+	public static readonly RULE_instruction_ld8 = 24;
+	public static readonly RULE_instruction_ld16 = 25;
+	public static readonly RULE_instruction_stack = 26;
+	public static readonly RULE_instruction_exchange = 27;
+	public static readonly RULE_instruction_arithmetic8 = 28;
+	public static readonly RULE_instruction_incdec8 = 29;
+	public static readonly RULE_instruction_cpl = 30;
+	public static readonly RULE_instruction_arithemic16 = 31;
+	public static readonly RULE_instruction_incdec16 = 32;
+	public static readonly RULE_instruction_rotate = 33;
+	public static readonly RULE_instruction_rotatedec = 34;
+	public static readonly RULE_instruction_bit = 35;
+	public static readonly RULE_bitindex = 36;
+	public static readonly RULE_instruction_jump = 37;
+	public static readonly RULE_instruction_call = 38;
+	public static readonly RULE_instruction_conditionFlagsAll = 39;
+	public static readonly RULE_instruction_conditionFlags = 40;
+	public static readonly RULE_instruction_rst = 41;
+	public static readonly RULE_instruction_im = 42;
+	public static readonly RULE_instruction_io = 43;
+	public static readonly RULE_offset_ex = 44;
+	public static readonly RULE_offset_rel = 45;
+	public static readonly RULE_registers = 46;
+	public static readonly RULE_registers8 = 47;
+	public static readonly RULE_registers8x = 48;
+	public static readonly RULE_registers8y = 49;
+	public static readonly RULE_register16_grpaf = 50;
+	public static readonly RULE_register16_grpsp = 51;
+	public static readonly RULE_register16_grpsphl = 52;
+	public static readonly RULE_register16_grpspix = 53;
+	public static readonly RULE_register16_grpspiy = 54;
+	public static readonly RULE_register16_ex = 55;
+	public static readonly RULE_label = 56;
+	public static readonly RULE_symbol = 57;
+	public static readonly RULE_blockcomment = 58;
+	public static readonly RULE_comment = 59;
+	public static readonly RULE_string = 60;
+	public static readonly RULE_character = 61;
+	public static readonly RULE_expression8 = 62;
+	public static readonly RULE_expression16 = 63;
+	public static readonly RULE_expression32 = 64;
+	public static readonly RULE_expression = 65;
+	public static readonly RULE_operator = 66;
+	public static readonly RULE_operator_num = 67;
+	public static readonly RULE_operator_bit = 68;
+	public static readonly RULE_operator_logic = 69;
+	public static readonly RULE_operator_offset = 70;
+	public static readonly RULE_number = 71;
+	public static readonly RULE_number_bin = 72;
+	public static readonly RULE_number_oct = 73;
+	public static readonly RULE_number_dec = 74;
+	public static readonly RULE_number_hex = 75;
+	public static readonly RULE_number_char = 76;
 	// tslint:disable:no-trailing-whitespace
 	public static readonly ruleNames: string[] = [
-		"file", "asm", "line", "directive", "directive_void", "directive_param16", 
-		"directive_param32", "directive_symbol", "directive_symbollist", "directive_assign", 
-		"directive_block", "directive_defs", "directive_defm", "defmparam", "directive_if", 
-		"directive_ifdef", "directive_ifblock", "directive_elseblock", "directive_endif", 
-		"directive_phase", "instruction", "instruction_void", "instruction_ld8", 
-		"instruction_ld16", "instruction_stack", "instruction_exchange", "instruction_arithmetic8", 
-		"instruction_incdec8", "instruction_cpl", "instruction_arithemic16", "instruction_incdec16", 
+		"file", "asm", "line", "directive", "directive_void", "directive_file", 
+		"filename", "directive_param16", "directive_param32", "directive_symbol", 
+		"directive_symbollist", "directive_assign", "directive_block", "directive_defs", 
+		"directive_defm", "defmparam", "directive_if", "directive_ifdef", "directive_ifblock", 
+		"directive_elseblock", "directive_endif", "directive_phase", "instruction", 
+		"instruction_void", "instruction_ld8", "instruction_ld16", "instruction_stack", 
+		"instruction_exchange", "instruction_arithmetic8", "instruction_incdec8", 
+		"instruction_cpl", "instruction_arithemic16", "instruction_incdec16", 
 		"instruction_rotate", "instruction_rotatedec", "instruction_bit", "bitindex", 
 		"instruction_jump", "instruction_call", "instruction_conditionFlagsAll", 
 		"instruction_conditionFlags", "instruction_rst", "instruction_im", "instruction_io", 
@@ -203,7 +208,8 @@ export class z80asmParser extends Parser {
 		"register16_grpspiy", "register16_ex", "label", "symbol", "blockcomment", 
 		"comment", "string", "character", "expression8", "expression16", "expression32", 
 		"expression", "operator", "operator_num", "operator_bit", "operator_logic", 
-		"number", "number_bin", "number_oct", "number_dec", "number_hex",
+		"operator_offset", "number", "number_bin", "number_oct", "number_dec", 
+		"number_hex", "number_char",
 	];
 
 	private static readonly _LITERAL_NAMES: Array<string | undefined> = [
@@ -270,17 +276,17 @@ export class z80asmParser extends Parser {
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 147;
+			this.state = 155;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if ((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << z80asmParser.T__2) | (1 << z80asmParser.DIRECTIVEvoid) | (1 << z80asmParser.DIRECTIVEparam16) | (1 << z80asmParser.DIRECTIVEparam32) | (1 << z80asmParser.DIRECTIVEsymbol) | (1 << z80asmParser.DIRECTIVEsymbollist) | (1 << z80asmParser.DIRECTIVEassign) | (1 << z80asmParser.DIRECTIVEdefs) | (1 << z80asmParser.DIRECTIVEdefm) | (1 << z80asmParser.DIRECTIVEblock) | (1 << z80asmParser.DIRECTIVEif) | (1 << z80asmParser.DIRECTIVEifdef) | (1 << z80asmParser.DIRECTIVEelse) | (1 << z80asmParser.DIRECTIVEendif) | (1 << z80asmParser.INSTRUCTIONvoid) | (1 << z80asmParser.INSTRUCTIONld) | (1 << z80asmParser.INSTRUCTIONstack) | (1 << z80asmParser.INSTRUCTIONexchange) | (1 << z80asmParser.INSTRUCTIONexxchange) | (1 << z80asmParser.INSTRUCTIONarithmetic16) | (1 << z80asmParser.INSTRUCTIONarithmetic) | (1 << z80asmParser.INSTRUCTIONincdec) | (1 << z80asmParser.INSTRUCTIONcpl) | (1 << z80asmParser.INSTRUCTIONrotate))) !== 0) || ((((_la - 32)) & ~0x1F) === 0 && ((1 << (_la - 32)) & ((1 << (z80asmParser.INSTRUCTIONrotatedec - 32)) | (1 << (z80asmParser.INSTRUCTIONbit - 32)) | (1 << (z80asmParser.INSTRUCTIONjump - 32)) | (1 << (z80asmParser.INSTRUCTIONjumprel - 32)) | (1 << (z80asmParser.INSTRUCTIONjumprelnz - 32)) | (1 << (z80asmParser.INSTRUCTIONcall - 32)) | (1 << (z80asmParser.INSTRUCTIONret - 32)) | (1 << (z80asmParser.INSTRUCTIONrst - 32)) | (1 << (z80asmParser.INSTRUCTIONim - 32)) | (1 << (z80asmParser.INSTRUCTIONin - 32)) | (1 << (z80asmParser.INSTRUCTIONout - 32)) | (1 << (z80asmParser.SYMBOL - 32)) | (1 << (z80asmParser.BLOCKCOMMENTtext - 32)))) !== 0) || _la === z80asmParser.COMMENT || _la === z80asmParser.EOL) {
+			if ((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << z80asmParser.T__2) | (1 << z80asmParser.DIRECTIVEvoid) | (1 << z80asmParser.DIRECTIVEparam16) | (1 << z80asmParser.DIRECTIVEparam32) | (1 << z80asmParser.DIRECTIVEsymbol) | (1 << z80asmParser.DIRECTIVEsymbollist) | (1 << z80asmParser.DIRECTIVEassign) | (1 << z80asmParser.DIRECTIVEdefs) | (1 << z80asmParser.DIRECTIVEdefm) | (1 << z80asmParser.DIRECTIVEblock) | (1 << z80asmParser.DIRECTIVEfile) | (1 << z80asmParser.DIRECTIVEif) | (1 << z80asmParser.DIRECTIVEifdef) | (1 << z80asmParser.DIRECTIVEelse) | (1 << z80asmParser.DIRECTIVEendif) | (1 << z80asmParser.INSTRUCTIONvoid) | (1 << z80asmParser.INSTRUCTIONld) | (1 << z80asmParser.INSTRUCTIONstack) | (1 << z80asmParser.INSTRUCTIONexchange) | (1 << z80asmParser.INSTRUCTIONexxchange) | (1 << z80asmParser.INSTRUCTIONarithmetic16) | (1 << z80asmParser.INSTRUCTIONarithmetic) | (1 << z80asmParser.INSTRUCTIONincdec) | (1 << z80asmParser.INSTRUCTIONcpl) | (1 << z80asmParser.INSTRUCTIONrotate))) !== 0) || ((((_la - 32)) & ~0x1F) === 0 && ((1 << (_la - 32)) & ((1 << (z80asmParser.INSTRUCTIONrotatedec - 32)) | (1 << (z80asmParser.INSTRUCTIONbit - 32)) | (1 << (z80asmParser.INSTRUCTIONjump - 32)) | (1 << (z80asmParser.INSTRUCTIONjumprel - 32)) | (1 << (z80asmParser.INSTRUCTIONjumprelnz - 32)) | (1 << (z80asmParser.INSTRUCTIONcall - 32)) | (1 << (z80asmParser.INSTRUCTIONret - 32)) | (1 << (z80asmParser.INSTRUCTIONrst - 32)) | (1 << (z80asmParser.INSTRUCTIONim - 32)) | (1 << (z80asmParser.INSTRUCTIONin - 32)) | (1 << (z80asmParser.INSTRUCTIONout - 32)) | (1 << (z80asmParser.SYMBOL - 32)) | (1 << (z80asmParser.BLOCKCOMMENTtext - 32)))) !== 0) || _la === z80asmParser.COMMENT || _la === z80asmParser.EOL) {
 				{
-				this.state = 146;
+				this.state = 154;
 				this.asm();
 				}
 			}
 
-			this.state = 149;
+			this.state = 157;
 			this.match(z80asmParser.EOF);
 			}
 		}
@@ -306,30 +312,30 @@ export class z80asmParser extends Parser {
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 155;
+			this.state = 163;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
 			do {
 				{
 				{
-				this.state = 152;
+				this.state = 160;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (((((_la - 3)) & ~0x1F) === 0 && ((1 << (_la - 3)) & ((1 << (z80asmParser.T__2 - 3)) | (1 << (z80asmParser.DIRECTIVEvoid - 3)) | (1 << (z80asmParser.DIRECTIVEparam16 - 3)) | (1 << (z80asmParser.DIRECTIVEparam32 - 3)) | (1 << (z80asmParser.DIRECTIVEsymbol - 3)) | (1 << (z80asmParser.DIRECTIVEsymbollist - 3)) | (1 << (z80asmParser.DIRECTIVEassign - 3)) | (1 << (z80asmParser.DIRECTIVEdefs - 3)) | (1 << (z80asmParser.DIRECTIVEdefm - 3)) | (1 << (z80asmParser.DIRECTIVEblock - 3)) | (1 << (z80asmParser.DIRECTIVEif - 3)) | (1 << (z80asmParser.DIRECTIVEifdef - 3)) | (1 << (z80asmParser.DIRECTIVEelse - 3)) | (1 << (z80asmParser.DIRECTIVEendif - 3)) | (1 << (z80asmParser.INSTRUCTIONvoid - 3)) | (1 << (z80asmParser.INSTRUCTIONld - 3)) | (1 << (z80asmParser.INSTRUCTIONstack - 3)) | (1 << (z80asmParser.INSTRUCTIONexchange - 3)) | (1 << (z80asmParser.INSTRUCTIONexxchange - 3)) | (1 << (z80asmParser.INSTRUCTIONarithmetic16 - 3)) | (1 << (z80asmParser.INSTRUCTIONarithmetic - 3)) | (1 << (z80asmParser.INSTRUCTIONincdec - 3)) | (1 << (z80asmParser.INSTRUCTIONcpl - 3)) | (1 << (z80asmParser.INSTRUCTIONrotate - 3)) | (1 << (z80asmParser.INSTRUCTIONrotatedec - 3)) | (1 << (z80asmParser.INSTRUCTIONbit - 3)) | (1 << (z80asmParser.INSTRUCTIONjump - 3)))) !== 0) || ((((_la - 35)) & ~0x1F) === 0 && ((1 << (_la - 35)) & ((1 << (z80asmParser.INSTRUCTIONjumprel - 35)) | (1 << (z80asmParser.INSTRUCTIONjumprelnz - 35)) | (1 << (z80asmParser.INSTRUCTIONcall - 35)) | (1 << (z80asmParser.INSTRUCTIONret - 35)) | (1 << (z80asmParser.INSTRUCTIONrst - 35)) | (1 << (z80asmParser.INSTRUCTIONim - 35)) | (1 << (z80asmParser.INSTRUCTIONin - 35)) | (1 << (z80asmParser.INSTRUCTIONout - 35)) | (1 << (z80asmParser.SYMBOL - 35)) | (1 << (z80asmParser.BLOCKCOMMENTtext - 35)) | (1 << (z80asmParser.COMMENT - 35)))) !== 0)) {
+				if (((((_la - 3)) & ~0x1F) === 0 && ((1 << (_la - 3)) & ((1 << (z80asmParser.T__2 - 3)) | (1 << (z80asmParser.DIRECTIVEvoid - 3)) | (1 << (z80asmParser.DIRECTIVEparam16 - 3)) | (1 << (z80asmParser.DIRECTIVEparam32 - 3)) | (1 << (z80asmParser.DIRECTIVEsymbol - 3)) | (1 << (z80asmParser.DIRECTIVEsymbollist - 3)) | (1 << (z80asmParser.DIRECTIVEassign - 3)) | (1 << (z80asmParser.DIRECTIVEdefs - 3)) | (1 << (z80asmParser.DIRECTIVEdefm - 3)) | (1 << (z80asmParser.DIRECTIVEblock - 3)) | (1 << (z80asmParser.DIRECTIVEfile - 3)) | (1 << (z80asmParser.DIRECTIVEif - 3)) | (1 << (z80asmParser.DIRECTIVEifdef - 3)) | (1 << (z80asmParser.DIRECTIVEelse - 3)) | (1 << (z80asmParser.DIRECTIVEendif - 3)) | (1 << (z80asmParser.INSTRUCTIONvoid - 3)) | (1 << (z80asmParser.INSTRUCTIONld - 3)) | (1 << (z80asmParser.INSTRUCTIONstack - 3)) | (1 << (z80asmParser.INSTRUCTIONexchange - 3)) | (1 << (z80asmParser.INSTRUCTIONexxchange - 3)) | (1 << (z80asmParser.INSTRUCTIONarithmetic16 - 3)) | (1 << (z80asmParser.INSTRUCTIONarithmetic - 3)) | (1 << (z80asmParser.INSTRUCTIONincdec - 3)) | (1 << (z80asmParser.INSTRUCTIONcpl - 3)) | (1 << (z80asmParser.INSTRUCTIONrotate - 3)) | (1 << (z80asmParser.INSTRUCTIONrotatedec - 3)) | (1 << (z80asmParser.INSTRUCTIONbit - 3)) | (1 << (z80asmParser.INSTRUCTIONjump - 3)))) !== 0) || ((((_la - 35)) & ~0x1F) === 0 && ((1 << (_la - 35)) & ((1 << (z80asmParser.INSTRUCTIONjumprel - 35)) | (1 << (z80asmParser.INSTRUCTIONjumprelnz - 35)) | (1 << (z80asmParser.INSTRUCTIONcall - 35)) | (1 << (z80asmParser.INSTRUCTIONret - 35)) | (1 << (z80asmParser.INSTRUCTIONrst - 35)) | (1 << (z80asmParser.INSTRUCTIONim - 35)) | (1 << (z80asmParser.INSTRUCTIONin - 35)) | (1 << (z80asmParser.INSTRUCTIONout - 35)) | (1 << (z80asmParser.SYMBOL - 35)) | (1 << (z80asmParser.BLOCKCOMMENTtext - 35)) | (1 << (z80asmParser.COMMENT - 35)))) !== 0)) {
 					{
-					this.state = 151;
+					this.state = 159;
 					this.line();
 					}
 				}
 
-				this.state = 154;
+				this.state = 162;
 				this.match(z80asmParser.EOL);
 				}
 				}
-				this.state = 157;
+				this.state = 165;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-			} while ((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << z80asmParser.T__2) | (1 << z80asmParser.DIRECTIVEvoid) | (1 << z80asmParser.DIRECTIVEparam16) | (1 << z80asmParser.DIRECTIVEparam32) | (1 << z80asmParser.DIRECTIVEsymbol) | (1 << z80asmParser.DIRECTIVEsymbollist) | (1 << z80asmParser.DIRECTIVEassign) | (1 << z80asmParser.DIRECTIVEdefs) | (1 << z80asmParser.DIRECTIVEdefm) | (1 << z80asmParser.DIRECTIVEblock) | (1 << z80asmParser.DIRECTIVEif) | (1 << z80asmParser.DIRECTIVEifdef) | (1 << z80asmParser.DIRECTIVEelse) | (1 << z80asmParser.DIRECTIVEendif) | (1 << z80asmParser.INSTRUCTIONvoid) | (1 << z80asmParser.INSTRUCTIONld) | (1 << z80asmParser.INSTRUCTIONstack) | (1 << z80asmParser.INSTRUCTIONexchange) | (1 << z80asmParser.INSTRUCTIONexxchange) | (1 << z80asmParser.INSTRUCTIONarithmetic16) | (1 << z80asmParser.INSTRUCTIONarithmetic) | (1 << z80asmParser.INSTRUCTIONincdec) | (1 << z80asmParser.INSTRUCTIONcpl) | (1 << z80asmParser.INSTRUCTIONrotate))) !== 0) || ((((_la - 32)) & ~0x1F) === 0 && ((1 << (_la - 32)) & ((1 << (z80asmParser.INSTRUCTIONrotatedec - 32)) | (1 << (z80asmParser.INSTRUCTIONbit - 32)) | (1 << (z80asmParser.INSTRUCTIONjump - 32)) | (1 << (z80asmParser.INSTRUCTIONjumprel - 32)) | (1 << (z80asmParser.INSTRUCTIONjumprelnz - 32)) | (1 << (z80asmParser.INSTRUCTIONcall - 32)) | (1 << (z80asmParser.INSTRUCTIONret - 32)) | (1 << (z80asmParser.INSTRUCTIONrst - 32)) | (1 << (z80asmParser.INSTRUCTIONim - 32)) | (1 << (z80asmParser.INSTRUCTIONin - 32)) | (1 << (z80asmParser.INSTRUCTIONout - 32)) | (1 << (z80asmParser.SYMBOL - 32)) | (1 << (z80asmParser.BLOCKCOMMENTtext - 32)))) !== 0) || _la === z80asmParser.COMMENT || _la === z80asmParser.EOL);
+			} while ((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << z80asmParser.T__2) | (1 << z80asmParser.DIRECTIVEvoid) | (1 << z80asmParser.DIRECTIVEparam16) | (1 << z80asmParser.DIRECTIVEparam32) | (1 << z80asmParser.DIRECTIVEsymbol) | (1 << z80asmParser.DIRECTIVEsymbollist) | (1 << z80asmParser.DIRECTIVEassign) | (1 << z80asmParser.DIRECTIVEdefs) | (1 << z80asmParser.DIRECTIVEdefm) | (1 << z80asmParser.DIRECTIVEblock) | (1 << z80asmParser.DIRECTIVEfile) | (1 << z80asmParser.DIRECTIVEif) | (1 << z80asmParser.DIRECTIVEifdef) | (1 << z80asmParser.DIRECTIVEelse) | (1 << z80asmParser.DIRECTIVEendif) | (1 << z80asmParser.INSTRUCTIONvoid) | (1 << z80asmParser.INSTRUCTIONld) | (1 << z80asmParser.INSTRUCTIONstack) | (1 << z80asmParser.INSTRUCTIONexchange) | (1 << z80asmParser.INSTRUCTIONexxchange) | (1 << z80asmParser.INSTRUCTIONarithmetic16) | (1 << z80asmParser.INSTRUCTIONarithmetic) | (1 << z80asmParser.INSTRUCTIONincdec) | (1 << z80asmParser.INSTRUCTIONcpl) | (1 << z80asmParser.INSTRUCTIONrotate))) !== 0) || ((((_la - 32)) & ~0x1F) === 0 && ((1 << (_la - 32)) & ((1 << (z80asmParser.INSTRUCTIONrotatedec - 32)) | (1 << (z80asmParser.INSTRUCTIONbit - 32)) | (1 << (z80asmParser.INSTRUCTIONjump - 32)) | (1 << (z80asmParser.INSTRUCTIONjumprel - 32)) | (1 << (z80asmParser.INSTRUCTIONjumprelnz - 32)) | (1 << (z80asmParser.INSTRUCTIONcall - 32)) | (1 << (z80asmParser.INSTRUCTIONret - 32)) | (1 << (z80asmParser.INSTRUCTIONrst - 32)) | (1 << (z80asmParser.INSTRUCTIONim - 32)) | (1 << (z80asmParser.INSTRUCTIONin - 32)) | (1 << (z80asmParser.INSTRUCTIONout - 32)) | (1 << (z80asmParser.SYMBOL - 32)) | (1 << (z80asmParser.BLOCKCOMMENTtext - 32)))) !== 0) || _la === z80asmParser.COMMENT || _la === z80asmParser.EOL);
 			}
 		}
 		catch (re) {
@@ -352,20 +358,20 @@ export class z80asmParser extends Parser {
 		this.enterRule(_localctx, 4, z80asmParser.RULE_line);
 		let _la: number;
 		try {
-			this.state = 176;
+			this.state = 184;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 7, this._ctx) ) {
 			case 1:
 				this.enterOuterAlt(_localctx, 1);
 				{
-				this.state = 159;
+				this.state = 167;
 				this.directive();
-				this.state = 161;
+				this.state = 169;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
 				if (_la === z80asmParser.COMMENT) {
 					{
-					this.state = 160;
+					this.state = 168;
 					this.comment();
 					}
 				}
@@ -376,7 +382,7 @@ export class z80asmParser extends Parser {
 			case 2:
 				this.enterOuterAlt(_localctx, 2);
 				{
-				this.state = 163;
+				this.state = 171;
 				this.comment();
 				}
 				break;
@@ -384,14 +390,14 @@ export class z80asmParser extends Parser {
 			case 3:
 				this.enterOuterAlt(_localctx, 3);
 				{
-				this.state = 164;
+				this.state = 172;
 				this.label();
-				this.state = 166;
+				this.state = 174;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
 				if (_la === z80asmParser.COMMENT) {
 					{
-					this.state = 165;
+					this.state = 173;
 					this.comment();
 					}
 				}
@@ -402,24 +408,24 @@ export class z80asmParser extends Parser {
 			case 4:
 				this.enterOuterAlt(_localctx, 4);
 				{
-				this.state = 169;
+				this.state = 177;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
 				if (_la === z80asmParser.T__2 || _la === z80asmParser.SYMBOL) {
 					{
-					this.state = 168;
+					this.state = 176;
 					this.label();
 					}
 				}
 
-				this.state = 171;
+				this.state = 179;
 				this.instruction();
-				this.state = 173;
+				this.state = 181;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
 				if (_la === z80asmParser.COMMENT) {
 					{
-					this.state = 172;
+					this.state = 180;
 					this.comment();
 					}
 				}
@@ -430,7 +436,7 @@ export class z80asmParser extends Parser {
 			case 5:
 				this.enterOuterAlt(_localctx, 5);
 				{
-				this.state = 175;
+				this.state = 183;
 				this.blockcomment();
 				}
 				break;
@@ -455,97 +461,104 @@ export class z80asmParser extends Parser {
 		let _localctx: DirectiveContext = new DirectiveContext(this._ctx, this.state);
 		this.enterRule(_localctx, 6, z80asmParser.RULE_directive);
 		try {
-			this.state = 191;
+			this.state = 200;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
 			case z80asmParser.DIRECTIVEvoid:
 				this.enterOuterAlt(_localctx, 1);
 				{
-				this.state = 178;
+				this.state = 186;
 				this.directive_void();
 				}
 				break;
-			case z80asmParser.DIRECTIVEparam16:
+			case z80asmParser.DIRECTIVEfile:
 				this.enterOuterAlt(_localctx, 2);
 				{
-				this.state = 179;
+				this.state = 187;
+				this.directive_file();
+				}
+				break;
+			case z80asmParser.DIRECTIVEparam16:
+				this.enterOuterAlt(_localctx, 3);
+				{
+				this.state = 188;
 				this.directive_param16();
 				}
 				break;
 			case z80asmParser.DIRECTIVEparam32:
-				this.enterOuterAlt(_localctx, 3);
+				this.enterOuterAlt(_localctx, 4);
 				{
-				this.state = 180;
+				this.state = 189;
 				this.directive_param32();
 				}
 				break;
 			case z80asmParser.DIRECTIVEblock:
-				this.enterOuterAlt(_localctx, 4);
+				this.enterOuterAlt(_localctx, 5);
 				{
-				this.state = 181;
+				this.state = 190;
 				this.directive_block();
 				}
 				break;
 			case z80asmParser.DIRECTIVEsymbol:
-				this.enterOuterAlt(_localctx, 5);
+				this.enterOuterAlt(_localctx, 6);
 				{
-				this.state = 182;
+				this.state = 191;
 				this.directive_symbol();
 				}
 				break;
 			case z80asmParser.DIRECTIVEsymbollist:
-				this.enterOuterAlt(_localctx, 6);
+				this.enterOuterAlt(_localctx, 7);
 				{
-				this.state = 183;
+				this.state = 192;
 				this.directive_symbollist();
 				}
 				break;
 			case z80asmParser.DIRECTIVEassign:
-				this.enterOuterAlt(_localctx, 7);
+				this.enterOuterAlt(_localctx, 8);
 				{
-				this.state = 184;
+				this.state = 193;
 				this.directive_assign();
 				}
 				break;
 			case z80asmParser.DIRECTIVEdefs:
-				this.enterOuterAlt(_localctx, 8);
+				this.enterOuterAlt(_localctx, 9);
 				{
-				this.state = 185;
+				this.state = 194;
 				this.directive_defs();
 				}
 				break;
 			case z80asmParser.DIRECTIVEdefm:
-				this.enterOuterAlt(_localctx, 9);
+				this.enterOuterAlt(_localctx, 10);
 				{
-				this.state = 186;
+				this.state = 195;
 				this.directive_defm();
 				}
 				break;
 			case z80asmParser.DIRECTIVEif:
-				this.enterOuterAlt(_localctx, 10);
+				this.enterOuterAlt(_localctx, 11);
 				{
-				this.state = 187;
+				this.state = 196;
 				this.directive_if();
 				}
 				break;
 			case z80asmParser.DIRECTIVEifdef:
-				this.enterOuterAlt(_localctx, 11);
+				this.enterOuterAlt(_localctx, 12);
 				{
-				this.state = 188;
+				this.state = 197;
 				this.directive_ifdef();
 				}
 				break;
 			case z80asmParser.DIRECTIVEelse:
-				this.enterOuterAlt(_localctx, 12);
+				this.enterOuterAlt(_localctx, 13);
 				{
-				this.state = 189;
+				this.state = 198;
 				this.directive_elseblock();
 				}
 				break;
 			case z80asmParser.DIRECTIVEendif:
-				this.enterOuterAlt(_localctx, 13);
+				this.enterOuterAlt(_localctx, 14);
 				{
-				this.state = 190;
+				this.state = 199;
 				this.directive_endif();
 				}
 				break;
@@ -574,8 +587,60 @@ export class z80asmParser extends Parser {
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 193;
+			this.state = 202;
 			this.match(z80asmParser.DIRECTIVEvoid);
+			}
+		}
+		catch (re) {
+			if (re instanceof RecognitionException) {
+				_localctx.exception = re;
+				this._errHandler.reportError(this, re);
+				this._errHandler.recover(this, re);
+			} else {
+				throw re;
+			}
+		}
+		finally {
+			this.exitRule();
+		}
+		return _localctx;
+	}
+	// @RuleVersion(0)
+	public directive_file(): Directive_fileContext {
+		let _localctx: Directive_fileContext = new Directive_fileContext(this._ctx, this.state);
+		this.enterRule(_localctx, 10, z80asmParser.RULE_directive_file);
+		try {
+			this.enterOuterAlt(_localctx, 1);
+			{
+			this.state = 204;
+			this.match(z80asmParser.DIRECTIVEfile);
+			this.state = 205;
+			this.filename();
+			}
+		}
+		catch (re) {
+			if (re instanceof RecognitionException) {
+				_localctx.exception = re;
+				this._errHandler.reportError(this, re);
+				this._errHandler.recover(this, re);
+			} else {
+				throw re;
+			}
+		}
+		finally {
+			this.exitRule();
+		}
+		return _localctx;
+	}
+	// @RuleVersion(0)
+	public filename(): FilenameContext {
+		let _localctx: FilenameContext = new FilenameContext(this._ctx, this.state);
+		this.enterRule(_localctx, 12, z80asmParser.RULE_filename);
+		try {
+			this.enterOuterAlt(_localctx, 1);
+			{
+			this.state = 207;
+			this.match(z80asmParser.STRING);
 			}
 		}
 		catch (re) {
@@ -595,13 +660,13 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public directive_param16(): Directive_param16Context {
 		let _localctx: Directive_param16Context = new Directive_param16Context(this._ctx, this.state);
-		this.enterRule(_localctx, 10, z80asmParser.RULE_directive_param16);
+		this.enterRule(_localctx, 14, z80asmParser.RULE_directive_param16);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 195;
+			this.state = 209;
 			this.match(z80asmParser.DIRECTIVEparam16);
-			this.state = 196;
+			this.state = 210;
 			this.expression16();
 			}
 		}
@@ -622,13 +687,13 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public directive_param32(): Directive_param32Context {
 		let _localctx: Directive_param32Context = new Directive_param32Context(this._ctx, this.state);
-		this.enterRule(_localctx, 12, z80asmParser.RULE_directive_param32);
+		this.enterRule(_localctx, 16, z80asmParser.RULE_directive_param32);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 198;
+			this.state = 212;
 			this.match(z80asmParser.DIRECTIVEparam32);
-			this.state = 199;
+			this.state = 213;
 			this.expression32();
 			}
 		}
@@ -649,13 +714,13 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public directive_symbol(): Directive_symbolContext {
 		let _localctx: Directive_symbolContext = new Directive_symbolContext(this._ctx, this.state);
-		this.enterRule(_localctx, 14, z80asmParser.RULE_directive_symbol);
+		this.enterRule(_localctx, 18, z80asmParser.RULE_directive_symbol);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 201;
+			this.state = 215;
 			this.match(z80asmParser.DIRECTIVEsymbol);
-			this.state = 202;
+			this.state = 216;
 			this.symbol();
 			}
 		}
@@ -676,30 +741,30 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public directive_symbollist(): Directive_symbollistContext {
 		let _localctx: Directive_symbollistContext = new Directive_symbollistContext(this._ctx, this.state);
-		this.enterRule(_localctx, 16, z80asmParser.RULE_directive_symbollist);
+		this.enterRule(_localctx, 20, z80asmParser.RULE_directive_symbollist);
 		try {
 			let _alt: number;
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 204;
+			this.state = 218;
 			this.match(z80asmParser.DIRECTIVEsymbollist);
-			this.state = 205;
+			this.state = 219;
 			this.symbol();
-			this.state = 210;
+			this.state = 224;
 			this._errHandler.sync(this);
 			_alt = this.interpreter.adaptivePredict(this._input, 9, this._ctx);
 			while (_alt !== 1 && _alt !== ATN.INVALID_ALT_NUMBER) {
 				if (_alt === 1 + 1) {
 					{
 					{
-					this.state = 206;
+					this.state = 220;
 					this.match(z80asmParser.COMMA);
-					this.state = 207;
+					this.state = 221;
 					this.symbol();
 					}
 					}
 				}
-				this.state = 212;
+				this.state = 226;
 				this._errHandler.sync(this);
 				_alt = this.interpreter.adaptivePredict(this._input, 9, this._ctx);
 			}
@@ -722,17 +787,17 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public directive_assign(): Directive_assignContext {
 		let _localctx: Directive_assignContext = new Directive_assignContext(this._ctx, this.state);
-		this.enterRule(_localctx, 18, z80asmParser.RULE_directive_assign);
+		this.enterRule(_localctx, 22, z80asmParser.RULE_directive_assign);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 213;
+			this.state = 227;
 			this.match(z80asmParser.DIRECTIVEassign);
-			this.state = 214;
+			this.state = 228;
 			this.symbol();
-			this.state = 215;
+			this.state = 229;
 			this.match(z80asmParser.T__0);
-			this.state = 216;
+			this.state = 230;
 			this.expression(0);
 			}
 		}
@@ -753,30 +818,30 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public directive_block(): Directive_blockContext {
 		let _localctx: Directive_blockContext = new Directive_blockContext(this._ctx, this.state);
-		this.enterRule(_localctx, 20, z80asmParser.RULE_directive_block);
+		this.enterRule(_localctx, 24, z80asmParser.RULE_directive_block);
 		try {
 			let _alt: number;
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 218;
+			this.state = 232;
 			this.match(z80asmParser.DIRECTIVEblock);
-			this.state = 219;
+			this.state = 233;
 			this.expression(0);
-			this.state = 224;
+			this.state = 238;
 			this._errHandler.sync(this);
 			_alt = this.interpreter.adaptivePredict(this._input, 10, this._ctx);
 			while (_alt !== 1 && _alt !== ATN.INVALID_ALT_NUMBER) {
 				if (_alt === 1 + 1) {
 					{
 					{
-					this.state = 220;
+					this.state = 234;
 					this.match(z80asmParser.COMMA);
-					this.state = 221;
+					this.state = 235;
 					this.expression(0);
 					}
 					}
 				}
-				this.state = 226;
+				this.state = 240;
 				this._errHandler.sync(this);
 				_alt = this.interpreter.adaptivePredict(this._input, 10, this._ctx);
 			}
@@ -799,23 +864,23 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public directive_defs(): Directive_defsContext {
 		let _localctx: Directive_defsContext = new Directive_defsContext(this._ctx, this.state);
-		this.enterRule(_localctx, 22, z80asmParser.RULE_directive_defs);
+		this.enterRule(_localctx, 26, z80asmParser.RULE_directive_defs);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 227;
+			this.state = 241;
 			this.match(z80asmParser.DIRECTIVEdefs);
-			this.state = 228;
+			this.state = 242;
 			this.expression(0);
-			this.state = 231;
+			this.state = 245;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
 			if (_la === z80asmParser.COMMA) {
 				{
-				this.state = 229;
+				this.state = 243;
 				this.match(z80asmParser.COMMA);
-				this.state = 230;
+				this.state = 244;
 				this.expression(0);
 				}
 			}
@@ -839,30 +904,30 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public directive_defm(): Directive_defmContext {
 		let _localctx: Directive_defmContext = new Directive_defmContext(this._ctx, this.state);
-		this.enterRule(_localctx, 24, z80asmParser.RULE_directive_defm);
+		this.enterRule(_localctx, 28, z80asmParser.RULE_directive_defm);
 		try {
 			let _alt: number;
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 233;
+			this.state = 247;
 			this.match(z80asmParser.DIRECTIVEdefm);
-			this.state = 234;
+			this.state = 248;
 			this.defmparam();
-			this.state = 239;
+			this.state = 253;
 			this._errHandler.sync(this);
 			_alt = this.interpreter.adaptivePredict(this._input, 12, this._ctx);
 			while (_alt !== 1 && _alt !== ATN.INVALID_ALT_NUMBER) {
 				if (_alt === 1 + 1) {
 					{
 					{
-					this.state = 235;
+					this.state = 249;
 					this.match(z80asmParser.COMMA);
-					this.state = 236;
+					this.state = 250;
 					this.defmparam();
 					}
 					}
 				}
-				this.state = 241;
+				this.state = 255;
 				this._errHandler.sync(this);
 				_alt = this.interpreter.adaptivePredict(this._input, 12, this._ctx);
 			}
@@ -885,45 +950,34 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public defmparam(): DefmparamContext {
 		let _localctx: DefmparamContext = new DefmparamContext(this._ctx, this.state);
-		this.enterRule(_localctx, 26, z80asmParser.RULE_defmparam);
+		this.enterRule(_localctx, 30, z80asmParser.RULE_defmparam);
 		try {
-			this.state = 245;
+			this.state = 259;
 			this._errHandler.sync(this);
-			switch (this._input.LA(1)) {
-			case z80asmParser.STRING:
+			switch ( this.interpreter.adaptivePredict(this._input, 13, this._ctx) ) {
+			case 1:
 				this.enterOuterAlt(_localctx, 1);
 				{
-				this.state = 242;
+				this.state = 256;
 				this.string();
 				}
 				break;
-			case z80asmParser.CHARACTER:
+
+			case 2:
 				this.enterOuterAlt(_localctx, 2);
 				{
-				this.state = 243;
+				this.state = 257;
 				this.character();
 				}
 				break;
-			case z80asmParser.SYMBOL:
-			case z80asmParser.PLUS:
-			case z80asmParser.MINUS:
-			case z80asmParser.INTERRUPTMODE:
-			case z80asmParser.BIT8:
-			case z80asmParser.INSTRUCTIONrstvectorhex:
-			case z80asmParser.INSTRUCTIONrstvector:
-			case z80asmParser.NUMBERbin:
-			case z80asmParser.NUMBERoct:
-			case z80asmParser.NUMBERdec:
-			case z80asmParser.NUMBERhex:
-			case z80asmParser.PARopen:
+
+			case 3:
 				this.enterOuterAlt(_localctx, 3);
 				{
-				this.state = 244;
+				this.state = 258;
 				this.expression8();
 				}
 				break;
-			default:
-				throw new NoViableAltException(this);
 			}
 		}
 		catch (re) {
@@ -943,20 +997,20 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public directive_if(): Directive_ifContext {
 		let _localctx: Directive_ifContext = new Directive_ifContext(this._ctx, this.state);
-		this.enterRule(_localctx, 28, z80asmParser.RULE_directive_if);
+		this.enterRule(_localctx, 32, z80asmParser.RULE_directive_if);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 247;
+			this.state = 261;
 			this.match(z80asmParser.DIRECTIVEif);
-			this.state = 248;
+			this.state = 262;
 			this.expression(0);
-			this.state = 250;
+			this.state = 264;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 14, this._ctx) ) {
 			case 1:
 				{
-				this.state = 249;
+				this.state = 263;
 				this.comment();
 				}
 				break;
@@ -980,20 +1034,20 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public directive_ifdef(): Directive_ifdefContext {
 		let _localctx: Directive_ifdefContext = new Directive_ifdefContext(this._ctx, this.state);
-		this.enterRule(_localctx, 30, z80asmParser.RULE_directive_ifdef);
+		this.enterRule(_localctx, 34, z80asmParser.RULE_directive_ifdef);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 252;
+			this.state = 266;
 			this.match(z80asmParser.DIRECTIVEifdef);
-			this.state = 253;
+			this.state = 267;
 			this.symbol();
-			this.state = 255;
+			this.state = 269;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 15, this._ctx) ) {
 			case 1:
 				{
-				this.state = 254;
+				this.state = 268;
 				this.comment();
 				}
 				break;
@@ -1017,22 +1071,22 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public directive_ifblock(): Directive_ifblockContext {
 		let _localctx: Directive_ifblockContext = new Directive_ifblockContext(this._ctx, this.state);
-		this.enterRule(_localctx, 32, z80asmParser.RULE_directive_ifblock);
+		this.enterRule(_localctx, 36, z80asmParser.RULE_directive_ifblock);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 258;
+			this.state = 272;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
 			if (_la === z80asmParser.DIRECTIVEelse) {
 				{
-				this.state = 257;
+				this.state = 271;
 				this.directive_elseblock();
 				}
 			}
 
-			this.state = 260;
+			this.state = 274;
 			this.directive_endif();
 			}
 		}
@@ -1053,11 +1107,11 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public directive_elseblock(): Directive_elseblockContext {
 		let _localctx: Directive_elseblockContext = new Directive_elseblockContext(this._ctx, this.state);
-		this.enterRule(_localctx, 34, z80asmParser.RULE_directive_elseblock);
+		this.enterRule(_localctx, 38, z80asmParser.RULE_directive_elseblock);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 262;
+			this.state = 276;
 			this.match(z80asmParser.DIRECTIVEelse);
 			}
 		}
@@ -1078,11 +1132,11 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public directive_endif(): Directive_endifContext {
 		let _localctx: Directive_endifContext = new Directive_endifContext(this._ctx, this.state);
-		this.enterRule(_localctx, 36, z80asmParser.RULE_directive_endif);
+		this.enterRule(_localctx, 40, z80asmParser.RULE_directive_endif);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 264;
+			this.state = 278;
 			this.match(z80asmParser.DIRECTIVEendif);
 			}
 		}
@@ -1103,27 +1157,27 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public directive_phase(): Directive_phaseContext {
 		let _localctx: Directive_phaseContext = new Directive_phaseContext(this._ctx, this.state);
-		this.enterRule(_localctx, 38, z80asmParser.RULE_directive_phase);
+		this.enterRule(_localctx, 42, z80asmParser.RULE_directive_phase);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 266;
+			this.state = 280;
 			this.match(z80asmParser.DIRECTIVEphase);
-			this.state = 267;
+			this.state = 281;
 			this.expression16();
-			this.state = 269;
+			this.state = 283;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 17, this._ctx) ) {
 			case 1:
 				{
-				this.state = 268;
+				this.state = 282;
 				this.comment();
 				}
 				break;
 			}
-			this.state = 271;
+			this.state = 285;
 			this.asm();
-			this.state = 272;
+			this.state = 286;
 			this.match(z80asmParser.DIRECTIVEunphase);
 			}
 		}
@@ -1144,15 +1198,15 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public instruction(): InstructionContext {
 		let _localctx: InstructionContext = new InstructionContext(this._ctx, this.state);
-		this.enterRule(_localctx, 40, z80asmParser.RULE_instruction);
+		this.enterRule(_localctx, 44, z80asmParser.RULE_instruction);
 		try {
-			this.state = 292;
+			this.state = 306;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 18, this._ctx) ) {
 			case 1:
 				this.enterOuterAlt(_localctx, 1);
 				{
-				this.state = 274;
+				this.state = 288;
 				this.instruction_void();
 				}
 				break;
@@ -1160,7 +1214,7 @@ export class z80asmParser extends Parser {
 			case 2:
 				this.enterOuterAlt(_localctx, 2);
 				{
-				this.state = 275;
+				this.state = 289;
 				this.instruction_ld8();
 				}
 				break;
@@ -1168,7 +1222,7 @@ export class z80asmParser extends Parser {
 			case 3:
 				this.enterOuterAlt(_localctx, 3);
 				{
-				this.state = 276;
+				this.state = 290;
 				this.instruction_ld16();
 				}
 				break;
@@ -1176,7 +1230,7 @@ export class z80asmParser extends Parser {
 			case 4:
 				this.enterOuterAlt(_localctx, 4);
 				{
-				this.state = 277;
+				this.state = 291;
 				this.instruction_stack();
 				}
 				break;
@@ -1184,7 +1238,7 @@ export class z80asmParser extends Parser {
 			case 5:
 				this.enterOuterAlt(_localctx, 5);
 				{
-				this.state = 278;
+				this.state = 292;
 				this.instruction_exchange();
 				}
 				break;
@@ -1192,7 +1246,7 @@ export class z80asmParser extends Parser {
 			case 6:
 				this.enterOuterAlt(_localctx, 6);
 				{
-				this.state = 279;
+				this.state = 293;
 				this.instruction_arithmetic8();
 				}
 				break;
@@ -1200,7 +1254,7 @@ export class z80asmParser extends Parser {
 			case 7:
 				this.enterOuterAlt(_localctx, 7);
 				{
-				this.state = 280;
+				this.state = 294;
 				this.instruction_incdec8();
 				}
 				break;
@@ -1208,7 +1262,7 @@ export class z80asmParser extends Parser {
 			case 8:
 				this.enterOuterAlt(_localctx, 8);
 				{
-				this.state = 281;
+				this.state = 295;
 				this.instruction_cpl();
 				}
 				break;
@@ -1216,7 +1270,7 @@ export class z80asmParser extends Parser {
 			case 9:
 				this.enterOuterAlt(_localctx, 9);
 				{
-				this.state = 282;
+				this.state = 296;
 				this.instruction_arithemic16();
 				}
 				break;
@@ -1224,7 +1278,7 @@ export class z80asmParser extends Parser {
 			case 10:
 				this.enterOuterAlt(_localctx, 10);
 				{
-				this.state = 283;
+				this.state = 297;
 				this.instruction_incdec16();
 				}
 				break;
@@ -1232,7 +1286,7 @@ export class z80asmParser extends Parser {
 			case 11:
 				this.enterOuterAlt(_localctx, 11);
 				{
-				this.state = 284;
+				this.state = 298;
 				this.instruction_rotate();
 				}
 				break;
@@ -1240,7 +1294,7 @@ export class z80asmParser extends Parser {
 			case 12:
 				this.enterOuterAlt(_localctx, 12);
 				{
-				this.state = 285;
+				this.state = 299;
 				this.instruction_rotatedec();
 				}
 				break;
@@ -1248,7 +1302,7 @@ export class z80asmParser extends Parser {
 			case 13:
 				this.enterOuterAlt(_localctx, 13);
 				{
-				this.state = 286;
+				this.state = 300;
 				this.instruction_bit();
 				}
 				break;
@@ -1256,7 +1310,7 @@ export class z80asmParser extends Parser {
 			case 14:
 				this.enterOuterAlt(_localctx, 14);
 				{
-				this.state = 287;
+				this.state = 301;
 				this.instruction_jump();
 				}
 				break;
@@ -1264,7 +1318,7 @@ export class z80asmParser extends Parser {
 			case 15:
 				this.enterOuterAlt(_localctx, 15);
 				{
-				this.state = 288;
+				this.state = 302;
 				this.instruction_call();
 				}
 				break;
@@ -1272,7 +1326,7 @@ export class z80asmParser extends Parser {
 			case 16:
 				this.enterOuterAlt(_localctx, 16);
 				{
-				this.state = 289;
+				this.state = 303;
 				this.instruction_rst();
 				}
 				break;
@@ -1280,7 +1334,7 @@ export class z80asmParser extends Parser {
 			case 17:
 				this.enterOuterAlt(_localctx, 17);
 				{
-				this.state = 290;
+				this.state = 304;
 				this.instruction_im();
 				}
 				break;
@@ -1288,7 +1342,7 @@ export class z80asmParser extends Parser {
 			case 18:
 				this.enterOuterAlt(_localctx, 18);
 				{
-				this.state = 291;
+				this.state = 305;
 				this.instruction_io();
 				}
 				break;
@@ -1311,11 +1365,11 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public instruction_void(): Instruction_voidContext {
 		let _localctx: Instruction_voidContext = new Instruction_voidContext(this._ctx, this.state);
-		this.enterRule(_localctx, 42, z80asmParser.RULE_instruction_void);
+		this.enterRule(_localctx, 46, z80asmParser.RULE_instruction_void);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 294;
+			this.state = 308;
 			this.match(z80asmParser.INSTRUCTIONvoid);
 			}
 		}
@@ -1336,28 +1390,28 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public instruction_ld8(): Instruction_ld8Context {
 		let _localctx: Instruction_ld8Context = new Instruction_ld8Context(this._ctx, this.state);
-		this.enterRule(_localctx, 44, z80asmParser.RULE_instruction_ld8);
+		this.enterRule(_localctx, 48, z80asmParser.RULE_instruction_ld8);
 		try {
-			this.state = 394;
+			this.state = 408;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 23, this._ctx) ) {
 			case 1:
 				this.enterOuterAlt(_localctx, 1);
 				{
 				{
-				this.state = 296;
+				this.state = 310;
 				this.match(z80asmParser.INSTRUCTIONld);
-				this.state = 309;
+				this.state = 323;
 				this._errHandler.sync(this);
 				switch ( this.interpreter.adaptivePredict(this._input, 19, this._ctx) ) {
 				case 1:
 					{
 					{
-					this.state = 297;
+					this.state = 311;
 					this.registers8();
-					this.state = 298;
+					this.state = 312;
 					this.match(z80asmParser.COMMA);
-					this.state = 299;
+					this.state = 313;
 					this.registers8();
 					}
 					}
@@ -1366,11 +1420,11 @@ export class z80asmParser extends Parser {
 				case 2:
 					{
 					{
-					this.state = 301;
+					this.state = 315;
 					this.registers8x();
-					this.state = 302;
+					this.state = 316;
 					this.match(z80asmParser.COMMA);
-					this.state = 303;
+					this.state = 317;
 					this.registers8x();
 					}
 					}
@@ -1379,11 +1433,11 @@ export class z80asmParser extends Parser {
 				case 3:
 					{
 					{
-					this.state = 305;
+					this.state = 319;
 					this.registers8y();
-					this.state = 306;
+					this.state = 320;
 					this.match(z80asmParser.COMMA);
-					this.state = 307;
+					this.state = 321;
 					this.registers8y();
 					}
 					}
@@ -1397,9 +1451,9 @@ export class z80asmParser extends Parser {
 				this.enterOuterAlt(_localctx, 2);
 				{
 				{
-				this.state = 311;
+				this.state = 325;
 				this.match(z80asmParser.INSTRUCTIONld);
-				this.state = 315;
+				this.state = 329;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
 				case z80asmParser.REG8a:
@@ -1410,28 +1464,28 @@ export class z80asmParser extends Parser {
 				case z80asmParser.REG8h:
 				case z80asmParser.REG8l:
 					{
-					this.state = 312;
+					this.state = 326;
 					this.registers8();
 					}
 					break;
 				case z80asmParser.REG8x:
 					{
-					this.state = 313;
+					this.state = 327;
 					this.match(z80asmParser.REG8x);
 					}
 					break;
 				case z80asmParser.REG8y:
 					{
-					this.state = 314;
+					this.state = 328;
 					this.match(z80asmParser.REG8y);
 					}
 					break;
 				default:
 					throw new NoViableAltException(this);
 				}
-				this.state = 317;
+				this.state = 331;
 				this.match(z80asmParser.COMMA);
-				this.state = 318;
+				this.state = 332;
 				this.expression8();
 				}
 				}
@@ -1441,17 +1495,17 @@ export class z80asmParser extends Parser {
 				this.enterOuterAlt(_localctx, 3);
 				{
 				{
-				this.state = 319;
+				this.state = 333;
 				this.match(z80asmParser.INSTRUCTIONld);
-				this.state = 320;
+				this.state = 334;
 				this.registers8();
-				this.state = 321;
+				this.state = 335;
 				this.match(z80asmParser.COMMA);
-				this.state = 322;
+				this.state = 336;
 				this.match(z80asmParser.PARopen);
-				this.state = 323;
+				this.state = 337;
 				this.match(z80asmParser.REG16hl);
-				this.state = 324;
+				this.state = 338;
 				this.match(z80asmParser.PARclose);
 				}
 				}
@@ -1461,21 +1515,21 @@ export class z80asmParser extends Parser {
 				this.enterOuterAlt(_localctx, 4);
 				{
 				{
-				this.state = 326;
+				this.state = 340;
 				this.match(z80asmParser.INSTRUCTIONld);
-				this.state = 327;
+				this.state = 341;
 				this.registers8();
-				this.state = 328;
+				this.state = 342;
 				this.match(z80asmParser.COMMA);
-				this.state = 329;
+				this.state = 343;
 				this.match(z80asmParser.PARopen);
-				this.state = 330;
+				this.state = 344;
 				this.register16_ex();
-				this.state = 331;
-				this.match(z80asmParser.PLUS);
-				this.state = 332;
+				this.state = 345;
+				this.operator_offset();
+				this.state = 346;
 				this.offset_ex();
-				this.state = 333;
+				this.state = 347;
 				this.match(z80asmParser.PARclose);
 				}
 				}
@@ -1485,17 +1539,17 @@ export class z80asmParser extends Parser {
 				this.enterOuterAlt(_localctx, 5);
 				{
 				{
-				this.state = 335;
+				this.state = 349;
 				this.match(z80asmParser.INSTRUCTIONld);
-				this.state = 336;
+				this.state = 350;
 				this.match(z80asmParser.PARopen);
-				this.state = 337;
+				this.state = 351;
 				this.match(z80asmParser.REG16hl);
-				this.state = 338;
+				this.state = 352;
 				this.match(z80asmParser.PARclose);
-				this.state = 339;
+				this.state = 353;
 				this.match(z80asmParser.COMMA);
-				this.state = 340;
+				this.state = 354;
 				this.registers8();
 				}
 				}
@@ -1505,21 +1559,21 @@ export class z80asmParser extends Parser {
 				this.enterOuterAlt(_localctx, 6);
 				{
 				{
-				this.state = 341;
+				this.state = 355;
 				this.match(z80asmParser.INSTRUCTIONld);
-				this.state = 342;
+				this.state = 356;
 				this.match(z80asmParser.PARopen);
-				this.state = 343;
+				this.state = 357;
 				this.register16_ex();
-				this.state = 344;
-				this.match(z80asmParser.PLUS);
-				this.state = 345;
+				this.state = 358;
+				this.operator_offset();
+				this.state = 359;
 				this.offset_ex();
-				this.state = 346;
+				this.state = 360;
 				this.match(z80asmParser.PARclose);
-				this.state = 347;
+				this.state = 361;
 				this.match(z80asmParser.COMMA);
-				this.state = 348;
+				this.state = 362;
 				this.registers8();
 				}
 				}
@@ -1529,17 +1583,17 @@ export class z80asmParser extends Parser {
 				this.enterOuterAlt(_localctx, 7);
 				{
 				{
-				this.state = 350;
+				this.state = 364;
 				this.match(z80asmParser.INSTRUCTIONld);
-				this.state = 351;
+				this.state = 365;
 				this.match(z80asmParser.PARopen);
-				this.state = 352;
+				this.state = 366;
 				this.match(z80asmParser.REG16hl);
-				this.state = 353;
+				this.state = 367;
 				this.match(z80asmParser.PARclose);
-				this.state = 354;
+				this.state = 368;
 				this.match(z80asmParser.COMMA);
-				this.state = 355;
+				this.state = 369;
 				this.expression8();
 				}
 				}
@@ -1549,21 +1603,21 @@ export class z80asmParser extends Parser {
 				this.enterOuterAlt(_localctx, 8);
 				{
 				{
-				this.state = 356;
+				this.state = 370;
 				this.match(z80asmParser.INSTRUCTIONld);
-				this.state = 357;
+				this.state = 371;
 				this.match(z80asmParser.PARopen);
-				this.state = 358;
+				this.state = 372;
 				this.register16_ex();
-				this.state = 359;
-				this.match(z80asmParser.PLUS);
-				this.state = 360;
+				this.state = 373;
+				this.operator_offset();
+				this.state = 374;
 				this.offset_ex();
-				this.state = 361;
+				this.state = 375;
 				this.match(z80asmParser.PARclose);
-				this.state = 362;
+				this.state = 376;
 				this.match(z80asmParser.COMMA);
-				this.state = 363;
+				this.state = 377;
 				this.expression8();
 				}
 				}
@@ -1573,26 +1627,26 @@ export class z80asmParser extends Parser {
 				this.enterOuterAlt(_localctx, 9);
 				{
 				{
-				this.state = 365;
+				this.state = 379;
 				this.match(z80asmParser.INSTRUCTIONld);
-				this.state = 366;
+				this.state = 380;
 				this.match(z80asmParser.REG8a);
-				this.state = 367;
+				this.state = 381;
 				this.match(z80asmParser.COMMA);
-				this.state = 368;
+				this.state = 382;
 				this.match(z80asmParser.PARopen);
-				this.state = 372;
+				this.state = 386;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
 				case z80asmParser.REG16bc:
 					{
-					this.state = 369;
+					this.state = 383;
 					this.match(z80asmParser.REG16bc);
 					}
 					break;
 				case z80asmParser.REG16de:
 					{
-					this.state = 370;
+					this.state = 384;
 					this.match(z80asmParser.REG16de);
 					}
 					break;
@@ -1607,16 +1661,17 @@ export class z80asmParser extends Parser {
 				case z80asmParser.NUMBERoct:
 				case z80asmParser.NUMBERdec:
 				case z80asmParser.NUMBERhex:
+				case z80asmParser.CHARACTER:
 				case z80asmParser.PARopen:
 					{
-					this.state = 371;
+					this.state = 385;
 					this.expression(0);
 					}
 					break;
 				default:
 					throw new NoViableAltException(this);
 				}
-				this.state = 374;
+				this.state = 388;
 				this.match(z80asmParser.PARclose);
 				}
 				}
@@ -1626,13 +1681,13 @@ export class z80asmParser extends Parser {
 				this.enterOuterAlt(_localctx, 10);
 				{
 				{
-				this.state = 375;
+				this.state = 389;
 				this.match(z80asmParser.INSTRUCTIONld);
-				this.state = 376;
+				this.state = 390;
 				this.match(z80asmParser.REG8a);
-				this.state = 377;
+				this.state = 391;
 				this.match(z80asmParser.COMMA);
-				this.state = 378;
+				this.state = 392;
 				this.match(z80asmParser.REG8sys);
 				}
 				}
@@ -1642,13 +1697,13 @@ export class z80asmParser extends Parser {
 				this.enterOuterAlt(_localctx, 11);
 				{
 				{
-				this.state = 379;
+				this.state = 393;
 				this.match(z80asmParser.INSTRUCTIONld);
-				this.state = 380;
+				this.state = 394;
 				this.match(z80asmParser.REG8sys);
-				this.state = 381;
+				this.state = 395;
 				this.match(z80asmParser.COMMA);
-				this.state = 382;
+				this.state = 396;
 				this.match(z80asmParser.REG8a);
 				}
 				}
@@ -1658,28 +1713,28 @@ export class z80asmParser extends Parser {
 				this.enterOuterAlt(_localctx, 12);
 				{
 				{
-				this.state = 383;
+				this.state = 397;
 				this.match(z80asmParser.INSTRUCTIONld);
-				this.state = 384;
+				this.state = 398;
 				this.match(z80asmParser.PARopen);
-				this.state = 389;
+				this.state = 403;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
 				case z80asmParser.REG16bc:
 					{
-					this.state = 385;
+					this.state = 399;
 					this.match(z80asmParser.REG16bc);
 					}
 					break;
 				case z80asmParser.REG16de:
 					{
-					this.state = 386;
+					this.state = 400;
 					this.match(z80asmParser.REG16de);
 					}
 					break;
 				case z80asmParser.REG8sys:
 					{
-					this.state = 387;
+					this.state = 401;
 					this.match(z80asmParser.REG8sys);
 					}
 					break;
@@ -1694,20 +1749,21 @@ export class z80asmParser extends Parser {
 				case z80asmParser.NUMBERoct:
 				case z80asmParser.NUMBERdec:
 				case z80asmParser.NUMBERhex:
+				case z80asmParser.CHARACTER:
 				case z80asmParser.PARopen:
 					{
-					this.state = 388;
+					this.state = 402;
 					this.expression16();
 					}
 					break;
 				default:
 					throw new NoViableAltException(this);
 				}
-				this.state = 391;
+				this.state = 405;
 				this.match(z80asmParser.PARclose);
-				this.state = 392;
+				this.state = 406;
 				this.match(z80asmParser.COMMA);
-				this.state = 393;
+				this.state = 407;
 				this.match(z80asmParser.REG8a);
 				}
 				}
@@ -1731,17 +1787,17 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public instruction_ld16(): Instruction_ld16Context {
 		let _localctx: Instruction_ld16Context = new Instruction_ld16Context(this._ctx, this.state);
-		this.enterRule(_localctx, 46, z80asmParser.RULE_instruction_ld16);
+		this.enterRule(_localctx, 50, z80asmParser.RULE_instruction_ld16);
 		try {
-			this.state = 427;
+			this.state = 441;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 27, this._ctx) ) {
 			case 1:
 				this.enterOuterAlt(_localctx, 1);
 				{
-				this.state = 396;
+				this.state = 410;
 				this.match(z80asmParser.INSTRUCTIONld);
-				this.state = 399;
+				this.state = 413;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
 				case z80asmParser.REG16bc:
@@ -1749,23 +1805,23 @@ export class z80asmParser extends Parser {
 				case z80asmParser.REG16hl:
 				case z80asmParser.REG16sp:
 					{
-					this.state = 397;
+					this.state = 411;
 					this.register16_grpsphl();
 					}
 					break;
 				case z80asmParser.REG16ix:
 				case z80asmParser.REG16iy:
 					{
-					this.state = 398;
+					this.state = 412;
 					this.register16_ex();
 					}
 					break;
 				default:
 					throw new NoViableAltException(this);
 				}
-				this.state = 401;
+				this.state = 415;
 				this.match(z80asmParser.COMMA);
-				this.state = 402;
+				this.state = 416;
 				this.expression16();
 				}
 				break;
@@ -1773,17 +1829,17 @@ export class z80asmParser extends Parser {
 			case 2:
 				this.enterOuterAlt(_localctx, 2);
 				{
-				this.state = 404;
+				this.state = 418;
 				this.match(z80asmParser.INSTRUCTIONld);
-				this.state = 405;
+				this.state = 419;
 				this.register16_ex();
-				this.state = 406;
+				this.state = 420;
 				this.match(z80asmParser.COMMA);
-				this.state = 407;
+				this.state = 421;
 				this.match(z80asmParser.PARopen);
-				this.state = 408;
+				this.state = 422;
 				this.expression16();
-				this.state = 409;
+				this.state = 423;
 				this.match(z80asmParser.PARclose);
 				}
 				break;
@@ -1791,17 +1847,17 @@ export class z80asmParser extends Parser {
 			case 3:
 				this.enterOuterAlt(_localctx, 3);
 				{
-				this.state = 411;
+				this.state = 425;
 				this.match(z80asmParser.INSTRUCTIONld);
-				this.state = 412;
+				this.state = 426;
 				this.match(z80asmParser.PARopen);
-				this.state = 413;
+				this.state = 427;
 				this.expression16();
-				this.state = 414;
+				this.state = 428;
 				this.match(z80asmParser.PARclose);
-				this.state = 415;
+				this.state = 429;
 				this.match(z80asmParser.COMMA);
-				this.state = 418;
+				this.state = 432;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
 				case z80asmParser.REG16bc:
@@ -1809,14 +1865,14 @@ export class z80asmParser extends Parser {
 				case z80asmParser.REG16hl:
 				case z80asmParser.REG16sp:
 					{
-					this.state = 416;
+					this.state = 430;
 					this.register16_grpsphl();
 					}
 					break;
 				case z80asmParser.REG16ix:
 				case z80asmParser.REG16iy:
 					{
-					this.state = 417;
+					this.state = 431;
 					this.register16_ex();
 					}
 					break;
@@ -1829,25 +1885,25 @@ export class z80asmParser extends Parser {
 			case 4:
 				this.enterOuterAlt(_localctx, 4);
 				{
-				this.state = 420;
+				this.state = 434;
 				this.match(z80asmParser.INSTRUCTIONld);
-				this.state = 421;
+				this.state = 435;
 				this.match(z80asmParser.REG16sp);
-				this.state = 422;
+				this.state = 436;
 				this.match(z80asmParser.COMMA);
-				this.state = 425;
+				this.state = 439;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
 				case z80asmParser.REG16hl:
 					{
-					this.state = 423;
+					this.state = 437;
 					this.match(z80asmParser.REG16hl);
 					}
 					break;
 				case z80asmParser.REG16ix:
 				case z80asmParser.REG16iy:
 					{
-					this.state = 424;
+					this.state = 438;
 					this.register16_ex();
 					}
 					break;
@@ -1875,13 +1931,13 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public instruction_stack(): Instruction_stackContext {
 		let _localctx: Instruction_stackContext = new Instruction_stackContext(this._ctx, this.state);
-		this.enterRule(_localctx, 48, z80asmParser.RULE_instruction_stack);
+		this.enterRule(_localctx, 52, z80asmParser.RULE_instruction_stack);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 429;
+			this.state = 443;
 			this.match(z80asmParser.INSTRUCTIONstack);
-			this.state = 432;
+			this.state = 446;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
 			case z80asmParser.REG16af:
@@ -1889,14 +1945,14 @@ export class z80asmParser extends Parser {
 			case z80asmParser.REG16de:
 			case z80asmParser.REG16hl:
 				{
-				this.state = 430;
+				this.state = 444;
 				this.register16_grpaf();
 				}
 				break;
 			case z80asmParser.REG16ix:
 			case z80asmParser.REG16iy:
 				{
-				this.state = 431;
+				this.state = 445;
 				this.register16_ex();
 				}
 				break;
@@ -1922,22 +1978,22 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public instruction_exchange(): Instruction_exchangeContext {
 		let _localctx: Instruction_exchangeContext = new Instruction_exchangeContext(this._ctx, this.state);
-		this.enterRule(_localctx, 50, z80asmParser.RULE_instruction_exchange);
+		this.enterRule(_localctx, 54, z80asmParser.RULE_instruction_exchange);
 		let _la: number;
 		try {
-			this.state = 455;
+			this.state = 469;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 31, this._ctx) ) {
 			case 1:
 				this.enterOuterAlt(_localctx, 1);
 				{
-				this.state = 434;
+				this.state = 448;
 				this.match(z80asmParser.INSTRUCTIONexchange);
-				this.state = 435;
+				this.state = 449;
 				this.match(z80asmParser.REG16de);
-				this.state = 436;
+				this.state = 450;
 				this.match(z80asmParser.COMMA);
-				this.state = 437;
+				this.state = 451;
 				this.match(z80asmParser.REG16hl);
 				}
 				break;
@@ -1945,20 +2001,20 @@ export class z80asmParser extends Parser {
 			case 2:
 				this.enterOuterAlt(_localctx, 2);
 				{
-				this.state = 438;
+				this.state = 452;
 				this.match(z80asmParser.INSTRUCTIONexchange);
-				this.state = 439;
+				this.state = 453;
 				this.match(z80asmParser.REG16af);
-				this.state = 440;
+				this.state = 454;
 				this.match(z80asmParser.COMMA);
-				this.state = 441;
+				this.state = 455;
 				this.match(z80asmParser.REG16af);
-				this.state = 443;
+				this.state = 457;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
 				if (_la === z80asmParser.T__1) {
 					{
-					this.state = 442;
+					this.state = 456;
 					this.match(z80asmParser.T__1);
 					}
 				}
@@ -1969,29 +2025,29 @@ export class z80asmParser extends Parser {
 			case 3:
 				this.enterOuterAlt(_localctx, 3);
 				{
-				this.state = 445;
+				this.state = 459;
 				this.match(z80asmParser.INSTRUCTIONexchange);
-				this.state = 446;
+				this.state = 460;
 				this.match(z80asmParser.PARopen);
-				this.state = 447;
+				this.state = 461;
 				this.match(z80asmParser.REG16sp);
-				this.state = 448;
+				this.state = 462;
 				this.match(z80asmParser.PARclose);
-				this.state = 449;
+				this.state = 463;
 				this.match(z80asmParser.COMMA);
-				this.state = 452;
+				this.state = 466;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
 				case z80asmParser.REG16hl:
 					{
-					this.state = 450;
+					this.state = 464;
 					this.match(z80asmParser.REG16hl);
 					}
 					break;
 				case z80asmParser.REG16ix:
 				case z80asmParser.REG16iy:
 					{
-					this.state = 451;
+					this.state = 465;
 					this.register16_ex();
 					}
 					break;
@@ -2004,7 +2060,7 @@ export class z80asmParser extends Parser {
 			case 4:
 				this.enterOuterAlt(_localctx, 4);
 				{
-				this.state = 454;
+				this.state = 468;
 				this.match(z80asmParser.INSTRUCTIONexxchange);
 				}
 				break;
@@ -2027,16 +2083,16 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public instruction_arithmetic8(): Instruction_arithmetic8Context {
 		let _localctx: Instruction_arithmetic8Context = new Instruction_arithmetic8Context(this._ctx, this.state);
-		this.enterRule(_localctx, 52, z80asmParser.RULE_instruction_arithmetic8);
+		this.enterRule(_localctx, 56, z80asmParser.RULE_instruction_arithmetic8);
 		let _la: number;
 		try {
-			this.state = 482;
+			this.state = 496;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 36, this._ctx) ) {
 			case 1:
 				this.enterOuterAlt(_localctx, 1);
 				{
-				this.state = 457;
+				this.state = 471;
 				_la = this._input.LA(1);
 				if (!(_la === z80asmParser.INSTRUCTIONarithmetic16 || _la === z80asmParser.INSTRUCTIONarithmetic)) {
 				this._errHandler.recoverInline(this);
@@ -2048,19 +2104,19 @@ export class z80asmParser extends Parser {
 					this._errHandler.reportMatch(this);
 					this.consume();
 				}
-				this.state = 460;
+				this.state = 474;
 				this._errHandler.sync(this);
 				switch ( this.interpreter.adaptivePredict(this._input, 32, this._ctx) ) {
 				case 1:
 					{
-					this.state = 458;
+					this.state = 472;
 					this.match(z80asmParser.REG8a);
-					this.state = 459;
+					this.state = 473;
 					this.match(z80asmParser.COMMA);
 					}
 					break;
 				}
-				this.state = 466;
+				this.state = 480;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
 				case z80asmParser.REG8a:
@@ -2071,19 +2127,19 @@ export class z80asmParser extends Parser {
 				case z80asmParser.REG8h:
 				case z80asmParser.REG8l:
 					{
-					this.state = 462;
+					this.state = 476;
 					this.registers8();
 					}
 					break;
 				case z80asmParser.REG8x:
 					{
-					this.state = 463;
+					this.state = 477;
 					this.match(z80asmParser.REG8x);
 					}
 					break;
 				case z80asmParser.REG8y:
 					{
-					this.state = 464;
+					this.state = 478;
 					this.match(z80asmParser.REG8y);
 					}
 					break;
@@ -2098,9 +2154,10 @@ export class z80asmParser extends Parser {
 				case z80asmParser.NUMBERoct:
 				case z80asmParser.NUMBERdec:
 				case z80asmParser.NUMBERhex:
+				case z80asmParser.CHARACTER:
 				case z80asmParser.PARopen:
 					{
-					this.state = 465;
+					this.state = 479;
 					this.expression8();
 					}
 					break;
@@ -2113,7 +2170,7 @@ export class z80asmParser extends Parser {
 			case 2:
 				this.enterOuterAlt(_localctx, 2);
 				{
-				this.state = 468;
+				this.state = 482;
 				_la = this._input.LA(1);
 				if (!(_la === z80asmParser.INSTRUCTIONarithmetic16 || _la === z80asmParser.INSTRUCTIONarithmetic)) {
 				this._errHandler.recoverInline(this);
@@ -2125,44 +2182,44 @@ export class z80asmParser extends Parser {
 					this._errHandler.reportMatch(this);
 					this.consume();
 				}
-				this.state = 471;
+				this.state = 485;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
 				if (_la === z80asmParser.REG8a) {
 					{
-					this.state = 469;
+					this.state = 483;
 					this.match(z80asmParser.REG8a);
-					this.state = 470;
+					this.state = 484;
 					this.match(z80asmParser.COMMA);
 					}
 				}
 
-				this.state = 473;
+				this.state = 487;
 				this.match(z80asmParser.PARopen);
-				this.state = 479;
+				this.state = 493;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
 				case z80asmParser.REG16hl:
 					{
-					this.state = 474;
+					this.state = 488;
 					this.match(z80asmParser.REG16hl);
 					}
 					break;
 				case z80asmParser.REG16ix:
 				case z80asmParser.REG16iy:
 					{
-					this.state = 475;
+					this.state = 489;
 					this.register16_ex();
-					this.state = 476;
-					this.match(z80asmParser.PLUS);
-					this.state = 477;
+					this.state = 490;
+					this.operator_offset();
+					this.state = 491;
 					this.offset_ex();
 					}
 					break;
 				default:
 					throw new NoViableAltException(this);
 				}
-				this.state = 481;
+				this.state = 495;
 				this.match(z80asmParser.PARclose);
 				}
 				break;
@@ -2185,17 +2242,17 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public instruction_incdec8(): Instruction_incdec8Context {
 		let _localctx: Instruction_incdec8Context = new Instruction_incdec8Context(this._ctx, this.state);
-		this.enterRule(_localctx, 54, z80asmParser.RULE_instruction_incdec8);
+		this.enterRule(_localctx, 58, z80asmParser.RULE_instruction_incdec8);
 		try {
-			this.state = 500;
+			this.state = 514;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 39, this._ctx) ) {
 			case 1:
 				this.enterOuterAlt(_localctx, 1);
 				{
-				this.state = 484;
+				this.state = 498;
 				this.match(z80asmParser.INSTRUCTIONincdec);
-				this.state = 488;
+				this.state = 502;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
 				case z80asmParser.REG8a:
@@ -2206,19 +2263,19 @@ export class z80asmParser extends Parser {
 				case z80asmParser.REG8h:
 				case z80asmParser.REG8l:
 					{
-					this.state = 485;
+					this.state = 499;
 					this.registers8();
 					}
 					break;
 				case z80asmParser.REG8x:
 					{
-					this.state = 486;
+					this.state = 500;
 					this.match(z80asmParser.REG8x);
 					}
 					break;
 				case z80asmParser.REG8y:
 					{
-					this.state = 487;
+					this.state = 501;
 					this.match(z80asmParser.REG8y);
 					}
 					break;
@@ -2231,34 +2288,34 @@ export class z80asmParser extends Parser {
 			case 2:
 				this.enterOuterAlt(_localctx, 2);
 				{
-				this.state = 490;
+				this.state = 504;
 				this.match(z80asmParser.INSTRUCTIONincdec);
-				this.state = 491;
+				this.state = 505;
 				this.match(z80asmParser.PARopen);
-				this.state = 497;
+				this.state = 511;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
 				case z80asmParser.REG16hl:
 					{
-					this.state = 492;
+					this.state = 506;
 					this.match(z80asmParser.REG16hl);
 					}
 					break;
 				case z80asmParser.REG16ix:
 				case z80asmParser.REG16iy:
 					{
-					this.state = 493;
+					this.state = 507;
 					this.register16_ex();
-					this.state = 494;
-					this.match(z80asmParser.PLUS);
-					this.state = 495;
+					this.state = 508;
+					this.operator_offset();
+					this.state = 509;
 					this.offset_ex();
 					}
 					break;
 				default:
 					throw new NoViableAltException(this);
 				}
-				this.state = 499;
+				this.state = 513;
 				this.match(z80asmParser.PARclose);
 				}
 				break;
@@ -2281,19 +2338,19 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public instruction_cpl(): Instruction_cplContext {
 		let _localctx: Instruction_cplContext = new Instruction_cplContext(this._ctx, this.state);
-		this.enterRule(_localctx, 56, z80asmParser.RULE_instruction_cpl);
+		this.enterRule(_localctx, 60, z80asmParser.RULE_instruction_cpl);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 502;
+			this.state = 516;
 			this.match(z80asmParser.INSTRUCTIONcpl);
-			this.state = 504;
+			this.state = 518;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
 			if (_la === z80asmParser.REG8a) {
 				{
-				this.state = 503;
+				this.state = 517;
 				this.match(z80asmParser.REG8a);
 				}
 			}
@@ -2317,21 +2374,21 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public instruction_arithemic16(): Instruction_arithemic16Context {
 		let _localctx: Instruction_arithemic16Context = new Instruction_arithemic16Context(this._ctx, this.state);
-		this.enterRule(_localctx, 58, z80asmParser.RULE_instruction_arithemic16);
+		this.enterRule(_localctx, 62, z80asmParser.RULE_instruction_arithemic16);
 		try {
-			this.state = 518;
+			this.state = 532;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 41, this._ctx) ) {
 			case 1:
 				this.enterOuterAlt(_localctx, 1);
 				{
-				this.state = 506;
+				this.state = 520;
 				this.match(z80asmParser.INSTRUCTIONarithmetic16);
-				this.state = 507;
+				this.state = 521;
 				this.match(z80asmParser.REG16hl);
-				this.state = 508;
+				this.state = 522;
 				this.match(z80asmParser.COMMA);
-				this.state = 509;
+				this.state = 523;
 				this.register16_grpsphl();
 				}
 				break;
@@ -2339,13 +2396,13 @@ export class z80asmParser extends Parser {
 			case 2:
 				this.enterOuterAlt(_localctx, 2);
 				{
-				this.state = 510;
+				this.state = 524;
 				this.match(z80asmParser.INSTRUCTIONarithmetic16);
-				this.state = 511;
+				this.state = 525;
 				this.match(z80asmParser.REG16ix);
-				this.state = 512;
+				this.state = 526;
 				this.match(z80asmParser.COMMA);
-				this.state = 513;
+				this.state = 527;
 				this.register16_grpspix();
 				}
 				break;
@@ -2353,13 +2410,13 @@ export class z80asmParser extends Parser {
 			case 3:
 				this.enterOuterAlt(_localctx, 3);
 				{
-				this.state = 514;
+				this.state = 528;
 				this.match(z80asmParser.INSTRUCTIONarithmetic16);
-				this.state = 515;
+				this.state = 529;
 				this.match(z80asmParser.REG16iy);
-				this.state = 516;
+				this.state = 530;
 				this.match(z80asmParser.COMMA);
-				this.state = 517;
+				this.state = 531;
 				this.register16_grpspiy();
 				}
 				break;
@@ -2382,13 +2439,13 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public instruction_incdec16(): Instruction_incdec16Context {
 		let _localctx: Instruction_incdec16Context = new Instruction_incdec16Context(this._ctx, this.state);
-		this.enterRule(_localctx, 60, z80asmParser.RULE_instruction_incdec16);
+		this.enterRule(_localctx, 64, z80asmParser.RULE_instruction_incdec16);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 520;
+			this.state = 534;
 			this.match(z80asmParser.INSTRUCTIONincdec);
-			this.state = 523;
+			this.state = 537;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
 			case z80asmParser.REG16bc:
@@ -2396,14 +2453,14 @@ export class z80asmParser extends Parser {
 			case z80asmParser.REG16hl:
 			case z80asmParser.REG16sp:
 				{
-				this.state = 521;
+				this.state = 535;
 				this.register16_grpsphl();
 				}
 				break;
 			case z80asmParser.REG16ix:
 			case z80asmParser.REG16iy:
 				{
-				this.state = 522;
+				this.state = 536;
 				this.register16_ex();
 				}
 				break;
@@ -2429,17 +2486,17 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public instruction_rotate(): Instruction_rotateContext {
 		let _localctx: Instruction_rotateContext = new Instruction_rotateContext(this._ctx, this.state);
-		this.enterRule(_localctx, 62, z80asmParser.RULE_instruction_rotate);
+		this.enterRule(_localctx, 66, z80asmParser.RULE_instruction_rotate);
 		try {
-			this.state = 546;
+			this.state = 560;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 44, this._ctx) ) {
 			case 1:
 				this.enterOuterAlt(_localctx, 1);
 				{
-				this.state = 525;
+				this.state = 539;
 				this.match(z80asmParser.INSTRUCTIONrotate);
-				this.state = 526;
+				this.state = 540;
 				this.registers8();
 				}
 				break;
@@ -2447,34 +2504,34 @@ export class z80asmParser extends Parser {
 			case 2:
 				this.enterOuterAlt(_localctx, 2);
 				{
-				this.state = 527;
+				this.state = 541;
 				this.match(z80asmParser.INSTRUCTIONrotate);
-				this.state = 528;
+				this.state = 542;
 				this.match(z80asmParser.PARopen);
-				this.state = 534;
+				this.state = 548;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
 				case z80asmParser.REG16hl:
 					{
-					this.state = 529;
+					this.state = 543;
 					this.match(z80asmParser.REG16hl);
 					}
 					break;
 				case z80asmParser.REG16ix:
 				case z80asmParser.REG16iy:
 					{
-					this.state = 530;
+					this.state = 544;
 					this.register16_ex();
-					this.state = 531;
-					this.match(z80asmParser.PLUS);
-					this.state = 532;
+					this.state = 545;
+					this.operator_offset();
+					this.state = 546;
 					this.offset_ex();
 					}
 					break;
 				default:
 					throw new NoViableAltException(this);
 				}
-				this.state = 536;
+				this.state = 550;
 				this.match(z80asmParser.PARclose);
 				}
 				break;
@@ -2482,21 +2539,21 @@ export class z80asmParser extends Parser {
 			case 3:
 				this.enterOuterAlt(_localctx, 3);
 				{
-				this.state = 537;
+				this.state = 551;
 				this.match(z80asmParser.INSTRUCTIONrotate);
-				this.state = 538;
+				this.state = 552;
 				this.match(z80asmParser.PARopen);
-				this.state = 539;
+				this.state = 553;
 				this.register16_ex();
-				this.state = 540;
-				this.match(z80asmParser.PLUS);
-				this.state = 541;
+				this.state = 554;
+				this.operator_offset();
+				this.state = 555;
 				this.offset_ex();
-				this.state = 542;
+				this.state = 556;
 				this.match(z80asmParser.PARclose);
-				this.state = 543;
+				this.state = 557;
 				this.match(z80asmParser.COMMA);
-				this.state = 544;
+				this.state = 558;
 				this.registers8();
 				}
 				break;
@@ -2519,19 +2576,19 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public instruction_rotatedec(): Instruction_rotatedecContext {
 		let _localctx: Instruction_rotatedecContext = new Instruction_rotatedecContext(this._ctx, this.state);
-		this.enterRule(_localctx, 64, z80asmParser.RULE_instruction_rotatedec);
+		this.enterRule(_localctx, 68, z80asmParser.RULE_instruction_rotatedec);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 548;
+			this.state = 562;
 			this.match(z80asmParser.INSTRUCTIONrotatedec);
-			this.state = 550;
+			this.state = 564;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
 			if (_la === z80asmParser.REG8a) {
 				{
-				this.state = 549;
+				this.state = 563;
 				this.match(z80asmParser.REG8a);
 				}
 			}
@@ -2555,21 +2612,21 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public instruction_bit(): Instruction_bitContext {
 		let _localctx: Instruction_bitContext = new Instruction_bitContext(this._ctx, this.state);
-		this.enterRule(_localctx, 66, z80asmParser.RULE_instruction_bit);
+		this.enterRule(_localctx, 70, z80asmParser.RULE_instruction_bit);
 		try {
-			this.state = 581;
+			this.state = 595;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 47, this._ctx) ) {
 			case 1:
 				this.enterOuterAlt(_localctx, 1);
 				{
-				this.state = 552;
+				this.state = 566;
 				this.match(z80asmParser.INSTRUCTIONbit);
-				this.state = 553;
+				this.state = 567;
 				this.bitindex();
-				this.state = 554;
+				this.state = 568;
 				this.match(z80asmParser.COMMA);
-				this.state = 555;
+				this.state = 569;
 				this.registers8();
 				}
 				break;
@@ -2577,38 +2634,38 @@ export class z80asmParser extends Parser {
 			case 2:
 				this.enterOuterAlt(_localctx, 2);
 				{
-				this.state = 557;
+				this.state = 571;
 				this.match(z80asmParser.INSTRUCTIONbit);
-				this.state = 558;
+				this.state = 572;
 				this.bitindex();
-				this.state = 559;
+				this.state = 573;
 				this.match(z80asmParser.COMMA);
-				this.state = 560;
+				this.state = 574;
 				this.match(z80asmParser.PARopen);
-				this.state = 566;
+				this.state = 580;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
 				case z80asmParser.REG16hl:
 					{
-					this.state = 561;
+					this.state = 575;
 					this.match(z80asmParser.REG16hl);
 					}
 					break;
 				case z80asmParser.REG16ix:
 				case z80asmParser.REG16iy:
 					{
-					this.state = 562;
+					this.state = 576;
 					this.register16_ex();
-					this.state = 563;
-					this.match(z80asmParser.PLUS);
-					this.state = 564;
+					this.state = 577;
+					this.operator_offset();
+					this.state = 578;
 					this.offset_ex();
 					}
 					break;
 				default:
 					throw new NoViableAltException(this);
 				}
-				this.state = 568;
+				this.state = 582;
 				this.match(z80asmParser.PARclose);
 				}
 				break;
@@ -2616,25 +2673,25 @@ export class z80asmParser extends Parser {
 			case 3:
 				this.enterOuterAlt(_localctx, 3);
 				{
-				this.state = 570;
+				this.state = 584;
 				this.match(z80asmParser.INSTRUCTIONbit);
-				this.state = 571;
+				this.state = 585;
 				this.bitindex();
-				this.state = 572;
+				this.state = 586;
 				this.match(z80asmParser.COMMA);
-				this.state = 573;
+				this.state = 587;
 				this.match(z80asmParser.PARopen);
-				this.state = 574;
+				this.state = 588;
 				this.register16_ex();
-				this.state = 575;
-				this.match(z80asmParser.PLUS);
-				this.state = 576;
+				this.state = 589;
+				this.operator_offset();
+				this.state = 590;
 				this.offset_ex();
-				this.state = 577;
+				this.state = 591;
 				this.match(z80asmParser.PARclose);
-				this.state = 578;
+				this.state = 592;
 				this.match(z80asmParser.COMMA);
-				this.state = 579;
+				this.state = 593;
 				this.registers8();
 				}
 				break;
@@ -2657,12 +2714,12 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public bitindex(): BitindexContext {
 		let _localctx: BitindexContext = new BitindexContext(this._ctx, this.state);
-		this.enterRule(_localctx, 68, z80asmParser.RULE_bitindex);
+		this.enterRule(_localctx, 72, z80asmParser.RULE_bitindex);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 583;
+			this.state = 597;
 			_la = this._input.LA(1);
 			if (!(_la === z80asmParser.INTERRUPTMODE || _la === z80asmParser.BIT8)) {
 			this._errHandler.recoverInline(this);
@@ -2693,30 +2750,30 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public instruction_jump(): Instruction_jumpContext {
 		let _localctx: Instruction_jumpContext = new Instruction_jumpContext(this._ctx, this.state);
-		this.enterRule(_localctx, 70, z80asmParser.RULE_instruction_jump);
+		this.enterRule(_localctx, 74, z80asmParser.RULE_instruction_jump);
 		let _la: number;
 		try {
-			this.state = 605;
+			this.state = 619;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 50, this._ctx) ) {
 			case 1:
 				this.enterOuterAlt(_localctx, 1);
 				{
-				this.state = 585;
+				this.state = 599;
 				this.match(z80asmParser.INSTRUCTIONjump);
-				this.state = 589;
+				this.state = 603;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
 				case z80asmParser.REG16hl:
 					{
-					this.state = 586;
+					this.state = 600;
 					this.match(z80asmParser.REG16hl);
 					}
 					break;
 				case z80asmParser.REG16ix:
 				case z80asmParser.REG16iy:
 					{
-					this.state = 587;
+					this.state = 601;
 					this.register16_ex();
 					}
 					break;
@@ -2731,9 +2788,10 @@ export class z80asmParser extends Parser {
 				case z80asmParser.NUMBERoct:
 				case z80asmParser.NUMBERdec:
 				case z80asmParser.NUMBERhex:
+				case z80asmParser.CHARACTER:
 				case z80asmParser.PARopen:
 					{
-					this.state = 588;
+					this.state = 602;
 					this.expression16();
 					}
 					break;
@@ -2746,13 +2804,13 @@ export class z80asmParser extends Parser {
 			case 2:
 				this.enterOuterAlt(_localctx, 2);
 				{
-				this.state = 591;
+				this.state = 605;
 				this.match(z80asmParser.INSTRUCTIONjump);
-				this.state = 592;
+				this.state = 606;
 				this.instruction_conditionFlagsAll();
-				this.state = 593;
+				this.state = 607;
 				this.match(z80asmParser.COMMA);
-				this.state = 594;
+				this.state = 608;
 				this.expression16();
 				}
 				break;
@@ -2760,21 +2818,21 @@ export class z80asmParser extends Parser {
 			case 3:
 				this.enterOuterAlt(_localctx, 3);
 				{
-				this.state = 596;
+				this.state = 610;
 				this.match(z80asmParser.INSTRUCTIONjumprel);
-				this.state = 600;
+				this.state = 614;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
 				if (_la === z80asmParser.REG8c || _la === z80asmParser.CONDITIONflags) {
 					{
-					this.state = 597;
+					this.state = 611;
 					this.instruction_conditionFlags();
-					this.state = 598;
+					this.state = 612;
 					this.match(z80asmParser.COMMA);
 					}
 				}
 
-				this.state = 602;
+				this.state = 616;
 				this.offset_rel();
 				}
 				break;
@@ -2782,9 +2840,9 @@ export class z80asmParser extends Parser {
 			case 4:
 				this.enterOuterAlt(_localctx, 4);
 				{
-				this.state = 603;
+				this.state = 617;
 				this.match(z80asmParser.INSTRUCTIONjumprelnz);
-				this.state = 604;
+				this.state = 618;
 				this.offset_rel();
 				}
 				break;
@@ -2807,44 +2865,44 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public instruction_call(): Instruction_callContext {
 		let _localctx: Instruction_callContext = new Instruction_callContext(this._ctx, this.state);
-		this.enterRule(_localctx, 72, z80asmParser.RULE_instruction_call);
+		this.enterRule(_localctx, 76, z80asmParser.RULE_instruction_call);
 		let _la: number;
 		try {
-			this.state = 618;
+			this.state = 632;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
 			case z80asmParser.INSTRUCTIONcall:
 				this.enterOuterAlt(_localctx, 1);
 				{
-				this.state = 607;
+				this.state = 621;
 				this.match(z80asmParser.INSTRUCTIONcall);
-				this.state = 611;
+				this.state = 625;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
 				if (((((_la - 48)) & ~0x1F) === 0 && ((1 << (_la - 48)) & ((1 << (z80asmParser.REG8c - 48)) | (1 << (z80asmParser.CONDITIONflagsex - 48)) | (1 << (z80asmParser.CONDITIONflags - 48)))) !== 0)) {
 					{
-					this.state = 608;
+					this.state = 622;
 					this.instruction_conditionFlagsAll();
-					this.state = 609;
+					this.state = 623;
 					this.match(z80asmParser.COMMA);
 					}
 				}
 
-				this.state = 613;
+				this.state = 627;
 				this.expression16();
 				}
 				break;
 			case z80asmParser.INSTRUCTIONret:
 				this.enterOuterAlt(_localctx, 2);
 				{
-				this.state = 614;
+				this.state = 628;
 				this.match(z80asmParser.INSTRUCTIONret);
-				this.state = 616;
+				this.state = 630;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
 				if (((((_la - 48)) & ~0x1F) === 0 && ((1 << (_la - 48)) & ((1 << (z80asmParser.REG8c - 48)) | (1 << (z80asmParser.CONDITIONflagsex - 48)) | (1 << (z80asmParser.CONDITIONflags - 48)))) !== 0)) {
 					{
-					this.state = 615;
+					this.state = 629;
 					this.instruction_conditionFlagsAll();
 					}
 				}
@@ -2872,12 +2930,12 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public instruction_conditionFlagsAll(): Instruction_conditionFlagsAllContext {
 		let _localctx: Instruction_conditionFlagsAllContext = new Instruction_conditionFlagsAllContext(this._ctx, this.state);
-		this.enterRule(_localctx, 74, z80asmParser.RULE_instruction_conditionFlagsAll);
+		this.enterRule(_localctx, 78, z80asmParser.RULE_instruction_conditionFlagsAll);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 620;
+			this.state = 634;
 			_la = this._input.LA(1);
 			if (!(((((_la - 48)) & ~0x1F) === 0 && ((1 << (_la - 48)) & ((1 << (z80asmParser.REG8c - 48)) | (1 << (z80asmParser.CONDITIONflagsex - 48)) | (1 << (z80asmParser.CONDITIONflags - 48)))) !== 0))) {
 			this._errHandler.recoverInline(this);
@@ -2908,12 +2966,12 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public instruction_conditionFlags(): Instruction_conditionFlagsContext {
 		let _localctx: Instruction_conditionFlagsContext = new Instruction_conditionFlagsContext(this._ctx, this.state);
-		this.enterRule(_localctx, 76, z80asmParser.RULE_instruction_conditionFlags);
+		this.enterRule(_localctx, 80, z80asmParser.RULE_instruction_conditionFlags);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 622;
+			this.state = 636;
 			_la = this._input.LA(1);
 			if (!(_la === z80asmParser.REG8c || _la === z80asmParser.CONDITIONflags)) {
 			this._errHandler.recoverInline(this);
@@ -2944,14 +3002,14 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public instruction_rst(): Instruction_rstContext {
 		let _localctx: Instruction_rstContext = new Instruction_rstContext(this._ctx, this.state);
-		this.enterRule(_localctx, 78, z80asmParser.RULE_instruction_rst);
+		this.enterRule(_localctx, 82, z80asmParser.RULE_instruction_rst);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 624;
+			this.state = 638;
 			this.match(z80asmParser.INSTRUCTIONrst);
-			this.state = 625;
+			this.state = 639;
 			_la = this._input.LA(1);
 			if (!(_la === z80asmParser.INSTRUCTIONrstvectorhex || _la === z80asmParser.INSTRUCTIONrstvector)) {
 			this._errHandler.recoverInline(this);
@@ -2982,13 +3040,13 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public instruction_im(): Instruction_imContext {
 		let _localctx: Instruction_imContext = new Instruction_imContext(this._ctx, this.state);
-		this.enterRule(_localctx, 80, z80asmParser.RULE_instruction_im);
+		this.enterRule(_localctx, 84, z80asmParser.RULE_instruction_im);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 627;
+			this.state = 641;
 			this.match(z80asmParser.INSTRUCTIONim);
-			this.state = 628;
+			this.state = 642;
 			this.match(z80asmParser.INTERRUPTMODE);
 			}
 		}
@@ -3009,26 +3067,26 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public instruction_io(): Instruction_ioContext {
 		let _localctx: Instruction_ioContext = new Instruction_ioContext(this._ctx, this.state);
-		this.enterRule(_localctx, 82, z80asmParser.RULE_instruction_io);
+		this.enterRule(_localctx, 86, z80asmParser.RULE_instruction_io);
 		let _la: number;
 		try {
-			this.state = 662;
+			this.state = 676;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 56, this._ctx) ) {
 			case 1:
 				this.enterOuterAlt(_localctx, 1);
 				{
-				this.state = 630;
+				this.state = 644;
 				this.match(z80asmParser.INSTRUCTIONin);
-				this.state = 631;
+				this.state = 645;
 				this.match(z80asmParser.REG8a);
-				this.state = 632;
+				this.state = 646;
 				this.match(z80asmParser.COMMA);
-				this.state = 633;
+				this.state = 647;
 				this.match(z80asmParser.PARopen);
-				this.state = 634;
+				this.state = 648;
 				this.expression8();
-				this.state = 635;
+				this.state = 649;
 				this.match(z80asmParser.PARclose);
 				}
 				break;
@@ -3036,25 +3094,25 @@ export class z80asmParser extends Parser {
 			case 2:
 				this.enterOuterAlt(_localctx, 2);
 				{
-				this.state = 637;
+				this.state = 651;
 				this.match(z80asmParser.INSTRUCTIONin);
-				this.state = 641;
+				this.state = 655;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
 				if (((((_la - 46)) & ~0x1F) === 0 && ((1 << (_la - 46)) & ((1 << (z80asmParser.REG8a - 46)) | (1 << (z80asmParser.REG8b - 46)) | (1 << (z80asmParser.REG8c - 46)) | (1 << (z80asmParser.REG8d - 46)) | (1 << (z80asmParser.REG8e - 46)) | (1 << (z80asmParser.REG8h - 46)) | (1 << (z80asmParser.REG8l - 46)))) !== 0)) {
 					{
-					this.state = 638;
+					this.state = 652;
 					this.registers8();
-					this.state = 639;
+					this.state = 653;
 					this.match(z80asmParser.COMMA);
 					}
 				}
 
-				this.state = 643;
+				this.state = 657;
 				this.match(z80asmParser.PARopen);
-				this.state = 644;
+				this.state = 658;
 				this.match(z80asmParser.REG8c);
-				this.state = 645;
+				this.state = 659;
 				this.match(z80asmParser.PARclose);
 				}
 				break;
@@ -3062,17 +3120,17 @@ export class z80asmParser extends Parser {
 			case 3:
 				this.enterOuterAlt(_localctx, 3);
 				{
-				this.state = 646;
+				this.state = 660;
 				this.match(z80asmParser.INSTRUCTIONout);
-				this.state = 647;
+				this.state = 661;
 				this.match(z80asmParser.PARopen);
-				this.state = 648;
+				this.state = 662;
 				this.expression8();
-				this.state = 649;
+				this.state = 663;
 				this.match(z80asmParser.PARclose);
-				this.state = 650;
+				this.state = 664;
 				this.match(z80asmParser.COMMA);
-				this.state = 651;
+				this.state = 665;
 				this.match(z80asmParser.REG8a);
 				}
 				break;
@@ -3080,17 +3138,17 @@ export class z80asmParser extends Parser {
 			case 4:
 				this.enterOuterAlt(_localctx, 4);
 				{
-				this.state = 653;
+				this.state = 667;
 				this.match(z80asmParser.INSTRUCTIONout);
-				this.state = 654;
+				this.state = 668;
 				this.match(z80asmParser.PARopen);
-				this.state = 655;
+				this.state = 669;
 				this.match(z80asmParser.REG8c);
-				this.state = 656;
+				this.state = 670;
 				this.match(z80asmParser.PARclose);
-				this.state = 657;
+				this.state = 671;
 				this.match(z80asmParser.COMMA);
-				this.state = 660;
+				this.state = 674;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
 				case z80asmParser.REG8a:
@@ -3101,13 +3159,13 @@ export class z80asmParser extends Parser {
 				case z80asmParser.REG8h:
 				case z80asmParser.REG8l:
 					{
-					this.state = 658;
+					this.state = 672;
 					this.registers8();
 					}
 					break;
 				case z80asmParser.ZERO:
 					{
-					this.state = 659;
+					this.state = 673;
 					this.match(z80asmParser.ZERO);
 					}
 					break;
@@ -3135,11 +3193,11 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public offset_ex(): Offset_exContext {
 		let _localctx: Offset_exContext = new Offset_exContext(this._ctx, this.state);
-		this.enterRule(_localctx, 84, z80asmParser.RULE_offset_ex);
+		this.enterRule(_localctx, 88, z80asmParser.RULE_offset_ex);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 664;
+			this.state = 678;
 			this.expression(0);
 			}
 		}
@@ -3160,11 +3218,11 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public offset_rel(): Offset_relContext {
 		let _localctx: Offset_relContext = new Offset_relContext(this._ctx, this.state);
-		this.enterRule(_localctx, 86, z80asmParser.RULE_offset_rel);
+		this.enterRule(_localctx, 90, z80asmParser.RULE_offset_rel);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 666;
+			this.state = 680;
 			this.expression(0);
 			}
 		}
@@ -3185,12 +3243,12 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public registers(): RegistersContext {
 		let _localctx: RegistersContext = new RegistersContext(this._ctx, this.state);
-		this.enterRule(_localctx, 88, z80asmParser.RULE_registers);
+		this.enterRule(_localctx, 92, z80asmParser.RULE_registers);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 668;
+			this.state = 682;
 			_la = this._input.LA(1);
 			if (!(((((_la - 43)) & ~0x1F) === 0 && ((1 << (_la - 43)) & ((1 << (z80asmParser.REG8x - 43)) | (1 << (z80asmParser.REG8y - 43)) | (1 << (z80asmParser.REG8sys - 43)) | (1 << (z80asmParser.REG8a - 43)) | (1 << (z80asmParser.REG8b - 43)) | (1 << (z80asmParser.REG8c - 43)) | (1 << (z80asmParser.REG8d - 43)) | (1 << (z80asmParser.REG8e - 43)) | (1 << (z80asmParser.REG8h - 43)) | (1 << (z80asmParser.REG8l - 43)) | (1 << (z80asmParser.REG16af - 43)) | (1 << (z80asmParser.REG16bc - 43)) | (1 << (z80asmParser.REG16de - 43)) | (1 << (z80asmParser.REG16hl - 43)) | (1 << (z80asmParser.REG16sp - 43)) | (1 << (z80asmParser.REG16ix - 43)) | (1 << (z80asmParser.REG16iy - 43)))) !== 0))) {
 			this._errHandler.recoverInline(this);
@@ -3221,12 +3279,12 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public registers8(): Registers8Context {
 		let _localctx: Registers8Context = new Registers8Context(this._ctx, this.state);
-		this.enterRule(_localctx, 90, z80asmParser.RULE_registers8);
+		this.enterRule(_localctx, 94, z80asmParser.RULE_registers8);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 670;
+			this.state = 684;
 			_la = this._input.LA(1);
 			if (!(((((_la - 46)) & ~0x1F) === 0 && ((1 << (_la - 46)) & ((1 << (z80asmParser.REG8a - 46)) | (1 << (z80asmParser.REG8b - 46)) | (1 << (z80asmParser.REG8c - 46)) | (1 << (z80asmParser.REG8d - 46)) | (1 << (z80asmParser.REG8e - 46)) | (1 << (z80asmParser.REG8h - 46)) | (1 << (z80asmParser.REG8l - 46)))) !== 0))) {
 			this._errHandler.recoverInline(this);
@@ -3257,12 +3315,12 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public registers8x(): Registers8xContext {
 		let _localctx: Registers8xContext = new Registers8xContext(this._ctx, this.state);
-		this.enterRule(_localctx, 92, z80asmParser.RULE_registers8x);
+		this.enterRule(_localctx, 96, z80asmParser.RULE_registers8x);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 672;
+			this.state = 686;
 			_la = this._input.LA(1);
 			if (!(((((_la - 43)) & ~0x1F) === 0 && ((1 << (_la - 43)) & ((1 << (z80asmParser.REG8x - 43)) | (1 << (z80asmParser.REG8a - 43)) | (1 << (z80asmParser.REG8b - 43)) | (1 << (z80asmParser.REG8c - 43)) | (1 << (z80asmParser.REG8d - 43)) | (1 << (z80asmParser.REG8e - 43)))) !== 0))) {
 			this._errHandler.recoverInline(this);
@@ -3293,12 +3351,12 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public registers8y(): Registers8yContext {
 		let _localctx: Registers8yContext = new Registers8yContext(this._ctx, this.state);
-		this.enterRule(_localctx, 94, z80asmParser.RULE_registers8y);
+		this.enterRule(_localctx, 98, z80asmParser.RULE_registers8y);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 674;
+			this.state = 688;
 			_la = this._input.LA(1);
 			if (!(((((_la - 44)) & ~0x1F) === 0 && ((1 << (_la - 44)) & ((1 << (z80asmParser.REG8y - 44)) | (1 << (z80asmParser.REG8a - 44)) | (1 << (z80asmParser.REG8b - 44)) | (1 << (z80asmParser.REG8c - 44)) | (1 << (z80asmParser.REG8d - 44)) | (1 << (z80asmParser.REG8e - 44)))) !== 0))) {
 			this._errHandler.recoverInline(this);
@@ -3329,12 +3387,12 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public register16_grpaf(): Register16_grpafContext {
 		let _localctx: Register16_grpafContext = new Register16_grpafContext(this._ctx, this.state);
-		this.enterRule(_localctx, 96, z80asmParser.RULE_register16_grpaf);
+		this.enterRule(_localctx, 100, z80asmParser.RULE_register16_grpaf);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 676;
+			this.state = 690;
 			_la = this._input.LA(1);
 			if (!(((((_la - 53)) & ~0x1F) === 0 && ((1 << (_la - 53)) & ((1 << (z80asmParser.REG16af - 53)) | (1 << (z80asmParser.REG16bc - 53)) | (1 << (z80asmParser.REG16de - 53)) | (1 << (z80asmParser.REG16hl - 53)))) !== 0))) {
 			this._errHandler.recoverInline(this);
@@ -3365,12 +3423,12 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public register16_grpsp(): Register16_grpspContext {
 		let _localctx: Register16_grpspContext = new Register16_grpspContext(this._ctx, this.state);
-		this.enterRule(_localctx, 98, z80asmParser.RULE_register16_grpsp);
+		this.enterRule(_localctx, 102, z80asmParser.RULE_register16_grpsp);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 678;
+			this.state = 692;
 			_la = this._input.LA(1);
 			if (!(((((_la - 54)) & ~0x1F) === 0 && ((1 << (_la - 54)) & ((1 << (z80asmParser.REG16bc - 54)) | (1 << (z80asmParser.REG16de - 54)) | (1 << (z80asmParser.REG16sp - 54)))) !== 0))) {
 			this._errHandler.recoverInline(this);
@@ -3401,9 +3459,9 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public register16_grpsphl(): Register16_grpsphlContext {
 		let _localctx: Register16_grpsphlContext = new Register16_grpsphlContext(this._ctx, this.state);
-		this.enterRule(_localctx, 100, z80asmParser.RULE_register16_grpsphl);
+		this.enterRule(_localctx, 104, z80asmParser.RULE_register16_grpsphl);
 		try {
-			this.state = 682;
+			this.state = 696;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
 			case z80asmParser.REG16bc:
@@ -3411,14 +3469,14 @@ export class z80asmParser extends Parser {
 			case z80asmParser.REG16sp:
 				this.enterOuterAlt(_localctx, 1);
 				{
-				this.state = 680;
+				this.state = 694;
 				this.register16_grpsp();
 				}
 				break;
 			case z80asmParser.REG16hl:
 				this.enterOuterAlt(_localctx, 2);
 				{
-				this.state = 681;
+				this.state = 695;
 				this.match(z80asmParser.REG16hl);
 				}
 				break;
@@ -3443,9 +3501,9 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public register16_grpspix(): Register16_grpspixContext {
 		let _localctx: Register16_grpspixContext = new Register16_grpspixContext(this._ctx, this.state);
-		this.enterRule(_localctx, 102, z80asmParser.RULE_register16_grpspix);
+		this.enterRule(_localctx, 106, z80asmParser.RULE_register16_grpspix);
 		try {
-			this.state = 686;
+			this.state = 700;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
 			case z80asmParser.REG16bc:
@@ -3453,14 +3511,14 @@ export class z80asmParser extends Parser {
 			case z80asmParser.REG16sp:
 				this.enterOuterAlt(_localctx, 1);
 				{
-				this.state = 684;
+				this.state = 698;
 				this.register16_grpsp();
 				}
 				break;
 			case z80asmParser.REG16ix:
 				this.enterOuterAlt(_localctx, 2);
 				{
-				this.state = 685;
+				this.state = 699;
 				this.match(z80asmParser.REG16ix);
 				}
 				break;
@@ -3485,9 +3543,9 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public register16_grpspiy(): Register16_grpspiyContext {
 		let _localctx: Register16_grpspiyContext = new Register16_grpspiyContext(this._ctx, this.state);
-		this.enterRule(_localctx, 104, z80asmParser.RULE_register16_grpspiy);
+		this.enterRule(_localctx, 108, z80asmParser.RULE_register16_grpspiy);
 		try {
-			this.state = 690;
+			this.state = 704;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
 			case z80asmParser.REG16bc:
@@ -3495,14 +3553,14 @@ export class z80asmParser extends Parser {
 			case z80asmParser.REG16sp:
 				this.enterOuterAlt(_localctx, 1);
 				{
-				this.state = 688;
+				this.state = 702;
 				this.register16_grpsp();
 				}
 				break;
 			case z80asmParser.REG16iy:
 				this.enterOuterAlt(_localctx, 2);
 				{
-				this.state = 689;
+				this.state = 703;
 				this.match(z80asmParser.REG16iy);
 				}
 				break;
@@ -3527,12 +3585,12 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public register16_ex(): Register16_exContext {
 		let _localctx: Register16_exContext = new Register16_exContext(this._ctx, this.state);
-		this.enterRule(_localctx, 106, z80asmParser.RULE_register16_ex);
+		this.enterRule(_localctx, 110, z80asmParser.RULE_register16_ex);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 692;
+			this.state = 706;
 			_la = this._input.LA(1);
 			if (!(_la === z80asmParser.REG16ix || _la === z80asmParser.REG16iy)) {
 			this._errHandler.recoverInline(this);
@@ -3563,26 +3621,26 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public label(): LabelContext {
 		let _localctx: LabelContext = new LabelContext(this._ctx, this.state);
-		this.enterRule(_localctx, 108, z80asmParser.RULE_label);
+		this.enterRule(_localctx, 112, z80asmParser.RULE_label);
 		try {
-			this.state = 699;
+			this.state = 713;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
 			case z80asmParser.T__2:
 				this.enterOuterAlt(_localctx, 1);
 				{
-				this.state = 694;
+				this.state = 708;
 				this.match(z80asmParser.T__2);
-				this.state = 695;
+				this.state = 709;
 				this.symbol();
 				}
 				break;
 			case z80asmParser.SYMBOL:
 				this.enterOuterAlt(_localctx, 2);
 				{
-				this.state = 696;
+				this.state = 710;
 				this.symbol();
-				this.state = 697;
+				this.state = 711;
 				this.match(z80asmParser.T__3);
 				}
 				break;
@@ -3607,11 +3665,11 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public symbol(): SymbolContext {
 		let _localctx: SymbolContext = new SymbolContext(this._ctx, this.state);
-		this.enterRule(_localctx, 110, z80asmParser.RULE_symbol);
+		this.enterRule(_localctx, 114, z80asmParser.RULE_symbol);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 701;
+			this.state = 715;
 			this.match(z80asmParser.SYMBOL);
 			}
 		}
@@ -3632,11 +3690,11 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public blockcomment(): BlockcommentContext {
 		let _localctx: BlockcommentContext = new BlockcommentContext(this._ctx, this.state);
-		this.enterRule(_localctx, 112, z80asmParser.RULE_blockcomment);
+		this.enterRule(_localctx, 116, z80asmParser.RULE_blockcomment);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 703;
+			this.state = 717;
 			this.match(z80asmParser.BLOCKCOMMENTtext);
 			}
 		}
@@ -3657,11 +3715,11 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public comment(): CommentContext {
 		let _localctx: CommentContext = new CommentContext(this._ctx, this.state);
-		this.enterRule(_localctx, 114, z80asmParser.RULE_comment);
+		this.enterRule(_localctx, 118, z80asmParser.RULE_comment);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 705;
+			this.state = 719;
 			this.match(z80asmParser.COMMENT);
 			}
 		}
@@ -3682,11 +3740,11 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public string(): StringContext {
 		let _localctx: StringContext = new StringContext(this._ctx, this.state);
-		this.enterRule(_localctx, 116, z80asmParser.RULE_string);
+		this.enterRule(_localctx, 120, z80asmParser.RULE_string);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 707;
+			this.state = 721;
 			this.match(z80asmParser.STRING);
 			}
 		}
@@ -3707,11 +3765,11 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public character(): CharacterContext {
 		let _localctx: CharacterContext = new CharacterContext(this._ctx, this.state);
-		this.enterRule(_localctx, 118, z80asmParser.RULE_character);
+		this.enterRule(_localctx, 122, z80asmParser.RULE_character);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 709;
+			this.state = 723;
 			this.match(z80asmParser.CHARACTER);
 			}
 		}
@@ -3732,11 +3790,11 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public expression8(): Expression8Context {
 		let _localctx: Expression8Context = new Expression8Context(this._ctx, this.state);
-		this.enterRule(_localctx, 120, z80asmParser.RULE_expression8);
+		this.enterRule(_localctx, 124, z80asmParser.RULE_expression8);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 711;
+			this.state = 725;
 			this.expression(0);
 			}
 		}
@@ -3757,11 +3815,11 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public expression16(): Expression16Context {
 		let _localctx: Expression16Context = new Expression16Context(this._ctx, this.state);
-		this.enterRule(_localctx, 122, z80asmParser.RULE_expression16);
+		this.enterRule(_localctx, 126, z80asmParser.RULE_expression16);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 713;
+			this.state = 727;
 			this.expression(0);
 			}
 		}
@@ -3782,11 +3840,11 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public expression32(): Expression32Context {
 		let _localctx: Expression32Context = new Expression32Context(this._ctx, this.state);
-		this.enterRule(_localctx, 124, z80asmParser.RULE_expression32);
+		this.enterRule(_localctx, 128, z80asmParser.RULE_expression32);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 715;
+			this.state = 729;
 			this.expression(0);
 			}
 		}
@@ -3817,22 +3875,22 @@ export class z80asmParser extends Parser {
 		let _parentState: number = this.state;
 		let _localctx: ExpressionContext = new ExpressionContext(this._ctx, _parentState);
 		let _prevctx: ExpressionContext = _localctx;
-		let _startState: number = 126;
-		this.enterRecursionRule(_localctx, 126, z80asmParser.RULE_expression, _p);
+		let _startState: number = 130;
+		this.enterRecursionRule(_localctx, 130, z80asmParser.RULE_expression, _p);
 		try {
 			let _alt: number;
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 724;
+			this.state = 738;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
 			case z80asmParser.PARopen:
 				{
-				this.state = 718;
+				this.state = 732;
 				this.match(z80asmParser.PARopen);
-				this.state = 719;
+				this.state = 733;
 				this.expression(0);
-				this.state = 720;
+				this.state = 734;
 				this.match(z80asmParser.PARclose);
 				}
 				break;
@@ -3846,14 +3904,15 @@ export class z80asmParser extends Parser {
 			case z80asmParser.NUMBERoct:
 			case z80asmParser.NUMBERdec:
 			case z80asmParser.NUMBERhex:
+			case z80asmParser.CHARACTER:
 				{
-				this.state = 722;
+				this.state = 736;
 				this.number();
 				}
 				break;
 			case z80asmParser.SYMBOL:
 				{
-				this.state = 723;
+				this.state = 737;
 				this.symbol();
 				}
 				break;
@@ -3861,7 +3920,7 @@ export class z80asmParser extends Parser {
 				throw new NoViableAltException(this);
 			}
 			this._ctx._stop = this._input.tryLT(-1);
-			this.state = 732;
+			this.state = 746;
 			this._errHandler.sync(this);
 			_alt = this.interpreter.adaptivePredict(this._input, 62, this._ctx);
 			while (_alt !== 2 && _alt !== ATN.INVALID_ALT_NUMBER) {
@@ -3874,18 +3933,18 @@ export class z80asmParser extends Parser {
 					{
 					_localctx = new ExpressionContext(_parentctx, _parentState);
 					this.pushNewRecursionContext(_localctx, _startState, z80asmParser.RULE_expression);
-					this.state = 726;
+					this.state = 740;
 					if (!(this.precpred(this._ctx, 4))) {
 						throw new FailedPredicateException(this, "this.precpred(this._ctx, 4)");
 					}
-					this.state = 727;
+					this.state = 741;
 					this.operator();
-					this.state = 728;
+					this.state = 742;
 					this.expression(5);
 					}
 					}
 				}
-				this.state = 734;
+				this.state = 748;
 				this._errHandler.sync(this);
 				_alt = this.interpreter.adaptivePredict(this._input, 62, this._ctx);
 			}
@@ -3908,9 +3967,9 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public operator(): OperatorContext {
 		let _localctx: OperatorContext = new OperatorContext(this._ctx, this.state);
-		this.enterRule(_localctx, 128, z80asmParser.RULE_operator);
+		this.enterRule(_localctx, 132, z80asmParser.RULE_operator);
 		try {
-			this.state = 738;
+			this.state = 752;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
 			case z80asmParser.PLUS:
@@ -3918,21 +3977,21 @@ export class z80asmParser extends Parser {
 			case z80asmParser.OPERATORnum:
 				this.enterOuterAlt(_localctx, 1);
 				{
-				this.state = 735;
+				this.state = 749;
 				this.operator_num();
 				}
 				break;
 			case z80asmParser.OPERATORbit:
 				this.enterOuterAlt(_localctx, 2);
 				{
-				this.state = 736;
+				this.state = 750;
 				this.operator_bit();
 				}
 				break;
 			case z80asmParser.OPERATORlogic:
 				this.enterOuterAlt(_localctx, 3);
 				{
-				this.state = 737;
+				this.state = 751;
 				this.operator_logic();
 				}
 				break;
@@ -3957,12 +4016,12 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public operator_num(): Operator_numContext {
 		let _localctx: Operator_numContext = new Operator_numContext(this._ctx, this.state);
-		this.enterRule(_localctx, 130, z80asmParser.RULE_operator_num);
+		this.enterRule(_localctx, 134, z80asmParser.RULE_operator_num);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 740;
+			this.state = 754;
 			_la = this._input.LA(1);
 			if (!(((((_la - 65)) & ~0x1F) === 0 && ((1 << (_la - 65)) & ((1 << (z80asmParser.PLUS - 65)) | (1 << (z80asmParser.MINUS - 65)) | (1 << (z80asmParser.OPERATORnum - 65)))) !== 0))) {
 			this._errHandler.recoverInline(this);
@@ -3993,11 +4052,11 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public operator_bit(): Operator_bitContext {
 		let _localctx: Operator_bitContext = new Operator_bitContext(this._ctx, this.state);
-		this.enterRule(_localctx, 132, z80asmParser.RULE_operator_bit);
+		this.enterRule(_localctx, 136, z80asmParser.RULE_operator_bit);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 742;
+			this.state = 756;
 			this.match(z80asmParser.OPERATORbit);
 			}
 		}
@@ -4018,12 +4077,48 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public operator_logic(): Operator_logicContext {
 		let _localctx: Operator_logicContext = new Operator_logicContext(this._ctx, this.state);
-		this.enterRule(_localctx, 134, z80asmParser.RULE_operator_logic);
+		this.enterRule(_localctx, 138, z80asmParser.RULE_operator_logic);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 744;
+			this.state = 758;
 			this.match(z80asmParser.OPERATORlogic);
+			}
+		}
+		catch (re) {
+			if (re instanceof RecognitionException) {
+				_localctx.exception = re;
+				this._errHandler.reportError(this, re);
+				this._errHandler.recover(this, re);
+			} else {
+				throw re;
+			}
+		}
+		finally {
+			this.exitRule();
+		}
+		return _localctx;
+	}
+	// @RuleVersion(0)
+	public operator_offset(): Operator_offsetContext {
+		let _localctx: Operator_offsetContext = new Operator_offsetContext(this._ctx, this.state);
+		this.enterRule(_localctx, 140, z80asmParser.RULE_operator_offset);
+		let _la: number;
+		try {
+			this.enterOuterAlt(_localctx, 1);
+			{
+			this.state = 760;
+			_la = this._input.LA(1);
+			if (!(_la === z80asmParser.PLUS || _la === z80asmParser.MINUS)) {
+			this._errHandler.recoverInline(this);
+			} else {
+				if (this._input.LA(1) === Token.EOF) {
+					this.matchedEOF = true;
+				}
+
+				this._errHandler.reportMatch(this);
+				this.consume();
+			}
 			}
 		}
 		catch (re) {
@@ -4043,17 +4138,17 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public number(): NumberContext {
 		let _localctx: NumberContext = new NumberContext(this._ctx, this.state);
-		this.enterRule(_localctx, 136, z80asmParser.RULE_number);
+		this.enterRule(_localctx, 142, z80asmParser.RULE_number);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 747;
+			this.state = 763;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
 			if (_la === z80asmParser.PLUS || _la === z80asmParser.MINUS) {
 				{
-				this.state = 746;
+				this.state = 762;
 				_la = this._input.LA(1);
 				if (!(_la === z80asmParser.PLUS || _la === z80asmParser.MINUS)) {
 				this._errHandler.recoverInline(this);
@@ -4068,18 +4163,18 @@ export class z80asmParser extends Parser {
 				}
 			}
 
-			this.state = 753;
+			this.state = 770;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
 			case z80asmParser.NUMBERbin:
 				{
-				this.state = 749;
+				this.state = 765;
 				this.number_bin();
 				}
 				break;
 			case z80asmParser.NUMBERoct:
 				{
-				this.state = 750;
+				this.state = 766;
 				this.number_oct();
 				}
 				break;
@@ -4088,15 +4183,21 @@ export class z80asmParser extends Parser {
 			case z80asmParser.INSTRUCTIONrstvector:
 			case z80asmParser.NUMBERdec:
 				{
-				this.state = 751;
+				this.state = 767;
 				this.number_dec();
 				}
 				break;
 			case z80asmParser.INSTRUCTIONrstvectorhex:
 			case z80asmParser.NUMBERhex:
 				{
-				this.state = 752;
+				this.state = 768;
 				this.number_hex();
+				}
+				break;
+			case z80asmParser.CHARACTER:
+				{
+				this.state = 769;
+				this.number_char();
 				}
 				break;
 			default:
@@ -4121,11 +4222,11 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public number_bin(): Number_binContext {
 		let _localctx: Number_binContext = new Number_binContext(this._ctx, this.state);
-		this.enterRule(_localctx, 138, z80asmParser.RULE_number_bin);
+		this.enterRule(_localctx, 144, z80asmParser.RULE_number_bin);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 755;
+			this.state = 772;
 			this.match(z80asmParser.NUMBERbin);
 			}
 		}
@@ -4146,11 +4247,11 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public number_oct(): Number_octContext {
 		let _localctx: Number_octContext = new Number_octContext(this._ctx, this.state);
-		this.enterRule(_localctx, 140, z80asmParser.RULE_number_oct);
+		this.enterRule(_localctx, 146, z80asmParser.RULE_number_oct);
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 757;
+			this.state = 774;
 			this.match(z80asmParser.NUMBERoct);
 			}
 		}
@@ -4171,12 +4272,12 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public number_dec(): Number_decContext {
 		let _localctx: Number_decContext = new Number_decContext(this._ctx, this.state);
-		this.enterRule(_localctx, 142, z80asmParser.RULE_number_dec);
+		this.enterRule(_localctx, 148, z80asmParser.RULE_number_dec);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 759;
+			this.state = 776;
 			_la = this._input.LA(1);
 			if (!(((((_la - 70)) & ~0x1F) === 0 && ((1 << (_la - 70)) & ((1 << (z80asmParser.INTERRUPTMODE - 70)) | (1 << (z80asmParser.BIT8 - 70)) | (1 << (z80asmParser.INSTRUCTIONrstvector - 70)) | (1 << (z80asmParser.NUMBERdec - 70)))) !== 0))) {
 			this._errHandler.recoverInline(this);
@@ -4207,12 +4308,12 @@ export class z80asmParser extends Parser {
 	// @RuleVersion(0)
 	public number_hex(): Number_hexContext {
 		let _localctx: Number_hexContext = new Number_hexContext(this._ctx, this.state);
-		this.enterRule(_localctx, 144, z80asmParser.RULE_number_hex);
+		this.enterRule(_localctx, 150, z80asmParser.RULE_number_hex);
 		let _la: number;
 		try {
 			this.enterOuterAlt(_localctx, 1);
 			{
-			this.state = 761;
+			this.state = 778;
 			_la = this._input.LA(1);
 			if (!(_la === z80asmParser.INSTRUCTIONrstvectorhex || _la === z80asmParser.NUMBERhex)) {
 			this._errHandler.recoverInline(this);
@@ -4240,10 +4341,35 @@ export class z80asmParser extends Parser {
 		}
 		return _localctx;
 	}
+	// @RuleVersion(0)
+	public number_char(): Number_charContext {
+		let _localctx: Number_charContext = new Number_charContext(this._ctx, this.state);
+		this.enterRule(_localctx, 152, z80asmParser.RULE_number_char);
+		try {
+			this.enterOuterAlt(_localctx, 1);
+			{
+			this.state = 780;
+			this.match(z80asmParser.CHARACTER);
+			}
+		}
+		catch (re) {
+			if (re instanceof RecognitionException) {
+				_localctx.exception = re;
+				this._errHandler.reportError(this, re);
+				this._errHandler.recover(this, re);
+			} else {
+				throw re;
+			}
+		}
+		finally {
+			this.exitRule();
+		}
+		return _localctx;
+	}
 
 	public sempred(_localctx: RuleContext, ruleIndex: number, predIndex: number): boolean {
 		switch (ruleIndex) {
-		case 63:
+		case 65:
 			return this.expression_sempred(_localctx as ExpressionContext, predIndex);
 		}
 		return true;
@@ -4258,7 +4384,7 @@ export class z80asmParser extends Parser {
 
 	private static readonly _serializedATNSegments: number = 2;
 	private static readonly _serializedATNSegment0: string =
-		"\x03\uC91D\uCABA\u058D\uAFBA\u4F53\u0607\uEA8B\uC241\x03W\u02FE\x04\x02" +
+		"\x03\uC91D\uCABA\u058D\uAFBA\u4F53\u0607\uEA8B\uC241\x03W\u0311\x04\x02" +
 		"\t\x02\x04\x03\t\x03\x04\x04\t\x04\x04\x05\t\x05\x04\x06\t\x06\x04\x07" +
 		"\t\x07\x04\b\t\b\x04\t\t\t\x04\n\t\n\x04\v\t\v\x04\f\t\f\x04\r\t\r\x04" +
 		"\x0E\t\x0E\x04\x0F\t\x0F\x04\x10\t\x10\x04\x11\t\x11\x04\x12\t\x12\x04" +
@@ -4269,375 +4395,383 @@ export class z80asmParser extends Parser {
 		"\x04,\t,\x04-\t-\x04.\t.\x04/\t/\x040\t0\x041\t1\x042\t2\x043\t3\x044" +
 		"\t4\x045\t5\x046\t6\x047\t7\x048\t8\x049\t9\x04:\t:\x04;\t;\x04<\t<\x04" +
 		"=\t=\x04>\t>\x04?\t?\x04@\t@\x04A\tA\x04B\tB\x04C\tC\x04D\tD\x04E\tE\x04" +
-		"F\tF\x04G\tG\x04H\tH\x04I\tI\x04J\tJ\x03\x02\x05\x02\x96\n\x02\x03\x02" +
-		"\x03\x02\x03\x03\x05\x03\x9B\n\x03\x03\x03\x06\x03\x9E\n\x03\r\x03\x0E" +
-		"\x03\x9F\x03\x04\x03\x04\x05\x04\xA4\n\x04\x03\x04\x03\x04\x03\x04\x05" +
-		"\x04\xA9\n\x04\x03\x04\x05\x04\xAC\n\x04\x03\x04\x03\x04\x05\x04\xB0\n" +
-		"\x04\x03\x04\x05\x04\xB3\n\x04\x03\x05\x03\x05\x03\x05\x03\x05\x03\x05" +
-		"\x03\x05\x03\x05\x03\x05\x03\x05\x03\x05\x03\x05\x03\x05\x03\x05\x05\x05" +
-		"\xC2\n\x05\x03\x06\x03\x06\x03\x07\x03\x07\x03\x07\x03\b\x03\b\x03\b\x03" +
-		"\t\x03\t\x03\t\x03\n\x03\n\x03\n\x03\n\x07\n\xD3\n\n\f\n\x0E\n\xD6\v\n" +
-		"\x03\v\x03\v\x03\v\x03\v\x03\v\x03\f\x03\f\x03\f\x03\f\x07\f\xE1\n\f\f" +
-		"\f\x0E\f\xE4\v\f\x03\r\x03\r\x03\r\x03\r\x05\r\xEA\n\r\x03\x0E\x03\x0E" +
-		"\x03\x0E\x03\x0E\x07\x0E\xF0\n\x0E\f\x0E\x0E\x0E\xF3\v\x0E\x03\x0F\x03" +
-		"\x0F\x03\x0F\x05\x0F\xF8\n\x0F\x03\x10\x03\x10\x03\x10\x05\x10\xFD\n\x10" +
-		"\x03\x11\x03\x11\x03\x11\x05\x11\u0102\n\x11\x03\x12\x05\x12\u0105\n\x12" +
-		"\x03\x12\x03\x12\x03\x13\x03\x13\x03\x14\x03\x14\x03\x15\x03\x15\x03\x15" +
-		"\x05\x15\u0110\n\x15\x03\x15\x03\x15\x03\x15\x03\x16\x03\x16\x03\x16\x03" +
-		"\x16\x03\x16\x03\x16\x03\x16\x03\x16\x03\x16\x03\x16\x03\x16\x03\x16\x03" +
-		"\x16\x03\x16\x03\x16\x03\x16\x03\x16\x03\x16\x05\x16\u0127\n\x16\x03\x17" +
-		"\x03\x17\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18" +
-		"\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x05\x18\u0138\n\x18\x03\x18\x03" +
-		"\x18\x03\x18\x03\x18\x05\x18\u013E\n\x18\x03\x18\x03\x18\x03\x18\x03\x18" +
+		"F\tF\x04G\tG\x04H\tH\x04I\tI\x04J\tJ\x04K\tK\x04L\tL\x04M\tM\x04N\tN\x03" +
+		"\x02\x05\x02\x9E\n\x02\x03\x02\x03\x02\x03\x03\x05\x03\xA3\n\x03\x03\x03" +
+		"\x06\x03\xA6\n\x03\r\x03\x0E\x03\xA7\x03\x04\x03\x04\x05\x04\xAC\n\x04" +
+		"\x03\x04\x03\x04\x03\x04\x05\x04\xB1\n\x04\x03\x04\x05\x04\xB4\n\x04\x03" +
+		"\x04\x03\x04\x05\x04\xB8\n\x04\x03\x04\x05\x04\xBB\n\x04\x03\x05\x03\x05" +
+		"\x03\x05\x03\x05\x03\x05\x03\x05\x03\x05\x03\x05\x03\x05\x03\x05\x03\x05" +
+		"\x03\x05\x03\x05\x03\x05\x05\x05\xCB\n\x05\x03\x06\x03\x06\x03\x07\x03" +
+		"\x07\x03\x07\x03\b\x03\b\x03\t\x03\t\x03\t\x03\n\x03\n\x03\n\x03\v\x03" +
+		"\v\x03\v\x03\f\x03\f\x03\f\x03\f\x07\f\xE1\n\f\f\f\x0E\f\xE4\v\f\x03\r" +
+		"\x03\r\x03\r\x03\r\x03\r\x03\x0E\x03\x0E\x03\x0E\x03\x0E\x07\x0E\xEF\n" +
+		"\x0E\f\x0E\x0E\x0E\xF2\v\x0E\x03\x0F\x03\x0F\x03\x0F\x03\x0F\x05\x0F\xF8" +
+		"\n\x0F\x03\x10\x03\x10\x03\x10\x03\x10\x07\x10\xFE\n\x10\f\x10\x0E\x10" +
+		"\u0101\v\x10\x03\x11\x03\x11\x03\x11\x05\x11\u0106\n\x11\x03\x12\x03\x12" +
+		"\x03\x12\x05\x12\u010B\n\x12\x03\x13\x03\x13\x03\x13\x05\x13\u0110\n\x13" +
+		"\x03\x14\x05\x14\u0113\n\x14\x03\x14\x03\x14\x03\x15\x03\x15\x03\x16\x03" +
+		"\x16\x03\x17\x03\x17\x03\x17\x05\x17\u011E\n\x17\x03\x17\x03\x17\x03\x17" +
 		"\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18" +
 		"\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18" +
-		"\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18" +
-		"\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18" +
-		"\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18" +
-		"\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x05\x18\u0177\n\x18\x03" +
-		"\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03" +
-		"\x18\x03\x18\x03\x18\x03\x18\x03\x18\x03\x18\x05\x18\u0188\n\x18\x03\x18" +
-		"\x03\x18\x03\x18\x05\x18\u018D\n\x18\x03\x19\x03\x19\x03\x19\x05\x19\u0192" +
-		"\n\x19\x03\x19\x03\x19\x03\x19\x03\x19\x03\x19\x03\x19\x03\x19\x03\x19" +
-		"\x03\x19\x03\x19\x03\x19\x03\x19\x03\x19\x03\x19\x03\x19\x03\x19\x03\x19" +
-		"\x05\x19\u01A5\n\x19\x03\x19\x03\x19\x03\x19\x03\x19\x03\x19\x05\x19\u01AC" +
-		"\n\x19\x05\x19\u01AE\n\x19\x03\x1A\x03\x1A\x03\x1A\x05\x1A\u01B3\n\x1A" +
-		"\x03\x1B\x03\x1B\x03\x1B\x03\x1B\x03\x1B\x03\x1B\x03\x1B\x03\x1B\x03\x1B" +
-		"\x05\x1B\u01BE\n\x1B\x03\x1B\x03\x1B\x03\x1B\x03\x1B\x03\x1B\x03\x1B\x03" +
-		"\x1B\x05\x1B\u01C7\n\x1B\x03\x1B\x05\x1B\u01CA\n\x1B\x03\x1C\x03\x1C\x03" +
-		"\x1C\x05\x1C\u01CF\n\x1C\x03\x1C\x03\x1C\x03\x1C\x03\x1C\x05\x1C\u01D5" +
-		"\n\x1C\x03\x1C\x03\x1C\x03\x1C\x05\x1C\u01DA\n\x1C\x03\x1C\x03\x1C\x03" +
-		"\x1C\x03\x1C\x03\x1C\x03\x1C\x05\x1C\u01E2\n\x1C\x03\x1C\x05\x1C\u01E5" +
-		"\n\x1C\x03\x1D\x03\x1D\x03\x1D\x03\x1D\x05\x1D\u01EB\n\x1D\x03\x1D\x03" +
-		"\x1D\x03\x1D\x03\x1D\x03\x1D\x03\x1D\x03\x1D\x05\x1D\u01F4\n\x1D\x03\x1D" +
-		"\x05\x1D\u01F7\n\x1D\x03\x1E\x03\x1E\x05\x1E\u01FB\n\x1E\x03\x1F\x03\x1F" +
-		"\x03\x1F\x03\x1F\x03\x1F\x03\x1F\x03\x1F\x03\x1F\x03\x1F\x03\x1F\x03\x1F" +
-		"\x03\x1F\x05\x1F\u0209\n\x1F\x03 \x03 \x03 \x05 \u020E\n \x03!\x03!\x03" +
-		"!\x03!\x03!\x03!\x03!\x03!\x03!\x05!\u0219\n!\x03!\x03!\x03!\x03!\x03" +
-		"!\x03!\x03!\x03!\x03!\x03!\x05!\u0225\n!\x03\"\x03\"\x05\"\u0229\n\"\x03" +
-		"#\x03#\x03#\x03#\x03#\x03#\x03#\x03#\x03#\x03#\x03#\x03#\x03#\x03#\x05" +
-		"#\u0239\n#\x03#\x03#\x03#\x03#\x03#\x03#\x03#\x03#\x03#\x03#\x03#\x03" +
-		"#\x03#\x05#\u0248\n#\x03$\x03$\x03%\x03%\x03%\x03%\x05%\u0250\n%\x03%" +
-		"\x03%\x03%\x03%\x03%\x03%\x03%\x03%\x03%\x05%\u025B\n%\x03%\x03%\x03%" +
-		"\x05%\u0260\n%\x03&\x03&\x03&\x03&\x05&\u0266\n&\x03&\x03&\x03&\x05&\u026B" +
-		"\n&\x05&\u026D\n&\x03\'\x03\'\x03(\x03(\x03)\x03)\x03)\x03*\x03*\x03*" +
-		"\x03+\x03+\x03+\x03+\x03+\x03+\x03+\x03+\x03+\x03+\x03+\x05+\u0284\n+" +
-		"\x03+\x03+\x03+\x03+\x03+\x03+\x03+\x03+\x03+\x03+\x03+\x03+\x03+\x03" +
-		"+\x03+\x03+\x03+\x05+\u0297\n+\x05+\u0299\n+\x03,\x03,\x03-\x03-\x03." +
-		"\x03.\x03/\x03/\x030\x030\x031\x031\x032\x032\x033\x033\x034\x034\x05" +
-		"4\u02AD\n4\x035\x035\x055\u02B1\n5\x036\x036\x056\u02B5\n6\x037\x037\x03" +
-		"8\x038\x038\x038\x038\x058\u02BE\n8\x039\x039\x03:\x03:\x03;\x03;\x03" +
-		"<\x03<\x03=\x03=\x03>\x03>\x03?\x03?\x03@\x03@\x03A\x03A\x03A\x03A\x03" +
-		"A\x03A\x03A\x05A\u02D7\nA\x03A\x03A\x03A\x03A\x07A\u02DD\nA\fA\x0EA\u02E0" +
-		"\vA\x03B\x03B\x03B\x05B\u02E5\nB\x03C\x03C\x03D\x03D\x03E\x03E\x03F\x05" +
-		"F\u02EE\nF\x03F\x03F\x03F\x03F\x05F\u02F4\nF\x03G\x03G\x03H\x03H\x03I" +
-		"\x03I\x03J\x03J\x03J\x05\xD4\xE2\xF1\x02\x03\x80K\x02\x02\x04\x02\x06" +
-		"\x02\b\x02\n\x02\f\x02\x0E\x02\x10\x02\x12\x02\x14\x02\x16\x02\x18\x02" +
-		"\x1A\x02\x1C\x02\x1E\x02 \x02\"\x02$\x02&\x02(\x02*\x02,\x02.\x020\x02" +
-		"2\x024\x026\x028\x02:\x02<\x02>\x02@\x02B\x02D\x02F\x02H\x02J\x02L\x02" +
-		"N\x02P\x02R\x02T\x02V\x02X\x02Z\x02\\\x02^\x02`\x02b\x02d\x02f\x02h\x02" +
-		"j\x02l\x02n\x02p\x02r\x02t\x02v\x02x\x02z\x02|\x02~\x02\x80\x02\x82\x02" +
-		"\x84\x02\x86\x02\x88\x02\x8A\x02\x8C\x02\x8E\x02\x90\x02\x92\x02\x02\x12" +
-		"\x03\x02\x1D\x1E\x03\x02HI\x04\x0222>?\x04\x0222??\x03\x02JK\x03\x02-" +
-		"=\x03\x0206\x04\x02--04\x04\x02..04\x03\x027:\x04\x0289;;\x03\x02<=\x03" +
-		"\x02CE\x03\x02CD\x05\x02HIKKNN\x04\x02JJOO\x02\u0337\x02\x95\x03\x02\x02" +
-		"\x02\x04\x9D\x03\x02\x02\x02\x06\xB2\x03\x02\x02\x02\b\xC1\x03\x02\x02" +
-		"\x02\n\xC3\x03\x02\x02\x02\f\xC5\x03\x02\x02\x02\x0E\xC8\x03\x02\x02\x02" +
-		"\x10\xCB\x03\x02\x02\x02\x12\xCE\x03\x02\x02\x02\x14\xD7\x03\x02\x02\x02" +
-		"\x16\xDC\x03\x02\x02\x02\x18\xE5\x03\x02\x02\x02\x1A\xEB\x03\x02\x02\x02" +
-		"\x1C\xF7\x03\x02\x02\x02\x1E\xF9\x03\x02\x02\x02 \xFE\x03\x02\x02\x02" +
-		"\"\u0104\x03\x02\x02\x02$\u0108\x03\x02\x02\x02&\u010A\x03\x02\x02\x02" +
-		"(\u010C\x03\x02\x02\x02*\u0126\x03\x02\x02\x02,\u0128\x03\x02\x02\x02" +
-		".\u018C\x03\x02\x02\x020\u01AD\x03\x02\x02\x022\u01AF\x03\x02\x02\x02" +
-		"4\u01C9\x03\x02\x02\x026\u01E4\x03\x02\x02\x028\u01F6\x03\x02\x02\x02" +
-		":\u01F8\x03\x02\x02\x02<\u0208\x03\x02\x02\x02>\u020A\x03\x02\x02\x02" +
-		"@\u0224\x03\x02\x02\x02B\u0226\x03\x02\x02\x02D\u0247\x03\x02\x02\x02" +
-		"F\u0249\x03\x02\x02\x02H\u025F\x03\x02\x02\x02J\u026C\x03\x02\x02\x02" +
-		"L\u026E\x03\x02\x02\x02N\u0270\x03\x02\x02\x02P\u0272\x03\x02\x02\x02" +
-		"R\u0275\x03\x02\x02\x02T\u0298\x03\x02\x02\x02V\u029A\x03\x02\x02\x02" +
-		"X\u029C\x03\x02\x02\x02Z\u029E\x03\x02\x02\x02\\\u02A0\x03\x02\x02\x02" +
-		"^\u02A2\x03\x02\x02\x02`\u02A4\x03\x02\x02\x02b\u02A6\x03\x02\x02\x02" +
-		"d\u02A8\x03\x02\x02\x02f\u02AC\x03\x02\x02\x02h\u02B0\x03\x02\x02\x02" +
-		"j\u02B4\x03\x02\x02\x02l\u02B6\x03\x02\x02\x02n\u02BD\x03\x02\x02\x02" +
-		"p\u02BF\x03\x02\x02\x02r\u02C1\x03\x02\x02\x02t\u02C3\x03\x02\x02\x02" +
-		"v\u02C5\x03\x02\x02\x02x\u02C7\x03\x02\x02\x02z\u02C9\x03\x02\x02\x02" +
-		"|\u02CB\x03\x02\x02\x02~\u02CD\x03\x02\x02\x02\x80\u02D6\x03\x02\x02\x02" +
-		"\x82\u02E4\x03\x02\x02\x02\x84\u02E6\x03\x02\x02\x02\x86\u02E8\x03\x02" +
-		"\x02\x02\x88\u02EA\x03\x02\x02\x02\x8A\u02ED\x03\x02\x02\x02\x8C\u02F5" +
-		"\x03\x02\x02\x02\x8E\u02F7\x03\x02\x02\x02\x90\u02F9\x03\x02\x02\x02\x92" +
-		"\u02FB\x03\x02\x02\x02\x94\x96\x05\x04\x03\x02\x95\x94\x03\x02\x02\x02" +
-		"\x95\x96\x03\x02\x02\x02\x96\x97\x03\x02\x02\x02\x97\x98\x07\x02\x02\x03" +
-		"\x98\x03\x03\x02\x02\x02\x99\x9B\x05\x06\x04\x02\x9A\x99\x03\x02\x02\x02" +
-		"\x9A\x9B\x03\x02\x02\x02\x9B\x9C\x03\x02\x02\x02\x9C\x9E\x07V\x02\x02" +
-		"\x9D\x9A\x03\x02\x02\x02\x9E\x9F\x03\x02\x02\x02\x9F\x9D\x03\x02\x02\x02" +
-		"\x9F\xA0\x03\x02\x02\x02\xA0\x05\x03\x02\x02\x02\xA1\xA3\x05\b\x05\x02" +
-		"\xA2\xA4\x05t;\x02\xA3\xA2\x03\x02\x02\x02\xA3\xA4\x03\x02\x02\x02\xA4" +
-		"\xB3\x03\x02\x02\x02\xA5\xB3\x05t;\x02\xA6\xA8\x05n8\x02\xA7\xA9\x05t" +
-		";\x02\xA8\xA7\x03\x02\x02\x02\xA8\xA9\x03\x02\x02\x02\xA9\xB3\x03\x02" +
-		"\x02\x02\xAA\xAC\x05n8\x02\xAB\xAA\x03\x02\x02\x02\xAB\xAC\x03\x02\x02" +
-		"\x02\xAC\xAD\x03\x02\x02\x02\xAD\xAF\x05*\x16\x02\xAE\xB0\x05t;\x02\xAF" +
-		"\xAE\x03\x02\x02\x02\xAF\xB0\x03\x02\x02\x02\xB0\xB3\x03\x02\x02\x02\xB1" +
-		"\xB3\x05r:\x02\xB2\xA1\x03\x02\x02\x02\xB2\xA5\x03\x02\x02\x02\xB2\xA6" +
-		"\x03\x02\x02\x02\xB2\xAB\x03\x02\x02\x02\xB2\xB1\x03\x02\x02\x02\xB3\x07" +
-		"\x03\x02\x02\x02\xB4\xC2\x05\n\x06\x02\xB5\xC2\x05\f\x07\x02\xB6\xC2\x05" +
-		"\x0E\b\x02\xB7\xC2\x05\x16\f\x02\xB8\xC2\x05\x10\t\x02\xB9\xC2\x05\x12" +
-		"\n\x02\xBA\xC2\x05\x14\v\x02\xBB\xC2\x05\x18\r\x02\xBC\xC2\x05\x1A\x0E" +
-		"\x02\xBD\xC2\x05\x1E\x10\x02\xBE\xC2\x05 \x11\x02\xBF\xC2\x05$\x13\x02" +
-		"\xC0\xC2\x05&\x14\x02\xC1\xB4\x03\x02\x02\x02\xC1\xB5\x03\x02\x02\x02" +
-		"\xC1\xB6\x03\x02\x02\x02\xC1\xB7\x03\x02\x02\x02\xC1\xB8\x03\x02\x02\x02" +
-		"\xC1\xB9\x03\x02\x02\x02\xC1\xBA\x03\x02\x02\x02\xC1\xBB\x03\x02\x02\x02" +
-		"\xC1\xBC\x03\x02\x02\x02\xC1\xBD\x03\x02\x02\x02\xC1\xBE\x03\x02\x02\x02" +
-		"\xC1\xBF\x03\x02\x02\x02\xC1\xC0\x03\x02\x02\x02\xC2\t\x03\x02\x02\x02" +
-		"\xC3\xC4\x07\x07\x02\x02\xC4\v\x03\x02\x02\x02\xC5\xC6\x07\b\x02\x02\xC6" +
-		"\xC7\x05|?\x02\xC7\r\x03\x02\x02\x02\xC8\xC9\x07\t\x02\x02\xC9\xCA\x05" +
-		"~@\x02\xCA\x0F\x03\x02\x02\x02\xCB\xCC\x07\n\x02\x02\xCC\xCD\x05p9\x02" +
-		"\xCD\x11\x03\x02\x02\x02\xCE\xCF\x07\v\x02\x02\xCF\xD4\x05p9\x02\xD0\xD1" +
-		"\x07U\x02\x02\xD1\xD3\x05p9\x02\xD2\xD0\x03\x02\x02\x02\xD3\xD6\x03\x02" +
-		"\x02\x02\xD4\xD5\x03\x02\x02\x02\xD4\xD2\x03\x02\x02\x02\xD5\x13\x03\x02" +
-		"\x02\x02\xD6\xD4\x03\x02\x02\x02\xD7\xD8\x07\f\x02\x02\xD8\xD9\x05p9\x02" +
-		"\xD9\xDA\x07\x03\x02\x02\xDA\xDB\x05\x80A\x02\xDB\x15\x03\x02\x02\x02" +
-		"\xDC\xDD\x07\x0F\x02\x02\xDD\xE2\x05\x80A\x02\xDE\xDF\x07U\x02\x02\xDF" +
-		"\xE1\x05\x80A\x02\xE0\xDE\x03\x02\x02\x02\xE1\xE4\x03\x02\x02\x02\xE2" +
-		"\xE3\x03\x02\x02\x02\xE2\xE0\x03\x02\x02\x02\xE3\x17\x03\x02\x02\x02\xE4" +
-		"\xE2\x03\x02\x02\x02\xE5\xE6\x07\r\x02\x02\xE6\xE9\x05\x80A\x02\xE7\xE8" +
-		"\x07U\x02\x02\xE8\xEA\x05\x80A\x02\xE9\xE7\x03\x02\x02\x02\xE9\xEA\x03" +
-		"\x02\x02\x02\xEA\x19\x03\x02\x02\x02\xEB\xEC\x07\x0E\x02\x02\xEC\xF1\x05" +
-		"\x1C\x0F\x02\xED\xEE\x07U\x02\x02\xEE\xF0\x05\x1C\x0F\x02\xEF\xED\x03" +
-		"\x02\x02\x02\xF0\xF3\x03\x02\x02\x02\xF1\xF2\x03\x02\x02\x02\xF1\xEF\x03" +
-		"\x02\x02\x02\xF2\x1B\x03\x02\x02\x02\xF3\xF1\x03\x02\x02\x02\xF4\xF8\x05" +
-		"v<\x02\xF5\xF8\x05x=\x02\xF6\xF8\x05z>\x02\xF7\xF4\x03\x02\x02\x02\xF7" +
-		"\xF5\x03\x02\x02\x02\xF7\xF6\x03\x02\x02\x02\xF8\x1D\x03\x02\x02\x02\xF9" +
-		"\xFA\x07\x12\x02\x02\xFA\xFC\x05\x80A\x02\xFB\xFD\x05t;\x02\xFC\xFB\x03" +
-		"\x02\x02\x02\xFC\xFD\x03\x02\x02\x02\xFD\x1F\x03\x02\x02\x02\xFE\xFF\x07" +
-		"\x13\x02\x02\xFF\u0101\x05p9\x02\u0100\u0102\x05t;\x02\u0101\u0100\x03" +
-		"\x02\x02\x02\u0101\u0102\x03\x02\x02\x02\u0102!\x03\x02\x02\x02\u0103" +
-		"\u0105\x05$\x13\x02\u0104\u0103\x03\x02\x02\x02\u0104\u0105\x03\x02\x02" +
-		"\x02\u0105\u0106\x03\x02\x02\x02\u0106\u0107\x05&\x14\x02\u0107#\x03\x02" +
-		"\x02\x02\u0108\u0109\x07\x14\x02\x02\u0109%\x03\x02\x02\x02\u010A\u010B" +
-		"\x07\x15\x02\x02\u010B\'\x03\x02\x02\x02\u010C\u010D\x07\x16\x02\x02\u010D" +
-		"\u010F\x05|?\x02\u010E\u0110\x05t;\x02\u010F\u010E\x03\x02\x02\x02\u010F" +
-		"\u0110\x03\x02\x02\x02\u0110\u0111\x03\x02\x02\x02\u0111\u0112\x05\x04" +
-		"\x03\x02\u0112\u0113\x07\x17\x02\x02\u0113)\x03\x02\x02\x02\u0114\u0127" +
-		"\x05,\x17\x02\u0115\u0127\x05.\x18\x02\u0116\u0127\x050\x19\x02\u0117" +
-		"\u0127\x052\x1A\x02\u0118\u0127\x054\x1B\x02\u0119\u0127\x056\x1C\x02" +
-		"\u011A\u0127\x058\x1D\x02\u011B\u0127\x05:\x1E\x02\u011C\u0127\x05<\x1F" +
-		"\x02\u011D\u0127\x05> \x02\u011E\u0127\x05@!\x02\u011F\u0127\x05B\"\x02" +
-		"\u0120\u0127\x05D#\x02\u0121\u0127\x05H%\x02\u0122\u0127\x05J&\x02\u0123" +
-		"\u0127\x05P)\x02\u0124\u0127\x05R*\x02\u0125\u0127\x05T+\x02\u0126\u0114" +
-		"\x03\x02\x02\x02\u0126\u0115\x03\x02\x02\x02\u0126\u0116\x03\x02\x02\x02" +
-		"\u0126\u0117\x03\x02\x02\x02\u0126\u0118\x03\x02\x02\x02\u0126\u0119\x03" +
-		"\x02\x02\x02\u0126\u011A\x03\x02\x02\x02\u0126\u011B\x03\x02\x02\x02\u0126" +
-		"\u011C\x03\x02\x02\x02\u0126\u011D\x03\x02\x02\x02\u0126\u011E\x03\x02" +
-		"\x02\x02\u0126\u011F\x03\x02\x02\x02\u0126\u0120\x03\x02\x02\x02\u0126" +
-		"\u0121\x03\x02\x02\x02\u0126\u0122\x03\x02\x02\x02\u0126\u0123\x03\x02" +
-		"\x02\x02\u0126\u0124\x03\x02\x02\x02\u0126\u0125\x03\x02\x02\x02\u0127" +
-		"+\x03\x02\x02\x02\u0128\u0129\x07\x18\x02\x02\u0129-\x03\x02\x02\x02\u012A" +
-		"\u0137\x07\x19\x02\x02\u012B\u012C\x05\\/\x02\u012C\u012D\x07U\x02\x02" +
-		"\u012D\u012E\x05\\/\x02\u012E\u0138\x03\x02\x02\x02\u012F\u0130\x05^0" +
-		"\x02\u0130\u0131\x07U\x02\x02\u0131\u0132\x05^0\x02\u0132\u0138\x03\x02" +
-		"\x02\x02\u0133\u0134\x05`1\x02\u0134\u0135\x07U\x02\x02\u0135\u0136\x05" +
-		"`1\x02\u0136\u0138\x03\x02\x02\x02\u0137\u012B\x03\x02\x02\x02\u0137\u012F" +
-		"\x03\x02\x02\x02\u0137\u0133\x03\x02\x02\x02\u0138\u018D\x03\x02\x02\x02" +
-		"\u0139\u013D\x07\x19\x02\x02\u013A\u013E\x05\\/\x02\u013B\u013E\x07-\x02" +
-		"\x02\u013C\u013E\x07.\x02\x02\u013D\u013A\x03\x02\x02\x02\u013D\u013B" +
-		"\x03\x02\x02\x02\u013D\u013C\x03\x02\x02\x02\u013E\u013F\x03\x02\x02\x02" +
-		"\u013F\u0140\x07U\x02\x02\u0140\u018D\x05z>\x02\u0141\u0142\x07\x19\x02" +
-		"\x02\u0142\u0143\x05\\/\x02\u0143\u0144\x07U\x02\x02\u0144\u0145\x07S" +
-		"\x02\x02\u0145\u0146\x07:\x02\x02\u0146\u0147\x07T\x02\x02\u0147\u018D" +
-		"\x03\x02\x02\x02\u0148\u0149\x07\x19\x02\x02\u0149\u014A\x05\\/\x02\u014A" +
-		"\u014B\x07U\x02\x02\u014B\u014C\x07S\x02\x02\u014C\u014D\x05l7\x02\u014D" +
-		"\u014E\x07C\x02\x02\u014E\u014F\x05V,\x02\u014F\u0150\x07T\x02\x02\u0150" +
-		"\u018D\x03\x02\x02\x02\u0151\u0152\x07\x19\x02\x02\u0152\u0153\x07S\x02" +
-		"\x02\u0153\u0154\x07:\x02\x02\u0154\u0155\x07T\x02\x02\u0155\u0156\x07" +
-		"U\x02\x02\u0156\u018D\x05\\/\x02\u0157\u0158\x07\x19\x02\x02\u0158\u0159" +
-		"\x07S\x02\x02\u0159\u015A\x05l7\x02\u015A\u015B\x07C\x02\x02\u015B\u015C" +
-		"\x05V,\x02\u015C\u015D\x07T\x02\x02\u015D\u015E\x07U\x02\x02\u015E\u015F" +
-		"\x05\\/\x02\u015F\u018D\x03\x02\x02\x02\u0160\u0161\x07\x19\x02\x02\u0161" +
-		"\u0162\x07S\x02\x02\u0162\u0163\x07:\x02\x02\u0163\u0164\x07T\x02\x02" +
-		"\u0164\u0165\x07U\x02\x02\u0165\u018D\x05z>\x02\u0166\u0167\x07\x19\x02" +
-		"\x02\u0167\u0168\x07S\x02\x02\u0168\u0169\x05l7\x02\u0169\u016A\x07C\x02" +
-		"\x02\u016A\u016B\x05V,\x02\u016B\u016C\x07T\x02\x02\u016C\u016D\x07U\x02" +
-		"\x02\u016D\u016E\x05z>\x02\u016E\u018D\x03\x02\x02\x02\u016F\u0170\x07" +
-		"\x19\x02\x02\u0170\u0171\x070\x02\x02\u0171\u0172\x07U\x02\x02\u0172\u0176" +
-		"\x07S\x02\x02\u0173\u0177\x078\x02\x02\u0174\u0177\x079\x02\x02\u0175" +
-		"\u0177\x05\x80A\x02\u0176\u0173\x03\x02\x02\x02\u0176\u0174\x03\x02\x02" +
-		"\x02\u0176\u0175\x03\x02\x02\x02\u0177\u0178\x03\x02\x02\x02\u0178\u018D" +
-		"\x07T\x02\x02\u0179\u017A\x07\x19\x02\x02\u017A\u017B\x070\x02\x02\u017B" +
-		"\u017C\x07U\x02\x02\u017C\u018D\x07/\x02\x02\u017D\u017E\x07\x19\x02\x02" +
-		"\u017E\u017F\x07/\x02\x02\u017F\u0180\x07U\x02\x02\u0180\u018D\x070\x02" +
-		"\x02\u0181\u0182\x07\x19\x02\x02\u0182\u0187\x07S\x02\x02\u0183\u0188" +
-		"\x078\x02\x02\u0184\u0188\x079\x02\x02\u0185\u0188\x07/\x02\x02\u0186" +
-		"\u0188\x05|?\x02\u0187\u0183\x03\x02\x02\x02\u0187\u0184\x03\x02\x02\x02" +
-		"\u0187\u0185\x03\x02\x02\x02\u0187\u0186\x03\x02\x02\x02\u0188\u0189\x03" +
-		"\x02\x02\x02\u0189\u018A\x07T\x02\x02\u018A\u018B\x07U\x02\x02\u018B\u018D" +
-		"\x070\x02\x02\u018C\u012A\x03\x02\x02\x02\u018C\u0139\x03\x02\x02\x02" +
-		"\u018C\u0141\x03\x02\x02\x02\u018C\u0148\x03\x02\x02\x02\u018C\u0151\x03" +
-		"\x02\x02\x02\u018C\u0157\x03\x02\x02\x02\u018C\u0160\x03\x02\x02\x02\u018C" +
-		"\u0166\x03\x02\x02\x02\u018C\u016F\x03\x02\x02\x02\u018C\u0179\x03\x02" +
-		"\x02\x02\u018C\u017D\x03\x02\x02\x02\u018C\u0181\x03\x02\x02\x02\u018D" +
-		"/\x03\x02\x02\x02\u018E\u0191\x07\x19\x02\x02\u018F\u0192\x05f4\x02\u0190" +
-		"\u0192\x05l7\x02\u0191\u018F\x03\x02\x02\x02\u0191\u0190\x03\x02\x02\x02" +
-		"\u0192\u0193\x03\x02\x02\x02\u0193\u0194\x07U\x02\x02\u0194\u0195\x05" +
-		"|?\x02\u0195\u01AE\x03\x02\x02\x02\u0196\u0197\x07\x19\x02\x02\u0197\u0198" +
-		"\x05l7\x02\u0198\u0199\x07U\x02\x02\u0199\u019A\x07S\x02\x02\u019A\u019B" +
-		"\x05|?\x02\u019B\u019C\x07T\x02\x02\u019C\u01AE\x03\x02\x02\x02\u019D" +
-		"\u019E\x07\x19\x02\x02\u019E\u019F\x07S\x02\x02\u019F\u01A0\x05|?\x02" +
-		"\u01A0\u01A1\x07T\x02\x02\u01A1\u01A4\x07U\x02\x02\u01A2\u01A5\x05f4\x02" +
-		"\u01A3\u01A5\x05l7\x02\u01A4\u01A2\x03\x02\x02\x02\u01A4\u01A3\x03\x02" +
-		"\x02\x02\u01A5\u01AE\x03\x02\x02\x02\u01A6\u01A7\x07\x19\x02\x02\u01A7" +
-		"\u01A8\x07;\x02\x02\u01A8\u01AB\x07U\x02\x02\u01A9\u01AC\x07:\x02\x02" +
-		"\u01AA\u01AC\x05l7\x02\u01AB\u01A9\x03\x02\x02\x02\u01AB\u01AA\x03\x02" +
-		"\x02\x02\u01AC\u01AE\x03\x02\x02\x02\u01AD\u018E\x03\x02\x02\x02\u01AD" +
-		"\u0196\x03\x02\x02\x02\u01AD\u019D\x03\x02\x02\x02\u01AD\u01A6\x03\x02" +
-		"\x02\x02\u01AE1\x03\x02\x02\x02\u01AF\u01B2\x07\x1A\x02\x02\u01B0\u01B3" +
-		"\x05b2\x02\u01B1\u01B3\x05l7\x02\u01B2\u01B0\x03\x02\x02\x02\u01B2\u01B1" +
-		"\x03\x02\x02\x02\u01B33\x03\x02\x02\x02\u01B4\u01B5\x07\x1B\x02\x02\u01B5" +
-		"\u01B6\x079\x02\x02\u01B6\u01B7\x07U\x02\x02\u01B7\u01CA\x07:\x02\x02" +
-		"\u01B8\u01B9\x07\x1B\x02\x02\u01B9\u01BA\x077\x02\x02\u01BA\u01BB\x07" +
-		"U\x02\x02\u01BB\u01BD\x077\x02\x02\u01BC\u01BE\x07\x04\x02\x02\u01BD\u01BC" +
-		"\x03\x02\x02\x02\u01BD\u01BE\x03\x02\x02\x02\u01BE\u01CA\x03\x02\x02\x02" +
-		"\u01BF\u01C0\x07\x1B\x02\x02\u01C0\u01C1\x07S\x02\x02\u01C1\u01C2\x07" +
-		";\x02\x02\u01C2\u01C3\x07T\x02\x02\u01C3\u01C6\x07U\x02\x02\u01C4\u01C7" +
-		"\x07:\x02\x02\u01C5\u01C7\x05l7\x02\u01C6\u01C4\x03\x02\x02\x02\u01C6" +
-		"\u01C5\x03\x02\x02\x02\u01C7\u01CA\x03\x02\x02\x02\u01C8\u01CA\x07\x1C" +
-		"\x02\x02\u01C9\u01B4\x03\x02\x02\x02\u01C9\u01B8\x03\x02\x02\x02\u01C9" +
-		"\u01BF\x03\x02\x02\x02\u01C9\u01C8\x03\x02\x02\x02\u01CA5\x03\x02\x02" +
-		"\x02\u01CB\u01CE\t\x02\x02\x02\u01CC\u01CD\x070\x02\x02\u01CD\u01CF\x07" +
-		"U\x02\x02\u01CE\u01CC\x03\x02\x02\x02\u01CE\u01CF\x03\x02\x02\x02\u01CF" +
-		"\u01D4\x03\x02\x02\x02\u01D0\u01D5\x05\\/\x02\u01D1\u01D5\x07-\x02\x02" +
-		"\u01D2\u01D5\x07.\x02\x02\u01D3\u01D5\x05z>\x02\u01D4\u01D0\x03\x02\x02" +
-		"\x02\u01D4\u01D1\x03\x02\x02\x02\u01D4\u01D2\x03\x02\x02\x02\u01D4\u01D3" +
-		"\x03\x02\x02\x02\u01D5\u01E5\x03\x02\x02\x02\u01D6\u01D9\t\x02\x02\x02" +
-		"\u01D7\u01D8\x070\x02\x02\u01D8\u01DA\x07U\x02\x02\u01D9\u01D7\x03\x02" +
-		"\x02\x02\u01D9\u01DA\x03\x02\x02\x02\u01DA\u01DB\x03\x02\x02\x02\u01DB" +
-		"\u01E1\x07S\x02\x02\u01DC\u01E2\x07:\x02\x02\u01DD\u01DE\x05l7\x02\u01DE" +
-		"\u01DF\x07C\x02\x02\u01DF\u01E0\x05V,\x02\u01E0\u01E2\x03\x02\x02\x02" +
-		"\u01E1\u01DC\x03\x02\x02\x02\u01E1\u01DD\x03\x02\x02\x02\u01E2\u01E3\x03" +
-		"\x02\x02\x02\u01E3\u01E5\x07T\x02\x02\u01E4\u01CB\x03\x02\x02\x02\u01E4" +
-		"\u01D6\x03\x02\x02\x02\u01E57\x03\x02\x02\x02\u01E6\u01EA\x07\x1F\x02" +
-		"\x02\u01E7\u01EB\x05\\/\x02\u01E8\u01EB\x07-\x02\x02\u01E9\u01EB\x07." +
-		"\x02\x02\u01EA\u01E7\x03\x02\x02\x02\u01EA\u01E8\x03\x02\x02\x02\u01EA" +
-		"\u01E9\x03\x02\x02\x02\u01EB\u01F7\x03\x02\x02\x02\u01EC\u01ED\x07\x1F" +
-		"\x02\x02\u01ED\u01F3\x07S\x02\x02\u01EE\u01F4\x07:\x02\x02\u01EF\u01F0" +
-		"\x05l7\x02\u01F0\u01F1\x07C\x02\x02\u01F1\u01F2\x05V,\x02\u01F2\u01F4" +
-		"\x03\x02\x02\x02\u01F3\u01EE\x03\x02\x02\x02\u01F3\u01EF\x03\x02\x02\x02" +
-		"\u01F4\u01F5\x03\x02\x02\x02\u01F5\u01F7\x07T\x02\x02\u01F6\u01E6\x03" +
-		"\x02\x02\x02\u01F6\u01EC\x03\x02\x02\x02\u01F79\x03\x02\x02\x02\u01F8" +
-		"\u01FA\x07 \x02\x02\u01F9\u01FB\x070\x02\x02\u01FA\u01F9\x03\x02\x02\x02" +
-		"\u01FA";
+		"\x05\x18\u0135\n\x18\x03\x19\x03\x19\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03" +
+		"\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x05" +
+		"\x1A\u0146\n\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x05\x1A\u014C\n\x1A\x03" +
+		"\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03" +
+		"\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03" +
+		"\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03" +
+		"\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03" +
+		"\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03" +
+		"\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03" +
+		"\x1A\x05\x1A\u0185\n\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A" +
+		"\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A\x03\x1A" +
+		"\x05\x1A\u0196\n\x1A\x03\x1A\x03\x1A\x03\x1A\x05\x1A\u019B\n\x1A\x03\x1B" +
+		"\x03\x1B\x03\x1B\x05\x1B\u01A0\n\x1B\x03\x1B\x03\x1B\x03\x1B\x03\x1B\x03" +
+		"\x1B\x03\x1B\x03\x1B\x03\x1B\x03\x1B\x03\x1B\x03\x1B\x03\x1B\x03\x1B\x03" +
+		"\x1B\x03\x1B\x03\x1B\x03\x1B\x05\x1B\u01B3\n\x1B\x03\x1B\x03\x1B\x03\x1B" +
+		"\x03\x1B\x03\x1B\x05\x1B\u01BA\n\x1B\x05\x1B\u01BC\n\x1B\x03\x1C\x03\x1C" +
+		"\x03\x1C\x05\x1C\u01C1\n\x1C\x03\x1D\x03\x1D\x03\x1D\x03\x1D\x03\x1D\x03" +
+		"\x1D\x03\x1D\x03\x1D\x03\x1D\x05\x1D\u01CC\n\x1D\x03\x1D\x03\x1D\x03\x1D" +
+		"\x03\x1D\x03\x1D\x03\x1D\x03\x1D\x05\x1D\u01D5\n\x1D\x03\x1D\x05\x1D\u01D8" +
+		"\n\x1D\x03\x1E\x03\x1E\x03\x1E\x05\x1E\u01DD\n\x1E\x03\x1E\x03\x1E\x03" +
+		"\x1E\x03\x1E\x05\x1E\u01E3\n\x1E\x03\x1E\x03\x1E\x03\x1E\x05\x1E\u01E8" +
+		"\n\x1E\x03\x1E\x03\x1E\x03\x1E\x03\x1E\x03\x1E\x03\x1E\x05\x1E\u01F0\n" +
+		"\x1E\x03\x1E\x05\x1E\u01F3\n\x1E\x03\x1F\x03\x1F\x03\x1F\x03\x1F\x05\x1F" +
+		"\u01F9\n\x1F\x03\x1F\x03\x1F\x03\x1F\x03\x1F\x03\x1F\x03\x1F\x03\x1F\x05" +
+		"\x1F\u0202\n\x1F\x03\x1F\x05\x1F\u0205\n\x1F\x03 \x03 \x05 \u0209\n \x03" +
+		"!\x03!\x03!\x03!\x03!\x03!\x03!\x03!\x03!\x03!\x03!\x03!\x05!\u0217\n" +
+		"!\x03\"\x03\"\x03\"\x05\"\u021C\n\"\x03#\x03#\x03#\x03#\x03#\x03#\x03" +
+		"#\x03#\x03#\x05#\u0227\n#\x03#\x03#\x03#\x03#\x03#\x03#\x03#\x03#\x03" +
+		"#\x03#\x05#\u0233\n#\x03$\x03$\x05$\u0237\n$\x03%\x03%\x03%\x03%\x03%" +
+		"\x03%\x03%\x03%\x03%\x03%\x03%\x03%\x03%\x03%\x05%\u0247\n%\x03%\x03%" +
+		"\x03%\x03%\x03%\x03%\x03%\x03%\x03%\x03%\x03%\x03%\x03%\x05%\u0256\n%" +
+		"\x03&\x03&\x03\'\x03\'\x03\'\x03\'\x05\'\u025E\n\'\x03\'\x03\'\x03\'\x03" +
+		"\'\x03\'\x03\'\x03\'\x03\'\x03\'\x05\'\u0269\n\'\x03\'\x03\'\x03\'\x05" +
+		"\'\u026E\n\'\x03(\x03(\x03(\x03(\x05(\u0274\n(\x03(\x03(\x03(\x05(\u0279" +
+		"\n(\x05(\u027B\n(\x03)\x03)\x03*\x03*\x03+\x03+\x03+\x03,\x03,\x03,\x03" +
+		"-\x03-\x03-\x03-\x03-\x03-\x03-\x03-\x03-\x03-\x03-\x05-\u0292\n-\x03" +
+		"-\x03-\x03-\x03-\x03-\x03-\x03-\x03-\x03-\x03-\x03-\x03-\x03-\x03-\x03" +
+		"-\x03-\x03-\x05-\u02A5\n-\x05-\u02A7\n-\x03.\x03.\x03/\x03/\x030\x030" +
+		"\x031\x031\x032\x032\x033\x033\x034\x034\x035\x035\x036\x036\x056\u02BB" +
+		"\n6\x037\x037\x057\u02BF\n7\x038\x038\x058\u02C3\n8\x039\x039\x03:\x03" +
+		":\x03:\x03:\x03:\x05:\u02CC\n:\x03;\x03;\x03<\x03<\x03=\x03=\x03>\x03" +
+		">\x03?\x03?\x03@\x03@\x03A\x03A\x03B\x03B\x03C\x03C\x03C\x03C\x03C\x03" +
+		"C\x03C\x05C\u02E5\nC\x03C\x03C\x03C\x03C\x07C\u02EB\nC\fC\x0EC\u02EE\v" +
+		"C\x03D\x03D\x03D\x05D\u02F3\nD\x03E\x03E\x03F\x03F\x03G\x03G\x03H\x03" +
+		"H\x03I\x05I\u02FE\nI\x03I\x03I\x03I\x03I\x03I\x05I\u0305\nI\x03J\x03J" +
+		"\x03K\x03K\x03L\x03L\x03M\x03M\x03N\x03N\x03N\x05\xE2\xF0\xFF\x02\x03" +
+		"\x84O\x02\x02\x04\x02\x06\x02\b\x02\n\x02\f\x02\x0E\x02\x10\x02\x12\x02" +
+		"\x14\x02\x16\x02\x18\x02\x1A\x02\x1C\x02\x1E\x02 \x02\"\x02$\x02&\x02" +
+		"(\x02*\x02,\x02.\x020\x022\x024\x026\x028\x02:\x02<\x02>\x02@\x02B\x02" +
+		"D\x02F\x02H\x02J\x02L\x02N\x02P\x02R\x02T\x02V\x02X\x02Z\x02\\\x02^\x02" +
+		"`\x02b\x02d\x02f\x02h\x02j\x02l\x02n\x02p\x02r\x02t\x02v\x02x\x02z\x02" +
+		"|\x02~\x02\x80\x02\x82\x02\x84\x02\x86\x02\x88\x02\x8A\x02\x8C\x02\x8E" +
+		"\x02\x90\x02\x92\x02\x94\x02\x96\x02\x98\x02\x9A\x02\x02\x12\x03\x02\x1D" +
+		"\x1E\x03\x02HI\x04\x0222>?\x04\x0222??\x03\x02JK\x03\x02-=\x03\x0206\x04" +
+		"\x02--04\x04\x02..04\x03\x027:\x04\x0289;;\x03\x02<=\x03\x02CE\x03\x02" +
+		"CD\x05\x02HIKKNN\x04\x02JJOO\x02\u0348\x02\x9D\x03\x02\x02\x02\x04\xA5" +
+		"\x03\x02\x02\x02\x06\xBA\x03\x02\x02\x02\b\xCA\x03\x02\x02\x02\n\xCC\x03" +
+		"\x02\x02\x02\f\xCE\x03\x02\x02\x02\x0E\xD1\x03\x02\x02\x02\x10\xD3\x03" +
+		"\x02\x02\x02\x12\xD6\x03\x02\x02\x02\x14\xD9\x03\x02\x02\x02\x16\xDC\x03" +
+		"\x02\x02\x02\x18\xE5\x03\x02\x02\x02\x1A\xEA\x03\x02\x02\x02\x1C\xF3\x03" +
+		"\x02\x02\x02\x1E\xF9\x03\x02\x02\x02 \u0105\x03\x02\x02\x02\"\u0107\x03" +
+		"\x02\x02\x02$\u010C\x03\x02\x02\x02&\u0112\x03\x02\x02\x02(\u0116\x03" +
+		"\x02\x02\x02*\u0118\x03\x02\x02\x02,\u011A\x03\x02\x02\x02.\u0134\x03" +
+		"\x02\x02\x020\u0136\x03\x02\x02\x022\u019A\x03\x02\x02\x024\u01BB\x03" +
+		"\x02\x02\x026\u01BD\x03\x02\x02\x028\u01D7\x03\x02\x02\x02:\u01F2\x03" +
+		"\x02\x02\x02<\u0204\x03\x02\x02\x02>\u0206\x03\x02\x02\x02@\u0216\x03" +
+		"\x02\x02\x02B\u0218\x03\x02\x02\x02D\u0232\x03\x02\x02\x02F\u0234\x03" +
+		"\x02\x02\x02H\u0255\x03\x02\x02\x02J\u0257\x03\x02\x02\x02L\u026D\x03" +
+		"\x02\x02\x02N\u027A\x03\x02\x02\x02P\u027C\x03\x02\x02\x02R\u027E\x03" +
+		"\x02\x02\x02T\u0280\x03\x02\x02\x02V\u0283\x03\x02\x02\x02X\u02A6\x03" +
+		"\x02\x02\x02Z\u02A8\x03\x02\x02\x02\\\u02AA\x03\x02\x02\x02^\u02AC\x03" +
+		"\x02\x02\x02`\u02AE\x03\x02\x02\x02b\u02B0\x03\x02\x02\x02d\u02B2\x03" +
+		"\x02\x02\x02f\u02B4\x03\x02\x02\x02h\u02B6\x03\x02\x02\x02j\u02BA\x03" +
+		"\x02\x02\x02l\u02BE\x03\x02\x02\x02n\u02C2\x03\x02\x02\x02p\u02C4\x03" +
+		"\x02\x02\x02r\u02CB\x03\x02\x02\x02t\u02CD\x03\x02\x02\x02v\u02CF\x03" +
+		"\x02\x02\x02x\u02D1\x03\x02\x02\x02z\u02D3\x03\x02\x02\x02|\u02D5\x03" +
+		"\x02\x02\x02~\u02D7\x03\x02\x02\x02\x80\u02D9\x03\x02\x02\x02\x82\u02DB" +
+		"\x03\x02\x02\x02\x84\u02E4\x03\x02\x02\x02\x86\u02F2\x03\x02\x02\x02\x88" +
+		"\u02F4\x03\x02\x02\x02\x8A\u02F6\x03\x02\x02\x02\x8C\u02F8\x03\x02\x02" +
+		"\x02\x8E\u02FA\x03\x02\x02\x02\x90\u02FD\x03\x02\x02\x02\x92\u0306\x03" +
+		"\x02\x02\x02\x94\u0308\x03\x02\x02\x02\x96\u030A\x03\x02\x02\x02\x98\u030C" +
+		"\x03\x02\x02\x02\x9A\u030E\x03\x02\x02\x02\x9C\x9E\x05\x04\x03\x02\x9D" +
+		"\x9C\x03\x02\x02\x02\x9D\x9E\x03\x02\x02\x02\x9E\x9F\x03\x02\x02\x02\x9F" +
+		"\xA0\x07\x02\x02\x03\xA0\x03\x03\x02\x02\x02\xA1\xA3\x05\x06\x04\x02\xA2" +
+		"\xA1\x03\x02\x02\x02\xA2\xA3\x03\x02\x02\x02\xA3\xA4\x03\x02\x02\x02\xA4" +
+		"\xA6\x07V\x02\x02\xA5\xA2\x03\x02\x02\x02\xA6\xA7\x03\x02\x02\x02\xA7" +
+		"\xA5\x03\x02\x02\x02\xA7\xA8\x03\x02\x02\x02\xA8\x05\x03\x02\x02\x02\xA9" +
+		"\xAB\x05\b\x05\x02\xAA\xAC\x05x=\x02\xAB\xAA\x03\x02\x02\x02\xAB\xAC\x03" +
+		"\x02\x02\x02\xAC\xBB\x03\x02\x02\x02\xAD\xBB\x05x=\x02\xAE\xB0\x05r:\x02" +
+		"\xAF\xB1\x05x=\x02\xB0\xAF\x03\x02\x02\x02\xB0\xB1\x03\x02\x02\x02\xB1" +
+		"\xBB\x03\x02\x02\x02\xB2\xB4\x05r:\x02\xB3\xB2\x03\x02\x02\x02\xB3\xB4" +
+		"\x03\x02\x02\x02\xB4\xB5\x03\x02\x02\x02\xB5\xB7\x05.\x18\x02\xB6\xB8" +
+		"\x05x=\x02\xB7\xB6\x03\x02\x02\x02\xB7\xB8\x03\x02\x02\x02\xB8\xBB\x03" +
+		"\x02\x02\x02\xB9\xBB\x05v<\x02\xBA\xA9\x03\x02\x02\x02\xBA\xAD\x03\x02" +
+		"\x02\x02\xBA\xAE\x03\x02\x02\x02\xBA\xB3\x03\x02\x02\x02\xBA\xB9\x03\x02" +
+		"\x02\x02\xBB\x07\x03\x02\x02\x02\xBC\xCB\x05\n\x06\x02\xBD\xCB\x05\f\x07" +
+		"\x02\xBE\xCB\x05\x10\t\x02\xBF\xCB\x05\x12\n\x02\xC0\xCB\x05\x1A\x0E\x02" +
+		"\xC1\xCB\x05\x14\v\x02\xC2\xCB\x05\x16\f\x02\xC3\xCB\x05\x18\r\x02\xC4" +
+		"\xCB\x05\x1C\x0F\x02\xC5\xCB\x05\x1E\x10\x02\xC6\xCB\x05\"\x12\x02\xC7" +
+		"\xCB\x05$\x13\x02\xC8\xCB\x05(\x15\x02\xC9\xCB\x05*\x16\x02\xCA\xBC\x03" +
+		"\x02\x02\x02\xCA\xBD\x03\x02\x02\x02\xCA\xBE\x03\x02\x02\x02\xCA\xBF\x03" +
+		"\x02\x02\x02\xCA\xC0\x03\x02\x02\x02\xCA\xC1\x03\x02\x02\x02\xCA\xC2\x03" +
+		"\x02\x02\x02\xCA\xC3\x03\x02\x02\x02\xCA\xC4\x03\x02\x02\x02\xCA\xC5\x03" +
+		"\x02\x02\x02\xCA\xC6\x03\x02\x02\x02\xCA\xC7\x03\x02\x02\x02\xCA\xC8\x03" +
+		"\x02\x02\x02\xCA\xC9\x03\x02\x02\x02\xCB\t\x03\x02\x02\x02\xCC\xCD\x07" +
+		"\x07\x02\x02\xCD\v\x03\x02\x02\x02\xCE\xCF\x07\x11\x02\x02\xCF\xD0\x05" +
+		"\x0E\b\x02\xD0\r\x03\x02\x02\x02\xD1\xD2\x07R\x02\x02\xD2\x0F\x03\x02" +
+		"\x02\x02\xD3\xD4\x07\b\x02\x02\xD4\xD5\x05\x80A\x02\xD5\x11\x03\x02\x02" +
+		"\x02\xD6\xD7\x07\t\x02\x02\xD7\xD8\x05\x82B\x02\xD8\x13\x03\x02\x02\x02" +
+		"\xD9\xDA\x07\n\x02\x02\xDA\xDB\x05t;\x02\xDB\x15\x03\x02\x02\x02\xDC\xDD" +
+		"\x07\v\x02\x02\xDD\xE2\x05t;\x02\xDE\xDF\x07U\x02\x02\xDF\xE1\x05t;\x02" +
+		"\xE0\xDE\x03\x02\x02\x02\xE1\xE4\x03\x02\x02\x02\xE2\xE3\x03\x02\x02\x02" +
+		"\xE2\xE0\x03\x02\x02\x02\xE3\x17\x03\x02\x02\x02\xE4\xE2\x03\x02\x02\x02" +
+		"\xE5\xE6\x07\f\x02\x02\xE6\xE7\x05t;\x02\xE7\xE8\x07\x03\x02\x02\xE8\xE9" +
+		"\x05\x84C\x02\xE9\x19\x03\x02\x02\x02\xEA\xEB\x07\x0F\x02\x02\xEB\xF0" +
+		"\x05\x84C\x02\xEC\xED\x07U\x02\x02\xED\xEF\x05\x84C\x02\xEE\xEC\x03\x02" +
+		"\x02\x02\xEF\xF2\x03\x02\x02\x02\xF0\xF1\x03\x02\x02\x02\xF0\xEE\x03\x02" +
+		"\x02\x02\xF1\x1B\x03\x02\x02\x02\xF2\xF0\x03\x02\x02\x02\xF3\xF4\x07\r" +
+		"\x02\x02\xF4\xF7\x05\x84C\x02\xF5\xF6\x07U\x02\x02\xF6\xF8\x05\x84C\x02" +
+		"\xF7\xF5\x03\x02\x02\x02\xF7\xF8\x03\x02\x02\x02\xF8\x1D\x03\x02\x02\x02" +
+		"\xF9\xFA\x07\x0E\x02\x02\xFA\xFF\x05 \x11\x02\xFB\xFC\x07U\x02\x02\xFC" +
+		"\xFE\x05 \x11\x02\xFD\xFB\x03\x02\x02\x02\xFE\u0101\x03\x02\x02\x02\xFF" +
+		"\u0100\x03\x02\x02\x02\xFF\xFD\x03\x02\x02\x02\u0100\x1F\x03\x02\x02\x02" +
+		"\u0101\xFF\x03\x02\x02\x02\u0102\u0106\x05z>\x02\u0103\u0106\x05|?\x02" +
+		"\u0104\u0106\x05~@\x02\u0105\u0102\x03\x02\x02\x02\u0105\u0103\x03\x02" +
+		"\x02\x02\u0105\u0104\x03\x02\x02\x02\u0106!\x03\x02\x02\x02\u0107\u0108" +
+		"\x07\x12\x02\x02\u0108\u010A\x05\x84C\x02\u0109\u010B\x05x=\x02\u010A" +
+		"\u0109\x03\x02\x02\x02\u010A\u010B\x03\x02\x02\x02\u010B#\x03\x02\x02" +
+		"\x02\u010C\u010D\x07\x13\x02\x02\u010D\u010F\x05t;\x02\u010E\u0110\x05" +
+		"x=\x02\u010F\u010E\x03\x02\x02\x02\u010F\u0110\x03\x02\x02\x02\u0110%" +
+		"\x03\x02\x02\x02\u0111\u0113\x05(\x15\x02\u0112\u0111\x03\x02\x02\x02" +
+		"\u0112\u0113\x03\x02\x02\x02\u0113\u0114\x03\x02\x02\x02\u0114\u0115\x05" +
+		"*\x16\x02\u0115\'\x03\x02\x02\x02\u0116\u0117\x07\x14\x02\x02\u0117)\x03" +
+		"\x02\x02\x02\u0118\u0119\x07\x15\x02\x02\u0119+\x03\x02\x02\x02\u011A" +
+		"\u011B\x07\x16\x02\x02\u011B\u011D\x05\x80A\x02\u011C\u011E\x05x=\x02" +
+		"\u011D\u011C\x03\x02\x02\x02\u011D\u011E\x03\x02\x02\x02\u011E\u011F\x03" +
+		"\x02\x02\x02\u011F\u0120\x05\x04\x03\x02\u0120\u0121\x07\x17\x02\x02\u0121" +
+		"-\x03\x02\x02\x02\u0122\u0135\x050\x19\x02\u0123\u0135\x052\x1A\x02\u0124" +
+		"\u0135\x054\x1B\x02\u0125\u0135\x056\x1C\x02\u0126\u0135\x058\x1D\x02" +
+		"\u0127\u0135\x05:\x1E\x02\u0128\u0135\x05<\x1F\x02\u0129\u0135\x05> \x02" +
+		"\u012A\u0135\x05@!\x02\u012B\u0135\x05B\"\x02\u012C\u0135\x05D#\x02\u012D" +
+		"\u0135\x05F$\x02\u012E\u0135\x05H%\x02\u012F\u0135\x05L\'\x02\u0130\u0135" +
+		"\x05N(\x02\u0131\u0135\x05T+\x02\u0132\u0135\x05V,\x02\u0133\u0135\x05" +
+		"X-\x02\u0134\u0122\x03\x02\x02\x02\u0134\u0123\x03\x02\x02\x02\u0134\u0124" +
+		"\x03\x02\x02\x02\u0134\u0125\x03\x02\x02\x02\u0134\u0126\x03\x02\x02\x02" +
+		"\u0134\u0127\x03\x02\x02\x02\u0134\u0128\x03\x02\x02\x02\u0134\u0129\x03" +
+		"\x02\x02\x02\u0134\u012A\x03\x02\x02\x02\u0134\u012B\x03\x02\x02\x02\u0134" +
+		"\u012C\x03\x02\x02\x02\u0134\u012D\x03\x02\x02\x02\u0134\u012E\x03\x02" +
+		"\x02\x02\u0134\u012F\x03\x02\x02\x02\u0134\u0130\x03\x02\x02\x02\u0134" +
+		"\u0131\x03\x02\x02\x02\u0134\u0132\x03\x02\x02\x02\u0134\u0133\x03\x02" +
+		"\x02\x02\u0135/\x03\x02\x02\x02\u0136\u0137\x07\x18\x02\x02\u01371\x03" +
+		"\x02\x02\x02\u0138\u0145\x07\x19\x02\x02\u0139\u013A\x05`1\x02\u013A\u013B" +
+		"\x07U\x02\x02\u013B\u013C\x05`1\x02\u013C\u0146\x03\x02\x02\x02\u013D" +
+		"\u013E\x05b2\x02\u013E\u013F\x07U\x02\x02\u013F\u0140\x05b2\x02\u0140" +
+		"\u0146\x03\x02\x02\x02\u0141\u0142\x05d3\x02\u0142\u0143\x07U\x02\x02" +
+		"\u0143\u0144\x05d3\x02\u0144\u0146\x03\x02\x02\x02\u0145\u0139\x03\x02" +
+		"\x02\x02\u0145\u013D\x03\x02\x02\x02\u0145\u0141\x03\x02\x02\x02\u0146" +
+		"\u019B\x03\x02\x02\x02\u0147\u014B\x07\x19\x02\x02\u0148\u014C\x05`1\x02" +
+		"\u0149\u014C\x07-\x02\x02\u014A\u014C\x07.\x02\x02\u014B\u0148\x03\x02" +
+		"\x02\x02\u014B\u0149\x03\x02\x02\x02\u014B\u014A\x03\x02\x02\x02\u014C" +
+		"\u014D\x03\x02\x02\x02\u014D\u014E\x07U\x02\x02\u014E\u019B\x05~@\x02" +
+		"\u014F\u0150\x07\x19\x02\x02\u0150\u0151\x05`1\x02\u0151\u0152\x07U\x02" +
+		"\x02\u0152\u0153\x07S\x02\x02\u0153\u0154\x07:\x02\x02\u0154\u0155\x07" +
+		"T\x02\x02\u0155\u019B\x03\x02\x02\x02\u0156\u0157\x07\x19\x02\x02\u0157" +
+		"\u0158\x05`1\x02\u0158\u0159\x07U\x02\x02\u0159\u015A\x07S\x02\x02\u015A" +
+		"\u015B\x05p9\x02\u015B\u015C\x05\x8EH\x02\u015C\u015D\x05Z.\x02\u015D" +
+		"\u015E\x07T\x02\x02\u015E\u019B\x03\x02\x02\x02\u015F\u0160\x07\x19\x02" +
+		"\x02\u0160\u0161\x07S\x02\x02\u0161\u0162\x07:\x02\x02\u0162\u0163\x07" +
+		"T\x02\x02\u0163\u0164\x07U\x02\x02\u0164\u019B\x05`1\x02\u0165\u0166\x07" +
+		"\x19\x02\x02\u0166\u0167\x07S\x02\x02\u0167\u0168\x05p9\x02\u0168\u0169" +
+		"\x05\x8EH\x02\u0169\u016A\x05Z.\x02\u016A\u016B\x07T\x02\x02\u016B\u016C" +
+		"\x07U\x02\x02\u016C\u016D\x05`1\x02\u016D\u019B\x03\x02\x02\x02\u016E" +
+		"\u016F\x07\x19\x02\x02\u016F\u0170\x07S\x02\x02\u0170\u0171\x07:\x02\x02" +
+		"\u0171\u0172\x07T\x02\x02\u0172\u0173\x07U\x02\x02\u0173\u019B\x05~@\x02" +
+		"\u0174\u0175\x07\x19\x02\x02\u0175\u0176\x07S\x02\x02\u0176\u0177\x05" +
+		"p9\x02\u0177\u0178\x05\x8EH\x02\u0178\u0179\x05Z.\x02\u0179\u017A\x07" +
+		"T\x02\x02\u017A\u017B\x07U\x02\x02\u017B\u017C\x05~@\x02\u017C\u019B\x03" +
+		"\x02\x02\x02\u017D\u017E\x07\x19\x02\x02\u017E\u017F\x070\x02\x02\u017F" +
+		"\u0180\x07U\x02\x02\u0180\u0184\x07S\x02\x02\u0181\u0185\x078\x02\x02" +
+		"\u0182\u0185\x079\x02\x02\u0183\u0185\x05\x84C\x02\u0184\u0181\x03\x02" +
+		"\x02\x02\u0184\u0182\x03\x02\x02\x02\u0184\u0183\x03\x02\x02\x02\u0185" +
+		"\u0186\x03\x02\x02\x02\u0186\u019B\x07T\x02\x02\u0187\u0188\x07\x19\x02" +
+		"\x02\u0188\u0189\x070\x02\x02\u0189\u018A\x07U\x02\x02\u018A\u019B\x07" +
+		"/\x02\x02\u018B\u018C\x07\x19\x02\x02\u018C\u018D\x07/\x02\x02\u018D\u018E" +
+		"\x07U\x02\x02\u018E\u019B\x070\x02\x02\u018F\u0190\x07\x19\x02\x02\u0190" +
+		"\u0195\x07S\x02\x02\u0191\u0196\x078\x02\x02\u0192\u0196\x079\x02\x02" +
+		"\u0193\u0196\x07/\x02\x02\u0194\u0196\x05\x80A\x02\u0195\u0191\x03\x02" +
+		"\x02\x02\u0195\u0192\x03\x02\x02\x02\u0195\u0193\x03\x02\x02\x02\u0195" +
+		"\u0194\x03\x02\x02\x02\u0196\u0197\x03\x02\x02\x02\u0197\u0198\x07T\x02" +
+		"\x02\u0198\u0199\x07U\x02\x02\u0199\u019B\x070\x02\x02\u019A\u0138\x03" +
+		"\x02\x02\x02\u019A\u0147\x03\x02\x02\x02\u019A\u014F\x03\x02\x02\x02\u019A" +
+		"\u0156\x03\x02\x02\x02\u019A\u015F\x03\x02\x02\x02\u019A\u0165\x03\x02" +
+		"\x02\x02\u019A\u016E\x03\x02\x02\x02\u019A\u0174\x03\x02\x02\x02\u019A" +
+		"\u017D\x03\x02\x02\x02\u019A\u0187\x03\x02\x02\x02\u019A\u018B\x03\x02" +
+		"\x02\x02\u019A\u018F\x03\x02\x02\x02\u019B3\x03\x02\x02\x02\u019C\u019F" +
+		"\x07\x19\x02\x02\u019D\u01A0\x05j6\x02\u019E\u01A0\x05p9\x02\u019F\u019D" +
+		"\x03\x02\x02\x02\u019F\u019E\x03\x02\x02\x02\u01A0\u01A1\x03\x02\x02\x02" +
+		"\u01A1\u01A2\x07U\x02\x02\u01A2\u01A3\x05\x80A\x02\u01A3\u01BC\x03\x02" +
+		"\x02\x02\u01A4\u01A5\x07\x19\x02\x02\u01A5\u01A6\x05p9\x02\u01A6\u01A7" +
+		"\x07U\x02\x02\u01A7\u01A8\x07S\x02\x02\u01A8\u01A9\x05\x80A\x02\u01A9" +
+		"\u01AA\x07T\x02\x02\u01AA\u01BC\x03\x02\x02\x02\u01AB\u01AC\x07\x19\x02" +
+		"\x02\u01AC\u01AD\x07S\x02\x02\u01AD\u01AE\x05\x80A\x02\u01AE\u01AF\x07" +
+		"T\x02\x02\u01AF\u01B2\x07U\x02\x02\u01B0\u01B3\x05j6\x02\u01B1\u01B3\x05" +
+		"p9\x02\u01B2\u01B0\x03\x02\x02\x02\u01B2\u01B1\x03\x02\x02\x02\u01B3\u01BC" +
+		"\x03\x02\x02\x02\u01B4\u01B5\x07\x19\x02\x02\u01B5\u01B6\x07;\x02\x02" +
+		"\u01B6\u01B9\x07U\x02\x02\u01B7\u01BA\x07:\x02\x02\u01B8\u01BA\x05p9\x02" +
+		"\u01B9\u01B7\x03\x02\x02\x02\u01B9\u01B8\x03\x02\x02\x02\u01BA\u01BC\x03" +
+		"\x02\x02\x02\u01BB\u019C\x03\x02\x02\x02\u01BB\u01A4\x03\x02\x02\x02\u01BB" +
+		"\u01AB\x03\x02\x02\x02\u01BB\u01B4\x03\x02\x02\x02\u01BC5\x03\x02\x02" +
+		"\x02\u01BD\u01C0\x07\x1A\x02\x02\u01BE\u01C1\x05f4\x02\u01BF\u01C1\x05" +
+		"p9\x02\u01C0\u01BE\x03\x02\x02\x02\u01C0\u01BF\x03\x02\x02\x02\u01C17" +
+		"\x03\x02\x02\x02\u01C2\u01C3\x07\x1B\x02\x02\u01C3\u01C4\x079\x02\x02" +
+		"\u01C4\u01C5\x07U\x02\x02\u01C5\u01D8\x07:\x02\x02\u01C6\u01C7\x07\x1B" +
+		"\x02\x02\u01C7\u01C8\x077\x02\x02\u01C8\u01C9\x07U\x02\x02\u01C9\u01CB" +
+		"\x077\x02\x02\u01CA\u01CC\x07\x04\x02\x02\u01CB\u01CA\x03\x02\x02\x02" +
+		"\u01CB\u01CC\x03\x02\x02\x02\u01CC\u01D8\x03\x02\x02\x02\u01CD\u01CE\x07" +
+		"\x1B\x02\x02\u01CE\u01CF\x07S\x02\x02\u01CF\u01D0\x07;\x02\x02\u01D0\u01D1" +
+		"\x07T\x02\x02\u01D1\u01D4\x07U\x02\x02\u01D2\u01D5\x07:\x02\x02\u01D3" +
+		"\u01D5\x05p9\x02\u01D4\u01D2\x03\x02\x02\x02\u01D4\u01D3\x03\x02\x02\x02" +
+		"\u01D5\u01D8\x03\x02\x02\x02\u01D6\u01D8\x07\x1C\x02\x02\u01D7\u01C2\x03" +
+		"\x02\x02\x02\u01D7\u01C6\x03\x02\x02\x02\u01D7\u01CD\x03\x02\x02\x02\u01D7" +
+		"\u01D6\x03\x02\x02\x02\u01D89\x03\x02\x02\x02\u01D9\u01DC\t\x02\x02\x02" +
+		"\u01DA\u01DB\x070\x02\x02\u01DB\u01DD\x07U\x02\x02\u01DC\u01DA\x03\x02" +
+		"\x02\x02\u01DC\u01DD\x03\x02\x02\x02\u01DD\u01E2\x03\x02\x02\x02\u01DE" +
+		"\u01E3\x05`1\x02\u01DF\u01E3\x07-\x02\x02\u01E0\u01E3\x07.\x02\x02\u01E1" +
+		"\u01E3\x05~@\x02\u01E2\u01DE\x03\x02\x02\x02\u01E2\u01DF\x03\x02\x02\x02" +
+		"\u01E2\u01E0\x03\x02\x02\x02\u01E2\u01E1\x03\x02\x02\x02\u01E3\u01F3\x03" +
+		"\x02\x02\x02\u01E4\u01E7\t\x02\x02\x02\u01E5\u01E6\x070\x02\x02\u01E6" +
+		"\u01E8\x07U\x02\x02\u01E7\u01E5\x03\x02\x02\x02\u01E7\u01E8\x03\x02\x02" +
+		"\x02\u01E8\u01E9\x03\x02\x02\x02\u01E9\u01EF\x07S\x02\x02\u01EA\u01F0" +
+		"\x07:\x02\x02\u01EB\u01EC\x05p9\x02\u01EC\u01ED\x05\x8EH\x02\u01ED\u01EE" +
+		"\x05Z.\x02\u01EE\u01F0\x03\x02\x02\x02\u01EF\u01EA\x03\x02\x02\x02\u01EF" +
+		"\u01EB\x03\x02\x02\x02\u01F0\u01F1\x03\x02\x02\x02\u01F1\u01F3\x07T\x02" +
+		"\x02\u01F2\u01D9\x03\x02\x02\x02\u01F2\u01E4\x03\x02\x02\x02\u01F3;\x03" +
+		"\x02\x02\x02\u01F4\u01F8\x07\x1F\x02\x02\u01F5\u01F9\x05`1\x02\u01F6\u01F9" +
+		"\x07-\x02\x02\u01F7\u01F9\x07.\x02\x02\u01F8\u01F5\x03\x02\x02\x02\u01F8" +
+		"\u01F6\x03\x02\x02\x02\u01F8\u01F7\x03";
 	private static readonly _serializedATNSegment1: string =
-		"\u01FB\x03\x02\x02\x02\u01FB;\x03\x02\x02\x02\u01FC\u01FD\x07\x1D\x02" +
-		"\x02\u01FD\u01FE\x07:\x02\x02\u01FE\u01FF\x07U\x02\x02\u01FF\u0209\x05" +
-		"f4\x02\u0200\u0201\x07\x1D\x02\x02\u0201\u0202\x07<\x02\x02\u0202\u0203" +
-		"\x07U\x02\x02\u0203\u0209\x05h5\x02\u0204\u0205\x07\x1D\x02\x02\u0205" +
-		"\u0206\x07=\x02\x02\u0206\u0207\x07U\x02\x02\u0207\u0209\x05j6\x02\u0208" +
-		"\u01FC\x03\x02\x02\x02\u0208\u0200\x03\x02\x02\x02\u0208\u0204\x03\x02" +
-		"\x02\x02\u0209=\x03\x02\x02\x02\u020A\u020D\x07\x1F\x02\x02\u020B\u020E" +
-		"\x05f4\x02\u020C\u020E\x05l7\x02\u020D\u020B\x03\x02\x02\x02\u020D\u020C" +
-		"\x03\x02\x02\x02\u020E?\x03\x02\x02\x02\u020F\u0210\x07!\x02\x02\u0210" +
-		"\u0225\x05\\/\x02\u0211\u0212\x07!\x02\x02\u0212\u0218\x07S\x02\x02\u0213" +
-		"\u0219\x07:\x02\x02\u0214\u0215\x05l7\x02\u0215\u0216\x07C\x02\x02\u0216" +
-		"\u0217\x05V,\x02\u0217\u0219\x03\x02\x02\x02\u0218\u0213\x03\x02\x02\x02" +
-		"\u0218\u0214\x03\x02\x02\x02\u0219\u021A\x03\x02\x02\x02\u021A\u0225\x07" +
-		"T\x02\x02\u021B\u021C\x07!\x02\x02\u021C\u021D\x07S\x02\x02\u021D\u021E" +
-		"\x05l7\x02\u021E\u021F\x07C\x02\x02\u021F\u0220\x05V,\x02\u0220\u0221" +
-		"\x07T\x02\x02\u0221\u0222\x07U\x02\x02\u0222\u0223\x05\\/\x02\u0223\u0225" +
-		"\x03\x02\x02\x02\u0224\u020F\x03\x02\x02\x02\u0224\u0211\x03\x02\x02\x02" +
-		"\u0224\u021B\x03\x02\x02\x02\u0225A\x03\x02\x02\x02\u0226\u0228\x07\"" +
-		"\x02\x02\u0227\u0229\x070\x02\x02\u0228\u0227\x03\x02\x02\x02\u0228\u0229" +
-		"\x03\x02\x02\x02\u0229C\x03\x02\x02\x02\u022A\u022B\x07#\x02\x02\u022B" +
-		"\u022C\x05F$\x02\u022C\u022D\x07U\x02\x02\u022D\u022E\x05\\/\x02\u022E" +
-		"\u0248\x03\x02\x02\x02\u022F\u0230\x07#\x02\x02\u0230\u0231\x05F$\x02" +
-		"\u0231\u0232\x07U\x02\x02\u0232\u0238\x07S\x02\x02\u0233\u0239\x07:\x02" +
-		"\x02\u0234\u0235\x05l7\x02\u0235\u0236\x07C\x02\x02\u0236\u0237\x05V," +
-		"\x02\u0237\u0239\x03\x02\x02\x02\u0238\u0233\x03\x02\x02\x02\u0238\u0234" +
-		"\x03\x02\x02\x02\u0239\u023A\x03\x02\x02\x02\u023A\u023B\x07T\x02\x02" +
-		"\u023B\u0248\x03\x02\x02\x02\u023C\u023D\x07#\x02\x02\u023D\u023E\x05" +
-		"F$\x02\u023E\u023F\x07U\x02\x02\u023F\u0240\x07S\x02\x02\u0240\u0241\x05" +
-		"l7\x02\u0241\u0242\x07C\x02\x02\u0242\u0243\x05V,\x02\u0243\u0244\x07" +
-		"T\x02\x02\u0244\u0245\x07U\x02\x02\u0245\u0246\x05\\/\x02\u0246\u0248" +
-		"\x03\x02\x02\x02\u0247\u022A\x03\x02\x02\x02\u0247\u022F\x03\x02\x02\x02" +
-		"\u0247\u023C\x03\x02\x02\x02\u0248E\x03\x02\x02\x02\u0249\u024A\t\x03" +
-		"\x02\x02\u024AG\x03\x02\x02\x02\u024B\u024F\x07$\x02\x02\u024C\u0250\x07" +
-		":\x02\x02\u024D\u0250\x05l7\x02\u024E\u0250\x05|?\x02\u024F\u024C\x03" +
-		"\x02\x02\x02\u024F\u024D\x03\x02\x02\x02\u024F\u024E\x03\x02\x02\x02\u0250" +
-		"\u0260\x03\x02\x02\x02\u0251\u0252\x07$\x02\x02\u0252\u0253\x05L\'\x02" +
-		"\u0253\u0254\x07U\x02\x02\u0254\u0255\x05|?\x02\u0255\u0260\x03\x02\x02" +
-		"\x02\u0256\u025A\x07%\x02\x02\u0257\u0258\x05N(\x02\u0258\u0259\x07U\x02" +
-		"\x02\u0259\u025B\x03\x02\x02\x02\u025A\u0257\x03\x02\x02\x02\u025A\u025B" +
-		"\x03\x02\x02\x02\u025B\u025C\x03\x02\x02\x02\u025C\u0260\x05X-\x02\u025D" +
-		"\u025E\x07&\x02\x02\u025E\u0260\x05X-\x02\u025F\u024B\x03\x02\x02\x02" +
-		"\u025F\u0251\x03\x02\x02\x02\u025F\u0256\x03\x02\x02\x02\u025F\u025D\x03" +
-		"\x02\x02\x02\u0260I\x03\x02\x02\x02\u0261\u0265\x07\'\x02\x02\u0262\u0263" +
-		"\x05L\'\x02\u0263\u0264\x07U\x02\x02\u0264\u0266\x03\x02\x02\x02\u0265" +
-		"\u0262\x03\x02\x02\x02\u0265\u0266\x03\x02\x02\x02\u0266\u0267\x03\x02" +
-		"\x02\x02\u0267\u026D\x05|?\x02\u0268\u026A\x07(\x02\x02\u0269\u026B\x05" +
-		"L\'\x02\u026A\u0269\x03\x02\x02\x02\u026A\u026B\x03\x02\x02\x02\u026B" +
-		"\u026D\x03\x02\x02\x02\u026C\u0261\x03\x02\x02\x02\u026C\u0268\x03\x02" +
-		"\x02\x02\u026DK\x03\x02\x02\x02\u026E\u026F\t\x04\x02\x02\u026FM\x03\x02" +
-		"\x02\x02\u0270\u0271\t\x05\x02\x02\u0271O\x03\x02\x02\x02\u0272\u0273" +
-		"\x07)\x02\x02\u0273\u0274\t\x06\x02\x02\u0274Q\x03\x02\x02\x02\u0275\u0276" +
-		"\x07*\x02\x02\u0276\u0277\x07H\x02\x02\u0277S\x03\x02\x02\x02\u0278\u0279" +
-		"\x07+\x02\x02\u0279\u027A\x070\x02\x02\u027A\u027B\x07U\x02\x02\u027B" +
-		"\u027C\x07S\x02\x02\u027C\u027D\x05z>\x02\u027D\u027E\x07T\x02\x02\u027E" +
-		"\u0299\x03\x02\x02\x02\u027F\u0283\x07+\x02\x02\u0280\u0281\x05\\/\x02" +
-		"\u0281\u0282\x07U\x02\x02\u0282\u0284\x03\x02\x02\x02\u0283\u0280\x03" +
-		"\x02\x02\x02\u0283\u0284\x03\x02\x02\x02\u0284\u0285\x03\x02\x02\x02\u0285" +
-		"\u0286\x07S\x02\x02\u0286\u0287\x072\x02\x02\u0287\u0299\x07T\x02\x02" +
-		"\u0288\u0289\x07,\x02\x02\u0289\u028A\x07S\x02\x02\u028A\u028B\x05z>\x02" +
-		"\u028B\u028C\x07T\x02\x02\u028C\u028D\x07U\x02\x02\u028D\u028E\x070\x02" +
-		"\x02\u028E\u0299\x03\x02\x02\x02\u028F\u0290\x07,\x02\x02\u0290\u0291" +
-		"\x07S\x02\x02\u0291\u0292\x072\x02\x02\u0292\u0293\x07T\x02\x02\u0293" +
-		"\u0296\x07U\x02\x02\u0294\u0297\x05\\/\x02\u0295\u0297\x07P\x02\x02\u0296" +
-		"\u0294\x03\x02\x02\x02\u0296\u0295\x03\x02\x02\x02\u0297\u0299\x03\x02" +
-		"\x02\x02\u0298\u0278\x03\x02\x02\x02\u0298\u027F\x03\x02\x02\x02\u0298" +
-		"\u0288\x03\x02\x02\x02\u0298\u028F\x03\x02\x02\x02\u0299U\x03\x02\x02" +
-		"\x02\u029A\u029B\x05\x80A\x02\u029BW\x03\x02\x02\x02\u029C\u029D\x05\x80" +
-		"A\x02\u029DY\x03\x02\x02\x02\u029E\u029F\t\x07\x02\x02\u029F[\x03\x02" +
-		"\x02\x02\u02A0\u02A1\t\b\x02\x02\u02A1]\x03\x02\x02\x02\u02A2\u02A3\t" +
-		"\t\x02\x02\u02A3_\x03\x02\x02\x02\u02A4\u02A5\t\n\x02\x02\u02A5a\x03\x02" +
-		"\x02\x02\u02A6\u02A7\t\v\x02\x02\u02A7c\x03\x02\x02\x02\u02A8\u02A9\t" +
-		"\f\x02\x02\u02A9e\x03\x02\x02\x02\u02AA\u02AD\x05d3\x02\u02AB\u02AD\x07" +
-		":\x02\x02\u02AC\u02AA\x03\x02\x02\x02\u02AC\u02AB\x03\x02\x02\x02\u02AD" +
-		"g\x03\x02\x02\x02\u02AE\u02B1\x05d3\x02\u02AF\u02B1\x07<\x02\x02\u02B0" +
-		"\u02AE\x03\x02\x02\x02\u02B0\u02AF\x03\x02\x02\x02\u02B1i\x03\x02\x02" +
-		"\x02\u02B2\u02B5\x05d3\x02\u02B3\u02B5\x07=\x02\x02\u02B4\u02B2\x03\x02" +
-		"\x02\x02\u02B4\u02B3\x03\x02\x02\x02\u02B5k\x03\x02\x02\x02\u02B6\u02B7" +
-		"\t\r\x02\x02\u02B7m\x03\x02\x02\x02\u02B8\u02B9\x07\x05\x02\x02\u02B9" +
-		"\u02BE\x05p9\x02\u02BA\u02BB\x05p9\x02\u02BB\u02BC\x07\x06\x02\x02\u02BC" +
-		"\u02BE\x03\x02\x02\x02\u02BD\u02B8\x03\x02\x02\x02\u02BD\u02BA\x03\x02" +
-		"\x02\x02\u02BEo\x03\x02\x02\x02\u02BF\u02C0\x07@\x02\x02\u02C0q\x03\x02" +
-		"\x02\x02\u02C1\u02C2\x07A\x02\x02\u02C2s\x03\x02\x02\x02\u02C3\u02C4\x07" +
-		"B\x02\x02\u02C4u\x03\x02\x02\x02\u02C5\u02C6\x07R\x02\x02\u02C6w\x03\x02" +
-		"\x02\x02\u02C7\u02C8\x07Q\x02\x02\u02C8y\x03\x02\x02\x02\u02C9\u02CA\x05" +
-		"\x80A\x02\u02CA{\x03\x02\x02\x02\u02CB\u02CC\x05\x80A\x02\u02CC}\x03\x02" +
-		"\x02\x02\u02CD\u02CE\x05\x80A\x02\u02CE\x7F\x03\x02\x02\x02\u02CF\u02D0" +
-		"\bA\x01\x02\u02D0\u02D1\x07S\x02\x02\u02D1\u02D2\x05\x80A\x02\u02D2\u02D3" +
-		"\x07T\x02\x02\u02D3\u02D7\x03\x02\x02\x02\u02D4\u02D7\x05\x8AF\x02\u02D5" +
-		"\u02D7\x05p9\x02\u02D6\u02CF\x03\x02\x02\x02\u02D6\u02D4\x03\x02\x02\x02" +
-		"\u02D6\u02D5\x03\x02\x02\x02\u02D7\u02DE\x03\x02\x02\x02\u02D8\u02D9\f" +
-		"\x06\x02\x02\u02D9\u02DA\x05\x82B\x02\u02DA\u02DB\x05\x80A\x07\u02DB\u02DD" +
-		"\x03\x02\x02\x02\u02DC\u02D8\x03\x02\x02\x02\u02DD\u02E0\x03\x02\x02\x02" +
-		"\u02DE\u02DC\x03\x02\x02\x02\u02DE\u02DF\x03\x02\x02\x02\u02DF\x81\x03" +
-		"\x02\x02\x02\u02E0\u02DE\x03\x02\x02\x02\u02E1\u02E5\x05\x84C\x02\u02E2" +
-		"\u02E5\x05\x86D\x02\u02E3\u02E5\x05\x88E\x02\u02E4\u02E1\x03\x02\x02\x02" +
-		"\u02E4\u02E2\x03\x02\x02\x02\u02E4\u02E3\x03\x02\x02\x02\u02E5\x83\x03" +
-		"\x02\x02\x02\u02E6\u02E7\t\x0E\x02\x02\u02E7\x85\x03\x02\x02\x02\u02E8" +
-		"\u02E9\x07F\x02\x02\u02E9\x87\x03\x02\x02\x02\u02EA\u02EB\x07G\x02\x02" +
-		"\u02EB\x89\x03\x02\x02\x02\u02EC\u02EE\t\x0F\x02\x02\u02ED\u02EC\x03\x02" +
-		"\x02\x02\u02ED\u02EE\x03\x02\x02\x02\u02EE\u02F3\x03\x02\x02\x02\u02EF" +
-		"\u02F4\x05\x8CG\x02\u02F0\u02F4\x05\x8EH\x02\u02F1\u02F4\x05\x90I\x02" +
-		"\u02F2\u02F4\x05\x92J\x02\u02F3\u02EF\x03\x02\x02\x02\u02F3\u02F0\x03" +
-		"\x02\x02\x02\u02F3\u02F1\x03\x02\x02\x02\u02F3\u02F2\x03\x02\x02\x02\u02F4" +
-		"\x8B\x03\x02\x02\x02\u02F5\u02F6\x07L\x02\x02\u02F6\x8D\x03\x02\x02\x02" +
-		"\u02F7\u02F8\x07M\x02\x02\u02F8\x8F\x03\x02\x02\x02\u02F9\u02FA\t\x10" +
-		"\x02\x02\u02FA\x91\x03\x02\x02\x02\u02FB\u02FC\t\x11\x02\x02\u02FC\x93" +
-		"\x03\x02\x02\x02D\x95\x9A\x9F\xA3\xA8\xAB\xAF\xB2\xC1\xD4\xE2\xE9\xF1" +
-		"\xF7\xFC\u0101\u0104\u010F\u0126\u0137\u013D\u0176\u0187\u018C\u0191\u01A4" +
-		"\u01AB\u01AD\u01B2\u01BD\u01C6\u01C9\u01CE\u01D4\u01D9\u01E1\u01E4\u01EA" +
-		"\u01F3\u01F6\u01FA\u0208\u020D\u0218\u0224\u0228\u0238\u0247\u024F\u025A" +
-		"\u025F\u0265\u026A\u026C\u0283\u0296\u0298\u02AC\u02B0\u02B4\u02BD\u02D6" +
-		"\u02DE\u02E4\u02ED\u02F3";
+		"\x02\x02\x02\u01F9\u0205\x03\x02\x02\x02\u01FA\u01FB\x07\x1F\x02\x02\u01FB" +
+		"\u0201\x07S\x02\x02\u01FC\u0202\x07:\x02\x02\u01FD\u01FE\x05p9\x02\u01FE" +
+		"\u01FF\x05\x8EH\x02\u01FF\u0200\x05Z.\x02\u0200\u0202\x03\x02\x02\x02" +
+		"\u0201\u01FC\x03\x02\x02\x02\u0201\u01FD\x03\x02\x02\x02\u0202\u0203\x03" +
+		"\x02\x02\x02\u0203\u0205\x07T\x02\x02\u0204\u01F4\x03\x02\x02\x02\u0204" +
+		"\u01FA\x03\x02\x02\x02\u0205=\x03\x02\x02\x02\u0206\u0208\x07 \x02\x02" +
+		"\u0207\u0209\x070\x02\x02\u0208\u0207\x03\x02\x02\x02\u0208\u0209\x03" +
+		"\x02\x02\x02\u0209?\x03\x02\x02\x02\u020A\u020B\x07\x1D\x02\x02\u020B" +
+		"\u020C\x07:\x02\x02\u020C\u020D\x07U\x02\x02\u020D\u0217\x05j6\x02\u020E" +
+		"\u020F\x07\x1D\x02\x02\u020F\u0210\x07<\x02\x02\u0210\u0211\x07U\x02\x02" +
+		"\u0211\u0217\x05l7\x02\u0212\u0213\x07\x1D\x02\x02\u0213\u0214\x07=\x02" +
+		"\x02\u0214\u0215\x07U\x02\x02\u0215\u0217\x05n8\x02\u0216\u020A\x03\x02" +
+		"\x02\x02\u0216\u020E\x03\x02\x02\x02\u0216\u0212\x03\x02\x02\x02\u0217" +
+		"A\x03\x02\x02\x02\u0218\u021B\x07\x1F\x02\x02\u0219\u021C\x05j6\x02\u021A" +
+		"\u021C\x05p9\x02\u021B\u0219\x03\x02\x02\x02\u021B\u021A\x03\x02\x02\x02" +
+		"\u021CC\x03\x02\x02\x02\u021D\u021E\x07!\x02\x02\u021E\u0233\x05`1\x02" +
+		"\u021F\u0220\x07!\x02\x02\u0220\u0226\x07S\x02\x02\u0221\u0227\x07:\x02" +
+		"\x02\u0222\u0223\x05p9\x02\u0223\u0224\x05\x8EH\x02\u0224\u0225\x05Z." +
+		"\x02\u0225\u0227\x03\x02\x02\x02\u0226\u0221\x03\x02\x02\x02\u0226\u0222" +
+		"\x03\x02\x02\x02\u0227\u0228\x03\x02\x02\x02\u0228\u0233\x07T\x02\x02" +
+		"\u0229\u022A\x07!\x02\x02\u022A\u022B\x07S\x02\x02\u022B\u022C\x05p9\x02" +
+		"\u022C\u022D\x05\x8EH\x02\u022D\u022E\x05Z.\x02\u022E\u022F\x07T\x02\x02" +
+		"\u022F\u0230\x07U\x02\x02\u0230\u0231\x05`1\x02\u0231\u0233\x03\x02\x02" +
+		"\x02\u0232\u021D\x03\x02\x02\x02\u0232\u021F\x03\x02\x02\x02\u0232\u0229" +
+		"\x03\x02\x02\x02\u0233E\x03\x02\x02\x02\u0234\u0236\x07\"\x02\x02\u0235" +
+		"\u0237\x070\x02\x02\u0236\u0235\x03\x02\x02\x02\u0236\u0237\x03\x02\x02" +
+		"\x02\u0237G\x03\x02\x02\x02\u0238\u0239\x07#\x02\x02\u0239\u023A\x05J" +
+		"&\x02\u023A\u023B\x07U\x02\x02\u023B\u023C\x05`1\x02\u023C\u0256\x03\x02" +
+		"\x02\x02\u023D\u023E\x07#\x02\x02\u023E\u023F\x05J&\x02\u023F\u0240\x07" +
+		"U\x02\x02\u0240\u0246\x07S\x02\x02\u0241\u0247\x07:\x02\x02\u0242\u0243" +
+		"\x05p9\x02\u0243\u0244\x05\x8EH\x02\u0244\u0245\x05Z.\x02\u0245\u0247" +
+		"\x03\x02\x02\x02\u0246\u0241\x03\x02\x02\x02\u0246\u0242\x03\x02\x02\x02" +
+		"\u0247\u0248\x03\x02\x02\x02\u0248\u0249\x07T\x02\x02\u0249\u0256\x03" +
+		"\x02\x02\x02\u024A\u024B\x07#\x02\x02\u024B\u024C\x05J&\x02\u024C\u024D" +
+		"\x07U\x02\x02\u024D\u024E\x07S\x02\x02\u024E\u024F\x05p9\x02\u024F\u0250" +
+		"\x05\x8EH\x02\u0250\u0251\x05Z.\x02\u0251\u0252\x07T\x02\x02\u0252\u0253" +
+		"\x07U\x02\x02\u0253\u0254\x05`1\x02\u0254\u0256\x03\x02\x02\x02\u0255" +
+		"\u0238\x03\x02\x02\x02\u0255\u023D\x03\x02\x02\x02\u0255\u024A\x03\x02" +
+		"\x02\x02\u0256I\x03\x02\x02\x02\u0257\u0258\t\x03\x02\x02\u0258K\x03\x02" +
+		"\x02\x02\u0259\u025D\x07$\x02\x02\u025A\u025E\x07:\x02\x02\u025B\u025E" +
+		"\x05p9\x02\u025C\u025E\x05\x80A\x02\u025D\u025A\x03\x02\x02\x02\u025D" +
+		"\u025B\x03\x02\x02\x02\u025D\u025C\x03\x02\x02\x02\u025E\u026E\x03\x02" +
+		"\x02\x02\u025F\u0260\x07$\x02\x02\u0260\u0261\x05P)\x02\u0261\u0262\x07" +
+		"U\x02\x02\u0262\u0263\x05\x80A\x02\u0263\u026E\x03\x02\x02\x02\u0264\u0268" +
+		"\x07%\x02\x02\u0265\u0266\x05R*\x02\u0266\u0267\x07U\x02\x02\u0267\u0269" +
+		"\x03\x02\x02\x02\u0268\u0265\x03\x02\x02\x02\u0268\u0269\x03\x02\x02\x02" +
+		"\u0269\u026A\x03\x02\x02\x02\u026A\u026E\x05\\/\x02\u026B\u026C\x07&\x02" +
+		"\x02\u026C\u026E\x05\\/\x02\u026D\u0259\x03\x02\x02\x02\u026D\u025F\x03" +
+		"\x02\x02\x02\u026D\u0264\x03\x02\x02\x02\u026D\u026B\x03\x02\x02\x02\u026E" +
+		"M\x03\x02\x02\x02\u026F\u0273\x07\'\x02\x02\u0270\u0271\x05P)\x02\u0271" +
+		"\u0272\x07U\x02\x02\u0272\u0274\x03\x02\x02\x02\u0273\u0270\x03\x02\x02" +
+		"\x02\u0273\u0274\x03\x02\x02\x02\u0274\u0275\x03\x02\x02\x02\u0275\u027B" +
+		"\x05\x80A\x02\u0276\u0278\x07(\x02\x02\u0277\u0279\x05P)\x02\u0278\u0277" +
+		"\x03\x02\x02\x02\u0278\u0279\x03\x02\x02\x02\u0279\u027B\x03\x02\x02\x02" +
+		"\u027A\u026F\x03\x02\x02\x02\u027A\u0276\x03\x02\x02\x02\u027BO\x03\x02" +
+		"\x02\x02\u027C\u027D\t\x04\x02\x02\u027DQ\x03\x02\x02\x02\u027E\u027F" +
+		"\t\x05\x02\x02\u027FS\x03\x02\x02\x02\u0280\u0281\x07)\x02\x02\u0281\u0282" +
+		"\t\x06\x02\x02\u0282U\x03\x02\x02\x02\u0283\u0284\x07*\x02\x02\u0284\u0285" +
+		"\x07H\x02\x02\u0285W\x03\x02\x02\x02\u0286\u0287\x07+\x02\x02\u0287\u0288" +
+		"\x070\x02\x02\u0288\u0289\x07U\x02\x02\u0289\u028A\x07S\x02\x02\u028A" +
+		"\u028B\x05~@\x02\u028B\u028C\x07T\x02\x02\u028C\u02A7\x03\x02\x02\x02" +
+		"\u028D\u0291\x07+\x02\x02\u028E\u028F\x05`1\x02\u028F\u0290\x07U\x02\x02" +
+		"\u0290\u0292\x03\x02\x02\x02\u0291\u028E\x03\x02\x02\x02\u0291\u0292\x03" +
+		"\x02\x02\x02\u0292\u0293\x03\x02\x02\x02\u0293\u0294\x07S\x02\x02\u0294" +
+		"\u0295\x072\x02\x02\u0295\u02A7\x07T\x02\x02\u0296\u0297\x07,\x02\x02" +
+		"\u0297\u0298\x07S\x02\x02\u0298\u0299\x05~@\x02\u0299\u029A\x07T\x02\x02" +
+		"\u029A\u029B\x07U\x02\x02\u029B\u029C\x070\x02\x02\u029C\u02A7\x03\x02" +
+		"\x02\x02\u029D\u029E\x07,\x02\x02\u029E\u029F\x07S\x02\x02\u029F\u02A0" +
+		"\x072\x02\x02\u02A0\u02A1\x07T\x02\x02\u02A1\u02A4\x07U\x02\x02\u02A2" +
+		"\u02A5\x05`1\x02\u02A3\u02A5\x07P\x02\x02\u02A4\u02A2\x03\x02\x02\x02" +
+		"\u02A4\u02A3\x03\x02\x02\x02\u02A5\u02A7\x03\x02\x02\x02\u02A6\u0286\x03" +
+		"\x02\x02\x02\u02A6\u028D\x03\x02\x02\x02\u02A6\u0296\x03\x02\x02\x02\u02A6" +
+		"\u029D\x03\x02\x02\x02\u02A7Y\x03\x02\x02\x02\u02A8\u02A9\x05\x84C\x02" +
+		"\u02A9[\x03\x02\x02\x02\u02AA\u02AB\x05\x84C\x02\u02AB]\x03\x02\x02\x02" +
+		"\u02AC\u02AD\t\x07\x02\x02\u02AD_\x03\x02\x02\x02\u02AE\u02AF\t\b\x02" +
+		"\x02\u02AFa\x03\x02\x02\x02\u02B0\u02B1\t\t\x02\x02\u02B1c\x03\x02\x02" +
+		"\x02\u02B2\u02B3\t\n\x02\x02\u02B3e\x03\x02\x02\x02\u02B4\u02B5\t\v\x02" +
+		"\x02\u02B5g\x03\x02\x02\x02\u02B6\u02B7\t\f\x02\x02\u02B7i\x03\x02\x02" +
+		"\x02\u02B8\u02BB\x05h5\x02\u02B9\u02BB\x07:\x02\x02\u02BA\u02B8\x03\x02" +
+		"\x02\x02\u02BA\u02B9\x03\x02\x02\x02\u02BBk\x03\x02\x02\x02\u02BC\u02BF" +
+		"\x05h5\x02\u02BD\u02BF\x07<\x02\x02\u02BE\u02BC\x03\x02\x02\x02\u02BE" +
+		"\u02BD\x03\x02\x02\x02\u02BFm\x03\x02\x02\x02\u02C0\u02C3\x05h5\x02\u02C1" +
+		"\u02C3\x07=\x02\x02\u02C2\u02C0\x03\x02\x02\x02\u02C2\u02C1\x03\x02\x02" +
+		"\x02\u02C3o\x03\x02\x02\x02\u02C4\u02C5\t\r\x02\x02\u02C5q\x03\x02\x02" +
+		"\x02\u02C6\u02C7\x07\x05\x02\x02\u02C7\u02CC\x05t;\x02\u02C8\u02C9\x05" +
+		"t;\x02\u02C9\u02CA\x07\x06\x02\x02\u02CA\u02CC\x03\x02\x02\x02\u02CB\u02C6" +
+		"\x03\x02\x02\x02\u02CB\u02C8\x03\x02\x02\x02\u02CCs\x03\x02\x02\x02\u02CD" +
+		"\u02CE\x07@\x02\x02\u02CEu\x03\x02\x02\x02\u02CF\u02D0\x07A\x02\x02\u02D0" +
+		"w\x03\x02\x02\x02\u02D1\u02D2\x07B\x02\x02\u02D2y\x03\x02\x02\x02\u02D3" +
+		"\u02D4\x07R\x02\x02\u02D4{\x03\x02\x02\x02\u02D5\u02D6\x07Q\x02\x02\u02D6" +
+		"}\x03\x02\x02\x02\u02D7\u02D8\x05\x84C\x02\u02D8\x7F\x03\x02\x02\x02\u02D9" +
+		"\u02DA\x05\x84C\x02\u02DA\x81\x03\x02\x02\x02\u02DB\u02DC\x05\x84C\x02" +
+		"\u02DC\x83\x03\x02\x02\x02\u02DD\u02DE\bC\x01\x02\u02DE\u02DF\x07S\x02" +
+		"\x02\u02DF\u02E0\x05\x84C\x02\u02E0\u02E1\x07T\x02\x02\u02E1\u02E5\x03" +
+		"\x02\x02\x02\u02E2\u02E5\x05\x90I\x02\u02E3\u02E5\x05t;\x02\u02E4\u02DD" +
+		"\x03\x02\x02\x02\u02E4\u02E2\x03\x02\x02\x02\u02E4\u02E3\x03\x02\x02\x02" +
+		"\u02E5\u02EC\x03\x02\x02\x02\u02E6\u02E7\f\x06\x02\x02\u02E7\u02E8\x05" +
+		"\x86D\x02\u02E8\u02E9\x05\x84C\x07\u02E9\u02EB\x03\x02\x02\x02\u02EA\u02E6" +
+		"\x03\x02\x02\x02\u02EB\u02EE\x03\x02\x02\x02\u02EC\u02EA\x03\x02\x02\x02" +
+		"\u02EC\u02ED\x03\x02\x02\x02\u02ED\x85\x03\x02\x02\x02\u02EE\u02EC\x03" +
+		"\x02\x02\x02\u02EF\u02F3\x05\x88E\x02\u02F0\u02F3\x05\x8AF\x02\u02F1\u02F3" +
+		"\x05\x8CG\x02\u02F2\u02EF\x03\x02\x02\x02\u02F2\u02F0\x03\x02\x02\x02" +
+		"\u02F2\u02F1\x03\x02\x02\x02\u02F3\x87\x03\x02\x02\x02\u02F4\u02F5\t\x0E" +
+		"\x02\x02\u02F5\x89\x03\x02\x02\x02\u02F6\u02F7\x07F\x02\x02\u02F7\x8B" +
+		"\x03\x02\x02\x02\u02F8\u02F9\x07G\x02\x02\u02F9\x8D\x03\x02\x02\x02\u02FA" +
+		"\u02FB\t\x0F\x02\x02\u02FB\x8F\x03\x02\x02\x02\u02FC\u02FE\t\x0F\x02\x02" +
+		"\u02FD\u02FC\x03\x02\x02\x02\u02FD\u02FE\x03\x02\x02\x02\u02FE\u0304\x03" +
+		"\x02\x02\x02\u02FF\u0305\x05\x92J\x02\u0300\u0305\x05\x94K\x02\u0301\u0305" +
+		"\x05\x96L\x02\u0302\u0305\x05\x98M\x02\u0303\u0305\x05\x9AN\x02\u0304" +
+		"\u02FF\x03\x02\x02\x02\u0304\u0300\x03\x02\x02\x02\u0304\u0301\x03\x02" +
+		"\x02\x02\u0304\u0302\x03\x02\x02\x02\u0304\u0303\x03\x02\x02\x02\u0305" +
+		"\x91\x03\x02\x02\x02\u0306\u0307\x07L\x02\x02\u0307\x93\x03\x02\x02\x02" +
+		"\u0308\u0309\x07M\x02\x02\u0309\x95\x03\x02\x02\x02\u030A\u030B\t\x10" +
+		"\x02\x02\u030B\x97\x03\x02\x02\x02\u030C\u030D\t\x11\x02\x02\u030D\x99" +
+		"\x03\x02\x02\x02\u030E\u030F\x07Q\x02\x02\u030F\x9B\x03\x02\x02\x02D\x9D" +
+		"\xA2\xA7\xAB\xB0\xB3\xB7\xBA\xCA\xE2\xF0\xF7\xFF\u0105\u010A\u010F\u0112" +
+		"\u011D\u0134\u0145\u014B\u0184\u0195\u019A\u019F\u01B2\u01B9\u01BB\u01C0" +
+		"\u01CB\u01D4\u01D7\u01DC\u01E2\u01E7\u01EF\u01F2\u01F8\u0201\u0204\u0208" +
+		"\u0216\u021B\u0226\u0232\u0236\u0246\u0255\u025D\u0268\u026D\u0273\u0278" +
+		"\u027A\u0291\u02A4\u02A6\u02BA\u02BE\u02C2\u02CB\u02E4\u02EC\u02F2\u02FD" +
+		"\u0304";
 	public static readonly _serializedATN: string = Utils.join(
 		[
 			z80asmParser._serializedATNSegment0,
@@ -4784,6 +4918,9 @@ export class DirectiveContext extends ParserRuleContext {
 	public directive_void(): Directive_voidContext | undefined {
 		return this.tryGetRuleContext(0, Directive_voidContext);
 	}
+	public directive_file(): Directive_fileContext | undefined {
+		return this.tryGetRuleContext(0, Directive_fileContext);
+	}
 	public directive_param16(): Directive_param16Context | undefined {
 		return this.tryGetRuleContext(0, Directive_param16Context);
 	}
@@ -4871,6 +5008,69 @@ export class Directive_voidContext extends ParserRuleContext {
 	public accept<Result>(visitor: z80asmVisitor<Result>): Result {
 		if (visitor.visitDirective_void) {
 			return visitor.visitDirective_void(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
+}
+
+
+export class Directive_fileContext extends ParserRuleContext {
+	public DIRECTIVEfile(): TerminalNode { return this.getToken(z80asmParser.DIRECTIVEfile, 0); }
+	public filename(): FilenameContext {
+		return this.getRuleContext(0, FilenameContext);
+	}
+	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
+		super(parent, invokingState);
+	}
+	// @Override
+	public get ruleIndex(): number { return z80asmParser.RULE_directive_file; }
+	// @Override
+	public enterRule(listener: z80asmListener): void {
+		if (listener.enterDirective_file) {
+			listener.enterDirective_file(this);
+		}
+	}
+	// @Override
+	public exitRule(listener: z80asmListener): void {
+		if (listener.exitDirective_file) {
+			listener.exitDirective_file(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: z80asmVisitor<Result>): Result {
+		if (visitor.visitDirective_file) {
+			return visitor.visitDirective_file(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
+}
+
+
+export class FilenameContext extends ParserRuleContext {
+	public STRING(): TerminalNode { return this.getToken(z80asmParser.STRING, 0); }
+	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
+		super(parent, invokingState);
+	}
+	// @Override
+	public get ruleIndex(): number { return z80asmParser.RULE_filename; }
+	// @Override
+	public enterRule(listener: z80asmListener): void {
+		if (listener.enterFilename) {
+			listener.enterFilename(this);
+		}
+	}
+	// @Override
+	public exitRule(listener: z80asmListener): void {
+		if (listener.exitFilename) {
+			listener.exitFilename(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: z80asmVisitor<Result>): Result {
+		if (visitor.visitFilename) {
+			return visitor.visitFilename(this);
 		} else {
 			return visitor.visitChildren(this);
 		}
@@ -5596,7 +5796,9 @@ export class Instruction_ld8Context extends ParserRuleContext {
 	public register16_ex(): Register16_exContext | undefined {
 		return this.tryGetRuleContext(0, Register16_exContext);
 	}
-	public PLUS(): TerminalNode | undefined { return this.tryGetToken(z80asmParser.PLUS, 0); }
+	public operator_offset(): Operator_offsetContext | undefined {
+		return this.tryGetRuleContext(0, Operator_offsetContext);
+	}
 	public offset_ex(): Offset_exContext | undefined {
 		return this.tryGetRuleContext(0, Offset_exContext);
 	}
@@ -5786,7 +5988,9 @@ export class Instruction_arithmetic8Context extends ParserRuleContext {
 	public register16_ex(): Register16_exContext | undefined {
 		return this.tryGetRuleContext(0, Register16_exContext);
 	}
-	public PLUS(): TerminalNode | undefined { return this.tryGetToken(z80asmParser.PLUS, 0); }
+	public operator_offset(): Operator_offsetContext | undefined {
+		return this.tryGetRuleContext(0, Operator_offsetContext);
+	}
 	public offset_ex(): Offset_exContext | undefined {
 		return this.tryGetRuleContext(0, Offset_exContext);
 	}
@@ -5831,7 +6035,9 @@ export class Instruction_incdec8Context extends ParserRuleContext {
 	public register16_ex(): Register16_exContext | undefined {
 		return this.tryGetRuleContext(0, Register16_exContext);
 	}
-	public PLUS(): TerminalNode | undefined { return this.tryGetToken(z80asmParser.PLUS, 0); }
+	public operator_offset(): Operator_offsetContext | undefined {
+		return this.tryGetRuleContext(0, Operator_offsetContext);
+	}
 	public offset_ex(): Offset_exContext | undefined {
 		return this.tryGetRuleContext(0, Offset_exContext);
 	}
@@ -5984,7 +6190,9 @@ export class Instruction_rotateContext extends ParserRuleContext {
 	public register16_ex(): Register16_exContext | undefined {
 		return this.tryGetRuleContext(0, Register16_exContext);
 	}
-	public PLUS(): TerminalNode | undefined { return this.tryGetToken(z80asmParser.PLUS, 0); }
+	public operator_offset(): Operator_offsetContext | undefined {
+		return this.tryGetRuleContext(0, Operator_offsetContext);
+	}
 	public offset_ex(): Offset_exContext | undefined {
 		return this.tryGetRuleContext(0, Offset_exContext);
 	}
@@ -6071,7 +6279,9 @@ export class Instruction_bitContext extends ParserRuleContext {
 	public register16_ex(): Register16_exContext | undefined {
 		return this.tryGetRuleContext(0, Register16_exContext);
 	}
-	public PLUS(): TerminalNode | undefined { return this.tryGetToken(z80asmParser.PLUS, 0); }
+	public operator_offset(): Operator_offsetContext | undefined {
+		return this.tryGetRuleContext(0, Operator_offsetContext);
+	}
 	public offset_ex(): Offset_exContext | undefined {
 		return this.tryGetRuleContext(0, Offset_exContext);
 	}
@@ -7258,6 +7468,37 @@ export class Operator_logicContext extends ParserRuleContext {
 }
 
 
+export class Operator_offsetContext extends ParserRuleContext {
+	public PLUS(): TerminalNode | undefined { return this.tryGetToken(z80asmParser.PLUS, 0); }
+	public MINUS(): TerminalNode | undefined { return this.tryGetToken(z80asmParser.MINUS, 0); }
+	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
+		super(parent, invokingState);
+	}
+	// @Override
+	public get ruleIndex(): number { return z80asmParser.RULE_operator_offset; }
+	// @Override
+	public enterRule(listener: z80asmListener): void {
+		if (listener.enterOperator_offset) {
+			listener.enterOperator_offset(this);
+		}
+	}
+	// @Override
+	public exitRule(listener: z80asmListener): void {
+		if (listener.exitOperator_offset) {
+			listener.exitOperator_offset(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: z80asmVisitor<Result>): Result {
+		if (visitor.visitOperator_offset) {
+			return visitor.visitOperator_offset(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
+}
+
+
 export class NumberContext extends ParserRuleContext {
 	public number_bin(): Number_binContext | undefined {
 		return this.tryGetRuleContext(0, Number_binContext);
@@ -7270,6 +7511,9 @@ export class NumberContext extends ParserRuleContext {
 	}
 	public number_hex(): Number_hexContext | undefined {
 		return this.tryGetRuleContext(0, Number_hexContext);
+	}
+	public number_char(): Number_charContext | undefined {
+		return this.tryGetRuleContext(0, Number_charContext);
 	}
 	public PLUS(): TerminalNode | undefined { return this.tryGetToken(z80asmParser.PLUS, 0); }
 	public MINUS(): TerminalNode | undefined { return this.tryGetToken(z80asmParser.MINUS, 0); }
@@ -7418,6 +7662,36 @@ export class Number_hexContext extends ParserRuleContext {
 	public accept<Result>(visitor: z80asmVisitor<Result>): Result {
 		if (visitor.visitNumber_hex) {
 			return visitor.visitNumber_hex(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
+}
+
+
+export class Number_charContext extends ParserRuleContext {
+	public CHARACTER(): TerminalNode { return this.getToken(z80asmParser.CHARACTER, 0); }
+	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
+		super(parent, invokingState);
+	}
+	// @Override
+	public get ruleIndex(): number { return z80asmParser.RULE_number_char; }
+	// @Override
+	public enterRule(listener: z80asmListener): void {
+		if (listener.enterNumber_char) {
+			listener.enterNumber_char(this);
+		}
+	}
+	// @Override
+	public exitRule(listener: z80asmListener): void {
+		if (listener.exitNumber_char) {
+			listener.exitNumber_char(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: z80asmVisitor<Result>): Result {
+		if (visitor.visitNumber_char) {
+			return visitor.visitNumber_char(this);
 		} else {
 			return visitor.visitChildren(this);
 		}

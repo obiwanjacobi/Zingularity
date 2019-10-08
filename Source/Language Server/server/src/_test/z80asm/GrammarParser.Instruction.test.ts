@@ -41,6 +41,19 @@ describe("Grammar Parser - Instructions", () => {
         expect((<Instruction> nodes[0]).external).toBe("symbol");
     });
 
+    it("LD HL, nn (numeric)", () => {
+        const parser = GrammarParser.createParser("ld hl, $4042" + newLine);
+        const tree = parser.asm();
+        const nodes = GrammarParser.createAssemblyNodes(tree);
+
+        expect(nodes.length).toBe(1);
+        expect(nodes[0].kind).toBe(AssemblyNodeKind.Instruction);
+        expect(nodes[0].text).toBe("ld hl, $4042");
+
+        expect((<Instruction> nodes[0]).numeric).not.toBeUndefined();
+        expect((<Instruction> nodes[0]).external).toBe("");
+    });
+
     it("RST 28", () => {
         const parser = GrammarParser.createParser("rst 28" + newLine);
         const tree = parser.asm();

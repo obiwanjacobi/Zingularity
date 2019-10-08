@@ -89,7 +89,7 @@ export function createMeta(map: {} | undefined, numeric: Numeric | undefined): I
         const meta = map["_"];
 
         if (meta) {
-            let bytes = <string[]> meta["bytes"];
+            let bytes = [...<string[]> meta["bytes"]];
             if (numeric) {
                 const n = bytes.findIndex(b => byteReplaceKeys.filter(k => k.length == 1).indexOf(b) >= 0);
                 if (n >= 0) {

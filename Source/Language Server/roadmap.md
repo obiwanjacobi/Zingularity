@@ -7,6 +7,8 @@ Plans and Ideas.
 * Formating code (in-place)
 * Convert from one assembler format to another (save as)
 * Support Workspaces (research topic)
+* Instruction Bytes and Cycles in gutters in the editor
+    This could help? https://github.com/obiwanjacobi/vscode-extension-samples/tree/master/virtual-document-sample
 
 ## Structured Comment Blocks
 

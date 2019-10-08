@@ -29,7 +29,12 @@ class NumericBuilder extends AbstractParseTreeVisitor<Numeric> implements z80asm
     }
 
     private new(radix: Radix, ctx: ParserRuleContext): Numeric {
-        return new Numeric(parseInt(ctx.text, radix), radix, ctx.text, ctx.start.line, ctx.start.charPositionInLine);
+        let txt = ctx.text;
+        const first = txt[0];
+        if (first < '0' || first > '9') {
+            txt = txt.substring(1);
+        }
+        return new Numeric(parseInt(txt, radix), radix, ctx.text, ctx.start.line, ctx.start.charPositionInLine);
     }
 }
 

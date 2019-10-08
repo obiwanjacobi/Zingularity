@@ -1,3 +1,3 @@
 # TODO list
 
-* make `jp (hl/ix/iy)` optionally correct. Now `jp hl/ix/iy`
+* pre-load documents in a project. This gives us a code model (of the project) without having to open all documents. Multi-root related.

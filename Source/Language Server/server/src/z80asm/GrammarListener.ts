@@ -175,11 +175,11 @@ export class GrammarListener implements z80asmListener {
         if (this.nodes.length > 0 &&
             this.nodes[this.nodes.length -1].kind === AssemblyNodeKind.BlockComment) {
 
-            const block = <BlockComment> this.nodes[this.nodes.length -1];
+            const block = <BlockComment> this.nodes.pop();
             this.nodes.push(new BlockComment([...block.lines, line]));
+        } else {
+            this.nodes.push(new BlockComment([line]));
         }
-
-        this.nodes.push(new BlockComment([line]));
     }
 
     exitLabel(ctx: LabelContext) {

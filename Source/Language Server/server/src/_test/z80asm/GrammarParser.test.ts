@@ -134,18 +134,36 @@ describe("Grammar Parser", () => {
     });
 
     it("blockcomment", () => {
-        const parser = GrammarParser.createParser(";;\t@param hl comment" + newLine);
+        const parser = GrammarParser.createParser(";;\t@param hl comment comment" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
         let node = nodes[0];
         expect(node.kind).toBe(AssemblyNodeKind.BlockComment);
-        expect(node.text).toContain(";;\t@param hl comment");
+        expect(node.text).toContain(";;\t@param hl comment comment");
         
         const block = <BlockComment> node;
         expect(block.lines.length).toBe(1);
         expect(block.lines[0].paramName).toBe("@param");
         expect(block.lines[0].paramValue).toBe("hl");
-        expect(block.lines[0].doc).toBe("comment");
+        expect(block.lines[0].doc).toBe("comment comment");
+    });
+
+    it("blockcomment - 2 lines", () => {
+        const parser = GrammarParser.createParser(";;\t@param hl comment comment" + newLine + ";; @returns a bla bla" + newLine);
+        const tree = parser.asm();
+        const nodes = GrammarParser.createAssemblyNodes(tree);
+
+        let node = nodes[0];
+        expect(node.kind).toBe(AssemblyNodeKind.BlockComment);
+        
+        const block = <BlockComment> node;
+        expect(block.lines.length).toBe(2);
+        expect(block.lines[0].paramName).toBe("@param");
+        expect(block.lines[0].paramValue).toBe("hl");
+        expect(block.lines[0].doc).toBe("comment comment");
+        expect(block.lines[1].paramName).toBe("@returns");
+        expect(block.lines[1].paramValue).toBe("a");
+        expect(block.lines[1].doc).toBe("bla bla");
     });
 });

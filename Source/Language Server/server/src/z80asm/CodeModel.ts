@@ -329,18 +329,14 @@ export class SymbolTable {
     }
 
     private toSymbol(node: AssemblyNode): string {
-        let symbol: string = "";
-
         switch (node.kind) {
             case AssemblyNodeKind.Label:
-                symbol = (<Label>node).symbol;
-                break;
+                return (<Label>node).symbol;
             case AssemblyNodeKind.Instruction:
-                symbol = (<Instruction>node).external;
-                break;
+                return (<Instruction>node).external;
         }
 
-        return symbol;
+        return "";
     }
 
     private toKey(symbol: string): string {

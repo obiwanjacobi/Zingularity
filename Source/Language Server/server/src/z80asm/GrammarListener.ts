@@ -165,7 +165,8 @@ export class GrammarListener implements z80asmListener {
 
     exitComment(ctx: CommentContext) {
         if (this.hasException(ctx)) { return; }
-        this.nodes.push(new Comment(toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
+        const comment = new Comment(toString(ctx), ctx.start.line, ctx.start.charPositionInLine);
+        this.nodes.push(comment);
     }
 
     exitBlockcomment(ctx: BlockcommentContext) {

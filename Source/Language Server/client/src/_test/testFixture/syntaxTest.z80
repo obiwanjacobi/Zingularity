@@ -1,4 +1,4 @@
-; comment
+; comment bla bla bla bla bla bla bla bla ld a 
 label:      ; inline comment on label
     LD A, 0
     LD HL, $0000    ; inline comment on instruction
@@ -7,7 +7,7 @@ label:      ; inline comment on label
     JP label2
     DEC D
 
-
+    JP label
 
 
     CPL A

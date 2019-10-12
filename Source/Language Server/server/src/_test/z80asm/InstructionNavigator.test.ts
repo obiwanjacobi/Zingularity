@@ -12,7 +12,7 @@ const numericProfile = {
 describe("Z80 Instruction Navigator", () => {
 
     it("buildCompletionList: L", () => {
-        const list = buildCompletionList("L");
+        const list = buildCompletionList("L", undefined);
         const labels = list.map(c => c.label);
 
         expect(labels).toContain("LD");

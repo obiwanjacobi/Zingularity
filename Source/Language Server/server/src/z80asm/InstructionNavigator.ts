@@ -1,6 +1,7 @@
 import instructionMap from "./InstructionMap.json";
-import { Numeric, InstructionMeta } from "./CodeModel";
+import { Numeric, InstructionMeta, SymbolTable, Symbol, SymbolReference } from "./CodeModel";
 import { splitInstruction } from "./InstructionSplitter";
+import { switchCase } from "@babel/types";
 
 const byteLiteralKeys = ["d", "e", "n", "nn"];
 const byteReplaceKeys = ["d", "e", "n", "n-lo", "n-hi"];
@@ -56,9 +57,10 @@ export function findMap(parts: string[]): {} {
 export interface CompletionInfo {
     label: string;
     path: string;
+    symbol?: SymbolReference;
 }
 
-export function buildCompletionList(token: string): CompletionInfo[] {
+export function buildCompletionList(token: string, symbolTable: SymbolTable | undefined): CompletionInfo[] {
     const parts = splitInstruction(token);
     if (parts.length == 0) throw new Error("No Parts.");
 
@@ -72,12 +74,48 @@ export function buildCompletionList(token: string): CompletionInfo[] {
 
     if (map) {
         const lastPart = parts[parts.length - 1];
-        return Object.keys(map)
-            .filter(k => k.startsWith(lastPart.toUpperCase()))
-            .map(k => <CompletionInfo> { 
+        const keys = Object.keys(map)
+            .filter(k => k.startsWith(lastPart.toUpperCase()));
+        
+        let mode = 0;
+        let i = keys.findIndex(k => k === "n");
+        if (i >= 0) {
+            keys.splice(i, 1);
+            mode = 1;
+        }
+        i = keys.findIndex(k => k === "nn");
+        if (i >= 0) {
+            keys.splice(i, 1);
+            mode = 2;
+        }
+        
+        const pathTxt = path.join("/");
+        let infos = keys.map(k => <CompletionInfo> { 
                 label: k, 
-                path: path.join()
+                path: pathTxt
             });
+
+        if (symbolTable) {
+            switch (mode) {
+                case 1:
+                    infos.push(...symbolTable.allConstants.map(c => <CompletionInfo> {
+                        label: c.name,
+                        path: pathTxt,
+                    }));
+                    break;
+                case 2:
+                    infos.push(...symbolTable.allSymbols.map(s => <CompletionInfo> {
+                        label: s.name,
+                        path: pathTxt,
+                        symbol: s.declaration
+                    }));
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        return infos;
     }
 
     return [];

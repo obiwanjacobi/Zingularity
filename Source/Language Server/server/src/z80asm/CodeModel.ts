@@ -59,6 +59,10 @@ export class Comment extends AssemblyNode {
     constructor(text: string, line: number, column: number) {
         super(AssemblyNodeKind.Comment, text, line, column);
     }
+
+    toText(): string {
+        return this.text.substring(1).trim();
+    }
 }
 
 export class BlockComment extends AssemblyNode {
@@ -66,6 +70,14 @@ export class BlockComment extends AssemblyNode {
     constructor(lines: BlockCommentLine[]) {
         super(AssemblyNodeKind.BlockComment, lines[0].text, lines[0].line, lines[0].column);
         this.lines = lines;
+    }
+
+    toText(): string {
+        return this.lines.map(l => l.toText()).join("\r\n");
+    }
+
+    toString(): string {
+        return this.lines.map(l => l.toString()).join("\r\n");
     }
 }
 
@@ -98,6 +110,10 @@ export class BlockCommentLine extends AssemblyNode {
             if (i === idx) { return curr; }
             return (prev + " " + curr).trim();
         });
+    }
+
+    toText(): string {
+        return this.text.substring(2).trim();
     }
 }
 
@@ -206,6 +222,14 @@ export interface DocumentSymbol {
     reference: SymbolReference;
 }
 
+export class Constant {
+    readonly name: string;
+
+    constructor(name: string) {
+        this.name = name;
+    }
+}
+
 export class Symbol {
     readonly name: string;
     private readonly _references: Set<SymbolReference>;
@@ -233,7 +257,9 @@ export class Symbol {
         let decl: SymbolReference | undefined = undefined;
         
         this._references.forEach(r => {
-            if (r.node.kind === AssemblyNodeKind.Label) { decl = r; }
+            if (r.node.kind === AssemblyNodeKind.Label) { 
+                decl = r; 
+            }
         });
 
         return decl;
@@ -256,15 +282,25 @@ export class Symbol {
 
 export class SymbolTable {
     private readonly profile: SymbolProfile;
-    private table: Map<string, Symbol>;
+    private readonly symbols: Map<string, Symbol>;
+    private readonly constants: Map<string, Constant>;
 
     constructor(profile: SymbolProfile) {
         this.profile = profile;
-        this.table = new Map<string, Symbol>();
+        this.symbols = new Map<string, Symbol>();
+        this.constants = new Map<string, Constant>();
+    }
+
+    get allConstants(): Constant[] {
+        return Array.from(this.constants.values());
+    }
+
+    get allSymbols(): Symbol[] {
+        return Array.from(this.symbols.values());
     }
 
     remove(symbol: string) {
-        this.table.delete(this.toKey(symbol));
+        this.symbols.delete(this.toKey(symbol));
     }
 
     addDoc(doc: AssemblyDocument) {
@@ -276,7 +312,7 @@ export class SymbolTable {
     }
 
     removeDoc(doc: AssemblyDocument) {
-        this.table.forEach(s => s.removeReference(doc));
+        this.symbols.forEach(s => s.removeReference(doc));
         this.purge();
     }
 
@@ -285,10 +321,10 @@ export class SymbolTable {
         
         if (symbol.length) {
             const key = this.toKey(symbol);
-            let sym = this.table.get(key);
+            let sym = this.symbols.get(key);
             if (!sym) {
                 sym = new Symbol(symbol);
-                this.table.set(key, sym);
+                this.symbols.set(key, sym);
             }
             sym.addReference(node, doc);
         }
@@ -297,7 +333,7 @@ export class SymbolTable {
     findReferences(node: AssemblyNode): SymbolReference[] {
         const symbol = this.toSymbol(node);
         const key = this.toKey(symbol);
-        const sym = this.table.get(key);
+        const sym = this.symbols.get(key);
         
         if (sym) {
             return sym.references;
@@ -308,7 +344,7 @@ export class SymbolTable {
     findDeclaration(node: AssemblyNode): SymbolReference | undefined {
         const symbol = this.toSymbol(node);
         const key = this.toKey(symbol);
-        const sym = this.table.get(key);
+        const sym = this.symbols.get(key);
         
         if (sym) {
             return sym.declaration;
@@ -319,7 +355,7 @@ export class SymbolTable {
     findSymbols(docUri: string): DocumentSymbol[] {
         const symbols = new Array<DocumentSymbol>();
 
-        this.table.forEach(s => {
+        this.symbols.forEach(s => {
             if (s.declaration && s.declaration.document.uri === docUri) {
                 symbols.push({ symbol: s.name, reference: s.declaration });
             }
@@ -351,7 +387,7 @@ export class SymbolTable {
     private purge() {
         const unusedSymbols = new Array<string>();
 
-        this.table.forEach(s => {
+        this.symbols.forEach(s => {
             if (s.isEmpty) { unusedSymbols.push(s.name); } 
         });
     }

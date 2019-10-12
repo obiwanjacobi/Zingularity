@@ -1,4 +1,3 @@
-console.log("Zingularity: server.js");
 import {
     createConnection,
     TextDocuments,
@@ -18,7 +17,7 @@ import {
     DocumentFormattingParams,
     Range,
 } from "vscode-languageserver";
-import { AssemblyDocument, AssemblyNodeKind, Instruction, Label } from "./z80asm/CodeModel";
+import { AssemblyDocument, AssemblyNodeKind, Instruction, Label, AssemblyNode, SymbolReference } from "./z80asm/CodeModel";
 import { buildCompletionList } from "./z80asm/InstructionNavigator";
 import { CodeModelManager, toRange, rangeFrom } from "./z80asm/CodeModelManager";
 import { DocumentSerializer, SerializerProfile } from "./z80asm/DocumentSerializer";
@@ -29,7 +28,6 @@ import { sum } from "./utils";
 // Create a connection for the server. The connection uses Node's IPC as a transport.
 // Also include all preview / proposed LSP features.
 let connection = createConnection(ProposedFeatures.all);
-connection.console.log("Zingularity Server Created");
 
 // Create a simple text document manager. The text document manager
 // supports full document sync only
@@ -42,7 +40,6 @@ let hasWorkspaceFolderCapability: boolean = false;
 let hasDiagnosticRelatedInformationCapability: boolean = false;
 
 connection.onInitialize((params: InitializeParams) => {
-    connection.console.log("Zingularity Server Initializing...");
 
     const capabilities = params.capabilities;
 
@@ -88,7 +85,7 @@ connection.onInitialized(() => {
         });
     }
 
-    connection.console.log("Zingularity Initialized");
+    connection.console.log("Zingularity Initialized.");
 });
 
 // The server settings
@@ -197,7 +194,6 @@ connection.onDidChangeWatchedFiles(_change => {
 // This handler provides the initial list of the completion items.
 connection.onCompletion(
     (textDocumentPosition: TextDocumentPositionParams): CompletionItem[] => {
-        connection.console.log("Zingularity onCompletion");
 
         let txt: string = "";
         const doc = documents.get(textDocumentPosition.textDocument.uri);
@@ -212,14 +208,12 @@ connection.onCompletion(
         if (txt.length) {
             const docNode = codeModelMgr.findNode(textDocumentPosition.textDocument.uri, textDocumentPosition.position);
             // check we're not inside a comment
-            if (docNode) {
-                if(docNode.node.kind !== AssemblyNodeKind.Comment) {
-                    return buildCompletionList(txt)
-                        .map(v => <CompletionItem> { label: v.label, data: v.path, kind: CompletionItemKind.Unit });
-                }
-            } else {
-                return buildCompletionList(txt)
-                    .map(v => <CompletionItem> { label: v.label, data: v.path, kind: CompletionItemKind.Unit });
+            if (!docNode ||
+                (docNode.node.kind !== AssemblyNodeKind.Comment && 
+                docNode.node.kind !== AssemblyNodeKind.BlockComment)) {
+
+                return buildCompletionList(txt, codeModelMgr.codeModel.symbols)
+                    .map(v => <CompletionItem> { label: v.label, data: v.symbol, kind: CompletionItemKind.Unit });
             }
         }
 
@@ -231,10 +225,23 @@ connection.onCompletion(
 // the completion list.
 connection.onCompletionResolve(
     (item: CompletionItem): CompletionItem => {
-        connection.console.log("Zingularity onCompletionResolve");
         
-        // item.data => path to map
-        // item.label => map entry
+        if (item.data) {
+            const symbol = <SymbolReference> item.data;
+            // item.data has been serialized, all type info is gone.
+            // so we fetch the original document from the code model.
+            const doc = codeModelMgr.codeModel.documents.find(d => d.uri === symbol.document.uri);
+            if (doc && symbol.node.kind === AssemblyNodeKind.Label) {
+                const comment = codeModelMgr.commentFor(doc, symbol.node);
+                if (comment) {
+                    item.detail = comment.toText();
+                }
+                const blockComment = codeModelMgr.blockCommentFor(doc, symbol.node);
+                if (blockComment) {
+                    item.detail = blockComment.toText();
+                }
+            }
+        }
         
         return item;
     }
@@ -250,7 +257,7 @@ connection.onHover(
                 
                 const flags = instruction.meta.flags.length === 0 ? "" :  ` - flags: ${instruction.meta.flags.join(" ")}`;
                 return {
-                    contents: `${instruction.text} - cycles: ${sum(instruction.meta.cycles)} - bytes: ${instruction.meta.bytes.join(", ")}${flags}`,
+                    contents: `${instruction.toString()} - cycles: ${sum(instruction.meta.cycles)} - bytes: ${instruction.meta.bytes.join(", ")}${flags}`,
                     range: toRange(instruction)
                 };
             }
@@ -333,4 +340,3 @@ documents.listen(connection);
 
 // Listen on the connection
 connection.listen();
-console.log("Zingularity: server initialized.");

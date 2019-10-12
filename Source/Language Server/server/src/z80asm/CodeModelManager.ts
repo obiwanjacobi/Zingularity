@@ -1,4 +1,4 @@
-import { AssemblyModel, AssemblyDocument, AssemblyNode, SymbolTable, SymbolProfile, CasingMatch, CasingRule } from "./CodeModel";
+import { AssemblyModel, AssemblyDocument, AssemblyNode, SymbolTable, SymbolProfile, CasingMatch, CasingRule, BlockComment, Label, AssemblyNodeKind, Comment } from "./CodeModel";
 import { Position, Range } from "vscode-languageserver";
 import { Comparable } from "antlr4ts/misc/Stubs";
 
@@ -32,6 +32,32 @@ export class CodeModelManager {
             }
         }
 
+        return undefined;
+    }
+
+    commentFor(document: AssemblyDocument, node: AssemblyNode): Comment | undefined {
+        const prevNode = this.previousNode(document, node);
+        if (prevNode && prevNode.kind === AssemblyNodeKind.Comment) {
+            return <Comment> prevNode;
+        }
+        return undefined;
+    }
+
+    blockCommentFor(document: AssemblyDocument, node: AssemblyNode): BlockComment | undefined {
+        const prevNode = this.previousNode(document, node);
+        if (prevNode && prevNode.kind === AssemblyNodeKind.BlockComment) {
+            return <BlockComment> prevNode;
+        }
+        return undefined;
+    }
+
+    private previousNode(document: AssemblyDocument, node: AssemblyNode): AssemblyNode | undefined {
+        const i = document.nodes.findIndex(n => 
+            n.column === node.column && n.kind === node.kind && n.line === node.line && n.text === node.text);
+            
+        if (i > 0) {
+            return document.nodes[i - 1];
+        }
         return undefined;
     }
 }

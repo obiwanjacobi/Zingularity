@@ -2,6 +2,7 @@ import instructionMap from "./InstructionMap.json";
 import { Numeric, InstructionMeta, SymbolTable, Symbol, SymbolReference } from "./CodeModel";
 import { splitInstruction } from "./InstructionSplitter";
 import { switchCase } from "@babel/types";
+import { CompletionItemKind } from "vscode-languageserver";
 
 const byteLiteralKeys = ["d", "e", "n", "nn"];
 const byteReplaceKeys = ["d", "e", "n", "n-lo", "n-hi"];
@@ -56,6 +57,7 @@ export function findMap(parts: string[]): {} {
 
 export interface CompletionInfo {
     label: string;
+    kind: CompletionItemKind;
     path: string;
     symbol?: SymbolReference;
 }
@@ -92,6 +94,7 @@ export function buildCompletionList(token: string, symbolTable: SymbolTable | un
         const pathTxt = path.join("/");
         let infos = keys.map(k => <CompletionInfo> { 
                 label: k, 
+                kind: CompletionItemKind.Keyword,
                 path: pathTxt
             });
 
@@ -100,12 +103,14 @@ export function buildCompletionList(token: string, symbolTable: SymbolTable | un
                 case 1:
                     infos.push(...symbolTable.allConstants.map(c => <CompletionInfo> {
                         label: c.name,
+                        kind: CompletionItemKind.Constant,
                         path: pathTxt,
                     }));
                     break;
                 case 2:
                     infos.push(...symbolTable.allSymbols.map(s => <CompletionInfo> {
                         label: s.name,
+                        kind: CompletionItemKind.Function,
                         path: pathTxt,
                         symbol: s.declaration
                     }));

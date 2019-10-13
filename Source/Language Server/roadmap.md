@@ -5,7 +5,8 @@ Plans and Ideas.
 ## Editor integration
 
 * Formating code (in-place)
-* Convert from one assembler format to another (save as)
+* Enhance Intellisense. Types for the listed options (instruction/registers/conditions/labels/constants).
+* Hilight the instruction that set the flag the current instruction is testing for.
 * Support Workspaces (research topic)
 * Instruction Bytes and Cycles in gutters in the editor
     This could help? https://github.com/obiwanjacobi/vscode-extension-samples/tree/master/virtual-document-sample
@@ -52,15 +53,9 @@ after it is selected (hilighted) a popup with the documentation is displayed.
     @return a The result is put in register A.
 ```
 
-## Tool Chains
-
-* Configurable syntax details (directive, casing etc)
-* Support for project output thru 3rd party tools
-* Decide on build system (Make, PowerShell, other?)
-
 ## Help / Guidance
 
-* Display instruction docs as you type (extend hover also)
+* Display instruction docs as you type/intellisense (extend hover also)
 * Tips for optimization / commands to perform them.
 
 ## Editor support
@@ -68,3 +63,19 @@ after it is selected (hilighted) a popup with the documentation is displayed.
 * VS-code (supported)
 * Atom
 * Sublime Text 3 (not free)
+
+## Multiple Targets
+
+* Z88DK
+* TASM
+* ZMAC
+* PASMO
+* ZASM
+
+* Convert from one assembler format to another (save as)
+
+## Tool Chains
+
+* Configurable syntax details (directive, casing etc)
+* Support for project output thru 3rd party tools
+* Decide on build system (Make, PowerShell, other?)

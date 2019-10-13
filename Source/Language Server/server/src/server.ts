@@ -13,11 +13,10 @@ import {
     Location,
     SymbolInformation,
     SymbolKind,
-    HoverRequest,
     DocumentFormattingParams,
     Range,
 } from "vscode-languageserver";
-import { AssemblyDocument, AssemblyNodeKind, Instruction, Label, AssemblyNode, SymbolReference } from "./z80asm/CodeModel";
+import { AssemblyDocument, AssemblyNodeKind, Instruction, Label, SymbolReference } from "./z80asm/CodeModel";
 import { buildCompletionList } from "./z80asm/InstructionNavigator";
 import { CodeModelManager, toRange, rangeFrom } from "./z80asm/CodeModelManager";
 import { DocumentSerializer, SerializerProfile } from "./z80asm/DocumentSerializer";
@@ -85,7 +84,7 @@ connection.onInitialized(() => {
         });
     }
 
-    connection.console.log("Zingularity Initialized.");
+    connection.console.log("Zingularity Server Started.");
 });
 
 // The server settings
@@ -156,7 +155,6 @@ documents.onDidClose(e => {
 // The content of a text document has changed. This event is emitted
 // when the text document first opened or when its content has changed.
 documents.onDidChangeContent(change => {
-    connection.console.log("Zingularity onDidChangeContent");
     validateTextDocument(change.document);
 });
 
@@ -191,6 +189,8 @@ connection.onDidChangeWatchedFiles(_change => {
     // validateTextDocument();
 }); 
 
+const commitCharacters = [" ", ",", "+", "-"];
+
 // This handler provides the initial list of the completion items.
 connection.onCompletion(
     (textDocumentPosition: TextDocumentPositionParams): CompletionItem[] => {
@@ -213,7 +213,7 @@ connection.onCompletion(
                 docNode.node.kind !== AssemblyNodeKind.BlockComment)) {
 
                 return buildCompletionList(txt, codeModelMgr.codeModel.symbols)
-                    .map(v => <CompletionItem> { label: v.label, data: v.symbol, kind: CompletionItemKind.Unit });
+                    .map(v => <CompletionItem> { label: v.label, data: v.symbol, kind: v.kind, commitCharacters: commitCharacters });
             }
         }
 

@@ -1,7 +1,3 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; $Id: z80asm.asm 1.3 1993/08/13 23:42:07 toma Exp $
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; z88dk Z80 ASM  test file
 ; Test all instructions and addressing modes.
@@ -30,8 +26,8 @@ defc offset_neg = -7
      ADC  A,(HL)
      ADC  A,(IX+offset)
      ADC  A,(IX+offset_neg)
-     ADC  A,(IY+offset)
-     ADC  A,(IY+offset_neg)
+     ADC  A,(IY-offset)
+     ADC  A,(IY-offset_neg)
      ADC  A,A
      ADC  A,B
      ADC  A,C
@@ -47,7 +43,7 @@ defc offset_neg = -7
 
      ADD  A,(HL)
      ADD  A,(IX+offset)
-     ADD  A,(IY+offset)
+     ADD  A,(IY-offset)
      ADD  A,A
      ADD  A,B
      ADD  A,C
@@ -71,7 +67,7 @@ defc offset_neg = -7
 
      AND  (HL)
      AND  (IX+offset)
-     AND  (IY+offset)
+     AND  (IY-offset)
      AND  A
      AND  B
      AND  C
@@ -83,7 +79,7 @@ defc offset_neg = -7
 
      BIT  0,(HL)
      BIT  0,(IX+offset)
-     BIT  0,(IY+offset)
+     BIT  0,(IY-offset)
      BIT  0,A
      BIT  0,B
      BIT  0,C
@@ -94,7 +90,7 @@ defc offset_neg = -7
 
      BIT  1,(HL)
      BIT  1,(IX+offset)
-     BIT  1,(IY+offset)
+     BIT  1,(IY-offset)
      BIT  1,A
      BIT  1,B
      BIT  1,C
@@ -105,7 +101,7 @@ defc offset_neg = -7
 
      BIT  2,(HL)
      BIT  2,(IX+offset)
-     BIT  2,(IY+offset)
+     BIT  2,(IY-offset)
      BIT  2,A
      BIT  2,B
      BIT  2,C
@@ -116,7 +112,7 @@ defc offset_neg = -7
 
      BIT  3,(HL)
      BIT  3,(IX+offset)
-     BIT  3,(IY+offset)
+     BIT  3,(IY-offset)
      BIT  3,A
      BIT  3,B
      BIT  3,C
@@ -127,7 +123,7 @@ defc offset_neg = -7
 
      BIT  4,(HL)
      BIT  4,(IX+offset)
-     BIT  4,(IY+offset)
+     BIT  4,(IY-offset)
      BIT  4,A
      BIT  4,B
      BIT  4,C
@@ -138,7 +134,7 @@ defc offset_neg = -7
 
      BIT  5,(HL)
      BIT  5,(IX+offset)
-     BIT  5,(IY+offset)
+     BIT  5,(IY-offset)
      BIT  5,A
      BIT  5,B
      BIT  5,C
@@ -149,7 +145,7 @@ defc offset_neg = -7
 
      BIT  6,(HL)
      BIT  6,(IX+offset)
-     BIT  6,(IY+offset)
+     BIT  6,(IY-offset)
      BIT  6,A
      BIT  6,B
      BIT  6,C
@@ -160,7 +156,7 @@ defc offset_neg = -7
 
      BIT  7,(HL)
      BIT  7,(IX+offset)
-     BIT  7,(IY+offset)
+     BIT  7,(IY-offset)
      BIT  7,A
      BIT  7,B
      BIT  7,C
@@ -183,7 +179,7 @@ defc offset_neg = -7
 
      CP   (HL)
      CP   (IX+offset)
-     CP   (IY+offset)
+     CP   (IY-offset)
      CP   A
      CP   B
      CP   C
@@ -202,7 +198,7 @@ defc offset_neg = -7
 
      DEC  (HL)
      DEC  (IX+offset)
-     DEC  (IY+offset)
+     DEC  (IY-offset)
      DEC  A
      DEC  B
      DEC  BC
@@ -244,7 +240,7 @@ loop1:
 
      INC  (HL)
      INC  (IX+offset)
-     INC  (IY+offset)
+     INC  (IY-offset)
      INC  A
      INC  B
      INC  BC
@@ -265,9 +261,9 @@ loop1:
      INIR    
      
      JP   addr16
-;     JP   (HL)
-;     JP   (IX)
-;     JP   (IY)
+     JP   (HL)
+     JP   (IX)
+     JP   (IY)
      JP   HL
      JP   IX
      JP   IY
@@ -280,7 +276,7 @@ loop1:
      JP   PO,addr16
      JP   Z,addr16
 
-loop2:
+.loop2
      JR   C,loop2
      JR   NC,loop2
      JR   NZ,loop2
@@ -305,14 +301,14 @@ loop2:
      LD   (IX+offset),H
      LD   (IX+offset),L
      LD   (IX+offset),n
-     LD   (IY+offset),A
-     LD   (IY+offset),B
-     LD   (IY+offset),C
-     LD   (IY+offset),D
-     LD   (IY+offset),E
-     LD   (IY+offset),H
-     LD   (IY+offset),L
-     LD   (IY+offset),n
+     LD   (IY-offset),A
+     LD   (IY-offset),B
+     LD   (IY-offset),C
+     LD   (IY-offset),D
+     LD   (IY-offset),E
+     LD   (IY-offset),H
+     LD   (IY-offset),L
+     LD   (IY-offset),n
      LD   (nn),A
      LD   (nn),BC
      LD   (nn),DE
@@ -324,7 +320,7 @@ loop2:
      LD   A,(DE)
      LD   A,(HL)
      LD   A,(IX+offset)
-     LD   A,(IY+offset)
+     LD   A,(IY-offset)
      LD   A,(nn)
      LD   A,A
      LD   A,B
@@ -338,7 +334,7 @@ loop2:
      LD   A,R
      LD   B,(HL)
      LD   B,(IX+offset)
-     LD   B,(IY+offset)
+     LD   B,(IY-offset)
      LD   B,A
      LD   B,B
      LD   B,C
@@ -351,7 +347,7 @@ loop2:
      LD   BC,nn
      LD   C,(HL)
      LD   C,(IX+offset)
-     LD   C,(IY+offset)
+     LD   C,(IY-offset)
      LD   C,A
      LD   C,B
      LD   C,C
@@ -362,7 +358,7 @@ loop2:
      LD   C,n
      LD   D,(HL)
      LD   D,(IX+offset)
-     LD   D,(IY+offset)
+     LD   D,(IY-offset)
      LD   D,A
      LD   D,B
      LD   D,C
@@ -375,7 +371,7 @@ loop2:
      LD   DE,nn
      LD   E,(HL)
      LD   E,(IX+offset)
-     LD   E,(IY+offset)
+     LD   E,(IY-offset)
      LD   E,A
      LD   E,B
      LD   E,C
@@ -386,7 +382,7 @@ loop2:
      LD   E,n
      LD   H,(HL)
      LD   H,(IX+offset)
-     LD   H,(IY+offset)
+     LD   H,(IY-offset)
      LD   H,A
      LD   H,B
      LD   H,C
@@ -404,7 +400,7 @@ loop2:
      LD   IY,nn
      LD   L,(HL)
      LD   L,(IX+offset)
-     LD   L,(IY+offset)
+     LD   L,(IY-offset)
      LD   L,A
      LD   L,B
      LD   L,C
@@ -430,7 +426,7 @@ loop2:
 
      OR   (HL)
      OR   (IX+offset)
-     OR   (IY+offset)
+     OR   (IY-offset)
      OR   A
      OR   B
      OR   C
@@ -473,7 +469,7 @@ loop2:
 
      RES  0,(HL)
      RES  0,(IX+offset)
-     RES  0,(IY+offset)
+     RES  0,(IY-offset)
      RES  0,A
      RES  0,B
      RES  0,C
@@ -484,7 +480,7 @@ loop2:
 
      RES  1,(HL)
      RES  1,(IX+offset)
-     RES  1,(IY+offset)
+     RES  1,(IY-offset)
      RES  1,A
      RES  1,B
      RES  1,C
@@ -495,7 +491,7 @@ loop2:
 
      RES  2,(HL)
      RES  2,(IX+offset)
-     RES  2,(IY+offset)
+     RES  2,(IY-offset)
      RES  2,A
      RES  2,B
      RES  2,C
@@ -506,7 +502,7 @@ loop2:
 
      RES  3,(HL)
      RES  3,(IX+offset)
-     RES  3,(IY+offset)
+     RES  3,(IY-offset)
      RES  3,A
      RES  3,B
      RES  3,C
@@ -517,7 +513,7 @@ loop2:
 
      RES  4,(HL)
      RES  4,(IX+offset)
-     RES  4,(IY+offset)
+     RES  4,(IY-offset)
      RES  4,A
      RES  4,B
      RES  4,C
@@ -528,7 +524,7 @@ loop2:
 
      RES  5,(HL)
      RES  5,(IX+offset)
-     RES  5,(IY+offset)
+     RES  5,(IY-offset)
      RES  5,A
      RES  5,B
      RES  5,C
@@ -539,7 +535,7 @@ loop2:
 
      RES  6,(HL)
      RES  6,(IX+offset)
-     RES  6,(IY+offset)
+     RES  6,(IY-offset)
      RES  6,A
      RES  6,B
      RES  6,C
@@ -550,7 +546,7 @@ loop2:
 
      RES  7,(HL)
      RES  7,(IX+offset)
-     RES  7,(IY+offset)
+     RES  7,(IY-offset)
      RES  7,A
      RES  7,B
      RES  7,C
@@ -573,7 +569,7 @@ loop2:
 
      RL   (HL)
      RL   (IX+offset)
-     RL   (IY+offset)
+     RL   (IY-offset)
      RL   A
      RL   B
      RL   C
@@ -585,7 +581,7 @@ loop2:
 
      RLC  (HL)
      RLC  (IX+offset)
-     RLC  (IY+offset)
+     RLC  (IY-offset)
      RLC  A
      RLC  B
      RLC  C
@@ -598,7 +594,7 @@ loop2:
 
      RR   (HL)
      RR   (IX+offset)
-     RR   (IY+offset)
+     RR   (IY-offset)
      RR   A
      RR   B
      RR   C
@@ -610,7 +606,7 @@ loop2:
 
      RRC  (HL)
      RRC  (IX+offset)
-     RRC  (IY+offset)
+     RRC  (IY-offset)
      RRC  A
      RRC  B
      RRC  C
@@ -633,7 +629,7 @@ loop2:
      SBC  A,n
      SBC  A,(HL)
      SBC  A,(IX+offset)
-     SBC  A,(IY+offset)
+     SBC  A,(IY-offset)
      SBC  A,A
      SBC  A,B
      SBC  A,C
@@ -649,7 +645,7 @@ loop2:
 
      SET  0,(HL)
      SET  0,(IX+offset)
-     SET  0,(IY+offset)
+     SET  0,(IY-offset)
      SET  0,A
      SET  0,B
      SET  0,C
@@ -660,7 +656,7 @@ loop2:
 
      SET  1,(HL)
      SET  1,(IX+offset)
-     SET  1,(IY+offset)
+     SET  1,(IY-offset)
      SET  1,A
      SET  1,B
      SET  1,C
@@ -671,7 +667,7 @@ loop2:
 
      SET  2,(HL)
      SET  2,(IX+offset)
-     SET  2,(IY+offset)
+     SET  2,(IY-offset)
      SET  2,A
      SET  2,B
      SET  2,C
@@ -682,7 +678,7 @@ loop2:
 
      SET  3,(HL)
      SET  3,(IX+offset)
-     SET  3,(IY+offset)
+     SET  3,(IY-offset)
      SET  3,A
      SET  3,B
      SET  3,C
@@ -693,7 +689,7 @@ loop2:
 
      SET  4,(HL)
      SET  4,(IX+offset)
-     SET  4,(IY+offset)
+     SET  4,(IY-offset)
      SET  4,A
      SET  4,B
      SET  4,C
@@ -704,7 +700,7 @@ loop2:
 
      SET  5,(HL)
      SET  5,(IX+offset)
-     SET  5,(IY+offset)
+     SET  5,(IY-offset)
      SET  5,A
      SET  5,B
      SET  5,C
@@ -715,7 +711,7 @@ loop2:
 
      SET  6,(HL)
      SET  6,(IX+offset)
-     SET  6,(IY+offset)
+     SET  6,(IY-offset)
      SET  6,A
      SET  6,B
      SET  6,C
@@ -726,7 +722,7 @@ loop2:
 
      SET  7,(HL)
      SET  7,(IX+offset)
-     SET  7,(IY+offset)
+     SET  7,(IY-offset)
      SET  7,A
      SET  7,B
      SET  7,C
@@ -737,7 +733,7 @@ loop2:
 
      SLA  (HL)
      SLA  (IX+offset)
-     SLA  (IY+offset)
+     SLA  (IY-offset)
      SLA  A
      SLA  B
      SLA  C
@@ -748,7 +744,7 @@ loop2:
 
      SRA  (HL)
      SRA  (IX+offset)
-     SRA  (IY+offset)
+     SRA  (IY-offset)
      SRA  A
      SRA  B
      SRA  C
@@ -759,7 +755,7 @@ loop2:
 
      SRL  (HL)
      SRL  (IX+offset)
-     SRL  (IY+offset)
+     SRL  (IY-offset)
      SRL  A
      SRL  B
      SRL  C
@@ -770,7 +766,7 @@ loop2:
      
      SUB  (HL)
      SUB  (IX+offset)
-     SUB  (IY+offset)
+     SUB  (IY-offset)
      SUB  A
      SUB  B
      SUB  C
@@ -782,7 +778,7 @@ loop2:
 
      XOR  (HL)
      XOR  (IX+offset)
-     XOR  (IY+offset)
+     XOR  (IY-offset)
      XOR  A
      XOR  B
      XOR  C

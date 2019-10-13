@@ -7,8 +7,6 @@ label:      ; inline comment on label
     JP label2
     DEC D
 
-    JP label
-
 
     CPL A
     SCF

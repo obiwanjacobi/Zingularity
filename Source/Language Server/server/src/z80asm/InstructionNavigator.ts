@@ -1,11 +1,11 @@
 import instructionMap from "./InstructionMap.json";
-import { Numeric, InstructionMeta, SymbolTable, Symbol, SymbolReference } from "./CodeModel";
+import { Numeric, InstructionMeta, SymbolTable, SymbolReference } from "./CodeModel";
 import { splitInstruction } from "./InstructionSplitter";
-import { switchCase } from "@babel/types";
 import { CompletionItemKind } from "vscode-languageserver";
 
 const byteLiteralKeys = ["d", "e", "n", "nn"];
 const byteReplaceKeys = ["d", "e", "n", "n-lo", "n-hi"];
+const ignoreKeys = [",", "(", ")"];
 
 interface OnNavigateMap {
     (parentMap: {}, newMap: {} | undefined, part: string, key: string): void;
@@ -62,12 +62,17 @@ export interface CompletionInfo {
     symbol?: SymbolReference;
 }
 
-export function buildCompletionList(token: string, symbolTable: SymbolTable | undefined): CompletionInfo[] {
+export interface CompletionContext {
+    symbolTable: SymbolTable;
+    docUri: string;
+}
+
+export function buildCompletionList(token: string, ctx?: CompletionContext): CompletionInfo[] {
     const parts = splitInstruction(token);
-    if (parts.length == 0) throw new Error("No Parts.");
+    if (parts.length == 0) throw new RangeError("No Parts.");
 
     let path: string[] = [];
-
+    
     const map = navigateMap(parts, (parentMap, newMap, part) => {
         if (newMap) {
             path.push(part);
@@ -79,8 +84,14 @@ export function buildCompletionList(token: string, symbolTable: SymbolTable | un
         const keys = Object.keys(map)
             .filter(k => k.startsWith(lastPart.toUpperCase()));
         
+        let i = keys.findIndex(k => k === "_");
+        if (i >= 0) {
+            // don't go there
+            return [];
+        }
+
         let mode = 0;
-        let i = keys.findIndex(k => k === "n");
+        i = keys.findIndex(k => k === "n");
         if (i >= 0) {
             keys.splice(i, 1);
             mode = 1;
@@ -90,7 +101,12 @@ export function buildCompletionList(token: string, symbolTable: SymbolTable | un
             keys.splice(i, 1);
             mode = 2;
         }
-        
+        i = keys.findIndex(k => k === "e");
+        if (i >= 0) {
+            keys.splice(i, 1);
+            mode = 3;
+        }
+
         const pathTxt = path.join("/");
         let infos = keys.map(k => <CompletionInfo> { 
                 label: k, 
@@ -98,21 +114,29 @@ export function buildCompletionList(token: string, symbolTable: SymbolTable | un
                 path: pathTxt
             });
 
-        if (symbolTable) {
+        if (ctx) {
             switch (mode) {
                 case 1:
-                    infos.push(...symbolTable.allConstants.map(c => <CompletionInfo> {
+                    infos.push(...ctx.symbolTable.allConstants.map(c => <CompletionInfo> {
                         label: c.name,
                         kind: CompletionItemKind.Constant,
                         path: pathTxt,
                     }));
                     break;
                 case 2:
-                    infos.push(...symbolTable.allSymbols.map(s => <CompletionInfo> {
+                    infos.push(...ctx.symbolTable.allSymbols.map(s => <CompletionInfo> {
                         label: s.name,
                         kind: CompletionItemKind.Function,
                         path: pathTxt,
                         symbol: s.declaration
+                    }));
+                    break;
+                case 3:
+                    infos.push(...ctx.symbolTable.findSymbols(ctx.docUri).map(ds => <CompletionInfo> {
+                        label: ds.symbol,
+                        kind: CompletionItemKind.Function,
+                        path: pathTxt,
+                        symbol: ds.reference
                     }));
                     break;
                 default:

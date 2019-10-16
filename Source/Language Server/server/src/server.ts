@@ -61,7 +61,7 @@ connection.onInitialize((params: InitializeParams) => {
         capabilities: {
             textDocumentSync: documents.syncKind,
             completionProvider: {
-                triggerCharacters: ["\t", " ", "("],
+                triggerCharacters: ["\t", " ", ",", "("],
                 resolveProvider: true
             },
             hoverProvider: true,
@@ -213,8 +213,16 @@ connection.onCompletion(
                 (docNode.node.kind !== AssemblyNodeKind.Comment && 
                 docNode.node.kind !== AssemblyNodeKind.BlockComment)) {
 
-                return buildCompletionList(txt, codeModelMgr.codeModel.symbols)
-                    .map(v => <CompletionItem> { label: v.label, data: v.symbol, kind: v.kind, commitCharacters: commitCharacters });
+                return buildCompletionList(txt, { 
+                    symbolTable: codeModelMgr.codeModel.symbols, 
+                    docUri: textDocumentPosition.textDocument.uri
+                })
+                .map(v => <CompletionItem> { 
+                    label: v.label, 
+                    data: v.symbol, 
+                    kind: v.kind, 
+                    commitCharacters: commitCharacters 
+                });
             }
         }
 

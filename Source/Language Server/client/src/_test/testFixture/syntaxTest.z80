@@ -11,4 +11,4 @@ label:      ; inline comment on label
 
 ; comment 
 .label3
-    LD A, IXh
+    XOR A, A

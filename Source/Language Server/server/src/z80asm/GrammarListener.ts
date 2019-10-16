@@ -10,7 +10,7 @@ import {
     AsmError, 
     AssemblyNodeKind, 
     BlockCommentLine,
-    BlockComment
+    BlockComment,
 } from "./CodeModel";
 import { 
     ExpressionContext, 
@@ -32,8 +32,6 @@ import { ErrorNode } from "antlr4ts/tree/ErrorNode";
 import { findMap, createMeta } from "./InstructionNavigator";
 import { ExpressionBuilder } from "./ExpressionBuilder";
 import { toString } from "./TokenToString";
-import { Block } from "@babel/types";
-
 
 const _meta: InstructionMeta = {
     altCycles: [],
@@ -88,6 +86,20 @@ class ExpressionExtractor extends AbstractParseTreeVisitor<Expression[]> impleme
     }
 }
 
+class SymbolExtractor extends AbstractParseTreeVisitor<string[]> implements z80asmVisitor<string[]>{
+    defaultResult(): string[] {
+        return new Array<string>();
+    }
+
+    aggregateResult(aggregate: string[], result: string[]): string[] {
+        return aggregate.concat(result);
+    }
+
+    visitSymbol(ctx: SymbolContext): string[] {
+        return [ ctx.text ];
+    }
+}
+
 class TextCollector extends AbstractParseTreeVisitor<string[]> {
     defaultResult(): string[] {
         return new Array<string>();
@@ -129,18 +141,23 @@ export class GrammarListener implements z80asmListener {
         const extractor = new ExpressionExtractor();
         const expressions = extractor.visit(ctx);
         const expression = expressions.length ? expressions[0] : undefined;
-        this.nodes.push(new Directive(expression, 
+
+        let symbol: string | undefined = undefined;
+        const childCtx = ctx.getChild(0);
+        const symbolExtractor = new SymbolExtractor();
+        this.nodes.push(new Directive(childCtx.getChild(0).text, 
+            symbolExtractor.visit(ctx), expression, 
             toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
     }
 
     exitDirective_elseblock(ctx: Directive_elseblockContext) {
-        this.nodes.push(new Directive(undefined, 
+        this.nodes.push(new Directive(ctx.DIRECTIVEelse().text, undefined, undefined, 
             toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
         this.skipDirective = true;
     }
 
     exitDirective_endif(ctx: Directive_endifContext) {
-        this.nodes.push(new Directive(undefined, 
+        this.nodes.push(new Directive(ctx.DIRECTIVEendif().text, undefined, undefined, 
             toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
         this.skipDirective = true;
     }

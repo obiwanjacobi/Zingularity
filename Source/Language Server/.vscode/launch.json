@@ -57,8 +57,21 @@
 			"internalConsoleOptions": "openOnSessionStart",
 			"console": "integratedTerminal",
 			"outFiles": [
-				"${workspaceRoot}/build/dist/**/*"
-			],
+				"${workspaceRoot}/server/out/_test/**/*.js"
+			]
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Jest All",
+			"program": "${workspaceFolder}/node_modules/.bin/jest",
+			"args": ["--runInBand", "-i"],
+			"console": "integratedTerminal",
+			"internalConsoleOptions": "openOnSessionStart",
+			"disableOptimisticBPs": true,
+			"windows": {
+			  "program": "${workspaceFolder}/node_modules/jest/bin/jest",
+			}
 		},
 		{
             "name": "Antlr Debug",

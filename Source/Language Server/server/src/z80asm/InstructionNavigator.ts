@@ -1,7 +1,8 @@
 import instructionMap from "./InstructionMap.json";
-import { Numeric, InstructionMeta, SymbolTable, SymbolReference } from "./CodeModel";
+import { Numeric, InstructionMeta } from "./CodeModel";
 import { splitInstruction } from "./InstructionSplitter";
 import { CompletionItemKind } from "vscode-languageserver";
+import { SymbolReference, SymbolTable } from "./SymbolTable.js";
 
 const byteLiteralKeys = ["d", "e", "n", "nn"];
 const byteReplaceKeys = ["d", "e", "n", "n-lo", "n-hi"];

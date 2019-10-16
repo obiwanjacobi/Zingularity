@@ -15,13 +15,14 @@ import {
     DocumentFormattingParams,
     Range,
 } from "vscode-languageserver";
-import { AssemblyDocument, AssemblyNodeKind, Instruction, Label, SymbolReference } from "./z80asm/CodeModel";
+import { AssemblyDocument, AssemblyNodeKind, Instruction, Label, Directive } from "./z80asm/CodeModel";
 import { buildCompletionList } from "./z80asm/InstructionNavigator";
 import { CodeModelManager, toRange, rangeFrom } from "./z80asm/CodeModelManager";
 import { DocumentSerializer, SerializerProfile } from "./z80asm/DocumentSerializer";
 import { GrammarParser } from "./z80asm/GrammarParser";
 import { sum } from "./utils";
 import { buildFoldingRanges } from "./z80asm/CodeModel.Analysis";
+import { SymbolReference } from "./z80asm/SymbolTable";
 
 
 // Create a connection for the server. The connection uses Node's IPC as a transport.
@@ -278,6 +279,18 @@ connection.onHover(
                     contents: `${label.symbol}: ${refs.length - 1} references`,
                     range: toRange(label)
                 };
+            }
+            if (docNode.node.kind === AssemblyNodeKind.Directive) {
+                const directive = <Directive> docNode.node;
+
+                if (directive.symbols) {
+                    
+                    const refs = codeModelMgr.codeModel.symbols.findReferences(directive);
+                    return {
+                        contents: `${directive.symbols}: ${refs.length - 1} references`,
+                        range: toRange(directive)
+                    };
+                }
             }
         }
 

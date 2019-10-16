@@ -1,6 +1,7 @@
-import { AssemblyModel, AssemblyDocument, AssemblyNode, SymbolTable, SymbolProfile, CasingMatch, CasingRule, BlockComment, Label, AssemblyNodeKind, Comment } from "./CodeModel";
+import { AssemblyModel, AssemblyDocument, AssemblyNode, BlockComment, AssemblyNodeKind, Comment } from "./CodeModel";
 import { Position, Range } from "vscode-languageserver";
 import { Comparable } from "antlr4ts/misc/Stubs";
+import { SymbolProfile, CasingMatch, CasingRule, SymbolTable } from "./SymbolTable";
 
 const symbolProfile: SymbolProfile = {
     matchCasing: CasingMatch.CaseSensitive,

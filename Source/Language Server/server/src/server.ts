@@ -7,7 +7,6 @@ import {
     InitializeParams,
     DidChangeConfigurationNotification,
     CompletionItem,
-    CompletionItemKind,
     TextDocumentPositionParams,
     Hover,
     Location,
@@ -22,6 +21,7 @@ import { CodeModelManager, toRange, rangeFrom } from "./z80asm/CodeModelManager"
 import { DocumentSerializer, SerializerProfile } from "./z80asm/DocumentSerializer";
 import { GrammarParser } from "./z80asm/GrammarParser";
 import { sum } from "./utils";
+import { buildFoldingRanges } from "./z80asm/CodeModel.Analysis";
 
 
 // Create a connection for the server. The connection uses Node's IPC as a transport.
@@ -61,14 +61,15 @@ connection.onInitialize((params: InitializeParams) => {
         capabilities: {
             textDocumentSync: documents.syncKind,
             completionProvider: {
-                triggerCharacters: ["\t", " ", ",", "("],
+                triggerCharacters: ["\t", " ", "("],
                 resolveProvider: true
             },
             hoverProvider: true,
             definitionProvider: true,
             referencesProvider: true,
             documentSymbolProvider: true,
-            documentFormattingProvider: true
+            documentFormattingProvider: true,
+            foldingRangeProvider: true,
         }
     };
 });
@@ -78,13 +79,13 @@ connection.onInitialized(() => {
         // Register for all configuration changes.
         connection.client.register(DidChangeConfigurationNotification.type, undefined);
     }
-    if (hasWorkspaceFolderCapability) {
-        connection.workspace.onDidChangeWorkspaceFolders(_event => {
-            connection.console.log("Workspace folder change event received.");
-        });
-    }
+    // if (hasWorkspaceFolderCapability) {
+    //     connection.workspace.onDidChangeWorkspaceFolders(_event => {
+    //         connection.console.log("Workspace folder change event received.");
+    //     });
+    // }
 
-    connection.console.log("Zingularity Server Started.");
+    connection.console.info("Zingularity Started.");
 });
 
 // The server settings
@@ -189,7 +190,7 @@ connection.onDidChangeWatchedFiles(_change => {
     // validateTextDocument();
 }); 
 
-const commitCharacters = [" ", ",", "+", "-"];
+const commitCharacters = [",", "+", "-"];
 
 // This handler provides the initial list of the completion items.
 connection.onCompletion(
@@ -290,7 +291,6 @@ connection.onDefinition((textDocumentPosition): Location | null => {
     }
 );
 
-
 connection.onReferences(refParams => {
     const docNode = codeModelMgr.findNode(refParams.textDocument.uri, refParams.position);
     
@@ -308,7 +308,7 @@ connection.onDocumentSymbol(docSymbolParams => {
     const symbols = codeModelMgr.codeModel.symbols.findSymbols(docSymbolParams.textDocument.uri);
     return symbols.map(s => <SymbolInformation> { 
         name: s.symbol, 
-        kind: SymbolKind.Constant, 
+        kind: SymbolKind.Function, 
         location: Location.create(s.reference.document.uri, toRange(s.reference.node))
     });
 });
@@ -332,6 +332,15 @@ connection.onDocumentFormatting(async (docFormat: DocumentFormattingParams) => {
             newText: serializer.serialize(doc.nodes)
         }];
     }
+});
+
+connection.onFoldingRanges(foldingRangeParams => {
+    const doc = codeModelMgr.codeModel.documents.find(d => d.uri === foldingRangeParams.textDocument.uri);
+    if (doc) {
+        return buildFoldingRanges(doc.nodes);
+    }
+
+    return null;
 });
 
 // Make the text document manager listen on the connection

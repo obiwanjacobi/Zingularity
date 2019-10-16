@@ -5,8 +5,10 @@ label:      ; inline comment on label
     INC A
     RST 28
     JP label2
-    DEC D
-
-
+    DEC D    
     CPL A
     SCF
+
+; comment 
+.label3
+    LD A, IXh

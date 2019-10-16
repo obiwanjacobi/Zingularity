@@ -1,6 +1,7 @@
 defc cval =  $AA
 
-; comment 2
+;; comment 2
+;; @param a bla bla
 label2:
     in a, (c)
     ret z
@@ -8,4 +9,3 @@ label2:
 .label3
     out (c), a
     ret
-    

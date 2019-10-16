@@ -787,3 +787,6 @@ loop1:
      XOR  H
      XOR  L
      XOR  n
+     RET
+
+     

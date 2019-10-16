@@ -4,7 +4,7 @@ Plans and Ideas.
 
 ## Editor integration
 
-* Formating code (in-place)
+* Code folding
 * Enhance Intellisense. Types for the listed options (instruction/registers/conditions/labels/constants).
 * Hilight the instruction that set the flag the current instruction is testing for.
 * Support Workspaces (research topic)
@@ -78,4 +78,4 @@ after it is selected (hilighted) a popup with the documentation is displayed.
 
 * Configurable syntax details (directive, casing etc)
 * Support for project output thru 3rd party tools
-* Decide on build system (Make, PowerShell, other?)
+* Decide on build system ([C]Make, PowerShell, other?)

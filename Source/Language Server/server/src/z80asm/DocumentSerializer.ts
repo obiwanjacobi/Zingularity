@@ -1,12 +1,16 @@
-import { Comment, Label, AssemblyNode, AssemblyNodeKind, Directive, Expression, Instruction, Numeric, InstructionMeta } from "./CodeModel";
+import { Comment, Label, AssemblyNode, AssemblyNodeKind, Directive, Expression, Instruction, Numeric, InstructionMeta, BlockComment } from "./CodeModel";
 import { toLines } from "./CodeModelManager";
 import { sum } from "../utils";
+import { splitInstruction } from "./InstructionSplitter";
 
 const ignoreNodes = [
     AssemblyNodeKind.Error,
     AssemblyNodeKind.Whitespace,
     AssemblyNodeKind.Token
 ];
+
+// used for emptyLineAfterRet option
+const retOpcodes = ["C9", "ED4D", "ED45"];
 
 export interface SerializerProfile {
     tabSize: number;        // how many chars does one tab represent?
@@ -71,6 +75,8 @@ export class DocumentSerializer {
                 });
             }
 
+            lastLine += line.split(this.profile.newLine).length - 1;
+
             if (this.instructionMeta) {
                 line += this.tab(line.length, this.columnTabs(AssemblyNodeKind.Comment));
                 line += this.serializeMetaComment();
@@ -88,46 +94,35 @@ export class DocumentSerializer {
         switch(node.kind) {
             case AssemblyNodeKind.Comment:
                 return this.serializeComment(<Comment> node);
-            case AssemblyNodeKind.Directive:
-                return this.serializeDirective(<Directive> node);
-            case AssemblyNodeKind.Expression:
-                return this.serializeExpression(<Expression> node);
+            case AssemblyNodeKind.BlockComment:
+                return this.serializeBlockComment(<BlockComment> node);
             case AssemblyNodeKind.Instruction:
                 const instr = <Instruction> node;
                 this.instructionMeta = 
                     (this.profile.printBytes || this.profile.printCycles) ? instr.meta : undefined;
                 if (this.profile.emptyLineAfterRet && 
-                    instr.meta.bytes[0] == "C9") {
+                    retOpcodes.indexOf(instr.meta.bytes.join("")) >= 0) {
                     this.addToEndOfLine = this.profile.newLine;
                 }
                 return this.serializeInstruction(instr);
-            case AssemblyNodeKind.Label:
-                return this.serializeLabel(<Label> node);
-            case AssemblyNodeKind.Numeric:
-                return this.serializeNumeric(<Numeric> node);
             default:
-                return "";
+                return node.toString();
         }
     }
 
-    private serializeNumeric(numeric: Numeric): string {
-        return numeric.toString();
-    }
-
-    private serializeLabel(label: Label): string {
-        return label.toString();
-    }
-
     private serializeInstruction(instruction: Instruction): string {
-        return instruction.toString();
+        const parts = splitInstruction(instruction.text);
+        return parts.reduce((acc, p) => {
+            const lastChar = acc.charAt(acc.length - 1);
+            if (p === "," || p === ")" || lastChar === "(") {
+                return acc.concat(p);
+            }
+            return acc.concat(" ", p);
+        });
     }
 
-    private serializeExpression(expression: Expression): string {
-        return expression.toString();
-    }
-
-    private serializeDirective(directive: Directive): string {
-        return directive.toString();
+    private serializeBlockComment(comment: BlockComment): string {
+        return comment.toString(this.profile.newLine);
     }
 
     private serializeComment(comment: Comment): string {
@@ -142,6 +137,7 @@ export class DocumentSerializer {
     private serializeMetaComment(): string {
         return `; ${this.serializeMeta()}`;
     }
+
     private serializeMeta(): string {
         if (this.instructionMeta) {
             if (this.profile.printBytes && this.profile.printCycles) {

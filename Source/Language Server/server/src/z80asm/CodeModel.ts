@@ -62,12 +62,12 @@ export class BlockComment extends AssemblyNode {
         this.lines = lines;
     }
 
-    toText(): string {
-        return this.lines.map(l => l.toText()).join("\r\n");
+    toText(separator: string = "\r\n"): string {
+        return this.lines.map(l => l.toText()).join(separator);
     }
 
-    toString(): string {
-        return this.lines.map(l => l.toString()).join("\r\n");
+    toString(separator: string = "\r\n"): string {
+        return this.lines.map(l => l.toString()).join(separator);
     }
 }
 

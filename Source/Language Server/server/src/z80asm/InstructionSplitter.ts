@@ -38,6 +38,7 @@ export function splitInstruction(token: string): string[] {
         if (!testAddCharAsPart(curChar, "(") &&
             !testAddCharAsPart(curChar, ")") &&
             !testAddCharAsPart(curChar, ",") &&
+            !testAddCharAsPart(curChar, "-") &&
             !testAddCharAsPart(curChar, "+")) {
 
             parts[p] += curChar;

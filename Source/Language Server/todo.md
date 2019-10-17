@@ -5,4 +5,4 @@
 * extend symbol table with constants (defc)
 * Display value of constants (defc) in hover (bytes) and process expressions for constants.
 * extent logic on RET (C9) to include RETI and RETN (formatter-serializer, folding-ranges)
-* replace default error output of grammar parser (console)
+* How to check for release build in code: isProduction/isDevelopment?

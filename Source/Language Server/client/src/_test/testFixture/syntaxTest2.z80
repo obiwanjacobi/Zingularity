@@ -9,3 +9,6 @@ label2:
 .label3
     out (c), a
     ret
+
+    LD A, cval
+    

@@ -1,6 +1,6 @@
 import { Expression, Numeric, Radix } from "./CodeModel";
 import { AbstractParseTreeVisitor } from "antlr4ts/tree/AbstractParseTreeVisitor";
-import { ExpressionContext, Number_binContext, NumberContext, Number_octContext, Number_decContext, Number_hexContext, OperatorContext, SymbolContext } from "./z80asmParser";
+import { ExpressionContext, Number_binContext, NumberContext, Number_octContext, Number_decContext, Number_hexContext, OperatorContext, SymbolContext, Number_charContext } from "./z80asmParser";
 import { z80asmVisitor } from "./z80asmVisitor";
 import { ParserRuleContext } from "antlr4ts";
 import { ParseTree } from "antlr4ts/tree/ParseTree";
@@ -26,6 +26,10 @@ class NumericBuilder extends AbstractParseTreeVisitor<Numeric> implements z80asm
 
     visitNumber_hex(ctx: Number_hexContext): Numeric {
         return this.new(16, ctx);
+    }
+
+    visitNumber_char(ctx: Number_charContext): Numeric {
+        return new Numeric(ctx.text.charCodeAt(0), 10, ctx.text, ctx.start.line, ctx.start.charPositionInLine);
     }
 
     private new(radix: Radix, ctx: ParserRuleContext): Numeric {

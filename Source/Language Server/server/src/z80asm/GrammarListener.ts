@@ -202,9 +202,9 @@ export class GrammarListener implements z80asmListener {
 
     exitLabel(ctx: LabelContext) {
         if (this.hasException(ctx)) { return; }
-        let symbol = ctx.getChild<SymbolContext>(0, SymbolContext);
-        if (!symbol) symbol = ctx.getChild<SymbolContext>(1, SymbolContext);
-        this.nodes.push(new Label(symbol.text, toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
+        const extractor = new SymbolExtractor();
+        const symbols = extractor.visit(ctx);
+        this.nodes.push(new Label(symbols[0], toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
     }
 
     visitErrorNode(error: ErrorNode) {

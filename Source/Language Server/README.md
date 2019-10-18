@@ -6,7 +6,6 @@ Z80 assembler editor support.
 
 * Syntax coloring
 * Z80 Assembler Intellisense
-* Code Folding
 * Go to definition of a label
 * Find all references of a label
 * Instruction Hover info: cycles, bytes and affected flags

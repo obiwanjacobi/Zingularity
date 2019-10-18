@@ -1,5 +1,6 @@
 import { AssemblyNode, AssemblyDocument, AssemblyNodeKind, Instruction, Directive, Label } from "./CodeModel";
 import { Directive_symbollistContext } from "./z80asmParser";
+import { Parser } from "antlr4ts";
 
 export enum CasingRule {
     Mixed,
@@ -29,11 +30,11 @@ export interface DocumentSymbol {
 
 export class Symbol {
     readonly name: string;
-    private readonly _references: Set<SymbolReference>;
+    private readonly _references: Array<SymbolReference>;
     private _value: string;
 
     constructor(name: string, value: string = "") {
-        this._references = new Set<SymbolReference>();
+        this._references = new Array<SymbolReference>();
         this._value = value;
         this.name = name;
     }
@@ -47,33 +48,30 @@ export class Symbol {
     }
 
     get isEmpty(): boolean {
-        return this._references.size === 0;
+        return this._references.length === 0;
     }
 
     get declaration(): SymbolReference | undefined {
-        let decl: SymbolReference | undefined = undefined;
-        
-        this._references.forEach(r => {
-            if (r.node.kind === AssemblyNodeKind.Label) { 
-                decl = r; 
-            }
-        });
-
-        return decl;
+        const symbol = this._references.find(r => r.node.kind === AssemblyNodeKind.Label);
+        if (!symbol) {
+            return this._references.find(r => r.node.kind === AssemblyNodeKind.Directive && 
+                (<Directive> r.node).directive.toUpperCase() === "DEFC");
+        }
+        return symbol;
     }
 
     addReference(node: AssemblyNode, doc: AssemblyDocument) {
-        this._references.add({ node: node, document: doc });
+        if (this._references.findIndex(r => r.document.uri === doc.uri && r.node.equals(node)) < 0) {
+            this._references.push({ node: node, document: doc });
+        }
     }
 
     removeReference(doc: AssemblyDocument) {
-        const removeThese = new Array<SymbolReference>();
-        
-        this._references.forEach(r => {
-            if (r.document.uri === doc.uri) { removeThese.push(r); }
-        });
-
-        removeThese.forEach(r => this._references.delete(r));
+        for(var i = 0; i < this._references.length; i++) {
+            if ( this._references[i].document.uri === doc.uri) {
+                this._references.splice(i, 1);
+            }
+         }
     }
 }
 
@@ -115,24 +113,22 @@ export class SymbolTable {
     addNode(node: AssemblyNode, doc: AssemblyDocument) {
         const symbols = this.toSymbols(node);
         
-        if (symbols.length) {
-            symbols.forEach(symbol => {
-                const key = this.toKey(symbol);
-                let sym = this.symbols.get(key);
-                if (!sym) {
-                    let value = "";
-                    if (node.kind === AssemblyNodeKind.Directive) {
-                        const directiveNode = <Directive> node;
-                        if (directiveNode.expression && directiveNode.expression.numeric) {
-                            value = directiveNode.expression.numeric.text;
-                        }
+        symbols.forEach(symbol => {
+            const key = this.toKey(symbol);
+            let sym = this.symbols.get(key);
+            if (!sym) {
+                let value = "";
+                if (node.kind === AssemblyNodeKind.Directive) {
+                    const directiveNode = <Directive> node;
+                    if (directiveNode.expression && directiveNode.expression.numeric) {
+                        value = directiveNode.expression.numeric.text;
                     }
-                    sym = new Symbol(symbol, value);
-                    this.symbols.set(key, sym);
                 }
-                sym.addReference(node, doc);
-            });
-        }
+                sym = new Symbol(symbol, value);
+                this.symbols.set(key, sym);
+            }
+            sym.addReference(node, doc);
+        });
     }
 
     findReferences(node: AssemblyNode): SymbolReference[] {

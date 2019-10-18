@@ -80,6 +80,7 @@ export class DocumentSerializer {
             if (this.instructionMeta) {
                 line += this.tab(line.length, this.columnTabs(AssemblyNodeKind.Comment));
                 line += this.serializeMetaComment();
+                this.instructionMeta = undefined;
             }
             
             line += this.addToEndOfLine;

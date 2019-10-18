@@ -1,14 +1,16 @@
-; comment bla bla bla bla bla bla bla bla ld a 
-label:      ; inline comment on label
-    LD A, 0
-    LD HL, $0000    ; inline comment on instruction
-    INC A
-    RST 28
-    JP label2
-    DEC D    
-    CPL A
-    SCF
 
-; comment 
+; comment bla bla bla bla bla bla bla bla ld a
+label:                          ; inline comment on label
+        LD A, 0
+        LD HL, $0000            ; inline comment on instruction
+        INC A
+        SCF
+        JP label2
+        DEC D
+        CPL A
+        RST 28
+
+;; comment
+;; @param a contains char
 .label3
-    XOR A, A
+        XOR A, A

@@ -34,6 +34,7 @@ let connection = createConnection(ProposedFeatures.all);
 const documents: TextDocuments = new TextDocuments();
 // manages parsed AssemblyNode documents
 const codeModelMgr: CodeModelManager = new CodeModelManager();
+const grammarParser = new GrammarParser();
 
 let hasConfigurationCapability: boolean = false;
 let hasWorkspaceFolderCapability: boolean = false;
@@ -161,9 +162,8 @@ documents.onDidChangeContent(change => {
 });
 
 async function validateTextDocument(textDocument: TextDocument): Promise<void> {
-    const parser = new GrammarParser();
     const doc: AssemblyDocument = { 
-        nodes: parser.parse(textDocument.getText()), 
+        nodes: grammarParser.parse(textDocument.getText()), 
         uri: textDocument.uri, 
         version: textDocument.version 
     };
@@ -347,11 +347,15 @@ connection.onDocumentFormatting(async (docFormat: DocumentFormattingParams) => {
             emptyLineAfterRet: settings.formatter.emptyLineAfterRet
         };
         const serializer = new DocumentSerializer(profile);
-
-        return [{
+        const textEdit = {
             range: rangeFrom(doc.nodes),
             newText: serializer.serialize(doc.nodes)
-        }];
+        };
+
+        // start at beginning of document
+        textEdit.range.start.line = 0;
+        textEdit.range.start.character = 0;
+        return [textEdit];
     }
 });
 

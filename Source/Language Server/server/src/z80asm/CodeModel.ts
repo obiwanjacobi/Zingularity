@@ -30,6 +30,14 @@ export class AssemblyNode {
     toString(): string {
         return this.text.trim();
     }
+
+    equals(node: AssemblyNode): boolean {
+        return (
+            this.column === node.column &&
+            this.kind === node.kind &&
+            this.line === node.line &&
+            this.text === node.text);
+    }
 }
 
 export class AsmError extends AssemblyNode {

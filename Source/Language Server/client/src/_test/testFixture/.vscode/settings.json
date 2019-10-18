@@ -1,7 +1,7 @@
 {
     "zingularity.maxNumberOfProblems": 100,
     "zingularity.trace.server": "verbose",
-    "zingularity.formatter.printCycles": true,
-    "zingularity.formatter.printBytes": true, 
+    "zingularity.formatter.printCycles": false,
+    "zingularity.formatter.printBytes": false, 
     "zingularity.formatter.emptyLineAfterRet": true, 
 }

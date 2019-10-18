@@ -53,8 +53,7 @@ export class CodeModelManager {
     }
 
     private previousNode(document: AssemblyDocument, node: AssemblyNode): AssemblyNode | undefined {
-        const i = document.nodes.findIndex(n => 
-            n.column === node.column && n.kind === node.kind && n.line === node.line && n.text === node.text);
+        const i = document.nodes.findIndex(n => n.equals(node));
             
         if (i > 0) {
             return document.nodes[i - 1];

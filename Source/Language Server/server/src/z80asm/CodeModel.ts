@@ -38,6 +38,13 @@ export class AssemblyNode {
             this.line === node.line &&
             this.text === node.text);
     }
+
+    hitTest(line: number, column?: number): boolean {
+        if (column) {
+            return this.line === line && this.column <= column;    
+        }
+        return this.line === line;
+    }
 }
 
 export class AsmError extends AssemblyNode {
@@ -76,6 +83,13 @@ export class BlockComment extends AssemblyNode {
 
     toString(separator: string = "\r\n"): string {
         return this.lines.map(l => l.toString()).join(separator);
+    }
+
+    hitTest(line: number, column?: number): boolean {
+        if (column) {
+            return this.lines.findIndex(l => l.line === line && l.column <= column) >= 0;    
+        }
+        return this.lines.findIndex(l => l.line === line) >= 0;
     }
 }
 

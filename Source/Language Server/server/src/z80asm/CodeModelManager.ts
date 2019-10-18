@@ -25,10 +25,12 @@ export class CodeModelManager {
     findNode(uri: string, position: Position): {document: AssemblyDocument, node: AssemblyNode} | undefined {
         const doc = this.codeModel.documents.find(d => d.uri === uri);
         
-        if (doc && doc.nodes && doc.nodes.length > 0) {
-            const nodes = doc.nodes.filter(n => n.line - 1 === position.line);
+        if (doc && doc.nodes) {
+            const nodes = doc.nodes.filter(n => n.hitTest(position.line + 1));
             if (nodes.length) {
-                const node = nodes.reduce((prevNode, thisNode) => thisNode.column > position.character ? prevNode : thisNode);
+                const node = nodes.reduce((prevNode, thisNode) => 
+                        thisNode.column > position.character ? prevNode : thisNode
+                );
                 return { document: doc, node: node };
             }
         }

@@ -10,7 +10,7 @@ label:                          ; inline comment on label
         CPL A
         RST 28
 
-;; comment
-;; @param a contains char
+;; comment 
+;; @param a contains char 
 .label3
         XOR A, A

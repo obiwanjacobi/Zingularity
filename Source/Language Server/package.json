@@ -143,6 +143,6 @@
 		"webpack-cli": "^3.3.9"
 	},
 	"dependencies": {
-		"acorn": "^7.1.0"
+		"acorn": "^7.1.1"
 	}
 }

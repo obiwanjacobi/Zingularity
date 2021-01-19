@@ -67,9 +67,9 @@ after it is selected (hilighted) a popup with the documentation is displayed.
 ## Multiple Targets
 
 * Z88DK
-* TASM
-* ZMAC
-* PASMO
+* TASM (outdated) http://www.cpcalive.com/docs/TASMMAN.HTM
+* ZMAC  http://48k.ca/zmac.html
+* PASMO 
 * ZASM
 
 * Convert from one assembler format to another (save as)

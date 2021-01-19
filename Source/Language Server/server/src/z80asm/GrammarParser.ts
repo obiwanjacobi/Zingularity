@@ -2,11 +2,12 @@ import { AssemblyNode } from "./CodeModel";
 import * as antlr4 from "antlr4ts";
 import { ParseTreeWalker } from "antlr4ts/tree/ParseTreeWalker";
 import { z80asmLexer } from "./z80asmLexer";
-import { z80asmParser } from "./z80asmParser";
+import { z80asmParser, AsmContext, FileContext } from "./z80asmParser";
 import { ParserRuleContext, DefaultErrorStrategy, Parser, RecognitionException, NoViableAltException, InputMismatchException, FailedPredicateException } from "antlr4ts";
 import { GrammarListener } from "./GrammarListener";
+import { applyMixins } from "../utils";
 
-class GrammerErrorHandler extends DefaultErrorStrategy {
+class GrammarErrorHandler extends DefaultErrorStrategy {
     private readonly mute: boolean;
 
     constructor() {
@@ -46,6 +47,23 @@ class GrammerErrorHandler extends DefaultErrorStrategy {
     }
 }
 
+export interface GrammarProfile
+{
+    directiveDot: boolean;
+    directiveDotOptional: boolean;
+}
+
+function ExtendWithProfile() {
+    return class GrammarParserWithProfile extends z80asmParser
+    {
+        directiveDot: boolean = false;
+        directiveDotOptional: boolean = false;
+    }
+}
+
+// type: z80Parser + GrammarProfile
+const GrammarParserWithProfileClass = ExtendWithProfile();
+
 export class GrammarParser {
 
     parse(text: string): AssemblyNode[] {
@@ -55,12 +73,12 @@ export class GrammarParser {
     }
 
     static createParser(text: string): z80asmParser {
-        const chars = new antlr4.ANTLRInputStream(text);
+        const chars = antlr4.CharStreams.fromString(text);
         const lexer = new z80asmLexer(chars);
         const tokens  = new antlr4.CommonTokenStream(lexer);
-        const parser = new z80asmParser(tokens);
+        const parser = new GrammarParserWithProfileClass(tokens);
         parser.buildParseTree = true;
-        parser.errorHandler = new GrammerErrorHandler();
+        parser.errorHandler = new GrammarErrorHandler();
         return parser;
     }
 

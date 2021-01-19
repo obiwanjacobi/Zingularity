@@ -2,7 +2,7 @@
 	"name": "zingularity-client",
 	"description": "Zingularity VSCode Language Client.",
 	"author": "Marc Jacobi",
-	"version": "0.0.1",
+	"version": "0.10.0",
 	"license": "LGPL-2.1-only",
 	"publisher": "JacobiSoftware",
 	"repository": {
@@ -17,9 +17,9 @@
 		"postinstall": "vscode-install"
 	},
 	"dependencies": {
-		"vscode-languageclient": "^4.1.4"
+		"vscode-languageclient": "^7.0.0"
 	},
 	"devDependencies": {
-		"vscode": "^1.1.34"
+		"vscode": "^1.1.37"
 	}
 }

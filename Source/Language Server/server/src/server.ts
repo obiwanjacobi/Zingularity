@@ -1,7 +1,7 @@
 import {
     createConnection,
-    TextDocuments,
     TextDocument,
+    TextDocuments,
     DiagnosticSeverity,
     ProposedFeatures,
     InitializeParams,
@@ -15,6 +15,7 @@ import {
     DocumentFormattingParams,
     Range,
 } from "vscode-languageserver";
+//import { TextDocument } from "vscode-languageserver-textdocument";
 import { AssemblyDocument, AssemblyNodeKind, Instruction, Label, Directive } from "./z80asm/CodeModel";
 import { buildCompletionList } from "./z80asm/InstructionNavigator";
 import { CodeModelManager, toRange, rangeFrom } from "./z80asm/CodeModelManager";

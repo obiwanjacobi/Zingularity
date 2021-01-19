@@ -1559,7 +1559,7 @@
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Cypress Component Catalog\Communications\UART [v2.50]">
 <ExpandedNodeIds>
 <v>Cypress Component Catalog</v>
-<v>Cypress Component Catalog\Communications</v>
+<v>Cypress Component Catalog\Communications\SPI</v>
 <v>Cypress Component Catalog\Communications\USB</v>
 <v>Cypress Component Catalog\Digital\Registers</v>
 </ExpandedNodeIds>
@@ -1568,22 +1568,6 @@
 <v>Cypress Component Catalog\Analog</v>
 <v>Cypress Component Catalog\CapSense</v>
 <v>Cypress Component Catalog\Communications</v>
-<v>Cypress Component Catalog\Communications\CAN Controller Macro [v3.0]</v>
-<v>Cypress Component Catalog\Communications\File System</v>
-<v>Cypress Component Catalog\Communications\I2C</v>
-<v>Cypress Component Catalog\Communications\I2S</v>
-<v>Cypress Component Catalog\Communications\LIN [v4.0]</v>
-<v>Cypress Component Catalog\Communications\LIN Slave Macro [v4.0]</v>
-<v>Cypress Component Catalog\Communications\MDIO Interface</v>
-<v>Cypress Component Catalog\Communications\SMBus/PMBus Slave</v>
-<v>Cypress Component Catalog\Communications\Software Transmit UART [v1.50]</v>
-<v>Cypress Component Catalog\Communications\SPDIF Transmitter [v1.20]</v>
-<v>Cypress Component Catalog\Communications\SPI</v>
-<v>Cypress Component Catalog\Communications\UART [v2.50]</v>
-<v>Cypress Component Catalog\Communications\USB</v>
-<v>Cypress Component Catalog\Communications\USB\USBFS [v3.20]</v>
-<v>Cypress Component Catalog\Communications\USB\USBMIDI [v3.20]</v>
-<v>Cypress Component Catalog\Communications\USB\USBUART (CDC Interface) [v3.20]</v>
 <v>Cypress Component Catalog\Digital</v>
 <v>Cypress Component Catalog\Display</v>
 <v>Cypress Component Catalog\Filters</v>
@@ -1888,7 +1872,7 @@
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>
 <dataGuid v="237c8ed1-e161-4c9d-af97-582eda6d6952">
-<CyGuid_d442b0b8-dd66-4eee-b5be-1cb213792b31 type_name="CyDesigner.Device.FitterPSoC.Common.DesignWideResources.DeviceEditor.CyCustomAnalogDevData" version="1" ZoomToPage="True" ZoomScale="0.525624931" ScrollX="-288" ScrollY="2">
+<CyGuid_d442b0b8-dd66-4eee-b5be-1cb213792b31 type_name="CyDesigner.Device.FitterPSoC.Common.DesignWideResources.DeviceEditor.CyCustomAnalogDevData" version="1" ZoomToPage="True" ZoomScale="0.455076426" ScrollX="-239" ScrollY="2">
 <ComponentStates />
 </CyGuid_d442b0b8-dd66-4eee-b5be-1cb213792b31>
 </dataGuid>

@@ -112,17 +112,23 @@ file
 
 
 asm
-   : (line? EOL) +
+   : (line? EOL)+
    ;
 
 
 line
-   : label? directive comment? | comment | label comment? | label? instruction comment? | blockcomment
+   : label? directive comment? 
+   | comment 
+   | label comment? 
+   | label? instruction comment? 
+   | blockcomment
    ;
 
 
 directive
-   : directive_void 
+   : ({directiveDot}? DOT |
+      {directiveDotOptional}? DOT?)
+   ( directive_void 
    | directive_file
    | directive_param16
    | directive_param32
@@ -136,7 +142,7 @@ directive
    | directive_ifdef
    | directive_elseblock
    | directive_endif
-   ;
+   );
 
 
 directive_void
@@ -1115,7 +1121,7 @@ fragment DIGIT10
     ;
 
 fragment DIGIT16
-    :   [0-9a-zA-Z]
+    :   [0-9a-fA-F]
     ;
 
 
@@ -1152,6 +1158,9 @@ COMMA
    : ','
    ;
 
+DOT
+   : '.'
+   ;
 
 EOL
    : '\r'? '\n' | '\r'

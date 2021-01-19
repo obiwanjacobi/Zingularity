@@ -1,7 +1,7 @@
 {
 	"name": "zingularity-server",
 	"description": "Zingularity VSCode Language Server.",
-	"version": "0.1.0",
+	"version": "0.10.0",
 	"author": "Marc Jacobi",
 	"license": "LGPL-2.1-only",
 	"publisher": "JacobiSoftware",
@@ -13,8 +13,8 @@
 		"url": "https://github.com/obiwanjacobi/Zingularity.git"
 	},
 	"dependencies": {
-		"antlr4": "^4.7.2",
-		"antlr4ts": "^0.5.0-alpha.3",
+		"antlr4": "^4.9.1",
+		"antlr4ts": "^0.5.0-alpha.4",
 		"vscode-languageserver": "^5.2.1"
 	},
 	"scripts": {}

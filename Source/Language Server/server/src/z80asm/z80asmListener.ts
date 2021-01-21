@@ -1,4 +1,4 @@
-// Generated from .\server\src\z80asm\z80asm.g4 by ANTLR 4.7.3-SNAPSHOT
+// Generated from c:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\Language Server\server\src\z80asm\z80asm.g4 by ANTLR 4.7.3-SNAPSHOT
 
 
 import { ParseTreeListener } from "antlr4ts/tree/ParseTreeListener";
@@ -9,7 +9,6 @@ import { LineContext } from "./z80asmParser";
 import { DirectiveContext } from "./z80asmParser";
 import { Directive_voidContext } from "./z80asmParser";
 import { Directive_fileContext } from "./z80asmParser";
-import { FilenameContext } from "./z80asmParser";
 import { Directive_param16Context } from "./z80asmParser";
 import { Directive_param32Context } from "./z80asmParser";
 import { Directive_symbolContext } from "./z80asmParser";
@@ -19,6 +18,7 @@ import { Directive_blockContext } from "./z80asmParser";
 import { Directive_defsContext } from "./z80asmParser";
 import { Directive_defmContext } from "./z80asmParser";
 import { DefmparamContext } from "./z80asmParser";
+import { Directive_dcContext } from "./z80asmParser";
 import { Directive_ifContext } from "./z80asmParser";
 import { Directive_ifdefContext } from "./z80asmParser";
 import { Directive_ifblockContext } from "./z80asmParser";
@@ -63,8 +63,6 @@ import { LabelContext } from "./z80asmParser";
 import { SymbolContext } from "./z80asmParser";
 import { BlockcommentContext } from "./z80asmParser";
 import { CommentContext } from "./z80asmParser";
-import { StringContext } from "./z80asmParser";
-import { CharacterContext } from "./z80asmParser";
 import { Expression8Context } from "./z80asmParser";
 import { Expression16Context } from "./z80asmParser";
 import { Expression32Context } from "./z80asmParser";
@@ -152,17 +150,6 @@ export interface z80asmListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	exitDirective_file?: (ctx: Directive_fileContext) => void;
-
-	/**
-	 * Enter a parse tree produced by `z80asmParser.filename`.
-	 * @param ctx the parse tree
-	 */
-	enterFilename?: (ctx: FilenameContext) => void;
-	/**
-	 * Exit a parse tree produced by `z80asmParser.filename`.
-	 * @param ctx the parse tree
-	 */
-	exitFilename?: (ctx: FilenameContext) => void;
 
 	/**
 	 * Enter a parse tree produced by `z80asmParser.directive_param16`.
@@ -262,6 +249,17 @@ export interface z80asmListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	exitDefmparam?: (ctx: DefmparamContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.directive_dc`.
+	 * @param ctx the parse tree
+	 */
+	enterDirective_dc?: (ctx: Directive_dcContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.directive_dc`.
+	 * @param ctx the parse tree
+	 */
+	exitDirective_dc?: (ctx: Directive_dcContext) => void;
 
 	/**
 	 * Enter a parse tree produced by `z80asmParser.directive_if`.
@@ -746,28 +744,6 @@ export interface z80asmListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	exitComment?: (ctx: CommentContext) => void;
-
-	/**
-	 * Enter a parse tree produced by `z80asmParser.string`.
-	 * @param ctx the parse tree
-	 */
-	enterString?: (ctx: StringContext) => void;
-	/**
-	 * Exit a parse tree produced by `z80asmParser.string`.
-	 * @param ctx the parse tree
-	 */
-	exitString?: (ctx: StringContext) => void;
-
-	/**
-	 * Enter a parse tree produced by `z80asmParser.character`.
-	 * @param ctx the parse tree
-	 */
-	enterCharacter?: (ctx: CharacterContext) => void;
-	/**
-	 * Exit a parse tree produced by `z80asmParser.character`.
-	 * @param ctx the parse tree
-	 */
-	exitCharacter?: (ctx: CharacterContext) => void;
 
 	/**
 	 * Enter a parse tree produced by `z80asmParser.expression8`.

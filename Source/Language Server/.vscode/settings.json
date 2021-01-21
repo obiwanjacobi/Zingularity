@@ -12,5 +12,16 @@
 		"**/node_modules": true,
 		"**/out": true,
 		"**/dist": true,
-	}
+	},
+	"antlr4.atn.maxLabelCount": 4,
+    "antlr4.generation": {
+        "mode": "external",
+        "outputDir": "./",
+        "language": "TypeScript",
+        "listeners": true,
+        "visitors": true
+    },
+    "cSpell.ignoreWords": [
+        "antlr"
+    ]
 }

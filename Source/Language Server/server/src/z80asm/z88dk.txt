@@ -1,0 +1,99 @@
+z88dk z80asm
+================
+
+SECTION name
+MODULE name
+ORG <16-bit expression> | -1
+
+PHASE <16-bit expression>
+... <lines>
+UNPHASE
+
+ALIGN <16-bit expression>
+
+$ : hexadecimal constant, e.g. $4000 (16384).
+@ : binary constant, e.g. @11000000 (192).
+' ' : ASCII character, e.g. 'a'.
+\+ : addition, e.g. 12+13
+\- : unary minus, subtraction. e.g. -10, 12-45
+\* : multiplication, e.g. 45*2 (90)
+/ : division, e.g. 256/8 (32)
+% : modulus, e.g. 256%8 (0)
+** : power, e.g. 2**7 (128)
+& : binary AND, e.g. 255 & 7 (7)
+| : binary OR, e.g. 128 | 64 (192)
+^ : binary XOR, e.g. 128 ^ 128 (0)
+~ : binary NOT, e.g. (~0xAA) & 0xFF (0x55)
+
+precedence () ** * /% +-&|^~
+
+# : truncate expression as constant (remove relocatable address flag)
+LD BC, #end_relocator-relocator ; the relocator sees a constant expression
+
+= : equal to
+<> :not equal to
+< : less than
+> : larger than
+<= : less than or equal to
+>= : larger than or equal to
+! : not
+
+LD A, (USING_IBM = 1) | RTMFLAGS
+
+ASMPC - current assembler address
+
+symbols:
+.label | label:
+EXTERN name {, name}
+GLOBAL name {, name} 
+PUBLIC name {, name}
+
+preprocessor:
+IF IFDEF IFNDEF ELSE ENDIF
+IF <logical expression> ... [ELSE] ... ENDIF
+IFDEF <name> ... [ELSE] ... ENDIF
+IFNDEF <name> ... [ELSE] ... ENDIF
+INCLUDE "<filename>"
+BINARY "<filename>"
+DEFINE name,{name}
+
+blocks
+DEFB <8-bit expr>,{<8-bit expr>} (-128; 255)
+DEFW <16-bit expr>,{<16-bit expr>} (-32768; 65535)
+DEFL <32-bit expr>,{<32-bit expr>} (-2147483647; 4294967295)
+
+assign
+DEFC name=<32-bit expression>{, name=<32-bit expression>}
+DEFM <string expression>|<8-bit expr>,...
+DEFM "string_a" , "string_b" , 'X' , CR , LF , 0
+DEFQ name <32-bit expression> (float)
+
+(struct)
+DEFVARS <16-bit expression> '{' [<name>] [<storage_size> <size_multiplier>]'}'
+DEFVARS Z80asm_vars
+{
+    RuntimeFlags1 ds.b 1 ; reserve 1 byte
+    RuntimeFlags2 ds.b 1
+    RuntimeFlags3 ds.b 1
+    ds.w 1 ; space not named
+    explicitORIG  ds.w 1 ; reserve 2 bytes
+    asmtime ds.b 3 ; reserve 3 bytes
+    datestamp_src ds.b 6 ; reserve 6 bytes
+    datestamp_obj ds.b 6
+    TOTALERRORS ds.l 1 ; reserve 4 bytes
+}
+
+
+(enums)
+DEFGROUP '{' name {',' name ['=' <8-bit expression>]} '}'
+DEFGROUP
+{
+    sym_null
+    sym_ten = 10, sym_eleven, sym_twelve
+}
+DEFS <size>{, <fill-byte>}
+
+
+system specific
+FPP <8-bit expression>
+INVOKE <16-bit expression>

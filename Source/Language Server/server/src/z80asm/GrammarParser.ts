@@ -49,15 +49,15 @@ class GrammarErrorHandler extends DefaultErrorStrategy {
 
 export interface GrammarProfile
 {
-    directiveDot: boolean;
-    directiveDotOptional: boolean;
+    z88dk: boolean;
+    zmac: boolean;
 }
 
 function ExtendWithProfile() {
     return class GrammarParserWithProfile extends z80asmParser
     {
-        directiveDot: boolean = false;
-        directiveDotOptional: boolean = false;
+        z88dk: boolean = false;
+        zmac: boolean = false;
     }
 }
 

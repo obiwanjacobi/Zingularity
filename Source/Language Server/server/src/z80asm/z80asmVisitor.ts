@@ -1,4 +1,4 @@
-// Generated from .\server\src\z80asm\z80asm.g4 by ANTLR 4.7.3-SNAPSHOT
+// Generated from c:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\Language Server\server\src\z80asm\z80asm.g4 by ANTLR 4.7.3-SNAPSHOT
 
 
 import { ParseTreeVisitor } from "antlr4ts/tree/ParseTreeVisitor";
@@ -9,7 +9,6 @@ import { LineContext } from "./z80asmParser";
 import { DirectiveContext } from "./z80asmParser";
 import { Directive_voidContext } from "./z80asmParser";
 import { Directive_fileContext } from "./z80asmParser";
-import { FilenameContext } from "./z80asmParser";
 import { Directive_param16Context } from "./z80asmParser";
 import { Directive_param32Context } from "./z80asmParser";
 import { Directive_symbolContext } from "./z80asmParser";
@@ -19,6 +18,7 @@ import { Directive_blockContext } from "./z80asmParser";
 import { Directive_defsContext } from "./z80asmParser";
 import { Directive_defmContext } from "./z80asmParser";
 import { DefmparamContext } from "./z80asmParser";
+import { Directive_dcContext } from "./z80asmParser";
 import { Directive_ifContext } from "./z80asmParser";
 import { Directive_ifdefContext } from "./z80asmParser";
 import { Directive_ifblockContext } from "./z80asmParser";
@@ -63,8 +63,6 @@ import { LabelContext } from "./z80asmParser";
 import { SymbolContext } from "./z80asmParser";
 import { BlockcommentContext } from "./z80asmParser";
 import { CommentContext } from "./z80asmParser";
-import { StringContext } from "./z80asmParser";
-import { CharacterContext } from "./z80asmParser";
 import { Expression8Context } from "./z80asmParser";
 import { Expression16Context } from "./z80asmParser";
 import { Expression32Context } from "./z80asmParser";
@@ -133,13 +131,6 @@ export interface z80asmVisitor<Result> extends ParseTreeVisitor<Result> {
 	visitDirective_file?: (ctx: Directive_fileContext) => Result;
 
 	/**
-	 * Visit a parse tree produced by `z80asmParser.filename`.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	visitFilename?: (ctx: FilenameContext) => Result;
-
-	/**
 	 * Visit a parse tree produced by `z80asmParser.directive_param16`.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -201,6 +192,13 @@ export interface z80asmVisitor<Result> extends ParseTreeVisitor<Result> {
 	 * @return the visitor result
 	 */
 	visitDefmparam?: (ctx: DefmparamContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.directive_dc`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitDirective_dc?: (ctx: Directive_dcContext) => Result;
 
 	/**
 	 * Visit a parse tree produced by `z80asmParser.directive_if`.
@@ -509,20 +507,6 @@ export interface z80asmVisitor<Result> extends ParseTreeVisitor<Result> {
 	 * @return the visitor result
 	 */
 	visitComment?: (ctx: CommentContext) => Result;
-
-	/**
-	 * Visit a parse tree produced by `z80asmParser.string`.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	visitString?: (ctx: StringContext) => Result;
-
-	/**
-	 * Visit a parse tree produced by `z80asmParser.character`.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	visitCharacter?: (ctx: CharacterContext) => Result;
 
 	/**
 	 * Visit a parse tree produced by `z80asmParser.expression8`.

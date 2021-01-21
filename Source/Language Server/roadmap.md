@@ -66,11 +66,11 @@ after it is selected (hilighted) a popup with the documentation is displayed.
 
 ## Multiple Targets
 
-* Z88DK
-* TASM (outdated) http://www.cpcalive.com/docs/TASMMAN.HTM
+* Z88DK (supported)
+* TASM  (outdated) http://www.cpcalive.com/docs/TASMMAN.HTM
 * ZMAC  http://48k.ca/zmac.html
-* PASMO 
-* ZASM
+* PASMO http://pasmo.speccy.org/pasmodoc.html
+* ZASM  https://k1.spdns.de/Develop/Projects/zasm/Documentation/
 
 * Convert from one assembler format to another (save as)
 

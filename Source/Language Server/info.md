@@ -35,5 +35,8 @@ https://code.visualstudio.com/api/language-extensions/language-server-extension-
 Syntax Coloring Guide
 https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide
 
+Semantic Highlight Guide
+https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide
+
 LSP Specs
 https://microsoft.github.io/language-server-protocol/

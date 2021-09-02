@@ -245,6 +245,17 @@
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\HALT.lst</v>
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\IceController.lst</v>
 <v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\IceCpuZ80Host.lst</v>
+<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.Arithmetic16.lst</v>
+<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.Arithmetic8.lst</v>
+<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.BitSetTest.lst</v>
+<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.CallReturn.lst</v>
+<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.ExchangeBlockTransfer.lst</v>
+<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.GeneralPurposeControl.lst</v>
+<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.Generic.lst</v>
+<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.InputOutput.lst</v>
+<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.Jump.lst</v>
+<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.Load16.lst</v>
+<v>ICEZ80\ICEZ80\CortexM3\ARM_GCC_541\Debug\Listing Files\Instructions.Load8.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -259,11 +270,6 @@
 <v>ICEZ80\ICEZ80\PSoC 5LP Architecture TRM</v>
 <v>ICEZ80\ICEZ80\CY8C58LP Family Datasheet</v>
 <v>ICEZ80\ICEZ80\System Reference Guides</v>
-<v>ICEZ80\ICEZ80\System Reference Guides\cy_boot_v5_80</v>
-<v>ICEZ80\ICEZ80\cy_pins_v2_20</v>
-<v>ICEZ80\ICEZ80\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>ICEZ80\ICEZ80\CyControlReg_v1_80.pdf</v>
-<v>ICEZ80\ICEZ80\UART_v2_50.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>ICEZ80</v>
@@ -271,11 +277,6 @@
 <v>ICEZ80\ICEZ80\PSoC 5LP Architecture TRM</v>
 <v>ICEZ80\ICEZ80\CY8C58LP Family Datasheet</v>
 <v>ICEZ80\ICEZ80\System Reference Guides</v>
-<v>ICEZ80\ICEZ80\System Reference Guides\cy_boot_v5_80</v>
-<v>ICEZ80\ICEZ80\cy_pins_v2_20</v>
-<v>ICEZ80\ICEZ80\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>ICEZ80\ICEZ80\CyControlReg_v1_80.pdf</v>
-<v>ICEZ80\ICEZ80\UART_v2_50.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -305,7 +306,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1369, 641" SelectedTabbedMdiWindow="78f0acd0-53b4-43ca-b52a-c9e049ce1922"><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\TestController.c" Guid="25bc7911-3324-4936-af2b-4b4a196e9a3e" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\CpuController.c" Guid="2e171a68-cff3-4183-aa2b-e047fb7ce81c" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\Memory.c" Guid="c3666e1b-4cfc-47e0-95c5-fd4e2531dbfd" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\TestCpuZ80Host.c" Guid="9ab845a0-7ff5-480b-bf46-0be250c8f5e4" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\main.c" Guid="f0f555aa-d2ae-47d3-b90c-41441cf0b34b" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\ICEZ80.cydwr" Guid="78f0acd0-53b4-43ca-b52a-c9e049ce1922" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\TopDesign\TopDesign.cysch" Guid="05fb7773-3767-4aad-b0e9-c2d1b14773d8" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\Jacobi.CpuZ80\ClockTick.h" Guid="54c433ad-8c97-47e4-8804-232f1f5f99ca" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1749, 1030" SelectedTabbedMdiWindow="78f0acd0-53b4-43ca-b52a-c9e049ce1922"><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\TestController.c" Guid="25bc7911-3324-4936-af2b-4b4a196e9a3e" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\CpuController.c" Guid="2e171a68-cff3-4183-aa2b-e047fb7ce81c" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\Memory.c" Guid="c3666e1b-4cfc-47e0-95c5-fd4e2531dbfd" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\TestCpuZ80Host.c" Guid="9ab845a0-7ff5-480b-bf46-0be250c8f5e4" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\main.c" Guid="f0f555aa-d2ae-47d3-b90c-41441cf0b34b" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\ICEZ80.cydwr" Guid="78f0acd0-53b4-43ca-b52a-c9e049ce1922" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\PSoC ICEZ80\ICEZ80.cydsn\TopDesign\TopDesign.cysch" Guid="05fb7773-3767-4aad-b0e9-c2d1b14773d8" /><DocumentWindow Key="C:\Users\marc\Documents\MyProjects\Zalt\Zingularity\Source\Jacobi.CpuZ80\ClockTick.h" Guid="54c433ad-8c97-47e4-8804-232f1f5f99ca" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

@@ -40,3 +40,7 @@ https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide
 
 LSP Specs
 https://microsoft.github.io/language-server-protocol/
+
+## Bugs
+
+- Bundling: https://stackoverflow.com/questions/57521211/how-to-correctly-bundle-a-vscode-extension-using-webpack/67250121#67250121

@@ -2,10 +2,12 @@ import { AssemblyNode } from "./CodeModel";
 import * as antlr4 from "antlr4ts";
 import { ParseTreeWalker } from "antlr4ts/tree/ParseTreeWalker";
 import { z80asmLexer } from "./z80asmLexer";
-import { z80asmParser, AsmContext, FileContext } from "./z80asmParser";
-import { ParserRuleContext, DefaultErrorStrategy, Parser, RecognitionException, NoViableAltException, InputMismatchException, FailedPredicateException } from "antlr4ts";
+import { z80asmParser } from "./z80asmParser";
+import { 
+    Parser, ParserRuleContext, DefaultErrorStrategy, 
+    RecognitionException, NoViableAltException, InputMismatchException, FailedPredicateException
+} from "antlr4ts";
 import { GrammarListener } from "./GrammarListener";
-import { applyMixins } from "../utils";
 
 class GrammarErrorHandler extends DefaultErrorStrategy {
     private readonly mute: boolean;
@@ -45,13 +47,6 @@ class GrammarErrorHandler extends DefaultErrorStrategy {
             super.reportMissingToken(recognizer);
         }
     }
-}
-
-// directs the Antlr4 parser for language dialects based on flags
-export abstract class GrammarProfile extends Parser
-{
-    public z88dk: boolean = false;
-    public zmac: boolean = false;
 }
 
 export class GrammarParser {

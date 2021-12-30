@@ -1,0 +1,36 @@
+{
+	"scopeName": "source.z88dk",
+	"name": "Z88DK Assembler",
+	"patterns": [
+		{ "include": "#comment" },
+		{ "include": "#mnemonic-lower" },
+		{ "include": "#mnemonic-upper" },
+		{ "include": "#condition-lower" },
+		{ "include": "#condition-upper" },
+		{ "include": "#reg-lower" },
+		{ "include": "#reg-upper" },
+		{ "include": "#directive-lower" },
+		{ "include": "#directive-upper" },
+		{ "include": "#label" },
+		{ "include": "#identifier" },
+		{ "include": "#operator" },
+		{ "include": "#dec" },
+		{ "include": "#hex" }
+	],
+	"repository": {
+		"comment": { "name": "comment.line", "match": ";.*$" },
+		"mnemonic-lower": { "name": "keyword.other.mnemonic", "match": "\\b(ld|ldi|ldir|ldd|lddr|push|pop|ex|exx|add|adc|sub|sbc|and|or|xor|cp|cpd|cpdr|cpi|cpir|inc|dec|daa|neg|cpl|rlca|rla|rrca|rra|rlc|rl|rld|rrc|rr|rrd|sla|sra|srl|bit|res|set|ccf|scf|nop|halt|di|ei|jp|jr|djnz|call|ret|reti|retn|rst|im|in|ini|inir|ind|indr|out|outi|otir|outd|otdr)\\b" },
+		"mnemonic-upper": { "name": "keyword.other.mnemonic", "match": "\\b(LD|LDI|LDIR|LDD|LDDR|PUSH|POP|EX|EXX|ADD|ADC|SUB|SBC|AND|OR|XOR|CP|CPD|CPDR|CPI|CPIR|INC|DEC|DAA|NEG|CPL|RLCA|RLA|RRCA|RRA|RLC|RL|RLD|RRC|RR|RRD|SLA|SRA|SRL|BIT|RES|SET|CCF|SCF|NOP|HALT|DI|EI|JP|JR|DJNZ|CALL|RET|RETI|RETN|RST|IM|IN|INI|INIR|IND|INDR|OUT|OUTI|OTIR|OUTD|OTDR)\\b" },
+		"condition-lower": { "name": "support.other.z80", "match": "\\b(c|m|nc|nz|p|pe|po|z)\\b," },
+		"condition-upper": { "name": "support.other.z80", "match": "\\b(C|M|NC|NZ|P|PE|PO|Z)\\b," },
+		"reg-lower": { "name": "support.class.z80", "match": "\\b(a|b|c|d|e|h|l|i|r|ixh|ixl|iyh|iyl|af|bc|de|hl|ix|iy|sp)\\b" },
+		"reg-upper": { "name": "support.class.z80", "match": "\\b(A|B|C|D|E|H|L|I|R|IXh|IXl|IYh|IYl|AF|BC|DE|HL|IX|IY|SP)\\b" },
+		"directive-lower": { "name": "keyword.control.directive", "match": "\\b(lston|lstoff|org|allign|defq|defc|defm|defb|defs|defw|defl|defvars|defgroup|extern|public|global|define|xlib|xdef|xref|include|binary|if|ifdef|ifndef|else|endif|phase|unphase|module|section)\\b" },
+		"directive-upper": { "name": "keyword.control.directive", "match": "\\b(LSTON|LSTOFF|ORG|ALLIGN|DEFQ|DEFC|DEFM|DEFB|DEFS|DEFW|DEFL|DEFVARS|DEFGROUP|EXTERN|PUBLIC|GLOBAL|DEFINE|XLIB|XDEF|XREF|INCLUDE|BINARY|IF|IFDEF|IFNDEF|ELSE|ENDIF|PHASE|UNPHASE|MODULE|SECTION)\\b" },
+		"label": { "name": "entity.name.tag.z80", "match": "^\\s*(\\.[a-zA-Z_][a-zA-Z_0-9\\@]*)|^\\s*([a-zA-Z_][a-zA-Z_0-9\\@]*\\:)" },
+		"identifier": { "name": "meta.identifier", "match": "\\b([a-zA-Z_][a-zA-Z_0-9\\@]*)\\b" },
+		"operator": { "name": "keyword.operator", "match": "\\+|-|\\*|\\/" },
+		"dec": { "name": "constant.numeric", "match": "\\b[0-9]+\\b" },
+		"hex": { "name": "constant.numeric.hex", "match": "\\$[0-9a-fA-F]+\\b|[0-9a-fA-F]+h" }
+	}
+}

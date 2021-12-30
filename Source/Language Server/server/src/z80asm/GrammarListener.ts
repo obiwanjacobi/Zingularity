@@ -151,13 +151,13 @@ export class GrammarListener implements z80asmListener {
     }
 
     exitDirective_elseblock(ctx: Directive_elseblockContext) {
-        this.nodes.push(new Directive(ctx.DIRECTIVEelse().text, undefined, undefined, 
+        this.nodes.push(new Directive("ELSE", undefined, undefined, 
             toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
         this.skipDirective = true;
     }
 
     exitDirective_endif(ctx: Directive_endifContext) {
-        this.nodes.push(new Directive(ctx.DIRECTIVEendif().text, undefined, undefined, 
+        this.nodes.push(new Directive("IF", undefined, undefined, 
             toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
         this.skipDirective = true;
     }

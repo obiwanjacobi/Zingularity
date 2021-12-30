@@ -1,12 +1,17 @@
 import { GrammarParser } from "../../z80asm/GrammarParser";
 import { AssemblyNodeKind, Expression, Instruction, BlockComment } from "../../z80asm/CodeModel";
+import { z80asmParser } from "../../z80asm/z80asmParser";
 
 const newLine = "\r\n";
+
+function createParser(code: string): z80asmParser {
+    return GrammarParser.createParser(code, "z80asm");
+}
 
 describe("Grammar Parser - Instructions", () => {
 
     it("LD A, n", () => {
-        const parser = GrammarParser.createParser("ld a, 0" + newLine);
+        const parser = createParser("ld a, 0" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -16,7 +21,7 @@ describe("Grammar Parser - Instructions", () => {
     });
 
     it("LD A, n (numeric)", () => {
-        const parser = GrammarParser.createParser("ld a, 0" + newLine);
+        const parser = createParser("ld a, 0" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -29,7 +34,7 @@ describe("Grammar Parser - Instructions", () => {
     });
 
     it("LD A, n (symbol)", () => {
-        const parser = GrammarParser.createParser("ld a, symbol" + newLine);
+        const parser = createParser("ld a, symbol" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -42,7 +47,7 @@ describe("Grammar Parser - Instructions", () => {
     });
 
     it("LD HL, nn (numeric)", () => {
-        const parser = GrammarParser.createParser("ld hl, $4042" + newLine);
+        const parser = createParser("ld hl, $4042" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -55,7 +60,7 @@ describe("Grammar Parser - Instructions", () => {
     });
 
     it("RST 28", () => {
-        const parser = GrammarParser.createParser("rst 28" + newLine);
+        const parser = createParser("rst 28" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -65,7 +70,7 @@ describe("Grammar Parser - Instructions", () => {
     });
 
     it("error ld (hl), sp (instruction does not exist)", () => {
-        const parser = GrammarParser.createParser("ld (hl), sp" + newLine);
+        const parser = createParser("ld (hl), sp" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -75,7 +80,7 @@ describe("Grammar Parser - Instructions", () => {
     });
 
     it("partial instrucion", () => {
-        const parser = GrammarParser.createParser("de" + newLine);
+        const parser = createParser("de" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 

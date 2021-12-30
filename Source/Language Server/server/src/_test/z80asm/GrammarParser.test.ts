@@ -1,25 +1,30 @@
 import { GrammarParser } from "../../z80asm/GrammarParser";
 import { AssemblyNodeKind, Expression, Instruction, BlockComment } from "../../z80asm/CodeModel";
+import { z80asmParser } from "../../z80asm/z80asmParser";
 
 const newLine = "\r\n";
 
+function createParser(code: string): z80asmParser {
+    return GrammarParser.createParser(code, "z80asm");
+}
+
 describe("Grammar Parser", () => {
-    it("character single quote", () => {
-        const parser = GrammarParser.createParser("'x'");
-        const tree = parser.character();
+    // it("character single quote", () => {
+    //     const parser = createParser("'x'");
+    //     const tree = parser.character();
 
-        expect(tree.text).toBe("'x'");
-    });
+    //     expect(tree.text).toBe("'x'");
+    // });
 
-    it("string double quote", () => {
-        const parser = GrammarParser.createParser("\"Hello\"");
-        const tree = parser.string();
+    // it("string double quote", () => {
+    //     const parser = createParser("\"Hello\"");
+    //     const tree = parser.string();
 
-        expect(tree.text).toBe("\"Hello\"");
-    });
+    //     expect(tree.text).toBe("\"Hello\"");
+    // });
 
     it("comment", () => {
-        const parser = GrammarParser.createParser("; comment" + newLine);
+        const parser = createParser("; comment" + newLine);
         const tree = parser.comment();
 
         expect(tree.text).toBe("; comment");
@@ -27,7 +32,7 @@ describe("Grammar Parser", () => {
 
 
     it("expression", () => {
-        const parser = GrammarParser.createParser("(8+3)*4");
+        const parser = createParser("(8+3)*4");
         const tree = parser.expression();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -65,7 +70,7 @@ describe("Grammar Parser", () => {
     //
 
     it("asm comment", () => {
-        const parser = GrammarParser.createParser("; comment" + newLine);
+        const parser = createParser("; comment" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -74,7 +79,7 @@ describe("Grammar Parser", () => {
     });
 
     it("asm comment empty", () => {
-        const parser = GrammarParser.createParser(";" + newLine);
+        const parser = createParser(";" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -86,7 +91,7 @@ describe("Grammar Parser", () => {
     });
 
     it("asm comment /w repeated ;", () => {
-        const parser = GrammarParser.createParser(";;;;;;;" + newLine);
+        const parser = createParser(";;;;;;;" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -98,7 +103,7 @@ describe("Grammar Parser", () => {
     });
 
     it("asm label begin", () => {
-        const parser = GrammarParser.createParser(".label" + newLine);
+        const parser = createParser(".label" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -109,7 +114,7 @@ describe("Grammar Parser", () => {
     });
 
     it("asm label end", () => {
-        const parser = GrammarParser.createParser("label:" + newLine);
+        const parser = createParser("label:" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -120,7 +125,7 @@ describe("Grammar Parser", () => {
     });
 
     it("blockcomment", () => {
-        const parser = GrammarParser.createParser(";; comment" + newLine);
+        const parser = createParser(";; comment" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -134,7 +139,7 @@ describe("Grammar Parser", () => {
     });
 
     it("blockcomment", () => {
-        const parser = GrammarParser.createParser(";;\t@param hl comment comment" + newLine);
+        const parser = createParser(";;\t@param hl comment comment" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -150,7 +155,7 @@ describe("Grammar Parser", () => {
     });
 
     it("blockcomment - 2 lines", () => {
-        const parser = GrammarParser.createParser(";;\t@param hl comment comment" + newLine + ";; @returns a bla bla" + newLine);
+        const parser = createParser(";;\t@param hl comment comment" + newLine + ";; @returns a bla bla" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 

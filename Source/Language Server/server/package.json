@@ -1,7 +1,7 @@
 {
 	"name": "zingularity-server",
-	"description": "Zingularity VSCode Language Server.",
-	"version": "0.10.0",
+	"description": "Zingularity Z80 Language Server.",
+	"version": "0.11.0",
 	"author": "Marc Jacobi",
 	"license": "LGPL-2.1-only",
 	"publisher": "JacobiSoftware",
@@ -15,7 +15,8 @@
 	"dependencies": {
 		"antlr4": "^4.9.1",
 		"antlr4ts": "^0.5.0-alpha.4",
-		"vscode-languageserver": "^5.2.1"
+		"vscode-languageserver": "^7.0.0",
+		"vscode-languageserver-textdocument": "^1.0.1"
 	},
 	"scripts": {}
 }

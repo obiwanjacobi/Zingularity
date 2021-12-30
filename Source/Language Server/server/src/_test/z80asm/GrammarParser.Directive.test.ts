@@ -1,13 +1,18 @@
 import { GrammarParser } from "../../z80asm/GrammarParser";
 import { AssemblyNodeKind, Directive } from "../../z80asm/CodeModel";
 import { nodeAs } from "./GrammarParserHelpers";
+import { z80asmParser } from "../../z80asm/z80asmParser";
 
 const newLine = "\r\n";
+
+function createParser(code: string): z80asmParser {
+    return GrammarParser.createParser(code, "z80asm");
+}
 
 describe("Grammar Parser - Directives", () => {
 
     it("defc", () => {
-        const parser = GrammarParser.createParser("DEFC symbol = 42" + newLine);
+        const parser = createParser("DEFC symbol = 42" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -34,7 +39,7 @@ describe("Grammar Parser - Directives", () => {
     });
 
     it("defm", () => {
-        const parser = GrammarParser.createParser("DEFM \"Hello\", '.', 0" + newLine);
+        const parser = createParser("DEFM \"Hello\", '.', 0" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -46,7 +51,7 @@ describe("Grammar Parser - Directives", () => {
     });
 
     it("defb", () => {
-        const parser = GrammarParser.createParser("DEFB symbol, (2+3), 0" + newLine);
+        const parser = createParser("DEFB symbol, (2+3), 0" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -59,7 +64,7 @@ describe("Grammar Parser - Directives", () => {
     
 
     it(".label defb", () => {
-        const parser = GrammarParser.createParser(".label defb    5,3,12,1,0,7,2,4" + newLine);
+        const parser = createParser(".label defb    5,3,12,1,0,7,2,4" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -73,7 +78,7 @@ describe("Grammar Parser - Directives", () => {
     });
 
     it("public", () => {
-        const parser = GrammarParser.createParser("public name1, name2, name3" + newLine);
+        const parser = createParser("public name1, name2, name3" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -92,7 +97,7 @@ describe("Grammar Parser - Directives", () => {
     });
 
     it("if (symbol = 0)", () => {
-        const parser = GrammarParser.createParser("if (symbol=0)\r\n; comment\r\nendif\r\n");
+        const parser = createParser("if (symbol=0)\r\n; comment\r\nendif\r\n");
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -113,7 +118,7 @@ describe("Grammar Parser - Directives", () => {
     });
 
     it("if (100-symbol)", () => {
-        const parser = GrammarParser.createParser("if (100-symbol) > 0\r\n; comment\r\nendif\r\n");
+        const parser = createParser("if (100-symbol) > 0\r\n; comment\r\nendif\r\n");
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -134,7 +139,7 @@ describe("Grammar Parser - Directives", () => {
     });
 
     it("ifdef symbol", () => {
-        const parser = GrammarParser.createParser("ifdef symbol\r\n; comment\r\nendif\r\n");
+        const parser = createParser("ifdef symbol\r\n; comment\r\nendif\r\n");
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -153,7 +158,7 @@ describe("Grammar Parser - Directives", () => {
     });
 
     it("ifdef symbol else", () => {
-        const parser = GrammarParser.createParser("ifdef symbol\r\n; comment\r\nelse\r\nendif\r\n");
+        const parser = createParser("ifdef symbol\r\n; comment\r\nelse\r\nendif\r\n");
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 
@@ -176,7 +181,7 @@ describe("Grammar Parser - Directives", () => {
     });
 
     it("org + param", () => {
-        const parser = GrammarParser.createParser("org $1000" + newLine);
+        const parser = createParser("org $1000" + newLine);
         const tree = parser.asm();
         const nodes = GrammarParser.createAssemblyNodes(tree);
 

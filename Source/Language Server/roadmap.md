@@ -9,7 +9,7 @@ Plans and Ideas.
 * Hilight the instruction that set the flag the current instruction is testing for.
 * Support Workspaces (research topic)
 * Instruction Bytes and Cycles in gutters in the editor
-    This could help? https://github.com/obiwanjacobi/vscode-extension-samples/tree/master/virtual-document-sample
+    This could help? https://github.com/microsoft/vscode-extension-samples/tree/main/virtual-document-sample
 
 ## Structured Comment Blocks
 

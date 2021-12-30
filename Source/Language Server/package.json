@@ -1,9 +1,9 @@
 {
-	"name": "zingularity",
+	"name": "Zingularity",
 	"description": "Zingularity, a Z80 Assembler IDE",
 	"author": "Marc Jacobi",
 	"license": "LGPL-2.1-only",
-	"version": "0.10.0",
+	"version": "0.11.0",
 	"icon": "images/Zingularity.png",
 	"galleryBanner": {
 		"theme": "dark",
@@ -23,16 +23,26 @@
 		"multi-root ready"
 	],
 	"engines": {
-		"vscode": "^1.33.0"
+		"vscode": "^1.52.0"
 	},
 	"activationEvents": [
-		"onLanguage:z80asm"
+		"onLanguage:z80asm",
+		"onLanguage:z88dk"
 	],
 	"main": "./client/out/extension",
 	"contributes": {
 		"languages": [
 			{
 				"id": "z80asm",
+				"extensions": [
+					".z80",
+					".asm",
+					".inc",
+					".S"
+				]
+			},
+			{
+				"id": "z88dk",
 				"extensions": [
 					".z80",
 					".asm",
@@ -46,6 +56,11 @@
 				"language": "z80asm",
 				"scopeName": "source.z80asm",
 				"path": "./syntaxes/z80.tm.json"
+			},
+			{
+				"language": "z88dk",
+				"scopeName": "source.z88dk",
+				"path": "./syntaxes/z88dk.json"
 			}
 		],
 		"configuration": {

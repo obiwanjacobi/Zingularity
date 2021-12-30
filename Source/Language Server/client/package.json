@@ -2,7 +2,7 @@
 	"name": "zingularity-client",
 	"description": "Zingularity VSCode Language Client.",
 	"author": "Marc Jacobi",
-	"version": "0.10.0",
+	"version": "0.11.0",
 	"license": "LGPL-2.1-only",
 	"publisher": "JacobiSoftware",
 	"repository": {
@@ -10,16 +10,14 @@
 		"url": "https://github.com/obiwanjacobi/Zingularity.git"
 	},
 	"engines": {
-		"vscode": "^1.33.0"
+		"vscode": "^1.52.0"
 	},
-	"scripts": {
-		"update-vscode": "vscode-install",
-		"postinstall": "vscode-install"
-	},
+	"scripts": {},
 	"dependencies": {
 		"vscode-languageclient": "^7.0.0"
 	},
 	"devDependencies": {
-		"vscode": "^1.1.37"
+		"@types/vscode": "^1.52.0",
+		"@vscode/test-electron": "^1.6.1"
 	}
 }

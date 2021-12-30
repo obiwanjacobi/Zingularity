@@ -1,6 +1,8 @@
 # Zingularity
 
-Z80 assembler editor support.
+Z80 assembler editor support for:
+
+* z88dk
 
 ## Functionality
 

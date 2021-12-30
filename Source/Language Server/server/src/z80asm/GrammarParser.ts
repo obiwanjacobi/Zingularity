@@ -47,38 +47,40 @@ class GrammarErrorHandler extends DefaultErrorStrategy {
     }
 }
 
-export interface GrammarProfile
+// directs the Antlr4 parser for language dialects based on flags
+export abstract class GrammarProfile extends Parser
 {
-    z88dk: boolean;
-    zmac: boolean;
+    public z88dk: boolean = false;
+    public zmac: boolean = false;
 }
-
-function ExtendWithProfile() {
-    return class GrammarParserWithProfile extends z80asmParser
-    {
-        z88dk: boolean = false;
-        zmac: boolean = false;
-    }
-}
-
-// type: z80Parser + GrammarProfile
-const GrammarParserWithProfileClass = ExtendWithProfile();
 
 export class GrammarParser {
 
-    parse(text: string): AssemblyNode[] {
-        const parser = GrammarParser.createParser(text);
+    parse(text: string, languageId: string): AssemblyNode[] {
+        const parser = GrammarParser.createParser(text, languageId);
         const tree = parser.file();
         return GrammarParser.createAssemblyNodes(tree);
     }
 
-    static createParser(text: string): z80asmParser {
+    static createParser(text: string, languageId: string): z80asmParser {
         const chars = antlr4.CharStreams.fromString(text);
         const lexer = new z80asmLexer(chars);
         const tokens  = new antlr4.CommonTokenStream(lexer);
-        const parser = new GrammarParserWithProfileClass(tokens);
+        const parser = new z80asmParser(tokens);
         parser.buildParseTree = true;
         parser.errorHandler = new GrammarErrorHandler();
+
+        switch (languageId)
+        {
+            case "z88dk":
+                parser.z88dk = true;
+                break;
+            default:
+            case "z80asm":
+                parser.z88dk = true;
+                break;
+        }
+
         return parser;
     }
 

@@ -1,6 +1,5 @@
 import {
     createConnection,
-    TextDocument,
     TextDocuments,
     DiagnosticSeverity,
     ProposedFeatures,
@@ -14,8 +13,10 @@ import {
     SymbolKind,
     DocumentFormattingParams,
     Range,
-} from "vscode-languageserver";
-//import { TextDocument } from "vscode-languageserver-textdocument";
+    TextDocumentSyncKind,
+    TextDocumentChangeEvent,
+} from "vscode-languageserver/node";
+import { TextDocument } from "vscode-languageserver-textdocument";
 import { AssemblyDocument, AssemblyNodeKind, Instruction, Label, Directive } from "./z80asm/CodeModel";
 import { buildCompletionList } from "./z80asm/InstructionNavigator";
 import { CodeModelManager, toRange, rangeFrom } from "./z80asm/CodeModelManager";
@@ -32,7 +33,7 @@ let connection = createConnection(ProposedFeatures.all);
 
 // Create a simple text document manager. The text document manager
 // supports full document sync only
-const documents: TextDocuments = new TextDocuments();
+const documents: TextDocuments<TextDocument> = new TextDocuments(TextDocument);
 // manages parsed AssemblyNode documents
 const codeModelMgr: CodeModelManager = new CodeModelManager();
 const grammarParser = new GrammarParser();
@@ -62,7 +63,7 @@ connection.onInitialize((params: InitializeParams) => {
     return {
         // Tell the client what features the server supports
         capabilities: {
-            textDocumentSync: documents.syncKind,
+            textDocumentSync: TextDocumentSyncKind.Incremental,
             completionProvider: {
                 triggerCharacters: ["\t", " ", ",", "("],
                 resolveProvider: true
@@ -128,7 +129,7 @@ connection.onDidChangeConfiguration(change => {
         documentSettings.clear();
     } else {
         globalSettings = <ZingularitySettings> (
-            (change.settings.languageServerExample || defaultSettings)
+            (change.settings.zingularity || defaultSettings)
         );
     }
 
@@ -152,19 +153,20 @@ function getDocumentSettings(resource: string): Thenable<ZingularitySettings> {
 }
 
 // Only keep settings for open documents
-documents.onDidClose(e => {
+documents.onDidClose((e: TextDocumentChangeEvent<TextDocument>) => {
     documentSettings.delete(e.document.uri);
 });
 
 // The content of a text document has changed. This event is emitted
 // when the text document first opened or when its content has changed.
-documents.onDidChangeContent(change => {
+documents.onDidChangeContent((change: TextDocumentChangeEvent<TextDocument>) => {
     validateTextDocument(change.document);
 });
 
 async function validateTextDocument(textDocument: TextDocument): Promise<void> {
+    
     const doc: AssemblyDocument = { 
-        nodes: grammarParser.parse(textDocument.getText()), 
+        nodes: grammarParser.parse(textDocument.getText(), textDocument.languageId), 
         uri: textDocument.uri, 
         version: textDocument.version 
     };

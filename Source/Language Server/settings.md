@@ -1,6 +1,6 @@
 # Zingularity Settings
 
-See also `package.json/contribues/configuration`.
+See also `package.json/contributes/configuration`.
 
 `zingularity.maxNumberOfProblems`: Limits the number of problems reported for a single file.
 

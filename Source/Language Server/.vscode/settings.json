@@ -22,6 +22,7 @@
         "visitors": true
     },
     "cSpell.ignoreWords": [
-        "antlr"
-    ]
+        "antlr",
+		"zingularity"
+	]
 }

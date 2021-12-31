@@ -76,7 +76,7 @@ describe("Grammar Parser - Instructions", () => {
 
         expect(nodes.length).toBe(1);
         expect(nodes[0].kind).toBe(AssemblyNodeKind.Error);
-        expect(nodes[0].text).toBe("ld (hl), sp");
+        expect(nodes[0].text).toContain("ld (hl), sp");
     });
 
     it("partial instrucion", () => {

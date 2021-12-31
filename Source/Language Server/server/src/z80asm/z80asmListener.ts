@@ -65,6 +65,8 @@ import { Register16_grpspixContext } from "./z80asmParser";
 import { Register16_grpspiyContext } from "./z80asmParser";
 import { Register16_exContext } from "./z80asmParser";
 import { LabelContext } from "./z80asmParser";
+import { Z88dk_labelContext } from "./z80asmParser";
+import { Zmac_labelContext } from "./z80asmParser";
 import { SymbolContext } from "./z80asmParser";
 import { BlockcommentContext } from "./z80asmParser";
 import { CommentContext } from "./z80asmParser";
@@ -716,6 +718,28 @@ export interface z80asmListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	exitLabel?: (ctx: LabelContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.z88dk_label`.
+	 * @param ctx the parse tree
+	 */
+	enterZ88dk_label?: (ctx: Z88dk_labelContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.z88dk_label`.
+	 * @param ctx the parse tree
+	 */
+	exitZ88dk_label?: (ctx: Z88dk_labelContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.zmac_label`.
+	 * @param ctx the parse tree
+	 */
+	enterZmac_label?: (ctx: Zmac_labelContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.zmac_label`.
+	 * @param ctx the parse tree
+	 */
+	exitZmac_label?: (ctx: Zmac_labelContext) => void;
 
 	/**
 	 * Enter a parse tree produced by `z80asmParser.symbol`.

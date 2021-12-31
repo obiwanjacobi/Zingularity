@@ -151,13 +151,13 @@ export class GrammarListener implements z80asmListener {
     }
 
     exitDirective_elseblock(ctx: Directive_elseblockContext) {
-        this.nodes.push(new Directive("ELSE", undefined, undefined, 
+        this.nodes.push(new Directive(ctx.text, undefined, undefined, 
             toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
         this.skipDirective = true;
     }
 
     exitDirective_endif(ctx: Directive_endifContext) {
-        this.nodes.push(new Directive("IF", undefined, undefined, 
+        this.nodes.push(new Directive(ctx.text, undefined, undefined, 
             toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
         this.skipDirective = true;
     }
@@ -208,26 +208,37 @@ export class GrammarListener implements z80asmListener {
     }
 
     visitErrorNode(error: ErrorNode) {
-        this.removeDuplicateError(error.payload.line);
-        this.nodes.push(new AsmError(error.text, error.text, error.payload.line, error.payload.charPositionInLine));
+        this.addAsmError(error.text, error.text, error.payload.line, error.payload.charPositionInLine);
     }
 
-    private removeDuplicateError(line: number) {
+    private addAsmError(message: string, token: string, line: number, column: number) {
+        this.nodes.push(this.createAsmError(message, token, line, column));
+    }
+
+    private createAsmError(message: string, token: string, line: number, column: number): AsmError {
+        const err = this.removeErrorAt(line);
+        if (err === undefined)
+            return new AsmError(message, token, line, column);
+        else
+            return new AsmError(err.message + " " + message, err.text + " " + token, err.line, err.column);
+    }
+
+    private removeErrorAt(line: number): AsmError | undefined {
         if (this.nodes.length > 0) {
             const lastNode = this.nodes[this.nodes.length - 1];
             if (lastNode.kind === AssemblyNodeKind.Error &&
                 lastNode.line === line) {
                     // remove last error on same line
-                    this.nodes.pop();
+                    return <AsmError> this.nodes.pop();
                 }
         }
+        return undefined;
     }
-    
+
     private hasException(ctx: ParserRuleContext): boolean {
         const exc = this.getException(ctx);
         if (exc) {
-            this.removeDuplicateError(ctx.start.line);
-            this.nodes.push(new AsmError(toErrorMessage(exc), toString(ctx), ctx.start.line, ctx.start.charPositionInLine));
+            this.addAsmError(toErrorMessage(exc), toString(ctx), ctx.start.line, ctx.start.charPositionInLine);
             return true;
         }
         return false;

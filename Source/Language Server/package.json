@@ -27,7 +27,8 @@
 	},
 	"activationEvents": [
 		"onLanguage:z80asm",
-		"onLanguage:z88dk"
+		"onLanguage:z88dk",
+		"onLanguage:zmac"
 	],
 	"main": "./client/out/extension",
 	"contributes": {
@@ -49,6 +50,16 @@
 					".inc",
 					".S"
 				]
+			},
+			{
+				"id": "zmac",
+				"extensions": [
+					".z80",
+					".asm",
+					".inc",
+					".S",
+					".z"
+				]
 			}
 		],
 		"grammars": [
@@ -61,6 +72,11 @@
 				"language": "z88dk",
 				"scopeName": "source.z88dk",
 				"path": "./syntaxes/z88dk.json"
+			},
+			{
+				"language": "zmac",
+				"scopeName": "source.zmac",
+				"path": "./syntaxes/zmac.json"
 			}
 		],
 		"configuration": {

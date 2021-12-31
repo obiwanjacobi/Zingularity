@@ -1,5 +1,5 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; Z80 ASM Instruction test file
+; z88dk Z80 ASM  test file
 ; Test all instructions and addressing modes.
 ; Processor: Z80
 ;

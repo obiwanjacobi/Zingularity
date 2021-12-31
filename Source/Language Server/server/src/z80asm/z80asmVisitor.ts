@@ -65,6 +65,8 @@ import { Register16_grpspixContext } from "./z80asmParser";
 import { Register16_grpspiyContext } from "./z80asmParser";
 import { Register16_exContext } from "./z80asmParser";
 import { LabelContext } from "./z80asmParser";
+import { Z88dk_labelContext } from "./z80asmParser";
+import { Zmac_labelContext } from "./z80asmParser";
 import { SymbolContext } from "./z80asmParser";
 import { BlockcommentContext } from "./z80asmParser";
 import { CommentContext } from "./z80asmParser";
@@ -491,6 +493,20 @@ export interface z80asmVisitor<Result> extends ParseTreeVisitor<Result> {
 	 * @return the visitor result
 	 */
 	visitLabel?: (ctx: LabelContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.z88dk_label`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitZ88dk_label?: (ctx: Z88dk_labelContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.zmac_label`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitZmac_label?: (ctx: Zmac_labelContext) => Result;
 
 	/**
 	 * Visit a parse tree produced by `z80asmParser.symbol`.

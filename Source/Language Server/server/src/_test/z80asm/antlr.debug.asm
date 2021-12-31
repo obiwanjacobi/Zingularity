@@ -1,1 +1,1 @@
-defc n = $42
+defc n          = 20h

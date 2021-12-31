@@ -65,16 +65,19 @@ export class GrammarParser {
         parser.buildParseTree = true;
         parser.errorHandler = new GrammarErrorHandler();
 
-        switch (languageId)
-        {
-            case "z88dk":
-                parser.z88dk = true;
-                break;
-            default:
-            case "z80asm":
-                parser.z88dk = true;
-                break;
-        }
+        // switch (languageId)
+        // {
+        //     case "zmac":
+        //         parser.zmac = true;
+        //         break;
+        //     case "z88dk":
+        //         parser.z88dk = true;
+        //         break;
+        //     default:
+        //     case "z80asm":
+        //         parser.z88dk = true;
+        //         break;
+        // }
 
         return parser;
     }

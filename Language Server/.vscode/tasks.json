@@ -28,6 +28,17 @@
 			"problemMatcher": [
 				"$tsc-watch"
 			]
+		},
+		{
+			"type": "npm",
+			"script": "antlr",
+			"label": "Generate ANTLR Parser (antlr4ts)",
+			"group": "build",
+			"presentation": {
+				"panel": "dedicated",
+				"reveal": "always"
+			},
+			"problemMatcher": []
 		}
 	]
 }

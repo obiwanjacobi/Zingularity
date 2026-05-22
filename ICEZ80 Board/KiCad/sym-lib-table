@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name ICEZ80)(type Legacy)(uri ${KIPRJMOD}/ICEZ80.lib)(options "")(descr ""))
-)

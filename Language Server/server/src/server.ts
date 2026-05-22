@@ -1,6 +1,5 @@
 import {
     createConnection,
-    TextDocument,
     TextDocuments,
     DiagnosticSeverity,
     ProposedFeatures,
@@ -8,14 +7,15 @@ import {
     DidChangeConfigurationNotification,
     CompletionItem,
     TextDocumentPositionParams,
+    TextDocumentSyncKind,
     Hover,
     Location,
     SymbolInformation,
     SymbolKind,
     DocumentFormattingParams,
     Range,
-} from "vscode-languageserver";
-//import { TextDocument } from "vscode-languageserver-textdocument";
+} from "vscode-languageserver/node";
+import { TextDocument } from "vscode-languageserver-textdocument";
 import { AssemblyDocument, AssemblyNodeKind, Instruction, Label, Directive } from "./z80asm/CodeModel";
 import { buildCompletionList } from "./z80asm/InstructionNavigator";
 import { CodeModelManager, toRange, rangeFrom } from "./z80asm/CodeModelManager";
@@ -32,7 +32,7 @@ let connection = createConnection(ProposedFeatures.all);
 
 // Create a simple text document manager. The text document manager
 // supports full document sync only
-const documents: TextDocuments = new TextDocuments();
+const documents = new TextDocuments<TextDocument>(TextDocument);
 // manages parsed AssemblyNode documents
 const codeModelMgr: CodeModelManager = new CodeModelManager();
 const grammarParser = new GrammarParser();
@@ -62,7 +62,7 @@ connection.onInitialize((params: InitializeParams) => {
     return {
         // Tell the client what features the server supports
         capabilities: {
-            textDocumentSync: documents.syncKind,
+            textDocumentSync: TextDocumentSyncKind.Incremental,
             completionProvider: {
                 triggerCharacters: ["\t", " ", ",", "("],
                 resolveProvider: true

@@ -1,27 +1,34 @@
 .vscode/**
-.testBin/**
 .gitignore
 .vsixmanifest
+.testBin/**
 
-**/node_modules
-**/_test
+# Source files - webpack bundles these into client/out and server/out
+client/src/**
+server/src/**
+
+# Node modules - not needed since webpack bundles all dependencies
+**/node_modules/**
+
+# Build/config artifacts
+**/*.js.map
+**/*.LICENSE.txt
 **/*.ts
-**/*.map
-**/tslint.json
+**/*.tsbuildinfo
 **/tsconfig.json
-**/*.config.json
-**/*.md
+**/webpack.config.js
+**/tslint.json
+**/package-lock.json
+client/package.json
+server/package.json
 *.cmd
 
-!README.md
-!settings.md
+# Test fixtures
+**/_test/**
 
-client/**
-!client/node_modules/**
-!client/out/*.js
-
-server/**
-!server/node_modules/**
-!server/out/*.js
-!server/out/z80asm/*.js
-!server/out/z80asm/*.json
+# Docs (except user-facing ones)
+CHANGELOG.md
+roadmap.md
+todo.md
+info.md
+Poll.md

@@ -247,6 +247,8 @@ directive_defvars
    ;
 defvars_vardecl
    : symbol? DEFVARSsize expression8 comment?
+   | comment
+   | EOL
    ;
 
 directive_defgroup
@@ -254,6 +256,8 @@ directive_defgroup
    ;
 defgroup_symbol
    : symbol (EQUALS expression8)? comment?
+   | comment
+   | EOL
    ;
 
 // directives without any params

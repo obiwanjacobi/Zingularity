@@ -1,8 +1,10 @@
 defvars 0 ; comment on defvars
 {
     var1 ds.b 1 ; comment on var1
+    
     var2 ds.w 2  
     var3 ds.q 1 ; comment on var3
+    ; comment on var4
 }
 
 ; comment bla bla bla bla bla bla bla bla ld a

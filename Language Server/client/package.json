@@ -10,16 +10,13 @@
 		"url": "https://github.com/obiwanjacobi/Zingularity.git"
 	},
 	"engines": {
-		"vscode": "^1.33.0"
+		"vscode": "^1.90.0"
 	},
-	"scripts": {
-		"update-vscode": "vscode-install",
-		"postinstall": "vscode-install"
-	},
+	"scripts": {},
 	"dependencies": {
-		"vscode-languageclient": "^7.0.0"
+		"vscode-languageclient": "^9.0.1"
 	},
 	"devDependencies": {
-		"vscode": "^1.1.37"
+		"@types/vscode": "^1.90.0"
 	}
 }

@@ -1,5 +1,10 @@
 grammar z80asm;
 
+@parser::members {
+    public directiveDot: boolean = false;
+    public directiveDotOptional: boolean = true;
+}
+
 /**
    z88dk z80asm
 
@@ -126,8 +131,8 @@ line
 
 
 directive
-   : ({directiveDot}? DOT |
-      {directiveDotOptional}? DOT?)
+   : ({this.directiveDot}? DOT |
+      {this.directiveDotOptional}? DOT?)
    ( directive_void 
    | directive_file
    | directive_param16
@@ -861,7 +866,7 @@ POWER: '**';
 
 
 OPERATORbit
-    : '&' | '|' | '^' | '~'
+    : '&' | '|' | '^' | '~' | '<<' | '>>'
     ;
 
 

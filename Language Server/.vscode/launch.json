@@ -5,13 +5,14 @@
 			"type": "extensionHost",
 			"request": "launch",
 			"name": "Launch Client",
+			"preLaunchTask": "npm: compile",
 			"runtimeExecutable": "${execPath}",
 			"args": [
 				"--disable-extensions",
-				"--extensionDevelopmentPath=${workspaceRoot}", 
-				"${workspaceRoot}/client/src/_test/testFixture"
+				"--extensionDevelopmentPath=${workspaceFolder}", 
+				"${workspaceFolder}/client/src/_test/testFixture"
 			],
-			"outFiles": ["${workspaceRoot}/client/out/**/*.js"],
+			"outFiles": ["${workspaceFolder}/client/out/**/*.js"],
 		},
 		{
 			"type": "node",
@@ -20,19 +21,19 @@
 			"port": 6009,
 			"restart": true,
 			"trace": true,
-			"outFiles": ["${workspaceRoot}/server/out/**/*.js"]
+			"outFiles": ["${workspaceFolder}/server/out/**/*.js"]
 		},
 		{
 			"type": "node",
 			"request": "launch",
 			"name": "Launch Server",
-			"program": "${workspaceRoot}/server/out/server.js",
+			"program": "${workspaceFolder}/server/out/server.js",
 			"args": [
 				"--node-ipc",
 				"--nolazy",
 				"--inspect-brk=6009"
 			],
-			"outFiles": ["${workspaceRoot}/server/out/**/*.js"],
+			"outFiles": ["${workspaceFolder}/server/out/**/*.js"],
 		},
 		{
 			"name": "Language Server E2E Test",
@@ -40,24 +41,24 @@
 			"request": "launch",
 			"runtimeExecutable": "${execPath}",
 			"args": [
-				"--extensionDevelopmentPath=${workspaceRoot}",
-				"--extensionTestsPath=${workspaceRoot}/client/out/test",
-				"${workspaceRoot}/client/src/_test/testFixture"
+				"--extensionDevelopmentPath=${workspaceFolder}",
+				"--extensionTestsPath=${workspaceFolder}/client/out/_test",
+				"${workspaceFolder}/client/src/_test/testFixture"
 			],
-			"outFiles": ["${workspaceRoot}/client/out/test/**/*.js"]
+			"outFiles": ["${workspaceFolder}/client/out/_test/**/*.js"]
 		},
 		{
 			"type": "node",
 			"request": "launch",
 			"name": "Jest Tests",
-			"program": "${workspaceRoot}/node_modules/jest/bin/jest",
+			"program": "${workspaceFolder}/node_modules/jest/bin/jest",
 			"args": [
 				"-i"
 			],
 			"internalConsoleOptions": "openOnSessionStart",
 			"console": "integratedTerminal",
 			"outFiles": [
-				"${workspaceRoot}/server/out/_test/**/*.js"
+				"${workspaceFolder}/server/out/_test/**/*.js"
 			]
 		},
 		{

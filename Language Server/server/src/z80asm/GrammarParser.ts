@@ -57,7 +57,7 @@ function ExtendWithProfile() {
     return class GrammarParserWithProfile extends z80asmParser
     {
         directiveDot: boolean = false;
-        directiveDotOptional: boolean = false;
+        directiveDotOptional: boolean = true;
     }
 }
 

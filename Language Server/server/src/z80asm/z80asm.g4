@@ -79,9 +79,9 @@ grammar z80asm;
    DEFQ name <32-bit expression> (float)
 
    (struct)
-   DEFVARS <16-bit expression> '{' [<name>] [<storage_size> <size_multiplier>]'}'
-   DEFVARS Z80asm_vars
-    {
+   DEFVARS <16-bit expression> '{' [<name>] [<storage_size> <size_multiplier>] '}'
+   DEFVARS $4000 (or 0 or -1)
+   {
      RuntimeFlags1 ds.b 1 ; reserve 1 byte
      RuntimeFlags2 ds.b 1
      RuntimeFlags3 ds.b 1
@@ -91,8 +91,7 @@ grammar z80asm;
      datestamp_src ds.b 6 ; reserve 6 bytes
      datestamp_obj ds.b 6
      TOTALERRORS ds.l 1 ; reserve 4 bytes
-    }
-
+   }
 
    (enums)
    DEFGROUP '{' name {',' name ['=' <8-bit expression>]} '}'
@@ -147,6 +146,9 @@ directive
    | directive_ifdef
    | directive_elseblock
    | directive_endif
+   | directive_phase
+   | directive_defvars
+   | directive_defgroup
    );
 
 
@@ -236,9 +238,23 @@ directive_endif
 
 
 directive_phase
-   : DIRECTIVEphase expression16 comment? asm DIRECTIVEunphase
+   : DIRECTIVEphase expression16 comment? EOL asm DIRECTIVEunphase
    ;
 
+
+directive_defvars
+   : DIRECTIVEdefvars expression16 comment? EOL? '{' EOL? (defvars_vardecl EOL?)+ '}'
+   ;
+defvars_vardecl
+   : symbol? DEFVARSsize expression8 comment?
+   ;
+
+directive_defgroup
+   : DIRECTIVEdefgroup EOL? '{' EOL? defgroup_symbol EOL? (COMMA EOL? defgroup_symbol EOL?)* '}'
+   ;
+defgroup_symbol
+   : symbol (EQUALS expression8)? comment?
+   ;
 
 // directives without any params
 DIRECTIVEvoid
@@ -291,9 +307,18 @@ DIRECTIVEblock
    ;
 
 
-// TODO: directives to sort out
-DIRECTIVEtodo
-   : (D E F V A R S) | (D E F G R O U P)
+DIRECTIVEdefvars
+   : (D E F V A R S)
+   ;
+
+
+DEFVARSsize
+   : (D S) DOT (B | W | P | Q)
+   ;
+
+
+DIRECTIVEdefgroup
+   : (D E F G R O U P)
    ;
 
 

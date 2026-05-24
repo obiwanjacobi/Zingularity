@@ -3,7 +3,7 @@
 	"description": "Zingularity, a Z80 Assembler IDE",
 	"author": "Marc Jacobi",
 	"license": "LGPL-2.1-only",
-	"version": "0.10.1",
+	"version": "0.10.4",
 	"icon": "images/Zingularity.png",
 	"galleryBanner": {
 		"theme": "dark",

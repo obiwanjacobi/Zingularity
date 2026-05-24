@@ -1,8 +1,8 @@
 {
 	"editor.insertSpaces": true,
 	"tslint.enable": true,
-	"typescript.tsc.autoDetect": "off",
-	"typescript.preferences.quoteStyle": "double",
+	"ts.tsc.autoDetect": "off",
+	"ts.preferences.quoteStyle": "double",
 	"files.exclude": {
 		"**/.git": true,
 		"**/.svn": true,

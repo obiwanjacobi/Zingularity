@@ -25,6 +25,10 @@ import { Directive_ifblockContext } from "./z80asmParser";
 import { Directive_elseblockContext } from "./z80asmParser";
 import { Directive_endifContext } from "./z80asmParser";
 import { Directive_phaseContext } from "./z80asmParser";
+import { Directive_defvarsContext } from "./z80asmParser";
+import { Defvars_vardeclContext } from "./z80asmParser";
+import { Directive_defgroupContext } from "./z80asmParser";
+import { Defgroup_symbolContext } from "./z80asmParser";
 import { InstructionContext } from "./z80asmParser";
 import { Instruction_voidContext } from "./z80asmParser";
 import { Instruction_ld8Context } from "./z80asmParser";
@@ -243,6 +247,34 @@ export interface z80asmVisitor<Result> extends ParseTreeVisitor<Result> {
 	 * @return the visitor result
 	 */
 	visitDirective_phase?: (ctx: Directive_phaseContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.directive_defvars`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitDirective_defvars?: (ctx: Directive_defvarsContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.defvars_vardecl`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitDefvars_vardecl?: (ctx: Defvars_vardeclContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.directive_defgroup`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitDirective_defgroup?: (ctx: Directive_defgroupContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.defgroup_symbol`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitDefgroup_symbol?: (ctx: Defgroup_symbolContext) => Result;
 
 	/**
 	 * Visit a parse tree produced by `z80asmParser.instruction`.

@@ -25,6 +25,10 @@ import { Directive_ifblockContext } from "./z80asmParser";
 import { Directive_elseblockContext } from "./z80asmParser";
 import { Directive_endifContext } from "./z80asmParser";
 import { Directive_phaseContext } from "./z80asmParser";
+import { Directive_defvarsContext } from "./z80asmParser";
+import { Defvars_vardeclContext } from "./z80asmParser";
+import { Directive_defgroupContext } from "./z80asmParser";
+import { Defgroup_symbolContext } from "./z80asmParser";
 import { InstructionContext } from "./z80asmParser";
 import { Instruction_voidContext } from "./z80asmParser";
 import { Instruction_ld8Context } from "./z80asmParser";
@@ -328,6 +332,50 @@ export interface z80asmListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	exitDirective_phase?: (ctx: Directive_phaseContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.directive_defvars`.
+	 * @param ctx the parse tree
+	 */
+	enterDirective_defvars?: (ctx: Directive_defvarsContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.directive_defvars`.
+	 * @param ctx the parse tree
+	 */
+	exitDirective_defvars?: (ctx: Directive_defvarsContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.defvars_vardecl`.
+	 * @param ctx the parse tree
+	 */
+	enterDefvars_vardecl?: (ctx: Defvars_vardeclContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.defvars_vardecl`.
+	 * @param ctx the parse tree
+	 */
+	exitDefvars_vardecl?: (ctx: Defvars_vardeclContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.directive_defgroup`.
+	 * @param ctx the parse tree
+	 */
+	enterDirective_defgroup?: (ctx: Directive_defgroupContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.directive_defgroup`.
+	 * @param ctx the parse tree
+	 */
+	exitDirective_defgroup?: (ctx: Directive_defgroupContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.defgroup_symbol`.
+	 * @param ctx the parse tree
+	 */
+	enterDefgroup_symbol?: (ctx: Defgroup_symbolContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.defgroup_symbol`.
+	 * @param ctx the parse tree
+	 */
+	exitDefgroup_symbol?: (ctx: Defgroup_symbolContext) => void;
 
 	/**
 	 * Enter a parse tree produced by `z80asmParser.instruction`.

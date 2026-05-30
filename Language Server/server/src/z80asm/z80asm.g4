@@ -126,6 +126,7 @@ line
    | label comment? 
    | label? instruction comment? 
    | blockcomment
+   | symbol
    ;
 
 
@@ -146,6 +147,7 @@ directive
    | directive_ifdef
    | directive_elseblock
    | directive_endif
+   | directive_define
    | directive_phase
    | directive_defvars
    | directive_defgroup
@@ -234,6 +236,12 @@ directive_elseblock
 
 directive_endif
    : DIRECTIVEendif
+   ;
+
+
+directive_define
+   : DIRECTIVEdefine symbol (COMMA symbol)*
+   | DIRECTIVEdefine symbol BACKSLASH comment? EOL (instruction BACKSLASH BACKSLASH comment?)*
    ;
 
 
@@ -327,7 +335,7 @@ DIRECTIVEdefgroup
 
 
 DIRECTIVEfile
-   : (I N C L U D E) | (B I N A R Y)
+   : HASH? (I N C L U D E) | (B I N A R Y)
    ;
 
 
@@ -348,6 +356,11 @@ DIRECTIVEelse
 
 DIRECTIVEendif
    : (E N D I F)
+   ;
+
+
+DIRECTIVEdefine
+   : HASH (D E F I N E)
    ;
 
 
@@ -974,6 +987,19 @@ NUMBERhex
    ;
 
 
+ZERO: [0];
+CHARACTER: '\'' . '\'';
+STRING: '"' .*? '"';
+PARopen: '(';
+PARclose: ')';
+COMMA: ',';
+HASH: '#';
+BACKSLASH: '\\';
+DOT: '.';
+EOL: '\r'? '\n' | '\r';
+WS: [ \t] -> channel(HIDDEN);
+
+
 /**
  *  Case insensitive alphabet
  */
@@ -1156,52 +1182,4 @@ fragment DIGIT10
 
 fragment DIGIT16
     :   [0-9a-fA-F]
-    ;
-
-
-ZERO
-   : [0]
-   ;
-
-
-/**
- *  Tokens
- */
-
-CHARACTER
-   : '\'' . '\''
-   ;
-
-
-STRING
-   : '"' .*? '"'
-   ;
-
-
-PARopen
-   : '('
-   ;
-
-
-PARclose
-   : ')'
-   ;
-
-
-COMMA
-   : ','
-   ;
-
-DOT
-   : '.'
-   ;
-
-EOL
-   : '\r'? '\n' | '\r'
-   ;
-
-
-WS
-    : [ \t] 
-      -> channel(HIDDEN)
     ;

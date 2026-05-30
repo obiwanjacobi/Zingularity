@@ -24,6 +24,7 @@ import { Directive_ifdefContext } from "./z80asmParser";
 import { Directive_ifblockContext } from "./z80asmParser";
 import { Directive_elseblockContext } from "./z80asmParser";
 import { Directive_endifContext } from "./z80asmParser";
+import { Directive_defineContext } from "./z80asmParser";
 import { Directive_phaseContext } from "./z80asmParser";
 import { Directive_defvarsContext } from "./z80asmParser";
 import { Defvars_vardeclContext } from "./z80asmParser";
@@ -321,6 +322,17 @@ export interface z80asmListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	exitDirective_endif?: (ctx: Directive_endifContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `z80asmParser.directive_define`.
+	 * @param ctx the parse tree
+	 */
+	enterDirective_define?: (ctx: Directive_defineContext) => void;
+	/**
+	 * Exit a parse tree produced by `z80asmParser.directive_define`.
+	 * @param ctx the parse tree
+	 */
+	exitDirective_define?: (ctx: Directive_defineContext) => void;
 
 	/**
 	 * Enter a parse tree produced by `z80asmParser.directive_phase`.

@@ -24,6 +24,7 @@ import { Directive_ifdefContext } from "./z80asmParser";
 import { Directive_ifblockContext } from "./z80asmParser";
 import { Directive_elseblockContext } from "./z80asmParser";
 import { Directive_endifContext } from "./z80asmParser";
+import { Directive_defineContext } from "./z80asmParser";
 import { Directive_phaseContext } from "./z80asmParser";
 import { Directive_defvarsContext } from "./z80asmParser";
 import { Defvars_vardeclContext } from "./z80asmParser";
@@ -240,6 +241,13 @@ export interface z80asmVisitor<Result> extends ParseTreeVisitor<Result> {
 	 * @return the visitor result
 	 */
 	visitDirective_endif?: (ctx: Directive_endifContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.directive_define`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitDirective_define?: (ctx: Directive_defineContext) => Result;
 
 	/**
 	 * Visit a parse tree produced by `z80asmParser.directive_phase`.

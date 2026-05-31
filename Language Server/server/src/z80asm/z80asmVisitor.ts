@@ -15,6 +15,7 @@ import { Directive_param32Context } from "./z80asmParser";
 import { Directive_symbolContext } from "./z80asmParser";
 import { Directive_symbollistContext } from "./z80asmParser";
 import { Directive_assignContext } from "./z80asmParser";
+import { Directive_defbContext } from "./z80asmParser";
 import { Directive_blockContext } from "./z80asmParser";
 import { Directive_defsContext } from "./z80asmParser";
 import { Directive_defmContext } from "./z80asmParser";
@@ -178,6 +179,13 @@ export interface z80asmVisitor<Result> extends ParseTreeVisitor<Result> {
 	 * @return the visitor result
 	 */
 	visitDirective_assign?: (ctx: Directive_assignContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `z80asmParser.directive_defb`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitDirective_defb?: (ctx: Directive_defbContext) => Result;
 
 	/**
 	 * Visit a parse tree produced by `z80asmParser.directive_block`.

@@ -137,6 +137,7 @@ directive
    | directive_file
    | directive_param16
    | directive_param32
+   | directive_defb
    | directive_block 
    | directive_symbol 
    | directive_symbollist 
@@ -185,7 +186,7 @@ directive_symbol
 
 
 directive_symbollist
-   : DIRECTIVEsymbollist symbol (COMMA symbol)*?
+   : DIRECTIVEsymbollist symbol (COMMA symbol)*
    ;
 
 
@@ -194,8 +195,13 @@ directive_assign
    ;
 
 
+directive_defb
+   : DIRECTIVEdefb (AT|MOD) HASHDASH comment?
+   ;
+
+
 directive_block
-   : DIRECTIVEblock expression (COMMA expression)*?
+   : DIRECTIVEblock expression (COMMA expression)*
    ;
 
 
@@ -205,7 +211,7 @@ directive_defs
 
 
 directive_defm
-   : DIRECTIVEdefm defmparam (COMMA defmparam)*?
+   : DIRECTIVEdefm defmparam (COMMA defmparam)*
    ;
 
 
@@ -251,7 +257,7 @@ directive_phase
 
 
 directive_defvars
-   : DIRECTIVEdefvars expression16 comment? EOL? '{' EOL? (defvars_vardecl EOL?)+ '}'
+   : DIRECTIVEdefvars expression16 comment? EOL? LBRACE EOL? (defvars_vardecl EOL?)+ RBRACE
    ;
 defvars_vardecl
    : symbol? DEFVARSsize expression8 comment?
@@ -260,7 +266,7 @@ defvars_vardecl
    ;
 
 directive_defgroup
-   : DIRECTIVEdefgroup EOL? '{' EOL? defgroup_symbol EOL? (COMMA EOL? defgroup_symbol EOL?)* '}'
+   : DIRECTIVEdefgroup EOL? LBRACE EOL? defgroup_symbol EOL? (COMMA EOL? defgroup_symbol EOL?)* RBRACE
    ;
 defgroup_symbol
    : symbol (EQUALS expression8)? comment?
@@ -313,9 +319,14 @@ DIRECTIVEdefm
    ;
 
 
+DIRECTIVEdefb
+   : (D E F B)
+   ;
+
+
 // directives that define a block (comma list)
 DIRECTIVEblock
-   : (D E F B) | (D E F W) | (D E F L)
+   : DIRECTIVEdefb | (D E F W) | (D E F L)
    ;
 
 
@@ -432,7 +443,7 @@ instruction_stack
 
 instruction_exchange
    : INSTRUCTIONexchange REG16de COMMA REG16hl
-   | INSTRUCTIONexchange REG16af COMMA REG16af '\''?
+   | INSTRUCTIONexchange REG16af COMMA REG16af APOSTROPHE?
    | INSTRUCTIONexchange PARopen REG16sp PARclose COMMA (REG16hl | register16_ex)
    | INSTRUCTIONexxchange
    ;
@@ -805,7 +816,7 @@ CONDITIONflags
 
 
 label
-   : '.' symbol | symbol ':'
+   : DOT symbol | AT? symbol ':'
    ;
 
 
@@ -826,7 +837,7 @@ blockcomment
 
 BLOCKCOMMENTtext
 // add the white space to make it distinct from COMMENT
-   : ';;' [ \t]+ .+? | ';;' [ \t]+ ~[\r\n]+
+   : SEMICOLON SEMICOLON [ \t]+ .+? | SEMICOLON SEMICOLON [ \t]+ ~[\r\n]+
    ;
 
 
@@ -836,7 +847,7 @@ comment
 
 
 COMMENT
-   : ';' .*? | ';' ~[\r\n]+
+   : SEMICOLON .*? | SEMICOLON ~[\r\n]+
    ;
 
 
@@ -987,15 +998,23 @@ NUMBERhex
    ;
 
 
-ZERO: [0];
+ZERO: '0';
 CHARACTER: '\'' . '\'';
-STRING: '"' .*? '"';
+HASHDASH: DQUOTE (HASH | MINUS)*? DQUOTE;
+STRING: DQUOTE .*? DQUOTE;
 PARopen: '(';
 PARclose: ')';
 COMMA: ',';
 HASH: '#';
+AT: '@';
+DQUOTE: '"';
 BACKSLASH: '\\';
 DOT: '.';
+SEMICOLON: ';';
+APOSTROPHE: '\'';
+SEMICOLONSEMICOLON: ';;';
+LBRACE: '{';
+RBRACE: '}';
 EOL: '\r'? '\n' | '\r';
 WS: [ \t] -> channel(HIDDEN);
 

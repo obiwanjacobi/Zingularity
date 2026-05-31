@@ -205,7 +205,7 @@ connection.onCompletion(
                     start: { line: textDocumentPosition.position.line, character: 0 },
                     end: textDocumentPosition.position
                 };
-            txt = doc.getText(rng).trimLeft();
+            txt = doc.getText(rng).trimStart();
         }
 
         if (txt.length) {
@@ -266,6 +266,24 @@ connection.onHover(
             if (docNode.node.kind === AssemblyNodeKind.Instruction) {
                 const instruction = <Instruction> docNode.node;
                 
+                // this checks for the instruction's external reference (position)
+                // and lookup the symbol's comment for hover info.
+                if (instruction.external.length > 0 &&
+                    instruction.hitExternal(textDocumentPosition.position.line + 1, textDocumentPosition.position.character)) {
+
+                    const decl = codeModelMgr.findLabelDecl(instruction.external);
+                    if (decl) {
+                        const comment = codeModelMgr.blockCommentFor(decl.document, decl.node);
+                        if (comment) {
+                            return {
+                                contents: comment.toMarkup(),
+                                range: toRange(instruction)
+                            };
+                        }
+                    }
+                }
+
+                // instruction meta info for hover
                 const flags = instruction.meta.flags.length === 0 ? "" :  ` - flags: ${instruction.meta.flags.join(" ")}`;
                 return {
                     contents: `${instruction.toString()} - cycles: ${sum(instruction.meta.cycles)} - bytes: ${instruction.meta.bytes.join(", ")}${flags}`,
@@ -273,8 +291,7 @@ connection.onHover(
                 };
             }
             if (docNode.node.kind === AssemblyNodeKind.Label) {
-                const label = <Label> docNode.node;
-                
+                const label = <Label> docNode.node;                
                 const refs = codeModelMgr.codeModel.symbols.findReferences(label);
                 return {
                     contents: `${label.symbol}: ${refs.length - 1} references`,

@@ -837,7 +837,8 @@ blockcomment
 
 BLOCKCOMMENTtext
 // add the white space to make it distinct from COMMENT
-   : SEMICOLON SEMICOLON [ \t]+ .+? | SEMICOLON SEMICOLON [ \t]+ ~[\r\n]+
+   : SEMICOLON SEMICOLON [ \t]+ .+? 
+   | SEMICOLON SEMICOLON [ \t]+ ~[\r\n]+
    ;
 
 

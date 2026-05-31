@@ -1,4 +1,4 @@
-import { VersionedTextDocumentIdentifier } from "vscode-languageserver";
+import { MarkupContent, MarkupKind, VersionedTextDocumentIdentifier } from "vscode-languageserver";
 import { SymbolTable } from "./SymbolTable";
 
 export enum AssemblyNodeKind {
@@ -83,6 +83,13 @@ export class BlockComment extends AssemblyNode {
 
     toString(separator: string = "\r\n"): string {
         return this.lines.map(l => l.toString()).join(separator);
+    }
+
+    toMarkup(): MarkupContent {
+        return {
+            kind: MarkupKind.Markdown,
+            value: this.lines.map(l => l.toText()).join("\n\n")
+        };
     }
 
     hitTest(line: number, column?: number): boolean {
@@ -213,6 +220,16 @@ export class Instruction extends AssemblyNode {
         this.meta = meta;
         this.external = external;
         this.numeric = numeric;
+    }
+
+    // hit the external reference? (for hover)
+    hitExternal(line: number, column?: number): boolean {
+        if (this.hitTest(line, column)) {
+            if (this.external && column) {
+                return column >= this.text.indexOf(this.external);
+            }
+        }
+        return false;
     }
 }
 

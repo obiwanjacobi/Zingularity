@@ -6,8 +6,8 @@ label2:
     in a, (c)
     ret z
 
-.label3
+.label5
     out (c), a
     ret
-    LD A, cval
+    LD A, label3
     

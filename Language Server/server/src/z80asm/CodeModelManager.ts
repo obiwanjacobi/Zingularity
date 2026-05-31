@@ -1,4 +1,4 @@
-import { AssemblyModel, AssemblyDocument, AssemblyNode, BlockComment, AssemblyNodeKind, Comment } from "./CodeModel";
+import { AssemblyModel, AssemblyDocument, AssemblyNode, BlockComment, AssemblyNodeKind, Comment, Label } from "./CodeModel";
 import { Position, Range } from "vscode-languageserver";
 import { Comparable } from "antlr4ts/misc/Stubs";
 import { SymbolProfile, CasingMatch, CasingRule, SymbolTable } from "./SymbolTable";
@@ -32,6 +32,20 @@ export class CodeModelManager {
                         thisNode.column > position.character ? prevNode : thisNode
                 );
                 return { document: doc, node: node };
+            }
+        }
+
+        return undefined;
+    }
+
+    findLabelDecl(label: string): {document: AssemblyDocument, node: AssemblyNode} | undefined {
+        for (const doc of this.codeModel.documents) {
+            if (!doc.nodes) { continue; }
+
+            const nodes = doc.nodes.filter(n => 
+                n.kind === AssemblyNodeKind.Label && (<Label>n).symbol === label);
+            if (nodes.length) {
+                return { document: doc, node: nodes[0] };
             }
         }
 

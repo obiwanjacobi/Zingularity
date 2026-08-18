@@ -197,6 +197,7 @@ directive_assign
 
 directive_defb
    : DIRECTIVEdefb (AT|MOD) HASHDASH comment?
+   | DIRECTIVEdefb expression (COMMA expression)*
    ;
 
 

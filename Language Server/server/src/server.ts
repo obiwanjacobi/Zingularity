@@ -215,12 +215,13 @@ connection.onCompletion(
                 (docNode.node.kind !== AssemblyNodeKind.Comment && 
                 docNode.node.kind !== AssemblyNodeKind.BlockComment)) {
 
+                const isLowerCase = txt === txt.toLowerCase();
                 return buildCompletionList(txt, { 
                     symbolTable: codeModelMgr.codeModel.symbols, 
                     docUri: textDocumentPosition.textDocument.uri
                 })
                 .map(v => <CompletionItem> { 
-                    label: v.label, 
+                    label: isLowerCase ? v.label.toLowerCase() : v.label, 
                     data: v.symbol, 
                     kind: v.kind, 
                     commitCharacters: commitCharacters 

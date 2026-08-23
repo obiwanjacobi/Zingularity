@@ -1,2 +1,1 @@
-rst $38
-defb $FF
+ld a, b

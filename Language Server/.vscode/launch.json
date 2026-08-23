@@ -20,6 +20,7 @@
 			"name": "Attach to Server",
 			"port": 6009,
 			"restart": true,
+			"sourceMaps": true,
 			"trace": true,
 			"outFiles": ["${workspaceFolder}/server/out/**/*.js"]
 		},
@@ -88,7 +89,8 @@
 	"compounds": [
 		{
 			"name": "Client + Server",
-			"configurations": ["Launch Client", "Attach to Server"]
+			"configurations": ["Launch Client", "Attach to Server"],
+			"stopAll": true
 		}
 	]
 }
